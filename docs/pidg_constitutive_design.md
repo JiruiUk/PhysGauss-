@@ -41,3 +41,14 @@ render/evaluation output and a checksum-verified optimizer/RNG checkpoint.
 The original tree has pre-existing Windows/release compatibility fixes; M0 captures
 them explicitly. A baseline tag records the audit, patches and measured metrics;
 it is not a claim that the historical runtime source was fingerprinted.
+
+## M2: constitutive convention
+
+The initial law is compressible, isotropic Neo-Hookean elasticity with
+`W=mu/2*(J^(-2/3)*tr(B)-3)+kappa/2*log(J)^2`, `B=F F^T`.
+Its Cauchy stress is `mu*J^(-5/3)*dev(B)+kappa*log(J)/J*I`.
+Here `kappa` is the bulk modulus. Positive shared parameters use softplus plus
+epsilon; no per-Gaussian stiffness is introduced. Nonpositive J raises an error
+in the constitutive module; the caller selects the explicitly reported valid F.
+Six-component stress order is `[xx,yy,zz,xy,xz,yz]`, with tensor shear components.
+M2 is a fixed-parameter stress diagnostic, with no constitutive training loss.

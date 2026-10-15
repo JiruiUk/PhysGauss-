@@ -61,3 +61,32 @@ def test_disabled_extension_is_a_noop_and_does_not_consume_rng(tmp_path):
     assert extension.loss(100,None,None,None,None,None) is None
     assert torch.equal(rng,torch.random.get_rng_state())
     assert not list(tmp_path.iterdir())
+
+
+def test_neo_hookean_identity_rotation_expansion_and_objectivity():
+    from pidg_ext.constitutive import NeoHookean
+    model=NeoHookean();params={'mu':1.,'kappa':10.};I=torch.eye(3,dtype=torch.float64)
+    R=torch.tensor([[0.,-1.,0.],[1.,0.,0.],[0.,0.,1.]],dtype=I.dtype)
+    torch.testing.assert_close(model(I,params),torch.zeros_like(I))
+    torch.testing.assert_close(model(R,params),torch.zeros_like(I))
+    stress=model(I*1.1,params)
+    torch.testing.assert_close(stress,stress[0,0]*I)
+    F=I.clone();F[0,0]=1.2;F[0,1]=.1
+    torch.testing.assert_close(model(R@F,params),R@model(F,params)@R.T)
+
+
+def test_neo_hookean_parameter_gradients_and_symmetric_component_order():
+    from pidg_ext.constitutive import NeoHookean,MaterialParameters,vec6_to_symmat,symmat_to_vec6
+    bank=MaterialParameters(1.,10.,learn=True)
+    F=torch.diag(torch.tensor([1.2,1.1,1.05],dtype=torch.float64)).requires_grad_()
+    NeoHookean()(F,bank()).square().sum().backward()
+    assert F.grad.isfinite().all()
+    assert all(p.grad is not None and p.grad.isfinite().all() for p in bank.parameters())
+    assert all(p.grad.abs().sum()>0 for p in bank.parameters())
+    assert all(value>0 for value in bank().values())
+    vec=torch.tensor([1.,2.,3.,4.,5.,6.])
+    mat=vec6_to_symmat(vec)
+    torch.testing.assert_close(mat,torch.tensor([[1.,4.,5.],[4.,2.,6.],[5.,6.,3.]]))
+    torch.testing.assert_close(symmat_to_vec6(mat),vec)
+    with pytest.raises(ValueError,match='positive determinant'):
+        NeoHookean()(-torch.eye(3),bank())

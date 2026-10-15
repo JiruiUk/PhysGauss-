@@ -1,0 +1,55 @@
+{
+  "milestone": "M2",
+  "status": "passed",
+  "unit_tests": 10,
+  "run": "runs/pidg_constitutive/m2_NH_diagnostic/rubber_duck",
+  "metrics": {
+    "SSIM": 0.9102993011474609,
+    "PSNR": 21.12824058532715,
+    "LPIPS": 0.14152471721172333,
+    "MS-SSIM": 0.8497737050056458
+  },
+  "diagnostics": [
+    {
+      "iteration": 100,
+      "mean_det_F": 0.7223192453384399,
+      "min_det_F": -0.8430068492889404,
+      "invalid_F_fraction": 0.10546875,
+      "diagnostic_queries": 256,
+      "new_loss_added": false,
+      "mean_sigma_const_norm": 92.97907257080078,
+      "mu": 1.0,
+      "kappa": 10.0
+    },
+    {
+      "iteration": 200,
+      "mean_det_F": 0.7862175703048706,
+      "min_det_F": -1.0763781070709229,
+      "invalid_F_fraction": 0.12890625,
+      "diagnostic_queries": 256,
+      "new_loss_added": false,
+      "mean_sigma_const_norm": 58.98354721069336,
+      "mu": 1.0,
+      "kappa": 10.0
+    },
+    {
+      "iteration": 300,
+      "mean_det_F": 0.784987211227417,
+      "min_det_F": -0.5369327068328857,
+      "invalid_F_fraction": 0.0546875,
+      "diagnostic_queries": 256,
+      "new_loss_added": false,
+      "mean_sigma_const_norm": 73.33303833007812,
+      "mu": 1.0,
+      "kappa": 10.0
+    }
+  ],
+  "rng_and_camera_parity": {
+    "rng_python": true,
+    "rng_torch": true,
+    "rng_cuda": true,
+    "camera_order": true,
+    "rng_numpy": true
+  },
+  "limits": "Short-run GPU metrics vary across nominally equivalent diagnostic runs. No reconstruction improvement is claimed. No material recovery is claimed."
+}
