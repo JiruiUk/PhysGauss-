@@ -1,0 +1,63 @@
+{
+  "milestone": "M1",
+  "status": "passed",
+  "unit_tests": 8,
+  "budget": {
+    "iterations": 300,
+    "width": 400,
+    "seed": 0
+  },
+  "control": "runs/pidg_constitutive/m1_flags_off_control/rubber_duck",
+  "candidate": "runs/pidg_constitutive/m1_Fdiag/rubber_duck",
+  "control_metrics": {
+    "SSIM": 0.9161781072616577,
+    "PSNR": 21.351484298706055,
+    "LPIPS": 0.1370236873626709,
+    "MS-SSIM": 0.8642433285713196
+  },
+  "candidate_metrics": {
+    "SSIM": 0.9159268140792847,
+    "PSNR": 21.339130401611328,
+    "LPIPS": 0.1380947381258011,
+    "MS-SSIM": 0.8609398007392883
+  },
+  "delta": {
+    "SSIM": -0.0002512931823730469,
+    "PSNR": -0.012353897094726562,
+    "LPIPS": 0.001071050763130188,
+    "MS-SSIM": -0.00330352783203125
+  },
+  "tolerances": {
+    "PSNR": 0.1,
+    "SSIM": 0.005,
+    "LPIPS": 0.005,
+    "MS-SSIM": 0.005
+  },
+  "diagnostics": [
+    {
+      "iteration": 100,
+      "mean_det_F": 0.7301856875419617,
+      "min_det_F": -1.6864006519317627,
+      "invalid_F_fraction": 0.078125,
+      "diagnostic_queries": 256,
+      "new_loss_added": false
+    },
+    {
+      "iteration": 200,
+      "mean_det_F": 0.7545298337936401,
+      "min_det_F": -2.259488105773926,
+      "invalid_F_fraction": 0.16796875,
+      "diagnostic_queries": 256,
+      "new_loss_added": false
+    },
+    {
+      "iteration": 300,
+      "mean_det_F": 0.7680716514587402,
+      "min_det_F": -1.0986202955245972,
+      "invalid_F_fraction": 0.06640625,
+      "diagnostic_queries": 256,
+      "new_loss_added": false
+    }
+  ],
+  "meaning": "Engineering regression only; not comparison against the 50k reference."
+}

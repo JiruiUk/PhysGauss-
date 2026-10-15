@@ -9,10 +9,14 @@
     "metrics": "baseline_metrics.json"
   },
   "M1": {
-    "status": "next"
+    "status": "passed",
+    "validation": "experiments/M1_validation.json"
   },
   "unavailable_final_suites": [
     "dnerf",
     "hypernerf"
-  ]
+  ],
+  "M2": {
+    "status": "next"
+  }
 }
