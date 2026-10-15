@@ -1,0 +1,30 @@
+{
+  "status": "saved_stopped_verified",
+  "configuration": "A4_single",
+  "checkpoint": {
+    "path": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_constitutive\\m10_long_A4_single\\rubber_duck\\checkpoints\\resume.pt",
+    "iteration": 26169,
+    "sha256": "94bb0c8c0a2e6c7ea236d8d2c8453077bfc63979acfa3fe9be8d980b7ff11746",
+    "size_bytes": 228292783,
+    "format_version": 1,
+    "optimizer_saved": true,
+    "rng_saved": true,
+    "created_unix": 1792100619.0639613,
+    "extension_saved": true
+  },
+  "controller_pid": 303516,
+  "controller_alive": false,
+  "child_pid": 276436,
+  "child_alive": false,
+  "completed_jobs": [
+    "A1",
+    "A2a",
+    "A2b"
+  ],
+  "queued_jobs_not_started": [
+    "A6_single"
+  ],
+  "global_stop_present": true,
+  "training_pid_present_on_gpu": false,
+  "A6_run_created": false
+}

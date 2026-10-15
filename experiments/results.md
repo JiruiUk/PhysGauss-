@@ -1,6 +1,6 @@
 # PIDG constitutive plan results
 
-Updated: 2026-10-15T18:05:58.695052+01:00
+Updated: 2026-10-15T22:44:06.270203+01:00
 
 M0 reused five completed original baselines. Active long scope: Rubber Duck only, 50k steps, width1600, seed0. Short controlled data are reported separately.
 
@@ -9,10 +9,10 @@ M0 reused five completed original baselines. Active long scope: Rubber Duck only
 | Method | Status | Checkpoint | PSNR | Delta PSNR | SSIM | LPIPS |
 |---|---|---:|---:|---:|---:|---:|
 | A0 original (reused) | completed | 50000 | 27.25678 | 0 | 0.97655 | 0.02962 |
-| A1 | training | 3000 | — | — | — | — |
-| A2a | queued | — | — | — | — | — |
-| A2b | queued | — | — | — | — | — |
-| A4_single | queued | — | — | — | — | — |
+| A1 | completed | 50000 | 28.149500 | 0.892719 | 0.976896 | 0.031075 |
+| A2a | completed | 50000 | 27.128334 | -0.128447 | 0.976362 | 0.031909 |
+| A2b | completed | 50000 | 28.408968 | 1.152187 | 0.976817 | 0.030052 |
+| A4_single | saved_stopped | 26169 | — | — | — | — |
 | A6_single | queued | — | — | — | — | — |
 
 A3 official multi-material comparison awaits known labels. A4_single/A6_single use a single shared material; they are explicitly compatible subsets, not real multi-material results. A5 diagnostics reuse A4 training. Full multi-material/interface modules are validated on manufactured data below. D-NeRF/HyperNeRF metrics remain unavailable, not zero. Historical A0 runtime hashes were not recorded.

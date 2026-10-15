@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-15T18:05:58.695052+01:00",
+  "updated_at": "2026-10-15T22:44:06.270203+01:00",
   "selected_scenes": [
     "rubber_duck"
   ],
@@ -9,15 +9,27 @@
       "configuration_id": "A1",
       "scene": "rubber_duck",
       "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_constitutive\\m10_long_A1\\rubber_duck",
-      "status": "training",
+      "status": "completed",
       "iterations": 50000,
       "resolution_width": 1600,
-      "checkpoint_iteration": 3000,
+      "checkpoint_iteration": 50000,
+      "metrics": {
+        "SSIM": 0.9768962264060974,
+        "PSNR": 28.149499893188477,
+        "LPIPS": 0.03107481263577938,
+        "MS-SSIM": 0.9715856313705444
+      },
+      "delta": {
+        "SSIM": 0.00034481287002563477,
+        "PSNR": 0.8927192687988281,
+        "LPIPS": 0.001451294869184494,
+        "MS-SSIM": 0.0011029839515686035
+      },
       "physics": {
-        "iteration": 3900,
-        "mean_det_F": 1.025267481803894,
-        "min_det_F": 0.07864092290401459,
-        "invalid_F_fraction": 0.0,
+        "iteration": 50000,
+        "mean_det_F": 1.092710018157959,
+        "min_det_F": -1.2535828351974487,
+        "invalid_F_fraction": 0.0078125,
         "diagnostic_queries": 256,
         "new_loss_added": false
       }
@@ -27,21 +39,125 @@
       "configuration_id": "A2a",
       "scene": "rubber_duck",
       "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_constitutive\\m10_long_A2a\\rubber_duck",
-      "status": "queued"
+      "status": "completed",
+      "iterations": 50000,
+      "resolution_width": 1600,
+      "checkpoint_iteration": 50000,
+      "metrics": {
+        "SSIM": 0.9763619303703308,
+        "PSNR": 27.128334045410156,
+        "LPIPS": 0.03190947324037552,
+        "MS-SSIM": 0.9703063368797302
+      },
+      "delta": {
+        "SSIM": -0.0001894831657409668,
+        "PSNR": -0.1284465789794922,
+        "LPIPS": 0.002285955473780632,
+        "MS-SSIM": -0.00017631053924560547
+      },
+      "physics": {
+        "iteration": 50000,
+        "mean_det_F": 1.010824203491211,
+        "min_det_F": 0.08351686596870422,
+        "invalid_F_fraction": 0.0,
+        "diagnostic_queries": 256,
+        "new_loss_added": true,
+        "mu": 1.0,
+        "kappa": 10.0,
+        "loss_constitutive_raw": 0.5969533324241638,
+        "loss_constitutive_weighted": 5.969533231109381e-05,
+        "mean_sigma_const_norm": 3.7944722175598145,
+        "mean_sigma_pred_norm": 0.9240186214447021,
+        "mean_sigma_difference_norm": 3.5609021186828613,
+        "cauchy_residual_legacy": 2.0178722479613498e-05,
+        "stress_time_convention": "fid, matching rendered F",
+        "force_sigma": 1.0040127038955688,
+        "constitutive_F_gradient_norm": 0.0008536233799532056,
+        "constitutive_predicted_stress_gradient_norm": 7.859715083213814e-07
+      }
     },
     {
       "experiment": "A2b",
       "configuration_id": "A2b",
       "scene": "rubber_duck",
       "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_constitutive\\m10_long_A2b\\rubber_duck",
-      "status": "queued"
+      "status": "completed",
+      "iterations": 50000,
+      "resolution_width": 1600,
+      "checkpoint_iteration": 50000,
+      "metrics": {
+        "SSIM": 0.97681725025177,
+        "PSNR": 28.408967971801758,
+        "LPIPS": 0.03005177713930607,
+        "MS-SSIM": 0.971701443195343
+      },
+      "delta": {
+        "SSIM": 0.0002658367156982422,
+        "PSNR": 1.1521873474121094,
+        "LPIPS": 0.00042825937271118164,
+        "MS-SSIM": 0.0012187957763671875
+      },
+      "physics": {
+        "iteration": 50000,
+        "mean_det_F": 1.030522108078003,
+        "min_det_F": -2.0890183448791504,
+        "invalid_F_fraction": 0.0078125,
+        "diagnostic_queries": 256,
+        "new_loss_added": true,
+        "mu": 0.9994983264133015,
+        "kappa": 9.998333505102394,
+        "loss_constitutive_raw": 0.3003283739089966,
+        "loss_constitutive_weighted": 3.0032837457838468e-05,
+        "mean_sigma_const_norm": 2.3314645290374756,
+        "mean_sigma_pred_norm": 0.5608899593353271,
+        "mean_sigma_difference_norm": 2.1699352264404297,
+        "cauchy_residual_legacy": 7.811473551555537e-06,
+        "stress_time_convention": "fid, matching rendered F",
+        "force_sigma": 0.9990366101264954,
+        "constitutive_F_gradient_norm": 3.543106504366733e-05,
+        "constitutive_predicted_stress_gradient_norm": 8.862545541887812e-07
+      }
     },
     {
       "experiment": "A4",
       "configuration_id": "A4_single",
       "scene": "rubber_duck",
       "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_constitutive\\m10_long_A4_single\\rubber_duck",
-      "status": "queued",
+      "status": "saved_stopped",
+      "iterations": 50000,
+      "resolution_width": 1600,
+      "checkpoint_iteration": 26169,
+      "physics": {
+        "iteration": 26100,
+        "mean_det_F": 0.9942173957824707,
+        "min_det_F": 0.40847620368003845,
+        "invalid_F_fraction": 0.0,
+        "diagnostic_queries": 256,
+        "new_loss_added": true,
+        "mu": 0.999803700859236,
+        "kappa": 9.999380009299706,
+        "loss_constitutive_raw": 0.2941893935203552,
+        "loss_constitutive_weighted": 2.9418939448078163e-05,
+        "mean_sigma_const_norm": 2.1723062992095947,
+        "mean_sigma_pred_norm": 0.5750681161880493,
+        "mean_sigma_difference_norm": 2.078611373901367,
+        "cauchy_residual_legacy": 6.19197544438066e-06,
+        "stress_time_convention": "fid, matching rendered F",
+        "force_sigma": 0.9816358089447021,
+        "constitutive_F_gradient_norm": 4.2119478166569024e-05,
+        "constitutive_predicted_stress_gradient_norm": 8.720865025679814e-07,
+        "inertial_term_norm": 0.0014260118769016117,
+        "stress_divergence_norm": 0.006245179451070726,
+        "external_force_norm": 0.0021377885132096708,
+        "total_residual_norm": 0.006242646952159703,
+        "force_parameter_count": 36,
+        "force_magnitude_raw": 4.936431196256308e-06,
+        "force_temporal_raw": 8.015911134862108e-08,
+        "force_sparsity_raw": 0.003367256373167038,
+        "cauchy_sampling_factor": 0.34323568278158195,
+        "loss_force_regularization": 5.738022279544452e-10,
+        "force_time_convention": "fid; original velocity/CMR query remains fid/train_count"
+      },
       "preset_scope": "available single-material official scene; known multi-material labels unavailable"
     },
     {

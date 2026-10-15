@@ -9,7 +9,7 @@
   "optimizer_and_rng_present": true,
   "extension_state_present": true,
   "known_material_force_optimizers_present": true,
-  "repair_status": "manifest_repaired_full_state_verified",
+  "repair_status": "resumed_and_new_full_checkpoint_verified",
   "published_checkpoint": {
     "path": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_constitutive\\m10_long_A4_single\\rubber_duck\\checkpoints\\resume.pt",
     "iteration": 25000,
@@ -23,5 +23,21 @@
   },
   "hotfix_registry": "experiments/checkpoint_io_hotfix.json",
   "targeted_tests": "35 passed",
-  "full_tests": "110 passed, 1 skipped"
+  "full_tests": "110 passed, 1 skipped",
+  "new_checkpoint": {
+    "path": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_constitutive\\m10_long_A4_single\\rubber_duck\\checkpoints\\resume.pt",
+    "iteration": 26000,
+    "sha256": "2677385aa1a7bc359ed9eff2aeb46198dbd9ecedc5e5b76596b67cb68c3a0bc5",
+    "size_bytes": 228292847,
+    "format_version": 1,
+    "optimizer_saved": true,
+    "rng_saved": true,
+    "created_unix": 1792100605.4085588,
+    "extension_saved": true
+  },
+  "resumed_iteration_observed": 26090,
+  "controller_pid": 303516,
+  "child_pid": 276436,
+  "current_training_status": "stopped_at_user_request",
+  "stop_receipt": "experiments/training_stop.json"
 }
