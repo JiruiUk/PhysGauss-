@@ -1,0 +1,18 @@
+{
+  "confirmed": "2026-10-15",
+  "plan": "M0-M10, validate every milestone and continue",
+  "baseline": "reuse completed original 50k training",
+  "long_scene": "rubber_duck",
+  "long_iterations": 50000,
+  "long_resolution_width": 1600,
+  "new_long_configs": [
+    "A1",
+    "A2a",
+    "A2b",
+    "A4_single",
+    "A6_single"
+  ],
+  "A5": "post-fit diagnostics reuse A4 training",
+  "material_labels": "manufactured known two-material engineering validation first; real multi-material experiments await supplied labels",
+  "replaces": "historical deleted Phase00-15 queue"
+}

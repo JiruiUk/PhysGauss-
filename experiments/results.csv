@@ -1,0 +1,15 @@
+experiment_id,suite,scene,seed,psnr,ssim,ms_ssim,lpips,cauchy_residual,constitutive_residual,invalid_F_fraction,future_psnr,future_ssim,material_param_error,force_error,jacobian_min_sv,jacobian_max_sv,jacobian_condition_number,stiffness_force_corr,notes
+A0,official_long,rubber_duck,0,27.25678062438965,0.9765514135360718,0.9704826474189758,0.029623517766594887,,,,,,,,,,,,Completed historical 50k baseline reused; historical runtime hashes unavailable
+A1,official_long,rubber_duck,0,,,,,,,,,,,,,,,,queued; 
+A2a,official_long,rubber_duck,0,,,,,,,,,,,,,,,,queued; 
+A2b,official_long,rubber_duck,0,,,,,,,,,,,,,,,,queued; 
+A4,official_long,rubber_duck,0,,,,,,,,,,,,,,,,queued; available single-material official scene; known multi-material labels unavailable
+A6,official_long,rubber_duck,0,,,,,,,,,,,,,,,,queued; A6 single-material compatible subset; full multi-material/interface preset validated separately on controlled data
+A0,controlled_smoke,controlled_two_material,0,28.6485538482666,0.9759079217910767,0.9703034162521362,0.03585460036993027,,,,,,,,,,,,completed; 
+A1,controlled_smoke,controlled_two_material,0,27.810379028320312,0.9730010032653809,0.9658447504043579,0.03768511861562729,,,0.0,,,,,,,,,completed; 
+A2a,controlled_smoke,controlled_two_material,0,28.36444854736328,0.974396288394928,0.9685510993003845,0.03736667335033417,0.0009586489177308977,0.34526681900024414,0.0,,,,,,,,,completed; 
+A2b,controlled_smoke,controlled_two_material,0,27.745901107788086,0.9730017781257629,0.9652713537216187,0.03817116096615791,0.0010040334891527891,0.349442720413208,0.0,,,,,,,,,completed; 
+A3,controlled_smoke,controlled_two_material,0,28.426605224609375,0.9753972291946411,0.9700324535369873,0.035194627940654755,0.0010631795739755034,0.4468979835510254,0.0,,,,,,,,,completed; 
+A4,controlled_smoke,controlled_two_material,0,28.046354293823242,0.9737480878829956,0.9671663045883179,0.03749993443489075,0.001058426103554666,0.4013977348804474,0.0,,,,,,,,,completed; 
+A5,controlled_smoke,controlled_two_material,0,27.85931968688965,0.9735012054443359,0.9663031101226807,0.036691293120384216,0.0011090090265497565,0.45918530225753784,0.0,,,0.20000526275151326,1.0000385348899645,0.1371909068006852,79.9438376967244,582.7196536638471,0.0,completed; 
+A6,controlled_smoke,controlled_two_material,0,27.988435745239258,0.9708257913589478,0.9655135869979858,0.04363826662302017,0.002045441186055541,0.42991653084754944,0.0,,,0.20000577709693407,1.000025776273145,0.13169133470494565,71.14107380026067,540.2107432478546,0.0,completed; 

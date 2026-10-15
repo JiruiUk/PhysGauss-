@@ -1,0 +1,33 @@
+{
+  "experiment": "A3",
+  "scene": "controlled_two_material",
+  "dataset_path": "data/PIDG_controlled/two_material",
+  "base_config": "rubber_dack",
+  "deformation_gradient": true,
+  "constitutive": true,
+  "learn_material_parameters": true,
+  "multi_material": true,
+  "material_ids_file": "data/PIDG_controlled/two_material/material_ids.npy",
+  "regions": [
+    {
+      "id": 0,
+      "model": "neo_hookean",
+      "mu_init": 0.8,
+      "kappa_init": 8.0
+    },
+    {
+      "id": 1,
+      "model": "neo_hookean",
+      "mu_init": 1.6,
+      "kappa_init": 16.0
+    }
+  ],
+  "material_lr": 1e-05,
+  "loss_weight": 0.0001,
+  "interval": 100,
+  "num_neighbors": 16,
+  "min_determinant": 1e-06,
+  "interface_enabled": true,
+  "interface_weight": 0.0001,
+  "interface_max_distance": 0.32
+}

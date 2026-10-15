@@ -250,7 +250,38 @@ compatibility_rules:
     '
 execution:
   active_plan: CODEX_TASK.md
-  baseline_reuse: true
+  baseline_reuse: A0 original completed 50k run
   development_scene: rubber_duck
   milestones: M0-M10 sequential validation
   historical_phase_queue: deleted; do not resume
+  selected_long_scenes:
+  - rubber_duck
+  selected_long_configs:
+  - A1
+  - A2a
+  - A2b
+  - A4_single
+  - A6_single
+  long_iterations: 50000
+  long_resolution: 1600
+  selection_reason: Retain the user single-benchmark requirement; Rubber Duck is compatible
+    with the new solid constitutive branch.
+  diagnostic_training_reuse: A5 post-fit diagnostics reuse A4 training; no duplicate
+    50k training required
+  official_multi_material: not_run_missing_known_labels
+  unavailable_final_datasets:
+  - dnerf
+  - hypernerf
+  controlled_smoke_configs:
+  - A0_controlled
+  - A1_controlled
+  - A2a_controlled
+  - A2b_controlled
+  - A3_interface_controlled
+  - A4_controlled
+  - A5_controlled
+  - A6_controlled
+  preset_limits:
+    A4_single: Shared global material, not a real multi-material result
+    A6_single: Known-region/interface modules inactive because official labels are
+      unavailable; full modules tested on controlled data

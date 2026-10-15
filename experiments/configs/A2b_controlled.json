@@ -1,0 +1,16 @@
+{
+  "experiment": "A2b",
+  "scene": "controlled_two_material",
+  "deformation_gradient": true,
+  "constitutive": true,
+  "learn_material_parameters": true,
+  "mu_init": 1.0,
+  "kappa_init": 10.0,
+  "material_lr": 1e-05,
+  "loss_weight": 0.0001,
+  "interval": 100,
+  "num_neighbors": 16,
+  "min_determinant": 1e-06,
+  "dataset_path": "data/PIDG_controlled/two_material",
+  "base_config": "rubber_dack"
+}

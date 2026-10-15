@@ -1,0 +1,195 @@
+{
+  "milestone": "M10",
+  "status": "passed_engineering_matrix_long_results_pending",
+  "controlled_runs": [
+    {
+      "configuration_id": "A0_controlled",
+      "run": "runs\\pidg_constitutive\\m10_smoke_A0_controlled\\controlled_two_material",
+      "metrics": {
+        "SSIM": 0.9759079217910767,
+        "PSNR": 28.6485538482666,
+        "LPIPS": 0.03585460036993027,
+        "MS-SSIM": 0.9703034162521362
+      },
+      "checkpoint": {
+        "path": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_constitutive\\m10_smoke_A0_controlled\\controlled_two_material\\checkpoints\\resume.pt",
+        "iteration": 300,
+        "sha256": "a4a17ae9c0dc839201bfc1e4f4135f80f956a560a7e25007a247b8f196311602",
+        "size_bytes": 178440335,
+        "format_version": 1,
+        "optimizer_saved": true,
+        "rng_saved": true,
+        "created_unix": 1792083034.6718874
+      }
+    },
+    {
+      "configuration_id": "A1_controlled",
+      "run": "runs\\pidg_constitutive\\m10_smoke_A1_controlled\\controlled_two_material",
+      "metrics": {
+        "SSIM": 0.9730010032653809,
+        "PSNR": 27.810379028320312,
+        "LPIPS": 0.03768511861562729,
+        "MS-SSIM": 0.9658447504043579
+      },
+      "checkpoint": {
+        "path": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_constitutive\\m10_smoke_A1_controlled\\controlled_two_material\\checkpoints\\resume.pt",
+        "iteration": 300,
+        "sha256": "1d73335e6c1074d44af955b3ab9fe9ff174e26fe485d9f6ec468cf471bf74590",
+        "size_bytes": 178457741,
+        "format_version": 1,
+        "optimizer_saved": true,
+        "rng_saved": true,
+        "created_unix": 1792083064.0589433,
+        "extension_saved": true
+      }
+    },
+    {
+      "configuration_id": "A2a_controlled",
+      "run": "runs\\pidg_constitutive\\m10_smoke_A2a_controlled\\controlled_two_material",
+      "metrics": {
+        "SSIM": 0.974396288394928,
+        "PSNR": 28.36444854736328,
+        "LPIPS": 0.03736667335033417,
+        "MS-SSIM": 0.9685510993003845
+      },
+      "checkpoint": {
+        "path": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_constitutive\\m10_smoke_A2a_controlled\\controlled_two_material\\checkpoints\\resume.pt",
+        "iteration": 300,
+        "sha256": "2b97331e47b8d530ea5d3e411d2a6afd609e42f896201af03fb858e880a1abf9",
+        "size_bytes": 178459139,
+        "format_version": 1,
+        "optimizer_saved": true,
+        "rng_saved": true,
+        "created_unix": 1792083094.8312805,
+        "extension_saved": true
+      }
+    },
+    {
+      "configuration_id": "A2b_controlled",
+      "run": "runs\\pidg_constitutive\\m10_smoke_A2b_controlled\\controlled_two_material",
+      "metrics": {
+        "SSIM": 0.9730017781257629,
+        "PSNR": 27.745901107788086,
+        "LPIPS": 0.03817116096615791,
+        "MS-SSIM": 0.9652713537216187
+      },
+      "checkpoint": {
+        "path": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_constitutive\\m10_smoke_A2b_controlled\\controlled_two_material\\checkpoints\\resume.pt",
+        "iteration": 300,
+        "sha256": "db0761764aac4c28baf3e009c2c069ecb7ac2bae872424e5a38867b150178ae3",
+        "size_bytes": 178461111,
+        "format_version": 1,
+        "optimizer_saved": true,
+        "rng_saved": true,
+        "created_unix": 1792083126.8364973,
+        "extension_saved": true
+      }
+    },
+    {
+      "configuration_id": "A3_interface_controlled",
+      "run": "runs\\pidg_constitutive\\m10_smoke_A3_interface_controlled\\controlled_two_material",
+      "metrics": {
+        "SSIM": 0.9753972291946411,
+        "PSNR": 28.426605224609375,
+        "LPIPS": 0.035194627940654755,
+        "MS-SSIM": 0.9700324535369873
+      },
+      "checkpoint": {
+        "path": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_constitutive\\m10_smoke_A3_interface_controlled\\controlled_two_material\\checkpoints\\resume.pt",
+        "iteration": 300,
+        "sha256": "2feeee97b38bf63217a1aa6ebfb098ae17f9393da56d0fd7c0e1a6addd33da75",
+        "size_bytes": 178462901,
+        "format_version": 1,
+        "optimizer_saved": true,
+        "rng_saved": true,
+        "created_unix": 1792083156.6850445,
+        "extension_saved": true
+      }
+    },
+    {
+      "configuration_id": "A4_controlled",
+      "run": "runs\\pidg_constitutive\\m10_smoke_A4_controlled\\controlled_two_material",
+      "metrics": {
+        "SSIM": 0.9737480878829956,
+        "PSNR": 28.046354293823242,
+        "LPIPS": 0.03749993443489075,
+        "MS-SSIM": 0.9671663045883179
+      },
+      "checkpoint": {
+        "path": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_constitutive\\m10_smoke_A4_controlled\\controlled_two_material\\checkpoints\\resume.pt",
+        "iteration": 300,
+        "sha256": "7fae99acc44b995dda7ebdb466fdaace672d11f4b4d7a1ff4301af4c8b7fc4e2",
+        "size_bytes": 178465197,
+        "format_version": 1,
+        "optimizer_saved": true,
+        "rng_saved": true,
+        "created_unix": 1792083186.7337325,
+        "extension_saved": true
+      }
+    },
+    {
+      "configuration_id": "A5_controlled",
+      "run": "runs\\pidg_constitutive\\m10_smoke_A5_controlled\\controlled_two_material",
+      "metrics": {
+        "SSIM": 0.9735012054443359,
+        "PSNR": 27.85931968688965,
+        "LPIPS": 0.036691293120384216,
+        "MS-SSIM": 0.9663031101226807
+      },
+      "checkpoint": {
+        "path": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_constitutive\\m10_smoke_A5_controlled\\controlled_two_material\\checkpoints\\resume.pt",
+        "iteration": 300,
+        "sha256": "5ffbccb91e85fa446c7f28fbb46f885343554a13ef41e668b1fe590e9f484c61",
+        "size_bytes": 178465197,
+        "format_version": 1,
+        "optimizer_saved": true,
+        "rng_saved": true,
+        "created_unix": 1792083216.5887396,
+        "extension_saved": true
+      }
+    },
+    {
+      "configuration_id": "A6_controlled",
+      "run": "runs\\pidg_constitutive\\m10_smoke_A6_controlled\\controlled_two_material",
+      "metrics": {
+        "SSIM": 0.9708257913589478,
+        "PSNR": 27.988435745239258,
+        "LPIPS": 0.04363826662302017,
+        "MS-SSIM": 0.9655135869979858
+      },
+      "checkpoint": {
+        "path": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_constitutive\\m10_smoke_A6_controlled\\controlled_two_material\\checkpoints\\resume.pt",
+        "iteration": 300,
+        "sha256": "a52f1bacf489edef1c13d212688c42ee5f79e26117e6d9d25c51208c203bc908",
+        "size_bytes": 178466157,
+        "format_version": 1,
+        "optimizer_saved": true,
+        "rng_saved": true,
+        "created_unix": 1792083255.4317956,
+        "extension_saved": true
+      }
+    }
+  ],
+  "tests": "106 passed, 1 skipped",
+  "original_baselines_unchanged": true,
+  "original_source_unchanged": true,
+  "recovery_claim": false,
+  "official_long_status": "not_started",
+  "monitor": {
+    "url": "http://127.0.0.1:8765/",
+    "refresh_seconds": 5,
+    "sequence_before": 6,
+    "sequence_after": 8,
+    "long_rows": 5,
+    "controlled_rows": 8,
+    "dom_validation": "six long rows incl A0, eight controlled rows, eleven milestones, loss SVG; 5000ms refresh; native browser unavailable"
+  },
+  "completed_resume_validation": "A6_controlled explicit resume returns completed existing result without new training commands",
+  "selected_long_configs": [
+    "A1",
+    "A2a",
+    "A2b",
+    "A4_single",
+    "A6_single"
+  ]
+}

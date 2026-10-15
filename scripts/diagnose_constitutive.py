@@ -90,10 +90,17 @@ def diagnose(run):
         truth=StructuredForce({'force_mode':'known','known_force_file':str(gt_path)})
         true_force=truth(data['X'],data['time'],data['particle_ids'])
         predicted=force(data['X'],data['time'],data['particle_ids']).detach() if force is not None else torch.zeros_like(true_force)
+        true_magnitude=true_force.norm(dim=-1);predicted_magnitude=predicted.norm(dim=-1)
+        direction_valid=(true_magnitude>1e-9)&(predicted_magnitude>1e-9)
+        cosine=(predicted*true_force).sum(-1)/(true_magnitude*predicted_magnitude).clamp_min(1e-18)
         controlled_errors={'origin':'manufactured reference only',
                            'mu_relative_error':(abs(mu-torch.as_tensor(gt['mu']))/torch.as_tensor(gt['mu'])).tolist() if len(mu)==len(gt['mu']) else None,
                            'kappa_relative_error':(abs(kappa-torch.as_tensor(gt['kappa']))/torch.as_tensor(gt['kappa'])).tolist() if len(kappa)==len(gt['kappa']) else None,
-                           'force_relative_l2_error':((predicted-true_force).norm()/true_force.norm().clamp_min(1e-12)).item()}
+                           'force_relative_l2_error':((predicted-true_force).norm()/true_force.norm().clamp_min(1e-12)).item(),
+                           'force_magnitude_mean_absolute_error':(predicted_magnitude-true_magnitude).abs().mean().item(),
+                           'force_direction_mean_degrees':(cosine[direction_valid].clamp(-1,1).acos()*180/torch.pi).mean().item() if direction_valid.any() else None,
+                           'force_direction_coverage':direction_valid.double().mean().item(),
+                           'force_temporal_component_RMSE':(predicted-true_force).square().mean().sqrt().item()}
     result={'checkpoint_iteration':state['iteration'],'checkpoint_sha256':sha256(run/'checkpoints/resume.pt'),
             'diagnostic_snapshot':'final full checkpoint; reconstruction metrics may use a different best-test snapshot',
             'parameter_names':names,'force_shape':list(force_shape) if force_shape is not None else None,

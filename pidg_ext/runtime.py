@@ -61,6 +61,7 @@ class Extension:
         if not self.enabled or iteration % self.config.get('interval',100):
             return None
         if self.schedule is not None and self.schedule.last_stage=='A':return None
+        if self.config.get('constitutive') and opt is not None and iteration<=getattr(opt,'warm_up',0):return None
         from utils.general_utils import quaternion_to_matrix
         active=self.config.get('constitutive',False)
         weighted=None

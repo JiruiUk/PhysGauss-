@@ -1,5 +1,9 @@
 # PhysGauss
 
+新 PIDG 扩展计划的运行、停训续训与配置范围见 [实验说明](experiments/README.md)。
+当前只比较 Rubber Duck 的 50k 训练，原始基线复用；进度与结果见 [自动汇总](experiments/results.md)，
+五秒监控地址为 <http://127.0.0.1:8765/>。
+
 ## PIDG 官方复现入口
 
 当前优先推进 PIDG 官方实现及其五个自建场景的复现。请先阅读 [复现说明](reproduction/README.md)，官方代码、CUDA 渲染、训练和评估独立运行于 reproduction/ 流程。下文记录的是前期 PhysGauss 参考架构。

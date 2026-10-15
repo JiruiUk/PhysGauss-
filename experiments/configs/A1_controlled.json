@@ -1,0 +1,14 @@
+{
+  "experiment": "A1",
+  "scene": "controlled_two_material",
+  "deformation_gradient": true,
+  "constitutive": false,
+  "learn_material_parameters": false,
+  "multi_material": false,
+  "structured_force": false,
+  "identifiability": false,
+  "interval": 100,
+  "num_neighbors": 16,
+  "dataset_path": "data/PIDG_controlled/two_material",
+  "base_config": "rubber_dack"
+}
