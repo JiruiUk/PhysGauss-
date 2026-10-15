@@ -86,7 +86,7 @@ def training(dataset, opt, pipe, testing_iterations, saving_iterations, resume_c
     scene = Scene(dataset, gaussians)
     gaussians.training_setup(opt)
     from pidg_ext.runtime import Extension
-    extension = Extension(os.environ.get("PIDG_CONSTITUTIVE_CONFIG"), args.model_path)
+    extension = Extension(os.environ.get("PIDG_CONSTITUTIVE_CONFIG"), args.model_path, len(scene.getTrainCameras()))
 
     bg_color = [1, 1, 1] if dataset.white_background else [0, 0, 0]
     background = torch.tensor(bg_color, dtype=torch.float32, device="cuda")
@@ -97,7 +97,7 @@ def training(dataset, opt, pipe, testing_iterations, saving_iterations, resume_c
     best_iteration = 0
     first_iteration = 1
     if resume_checkpoint:
-        restored = restore_training_state(resume_checkpoint, gaussians, deform, opt, scene)
+        restored = restore_training_state(resume_checkpoint, gaussians, deform, opt, scene, extension)
         first_iteration = restored['iteration'] + 1
         viewpoint_stack = restored['viewpoint_stack']
         ema_loss_for_log = restored['ema_loss_for_log']
@@ -204,7 +204,7 @@ def training(dataset, opt, pipe, testing_iterations, saving_iterations, resume_c
 
 
         if extension.enabled:
-            extra_loss = extension.loss(iteration, gaussians, deform, d_xyz, fid, opt)
+            extra_loss = extension.loss(iteration, gaussians, deform, d_xyz, fid, opt, cauchy_momentum_loss if iteration > opt.warm_up and iteration % 100 == 0 else None)
             if extra_loss is not None:
                 loss = loss + extra_loss
 
@@ -262,6 +262,7 @@ def training(dataset, opt, pipe, testing_iterations, saving_iterations, resume_c
 
             # Optimizer step
             if iteration < opt.iterations:
+                extension.optimizer_step()
                 gaussians.optimizer.step()
                 gaussians.update_learning_rate(iteration)
                 deform.optimizer.step()

@@ -52,3 +52,35 @@ epsilon; no per-Gaussian stiffness is introduced. Nonpositive J raises an error
 in the constitutive module; the caller selects the explicitly reported valid F.
 Six-component stress order is `[xx,yy,zz,xy,xz,yz]`, with tensor shear components.
 M2 is a fixed-parameter stress diagnostic, with no constitutive training loss.
+
+## M3: consistency branch and training state
+
+The original velocity/stress network stays in place. Its six-component stress is
+expanded to a symmetric matrix, including the original velocity-gradient correction
+with `force_sigma`. The new loss is a confidence-weighted mean of componentwise
+Huber distances from the Neo-Hookean stress. Invalid F receives zero weight.
+Raw/weighted losses, valid fraction, both stress norms, difference norm and the
+loss gradients with respect to F and predicted stress are recorded separately.
+The extra loss backpropagates to deformation and the original stress prediction;
+unit tests also check the shared material parameters and velocity-gradient term.
+
+The new consistency branch queries predicted stress at `fid`, matching the F
+computed from rendered deformation. The original CMR continues to query
+`fid/train_count`; that pre-existing CMR convention is retained for baseline
+compatibility and remains a limitation of the combined physical interpretation.
+CMR log values retain the original sampled-loss scaling; they are not unscaled
+continuum residual measurements. Initial modulus values use dataset units, with
+no calibration to physical units or claim of parameter recovery.
+
+Optional shared material parameters have a separate Adam optimizer (default
+LR 1e-5). The original Gaussian/deformation optimizers remain in use. Complete
+checkpoints additionally save extension configuration, shared material state,
+its optimizer, and the cached canonical graph. Enabled extension restarts reject
+checkpoints lacking these fields. Flags-off checkpoints keep the original format.
+The wrapper finalizes the extension payload/checksum before the trainer exits;
+pause verification must wait for process exit and validate the final manifest.
+
+The first M3 integration trial used the legacy CMR time for the new branch. Its
+logs remain in `runs/pidg_constitutive/m3_constitutive_fixed`; this trial was
+superseded before acceptance by `m3_constitutive_fixed_fid`, with matching stress/F
+times. The old trial is not used in the fixed-versus-learnable comparison.

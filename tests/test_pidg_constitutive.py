@@ -90,3 +90,72 @@ def test_neo_hookean_parameter_gradients_and_symmetric_component_order():
     torch.testing.assert_close(symmat_to_vec6(mat),vec)
     with pytest.raises(ValueError,match='positive determinant'):
         NeoHookean()(-torch.eye(3),bank())
+
+
+def test_constitutive_loss_reaches_deformed_positions_predicted_stress_and_shared_parameters():
+    from pidg_ext.constitutive import MaterialParameters
+    from pidg_ext.losses import constitutive_consistency,predicted_stress
+    class Field(torch.nn.Module):
+        def __init__(self):
+            super().__init__();self.v=torch.nn.Parameter(torch.tensor(.2,dtype=torch.float64))
+            self.s=torch.nn.Parameter(torch.zeros(6,dtype=torch.float64))
+        def forward(self,coords,indices):
+            return coords[:,:3].square()*self.v,self.s.expand(len(coords),6)
+    X=cloud();x=(X@torch.diag(torch.tensor([1.2,.95,1.1],dtype=X.dtype))).requires_grad_()
+    result=estimate_F(X,x,canonical_neighbors(X))
+    field=Field();coords=torch.cat((X,torch.ones(32,1,dtype=X.dtype)),dim=-1).requires_grad_()
+    force_sigma=torch.tensor(.3,dtype=X.dtype,requires_grad=True)
+    sigma=predicted_stress(coords,torch.arange(32),field,force_sigma)
+    bank=MaterialParameters(mu=.5,kappa=.8,learn=True)
+    raw,_=constitutive_consistency(sigma,result['F'],bank(),result['confidence'],result['valid'])
+    raw.backward()
+    for tensor in [x,field.v,field.s,force_sigma,*bank.parameters()]:
+        assert tensor.grad is not None and tensor.grad.isfinite().all() and tensor.grad.norm()>0
+
+
+def test_invalid_F_is_explicitly_masked_from_constitutive_loss():
+    from pidg_ext.losses import constitutive_consistency
+    F=(-torch.eye(3)).expand(2,3,3).clone().requires_grad_()
+    pred=torch.ones_like(F,requires_grad=True)
+    raw,stress=constitutive_consistency(pred,F,{'mu':1.,'kappa':10.},torch.ones(2),torch.zeros(2,dtype=torch.bool))
+    assert raw.item()==0 and not stress.any()
+    raw.backward();assert not pred.grad.any()
+
+
+def test_extension_restart_restores_material_optimizer_and_cached_graph(tmp_path):
+    import json
+    from pidg_ext.runtime import Extension
+    config=tmp_path/'config.json'
+    config.write_text(json.dumps({'deformation_gradient':True,'constitutive':True,'learn_material_parameters':True}))
+    original=Extension(config,tmp_path,150)
+    def step(extension):
+        params=extension.material()
+        ((params['mu']-1.2).square()+(params['kappa']-8.).square()).backward()
+        extension.optimizer_step()
+    original.graph.get(cloud(),100)
+    step(original);saved=original.checkpoint_state()
+    resumed=Extension(config,tmp_path,150);resumed.restore_checkpoint(saved)
+    step(original);step(resumed)
+    for left,right in zip(original.material.parameters(),resumed.material.parameters()):
+        torch.testing.assert_close(left,right,rtol=0,atol=0)
+    assert torch.equal(original.graph.neighbors,resumed.graph.neighbors)
+    assert resumed.graph.last_iteration==100
+
+
+def test_constitutive_stress_uses_same_physical_time_as_rendered_deformation(tmp_path,monkeypatch):
+    import json
+    from types import SimpleNamespace
+    from pidg_ext.runtime import Extension
+    class Field(torch.nn.Module):
+        def __init__(self):
+            super().__init__();self.scale=torch.nn.Parameter(torch.tensor(.1,dtype=torch.float64))
+        def forward(self,coords,indices):
+            self.observed_times=coords[:,3].detach()
+            return coords[:,:3].square()*self.scale, self.scale.expand(len(coords),6)
+    monkeypatch.setitem(sys.modules,'utils.general_utils',SimpleNamespace(quaternion_to_matrix=None))
+    config=tmp_path/'config.json';config.write_text(json.dumps({'deformation_gradient':True,'constitutive':True}))
+    field=Field();g=SimpleNamespace(get_xyz=cloud().requires_grad_(),particle_indices=torch.arange(32),velocity_net=field,force_sigma=torch.tensor(.3))
+    ext=Extension(config,tmp_path,150)
+    loss=ext.loss(100,g,None,0.,torch.tensor([.73],dtype=torch.float64),None)
+    torch.testing.assert_close(field.observed_times,torch.full((32,),.73,dtype=torch.float64))
+    assert loss.isfinite()

@@ -50,6 +50,7 @@ def run(experiment,tag,iterations=300):
                 metadata['status']='saved_stopped';write_json(run/'reproduction.json',metadata);raise SystemExit(75)
             if code:raise RuntimeError(f'{step} failed ({code}); see {run/step}.log')
         assert runtime_hashes(repo)==source and runtime_hashes(PROJECT/'third_party/PIDG')==original
+        assert {p.name:sha256(p) for p in (PROJECT/'pidg_ext').glob('*.py')}==extension_hashes
         assert dataset_hashes(scene)==data
         log=(run/'train.log').read_text(encoding='utf-8',errors='replace')
         assert 'Training complete.' in log and not re.search(r'(?:Loss=|loss = )\s*(?:nan|inf)',log,re.I)
