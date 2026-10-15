@@ -159,3 +159,13 @@ def test_constitutive_stress_uses_same_physical_time_as_rendered_deformation(tmp
     loss=ext.loss(100,g,None,0.,torch.tensor([.73],dtype=torch.float64),None)
     torch.testing.assert_close(field.observed_times,torch.full((32,),.73,dtype=torch.float64))
     assert loss.isfinite()
+
+
+def test_fixed_and_learnable_ablation_changes_only_parameter_fitting():
+    import json
+    root=Path(__file__).resolve().parents[1]/'experiments/configs'
+    fixed=json.loads((root/'A2a.json').read_text());learned=json.loads((root/'A2b.json').read_text())
+    assert not fixed['learn_material_parameters'] and learned['learn_material_parameters']
+    for config in (fixed,learned):
+        for key in ('experiment','learn_material_parameters','material_lr'):config.pop(key,None)
+    assert fixed==learned

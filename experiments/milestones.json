@@ -25,6 +25,11 @@
     "validation": "experiments/M3_validation.json"
   },
   "M4": {
-    "status": "next"
+    "status": "passed_engineering_ablation",
+    "validation": "experiments/M4_validation.json"
+  },
+  "M5": {
+    "status": "next",
+    "official_scene_blocker": "Known material annotations unavailable; use labeled controlled synthetic tests for engineering validation"
   }
 }
