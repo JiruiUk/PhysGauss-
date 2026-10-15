@@ -1,0 +1,18 @@
+Read AGENTS.md, CODEX_TASK.md, and experiments/pidg_experiment_matrix.yaml before editing code.
+
+Execute ONLY milestone M0.
+
+Tasks:
+1. Audit this PIDG repository.
+2. Create PIDG_REPO_MAP.md mapping the conceptual PIDG modules to actual files/classes/functions.
+3. Verify the official dataset/config names and update experiments/pidg_experiment_matrix.yaml only if repository evidence requires it.
+4. Reproduce the original PIDG baseline on the smallest practical official development scene/config.
+5. Record exact train/eval commands in baseline_commands.md.
+6. Record observed metrics/log summaries in baseline_metrics.json.
+7. Do not implement deformation gradient, constitutive models, force modules, multi-material support, or identifiability yet.
+8. Stop after M0 and report:
+   - files inspected,
+   - files changed,
+   - commands run,
+   - baseline result,
+   - blockers if any.

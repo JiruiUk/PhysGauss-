@@ -1,0 +1,238 @@
+project:
+  base_model: Physics-Informed Deformable Gaussian Splatting (PIDG)
+  objective: incremental continuum-mechanics extensions with backward-compatible PIDG
+    baseline
+verification:
+  verify_official_repo_dataset_names: true
+  verify_official_repo_metric_names: true
+  verify_official_repo_training_commands: true
+  note: 'Scene names below are the current planned mapping. Replace them with the
+    exact names/config identifiers used by the checked-out official PIDG repository.
+
+    '
+benchmark_suites:
+  pidg_physics:
+    role: primary physics-aware PIDG compatibility benchmark
+    planned_scenes:
+    - name: Rubber Duck
+      category: soft_body
+      constitutive_compatible_v1: true
+      development_priority: 1
+      dataset_id: rubber_duck
+      config_id: rubber_dack
+      locally_available: true
+    - name: Balls Reaction
+      category: elastic_mechanics
+      constitutive_compatible_v1: true
+      development_priority: 2
+      dataset_id: balls_reaction
+      config_id: balls_reaction
+      locally_available: true
+    - name: Mechanics Cloth
+      category: cloth
+      constitutive_compatible_v1: false
+      development_priority: 3
+      dataset_id: mechanics_cloth
+      config_id: mechanics_cloth
+      locally_available: true
+    - name: Motion Kuro
+      category: human_motion
+      constitutive_compatible_v1: false
+      development_priority: 4
+      dataset_id: motion_kuro
+      config_id: motion_kuro
+      locally_available: true
+    - name: Dry Ice
+      category: fluid_or_smoke
+      constitutive_compatible_v1: false
+      development_priority: 5
+      dataset_id: dry_ice
+      config_id: dry_ice
+      locally_available: true
+  dnerf:
+    role: dynamic reconstruction and future-prediction compatibility
+    use_official_scene_list_from_repo: true
+    constitutive_compatible_v1: false
+    verified_config_ids:
+    - bouncingballs
+    - hellwarrior
+    - hook
+    - jumpingjacks
+    - lego
+    - mutant
+    - standup
+    - trex
+    local_data_status: not_installed
+  hypernerf:
+    role: real-world monocular reconstruction/generalization compatibility
+    use_official_scene_list_from_repo: true
+    constitutive_compatible_v1: false
+    verified_config_ids:
+    - interp_aleks-teapot
+    - interp_chickchicken
+    - interp_cut-lemon
+    - interp_hand
+    - interp_slice-banana
+    - interp_torchocolate
+    - misc_split-cookie
+    - vrig_3dprinter
+    - vrig_broom
+    - vrig_chicken
+    - vrig_peel-banana
+    local_data_status: not_installed
+experiment_ladder:
+  A0:
+    name: PIDG baseline
+    deformation_gradient: false
+    constitutive: false
+    learn_material_parameters: false
+    multi_material: false
+    structured_force: false
+    identifiability: false
+    purpose: reproduce original PIDG
+  A1:
+    name: PIDG + deformation-gradient diagnostics
+    deformation_gradient: true
+    constitutive: false
+    learn_material_parameters: false
+    multi_material: false
+    structured_force: false
+    identifiability: false
+    purpose: verify F estimator does not perturb baseline
+  A2a:
+    name: PIDG + fixed constitutive consistency
+    deformation_gradient: true
+    constitutive: true
+    learn_material_parameters: false
+    multi_material: false
+    structured_force: false
+    identifiability: false
+    purpose: test constitutive prior without adding free material parameters
+  A2b:
+    name: PIDG + learnable constitutive consistency
+    deformation_gradient: true
+    constitutive: true
+    learn_material_parameters: true
+    multi_material: false
+    structured_force: false
+    identifiability: false
+    purpose: test scene/material-level parameter fitting
+  A3:
+    name: PIDG + known multi-material
+    deformation_gradient: true
+    constitutive: true
+    learn_material_parameters: true
+    multi_material: true
+    structured_force: false
+    identifiability: false
+    purpose: support known material regions with shared parameters
+  A4:
+    name: PIDG + structured unknown force
+    deformation_gradient: true
+    constitutive: true
+    learn_material_parameters: true
+    multi_material: true
+    structured_force: true
+    identifiability: false
+    purpose: introduce low-dimensional external actuation
+  A5:
+    name: PIDG + identifiability diagnostics
+    deformation_gradient: true
+    constitutive: true
+    learn_material_parameters: true
+    multi_material: true
+    structured_force: true
+    identifiability: true
+    purpose: measure force-stiffness ambiguity
+  A6:
+    name: Full model
+    deformation_gradient: true
+    constitutive: true
+    learn_material_parameters: true
+    multi_material: true
+    structured_force: true
+    identifiability: true
+    purpose: final compatible configuration
+run_tiers:
+  smoke:
+    scenes:
+    - Rubber Duck
+    iterations: short
+    required_experiments:
+    - A0
+    - A1
+    - A2a
+  development:
+    scenes:
+    - Rubber Duck
+    - Balls Reaction
+    required_experiments:
+    - A0
+    - A1
+    - A2a
+    - A2b
+  advanced_physics:
+    scenes:
+    - Rubber Duck
+    - Balls Reaction
+    required_experiments:
+    - A3
+    - A4
+    - A5
+  final:
+    suites:
+    - pidg_physics
+    - dnerf
+    - hypernerf
+    required_experiments:
+    - A0
+    - A2b
+    - A6
+metrics:
+  reconstruction:
+  - PSNR
+  - SSIM_or_MS_SSIM
+  - LPIPS_if_available
+  kinematics:
+  - trajectory_error_if_available
+  - velocity_error_if_available
+  - deformation_gradient_error_if_GT
+  - invalid_F_fraction
+  physics:
+  - cauchy_residual
+  - constitutive_residual
+  - mean_sigma_pred_norm
+  - mean_sigma_const_norm
+  - interface_traction_residual_if_multimaterial
+  material:
+  - relative_parameter_error_if_GT
+  - per_material_parameter_error_if_GT
+  force:
+  - force_magnitude_error_if_GT
+  - force_direction_error_if_GT
+  - temporal_force_error_if_GT
+  identifiability:
+  - jacobian_min_singular_value
+  - jacobian_max_singular_value
+  - jacobian_condition_number
+  - jacobian_effective_rank
+  - stiffness_force_correlation
+compatibility_rules:
+  neo_hookean_v1_allowed_categories:
+  - soft_body
+  - elastic_mechanics
+  neo_hookean_v1_disallowed_categories:
+  - cloth
+  - human_motion
+  - fluid_or_smoke
+  note: 'Disallowed means do not claim physically correct constitutive modeling with
+    the initial solid Neo-Hookean module. Such scenes may still be used for PIDG reconstruction/backward-compatibility
+    evaluation.
+
+    '
+execution:
+  active_plan: CODEX_TASK.md
+  baseline_reuse: true
+  development_scene: rubber_duck
+  milestones: M0-M10 sequential validation
+  historical_phase_queue: deleted; do not resume

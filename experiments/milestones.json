@@ -1,0 +1,18 @@
+{
+  "plan": "CODEX_TASK.md",
+  "scope": "M0-M10 sequential",
+  "M0": {
+    "status": "passed",
+    "baseline_reused": true,
+    "completed_baselines": 5,
+    "tests": "75 passed, 1 skipped",
+    "metrics": "baseline_metrics.json"
+  },
+  "M1": {
+    "status": "next"
+  },
+  "unavailable_final_suites": [
+    "dnerf",
+    "hypernerf"
+  ]
+}

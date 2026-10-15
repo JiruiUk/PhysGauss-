@@ -1,0 +1,13 @@
+diff --git a/submodules/simple-knn/setup.py b/submodules/simple-knn/setup.py
+index 580d2bd..68a0b28 100644
+--- a/submodules/simple-knn/setup.py
++++ b/submodules/simple-knn/setup.py
+@@ -27,7 +27,7 @@ setup(
+             "spatial.cu", 
+             "simple_knn.cu",
+             "ext.cpp"],
+-            extra_compile_args={"nvcc": [], "cxx": cxx_compiler_flags})
++            extra_compile_args={"nvcc": ["-allow-unsupported-compiler"], "cxx": cxx_compiler_flags})
+         ],
+     cmdclass={
+         'build_ext': BuildExtension
