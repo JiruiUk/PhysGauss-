@@ -1,6 +1,6 @@
 # PIDG constitutive plan results
 
-Updated: 2026-10-15T18:01:39.937782+01:00
+Updated: 2026-10-15T18:05:15.686024+01:00
 
 M0 reused five completed original baselines. Active long scope: Rubber Duck only, 50k steps, width1600, seed0. Short controlled data are reported separately.
 
@@ -9,7 +9,7 @@ M0 reused five completed original baselines. Active long scope: Rubber Duck only
 | Method | Status | Checkpoint | PSNR | Delta PSNR | SSIM | LPIPS |
 |---|---|---:|---:|---:|---:|---:|
 | A0 original (reused) | completed | 50000 | 27.25678 | 0 | 0.97655 | 0.02962 |
-| A1 | queued | — | — | — | — | — |
+| A1 | training | 3000 | — | — | — | — |
 | A2a | queued | — | — | — | — | — |
 | A2b | queued | — | — | — | — | — |
 | A4_single | queued | — | — | — | — | — |

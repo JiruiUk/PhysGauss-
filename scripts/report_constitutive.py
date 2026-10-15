@@ -62,6 +62,14 @@ def report(plan=None):
             'training_reuse':{'A5_single':'A4_single; post-fit diagnostics only'},
             'unavailable':{'official_multi_material':'known material labels not supplied','dnerf':'data not installed; outside active single-scene scope','hypernerf':'data not installed; outside active single-scene scope'},
             'all_selected_training_completed':all(r['status']=='completed' for r in long)}
+    milestone_path=PROJECT/'experiments/milestones.json'
+    if milestone_path.exists():
+        milestones=read_json(milestone_path);previous=__import__('copy').deepcopy(milestones)
+        if 'M10' in milestones and milestones['M10']['status']!='next':
+            count=sum(r['status']=='completed' for r in long)
+            state='complete' if result['all_selected_training_completed'] else 'failed' if any(r['status'] in ('failed','invalid_results') for r in long) else 'saved_stopped' if any(r['status']=='saved_stopped' for r in long) else 'running' if any(r['status'] in ('training','rendering','evaluating','diagnosing') for r in long) else 'pending'
+            milestones['M10'].update(status='passed_automation_long_training_'+state,long_completed=count,long_planned=len(long))
+            if milestones!=previous:write_json(milestone_path,milestones)
     write_json(PROJECT/'experiments/results.json',result)
     text=f"# PIDG constitutive plan results\n\nUpdated: {result['updated_at']}\n\nM0 reused five completed original baselines. Active long scope: Rubber Duck only, 50k steps, width1600, seed0. Short controlled data are reported separately.\n\n"
     text+='## Table 1: selected official compatibility benchmark\n\n| Method | Status | Checkpoint | PSNR | Delta PSNR | SSIM | LPIPS |\n|---|---|---:|---:|---:|---:|---:|\n'

@@ -174,7 +174,7 @@
   "original_baselines_unchanged": true,
   "original_source_unchanged": true,
   "recovery_claim": false,
-  "official_long_status": "not_started",
+  "official_long_status": "running",
   "monitor": {
     "url": "http://127.0.0.1:8765/",
     "refresh_seconds": 5,
@@ -182,7 +182,8 @@
     "sequence_after": 8,
     "long_rows": 5,
     "controlled_rows": 8,
-    "dom_validation": "six long rows incl A0, eight controlled rows, eleven milestones, loss SVG; 5000ms refresh; native browser unavailable"
+    "dom_validation": "six long rows incl A0, eight controlled rows, eleven milestones, loss SVG; 5000ms refresh; native browser unavailable",
+    "automatic_long_completion_detection": true
   },
   "completed_resume_validation": "A6_controlled explicit resume returns completed existing result without new training commands",
   "selected_long_configs": [
@@ -191,5 +192,19 @@
     "A2b",
     "A4_single",
     "A6_single"
-  ]
+  ],
+  "long_worker_pid": 262456,
+  "long_first_checkpoint": {
+    "path": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_constitutive\\m10_long_A1\\rubber_duck\\checkpoints\\resume.pt",
+    "iteration": 1000,
+    "sha256": "c921cd49968b147aee63ab131c9bf8cff6149ba2427c434dd1ed45b263b411b9",
+    "size_bytes": 147486475,
+    "format_version": 1,
+    "optimizer_saved": true,
+    "rng_saved": true,
+    "created_unix": 1792083839.475361,
+    "extension_saved": true
+  },
+  "duplicate_start_rejected": true,
+  "execution_commit": "88f0503"
 }

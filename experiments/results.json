@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-15T18:01:39.937782+01:00",
+  "updated_at": "2026-10-15T18:05:15.686024+01:00",
   "selected_scenes": [
     "rubber_duck"
   ],
@@ -9,7 +9,18 @@
       "configuration_id": "A1",
       "scene": "rubber_duck",
       "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_constitutive\\m10_long_A1\\rubber_duck",
-      "status": "queued"
+      "status": "training",
+      "iterations": 50000,
+      "resolution_width": 1600,
+      "checkpoint_iteration": 3000,
+      "physics": {
+        "iteration": 3000,
+        "mean_det_F": 1.0000009536743164,
+        "min_det_F": 0.9999251961708069,
+        "invalid_F_fraction": 0.0,
+        "diagnostic_queries": 256,
+        "new_loss_added": false
+      }
     },
     {
       "experiment": "A2a",

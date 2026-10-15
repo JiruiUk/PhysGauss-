@@ -1,6 +1,6 @@
 experiment_id,suite,scene,seed,psnr,ssim,ms_ssim,lpips,cauchy_residual,constitutive_residual,invalid_F_fraction,future_psnr,future_ssim,material_param_error,force_error,jacobian_min_sv,jacobian_max_sv,jacobian_condition_number,stiffness_force_corr,notes
 A0,official_long,rubber_duck,0,27.25678062438965,0.9765514135360718,0.9704826474189758,0.029623517766594887,,,,,,,,,,,,Completed historical 50k baseline reused; historical runtime hashes unavailable
-A1,official_long,rubber_duck,0,,,,,,,,,,,,,,,,queued; 
+A1,official_long,rubber_duck,0,,,,,,,0.0,,,,,,,,,training; 
 A2a,official_long,rubber_duck,0,,,,,,,,,,,,,,,,queued; 
 A2b,official_long,rubber_duck,0,,,,,,,,,,,,,,,,queued; 
 A4,official_long,rubber_duck,0,,,,,,,,,,,,,,,,queued; available single-material official scene; known multi-material labels unavailable
