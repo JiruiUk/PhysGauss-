@@ -1,6 +1,6 @@
 # PIDG constitutive plan results
 
-Updated: 2026-10-15T18:05:15.686024+01:00
+Updated: 2026-10-15T18:05:58.695052+01:00
 
 M0 reused five completed original baselines. Active long scope: Rubber Duck only, 50k steps, width1600, seed0. Short controlled data are reported separately.
 

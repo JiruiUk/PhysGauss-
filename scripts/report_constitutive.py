@@ -92,7 +92,7 @@ def report(plan=None):
     text+='\nA prior can improve objective conditioning while the data remain ambiguous. Actual post-fit Jacobians condition on fixed neural fields and are not proof of global identifiability. The earlier controlled A5 smoke retained about 20% material error and 100% force error despite full conditional rank.\n'
     write_text_atomic(PROJECT/'experiments/results.md',text)
     fields=next(csv.reader((PROJECT/'experiments/RESULTS_TEMPLATE.csv').read_text().splitlines()))
-    output=io.StringIO();writer=csv.DictWriter(output,fieldnames=fields);writer.writeheader()
+    output=io.StringIO();writer=csv.DictWriter(output,fieldnames=fields,lineterminator='\n');writer.writeheader()
     writer.writerow({'experiment_id':'A0','suite':'official_long','scene':'rubber_duck','seed':0,'psnr':baseline['PSNR'],'ssim':baseline['SSIM'],
                      'ms_ssim':baseline['MS-SSIM'],'lpips':baseline['LPIPS'],'notes':'Completed historical 50k baseline reused; historical runtime hashes unavailable'})
     for group,rows in [('official_long',long),('controlled_smoke',smoke)]:
@@ -107,7 +107,7 @@ def report(plan=None):
                              'material_param_error':sum(material_errors)/len(material_errors) if material_errors else None,
                              'force_error':errors.get('force_relative_l2_error'),
                              'jacobian_max_sv':d.get('max_singular_value'),'jacobian_condition_number':d.get('condition_number'),
-                             'stiffness_force_corr':d.get('max_material_force_correlation'),'notes':row['status']+'; '+row.get('preset_scope','')})
+                             'stiffness_force_corr':d.get('max_material_force_correlation'),'notes':'; '.join(filter(None,[row['status'],row.get('preset_scope')]))})
     write_text_atomic(PROJECT/'experiments/results.csv',output.getvalue())
     return result
 
