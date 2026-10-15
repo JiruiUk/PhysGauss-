@@ -62,6 +62,13 @@ def run(experiment,tag,iterations=300):
             if code==75:
                 metadata['status']='saved_stopped';write_json(run/'reproduction.json',metadata);raise SystemExit(75)
             if code:raise RuntimeError(f'{step} failed ({code}); see {run/step}.log')
+        if config.get('identifiability'):
+            metadata['status']='diagnosing';write_json(run/'reproduction.json',metadata)
+            command=[sys.executable,'-u',str(PROJECT/'scripts/diagnose_constitutive.py'),'--run',str(run)]
+            metadata['commands'].append(command)
+            with (run/'diagnostics.log').open('w',encoding='utf-8') as stream:
+                code=subprocess.call(command,cwd=PROJECT,env=env,stdout=stream,stderr=subprocess.STDOUT)
+            if code:raise RuntimeError(f'Identifiability failed; see {run / "diagnostics.log"}')
         assert runtime_hashes(repo)==source and runtime_hashes(PROJECT/'third_party/PIDG')==original
         assert {p.name:sha256(p) for p in (PROJECT/'pidg_ext').glob('*.py')}==extension_hashes
         assert all(sha256(dataset/name)==value for name,value in data.items() if name!='material_ids')

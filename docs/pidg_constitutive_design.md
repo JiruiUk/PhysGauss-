@@ -145,3 +145,26 @@ Default boundaries are 5k/10k/20k. Engineering smoke uses explicit shorter bound
 The C-stage freeze is checked by exact SHA256 of every original optimizer parameter
 at entry and exit. Initial learning rates, stage and freeze hash are checkpointed;
 resume does not mistake a zero frozen LR for the baseline LR.
+
+## M9: identifiability scope
+
+Post-fit `torch.func.jacrev` evaluates a low-dimensional vector of log moduli and
+shared force controls against constitutive and momentum residuals. It records the
+singular spectrum, rank, condition number and a unit-noise ridge covariance proxy.
+The neural geometry, velocity and predicted stress fields are held fixed. This
+is a **conditional physical-residual Jacobian**, not global observational
+identifiability; uncertainty in those neural fields is excluded. In particular,
+fixed-stress conditional blocks can hide a stiffness/force ambiguity present when
+the neural fields are refitted. A full-rank conditional Jacobian is not accepted
+as proof of material/force recovery.
+
+An independent manufactured balance experiment compares force known, stiffness
+known, both unknown and both unknown with a biased prior. The both-unknown data
+Jacobian is rank deficient with almost perfect stiffness/force correlation. The
+prior raises the objective rank but does not raise the observation-only rank;
+the biased prior leaves nonzero recovery error despite an exact data fit.
+
+In the 300-step A5 controlled test, material errors remain about 20% and force
+relative L2 error about 100%, while the conditional Jacobian is full rank.
+These are reported failures to establish recovery, not hidden by convergence or
+the conditional spectrum. Official Rubber Duck has no verified material/force GT.

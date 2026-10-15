@@ -289,3 +289,23 @@ def test_staged_optimizer_freezes_neural_weights_and_restores_lrs_after_resume(t
     assert resumed.optimizer.param_groups[0]['lr']==pytest.approx(1e-6)
     events=[json.loads(line) for line in (tmp_path/'optimization_stages.jsonl').read_text().splitlines()]
     assert events[-1]['stage_C_weights_unchanged'] is True
+
+
+def test_identifiability_exposes_stiffness_force_ambiguity_and_prior_dependence():
+    from pidg_ext.identifiability import ambiguity_experiment
+    cases=ambiguity_experiment()['cases']
+    assert cases['force_known']['effective_rank']==2
+    assert cases['stiffness_known']['effective_rank']==1
+    assert cases['both_unknown']['effective_rank']==2 and cases['both_unknown']['condition_number']=='inf'
+    assert cases['both_unknown']['max_material_force_correlation']>.99
+    assert cases['both_unknown_with_prior']['effective_rank']==3
+    assert cases['both_unknown_with_prior']['data_effective_rank']==2
+    assert cases['both_unknown_with_prior']['mu_relative_error']>0
+
+
+def test_volumetric_expansion_cannot_identify_shear_modulus():
+    from pidg_ext.identifiability import jacobian_diagnostics
+    from pidg_ext.constitutive import NeoHookean
+    F=torch.eye(3,dtype=torch.float64).expand(4,3,3)*1.1
+    report,_=jacobian_diagnostics(lambda theta:NeoHookean()(F,{'mu':theta[0].exp(),'kappa':theta[1].exp()}).flatten(),torch.tensor([0.,2.],dtype=torch.float64),2)
+    assert report['effective_rank']==1 and report['condition_number']=='inf'

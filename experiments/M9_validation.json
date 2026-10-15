@@ -1,0 +1,267 @@
+{
+  "milestone": "M9",
+  "status": "passed_diagnostic_pipeline_recovery_not_established",
+  "unit_tests": 25,
+  "run": "runs\\pidg_constitutive\\m9_identifiability\\controlled_two_material",
+  "metrics": {
+    "SSIM": 0.9708306789398193,
+    "PSNR": 27.985706329345703,
+    "LPIPS": 0.043618567287921906,
+    "MS-SSIM": 0.9654996395111084
+  },
+  "conditional_spectrum": {
+    "parameter_count": 40,
+    "effective_rank": 40,
+    "condition_number": 539.5373593520497,
+    "singular_values": [
+      71.05095173539293,
+      28.355677330803182,
+      13.313334430459648,
+      13.313334430459639,
+      13.313334430459635,
+      10.43554467308643,
+      10.435544673086428,
+      10.435544673086424,
+      8.48252771958151,
+      8.482527719581505,
+      8.4825277195815,
+      8.05444587098062,
+      3.9924757977789023,
+      3.992475797778898,
+      3.9924757977788974,
+      3.400942403204489,
+      3.146153277478605,
+      3.146153277478605,
+      3.146153277478604,
+      3.129468410905056,
+      3.1294684109050546,
+      3.1294684109050546,
+      2.5437869679691194,
+      2.543786967969119,
+      2.5437869679691185,
+      2.4660856562266775,
+      2.4660856562266753,
+      2.466085656226673,
+      2.00455659892434,
+      2.004556598924338,
+      2.004556598924337,
+      0.5572567555540068,
+      0.5572567555540068,
+      0.5572567555540064,
+      0.1671132142979865,
+      0.1671132142979865,
+      0.16711321429798648,
+      0.1316886597449353,
+      0.13168865974493524,
+      0.13168865974493524
+    ]
+  },
+  "controlled_reference_errors": {
+    "origin": "manufactured reference only",
+    "mu_relative_error": [
+      0.20001137064552943,
+      0.20000850146736293
+    ],
+    "kappa_relative_error": [
+      0.20000215705437646,
+      0.2000010941443918
+    ],
+    "force_relative_l2_error": 1.0000257764553924
+  },
+  "manufactured_ambiguity": {
+    "protocol": "Manufactured balance with true mu=2, kappa=3, force=1; analytic solutions, not RGB inversion.",
+    "cases": {
+      "force_known": {
+        "singular_values": [
+          12.000000000000002,
+          8.0
+        ],
+        "min_singular_value": 8.0,
+        "max_singular_value": 12.000000000000002,
+        "condition_number": 1.5000000000000002,
+        "effective_rank": 2,
+        "parameter_count": 2,
+        "residual_count": 32,
+        "rank_tolerance": 1.2000000000000002e-05,
+        "covariance_ridge": 0.00014400000000000003,
+        "covariance_proxy": [
+          [
+            0.0156249648438291,
+            -3.373062463049861e-19
+          ],
+          [
+            -3.3730624630498617e-19,
+            0.00694443750000694
+          ]
+        ],
+        "correlation_proxy": [
+          [
+            0.9999999999999999,
+            -3.2381452265046776e-17
+          ],
+          [
+            -3.238145226504678e-17,
+            0.9999999999999999
+          ]
+        ],
+        "max_material_force_correlation": null,
+        "covariance_interpretation": "Unit-noise ridge proxy with other model variables fixed; not calibrated observational uncertainty.",
+        "data_effective_rank": 2,
+        "mu_relative_error": 0.0,
+        "force_relative_error": 0.0
+      },
+      "stiffness_known": {
+        "singular_values": [
+          4.0
+        ],
+        "min_singular_value": 4.0,
+        "max_singular_value": 4.0,
+        "condition_number": 1.0,
+        "effective_rank": 1,
+        "parameter_count": 1,
+        "residual_count": 32,
+        "rank_tolerance": 4e-06,
+        "covariance_ridge": 1.6e-05,
+        "covariance_proxy": [
+          [
+            0.062499937500062504
+          ]
+        ],
+        "correlation_proxy": [
+          [
+            0.9999999999999999
+          ]
+        ],
+        "max_material_force_correlation": null,
+        "covariance_interpretation": "Unit-noise ridge proxy with other model variables fixed; not calibrated observational uncertainty.",
+        "data_effective_rank": 1,
+        "mu_relative_error": 0.0,
+        "force_relative_error": 0.0
+      },
+      "both_unknown": {
+        "singular_values": [
+          12.000000000000004,
+          4.47213595499958,
+          0.0
+        ],
+        "min_singular_value": 0.0,
+        "max_singular_value": 12.000000000000004,
+        "condition_number": "inf",
+        "effective_rank": 2,
+        "parameter_count": 3,
+        "residual_count": 32,
+        "rank_tolerance": 1.2000000000000004e-05,
+        "covariance_ridge": 0.00014400000000000008,
+        "covariance_proxy": [
+          [
+            5555.565555509641,
+            -2.69843661318009e-19,
+            2777.7577779348194
+          ],
+          [
+            -2.698436613171011e-19,
+            0.00694443750000694,
+            5.396873226436264e-19
+          ],
+          [
+            2777.7577779348194,
+            5.396873226431726e-19,
+            1388.9288886074123
+          ]
+        ],
+        "correlation_proxy": [
+          [
+            1.0,
+            -4.3443974062934664e-20,
+            0.9999775005973577
+          ],
+          [
+            -4.34439740627885e-20,
+            0.9999999999999999,
+            1.7377355034820673e-19
+          ],
+          [
+            0.9999775005973577,
+            1.737735503480606e-19,
+            1.0
+          ]
+        ],
+        "max_material_force_correlation": 0.9999775005973577,
+        "covariance_interpretation": "Unit-noise ridge proxy with other model variables fixed; not calibrated observational uncertainty.",
+        "data_effective_rank": 2,
+        "mu_relative_error": 0.75,
+        "force_relative_error": 1.5,
+        "analytic_solution": [
+          0.5,
+          3.0,
+          -0.5
+        ],
+        "data_residual_norm": 2.0053283331865004e-15
+      },
+      "both_unknown_with_prior": {
+        "singular_values": [
+          12.000000000000007,
+          7.2652589417843805,
+          0.5839627632153291
+        ],
+        "min_singular_value": 0.5839627632153291,
+        "max_singular_value": 12.000000000000007,
+        "condition_number": 20.549255459247757,
+        "effective_rank": 3,
+        "parameter_count": 3,
+        "residual_count": 33,
+        "rank_tolerance": 1.2000000000000007e-05,
+        "covariance_ridge": 0.00014400000000000017,
+        "covariance_proxy": [
+          [
+            0.8885192671767667,
+            3.699187909622857e-17,
+            1.3327669058629974
+          ],
+          [
+            3.699187909622857e-17,
+            0.00694443750000694,
+            5.616192719748617e-17
+          ],
+          [
+            1.3327669058629974,
+            5.616192719748616e-17,
+            2.0616318041082593
+          ]
+        ],
+        "correlation_proxy": [
+          [
+            1.0,
+            4.709279112996548e-16,
+            0.9847255868019145
+          ],
+          [
+            4.709279112996548e-16,
+            0.9999999999999999,
+            4.693727934833752e-16
+          ],
+          [
+            0.9847255868019145,
+            4.693727934833751e-16,
+            1.0
+          ]
+        ],
+        "max_material_force_correlation": 0.9847255868019145,
+        "covariance_interpretation": "Unit-noise ridge proxy with other model variables fixed; not calibrated observational uncertainty.",
+        "data_effective_rank": 2,
+        "mu_relative_error": 0.25,
+        "force_relative_error": 0.5,
+        "analytic_solution": [
+          1.5,
+          3.0,
+          0.5
+        ],
+        "data_residual_norm": 2.368837159022682e-15,
+        "prior_target_mu": 1.5
+      }
+    },
+    "warning": "The prior raises the objective rank; observation-only rank remains deficient. Convergence is not identifiability."
+  },
+  "global_identifiability_established": false,
+  "recovery_claim": false
+}
