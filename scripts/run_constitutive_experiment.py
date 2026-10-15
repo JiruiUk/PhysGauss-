@@ -27,6 +27,21 @@ def verified_checkpoint(run):
     return verify(run/'checkpoints')
 
 
+def check_resume_protocol(metadata,expected):
+    """Only a recorded exact checkpoint-I/O patch may cross a source freeze."""
+    if any(metadata.get(key)!=value for key,value in expected.items() if key!='extension_hashes'):
+        raise ValueError('Resume protocol/config/source/input mismatch')
+    saved=metadata.get('resume_extension_hashes',metadata['extension_hashes'])
+    current=expected['extension_hashes']
+    if saved==current:return None
+    changed={name for name in set(saved)|set(current) if saved.get(name)!=current.get(name)}
+    registry=PROJECT/'experiments/checkpoint_io_hotfix.json'
+    patch=read_json(registry) if registry.exists() else {}
+    if changed!={'checkpoint.py'} or saved.get('checkpoint.py')!=patch.get('old_sha256') or current.get('checkpoint.py')!=patch.get('new_sha256'):
+        raise ValueError('Resume protocol/config/source/input mismatch; unrecognized source change')
+    return {**patch,'registry_sha256':sha256(registry)}
+
+
 def execute(command,run,step,repo,env,metadata):
     for attempt in range(3):
         metadata['commands'].append(command.copy());write_json(run/'reproduction.json',metadata)
@@ -85,10 +100,15 @@ def run(experiment,tag,iterations=300,long_run=False,resume=False):
     if directory.exists():
         if not resume:raise FileExistsError(f'Existing run preserved: {directory}; use explicit resume')
         metadata=read_json(directory/'reproduction.json')
-        if any(metadata.get(key)!=value for key,value in expected.items()):raise ValueError('Resume protocol/config/source/input mismatch')
+        io_patch=check_resume_protocol(metadata,expected)
         if metadata['status']=='completed':completed_metrics(directory);return directory
         checkpoint=verified_checkpoint(directory)
         if config.get('deformation_gradient') and not checkpoint.get('extension_saved'):raise ValueError('Incomplete extension checkpoint')
+        if io_patch is not None:
+            metadata.setdefault('checkpoint_io_hotfix_history',[]).append({**io_patch,'iteration':checkpoint['iteration'],'checkpoint_sha256':checkpoint['sha256'],'utc':datetime.now(timezone.utc).isoformat()})
+            metadata['resume_extension_hashes']=extensions
+        if metadata.get('error'):
+            metadata.setdefault('failure_history',[]).append({'error':metadata.pop('error'),'recovered_at_iteration':checkpoint['iteration']})
         metadata.setdefault('resume_history',[]).append({'iteration':checkpoint['iteration'],'utc':datetime.now(timezone.utc).isoformat()})
     else:
         directory.mkdir(parents=True,exist_ok=False)

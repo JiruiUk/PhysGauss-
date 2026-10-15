@@ -3,8 +3,19 @@ import hashlib
 import json
 import os
 from pathlib import Path
+import time
 import torch
 from reproduction.scripts import training_checkpoint as baseline
+
+
+def replace_with_retry(source,destination,attempts=100,delay=.05):
+    """Windows readers can briefly deny delete sharing during atomic publication."""
+    for attempt in range(attempts):
+        try:
+            return Path(source).replace(destination)
+        except PermissionError:
+            if attempt==attempts-1:raise
+            time.sleep(delay)
 
 
 def save_training_state(local,destination):
@@ -17,12 +28,12 @@ def save_training_state(local,destination):
     temporary=destination.with_suffix('.extension.tmp')
     with temporary.open('wb') as stream:
         torch.save(state,stream);stream.flush();os.fsync(stream.fileno())
-    temporary.replace(destination)
+    replace_with_retry(temporary,destination)
     with destination.open('rb') as stream:
         manifest['sha256']=hashlib.file_digest(stream,'sha256').hexdigest()
     manifest.update(size_bytes=destination.stat().st_size,extension_saved=True)
     sidecar=destination.with_suffix('.json');temporary=sidecar.with_suffix('.json.tmp')
-    temporary.write_text(json.dumps(manifest,indent=2),encoding='utf-8');temporary.replace(sidecar)
+    temporary.write_text(json.dumps(manifest,indent=2),encoding='utf-8');replace_with_retry(temporary,sidecar)
     print('EXTENSION_CHECKPOINT_SAVED '+json.dumps(manifest),flush=True)
     return manifest
 

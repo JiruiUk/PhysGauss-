@@ -1,0 +1,27 @@
+{
+  "failure": "Windows PermissionError publishing extended checkpoint JSON sidecar",
+  "iteration": 25000,
+  "original_source_sha256": "dfb6e44363ee3df5ba5d050d4c010ad7abba7968ac7e71824437c51134bff068",
+  "checkpoint_sha256": "ca75d86312ef29264001846e69a3bd3fbe55e9bcb1720d0ee1da5c31747f62be",
+  "backup": "runs\\pidg_constitutive\\m10_long_A4_single\\rubber_duck\\checkpoints\\recovery_20261015_io_failure",
+  "payload_complete": true,
+  "pending_manifest_matches_payload": true,
+  "optimizer_and_rng_present": true,
+  "extension_state_present": true,
+  "known_material_force_optimizers_present": true,
+  "repair_status": "manifest_repaired_full_state_verified",
+  "published_checkpoint": {
+    "path": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_constitutive\\m10_long_A4_single\\rubber_duck\\checkpoints\\resume.pt",
+    "iteration": 25000,
+    "sha256": "ca75d86312ef29264001846e69a3bd3fbe55e9bcb1720d0ee1da5c31747f62be",
+    "size_bytes": 228292783,
+    "format_version": 1,
+    "optimizer_saved": true,
+    "rng_saved": true,
+    "created_unix": 1792096138.471517,
+    "extension_saved": true
+  },
+  "hotfix_registry": "experiments/checkpoint_io_hotfix.json",
+  "targeted_tests": "35 passed",
+  "full_tests": "110 passed, 1 skipped"
+}

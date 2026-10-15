@@ -58,3 +58,8 @@
 
 逐阶段记录：`milestones.json` 与 `M1_validation.json` 至 `M10_validation.json`。
 M10 工程闭环通过与五个 50k 训练全部完成是两个独立状态。
+
+2026-10-15：A4 在 25,000 步因 Windows 拒绝原子替换检查点清单而退出。
+已保留现场并核验完整模型与临时清单一致，修复记录见 `checkpoint_io_recovery.json`。
+`checkpoint_io_hotfix.json` 只允许指定旧/新哈希的检查点文件写入重试补丁用于续训；
+训练配置、物理模块和其他源码变更仍会被拒绝。原始源码哈希保留，续训补丁另存审计历史。

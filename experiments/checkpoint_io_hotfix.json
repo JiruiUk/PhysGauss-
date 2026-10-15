@@ -1,0 +1,7 @@
+{
+  "name": "Windows checkpoint publication retry",
+  "old_sha256": "dfb6e44363ee3df5ba5d050d4c010ad7abba7968ac7e71824437c51134bff068",
+  "new_sha256": "e17ac6153e1a5c900b65ea805244ef631a40c17bc4afc26823de8b7b6e82281d",
+  "scope": "checkpoint.py only: bounded PermissionError retry around atomic file replacement; no training objective, parameters, optimizer, RNG, config or data changes",
+  "validation": "35 targeted tests passed; actual 25000-step payload and pending manifest SHA-256 verified"
+}
