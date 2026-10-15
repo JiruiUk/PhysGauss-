@@ -80,6 +80,15 @@ benchmark_suites:
     - vrig_chicken
     - vrig_peel-banana
     local_data_status: not_installed
+  controlled_two_material:
+    role: manufactured engineering validation; not official PIDG benchmark
+    dataset_path: data/PIDG_controlled/two_material
+    category: soft_body
+    known_material_ids: true
+    material_parameter_GT: true
+    force_GT: manufactured rho*a with finite-difference acceleration
+    official_benchmark: false
+    constitutive_compatible_v1: true
 experiment_ladder:
   A0:
     name: PIDG baseline
@@ -188,6 +197,15 @@ run_tiers:
     - A0
     - A2b
     - A6
+  controlled_validation:
+    scenes:
+    - controlled_two_material
+    required_experiments:
+    - A3
+    - A4
+    - A5
+    - A6
+    iterations: 300
 metrics:
   reconstruction:
   - PSNR

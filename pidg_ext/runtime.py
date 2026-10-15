@@ -14,13 +14,24 @@ class Extension:
         self.run=Path(run)
         self.train_count=train_count
         self.optimizer=None
+        self.material_ids=None
+        self.material_ids_hash=None
         if self.enabled:
             self.graph=CanonicalGraph(self.config.get('num_neighbors',16))
         self.material=None
         if self.config.get('constitutive_diagnostics') or self.config.get('constitutive'):
             from .constitutive import MaterialParameters,NeoHookean
-            self.material=MaterialParameters(self.config.get('mu_init',1.),self.config.get('kappa_init',10.),
-                                             self.config.get('learn_material_parameters',False))
+            if self.config.get('multi_material'):
+                import hashlib
+                from .materials import MaterialBank,load_material_ids
+                path=Path(self.config['material_ids_file'])
+                if not path.is_absolute():path=Path(__file__).resolve().parents[1]/path
+                self.material=MaterialBank(self.config['regions'],self.config.get('learn_material_parameters',False))
+                self.material_ids=load_material_ids(path,len(self.config['regions']))
+                self.material_ids_hash=hashlib.sha256(path.read_bytes()).hexdigest()
+            else:
+                self.material=MaterialParameters(self.config.get('mu_init',1.),self.config.get('kappa_init',10.),
+                                                 self.config.get('learn_material_parameters',False))
             self.constitutive=NeoHookean()
             parameters=[p for p in self.material.parameters() if p.requires_grad]
             if parameters:
@@ -43,10 +54,21 @@ class Extension:
                     'diagnostic_queries':len(ids),'new_loss_added':False}
             if self.material is not None:
                 valid=result['valid']
-                params=self.material()
-                sigma=self.constitutive(result['F'][valid],params)
-                record.update(mean_sigma_const_norm=sigma.norm(dim=(-1,-2)).mean().item() if valid.any() else None,
-                              mu=params['mu'].item(),kappa=params['kappa'].item())
+                if self.material_ids is None:
+                    params=self.material()
+                    record.update(mu=params['mu'].item(),kappa=params['kappa'].item())
+                else:
+                    particle_ids=gaussians.particle_indices[ids].to(self.material_ids.device)
+                    if particle_ids.min()<0 or particle_ids.max()>=len(self.material_ids):
+                        raise ValueError('No known material label for a particle ID')
+                    labels=self.material_ids[particle_ids]
+                    params=self.material(labels)
+                    record.update(mu=None,kappa=None,material_ids_present=labels.unique().tolist(),
+                                  material_parameters={k:v.detach().tolist() for k,v in self.material.values().items()})
+                if not active:
+                    selected={k:v[valid.to(v.device)] if v.ndim else v for k,v in params.items()}
+                    sigma=self.constitutive(result['F'][valid],selected)
+                    record['mean_sigma_const_norm']=sigma.norm(dim=(-1,-2)).mean().item() if valid.any() else None
             if active:
                 from .losses import predicted_stress,constitutive_consistency
                 coords=torch.cat((X[ids],fid.expand(len(ids),1)),dim=-1).requires_grad_(True)
@@ -56,6 +78,7 @@ class Extension:
                 if weight<0:raise ValueError('Negative constitutive weight')
                 weighted=raw*weight
                 record.update(new_loss_added=weight>0,loss_constitutive_raw=raw.item(),loss_constitutive_weighted=weighted.item(),
+                              mean_sigma_const_norm=const[valid].norm(dim=(-1,-2)).mean().item() if valid.any() else None,
                               mean_sigma_pred_norm=pred.norm(dim=(-1,-2)).mean().item(),
                               mean_sigma_difference_norm=(pred[valid]-const[valid]).norm(dim=(-1,-2)).mean().item() if valid.any() else None,
                               cauchy_residual_legacy=cauchy_loss.detach().item() if cauchy_loss is not None else None,
@@ -78,6 +101,7 @@ class Extension:
         return cpu_tree({'config':self.config,'train_count':self.train_count,
                          'material':self.material.state_dict() if self.material is not None else None,
                          'optimizer':self.optimizer.state_dict() if self.optimizer is not None else None,
+                         'material_ids':self.material_ids,'material_ids_hash':self.material_ids_hash,
                          'neighbors':self.graph.neighbors,'graph_iteration':self.graph.last_iteration})
 
     def restore_checkpoint(self,state,device=None):
@@ -86,6 +110,8 @@ class Extension:
             return
         if state['config']!=self.config or state['train_count']!=self.train_count:
             raise ValueError('Extension configuration differs from checkpoint')
+        if state.get('material_ids_hash')!=self.material_ids_hash:
+            raise ValueError('Material annotation changed since checkpoint')
         if self.material is not None:self.material.load_state_dict(state['material'])
         if self.optimizer is not None:self.optimizer.load_state_dict(state['optimizer'])
         self.graph.neighbors=state['neighbors'].to(device) if state['neighbors'] is not None else None

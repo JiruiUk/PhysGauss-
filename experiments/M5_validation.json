@@ -1,0 +1,121 @@
+{
+  "milestone": "M5",
+  "status": "passed_controlled_synthetic",
+  "unit_tests": 18,
+  "run": "runs\\pidg_constitutive\\m5_material_bank_r1\\controlled_two_material",
+  "metrics": {
+    "SSIM": 0.9731594920158386,
+    "PSNR": 27.72515106201172,
+    "LPIPS": 0.03753872960805893,
+    "MS-SSIM": 0.9657162427902222
+  },
+  "diagnostics": [
+    {
+      "iteration": 100,
+      "mean_det_F": 1.1169264316558838,
+      "min_det_F": 0.7357138991355896,
+      "invalid_F_fraction": 0.0,
+      "diagnostic_queries": 128,
+      "new_loss_added": true,
+      "mu": null,
+      "kappa": null,
+      "material_ids_present": [
+        0,
+        1
+      ],
+      "material_parameters": {
+        "mu": [
+          0.8,
+          1.6
+        ],
+        "kappa": [
+          8.0,
+          16.0
+        ]
+      },
+      "loss_constitutive_raw": 0.36355993151664734,
+      "loss_constitutive_weighted": 3.635599205153994e-05,
+      "mean_sigma_const_norm": 2.733891248703003,
+      "mean_sigma_pred_norm": 0.2749526798725128,
+      "mean_sigma_difference_norm": 2.6540236473083496,
+      "cauchy_residual_legacy": 0.00236500333994627,
+      "stress_time_convention": "fid, matching rendered F",
+      "force_sigma": 1.0,
+      "constitutive_F_gradient_norm": 5.411534948507324e-05,
+      "constitutive_predicted_stress_gradient_norm": 1.4698019867864787e-06
+    },
+    {
+      "iteration": 200,
+      "mean_det_F": 1.2329769134521484,
+      "min_det_F": 0.8688173890113831,
+      "invalid_F_fraction": 0.0,
+      "diagnostic_queries": 128,
+      "new_loss_added": true,
+      "mu": null,
+      "kappa": null,
+      "material_ids_present": [
+        0,
+        1
+      ],
+      "material_parameters": {
+        "mu": [
+          0.7999948525268559,
+          1.5999922093672718
+        ],
+        "kappa": [
+          7.999990066053375,
+          15.999990043990328
+        ]
+      },
+      "loss_constitutive_raw": 0.4803396463394165,
+      "loss_constitutive_weighted": 4.8033962229965255e-05,
+      "mean_sigma_const_norm": 3.461332321166992,
+      "mean_sigma_pred_norm": 0.2752058506011963,
+      "mean_sigma_difference_norm": 3.309628486633301,
+      "cauchy_residual_legacy": 0.001520407386124134,
+      "stress_time_convention": "fid, matching rendered F",
+      "force_sigma": 0.9990000128746033,
+      "constitutive_F_gradient_norm": 3.837034455500543e-05,
+      "constitutive_predicted_stress_gradient_norm": 1.5941944866426638e-06
+    },
+    {
+      "iteration": 300,
+      "mean_det_F": 1.2318484783172607,
+      "min_det_F": 0.9295052289962769,
+      "invalid_F_fraction": 0.0,
+      "diagnostic_queries": 128,
+      "new_loss_added": true,
+      "mu": null,
+      "kappa": null,
+      "material_ids_present": [
+        0,
+        1
+      ],
+      "material_parameters": {
+        "mu": [
+          0.7999897430235243,
+          1.5999844027900727
+        ],
+        "kappa": [
+          7.999980203489489,
+          15.999980086846652
+        ]
+      },
+      "loss_constitutive_raw": 0.4619651734828949,
+      "loss_constitutive_weighted": 4.619651735993102e-05,
+      "mean_sigma_const_norm": 3.4082281589508057,
+      "mean_sigma_pred_norm": 0.27955421805381775,
+      "mean_sigma_difference_norm": 3.226370096206665,
+      "cauchy_residual_legacy": 0.0011034179478883743,
+      "stress_time_convention": "fid, matching rendered F",
+      "force_sigma": 0.9980428814888,
+      "constitutive_F_gradient_norm": 3.6530225770547986e-05,
+      "constitutive_predicted_stress_gradient_norm": 1.6028743630158715e-06
+    }
+  ],
+  "material_parameter_count": 4,
+  "official_multimaterial_status": "not_run_missing_known_labels",
+  "failed_trial_preserved": "runs/pidg_constitutive/m5_material_bank",
+  "failed_trial_reason": "PLY normal fields missing; supplied in revised fixture before retry",
+  "GT_limit": "Manufactured prescribed labels and moduli; initialization is deliberately 20% below the prescribed moduli. Short updates do not establish recovery."
+}

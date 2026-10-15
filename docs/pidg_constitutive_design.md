@@ -84,3 +84,21 @@ The first M3 integration trial used the legacy CMR time for the new branch. Its
 logs remain in `runs/pidg_constitutive/m3_constitutive_fixed`; this trial was
 superseded before acceptance by `m3_constitutive_fixed_fid`, with matching stress/F
 times. The old trial is not used in the fixed-versus-learnable comparison.
+
+## M5: known material regions
+
+The shared bank has two positive parameters per region. Material IDs are supplied
+as an integer array in initial-particle order, then indexed through original PIDG
+particle IDs. Clones inherit their parent's ID and pruning preserves remaining IDs;
+the extension does not learn segmentation or assign per-Gaussian stiffness.
+Annotation hashes and labels accompany the extension checkpoint.
+
+Official scene material annotations have not been supplied. A separate manufactured
+two-region dataset tests the integration, using 128 material points, prescribed
+Neo-Hookean parameters, affine maps per region, equal normal interface traction,
+and a known inertial body-force density with unit density. Camera calibration is
+stored separately; images are projected colored discs. This is an engineering
+fixture, not a new official benchmark or photorealistic physical simulator.
+Its initial shared moduli are deliberately 20% below the prescribed values.
+Future-time images are held out, but official PIDG's test split is not relabeled
+as a future-prediction benchmark. No official-scene material recovery is claimed.

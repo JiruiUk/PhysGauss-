@@ -169,3 +169,43 @@ def test_fixed_and_learnable_ablation_changes_only_parameter_fitting():
     for config in (fixed,learned):
         for key in ('experiment','learn_material_parameters','material_lr'):config.pop(key,None)
     assert fixed==learned
+
+
+def test_known_material_bank_shares_regions_and_isolates_gradients():
+    from pidg_ext.materials import MaterialBank
+    bank=MaterialBank([{'id':0,'mu_init':1.,'kappa_init':10.},{'id':1,'mu_init':2.,'kappa_init':20.}])
+    params=bank(torch.tensor([0,1,0]))
+    torch.testing.assert_close(params['mu'],torch.tensor([1.,2.,1.],dtype=torch.float64))
+    bank(torch.tensor([0,0]))['mu'].sum().backward()
+    assert bank.raw_mu.grad[0]>0 and bank.raw_mu.grad[1]==0
+    with pytest.raises(ValueError,match='outside'):
+        bank(torch.tensor([2]))
+    with pytest.raises(ValueError,match='consecutive'):
+        MaterialBank([{'id':1}])
+
+
+def test_known_material_annotations_are_inherited_by_particle_id_not_resegmented(tmp_path):
+    import numpy as np
+    from pidg_ext.materials import load_material_ids
+    path=tmp_path/'labels.npy';np.save(path,np.array([0,1,1,0]))
+    labels=load_material_ids(path,2)
+    assert labels[torch.tensor([1,0,1])].tolist()==[1,0,1]
+    np.save(path,np.array([.1,.2]))
+    with pytest.raises(ValueError,match='integer'):
+        load_material_ids(path,2)
+
+
+def test_controlled_two_material_fixture_has_consistent_GT_and_future_split(tmp_path):
+    import numpy as np
+    from scripts.make_pidg_controlled import manufacture
+    path=manufacture(tmp_path/'controlled')
+    gt=np.load(path/'ground_truth.npz')
+    assert set(gt['material_ids'])=={0,1} and gt['x'].shape==(16,128,3)
+    assert gt['times'][11]<gt['times'][12]
+    assert np.isfinite(gt['force']).all() and (np.linalg.det(gt['F'])>0).all()
+    from PIL import Image
+    assert np.asarray(Image.open(path/'train/0000.png'))[...,3].max()>0
+    left=gt['stress'][:,gt['material_ids']==0,0,0].mean(1)
+    right=gt['stress'][:,gt['material_ids']==1,0,0].mean(1)
+    np.testing.assert_allclose(left,right,atol=1e-12)
+    with pytest.raises(FileExistsError):manufacture(path)

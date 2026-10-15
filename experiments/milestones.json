@@ -29,7 +29,11 @@
     "validation": "experiments/M4_validation.json"
   },
   "M5": {
-    "status": "next",
-    "official_scene_blocker": "Known material annotations unavailable; use labeled controlled synthetic tests for engineering validation"
+    "status": "passed_controlled_synthetic",
+    "validation": "experiments/M5_validation.json",
+    "official_scene_blocker": "Known material labels unavailable"
+  },
+  "M6": {
+    "status": "next"
   }
 }
