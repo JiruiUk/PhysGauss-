@@ -1,0 +1,62 @@
+{
+  "milestone": "M8",
+  "status": "passed_controlled_synthetic",
+  "unit_tests": 23,
+  "run": "runs\\pidg_constitutive\\m8_staged\\controlled_two_material",
+  "metrics": {
+    "SSIM": 0.9708497524261475,
+    "PSNR": 27.990070343017578,
+    "LPIPS": 0.04360749572515488,
+    "MS-SSIM": 0.9655333161354065
+  },
+  "events": [
+    {
+      "iteration": 1,
+      "stage": "A",
+      "neural_lr_multiplier": 1.0,
+      "neural_step_enabled": true,
+      "force_active": false,
+      "stage_C_weights_unchanged": null
+    },
+    {
+      "iteration": 50,
+      "stage": "B",
+      "neural_lr_multiplier": 1.0,
+      "neural_step_enabled": true,
+      "force_active": false,
+      "stage_C_weights_unchanged": null
+    },
+    {
+      "iteration": 100,
+      "stage": "C",
+      "neural_lr_multiplier": 0.0,
+      "neural_step_enabled": false,
+      "force_active": true,
+      "stage_C_weights_unchanged": null
+    },
+    {
+      "iteration": 200,
+      "stage": "D",
+      "neural_lr_multiplier": 0.1,
+      "neural_step_enabled": true,
+      "force_active": true,
+      "stage_C_weights_unchanged": true
+    }
+  ],
+  "engineering_schedule": {
+    "boundaries": [
+      50,
+      100,
+      200
+    ],
+    "interval": 50
+  },
+  "long_schedule": {
+    "boundaries": [
+      5000,
+      10000,
+      20000
+    ],
+    "interval": 100
+  }
+}

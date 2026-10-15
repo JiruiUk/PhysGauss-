@@ -28,6 +28,11 @@ class Extension:
                 self.force_optimizer=torch.optim.Adam(self.force.parameters(),lr=self.config.get('force_lr',1e-4))
         self.force_iteration=None
         self.last_force_regularizer=None
+        self.neural_step_enabled=True;self.densification_enabled=True;self.force_active=self.force_enabled
+        self.schedule=None
+        if self.config.get('staged_optimization'):
+            from .staging import StagedOptimization
+            self.schedule=StagedOptimization(self.config,self.run)
         if self.enabled:
             self.graph=CanonicalGraph(self.config.get('num_neighbors',16))
         self.material=None
@@ -49,9 +54,13 @@ class Extension:
             if parameters:
                 self.optimizer=torch.optim.Adam(parameters,lr=self.config.get('material_lr',1e-5))
 
+    def before_iteration(self,iteration,gaussians,deform,opt):
+        if self.schedule is not None:self.schedule.apply(iteration,gaussians,deform,self)
+
     def loss(self,iteration,gaussians,deform,d_xyz,fid,opt,cauchy_loss=None):
         if not self.enabled or iteration % self.config.get('interval',100):
             return None
+        if self.schedule is not None and self.schedule.last_stage=='A':return None
         from utils.general_utils import quaternion_to_matrix
         active=self.config.get('constitutive',False)
         weighted=None
@@ -64,6 +73,7 @@ class Extension:
             record={'iteration':iteration,'mean_det_F':result['J'].mean().item(),
                     'min_det_F':result['J'].min().item(),'invalid_F_fraction':1-result['valid'].float().mean().item(),
                     'diagnostic_queries':len(ids),'new_loss_added':False}
+            if self.schedule is not None:record['optimization_stage']=self.schedule.last_stage
             if self.material is not None:
                 valid=result['valid']
                 if self.material_ids is None:
@@ -157,6 +167,7 @@ class Extension:
                          'force':self.force.state_dict() if self.force is not None else None,
                          'force_optimizer':self.force_optimizer.state_dict() if self.force_optimizer is not None else None,
                          'force_inputs':self.force.input_hashes if self.force is not None else {},
+                         'schedule':self.schedule.state() if self.schedule is not None else None,
                          'neighbors':self.graph.neighbors,'graph_iteration':self.graph.last_iteration})
 
     def restore_checkpoint(self,state,device=None):
@@ -171,6 +182,7 @@ class Extension:
             if state.get('force_inputs')!=self.force.input_hashes:raise ValueError('Force input changed since checkpoint')
             self.force.load_state_dict(state['force'])
         if self.force_optimizer is not None:self.force_optimizer.load_state_dict(state['force_optimizer'])
+        if self.schedule is not None:self.schedule.restore(state.get('schedule'))
         if self.material is not None:self.material.load_state_dict(state['material'])
         if self.optimizer is not None:self.optimizer.load_state_dict(state['optimizer'])
         self.graph.neighbors=state['neighbors'].to(device) if state['neighbors'] is not None else None

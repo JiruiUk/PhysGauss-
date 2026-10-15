@@ -267,3 +267,25 @@ def test_known_force_interpolation_and_force_optimizer_restart(tmp_path):
     step(original);resumed=Extension(config,tmp_path);resumed.restore_checkpoint(original.checkpoint_state())
     step(original);step(resumed)
     torch.testing.assert_close(original.force.coefficients,resumed.force.coefficients,rtol=0,atol=0)
+
+
+def test_staged_optimizer_freezes_neural_weights_and_restores_lrs_after_resume(tmp_path):
+    import json
+    from types import SimpleNamespace
+    from pidg_ext.runtime import Extension
+    config=tmp_path/'config.json';config.write_text(json.dumps({'deformation_gradient':True,'constitutive':True,'learn_material_parameters':True,'structured_force':True,'staged_optimization':True,'stage_boundaries':[5,10,20]}))
+    def model(name):
+        value=torch.nn.Parameter(torch.ones(3))
+        optimizer=torch.optim.SGD([{'params':[value],'name':name,'lr':.01}])
+        return SimpleNamespace(optimizer=optimizer,update_learning_rate=lambda iteration:None)
+    g,d=model('xyz'),model('deform');ext=Extension(config,tmp_path)
+    ext.before_iteration(1,g,d,None);assert not ext.material.raw_mu.requires_grad and not ext.force_active
+    ext.before_iteration(5,g,d,None);assert ext.neural_step_enabled
+    ext.before_iteration(10,g,d,None);assert not ext.neural_step_enabled and not ext.densification_enabled
+    assert ext.material.raw_mu.requires_grad and ext.force.coefficients.requires_grad
+    saved=ext.checkpoint_state();resumed=Extension(config,tmp_path);resumed.restore_checkpoint(saved)
+    resumed.before_iteration(20,g,d,None)
+    assert resumed.neural_step_enabled and g.optimizer.param_groups[0]['lr']==pytest.approx(.001)
+    assert resumed.optimizer.param_groups[0]['lr']==pytest.approx(1e-6)
+    events=[json.loads(line) for line in (tmp_path/'optimization_stages.jsonl').read_text().splitlines()]
+    assert events[-1]['stage_C_weights_unchanged'] is True

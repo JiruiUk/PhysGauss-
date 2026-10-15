@@ -133,3 +133,15 @@ not hidden by claiming correct force recovery. Values are dataset-unit force
 densities, not automatically calibrated forces or pressures in SI units.
 Force parameters, Adam state and known-input hashes are included in full
 checkpoints; next-step restart equivalence is tested.
+
+## M8: staged optimization
+
+A: original PIDG warm start, no new loss and no active external-force term.
+B: fixed-parameter constitutive warmup, with new material/force latents frozen.
+C: physical fitting, with all original Gaussian/deformation/stress parameters and
+their optimizer steps frozen; densification/pruning is also disabled.
+D: joint fine-tuning, using 0.1x neural and physical learning rates.
+Default boundaries are 5k/10k/20k. Engineering smoke uses explicit shorter boundaries.
+The C-stage freeze is checked by exact SHA256 of every original optimizer parameter
+at entry and exit. Initial learning rates, stage and freeze hash are checkpointed;
+resume does not mistake a zero frozen LR for the baseline LR.

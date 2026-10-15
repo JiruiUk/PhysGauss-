@@ -107,6 +107,8 @@ def training(dataset, opt, pipe, testing_iterations, saving_iterations, resume_c
     progress_bar = tqdm(total=opt.iterations, initial=first_iteration-1, desc="Training progress")
     for iteration in range(first_iteration, opt.iterations + 1):
 
+        extension.before_iteration(iteration, gaussians, deform, opt)
+
         # Every 1000 its we increase the levels of SH up to a maximum degree
         if iteration % 1000 == 0:
             gaussians.oneupSHdegree()
@@ -163,7 +165,7 @@ def training(dataset, opt, pipe, testing_iterations, saving_iterations, resume_c
             coords = torch.cat([gaussians.get_xyz, current_time], dim=1).requires_grad_(True)
 
             momentum_loss_fn = cauchy_momentum_loss_sampled
-            if extension.force_enabled:
+            if extension.force_enabled and extension.force_active:
                 extension.force_time, extension.force_iteration = fid, iteration
                 momentum_loss_fn = extension.momentum_loss
             cauchy_momentum_loss = momentum_loss_fn(
@@ -253,7 +255,7 @@ def training(dataset, opt, pipe, testing_iterations, saving_iterations, resume_c
                 deform.save_weights(args.model_path, iteration)
 
             # Densification
-            if iteration < opt.densify_until_iter:
+            if iteration < opt.densify_until_iter and extension.densification_enabled:
                 gaussians.add_densification_stats(viewspace_point_tensor, visibility_filter)
 
                 if iteration > opt.densify_from_iter and iteration % opt.densification_interval == 0:
@@ -267,9 +269,11 @@ def training(dataset, opt, pipe, testing_iterations, saving_iterations, resume_c
             # Optimizer step
             if iteration < opt.iterations:
                 extension.optimizer_step()
-                gaussians.optimizer.step()
+                if extension.neural_step_enabled:
+                    gaussians.optimizer.step()
                 gaussians.update_learning_rate(iteration)
-                deform.optimizer.step()
+                if extension.neural_step_enabled:
+                    deform.optimizer.step()
                 gaussians.optimizer.zero_grad(set_to_none=True)
                 deform.optimizer.zero_grad()
                 deform.update_learning_rate(iteration)
