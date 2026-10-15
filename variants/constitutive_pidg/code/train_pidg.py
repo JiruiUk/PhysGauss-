@@ -162,7 +162,11 @@ def training(dataset, opt, pipe, testing_iterations, saving_iterations, resume_c
             current_time = t_scalar.unsqueeze(0).expand(N,1).requires_grad_(True)
             coords = torch.cat([gaussians.get_xyz, current_time], dim=1).requires_grad_(True)
 
-            cauchy_momentum_loss = cauchy_momentum_loss_sampled(
+            momentum_loss_fn = cauchy_momentum_loss_sampled
+            if extension.force_enabled:
+                extension.force_time, extension.force_iteration = fid, iteration
+                momentum_loss_fn = extension.momentum_loss
+            cauchy_momentum_loss = momentum_loss_fn(
                 gaussians, coords,
                 dt=1/total_frame,
                 rho=1.0,

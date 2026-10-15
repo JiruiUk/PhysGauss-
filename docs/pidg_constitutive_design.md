@@ -112,3 +112,24 @@ Pair counts and raw/weighted losses are logged. This follows the plan's discrete
 reference-normal approximation; it is not an exact deformed surface-normal
 construction for large rotations. No extra displacement-continuity penalty is
 added to the shared continuous deformation field.
+
+## M7: structured body-force density
+
+Supported modes are none, supplied known force (constant or sampled), supplied
+surface-normal mask with a shared temporal amplitude, and low-rank polynomial
+spatial bases with shared temporal coefficients. Default low rank is 3 with four
+temporal knots: 36 shared coefficients, independent of particle count. Surface
+normals/masks must be supplied; they are not inferred from an arbitrary scene.
+Magnitude, coefficient temporal smoothness and optional L1 priors are separate.
+The force latent uses a separate Adam optimizer with default LR 1e-4.
+
+Only the external-force interface changes the sampled original momentum residual:
+`rho*DvDt - div(sigma_pred) - f_ext`. The original convective contraction and M/N
+sample scaling remain unchanged. Zero-force equivalence is tested exactly.
+Inertial, stress-divergence, external-force and total-residual norms are logged.
+The body force uses physical `fid`; the original velocity query still uses its
+legacy `fid/train_count` convention. This limits physical interpretation and is
+not hidden by claiming correct force recovery. Values are dataset-unit force
+densities, not automatically calibrated forces or pressures in SI units.
+Force parameters, Adam state and known-input hashes are included in full
+checkpoints; next-step restart equivalence is tested.

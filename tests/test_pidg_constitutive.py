@@ -224,3 +224,46 @@ def test_interface_uses_cross_material_pairs_shared_normals_and_stress_gradients
     loss.backward();assert sigma.grad.isfinite().all() and sigma.grad.norm()>0
     assert len(interface_pairs(X,labels,graph,max_distance=.05))==0
     assert traction_loss(sigma,X,torch.empty(0,2,dtype=torch.long))==0
+
+
+def test_structured_force_is_shared_low_dimensional_and_receives_gradients(tmp_path):
+    from pidg_ext.forces import StructuredForce
+    force=StructuredForce({'force_mode':'low_rank','force_rank':3,'force_controls':4})
+    X=cloud();value=force(X,torch.tensor(.25));assert value.shape==X.shape and not value.any()
+    (value-torch.tensor([1.,.2,-.1])).square().mean().backward()
+    assert force.coefficients.grad.isfinite().all() and force.coefficients.grad.norm()>0
+    assert sum(p.numel() for p in force.parameters())==36
+    assert StructuredForce({'force_mode':'none'})(X,0.).shape==X.shape
+    torch.testing.assert_close(StructuredForce({'force_mode':'known','known_force':[0.,-1.,0.]})(X,0.),torch.tensor([0.,-1.,0.],dtype=X.dtype).expand_as(X))
+    import numpy as np
+    path=tmp_path/'surface.npz';np.savez(path,normals=np.array([[1.,0.,0.],[1.,0.,0.]]),mask=np.array([1,0]))
+    surface=StructuredForce({'force_mode':'surface_normal','force_surface_file':str(path)})
+    with torch.no_grad():surface.coefficients.fill_(2.)
+    torch.testing.assert_close(surface(torch.zeros(2,3,dtype=X.dtype),.3,torch.tensor([0,1])),torch.tensor([[2.,0.,0.],[0.,0.,0.]],dtype=X.dtype))
+
+
+def test_force_insertion_with_zero_force_preserves_original_CMR(monkeypatch):
+    from pidg_ext.forces import momentum_components
+    monkeypatch.syspath_prepend(str(Path(__file__).resolve().parents[1]/'variants/constitutive_pidg/code'))
+    from motion_utils.pidg import cauchy_momentum_constraint
+    coords=torch.cat((cloud(),torch.ones(32,1,dtype=torch.float64)*.3),dim=-1).requires_grad_()
+    def field(c):return c[:,:3]**3*.2+c[:,3:]**2,torch.cat((c[:,:3]**2,c[:,:3]*c[:,3:]),dim=-1)*.1
+    inertial,divergence=momentum_components(coords,field,torch.tensor(.3))
+    expected=cauchy_momentum_constraint(coords,field,torch.tensor(.3))
+    torch.testing.assert_close((inertial-divergence).square().mean(),expected,rtol=0,atol=0)
+
+
+def test_known_force_interpolation_and_force_optimizer_restart(tmp_path):
+    import numpy as np,json
+    from pidg_ext.forces import StructuredForce
+    from pidg_ext.runtime import Extension
+    samples=tmp_path/'force.npz';np.savez(samples,times=np.array([0.,1.]),force=np.array([np.ones((2,3)),np.ones((2,3))*3]))
+    known=StructuredForce({'force_mode':'known','known_force_file':str(samples)})
+    torch.testing.assert_close(known(torch.zeros(2,3),.25,torch.tensor([0,1])),torch.full((2,3),1.5))
+    config=tmp_path/'config.json';config.write_text(json.dumps({'deformation_gradient':True,'structured_force':True,'force_mode':'low_rank'}))
+    original=Extension(config,tmp_path)
+    def step(extension):
+        (extension.force(cloud(),.3)-.2).square().mean().backward();extension.optimizer_step()
+    step(original);resumed=Extension(config,tmp_path);resumed.restore_checkpoint(original.checkpoint_state())
+    step(original);step(resumed)
+    torch.testing.assert_close(original.force.coefficients,resumed.force.coefficients,rtol=0,atol=0)

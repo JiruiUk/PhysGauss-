@@ -1,0 +1,163 @@
+{
+  "milestone": "M7",
+  "status": "passed_controlled_synthetic",
+  "unit_tests": 22,
+  "run": "runs\\pidg_constitutive\\m7_structured_force\\controlled_two_material",
+  "metrics": {
+    "SSIM": 0.97440105676651,
+    "PSNR": 28.194442749023438,
+    "LPIPS": 0.036530300974845886,
+    "MS-SSIM": 0.9678111672401428
+  },
+  "diagnostics": [
+    {
+      "iteration": 100,
+      "mean_det_F": 1.1164803504943848,
+      "min_det_F": 0.7335866093635559,
+      "invalid_F_fraction": 0.0,
+      "diagnostic_queries": 128,
+      "new_loss_added": true,
+      "mu": null,
+      "kappa": null,
+      "material_ids_present": [
+        0,
+        1
+      ],
+      "material_parameters": {
+        "mu": [
+          0.8,
+          1.6
+        ],
+        "kappa": [
+          8.0,
+          16.0
+        ]
+      },
+      "loss_constitutive_raw": 0.3653531074523926,
+      "loss_constitutive_weighted": 3.653530802694149e-05,
+      "mean_sigma_const_norm": 2.743495464324951,
+      "mean_sigma_pred_norm": 0.27495628595352173,
+      "mean_sigma_difference_norm": 2.6641042232513428,
+      "cauchy_residual_legacy": 0.0023757328744977713,
+      "stress_time_convention": "fid, matching rendered F",
+      "force_sigma": 1.0,
+      "constitutive_F_gradient_norm": 5.433167461887933e-05,
+      "constitutive_predicted_stress_gradient_norm": 1.470555275773222e-06,
+      "interface_pairs": 94,
+      "loss_interface_raw": 0.012887142598628998,
+      "loss_interface_weighted": 1.2887142020190367e-06,
+      "interface_normal_convention": "shared canonical centre-line normal",
+      "inertial_term_norm": 0.009941195137798786,
+      "stress_divergence_norm": 0.07730230689048767,
+      "external_force_norm": 0.0,
+      "total_residual_norm": 0.0781242847442627,
+      "force_parameter_count": 36,
+      "force_magnitude_raw": 0.0,
+      "force_temporal_raw": 0.0,
+      "force_sparsity_raw": 0.0,
+      "cauchy_sampling_factor": 1.0,
+      "loss_force_regularization": 0.0,
+      "force_time_convention": "fid; original velocity/CMR query remains fid/train_count"
+    },
+    {
+      "iteration": 200,
+      "mean_det_F": 1.2261714935302734,
+      "min_det_F": 0.8356671929359436,
+      "invalid_F_fraction": 0.0,
+      "diagnostic_queries": 128,
+      "new_loss_added": true,
+      "mu": null,
+      "kappa": null,
+      "material_ids_present": [
+        0,
+        1
+      ],
+      "material_parameters": {
+        "mu": [
+          0.7999948487047283,
+          1.599992208886948
+        ],
+        "kappa": [
+          7.99999006604696,
+          15.999990043776894
+        ]
+      },
+      "loss_constitutive_raw": 0.5016466975212097,
+      "loss_constitutive_weighted": 5.016466820961796e-05,
+      "mean_sigma_const_norm": 3.564427614212036,
+      "mean_sigma_pred_norm": 0.2724432349205017,
+      "mean_sigma_difference_norm": 3.4174611568450928,
+      "cauchy_residual_legacy": 0.00143740966450423,
+      "stress_time_convention": "fid, matching rendered F",
+      "force_sigma": 0.9990000128746033,
+      "constitutive_F_gradient_norm": 4.380418249638751e-05,
+      "constitutive_predicted_stress_gradient_norm": 1.6122630768222734e-06,
+      "interface_pairs": 92,
+      "loss_interface_raw": 0.010775305330753326,
+      "loss_interface_weighted": 1.0775305554489023e-06,
+      "interface_normal_convention": "shared canonical centre-line normal",
+      "inertial_term_norm": 0.00852346234023571,
+      "stress_divergence_norm": 0.059693459421396255,
+      "external_force_norm": 0.00018452775839250535,
+      "total_residual_norm": 0.06028398126363754,
+      "force_parameter_count": 36,
+      "force_magnitude_raw": 3.45479236329993e-08,
+      "force_temporal_raw": 3.300487216861825e-09,
+      "force_sparsity_raw": 0.00030020836857147515,
+      "cauchy_sampling_factor": 1.0,
+      "loss_force_regularization": 6.755279495507249e-12,
+      "force_time_convention": "fid; original velocity/CMR query remains fid/train_count"
+    },
+    {
+      "iteration": 300,
+      "mean_det_F": 1.2497124671936035,
+      "min_det_F": 0.9214602112770081,
+      "invalid_F_fraction": 0.0,
+      "diagnostic_queries": 128,
+      "new_loss_added": true,
+      "mu": null,
+      "kappa": null,
+      "material_ids_present": [
+        0,
+        1
+      ],
+      "material_parameters": {
+        "mu": [
+          0.7999897579093155,
+          1.5999843960601394
+        ],
+        "kappa": [
+          7.999980206125577,
+          15.999980098961307
+        ]
+      },
+      "loss_constitutive_raw": 0.4865768551826477,
+      "loss_constitutive_weighted": 4.865768278250471e-05,
+      "mean_sigma_const_norm": 3.5260398387908936,
+      "mean_sigma_pred_norm": 0.2732082009315491,
+      "mean_sigma_difference_norm": 3.3563153743743896,
+      "cauchy_residual_legacy": 0.0010853642597794533,
+      "stress_time_convention": "fid, matching rendered F",
+      "force_sigma": 0.998049795627594,
+      "constitutive_F_gradient_norm": 3.6365509004099295e-05,
+      "constitutive_predicted_stress_gradient_norm": 1.6241779121628497e-06,
+      "interface_pairs": 88,
+      "loss_interface_raw": 0.009443173184990883,
+      "loss_interface_weighted": 9.443173212275724e-07,
+      "interface_normal_convention": "shared canonical centre-line normal",
+      "inertial_term_norm": 0.00709288427606225,
+      "stress_divergence_norm": 0.050070300698280334,
+      "external_force_norm": 0.0003313074994366616,
+      "total_residual_norm": 0.050471119582653046,
+      "force_parameter_count": 36,
+      "force_magnitude_raw": 1.1262531529609987e-07,
+      "force_temporal_raw": 7.240763988392018e-09,
+      "force_sparsity_raw": 0.0005478094099089503,
+      "cauchy_sampling_factor": 1.0,
+      "loss_force_regularization": 1.850329611752244e-11,
+      "force_time_convention": "fid; original velocity/CMR query remains fid/train_count"
+    }
+  ],
+  "known_force_and_surface_modes": "unit-tested; low-rank mode GPU training validated",
+  "recovery_claim": false
+}

@@ -27,8 +27,13 @@ def run(experiment,tag,iterations=300):
         data={name:sha256(dataset/name) for name in ('transforms_train.json','transforms_test.json','points3d.ply','audit.json','download_manifest.json')}
     else:data=dataset_hashes(scene)
     if config.get('multi_material'):
-        path=Path(config['material_ids_file']);path=path if path.is_absolute() else PROJECT/path
-        data['material_ids']=sha256(path)
+        label_path=Path(config['material_ids_file']);label_path=label_path if label_path.is_absolute() else PROJECT/label_path
+        data['material_ids']=sha256(label_path)
+    physical_inputs={}
+    for key in ('material_ids_file','force_surface_file','known_force_file'):
+        if config.get(key):
+            path=Path(config[key]);path=path if path.is_absolute() else PROJECT/path
+            physical_inputs[str(path.resolve())]=sha256(path)
     env=os.environ.copy();env['PYTHONPATH']=str(PROJECT)+os.pathsep+env.get('PYTHONPATH','')
     env['PIDG_CONSTITUTIVE_CONFIG']=str(run/'extension_config.json')
     env['PIDG_HASH_SOURCE_DIR']=str(PROJECT/'third_party/PIDG/hashencoder')
@@ -43,7 +48,7 @@ def run(experiment,tag,iterations=300):
     metadata={'experiment':experiment,'scene':scene,'iterations':iterations,'resolution_width':400,'seed':0,
               'profile':'controlled_synthetic_smoke' if config.get('dataset_path') else 'engineering_smoke','smoke_only':True,'started_utc':datetime.now(timezone.utc).isoformat(),
               'source_hashes':source,'original_source_hashes':original,'extension_hashes':extension_hashes,
-              'dataset_hashes':data,'config':config,'commands':[]}
+              'dataset_hashes':data,'physical_input_hashes':physical_inputs,'config':config,'commands':[]}
     stages=[('train',[*prefix,'train_pidg.py',*common,'--iterations',str(iterations),'--warm_up','0','--densify_until_iter','0','--test_iterations',str(iterations),'--save_iterations',str(iterations),'--checkpoint_interval',str(iterations),'--save_image_dir',str(run/'diagnostics')]),
             ('render',[*prefix,'render.py',*common,'--iteration','best','--skip_train']),
             ('metrics',[*prefix,'metrics.py','-m',str(run)])]
@@ -60,7 +65,8 @@ def run(experiment,tag,iterations=300):
         assert runtime_hashes(repo)==source and runtime_hashes(PROJECT/'third_party/PIDG')==original
         assert {p.name:sha256(p) for p in (PROJECT/'pidg_ext').glob('*.py')}==extension_hashes
         assert all(sha256(dataset/name)==value for name,value in data.items() if name!='material_ids')
-        if config.get('multi_material'):assert sha256(path)==data['material_ids']
+        if config.get('multi_material'):assert sha256(label_path)==data['material_ids']
+        assert all(sha256(path)==value for path,value in physical_inputs.items())
         log=(run/'train.log').read_text(encoding='utf-8',errors='replace')
         assert 'Training complete.' in log and not re.search(r'(?:Loss=|loss = )\s*(?:nan|inf)',log,re.I)
         metadata.update(status='completed',metrics=json.loads((run/'results.json').read_text()),finished_utc=datetime.now(timezone.utc).isoformat())

@@ -19,6 +19,7 @@ def prepare():
     text=text.replace('        loss.backward()', '        if extension.enabled:\n            extra_loss = extension.loss(iteration, gaussians, deform, d_xyz, fid, opt, cauchy_momentum_loss if iteration > opt.warm_up and iteration % 100 == 0 else None)\n            if extra_loss is not None:\n                loss = loss + extra_loss\n\n        loss.backward()',1)
     text=text.replace('                gaussians.optimizer.step()', '                extension.optimizer_step()\n                gaussians.optimizer.step()',1)
     text=text.replace('restore_training_state(resume_checkpoint, gaussians, deform, opt, scene)', 'restore_training_state(resume_checkpoint, gaussians, deform, opt, scene, extension)')
+    text=text.replace('            cauchy_momentum_loss = cauchy_momentum_loss_sampled(', '            momentum_loss_fn = cauchy_momentum_loss_sampled\n            if extension.force_enabled:\n                extension.force_time, extension.force_iteration = fid, iteration\n                momentum_loss_fn = extension.momentum_loss\n            cauchy_momentum_loss = momentum_loss_fn(',1)
     file.write_text(text,encoding='utf-8')
     (target/'training_checkpoint.py').write_text('from pidg_ext.checkpoint import save_training_state, restore_training_state\n',encoding='utf-8')
     file=target/'hashencoder/backend.py';text=file.read_text(encoding='utf-8')
