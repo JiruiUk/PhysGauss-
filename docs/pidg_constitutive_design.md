@@ -102,3 +102,13 @@ fixture, not a new official benchmark or photorealistic physical simulator.
 Its initial shared moduli are deliberately 20% below the prescribed values.
 Future-time images are held out, but official PIDG's test split is not relabeled
 as a future-prediction benchmark. No official-scene material recovery is claimed.
+
+## M6: interface traction
+
+Cross-material canonical neighbour pairs use one shared centre-line normal
+`normalize(X_j-X_i)` for both Cauchy-stress tractions. The loss is the mean squared
+traction difference, confidence weighted, with a configurable distance cutoff.
+Pair counts and raw/weighted losses are logged. This follows the plan's discrete
+reference-normal approximation; it is not an exact deformed surface-normal
+construction for large rotations. No extra displacement-continuity penalty is
+added to the shared continuous deformation field.

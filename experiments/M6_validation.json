@@ -1,0 +1,130 @@
+{
+  "milestone": "M6",
+  "status": "passed_controlled_synthetic",
+  "unit_tests": 19,
+  "run": "runs\\pidg_constitutive\\m6_interface\\controlled_two_material",
+  "metrics": {
+    "SSIM": 0.9723553657531738,
+    "PSNR": 27.725269317626953,
+    "LPIPS": 0.03889124095439911,
+    "MS-SSIM": 0.9650689363479614
+  },
+  "diagnostics": [
+    {
+      "iteration": 100,
+      "mean_det_F": 1.1167399883270264,
+      "min_det_F": 0.7348328232765198,
+      "invalid_F_fraction": 0.0,
+      "diagnostic_queries": 128,
+      "new_loss_added": true,
+      "mu": null,
+      "kappa": null,
+      "material_ids_present": [
+        0,
+        1
+      ],
+      "material_parameters": {
+        "mu": [
+          0.8,
+          1.6
+        ],
+        "kappa": [
+          8.0,
+          16.0
+        ]
+      },
+      "loss_constitutive_raw": 0.36541348695755005,
+      "loss_constitutive_weighted": 3.6541347071761265e-05,
+      "mean_sigma_const_norm": 2.743408679962158,
+      "mean_sigma_pred_norm": 0.27495235204696655,
+      "mean_sigma_difference_norm": 2.664292812347412,
+      "cauchy_residual_legacy": 0.002364883664995432,
+      "stress_time_convention": "fid, matching rendered F",
+      "force_sigma": 1.0,
+      "constitutive_F_gradient_norm": 5.4309195547830313e-05,
+      "constitutive_predicted_stress_gradient_norm": 1.4703455235576257e-06,
+      "interface_pairs": 94,
+      "loss_interface_raw": 0.012888235971331596,
+      "loss_interface_weighted": 1.288823568756925e-06,
+      "interface_normal_convention": "shared canonical centre-line normal"
+    },
+    {
+      "iteration": 200,
+      "mean_det_F": 1.225675106048584,
+      "min_det_F": 0.8383151888847351,
+      "invalid_F_fraction": 0.0,
+      "diagnostic_queries": 128,
+      "new_loss_added": true,
+      "mu": null,
+      "kappa": null,
+      "material_ids_present": [
+        0,
+        1
+      ],
+      "material_parameters": {
+        "mu": [
+          0.7999948501114409,
+          1.5999922094032977
+        ],
+        "kappa": [
+          7.999990065991644,
+          15.999990043784813
+        ]
+      },
+      "loss_constitutive_raw": 0.47094297409057617,
+      "loss_constitutive_weighted": 4.7094297769945115e-05,
+      "mean_sigma_const_norm": 3.4112255573272705,
+      "mean_sigma_pred_norm": 0.2723349928855896,
+      "mean_sigma_difference_norm": 3.263002395629883,
+      "cauchy_residual_legacy": 0.0014393457677215338,
+      "stress_time_convention": "fid, matching rendered F",
+      "force_sigma": 0.9990000128746033,
+      "constitutive_F_gradient_norm": 4.193653876427561e-05,
+      "constitutive_predicted_stress_gradient_norm": 1.6194615000131307e-06,
+      "interface_pairs": 91,
+      "loss_interface_raw": 0.010716990567743778,
+      "loss_interface_weighted": 1.071698989107972e-06,
+      "interface_normal_convention": "shared canonical centre-line normal"
+    },
+    {
+      "iteration": 300,
+      "mean_det_F": 1.2302473783493042,
+      "min_det_F": 0.8948113918304443,
+      "invalid_F_fraction": 0.0,
+      "diagnostic_queries": 128,
+      "new_loss_added": true,
+      "mu": null,
+      "kappa": null,
+      "material_ids_present": [
+        0,
+        1
+      ],
+      "material_parameters": {
+        "mu": [
+          0.7999897537747683,
+          1.5999843958644748
+        ],
+        "kappa": [
+          7.999980206648662,
+          15.99998008119426
+        ]
+      },
+      "loss_constitutive_raw": 0.47662031650543213,
+      "loss_constitutive_weighted": 4.7662029828643426e-05,
+      "mean_sigma_const_norm": 3.4734201431274414,
+      "mean_sigma_pred_norm": 0.27328580617904663,
+      "mean_sigma_difference_norm": 3.305708646774292,
+      "cauchy_residual_legacy": 0.001053632004186511,
+      "stress_time_convention": "fid, matching rendered F",
+      "force_sigma": 0.9980502128601074,
+      "constitutive_F_gradient_norm": 4.02317637053784e-05,
+      "constitutive_predicted_stress_gradient_norm": 1.632517751204432e-06,
+      "interface_pairs": 87,
+      "loss_interface_raw": 0.0093594491481781,
+      "loss_interface_weighted": 9.359449109069828e-07,
+      "interface_normal_convention": "shared canonical centre-line normal"
+    }
+  ],
+  "normal_caveat": "Canonical centre-line proxy is specified by the plan; it is not an exact physical interface normal.",
+  "displacement_penalty_added": false
+}

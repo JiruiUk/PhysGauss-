@@ -209,3 +209,18 @@ def test_controlled_two_material_fixture_has_consistent_GT_and_future_split(tmp_
     right=gt['stress'][:,gt['material_ids']==1,0,0].mean(1)
     np.testing.assert_allclose(left,right,atol=1e-12)
     with pytest.raises(FileExistsError):manufacture(path)
+
+
+def test_interface_uses_cross_material_pairs_shared_normals_and_stress_gradients():
+    from pidg_ext.interface import interface_pairs,traction_loss
+    X=torch.tensor([[-.1,0.,0.],[-.1,.1,0.],[.1,0.,0.],[.1,.1,0.]])
+    labels=torch.tensor([0,0,1,1]);graph=canonical_neighbors(X,3)
+    pairs=interface_pairs(X,labels,graph,max_distance=.3)
+    assert len(pairs)==4 and (labels[pairs[:,0]]!=labels[pairs[:,1]]).all()
+    identical=torch.eye(3).expand(4,3,3)
+    assert traction_loss(identical,X,pairs)==0
+    sigma=identical.clone();sigma[2:]*=2;sigma.requires_grad_()
+    loss=traction_loss(sigma,X,pairs);torch.testing.assert_close(loss,torch.tensor(1.))
+    loss.backward();assert sigma.grad.isfinite().all() and sigma.grad.norm()>0
+    assert len(interface_pairs(X,labels,graph,max_distance=.05))==0
+    assert traction_loss(sigma,X,torch.empty(0,2,dtype=torch.long))==0

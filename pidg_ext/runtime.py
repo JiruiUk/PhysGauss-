@@ -11,6 +11,8 @@ class Extension:
         self.enabled=self.config.get('deformation_gradient',False)
         if self.config.get('constitutive') and not self.enabled:
             raise ValueError('Constitutive consistency requires the F estimator')
+        if self.config.get('interface_enabled') and not (self.config.get('constitutive') and self.config.get('multi_material')):
+            raise ValueError('Interface traction requires constitutive consistency and known materials')
         self.run=Path(run)
         self.train_count=train_count
         self.optimizer=None
@@ -86,6 +88,16 @@ class Extension:
                 gradients=torch.autograd.grad(weighted,(result['F'],pred),retain_graph=True,allow_unused=True)
                 record['constitutive_F_gradient_norm']=gradients[0].norm().item() if gradients[0] is not None else 0.
                 record['constitutive_predicted_stress_gradient_norm']=gradients[1].norm().item() if gradients[1] is not None else 0.
+                if self.config.get('interface_enabled'):
+                    from .interface import interface_pairs,traction_loss
+                    reverse=torch.full((len(X),),-1,device=X.device,dtype=torch.long)
+                    reverse[ids]=torch.arange(len(ids),device=X.device)
+                    pairs=interface_pairs(X[ids],labels.to(X.device),reverse[graph[ids]],self.config.get('interface_max_distance',float('inf')))
+                    interface=traction_loss(pred,X[ids],pairs,result['confidence'])
+                    interface_weighted=interface*self.config.get('interface_weight',1e-4)
+                    weighted=weighted+interface_weighted
+                    record.update(interface_pairs=len(pairs),loss_interface_raw=interface.item() if len(pairs) else None,
+                                  loss_interface_weighted=interface_weighted.item(),interface_normal_convention='shared canonical centre-line normal')
         with (self.run/'extension.jsonl').open('a',encoding='utf-8') as stream:
             stream.write(json.dumps(record,allow_nan=False)+'\n')
         return weighted
