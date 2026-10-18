@@ -93,3 +93,25 @@ def test_resumed_queue_starts_new_jobs_fresh_and_resumes_existing_checkpoints(tm
     with pytest.raises(SystemExit) as second:runner.run('A1','test',resume=True)
     assert second.value.code==75 and '--resume_checkpoint' in commands[-1]
     assert '--resume_checkpoint' not in commands[0]
+
+
+def test_result_reporting_uses_saved_diagnostics_without_importing_training_modules(tmp_path,monkeypatch):
+    import builtins
+    import report_constitutive as reporting
+    from pidg_benchmark import read_json
+    repository=Path(__file__).resolve().parents[1]
+    output=tmp_path/'experiments';output.mkdir()
+    write_json(output/'M9_validation.json',read_json(repository/'experiments/M9_validation.json'))
+    (output/'RESULTS_TEMPLATE.csv').write_text((repository/'experiments/RESULTS_TEMPLATE.csv').read_text())
+    monkeypatch.setattr(reporting,'PROJECT',tmp_path)
+    monkeypatch.setattr(reporting,'rows_for',lambda *args:[])
+    metrics={'PSNR':27.,'SSIM':.97,'LPIPS':.03,'MS-SSIM':.98}
+    monkeypatch.setattr(reporting,'completed_metrics',lambda *args:({},metrics))
+    original=builtins.__import__
+    def forbid_training(name,*args,**kwargs):
+        if name=='torch' or name.startswith('torch.') or name=='pidg_ext' or name.startswith('pidg_ext.'):
+            pytest.fail('Reporting must not import training modules or DLLs')
+        return original(name,*args,**kwargs)
+    monkeypatch.setattr(builtins,'__import__',forbid_training)
+    result=reporting.report({'execution':{'selected_long_scenes':['rubber_duck']}})
+    assert result['baseline_reused'] and 'both_unknown' in (output/'results.md').read_text(encoding='utf-8')

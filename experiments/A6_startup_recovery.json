@@ -10,7 +10,7 @@
   ],
   "fix": "Only attach a checkpoint after an existing incomplete run passes verification",
   "runner_sha256": "e113accdf046005ffa68c3053bbdee973e54b9ed89e7646510d284c06fb54652",
-  "regression_tests": "6 passed",
+  "regression_tests": "7 passed (queue resume and reporting without training imports)",
   "status": "retry_training_and_new_checkpoint_verified",
   "prepared_utc": "2026-10-18T21:02:01.448216+00:00",
   "retry_worker_pid": 56788,
@@ -26,5 +26,8 @@
     "extension_saved": true
   },
   "observed_iteration": 1140,
-  "no_resume_flag_in_new_command": true
+  "no_resume_flag_in_new_command": true,
+  "monitor_recovered": true,
+  "monitor_refresh_seconds": 5,
+  "monitor_implementation": "Read validated M9 JSON; no training DLL imports"
 }

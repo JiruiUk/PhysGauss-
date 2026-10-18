@@ -84,8 +84,8 @@ def report(plan=None):
         m=row.get('metrics',{});p=row.get('physics',{})
         text+=f"| {row['configuration_id']} | {row['status']} | {fmt(m.get('PSNR'))} | {fmt(m.get('SSIM'))} | {fmt(m.get('LPIPS'))} | {fmt(p.get('cauchy_residual_legacy'))} | {fmt(p.get('loss_constitutive_raw'))} | {fmt(p.get('invalid_F_fraction'))} | {fmt(p.get('loss_interface_raw'))} |\n"
     text+='\nCMR retains the released sample scaling and time convention. Interface values use a canonical centre-line normal proxy. New physical parameters are not claimed recovered. Future-time images use the test-based snapshot protocol, so no leakage-free forecasting claim is made.\n'
-    from pidg_ext.identifiability import ambiguity_experiment
-    ambiguity=ambiguity_experiment()
+    # Reporting consumes the validated M9 result; it must not load training DLLs.
+    ambiguity=read_json(PROJECT/'experiments/M9_validation.json')['manufactured_ambiguity']
     text+='\n## Table 3: manufactured stiffness/force ambiguity\n\nAnalytic solutions to a manufactured balance; not material recovery from official images.\n\n| Case | Data rank | Objective rank | Condition | Min SV | mu error | Force error | Max correlation |\n|---|---:|---:|---:|---:|---:|---:|---:|\n'
     for name,row in ambiguity['cases'].items():
         text+=f"| {name} | {row['data_effective_rank']} | {row['effective_rank']} | {row['condition_number']} | {fmt(row['min_singular_value'])} | {fmt(row['mu_relative_error'])} | {fmt(row['force_relative_error'])} | {fmt(row.get('max_material_force_correlation'))} |\n"
