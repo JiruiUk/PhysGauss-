@@ -1,0 +1,27 @@
+{
+  "status": "resumed_training_and_new_full_checkpoint_verified",
+  "resume_from_iteration": 7633,
+  "checkpoint_sha256": "841977e058b231399b77e52580c280afdc7889254b4ee46342b616b6fa091ffb",
+  "source_config_data_unchanged": true,
+  "completed_jobs_reused": [
+    "A1",
+    "A2a",
+    "A2b",
+    "A4_single"
+  ],
+  "prepared_utc": "2026-10-18T22:39:36.201531+00:00",
+  "controller_pid": 67100,
+  "current_iteration": 8270,
+  "checkpoint": {
+    "path": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_constitutive\\m10_long_A6_single\\rubber_duck\\checkpoints\\resume.pt",
+    "iteration": 8000,
+    "sha256": "d5769cb320c86cf831c87dbf3c47c394ee077d8305b8b20d3c16e0d46220c379",
+    "size_bytes": 208771777,
+    "format_version": 1,
+    "optimizer_saved": true,
+    "rng_saved": true,
+    "created_unix": 1792363417.1198173,
+    "extension_saved": true
+  },
+  "child_pid": 68748
+}

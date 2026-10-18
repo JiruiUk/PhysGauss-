@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-18T22:11:40.274100+01:00",
+  "updated_at": "2026-10-18T23:44:07.643121+01:00",
   "selected_scenes": [
     "rubber_duck"
   ],
@@ -3279,7 +3279,28 @@
       "status": "training",
       "iterations": 50000,
       "resolution_width": 1600,
-      "checkpoint_iteration": 3000,
+      "checkpoint_iteration": 8000,
+      "physics": {
+        "iteration": 8500,
+        "mean_det_F": 0.9843249917030334,
+        "min_det_F": 0.09003973007202148,
+        "invalid_F_fraction": 0.0,
+        "diagnostic_queries": 256,
+        "new_loss_added": true,
+        "optimization_stage": "B",
+        "mu": 1.0,
+        "kappa": 10.0,
+        "loss_constitutive_raw": 1.1383371353149414,
+        "loss_constitutive_weighted": 0.00011383371020201594,
+        "mean_sigma_const_norm": 6.285842418670654,
+        "mean_sigma_pred_norm": 0.3725213408470154,
+        "mean_sigma_difference_norm": 6.206564426422119,
+        "cauchy_residual_legacy": 2.0502955521806143e-05,
+        "stress_time_convention": "fid, matching rendered F",
+        "force_sigma": 0.9811180233955383,
+        "constitutive_F_gradient_norm": 0.0009094155393540859,
+        "constitutive_predicted_stress_gradient_norm": 1.043497832142748e-06
+      },
       "preset_scope": "A6 single-material compatible subset; full multi-material/interface preset validated separately on controlled data"
     }
   ],
