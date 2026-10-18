@@ -97,6 +97,7 @@ def run(experiment,tag,iterations=300,long_run=False,resume=False):
     expected={**spec,'profile':profile,'scene':scene,'config':config,'source_hashes':source,'original_source_hashes':original,
               'extension_hashes':extensions,'dataset_hashes':data,'physical_input_hashes':physical,
               'evaluator_sha256':sha256(repo/'metrics.py'),'shared_checkpoint_helper_sha256':sha256(PROJECT/'reproduction/scripts/training_checkpoint.py')}
+    resume_checkpoint=None
     if directory.exists():
         if not resume:raise FileExistsError(f'Existing run preserved: {directory}; use explicit resume')
         metadata=read_json(directory/'reproduction.json')
@@ -104,6 +105,8 @@ def run(experiment,tag,iterations=300,long_run=False,resume=False):
         if metadata['status']=='completed':completed_metrics(directory);return directory
         checkpoint=verified_checkpoint(directory)
         if config.get('deformation_gradient') and not checkpoint.get('extension_saved'):raise ValueError('Incomplete extension checkpoint')
+        if 'train' not in metadata['completed_steps']:
+            resume_checkpoint=directory/'checkpoints/resume.pt'
         if io_patch is not None:
             metadata.setdefault('checkpoint_io_hotfix_history',[]).append({**io_patch,'iteration':checkpoint['iteration'],'checkpoint_sha256':checkpoint['sha256'],'utc':datetime.now(timezone.utc).isoformat()})
             metadata['resume_extension_hashes']=extensions
@@ -125,7 +128,7 @@ def run(experiment,tag,iterations=300,long_run=False,resume=False):
     common=['-s',str(dataset),'-m',str(directory),'--conf',str(repo/f'arguments/pidg/{config_id}.py'),'--load2gpu_on_the_fly','--resolution',str(spec['resolution_width'])]
     train=[*prefix,'train_pidg.py',*common,'--iterations',str(iterations),'--checkpoint_interval','1000' if long_run else str(iterations),'--save_image_dir',str(directory/'diagnostics')]
     if not long_run:train+=['--warm_up','0','--densify_until_iter','0','--test_iterations',str(iterations),'--save_iterations',str(iterations)]
-    if resume and 'train' not in metadata['completed_steps']:train+=['--resume_checkpoint',str(directory/'checkpoints/resume.pt')]
+    if resume_checkpoint is not None:train+=['--resume_checkpoint',str(resume_checkpoint)]
     commands=[('train',train),('render',[*prefix,'render.py',*common,'--iteration','best','--skip_train']),('metrics',[*prefix,'metrics.py','-m',str(directory)])]
     if config.get('identifiability'):commands.append(('diagnostics',[sys.executable,'-u',str(PROJECT/'scripts/diagnose_constitutive.py'),'--run',str(directory)]))
     try:

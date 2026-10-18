@@ -1,0 +1,16 @@
+{
+  "cause": "Queue-level resume incorrectly attached a missing checkpoint to new A6 job",
+  "failed_before_training": true,
+  "archived_run": "runs\\pidg_constitutive\\m10_long_A6_single_failed_pretrain_20261018",
+  "completed_jobs_reused": [
+    "A1",
+    "A2a",
+    "A2b",
+    "A4_single"
+  ],
+  "fix": "Only attach a checkpoint after an existing incomplete run passes verification",
+  "runner_sha256": "e113accdf046005ffa68c3053bbdee973e54b9ed89e7646510d284c06fb54652",
+  "regression_tests": "6 passed",
+  "status": "prestart_failure_archived_ready_to_retry",
+  "prepared_utc": "2026-10-18T21:02:01.448216+00:00"
+}

@@ -64,7 +64,7 @@ def test_new_controller_forwards_stop_once_and_does_not_recreate_consumed_reques
     assert not request.exists()
 
 
-def test_saved_training_resume_uses_verified_checkpoint_and_preserves_outputs(tmp_path,monkeypatch):
+def test_resumed_queue_starts_new_jobs_fresh_and_resumes_existing_checkpoints(tmp_path,monkeypatch):
     import hashlib
     from pidg_benchmark import read_json
     monkeypatch.syspath_prepend(str(Path(__file__).resolve().parents[1]/'reproduction/scripts'))
@@ -86,7 +86,7 @@ def test_saved_training_resume_uses_verified_checkpoint_and_preserves_outputs(tm
         write_json(cp.with_suffix('.json'),{'iteration':100,'sha256':hashlib.sha256(cp.read_bytes()).hexdigest(),'optimizer_saved':True,'rng_saved':True,'extension_saved':True})
         return 75
     monkeypatch.setattr(runner,'execute',stopped)
-    with pytest.raises(SystemExit) as first:runner.run('A1','test')
+    with pytest.raises(SystemExit) as first:runner.run('A1','test',resume=True)
     assert first.value.code==75
     directory=tmp_path/'runs/pidg_constitutive/test/rubber_duck'
     assert read_json(directory/'reproduction.json')['status']=='saved_stopped'
