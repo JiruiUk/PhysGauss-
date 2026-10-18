@@ -11,6 +11,20 @@
   "fix": "Only attach a checkpoint after an existing incomplete run passes verification",
   "runner_sha256": "e113accdf046005ffa68c3053bbdee973e54b9ed89e7646510d284c06fb54652",
   "regression_tests": "6 passed",
-  "status": "prestart_failure_archived_ready_to_retry",
-  "prepared_utc": "2026-10-18T21:02:01.448216+00:00"
+  "status": "retry_training_and_new_checkpoint_verified",
+  "prepared_utc": "2026-10-18T21:02:01.448216+00:00",
+  "retry_worker_pid": 56788,
+  "checkpoint": {
+    "path": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_constitutive\\m10_long_A6_single\\rubber_duck\\checkpoints\\resume.pt",
+    "iteration": 1000,
+    "sha256": "d3c04e69430333b96f68fcbd2f50aec163d0517708ed9240e84b210f85dbb4b8",
+    "size_bytes": 134423237,
+    "format_version": 1,
+    "optimizer_saved": true,
+    "rng_saved": true,
+    "created_unix": 1792357652.9672666,
+    "extension_saved": true
+  },
+  "observed_iteration": 1140,
+  "no_resume_flag_in_new_command": true
 }
