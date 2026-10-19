@@ -1,8 +1,10 @@
 # PIDG constitutive plan results
 
-Updated: 2026-10-18T23:44:07.643121+01:00
+Updated: 2026-10-19T01:19:10.791239+01:00
 
 M0 reused five completed original baselines. Active long scope: Rubber Duck only, 50k steps, width1600, seed0. Short controlled data are reported separately.
+
+[GT / Render comparison videos and paired PNGs for all five models](render_comparisons.md)
 
 ## Table 1: selected official compatibility benchmark
 
@@ -13,7 +15,7 @@ M0 reused five completed original baselines. Active long scope: Rubber Duck only
 | A2a | completed | 50000 | 27.128334 | -0.128447 | 0.976362 | 0.031909 |
 | A2b | completed | 50000 | 28.408968 | 1.152187 | 0.976817 | 0.030052 |
 | A4_single | completed | 50000 | 28.329363 | 1.072582 | 0.976372 | 0.030201 |
-| A6_single | training | 8000 | — | — | — | — |
+| A6_single | completed | 50000 | 26.327761 | -0.929020 | 0.975443 | 0.035799 |
 
 A3 official multi-material comparison awaits known labels. A4_single/A6_single use a single shared material; they are explicitly compatible subsets, not real multi-material results. A5 diagnostics reuse A4 training. Full multi-material/interface modules are validated on manufactured data below. D-NeRF/HyperNeRF metrics remain unavailable, not zero. Historical A0 runtime hashes were not recorded.
 

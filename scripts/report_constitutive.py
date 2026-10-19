@@ -72,6 +72,9 @@ def report(plan=None):
             if milestones!=previous:write_json(milestone_path,milestones)
     write_json(PROJECT/'experiments/results.json',result)
     text=f"# PIDG constitutive plan results\n\nUpdated: {result['updated_at']}\n\nM0 reused five completed original baselines. Active long scope: Rubber Duck only, 50k steps, width1600, seed0. Short controlled data are reported separately.\n\n"
+    visual_path=PROJECT/'experiments/render_comparisons.json'
+    if visual_path.exists() and read_json(visual_path).get('status')=='completed':
+        text+='[GT / Render comparison videos and paired PNGs for all five models](render_comparisons.md)\n\n'
     text+='## Table 1: selected official compatibility benchmark\n\n| Method | Status | Checkpoint | PSNR | Delta PSNR | SSIM | LPIPS |\n|---|---|---:|---:|---:|---:|---:|\n'
     text+=f"| A0 original (reused) | completed | 50000 | {baseline['PSNR']:.5f} | 0 | {baseline['SSIM']:.5f} | {baseline['LPIPS']:.5f} |\n"
     def fmt(value):return f'{value:.6f}' if isinstance(value,(int,float)) else '—'
