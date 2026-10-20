@@ -1,0 +1,157 @@
+{
+  "pdf": "F:\\A_Edinburgh\\PhysGauss\\output\\pdf\\PIDG_Variants_Report_EN.pdf",
+  "language": "en",
+  "english_edition_date": "2026-10-20",
+  "experimental_snapshot_date": "2026-10-19",
+  "pages": [
+    {
+      "page": 1,
+      "title": "PIDG Constitutive Extensions",
+      "content_bottom": 221.39
+    },
+    {
+      "page": 2,
+      "title": "Settings and comparison protocol",
+      "content_bottom": 227.89
+    },
+    {
+      "page": 3,
+      "title": "Retain PIDG; add a physics branch",
+      "content_bottom": 125.89
+    },
+    {
+      "page": 4,
+      "title": "From deformation to stress consistency",
+      "content_bottom": 160.89
+    },
+    {
+      "page": 5,
+      "title": "Structured force and staged training",
+      "content_bottom": 266.89
+    },
+    {
+      "page": 6,
+      "title": "Highest PSNR: A2b, with metric trade-offs",
+      "content_bottom": 151.89
+    },
+    {
+      "page": 7,
+      "title": "GT comparison: Start of sequence",
+      "content_bottom": 162.99
+    },
+    {
+      "page": 8,
+      "title": "GT comparison: Middle of sequence",
+      "content_bottom": 162.99
+    },
+    {
+      "page": 9,
+      "title": "GT comparison: End of sequence",
+      "content_bottom": 162.99
+    },
+    {
+      "page": 10,
+      "title": "Image gains do not establish material recovery",
+      "content_bottom": 201.89
+    },
+    {
+      "page": 11,
+      "title": "Conditional rank is not physical recovery",
+      "content_bottom": 197.89
+    },
+    {
+      "page": 12,
+      "title": "Two-material tests and interface validation",
+      "content_bottom": 202.89
+    },
+    {
+      "page": 13,
+      "title": "Conclusions and next validation steps",
+      "content_bottom": 250.39
+    }
+  ],
+  "fixed_gt_roi_xyxy": [
+    334,
+    8,
+    1233,
+    900
+  ],
+  "visual_indices": [
+    0,
+    25,
+    49
+  ],
+  "best_snapshot_iterations": {
+    "A1": 24000,
+    "A2a": 24000,
+    "A2b": 31000,
+    "A4_single": 37000,
+    "A6_single": 50000
+  },
+  "source_sha256": {
+    "experiments\\results.json": "261f402139ef945f8ab0e979b2821e2f2ca67b6c80e0ef37a0a4167dcc633ef6",
+    "baseline_metrics.json": "a0fabd6d8b1e22c8adb7575f59d3afeb58eec1796c7cea7228b787e31c4347ec",
+    "PIDG_REPO_MAP.md": "88c90bb40d31a6f512d987497cd94313e0f515010c0cbdd58a4d62db56bcb0fb",
+    "scripts\\diagnose_constitutive.py": "8b712ea33dee9a88915aeaa0be54e7eb959bdb293904bcd7b1bca3a6a76d8b8f",
+    "experiments\\milestones.json": "a6ad2d73be8dc01d04ea2b356082e593535a0a942a4074a42779bc05a74aab40",
+    "runs\\pidg_constitutive\\m10_long_A6_single\\rubber_duck\\optimization_stages.jsonl": "0dcea0ab649dffaf4e3b1e3f510658e04f73c6115c0559be081947ff880309fb",
+    "runs\\pidg_constitutive\\render_comparisons\\rubber_duck_best_20261019_001152\\manifest.json": "309830847755c12c6d75486f3256708d6e3847dd9ddaf88a8dfb4f6be628c08d",
+    "runs\\pidg_constitutive\\render_comparisons\\rubber_duck_best_20261019_001152\\delivery_validation.json": "dabd874113cfe651ac924f179cb3a69e98ecd7325ba523b6c575f4960f82f0ca",
+    "scripts\\build_pidg_report_en.py": "fe38e5c7eaefbebf92d0fd18aa6272d1e96fe979600efb71f65382d1aa9f77c5",
+    "scripts\\build_pidg_report.py": "960cfd94000c5453286e4c19fbaa086fbf9d1add045e902fc3f65e65b99f24de",
+    "output\\pdf\\PIDG_Variants_Report.pdf": "f4ac278c662491166ce97e81185601447f624e0b63ba702c27679a90d85df59d",
+    "pidg_ext\\__init__.py": "6ad88c3b28c35b84b70481a3849991a93da384c7edc723dba9424f43f50452bc",
+    "pidg_ext\\checkpoint.py": "e17ac6153e1a5c900b65ea805244ef631a40c17bc4afc26823de8b7b6e82281d",
+    "pidg_ext\\constitutive.py": "f9d69a941e3dd580681b156713fc89366e8ffc18c85f1783a21c5f2ad3ecf253",
+    "pidg_ext\\deformation_gradient.py": "683df7060062cde72dbbac0d64af0febdd2da8ad08affcf6e958a104c4dfc769",
+    "pidg_ext\\forces.py": "3f91921efaaf9f75dac4a130335eb684e22820aa36c7cbafa1bf395b4fd8c9d8",
+    "pidg_ext\\identifiability.py": "b1bdc9adc213002f84dceb16c2ac8c5b15d1a51bda91ded9b4910fbe431e0ef1",
+    "pidg_ext\\interface.py": "423c74013caeff9b4bf73c939c0b14e3a09c3c0004e475d1f69b5307dd9b47a7",
+    "pidg_ext\\losses.py": "ac03a3ebdd18bb3530d4992056acf278445cdf98b55e6e551660b1cc6c8263e0",
+    "pidg_ext\\materials.py": "eed90e8a65ce0e0b47924f9d2e20e9c81c79d7d83867ca6dd11eaac4758fa511",
+    "pidg_ext\\runtime.py": "4c18dbe4aabb4101304b9d6c88d81e4191f4db95ef1c79e7544afd36f9042f59",
+    "pidg_ext\\staging.py": "a717f1298f97c4590767c3baa10514c2c044ff77f5ecb495e1a69ef864d357ae",
+    "experiments\\configs\\A0.json": "e900e8f4107fb73dbc0b17dccdfd62c083d56a61155226a2d251db4503047adc",
+    "experiments\\configs\\A0_controlled.json": "a10061b5b6a2e6fe088de28edcfbe3aff7377127007a5ce17d23235de20b5a97",
+    "experiments\\configs\\A1.json": "881aa48e50bb6d2a75c9378b45831aff0c4836e6aed3b30651f24132b426e1a5",
+    "experiments\\configs\\A1_controlled.json": "b4173b6394e292f275852eeb40799d9c56be42ade73b15c5c60240507534c97e",
+    "experiments\\configs\\A2a.json": "6553d23329aedabdb13503bc85716e3b53f3a2276814c74e29a17e6850987a2a",
+    "experiments\\configs\\A2a_controlled.json": "3fda168d0100fa16bb90dd240ca22eed540d5b1c9ee7c4211f3ce46d05f0c3e9",
+    "experiments\\configs\\A2b.json": "02c70ba314ce5d0e4d5c8d65ec19b9a5358889665d036edaf10ae442163d4bed",
+    "experiments\\configs\\A2b_controlled.json": "fc05ec8f3d5ea2c7cdd6203867a9ca9a9b4b45056dd57869cbc839991004d474",
+    "experiments\\configs\\A3.json": "42be5d700dce419e66cd7bceb723f8cdaff75a147e6302542dd4e94cd7938978",
+    "experiments\\configs\\A3_controlled.json": "61ca4c281209684ae4eab4169bf0697b1cd9c44488f8c62908d5eaa3f0e0e1d9",
+    "experiments\\configs\\A3_interface_controlled.json": "41249f4270282bac42fe46fe7da0920eff5cde122b3ac807c4d9fbd0c016fc16",
+    "experiments\\configs\\A4.json": "640cf5b542acef3e17f75e9aee8747344ca3a1e326766a45a3ce8f7582f57bb6",
+    "experiments\\configs\\A4_controlled.json": "6f7b6043e3f1ad94c9f160f4f8c1d3e5379ff512087926a3946ec6b23528bf95",
+    "experiments\\configs\\A4_single.json": "640cf5b542acef3e17f75e9aee8747344ca3a1e326766a45a3ce8f7582f57bb6",
+    "experiments\\configs\\A5.json": "dcc3c2223a0c2c73137d05143a08c02b2b7207ca5a73f76d67c42bf49d78ff1e",
+    "experiments\\configs\\A5_controlled.json": "54bf1b86b8365786f361032dd4558365411c31486fde92ab7edcbc0156982b3a",
+    "experiments\\configs\\A5_single.json": "dcc3c2223a0c2c73137d05143a08c02b2b7207ca5a73f76d67c42bf49d78ff1e",
+    "experiments\\configs\\A6.json": "0299f723ce5bb2e6b447c1f23876ac3672fdf22b3e523db1d66817c002aaf4b6",
+    "experiments\\configs\\A6_controlled.json": "bac289a1c505668f27a489aeedec50f619b2164f9bceec3bdcacfaee70877b2e",
+    "experiments\\configs\\A6_single.json": "0299f723ce5bb2e6b447c1f23876ac3672fdf22b3e523db1d66817c002aaf4b6",
+    "experiments\\configs\\M2_NH_diagnostic.json": "f534f6b006c98914301591ca20d2fd9de422cd2904cd634579129d24cd4da1f9",
+    "experiments\\configs\\M8_staged_controlled.json": "46013507fe0b45863b4a6dc689a54121a0966c60b12de292d2d4da02d945b21e",
+    "experiments\\M10_validation.json": "7f9cef91f557e5f6fc44f80d4de02c815ec855d4daba5351a8b979f500b47e21",
+    "experiments\\M1_validation.json": "bb071536ff5d96268af1ef6e14ab084c87f326139fecf38f64561b4a26c8a851",
+    "experiments\\M2_validation.json": "46aaa6ca6015d339b42932acdfa70df48c9cc023249347e66db9cb5dd7710730",
+    "experiments\\M3_validation.json": "11497a93d1e543eb4d913b740eb8fac886b4852c35635ba356c69b4bd1cc3694",
+    "experiments\\M4_validation.json": "e2d094037a25d5f9ee6e01d339add33ef4b34b07c2ef12e381aa775967d4b574",
+    "experiments\\M5_validation.json": "e367edbe42052b5012be4c708b5319bbdf34133cfe7447fae4f3d5b73390ac42",
+    "experiments\\M6_validation.json": "744b9ff752073ba67fd7998db83c2cb7cf29974d80cdb60513a2fe5c9a609565",
+    "experiments\\M7_validation.json": "0839f74e8e6d0f477af8af4f5e1b1c986c9b1a4d09728f857aace51fde72124c",
+    "experiments\\M8_validation.json": "4511560d29800d04a794493341ec818bf86bc4c6604f5c541869f331210e9c1e",
+    "experiments\\M9_validation.json": "93cb2bbca8d015c8230a5cd01f675f6a5cfb4a856e97e1e89e09c7df3a424a6d",
+    "variants\\constitutive_pidg\\code\\scene_PIDG\\network.py": "a43f8c043db2b618126d0f525f1de1e002773fbcb5d584bb984f0c01c7e5ce22",
+    "variants\\constitutive_pidg\\code\\motion_utils\\pidg.py": "e8ffce4ba8ca30619f8c0bcc2322f190d62bd14896b2edb88cdd0a4261c830fe"
+  },
+  "limitations": [
+    "one scene, one seed",
+    "best selected by test PSNR",
+    "A0 historical source hashes unavailable",
+    "image best snapshot differs from final physics checkpoint",
+    "conditional Jacobian freezes neural fields",
+    "legacy CMR and new constitutive/force time conventions differ"
+  ]
+}
