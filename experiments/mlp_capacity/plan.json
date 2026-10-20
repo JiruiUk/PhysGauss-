@@ -1,0 +1,57 @@
+{
+  "scene": "rubber_duck",
+  "backbone": "original released PIDG compatibility baseline",
+  "physics_extensions": "disabled; original trainer, no pidg_ext training hooks",
+  "changed_module": "scene_PIDG.network.DeformNetwork only",
+  "fixed_modules": [
+    "hash grids",
+    "velocity/stress network",
+    "Gaussian model",
+    "renderer"
+  ],
+  "long_protocol": {
+    "iterations": 50000,
+    "resolution_width": 1600,
+    "seed": 0
+  },
+  "smoke_protocol": {
+    "iterations": 300,
+    "resolution_width": 400,
+    "seed": 0,
+    "warm_up": 0,
+    "densify_until_iter": 0
+  },
+  "variants": [
+    {
+      "id": "W256_D0",
+      "width": 256,
+      "depth": 0,
+      "mlp_parameters": 61454
+    },
+    {
+      "id": "W512_D0",
+      "width": 512,
+      "depth": 0,
+      "mlp_parameters": 122894
+    },
+    {
+      "id": "W256_D2",
+      "width": 256,
+      "depth": 2,
+      "mlp_parameters": 193038
+    },
+    {
+      "id": "W512_D2",
+      "width": 512,
+      "depth": 2,
+      "mlp_parameters": 648206
+    }
+  ],
+  "baseline_reuse": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_official\\rubber_duck",
+  "selection": "original best-test-PSNR protocol; also report final-50k logged PSNR",
+  "limitations": [
+    "single scene and seed; exploratory comparison",
+    "historical baseline did not record runtime source hashes",
+    "different widths/depths have different initialization draws and runtime costs"
+  ]
+}
