@@ -1,0 +1,54 @@
+{
+  "status": "passed_cpu_preflight",
+  "unit_tests_passed": 13,
+  "mask_tests": 12,
+  "flags_off_regression_tests": 1,
+  "original_baseline_source_unchanged": true,
+  "original_dataset_unchanged": true,
+  "subsets": [
+    {
+      "drop_percent": 10,
+      "retained": 135,
+      "heldout": 15,
+      "official_test_unchanged": true,
+      "poses_and_times_unchanged": true,
+      "disjoint": true
+    },
+    {
+      "drop_percent": 30,
+      "retained": 105,
+      "heldout": 45,
+      "official_test_unchanged": true,
+      "poses_and_times_unchanged": true,
+      "disjoint": true
+    },
+    {
+      "drop_percent": 50,
+      "retained": 75,
+      "heldout": 75,
+      "official_test_unchanged": true,
+      "poses_and_times_unchanged": true,
+      "disjoint": true
+    },
+    {
+      "drop_percent": 70,
+      "retained": 45,
+      "heldout": 105,
+      "official_test_unchanged": true,
+      "poses_and_times_unchanged": true,
+      "disjoint": true
+    },
+    {
+      "drop_percent": 90,
+      "retained": 15,
+      "heldout": 135,
+      "official_test_unchanged": true,
+      "poses_and_times_unchanged": true,
+      "disjoint": true
+    }
+  ],
+  "dependency_state": "waiting_for_mlp",
+  "watcher_pid": 114676,
+  "smoke_training": "deferred until MLP training/render/metrics completion; not yet run",
+  "source_freeze_sha256": "848d6ba3c14f7a4c39046593f33b6ec58f294b4eb444836f9bead9ffde0973d7"
+}
