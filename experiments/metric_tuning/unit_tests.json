@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "command": "envs/pidg-cu128/python.exe -m pytest tests/test_metric_tuning.py tests/test_random_frame_mask.py -q",
+  "passed": 25,
+  "duration_seconds_reported_by_pytest": 10.61,
+  "exit_code": 0,
+  "checks": [
+    "disabled architecture: exact baseline forward, backward, parameter count and RNG parity",
+    "zero-initialized residual identity and finite learning gradients",
+    "L1, MSE and Charbonnier finite nonzero gradients",
+    "official PNG uint8 quantization",
+    "checkpoint state bound to config, checksum and iteration",
+    "official evaluator rejects gradient-enabled calls",
+    "Pareto dominance and LPIPS direction",
+    "bounded long selection retains distinct metric winners",
+    "explicit architecture and runtime flags",
+    "warm-start tracking buffer follows point count, dtype and device",
+    "package import remains isolated when another experiment prepare module is cached"
+  ],
+  "metric_tuning_tests": 13,
+  "random_frame_mask_tests": 12
+}

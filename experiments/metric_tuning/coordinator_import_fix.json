@@ -1,0 +1,10 @@
+{
+  "reason": "Use the package-qualified prepare import to avoid collision with other experiment coordinators during combined test collection.",
+  "changed_helpers": [
+    "variants\\metric_tuning\\run.py"
+  ],
+  "old_freeze_sha256": "ba0801f924636f0a9d0a9b43e52258c8395e0003d85824d0ccfd21ed85bd4982",
+  "new_freeze_sha256": "d0a189fdc08175753168a5c276533c7e138580181f1c5f950820fcad0a77e5c6",
+  "model_optimizer_data_parent_weights_unchanged": true,
+  "updated_utc": "2026-10-21T15:40:25.608341+00:00"
+}

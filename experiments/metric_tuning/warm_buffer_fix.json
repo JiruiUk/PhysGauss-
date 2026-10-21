@@ -1,0 +1,11 @@
+{
+  "reason": "Warm-start PLY load leaves radius tracking empty on CPU; initialize from current xyz device/count.",
+  "changed_helpers": [
+    "variants\\metric_tuning\\runtime.py"
+  ],
+  "old_freeze_sha256": "6c87415f7b7f119c2225dc32bc1250e548c233b5993a51641e6f041580fbaa1f",
+  "new_freeze_sha256": "ba0801f924636f0a9d0a9b43e52258c8395e0003d85824d0ccfd21ed85bd4982",
+  "original_models_code_and_data_unchanged": true,
+  "training_step_at_failure": 1,
+  "updated_utc": "2026-10-21T15:20:36.127388+00:00"
+}

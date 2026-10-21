@@ -62,3 +62,14 @@ On the user's instruction, M0 reuses these runs instead of training again.
 Material/force recovery and future-prediction errors remain unavailable without
 appropriate ground truth. Synthetic tests must be labeled separately from official
 scene measurements.
+
+## Metric tuning (separate fork)
+
+`variants/metric_tuning/code` copies the audited original runtime. Its optional
+hooks live in `variants/metric_tuning/{model,runtime,checkpoint}.py`; preparation
+is recorded in `source_manifest.json`. The original trainer, deformation network,
+renderer and data loaders remain at the locations above. The fork adds a
+disabled-by-default residual adapter to `DeformNetwork`, optional training-image
+objectives, and four-metric no-grad checkpoint selection. New runs/metrics stay in
+`runs/pidg_metric_tuning` and `experiments/metric_tuning`. No baseline files or
+previous experiment weights are edited.

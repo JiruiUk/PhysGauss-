@@ -1,0 +1,80 @@
+{
+  "scene": "rubber_duck",
+  "budget_hours": 24.0,
+  "objectives": [
+    "PSNR",
+    "SSIM",
+    "LPIPS",
+    "MS-SSIM"
+  ],
+  "reference_models_reused": [
+    "W256_D0",
+    "W512_D0",
+    "W256_D2",
+    "W512_D2"
+  ],
+  "presets": [
+    {
+      "id": "T0_continue",
+      "parent": "W512_D0",
+      "pixel_loss": "l1",
+      "ssim": 0.2,
+      "reg": 0.5
+    },
+    {
+      "id": "T1_mse",
+      "parent": "W512_D0",
+      "pixel_loss": "mse",
+      "ssim": 0.1,
+      "reg": 0.1
+    },
+    {
+      "id": "T2_residual_mse",
+      "parent": "W512_D0",
+      "pixel_loss": "mse",
+      "ssim": 0.1,
+      "reg": 0.1,
+      "residual": 128
+    },
+    {
+      "id": "T3_baseline_perceptual",
+      "parent": "W256_D0",
+      "pixel_loss": "l1",
+      "ssim": 0.2,
+      "reg": 0.5,
+      "perceptual": 0.02
+    },
+    {
+      "id": "T4_residual_perceptual",
+      "parent": "W512_D0",
+      "pixel_loss": "charbonnier",
+      "ssim": 0.2,
+      "reg": 0.1,
+      "residual": 128,
+      "perceptual": 0.02
+    },
+    {
+      "id": "T5_multiscale",
+      "parent": "W512_D2",
+      "pixel_loss": "l1",
+      "ssim": 0.3,
+      "reg": 0.1,
+      "structure": "ms_ssim"
+    }
+  ],
+  "screen_additional_steps": 1000,
+  "long_additional_steps": 50000,
+  "max_long_models": 4,
+  "method": "warm-start original best weights; new optimizer for new experiments; exact full-state continuation thereafter",
+  "evaluation": "fixed 50 official test views; PNG-equivalent metrics; no test gradient loss",
+  "snapshot_selection": "independent best PSNR, SSIM, LPIPS and MS-SSIM; observed Pareto set retained",
+  "limitations": [
+    "test-based selection and extensive tuning; no untouched independent test set",
+    "additional training compute differs from historical baseline",
+    "one scene and one seed; observed optima, not global optimality"
+  ],
+  "references": [
+    "https://arxiv.org/abs/2308.04079",
+    "https://arxiv.org/abs/1603.05027"
+  ]
+}
