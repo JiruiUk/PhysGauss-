@@ -51,3 +51,42 @@ Dropped-frame GT/render PNGs: `masked_holdout/test/ours_best/{gt,renders}/`.
 Create `runs/pidg_random_frame_mask/stop_queue.request` for a safe save/stop. A
 future user-authorized resume must acknowledge this request and use `-Resume`;
 existing full checkpoints and completed jobs are preserved.
+
+## Post-training retained / missing / full-data evaluation
+
+The original primary PSNR covers **only the 50 official test images**. The
+dropped-frame column covers the removed training images; neither includes
+retained training images. To evaluate both parts at the same frozen best model:
+
+```powershell
+./variants/random_frame_mask/evaluate_splits.ps1
+./envs/pidg-cu128/python.exe variants/random_frame_mask/validate_splits.py
+```
+
+This renders the retained frames for all six completed models, including the
+0% control. It reuses the verified official and dropped-frame per-image metrics,
+without training or choosing a new checkpoint. New renders and GT are saved at
+each run's `retained_evaluation/test/ours_best/{renders,gt}/`. Individual source
+IDs, groups, image paths and metrics for all 200 views are recorded in
+`retained_evaluation/all_frame_metrics.json`.
+
+All four metrics use the original PIDG functions and VGG LPIPS settings, streamed
+one image pair at a time. Scores are arithmetic means of per-image values.
+In particular PSNR averages **per-image dB**, rather than converting a pooled MSE
+to dB. Union scores weight subset means by their actual frame counts. The
+original training set contains retained + removed = 150 frames; all data adds
+the fixed 50 official test frames = 200 frames, matching `transforms_all.json`.
+The full-data score includes seen training images and is a reconstruction score.
+Keep official-test scores separate when discussing generalization.
+
+An evaluation-only directory alias gives the retained test images distinct
+loader IDs, because PIDG otherwise overwrites camera metadata when train/test
+file paths overlap. The alias points to the same original RGB directory; poses,
+times, source IDs used for reporting and frozen model files are preserved.
+
+Summaries: `experiments/random_frame_mask/split_metrics.{md,json,csv}`. Absolute
+render and GT directories are included. The independent validator checks all
+1,200 model/view pairs against the original GT after official compositing and
+resizing, recomputes PSNR on CPU, checks every union, and verifies model/input
+hashes. It saves `split_metrics_validation.json`. The updated PDF adds this
+analysis on pages 13-16; rebuild with `scripts/build_pidg_baseline_ablation_report.py`.

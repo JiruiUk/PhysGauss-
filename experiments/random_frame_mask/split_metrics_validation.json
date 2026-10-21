@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "ratios": 6,
+  "source_views": 200,
+  "evaluated_view_model_pairs": 1200,
+  "transforms_all_manifest_matches_train_test_union": true,
+  "gt_pixel_identity_after_official_preprocessing": true,
+  "independent_cpu_psnr_max_abs_error_db": 5.808695988207546e-06,
+  "all_partitions_and_union_metrics_verified": true,
+  "original_run_hashes_unchanged": true,
+  "unit_tests_passed": 16,
+  "streaming_official_metric_parity_delta": {
+    "PSNR": 0.0,
+    "SSIM": 0.0,
+    "LPIPS": 0.0,
+    "MS-SSIM": 0.0
+  }
+}

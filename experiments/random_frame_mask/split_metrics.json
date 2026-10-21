@@ -1,0 +1,494 @@
+{
+  "status": "completed",
+  "updated_utc": "2026-10-21T10:16:35.564256+00:00",
+  "protocol": "frozen best snapshot; original per-image metrics; no training",
+  "aggregation": "arithmetic per-image means; unions are frame-count weighted",
+  "inputs": {
+    "runtime": {
+      "arguments/__init__.py": "df52dc58881dd76f2cfbf9acdfd9f67609d31a679b0da81a58a9acfdcaa6716a",
+      "arguments/dnerf/bouncingballs.py": "3b88f1fd620830b0f3c38712d956c00a3091872fce1cbbcfec1739196ca0a117",
+      "arguments/dnerf/hellwarrior.py": "3b88f1fd620830b0f3c38712d956c00a3091872fce1cbbcfec1739196ca0a117",
+      "arguments/dnerf/hook.py": "3b88f1fd620830b0f3c38712d956c00a3091872fce1cbbcfec1739196ca0a117",
+      "arguments/dnerf/jumpingjacks.py": "3b88f1fd620830b0f3c38712d956c00a3091872fce1cbbcfec1739196ca0a117",
+      "arguments/dnerf/lego.py": "4f6196a2c20bc5f04eac4855ab29d5ebfa174e624a85f6ce20fc02bcd86d2a91",
+      "arguments/dnerf/mutant.py": "3b88f1fd620830b0f3c38712d956c00a3091872fce1cbbcfec1739196ca0a117",
+      "arguments/dnerf/standup.py": "3b88f1fd620830b0f3c38712d956c00a3091872fce1cbbcfec1739196ca0a117",
+      "arguments/dnerf/trex.py": "3b88f1fd620830b0f3c38712d956c00a3091872fce1cbbcfec1739196ca0a117",
+      "arguments/hypernerf/interp_aleks-teapot.py": "8348f2ee49dde21a67ca772d84c23804b98af36709c69d692f673b7ea95f9ee5",
+      "arguments/hypernerf/interp_chickchicken.py": "79b7c9b4df3cf94f5abb26fe20aab61ded2711f0ade44d3bf673a7f8ac9404cf",
+      "arguments/hypernerf/interp_cut-lemon.py": "fa6632c20d44ec89771608afb1bbf997a70565887a395ffd3bc77c86d3d0118a",
+      "arguments/hypernerf/interp_hand.py": "59779158d15f5a60848c2b6abdf07c2a9b9a1ef96ff9564e08e67725e8aea1fb",
+      "arguments/hypernerf/interp_slice-banana.py": "a2534c2b5433be4abfed2b6036505382136c23c64ac4579c5bfc51d842c68e10",
+      "arguments/hypernerf/interp_torchocolate.py": "640f5c582dcf8cd6c5b3135e5022e6b2435cdba1d324da64c3925e16ef413750",
+      "arguments/hypernerf/misc_split-cookie.py": "98df97e1cc23836cba3146396e19b0b63adc28aaf027da4a8aa8c5ebb243d308",
+      "arguments/hypernerf/vrig_3dprinter.py": "2dc8eced06a50ad543a3dae1a7f113c2263dc92add52c6e4dde24b26b25f0a57",
+      "arguments/hypernerf/vrig_broom.py": "1872a0e377aa6a0870a9505349a896944bb610050879ec79e18acb00e349c5a4",
+      "arguments/hypernerf/vrig_chicken.py": "4ae13dd6c54adb08eea9cd5ba8bed49343312ce73e1743b77089397f5a9cc8e5",
+      "arguments/hypernerf/vrig_peel-banana.py": "c246e592c730f36739c8e363943b3bdaf7b3b82508f77c006270b6c0d2c25123",
+      "arguments/neu3d/coffee_martini.py": "409da627f306496544fdbf1bf846903520723ce3d674e1ee1f40c8b44efea11d",
+      "arguments/neu3d/cook_spinach.py": "07c4e9a0fcbd104dff7fc0f0a14c8e2ca14b4a165524281ad4dcb63575e3049a",
+      "arguments/neu3d/cut_roasted_beef.py": "07c4e9a0fcbd104dff7fc0f0a14c8e2ca14b4a165524281ad4dcb63575e3049a",
+      "arguments/neu3d/flame_salmon_1.py": "e0a1d799043b6c1e77fff0ec0aaed37e3598913a01a9e9144235ed9fecf0a1cc",
+      "arguments/neu3d/flame_steak.py": "07c4e9a0fcbd104dff7fc0f0a14c8e2ca14b4a165524281ad4dcb63575e3049a",
+      "arguments/neu3d/sear_steak.py": "07c4e9a0fcbd104dff7fc0f0a14c8e2ca14b4a165524281ad4dcb63575e3049a",
+      "arguments/pidg/balls_reaction.py": "da8008afe18a15e60148aa82c78d60705919a48efa1c57780e1867292eab6428",
+      "arguments/pidg/dry_ice.py": "b16a6212eb36bd7b83c7fc1d6bc53da546646423b81df5947118ff34b53808ec",
+      "arguments/pidg/mechanics_cloth.py": "da8008afe18a15e60148aa82c78d60705919a48efa1c57780e1867292eab6428",
+      "arguments/pidg/motion_kuro.py": "da8008afe18a15e60148aa82c78d60705919a48efa1c57780e1867292eab6428",
+      "arguments/pidg/rubber_dack.py": "2686ee3d40565f08810bca67d8281222d42d0c8f5c475b964ad05d777ad355f1",
+      "gaussian_renderer/__init__.py": "b96d91a8caaa58aca33d523702cde425037c1ad3b79d10b6fd07f7ab00a1c34d",
+      "gaussian_renderer/network_gui.py": "7116ef1f7a4471e5db96de2ea4a148d8138e7ae03b89120606586f9b2a9e66eb",
+      "hashencoder/__init__.py": "c70a9a4be5c48035a0c36783ed8472001fde505c3a1863c08978ad33cc961803",
+      "hashencoder/backend.py": "0c0b88104a0ed128afa3ecde9fce1e458f50ee933e751d4f2a89cc17758b4aa7",
+      "hashencoder/hashgrid.py": "faf7273ee6c49223b9fd45e6c83abb0353dedd9774ba9453aa2df9206a37bda3",
+      "hashencoder/src/bindings.cpp": "b1eb7265c55203e702f57dae002a0839cf6e90c9dba5f89c201f0efe8cbf0580",
+      "hashencoder/src/hashencoder.cu": "11daddbfe2bf33dd7d2a9ad50f909c6bd14de16d06c1c7e36894bdcf915c58d0",
+      "hashencoder/src/hashencoder.h": "47974781d98b30dc610be461262a4958e9db20a946ba33e6017cf2f77e37f12f",
+      "lpipsPyTorch/__init__.py": "35806c438336e43c00bc7e5edc353c3de03926fc7b58cbb7e40a61678fcef4b5",
+      "lpipsPyTorch/modules/lpips.py": "58adb29b5a1de195467c909ce14ddc69f92bce0254a59c8ee037e3945c8eb0c8",
+      "lpipsPyTorch/modules/networks.py": "92a21e6eaedd0211f2a535f07855447ff4436cdeff66fecedcc943f827d1be98",
+      "lpipsPyTorch/modules/utils.py": "fe54a0764d0eb9839d8165dd73982e22eab6787889cd898f2bff81088de3227d",
+      "metrics.py": "d1c46cd5f0b62c790bc8b7581285a86388e1a547f11a1c0b988e8af7935fbed6",
+      "motion_utils/pidg.py": "e8ffce4ba8ca30619f8c0bcc2322f190d62bd14896b2edb88cdd0a4261c830fe",
+      "render.py": "2309a3bc115d147ee1999baebb54cfe922a8570f07b9a40d0d7b206e514cb9e5",
+      "scene_PIDG/__init__.py": "dfa3066e9f3bd8cbcfe1af5c41d263163e5d11220dbca74fb04a9e280360d5b5",
+      "scene_PIDG/cameras.py": "19f13e6422b1d7c45c99c0b35712c4a49fdcf9448fbd35afc2d2e87992a785b7",
+      "scene_PIDG/colmap_loader.py": "b9b8fdabfc90d9ce9d8f48d21cf793de236c44e83def2013dc209e10b42f7a8a",
+      "scene_PIDG/dataset_readers.py": "edff2ee92040cffa4456a567424b84c304c5a7e227581e70781044fcb80a407f",
+      "scene_PIDG/deform_model.py": "4b0c2e6e15d694769998696b96d584ab25ab9ccb01d7608e72f68d0497b24172",
+      "scene_PIDG/gaussian_model.py": "5579bf95a79d471c626910b7b5149802eff8b29069dfea9de60abb7f8858416c",
+      "scene_PIDG/network.py": "a43f8c043db2b618126d0f525f1de1e002773fbcb5d584bb984f0c01c7e5ce22",
+      "scene_PIDG/neu3d.py": "5cf0add73529a7b1f84394f0e678e732e7f2f087da913fca767f41662f776b6d",
+      "train_pidg.py": "0bd09935548fe65978b793ced7a5c7b1cb4e2d2b57b59d4f81670515ad3794c2",
+      "utils/camera_utils.py": "8a06ce123657f9e3d120290696ce03e8166b90fdc059d912fb6458a8a196ebff",
+      "utils/flow_utils.py": "26fcb61d5190713a2c4bec304f79ebd9f6558d724487f0a41ae8651bb7b21222",
+      "utils/flow_vis_utils.py": "b63b2cace2b32547b142dc2beca956016ffe95c148a572c8794b5aad80ca2a2e",
+      "utils/general_utils.py": "ef18827054b449c6176591ecac483ea8b7621369b32401c5269d56e4273fdb00",
+      "utils/graphics_utils.py": "01258e06456f785a037ccc0392f7a8e2623f0e70eaf30282fcc95560af876aae",
+      "utils/gui_utils.py": "9c968cdfb4a36f45ca4a1e227c058ffffefff583c57081cd412690cd32db55d2",
+      "utils/image_utils.py": "6cc738e9bda49fd8097ad88960953d67e94cf8a79ccf2fd4cc1d3730e97ee29c",
+      "utils/loss_utils.py": "154477e19df3345aa3b23ba4305b24e5eb59bfe821ee78900e60606122688e4b",
+      "utils/pose_utils.py": "e5de5e17206401b09872e168ed34c9d494a3ab17a5bbb565c62026022d6affbb",
+      "utils/rigid_utils.py": "0da31529d6918ab65d74d89f25cca1e54804ae38ad1ff09baabb090103a469ab",
+      "utils/sh_utils.py": "62153adc4c8ac26f6e5b1046810f5f72dffdb5e4087d18b690ce82e0f7236627",
+      "utils/system_utils.py": "2433fae0334991abac21f068a01c28b0dbabcb4f13300401c4d5f3f8348e911d"
+    },
+    "original_dataset": {
+      "transforms_train.json": "8c36e8d8f7b10c53c7e0cc27e0400fedfeee6ee2d32211347af926735a01f035",
+      "transforms_test.json": "f854b0273b1d91d882fabcd76386100bff2eeb1294e483ed7156d1e91d2e255e",
+      "points3d.ply": "f9a2601f8b96bb7381e8b9086c70d97790c4d93026932e332838e0e9e256c971",
+      "audit.json": "f41a8d82c8b1a49fa514fc3f0e4fec5656df0fd253b95cae79a4996a6c83b6d9",
+      "download_manifest.json": "6d342dbb3199adbc14ae2c6da5d0fb0ce6785812f04f0ec145623e378733aa02"
+    }
+  },
+  "rows": [
+    {
+      "drop_percent": 0,
+      "best_iteration": 50000,
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_official\\rubber_duck",
+      "retained_render_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_official\\rubber_duck\\retained_evaluation\\test\\ours_best\\renders",
+      "retained_gt_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_official\\rubber_duck\\retained_evaluation\\test\\ours_best\\gt",
+      "all_frame_metrics": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_official\\rubber_duck\\retained_evaluation\\all_frame_metrics.json",
+      "splits": {
+        "retained": {
+          "count": 150,
+          "metrics": {
+            "PSNR": 36.16768616994222,
+            "SSIM": 0.9923364329338074,
+            "LPIPS": 0.015724392865474026,
+            "MS-SSIM": 0.9942556587855021
+          }
+        },
+        "removed": {
+          "count": 0,
+          "metrics": null
+        },
+        "original_train": {
+          "count": 150,
+          "metrics": {
+            "PSNR": 36.16768616994222,
+            "SSIM": 0.9923364329338074,
+            "LPIPS": 0.015724392865474026,
+            "MS-SSIM": 0.9942556587855021
+          }
+        },
+        "official_test": {
+          "count": 50,
+          "metrics": {
+            "PSNR": 27.25678134918213,
+            "SSIM": 0.9765514945983886,
+            "LPIPS": 0.029623515512794255,
+            "MS-SSIM": 0.9704826474189758
+          }
+        },
+        "all_200": {
+          "count": 200,
+          "metrics": {
+            "PSNR": 33.9399599647522,
+            "SSIM": 0.9883901983499527,
+            "LPIPS": 0.019199173527304082,
+            "MS-SSIM": 0.9883124059438706
+          }
+        }
+      },
+      "source_files_sha256": {
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_official\\rubber_duck\\cfg_args": "661db26dfa38be15c1f7dd4860cd9edaace901b897ace16231ed170705e8b7b5",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_official\\rubber_duck\\reproduction.json": "a44098fb3211aee28f466af5a5bef9123ed4e14833e13b380f6f9be2b79e9127",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_official\\rubber_duck\\results.json": "f40e54e903c18e9021e4c98a399226b616f1761ee6eabfe0c3edfa2cc4a23b49",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_official\\rubber_duck\\per_view.json": "7aaa466a3e4d9fc7d4738e9d863ce38d8edb3bee242e240c679c32f1644642d3",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_official\\rubber_duck\\point_cloud\\iteration_best\\iter.txt": "3fd4b74398bc10bf8e6b1bbfb509b5944cbe495c6714802c800c4ca668e1f73d",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_official\\rubber_duck\\point_cloud\\iteration_best\\material.pt": "88c68a9a90cd9e1622a0a2b11f9c0c90131b1703c0a287fb9cf319129ef4567c",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_official\\rubber_duck\\point_cloud\\iteration_best\\point_cloud.ply": "8c9739bcee7a77d4d021722c7cd75519cfdf60d705050341a4f3ee3702456c57",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_official\\rubber_duck\\deform\\iteration_best\\deform.pth": "22824ec5115914d0e6354dcbd2a739961c0c64e78383d04c66f15ebeda24620a",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_official\\rubber_duck\\deform\\iteration_best\\iter.txt": "3fd4b74398bc10bf8e6b1bbfb509b5944cbe495c6714802c800c4ca668e1f73d"
+      }
+    },
+    {
+      "drop_percent": 10,
+      "best_iteration": 39000,
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop10_seed0\\rubber_duck",
+      "retained_render_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop10_seed0\\rubber_duck\\retained_evaluation\\test\\ours_best\\renders",
+      "retained_gt_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop10_seed0\\rubber_duck\\retained_evaluation\\test\\ours_best\\gt",
+      "all_frame_metrics": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop10_seed0\\rubber_duck\\retained_evaluation\\all_frame_metrics.json",
+      "splits": {
+        "retained": {
+          "count": 135,
+          "metrics": {
+            "PSNR": 38.03309994450322,
+            "SSIM": 0.9928309679031372,
+            "LPIPS": 0.015109780579115505,
+            "MS-SSIM": 0.9952904555532668
+          }
+        },
+        "removed": {
+          "count": 15,
+          "metrics": {
+            "PSNR": 32.994309997558595,
+            "SSIM": 0.9877420345942179,
+            "LPIPS": 0.018971339675287406,
+            "MS-SSIM": 0.9901820699373881
+          }
+        },
+        "original_train": {
+          "count": 150,
+          "metrics": {
+            "PSNR": 37.52922094980875,
+            "SSIM": 0.9923220745722453,
+            "LPIPS": 0.015495936488732695,
+            "MS-SSIM": 0.9947796169916788
+          }
+        },
+        "official_test": {
+          "count": 50,
+          "metrics": {
+            "PSNR": 28.252597045898437,
+            "SSIM": 0.9765687596797943,
+            "LPIPS": 0.0294161993637681,
+            "MS-SSIM": 0.9706241536140442
+          }
+        },
+        "all_200": {
+          "count": 200,
+          "metrics": {
+            "PSNR": 35.21006497383118,
+            "SSIM": 0.9883837458491326,
+            "LPIPS": 0.018976002207491547,
+            "MS-SSIM": 0.9887407511472702
+          }
+        }
+      },
+      "source_files_sha256": {
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop10_seed0\\rubber_duck\\cfg_args": "10a2f76193cd40ec4840541cceefa167fa0fff052d1513267c099a3998032c2e",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop10_seed0\\rubber_duck\\reproduction.json": "00511677b7ad9c0ecbceb3f51eb64f7ab028ea9f76a2bb3aa05b194b998d080f",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop10_seed0\\rubber_duck\\results.json": "ebf7a13ba4410fe848fd08f7bee38636524e919691e7adfd9e1c18a4b4174a43",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop10_seed0\\rubber_duck\\per_view.json": "95be70739b78adc462fbc9f7febada0ae37462dcbde1b94a9d440af1750beba6",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop10_seed0\\rubber_duck\\point_cloud\\iteration_best\\iter.txt": "785ac78e877e2627f84361638a77bb958962787d01576334853a7802ee465108",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop10_seed0\\rubber_duck\\point_cloud\\iteration_best\\material.pt": "c56954f15e4c14515307fc0b0731940cf5ef7baeed5b1c36ce42355e16bfed84",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop10_seed0\\rubber_duck\\point_cloud\\iteration_best\\point_cloud.ply": "8dcb8f42e09985e53f1b8a1ae1c9db8f6a962d6e2b32fc1b55969cc720e8181d",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop10_seed0\\rubber_duck\\deform\\iteration_best\\deform.pth": "e35d04d4dd9edd4cb7bbf15eeaf1af63eee1d3cbb6023d06af305e54b6c0cd9e",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop10_seed0\\rubber_duck\\deform\\iteration_best\\iter.txt": "785ac78e877e2627f84361638a77bb958962787d01576334853a7802ee465108",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop10_seed0\\rubber_duck\\masked_holdout\\results.json": "68697a94d52984ea88e79a9f177f89f4602bebedfe68498abac1aed72bf54b92",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop10_seed0\\rubber_duck\\masked_holdout\\per_view.json": "39c432db77a6b8ee6d402a4f5f234f96a4724a8823775e931067418fbdf3123a"
+      }
+    },
+    {
+      "drop_percent": 30,
+      "best_iteration": 34000,
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop30_seed0\\rubber_duck",
+      "retained_render_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop30_seed0\\rubber_duck\\retained_evaluation\\test\\ours_best\\renders",
+      "retained_gt_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop30_seed0\\rubber_duck\\retained_evaluation\\test\\ours_best\\gt",
+      "all_frame_metrics": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop30_seed0\\rubber_duck\\retained_evaluation\\all_frame_metrics.json",
+      "splits": {
+        "retained": {
+          "count": 105,
+          "metrics": {
+            "PSNR": 36.069752066476006,
+            "SSIM": 0.9922975897789001,
+            "LPIPS": 0.01611529869870061,
+            "MS-SSIM": 0.9938143752870106
+          }
+        },
+        "removed": {
+          "count": 45,
+          "metrics": {
+            "PSNR": 30.896890513102214,
+            "SSIM": 0.9843005869123671,
+            "LPIPS": 0.022918789523343246,
+            "MS-SSIM": 0.9852175301975674
+          }
+        },
+        "original_train": {
+          "count": 150,
+          "metrics": {
+            "PSNR": 34.517893600463864,
+            "SSIM": 0.9898984889189403,
+            "LPIPS": 0.0181563459460934,
+            "MS-SSIM": 0.9912353217601776
+          }
+        },
+        "official_test": {
+          "count": 50,
+          "metrics": {
+            "PSNR": 26.686221237182618,
+            "SSIM": 0.975140163898468,
+            "LPIPS": 0.03159859387204051,
+            "MS-SSIM": 0.9682517051696777
+          }
+        },
+        "all_200": {
+          "count": 200,
+          "metrics": {
+            "PSNR": 32.55997550964356,
+            "SSIM": 0.9862089076638222,
+            "LPIPS": 0.021516907927580178,
+            "MS-SSIM": 0.9854894176125526
+          }
+        }
+      },
+      "source_files_sha256": {
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop30_seed0\\rubber_duck\\cfg_args": "6025c8ef78fe06bbc852c475e582eb167e4a648aa03c037f48fa6d3e1dc22c47",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop30_seed0\\rubber_duck\\reproduction.json": "9c62f8e79717c9b10c762dc1f5d34cccc68350ea8c75569936f59b73cc562937",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop30_seed0\\rubber_duck\\results.json": "440f8a8c243f555d1d45899736a09104517d5f05caca9de2b6e891460e731dd5",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop30_seed0\\rubber_duck\\per_view.json": "b94dff41c750e75b9afadcf7b7f3ee403b454e18a02e62af12b2c2886a604db9",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop30_seed0\\rubber_duck\\point_cloud\\iteration_best\\iter.txt": "9f637f0684fbbe863dcd3a8841c6c4011c939658acf9627af890129f41edeab0",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop30_seed0\\rubber_duck\\point_cloud\\iteration_best\\material.pt": "762b6c36b044e7d36a181d70285e60ee920438ea95cc67b59c6acd6118e05955",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop30_seed0\\rubber_duck\\point_cloud\\iteration_best\\point_cloud.ply": "1fdb51558720dbe7bb9ec58f166cd86780660b057f1a0dc0f2ff25e730a74bde",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop30_seed0\\rubber_duck\\deform\\iteration_best\\deform.pth": "cebeacb37ae2d80a7c7bcb8a7c82735a7245944139ad2d283925035247d8e82a",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop30_seed0\\rubber_duck\\deform\\iteration_best\\iter.txt": "9f637f0684fbbe863dcd3a8841c6c4011c939658acf9627af890129f41edeab0",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop30_seed0\\rubber_duck\\masked_holdout\\results.json": "70c4868b25b3c4270a9816419098e70bc8bfceecccaa26349a15a909b0bfe116",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop30_seed0\\rubber_duck\\masked_holdout\\per_view.json": "650da9622142aef01a4e1566212b134e5a6df09623c5b31d958d502459f19f7a"
+      }
+    },
+    {
+      "drop_percent": 50,
+      "best_iteration": 28000,
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop50_seed0\\rubber_duck",
+      "retained_render_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop50_seed0\\rubber_duck\\retained_evaluation\\test\\ours_best\\renders",
+      "retained_gt_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop50_seed0\\rubber_duck\\retained_evaluation\\test\\ours_best\\gt",
+      "all_frame_metrics": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop50_seed0\\rubber_duck\\retained_evaluation\\all_frame_metrics.json",
+      "splits": {
+        "retained": {
+          "count": 75,
+          "metrics": {
+            "PSNR": 37.39236155192057,
+            "SSIM": 0.9931534139315287,
+            "LPIPS": 0.015347656402736902,
+            "MS-SSIM": 0.9941788585980733
+          }
+        },
+        "removed": {
+          "count": 75,
+          "metrics": {
+            "PSNR": 30.978540217081704,
+            "SSIM": 0.982350922425588,
+            "LPIPS": 0.02695629691705108,
+            "MS-SSIM": 0.9808482575416565
+          }
+        },
+        "original_train": {
+          "count": 150,
+          "metrics": {
+            "PSNR": 34.18545088450114,
+            "SSIM": 0.9877521681785584,
+            "LPIPS": 0.02115197665989399,
+            "MS-SSIM": 0.987513558069865
+          }
+        },
+        "official_test": {
+          "count": 50,
+          "metrics": {
+            "PSNR": 27.043216514587403,
+            "SSIM": 0.9735064446926117,
+            "LPIPS": 0.03420376455411315,
+            "MS-SSIM": 0.9647737658023834
+          }
+        },
+        "all_200": {
+          "count": 200,
+          "metrics": {
+            "PSNR": 32.399892292022706,
+            "SSIM": 0.9841907373070717,
+            "LPIPS": 0.02441492363344878,
+            "MS-SSIM": 0.9818286100029945
+          }
+        }
+      },
+      "source_files_sha256": {
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop50_seed0\\rubber_duck\\cfg_args": "ece454dfeed6dd336e1fe210e3a7086f49529d7700cb6b572e6485a53b0b5096",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop50_seed0\\rubber_duck\\reproduction.json": "3ca38ed9ef28a63bd239d76b3de7326299223d3d6f52375c0944641ee1530c33",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop50_seed0\\rubber_duck\\results.json": "0599d9fdc6acf3f54f063dc521156be0678b7530ec8f646132e6c026b027657e",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop50_seed0\\rubber_duck\\per_view.json": "1e1f1118e34877a615d0c742a79c2427692cee42a9e08c9cc86d57ecc0df5e60",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop50_seed0\\rubber_duck\\point_cloud\\iteration_best\\iter.txt": "6e10ff17bdfa1134663a6320cd40f4919f5bf03057220c58431fa607e3a47cbc",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop50_seed0\\rubber_duck\\point_cloud\\iteration_best\\material.pt": "a8ce565d037c1f954803f325563b3585b998c68fa9c06808915313a0882ab090",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop50_seed0\\rubber_duck\\point_cloud\\iteration_best\\point_cloud.ply": "3e7fbf6a2b6b7f023c0f648175271bd57e35c5faddccfc05903bd181474c0b2a",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop50_seed0\\rubber_duck\\deform\\iteration_best\\deform.pth": "a20ff260af1b082afca726bfa1a40b7425793fa40bfcd08a29be83c3a9082476",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop50_seed0\\rubber_duck\\deform\\iteration_best\\iter.txt": "6e10ff17bdfa1134663a6320cd40f4919f5bf03057220c58431fa607e3a47cbc",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop50_seed0\\rubber_duck\\masked_holdout\\results.json": "1eb3a7a15187bb142370006ed4ad2f69672c99b97459bf878e5ae3d7503d893b",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop50_seed0\\rubber_duck\\masked_holdout\\per_view.json": "cdcc812d1a45d36facbdebc4c3c1fd4ea092254fd3c74d5327bb42bb5d8b7acf"
+      }
+    },
+    {
+      "drop_percent": 70,
+      "best_iteration": 19000,
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop70_seed0\\rubber_duck",
+      "retained_render_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop70_seed0\\rubber_duck\\retained_evaluation\\test\\ours_best\\renders",
+      "retained_gt_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop70_seed0\\rubber_duck\\retained_evaluation\\test\\ours_best\\gt",
+      "all_frame_metrics": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop70_seed0\\rubber_duck\\retained_evaluation\\all_frame_metrics.json",
+      "splits": {
+        "retained": {
+          "count": 45,
+          "metrics": {
+            "PSNR": 35.86648949517144,
+            "SSIM": 0.9915782279438443,
+            "LPIPS": 0.017680031081868542,
+            "MS-SSIM": 0.9930925925572713
+          }
+        },
+        "removed": {
+          "count": 105,
+          "metrics": {
+            "PSNR": 30.14173860095796,
+            "SSIM": 0.9819012324015299,
+            "LPIPS": 0.028387617834267163,
+            "MS-SSIM": 0.9806726660047259
+          }
+        },
+        "original_train": {
+          "count": 150,
+          "metrics": {
+            "PSNR": 31.859163869222005,
+            "SSIM": 0.9848043310642243,
+            "LPIPS": 0.025175341808547576,
+            "MS-SSIM": 0.9843986439704895
+          }
+        },
+        "official_test": {
+          "count": 50,
+          "metrics": {
+            "PSNR": 26.930285301208496,
+            "SSIM": 0.9731071710586547,
+            "LPIPS": 0.035994551442563534,
+            "MS-SSIM": 0.9649964332580566
+          }
+        },
+        "all_200": {
+          "count": 200,
+          "metrics": {
+            "PSNR": 30.62694422721863,
+            "SSIM": 0.9818800410628319,
+            "LPIPS": 0.027880144217051567,
+            "MS-SSIM": 0.9795480912923813
+          }
+        }
+      },
+      "source_files_sha256": {
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop70_seed0\\rubber_duck\\cfg_args": "486734b3b61147ed8695aa413589d1ac0d59f23877b63ad466c413e7f24f21fa",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop70_seed0\\rubber_duck\\reproduction.json": "79dd5427c316b8f244a5a201632dfbbf617c9333b101bcdb7a55c590cc6ad31c",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop70_seed0\\rubber_duck\\results.json": "7844c39b6fb5f0028621737f735c71d9bb5d1f53a89bb29591be9884820fd7e0",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop70_seed0\\rubber_duck\\per_view.json": "6916f7faba085415046bf963ff1122ec7b71ae4bdcea0678fbfe1a47298805a0",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop70_seed0\\rubber_duck\\point_cloud\\iteration_best\\iter.txt": "0abe38750bec5847111395c81b35be0f10aea6cb787c79618061cd78617d1bcb",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop70_seed0\\rubber_duck\\point_cloud\\iteration_best\\material.pt": "ee474092c77107ade4b9025361b2bad8b4fdfdb7c72c9c7f1a5f8ec1aa3af4e5",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop70_seed0\\rubber_duck\\point_cloud\\iteration_best\\point_cloud.ply": "d2e1e38f74887b07bb1c7a02a9ba33b3956149e8c977ad4253dae166c8cfe87a",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop70_seed0\\rubber_duck\\deform\\iteration_best\\deform.pth": "eb941718ecaead1043abb226d2ed4eccbe4a87da7c0b0f841e7ddaf4378f6142",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop70_seed0\\rubber_duck\\deform\\iteration_best\\iter.txt": "0abe38750bec5847111395c81b35be0f10aea6cb787c79618061cd78617d1bcb",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop70_seed0\\rubber_duck\\masked_holdout\\results.json": "c2c97aa06bd44e0dc6efa8390e620ddf2a605847d40c877a9ddec9d06e137824",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop70_seed0\\rubber_duck\\masked_holdout\\per_view.json": "d0ed7aa43ffde8324e5012589df3ccf3735f905e7e64e2b39993554de005baae"
+      }
+    },
+    {
+      "drop_percent": 90,
+      "best_iteration": 11000,
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop90_seed0\\rubber_duck",
+      "retained_render_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop90_seed0\\rubber_duck\\retained_evaluation\\test\\ours_best\\renders",
+      "retained_gt_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop90_seed0\\rubber_duck\\retained_evaluation\\test\\ours_best\\gt",
+      "all_frame_metrics": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop90_seed0\\rubber_duck\\retained_evaluation\\all_frame_metrics.json",
+      "splits": {
+        "retained": {
+          "count": 15,
+          "metrics": {
+            "PSNR": 36.384817123413086,
+            "SSIM": 0.9923153320948283,
+            "LPIPS": 0.016222651799519858,
+            "MS-SSIM": 0.9931971510251363
+          }
+        },
+        "removed": {
+          "count": 135,
+          "metrics": {
+            "PSNR": 23.52078823513455,
+            "SSIM": 0.9555257876714071,
+            "LPIPS": 0.05894168505652083,
+            "MS-SSIM": 0.9389341897434659
+          }
+        },
+        "original_train": {
+          "count": 150,
+          "metrics": {
+            "PSNR": 24.8071911239624,
+            "SSIM": 0.9592047421137492,
+            "LPIPS": 0.05466978173082074,
+            "MS-SSIM": 0.9443604858716329
+          }
+        },
+        "official_test": {
+          "count": 50,
+          "metrics": {
+            "PSNR": 23.062978515625,
+            "SSIM": 0.953807829618454,
+            "LPIPS": 0.06042700819671154,
+            "MS-SSIM": 0.9360793650150299
+          }
+        },
+        "all_200": {
+          "count": 200,
+          "metrics": {
+            "PSNR": 24.371137971878053,
+            "SSIM": 0.9578555139899254,
+            "LPIPS": 0.05610908834729344,
+            "MS-SSIM": 0.9422902056574821
+          }
+        }
+      },
+      "source_files_sha256": {
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop90_seed0\\rubber_duck\\cfg_args": "92a772f386a9754167605a70b678e4182514b476098e26211e35516a084a9865",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop90_seed0\\rubber_duck\\reproduction.json": "59497af31f535eacf4018a72b4d5b642a4a6456a4c67125368395f01b3a07c07",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop90_seed0\\rubber_duck\\results.json": "8831444126ec7e3e87cc6b8faeda92ca4b842c2e273c79082653a620cdb98edc",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop90_seed0\\rubber_duck\\per_view.json": "fbbff9a830d34e1c15eb65d20ac4feed4fcb459ca4688a0407c6ca459d29c775",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop90_seed0\\rubber_duck\\point_cloud\\iteration_best\\iter.txt": "42c0d6c8c98c32eca6bc249f0ce76cd0f20ef1c992b9cac891cf8898aa02b75d",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop90_seed0\\rubber_duck\\point_cloud\\iteration_best\\material.pt": "cca8a771c03ed1c96de6bf1497429e130c381c09bd9f08ce67f27f2afcde5bec",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop90_seed0\\rubber_duck\\point_cloud\\iteration_best\\point_cloud.ply": "9805793a15748335fae2ac0953a5acc02dd8788657839af69c67e5b7f7706a9a",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop90_seed0\\rubber_duck\\deform\\iteration_best\\deform.pth": "8844c49b0d381f138ee9837057078130a2b16ee9f52cabb2dbe94087a6d6b54f",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop90_seed0\\rubber_duck\\deform\\iteration_best\\iter.txt": "42c0d6c8c98c32eca6bc249f0ce76cd0f20ef1c992b9cac891cf8898aa02b75d",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop90_seed0\\rubber_duck\\masked_holdout\\results.json": "6224245d643b8b16573e02f2711b7877df5317aeb9a120e751a389297ca323e6",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop90_seed0\\rubber_duck\\masked_holdout\\per_view.json": "d1a4c647b3458208ff00c5c06ad0375942f8d731db7e0fb0bc4a369d17a5b2cd"
+      }
+    }
+  ],
+  "current_drop_percent": 90,
+  "official_metric_parity_delta": {
+    "PSNR": 0.0,
+    "SSIM": 0.0,
+    "LPIPS": 0.0,
+    "MS-SSIM": 0.0
+  }
+}

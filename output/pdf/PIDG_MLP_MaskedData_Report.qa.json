@@ -1,42 +1,65 @@
 {
-  "pages": 12,
-  "text_characters": 9910,
+  "pages": 16,
   "all_absolute_render_paths_found": true,
-  "render_directories": 14,
-  "render_frames": 825,
-  "metric_values_checked": 60,
+  "render_directories": 20,
+  "render_frames": 1350,
+  "metric_values_checked": 176,
   "out_of_bounds_text": [],
-  "render_engine": "Poppler 26.09.0",
-  "render_dpi": 120,
+  "split_metrics_unions_independently_verified": true,
+  "unit_tests_passed": 16,
+  "split_metric_validation": {
+    "status": "passed",
+    "ratios": 6,
+    "source_views": 200,
+    "evaluated_view_model_pairs": 1200,
+    "transforms_all_manifest_matches_train_test_union": true,
+    "gt_pixel_identity_after_official_preprocessing": true,
+    "independent_cpu_psnr_max_abs_error_db": 0.000005808695988207546,
+    "all_partitions_and_union_metrics_verified": true,
+    "original_run_hashes_unchanged": true,
+    "unit_tests_passed": 16,
+    "streaming_official_metric_parity_delta": {
+      "PSNR": 0,
+      "SSIM": 0,
+      "LPIPS": 0,
+      "MS-SSIM": 0
+    }
+  },
   "previous_reports_unchanged": [
     "PIDG_Variants_Report",
     "PIDG_Variants_Report_EN"
   ],
-  "visual_review": "passed: all 12 pages reviewed individually; final pages 1, 3, 10 and 11 rechecked after wording and path wrapping changes",
-  "pdf_sha256": "53935e694e5804f3397b6e99c8a4c2574a8ad9e71c2e109792c5480273f3f0ec",
-  "page_png_sha256": {
-    "page-01.png": "c568b43e3acceb1f583f50e540fde766648a599d627dc3235c5532a81aeb85d9",
-    "page-02.png": "cb2e0909697923beeea88ff42632eb84d9ac73f9e72924cfe3a23925e5c2aa0d",
-    "page-03.png": "8ea1de2fe70e2221d85e2098726bd6169bc2933b77dc4848b95d62624f0ace35",
-    "page-04.png": "9228ab814659de95c4784a5244560f02a80d17f177beacccc0ffe3b59c7f7e6d",
-    "page-05.png": "ed4f0889a82283c294ad0bc4e5cca09c83ff616bf1704258bb44713667fd7d6c",
-    "page-06.png": "0e410c63b3bdd37ec27411f38983608f8281929ad9e3aa2757bdb840e6cd6863",
-    "page-07.png": "54983267284933e8552ec5f6c896937c23616a1a4a8dc9e35adbb9cc06b02b94",
-    "page-08.png": "de5298707ba218c381a21bf8718ea7dccf902c1272868347b2927aab927871fa",
-    "page-09.png": "dc391b1283500e2974128fc61edffdde50b00da93a9221164036dd80ad5e8763",
-    "page-10.png": "17e51678f741ff99dc0eb19fb2b2660cfba3e2560eb1071d510404e5bc83d633",
-    "page-11.png": "ad765e62f5ce2a082d6eb469796da1a4d5b0b3c89c49c834d3a551a4b622b875",
-    "page-12.png": "916c5351fd7a775ec3162ad33de182f7aac159a0f87f72a9f6d2834db43f40bb"
+  "official_metric_parity_delta": {
+    "PSNR": 0,
+    "SSIM": 0,
+    "LPIPS": 0,
+    "MS-SSIM": 0
   },
+  "render_engine": "Poppler 26.09.0",
+  "render_dpi": 120,
   "absolute_path_index_pages": [
     10,
-    11
+    11,
+    16
   ],
-  "reviewed_layout": [
-    "Chinese glyphs",
-    "tables and figures",
-    "GT/render comparisons",
-    "complete absolute paths",
-    "no clipping or overlap"
-  ]
+  "visual_review": "passed: final pages 1-12 reviewed in three montages; new pages 13-16 inspected individually at 120 dpi; complete paths, Chinese text, tables and page numbering verified",
+  "pdf_sha256": "ac2d3f2bb6687a757ea735914381a527ef862d6573f23e7421120db7fb373006",
+  "page_png_sha256": {
+    "page-01.png": "3f72a4bb715a8f3c81372f52e5ce5c253082bc52a20891a37241201c04c127ba",
+    "page-02.png": "ceb93a4957f07ca672925d018510b08fffa1bfc429007447809a7619442751af",
+    "page-03.png": "81d584cf424e29db250b4ece18d54b8395ea20693436866e5c2a88eee9c71e83",
+    "page-04.png": "075794444eb60c0c77c866b1e34363e9d9a26e0c5ca054ffd36e58b1dab2f23e",
+    "page-05.png": "5ee3ed7e4cfed3c28ff21bcd4d4b00fbf28f59e887be2335d38688444e517c0f",
+    "page-06.png": "b3baff2c44ab22038e8ad016044236507615a862b995035592e6920ed41cae56",
+    "page-07.png": "dae817b3013f13cce9a6de6b23465e52e6318e8d1691a1d70b570767c44afd42",
+    "page-08.png": "4e9354d306c59967f21e165076cd273a947c44c893f6675c2d288aa526e883cc",
+    "page-09.png": "a06c11f23096e4ffff2b54470ca74aee6efaa5033be2783a15189058cdd6b22c",
+    "page-10.png": "4eb95c196bc27e572f63a87ced538825622021604ff9c046018a046cf877123c",
+    "page-11.png": "13b81dc9aa7b0b6d40d2592f1d4ce106cfb9c7c521f3992ec2e1d9300fc402b9",
+    "page-12.png": "3314763083270a3d6b45cceb32684a6aee865d722033a7ca1bfcc940034fcf72",
+    "page-13.png": "bdea3e484fbab23362ce17fe5808cddff4075425146011d53a0a0dd28aec50db",
+    "page-14.png": "cf338c06e9b10001e8fd273f89c92c9983257ce3b715d91d26c1cb0e32b0b9c7",
+    "page-15.png": "144f2b1c0337f177cc7d7b6080685f67fb0e113fdfece36460056cb5c45e92d2",
+    "page-16.png": "b2d628509d018e07f3a46a6f35692cfcdbfda7ab239a0daabd0a3edf9dea2e8b"
+  }
 }

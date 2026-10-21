@@ -74,6 +74,25 @@ def inspect_run(row, family):
 
 mlp_best = {r['id']:inspect_run(r,'mlp') for r in mlp_rows}
 mask_best = {r['drop_percent']:inspect_run(r,'mask') for r in mask_rows if r['drop_percent']>0}
+split_path = ROOT / 'experiments/random_frame_mask/split_metrics.json'
+split_results = read(split_path) if split_path.exists() else None
+if split_results is not None:
+    assert split_results['status'] == 'completed', 'Split evaluation must finish before rebuilding the report'
+    split_validation = read(ROOT / 'experiments/random_frame_mask/split_metrics_validation.json')
+    assert split_validation['status'] == 'passed' and split_validation['evaluated_view_model_pairs'] == 1200
+    assert [r['drop_percent'] for r in split_results['rows']] == [0, 10, 30, 50, 70, 90]
+    for row in split_results['rows']:
+        count = row['splits']['retained']['count']
+        directory = Path(row['retained_render_absolute'])
+        gt = Path(row['retained_gt_absolute'])
+        expected = {f'{i:05d}.png' for i in range(count)}
+        assert {p.name for p in directory.glob('*.png')} == expected
+        assert {p.name for p in gt.glob('*.png')} == expected
+        assert row['splits']['original_train']['count'] == 150 and row['splits']['all_200']['count'] == 200
+        render_catalog.append({'family':'retained_eval','label':str(row['drop_percent'])+'%',
+                               'split':'retained_training_frames','render_absolute':str(directory),
+                               'gt_absolute':str(gt),'frame_count':count,'best_iteration':row['best_iteration']})
+TOTAL_PAGES = 16 if split_results else 12
 
 pdfmetrics.registerFont(TTFont('CN','C:/Windows/Fonts/msyh.ttc',subfontIndex=0))
 pdfmetrics.registerFont(TTFont('CN-Bold','C:/Windows/Fonts/msyhbd.ttc',subfontIndex=0))
@@ -197,9 +216,9 @@ class Page:
         c.line(LEFT, 44, W - RIGHT, 44)
         c.setFont('CN', 7.5)
         c.setFillColor(GRAY)
-        c.drawString(LEFT, 30, 'Rubber Duck | 50k | 单场景、单随机种子 | 2026-10-20')
+        c.drawString(LEFT, 30, 'Rubber Duck | 50k | 单场景、单随机种子 | '+REPORT_TIME.strftime('%Y-%m-%d'))
         c.setFont('Arial', 8)
-        c.drawRightString(W - RIGHT, 30, f'{self.number:02d} / 12')
+        c.drawRightString(W - RIGHT, 30, f'{self.number:02d} / {TOTAL_PAGES}')
         page_records.append({'page': self.number, 'title': self.title, 'content_bottom': round(self.y, 2)})
         c.showPage()
 
@@ -322,9 +341,11 @@ p=Page(1,'完成结果 / 执行摘要','PIDG baseline 容量与缺帧实验报�
 p.text('本报告汇总两组已完成实验：三个新增 MLP 容量变体，以及五档随机缺帧 baseline。所有新增长训练均为 Rubber Duck、50k、宽度 1600、训练 seed0；完整数据的原始 baseline 复用已有结果。')
 p.callout('<b>MLP 容量：</b>512×0 取得最高 PSNR <b>28.577 dB</b>，相对原始 baseline 提高 <b>1.320 dB</b>。最大参数量的 512×2 没有最好表现；LPIPS 仍以原始 baseline 最低。')
 p.callout('<b>随机缺帧：</b>10% 缺帧的官方测试 PSNR 为 <b>28.253 dB</b>；90% 缺帧降至 <b>23.063 dB</b>，比完整数据 baseline 低 <b>4.194 dB</b>。单次运行中间各档没有严格单调变化。')
-p.table([['实验','完成情况'],['MLP 容量','256×0 原始对照复用；512×0、256×2、512×2 均训练、渲染、评估完成'],['随机缺帧','10%、30%、50%、70%、90% 均完成官方测试与被移除帧的渲染、评估'],['顺序依赖','MLP 于 18:14 BST 完成；缺帧队列随后自动启动，并于 22:49 BST 完成'],['图片核验','14 个 render 目录，共 825 张 render 与 825 张匹配 GT，文件名与数量已核对']], [87,CW-87])
+p.table([['实验','完成情况'],['MLP 容量','256×0 原始对照复用；512×0、256×2、512×2 均训练、渲染、评估完成'],['随机缺帧','10%、30%、50%、70%、90% 均完成官方测试与被移除帧的渲染、评估'],['顺序依赖','MLP 于 10 月 20 日 18:14 BST 完成；缺帧队列随后自动启动，并于同日 22:49 BST 完成'],['图片核验',f"{len(render_catalog)} 个 render 目录，共 {sum(x['frame_count'] for x in render_catalog):,} 张 render 与匹配 GT，文件名与数量已核对"]], [87,CW-87])
 p.text('两组均使用原始 PIDG 兼容 baseline，未启用新增 F、NH、材料参数学习或结构化外力分支。结果是单场景、单随机种子的描述性比较，尚不能证明统计显著提升。')
 p.text('阅读索引：设置 02；MLP 数值与图像 03-04；缺帧数值 05-06；图像对照 07-09；render 绝对地址 10-11；结论与来源 12。','small')
+if split_results:
+    p.callout('<b>补充评估 13-16 页：</b>原主表只统计 50 张官方测试图。本版补算保留训练帧，并将保留 / 被移除帧分别及合并统计，另提供完整 200 帧指标与新增 render 绝对地址。')
 p.finish()
 
 # 2. Protocol.
@@ -446,7 +467,63 @@ for line in [
     '[5] data/pidg_random_frame_mask/rubber_duck/drop*_seed0/split_manifest.json 与 transforms 清单；third_party/PIDG 的原始网络、训练、渲染与指标脚本。']:
     p.text(escape(line),'small',gap=6)
 p.text('报告生成：scripts/build_pidg_baseline_ablation_report.py。配套 sources.json 冻结源结果、render 绝对地址、快照步数和图像哈希，便于后续复核。','small')
-p.finish();c.save()
+p.finish()
+
+if split_results:
+    split_rows = split_results['rows']
+    def split_value(row, key, metric='PSNR'):
+        values = row['splits'][key]['metrics']
+        return 'N/A' if values is None else f'{values[metric]:.3f}' if metric == 'PSNR' else f'{values[metric]:.6f}'
+
+    p=Page(13,'补充评估 / 指标范围','缺失与保留：PSNR 评估范围说明',
+           '复用相同 best 快照；新增评估，不重新训练。保留帧属于已见数据。')
+    p.text('<b>原报告的主 PSNR 不是整个数据集的 PSNR。</b>它是固定 50 张官方测试图像的逐图均值；被移除训练帧另行评估。此前没有计算保留训练帧的平均指标。')
+    p.table([['集合','帧数与定义'],['保留训练帧','150 × (1 - 缺帧比例)，训练中可见'],
+             ['被移除训练帧','150 × 缺帧比例，训练与快照选择中均不可见'],
+             ['原训练集全量','保留 + 被移除 = 150 帧，所有比例覆盖同一原始清单'],
+             ['完整数据集','原训练 150 + 官方测试 50 = 200 帧，所有比例覆盖相同帧集合']], [112,CW-112])
+    p.heading('同一快照的五种统计范围 | PSNR (dB)')
+    p.table([['缺帧','保留帧','缺失帧','原训练150','官方测试50','全部200'],
+             *[[f"{r['drop_percent']}%",*[split_value(r,k) for k in ('retained','removed','original_train','official_test','all_200')]] for r in split_rows]],
+            [49,83,83,96,100,CW-411])
+    p.text('<b>合并方法：</b>先对每张图计算指标，再对所有目标图像取算术平均。原训练均值 = (保留帧数 × 保留均值 + 缺失帧数 × 缺失均值) / 150；全量均值 = (150 × 原训练均值 + 50 × 官方测试均值) / 200。')
+    p.text('该 PSNR 口径与原 PIDG 一致：平均逐图的 dB 值，而不是把全部图像像素合在一起先求 MSE 再转为 dB。SSIM、LPIPS、MS-SSIM 同样按帧加权。0% 没有缺失帧，记作 N/A。','small')
+    p.text('完整 200 帧含训练中已见图像，因此属于全量重建统计；泛化能力仍应参考固定官方测试和被移除帧。不同缺帧比例的保留 / 缺失集合不同，原训练 150 帧和全部 200 帧则是相同视图集合。','small')
+    p.finish()
+
+    p=Page(14,'补充评估 / 分组指标','保留训练帧与被移除帧：完整指标',
+           'PSNR、SSIM、MS-SSIM 越高越好；LPIPS 越低越好。每个比例使用原先相同的 best 快照。')
+    p.table([['缺帧','子集','帧数','PSNR','SSIM','LPIPS','MS-SSIM'],
+             *[[f"{r['drop_percent']}%",title,r['splits'][key]['count'],
+                *[split_value(r,key,m) for m in ('PSNR','SSIM','LPIPS','MS-SSIM')]]
+               for r in split_rows for key,title in [('retained','保留 / 已见'),('removed','缺失 / 未见')]]],
+            [43,89,37,71,89,89,CW-418])
+    p.text('每行均由真实逐帧记录汇总，不使用另一集合的图像替代；输入源 ID、相机位姿和时间已经对齐。较高缺帧比例的缺失集合包含较低比例已缺失的帧。')
+    p.text('保留部分是训练数据上的重建表现，被移除部分是同场景未见训练帧上的重建表现；二者采样集合不同，数值差异不能单独归因为过拟合。背景、原始 GT 与 1600×900 分辨率均沿用官方渲染 / 指标协议。','small')
+    p.text('新增保留帧仅用于本次训练后评估，不回传梯度、不更新权重、不改变 best 快照。新增输出与原官方测试、masked_holdout 目录分开保存。','small')
+    p.finish()
+
+    p=Page(15,'补充评估 / 合并指标','原训练集、官方测试与全量：完整指标',
+           '原训练 150 与全部 200 的帧集合在六档缺帧比例间相同。合并均值按真实帧数计算。')
+    p.table([['缺帧','集合','帧数','PSNR','SSIM','LPIPS','MS-SSIM'],
+             *[[f"{r['drop_percent']}%",title,r['splits'][key]['count'],
+                *[split_value(r,key,m) for m in ('PSNR','SSIM','LPIPS','MS-SSIM')]]
+               for r in split_rows for key,title in [('original_train','原训练'),('official_test','官方测试'),('all_200','全部数据')]]],
+            [43,74,38,74,93,93,CW-415], size='small')
+    p.text('以上统计复用逐帧官方测试与缺失帧结果，并补算 525 张保留帧图像。模型和原始数据哈希保持一致；采用原 PIDG 指标函数与 VGG LPIPS，旧官方 PNG 的四项指标一致性检查通过。新增 16 项测试通过，全部 1,200 对模型 / 图像的 GT 源身份与 PSNR 已独立核验。','small')
+    p.text('来源：experiments/random_frame_mask/split_metrics.json；同目录 split_metrics.md 与 split_metrics.csv 提供相同数值。各运行 retained_evaluation/all_frame_metrics.json 保存全部 200 帧的源 ID、分组、图像地址与逐帧指标。','small')
+    p.finish()
+
+    p=Page(16,'补充评估 / 绝对地址','新增保留训练帧 render 的保存位置',
+           '以下六项均为已存在的完整 Windows 绝对路径；换行仅为排版。')
+    for r in split_rows:
+        p.heading(f"缺帧 {r['drop_percent']}% | 保留 {r['splits']['retained']['count']} 帧 | best {r['best_iteration']:,}")
+        p.text(path_markup(r['retained_render_absolute']),'path',gap=13)
+    p.text('每项 renders 目录的同级 gt 目录保存对应 GT，文件名从 00000.png 开始，数量与该比例的保留帧数一致。完整 GT 绝对地址同时写入 split_metrics.json 和本报告 sources.json。','small')
+    p.text('被移除帧的 render 地址见第 11 页；0% 官方测试地址见第 10 页，其余官方测试地址见第 11 页。本次只新增保留帧输出，既有渲染和模型快照均已保留。','small')
+    p.text('复现入口：variants/random_frame_mask/evaluate_splits.ps1。它配置现有 CUDA 环境，运行只读快照评估；已有完整输出可复用。','small')
+    p.finish()
+c.save()
 
 source_paths=[ROOT/'experiments/mlp_capacity/results.json',ROOT/'experiments/mlp_capacity/plan.json',
               ROOT/'experiments/mlp_capacity/validation.json',ROOT/'experiments/random_frame_mask/results.json',
@@ -459,6 +536,16 @@ archive={'pdf':str(PDF),'created_london':REPORT_TIME.isoformat(),'pages':page_re
          'run_records':run_records,'image_checks':image_checks,
          'common_heldout_frame':common_frame,'heldout_png_indices':heldout_indices,
          'source_sha256':{str(p.relative_to(ROOT)):digest(p) for p in source_paths}}
+if split_results:
+    archive['split_evaluation_snapshot'] = split_results
+    archive['split_evaluation_validation'] = split_validation
+    archive['source_sha256'][str(split_path.relative_to(ROOT))] = digest(split_path)
+    validation_path = ROOT / 'experiments/random_frame_mask/split_metrics_validation.json'
+    archive['source_sha256'][str(validation_path.relative_to(ROOT))] = digest(validation_path)
+    evaluator_path = ROOT / 'variants/random_frame_mask/evaluate_splits.py'
+    archive['source_sha256'][str(evaluator_path.relative_to(ROOT))] = digest(evaluator_path)
+    validator_path = ROOT / 'variants/random_frame_mask/validate_splits.py'
+    archive['source_sha256'][str(validator_path.relative_to(ROOT))] = digest(validator_path)
 (OUT/'PIDG_MLP_MaskedData_Report.sources.json').write_text(json.dumps(archive,ensure_ascii=False,indent=2),encoding='utf-8')
 print(json.dumps({'pdf':str(PDF),'pages':len(page_records),'render_directories':len(render_catalog),
                   'render_frames':archive['total_render_frames'],'common_heldout_id':common_id,
