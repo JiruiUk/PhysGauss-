@@ -1,65 +1,41 @@
 {
-  "pages": 16,
-  "all_absolute_render_paths_found": true,
-  "render_directories": 20,
-  "render_frames": 1350,
-  "metric_values_checked": 176,
+  "pages": 11,
+  "language": "cn",
+  "evaluation_scope": "fixed_50_official_test_views_only",
+  "test_frame_count": 50,
+  "reported_metric_values_checked": 40,
+  "all_absolute_render_and_gt_paths_found": true,
+  "render_directories": 9,
+  "render_frames": 450,
+  "all_comparison_figures_official_test_only": true,
   "out_of_bounds_text": [],
-  "split_metrics_unions_independently_verified": true,
-  "unit_tests_passed": 16,
-  "split_metric_validation": {
-    "status": "passed",
-    "ratios": 6,
-    "source_views": 200,
-    "evaluated_view_model_pairs": 1200,
-    "transforms_all_manifest_matches_train_test_union": true,
-    "gt_pixel_identity_after_official_preprocessing": true,
-    "independent_cpu_psnr_max_abs_error_db": 0.000005808695988207546,
-    "all_partitions_and_union_metrics_verified": true,
-    "original_run_hashes_unchanged": true,
-    "unit_tests_passed": 16,
-    "streaming_official_metric_parity_delta": {
-      "PSNR": 0,
-      "SSIM": 0,
-      "LPIPS": 0,
-      "MS-SSIM": 0
-    }
-  },
-  "previous_reports_unchanged": [
-    "PIDG_Variants_Report",
-    "PIDG_Variants_Report_EN"
-  ],
-  "official_metric_parity_delta": {
-    "PSNR": 0,
-    "SSIM": 0,
-    "LPIPS": 0,
-    "MS-SSIM": 0
-  },
   "render_engine": "Poppler 26.09.0",
   "render_dpi": 120,
   "absolute_path_index_pages": [
     10,
-    11,
-    16
+    11
   ],
-  "visual_review": "passed: final pages 1-12 reviewed in three montages; new pages 13-16 inspected individually at 120 dpi; complete paths, Chinese text, tables and page numbering verified",
-  "pdf_sha256": "ac2d3f2bb6687a757ea735914381a527ef862d6573f23e7421120db7fb373006",
+  "unrelated_reports_and_split_data_unchanged": {
+    "experiments/random_frame_mask/split_metrics.json": "4a16788e2743df62ded693c691bb57b9dcd4255813366a74aab69fb284f784d2",
+    "experiments/random_frame_mask/split_metrics.csv": "3ddc2a7ca293a56f6c62eae769e926e9085d02d66e127bed5c303cf4b99b1747",
+    "experiments/random_frame_mask/split_metrics_validation.json": "1ff959fc63564d86def0c8ae2a124dfd94d15069df06c40bef0873a9ae5336e9",
+    "output/pdf/PIDG_Variants_Report.pdf": "f4ac278c662491166ce97e81185601447f624e0b63ba702c27679a90d85df59d",
+    "output/pdf/PIDG_Variants_Report_EN.pdf": "f27e259d7798af3f157a9384f75029e4f137a89f1f8f54b1c99bf1b443b07e2c"
+  },
+  "visual_review": "passed: all 11 pages reviewed in montages; architecture, metric table and absolute path pages inspected individually at 120 dpi; final English header wrapping corrected and rechecked",
+  "pdf_sha256": "7f4b7b5cb06d186a79726b8ace256f4dc45697dd535d8aa4f7e3620592b7cd7c",
   "page_png_sha256": {
-    "page-01.png": "3f72a4bb715a8f3c81372f52e5ce5c253082bc52a20891a37241201c04c127ba",
-    "page-02.png": "ceb93a4957f07ca672925d018510b08fffa1bfc429007447809a7619442751af",
-    "page-03.png": "81d584cf424e29db250b4ece18d54b8395ea20693436866e5c2a88eee9c71e83",
-    "page-04.png": "075794444eb60c0c77c866b1e34363e9d9a26e0c5ca054ffd36e58b1dab2f23e",
-    "page-05.png": "5ee3ed7e4cfed3c28ff21bcd4d4b00fbf28f59e887be2335d38688444e517c0f",
-    "page-06.png": "b3baff2c44ab22038e8ad016044236507615a862b995035592e6920ed41cae56",
-    "page-07.png": "dae817b3013f13cce9a6de6b23465e52e6318e8d1691a1d70b570767c44afd42",
-    "page-08.png": "4e9354d306c59967f21e165076cd273a947c44c893f6675c2d288aa526e883cc",
-    "page-09.png": "a06c11f23096e4ffff2b54470ca74aee6efaa5033be2783a15189058cdd6b22c",
-    "page-10.png": "4eb95c196bc27e572f63a87ced538825622021604ff9c046018a046cf877123c",
-    "page-11.png": "13b81dc9aa7b0b6d40d2592f1d4ce106cfb9c7c521f3992ec2e1d9300fc402b9",
-    "page-12.png": "3314763083270a3d6b45cceb32684a6aee865d722033a7ca1bfcc940034fcf72",
-    "page-13.png": "bdea3e484fbab23362ce17fe5808cddff4075425146011d53a0a0dd28aec50db",
-    "page-14.png": "cf338c06e9b10001e8fd273f89c92c9983257ce3b715d91d26c1cb0e32b0b9c7",
-    "page-15.png": "144f2b1c0337f177cc7d7b6080685f67fb0e113fdfece36460056cb5c45e92d2",
-    "page-16.png": "b2d628509d018e07f3a46a6f35692cfcdbfda7ab239a0daabd0a3edf9dea2e8b"
-  }
+    "cn-01.png": "e3cccd96523bafea16aaa241924f52649a23700f8d5130d023b67c6c3b7e8cc8",
+    "cn-02.png": "c4db5f86019d2c21861e75ae75952b20e088761aa0dc5bfdfa7950437c6f3f3d",
+    "cn-03.png": "0e976d0179d5dad56ab2a77c5bc84ddc0eff9763ee5abfff0f6335d3b92b8d98",
+    "cn-04.png": "16b305a49486454d12ff13d41c70953d3a84ce3ca17759d9e245f33e6190a786",
+    "cn-05.png": "e6cd4ad24ef675a68545378b2a757351fd1fa21cffa346b49285da3cf224fef3",
+    "cn-06.png": "c475f20590bdfe982a1404261f37923d2f5f2b3a8462a51dd6c7b67bd5bbcd88",
+    "cn-07.png": "6c21923b1d14b78f5218f50cf1f60154443ce76cb55904137b1bda49f3ec923a",
+    "cn-08.png": "3a5256a64ab91ca8209277f979dbcf76126c65a3bdeb720864990b5d1f7b9075",
+    "cn-09.png": "23664113e806c50f370dbb2b2c3d6d81905be013d60ec57b38081bbe2b547f2c",
+    "cn-10.png": "467621f1dfc7b701945a3d74eba1befdff2506130854a226d4ee7e2de57edb19",
+    "cn-11.png": "cafb1701abb9e2fd4a68cd79cbc304533884fccd0673b5759957096cd30f7953"
+  },
+  "cross_language_numeric_and_figure_equivalence": true
 }

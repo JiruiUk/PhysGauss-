@@ -1,0 +1,41 @@
+{
+  "pages": 11,
+  "language": "en",
+  "evaluation_scope": "fixed_50_official_test_views_only",
+  "test_frame_count": 50,
+  "reported_metric_values_checked": 40,
+  "all_absolute_render_and_gt_paths_found": true,
+  "render_directories": 9,
+  "render_frames": 450,
+  "all_comparison_figures_official_test_only": true,
+  "out_of_bounds_text": [],
+  "render_engine": "Poppler 26.09.0",
+  "render_dpi": 120,
+  "absolute_path_index_pages": [
+    10,
+    11
+  ],
+  "unrelated_reports_and_split_data_unchanged": {
+    "experiments/random_frame_mask/split_metrics.json": "4a16788e2743df62ded693c691bb57b9dcd4255813366a74aab69fb284f784d2",
+    "experiments/random_frame_mask/split_metrics.csv": "3ddc2a7ca293a56f6c62eae769e926e9085d02d66e127bed5c303cf4b99b1747",
+    "experiments/random_frame_mask/split_metrics_validation.json": "1ff959fc63564d86def0c8ae2a124dfd94d15069df06c40bef0873a9ae5336e9",
+    "output/pdf/PIDG_Variants_Report.pdf": "f4ac278c662491166ce97e81185601447f624e0b63ba702c27679a90d85df59d",
+    "output/pdf/PIDG_Variants_Report_EN.pdf": "f27e259d7798af3f157a9384f75029e4f137a89f1f8f54b1c99bf1b443b07e2c"
+  },
+  "visual_review": "passed: all 11 pages reviewed in montages; architecture, metric table and absolute path pages inspected individually at 120 dpi; final English header wrapping corrected and rechecked",
+  "pdf_sha256": "8e120aa711c1b5a5a5d02bda95d820fb4de01dd072a5527250bd94c979a8cd9f",
+  "page_png_sha256": {
+    "en-01.png": "8bde927edcafafc31aa799afab9a11fe55aa76f4fbd98b07d361acea4d70e3af",
+    "en-02.png": "ceb1695a016571d42842b270b9fec3f85b6e8188c3c57514a26f799d6fe1a728",
+    "en-03.png": "88e991fcde40f40c3b9833f99a96851010a3ca0bad0583e61d18fdaabf9b0078",
+    "en-04.png": "3f24a5cba0a70562982ba2b28f422a1964cfc618d758d198825eb891635c885c",
+    "en-05.png": "e2f934ba1c43d9aae6c8487bef4a931b253fadcf3de3b7b5c6c5eb11533cee39",
+    "en-06.png": "aed6c9f22e64e2252e19bad51f16ecd0b226258bd305a85fdea11c12bad58d4f",
+    "en-07.png": "47c8146804d612999beb34cf7f08a7cedae28fc7ca5f009f70d0604935b6e29a",
+    "en-08.png": "cafc4f9bfd26e527529c19bcffcf93814eafe4cfdaf45e32bcbe21b0fac4aff1",
+    "en-09.png": "ffbdec00255264f691a729be2f3209d99fdc56bdb9b3785ed34c4f721095dc3d",
+    "en-10.png": "ca7d4dad153a715877af59f08aabfb949817803261eb60586090851c19a6407a",
+    "en-11.png": "8dc47ff8a68c4eeb5a64c71560b73eb84fbac23220931d559c8f76a12f1db500"
+  },
+  "cross_language_numeric_and_figure_equivalence": true
+}

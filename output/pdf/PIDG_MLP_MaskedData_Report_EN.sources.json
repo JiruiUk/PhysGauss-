@@ -1,0 +1,441 @@
+{
+  "pdf": "F:\\A_Edinburgh\\PhysGauss\\output\\pdf\\PIDG_MLP_MaskedData_Report_EN.pdf",
+  "language": "en",
+  "created_london": "2026-10-21T12:34:34.095820+01:00",
+  "evaluation_scope": "fixed_50_official_test_views_only",
+  "test_frame_count": 50,
+  "aggregation": "arithmetic mean of per-image metrics; PSNR in dB",
+  "snapshot_selection": "historical best official-test PSNR; test images do not supply training gradients",
+  "pages": [
+    {
+      "page": 1,
+      "title": "PIDG: MLP Capacity and Missing Frames",
+      "content_bottom": 395.39
+    },
+    {
+      "page": 2,
+      "title": "What Changes in the Deformation MLP?",
+      "content_bottom": 304.39
+    },
+    {
+      "page": 3,
+      "title": "Fixed Test Set, Different Training Subsets",
+      "content_bottom": 301.39
+    },
+    {
+      "page": 4,
+      "title": "Wider Helps; Capacity Gains Are Not Monotonic",
+      "content_bottom": 294.1
+    },
+    {
+      "page": 5,
+      "title": "MLP Capacity: GT and Four Models",
+      "content_bottom": 353.8
+    },
+    {
+      "page": 6,
+      "title": "Severe Removal Reduces Reconstruction Quality",
+      "content_bottom": 238.99
+    },
+    {
+      "page": 7,
+      "title": "Official-Test Images: 0%, 10%, 30%",
+      "content_bottom": 246.22
+    },
+    {
+      "page": 8,
+      "title": "Official-Test Images: 50%, 70%, 90%",
+      "content_bottom": 246.22
+    },
+    {
+      "page": 9,
+      "title": "Snapshots, Limits and Sources",
+      "content_bottom": 210.89
+    },
+    {
+      "page": 10,
+      "title": "MLP Study: Absolute Render and GT Paths",
+      "content_bottom": 298.89
+    },
+    {
+      "page": 11,
+      "title": "Removal Study: Absolute Render and GT Paths",
+      "content_bottom": 178.89
+    }
+  ],
+  "mlp_rows": [
+    {
+      "id": "W256_D0",
+      "width": 256,
+      "depth": 0,
+      "mlp_parameters": 61454,
+      "metrics": {
+        "SSIM": 0.9765514135360718,
+        "PSNR": 27.25678062438965,
+        "LPIPS": 0.029623517766594887,
+        "MS-SSIM": 0.9704826474189758
+      },
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_official\\rubber_duck",
+      "best_iteration": 50000
+    },
+    {
+      "id": "W512_D0",
+      "width": 512,
+      "depth": 0,
+      "mlp_parameters": 122894,
+      "metrics": {
+        "SSIM": 0.9770491719245911,
+        "PSNR": 28.576528549194336,
+        "LPIPS": 0.034613195806741714,
+        "MS-SSIM": 0.9704660177230835
+      },
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_mlp_capacity\\long_W512_D0\\rubber_duck",
+      "best_iteration": 16000
+    },
+    {
+      "id": "W256_D2",
+      "width": 256,
+      "depth": 2,
+      "mlp_parameters": 193038,
+      "metrics": {
+        "SSIM": 0.9765058755874634,
+        "PSNR": 28.109819412231445,
+        "LPIPS": 0.03123750165104866,
+        "MS-SSIM": 0.9703497886657715
+      },
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_mlp_capacity\\long_W256_D2\\rubber_duck",
+      "best_iteration": 31000
+    },
+    {
+      "id": "W512_D2",
+      "width": 512,
+      "depth": 2,
+      "mlp_parameters": 648206,
+      "metrics": {
+        "SSIM": 0.9767839312553406,
+        "PSNR": 27.615419387817383,
+        "LPIPS": 0.03329552710056305,
+        "MS-SSIM": 0.9710715413093567
+      },
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_mlp_capacity\\long_W512_D2\\rubber_duck",
+      "best_iteration": 21000
+    }
+  ],
+  "mask_rows": [
+    {
+      "drop_percent": 0,
+      "retained": 150,
+      "removed": 0,
+      "official_metrics": {
+        "SSIM": 0.9765514135360718,
+        "PSNR": 27.25678062438965,
+        "LPIPS": 0.029623517766594887,
+        "MS-SSIM": 0.9704826474189758
+      },
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_official\\rubber_duck",
+      "best_iteration": 50000
+    },
+    {
+      "drop_percent": 10,
+      "retained": 135,
+      "removed": 15,
+      "official_metrics": {
+        "SSIM": 0.9765687584877014,
+        "PSNR": 28.252595901489258,
+        "LPIPS": 0.029416197910904884,
+        "MS-SSIM": 0.9706241488456726
+      },
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop10_seed0\\rubber_duck",
+      "best_iteration": 39000
+    },
+    {
+      "drop_percent": 30,
+      "retained": 105,
+      "removed": 45,
+      "official_metrics": {
+        "SSIM": 0.9751401543617249,
+        "PSNR": 26.686220169067383,
+        "LPIPS": 0.03159859776496887,
+        "MS-SSIM": 0.9682517051696777
+      },
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop30_seed0\\rubber_duck",
+      "best_iteration": 34000
+    },
+    {
+      "drop_percent": 50,
+      "retained": 75,
+      "removed": 75,
+      "official_metrics": {
+        "SSIM": 0.9735063910484314,
+        "PSNR": 27.0432186126709,
+        "LPIPS": 0.03420376405119896,
+        "MS-SSIM": 0.9647737145423889
+      },
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop50_seed0\\rubber_duck",
+      "best_iteration": 28000
+    },
+    {
+      "drop_percent": 70,
+      "retained": 45,
+      "removed": 105,
+      "official_metrics": {
+        "SSIM": 0.9731071591377258,
+        "PSNR": 26.930286407470703,
+        "LPIPS": 0.035994548350572586,
+        "MS-SSIM": 0.9649965167045593
+      },
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop70_seed0\\rubber_duck",
+      "best_iteration": 19000
+    },
+    {
+      "drop_percent": 90,
+      "retained": 15,
+      "removed": 135,
+      "official_metrics": {
+        "SSIM": 0.9538078308105469,
+        "PSNR": 23.062978744506836,
+        "LPIPS": 0.06042700633406639,
+        "MS-SSIM": 0.9360793232917786
+      },
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop90_seed0\\rubber_duck",
+      "best_iteration": 11000
+    }
+  ],
+  "render_catalog": [
+    {
+      "family": "mlp",
+      "label": "W256_D0",
+      "split": "official_test",
+      "frame_count": 50,
+      "best_iteration": 50000,
+      "render_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_official\\rubber_duck\\test\\ours_best\\renders",
+      "gt_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_official\\rubber_duck\\test\\ours_best\\gt",
+      "reproduction_sha256": "a44098fb3211aee28f466af5a5bef9123ed4e14833e13b380f6f9be2b79e9127",
+      "results_sha256": "f40e54e903c18e9021e4c98a399226b616f1761ee6eabfe0c3edfa2cc4a23b49",
+      "per_view_sha256": "7aaa466a3e4d9fc7d4738e9d863ce38d8edb3bee242e240c679c32f1644642d3"
+    },
+    {
+      "family": "mlp",
+      "label": "W512_D0",
+      "split": "official_test",
+      "frame_count": 50,
+      "best_iteration": 16000,
+      "render_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_mlp_capacity\\long_W512_D0\\rubber_duck\\test\\ours_best\\renders",
+      "gt_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_mlp_capacity\\long_W512_D0\\rubber_duck\\test\\ours_best\\gt",
+      "reproduction_sha256": "e9b4e0c66342267f19be138d426ef750ceb79317273f07f6fba7cb6b0a0d7ef1",
+      "results_sha256": "dd284cd87629c7a2b5eec8d994cdf61be2377ffeed01335c7724efbc4a1edc55",
+      "per_view_sha256": "0c86228661b43f636bcab817f2306ee9e452b7ffd33ad871398c8364903c1b0a"
+    },
+    {
+      "family": "mlp",
+      "label": "W256_D2",
+      "split": "official_test",
+      "frame_count": 50,
+      "best_iteration": 31000,
+      "render_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_mlp_capacity\\long_W256_D2\\rubber_duck\\test\\ours_best\\renders",
+      "gt_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_mlp_capacity\\long_W256_D2\\rubber_duck\\test\\ours_best\\gt",
+      "reproduction_sha256": "13240b62bcf3545b0a9a7eef4d51aa7e9deb37129d93bc21c563ee2615b3fcf8",
+      "results_sha256": "a96b3db72a11a512a54ffa8259316f98cbb930a46ab503e57caefc787acaa94a",
+      "per_view_sha256": "d44ef4419d65c3e31a6f0de013508b068e5811a281a4a85421b4f08495c652f0"
+    },
+    {
+      "family": "mlp",
+      "label": "W512_D2",
+      "split": "official_test",
+      "frame_count": 50,
+      "best_iteration": 21000,
+      "render_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_mlp_capacity\\long_W512_D2\\rubber_duck\\test\\ours_best\\renders",
+      "gt_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_mlp_capacity\\long_W512_D2\\rubber_duck\\test\\ours_best\\gt",
+      "reproduction_sha256": "65162a5c60e629813b105e81e288840073b51457f85ed544d0b07243888808c9",
+      "results_sha256": "1dc8b72f945b391cf881b4b1fcba8df04948411f809a5aae97c903f4da145d8f",
+      "per_view_sha256": "5d1a2f1617e8b5612ab43068890700e739a8a1057e7072d57a00ff37db215795"
+    },
+    {
+      "family": "mask",
+      "label": "Drop 10%",
+      "split": "official_test",
+      "frame_count": 50,
+      "best_iteration": 39000,
+      "render_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop10_seed0\\rubber_duck\\test\\ours_best\\renders",
+      "gt_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop10_seed0\\rubber_duck\\test\\ours_best\\gt",
+      "reproduction_sha256": "00511677b7ad9c0ecbceb3f51eb64f7ab028ea9f76a2bb3aa05b194b998d080f",
+      "results_sha256": "ebf7a13ba4410fe848fd08f7bee38636524e919691e7adfd9e1c18a4b4174a43",
+      "per_view_sha256": "95be70739b78adc462fbc9f7febada0ae37462dcbde1b94a9d440af1750beba6"
+    },
+    {
+      "family": "mask",
+      "label": "Drop 30%",
+      "split": "official_test",
+      "frame_count": 50,
+      "best_iteration": 34000,
+      "render_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop30_seed0\\rubber_duck\\test\\ours_best\\renders",
+      "gt_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop30_seed0\\rubber_duck\\test\\ours_best\\gt",
+      "reproduction_sha256": "9c62f8e79717c9b10c762dc1f5d34cccc68350ea8c75569936f59b73cc562937",
+      "results_sha256": "440f8a8c243f555d1d45899736a09104517d5f05caca9de2b6e891460e731dd5",
+      "per_view_sha256": "b94dff41c750e75b9afadcf7b7f3ee403b454e18a02e62af12b2c2886a604db9"
+    },
+    {
+      "family": "mask",
+      "label": "Drop 50%",
+      "split": "official_test",
+      "frame_count": 50,
+      "best_iteration": 28000,
+      "render_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop50_seed0\\rubber_duck\\test\\ours_best\\renders",
+      "gt_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop50_seed0\\rubber_duck\\test\\ours_best\\gt",
+      "reproduction_sha256": "3ca38ed9ef28a63bd239d76b3de7326299223d3d6f52375c0944641ee1530c33",
+      "results_sha256": "0599d9fdc6acf3f54f063dc521156be0678b7530ec8f646132e6c026b027657e",
+      "per_view_sha256": "1e1f1118e34877a615d0c742a79c2427692cee42a9e08c9cc86d57ecc0df5e60"
+    },
+    {
+      "family": "mask",
+      "label": "Drop 70%",
+      "split": "official_test",
+      "frame_count": 50,
+      "best_iteration": 19000,
+      "render_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop70_seed0\\rubber_duck\\test\\ours_best\\renders",
+      "gt_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop70_seed0\\rubber_duck\\test\\ours_best\\gt",
+      "reproduction_sha256": "79dd5427c316b8f244a5a201632dfbbf617c9333b101bcdb7a55c590cc6ad31c",
+      "results_sha256": "7844c39b6fb5f0028621737f735c71d9bb5d1f53a89bb29591be9884820fd7e0",
+      "per_view_sha256": "6916f7faba085415046bf963ff1122ec7b71ae4bdcea0678fbfe1a47298805a0"
+    },
+    {
+      "family": "mask",
+      "label": "Drop 90%",
+      "split": "official_test",
+      "frame_count": 50,
+      "best_iteration": 11000,
+      "render_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop90_seed0\\rubber_duck\\test\\ours_best\\renders",
+      "gt_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop90_seed0\\rubber_duck\\test\\ours_best\\gt",
+      "reproduction_sha256": "59497af31f535eacf4018a72b4d5b642a4a6456a4c67125368395f01b3a07c07",
+      "results_sha256": "8831444126ec7e3e87cc6b8faeda92ca4b842c2e273c79082653a620cdb98edc",
+      "per_view_sha256": "fbbff9a830d34e1c15eb65d20ac4feed4fcb459ca4688a0407c6ca459d29c775"
+    }
+  ],
+  "unique_render_directories": 9,
+  "total_render_frames": 450,
+  "image_checks": [
+    {
+      "figure": "mlp_visual",
+      "official_test_index": 25,
+      "roi_xyxy": [
+        340,
+        222,
+        1227,
+        797
+      ],
+      "gt_pixel_identity": true,
+      "panels": [
+        {
+          "label": "W256_D0",
+          "render": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_official\\rubber_duck\\test\\ours_best\\renders\\00025.png",
+          "gt": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_official\\rubber_duck\\test\\ours_best\\gt\\00025.png",
+          "render_sha256": "b53e1746b9246e67bd81763a0b8d666d3bc100db4983c44595b4cbea20b9e513",
+          "gt_sha256": "130c321ee05aac1aaee14cb23279d07af5c0503abfecce62548d84c5dff9b44d"
+        },
+        {
+          "label": "W512_D0",
+          "render": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_mlp_capacity\\long_W512_D0\\rubber_duck\\test\\ours_best\\renders\\00025.png",
+          "gt": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_mlp_capacity\\long_W512_D0\\rubber_duck\\test\\ours_best\\gt\\00025.png",
+          "render_sha256": "eb609378ccb4cc85e7c72ca178a038224c292adb41de56f22be1e97c68b8ce1f",
+          "gt_sha256": "130c321ee05aac1aaee14cb23279d07af5c0503abfecce62548d84c5dff9b44d"
+        },
+        {
+          "label": "W256_D2",
+          "render": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_mlp_capacity\\long_W256_D2\\rubber_duck\\test\\ours_best\\renders\\00025.png",
+          "gt": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_mlp_capacity\\long_W256_D2\\rubber_duck\\test\\ours_best\\gt\\00025.png",
+          "render_sha256": "6fd03de3538e5e73c8a0b946f0454ee481ae4f25b7fac0cb4877c1e99fc07e83",
+          "gt_sha256": "130c321ee05aac1aaee14cb23279d07af5c0503abfecce62548d84c5dff9b44d"
+        },
+        {
+          "label": "W512_D2",
+          "render": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_mlp_capacity\\long_W512_D2\\rubber_duck\\test\\ours_best\\renders\\00025.png",
+          "gt": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_mlp_capacity\\long_W512_D2\\rubber_duck\\test\\ours_best\\gt\\00025.png",
+          "render_sha256": "588e8d6ac28f4c8bd46be93afb195fe2e7a861e4a15dac5f277c8ab15eca8735",
+          "gt_sha256": "130c321ee05aac1aaee14cb23279d07af5c0503abfecce62548d84c5dff9b44d"
+        }
+      ]
+    },
+    {
+      "figure": "low_visual",
+      "official_test_index": 25,
+      "roi_xyxy": [
+        340,
+        222,
+        1227,
+        797
+      ],
+      "gt_pixel_identity": true,
+      "panels": [
+        {
+          "label": "Baseline 0%",
+          "render": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_official\\rubber_duck\\test\\ours_best\\renders\\00025.png",
+          "gt": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_official\\rubber_duck\\test\\ours_best\\gt\\00025.png",
+          "render_sha256": "b53e1746b9246e67bd81763a0b8d666d3bc100db4983c44595b4cbea20b9e513",
+          "gt_sha256": "130c321ee05aac1aaee14cb23279d07af5c0503abfecce62548d84c5dff9b44d"
+        },
+        {
+          "label": "Drop 10%",
+          "render": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop10_seed0\\rubber_duck\\test\\ours_best\\renders\\00025.png",
+          "gt": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop10_seed0\\rubber_duck\\test\\ours_best\\gt\\00025.png",
+          "render_sha256": "df7dd903be13d0ddc71de680c8d781c38581ef31858600dbb8356262d91c2ac2",
+          "gt_sha256": "130c321ee05aac1aaee14cb23279d07af5c0503abfecce62548d84c5dff9b44d"
+        },
+        {
+          "label": "Drop 30%",
+          "render": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop30_seed0\\rubber_duck\\test\\ours_best\\renders\\00025.png",
+          "gt": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop30_seed0\\rubber_duck\\test\\ours_best\\gt\\00025.png",
+          "render_sha256": "1189dbbe5651fc35bb18c04406235238217de990ef071a9c9dc88500408ec441",
+          "gt_sha256": "130c321ee05aac1aaee14cb23279d07af5c0503abfecce62548d84c5dff9b44d"
+        }
+      ]
+    },
+    {
+      "figure": "high_visual",
+      "official_test_index": 25,
+      "roi_xyxy": [
+        340,
+        222,
+        1227,
+        797
+      ],
+      "gt_pixel_identity": true,
+      "panels": [
+        {
+          "label": "Drop 50%",
+          "render": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop50_seed0\\rubber_duck\\test\\ours_best\\renders\\00025.png",
+          "gt": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop50_seed0\\rubber_duck\\test\\ours_best\\gt\\00025.png",
+          "render_sha256": "9df5396fe9a3bfee284f0f7b8cb84f707504ef4b0072f873765575b5954e3b6c",
+          "gt_sha256": "130c321ee05aac1aaee14cb23279d07af5c0503abfecce62548d84c5dff9b44d"
+        },
+        {
+          "label": "Drop 70%",
+          "render": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop70_seed0\\rubber_duck\\test\\ours_best\\renders\\00025.png",
+          "gt": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop70_seed0\\rubber_duck\\test\\ours_best\\gt\\00025.png",
+          "render_sha256": "00a8a8ad9c15802c22c21573944802d723cf812609383a0c77f7fec7721dbb58",
+          "gt_sha256": "130c321ee05aac1aaee14cb23279d07af5c0503abfecce62548d84c5dff9b44d"
+        },
+        {
+          "label": "Drop 90%",
+          "render": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop90_seed0\\rubber_duck\\test\\ours_best\\renders\\00025.png",
+          "gt": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop90_seed0\\rubber_duck\\test\\ours_best\\gt\\00025.png",
+          "render_sha256": "9ae08cd3ba4268c90b302600ae663f10576fb955f421ef6a7af31dd36caee27f",
+          "gt_sha256": "130c321ee05aac1aaee14cb23279d07af5c0503abfecce62548d84c5dff9b44d"
+        }
+      ]
+    }
+  ],
+  "official_manifest_sha256": "f854b0273b1d91d882fabcd76386100bff2eeb1294e483ed7156d1e91d2e255e",
+  "source_sha256": {
+    "experiments/mlp_capacity/results.json": "e1131580f3cc413f297dfd4eac8f89970ca2b01ec224fd792169e3b8419df22e",
+    "experiments/mlp_capacity/plan.json": "e8032e350e1ceab7b6de2aeb1aa31a861a6488630d9ab5df0bc93d61f84afcd4",
+    "experiments/random_frame_mask/results.json": "7e50b90583e6472dc744e6503860b9cca45a12745416748d48cf9b0508a0beef",
+    "experiments/random_frame_mask/plan.json": "2666b37f029f2ee7299d1ca54615723ccdb47d4730bd84a12f8e66040ea5c49e",
+    "data/PIDG/rubber_duck/transforms_test.json": "f854b0273b1d91d882fabcd76386100bff2eeb1294e483ed7156d1e91d2e255e",
+    "third_party/PIDG/scene_PIDG/network.py": "a43f8c043db2b618126d0f525f1de1e002773fbcb5d584bb984f0c01c7e5ce22",
+    "third_party/PIDG/train_pidg.py": "0bd09935548fe65978b793ced7a5c7b1cb4e2d2b57b59d4f81670515ad3794c2",
+    "third_party/PIDG/render.py": "2309a3bc115d147ee1999baebb54cfe922a8570f07b9a40d0d7b206e514cb9e5",
+    "third_party/PIDG/metrics.py": "d1c46cd5f0b62c790bc8b7581285a86388e1a547f11a1c0b988e8af7935fbed6",
+    "scripts/build_pidg_baseline_ablation_report.py": "fa1ff6b56cbcdedd8c11a9e2215c751e298b312a64da6dd92c97811b030ccf52",
+    "scripts/pidg_ablation_report_layout.py": "ebb6387e619776ff63da88f83ec354cd7e1329b71e5a8ce4bc29a0d3f5fd5467"
+  }
+}

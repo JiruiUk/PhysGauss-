@@ -42,4 +42,4 @@ Updated UTC: 2026-10-20T21:49:28.296096+00:00
 各项均为逐图指标的算术平均，合并按真实帧数加权；全部200含已见训练图像。
 [全部四项指标、范围说明与绝对 render 地址](split_metrics.md) · [CSV](split_metrics.csv) · [JSON](split_metrics.json)
 
-[更新后的 PDF 报告](../../output/pdf/PIDG_MLP_MaskedData_Report.pdf)
+[中文 PDF（仅固定50张官方测试图）](../../output/pdf/PIDG_MLP_MaskedData_Report.pdf) · [English PDF (fixed 50-view official test only)](../../output/pdf/PIDG_MLP_MaskedData_Report_EN.pdf)

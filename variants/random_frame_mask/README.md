@@ -88,5 +88,7 @@ Summaries: `experiments/random_frame_mask/split_metrics.{md,json,csv}`. Absolute
 render and GT directories are included. The independent validator checks all
 1,200 model/view pairs against the original GT after official compositing and
 resizing, recomputes PSNR on CPU, checks every union, and verifies model/input
-hashes. It saves `split_metrics_validation.json`. The updated PDF adds this
-analysis on pages 13-16; rebuild with `scripts/build_pidg_baseline_ablation_report.py`.
+hashes. It saves `split_metrics_validation.json`. Split metrics remain separate
+artifacts. The Chinese and English PDF reports compare only the fixed 50-view
+official test set, including GT/render comparisons and absolute image paths.
+Rebuild both with `scripts/build_pidg_baseline_ablation_report.py`.
