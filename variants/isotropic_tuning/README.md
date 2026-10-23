@@ -84,3 +84,20 @@ New status: `experiments/isotropic_tuning/{monitor.html,results.md,preflight.jso
 Both monitors and results are separate from the completed metric-tuning study.
 The result table also retains the already-rendered T3 reference snapshots, so
 a new run cannot be labelled globally best merely by beating the older baseline.
+
+## Live curve monitor
+
+Start the read-only chart sampler with `./scripts/start_isotropic_monitor.ps1`.
+Open `http://127.0.0.1:8766/` or `experiments/isotropic_tuning/charts.html`.
+It shows PSNR, SSIM, LPIPS, MS-SSIM, logged training EMA loss and normalized
+isotropy loss, plus progress and GPU usage. The four test metrics include the
+historical T3 curve at the same iteration and the original W256_D0 reference.
+Hover reveals sampled values; controls switch axis range, reference visibility
+and page refresh. The page samples every five seconds and never sends training
+control commands. It warns when its source snapshot is older than20 seconds.
+
+The chart page uses its own `charts_data.js`/`charts_data.json` outputs so the
+existing trainer's table publisher cannot overwrite it. It reads complete log
+records incrementally, deduplicates resumed iterations and retains loss extrema
+when downsampling. No model, optimizer, runtime source freeze or training worker
+is modified. Both local-file and HTTP viewing use bundled assets without a CDN.

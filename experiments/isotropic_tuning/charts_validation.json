@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "unit_tests": {
+    "command": "envs/pidg-cu128/python.exe -m pytest tests/test_isotropic_monitor.py -q",
+    "passed": 5,
+    "duration_seconds_reported_by_pytest": 0.38
+  },
+  "browser_checks": [
+    "six rendered SVG plots with real training and evaluation history",
+    "same-iteration T3 comparison and baseline reference",
+    "full 50000-step axis and current-progress axis",
+    "reference checkbox changes visible plotted series",
+    "pause/resume page refresh controls; restored to automatic refresh",
+    "5-second sampling verified by changing visible update time and iteration",
+    "hover reveals paired step/metric values",
+    "desktop visual layout checked in Chrome"
+  ],
+  "training_controller_pid_unchanged": 133844,
+  "training_worker_pid_unchanged": 102024,
+  "monitor_url": "http://127.0.0.1:8766/",
+  "local_chart_page": "F:/A_Edinburgh/PhysGauss/experiments/isotropic_tuning/charts.html",
+  "training_code_or_runtime_freeze_modified": false
+}

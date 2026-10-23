@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Isotropic · 训练曲线</title>
+<link rel="icon" href="data:,">
+<style>
+:root{color-scheme:light dark;--bg:#f5f7fa;--card:#fff;--ink:#1b2a3a;--muted:#5d6b7a;--line:#e0e6ed;--iso:#088d79;--t3:#5776cb;--base:#8996a6;--soft:#e6f3ef;--shadow:0 5px 24px #22324808}
+@media(prefers-color-scheme:dark){:root{--bg:#111922;--card:#1a2531;--ink:#e5edf6;--muted:#a0afbf;--line:#324253;--iso:#6bd9b9;--t3:#97b1ff;--base:#9babbc;--soft:#253c39;--shadow:none}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.6 "Segoe UI","Microsoft YaHei",system-ui,sans-serif}main{max-width:1480px;margin:auto;padding:28px 32px 36px}header{display:flex;gap:24px;justify-content:space-between;align-items:flex-start;margin-bottom:20px}h1{font-size:26px;letter-spacing:-.5px;margin:0;font-weight:650}p{margin:3px 0;color:var(--muted)}.tag{display:inline-flex;align-items:center;gap:7px;background:var(--soft);color:var(--ink);padding:5px 11px;border-radius:20px;font-size:12px}.dot{width:7px;height:7px;background:var(--iso);border-radius:50%}.tools{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:8px}button,select{font:inherit;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:8px;padding:6px 10px;cursor:pointer}button:hover,select:hover{border-color:var(--muted)}button:focus-visible,select:focus-visible{outline:2px solid var(--t3);outline-offset:3px}.kpis{display:grid;grid-template-columns:1.15fr 1fr 1fr 1fr;gap:14px;margin-bottom:16px}.kpi,.panel{background:var(--card);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow)}.kpi{padding:15px 18px}.label{color:var(--muted);font-size:12px}.value{font-size:25px;line-height:1.5;font-weight:600;font-variant-numeric:tabular-nums}.value small{font-size:13px;font-weight:400;color:var(--muted)}.track{height:5px;border-radius:8px;background:var(--line);margin-top:8px;overflow:hidden}.fill{height:100%;background:var(--iso);transition:width .5s}.legend{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin:18px 2px 10px;color:var(--muted)}.key{display:inline-flex;align-items:center;gap:7px}.swatch{display:inline-block;width:22px;height:3px;background:var(--iso)}.swatch.t3{background:var(--t3)}.swatch.base{height:0;background:transparent;border-top:2px dashed var(--base)}.plots{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.panel{padding:16px 18px 10px;min-width:0}.panel-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;min-height:54px}.panel h2{margin:0;font-size:15px;font-weight:600}.stat{font-size:20px;font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}.sub{color:var(--muted);font-size:12px}.graph{position:relative;min-height:235px}.graph svg{display:block;width:100%;height:235px;overflow:visible;touch-action:pan-y}.graph text{fill:var(--muted);font-size:11px;font-family:inherit}.grid{stroke:var(--line);stroke-width:1}.trace{fill:none;stroke-width:2;stroke-linejoin:round;stroke-linecap:round}.cursor{stroke:var(--muted);stroke-width:1;stroke-dasharray:3 4;pointer-events:none}.tip{position:absolute;z-index:3;display:none;pointer-events:none;white-space:pre;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:8px 12px;box-shadow:var(--shadow);font-size:12px;font-variant-numeric:tabular-nums}.footer{margin-top:18px;padding-top:12px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;color:var(--muted);font-size:12px}.error{color:#c34e42}.hint{font-size:12px;color:var(--muted);margin-top:10px}a{color:var(--t3)}code{font:12px/1.5 ui-monospace,Consolas,monospace;overflow-wrap:anywhere}#sync{font-variant-numeric:tabular-nums}input{accent-color:var(--t3)}
+@media(max-width:850px){main{padding:18px 14px}.kpis{grid-template-columns:1fr 1fr}.plots{grid-template-columns:1fr}header{flex-direction:column;gap:8px}.panel{padding:14px}.graph svg{height:225px}.value{font-size:23px}}
+</style>
+</head>
+<body>
+<main>
+<header>
+ <div><h1>Isotropic 训练曲线</h1><p id="subtitle">Rubber Duck · T3 + isotropic normalization</p><div class="tools"><span class="tag"><span class="dot"></span><span id="status">读取日志中</span></span><span class="sub" id="sync">每 5 秒更新</span></div></div>
+ <div class="tools"><label for="range">横轴</label><select id="range"><option value="current">当前已训练区间</option><option value="full">完整训练区间</option></select><button id="pause" type="button" aria-pressed="false">暂停刷新</button></div>
+</header>
+<section class="kpis" aria-label="训练状态">
+ <article class="kpi"><div class="label">训练进度</div><div class="value" id="step">—</div><div class="track"><div class="fill" id="fill" style="width:0%"></div></div></article>
+ <article class="kpi"><div class="label">当前训练损失 · 日志 EMA</div><div class="value" id="loss">—</div><div class="sub" id="evalstep">等待评估记录</div></article>
+ <article class="kpi"><div class="label">Isotropic 正则 · 未加权</div><div class="value" id="iso">—</div><div class="sub" id="weighted">加权贡献 —</div></article>
+ <article class="kpi"><div class="label">GPU 利用率 / 显存</div><div class="value" id="gpu">—</div><div class="sub" id="device">读取设备状态</div></article>
+</section>
+<div class="legend"><span class="key"><i class="swatch"></i><span id="runlabel">Isotropic 模型</span></span><label class="key"><input id="showt3" type="checkbox" checked><i class="swatch t3"></i>T3 同步数曲线</label><label class="key"><input id="showbase" type="checkbox" checked><i class="swatch base"></i>原 W256_D0 参考值</label></div>
+<section class="plots" id="plots" aria-label="指标与损失曲线"></section>
+<p class="hint">四项指标每 1,000 步评估一次，使用固定 50 张官方测试图（1600×900）。曲线连接已测点，不代表中间步数已评估。悬停查看数值；原始训练损失保留采样区间的极值。</p>
+<footer class="footer"><div><div id="freshness">等待首个快照</div><div>页面仅监测；“暂停刷新”不会暂停训练。</div></div><div><a href="results.md">最佳快照结果表</a> · <a href="charts_data.json">曲线数据</a><div id="path"></div></div></footer>
+</main>
+<script>
+(()=>{
+'use strict';
+const $=id=>document.getElementById(id), NS='http://www.w3.org/2000/svg';
+const specs=[['PSNR','PSNR ↑','dB',3],['SSIM','SSIM ↑','',6],['LPIPS','LPIPS ↓','',6],['MS-SSIM','MS-SSIM ↑','',6],['training','训练损失 · EMA','',6],['isotropic','Isotropic 正则项','',5]];
+let snapshot=null,paused=false,pending=false;
+const fmt=(x,n=4)=>Number.isFinite(x)?x.toFixed(n):'—';
+const number=x=>Number(x).toLocaleString('en-GB');
+const tick=x=>x>=1000?(x/1000).toFixed(x%1000?1:0)+'k':Math.round(x).toString();
+const stamp=x=>new Intl.DateTimeFormat('zh-CN',{timeZone:'Europe/London',hour12:false,month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',second:'2-digit'}).format(new Date(x));
+function node(tag,attrs={},text=''){const n=document.createElementNS(NS,tag);Object.entries(attrs).forEach(([k,v])=>n.setAttribute(k,String(v)));if(text)n.textContent=text;return n;}
+for(const [key,label] of specs){const card=document.createElement('article');card.className='panel';card.innerHTML='<div class="panel-head"><div><h2></h2><div class="sub" data-note></div></div><div class="stat" data-stat>—</div></div><div class="graph"><svg role="img"></svg><div class="tip"></div></div>';card.querySelector('h2').textContent=label;card.id='panel-'+key;$('plots').append(card);}
+function draw(key,series,xmax,precision,emptyText){
+ const card=$('panel-'+key),svg=card.querySelector('svg'),tip=card.querySelector('.tip');svg.replaceChildren();svg.setAttribute('viewBox','0 0 640 245');svg.setAttribute('aria-label',card.querySelector('h2').textContent+'，训练步数 0 到 '+xmax);
+ const box={l:70,r:622,t:15,b:207}, all=series.flatMap(s=>s.points.filter(p=>p.x<=xmax));
+ if(!all.length){svg.append(node('text',{x:320,y:110,'text-anchor':'middle'},emptyText||'等待首个记录点'));return;}
+ let low=Math.min(...all.map(p=>p.y)),high=Math.max(...all.map(p=>p.y));let pad=(high-low)*.14;if(pad===0)pad=Math.max(Math.abs(high)*.001,1e-5);low-=pad;high+=pad;
+ const px=x=>box.l+(box.r-box.l)*x/Math.max(1,xmax),py=y=>box.b-(box.b-box.t)*(y-low)/(high-low);
+ for(let i=0;i<=4;i++){const y=box.t+(box.b-box.t)*i/4,v=high-(high-low)*i/4;svg.append(node('line',{x1:box.l,y1:y,x2:box.r,y2:y,class:'grid'}),node('text',{x:box.l-10,y:y+4,'text-anchor':'end'},fmt(v,key==='PSNR'?2:precision)));const x=box.l+(box.r-box.l)*i/4;svg.append(node('text',{x,y:box.b+22,'text-anchor':'middle'},tick(xmax*i/4)));}
+ svg.append(node('text',{x:(box.l+box.r)/2,y:243,'text-anchor':'middle'},'训练步数'));
+ for(const s of series){const points=s.points.filter(p=>p.x<=xmax);if(!points.length)continue;svg.append(node('path',{d:points.map((p,i)=>(i?'L':'M')+px(p.x).toFixed(2)+','+py(p.y).toFixed(2)).join(' '),class:'trace',stroke:s.color,'stroke-dasharray':s.dashed?'5 5':'none'}));if(!s.dashed&&points.length<=80)for(const p of points)svg.append(node('circle',{cx:px(p.x),cy:py(p.y),r:2.5,fill:s.color}));}
+ const cursor=node('line',{x1:0,y1:box.t,x2:0,y2:box.b,class:'cursor',visibility:'hidden'});svg.append(cursor);
+ svg.onpointermove=e=>{const rect=svg.getBoundingClientRect(),x=(e.clientX-rect.left)/rect.width*640;if(x<box.l||x>box.r){tip.style.display='none';cursor.setAttribute('visibility','hidden');return;}const wanted=(x-box.l)/(box.r-box.l)*xmax;const anchor=series[0]?.points.filter(p=>p.x<=xmax);if(!anchor?.length)return;const closest=anchor.reduce((a,b)=>Math.abs(a.x-wanted)<Math.abs(b.x-wanted)?a:b);const text=['步数 '+number(closest.x)];for(const s of series){const p=s.points.find(p=>p.x===closest.x);if(p)text.push(s.name+'  '+fmt(p.y,precision));}tip.textContent=text.join('\n');tip.style.display='block';const width=tip.offsetWidth;tip.style.left=Math.min(Math.max(0,e.clientX-rect.left+12),rect.width-width)+'px';tip.style.top='14px';cursor.setAttribute('x1',px(closest.x));cursor.setAttribute('x2',px(closest.x));cursor.setAttribute('visibility','visible');};
+ svg.onpointerleave=()=>{tip.style.display='none';cursor.setAttribute('visibility','hidden');};
+}
+function render(data){
+ snapshot=data;const progress=data.progress||{},rows=data.metrics||[],t3=data.t3_metrics||[],iso=data.isotropic_loss||[],last=rows.at(-1),latestIso=iso.at(-1),colors=getComputedStyle(document.documentElement),color=k=>colors.getPropertyValue(k).trim();
+ const status={training:'训练中',validating:'工程预检',completed:'训练与渲染已完成',preflight_passed:'预检已完成',saved_stopped:'已保存并停止',failed:'失败',process_exited:'训练进程已退出',worker_only:'训练进程运行，队列已退出',waiting:'等待训练'};
+ let label=status[data.status]||data.status;if(data.controller_alive&&data.active?.phase?.startsWith('render_'))label='渲染中';else if(data.controller_alive&&data.active?.phase==='metrics')label='渲染指标复核中';$('status').textContent=label;
+ $('subtitle').textContent='Rubber Duck · T3 + isotropic normalization · λ = '+(data.config?.isotropic_weight??'—');
+ $('runlabel').textContent=data.active?.id||'Isotropic 模型';
+ $('step').innerHTML=number(progress.iteration||0)+' <small>/ '+number(progress.target||50000)+' · '+fmt((progress.fraction||0)*100,1)+'%</small>';
+ $('fill').style.width=Math.min(100,(progress.fraction||0)*100)+'%';$('loss').textContent=fmt(progress.latest_loss,6);$('evalstep').textContent=last?'最近评估：第 '+number(last.iteration)+' 步':'等待第一次测试集评估';
+ $('iso').textContent=fmt(latestIso?.loss,5);$('weighted').textContent='加权贡献 '+fmt(latestIso?.weighted_loss,7)+(latestIso?' · 第 '+number(latestIso.iteration)+' 步':'');
+ const gpu=data.gpu?.[0];$('gpu').textContent=gpu?gpu.utilization+'% / '+fmt(Number(gpu.memory_used)/1024,1)+' GB':'—';$('device').textContent=gpu?gpu.name+' · '+gpu.temperature+'°C':'设备信息暂不可用';
+ $('sync').textContent=(paused?'页面刷新已暂停 · ':'5 秒刷新 · ')+'英国时间 '+stamp(data.updated_utc);$('freshness').textContent='日志 '+(data.log_age_seconds===null?'暂无记录':fmt(data.log_age_seconds,0)+' 秒前更新')+' · '+(data.worker_alive?'工作进程运行中':'工作进程未运行');$('path').textContent=data.run_absolute||'';
+ const age=Math.max(0,(Date.now()-new Date(data.updated_utc).getTime())/1000);
+ if(age>20){$('status').textContent='监控数据已过期';$('freshness').textContent='最后快照距今 '+Math.round(age)+' 秒，当前进程状态尚未刷新';}
+ const xmax=$('range').value==='full'?(progress.target||50000):Math.max(1000,progress.iteration||0);
+ for(const [key,,unit,precision] of specs){const card=$('panel-'+key);let series=[];
+  if(key==='training'||key==='isotropic'){const points=(key==='training'?data.training_loss:iso)||[];series=[{name:key==='training'?'训练 EMA':'未加权正则',color:color('--iso'),points:points.map(p=>({x:p.iteration,y:p.loss}))}];card.querySelector('[data-stat]').textContent=fmt(points.at(-1)?.loss,precision);card.querySelector('[data-note]').textContent=key==='training'?'日志 EMA；保留区间极值，包含物理损失的周期变化':'每个 Gaussian 的三轴相对偏差；每 100 步记录';}
+  else{series=[{name:'Isotropic',color:color('--iso'),points:rows.map(r=>({x:r.iteration,y:r.metrics[key]}))}];if($('showt3').checked)series.push({name:'T3',color:color('--t3'),points:t3.map(r=>({x:r.iteration,y:r.metrics[key]}))});if($('showbase').checked&&Number.isFinite(data.baseline?.[key]))series.push({name:'原 baseline',color:color('--base'),dashed:true,points:[{x:0,y:data.baseline[key]},{x:xmax,y:data.baseline[key]}]});card.querySelector('[data-stat]').textContent=fmt(last?.metrics[key],precision)+(unit&&last?' '+unit:'');const best=data.best?.[key],paired=t3.find(r=>r.iteration===last?.iteration),delta=paired&&last?last.metrics[key]-paired.metrics[key]:null;card.querySelector('[data-note]').textContent=(best?'本轮最佳 '+fmt(best.value,precision)+' @ '+tick(best.iteration):'等待评估')+(delta!==null?' · 同步 T3 Δ '+(delta>=0?'+':'')+fmt(delta,precision):'');}
+  draw(key,series,xmax,precision,key==='training'?'数据加载中，等待首个训练损失':'等待首个记录点');
+ }
+}
+function load(){if(paused||pending)return;pending=true;const script=document.createElement('script');script.src='charts_data.js?t='+Date.now();script.onload=()=>{pending=false;script.remove();if(window.PIDG_MONITOR_DATA)render(window.PIDG_MONITOR_DATA);};script.onerror=()=>{pending=false;script.remove();$('sync').textContent='无法读取曲线数据；监控服务可能已停止';};document.head.append(script);}
+$('pause').onclick=()=>{paused=!paused;$('pause').textContent=paused?'继续刷新':'暂停刷新';$('pause').setAttribute('aria-pressed',String(paused));if(snapshot)render(snapshot);if(!paused)load();};
+for(const id of ['range','showt3','showbase'])$(id).onchange=()=>{if(snapshot)render(snapshot);};
+setInterval(load,5000);load();
+})();
+</script>
+</body>
+</html>
