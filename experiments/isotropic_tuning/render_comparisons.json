@@ -1,0 +1,78 @@
+{
+  "status": "completed",
+  "created_utc": "2026-10-23T16:01:27.725624+00:00",
+  "training_completed_steps": 50000,
+  "checkpoint_sha256_verified": "060ae01dd521f8223ef42f31297bb5c0f434c659c76aa9bb63f92a83aeb46c2b",
+  "index_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_isotropic_tuning\\render_comparisons\\I2_iso_1e3\\index.html",
+  "preview_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_isotropic_tuning\\render_comparisons\\I2_iso_1e3\\gt_and_four_snapshots.png",
+  "pair_count": 200,
+  "pair_size": [
+    3200,
+    950
+  ],
+  "original_panel_size": [
+    1600,
+    900
+  ],
+  "pair_pixel_identity_verified": true,
+  "gt_matches_original_baseline": true,
+  "four_snapshot_weight_hashes_verified": true,
+  "paths": {
+    "PSNR": {
+      "snapshot": "best",
+      "iteration": 37000,
+      "metrics": {
+        "SSIM": 0.9764701128005981,
+        "PSNR": 28.272706985473633,
+        "LPIPS": 0.028202354907989502,
+        "MS-SSIM": 0.9711429476737976
+      },
+      "renders_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_isotropic_tuning\\I2_iso_1e3\\rubber_duck\\test\\ours_best\\renders",
+      "gt_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_isotropic_tuning\\I2_iso_1e3\\rubber_duck\\test\\ours_best\\gt",
+      "pairs_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_isotropic_tuning\\render_comparisons\\I2_iso_1e3\\pairs\\best",
+      "frames": 50
+    },
+    "SSIM": {
+      "snapshot": "metric_ssim",
+      "iteration": 10000,
+      "metrics": {
+        "SSIM": 0.9766098260879517,
+        "PSNR": 28.22234535217285,
+        "LPIPS": 0.028980888426303864,
+        "MS-SSIM": 0.971619725227356
+      },
+      "renders_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_isotropic_tuning\\I2_iso_1e3\\rubber_duck\\test\\ours_metric_ssim\\renders",
+      "gt_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_isotropic_tuning\\I2_iso_1e3\\rubber_duck\\test\\ours_metric_ssim\\gt",
+      "pairs_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_isotropic_tuning\\render_comparisons\\I2_iso_1e3\\pairs\\metric_ssim",
+      "frames": 50
+    },
+    "LPIPS": {
+      "snapshot": "metric_lpips",
+      "iteration": 50000,
+      "metrics": {
+        "SSIM": 0.9764361381530762,
+        "PSNR": 28.25206756591797,
+        "LPIPS": 0.028093570843338966,
+        "MS-SSIM": 0.9711292386054993
+      },
+      "renders_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_isotropic_tuning\\I2_iso_1e3\\rubber_duck\\test\\ours_metric_lpips\\renders",
+      "gt_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_isotropic_tuning\\I2_iso_1e3\\rubber_duck\\test\\ours_metric_lpips\\gt",
+      "pairs_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_isotropic_tuning\\render_comparisons\\I2_iso_1e3\\pairs\\metric_lpips",
+      "frames": 50
+    },
+    "MS-SSIM": {
+      "snapshot": "metric_ms_ssim",
+      "iteration": 10000,
+      "metrics": {
+        "SSIM": 0.9766098260879517,
+        "PSNR": 28.22234535217285,
+        "LPIPS": 0.028980888426303864,
+        "MS-SSIM": 0.971619725227356
+      },
+      "renders_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_isotropic_tuning\\I2_iso_1e3\\rubber_duck\\test\\ours_metric_ms_ssim\\renders",
+      "gt_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_isotropic_tuning\\I2_iso_1e3\\rubber_duck\\test\\ours_metric_ms_ssim\\gt",
+      "pairs_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_isotropic_tuning\\render_comparisons\\I2_iso_1e3\\pairs\\metric_ms_ssim",
+      "frames": 50
+    }
+  }
+}

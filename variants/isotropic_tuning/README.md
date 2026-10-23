@@ -101,3 +101,17 @@ existing trainer's table publisher cannot overwrite it. It reads complete log
 records incrementally, deduplicates resumed iterations and retains loss extrema
 when downsampling. No model, optimizer, runtime source freeze or training worker
 is modified. Both local-file and HTTP viewing use bundled assets without a CDN.
+
+## Completed render comparisons
+
+After the I2 training and four snapshot renders finish, run
+`envs/pidg-cu128/python.exe scripts/export_isotropic_comparisons.py`.
+The script verifies the 50k full-checkpoint hash, saved snapshot hashes, four
+50-frame render/GT sets and original PNG metrics. It writes200 labelled
+GT/render pairs to `runs/pidg_isotropic_tuning/render_comparisons/I2_iso_1e3/pairs/`.
+Each3200x950 image contains two unscaled1600x900 panels plus a50-pixel header;
+every saved panel is read back and verified against its source pixels. All GT
+frames are also checked against the original baseline. The resized overview is
+for display only. Open the adjacent `index.html` to select snapshot and frame.
+Absolute source and output paths are recorded in `manifest.json` and
+`experiments/isotropic_tuning/render_comparisons.json`.
