@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "command": "envs/pidg-cu128/python.exe -m pytest tests/test_isotropic_tuning.py tests/test_metric_tuning.py tests/test_random_frame_mask.py -q",
+  "passed": 39,
+  "duration_seconds_reported_by_pytest": 6.94,
+  "exit_code": 0,
+  "checks": [
+    "zero penalty for equal axes; positive penalty for anisotropic axes",
+    "scale, sign and axis-permutation invariance",
+    "finite loss and gradients at zero, tiny and large scales",
+    "double-precision numerical gradient check and descent direction",
+    "nonzero finite gradients into canonical log-scales and deformation scales",
+    "disabled term touches no Gaussian state and consumes no RNG",
+    "canonical-only scope; finite nonnegative config validation",
+    "fork reverts exactly to its frozen parent when optional hook is removed",
+    "matched control and isotropic configurations differ only in weight",
+    "existing metric-tuning and random-frame-mask regression suites",
+    "completed T3 PNG-verified snapshots remain eligible references"
+  ]
+}

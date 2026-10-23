@@ -1,0 +1,27 @@
+{
+  "presets": [
+    {
+      "id": "I0_T3_control",
+      "isotropic_weight": 0.0
+    },
+    {
+      "id": "I1_iso_1e4",
+      "isotropic_weight": 0.0001
+    },
+    {
+      "id": "I2_iso_1e3",
+      "isotropic_weight": 0.001
+    },
+    {
+      "id": "I3_iso_1e2",
+      "isotropic_weight": 0.01
+    }
+  ],
+  "parent": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_official\\rubber_duck",
+  "scene": "rubber_duck",
+  "objective": "T3 loss plus weight * mean(abs(abs(s)/mean(abs(s))-1))",
+  "scope": "actual rendered principal-axis magnitudes; canonical if Python covariance path is active",
+  "evaluation": "original 150 train / fixed official 50 test; 1600x900 PNG metrics",
+  "control": "I0 has the same parent, optimizer, schedule, LPIPS and resolution as I1-I3; weight is the only training change",
+  "smoke_is_not_an_effectiveness_comparison": true
+}

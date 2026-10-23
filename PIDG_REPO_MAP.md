@@ -73,3 +73,15 @@ disabled-by-default residual adapter to `DeformNetwork`, optional training-image
 objectives, and four-metric no-grad checkpoint selection. New runs/metrics stay in
 `runs/pidg_metric_tuning` and `experiments/metric_tuning`. No baseline files or
 previous experiment weights are edited.
+
+## Isotropic Gaussian shape regularization (separate fork)
+
+`variants/isotropic_tuning/model.py` defines the dimensionless principal-axis
+isotropy penalty. `runtime.py` subclasses the frozen metric-tuning runtime;
+`prepare.py` copies its code into a new `code/` directory and adds one optional
+training-loss hook. The renderer remains unchanged: the default loss uses
+`abs(gaussians.get_scaling + d_scaling)` and follows the canonical-only path when
+Python covariance is enabled. Default weight zero preserves the T3 loss path;
+all tuning disabled preserves the baseline path. New configs, validation logs
+and results live under `experiments/isotropic_tuning` and
+`runs/pidg_isotropic_tuning`. This is a Gaussian shape prior, not a material law.

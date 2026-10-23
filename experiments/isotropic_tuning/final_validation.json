@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "completed_utc": "2026-10-23T14:17:28.788962+00:00",
+  "source_freeze_and_parent_study_verified": true,
+  "full_checkpoints": {
+    "smoke_flags_off": {
+      "iteration": 20,
+      "sha256": "fe88be7cd364179b370f0bbe47a564a6829cc925652c7c319203fe2e0b314730",
+      "verified": true
+    },
+    "smoke_I0_T3_control": {
+      "iteration": 100,
+      "sha256": "0fec46e186a46d94b218c793e101dab674a1cf68e06b4bc8ae68246af16e96de",
+      "verified": true
+    },
+    "smoke_I2_iso_1e3": {
+      "iteration": 100,
+      "sha256": "40a60310b78c31c8b600e548f082469c6e4a26a9ae486e8f1f108dad6a25c5ef",
+      "verified": true
+    }
+  },
+  "unit_tests_passed": 39,
+  "long_training_effectiveness_not_evaluated": true
+}

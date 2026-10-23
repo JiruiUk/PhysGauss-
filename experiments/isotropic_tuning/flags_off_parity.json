@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "reference_run": "F:/A_Edinburgh/PhysGauss/runs/pidg_metric_tuning/smoke_flags_off/rubber_duck",
+  "candidate_run": "F:/A_Edinburgh/PhysGauss/runs/pidg_isotropic_tuning/smoke_flags_off/rubber_duck",
+  "iteration": 20,
+  "seed": 0,
+  "resolution_width": 400,
+  "reference_training_test_psnr": 11.41534912109375,
+  "candidate_training_test_psnr": 11.415318145751954,
+  "absolute_difference_db": 0.000030975341796,
+  "tolerance_db": 0.0001,
+  "exact_gpu_parameter_equality_not_claimed": true,
+  "scope": "GPU engineering flags-off check; CPU architecture forward/backward/RNG parity is covered by unit tests"
+}
