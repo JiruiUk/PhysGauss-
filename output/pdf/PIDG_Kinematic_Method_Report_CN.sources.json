@@ -1,0 +1,124 @@
+{
+  "created_utc": "2026-10-25T22:25:55.321253+00:00",
+  "pdf_absolute": "F:\\A_Edinburgh\\PhysGauss\\output\\pdf\\PIDG_Kinematic_Method_Report_CN.pdf",
+  "pdf_sha256": "b4ba5678dc6629087e425aec7662a988544a01b3aff188dcc35b3a0be7b3a559",
+  "sources": {
+    "experiments\\kinematic_tuning\\assessment.json": "aa3cd718ad4b05ff4be60cafc149d7236aca57f4a9918d99a13eef414f618bbe",
+    "experiments\\kinematic_tuning\\assessment.md": "7525c7243ea411ce13b5e25d796b1677908b0c527f558a992dd5f05ba701ec4c",
+    "experiments\\kinematic_tuning\\initial_timing_assessment.json": "2e5aa90482f3414f4a1a41ea38ada579d348964c2f62c3c6f3f7229825aa0f37",
+    "experiments\\kinematic_tuning\\source_freeze.json": "62cdb34d535357fec5d6c627fe42fb0f2778be0385c41ea336362d1ec926c0e5",
+    "experiments\\kinematic_tuning\\preflight.json": "e42a780360bcb927fdf213f818cf8c0b3959794b291815b897fd10be6e3277e2",
+    "experiments\\kinematic_tuning\\derivative_audit.json": "bc227e4ca1a7af8f6ac111bbb34656d000ab79b569d58de00c6fed52017a35e9",
+    "variants\\kinematic_tuning\\runtime.py": "c17260ce9974fdafa245dffa4d2921f748ace86d47d0327a437af920b0c94c7d",
+    "variants\\kinematic_tuning\\model.py": "6cc5910330d2d6cb103ab9ef89c9803b6adb40f8e3fbca8a7adc207a3a34de96",
+    "variants\\kinematic_tuning\\timeline.py": "687a5d84999372b812df6a1328af7e5f854d17bf5028d5a4612902bdf0d92fa0",
+    "variants\\kinematic_tuning\\run.py": "2bcac0e7d8f123875f3e672652f2d16752c755f7c1a60daff92e59f4e3b834eb",
+    "scripts\\build_kinematic_report.py": "7766bb39ecaaf0227391926ac782b403c97078047fa4e38750b4ff849638242b",
+    "PIDG_REPO_MAP.md": "f496fa54c9fb175b4c71b8106c23737b16cea7e54244b2cadb0dc5defc212194",
+    "data\\PIDG\\rubber_duck\\transforms_train.json": "8c36e8d8f7b10c53c7e0cc27e0400fedfeee6ee2d32211347af926735a01f035",
+    "data\\PIDG\\rubber_duck\\transforms_test.json": "f854b0273b1d91d882fabcd76386100bff2eeb1294e483ed7156d1e91d2e255e"
+  },
+  "figure_pixel_checks": [
+    {
+      "test_index": 4,
+      "gt_identity_verified": true,
+      "scene_roi_xyxy": [
+        592,
+        39,
+        973,
+        900
+      ],
+      "top_object_zoom_xyxy": [
+        775,
+        35,
+        920,
+        160
+      ],
+      "note": "Identical GT-defined crops; display scaling only; original pixels retained in run artifacts",
+      "sources": {
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_kinematic_tuning\\V3_frame_time\\rubber_duck\\test\\ours_50000\\gt\\00004.png": "0a88a4093a5c2bf93b72461330938574c3da4bda010345431243b7052d6b66f7",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_kinematic_tuning\\V3_frame_time\\rubber_duck\\test\\ours_50000\\renders\\00004.png": "1f745bde097c781ca8a1cc38ee847d0398d7431dbe21d8ff20f8fe8c3a7dcd0e",
+        "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_kinematic_tuning\\V4_frame_time_kinematic\\rubber_duck\\test\\ours_50000\\renders\\00004.png": "58cd8eccd797804fdf0b3011498478807534c7f9b3f71186c98c74de754ddc88"
+      }
+    }
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "title": "时间尺度与速度-轨迹一致性",
+      "content_bottom": 337.39
+    },
+    {
+      "page": 2,
+      "title": "为什么需要这项约束？",
+      "content_bottom": 223.89
+    },
+    {
+      "page": 3,
+      "title": "时间尺度：修正什么，假设什么",
+      "content_bottom": 212.39
+    },
+    {
+      "page": 4,
+      "title": "新方法：让速度对应完整轨迹",
+      "content_bottom": 122.39
+    },
+    {
+      "page": 5,
+      "title": "数值实现与训练目标",
+      "content_bottom": 195.89
+    },
+    {
+      "page": 6,
+      "title": "实验设计与公平比较",
+      "content_bottom": 224.39
+    },
+    {
+      "page": 7,
+      "title": "最终重建指标：分协议解读",
+      "content_bottom": 262.89
+    },
+    {
+      "page": 8,
+      "title": "训练曲线：收敛与收益时段",
+      "content_bottom": 188.89
+    },
+    {
+      "page": 9,
+      "title": "逐帧分析：均值没有说明全部",
+      "content_bottom": 224.39
+    },
+    {
+      "page": 10,
+      "title": "视觉证据：恢复一个漏掉的目标",
+      "content_bottom": 200.89
+    },
+    {
+      "page": 11,
+      "title": "物理诊断：一致性尚未对齐",
+      "content_bottom": 235.39
+    },
+    {
+      "page": 12,
+      "title": "归因审计：方法有效性尚待证明",
+      "content_bottom": 202.89
+    },
+    {
+      "page": 13,
+      "title": "对后续研究与实现的启发",
+      "content_bottom": 298.89
+    },
+    {
+      "page": 14,
+      "title": "渲染、GT 与拼接图的绝对地址",
+      "content_bottom": 136.89
+    },
+    {
+      "page": 15,
+      "title": "来源、复现与交付说明",
+      "content_bottom": 215.39
+    }
+  ],
+  "expected_page_count": 15,
+  "all_final_png_metrics_verified": true
+}
