@@ -1,0 +1,225 @@
+{
+  "created_utc": "2026-10-25T22:10:06.505001+00:00",
+  "status": "all_four_50k_runs_completed_png_verified",
+  "models": {
+    "V1_shared_time": {
+      "protocol": "official_metadata",
+      "final_png_metrics": {
+        "SSIM": 0.9765753149986267,
+        "PSNR": 28.25153160095215,
+        "LPIPS": 0.027880871668457985,
+        "MS-SSIM": 0.9712047576904297
+      },
+      "metrics_at_1000": {
+        "PSNR": 27.430120239257814,
+        "SSIM": 0.9747564303874969,
+        "LPIPS": 0.031090497206896543,
+        "MS-SSIM": 0.9690508413314819
+      },
+      "kinematic_start": 1000,
+      "earliest_scheduled_kinematic_step": null,
+      "diagnostics": {
+        "sampled_times": 5,
+        "rmse_mean": 1.4056109368801117,
+        "trajectory_rms_mean": 1.4017096400260924,
+        "predicted_rms_mean": 0.05364198386669159,
+        "relative_rmse_mean": 1.0059670182614249
+      },
+      "source_sha256": {
+        "runs\\pidg_kinematic_tuning\\V1_shared_time\\rubber_duck\\results.json": "5ada903fc1c4169a57be903f52c9366e4445047b6f80fb11f8bc2c36f6421f3a",
+        "runs\\pidg_kinematic_tuning\\V1_shared_time\\rubber_duck\\per_view.json": "ff3de45282195afa35e9ee95e89090dab40ff8d12fc3eb0965dd543cbf81f089",
+        "runs\\pidg_kinematic_tuning\\V1_shared_time\\rubber_duck\\metric_history.jsonl": "b1f36a5dcfa240704d0e082fb455357b826e1793d6f0706d0b2bddea11e98fbf",
+        "runs\\pidg_kinematic_tuning\\V1_shared_time\\rubber_duck\\metric_config.json": "fd7fea2ea036e55e05044d71382c1d2faa85d5a0b65e3ab5664fffeed4756053",
+        "runs\\pidg_kinematic_tuning\\V1_shared_time\\rubber_duck\\kinematic_diagnostics.jsonl": "54c8431d0380222cea2725af58193dd0cc00961ff95b983324264d12758bcc57"
+      }
+    },
+    "V2_shared_time_kinematic": {
+      "protocol": "official_metadata",
+      "final_png_metrics": {
+        "SSIM": 0.9765635132789612,
+        "PSNR": 28.26953125,
+        "LPIPS": 0.027892230078577995,
+        "MS-SSIM": 0.9712309837341309
+      },
+      "metrics_at_1000": {
+        "PSNR": 27.196168098449707,
+        "SSIM": 0.9747074389457703,
+        "LPIPS": 0.030939292889088393,
+        "MS-SSIM": 0.9688116919994354
+      },
+      "kinematic_start": 1000,
+      "earliest_scheduled_kinematic_step": 1010,
+      "diagnostics": {
+        "sampled_times": 5,
+        "rmse_mean": 1.1580406814813613,
+        "trajectory_rms_mean": 1.1533938944339752,
+        "predicted_rms_mean": 0.10665889084339142,
+        "relative_rmse_mean": 0.9948041311581357
+      },
+      "source_sha256": {
+        "runs\\pidg_kinematic_tuning\\V2_shared_time_kinematic\\rubber_duck\\results.json": "bbdfea1ccbbc6f19d9c44f976f9830684db0c5d4720e068e3ef965b8298a4a14",
+        "runs\\pidg_kinematic_tuning\\V2_shared_time_kinematic\\rubber_duck\\per_view.json": "419d4887c1e332553a16deb67544bdf701483ccf5d559a7f825945df99e24ec3",
+        "runs\\pidg_kinematic_tuning\\V2_shared_time_kinematic\\rubber_duck\\metric_history.jsonl": "d8a2b0fdd3b37b18f7189b4d6ace3e809101b51a0af83916195533c4295abe6d",
+        "runs\\pidg_kinematic_tuning\\V2_shared_time_kinematic\\rubber_duck\\metric_config.json": "65cf7375230409ada091afdfd2789d68de68f7eb49f10eb31d0a3135e39dac6a",
+        "runs\\pidg_kinematic_tuning\\V2_shared_time_kinematic\\rubber_duck\\kinematic_diagnostics.jsonl": "49594c3fa0f4bbb946f59c0b955562f6cad79f4e3b8a48899de7f73eecb568b7"
+      }
+    },
+    "V3_frame_time": {
+      "protocol": "frame_index",
+      "final_png_metrics": {
+        "SSIM": 0.9937512278556824,
+        "PSNR": 37.345943450927734,
+        "LPIPS": 0.012407992035150528,
+        "MS-SSIM": 0.9951608180999756
+      },
+      "metrics_at_1000": {
+        "PSNR": 35.26200408935547,
+        "SSIM": 0.9909692025184631,
+        "LPIPS": 0.016677396493032574,
+        "MS-SSIM": 0.99324533700943
+      },
+      "kinematic_start": 1000,
+      "earliest_scheduled_kinematic_step": null,
+      "diagnostics": {
+        "sampled_times": 5,
+        "rmse_mean": 1.3832333624362945,
+        "trajectory_rms_mean": 1.3792676866054534,
+        "predicted_rms_mean": 0.053320346772670744,
+        "relative_rmse_mean": 1.0056507188670623
+      },
+      "source_sha256": {
+        "runs\\pidg_kinematic_tuning\\V3_frame_time\\rubber_duck\\results.json": "c84bf1a6eaee36ff2028edc68c9ffdec368f13a756751f9fc9d47980f7fe61fb",
+        "runs\\pidg_kinematic_tuning\\V3_frame_time\\rubber_duck\\per_view.json": "afee8e2099cefc9a3d0500a6ba29cc339c9cc6719a45ddef193cb195caeafa66",
+        "runs\\pidg_kinematic_tuning\\V3_frame_time\\rubber_duck\\metric_history.jsonl": "0af485b9bbcc2aeb461c08e395cfd0cf9a5acf4d520a0b4c66c9a1d69659bc50",
+        "runs\\pidg_kinematic_tuning\\V3_frame_time\\rubber_duck\\metric_config.json": "4c38cd6d92c9ee55a6312de4fa6e62d9174c378795f95760c8fca290d591f872",
+        "runs\\pidg_kinematic_tuning\\V3_frame_time\\rubber_duck\\kinematic_diagnostics.jsonl": "82dc08c4b9adb0cb353abbdb5de3fc9956f7ce2ff1af2bef9430669546a4b768"
+      }
+    },
+    "V4_frame_time_kinematic": {
+      "protocol": "frame_index",
+      "final_png_metrics": {
+        "SSIM": 0.9939138889312744,
+        "PSNR": 38.76923370361328,
+        "LPIPS": 0.011955851688981056,
+        "MS-SSIM": 0.9960271716117859
+      },
+      "metrics_at_1000": {
+        "PSNR": 36.12825309753418,
+        "SSIM": 0.9911456322669983,
+        "LPIPS": 0.016520653599873186,
+        "MS-SSIM": 0.9938581728935242
+      },
+      "kinematic_start": 1000,
+      "earliest_scheduled_kinematic_step": 1010,
+      "diagnostics": {
+        "sampled_times": 5,
+        "rmse_mean": 1.2185433149337768,
+        "trajectory_rms_mean": 1.2155053555965423,
+        "predicted_rms_mean": 0.11015375107526779,
+        "relative_rmse_mean": 0.9913694192063104
+      },
+      "source_sha256": {
+        "runs\\pidg_kinematic_tuning\\V4_frame_time_kinematic\\rubber_duck\\results.json": "575a9055d2ebc69cbf6fd9d37c324709d5709fa9fd3aa5cdd17ff66019e6ebc6",
+        "runs\\pidg_kinematic_tuning\\V4_frame_time_kinematic\\rubber_duck\\per_view.json": "987565fa7871046d2d7b0622dcb6c3e3950d68a5873b51675b188a35d0115bfb",
+        "runs\\pidg_kinematic_tuning\\V4_frame_time_kinematic\\rubber_duck\\metric_history.jsonl": "59c3f38db364b00aad647719f6c2b4e0b993a41e9c634c37b619e27c95e46a43",
+        "runs\\pidg_kinematic_tuning\\V4_frame_time_kinematic\\rubber_duck\\metric_config.json": "9d75f347bb25ea3602eb9f64608399489983b981415466437ab668d625496afe",
+        "runs\\pidg_kinematic_tuning\\V4_frame_time_kinematic\\rubber_duck\\kinematic_diagnostics.jsonl": "0084b532262d48ff9036d4dfda2a91892bb7b72663ec1674c717f58e1b40f5a8"
+      }
+    }
+  },
+  "paired_comparisons": [
+    {
+      "control": "V1_shared_time",
+      "candidate": "V2_shared_time_kinematic",
+      "final_png_delta": {
+        "PSNR": 0.017999649047851562,
+        "SSIM": -1.1801719665527344e-05,
+        "LPIPS": 1.1358410120010376e-05,
+        "MS-SSIM": 2.6226043701171875e-05
+      },
+      "per_view": {
+        "PSNR": {
+          "improved_views": 35,
+          "total_views": 50,
+          "median_delta": 0.00574493408203125,
+          "min_delta": -0.17221450805664062,
+          "max_delta": 0.19273757934570312
+        },
+        "SSIM": {
+          "improved_views": 28,
+          "total_views": 50,
+          "median_delta": 1.3768672943115234e-05,
+          "min_delta": -0.00037938356399536133,
+          "max_delta": 0.0001914501190185547
+        },
+        "LPIPS": {
+          "improved_views": 25,
+          "total_views": 50,
+          "median_delta": 6.1783939599990845e-06,
+          "min_delta": -0.0005160979926586151,
+          "max_delta": 0.0003655655309557915
+        },
+        "MS-SSIM": {
+          "improved_views": 28,
+          "total_views": 50,
+          "median_delta": 2.6226043701171875e-05,
+          "min_delta": -0.0004824995994567871,
+          "max_delta": 0.00046837329864501953
+        }
+      },
+      "first_8_contribution_to_mean_psnr_delta": 0.013163375854492187,
+      "remaining_42_mean_psnr_delta": 0.005759102957589286,
+      "mean_pixel_mse_decrease_percent": 0.09437745147637078,
+      "pre_constraint_1000_psnr_advantage": -0.2339521408081069
+    },
+    {
+      "control": "V3_frame_time",
+      "candidate": "V4_frame_time_kinematic",
+      "final_png_delta": {
+        "PSNR": 1.4232902526855469,
+        "SSIM": 0.00016266107559204102,
+        "LPIPS": -0.00045214034616947174,
+        "MS-SSIM": 0.0008663535118103027
+      },
+      "per_view": {
+        "PSNR": {
+          "improved_views": 23,
+          "total_views": 50,
+          "median_delta": -0.02154541015625,
+          "min_delta": -0.526275634765625,
+          "max_delta": 10.473499298095703
+        },
+        "SSIM": {
+          "improved_views": 18,
+          "total_views": 50,
+          "median_delta": -3.460049629211426e-05,
+          "min_delta": -0.00046253204345703125,
+          "max_delta": 0.001757502555847168
+        },
+        "LPIPS": {
+          "improved_views": 33,
+          "total_views": 50,
+          "median_delta": -9.171338751912117e-05,
+          "min_delta": -0.0032879523932933807,
+          "max_delta": 0.0005767438560724258
+        },
+        "MS-SSIM": {
+          "improved_views": 28,
+          "total_views": 50,
+          "median_delta": 8.046627044677734e-06,
+          "min_delta": -0.000690162181854248,
+          "max_delta": 0.006941616535186768
+        }
+      },
+      "first_8_contribution_to_mean_psnr_delta": 1.4406427764892578,
+      "remaining_42_mean_psnr_delta": -0.020651953560965403,
+      "mean_pixel_mse_decrease_percent": 51.20858061510492,
+      "pre_constraint_1000_psnr_advantage": 0.8662490081787055
+    }
+  ],
+  "causal_attribution": "Not established: paired runs already differ at iteration 1000, while the consistency term is disabled through iteration 1000. Separate-run variability or other execution differences cannot be excluded.",
+  "physical_interpretation": "Self-consistency remains weak on five sampled training times; no ground-truth physical velocity is available.",
+  "recommended_reconstruction_candidate": "V4_frame_time_kinematic under frame-index timing assumptions",
+  "recommended_followup": "Fork the exact same 1000-step full optimizer/RNG/model checkpoint into zero/nonzero consistency arms, then repeat multiple seeds.",
+  "do_not_compare_protocols_as_architecture_gain": true
+}
