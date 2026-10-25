@@ -1,0 +1,35 @@
+{
+  "status": "preliminary_protocol_audit",
+  "same_model_weights": true,
+  "training_steps_before_comparison": 0,
+  "official_test_count": 50,
+  "resolution": [
+    1600,
+    900
+  ],
+  "historical_metadata_time": {
+    "SSIM": 0.9765514135360718,
+    "PSNR": 27.25678062438965,
+    "LPIPS": 0.029623517766594887,
+    "MS-SSIM": 0.9704826474189758
+  },
+  "frame_index_time": {
+    "PSNR": 33.222288093566895,
+    "SSIM": 0.9885302495956421,
+    "LPIPS": 0.01803743029013276,
+    "MS-SSIM": 0.9905420470237732
+  },
+  "retimed_minus_historical": {
+    "SSIM": 0.011978836059570286,
+    "PSNR": 5.965507469177247,
+    "LPIPS": -0.011586087476462125,
+    "MS-SSIM": 0.020059399604797412
+  },
+  "interpretation": "Changing only the supplied test timestamps substantially changes scores. This is a timing-protocol effect, not a new-loss/model-training gain. Uniform capture cadence is inferred from numeric frame order and is not physical timestamp ground truth.",
+  "retimed_control_100_step_engineering_metrics": {
+    "PSNR": 34.72888423919678,
+    "SSIM": 0.9908720493316651,
+    "LPIPS": 0.016932909209281206,
+    "MS-SSIM": 0.9927214968204499
+  }
+}

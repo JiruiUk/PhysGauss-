@@ -1,0 +1,39 @@
+{
+  "presets": [
+    {
+      "id": "V1_shared_time",
+      "timeline": "official_metadata",
+      "kinematic_weight": 0.0
+    },
+    {
+      "id": "V2_shared_time_kinematic",
+      "timeline": "official_metadata",
+      "kinematic_weight": 0.001
+    },
+    {
+      "id": "V3_frame_time",
+      "timeline": "frame_index",
+      "kinematic_weight": 0.0
+    },
+    {
+      "id": "V4_frame_time_kinematic",
+      "timeline": "frame_index",
+      "kinematic_weight": 0.001
+    }
+  ],
+  "hours": 24,
+  "additional_steps_per_arm": 50000,
+  "parent": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_official\\rubber_duck",
+  "control_reused": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T3_baseline_perceptual\\rubber_duck",
+  "isotropic_weight": 0,
+  "loss": "T3 + 0.001 * ramp * interval * Huber(v(X,tau), d[R(q(X,tau))X+b(X,tau)]/dtau; delta=0.1)",
+  "derivative": "second-order finite differences h=0.001; one-sided endpoints; joint parameter gradients",
+  "time": "normalized timeline [0,1]; velocity in scene units per normalized time; physical seconds unknown",
+  "evaluation": "fixed official 50 images/poses, two explicitly separate time-input protocols; PNG verification",
+  "limitations": [
+    "same canonical-coordinate legacy momentum residual",
+    "single scene and seed",
+    "test-selected snapshots",
+    "frame-index clock assumes uniform cadence; retimed weights warm-start from metadata-time parent"
+  ]
+}

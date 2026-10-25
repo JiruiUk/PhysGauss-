@@ -1,0 +1,229 @@
+{
+  "old_checkpoint": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_isotropic_tuning\\smoke_flags_off\\rubber_duck\\checkpoints\\resume.pt",
+  "new_checkpoint": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_kinematic_tuning\\smoke_flags_off\\rubber_duck\\checkpoints\\resume.pt",
+  "tensor_comparison": {
+    "gaussian_parameters": {
+      "_xyz": {
+        "identical": false,
+        "max_abs": 0.003323286771774292
+      },
+      "_features_dc": {
+        "identical": false,
+        "max_abs": 0.006210625171661377
+      },
+      "_features_rest": {
+        "identical": true,
+        "max_abs": 0.0
+      },
+      "_scaling": {
+        "identical": false,
+        "max_abs": 0.032425642013549805
+      },
+      "_rotation": {
+        "identical": false,
+        "max_abs": 0.004137098789215088
+      },
+      "_opacity": {
+        "identical": false,
+        "max_abs": 0.1024014949798584
+      },
+      "force_sigma": {
+        "identical": true,
+        "max_abs": 0.0
+      }
+    },
+    "gaussian_buffers": {
+      "max_radii2D": {
+        "identical": true,
+        "max_abs": 0.0
+      },
+      "xyz_gradient_accum": {
+        "identical": true,
+        "max_abs": 0.0
+      },
+      "denom": {
+        "identical": true,
+        "max_abs": 0.0
+      },
+      "particle_indices": {
+        "identical": true,
+        "max_abs": 0.0
+      },
+      "dynamic_mask": {
+        "identical": true,
+        "max_abs": 0.0
+      }
+    },
+    "velocity_net": {
+      "planes": {
+        "identical": true,
+        "max_abs": 0.0
+      },
+      "time_embed.frequencies": {
+        "identical": true,
+        "max_abs": 0.0
+      },
+      "time_proj.weight": {
+        "identical": true,
+        "max_abs": 0.0
+      },
+      "time_proj.bias": {
+        "identical": true,
+        "max_abs": 0.0
+      },
+      "index_embed.weight": {
+        "identical": true,
+        "max_abs": 0.0
+      },
+      "shared_net.0.weight": {
+        "identical": true,
+        "max_abs": 0.0
+      },
+      "shared_net.0.bias": {
+        "identical": true,
+        "max_abs": 0.0
+      },
+      "shared_net.2.weight": {
+        "identical": true,
+        "max_abs": 0.0
+      },
+      "shared_net.2.bias": {
+        "identical": true,
+        "max_abs": 0.0
+      },
+      "velocity_head.weight": {
+        "identical": true,
+        "max_abs": 0.0
+      },
+      "velocity_head.bias": {
+        "identical": true,
+        "max_abs": 0.0
+      },
+      "stress_head.weight": {
+        "identical": true,
+        "max_abs": 0.0
+      },
+      "stress_head.bias": {
+        "identical": true,
+        "max_abs": 0.0
+      }
+    },
+    "grid4d": {
+      "xyz_encoding.embeddings": {
+        "identical": false,
+        "max_abs": 0.09412383660674095
+      },
+      "xyz_encoding.offsets": {
+        "identical": true,
+        "max_abs": 0.0
+      },
+      "xyz_encoding.per_level_scale": {
+        "identical": true,
+        "max_abs": 0.0
+      },
+      "xyz_encoding.base_resolution": {
+        "identical": true,
+        "max_abs": 0.0
+      },
+      "xyt_encoding.embeddings": {
+        "identical": false,
+        "max_abs": 0.053805844858288765
+      },
+      "xyt_encoding.offsets": {
+        "identical": true,
+        "max_abs": 0.0
+      },
+      "xyt_encoding.per_level_scale": {
+        "identical": true,
+        "max_abs": 0.0
+      },
+      "xyt_encoding.base_resolution": {
+        "identical": true,
+        "max_abs": 0.0
+      },
+      "yzt_encoding.embeddings": {
+        "identical": false,
+        "max_abs": 0.05377601645886898
+      },
+      "yzt_encoding.offsets": {
+        "identical": true,
+        "max_abs": 0.0
+      },
+      "yzt_encoding.per_level_scale": {
+        "identical": true,
+        "max_abs": 0.0
+      },
+      "yzt_encoding.base_resolution": {
+        "identical": true,
+        "max_abs": 0.0
+      },
+      "xzt_encoding.embeddings": {
+        "identical": false,
+        "max_abs": 0.058587972074747086
+      },
+      "xzt_encoding.offsets": {
+        "identical": true,
+        "max_abs": 0.0
+      },
+      "xzt_encoding.per_level_scale": {
+        "identical": true,
+        "max_abs": 0.0
+      },
+      "xzt_encoding.base_resolution": {
+        "identical": true,
+        "max_abs": 0.0
+      }
+    },
+    "deform": {
+      "spatial_mlp.0.weight": {
+        "identical": false,
+        "max_abs": 0.0014797523617744446
+      },
+      "spatial_mlp.0.bias": {
+        "identical": false,
+        "max_abs": 1.993030309677124e-05
+      },
+      "temporal_mlp.0.weight": {
+        "identical": false,
+        "max_abs": 0.0014522206038236618
+      },
+      "temporal_mlp.0.bias": {
+        "identical": false,
+        "max_abs": 0.0001471191644668579
+      },
+      "gaussian_warp.weight": {
+        "identical": false,
+        "max_abs": 0.0031818486750125885
+      },
+      "gaussian_warp.bias": {
+        "identical": false,
+        "max_abs": 5.485489964485168e-07
+      },
+      "gaussian_rotation.weight": {
+        "identical": false,
+        "max_abs": 0.00012603029608726501
+      },
+      "gaussian_rotation.bias": {
+        "identical": false,
+        "max_abs": 1.5273690223693848e-07
+      },
+      "gaussian_scaling.weight": {
+        "identical": false,
+        "max_abs": 0.00039385631680488586
+      },
+      "gaussian_scaling.bias": {
+        "identical": false,
+        "max_abs": 4.991888999938965e-07
+      }
+    }
+  },
+  "old_psnr": 11.415318145751954,
+  "new_psnr": 11.415353565216064,
+  "torch_rng_equal": true,
+  "cuda_rng_equal": true,
+  "psnr_abs_difference": 3.54194641101202e-05,
+  "png_free_training_eval_tolerance": 0.0001,
+  "metric_near_parity_passed": true,
+  "bitwise_parameter_identity_claimed": false,
+  "note": "Training with atomic CUDA gradients is not bitwise reproducible. This records both numeric parameter differences and near-identical evaluated PSNR; RNG and untrained velocity parameters match."
+}

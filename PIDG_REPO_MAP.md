@@ -85,3 +85,26 @@ Python covariance is enabled. Default weight zero preserves the T3 loss path;
 all tuning disabled preserves the baseline path. New configs, validation logs
 and results live under `experiments/isotropic_tuning` and
 `runs/pidg_isotropic_tuning`. This is a Gaussian shape prior, not a material law.
+
+## Shared time and kinematic consistency (separate fork)
+
+`variants/kinematic_tuning/code` independently copies the frozen metric runtime.
+`timeline.py` keeps the legacy `fid/train_count` physics path when disabled;
+`shared_physics_time` switches the physics input to the same normalized `fid`
+used by deformation/rendering. An additional `timeline=frame_index` option maps
+the verified 200 numeric filenames jointly to `(frame_id-1)/199`, without editing
+source JSON or changing the 150/50 split. Uniform capture cadence is an explicit
+assumption; these retimed tests must be compared separately from historical
+metadata-time metrics. Real elapsed seconds remain unknown.
+
+`model.py` differentiates the full rendered center `R(q(X,t)) X+b(X,t)` using
+second-order finite differences, including one-sided endpoint stencils.
+`runtime.py` adds optional joint Huber consistency with `VelocityNet(X,t)`;
+the canonical sample positions are detached, but deformation-grid, deformation
+head and velocity-network parameter gradients remain enabled. This avoids
+depending on unsupported coordinate second derivatives in the custom hash CUDA
+encoder. The legacy canonical-coordinate momentum residual, convective
+contraction and sampled weighting are preserved. `kinematic_weight=0` disables
+the new loss, and all tuning flags off preserve the original training path.
+Runs, complete resumable checkpoints, metrics, diagnostics and GT/render pairs
+are isolated in `runs/pidg_kinematic_tuning` and `experiments/kinematic_tuning`.

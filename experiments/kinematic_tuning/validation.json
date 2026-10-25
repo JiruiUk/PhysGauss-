@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "completed_utc": "2026-10-25T16:20:31.258664+00:00",
+  "unit_test_command": "envs/pidg-cu128/python.exe -m pytest tests/test_kinematic_tuning.py tests/test_metric_tuning.py tests/test_isotropic_tuning.py -q",
+  "unit_tests_passed": 38,
+  "new_unit_tests": 11,
+  "gpu_preflight": "preflight.json",
+  "flags_off_comparison": "flags_off_parity.json",
+  "derivative_approximation_audit": "derivative_audit.json",
+  "initial_timing_protocol_assessment": "initial_timing_assessment.json",
+  "training_smoke_scores_are_not_quality_evidence": true,
+  "long_experiment_steps_per_new_arm": 50000
+}

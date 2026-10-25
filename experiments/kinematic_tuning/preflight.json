@@ -1,0 +1,49 @@
+{
+  "status": "passed",
+  "flags_off_steps": 20,
+  "shared_time_control_steps": 100,
+  "joint_steps": 100,
+  "full_resume_from": 20,
+  "finite_nonzero_actual_parameter_gradients": [
+    {
+      "iteration": 10,
+      "branch": "grid",
+      "finite": true,
+      "gradient_l1": 3.0140404105186462
+    },
+    {
+      "iteration": 10,
+      "branch": "deformation",
+      "finite": true,
+      "gradient_l1": 12.718318670988083
+    },
+    {
+      "iteration": 10,
+      "branch": "velocity",
+      "finite": true,
+      "gradient_l1": 0.6206335815300008
+    },
+    {
+      "iteration": 30,
+      "branch": "grid",
+      "finite": true,
+      "gradient_l1": 2.1653270423412323
+    },
+    {
+      "iteration": 30,
+      "branch": "deformation",
+      "finite": true,
+      "gradient_l1": 5.272236797958612
+    },
+    {
+      "iteration": 30,
+      "branch": "velocity",
+      "finite": true,
+      "gradient_l1": 0.8344334797766351
+    }
+  ],
+  "momentum_step_100_completed": true,
+  "retimed_train_eval_render_png_parity": true,
+  "completed_utc": "2026-10-25T16:19:21.611445+00:00",
+  "quality_improvement_not_claimed": true
+}

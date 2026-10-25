@@ -1,0 +1,28 @@
+{
+  "points": 128,
+  "parent_deformation_sha256": "22824ec5115914d0e6354dcbd2a739961c0c64e78383d04c66f15ebeda24620a",
+  "reference": "first derivative from CUDA encoder input backward; no second derivative requested",
+  "reference_velocity_rms": 2.0259413719177246,
+  "finite_differences": [
+    {
+      "h": 0.002,
+      "rmse_against_autodiff": 0.03038259968161583,
+      "relative_rmse": 0.014996781300169675
+    },
+    {
+      "h": 0.001,
+      "rmse_against_autodiff": 0.01651938445866108,
+      "relative_rmse": 0.008153930161870424
+    },
+    {
+      "h": 0.0005,
+      "rmse_against_autodiff": 0.008049729280173779,
+      "relative_rmse": 0.003973327852303065
+    },
+    {
+      "h": 0.00025,
+      "rmse_against_autodiff": 0.004598978441208601,
+      "relative_rmse": 0.0022700451774945885
+    }
+  ]
+}
