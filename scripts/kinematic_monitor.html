@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PIDG · 当前训练 iter</title>
+<style>
+:root{color-scheme:dark}*{box-sizing:border-box}body{max-width:1440px;margin:0 auto;padding:32px 28px 60px;font:15px/1.6 system-ui,"Microsoft YaHei",sans-serif;background:#0d1420;color:#e5edf8}h1{font-size:26px;margin:0}h2{font-size:19px;margin:28px 0 12px}.muted{color:#a6b6ca}.top{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}.pill{padding:5px 12px;border:1px solid #40536d;border-radius:24px;color:#83e1c0}.card{background:#172336;border:1px solid #30435c;border-radius:14px;padding:24px;margin:20px 0}.name{font-size:20px;color:#83e1c0}.iter{font-size:clamp(36px,5vw,66px);line-height:1.25;font-weight:700;font-variant-numeric:tabular-nums;margin:14px 0}.iter span{font-size:.48em;color:#a6b6ca}.label{font-size:16px;margin-top:15px}.bar{height:12px;border-radius:8px;background:#293d55;overflow:hidden;margin:16px 0}.bar>div{height:100%;background:#83e1c0;transition:width .4s}.details{display:flex;gap:24px;flex-wrap:wrap;color:#bdccde}.stage{font-size:18px;margin:14px 0 8px}.table-wrap{overflow:auto}table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}th,td{text-align:left;padding:12px;border-bottom:1px solid #30435c;white-space:nowrap}th{color:#a6b6ca}.active{background:#1c3540}.charts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.chart{background:#172336;border:1px solid #30435c;border-radius:12px;padding:16px}.chart h3{margin:0 0 8px;font-size:16px}svg{display:block;width:100%;height:auto}.legend{display:flex;gap:20px;font-size:13px;flex-wrap:wrap}select{background:#172336;border:1px solid #40536d;color:#e5edf8;padding:8px 12px;border-radius:8px;font:inherit}.warning{color:#f7b267}code{overflow-wrap:anywhere;color:#bdccde}.stale{color:#f7b267}footer{margin-top:26px}@media(max-width:760px){body{padding:20px 14px}.charts{grid-template-columns:1fr}.card{padding:18px}}
+</style>
+<div class="top"><div><h1>PIDG · 训练实时监控</h1><div class="muted">每 5 秒更新 · 训练 iter 与图像进度分别显示</div></div><span id="connection" class="pill">正在读取…</span></div>
+<section class="card" aria-live="polite">
+  <div id="name" class="name">等待训练状态</div>
+  <div class="label">当前训练 iter（本轮追加训练）</div>
+  <div id="iteration" class="iter">— <span>/ 50,000</span></div>
+  <div class="bar"><div id="bar" style="width:0%"></div></div>
+  <div id="stage" class="stage">当前阶段：等待读取</div>
+  <div class="details"><div id="percent">训练进度：—</div><div id="checkpoint">完整 checkpoint：—</div><div id="evaluation">最近指标评估：—</div><div id="loss">最近训练 Loss：—</div></div>
+  <p id="status" class="muted"></p>
+</section>
+<h2>全部变体进度</h2><p id="overall" class="muted"></p>
+<div class="table-wrap"><table><thead><tr><th>变体</th><th>训练 iter / 目标</th><th>训练进度</th><th>状态</th><th>完整 checkpoint iter</th><th>最近评估 iter</th></tr></thead><tbody id="rows"></tbody></table></div>
+<div class="top"><h2>测试指标曲线</h2><label>时间协议 <select id="protocol"><option value="metadata">V1 / V2 · 原始时间标签</option><option value="frame">V3 / V4 · 统一帧时间</option></select></label></div>
+<p class="muted">横轴为训练 iter。不同时间协议分别比较；50/50 张图不代表训练到 iter 50。</p>
+<div id="charts" class="charts"></div>
+<footer><div id="updated" class="muted"></div><div id="age" class="muted"></div><div class="muted">当前实验目录：<code id="directory"></code></div></footer>
+<script>
+const $=id=>document.getElementById(id), fmt=n=>Number.isFinite(n)?n.toLocaleString('en-US'):'—';
+let latest=null,lastReceived=0;
+function cell(row,value){const td=document.createElement('td');td.textContent=value;row.appendChild(td)}
+function plot(data){
+ const frame=$('protocol').value==='frame', arms=data.arms.filter(a=>frame?a.id.startsWith('V3')||a.id.startsWith('V4'):a.id.startsWith('V1')||a.id.startsWith('V2'));
+ const colors=['#83bfff','#83e1c0'];$('charts').replaceChildren();
+ for(const metric of ['PSNR','SSIM','LPIPS','MS-SSIM']){
+  const card=document.createElement('div');card.className='chart';const title=document.createElement('h3');title.textContent=metric+(metric==='LPIPS'?' ↓':' ↑');card.appendChild(title);
+  const values=arms.flatMap(a=>a.metrics.map(r=>r.metrics[metric])).filter(Number.isFinite);
+  if(!values.length){const p=document.createElement('p');p.className='muted';p.textContent='等待这一时间协议的评估结果';card.appendChild(p);$('charts').appendChild(card);continue}
+  let lo=Math.min(...values),hi=Math.max(...values),pad=Math.max((hi-lo)*.1,1e-5);lo-=pad;hi+=pad;
+  const ns='http://www.w3.org/2000/svg',svg=document.createElementNS(ns,'svg');svg.setAttribute('viewBox','0 0 620 240');svg.setAttribute('role','img');svg.setAttribute('aria-label',metric+' 随训练 iter 变化');
+  function line(tag,attrs){let e=document.createElementNS(ns,tag);for(const[k,v]of Object.entries(attrs))e.setAttribute(k,v);svg.appendChild(e);return e}
+  for(let j=0;j<4;j++){const y=20+j*58;line('line',{x1:70,x2:600,y1:y,y2:y,stroke:'#30435c'});line('text',{x:5,y:y+4,fill:'#a6b6ca','font-size':11}).textContent=(hi-j*(hi-lo)/3).toFixed(metric==='PSNR'?2:5)}
+  for(const n of [0,10000,20000,30000,40000,50000])line('text',{x:70+n/50000*530,y:222,fill:'#a6b6ca','text-anchor':'middle','font-size':11}).textContent=n===0?'0':n/1000+'k';
+  const legend=document.createElement('div');legend.className='legend';
+  arms.forEach((a,i)=>{const points=a.metrics.map(r=>[70+r.iteration/50000*530,20+(hi-r.metrics[metric])/(hi-lo)*174]);line('polyline',{points:points.map(p=>p.join(',')).join(' '),fill:'none',stroke:colors[i],'stroke-width':2});if(points.length){const[x,y]=points[points.length-1];line('circle',{cx:x,cy:y,r:3,fill:colors[i]})}const item=document.createElement('span');item.style.color=colors[i];item.textContent=a.id;legend.appendChild(item)});
+  card.append(svg,legend);$('charts').appendChild(card);
+ }
+}
+function render(data){
+ if(!data||!data.current)return;
+ latest=data;lastReceived=Date.parse(data.updated_utc);const a=data.current,s=data.stage;
+ $('name').textContent=a.id;$('iteration').replaceChildren(document.createTextNode(fmt(a.iteration)+' '));const span=document.createElement('span');span.textContent='/ '+fmt(a.target);$('iteration').appendChild(span);
+ $('bar').style.width=(100*a.fraction)+'%';$('percent').textContent='训练进度：'+(100*a.fraction).toFixed(2)+'%';
+ let stage='当前阶段：'+s.label;if(s.snapshot)stage+=' · '+s.snapshot;if(Number.isFinite(s.images))stage+=' · '+fmt(s.images)+' / '+fmt(s.total_images)+' 张';if(Number.isFinite(s.iteration))stage+='（iter '+fmt(s.iteration)+'）';$('stage').textContent=stage;
+ $('checkpoint').textContent='完整 checkpoint：iter '+fmt(a.checkpoint_iteration);$('evaluation').textContent='最近指标评估：iter '+fmt(a.evaluation_iteration);$('loss').textContent='最近训练 Loss：'+(Number.isFinite(a.latest_loss)?a.latest_loss.toFixed(7):'—');
+ $('status').textContent='队列状态：'+data.status+' · 控制进程：'+(data.controller_alive?'运行中':'已退出')+' · 训练 iter 取自训练日志、完整 checkpoint 和明确标注迭代的评估记录。';
+ $('overall').textContent='累计训练：'+fmt(data.total_iteration)+' / '+fmt(data.total_target)+' iter（'+(100*data.total_iteration/Math.max(1,data.total_target)).toFixed(2)+'%）；训练完成后仍需渲染、评估和拼接。';
+ $('rows').replaceChildren();for(const arm of data.arms){const tr=document.createElement('tr');if(arm.id===a.id)tr.className='active';for(const v of [arm.id,fmt(arm.iteration)+' / '+fmt(arm.target),(100*arm.fraction).toFixed(2)+'%',arm.status,fmt(arm.checkpoint_iteration),fmt(arm.evaluation_iteration)])cell(tr,v);$('rows').appendChild(tr)}
+ $('updated').textContent='数据更新时间：'+new Date(data.updated_utc).toLocaleString()+' · 自动刷新间隔 5 秒';$('age').textContent='当前阶段日志距今：'+(data.log_age_seconds===null?'—':data.log_age_seconds+' 秒');$('directory').textContent=a.run_absolute;
+ $('connection').textContent='实时更新 · #'+data.sequence;$('connection').className='pill';plot(data);
+}
+function refresh(){const script=document.createElement('script');script.src='monitor_data.js?t='+Date.now();script.onload=()=>{render(window.PIDG_KINEMATIC_DATA);script.remove()};script.onerror=()=>{script.remove();$('connection').textContent='数据读取失败';$('connection').className='pill stale'};document.head.appendChild(script)}
+$('protocol').onchange=()=>{if(latest)plot(latest)};refresh();setInterval(refresh,5000);setInterval(()=>{if(lastReceived&&Date.now()-lastReceived>15000){$('connection').textContent='数据超过 15 秒未更新';$('connection').className='pill stale'}},5000);
+</script></html>
