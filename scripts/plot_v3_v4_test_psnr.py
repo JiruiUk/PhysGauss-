@@ -100,6 +100,8 @@ def main():
     fig.suptitle('V3 vs V4 | same 50 official test images | time-disjoint resplit | final50k',fontsize=14)
     fig.savefig(OUT/'psnr_distribution.png',dpi=180)
     fig.savefig(OUT/'psnr_distribution.svg')
+    svg = OUT/'psnr_distribution.svg'
+    svg.write_text('\n'.join(line.rstrip() for line in svg.read_text(encoding='utf-8').splitlines())+'\n',encoding='utf-8')
     plt.close(fig)
     lines = ['# V3 / V4 fixed-test PSNR distribution','',summary['protocol'],'',
         'V3: shared frame clock, V3 RGB objective, iso off. V4: V3 plus velocity/trajectory consistency.',
