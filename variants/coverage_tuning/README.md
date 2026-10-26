@@ -41,11 +41,14 @@ Weight1e-4 ramps over2000 steps after3000, sampled every10 steps with interval
 compensation. Rank-deficient neighborhoods are skipped. Gradients act on the
 deformation trajectory with canonical inputs detached.
 
-This experiment explicitly asserts a **single-object Rubber Duck scene** and
-refuses silent multi-object use. The pure helper supports explicit object IDs;
-tests show no cross-ID edges. The real dataset has no object-ID bank propagated
-through Gaussian densification, so contact scenes require that additional work.
-Euclidean canonical proximity does not guarantee surface-geodesic adjacency.
+The runtime requires a declared `single_object` flag but did not verify that
+declaration against the real scene. Render inspection disproved the declaration:
+Rubber Duck contains multiple ducks and obstacles. These runs are therefore
+unsegmented spatial-affine ablations. The pure helper supports explicit object
+IDs and tests show no cross-ID edges when IDs are supplied; the real training
+path supplies none. An object-ID bank propagated through densification is still
+required for guaranteed object isolation. Euclidean canonical proximity alone
+does not guarantee object membership or surface-geodesic adjacency.
 
 ## 3. Conservative coverage-guided late additions
 
@@ -100,3 +103,30 @@ powershell -NoProfile -ExecutionPolicy Bypass -File variants/coverage_tuning/lau
 
 Create `runs/pidg_coverage_tuning/stop_queue.request` for a full-state safe pause.
 Resume after archiving the request; completed arms are skipped.
+
+## User-requested priority C1/C2 export
+
+The user subsequently requested rendering the two completed arms before C3
+finishes. `scripts/render_coverage_completed.py` safely saves/stops C3, locks
+the completed C1/C2 final50k weights in a separate
+`runs/pidg_coverage_tuning/priority_render/selection_lock.json`, and exports
+their50 test renders, alpha images and pixel-verified GT/render pairs first.
+It then resumes C3 from the complete saved state, retaining the original queue
+deadline. The full-queue lock is not created early or replaced by a partial lock.
+C3 hyperparameters and validation-only checkpoint selection remain unchanged.
+This explicit early-test exposure supersedes the original all-arms-before-test
+export order; it is recorded in `experiments/coverage_tuning/priority_render.json`.
+The normal queue later exports all five snapshots for all arms as planned.
+
+### Scene-scope correction from render inspection
+
+The exported GT shows **multiple ducks and blue obstacles**. The earlier
+single-object Rubber Duck description was incorrect. The `single_object=True`
+configuration is an assumption flag, not evidence of object membership. C2/C3
+currently use canonical Euclidean neighbors with a radius gate and do **not**
+have object-ID filtering in the real training path. They must be interpreted as
+unsegmented spatial-affine ablations; cross-object edges and contact sticking
+have not been excluded. The pure helper's object-ID unit test does not establish
+that the real scene is object-aware. No existing weights or training settings
+are changed during the priority render. Explicit known object IDs and their
+propagation through densification are needed for an object-isolated follow-up.

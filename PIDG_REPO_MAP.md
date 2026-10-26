@@ -162,9 +162,11 @@ reads original RGBA alpha from the120 training frames only. `model.py` defines
 foreground alpha L1 and a weak local affine neighborhood fit allowing stretch
 and shear. `density.py::CoverageAccumulator` collects unique-training-time
 coverage evidence. `runtime.py::Tuning` integrates the losses, conservative late
-point additions, and checksum-bound coverage checkpoint state. This first real
-scene is explicitly single-object; multi-object application requires explicit
-IDs rather than inferred contact connections. `run.py` orders mask, mask+affine,
+point additions, and checksum-bound coverage checkpoint state. Render inspection
+confirmed multiple ducks and obstacles; the earlier single-object assumption was
+incorrect. Current real-scene affine neighborhoods have distance gating but no
+object-ID filtering. Explicit known IDs are required for object-isolated contact
+constraints. `run.py` orders mask, mask+affine,
 and mask+affine+density50k scratch runs from the same random step-zero checkpoint,
 reuses the completed V3 control, selects on validation only and locks selections
 before final testing. Iso stays off. New diagnostics include foreground PSNR,
