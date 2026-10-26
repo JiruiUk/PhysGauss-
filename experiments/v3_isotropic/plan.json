@@ -1,0 +1,34 @@
+{
+  "parent": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_kinematic_resplit\\V3_frame_time\\rubber_duck",
+  "parent_selected_by": "validation PSNR",
+  "arms": {
+    "V3_continue_control": 0.0,
+    "V3_iso_1e3": 0.001
+  },
+  "additional_steps": 50000,
+  "shared_full_state_prefix": 1000,
+  "iso_first_active_step": 1001,
+  "iso_scope": "rendered axis magnitudes abs(exp(log_scales)+d_scaling)",
+  "iso_loss": "mean_i mean_axis abs(abs(s_ia)/mean_axis(abs(s_i))-1); robust normalized implementation",
+  "kinematic_weight": 0.0,
+  "train_validation_test": [
+    120,
+    30,
+    50
+  ],
+  "selection": "validation only",
+  "final_test_tags": [
+    "best",
+    "metric_ssim",
+    "metric_lpips",
+    "metric_ms_ssim",
+    "50000"
+  ],
+  "resolution": [
+    1600,
+    900
+  ],
+  "seed": 0,
+  "budget_hours": 24.0,
+  "test_history": "Official test set has prior tuning exposure; disclosed exploratory comparison"
+}

@@ -124,3 +124,16 @@ locked before final test rendering. Historical use of the official test set
 remains disclosed; the split does not retroactively remove tuning exposure.
 New logs, checkpoint state, metrics and pairs live in
 `runs/pidg_kinematic_resplit` and `experiments/kinematic_resplit`.
+
+## V3 plus Gaussian isotropy (separate fork)
+
+`variants/v3_isotropic/code` copies the completed resplit source. Its optional
+`runtime.py::Tuning.regularization` reuses the tested normalized principal-axis
+penalty from `variants/isotropic_tuning`, while inheriting the validation-only
+evaluation and shared clock from `variants/kinematic_resplit/runtime.py`.
+Two additional50k continuations start from the same completed V3 weights: iso
+weight zero versus 0.001, with a byte-identical full-state branch at extra1000.
+The only new trainer operation is the optional isotropic loss hook; kinematic
+consistency stays off. Original resplit data and the frozen V3 parent stay
+unchanged. New logs/results/charts live in `experiments/v3_isotropic`, and weights,
+final renders and pixel-verified GT/render pairs in `runs/pidg_v3_isotropic`.
