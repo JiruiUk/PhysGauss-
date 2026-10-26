@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "flags_off_steps": 20,
+  "random_initial_state_iteration": 0,
+  "optimizer_updates_at_initialization": 0,
+  "identical_initial_checkpoint_sha256": "9889be4f9a23c2423ba0656da4e411deaa1ced3d0595c963fbf8d61931ef572f",
+  "control_iso_steps": 100,
+  "iso_full_resume_from": 20,
+  "iso_scale_gradients": [
+    {
+      "iteration": 1,
+      "scale_gradient_l1": 0.021630259230732918,
+      "scale_gradient_max": 1.6945311642757588e-07
+    },
+    {
+      "iteration": 100,
+      "scale_gradient_l1": 0.07871993631124496,
+      "scale_gradient_max": 7.642608466085221e-07
+    }
+  ],
+  "validation_png_parity": true,
+  "train_validation_membership_verified": true,
+  "completed_utc": "2026-10-26T14:37:24.808494+00:00",
+  "source_freeze_sha256": "42b63911c1811998d036b1b642e47985d74e27c7ab2a6a0b8f0622bda9894cda"
+}

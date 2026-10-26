@@ -1,0 +1,39 @@
+{
+  "initialization": "identical random full state at step0; no trained parent",
+  "parent_run": null,
+  "total_steps_per_arm": 50000,
+  "arms": {
+    "V3_scratch_control": 0.0,
+    "V3_scratch_iso_1e3": 0.001
+  },
+  "iso_first_computed_step": 1,
+  "kinematic_weight": 0.0,
+  "train_validation_test": [
+    120,
+    30,
+    50
+  ],
+  "optimizer": "original PIDG initial-training schedule, not continuation; warm-up3000/densification15000",
+  "image_loss": "V3: 0.8 L1 + 0.2(1-SSIM) + 0.02 LPIPS (every4 with interval compensation)",
+  "time": "(original_frame_id-1)/199; same deformation/physics input",
+  "selection": "validation only; lock both arms before test",
+  "test_tags": [
+    "best",
+    "metric_ssim",
+    "metric_lpips",
+    "metric_ms_ssim",
+    "50000"
+  ],
+  "seed": 0,
+  "resolution": [
+    1600,
+    900
+  ],
+  "budget_hours": 24.0,
+  "limitations": [
+    "prior official-test exposure",
+    "uniform cadence assumed",
+    "single seed",
+    "CUDA nondeterminism"
+  ]
+}

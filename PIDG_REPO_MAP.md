@@ -137,3 +137,17 @@ The only new trainer operation is the optional isotropic loss hook; kinematic
 consistency stays off. Original resplit data and the frozen V3 parent stay
 unchanged. New logs/results/charts live in `experiments/v3_isotropic`, and weights,
 final renders and pixel-verified GT/render pairs in `runs/pidg_v3_isotropic`.
+
+## Fresh V3 / V3+iso initialization (separate fork)
+
+`variants/v3_iso_scratch/code` copies the optional-iso source and adds a flagged
+step-zero capture hook before the training loop. `parent_run` is empty; new
+Gaussian and neural parameters are initialized from random geometry and seed0.
+The capture contains zero optimizer updates, verified by empty optimizer state
+dictionaries. Both arms copy identical complete checkpoint bytes before step1;
+only iso weight differs. They each train50k total, with original initial-training
+warm-up, densification and learning rates, V3 image objectives/shared time, and
+iso weight0 or0.001 from step1. Existing validation-only selection and final-test
+locking are reused. The prior continuation is saved and stopped at the user's
+request; no trained weights from it are used. New outputs are isolated in
+`experiments/v3_iso_scratch` and `runs/pidg_v3_iso_scratch`.

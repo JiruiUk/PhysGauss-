@@ -1,0 +1,11 @@
+{
+  "command": "envs/pidg-cu128/python.exe -m pytest tests/test_v3_iso_scratch.py tests/test_v3_isotropic.py tests/test_isotropic_tuning.py tests/test_kinematic_resplit.py -q",
+  "passed": 35,
+  "completed_utc": "2026-10-26T14:38:56.203921+00:00",
+  "test_sha256": {
+    "tests\\test_v3_iso_scratch.py": "932f6941ab164636eef86de959550f4d960e8fc6b0e19d3ebccd147364155039",
+    "tests\\test_v3_isotropic.py": "d613b43faf2179117cb5beb283d1444ba1a6a2d77ccd6dd1b1fb237721fa6217",
+    "tests\\test_isotropic_tuning.py": "515a57ee4b30a793410963cd28cd54565c481fef7fbb510c5cf908b3549ab3b2",
+    "tests\\test_kinematic_resplit.py": "7ee350ad1e9069eff5e2038ed0e12d893d126cca90f2241af5aaff31d2a68e69"
+  }
+}
