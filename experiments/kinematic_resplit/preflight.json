@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "completed_utc": "2026-10-26T00:12:31.271581+00:00",
+  "flags_off_steps": 20,
+  "scratch_parent_steps": 100,
+  "V3_V4_steps": 100,
+  "identical_full_state_branch_at": 20,
+  "actual_parameter_gradients": [
+    {
+      "iteration": 30,
+      "branch": "grid",
+      "finite": true,
+      "gradient_l1": 1.7497265934944153
+    },
+    {
+      "iteration": 30,
+      "branch": "deformation",
+      "finite": true,
+      "gradient_l1": 2.8773016780614853
+    },
+    {
+      "iteration": 30,
+      "branch": "velocity",
+      "finite": true,
+      "gradient_l1": 0.6054273549198115
+    }
+  ],
+  "checkpoint_train_val_membership_verified": true,
+  "test_rgb_absent_from_training_view": true,
+  "validation_PNG_metric_parity": true,
+  "tests": "tests/test_kinematic_resplit.py and existing kinematic tests",
+  "source_freeze_sha256": "c9d96e5e929cef78ec717ec5537e02a9e3b93721887c8daccf2aed6ce4933fdc",
+  "unit_tests_passed": 20,
+  "original_and_derived_camera_pose_FoV_identity_verified": true
+}

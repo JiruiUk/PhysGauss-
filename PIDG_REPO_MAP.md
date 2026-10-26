@@ -108,3 +108,19 @@ contraction and sampled weighting are preserved. `kinematic_weight=0` disables
 the new loss, and all tuning flags off preserve the original training path.
 Runs, complete resumable checkpoints, metrics, diagnostics and GT/render pairs
 are isolated in `runs/pidg_kinematic_tuning` and `experiments/kinematic_tuning`.
+
+## Time-disjoint validation / test retraining (separate fork)
+
+`variants/kinematic_resplit/code` copies the frozen kinematic source. Its optional
+`runtime.py::Tuning` retains the V3/V4 physics and uses only validation cameras
+for checkpoint selection. `data.py` prepares 120 training / 30 validation / the
+unchanged 50 official test acquisitions with a common frame-index clock. The
+training loader's legacy test slot holds validation; final-test RGB is absent
+from that loader's data directory. A separate view is used for final evaluation.
+No old weights, released point cloud, flow or depth are reused. A new train-only
+50k parent initializes V3/V4, and `run.py::branch` copies an identical complete
+1000-step refinement state before activating V4 consistency. Selections are
+locked before final test rendering. Historical use of the official test set
+remains disclosed; the split does not retroactively remove tuning exposure.
+New logs, checkpoint state, metrics and pairs live in
+`runs/pidg_kinematic_resplit` and `experiments/kinematic_resplit`.

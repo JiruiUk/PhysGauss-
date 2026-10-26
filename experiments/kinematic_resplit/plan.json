@@ -1,0 +1,20 @@
+{
+  "counts": {
+    "train": 120,
+    "val": 30,
+    "test": 50
+  },
+  "clock": "(original_frame_id - 1) / 199; uniform capture cadence assumed, not verified",
+  "P0": "50k original PIDG recipe, random initialization, 120 train, validation selection, no old weights",
+  "V3_V4": "50k additional T3 refinement each; common first1000 full-state checkpoint; only lambda_kin differs",
+  "loss": "unchanged V3/V4: shared time, Huber(v, d[R(q)X+b]/dtau), weight 0 / .001",
+  "selection": "four objectives on 30 validation images, every1000; final50k also retained",
+  "final_test": "unchanged official50 images; locked until both arms finish; all five predeclared snapshots",
+  "prior_test_exposure": "The 50 official test images were used in previous studies; prospective separation does not erase historical tuning.",
+  "seed": 0,
+  "resolution": [
+    1600,
+    900
+  ],
+  "budget_hours": 2.0
+}
