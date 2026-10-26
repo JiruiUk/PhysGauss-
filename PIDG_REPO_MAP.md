@@ -151,3 +151,22 @@ iso weight0 or0.001 from step1. Existing validation-only selection and final-tes
 locking are reused. The prior continuation is saved and stopped at the user's
 request; no trained weights from it are used. New outputs are isolated in
 `experiments/v3_iso_scratch` and `runs/pidg_v3_iso_scratch`.
+
+## Ordered foreground coverage ablation (separate fork)
+
+`variants/coverage_tuning/code` copies the frozen scratch source. Only optional
+loss and post-optimizer density hooks are added to its trainer; an environment
+flag enables diagnostic alpha PNG export in its renderer. The original RGB
+compositor and all existing source trees remain unchanged. `data.py` audits and
+reads original RGBA alpha from the120 training frames only. `model.py` defines
+foreground alpha L1 and a weak local affine neighborhood fit allowing stretch
+and shear. `density.py::CoverageAccumulator` collects unique-training-time
+coverage evidence. `runtime.py::Tuning` integrates the losses, conservative late
+point additions, and checksum-bound coverage checkpoint state. This first real
+scene is explicitly single-object; multi-object application requires explicit
+IDs rather than inferred contact connections. `run.py` orders mask, mask+affine,
+and mask+affine+density50k scratch runs from the same random step-zero checkpoint,
+reuses the completed V3 control, selects on validation only and locks selections
+before final testing. Iso stays off. New diagnostics include foreground PSNR,
+mask IoU and eroded-interior low-alpha rate. New outputs live exclusively in
+`experiments/coverage_tuning` and `runs/pidg_coverage_tuning`.

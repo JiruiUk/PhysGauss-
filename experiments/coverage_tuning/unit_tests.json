@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "unit_and_regression_tests": 50,
+  "cuda_integration_tests": 2,
+  "total": 52,
+  "unit_command": "python -m pytest tests/test_coverage_mask.py tests/test_coverage_affine.py tests/test_coverage_density.py tests/test_coverage_protocol.py tests/test_v3_iso_scratch.py tests/test_v3_isotropic.py tests/test_isotropic_tuning.py tests/test_kinematic_resplit.py -q",
+  "cuda_command": "PIDG_COVERAGE_GPU_TEST=1 python -m pytest tests/test_coverage_rasterizer_gpu.py -q",
+  "cuda_checks": [
+    "alpha reaches Gaussian xyz, opacity, scale and deformation translation",
+    "opacity analytic gradient matches finite differences",
+    "nonempty coverage window restores on GPU",
+    "tampered sidecar is rejected"
+  ],
+  "completed_utc": "2026-10-26T21:18:32.407631+00:00"
+}
