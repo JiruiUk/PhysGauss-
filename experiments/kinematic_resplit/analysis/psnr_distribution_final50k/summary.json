@@ -1,0 +1,295 @@
+{
+  "protocol": "Rubber Duck; time-disjoint120train/30val/50test; final50k snapshot; full-image PNG PSNR",
+  "checkpoint": "ours_50000 for both; validation-selected best PSNR also selects iteration50000",
+  "model_definition": {
+    "V3": "shared frame clock + V3 image objective; iso/kinematic off",
+    "V4": "V3 + weak velocity/trajectory derivative consistency"
+  },
+  "statistics": {
+    "V3": {
+      "count": 50,
+      "mean": 40.09170684814453,
+      "median": 39.89616584777832,
+      "population_std": 4.21038372292552,
+      "min": 30.487590789794922,
+      "p10": 35.02639617919922,
+      "q1": 36.51537322998047,
+      "q3": 43.86528015136719,
+      "p90": 45.64365921020508,
+      "max": 48.14183044433594
+    },
+    "V4": {
+      "count": 50,
+      "mean": 40.105514945983884,
+      "median": 39.8797550201416,
+      "population_std": 4.240781184821975,
+      "min": 30.370370864868164,
+      "p10": 35.10706977844238,
+      "q1": 36.47330093383789,
+      "q3": 43.86431312561035,
+      "p90": 45.7544864654541,
+      "max": 48.256717681884766
+    }
+  },
+  "paired_delta": {
+    "count": 50,
+    "mean": 0.013808097839355469,
+    "median": 0.023824691772460938,
+    "population_std": 0.09712322144071071,
+    "min": -0.3329620361328125,
+    "p10": -0.10389442443847656,
+    "q1": -0.03232765197753906,
+    "q3": 0.07576465606689453,
+    "p90": 0.11232948303222656,
+    "max": 0.21958160400390625
+  },
+  "V4_higher_frames": 30,
+  "V4_lower_frames": 20,
+  "ties": 0,
+  "histogram_edges_db": [
+    30.0,
+    32.0,
+    34.0,
+    36.0,
+    38.0,
+    40.0,
+    42.0,
+    44.0,
+    46.0,
+    48.0,
+    50.0
+  ],
+  "histogram_counts": {
+    "V3": [
+      1,
+      3,
+      5,
+      8,
+      9,
+      7,
+      5,
+      9,
+      2,
+      1
+    ],
+    "V4": [
+      1,
+      3,
+      4,
+      9,
+      9,
+      7,
+      5,
+      9,
+      2,
+      1
+    ]
+  },
+  "lowest_frames": {
+    "V3": [
+      {
+        "test_index": 38,
+        "render_file": "00038.png",
+        "original_frame_id": 153,
+        "normalized_time": 0.7638190954773869,
+        "V3_psnr_db": 30.487590789794922,
+        "V4_psnr_db": 30.370370864868164,
+        "V4_minus_V3_db": -0.11721992492675781
+      },
+      {
+        "test_index": 19,
+        "render_file": "00019.png",
+        "original_frame_id": 77,
+        "normalized_time": 0.38190954773869346,
+        "V3_psnr_db": 32.66792678833008,
+        "V4_psnr_db": 32.77346420288086,
+        "V4_minus_V3_db": 0.10553741455078125
+      },
+      {
+        "test_index": 18,
+        "render_file": "00018.png",
+        "original_frame_id": 73,
+        "normalized_time": 0.36180904522613067,
+        "V3_psnr_db": 33.630470275878906,
+        "V4_psnr_db": 33.66495132446289,
+        "V4_minus_V3_db": 0.034481048583984375
+      },
+      {
+        "test_index": 22,
+        "render_file": "00022.png",
+        "original_frame_id": 89,
+        "normalized_time": 0.44221105527638194,
+        "V3_psnr_db": 33.67869567871094,
+        "V4_psnr_db": 33.7586669921875,
+        "V4_minus_V3_db": 0.0799713134765625
+      },
+      {
+        "test_index": 20,
+        "render_file": "00020.png",
+        "original_frame_id": 81,
+        "normalized_time": 0.4020100502512563,
+        "V3_psnr_db": 34.21699905395508,
+        "V4_psnr_db": 34.096763610839844,
+        "V4_minus_V3_db": -0.12023544311523438
+      }
+    ],
+    "V4": [
+      {
+        "test_index": 38,
+        "render_file": "00038.png",
+        "original_frame_id": 153,
+        "normalized_time": 0.7638190954773869,
+        "V3_psnr_db": 30.487590789794922,
+        "V4_psnr_db": 30.370370864868164,
+        "V4_minus_V3_db": -0.11721992492675781
+      },
+      {
+        "test_index": 19,
+        "render_file": "00019.png",
+        "original_frame_id": 77,
+        "normalized_time": 0.38190954773869346,
+        "V3_psnr_db": 32.66792678833008,
+        "V4_psnr_db": 32.77346420288086,
+        "V4_minus_V3_db": 0.10553741455078125
+      },
+      {
+        "test_index": 18,
+        "render_file": "00018.png",
+        "original_frame_id": 73,
+        "normalized_time": 0.36180904522613067,
+        "V3_psnr_db": 33.630470275878906,
+        "V4_psnr_db": 33.66495132446289,
+        "V4_minus_V3_db": 0.034481048583984375
+      },
+      {
+        "test_index": 22,
+        "render_file": "00022.png",
+        "original_frame_id": 89,
+        "normalized_time": 0.44221105527638194,
+        "V3_psnr_db": 33.67869567871094,
+        "V4_psnr_db": 33.7586669921875,
+        "V4_minus_V3_db": 0.0799713134765625
+      },
+      {
+        "test_index": 20,
+        "render_file": "00020.png",
+        "original_frame_id": 81,
+        "normalized_time": 0.4020100502512563,
+        "V3_psnr_db": 34.21699905395508,
+        "V4_psnr_db": 34.096763610839844,
+        "V4_minus_V3_db": -0.12023544311523438
+      }
+    ]
+  },
+  "largest_V4_gains": [
+    {
+      "test_index": 5,
+      "render_file": "00005.png",
+      "original_frame_id": 21,
+      "normalized_time": 0.10050251256281408,
+      "V3_psnr_db": 45.778045654296875,
+      "V4_psnr_db": 45.99762725830078,
+      "V4_minus_V3_db": 0.21958160400390625
+    },
+    {
+      "test_index": 41,
+      "render_file": "00041.png",
+      "original_frame_id": 165,
+      "normalized_time": 0.8241206030150754,
+      "V3_psnr_db": 41.36981201171875,
+      "V4_psnr_db": 41.55014419555664,
+      "V4_minus_V3_db": 0.18033218383789062
+    },
+    {
+      "test_index": 3,
+      "render_file": "00003.png",
+      "original_frame_id": 13,
+      "normalized_time": 0.06030150753768844,
+      "V3_psnr_db": 47.68996810913086,
+      "V4_psnr_db": 47.85163497924805,
+      "V4_minus_V3_db": 0.1616668701171875
+    },
+    {
+      "test_index": 7,
+      "render_file": "00007.png",
+      "original_frame_id": 29,
+      "normalized_time": 0.1407035175879397,
+      "V3_psnr_db": 45.7379150390625,
+      "V4_psnr_db": 45.85504913330078,
+      "V4_minus_V3_db": 0.11713409423828125
+    },
+    {
+      "test_index": 2,
+      "render_file": "00002.png",
+      "original_frame_id": 9,
+      "normalized_time": 0.04020100502512563,
+      "V3_psnr_db": 48.14183044433594,
+      "V4_psnr_db": 48.256717681884766,
+      "V4_minus_V3_db": 0.11488723754882812
+    }
+  ],
+  "largest_V4_losses": [
+    {
+      "test_index": 10,
+      "render_file": "00010.png",
+      "original_frame_id": 41,
+      "normalized_time": 0.20100502512562815,
+      "V3_psnr_db": 40.81380844116211,
+      "V4_psnr_db": 40.4808464050293,
+      "V4_minus_V3_db": -0.3329620361328125
+    },
+    {
+      "test_index": 25,
+      "render_file": "00025.png",
+      "original_frame_id": 101,
+      "normalized_time": 0.5025125628140703,
+      "V3_psnr_db": 37.586124420166016,
+      "V4_psnr_db": 37.39887237548828,
+      "V4_minus_V3_db": -0.18725204467773438
+    },
+    {
+      "test_index": 20,
+      "render_file": "00020.png",
+      "original_frame_id": 81,
+      "normalized_time": 0.4020100502512563,
+      "V3_psnr_db": 34.21699905395508,
+      "V4_psnr_db": 34.096763610839844,
+      "V4_minus_V3_db": -0.12023544311523438
+    },
+    {
+      "test_index": 38,
+      "render_file": "00038.png",
+      "original_frame_id": 153,
+      "normalized_time": 0.7638190954773869,
+      "V3_psnr_db": 30.487590789794922,
+      "V4_psnr_db": 30.370370864868164,
+      "V4_minus_V3_db": -0.11721992492675781
+    },
+    {
+      "test_index": 24,
+      "render_file": "00024.png",
+      "original_frame_id": 97,
+      "normalized_time": 0.4824120603015075,
+      "V3_psnr_db": 36.61473083496094,
+      "V4_psnr_db": 36.50801086425781,
+      "V4_minus_V3_db": -0.106719970703125
+    }
+  ],
+  "validation": [
+    "50 unique paired frames",
+    "byte-identical GT PNGs",
+    "mean matches evaluator within1e-5"
+  ],
+  "sources": {
+    "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\final_test\\transforms_test.json": "bb98013c762294ecaea239b67281436c7da232678403db63b1545d59c5f78c08",
+    "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_kinematic_resplit\\V3_frame_time\\rubber_duck\\per_view.json": "b9e6f7dd49b10db5af12f790e784d460366ce591f8bdaf230146d15661f79c65",
+    "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_kinematic_resplit\\V4_frame_time_kinematic\\rubber_duck\\per_view.json": "c8634118a75cc02b0ed64df5160be96cdf79d8e46a2f8946aaa14e5b5965b4cf"
+  },
+  "limitations": [
+    "single scene/seed",
+    "correlated frames; distribution is descriptive, not repeated-run evidence",
+    "historical official test exposure persists",
+    "full-image PSNR includes background",
+    "population standard deviation across50 frames; quantiles use NumPy linear interpolation"
+  ]
+}
