@@ -1,0 +1,2665 @@
+{
+  "created_utc": "2026-10-27T14:49:17.486476+00:00",
+  "snapshot": "final50000",
+  "split": [
+    120,
+    30,
+    50
+  ],
+  "models": [
+    {
+      "id": "G0_control",
+      "directory": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_centroid_tuning\\G0_control\\rubber_duck",
+      "scores": {
+        "SSIM": 0.9930494427680969,
+        "PSNR": 37.139381408691406,
+        "LPIPS": 0.013645326718688011,
+        "MS-SSIM": 0.9946545958518982
+      },
+      "per_view": {
+        "SSIM": {
+          "00000.png": 0.9928886294364929,
+          "00001.png": 0.9935620427131653,
+          "00002.png": 0.9939205646514893,
+          "00003.png": 0.994698703289032,
+          "00004.png": 0.995232880115509,
+          "00005.png": 0.9952969551086426,
+          "00006.png": 0.9951940774917603,
+          "00007.png": 0.9956960678100586,
+          "00008.png": 0.9953289031982422,
+          "00009.png": 0.9939100742340088,
+          "00010.png": 0.9931179285049438,
+          "00011.png": 0.9925805330276489,
+          "00012.png": 0.9922725558280945,
+          "00013.png": 0.9918479323387146,
+          "00014.png": 0.9904681444168091,
+          "00015.png": 0.9885566830635071,
+          "00016.png": 0.9861812591552734,
+          "00017.png": 0.9864236116409302,
+          "00018.png": 0.9873706102371216,
+          "00019.png": 0.9834262728691101,
+          "00020.png": 0.9903722405433655,
+          "00021.png": 0.9890693426132202,
+          "00022.png": 0.990682065486908,
+          "00023.png": 0.9916187524795532,
+          "00024.png": 0.9906614422798157,
+          "00025.png": 0.9922371506690979,
+          "00026.png": 0.9911273121833801,
+          "00027.png": 0.9923784732818604,
+          "00028.png": 0.9928144812583923,
+          "00029.png": 0.9919289350509644,
+          "00030.png": 0.9943006634712219,
+          "00031.png": 0.9930036664009094,
+          "00032.png": 0.9941971898078918,
+          "00033.png": 0.9942044019699097,
+          "00034.png": 0.9934174418449402,
+          "00035.png": 0.994275689125061,
+          "00036.png": 0.9931615591049194,
+          "00037.png": 0.9951491951942444,
+          "00038.png": 0.9910566806793213,
+          "00039.png": 0.9952048659324646,
+          "00040.png": 0.9953539371490479,
+          "00041.png": 0.9956153631210327,
+          "00042.png": 0.9962219595909119,
+          "00043.png": 0.9962062239646912,
+          "00044.png": 0.9956159591674805,
+          "00045.png": 0.9972121715545654,
+          "00046.png": 0.9965919852256775,
+          "00047.png": 0.9968303442001343,
+          "00048.png": 0.9971473217010498,
+          "00049.png": 0.9968409538269043
+        },
+        "PSNR": {
+          "00000.png": 28.726802825927734,
+          "00001.png": 28.705013275146484,
+          "00002.png": 28.822235107421875,
+          "00003.png": 31.143598556518555,
+          "00004.png": 35.81550979614258,
+          "00005.png": 40.65184783935547,
+          "00006.png": 39.50419235229492,
+          "00007.png": 40.890220642089844,
+          "00008.png": 39.59325408935547,
+          "00009.png": 38.509521484375,
+          "00010.png": 36.95113754272461,
+          "00011.png": 35.97563934326172,
+          "00012.png": 35.46430969238281,
+          "00013.png": 36.35912322998047,
+          "00014.png": 35.11121368408203,
+          "00015.png": 32.64359664916992,
+          "00016.png": 31.017648696899414,
+          "00017.png": 31.96220588684082,
+          "00018.png": 31.946287155151367,
+          "00019.png": 28.534358978271484,
+          "00020.png": 34.696407318115234,
+          "00021.png": 33.01416778564453,
+          "00022.png": 33.190818786621094,
+          "00023.png": 35.03419876098633,
+          "00024.png": 36.585453033447266,
+          "00025.png": 37.21216583251953,
+          "00026.png": 36.80462646484375,
+          "00027.png": 38.033634185791016,
+          "00028.png": 38.36778259277344,
+          "00029.png": 37.075340270996094,
+          "00030.png": 39.288475036621094,
+          "00031.png": 37.844398498535156,
+          "00032.png": 38.91130828857422,
+          "00033.png": 39.30805587768555,
+          "00034.png": 38.42641067504883,
+          "00035.png": 38.745479583740234,
+          "00036.png": 37.934059143066406,
+          "00037.png": 40.83696746826172,
+          "00038.png": 31.418611526489258,
+          "00039.png": 40.02892303466797,
+          "00040.png": 40.171417236328125,
+          "00041.png": 41.725730895996094,
+          "00042.png": 42.85441589355469,
+          "00043.png": 42.30789566040039,
+          "00044.png": 40.27653121948242,
+          "00045.png": 44.664554595947266,
+          "00046.png": 43.19725036621094,
+          "00047.png": 42.83122253417969,
+          "00048.png": 44.2607307434082,
+          "00049.png": 43.594242095947266
+        },
+        "LPIPS": {
+          "00000.png": 0.010311995632946491,
+          "00001.png": 0.00931825116276741,
+          "00002.png": 0.008660509251058102,
+          "00003.png": 0.007411852478981018,
+          "00004.png": 0.0072538829408586025,
+          "00005.png": 0.007568938657641411,
+          "00006.png": 0.00787791796028614,
+          "00007.png": 0.007111694663763046,
+          "00008.png": 0.007539425045251846,
+          "00009.png": 0.009647732600569725,
+          "00010.png": 0.010860776528716087,
+          "00011.png": 0.012211434543132782,
+          "00012.png": 0.01329753827303648,
+          "00013.png": 0.014576653018593788,
+          "00014.png": 0.016973672434687614,
+          "00015.png": 0.020618844777345657,
+          "00016.png": 0.02423342503607273,
+          "00017.png": 0.026960399001836777,
+          "00018.png": 0.02467421628534794,
+          "00019.png": 0.03012460470199585,
+          "00020.png": 0.021329466253519058,
+          "00021.png": 0.020691150799393654,
+          "00022.png": 0.019690323621034622,
+          "00023.png": 0.01983962394297123,
+          "00024.png": 0.0208817757666111,
+          "00025.png": 0.01902378723025322,
+          "00026.png": 0.02076537162065506,
+          "00027.png": 0.019114891067147255,
+          "00028.png": 0.01779879443347454,
+          "00029.png": 0.01820983923971653,
+          "00030.png": 0.012798987329006195,
+          "00031.png": 0.013298068195581436,
+          "00032.png": 0.011897068470716476,
+          "00033.png": 0.012890724465250969,
+          "00034.png": 0.015827754512429237,
+          "00035.png": 0.015184013172984123,
+          "00036.png": 0.015440737828612328,
+          "00037.png": 0.012297157198190689,
+          "00038.png": 0.016361158341169357,
+          "00039.png": 0.010513484477996826,
+          "00040.png": 0.008518150076270103,
+          "00041.png": 0.009813588112592697,
+          "00042.png": 0.008769867941737175,
+          "00043.png": 0.007842273451387882,
+          "00044.png": 0.007395116612315178,
+          "00045.png": 0.005844755098223686,
+          "00046.png": 0.006331359036266804,
+          "00047.png": 0.005874663591384888,
+          "00048.png": 0.005210540257394314,
+          "00049.png": 0.0055781165137887
+        },
+        "MS-SSIM": {
+          "00000.png": 0.9922959804534912,
+          "00001.png": 0.9923871755599976,
+          "00002.png": 0.9923852682113647,
+          "00003.png": 0.9943620562553406,
+          "00004.png": 0.9966818690299988,
+          "00005.png": 0.997637152671814,
+          "00006.png": 0.9972456693649292,
+          "00007.png": 0.9977792501449585,
+          "00008.png": 0.9975599050521851,
+          "00009.png": 0.9965383410453796,
+          "00010.png": 0.9956876635551453,
+          "00011.png": 0.9947003126144409,
+          "00012.png": 0.9940742254257202,
+          "00013.png": 0.9945739507675171,
+          "00014.png": 0.993355929851532,
+          "00015.png": 0.9909648299217224,
+          "00016.png": 0.9867616891860962,
+          "00017.png": 0.9871949553489685,
+          "00018.png": 0.9887873530387878,
+          "00019.png": 0.981356143951416,
+          "00020.png": 0.9927474856376648,
+          "00021.png": 0.9904472827911377,
+          "00022.png": 0.9918672442436218,
+          "00023.png": 0.9932141304016113,
+          "00024.png": 0.9924759864807129,
+          "00025.png": 0.9931983947753906,
+          "00026.png": 0.9921205043792725,
+          "00027.png": 0.9933276176452637,
+          "00028.png": 0.994666576385498,
+          "00029.png": 0.9937601089477539,
+          "00030.png": 0.9966214895248413,
+          "00031.png": 0.9955729246139526,
+          "00032.png": 0.9965366125106812,
+          "00033.png": 0.9966720938682556,
+          "00034.png": 0.9963541030883789,
+          "00035.png": 0.9964904189109802,
+          "00036.png": 0.9956496953964233,
+          "00037.png": 0.9973594546318054,
+          "00038.png": 0.9902734756469727,
+          "00039.png": 0.9973548650741577,
+          "00040.png": 0.9975494146347046,
+          "00041.png": 0.9977387189865112,
+          "00042.png": 0.998328685760498,
+          "00043.png": 0.9981896281242371,
+          "00044.png": 0.9977782964706421,
+          "00045.png": 0.998894214630127,
+          "00046.png": 0.9986481666564941,
+          "00047.png": 0.9987398982048035,
+          "00048.png": 0.9989573955535889,
+          "00049.png": 0.998865008354187
+        }
+      },
+      "coverage": {
+        "mask_l1": 0.36445777386426925,
+        "mask_iou": 0.26796744040574744,
+        "interior_hole_rate": 0.0016104124308352924,
+        "interior_pixels": 129217.86,
+        "foreground_psnr": 28.036098289489747
+      },
+      "centroid": {
+        "centroid_distance": 0.09523057229816914,
+        "centroid_squared_error": 0.011029824874713086,
+        "predicted_mean_alpha": 0.46278599321842195
+      },
+      "config": {
+        "enabled": true,
+        "parent_run": "",
+        "pixel_loss": "l1",
+        "structure": "ssim",
+        "perceptual_weight": 0.0,
+        "perceptual_interval": 4,
+        "timeline": "official_metadata",
+        "shared_physics_time": false,
+        "kinematic_weight": 0.0,
+        "isotropic_weight": 0.0,
+        "isotropic_scope": "rendered",
+        "isotropic_eps": 1e-08,
+        "isotropic_start": 0,
+        "engineering_smoke": false,
+        "allow_initial_capture": true,
+        "baseline_kind": "original",
+        "centroid_weight": 0.0,
+        "centroid_start": 3000,
+        "centroid_ramp": 2000,
+        "centroid_eps": 1e-06,
+        "mask_weight": 0.0,
+        "affine_weight": 0.0,
+        "coverage_density": false
+      },
+      "branch": {
+        "source": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_centroid_tuning\\shared_prefix\\rubber_duck",
+        "destination": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_centroid_tuning\\G0_control\\rubber_duck",
+        "iteration": 3000,
+        "identical_full_checkpoint_sha256": "9f0f5d034fd2305869118e6d654de30c9ade5246ca10ab138c6bc4c379d8b389",
+        "source_config": {
+          "enabled": true,
+          "parent_run": "",
+          "pixel_loss": "l1",
+          "structure": "ssim",
+          "perceptual_weight": 0.0,
+          "perceptual_interval": 4,
+          "timeline": "official_metadata",
+          "shared_physics_time": false,
+          "kinematic_weight": 0.0,
+          "isotropic_weight": 0.0,
+          "isotropic_scope": "rendered",
+          "isotropic_eps": 1e-08,
+          "isotropic_start": 0,
+          "engineering_smoke": false,
+          "allow_initial_capture": true,
+          "baseline_kind": "original",
+          "centroid_weight": 0.0,
+          "centroid_start": 3000,
+          "centroid_ramp": 2000,
+          "centroid_eps": 1e-06,
+          "mask_weight": 0.0,
+          "affine_weight": 0.0,
+          "coverage_density": false
+        },
+        "branch_config": {
+          "enabled": true,
+          "parent_run": "",
+          "pixel_loss": "l1",
+          "structure": "ssim",
+          "perceptual_weight": 0.0,
+          "perceptual_interval": 4,
+          "timeline": "official_metadata",
+          "shared_physics_time": false,
+          "kinematic_weight": 0.0,
+          "isotropic_weight": 0.0,
+          "isotropic_scope": "rendered",
+          "isotropic_eps": 1e-08,
+          "isotropic_start": 0,
+          "engineering_smoke": false,
+          "allow_initial_capture": true,
+          "baseline_kind": "original",
+          "centroid_weight": 0.0,
+          "centroid_start": 3000,
+          "centroid_ramp": 2000,
+          "centroid_eps": 1e-06,
+          "mask_weight": 0.0,
+          "affine_weight": 0.0,
+          "coverage_density": false
+        },
+        "only_change": "centroid_weight 0 -> 0.0",
+        "initialization": "shared random step0 followed by shared pre-activation training",
+        "created_utc": "2026-10-27T12:39:01.460382+00:00"
+      },
+      "selection": {
+        "PSNR": {
+          "value": 36.7576602935791,
+          "iteration": 49000,
+          "snapshot": "best",
+          "metrics": {
+            "PSNR": 36.7576602935791,
+            "SSIM": 0.9926497975985209,
+            "LPIPS": 0.014299236905450622,
+            "MS-SSIM": 0.9942241907119751
+          },
+          "selection_split": "validation"
+        },
+        "SSIM": {
+          "value": 0.9926740308602651,
+          "iteration": 50000,
+          "snapshot": "metric_ssim",
+          "metrics": {
+            "PSNR": 36.727505620320635,
+            "SSIM": 0.9926740308602651,
+            "LPIPS": 0.01421053974578778,
+            "MS-SSIM": 0.9942520320415497
+          },
+          "selection_split": "validation"
+        },
+        "LPIPS": {
+          "value": 0.01421053974578778,
+          "iteration": 50000,
+          "snapshot": "metric_lpips",
+          "metrics": {
+            "PSNR": 36.727505620320635,
+            "SSIM": 0.9926740308602651,
+            "LPIPS": 0.01421053974578778,
+            "MS-SSIM": 0.9942520320415497
+          },
+          "selection_split": "validation"
+        },
+        "MS-SSIM": {
+          "value": 0.9942520320415497,
+          "iteration": 50000,
+          "snapshot": "metric_ms_ssim",
+          "metrics": {
+            "PSNR": 36.727505620320635,
+            "SSIM": 0.9926740308602651,
+            "LPIPS": 0.01421053974578778,
+            "MS-SSIM": 0.9942520320415497
+          },
+          "selection_split": "validation"
+        }
+      },
+      "history": [
+        {
+          "iteration": 0,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 9.383214569091797,
+            "SSIM": 0.45851053992907204,
+            "LPIPS": 0.1782456398010254,
+            "MS-SSIM": 0.701677280664444
+          }
+        },
+        {
+          "iteration": 1000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 17.413473224639894,
+            "SSIM": 0.8736079891522726,
+            "LPIPS": 0.12697355796893436,
+            "MS-SSIM": 0.8478202641010284
+          }
+        },
+        {
+          "iteration": 2000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 17.49575049082438,
+            "SSIM": 0.8701422472794851,
+            "LPIPS": 0.13418723717331887,
+            "MS-SSIM": 0.8422857960065205
+          }
+        },
+        {
+          "iteration": 3000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 17.770377540588377,
+            "SSIM": 0.8750445604324341,
+            "LPIPS": 0.12883577222625414,
+            "MS-SSIM": 0.8511506835619609
+          }
+        },
+        {
+          "iteration": 4000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 25.165915870666502,
+            "SSIM": 0.9693655331929525,
+            "LPIPS": 0.05918362674613794,
+            "MS-SSIM": 0.959631989399592
+          }
+        },
+        {
+          "iteration": 5000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 25.621390787760415,
+            "SSIM": 0.970515235265096,
+            "LPIPS": 0.0548529963940382,
+            "MS-SSIM": 0.9618400017420451
+          }
+        },
+        {
+          "iteration": 6000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 27.23792928059896,
+            "SSIM": 0.9762732823689778,
+            "LPIPS": 0.046073850244283676,
+            "MS-SSIM": 0.9718584954738617
+          }
+        },
+        {
+          "iteration": 7000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 28.20702419281006,
+            "SSIM": 0.9787712057431539,
+            "LPIPS": 0.042505908757448196,
+            "MS-SSIM": 0.9759540220101675
+          }
+        },
+        {
+          "iteration": 8000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 28.432061131795248,
+            "SSIM": 0.9796747942765553,
+            "LPIPS": 0.03971112637470166,
+            "MS-SSIM": 0.977133309841156
+          }
+        },
+        {
+          "iteration": 9000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 29.529290390014648,
+            "SSIM": 0.9812914888064067,
+            "LPIPS": 0.03598652444779873,
+            "MS-SSIM": 0.9792008260885875
+          }
+        },
+        {
+          "iteration": 10000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 29.851609166463216,
+            "SSIM": 0.9819874783356984,
+            "LPIPS": 0.03476229757070541,
+            "MS-SSIM": 0.9806776702404022
+          }
+        },
+        {
+          "iteration": 11000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 30.255932426452638,
+            "SSIM": 0.9837097505728404,
+            "LPIPS": 0.0318507947648565,
+            "MS-SSIM": 0.9832302788893382
+          }
+        },
+        {
+          "iteration": 12000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 30.808936818440756,
+            "SSIM": 0.9845935066541036,
+            "LPIPS": 0.029532501784463722,
+            "MS-SSIM": 0.9841728826363881
+          }
+        },
+        {
+          "iteration": 13000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 31.0927329381307,
+            "SSIM": 0.9852257808049519,
+            "LPIPS": 0.028778662843008836,
+            "MS-SSIM": 0.9852536817391714
+          }
+        },
+        {
+          "iteration": 14000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 31.27569268544515,
+            "SSIM": 0.9851011017958323,
+            "LPIPS": 0.0279199522609512,
+            "MS-SSIM": 0.9852263073126475
+          }
+        },
+        {
+          "iteration": 15000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 31.925242106119793,
+            "SSIM": 0.9866223831971487,
+            "LPIPS": 0.025586624536663292,
+            "MS-SSIM": 0.986954555908839
+          }
+        },
+        {
+          "iteration": 16000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 32.21037483215332,
+            "SSIM": 0.9872464418411255,
+            "LPIPS": 0.02407839537287752,
+            "MS-SSIM": 0.9876994212468465
+          }
+        },
+        {
+          "iteration": 17000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 32.21813564300537,
+            "SSIM": 0.9865627547105154,
+            "LPIPS": 0.023798481716463964,
+            "MS-SSIM": 0.9876771648724874
+          }
+        },
+        {
+          "iteration": 18000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 33.19012743631999,
+            "SSIM": 0.988151091337204,
+            "LPIPS": 0.02200216765825947,
+            "MS-SSIM": 0.9891258915265401
+          }
+        },
+        {
+          "iteration": 19000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 33.438341013590495,
+            "SSIM": 0.9888310551643371,
+            "LPIPS": 0.02126333008830746,
+            "MS-SSIM": 0.989886466662089
+          }
+        },
+        {
+          "iteration": 20000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 33.765763664245604,
+            "SSIM": 0.9891186594963074,
+            "LPIPS": 0.020656445249915122,
+            "MS-SSIM": 0.990233596165975
+          }
+        },
+        {
+          "iteration": 21000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 34.314622688293454,
+            "SSIM": 0.9895588596661885,
+            "LPIPS": 0.019860542224099238,
+            "MS-SSIM": 0.9910276114940644
+          }
+        },
+        {
+          "iteration": 22000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 34.065646680196124,
+            "SSIM": 0.9894408841927846,
+            "LPIPS": 0.019592340880384047,
+            "MS-SSIM": 0.9909765998522441
+          }
+        },
+        {
+          "iteration": 23000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 34.7290397644043,
+            "SSIM": 0.9900890151659648,
+            "LPIPS": 0.018585721775889397,
+            "MS-SSIM": 0.9917128920555115
+          }
+        },
+        {
+          "iteration": 24000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 34.840338643391924,
+            "SSIM": 0.99043514529864,
+            "LPIPS": 0.018252378267546495,
+            "MS-SSIM": 0.9921258191267649
+          }
+        },
+        {
+          "iteration": 25000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 35.214775276184085,
+            "SSIM": 0.9909777800242107,
+            "LPIPS": 0.01751080686226487,
+            "MS-SSIM": 0.9925186157226562
+          }
+        },
+        {
+          "iteration": 26000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 35.33731905619303,
+            "SSIM": 0.9910608092943828,
+            "LPIPS": 0.017149835530047616,
+            "MS-SSIM": 0.9927253266175587
+          }
+        },
+        {
+          "iteration": 27000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 35.39198525746664,
+            "SSIM": 0.9911434193452199,
+            "LPIPS": 0.016928494659562907,
+            "MS-SSIM": 0.9927948276201884
+          }
+        },
+        {
+          "iteration": 28000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 35.45822950998942,
+            "SSIM": 0.9911978761355082,
+            "LPIPS": 0.0166970065018783,
+            "MS-SSIM": 0.9929524560769399
+          }
+        },
+        {
+          "iteration": 29000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 35.752976417541504,
+            "SSIM": 0.99168940782547,
+            "LPIPS": 0.01628446768348416,
+            "MS-SSIM": 0.9932945688565572
+          }
+        },
+        {
+          "iteration": 30000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 35.769555727640785,
+            "SSIM": 0.9913873414198557,
+            "LPIPS": 0.016394464330126843,
+            "MS-SSIM": 0.9931994656721751
+          }
+        },
+        {
+          "iteration": 31000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 35.93382288614909,
+            "SSIM": 0.9918374617894491,
+            "LPIPS": 0.01590241971425712,
+            "MS-SSIM": 0.9934138079484304
+          }
+        },
+        {
+          "iteration": 32000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 36.04092394510905,
+            "SSIM": 0.9918793916702271,
+            "LPIPS": 0.015803840570151807,
+            "MS-SSIM": 0.9934268216292064
+          }
+        },
+        {
+          "iteration": 33000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 36.14694112141927,
+            "SSIM": 0.9920618931452433,
+            "LPIPS": 0.01550786355510354,
+            "MS-SSIM": 0.99361758629481
+          }
+        },
+        {
+          "iteration": 34000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 36.0926238377889,
+            "SSIM": 0.9920287171999613,
+            "LPIPS": 0.015504696809997161,
+            "MS-SSIM": 0.9936133484045665
+          }
+        },
+        {
+          "iteration": 35000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 36.203920682271324,
+            "SSIM": 0.9920853257179261,
+            "LPIPS": 0.015395095106214285,
+            "MS-SSIM": 0.9936532735824585
+          }
+        },
+        {
+          "iteration": 36000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 36.2874667485555,
+            "SSIM": 0.9922374745210012,
+            "LPIPS": 0.015130019172405203,
+            "MS-SSIM": 0.9938142557938894
+          }
+        },
+        {
+          "iteration": 37000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 36.33632469177246,
+            "SSIM": 0.9922193686167399,
+            "LPIPS": 0.015036529721692204,
+            "MS-SSIM": 0.9938087423642477
+          }
+        },
+        {
+          "iteration": 38000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 36.36938362121582,
+            "SSIM": 0.9923141002655029,
+            "LPIPS": 0.014963021269068122,
+            "MS-SSIM": 0.9938901344935099
+          }
+        },
+        {
+          "iteration": 39000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 36.37457110087077,
+            "SSIM": 0.9923515399297078,
+            "LPIPS": 0.014810305632029971,
+            "MS-SSIM": 0.9939126352469126
+          }
+        },
+        {
+          "iteration": 40000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 36.47837308247884,
+            "SSIM": 0.9924322863419851,
+            "LPIPS": 0.014767398592084646,
+            "MS-SSIM": 0.9939826925595602
+          }
+        },
+        {
+          "iteration": 41000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 36.52110430399577,
+            "SSIM": 0.9924584031105042,
+            "LPIPS": 0.014751069682339827,
+            "MS-SSIM": 0.9940299530824025
+          }
+        },
+        {
+          "iteration": 42000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 36.51397438049317,
+            "SSIM": 0.9924976964791615,
+            "LPIPS": 0.014622550985465447,
+            "MS-SSIM": 0.9940442164738973
+          }
+        },
+        {
+          "iteration": 43000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 36.59691823323568,
+            "SSIM": 0.9925043145815532,
+            "LPIPS": 0.01464257772701482,
+            "MS-SSIM": 0.994071493546168
+          }
+        },
+        {
+          "iteration": 44000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 36.58888651529948,
+            "SSIM": 0.9925128738085429,
+            "LPIPS": 0.014583150173226993,
+            "MS-SSIM": 0.9940733472506206
+          }
+        },
+        {
+          "iteration": 45000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 36.62774314880371,
+            "SSIM": 0.9925664861996969,
+            "LPIPS": 0.014461746951565147,
+            "MS-SSIM": 0.9941540638605754
+          }
+        },
+        {
+          "iteration": 46000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 36.58901596069336,
+            "SSIM": 0.9925440708796184,
+            "LPIPS": 0.01448837968831261,
+            "MS-SSIM": 0.9941297074158987
+          }
+        },
+        {
+          "iteration": 47000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 36.71969432830811,
+            "SSIM": 0.992652710278829,
+            "LPIPS": 0.01433172686956823,
+            "MS-SSIM": 0.9942265252272288
+          }
+        },
+        {
+          "iteration": 48000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 36.698943583170575,
+            "SSIM": 0.9925839463869731,
+            "LPIPS": 0.014458597544580698,
+            "MS-SSIM": 0.9941931386788686
+          }
+        },
+        {
+          "iteration": 49000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 36.7576602935791,
+            "SSIM": 0.9926497975985209,
+            "LPIPS": 0.014299236905450622,
+            "MS-SSIM": 0.9942241907119751
+          }
+        },
+        {
+          "iteration": 50000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 36.727505620320635,
+            "SSIM": 0.9926740308602651,
+            "LPIPS": 0.01421053974578778,
+            "MS-SSIM": 0.9942520320415497
+          }
+        }
+      ],
+      "diagnostic": {
+        "per_frame": [
+          {
+            "frame_id": 1,
+            "centroid_distance": 0.021761964590248633,
+            "centroid_distance_pixels": 27.028868858746154,
+            "background_false_coverage": 0.7416438176810805,
+            "predicted_foreground_fraction": 0.7629555555555556,
+            "gt_foreground_fraction": 0.08770972222222222
+          },
+          {
+            "frame_id": 5,
+            "centroid_distance": 0.02670007288955961,
+            "centroid_distance_pixels": 30.17627075289347,
+            "background_false_coverage": 0.7618001460055159,
+            "predicted_foreground_fraction": 0.7812541666666667,
+            "gt_foreground_fraction": 0.08774375
+          },
+          {
+            "frame_id": 9,
+            "centroid_distance": 0.02004153037747473,
+            "centroid_distance_pixels": 27.167673134477766,
+            "background_false_coverage": 0.729639422820774,
+            "predicted_foreground_fraction": 0.7506520833333333,
+            "gt_foreground_fraction": 0.0876125
+          },
+          {
+            "frame_id": 13,
+            "centroid_distance": 0.018861585316196416,
+            "centroid_distance_pixels": 30.122863402982265,
+            "background_false_coverage": 0.6846454242323244,
+            "predicted_foreground_fraction": 0.7106215277777778,
+            "gt_foreground_fraction": 0.0873875
+          },
+          {
+            "frame_id": 17,
+            "centroid_distance": 0.023687890881574192,
+            "centroid_distance_pixels": 36.86370031154734,
+            "background_false_coverage": 0.6583745717548535,
+            "predicted_foreground_fraction": 0.6876965277777778,
+            "gt_foreground_fraction": 0.08784722222222222
+          },
+          {
+            "frame_id": 21,
+            "centroid_distance": 0.02467156815958243,
+            "centroid_distance_pixels": 39.389292804859345,
+            "background_false_coverage": 0.6687303860333323,
+            "predicted_foreground_fraction": 0.6978847222222222,
+            "gt_foreground_fraction": 0.08830555555555555
+          },
+          {
+            "frame_id": 25,
+            "centroid_distance": 0.03546952827411677,
+            "centroid_distance_pixels": 42.39827455284755,
+            "background_false_coverage": 0.7384706406182335,
+            "predicted_foreground_fraction": 0.7617715277777778,
+            "gt_foreground_fraction": 0.08916111111111111
+          },
+          {
+            "frame_id": 29,
+            "centroid_distance": 0.07322183371341466,
+            "centroid_distance_pixels": 69.75686780163613,
+            "background_false_coverage": 0.9310184524322966,
+            "predicted_foreground_fraction": 0.9372451388888889,
+            "gt_foreground_fraction": 0.09026597222222223
+          },
+          {
+            "frame_id": 33,
+            "centroid_distance": 0.10550676109227654,
+            "centroid_distance_pixels": 97.70840932440785,
+            "background_false_coverage": 1.0,
+            "predicted_foreground_fraction": 1.0,
+            "gt_foreground_fraction": 0.09147916666666667
+          },
+          {
+            "frame_id": 37,
+            "centroid_distance": 0.12072500096962215,
+            "centroid_distance_pixels": 111.63533490863416,
+            "background_false_coverage": 1.0,
+            "predicted_foreground_fraction": 1.0,
+            "gt_foreground_fraction": 0.09298958333333333
+          },
+          {
+            "frame_id": 41,
+            "centroid_distance": 0.12636711535670458,
+            "centroid_distance_pixels": 117.4771034629397,
+            "background_false_coverage": 1.0,
+            "predicted_foreground_fraction": 1.0,
+            "gt_foreground_fraction": 0.0939138888888889
+          },
+          {
+            "frame_id": 45,
+            "centroid_distance": 0.12317262562635399,
+            "centroid_distance_pixels": 116.1617835221135,
+            "background_false_coverage": 1.0,
+            "predicted_foreground_fraction": 1.0,
+            "gt_foreground_fraction": 0.09598194444444444
+          },
+          {
+            "frame_id": 49,
+            "centroid_distance": 0.09690093630912487,
+            "centroid_distance_pixels": 94.73908841972235,
+            "background_false_coverage": 0.9976692381789104,
+            "predicted_foreground_fraction": 0.9978979166666667,
+            "gt_foreground_fraction": 0.09811319444444444
+          },
+          {
+            "frame_id": 53,
+            "centroid_distance": 0.02269218622448572,
+            "centroid_distance_pixels": 33.42836511242077,
+            "background_false_coverage": 0.5767439848474081,
+            "predicted_foreground_fraction": 0.6194868055555556,
+            "gt_foreground_fraction": 0.10099722222222222
+          },
+          {
+            "frame_id": 57,
+            "centroid_distance": 0.12530843917178805,
+            "centroid_distance_pixels": 128.94023372131684,
+            "background_false_coverage": 0.38597729545320864,
+            "predicted_foreground_fraction": 0.4489458333333333,
+            "gt_foreground_fraction": 0.102725
+          },
+          {
+            "frame_id": 61,
+            "centroid_distance": 0.1607818898318514,
+            "centroid_distance_pixels": 214.34349873894027,
+            "background_false_coverage": 0.3067141494376572,
+            "predicted_foreground_fraction": 0.3773798611111111,
+            "gt_foreground_fraction": 0.10240347222222222
+          },
+          {
+            "frame_id": 65,
+            "centroid_distance": 0.1633909160452846,
+            "centroid_distance_pixels": 220.09957877121093,
+            "background_false_coverage": 0.3234531181884795,
+            "predicted_foreground_fraction": 0.3919236111111111,
+            "gt_foreground_fraction": 0.10155277777777778
+          },
+          {
+            "frame_id": 69,
+            "centroid_distance": 0.15857389457627669,
+            "centroid_distance_pixels": 209.76239299862928,
+            "background_false_coverage": 0.3334326480361547,
+            "predicted_foreground_fraction": 0.40010625,
+            "gt_foreground_fraction": 0.10031597222222222
+          },
+          {
+            "frame_id": 73,
+            "centroid_distance": 0.1571655502682585,
+            "centroid_distance_pixels": 198.1923777299517,
+            "background_false_coverage": 0.31368991559170134,
+            "predicted_foreground_fraction": 0.3808326388888889,
+            "gt_foreground_fraction": 0.09821597222222223
+          },
+          {
+            "frame_id": 77,
+            "centroid_distance": 0.15164032057078117,
+            "centroid_distance_pixels": 184.37332227921962,
+            "background_false_coverage": 0.31399004161997635,
+            "predicted_foreground_fraction": 0.3785673611111111,
+            "gt_foreground_fraction": 0.09582013888888889
+          },
+          {
+            "frame_id": 81,
+            "centroid_distance": 0.14249302730396865,
+            "centroid_distance_pixels": 166.7180473918218,
+            "background_false_coverage": 0.3318246820655253,
+            "predicted_foreground_fraction": 0.39369930555555555,
+            "gt_foreground_fraction": 0.09288611111111111
+          },
+          {
+            "frame_id": 85,
+            "centroid_distance": 0.13480531725228892,
+            "centroid_distance_pixels": 148.9901078033554,
+            "background_false_coverage": 0.34931695178564065,
+            "predicted_foreground_fraction": 0.408275,
+            "gt_foreground_fraction": 0.09077916666666666
+          },
+          {
+            "frame_id": 89,
+            "centroid_distance": 0.12815265689179747,
+            "centroid_distance_pixels": 143.79107960832968,
+            "background_false_coverage": 0.3516228499478427,
+            "predicted_foreground_fraction": 0.41199930555555553,
+            "gt_foreground_fraction": 0.0932875
+          },
+          {
+            "frame_id": 93,
+            "centroid_distance": 0.12126992906004073,
+            "centroid_distance_pixels": 148.59615891680238,
+            "background_false_coverage": 0.349126255704602,
+            "predicted_foreground_fraction": 0.4121763888888889,
+            "gt_foreground_fraction": 0.0970375
+          },
+          {
+            "frame_id": 97,
+            "centroid_distance": 0.09701499537317619,
+            "centroid_distance_pixels": 132.0848002336668,
+            "background_false_coverage": 0.3242902899488961,
+            "predicted_foreground_fraction": 0.39170625,
+            "gt_foreground_fraction": 0.10000902777777777
+          },
+          {
+            "frame_id": 101,
+            "centroid_distance": 0.08470212476814049,
+            "centroid_distance_pixels": 127.88769428549061,
+            "background_false_coverage": 0.2931144644669422,
+            "predicted_foreground_fraction": 0.3652534722222222,
+            "gt_foreground_fraction": 0.10224444444444444
+          },
+          {
+            "frame_id": 105,
+            "centroid_distance": 0.06983418291399254,
+            "centroid_distance_pixels": 111.31824667678838,
+            "background_false_coverage": 0.26099953343532656,
+            "predicted_foreground_fraction": 0.3377173611111111,
+            "gt_foreground_fraction": 0.10397083333333333
+          },
+          {
+            "frame_id": 109,
+            "centroid_distance": 0.05822207166548321,
+            "centroid_distance_pixels": 92.04184275633914,
+            "background_false_coverage": 0.2510592669663106,
+            "predicted_foreground_fraction": 0.32954791666666666,
+            "gt_foreground_fraction": 0.10495625
+          },
+          {
+            "frame_id": 113,
+            "centroid_distance": 0.05646660839479598,
+            "centroid_distance_pixels": 83.3835825444792,
+            "background_false_coverage": 0.24663973228037314,
+            "predicted_foreground_fraction": 0.3255868055555556,
+            "gt_foreground_fraction": 0.10499236111111111
+          },
+          {
+            "frame_id": 117,
+            "centroid_distance": 0.04920332789589966,
+            "centroid_distance_pixels": 64.64408044009272,
+            "background_false_coverage": 0.2407802002217784,
+            "predicted_foreground_fraction": 0.32085138888888887,
+            "gt_foreground_fraction": 0.10571388888888889
+          },
+          {
+            "frame_id": 121,
+            "centroid_distance": 0.03951591978173522,
+            "centroid_distance_pixels": 40.19962975297996,
+            "background_false_coverage": 0.2444712361436411,
+            "predicted_foreground_fraction": 0.32397430555555556,
+            "gt_foreground_fraction": 0.10546736111111112
+          },
+          {
+            "frame_id": 125,
+            "centroid_distance": 0.034319448639669764,
+            "centroid_distance_pixels": 31.735464811807034,
+            "background_false_coverage": 0.24623082447951328,
+            "predicted_foreground_fraction": 0.3248701388888889,
+            "gt_foreground_fraction": 0.10467083333333334
+          },
+          {
+            "frame_id": 129,
+            "centroid_distance": 0.040232134094533946,
+            "centroid_distance_pixels": 52.32403589093966,
+            "background_false_coverage": 0.24423769731309752,
+            "predicted_foreground_fraction": 0.32324722222222224,
+            "gt_foreground_fraction": 0.10481388888888889
+          },
+          {
+            "frame_id": 133,
+            "centroid_distance": 0.0606565240018167,
+            "centroid_distance_pixels": 88.61945816450275,
+            "background_false_coverage": 0.2370866338917373,
+            "predicted_foreground_fraction": 0.31648611111111113,
+            "gt_foreground_fraction": 0.10430069444444444
+          },
+          {
+            "frame_id": 137,
+            "centroid_distance": 0.0826415526141548,
+            "centroid_distance_pixels": 126.4313216963495,
+            "background_false_coverage": 0.21982649878889654,
+            "predicted_foreground_fraction": 0.2997520833333333,
+            "gt_foreground_fraction": 0.10263194444444444
+          },
+          {
+            "frame_id": 141,
+            "centroid_distance": 0.1139951203588495,
+            "centroid_distance_pixels": 178.42208484054387,
+            "background_false_coverage": 0.21567215053738537,
+            "predicted_foreground_fraction": 0.29433888888888887,
+            "gt_foreground_fraction": 0.10051875
+          },
+          {
+            "frame_id": 145,
+            "centroid_distance": 0.13429847630763292,
+            "centroid_distance_pixels": 208.15374559798,
+            "background_false_coverage": 0.20504335348095584,
+            "predicted_foreground_fraction": 0.2834305555555556,
+            "gt_foreground_fraction": 0.09889652777777778
+          },
+          {
+            "frame_id": 149,
+            "centroid_distance": 0.13488523143458273,
+            "centroid_distance_pixels": 209.51906130369852,
+            "background_false_coverage": 0.18783894152866526,
+            "predicted_foreground_fraction": 0.26719930555555554,
+            "gt_foreground_fraction": 0.09786041666666667
+          },
+          {
+            "frame_id": 153,
+            "centroid_distance": 0.1342726976059437,
+            "centroid_distance_pixels": 208.07653121063825,
+            "background_false_coverage": 0.17641272303872668,
+            "predicted_foreground_fraction": 0.2573590277777778,
+            "gt_foreground_fraction": 0.09850763888888889
+          },
+          {
+            "frame_id": 157,
+            "centroid_distance": 0.13390702951732505,
+            "centroid_distance_pixels": 196.2552866174107,
+            "background_false_coverage": 0.18726033759897046,
+            "predicted_foreground_fraction": 0.26834166666666665,
+            "gt_foreground_fraction": 0.09993472222222222
+          },
+          {
+            "frame_id": 161,
+            "centroid_distance": 0.13361833208068116,
+            "centroid_distance_pixels": 188.99011184143933,
+            "background_false_coverage": 0.1929501912154531,
+            "predicted_foreground_fraction": 0.2748833333333333,
+            "gt_foreground_fraction": 0.10168958333333333
+          },
+          {
+            "frame_id": 165,
+            "centroid_distance": 0.12650528777700573,
+            "centroid_distance_pixels": 173.76312758192853,
+            "background_false_coverage": 0.18745186280298345,
+            "predicted_foreground_fraction": 0.27165347222222225,
+            "gt_foreground_fraction": 0.1037625
+          },
+          {
+            "frame_id": 169,
+            "centroid_distance": 0.11671277278803885,
+            "centroid_distance_pixels": 153.14157719850022,
+            "background_false_coverage": 0.18243125304975258,
+            "predicted_foreground_fraction": 0.26805972222222224,
+            "gt_foreground_fraction": 0.10483402777777778
+          },
+          {
+            "frame_id": 173,
+            "centroid_distance": 0.10978333890989413,
+            "centroid_distance_pixels": 139.7252847163209,
+            "background_false_coverage": 0.17201691893244708,
+            "predicted_foreground_fraction": 0.2601291666666667,
+            "gt_foreground_fraction": 0.10652361111111111
+          },
+          {
+            "frame_id": 177,
+            "centroid_distance": 0.1087372067562136,
+            "centroid_distance_pixels": 136.2724318118654,
+            "background_false_coverage": 0.16694409916630237,
+            "predicted_foreground_fraction": 0.256175,
+            "gt_foreground_fraction": 0.10722361111111112
+          },
+          {
+            "frame_id": 181,
+            "centroid_distance": 0.10805637261761367,
+            "centroid_distance_pixels": 134.11073028343344,
+            "background_false_coverage": 0.1602950266797665,
+            "predicted_foreground_fraction": 0.2509159722222222,
+            "gt_foreground_fraction": 0.10799027777777778
+          },
+          {
+            "frame_id": 185,
+            "centroid_distance": 0.11055342078582067,
+            "centroid_distance_pixels": 138.01088169671357,
+            "background_false_coverage": 0.15383350709135307,
+            "predicted_foreground_fraction": 0.24578402777777777,
+            "gt_foreground_fraction": 0.10875416666666667
+          },
+          {
+            "frame_id": 189,
+            "centroid_distance": 0.11261667823571807,
+            "centroid_distance_pixels": 140.3020332991518,
+            "background_false_coverage": 0.15421846330051853,
+            "predicted_foreground_fraction": 0.2460826388888889,
+            "gt_foreground_fraction": 0.1087048611111111
+          },
+          {
+            "frame_id": 193,
+            "centroid_distance": 0.11355078065940241,
+            "centroid_distance_pixels": 141.16842619085085,
+            "background_false_coverage": 0.15677367771377274,
+            "predicted_foreground_fraction": 0.24850347222222222,
+            "gt_foreground_fraction": 0.10886666666666667
+          },
+          {
+            "frame_id": 197,
+            "centroid_distance": 0.11386418327369216,
+            "centroid_distance_pixels": 141.55611118022023,
+            "background_false_coverage": 0.16155352607588702,
+            "predicted_foreground_fraction": 0.25279444444444443,
+            "gt_foreground_fraction": 0.10889097222222222
+          }
+        ],
+        "mean": {
+          "centroid_distance": 0.09523056720009768,
+          "centroid_distance_pixels": 121.51996553907875,
+          "background_false_coverage": 0.40634632805169946,
+          "predicted_foreground_fraction": 0.46632030555555554,
+          "gt_foreground_fraction": 0.0992252361111111
+        }
+      }
+    },
+    {
+      "id": "G1_centroid",
+      "directory": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_centroid_tuning\\G1_centroid\\rubber_duck",
+      "scores": {
+        "SSIM": 0.9927845001220703,
+        "PSNR": 37.527896881103516,
+        "LPIPS": 0.014306211844086647,
+        "MS-SSIM": 0.9947529435157776
+      },
+      "per_view": {
+        "SSIM": {
+          "00000.png": 0.9918256998062134,
+          "00001.png": 0.9932523965835571,
+          "00002.png": 0.9935106635093689,
+          "00003.png": 0.9935314655303955,
+          "00004.png": 0.9936357736587524,
+          "00005.png": 0.9937264919281006,
+          "00006.png": 0.993418276309967,
+          "00007.png": 0.9938327670097351,
+          "00008.png": 0.9933934807777405,
+          "00009.png": 0.9920552968978882,
+          "00010.png": 0.9907891154289246,
+          "00011.png": 0.9895330667495728,
+          "00012.png": 0.990045964717865,
+          "00013.png": 0.9908012747764587,
+          "00014.png": 0.9901251196861267,
+          "00015.png": 0.9902145862579346,
+          "00016.png": 0.9877256751060486,
+          "00017.png": 0.988370954990387,
+          "00018.png": 0.9887959361076355,
+          "00019.png": 0.9881917834281921,
+          "00020.png": 0.9915462732315063,
+          "00021.png": 0.9843617081642151,
+          "00022.png": 0.9898724555969238,
+          "00023.png": 0.9921253323554993,
+          "00024.png": 0.9905405044555664,
+          "00025.png": 0.9905555248260498,
+          "00026.png": 0.9913287162780762,
+          "00027.png": 0.9935851693153381,
+          "00028.png": 0.993635892868042,
+          "00029.png": 0.9929046034812927,
+          "00030.png": 0.9947945475578308,
+          "00031.png": 0.9928634166717529,
+          "00032.png": 0.9937312602996826,
+          "00033.png": 0.9941138625144958,
+          "00034.png": 0.993208110332489,
+          "00035.png": 0.9950984716415405,
+          "00036.png": 0.9943652749061584,
+          "00037.png": 0.9948798418045044,
+          "00038.png": 0.990608811378479,
+          "00039.png": 0.9953062534332275,
+          "00040.png": 0.9958661794662476,
+          "00041.png": 0.9957699179649353,
+          "00042.png": 0.9962664246559143,
+          "00043.png": 0.9961771965026855,
+          "00044.png": 0.9950203895568848,
+          "00045.png": 0.9969856142997742,
+          "00046.png": 0.9963759183883667,
+          "00047.png": 0.9968212842941284,
+          "00048.png": 0.9969659447669983,
+          "00049.png": 0.9967724680900574
+        },
+        "PSNR": {
+          "00000.png": 36.273067474365234,
+          "00001.png": 36.88871765136719,
+          "00002.png": 37.30720138549805,
+          "00003.png": 37.46438980102539,
+          "00004.png": 37.55010986328125,
+          "00005.png": 37.92323303222656,
+          "00006.png": 37.872802734375,
+          "00007.png": 38.157047271728516,
+          "00008.png": 38.22031021118164,
+          "00009.png": 36.986328125,
+          "00010.png": 33.96955871582031,
+          "00011.png": 32.098297119140625,
+          "00012.png": 31.326007843017578,
+          "00013.png": 33.98924255371094,
+          "00014.png": 34.84307861328125,
+          "00015.png": 34.350006103515625,
+          "00016.png": 32.83145523071289,
+          "00017.png": 32.82746887207031,
+          "00018.png": 31.750652313232422,
+          "00019.png": 32.70150375366211,
+          "00020.png": 36.846317291259766,
+          "00021.png": 29.330974578857422,
+          "00022.png": 35.2201042175293,
+          "00023.png": 37.93733215332031,
+          "00024.png": 35.73489761352539,
+          "00025.png": 35.91451644897461,
+          "00026.png": 36.63982009887695,
+          "00027.png": 39.65205383300781,
+          "00028.png": 39.252784729003906,
+          "00029.png": 37.96563720703125,
+          "00030.png": 39.556602478027344,
+          "00031.png": 37.94133377075195,
+          "00032.png": 38.294761657714844,
+          "00033.png": 39.26519012451172,
+          "00034.png": 37.934810638427734,
+          "00035.png": 40.841861724853516,
+          "00036.png": 39.57760238647461,
+          "00037.png": 39.055599212646484,
+          "00038.png": 31.110301971435547,
+          "00039.png": 38.11191177368164,
+          "00040.png": 40.98583984375,
+          "00041.png": 41.504608154296875,
+          "00042.png": 43.016357421875,
+          "00043.png": 42.48138427734375,
+          "00044.png": 39.185272216796875,
+          "00045.png": 44.122581481933594,
+          "00046.png": 42.994964599609375,
+          "00047.png": 43.20542907714844,
+          "00048.png": 43.88810729980469,
+          "00049.png": 43.495269775390625
+        },
+        "LPIPS": {
+          "00000.png": 0.010440623387694359,
+          "00001.png": 0.009255122393369675,
+          "00002.png": 0.008795715868473053,
+          "00003.png": 0.008658463135361671,
+          "00004.png": 0.009106157347559929,
+          "00005.png": 0.009638529270887375,
+          "00006.png": 0.009931174106895924,
+          "00007.png": 0.009505398571491241,
+          "00008.png": 0.010232675820589066,
+          "00009.png": 0.012118677608668804,
+          "00010.png": 0.014038076624274254,
+          "00011.png": 0.01625601388514042,
+          "00012.png": 0.016070174053311348,
+          "00013.png": 0.016306962817907333,
+          "00014.png": 0.01809754967689514,
+          "00015.png": 0.02036869153380394,
+          "00016.png": 0.024617187678813934,
+          "00017.png": 0.02456393465399742,
+          "00018.png": 0.023463573306798935,
+          "00019.png": 0.024833017960190773,
+          "00020.png": 0.02127905562520027,
+          "00021.png": 0.02913517877459526,
+          "00022.png": 0.022473998367786407,
+          "00023.png": 0.019522683694958687,
+          "00024.png": 0.022208385169506073,
+          "00025.png": 0.022347528487443924,
+          "00026.png": 0.02097245119512081,
+          "00027.png": 0.016871647909283638,
+          "00028.png": 0.01609586738049984,
+          "00029.png": 0.017575018107891083,
+          "00030.png": 0.01242724247276783,
+          "00031.png": 0.01427914947271347,
+          "00032.png": 0.013921476900577545,
+          "00033.png": 0.01457449235022068,
+          "00034.png": 0.015276012942194939,
+          "00035.png": 0.01362917385995388,
+          "00036.png": 0.01371796801686287,
+          "00037.png": 0.012943447567522526,
+          "00038.png": 0.01624990999698639,
+          "00039.png": 0.009936723858118057,
+          "00040.png": 0.008012383244931698,
+          "00041.png": 0.009302258491516113,
+          "00042.png": 0.008458981290459633,
+          "00043.png": 0.00873122550547123,
+          "00044.png": 0.008693616837263107,
+          "00045.png": 0.006364333443343639,
+          "00046.png": 0.0065294960513710976,
+          "00047.png": 0.006142075173556805,
+          "00048.png": 0.005549022462219,
+          "00049.png": 0.005792136304080486
+        },
+        "MS-SSIM": {
+          "00000.png": 0.9961687922477722,
+          "00001.png": 0.9966773986816406,
+          "00002.png": 0.9967376589775085,
+          "00003.png": 0.9967155456542969,
+          "00004.png": 0.9964917898178101,
+          "00005.png": 0.9962570667266846,
+          "00006.png": 0.9961015582084656,
+          "00007.png": 0.99640953540802,
+          "00008.png": 0.9964599013328552,
+          "00009.png": 0.9952793121337891,
+          "00010.png": 0.9931292533874512,
+          "00011.png": 0.9905071258544922,
+          "00012.png": 0.9899629354476929,
+          "00013.png": 0.9927846789360046,
+          "00014.png": 0.992785632610321,
+          "00015.png": 0.9923630952835083,
+          "00016.png": 0.9895893335342407,
+          "00017.png": 0.9898108243942261,
+          "00018.png": 0.9898438453674316,
+          "00019.png": 0.9894072413444519,
+          "00020.png": 0.9937548041343689,
+          "00021.png": 0.981749415397644,
+          "00022.png": 0.9911901354789734,
+          "00023.png": 0.9938640594482422,
+          "00024.png": 0.9921824336051941,
+          "00025.png": 0.9920846223831177,
+          "00026.png": 0.9925429224967957,
+          "00027.png": 0.9952667951583862,
+          "00028.png": 0.9951863288879395,
+          "00029.png": 0.9947576522827148,
+          "00030.png": 0.9967234134674072,
+          "00031.png": 0.9954143762588501,
+          "00032.png": 0.9960887432098389,
+          "00033.png": 0.996538519859314,
+          "00034.png": 0.9959218502044678,
+          "00035.png": 0.9975478649139404,
+          "00036.png": 0.9967648386955261,
+          "00037.png": 0.9968894720077515,
+          "00038.png": 0.9894214868545532,
+          "00039.png": 0.9968091249465942,
+          "00040.png": 0.9979852437973022,
+          "00041.png": 0.9978588819503784,
+          "00042.png": 0.9982737302780151,
+          "00043.png": 0.9983010292053223,
+          "00044.png": 0.9972326755523682,
+          "00045.png": 0.998762309551239,
+          "00046.png": 0.9985489845275879,
+          "00047.png": 0.9987696409225464,
+          "00048.png": 0.9988769888877869,
+          "00049.png": 0.9988601207733154
+        }
+      },
+      "coverage": {
+        "mask_l1": 0.15593390434980392,
+        "mask_iou": 0.4283092083957321,
+        "interior_hole_rate": 0.00017016240124771126,
+        "interior_pixels": 129217.86,
+        "foreground_psnr": 28.62556873321533
+      },
+      "centroid": {
+        "centroid_distance": 0.000495700339670293,
+        "centroid_squared_error": 6.079612707310389e-07,
+        "predicted_mean_alpha": 0.25426866859197617
+      },
+      "config": {
+        "enabled": true,
+        "parent_run": "",
+        "pixel_loss": "l1",
+        "structure": "ssim",
+        "perceptual_weight": 0.0,
+        "perceptual_interval": 4,
+        "timeline": "official_metadata",
+        "shared_physics_time": false,
+        "kinematic_weight": 0.0,
+        "isotropic_weight": 0.0,
+        "isotropic_scope": "rendered",
+        "isotropic_eps": 1e-08,
+        "isotropic_start": 0,
+        "engineering_smoke": false,
+        "allow_initial_capture": true,
+        "baseline_kind": "original",
+        "centroid_weight": 1.0,
+        "centroid_start": 3000,
+        "centroid_ramp": 2000,
+        "centroid_eps": 1e-06,
+        "mask_weight": 0.0,
+        "affine_weight": 0.0,
+        "coverage_density": false
+      },
+      "branch": {
+        "source": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_centroid_tuning\\shared_prefix\\rubber_duck",
+        "destination": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_centroid_tuning\\G1_centroid\\rubber_duck",
+        "iteration": 3000,
+        "identical_full_checkpoint_sha256": "9f0f5d034fd2305869118e6d654de30c9ade5246ca10ab138c6bc4c379d8b389",
+        "source_config": {
+          "enabled": true,
+          "parent_run": "",
+          "pixel_loss": "l1",
+          "structure": "ssim",
+          "perceptual_weight": 0.0,
+          "perceptual_interval": 4,
+          "timeline": "official_metadata",
+          "shared_physics_time": false,
+          "kinematic_weight": 0.0,
+          "isotropic_weight": 0.0,
+          "isotropic_scope": "rendered",
+          "isotropic_eps": 1e-08,
+          "isotropic_start": 0,
+          "engineering_smoke": false,
+          "allow_initial_capture": true,
+          "baseline_kind": "original",
+          "centroid_weight": 0.0,
+          "centroid_start": 3000,
+          "centroid_ramp": 2000,
+          "centroid_eps": 1e-06,
+          "mask_weight": 0.0,
+          "affine_weight": 0.0,
+          "coverage_density": false
+        },
+        "branch_config": {
+          "enabled": true,
+          "parent_run": "",
+          "pixel_loss": "l1",
+          "structure": "ssim",
+          "perceptual_weight": 0.0,
+          "perceptual_interval": 4,
+          "timeline": "official_metadata",
+          "shared_physics_time": false,
+          "kinematic_weight": 0.0,
+          "isotropic_weight": 0.0,
+          "isotropic_scope": "rendered",
+          "isotropic_eps": 1e-08,
+          "isotropic_start": 0,
+          "engineering_smoke": false,
+          "allow_initial_capture": true,
+          "baseline_kind": "original",
+          "centroid_weight": 1.0,
+          "centroid_start": 3000,
+          "centroid_ramp": 2000,
+          "centroid_eps": 1e-06,
+          "mask_weight": 0.0,
+          "affine_weight": 0.0,
+          "coverage_density": false
+        },
+        "only_change": "centroid_weight 0 -> 1.0",
+        "initialization": "shared random step0 followed by shared pre-activation training",
+        "created_utc": "2026-10-27T12:39:01.858619+00:00"
+      },
+      "selection": {
+        "PSNR": {
+          "value": 37.1440814336141,
+          "iteration": 49000,
+          "snapshot": "best",
+          "metrics": {
+            "PSNR": 37.1440814336141,
+            "SSIM": 0.9924766798814137,
+            "LPIPS": 0.014984739944338799,
+            "MS-SSIM": 0.9943582435448964
+          },
+          "selection_split": "validation"
+        },
+        "SSIM": {
+          "value": 0.9925026794274648,
+          "iteration": 50000,
+          "snapshot": "metric_ssim",
+          "metrics": {
+            "PSNR": 37.118106079101565,
+            "SSIM": 0.9925026794274648,
+            "LPIPS": 0.014846418068433802,
+            "MS-SSIM": 0.9943678458531697
+          },
+          "selection_split": "validation"
+        },
+        "LPIPS": {
+          "value": 0.014846418068433802,
+          "iteration": 50000,
+          "snapshot": "metric_lpips",
+          "metrics": {
+            "PSNR": 37.118106079101565,
+            "SSIM": 0.9925026794274648,
+            "LPIPS": 0.014846418068433802,
+            "MS-SSIM": 0.9943678458531697
+          },
+          "selection_split": "validation"
+        },
+        "MS-SSIM": {
+          "value": 0.9943678458531697,
+          "iteration": 50000,
+          "snapshot": "metric_ms_ssim",
+          "metrics": {
+            "PSNR": 37.118106079101565,
+            "SSIM": 0.9925026794274648,
+            "LPIPS": 0.014846418068433802,
+            "MS-SSIM": 0.9943678458531697
+          },
+          "selection_split": "validation"
+        }
+      },
+      "history": [
+        {
+          "iteration": 0,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 9.383214569091797,
+            "SSIM": 0.45851053992907204,
+            "LPIPS": 0.1782456398010254,
+            "MS-SSIM": 0.701677280664444
+          }
+        },
+        {
+          "iteration": 1000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 17.413473224639894,
+            "SSIM": 0.8736079891522726,
+            "LPIPS": 0.12697355796893436,
+            "MS-SSIM": 0.8478202641010284
+          }
+        },
+        {
+          "iteration": 2000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 17.49575049082438,
+            "SSIM": 0.8701422472794851,
+            "LPIPS": 0.13418723717331887,
+            "MS-SSIM": 0.8422857960065205
+          }
+        },
+        {
+          "iteration": 3000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 17.770377540588377,
+            "SSIM": 0.8750445604324341,
+            "LPIPS": 0.12883577222625414,
+            "MS-SSIM": 0.8511506835619609
+          }
+        },
+        {
+          "iteration": 4000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 25.124427541097006,
+            "SSIM": 0.9685096144676208,
+            "LPIPS": 0.059103240817785264,
+            "MS-SSIM": 0.9583374877770742
+          }
+        },
+        {
+          "iteration": 5000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 25.850495719909667,
+            "SSIM": 0.971755975484848,
+            "LPIPS": 0.05345927526553472,
+            "MS-SSIM": 0.9642687877019246
+          }
+        },
+        {
+          "iteration": 6000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 27.875514030456543,
+            "SSIM": 0.9773782571156819,
+            "LPIPS": 0.045173874994119005,
+            "MS-SSIM": 0.9742138663927714
+          }
+        },
+        {
+          "iteration": 7000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 28.355242093404133,
+            "SSIM": 0.97774338722229,
+            "LPIPS": 0.04377221545825402,
+            "MS-SSIM": 0.9752447803815206
+          }
+        },
+        {
+          "iteration": 8000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 28.699162864685057,
+            "SSIM": 0.9788030683994293,
+            "LPIPS": 0.040986754248539606,
+            "MS-SSIM": 0.9775462011496227
+          }
+        },
+        {
+          "iteration": 9000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 29.528422800699868,
+            "SSIM": 0.980969387292862,
+            "LPIPS": 0.03631114133944114,
+            "MS-SSIM": 0.9795248885949452
+          }
+        },
+        {
+          "iteration": 10000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 29.48409169514974,
+            "SSIM": 0.9800178229808807,
+            "LPIPS": 0.03778064654519161,
+            "MS-SSIM": 0.9794153869152069
+          }
+        },
+        {
+          "iteration": 11000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 30.457788721720377,
+            "SSIM": 0.9830614368120829,
+            "LPIPS": 0.03347628079354763,
+            "MS-SSIM": 0.9831668098767599
+          }
+        },
+        {
+          "iteration": 12000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 31.304940032958985,
+            "SSIM": 0.984547746181488,
+            "LPIPS": 0.030639139004051685,
+            "MS-SSIM": 0.9851245780785879
+          }
+        },
+        {
+          "iteration": 13000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 31.267211214701334,
+            "SSIM": 0.9842338860034943,
+            "LPIPS": 0.030224354254702726,
+            "MS-SSIM": 0.9852312068144481
+          }
+        },
+        {
+          "iteration": 14000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 31.807058397928873,
+            "SSIM": 0.9846050759156545,
+            "LPIPS": 0.028757034800946712,
+            "MS-SSIM": 0.9858120322227478
+          }
+        },
+        {
+          "iteration": 15000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 32.5261199315389,
+            "SSIM": 0.9862567822138468,
+            "LPIPS": 0.02630571791281303,
+            "MS-SSIM": 0.9876323541005453
+          }
+        },
+        {
+          "iteration": 16000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 33.07350730895996,
+            "SSIM": 0.9867737273375193,
+            "LPIPS": 0.02489164484043916,
+            "MS-SSIM": 0.9885629077752431
+          }
+        },
+        {
+          "iteration": 17000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 33.41774133046468,
+            "SSIM": 0.9876361469427745,
+            "LPIPS": 0.02364245072628061,
+            "MS-SSIM": 0.9894247174263
+          }
+        },
+        {
+          "iteration": 18000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 33.70926914215088,
+            "SSIM": 0.9881044884522756,
+            "LPIPS": 0.02263123154019316,
+            "MS-SSIM": 0.9899313807487488
+          }
+        },
+        {
+          "iteration": 19000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 33.89494673411051,
+            "SSIM": 0.9888183196385701,
+            "LPIPS": 0.02151895153025786,
+            "MS-SSIM": 0.990542064110438
+          }
+        },
+        {
+          "iteration": 20000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 34.31435642242432,
+            "SSIM": 0.9888556182384491,
+            "LPIPS": 0.021452246916790804,
+            "MS-SSIM": 0.9908064802487692
+          }
+        },
+        {
+          "iteration": 21000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 34.75947265625,
+            "SSIM": 0.9894366840521495,
+            "LPIPS": 0.020382898456106583,
+            "MS-SSIM": 0.9912114302317302
+          }
+        },
+        {
+          "iteration": 22000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 34.58785915374756,
+            "SSIM": 0.9892919957637787,
+            "LPIPS": 0.02037025447934866,
+            "MS-SSIM": 0.9913048386573792
+          }
+        },
+        {
+          "iteration": 23000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 34.932858276367185,
+            "SSIM": 0.9901462515195211,
+            "LPIPS": 0.019189307590325673,
+            "MS-SSIM": 0.9918569882710775
+          }
+        },
+        {
+          "iteration": 24000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 35.089218839009604,
+            "SSIM": 0.9902599771817525,
+            "LPIPS": 0.01899351061632236,
+            "MS-SSIM": 0.9920756936073303
+          }
+        },
+        {
+          "iteration": 25000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 35.47609539031983,
+            "SSIM": 0.9907047152519226,
+            "LPIPS": 0.018291435297578575,
+            "MS-SSIM": 0.9925300439198812
+          }
+        },
+        {
+          "iteration": 26000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 35.72816874186198,
+            "SSIM": 0.990865542491277,
+            "LPIPS": 0.018038738363732893,
+            "MS-SSIM": 0.9926733473936716
+          }
+        },
+        {
+          "iteration": 27000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 35.68993631998698,
+            "SSIM": 0.9910400966803233,
+            "LPIPS": 0.01766709244499604,
+            "MS-SSIM": 0.9928784867127737
+          }
+        },
+        {
+          "iteration": 28000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 35.810028394063316,
+            "SSIM": 0.9910456260045369,
+            "LPIPS": 0.017421719804406165,
+            "MS-SSIM": 0.9929195006688436
+          }
+        },
+        {
+          "iteration": 29000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 35.863824144999185,
+            "SSIM": 0.9912760178248088,
+            "LPIPS": 0.017047971952706575,
+            "MS-SSIM": 0.9931215425332387
+          }
+        },
+        {
+          "iteration": 30000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 36.125224367777506,
+            "SSIM": 0.9914423763751984,
+            "LPIPS": 0.016831365056956808,
+            "MS-SSIM": 0.9933117806911469
+          }
+        },
+        {
+          "iteration": 31000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 36.26282653808594,
+            "SSIM": 0.9916731238365173,
+            "LPIPS": 0.016558237715313832,
+            "MS-SSIM": 0.9934073925018311
+          }
+        },
+        {
+          "iteration": 32000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 36.3983097076416,
+            "SSIM": 0.991751080751419,
+            "LPIPS": 0.016416338893274467,
+            "MS-SSIM": 0.9935482382774353
+          }
+        },
+        {
+          "iteration": 33000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 36.523218091328935,
+            "SSIM": 0.9919418672720591,
+            "LPIPS": 0.01620163437910378,
+            "MS-SSIM": 0.9937239825725556
+          }
+        },
+        {
+          "iteration": 34000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 36.51893609364827,
+            "SSIM": 0.9918932934602102,
+            "LPIPS": 0.01611880088845889,
+            "MS-SSIM": 0.993727042277654
+          }
+        },
+        {
+          "iteration": 35000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 36.594099617004396,
+            "SSIM": 0.9918748954931895,
+            "LPIPS": 0.01613388443365693,
+            "MS-SSIM": 0.9937661548455556
+          }
+        },
+        {
+          "iteration": 36000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 36.6175937016805,
+            "SSIM": 0.9920137186845144,
+            "LPIPS": 0.015855160433178146,
+            "MS-SSIM": 0.9939012547334035
+          }
+        },
+        {
+          "iteration": 37000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 36.737433179219565,
+            "SSIM": 0.9920920312404633,
+            "LPIPS": 0.01568436079348127,
+            "MS-SSIM": 0.9939785897731781
+          }
+        },
+        {
+          "iteration": 38000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 36.74035720825195,
+            "SSIM": 0.9921112736066182,
+            "LPIPS": 0.01566195838774244,
+            "MS-SSIM": 0.9940011541048686
+          }
+        },
+        {
+          "iteration": 39000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 36.77295087178548,
+            "SSIM": 0.9921349485715231,
+            "LPIPS": 0.015713187648604313,
+            "MS-SSIM": 0.9940469642480214
+          }
+        },
+        {
+          "iteration": 40000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 36.912225341796876,
+            "SSIM": 0.9922684629758199,
+            "LPIPS": 0.0154785282133768,
+            "MS-SSIM": 0.994175261259079
+          }
+        },
+        {
+          "iteration": 41000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 36.94858620961507,
+            "SSIM": 0.9922911087671916,
+            "LPIPS": 0.015351118504380186,
+            "MS-SSIM": 0.9941791792710623
+          }
+        },
+        {
+          "iteration": 42000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 36.924183972676595,
+            "SSIM": 0.9923220197359721,
+            "LPIPS": 0.015273320721462369,
+            "MS-SSIM": 0.9942087829113007
+          }
+        },
+        {
+          "iteration": 43000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 37.009164810180664,
+            "SSIM": 0.9922912538051605,
+            "LPIPS": 0.015382404594371716,
+            "MS-SSIM": 0.994193027416865
+          }
+        },
+        {
+          "iteration": 44000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 37.00294335683187,
+            "SSIM": 0.9923775056997935,
+            "LPIPS": 0.015249477823575337,
+            "MS-SSIM": 0.9942433754603068
+          }
+        },
+        {
+          "iteration": 45000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 37.04083251953125,
+            "SSIM": 0.992426457007726,
+            "LPIPS": 0.015124585945159197,
+            "MS-SSIM": 0.9943049569924672
+          }
+        },
+        {
+          "iteration": 46000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 36.997462590535484,
+            "SSIM": 0.9923839032649994,
+            "LPIPS": 0.015140562302743394,
+            "MS-SSIM": 0.9942755361398061
+          }
+        },
+        {
+          "iteration": 47000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 37.07794901529948,
+            "SSIM": 0.9924505571524302,
+            "LPIPS": 0.015077362147470316,
+            "MS-SSIM": 0.9943323949972789
+          }
+        },
+        {
+          "iteration": 48000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 37.066850344340004,
+            "SSIM": 0.9924003899097442,
+            "LPIPS": 0.015091065829619766,
+            "MS-SSIM": 0.9943179130554199
+          }
+        },
+        {
+          "iteration": 49000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 37.1440814336141,
+            "SSIM": 0.9924766798814137,
+            "LPIPS": 0.014984739944338799,
+            "MS-SSIM": 0.9943582435448964
+          }
+        },
+        {
+          "iteration": 50000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 37.118106079101565,
+            "SSIM": 0.9925026794274648,
+            "LPIPS": 0.014846418068433802,
+            "MS-SSIM": 0.9943678458531697
+          }
+        }
+      ],
+      "diagnostic": {
+        "per_frame": [
+          {
+            "frame_id": 1,
+            "centroid_distance": 0.0007203930695330416,
+            "centroid_distance_pixels": 0.8007939674894494,
+            "background_false_coverage": 0.1024230835397481,
+            "predicted_foreground_fraction": 0.18051111111111112,
+            "gt_foreground_fraction": 0.08770972222222222
+          },
+          {
+            "frame_id": 5,
+            "centroid_distance": 0.0005683755504525908,
+            "centroid_distance_pixels": 0.8100628606974963,
+            "background_false_coverage": 0.1032901482816186,
+            "predicted_foreground_fraction": 0.1813375,
+            "gt_foreground_fraction": 0.08774375
+          },
+          {
+            "frame_id": 9,
+            "centroid_distance": 0.00048144262859375946,
+            "centroid_distance_pixels": 0.5302165449184283,
+            "background_false_coverage": 0.10466206640392499,
+            "predicted_foreground_fraction": 0.18255416666666666,
+            "gt_foreground_fraction": 0.0876125
+          },
+          {
+            "frame_id": 13,
+            "centroid_distance": 0.00025231715179548043,
+            "centroid_distance_pixels": 0.24302773899219307,
+            "background_false_coverage": 0.10937844801478053,
+            "predicted_foreground_fraction": 0.18669166666666667,
+            "gt_foreground_fraction": 0.0873875
+          },
+          {
+            "frame_id": 17,
+            "centroid_distance": 0.0004423680066459666,
+            "centroid_distance_pixels": 0.4949761278205759,
+            "background_false_coverage": 0.11607841644461363,
+            "predicted_foreground_fraction": 0.19315972222222222,
+            "gt_foreground_fraction": 0.08784722222222222
+          },
+          {
+            "frame_id": 21,
+            "centroid_distance": 0.0002466091217854071,
+            "centroid_distance_pixels": 0.2706587701128241,
+            "background_false_coverage": 0.12269659669114287,
+            "predicted_foreground_fraction": 0.19966319444444444,
+            "gt_foreground_fraction": 0.08830555555555555
+          },
+          {
+            "frame_id": 25,
+            "centroid_distance": 0.0001403531558403042,
+            "centroid_distance_pixels": 0.13847193395503585,
+            "background_false_coverage": 0.1288365121286238,
+            "predicted_foreground_fraction": 0.2060972222222222,
+            "gt_foreground_fraction": 0.08916111111111111
+          },
+          {
+            "frame_id": 29,
+            "centroid_distance": 0.00036666161326309423,
+            "centroid_distance_pixels": 0.3481085677615354,
+            "background_false_coverage": 0.13430818073353246,
+            "predicted_foreground_fraction": 0.21206041666666667,
+            "gt_foreground_fraction": 0.09026597222222223
+          },
+          {
+            "frame_id": 33,
+            "centroid_distance": 0.00032914389703586925,
+            "centroid_distance_pixels": 0.2959623722842792,
+            "background_false_coverage": 0.14432877005511094,
+            "predicted_foreground_fraction": 0.2222861111111111,
+            "gt_foreground_fraction": 0.09147916666666667
+          },
+          {
+            "frame_id": 37,
+            "centroid_distance": 0.0002833515275476013,
+            "centroid_distance_pixels": 0.2614777376411572,
+            "background_false_coverage": 0.156468710162737,
+            "predicted_foreground_fraction": 0.2346638888888889,
+            "gt_foreground_fraction": 0.09298958333333333
+          },
+          {
+            "frame_id": 41,
+            "centroid_distance": 0.00043907355692727497,
+            "centroid_distance_pixels": 0.44274556648421376,
+            "background_false_coverage": 0.16871786775232916,
+            "predicted_foreground_fraction": 0.24659652777777777,
+            "gt_foreground_fraction": 0.0939138888888889
+          },
+          {
+            "frame_id": 45,
+            "centroid_distance": 0.00038830765753247623,
+            "centroid_distance_pixels": 0.6209039149485588,
+            "background_false_coverage": 0.1863731826890134,
+            "predicted_foreground_fraction": 0.26419930555555554,
+            "gt_foreground_fraction": 0.09598194444444444
+          },
+          {
+            "frame_id": 49,
+            "centroid_distance": 0.00033740782778995335,
+            "centroid_distance_pixels": 0.3149151580898866,
+            "background_false_coverage": 0.2038665852529843,
+            "predicted_foreground_fraction": 0.2818909722222222,
+            "gt_foreground_fraction": 0.09811319444444444
+          },
+          {
+            "frame_id": 53,
+            "centroid_distance": 0.00046109058681613094,
+            "centroid_distance_pixels": 0.6927434912577111,
+            "background_false_coverage": 0.2227274974431546,
+            "predicted_foreground_fraction": 0.30112916666666667,
+            "gt_foreground_fraction": 0.10099722222222222
+          },
+          {
+            "frame_id": 57,
+            "centroid_distance": 0.000623637837521157,
+            "centroid_distance_pixels": 0.8590338134226033,
+            "background_false_coverage": 0.25156724527040203,
+            "predicted_foreground_fraction": 0.32839583333333333,
+            "gt_foreground_fraction": 0.102725
+          },
+          {
+            "frame_id": 61,
+            "centroid_distance": 0.0005444904626485276,
+            "centroid_distance_pixels": 0.8105805036425536,
+            "background_false_coverage": 0.2638411684289604,
+            "predicted_foreground_fraction": 0.3392236111111111,
+            "gt_foreground_fraction": 0.10240347222222222
+          },
+          {
+            "frame_id": 65,
+            "centroid_distance": 0.00053867587141446,
+            "centroid_distance_pixels": 0.8177621630183678,
+            "background_false_coverage": 0.27807621791918774,
+            "predicted_foreground_fraction": 0.3513854166666667,
+            "gt_foreground_fraction": 0.10155277777777778
+          },
+          {
+            "frame_id": 69,
+            "centroid_distance": 0.0004876396801417207,
+            "centroid_distance_pixels": 0.7610096969813338,
+            "background_false_coverage": 0.28898648831186874,
+            "predicted_foreground_fraction": 0.3603125,
+            "gt_foreground_fraction": 0.10031597222222222
+          },
+          {
+            "frame_id": 73,
+            "centroid_distance": 0.0004151214236179847,
+            "centroid_distance_pixels": 0.662746486575033,
+            "background_false_coverage": 0.29087557149446813,
+            "predicted_foreground_fraction": 0.3605229166666667,
+            "gt_foreground_fraction": 0.09821597222222223
+          },
+          {
+            "frame_id": 77,
+            "centroid_distance": 0.0005419930809763724,
+            "centroid_distance_pixels": 0.8373315270863627,
+            "background_false_coverage": 0.2805250921837546,
+            "predicted_foreground_fraction": 0.34946319444444446,
+            "gt_foreground_fraction": 0.09582013888888889
+          },
+          {
+            "frame_id": 81,
+            "centroid_distance": 0.000327547450542855,
+            "centroid_distance_pixels": 0.311156582290083,
+            "background_false_coverage": 0.2692008537455483,
+            "predicted_foreground_fraction": 0.33705833333333335,
+            "gt_foreground_fraction": 0.09288611111111111
+          },
+          {
+            "frame_id": 85,
+            "centroid_distance": 0.00043472698424639903,
+            "centroid_distance_pixels": 0.5207610649878843,
+            "background_false_coverage": 0.25572032830308,
+            "predicted_foreground_fraction": 0.3232611111111111,
+            "gt_foreground_fraction": 0.09077916666666666
+          },
+          {
+            "frame_id": 89,
+            "centroid_distance": 0.0010851890281439076,
+            "centroid_distance_pixels": 1.123287263208505,
+            "background_false_coverage": 0.2441213909223339,
+            "predicted_foreground_fraction": 0.3145895833333333,
+            "gt_foreground_fraction": 0.0932875
+          },
+          {
+            "frame_id": 93,
+            "centroid_distance": 0.0005261470175609694,
+            "centroid_distance_pixels": 0.539364101691801,
+            "background_false_coverage": 0.23096120332301237,
+            "predicted_foreground_fraction": 0.3055375,
+            "gt_foreground_fraction": 0.0970375
+          },
+          {
+            "frame_id": 97,
+            "centroid_distance": 0.00047904880798659434,
+            "centroid_distance_pixels": 0.44081088800567364,
+            "background_false_coverage": 0.2232885052087714,
+            "predicted_foreground_fraction": 0.3009236111111111,
+            "gt_foreground_fraction": 0.10000902777777777
+          },
+          {
+            "frame_id": 101,
+            "centroid_distance": 0.00043049833478652107,
+            "centroid_distance_pixels": 0.4150911228892932,
+            "background_false_coverage": 0.21548800712888933,
+            "predicted_foreground_fraction": 0.2956243055555556,
+            "gt_foreground_fraction": 0.10224444444444444
+          },
+          {
+            "frame_id": 105,
+            "centroid_distance": 0.00013674408234209932,
+            "centroid_distance_pixels": 0.1262675135725283,
+            "background_false_coverage": 0.19830703675630598,
+            "predicted_foreground_fraction": 0.28146597222222225,
+            "gt_foreground_fraction": 0.10397083333333333
+          },
+          {
+            "frame_id": 109,
+            "centroid_distance": 0.00014919708593424917,
+            "centroid_distance_pixels": 0.15936601645286508,
+            "background_false_coverage": 0.17778460550112773,
+            "predicted_foreground_fraction": 0.2638861111111111,
+            "gt_foreground_fraction": 0.10495625
+          },
+          {
+            "frame_id": 113,
+            "centroid_distance": 4.011450825151366e-05,
+            "centroid_distance_pixels": 0.06210884798613583,
+            "background_false_coverage": 0.1711771547573694,
+            "predicted_foreground_fraction": 0.25798194444444444,
+            "gt_foreground_fraction": 0.10499236111111111
+          },
+          {
+            "frame_id": 117,
+            "centroid_distance": 9.941750706845804e-05,
+            "centroid_distance_pixels": 0.0939665273896879,
+            "background_false_coverage": 0.1666599366968687,
+            "predicted_foreground_fraction": 0.25445833333333334,
+            "gt_foreground_fraction": 0.10571388888888889
+          },
+          {
+            "frame_id": 121,
+            "centroid_distance": 0.00033146977244974125,
+            "centroid_distance_pixels": 0.38985899391919326,
+            "background_false_coverage": 0.16163313089470216,
+            "predicted_foreground_fraction": 0.2497902777777778,
+            "gt_foreground_fraction": 0.10546736111111112
+          },
+          {
+            "frame_id": 125,
+            "centroid_distance": 0.0002890182748273992,
+            "centroid_distance_pixels": 0.2626859096468221,
+            "background_false_coverage": 0.1485122634909259,
+            "predicted_foreground_fraction": 0.23727777777777778,
+            "gt_foreground_fraction": 0.10467083333333334
+          },
+          {
+            "frame_id": 129,
+            "centroid_distance": 0.0004884855525025236,
+            "centroid_distance_pixels": 0.5659320531308438,
+            "background_false_coverage": 0.1335173939621494,
+            "predicted_foreground_fraction": 0.2240798611111111,
+            "gt_foreground_fraction": 0.10481388888888889
+          },
+          {
+            "frame_id": 133,
+            "centroid_distance": 0.000509227016824047,
+            "centroid_distance_pixels": 0.6811045703806274,
+            "background_false_coverage": 0.11673994636406843,
+            "predicted_foreground_fraction": 0.20867708333333335,
+            "gt_foreground_fraction": 0.10430069444444444
+          },
+          {
+            "frame_id": 137,
+            "centroid_distance": 0.0005208745079086396,
+            "centroid_distance_pixels": 0.5395089780629017,
+            "background_false_coverage": 0.09743617523467547,
+            "predicted_foreground_fraction": 0.18976736111111112,
+            "gt_foreground_fraction": 0.10263194444444444
+          },
+          {
+            "frame_id": 141,
+            "centroid_distance": 0.00042763835106360417,
+            "centroid_distance_pixels": 0.683674125215604,
+            "background_false_coverage": 0.08216541478769013,
+            "predicted_foreground_fraction": 0.17412430555555555,
+            "gt_foreground_fraction": 0.10051875
+          },
+          {
+            "frame_id": 145,
+            "centroid_distance": 0.0005605009238493085,
+            "centroid_distance_pixels": 0.5551523021699272,
+            "background_false_coverage": 0.07689337687048826,
+            "predicted_foreground_fraction": 0.16790416666666666,
+            "gt_foreground_fraction": 0.09889652777777778
+          },
+          {
+            "frame_id": 149,
+            "centroid_distance": 0.0008023506524008529,
+            "centroid_distance_pixels": 0.7944089395471855,
+            "background_false_coverage": 0.07629239439265142,
+            "predicted_foreground_fraction": 0.16650277777777778,
+            "gt_foreground_fraction": 0.09786041666666667
+          },
+          {
+            "frame_id": 153,
+            "centroid_distance": 0.004497405963592727,
+            "centroid_distance_pixels": 4.243140302707909,
+            "background_false_coverage": 0.07461547172165907,
+            "predicted_foreground_fraction": 0.16551875,
+            "gt_foreground_fraction": 0.09850763888888889
+          },
+          {
+            "frame_id": 157,
+            "centroid_distance": 0.0007277767093607056,
+            "centroid_distance_pixels": 1.0638315374247995,
+            "background_false_coverage": 0.09358889092920729,
+            "predicted_foreground_fraction": 0.18400625,
+            "gt_foreground_fraction": 0.09993472222222222
+          },
+          {
+            "frame_id": 161,
+            "centroid_distance": 0.00015071807625946987,
+            "centroid_distance_pixels": 0.20321783353442358,
+            "background_false_coverage": 0.1073829187046361,
+            "predicted_foreground_fraction": 0.19797222222222222,
+            "gt_foreground_fraction": 0.10168958333333333
+          },
+          {
+            "frame_id": 165,
+            "centroid_distance": 0.0004253661888914879,
+            "centroid_distance_pixels": 0.3831357232542133,
+            "background_false_coverage": 0.11234776248235293,
+            "predicted_foreground_fraction": 0.20428958333333333,
+            "gt_foreground_fraction": 0.1037625
+          },
+          {
+            "frame_id": 169,
+            "centroid_distance": 0.00052242117563062,
+            "centroid_distance_pixels": 0.5302340578925538,
+            "background_false_coverage": 0.11767991503748142,
+            "predicted_foreground_fraction": 0.21003541666666667,
+            "gt_foreground_fraction": 0.10483402777777778
+          },
+          {
+            "frame_id": 173,
+            "centroid_distance": 0.000276689559127168,
+            "centroid_distance_pixels": 0.3286322335164906,
+            "background_false_coverage": 0.11815505290663963,
+            "predicted_foreground_fraction": 0.21193263888888889,
+            "gt_foreground_fraction": 0.10652361111111111
+          },
+          {
+            "frame_id": 177,
+            "centroid_distance": 0.00025407269064126953,
+            "centroid_distance_pixels": 0.2506712830838692,
+            "background_false_coverage": 0.11522497701458777,
+            "predicted_foreground_fraction": 0.20981388888888888,
+            "gt_foreground_fraction": 0.10722361111111112
+          },
+          {
+            "frame_id": 181,
+            "centroid_distance": 0.00025078125411027904,
+            "centroid_distance_pixels": 0.2739457224614925,
+            "background_false_coverage": 0.11148280957326387,
+            "predicted_foreground_fraction": 0.20731597222222223,
+            "gt_foreground_fraction": 0.10799027777777778
+          },
+          {
+            "frame_id": 185,
+            "centroid_distance": 0.00038922882239641587,
+            "centroid_distance_pixels": 0.35596551790090064,
+            "background_false_coverage": 0.10994908812102909,
+            "predicted_foreground_fraction": 0.20652083333333332,
+            "gt_foreground_fraction": 0.10875416666666667
+          },
+          {
+            "frame_id": 189,
+            "centroid_distance": 0.00039799955070183495,
+            "centroid_distance_pixels": 0.36653293077851923,
+            "background_false_coverage": 0.110267128437472,
+            "predicted_foreground_fraction": 0.20683125,
+            "gt_foreground_fraction": 0.1087048611111111
+          },
+          {
+            "frame_id": 193,
+            "centroid_distance": 0.00019080604480600967,
+            "centroid_distance_pixels": 0.176330015443738,
+            "background_false_coverage": 0.11067445325552978,
+            "predicted_foreground_fraction": 0.20737291666666666,
+            "gt_foreground_fraction": 0.10886666666666667
+          },
+          {
+            "frame_id": 197,
+            "centroid_distance": 0.0004552573224306812,
+            "centroid_distance_pixels": 0.42697732228547725,
+            "background_false_coverage": 0.11242311196176424,
+            "predicted_foreground_fraction": 0.20892152777777778,
+            "gt_foreground_fraction": 0.10889097222222222
+          }
+        ],
+        "mean": {
+          "centroid_distance": 0.0004957034584903505,
+          "centroid_distance_pixels": 0.557612984480231,
+          "background_false_coverage": 0.15995437095376475,
+          "predicted_foreground_fraction": 0.24311172222222222,
+          "gt_foreground_fraction": 0.0992252361111111
+        }
+      }
+    }
+  ],
+  "comparison": {
+    "PSNR": {
+      "aggregate_delta": 0.3885154724121094,
+      "mean_paired_delta": 0.38851428985595704,
+      "median_paired_delta": -0.13188934326171875,
+      "improved_frames": 23,
+      "min_delta": -4.138301849365234,
+      "max_delta": 8.484966278076172
+    },
+    "SSIM": {
+      "aggregate_delta": -0.00026494264602661133,
+      "mean_paired_delta": -0.0002649807929992676,
+      "median_paired_delta": -0.00019535422325134277,
+      "improved_frames": 18,
+      "min_delta": -0.004707634449005127,
+      "max_delta": 0.004765510559082031
+    },
+    "LPIPS": {
+      "aggregate_delta": 0.0006608851253986359,
+      "mean_paired_delta": 0.0006608857400715351,
+      "median_paired_delta": 0.0003029468934983015,
+      "improved_frames": 19,
+      "min_delta": -0.005291586741805077,
+      "max_delta": 0.008444027975201607
+    },
+    "MS-SSIM": {
+      "aggregate_delta": 9.834766387939453e-05,
+      "mean_paired_delta": 9.842753410339355e-05,
+      "median_paired_delta": -8.979439735412598e-05,
+      "improved_frames": 22,
+      "min_delta": -0.008697867393493652,
+      "max_delta": 0.008051097393035889
+    }
+  },
+  "shared_prefix_verified": true,
+  "PSNR_sensitivity_posthoc": {
+    "first3_original_ids": [
+      1,
+      5,
+      9
+    ],
+    "first3_mean_delta": 8.071645100911459,
+    "remaining47_mean_delta": -0.10189831510503242,
+    "not_an_alternative_primary_metric": true
+  },
+  "conclusion": "Mixed: better mean PSNR/MS-SSIM and 2D alpha/centroid metrics; worse SSIM/LPIPS. PSNR improves on23/50 frames with a negative median; large early-frame gains drive the mean.",
+  "limitations": [
+    "Single scene/seed; CUDA nondeterminism persists after the shared branch",
+    "Historical test exposure; no checkpoint or weight is reselected using this assessment",
+    "2D whole-scene alpha centroid is not a physical mass center or proof of correct3D geometry"
+  ],
+  "sources": {
+    "runs\\pidg_centroid_tuning\\controller.json": "5caa36f4b5d35b8b4ee823131fe6cd7d63ada02c1fcf9fdfe51cb6986f782ba3",
+    "data\\derived\\kinematic_resplit\\final_test\\transforms_test.json": "bb98013c762294ecaea239b67281436c7da232678403db63b1545d59c5f78c08",
+    "runs\\pidg_centroid_tuning\\G0_control\\rubber_duck\\checkpoints\\resume.json": "465fffd8a732e9761414726d4491234d6d7ee833dd5f6601ac9e6dfb82f1e462",
+    "runs\\pidg_centroid_tuning\\G0_control\\rubber_duck\\results.json": "64d32ccc377e8f205a508a3b6a35c57d1127a12c665994d29cb69a7ac3a98e74",
+    "runs\\pidg_centroid_tuning\\G0_control\\rubber_duck\\per_view.json": "16dad4fc81db9a84a58711711cd2fceac1d3aface75638457ce64d89517bc31e",
+    "runs\\pidg_centroid_tuning\\G0_control\\rubber_duck\\coverage_metrics_test.json": "2c05402767570c8d9e72ca1ab257b8b07aee65e1b14c2ad88c5377689b2125df",
+    "runs\\pidg_centroid_tuning\\G0_control\\rubber_duck\\centroid_metrics_test.json": "fa54bbaafc339f1118a33f45bde4cb7544f4c19f7e20cc3e4238f4f14af13cf9",
+    "runs\\pidg_centroid_tuning\\G0_control\\rubber_duck\\metric_config.json": "b04e19133aefa8c1e419413c691a2dcfee648312ef9175992aaa4ab31b9de989",
+    "runs\\pidg_centroid_tuning\\G0_control\\rubber_duck\\branch.json": "c0d3810a1c080c4f009a81898d862b76857e8d72ebf037343f34e753697e9cca",
+    "runs\\pidg_centroid_tuning\\G0_control\\rubber_duck\\metric_best.json": "18928a9cdc3560d45a3bcc869d60f53486a7d8bf7a8a9a701a82c6e9f74c8923",
+    "runs\\pidg_centroid_tuning\\G1_centroid\\rubber_duck\\checkpoints\\resume.json": "7a5627eeb227ca4f354dd49ad5f229e4922dc2982bf53e1142755c82aab2586b",
+    "runs\\pidg_centroid_tuning\\G1_centroid\\rubber_duck\\results.json": "43891c3ce4ddfefc5a053e312c365d4c3a3eb979aa37e3646f49c9f1030abf30",
+    "runs\\pidg_centroid_tuning\\G1_centroid\\rubber_duck\\per_view.json": "4c79309c50236dbc9eac1beb853e996a76ceea96ef2c95d8594f420e21100079",
+    "runs\\pidg_centroid_tuning\\G1_centroid\\rubber_duck\\coverage_metrics_test.json": "968a1091af1c6ad21a829044ae738d0a6008297c1374f3ae741d223b93413e13",
+    "runs\\pidg_centroid_tuning\\G1_centroid\\rubber_duck\\centroid_metrics_test.json": "234e46b542b79284279bd9d316b53ed8f53d48ae93c0e799779978aa4f4ceb8a",
+    "runs\\pidg_centroid_tuning\\G1_centroid\\rubber_duck\\metric_config.json": "e796ba39a7af1d05101f03068be7e6dd3863a42c09bcdefb9f9e47de0ce1e828",
+    "runs\\pidg_centroid_tuning\\G1_centroid\\rubber_duck\\branch.json": "896390ce32ea5a89a5bc9498eaf576ccf4581980d4efd55282e321fab0177a8d",
+    "runs\\pidg_centroid_tuning\\G1_centroid\\rubber_duck\\metric_best.json": "86eddd6b303b36e6d862f455d9332d26da671041aa5064d41977254dc5c6c430"
+  },
+  "visual_observations": [
+    "Original frame1: G0 omits the upper duck; G1 recovers it but with blur.",
+    "Original frame49: G1 has merged/blurred duck shapes and obstacle-boundary defects; this is the largest PSNR regression.",
+    "Original frame153: dark obstacle defects remain in both; center agreement does not remove every visible gap."
+  ]
+}
