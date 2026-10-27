@@ -1,0 +1,36 @@
+{
+  "status": "passed",
+  "page_count": 8,
+  "inspected_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "render_dpi": 100,
+  "renderer": "Poppler pdftoppm",
+  "pdf_sha256": "137d2451c0c4c9c7b29e090a6b7a55369b0d35c135bbff3006590f311b7c2513",
+  "text_chars_per_page": [
+    693,
+    841,
+    737,
+    510,
+    446,
+    840,
+    805,
+    1799
+  ],
+  "absolute_render_path_count": 12,
+  "checks": [
+    "all8 rendered pages visually inspected",
+    "no clipping, overlapping text, or missing glyphs",
+    "six metrics rows verified",
+    "matched50 test GT PNGs",
+    "pre-activation divergence disclosed",
+    "12 absolute gallery/raw-render addresses present"
+  ]
+}

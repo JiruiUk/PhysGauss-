@@ -1,0 +1,54 @@
+{
+  "status": "passed",
+  "flags_off_steps": 20,
+  "steps_per_new_arm": 100,
+  "affine_gradients": [
+    {
+      "iteration": 100,
+      "trajectory_l1": 0.0009444882161915302
+    }
+  ],
+  "density_events": [
+    {
+      "iteration": 40,
+      "before": 100000,
+      "added": 8,
+      "after": 100008,
+      "min_distinct_training_times": 1,
+      "parents_kept": true,
+      "empty_pixels_have_no_3d_seeds": true
+    },
+    {
+      "iteration": 60,
+      "before": 100008,
+      "added": 8,
+      "after": 100016,
+      "min_distinct_training_times": 1,
+      "parents_kept": true,
+      "empty_pixels_have_no_3d_seeds": true
+    },
+    {
+      "iteration": 80,
+      "before": 100016,
+      "added": 8,
+      "after": 100024,
+      "min_distinct_training_times": 1,
+      "parents_kept": true,
+      "empty_pixels_have_no_3d_seeds": true
+    },
+    {
+      "iteration": 100,
+      "before": 100024,
+      "added": 8,
+      "after": 100032,
+      "min_distinct_training_times": 1,
+      "parents_kept": true,
+      "empty_pixels_have_no_3d_seeds": true
+    }
+  ],
+  "density_resume_from": 40,
+  "mask_loss_logs_absent": true,
+  "validation_png_parity": true,
+  "completed_utc": "2026-10-27T01:07:25.628169+00:00",
+  "source_freeze_sha256": "842c31f16dcc7b41dd9ad115aafaf86023902c3f4cbeadcc27a88b612ba9db84"
+}
