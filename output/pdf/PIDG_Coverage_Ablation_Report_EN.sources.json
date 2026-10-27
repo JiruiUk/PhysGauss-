@@ -1,0 +1,130 @@
+{
+  "created_utc": "2026-10-27T11:49:45.665551+00:00",
+  "pdf": "F:\\A_Edinburgh\\PhysGauss\\output\\pdf\\PIDG_Coverage_Ablation_Report_EN.pdf",
+  "pdf_sha256": "b58fc8e9538ec767d6bbc00f58d4976e134585bf3d01a6eaba8f8bcc618bc4c3",
+  "language": "en",
+  "expected_pages": 15,
+  "pages": [
+    {
+      "page": 1,
+      "title": "Better coverage, worse RGB reconstruction?",
+      "content_bottom": 232.29
+    },
+    {
+      "page": 2,
+      "title": "Final RGB metrics: C0 has the highest PSNR",
+      "content_bottom": 204.59
+    },
+    {
+      "page": 3,
+      "title": "Alpha metrics reveal a different trade-off",
+      "content_bottom": 137.59
+    },
+    {
+      "page": 4,
+      "title": "Audit: differences precede density additions",
+      "content_bottom": 118.09
+    },
+    {
+      "page": 5,
+      "title": "Matched RGB views and per-frame performance",
+      "content_bottom": 106.69
+    },
+    {
+      "page": 6,
+      "title": "Method 1: foreground coverage supervision",
+      "content_bottom": 266.59
+    },
+    {
+      "page": 7,
+      "title": "Method 2: weak local affine consistency",
+      "content_bottom": 295.59
+    },
+    {
+      "page": 8,
+      "title": "Method 3: late coverage-guided densification",
+      "content_bottom": 266.59
+    },
+    {
+      "page": 9,
+      "title": "Why can mask supervision change color?",
+      "content_bottom": 273.09
+    },
+    {
+      "page": 10,
+      "title": "Color failure: evidence and open explanations",
+      "content_bottom": 122.49
+    },
+    {
+      "page": 11,
+      "title": "A specific lead: clamping of SH color channels",
+      "content_bottom": 195.89
+    },
+    {
+      "page": 12,
+      "title": "Interpretation: separate evidence from hypotheses",
+      "content_bottom": 332.99
+    },
+    {
+      "page": 13,
+      "title": "Next steps: improve attribution before tuning",
+      "content_bottom": 307.89
+    },
+    {
+      "page": 14,
+      "title": "Absolute paths to renders and comparisons",
+      "content_bottom": 195.09
+    },
+    {
+      "page": 15,
+      "title": "How are the two coverage percentages computed?",
+      "content_bottom": 132.09
+    }
+  ],
+  "sources": {
+    "output\\pdf\\PIDG_Coverage_Ablation_Report_CN.pdf": "4b5d4b1f13065ca652faf48b2c84b1df29d955bdb20cbd1c263a8124ea3a65b2",
+    "output\\pdf\\PIDG_Coverage_Ablation_Report_CN.sources.json": "02454e9f1e56aa80cd1f52f4bee81de2e59278c858bcedd946e2c5adaf825e3d",
+    "experiments\\coverage_isolated\\assessment.json": "24389edcaaf68eb02879e76d633d67a86a0bffc764070bbd442a8c9422a4e0a7",
+    "scripts\\build_coverage_report_en.py": "5f65a7c3d45cdb22c08c6b3a4f2cf2efed2fd6c9565dddddc4ea7166fcd6f6e0",
+    "scripts\\pidg_ablation_report_layout.py": "ebb6387e619776ff63da88f83ec354cd7e1329b71e5a8ce4bc29a0d3f5fd5467",
+    "output\\pdf\\coverage_assets\\frame153_alpha.png": "6e6cd55756e23d22c1621c1f128b7faaed47c9cf8569e48a10e1585dc9b086eb",
+    "output\\pdf\\coverage_assets\\frame153_color_alpha_zoom.png": "698787f9b3eff0e2c5ff3cf7b8b771a175ec63e8f033dd1d46358ce70249622d",
+    "output\\pdf\\coverage_assets\\frame153_rgb.png": "fa255a77744d855ac050dbc277c15d05f64c9b620b1c6ebbe7e1a7735047dcd4",
+    "output\\pdf\\coverage_assets\\prefix_differences.png": "7553bfa8548ec657552b2d4c23cabca40c9e38381791477171bfe19c131c1c63",
+    "output\\pdf\\coverage_assets\\test_per_frame.png": "21a10ac4be4617585bc324aca38307bed73d0ac1538bd4ce16bf4ecad1e20b84",
+    "output\\pdf\\coverage_assets\\validation_curves.png": "774a128f2a5d470f7684c30c00bcd7f8098b3bf3451a2d11e0cf3bf77e284747"
+  },
+  "chinese_companion_sha256": "4b5d4b1f13065ca652faf48b2c84b1df29d955bdb20cbd1c263a8124ea3a65b2",
+  "data_checks": {
+    "scene": "Rubber Duck",
+    "seed": 0,
+    "split": [
+      120,
+      30,
+      50
+    ],
+    "total_steps_each": 50000,
+    "snapshot": "final50000",
+    "official_resolution": [
+      1600,
+      900
+    ],
+    "initial_full_state_sha256": "1af99e2d2e6f4fc26dec34a2c38888eb63bb1a5cc13ddf825affcba1e80d224a",
+    "all_gt_png_bytes_equal": true,
+    "four_metric_means_verified": true,
+    "selection": "validation-only",
+    "historical_test_exposure": true
+  },
+  "coverage_metric_definitions": {
+    "predicted_alpha": "8-bit exported alpha PNG / 255",
+    "gt_alpha": "Original final-test RGBA alpha, bicubic resized to render size, then / 255",
+    "interior_region": "7x7 minimum of GT alpha with zero padding > 0.95 (3-pixel square erosion)",
+    "interior_low_coverage": "Count(interior and predicted alpha < 0.5) / max(Count(interior), 1)",
+    "background_region": "GT alpha <= 0.5",
+    "background_false_coverage": "Count(background and predicted alpha > 0.5) / max(Count(background), 1)",
+    "aggregation": "100 * arithmetic mean of 50 per-frame fractions; not pooled pixel counts",
+    "empty_region_behavior": "Zero numerator and denominator clamped to 1, returning 0",
+    "lower_is_better": true
+  },
+  "translation_scope": "All 15 sections; unchanged numerical metrics, formulas, figures and render paths"
+}
