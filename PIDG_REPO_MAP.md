@@ -204,3 +204,21 @@ Validation-only selection is locked before final-test rendering. Completion
 exports four image metrics, alpha/centroid diagnostics and pixel-verified GT
 pairs. New outputs remain in `experiments/centroid_tuning` and
 `runs/pidg_centroid_tuning`; historical controls are preserved.
+
+## Coverage color repair (separate fork)
+
+`variants/color_repair/prepare.py` copies the frozen coverage runtime, changes
+the Tuning import, and inserts one opt-in renderer color branch. `color.py`
+evaluates SH in deformed viewing directions and `model.py` maps to smooth
+positive radiance. Flags-off retains the original CUDA SH path. `runtime.py`
+adds delayed/ramped mask and train-foreground RGB losses, weaker spatial-affine
+regularization and conservative training-color-aware coverage children;
+`evidence.py` stores nonlearned color moments in checkpoint-bound sidecars.
+No object-ID isolation, learned segmentation or physical mass claim is added.
+
+`diagnose.py` only reads original final checkpoints and predetermined training
+frames. `run.py` trains repaired C1/C2/C3 to50k from new random initialization,
+with a shared3k prefix and exact shared15k C2/C3 pre-density state. Validation
+selects snapshots before locked final testing. Original models, data split and
+completed reports remain preserved. New outputs live in `experiments/color_repair`
+and `runs/pidg_color_repair`.

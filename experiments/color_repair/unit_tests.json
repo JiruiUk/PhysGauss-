@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "cpu": {
+    "command": "envs/pidg-cu128/python.exe -m pytest tests/test_color_repair.py tests/test_coverage_mask.py tests/test_coverage_affine.py tests/test_coverage_density.py -q",
+    "passed": 27,
+    "color_repair_cases": 15,
+    "coverage_regression_cases": 12
+  },
+  "cuda": {
+    "command": "PIDG_COLOR_REPAIR_GPU_TEST=1 envs/pidg-cu128/python.exe -m pytest tests/test_color_repair_gpu.py -q",
+    "passed": 4,
+    "log": "experiments/color_repair/gpu_test.log",
+    "checks": [
+      "Flags-off RGB and alpha equal the frozen original renderer pixel for pixel",
+      "Negative red radiance receives a finite SH gradient matching finite differences",
+      "Python SH uses deformed viewing directions and agrees with CUDA",
+      "Coverage/color evidence restores on GPU and rejects a changed sidecar checksum"
+    ]
+  },
+  "training_and_export_preflight": "See preflight.json; unit success alone does not authorize a quality claim."
+}
