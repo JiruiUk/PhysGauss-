@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "command": "envs/pidg-cu128/python.exe -m pytest tests/test_centroid_tuning.py tests/test_coverage_mask.py tests/test_coverage_isolated.py -q",
+  "passed": 27,
+  "centroid_specific_tests": 17,
+  "coverage": [
+    "normalized XY coordinates and translation",
+    "uniform opacity scaling invariance",
+    "finite-difference alpha gradient check",
+    "finite empty-prediction gradient",
+    "detached GT targets",
+    "center agreement does not establish interior coverage",
+    "training-only membership and schedule",
+    "flags-off early return and RNG preservation",
+    "only centroid weight differs between matched arms",
+    "fork changes only optional Tuning import",
+    "existing coverage and isolated-component regressions"
+  ]
+}

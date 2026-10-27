@@ -185,3 +185,22 @@ C5 enables density only and still uses training alpha to select additions.
 arms50k from the identical random zero state. Reports compare C4-C0 and C5-C0
 alongside all existing cumulative arms. New files remain in
 `experiments/coverage_isolated` and `runs/pidg_coverage_isolated`.
+
+## Whole-scene foreground centroid (separate fork)
+
+`variants/centroid_tuning/code` copies the frozen coverage hook fork and changes
+only its Tuning import. `model.py` computes differentiable normalized 2D alpha
+centroids; `runtime.py` applies an optional train-only centroid-distance loss.
+The default original-PIDG recipe has no perceptual training loss, shared physics
+clock, mask L1, affine prior, isotropic term, velocity consistency, or late
+coverage additions. It uses the established clean120/30/50 data protocol and
+its metadata rendering clock; original conventional densification remains.
+This is not a physical3D center-of-mass estimator and has no real object-ID bank.
+
+`run.py` captures a random full step0 state, trains a common3k prefix, then
+branches identical tensors/optimizers/RNG/camera stacks into G0 and G1. Only
+centroid_weight changes, with a2k ramp after3k and50k total steps per arm.
+Validation-only selection is locked before final-test rendering. Completion
+exports four image metrics, alpha/centroid diagnostics and pixel-verified GT
+pairs. New outputs remain in `experiments/centroid_tuning` and
+`runs/pidg_centroid_tuning`; historical controls are preserved.

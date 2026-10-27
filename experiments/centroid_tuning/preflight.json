@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "flags_off_steps": 20,
+  "smoke_steps_per_arm": 100,
+  "shared_branch_iteration": 20,
+  "train_only_targets": true,
+  "actual_cuda_gradient_test": true,
+  "finite_centroid_gradients": [
+    {
+      "iteration": 21,
+      "alpha_l1": 0.008426373824477196
+    },
+    {
+      "iteration": 100,
+      "alpha_l1": 0.6180363893508911
+    }
+  ],
+  "validation_png_parity": true,
+  "source_freeze_sha256": "df4395db9aa7c9fe79b097fe298d1d5942009ea2c0c66efad3eeabe5f0a98ce2",
+  "completed_utc": "2026-10-27T12:34:27.765015+00:00"
+}
