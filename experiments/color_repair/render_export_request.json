@@ -1,0 +1,20 @@
+{
+  "models": ["C1_repaired", "C2_repaired", "C3_repaired"],
+  "snapshot_iteration": 50000,
+  "split": "fixed official 50-frame test set",
+  "original_frame_ids": "1,5,9,...,197",
+  "output_absolute": "F:/A_Edinburgh/PhysGauss/runs/pidg_color_repair/render_exports/final50000",
+  "per_model": {
+    "renders": 50,
+    "gt_render_pairs": 50,
+    "render_size": [1600, 900],
+    "pair_size": [3200, 950],
+    "pair_layout": "left GT, right render; header outside source pixels"
+  },
+  "shared_ground_truth_images": 50,
+  "filename_mapping": "00000.png -> original frame1; 00049.png -> original frame197",
+  "execution": "Existing GPU queue trains all arms, locks validation selections, and renders test PNGs. A separate CPU watcher collects completed final50000 exports every5 seconds.",
+  "watch_command": "envs/pidg-cu128/python.exe -u scripts/export_color_repair_images.py --watch",
+  "status_file": "experiments/color_repair/render_export_status.json",
+  "does_not_modify_training_or_selection": true
+}
