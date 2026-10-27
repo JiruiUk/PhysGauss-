@@ -1,5 +1,5 @@
 {
-  "created_utc": "2026-10-27T09:35:16.328653+00:00",
+  "created_utc": "2026-10-27T10:35:30.817157+00:00",
   "protocol": {
     "scene": "Rubber Duck",
     "seed": 0,
@@ -6452,5 +6452,59 @@
     "first42_mean": -0.4727413994925363,
     "last8_contribution_to50_mean": -0.8906040191650391
   },
-  "causal_limit": "Trajectories diverge before affine activation and density additions. No shared15k branch or multi-seed replication; final differences are observed run differences, not isolated causal estimates."
+  "causal_limit": "Trajectories diverge before affine activation and density additions. No shared15k branch or multi-seed replication; final differences are observed run differences, not isolated causal estimates.",
+  "mask_color_case": {
+    "original_frame_id": 153,
+    "export_index": 38,
+    "roi_xyxy": [
+      620,
+      350,
+      735,
+      465
+    ],
+    "gt_pixel_rule": "R>100, G>90, B<130 inside fixed ROI, 8-bit RGB",
+    "selected_gt_pixels": 3850,
+    "models": {
+      "GT": {
+        "mean_rgb_at_gt_selected_pixels": [
+          0.7325378151260565,
+          0.6252161955691327,
+          0.26911128087598585
+        ],
+        "mean_alpha_at_gt_selected_pixels": 0.9847303284950344,
+        "red_zero_fraction_at_gt_selected_pixels": 0.0,
+        "rgb_mae_at_gt_selected_pixels": 0.0
+      },
+      "C0": {
+        "mean_rgb_at_gt_selected_pixels": [
+          0.728436974789919,
+          0.623763687293092,
+          0.2639816653934314
+        ],
+        "mean_alpha_at_gt_selected_pixels": 0.9454351922587216,
+        "red_zero_fraction_at_gt_selected_pixels": 0.0,
+        "rgb_mae_at_gt_selected_pixels": 0.027622103386809267
+      },
+      "C1": {
+        "mean_rgb_at_gt_selected_pixels": [
+          0.0,
+          0.6170043290043253,
+          0.26364654952890676
+        ],
+        "mean_alpha_at_gt_selected_pixels": 0.9644145658263307,
+        "red_zero_fraction_at_gt_selected_pixels": 1.0,
+        "rgb_mae_at_gt_selected_pixels": 0.263003819709702
+      },
+      "C2": {
+        "mean_rgb_at_gt_selected_pixels": [
+          0.7291734148204746,
+          0.620007130124771,
+          0.26280315762668977
+        ],
+        "mean_alpha_at_gt_selected_pixels": 0.971572192513369,
+        "red_zero_fraction_at_gt_selected_pixels": 0.0,
+        "rgb_mae_at_gt_selected_pixels": 0.025978100331041507
+      }
+    }
+  }
 }

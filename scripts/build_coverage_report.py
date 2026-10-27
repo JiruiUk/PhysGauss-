@@ -28,6 +28,7 @@ NAMES=['C0_V3_reference','C1_mask','C2_mask_affine','C3_mask_affine_density','C4
 ROOTS=[ROOT/'runs/pidg_coverage_tuning']*4+[ROOT/'runs/pidg_coverage_isolated']*2
 COLORS=['#596a7c','#d9862e','#198f86','#b55555','#8c6cbb','#3287bf']
 SOURCES={}; RECORD=[]
+PAGE_COUNT=14
 
 
 def read(path):
@@ -177,6 +178,32 @@ def figures(models):
     for ax,a,title in zip(axes.flat,panels,['GT alpha']+[m['id']+' alpha' for m in models]):
         ax.imshow(a,cmap='gray',vmin=0,vmax=255);ax.set_title(title);ax.axis('off')
     axes.flat[-1].axis('off');fig.tight_layout();output['alpha']=save_plot(fig,'frame153_alpha')
+    # A fixed GT-defined location, not a per-model/material correspondence.
+    roi=(620,350,735,465)
+    gt_array=np.asarray(gt); target_array=np.asarray(target)/255.
+    select=np.zeros(gt_array.shape[:2],dtype=bool)
+    select[roi[1]:roi[3],roi[0]:roi[2]]=True
+    select &= (gt_array[...,0]>100)&(gt_array[...,1]>90)&(gt_array[...,2]<130)
+    case={'original_frame_id':153,'export_index':38,'roi_xyxy':list(roi),
+        'gt_pixel_rule':'R>100, G>90, B<130 inside fixed ROI, 8-bit RGB',
+        'selected_gt_pixels':int(select.sum()),'models':{}}
+    fig,axes=plt.subplots(2,4,figsize=(10.5,5.2))
+    for column,(label,im,alpha) in enumerate(zip(['GT','C0','C1','C2'],images[:4],[target_array]+[v/255. for v in panels[1:4]])):
+        arr=np.asarray(im)/255.
+        axes[0,column].imshow(im.crop(roi),interpolation='nearest')
+        axes[0,column].set_title(label+' RGB');axes[0,column].axis('off')
+        axes[1,column].imshow(alpha[roi[1]:roi[3],roi[0]:roi[2]],cmap='gray',vmin=0,vmax=1,interpolation='nearest')
+        axes[1,column].set_title(label+' alpha');axes[1,column].axis('off')
+        case['models'][label]={'mean_rgb_at_gt_selected_pixels':arr[select].mean(0).tolist(),
+            'mean_alpha_at_gt_selected_pixels':float(alpha[select].mean()),
+            'red_zero_fraction_at_gt_selected_pixels':float((arr[select,0]==0).mean()),
+            'rgb_mae_at_gt_selected_pixels':float(np.abs(arr[select]-gt_array[select]/255.).mean())}
+    fig.tight_layout();output['color_zoom']=save_plot(fig,'frame153_color_alpha_zoom')
+    output['color_case']=case
+    for m in models[:3]:
+        for kind in ('renders','alpha','gt'):
+            path=m['directory']/f'test/ours_50000/{kind}/{name}'
+            SOURCES[str(path.relative_to(ROOT))]=hashlib.sha256(path.read_bytes()).hexdigest()
     return output
 
 
@@ -205,7 +232,7 @@ def build(models,a,f):
     for name,file in [('CN','msyh.ttc'),('CN-Bold','msyhbd.ttc')]:pdfmetrics.registerFont(TTFont(name,'C:/Windows/Fonts/'+file,subfontIndex=0))
     pdfmetrics.registerFontFamily('CN',normal='CN',bold='CN-Bold',italic='CN',boldItalic='CN-Bold')
     for name,file in [('Arial','arial.ttf'),('PathFont','consola.ttf')]:pdfmetrics.registerFont(TTFont(name,'C:/Windows/Fonts/'+file))
-    L.TOTAL_PAGES=8;L.page_records.clear()
+    L.TOTAL_PAGES=PAGE_COUNT;L.page_records.clear()
     L.c=canvas.Canvas(str(PDF),pagesize=(L.W,L.H),pageCompression=1)
     L.c.setTitle('PIDG 覆盖与邻域消融实验报告 C0-C5');L.c.setAuthor('PhysGauss / PIDG Extension Project')
     cw=L.CW
@@ -262,7 +289,78 @@ def build(models,a,f):
     p.text('蓝色障碍物上的黑色缺口提醒我们：视觉上的“洞”可能是透明缺口，也可能是高 alpha 的错误颜色或遮挡，需与上一页的 alpha 图一起判断。','small')
     p.finish()
 
-    p=Page(6,'为什么会这样：证据与推断分开','下面是与当前观测一致的解释，不是已验证的唯一原因')
+    p=Page(6,'技术细节一：前景覆盖损失','C1/C2/C3 使用；训练 alpha 是软轮廓监督，不是缺帧实验中的随机删图')
+    p.heading('监督数据与计算路径')
+    p.text('独立读取120张训练 RGBA 原图的 A 通道，双三次缩放到相机分辨率，再除以255。RGB 加载与黑背景合成保持原路径；mask 不是 SAM 分割或光流有效性图。train membership 检查阻止验证/测试 mask 进入训练损失，评估用 alpha 仅用于事后诊断。')
+    p.callout('L_mask = (1 / HW) sum_p |A(p,t) - M(p,t)|<br/>L_total = L_V3 + 0.1 L_mask + scheduled L_affine<br/>A 为渲染累积 alpha，M 为原图 alpha；目标 M detach。增密是离散点分配策略，不另加一个可微损失。')
+    p.text('本轮 L_V3 保留像素 L1、SSIM、已有物理/网格正则，并含权重0.02的 LPIPS 感知项。LPIPS 每4步计算，按间隔乘4补偿；覆盖损失则每一步计算，从第1步启用，没有前景/背景平衡、边界加权或延迟 ramp。Iso 和速度轨迹一致性权重均为0。','small')
+    p.heading('梯度究竟更新什么？')
+    p.text('可见且未被裁剪/饱和的贡献者，通过 alpha 反传到不透明度、位置、尺度和旋转等渲染变量；形变网络启用后，也会经动态中心及协方差收到梯度。mask 不含颜色目标，在理想 alpha 合成图中对 SH 颜色系数的直接导数为0；SH 仍由 RGB 损失更新。')
+    p.text('这与“mask 不会影响颜色”不同：位置、尺度、alpha 和遮挡决定哪些 SH 颜色对像素有贡献，改变它们就会改变颜色损失与颜色梯度。mask 只要求二维轮廓与不透明度，不确定正确深度、物体对应、遮挡排序或颜色。')
+    p.heading('实现可核查的位置')
+    p.text('coverage_tuning/data.py: read_alpha；model.py: mask_loss；runtime.py: coverage_loss；code/train_pidg.py: 在统一 loss.backward() 前加权合并。关闭 mask_weight 时不产生此项。','small')
+    p.finish()
+
+    p=Page(7,'技术细节二：弱局部仿射一致性','C2/C3/C4 使用；允许真实拉伸，不是固定邻居距离的刚体约束')
+    p.heading('构造邻域与局部坐标')
+    p.text('每次选128个随迭代轮换的确定性 anchor，在当前 canonical 点云中寻找最多8个欧氏近邻；仅保留距离小于0.1世界单位的边。X 是 detach 后的 canonical 坐标，y(t) 是由当前形变得到的中心位置；平移经相对偏移相消。')
+    p.callout('D_i[j,:] = X_j - X_i；E_i[j,:] = y_j(t) - y_i(t)<br/>B_i = pinv(D_i) E_i；E_fit = D_i B_i<br/>q_i = mean_j ||D_i[j,:]||^2<br/>L_affine = mean_i { mean_j ||E_i[j,:] - E_fit[j,:]||^2 / max(q_i, 1e-8) }')
+    p.text('均值只统计有效边；至少4条边且最小奇异值大于最大奇异值的1e-4时才使用该邻域。伪逆 rtol=1e-4。D、其伪逆与归一化尺度 detach；E 和拟合 B 对形变保留可微，因此梯度传给轨迹，canonical 坐标不被此正则直接更新。','small')
+    p.heading('调度、允许的变化与边界')
+    p.text('3k后每10步计算一次，2k步内从0线性升到全权重。计算步实际系数为 1e-4 × 10 × ramp，用于补偿采样间隔。该约束允许局部旋转、均匀伸缩和剪切；没有 det(F)=1、体积守恒或本构应力约束。矩阵 B 是局部拟合工具，不等于已验证的物理 F。')
+    p.text('非仿射弯曲、接触边界和不同物体相对运动也可能产生残差。真实训练没有传入 object_ids，虽有半径门控，仍不能保证同一表面或同一物体。原 single_object 声明未核验场景，已在结果解释中更正；C4采用知情声明，但仍不含身份隔离。')
+    p.text('实现：model.py 的 neighborhoods/local_affine_loss；runtime.py 的 trajectory 与 ramp。刚体/仿射变换不罚、非仿射梯度与退化邻域已有单测；这些测试不证明实际训练邻接无误。','small')
+    p.finish()
+
+    p=Page(8,'技术细节三：覆盖驱动的后期增密','C3/C5 使用；按多个训练时刻的覆盖缺口选父点，而非直接生成空白区几何')
+    p.heading('从像素缺口累计到已有 Gaussian')
+    p.callout('d(p,t) = 1[p 属于腐蚀后前景] × 1[A(p,t) &lt; 0.7] × max(0, 0.95 - A(p,t))<br/>S_i = sum_{t,p: i 在 p 的贡献者列表中} d(p,t)<br/>V_i = 出现有效缺口的不同训练帧数；仅 V_i ≥ 3 且 S_i &gt; 0 的点可作为父点。')
+    p.text('GT alpha>0.95 的前景做3像素腐蚀，减少轮廓边界干扰。16k-35,999每20步采样，像素网格步长4；每个像素最多读取20个实际 footprint 贡献者。当前实现给列表内每个有效 ID 累加相同缺口值，并非按其 RGB/alpha 贡献权重归一化分配。同一时刻重复采样只算一票，但累计分数会增加。','small')
+    p.heading('补点、继承与预算')
+    p.text('18k、20k直至36k，每2k清算一次，按 S_i 排序，最多克隆512个父点，总点数上限200,000。窗口结束后分数与时刻票重置。孩子在 canonical 坐标上加零均值高斯抖动，每轴标准差为0.5×min(parent scale, 0.02)；0.02并非位移范数的硬上限。')
+    p.text('孩子继承 SH 颜色、尺度、旋转、粒子/速度索引及动态标记；不透明度初始化为父值夹到[0.01,0.1]。保留所有父点，不额外做后期 opacity reset 或剪枝；原常规梯度增密/剪枝仍在15k结束。新增发生在 optimizer step 后，以免替换参数时丢失本步梯度。')
+    p.heading('它可以和不可以解决什么')
+    p.text('可强化已有弱覆盖足迹，并跨时刻筛掉单帧偶发缺口。完全无贡献者的像素没有可克隆父点，也没有可靠深度，因此直接跳过；并不能从零重建任意空洞。继承错误 SH、位置或轨迹也可能复制错误。C3/C5实际新增879/717点，是保守增量而非整体重建。')
+    p.text('实现：runtime.py 的 observe_coverage/after_update 与 density.py 的 CoverageAccumulator。状态侧车保存累计分数和逐点逐时刻投票，并与完整断点校验绑定；选择与克隆在 no_grad 下执行。','small')
+    p.finish()
+
+    p=Page(9,'Mask 为何会间接改变预测颜色？','由当前渲染结构推导的机制；不是已经定位到单个出错 Gaussian 的因果结论')
+    p.heading('1. 颜色与 alpha 共享同一套可见性权重')
+    p.callout('a_i(p) = opacity_i × projected_footprint_i(p)<br/>T_i(p) = product_{j&lt;i} (1 - a_j(p))；w_i(p) = T_i(p) a_i(p)<br/>C(p) = sum_i w_i(p)c_i(view) + T_end(p)b；A(p) = 1 - T_end(p)<br/>忽略可见性排序切换与阈值时，dC/dc_i = w_i，而 dL_mask/dc_i = 0。')
+    p.text('c_i 来自每个 Gaussian 的 SH 系数，并非形变 MLP 的 RGB 输出。本轮形变分支输出中心变换、旋转与尺度，没有独立随时间的颜色残差。即使 SH 不被 mask 直接更新，mask 对 a_i、位置及协方差的更新仍会改变 w_i，进而改变混合颜色、遮挡以及后续 SH 梯度。排序切换是非光滑情况，不能用上式导数完全描述。')
+    p.heading('2. 轮廓对了，贡献者仍可能错')
+    p.text('同一个 A≈1 可以由许多不同的深度、颜色和 Gaussian 组合实现。若错误颜色的点遮住正确点，alpha 已经饱和，mask 无法识别；被遮挡点的 w_i 变小，其 RGB 纠错信号也会弱。黑背景下，C≈0既可由透明背景，也可由高 alpha 的近黑颜色实现；额外 mask 会打破部分 RGB 等价解，促使几何与颜色重新分配。')
+    p.heading('3. 早期启用与离散增密可能放大差异')
+    p.text('mask 第1步启用，但 iter<3000 时 d_xyz、d_rotation、d_scaling 为0。随机采样多个运动时刻，却暂用同一静态点云，轮廓目标可能相互冲突。mask 还能进入屏幕位置梯度，而15k前的常规增密正依赖该梯度；因此不仅修改 opacity，也可能提前改变点数和颜色的空间分配。两条路径均由代码支持，尚未通过对照证明是本次变色主因。')
+    p.finish()
+
+    p=Page(10,'颜色错误：已有证据与待验证解释','原始帧153的左侧鸭子；所有模型使用同一 GT 定义的区域与像素选择')
+    p.image(f['color_zoom'],235,'上排 RGB、下排 alpha；统一裁剪 x=620:735、y=350:465。C1在高不透明度区域也有颜色偏差，说明单纯补足 alpha 不足以纠正颜色。')
+    case=f['color_case'];rows=[['图像','平均 R / G / B','平均 alpha','RGB MAE']]
+    for label,stats in case['models'].items():
+        rows.append([label,' / '.join(f'{v:.3f}' for v in stats['mean_rgb_at_gt_selected_pixels']),
+            f"{stats['mean_alpha_at_gt_selected_pixels']:.4f}",f"{stats['rgb_mae_at_gt_selected_pixels']:.4f}"])
+    p.table(rows,[55,230,110,cw-395])
+    p.text(f"表中仅统计固定框内 GT 的 R>100、G>90、B<130 的{case['selected_gt_pixels']}个像素；这是事后定位统计，未加入训练，不保证像素对应同一材料点。整组证据仍是50帧指标：C1轮廓 IoU显著提高，但前景 PSNR下降约4.23 dB。",'small')
+    p.heading('不能从这一张图直接下什么结论？')
+    p.text('C1 的红通道在这3850个像素中全部为0，而 G/B 均值接近 GT。该现象提示通道截断比简单“颜色混合”更值得优先检查，但8-bit PNG不能证明原始 SH 值为负。不能断言 mask 直接染色或0.1一定太大；其他候选包括贡献者错配、早期静态冲突与梯度竞争。','small')
+    p.text('验证优先级：同一完整状态分叉后比较 mask开/关；分别冻结几何或 SH；记录 RGB/Mask 对共享参数的梯度范数与余弦；对照3k后延迟/ramp与更小权重；追踪该区域贡献者的颜色、深度和身份。以上均为建议，未开展新训练。','small')
+    p.finish()
+
+    p=Page(11,'更具体的线索：SH 颜色的截断区','红通道归零与源码中的零梯度分支吻合；仍需要贡献者级别数据确认')
+    p.heading('源码能确认的事实')
+    p.text('本轮 convert_SHs_python=False，颜色在 CUDA rasterizer 中由 SH 求值。forward.cu 的 computeColorFromSH 将 SH 结果加0.5，然后逐通道 max(result,0)；并记录 result<0 的 clamped 标志。backward.cu 将这些通道的 dL_dRGB 乘0，再计算 SH 及视线方向相关梯度。')
+    p.callout('q_i,k = SH_i,k(view) + 0.5；c_i,k = max(q_i,k, 0)<br/>若 q_i,k &lt; 0，则 dc_i,k / dq_i,k = 0。<br/>该 Gaussian 在该视角下、该通道经颜色求值路径传回 SH 的梯度为0；增加 RGB/感知损失权重也不能穿过这条已截断路径。')
+    p.heading('为什么与本次“黄色变绿”有关？')
+    p.text('在当前固定区域，GT 平均 R=0.733，C1 的3850个对应像素 R=0，G/B仍接近 GT，alpha≈0.964。若主要可见贡献者的红色 SH 进入负值区，就可能保持高 alpha，却缺失红光，从而显得偏绿。mask 本身不监督红色，无法从 alpha 正确与否辨别这类颜色错误。')
+    p.text('一种可检验的链条是：mask 先改变几何/可见性与梯度分配，RGB 优化或视角变化使部分通道进入截断区，再因局部零梯度而难恢复。但我们没有记录首次进入负区的时刻，也没有本帧逐贡献者的 q_i、权重和 clamp 标志，因此不能确认这条链已实际发生，更不能说所有绿色都是截断导致。')
+    p.heading('下一步如何证实或排除？')
+    p.text('用只读诊断重渲染浮点 RGB，并导出这一区域可见贡献者的原始 SH 求值、clamp 标志和混合权重；统计负红值贡献权重比例。8-bit R=0也可能来自很小正值被量化，需先排除。再按固定初始化/同一状态分叉，对照延迟 mask 与平滑正值颜色参数化；这是未来实验建议，当前未修改激活或重新训练。')
+    p.text('不能把“零梯度”理解为永久不可恢复：其他视角/时刻、几何与贡献者变化及优化器动量仍可能改变结果。准确说法是该样本、该通道的 SH 颜色路径被局部截断。','small')
+    p.text('源码依据：third_party/PIDG/submodules/flow-based-diff-gaussian-rasterization/cuda_rasterizer/forward.cu:65-70；backward.cu:29-34、48-97。相关文件 SHA-256 已计入来源记录。','small')
+    p.finish()
+
+    p=Page(12,'为什么会这样：证据与推断分开','结合技术分析与颜色诊断；下面不是已验证的唯一原因')
     p.heading('1. Mask 改变了可用的重建方式')
     p.text('证据：C1 的轮廓 IoU 从 C0 的0.2064提高到0.9764，但全图 PSNR 下降约3.98 dB，前景 PSNR 也下降约4.23 dB，说明退化并非只发生在背景。')
     p.text('机制解释：黑背景下，RGB 合成允许高 alpha、近黑颜色的 Gaussian 仍呈现黑色。额外 alpha 监督会压制这种解，并同时改变尺度、透明度、位置和形变的梯度。它更接近轮廓目标，却可能打乱原本有利于 RGB 的分配。Mask 权重0.1从第1步作用于全图，背景约占90%；这是值得检验的梯度权衡，但没有权重扫描，不能断言0.1必然过大。')
@@ -273,7 +371,7 @@ def build(models,a,f):
     p.text('C3 相对 C2 退化不能全部归因于增密；启用前已有差距。C5 只在部分指标接近或略超 C0，尚无全面、稳定的重建增益证据。','small')
     p.finish()
 
-    p=Page(7,'下一步：先修正验证方式，再调强度','建议顺序；本报告不启动任何新的训练')
+    p=Page(13,'下一步：先修正验证方式，再调强度','建议顺序；本报告不启动任何新的训练')
     p.table([['优先级','可执行对照','解决什么问题'],
         ['1','为每个增密对照使用同一个15k完整状态分叉；保持总预算50k，再做至少3个seed。','消除补点前已分岔的混杂，确认约0.3 dB差异是否可复现。'],
         ['2','从随机初始化对照较弱 Mask 权重及延迟/ramp，记录 RGB/Mask 对相同参数的梯度范数。','检验轮廓约束强度和启用时机，而非直接归咎模型容量。'],
@@ -286,25 +384,34 @@ def build(models,a,f):
     p.text('训练与验证使用严格分离的120/30帧，固定50测试帧只用于本报告的评价；四个 best 均来自验证选择。本报告主表统一 final50k，避免通过测试结果重新挑选快照。','small')
     p.finish()
 
-    p=Page(8,'渲染文件保存在哪里','以下均为绝对地址；每组5种快照共250张拼接图，图库可切换快照和帧')
+    p=Page(14,'渲染文件保存在哪里','以下均为绝对地址；每组5种快照共250张拼接图，图库可切换快照和帧')
     for m,root in zip(models,ROOTS):
         p.heading(m['id']+' / '+m['name'])
         p.path(root/'render_comparisons'/m['name']/'index.html')
         p.path(m['directory']/'test/ours_50000/renders')
     p.text('GT 在 renders 的同级 gt 文件夹；alpha 在同级 alpha；最终50k拼接在图库目录的 pairs/50000。其他快照为 best、metric_ssim、metric_lpips、metric_ms_ssim。','small')
+    p.heading('GT + 六模型合并图库：50张 / final50k')
+    p.path(ROOT/'runs/pidg_coverage_comparison/final50000/index.html')
     p.text('来源：各模型 results.json、per_view.json、coverage_metrics_test.json、metric_history.jsonl、metric_best.json、配置、初始化与渲染校验记录，以及当前 runtime/model/density 源码。完整 SHA-256 与逐帧诊断见配套 sources.json 和 assessment.json。','small')
     p.finish();L.c.save()
 
 
 def main():
     ASSETS.mkdir(parents=True,exist_ok=True)
-    metadata,models=load();alpha_diagnostics(metadata,models);a=analyze(models);f=figures(models);build(models,a,f)
+    metadata,models=load();alpha_diagnostics(metadata,models);a=analyze(models);f=figures(models)
+    a['mask_color_case']=f['color_case'];build(models,a,f)
     MD.write_text('# PIDG 覆盖与邻域消融实验报告\n'+'\n'.join(RECORD),encoding='utf-8')
     ASSESS.write_text(json.dumps(a,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-    for p in [Path(__file__),ROOT/'variants/coverage_tuning/runtime.py',ROOT/'variants/coverage_tuning/model.py',ROOT/'variants/coverage_tuning/density.py',ROOT/'variants/coverage_isolated/runtime.py']:
+    for p in [Path(__file__),ROOT/'variants/coverage_tuning/runtime.py',ROOT/'variants/coverage_tuning/model.py',ROOT/'variants/coverage_tuning/density.py',ROOT/'variants/coverage_isolated/runtime.py',
+              ROOT/'variants/coverage_tuning/data.py',ROOT/'variants/coverage_tuning/code/train_pidg.py',
+              ROOT/'variants/coverage_tuning/code/gaussian_renderer/__init__.py',ROOT/'variants/metric_tuning/runtime.py',
+              ROOT/'runs/pidg_coverage_tuning/C1_mask/rubber_duck/cfg_args',
+              ROOT/'third_party/PIDG/submodules/flow-based-diff-gaussian-rasterization/cuda_rasterizer/forward.cu',
+              ROOT/'third_party/PIDG/submodules/flow-based-diff-gaussian-rasterization/cuda_rasterizer/backward.cu']:
         SOURCES[str(p.relative_to(ROOT))]=hashlib.sha256(p.read_bytes()).hexdigest()
-    proof={'pdf':str(PDF),'pdf_sha256':hashlib.sha256(PDF.read_bytes()).hexdigest(),'expected_pages':8,
-        'pages':L.page_records,'sources':SOURCES,'frame153_shared_crop':f['crop'],'data_checks':a['protocol']}
+    proof={'pdf':str(PDF),'pdf_sha256':hashlib.sha256(PDF.read_bytes()).hexdigest(),'expected_pages':PAGE_COUNT,
+        'pages':L.page_records,'sources':SOURCES,'frame153_shared_crop':f['crop'],'data_checks':a['protocol'],
+        'mask_color_case':f['color_case']}
     PDF.with_suffix('.sources.json').write_text(json.dumps(proof,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print(json.dumps({'pdf':str(PDF),'pages':L.page_records,'alpha_means':{m['id']:m['alpha_diagnostics']['mean'] for m in models}},ensure_ascii=False,indent=2))
 

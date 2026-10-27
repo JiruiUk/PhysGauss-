@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "page_count": 8,
+  "page_count": 14,
   "inspected_pages": [
     1,
     2,
@@ -9,28 +9,43 @@
     5,
     6,
     7,
-    8
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
   ],
   "render_dpi": 100,
   "renderer": "Poppler pdftoppm",
-  "pdf_sha256": "137d2451c0c4c9c7b29e090a6b7a55369b0d35c135bbff3006590f311b7c2513",
+  "render_directory": "F:\\A_Edinburgh\\PhysGauss\\tmp\\pdfs\\coverage_technical_qa",
+  "pdf_sha256": "91d5ca1d4d6b7aeec6d031e636f49492e3428d7d7136bc0b5d07890ec3d24eaf",
   "text_chars_per_page": [
     693,
     841,
-    737,
+    736,
     510,
     446,
+    1016,
+    993,
+    1062,
+    971,
+    816,
+    1216,
     840,
     805,
-    1799
+    1904
   ],
-  "absolute_render_path_count": 12,
+  "absolute_render_path_count": 13,
+  "verified_source_hash_count": 374,
   "checks": [
-    "all8 rendered pages visually inspected",
-    "no clipping, overlapping text, or missing glyphs",
-    "six metrics rows verified",
-    "matched50 test GT PNGs",
-    "pre-activation divergence disclosed",
-    "12 absolute gallery/raw-render addresses present"
+    "All 14 latest rendered pages visually inspected",
+    "No clipping, overlapping text, or missing glyphs",
+    "Six-model full-image metrics unchanged from previous report",
+    "Three methods checked against frozen implementation and configs",
+    "Fixed GT-defined color ROI verified; 3850 selected pixels",
+    "Observed channel collapse distinguished from unconfirmed SH clamp causation",
+    "Absolute render paths include consolidated six-model gallery"
   ]
 }

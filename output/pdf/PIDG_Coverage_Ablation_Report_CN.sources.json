@@ -1,7 +1,7 @@
 {
   "pdf": "F:\\A_Edinburgh\\PhysGauss\\output\\pdf\\PIDG_Coverage_Ablation_Report_CN.pdf",
-  "pdf_sha256": "137d2451c0c4c9c7b29e090a6b7a55369b0d35c135bbff3006590f311b7c2513",
-  "expected_pages": 8,
+  "pdf_sha256": "91d5ca1d4d6b7aeec6d031e636f49492e3428d7d7136bc0b5d07890ec3d24eaf",
+  "expected_pages": 14,
   "pages": [
     {
       "page": 1,
@@ -30,18 +30,48 @@
     },
     {
       "page": 6,
+      "title": "技术细节一：前景覆盖损失",
+      "content_bottom": 302.89
+    },
+    {
+      "page": 7,
+      "title": "技术细节二：弱局部仿射一致性",
+      "content_bottom": 314.89
+    },
+    {
+      "page": 8,
+      "title": "技术细节三：覆盖驱动的后期增密",
+      "content_bottom": 272.89
+    },
+    {
+      "page": 9,
+      "title": "Mask 为何会间接改变预测颜色？",
+      "content_bottom": 323.89
+    },
+    {
+      "page": 10,
+      "title": "颜色错误：已有证据与待验证解释",
+      "content_bottom": 149.39
+    },
+    {
+      "page": 11,
+      "title": "更具体的线索：SH 颜色的截断区",
+      "content_bottom": 207.89
+    },
+    {
+      "page": 12,
       "title": "为什么会这样：证据与推断分开",
       "content_bottom": 355.89
     },
     {
-      "page": 7,
+      "page": 13,
       "title": "下一步：先修正验证方式，再调强度",
       "content_bottom": 341.39
     },
     {
-      "page": 8,
+      "page": 14,
       "title": "渲染文件保存在哪里",
-      "content_bottom": 247.89
+      "content_bottom": 200.89
     }
   ],
   "sources": {
@@ -401,11 +431,24 @@
     "runs\\pidg_coverage_isolated\\C5_density_only\\rubber_duck\\test\\ours_50000\\alpha\\00047.png": "fd46c23c34a59c02030793f0b5aced5d83adec93f0cc4b3743cde76dc182d1fb",
     "runs\\pidg_coverage_isolated\\C5_density_only\\rubber_duck\\test\\ours_50000\\alpha\\00048.png": "6a7c71fa70d165211426ca6e8ef5c87c91c9fb59483a69f81a7b0e5fb70c9a88",
     "runs\\pidg_coverage_isolated\\C5_density_only\\rubber_duck\\test\\ours_50000\\alpha\\00049.png": "2eefcdc244f4314324d570dcc6d46eeb34bdc4cc60e75e48964dd64ae45416ad",
-    "scripts\\build_coverage_report.py": "75a8f0b62eecbf81cdc5f58142a16be31506a30bb07a914dcc311490f526d387",
+    "runs\\pidg_coverage_tuning\\C0_V3_reference\\rubber_duck\\test\\ours_50000\\renders\\00038.png": "4d7f113134757351941f6decaa33ade197b47b2d06a3d250bf01ae70ea0afb51",
+    "runs\\pidg_coverage_tuning\\C0_V3_reference\\rubber_duck\\test\\ours_50000\\gt\\00038.png": "465490cd02d471e99058e16cb4c25f5b6f581dfeb2bf5987984841a145266f99",
+    "runs\\pidg_coverage_tuning\\C1_mask\\rubber_duck\\test\\ours_50000\\renders\\00038.png": "bead3f2f7ddc6a2074845a2c9f676fae9d20e78c2bb9868d9c255df58db82249",
+    "runs\\pidg_coverage_tuning\\C1_mask\\rubber_duck\\test\\ours_50000\\gt\\00038.png": "465490cd02d471e99058e16cb4c25f5b6f581dfeb2bf5987984841a145266f99",
+    "runs\\pidg_coverage_tuning\\C2_mask_affine\\rubber_duck\\test\\ours_50000\\renders\\00038.png": "25da92f4f86096598759bbd94af18506aaff7e1386385e6842a8f5157482216e",
+    "runs\\pidg_coverage_tuning\\C2_mask_affine\\rubber_duck\\test\\ours_50000\\gt\\00038.png": "465490cd02d471e99058e16cb4c25f5b6f581dfeb2bf5987984841a145266f99",
+    "scripts\\build_coverage_report.py": "cf798b2c4a56c71765c4ff512cfc047d3d26b5bf28969f78cc60ec1970b03ad1",
     "variants\\coverage_tuning\\runtime.py": "647af84ebc443d6b7f60530318024ad20adbf763304a207a057535400e8afbd3",
     "variants\\coverage_tuning\\model.py": "296e2218fb7d2ce1d7033837cea944f2bf0948c6a83184d14a8fc2f99b7933d4",
     "variants\\coverage_tuning\\density.py": "d8c89d53a24499e8c57f8a6b808f305c50b115e82b68b3cc8f694f98687f38ac",
-    "variants\\coverage_isolated\\runtime.py": "fea3e949747dbce6fcb451551b8efab0e2050c1010fff6938f07f46bdce8cb6b"
+    "variants\\coverage_isolated\\runtime.py": "fea3e949747dbce6fcb451551b8efab0e2050c1010fff6938f07f46bdce8cb6b",
+    "variants\\coverage_tuning\\data.py": "97286ffc6ad97042b5d029265496ca819b7e66f722c721cb1c468c8f8ac4340b",
+    "variants\\coverage_tuning\\code\\train_pidg.py": "3220a3701c47be420c6e9207fd93b90b31b72aa32c1ea2489dd6d73ee266727c",
+    "variants\\coverage_tuning\\code\\gaussian_renderer\\__init__.py": "b96d91a8caaa58aca33d523702cde425037c1ad3b79d10b6fd07f7ab00a1c34d",
+    "variants\\metric_tuning\\runtime.py": "2e9c753cdd31c70cd6aad24788ec59431a33882df59ac2b3dbd54eb66131e010",
+    "runs\\pidg_coverage_tuning\\C1_mask\\rubber_duck\\cfg_args": "2f629b2e0d8972ed1b67643c9afdfb6d1f5acb6b6b3a241ff71fa4fdacf8abc9",
+    "third_party\\PIDG\\submodules\\flow-based-diff-gaussian-rasterization\\cuda_rasterizer\\forward.cu": "a951255a0f65c53369fcdb954c1fa404346e26afddfc8e4701adf12e2d6404d7",
+    "third_party\\PIDG\\submodules\\flow-based-diff-gaussian-rasterization\\cuda_rasterizer\\backward.cu": "257307f17e02a1bb92ed8ec8c0129907be42644181e68075ceab67a04390adde"
   },
   "frame153_shared_crop": [
     591,
@@ -432,5 +475,59 @@
     "four_metric_means_verified": true,
     "selection": "validation-only",
     "historical_test_exposure": true
+  },
+  "mask_color_case": {
+    "original_frame_id": 153,
+    "export_index": 38,
+    "roi_xyxy": [
+      620,
+      350,
+      735,
+      465
+    ],
+    "gt_pixel_rule": "R>100, G>90, B<130 inside fixed ROI, 8-bit RGB",
+    "selected_gt_pixels": 3850,
+    "models": {
+      "GT": {
+        "mean_rgb_at_gt_selected_pixels": [
+          0.7325378151260565,
+          0.6252161955691327,
+          0.26911128087598585
+        ],
+        "mean_alpha_at_gt_selected_pixels": 0.9847303284950344,
+        "red_zero_fraction_at_gt_selected_pixels": 0.0,
+        "rgb_mae_at_gt_selected_pixels": 0.0
+      },
+      "C0": {
+        "mean_rgb_at_gt_selected_pixels": [
+          0.728436974789919,
+          0.623763687293092,
+          0.2639816653934314
+        ],
+        "mean_alpha_at_gt_selected_pixels": 0.9454351922587216,
+        "red_zero_fraction_at_gt_selected_pixels": 0.0,
+        "rgb_mae_at_gt_selected_pixels": 0.027622103386809267
+      },
+      "C1": {
+        "mean_rgb_at_gt_selected_pixels": [
+          0.0,
+          0.6170043290043253,
+          0.26364654952890676
+        ],
+        "mean_alpha_at_gt_selected_pixels": 0.9644145658263307,
+        "red_zero_fraction_at_gt_selected_pixels": 1.0,
+        "rgb_mae_at_gt_selected_pixels": 0.263003819709702
+      },
+      "C2": {
+        "mean_rgb_at_gt_selected_pixels": [
+          0.7291734148204746,
+          0.620007130124771,
+          0.26280315762668977
+        ],
+        "mean_alpha_at_gt_selected_pixels": 0.971572192513369,
+        "red_zero_fraction_at_gt_selected_pixels": 0.0,
+        "rgb_mae_at_gt_selected_pixels": 0.025978100331041507
+      }
+    }
   }
 }
