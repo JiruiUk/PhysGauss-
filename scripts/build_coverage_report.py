@@ -1,5 +1,6 @@
 """Chinese C0-C5 report from verified final PNG metrics and training logs."""
 from datetime import datetime,timezone
+from html import unescape
 import hashlib
 import json
 import math
@@ -12,6 +13,7 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import numpy as np
 from PIL import Image
+from scipy.ndimage import minimum_filter
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.pdfgen import canvas
@@ -28,7 +30,7 @@ NAMES=['C0_V3_reference','C1_mask','C2_mask_affine','C3_mask_affine_density','C4
 ROOTS=[ROOT/'runs/pidg_coverage_tuning']*4+[ROOT/'runs/pidg_coverage_isolated']*2
 COLORS=['#596a7c','#d9862e','#198f86','#b55555','#8c6cbb','#3287bf']
 SOURCES={}; RECORD=[]
-PAGE_COUNT=14
+PAGE_COUNT=15
 
 
 def read(path):
@@ -87,13 +89,24 @@ def alpha_diagnostics(metadata,models):
                 gt=np.asarray(image.getchannel('A').resize(size,Image.Resampling.BICUBIC))/255.
             truth,pred=gt>.5,a>.5
             tp=np.count_nonzero(pred&truth); fp=np.count_nonzero(pred&~truth); fn=np.count_nonzero(~pred&truth)
+            core=minimum_filter(gt,size=7,mode='constant',cval=0)>.95
+            interior_pixels=int(core.sum()); low_pixels=int(np.count_nonzero((a<.5)&core))
+            stored=m['coverage']['per_frame'][i]
+            assert int(stored['frame'])==int(Path(frame['file_path']).stem)
+            assert interior_pixels==stored['interior_pixels']
+            assert abs(low_pixels/max(interior_pixels,1)-stored['interior_hole_rate'])<1e-12
             row={'frame_id':int(Path(frame['file_path']).stem),'precision':tp/max(tp+fp,1),
                 'recall':tp/max(tp+fn,1),'background_false_positive_rate':fp/max(np.count_nonzero(~truth),1),
                 'predicted_area_fraction':float(pred.mean()),'gt_area_fraction':float(truth.mean()),
-                'mask_iou':tp/max(tp+fp+fn,1)}
+                'mask_iou':tp/max(tp+fp+fn,1),
+                'interior_pixels':interior_pixels,'interior_low_coverage_pixels':low_pixels,
+                'background_pixels':int(np.count_nonzero(~truth)),
+                'background_false_positive_pixels':int(fp)}
             rows.append(row)
             SOURCES[str(path.relative_to(ROOT))]=hashlib.sha256(path.read_bytes()).hexdigest()
-        m['alpha_diagnostics']={'per_frame':rows,'mean':{k:float(np.mean([r[k] for r in rows])) for k in rows[0] if k!='frame_id'}}
+            SOURCES[str(target.relative_to(ROOT))]=hashlib.sha256(target.read_bytes()).hexdigest()
+        mean_keys=('precision','recall','background_false_positive_rate','predicted_area_fraction','gt_area_fraction','mask_iou')
+        m['alpha_diagnostics']={'per_frame':rows,'mean':{k:float(np.mean([r[k] for r in rows])) for k in mean_keys}}
         assert abs(m['alpha_diagnostics']['mean']['mask_iou']-m['coverage']['mean']['mask_iou'])<1e-8
 
 
@@ -119,6 +132,16 @@ def analyze(models):
         'four_metric_means_verified':True,'selection':'validation-only','historical_test_exposure':True},
         'models':[{k:v for k,v in m.items() if k not in ('directory','history','per_view')}|{'directory':str(m['directory'])} for m in models],
         'comparisons':comparisons,'pre_activation_validation_psnr_differences':prefix,
+        'coverage_metric_definitions':{
+            'predicted_alpha':'8-bit exported alpha PNG / 255',
+            'gt_alpha':'Original final-test RGBA alpha, bicubic resized to render size, then / 255',
+            'interior_region':'7x7 minimum of GT alpha with zero padding > 0.95 (3-pixel square erosion)',
+            'interior_low_coverage':'Count(interior and predicted alpha < 0.5) / max(Count(interior), 1)',
+            'background_region':'GT alpha <= 0.5',
+            'background_false_coverage':'Count(background and predicted alpha > 0.5) / max(Count(background), 1)',
+            'aggregation':'100 * arithmetic mean of 50 per-frame fractions; not pooled pixel counts',
+            'empty_region_behavior':'Zero numerator and denominator clamped to 1, returning 0',
+            'lower_is_better':True},
         'C3_minus_C2_last8_test_frames':{'frame_ids':list(range(169,201,4)),
             'last8_mean':float(tail_delta[42:].mean()),'first42_mean':float(tail_delta[:42].mean()),
             'last8_contribution_to50_mean':float(tail_delta[42:].sum()/50)},
@@ -212,8 +235,11 @@ class Page(L.Page):
         RECORD.extend(['','## '+title,'',subtitle,''])
         super().__init__(n,'C0-C5 覆盖与形变消融',title,subtitle)
     def text(self,text,style='body',gap=10):
-        RECORD.append(re.sub('<[^>]+>','',text.replace('<br/>','\n'))+'\n')
+        RECORD.append(unescape(re.sub(r'</?(?:b|i|font|span|super|sub|link|a)(?:\s[^>]*)?>','',text.replace('<br/>','\n')))+'\n')
         super().text(text,style,gap)
+    def callout(self,text):
+        RECORD.append(unescape(text.replace('<br/>','\n'))+'\n')
+        super().callout(text)
     def heading(self,text):
         RECORD.extend(['','### '+text,'']);super().heading(text)
     def table(self,data,widths,**kwargs):
@@ -268,7 +294,7 @@ def build(models,a,f):
     p.image(f['alpha'],232,'原始153帧的完整 alpha。白色表示高不透明度；显示范围统一为0-1，未按模型单独归一化。')
     p.text('C0 的低内部空洞率伴随很低的轮廓 IoU。补充诊断显示它在 GT 背景也保留大量高 alpha：背景变黑不等于背景透明。Mask 能去掉这类误覆盖，但并不自动保证鸭子内部颜色、位置与遮挡顺序正确。')
     p.text('低覆盖率只检测透明缺口。高 alpha 的黑色像素也可能看起来像“洞”，但由颜色或遮挡错误形成的这类缺陷不会被计入低覆盖率，仍需检查前景 RGB 误差。','small')
-    p.text('定义：IoU 使用 alpha>0.5；内部低覆盖率在 GT alpha>0.95 的3像素腐蚀区域统计预测 alpha<0.5；背景误覆盖率在 GT alpha<=0.5 区域统计预测 alpha>0.5。前景 PSNR 使用 GT alpha>0.5。均为逐帧平均。','small')
+    p.text('定义：IoU 使用 alpha>0.5；内部低覆盖率在 GT alpha>0.95 的3像素腐蚀区域统计预测 alpha<0.5；背景误覆盖率在 GT alpha<=0.5 区域统计预测 alpha>0.5。前景 PSNR 使用 GT alpha>0.5。均为逐帧平均；公式、分母和实例见第15页。','small')
     p.finish()
 
     p=Page(4,'曲线审计：增密前已存在差异','共同随机初始化并不等于 GPU 训练全过程逐位一致')
@@ -393,6 +419,28 @@ def build(models,a,f):
     p.heading('GT + 六模型合并图库：50张 / final50k')
     p.path(ROOT/'runs/pidg_coverage_comparison/final50000/index.html')
     p.text('来源：各模型 results.json、per_view.json、coverage_metrics_test.json、metric_history.jsonl、metric_best.json、配置、初始化与渲染校验记录，以及当前 runtime/model/density 源码。完整 SHA-256 与逐帧诊断见配套 sources.json 和 assessment.json。','small')
+    p.finish()
+
+    p=Page(15,'两个覆盖指标如何计算？','对应第3页的百分数列；均衡量二维 alpha，数值越低越好')
+    p.text('A_t(p) 为当前模型渲染的 alpha；M_t(p) 为同帧原始 RGBA 的 GT alpha。两者位于相同1600×900像素网格，范围0-1。以下 |S| 表示集合 S 的像素数量。')
+    p.heading('1. 内部低覆盖 %：物体内部有多少像素不够实？')
+    p.callout('I_t = {p：p 周围7×7窗口内的 GT alpha 最小值 &gt; 0.95}<br/>h_t = |I_t ∩ {A_t &lt; 0.5}| / max(|I_t|, 1)<br/>内部低覆盖 % = 100 × (1/50) sum_t h_t')
+    p.text('I_t 等价于对 M_t>0.95 的区域做半径3像素的方形腐蚀，图像外按0处理，排除轮廓和半透明边缘。分母仅为腐蚀后内部像素数；分子为其中渲染 alpha<0.5 的像素数。它不按整张图或全部前景像素归一化。','small')
+    p.heading('2. 背景误覆盖 %：真实背景有多少被错误挡住？')
+    p.callout('B_t = {p：M_t(p) ≤ 0.5}<br/>f_t = |B_t ∩ {A_t &gt; 0.5}| / max(|B_t|, 1)<br/>背景误覆盖 % = 100 × (1/50) sum_t f_t')
+    p.text('分母为 GT 背景像素数；分子为背景内预测 alpha>0.5 的像素数，即背景假阳性率 FP/(FP+TN)。它不是 FP/(TP+FP)，也不通过 RGB 是否为黑色判断。M=0.5 归入背景；预测 A=0.5 既不计低覆盖，也不计误覆盖。','small')
+    p.heading('实际像素计数示例：原始帧153 / final50k')
+    rows=[['模型','内部：低覆盖/总数','单帧 %','背景：误覆盖/总数','单帧 %']]
+    for m in models[:2]:
+        row=m['alpha_diagnostics']['per_frame'][38]
+        low,inside=row['interior_low_coverage_pixels'],row['interior_pixels']
+        fp,bg=row['background_false_positive_pixels'],row['background_pixels']
+        rows.append([m['id'],f'{low}/{inside}',f'{100*low/max(inside,1):.5f}',
+            f'{fp}/{bg}',f'{100*fp/max(bg,1):.2f}'])
+    p.table(rows,[45,132,75,165,cw-417])
+    p.text('上表仅为一帧。主表先逐帧计算比值，再对50帧等权平均并乘100；不是先汇总50帧像素后求比值。例如0.00185%对应比例0.0000185。若某帧区域为空，代码将分母夹到1，结果为0。','small')
+    p.text('评估读取8-bit预测 alpha PNG；GT alpha 双三次缩放后转到0-1。与训练中全图软 alpha L1 的定义不同。高 alpha 但颜色错误的黑洞不会计入内部低覆盖；大面积高 alpha 也可能同时得到低内部缺口和高背景误覆盖，所以两列需结合 RGB 一起读。','small')
+    p.text('核验：300张预测 alpha 的内部计数均与原 coverage_metrics_test.json 逐帧一致；背景分子/分母另存 assessment.json。实现：coverage_tuning/model.py 的 interior/coverage_metrics；本脚本 alpha_diagnostics。','small')
     p.finish();L.c.save()
 
 
@@ -411,7 +459,7 @@ def main():
         SOURCES[str(p.relative_to(ROOT))]=hashlib.sha256(p.read_bytes()).hexdigest()
     proof={'pdf':str(PDF),'pdf_sha256':hashlib.sha256(PDF.read_bytes()).hexdigest(),'expected_pages':PAGE_COUNT,
         'pages':L.page_records,'sources':SOURCES,'frame153_shared_crop':f['crop'],'data_checks':a['protocol'],
-        'mask_color_case':f['color_case']}
+        'mask_color_case':f['color_case'],'coverage_metric_definitions':a['coverage_metric_definitions']}
     PDF.with_suffix('.sources.json').write_text(json.dumps(proof,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print(json.dumps({'pdf':str(PDF),'pages':L.page_records,'alpha_means':{m['id']:m['alpha_diagnostics']['mean'] for m in models}},ensure_ascii=False,indent=2))
 

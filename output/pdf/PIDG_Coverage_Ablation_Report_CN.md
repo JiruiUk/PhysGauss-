@@ -6,6 +6,8 @@ C0-C5 已完成训练结果与代码机制分析 | 2026-10-27
 
 C0-C5 已完成训练结果与代码机制分析 | 2026-10-27
 
+结论：本轮没有出现全面优于 V3 的新增方案。Mask 提高轮廓 IoU，却牺牲 RGB 重建；邻域项在有 Mask 时弥补部分退化；单独增密最接近基准，但收益小且有归因混杂。
+
 
 ### 六组究竟改变了什么
 
@@ -85,7 +87,7 @@ C0 的低内部空洞率伴随很低的轮廓 IoU。补充诊断显示它在 GT 
 
 低覆盖率只检测透明缺口。高 alpha 的黑色像素也可能看起来像“洞”，但由颜色或遮挡错误形成的这类缺陷不会被计入低覆盖率，仍需检查前景 RGB 误差。
 
-定义：IoU 使用 alpha>0.5；内部低覆盖率在 GT alpha>0.95 的3像素腐蚀区域统计预测 alpha0.5。前景 PSNR 使用 GT alpha>0.5。均为逐帧平均。
+定义：IoU 使用 alpha>0.5；内部低覆盖率在 GT alpha>0.95 的3像素腐蚀区域统计预测 alpha<0.5；背景误覆盖率在 GT alpha<=0.5 区域统计预测 alpha>0.5。前景 PSNR 使用 GT alpha>0.5。均为逐帧平均；公式、分母和实例见第15页。
 
 
 ## 曲线审计：增密前已存在差异
@@ -146,6 +148,10 @@ C1/C2/C3 使用；训练 alpha 是软轮廓监督，不是缺帧实验中的随�
 
 独立读取120张训练 RGBA 原图的 A 通道，双三次缩放到相机分辨率，再除以255。RGB 加载与黑背景合成保持原路径；mask 不是 SAM 分割或光流有效性图。train membership 检查阻止验证/测试 mask 进入训练损失，评估用 alpha 仅用于事后诊断。
 
+L_mask = (1 / HW) sum_p |A(p,t) - M(p,t)|
+L_total = L_V3 + 0.1 L_mask + scheduled L_affine
+A 为渲染累积 alpha，M 为原图 alpha；目标 M detach。增密是离散点分配策略，不另加一个可微损失。
+
 本轮 L_V3 保留像素 L1、SSIM、已有物理/网格正则，并含权重0.02的 LPIPS 感知项。LPIPS 每4步计算，按间隔乘4补偿；覆盖损失则每一步计算，从第1步启用，没有前景/背景平衡、边界加权或延迟 ramp。Iso 和速度轨迹一致性权重均为0。
 
 
@@ -172,6 +178,11 @@ C2/C3/C4 使用；允许真实拉伸，不是固定邻居距离的刚体约束
 
 每次选128个随迭代轮换的确定性 anchor，在当前 canonical 点云中寻找最多8个欧氏近邻；仅保留距离小于0.1世界单位的边。X 是 detach 后的 canonical 坐标，y(t) 是由当前形变得到的中心位置；平移经相对偏移相消。
 
+D_i[j,:] = X_j - X_i；E_i[j,:] = y_j(t) - y_i(t)
+B_i = pinv(D_i) E_i；E_fit = D_i B_i
+q_i = mean_j ||D_i[j,:]||^2
+L_affine = mean_i { mean_j ||E_i[j,:] - E_fit[j,:]||^2 / max(q_i, 1e-8) }
+
 均值只统计有效边；至少4条边且最小奇异值大于最大奇异值的1e-4时才使用该邻域。伪逆 rtol=1e-4。D、其伪逆与归一化尺度 detach；E 和拟合 B 对形变保留可微，因此梯度传给轨迹，canonical 坐标不被此正则直接更新。
 
 
@@ -192,6 +203,10 @@ C3/C5 使用；按多个训练时刻的覆盖缺口选父点，而非直接生�
 
 
 ### 从像素缺口累计到已有 Gaussian
+
+d(p,t) = 1[p 属于腐蚀后前景] × 1[A(p,t) < 0.7] × max(0, 0.95 - A(p,t))
+S_i = sum_{t,p: i 在 p 的贡献者列表中} d(p,t)
+V_i = 出现有效缺口的不同训练帧数；仅 V_i ≥ 3 且 S_i > 0 的点可作为父点。
 
 GT alpha>0.95 的前景做3像素腐蚀，减少轮廓边界干扰。16k-35,999每20步采样，像素网格步长4；每个像素最多读取20个实际 footprint 贡献者。当前实现给列表内每个有效 ID 累加相同缺口值，并非按其 RGB/alpha 贡献权重归一化分配。同一时刻重复采样只算一票，但累计分数会增加。
 
@@ -218,6 +233,11 @@ GT alpha>0.95 的前景做3像素腐蚀，减少轮廓边界干扰。16k-35,999�
 
 
 ### 1. 颜色与 alpha 共享同一套可见性权重
+
+a_i(p) = opacity_i × projected_footprint_i(p)
+T_i(p) = product_{j<i} (1 - a_j(p))；w_i(p) = T_i(p) a_i(p)
+C(p) = sum_i w_i(p)c_i(view) + T_end(p)b；A(p) = 1 - T_end(p)
+忽略可见性排序切换与阈值时，dC/dc_i = w_i，而 dL_mask/dc_i = 0。
 
 c_i 来自每个 Gaussian 的 SH 系数，并非形变 MLP 的 RGB 输出。本轮形变分支输出中心变换、旋转与尺度，没有独立随时间的颜色残差。即使 SH 不被 mask 直接更新，mask 对 a_i、位置及协方差的更新仍会改变 w_i，进而改变混合颜色、遮挡以及后续 SH 梯度。排序切换是非光滑情况，不能用上式导数完全描述。
 
@@ -270,6 +290,10 @@ C1 的红通道在这3850个像素中全部为0，而 G/B 均值接近 GT。该�
 ### 源码能确认的事实
 
 本轮 convert_SHs_python=False，颜色在 CUDA rasterizer 中由 SH 求值。forward.cu 的 computeColorFromSH 将 SH 结果加0.5，然后逐通道 max(result,0)；并记录 result<0 的 clamped 标志。backward.cu 将这些通道的 dL_dRGB 乘0，再计算 SH 及视线方向相关梯度。
+
+q_i,k = SH_i,k(view) + 0.5；c_i,k = max(q_i,k, 0)
+若 q_i,k < 0，则 dc_i,k / dq_i,k = 0。
+该 Gaussian 在该视角下、该通道经颜色求值路径传回 SH 的梯度为0；增加 RGB/感知损失权重也不能穿过这条已截断路径。
 
 
 ### 为什么与本次“黄色变绿”有关？
@@ -396,3 +420,44 @@ GT 在 renders 的同级 gt 文件夹；alpha 在同级 alpha；最终50k拼接�
 F:\A_Edinburgh\PhysGauss\runs\pidg_coverage_comparison\final50000\index.html
 
 来源：各模型 results.json、per_view.json、coverage_metrics_test.json、metric_history.jsonl、metric_best.json、配置、初始化与渲染校验记录，以及当前 runtime/model/density 源码。完整 SHA-256 与逐帧诊断见配套 sources.json 和 assessment.json。
+
+
+## 两个覆盖指标如何计算？
+
+对应第3页的百分数列；均衡量二维 alpha，数值越低越好
+
+对应第3页的百分数列；均衡量二维 alpha，数值越低越好
+
+A_t(p) 为当前模型渲染的 alpha；M_t(p) 为同帧原始 RGBA 的 GT alpha。两者位于相同1600×900像素网格，范围0-1。以下 |S| 表示集合 S 的像素数量。
+
+
+### 1. 内部低覆盖 %：物体内部有多少像素不够实？
+
+I_t = {p：p 周围7×7窗口内的 GT alpha 最小值 > 0.95}
+h_t = |I_t ∩ {A_t < 0.5}| / max(|I_t|, 1)
+内部低覆盖 % = 100 × (1/50) sum_t h_t
+
+I_t 等价于对 M_t>0.95 的区域做半径3像素的方形腐蚀，图像外按0处理，排除轮廓和半透明边缘。分母仅为腐蚀后内部像素数；分子为其中渲染 alpha<0.5 的像素数。它不按整张图或全部前景像素归一化。
+
+
+### 2. 背景误覆盖 %：真实背景有多少被错误挡住？
+
+B_t = {p：M_t(p) ≤ 0.5}
+f_t = |B_t ∩ {A_t > 0.5}| / max(|B_t|, 1)
+背景误覆盖 % = 100 × (1/50) sum_t f_t
+
+分母为 GT 背景像素数；分子为背景内预测 alpha>0.5 的像素数，即背景假阳性率 FP/(FP+TN)。它不是 FP/(TP+FP)，也不通过 RGB 是否为黑色判断。M=0.5 归入背景；预测 A=0.5 既不计低覆盖，也不计误覆盖。
+
+
+### 实际像素计数示例：原始帧153 / final50k
+
+| 模型 | 内部：低覆盖/总数 | 单帧 % | 背景：误覆盖/总数 | 单帧 % |
+| --- | --- | --- | --- | --- |
+| C0 | 0/127717 | 0.00000 | 408932/1298149 | 31.50 |
+| C1 | 0/127717 | 0.00000 | 450/1298149 | 0.03 |
+
+上表仅为一帧。主表先逐帧计算比值，再对50帧等权平均并乘100；不是先汇总50帧像素后求比值。例如0.00185%对应比例0.0000185。若某帧区域为空，代码将分母夹到1，结果为0。
+
+评估读取8-bit预测 alpha PNG；GT alpha 双三次缩放后转到0-1。与训练中全图软 alpha L1 的定义不同。高 alpha 但颜色错误的黑洞不会计入内部低覆盖；大面积高 alpha 也可能同时得到低内部缺口和高背景误覆盖，所以两列需结合 RGB 一起读。
+
+核验：300张预测 alpha 的内部计数均与原 coverage_metrics_test.json 逐帧一致；背景分子/分母另存 assessment.json。实现：coverage_tuning/model.py 的 interior/coverage_metrics；本脚本 alpha_diagnostics。

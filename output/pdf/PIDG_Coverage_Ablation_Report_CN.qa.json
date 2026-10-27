@@ -1,7 +1,26 @@
 {
   "status": "passed",
-  "page_count": 14,
-  "inspected_pages": [
+  "page_count": 15,
+  "visually_inspected_changed_pages": [
+    3,
+    15
+  ],
+  "previously_inspected_body_pixel_identical_pages": [
+    1,
+    2,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "latest_footer_visual_check_pages": [
     1,
     2,
     3,
@@ -15,16 +34,17 @@
     11,
     12,
     13,
-    14
+    14,
+    15
   ],
   "render_dpi": 100,
   "renderer": "Poppler pdftoppm",
-  "render_directory": "F:\\A_Edinburgh\\PhysGauss\\tmp\\pdfs\\coverage_technical_qa",
-  "pdf_sha256": "91d5ca1d4d6b7aeec6d031e636f49492e3428d7d7136bc0b5d07890ec3d24eaf",
+  "render_directory": "F:\\A_Edinburgh\\PhysGauss\\tmp\\pdfs\\coverage_metric_definition_qa",
+  "pdf_sha256": "4b5d4b1f13065ca652faf48b2c84b1df29d955bdb20cbd1c263a8124ea3a65b2",
   "text_chars_per_page": [
     693,
     841,
-    736,
+    750,
     510,
     446,
     1016,
@@ -35,17 +55,19 @@
     1216,
     840,
     805,
-    1904
+    1904,
+    1287
   ],
   "absolute_render_path_count": 13,
-  "verified_source_hash_count": 374,
+  "verified_source_hash_count": 424,
+  "coverage_counts_verified_images": 300,
   "checks": [
-    "All 14 latest rendered pages visually inspected",
-    "No clipping, overlapping text, or missing glyphs",
-    "Six-model full-image metrics unchanged from previous report",
-    "Three methods checked against frozen implementation and configs",
-    "Fixed GT-defined color ROI verified; 3850 selected pixels",
-    "Observed channel collapse distinguished from unconfirmed SH clamp causation",
-    "Absolute render paths include consolidated six-model gallery"
+    "Changed pages 3 and 15 visually inspected; unchanged bodies pixel-identical to prior reviewed PDF",
+    "All 15 latest page footers visually inspected; no clipping, overlap, or missing glyphs",
+    "All prior RGB and alpha metrics unchanged",
+    "All 300 interior pixel counts and low-alpha fractions exactly match frozen evaluation results",
+    "Background false-positive counts reproduce all per-frame fractions",
+    "Formula definitions, denominator, erosion, thresholds, PNG quantization and frame-wise averaging documented",
+    "Markdown companion includes formula callouts and preserves comparison operators"
   ]
 }
