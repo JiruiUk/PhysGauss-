@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "tests": 26,
+  "command": "python -m pytest tests/test_coverage_isolated.py tests/test_coverage_mask.py tests/test_coverage_affine.py tests/test_coverage_density.py tests/test_coverage_protocol.py tests/test_v3_iso_scratch.py -q",
+  "checks": [
+    "affine-only loss and gradients match original",
+    "affine-only needs no alpha target or render alpha",
+    "density-only adds no mask or affine loss",
+    "explicit unsegmented scope",
+    "flags-off no RNG/state access",
+    "unchanged scratch optimizer/network configuration",
+    "fork changes only runtime import",
+    "freeze stable after helper wiring"
+  ],
+  "gpu_preflight": "queued after existing GPU experiment and before long training",
+  "completed_utc": "2026-10-27T00:34:37.629277+00:00"
+}

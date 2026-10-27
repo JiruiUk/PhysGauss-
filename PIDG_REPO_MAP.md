@@ -172,3 +172,16 @@ reuses the completed V3 control, selects on validation only and locks selections
 before final testing. Iso stays off. New diagnostics include foreground PSNR,
 mask IoU and eroded-interior low-alpha rate. New outputs live exclusively in
 `experiments/coverage_tuning` and `runs/pidg_coverage_tuning`.
+
+## Standalone component effects (separate follow-up fork)
+
+`variants/coverage_isolated/code` copies the frozen coverage trainer with only
+the Tuning import changed. `runtime.py` retains the exact affine formula and
+inherited density module, sets mask loss to zero, removes separate alpha targets
+from the affine-only path, and replaces the disproved single-object declaration
+with explicit acknowledgment of unsegmented neighbors. C4 enables affine only;
+C5 enables density only and still uses training alpha to select additions.
+`run.py` waits for the existing GPU queue, runs GPU preflight, then trains both
+arms50k from the identical random zero state. Reports compare C4-C0 and C5-C0
+alongside all existing cumulative arms. New files remain in
+`experiments/coverage_isolated` and `runs/pidg_coverage_isolated`.
