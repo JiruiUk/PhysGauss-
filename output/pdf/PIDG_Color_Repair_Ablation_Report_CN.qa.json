@@ -1,0 +1,196 @@
+{
+  "status": "passed",
+  "pdf_absolute": "F:\\A_Edinburgh\\PhysGauss\\output\\pdf\\PIDG_Color_Repair_Ablation_Report_CN.pdf",
+  "pdf_sha256": "e5b291c2076820dbd9d54a9744f144d67928cba71d69e0efd9ca8ffd502867e6",
+  "pages": 12,
+  "visually_inspected_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "visual_defects_found": 0,
+  "final_render_reinspection": "page11 inspected after update; other11 rendered PNGs match previously inspected pages byte for byte",
+  "page_numbers_verified": true,
+  "empty_pages": 0,
+  "replacement_characters": 0,
+  "metric_values_verified": [
+    {
+      "model": "O0",
+      "metric": "PSNR",
+      "display": "39.7240"
+    },
+    {
+      "model": "O0",
+      "metric": "SSIM",
+      "display": "0.994333"
+    },
+    {
+      "model": "O0",
+      "metric": "LPIPS",
+      "display": "0.010681"
+    },
+    {
+      "model": "O0",
+      "metric": "MS-SSIM",
+      "display": "0.996196"
+    },
+    {
+      "model": "O1",
+      "metric": "PSNR",
+      "display": "35.7459"
+    },
+    {
+      "model": "O1",
+      "metric": "SSIM",
+      "display": "0.992724"
+    },
+    {
+      "model": "O1",
+      "metric": "LPIPS",
+      "display": "0.013329"
+    },
+    {
+      "model": "O1",
+      "metric": "MS-SSIM",
+      "display": "0.992781"
+    },
+    {
+      "model": "O2",
+      "metric": "PSNR",
+      "display": "37.1511"
+    },
+    {
+      "model": "O2",
+      "metric": "SSIM",
+      "display": "0.993076"
+    },
+    {
+      "model": "O2",
+      "metric": "LPIPS",
+      "display": "0.012812"
+    },
+    {
+      "model": "O2",
+      "metric": "MS-SSIM",
+      "display": "0.994440"
+    },
+    {
+      "model": "O3",
+      "metric": "PSNR",
+      "display": "35.8634"
+    },
+    {
+      "model": "O3",
+      "metric": "SSIM",
+      "display": "0.992693"
+    },
+    {
+      "model": "O3",
+      "metric": "LPIPS",
+      "display": "0.013303"
+    },
+    {
+      "model": "O3",
+      "metric": "MS-SSIM",
+      "display": "0.992737"
+    },
+    {
+      "model": "N1",
+      "metric": "PSNR",
+      "display": "40.3721"
+    },
+    {
+      "model": "N1",
+      "metric": "SSIM",
+      "display": "0.994676"
+    },
+    {
+      "model": "N1",
+      "metric": "LPIPS",
+      "display": "0.010438"
+    },
+    {
+      "model": "N1",
+      "metric": "MS-SSIM",
+      "display": "0.996546"
+    },
+    {
+      "model": "N2",
+      "metric": "PSNR",
+      "display": "39.2914"
+    },
+    {
+      "model": "N2",
+      "metric": "SSIM",
+      "display": "0.994259"
+    },
+    {
+      "model": "N2",
+      "metric": "LPIPS",
+      "display": "0.011191"
+    },
+    {
+      "model": "N2",
+      "metric": "MS-SSIM",
+      "display": "0.996293"
+    },
+    {
+      "model": "N3",
+      "metric": "PSNR",
+      "display": "39.2738"
+    },
+    {
+      "model": "N3",
+      "metric": "SSIM",
+      "display": "0.994271"
+    },
+    {
+      "model": "N3",
+      "metric": "LPIPS",
+      "display": "0.011240"
+    },
+    {
+      "model": "N3",
+      "metric": "MS-SSIM",
+      "display": "0.996301"
+    }
+  ],
+  "absolute_render_paths_verified": [
+    "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_color_repair\\render_exports\\final50000\\gt_c1_c2_c3\\index.html",
+    "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_color_repair\\render_exports\\final50000\\gt",
+    "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_color_repair\\render_exports\\final50000\\index.html",
+    "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_color_repair\\render_exports\\final50000\\C1_repaired\\renders",
+    "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_color_repair\\render_exports\\final50000\\C1_repaired\\gt_render",
+    "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_color_repair\\render_exports\\final50000\\C2_repaired\\renders",
+    "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_color_repair\\render_exports\\final50000\\C2_repaired\\gt_render",
+    "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_color_repair\\render_exports\\final50000\\C3_repaired\\renders",
+    "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_color_repair\\render_exports\\final50000\\C3_repaired\\gt_render"
+  ],
+  "all150_new_alpha_counts_match_saved_metrics": true,
+  "same15k_full_checkpoint_verified": true,
+  "original_coverage_report_unchanged": true,
+  "render_dpi": 115,
+  "rendered_page_sha256": {
+    "page-01.png": "bce28c2a9c39d849d1d2f3318846d3c959ad80f999057d20b4a5aa76af69b91f",
+    "page-02.png": "4a408c1b22eccce21009d564201c2a9f0550c4adcbd231a900bff97621063580",
+    "page-03.png": "6cba395220ebf9a4a034b51064856ff6f59985c88ea121bf490de39d824ddb5c",
+    "page-04.png": "eaa06f4e4a4e40ed6cefec9425e7628238f9d1b3de27d778e3b4f2ec9eeae079",
+    "page-05.png": "f2f74ae9fac914fa33447041372a107df166d3c6901b31db8dded51c1fed11b0",
+    "page-06.png": "c3d9cfdf06477d9917361ad2d2871a7180f343bd39d271907e8eb49609f77d97",
+    "page-07.png": "f49a900378760f4254ee6cf1e758c98695f856eef5354166d6d358e5adb8eb84",
+    "page-08.png": "c8eea96fdc7b55fe35a3aa4899394f6447492d4494cce1f3cef12c74bcfbb61d",
+    "page-09.png": "f104a6b99560f00bd70dd28485a64f8d28f1c33a566c31595c7783a6ec8c6a52",
+    "page-10.png": "c5ad7047f360d1680b8fc1a5f677f6ee2eace9cbffa9db8793cf830b9bd8ee76",
+    "page-11.png": "9af3c6b8996fb0d2fef91bd586b0ae16dc987beb8296075a89a17c440b023c45",
+    "page-12.png": "bcd8e0c8bb43fd53f12b193b95ccb2abe9a488f6ae2c74e52f5484f44883a8c5"
+  }
+}
