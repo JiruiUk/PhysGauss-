@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "arms": {
+    "P1_fixed_E": {
+      "records": 8,
+      "first_logged_E": 1.0000000000000002,
+      "last_logged_E": 1.0000000000000002,
+      "all_gradients_finite": true,
+      "nonzero_F_gradient_records": 8,
+      "conditional_profile_count": 4
+    },
+    "P2_learn_E": {
+      "records": 8,
+      "first_logged_E": 1.0000000000000002,
+      "last_logged_E": 0.9993849342618303,
+      "all_gradients_finite": true,
+      "nonzero_F_gradient_records": 8,
+      "conditional_profile_count": 4
+    }
+  },
+  "identical_full20_step_smoke_branch": true
+}

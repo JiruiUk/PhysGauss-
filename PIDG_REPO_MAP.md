@@ -222,3 +222,19 @@ with a shared3k prefix and exact shared15k C2/C3 pre-density state. Validation
 selects snapshots before locked final testing. Original models, data split and
 completed reports remain preserved. New outputs live in `experiments/color_repair`
 and `runs/pidg_color_repair`.
+# C1 shared effective-stiffness ablation
+
+`variants/c1_material/prepare.py` copies frozen C1 repair code and changes only
+the optional Tuning import. `model.py::SharedYoung` adds one bounded material-
+shared E with fixed Poisson ratio. `runtime.py` reuses `pidg_ext` F estimation,
+Neo-Hookean stress and robust consistency while retaining PIDG predicted stress.
+Its canonical basis is detached; trajectory, stress and shared E receive gradients.
+The new flag-off path returns the C1 runtime loss without new RNG/optimizer work.
+
+All three runs branch the same complete pre-material C1 random-init3k state and
+finish at total50k. Without known material IDs the scope is explicitly a global
+effective prior, not real material identification. E is in normalized units, not
+Pa. E/optimizer/canonical graph are checksum-bound to full checkpoints. Conditional
+profiles cannot certify joint identifiability. New code/tests, reports and outputs
+are isolated in `variants/c1_material`, `experiments/c1_material`, and
+`runs/pidg_c1_material`. Old source, weights and test-selection files are preserved.

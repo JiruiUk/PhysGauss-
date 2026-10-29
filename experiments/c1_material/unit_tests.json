@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "command": "envs/pidg-cu128/python.exe -m pytest tests/test_c1_material.py tests/test_c1_material_runtime.py tests/test_pidg_constitutive.py -q",
+  "passed": 44,
+  "duration_seconds": 7.18,
+  "coverage": [
+    "Exactly one bounded shared learned stiffness and fixed Poisson ratio",
+    "Affine deformation-gradient recovery and objectivity",
+    "Rigid rotation has zero Neo-Hookean stress",
+    "Constitutive gradients reach trajectory, predicted stress, and learned E",
+    "Fixed and learned material have identical initial stress",
+    "Material-off loss and RNG match C1",
+    "Material/optimizer/graph checkpoint restore and tamper rejection",
+    "Missing true material labels require explicit effective-prior acknowledgement",
+    "Conditional profiles never claim data identifiability",
+    "Fixed and learned configs differ only in learn_young",
+    "Copied source changes only optional runtime import"
+  ],
+  "training_preflight": "Required separately before long training"
+}
