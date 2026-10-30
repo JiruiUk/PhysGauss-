@@ -94,3 +94,37 @@ of mass**. Gaussian tails overlap normally. The supplied sphere penalty is a
 soft proxy on sampled cross-group pairs, not a guarantee of nonpenetration;
 it can penalize legitimate surface contact and needs calibration before use.
 No long training or PSNR improvement is claimed at this stage.
+
+## Follow-up: three motion-only methods
+
+```powershell
+. ./reproduction/scripts/enable_cuda.ps1 -ProjectRoot (Get-Location).Path
+& ./envs/pidg-cu128/python.exe -m pytest tests/test_motion_grouping.py tests/test_object_centers.py -q
+& ./envs/pidg-cu128/python.exe -u -m variants.object_centers.motion_review
+```
+
+`motion_grouping.py` adds separately callable displacement-only and
+displacement-plus-trajectory-derived-velocity features. Neither feature uses
+RGB or absolute XYZ. Actual nonuniform training time intervals define velocity.
+Each feature block uses a shared robust amplitude scale, retaining differences
+between kernel motion amplitudes. Temporal quadrature corrects unequal spacing.
+
+The third method refines the second method's clusters with a persistent spatial
+graph: reference-pose 16NN pairs within the same base motion group; distance
+below `min(0.08, 2.5*min(local16NN radii))` in at least80% of the12 sampled poses.
+Connected components with fewer than128 kernels remain unknown. It splits
+clusters, so final component counts can exceed base K. Short-lived contact does
+not automatically create a retained graph edge, but continuous touching or
+incorrect base motion splits can still produce wrong instance groups.
+
+`motion_review.py` reuses the checksum-verified old training evidence and source
+checkpoint, compares baseK=5/6 for each method, and verifies new GPU poses and C1
+RGB against the cache. It writes a separate gallery under
+`runs/pidg_object_centers/grouping_review/motion_methods_final50000`, with72
+triptychs and24 GT/C1/T1/T2/T3 comparison PNGs. Previous candidate images and
+receipts are preserved; their gallery receives a navigation link.
+
+Spatial refinement yields19/18 components and modest visual separation of
+initially merged upper ducks. The reviewed later frames still have fragments
+and mixed duck/obstacle groups; no candidate is accepted as physical object
+identity. See `experiments/object_centers/motion_grouping_review.md`.

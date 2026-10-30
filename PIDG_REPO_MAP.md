@@ -253,3 +253,12 @@ overlap primitives. These are not inserted into C1 training or inference.
 candidate IDs, GT/C1/group panels and measured center curves. Visual review
 finds merged/split objects; clusters are not accepted as contact labels.
 There is no new center-model long training or material segmentation.
+
+`variants/object_centers/motion_grouping.py` additionally compares pure
+displacement, displacement plus time-correct trajectory finite-difference
+velocity, and motion-group refinement using persistent spatial connectivity.
+`motion_review.py` reuses the original train-only evidence with SHA checks;
+rendered C1 RGB and deformed poses are verified against that evidence before
+exporting a separate motion-method gallery. Both baseK=5 and6 are inspected.
+Spatial refinement can yield more components than baseK; these remain
+unverified candidates, not accepted object/contact labels or new training.

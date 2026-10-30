@@ -1,0 +1,33 @@
+{
+  "checked_PNGs": 96,
+  "GT_C1_pixel_match_previous_review": true,
+  "all_three_group_panels_match_five_column_comparisons": true,
+  "source_hashes_match": true,
+  "max_cached_pose_error": 0.0,
+  "code_sha256": {
+    "variants\\object_centers\\motion_review.py": "9652bb377d774416d54f21ba884b1f255e61cc8a98abfc4092dcac1bf1f97183",
+    "variants\\object_centers\\motion_grouping.py": "b1988a44950492e4485847efc6f47065f84e6f64d12f267552b6199c7d007c74",
+    "tests\\test_motion_grouping.py": "ca44babbd46e1246ec02c9abd13bf6290f0f8e162d0579f58ee69487af45d049"
+  },
+  "training_integration": "none",
+  "test_RGB_used": false,
+  "unit_tests": {
+    "command": "python -m pytest tests/test_motion_grouping.py tests/test_object_centers.py -q",
+    "passed": 19,
+    "seconds": 4.07
+  },
+  "visually_inspected_overview_frame_ids": [
+    2,
+    146,
+    200
+  ],
+  "gallery_javascript_syntax": "passed",
+  "static_links_checked": [
+    "../c1_final50000/index.html",
+    "overview_frame0002.png",
+    "overview_frame0146.png",
+    "overview_frame0200.png",
+    "qa.json",
+    "summary.json"
+  ]
+}
