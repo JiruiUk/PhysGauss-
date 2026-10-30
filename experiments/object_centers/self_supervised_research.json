@@ -1,0 +1,29 @@
+{
+  "client_date": "2026-10-30",
+  "status": "research_only",
+  "model_modified": false,
+  "training_launched": false,
+  "object_ID_ground_truth_available": false,
+  "train_frames": 120,
+  "unique_train_times": 120,
+  "current_C1_mask_weight": 0.03,
+  "sources": {
+    "DynaVol": "https://arxiv.org/pdf/2305.00393",
+    "MovingParts": "https://arxiv.org/pdf/2303.05703",
+    "AdaSlot": "https://arxiv.org/html/2406.09196v1",
+    "QASA": "https://arxiv.org/html/2601.12936v2",
+    "ParticleSplat": "https://arxiv.org/html/2609.19463v1",
+    "GaussianGrouping": "https://github.com/lkeab/gaussian-grouping",
+    "SADG": "https://arxiv.org/abs/2411.19290",
+    "SplatFlow": "https://openaccess.thecvf.com/content/CVPR2025/papers/Sun_SplatFlow_Self-Supervised_Dynamic_Gaussian_Splatting_in_Neural_Motion_Flow_Field_CVPR_2025_paper.pdf",
+    "SceneAgnosticOCLGS": "https://arxiv.org/html/2604.09045v2"
+  },
+  "local_file_sha256": {
+    "variants/color_repair/code/scene_PIDG/network.py": "fe0fdf54c15f28e6b5041b5080de905961a072dc7cdd9096ef271c1b853cf0b0",
+    "variants/color_repair/code/scene_PIDG/deform_model.py": "4b0c2e6e15d694769998696b96d584ab25ab9ccb01d7608e72f68d0497b24172",
+    "variants/color_repair/code/gaussian_renderer/__init__.py": "6071dc822efa63ac22e921aef034b8445a1a883fabb9bb6d97ecbfc13e11f9bd",
+    "runs/pidg_color_repair/C1_repaired/rubber_duck/metric_config.json": "670ffaab5cc02134306dc3a795c8abb34806c6bf4190720ba514af722b3a6054",
+    "data/derived/kinematic_resplit/training/transforms_train.json": "270fa34a29b99a4e6b2621d04e1d83f245f5c54bb4f2632ae06051faa83e4868",
+    "docs/PIDG_SelfSupervised_ObjectID_Feasibility_CN.md": "3f7d7365cf63dc1d536bd399b93cdbf3fb9e82d6f18c6dcdfe59ecb5e19d8318"
+  }
+}
