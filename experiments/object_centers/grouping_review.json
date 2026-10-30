@@ -1,0 +1,598 @@
+{
+  "status": "completed",
+  "source": "C1_repaired final50000",
+  "training_frame_ids": [
+    2,
+    19,
+    36,
+    55,
+    74,
+    92,
+    108,
+    127,
+    146,
+    163,
+    182,
+    200
+  ],
+  "validation_RGB_used": false,
+  "test_RGB_used": false,
+  "original_C1_weights_unchanged": true,
+  "fixed_candidate_grouping_not_semantic_ground_truth": true,
+  "new_center_training_started": false,
+  "foreground_support_rule": "At least2/12 training-frame foreground contributor-candidate votes; opacity>=0.03",
+  "center_rule": "fixed opacity*vote weighted mean of assigned kernel centers; not physical center of mass",
+  "feature_rule": "canonical XYZ OR reference posed XYZ + scaled12-time displacements + mean SH RGB; motion_dominant uses XYZ*0.15, displacement*4, RGB*0.75",
+  "candidates": [
+    {
+      "name": "canonical_K5",
+      "groups": [
+        {
+          "id": 0,
+          "color": "#f26b8a",
+          "kernels": 7316,
+          "mean_rgb": [
+            0.18801459670066833,
+            0.3141392171382904,
+            0.6366609930992126
+          ],
+          "kernel_motion_rms": 0.4402630031108856,
+          "center_motion_rms": 0.256389856338501,
+          "yellow_like_fraction": 0.0023236741388737016,
+          "blue_like_fraction": 0.9738928376161837
+        },
+        {
+          "id": 1,
+          "color": "#26d6c5",
+          "kernels": 6964,
+          "mean_rgb": [
+            0.3622998595237732,
+            0.4181622564792633,
+            0.5462161302566528
+          ],
+          "kernel_motion_rms": 0.45509257912635803,
+          "center_motion_rms": 0.3381355106830597,
+          "yellow_like_fraction": 0.24095347501435957,
+          "blue_like_fraction": 0.6107122343480759
+        },
+        {
+          "id": 2,
+          "color": "#ffb347",
+          "kernels": 15858,
+          "mean_rgb": [
+            0.32468393445014954,
+            0.4177781045436859,
+            0.6325468420982361
+          ],
+          "kernel_motion_rms": 0.5174829363822937,
+          "center_motion_rms": 0.25275734066963196,
+          "yellow_like_fraction": 0.1362088535754824,
+          "blue_like_fraction": 0.7327531845125489
+        },
+        {
+          "id": 3,
+          "color": "#b794f6",
+          "kernels": 10200,
+          "mean_rgb": [
+            0.21553325653076172,
+            0.34807074069976807,
+            0.6692090034484863
+          ],
+          "kernel_motion_rms": 0.16513551771640778,
+          "center_motion_rms": 0.053294286131858826,
+          "yellow_like_fraction": 0.015980392156862745,
+          "blue_like_fraction": 0.9506862745098039
+        },
+        {
+          "id": 4,
+          "color": "#a7e36c",
+          "kernels": 8147,
+          "mean_rgb": [
+            0.2842230796813965,
+            0.3568088710308075,
+            0.5455350279808044
+          ],
+          "kernel_motion_rms": 0.1450076401233673,
+          "center_motion_rms": 0.07099616527557373,
+          "yellow_like_fraction": 0.17331533079661224,
+          "blue_like_fraction": 0.7502148029949675
+        }
+      ],
+      "K": 5,
+      "mode": "canonical",
+      "assigned_kernels": 48485,
+      "unassigned_kernels": 37658,
+      "total_kernels": 86143,
+      "membership_fixed_across_time": true,
+      "true_instance_labels": false
+    },
+    {
+      "name": "trajectory_K5",
+      "groups": [
+        {
+          "id": 0,
+          "color": "#f26b8a",
+          "kernels": 4565,
+          "mean_rgb": [
+            0.3151777982711792,
+            0.3831980526447296,
+            0.520386815071106
+          ],
+          "kernel_motion_rms": 0.9176411032676697,
+          "center_motion_rms": 0.8500223159790039,
+          "yellow_like_fraction": 0.23877327491785322,
+          "blue_like_fraction": 0.5848849945235487
+        },
+        {
+          "id": 1,
+          "color": "#26d6c5",
+          "kernels": 16039,
+          "mean_rgb": [
+            0.18943190574645996,
+            0.30895712971687317,
+            0.6162756681442261
+          ],
+          "kernel_motion_rms": 0.36361971497535706,
+          "center_motion_rms": 0.14849497377872467,
+          "yellow_like_fraction": 0.0029303572541929048,
+          "blue_like_fraction": 0.9277386370721367
+        },
+        {
+          "id": 2,
+          "color": "#ffb347",
+          "kernels": 4057,
+          "mean_rgb": [
+            0.6777651906013489,
+            0.5913459658622742,
+            0.34575513005256653
+          ],
+          "kernel_motion_rms": 0.44080817699432373,
+          "center_motion_rms": 0.2649111747741699,
+          "yellow_like_fraction": 0.7840769041163421,
+          "blue_like_fraction": 0.04486073453290609
+        },
+        {
+          "id": 3,
+          "color": "#b794f6",
+          "kernels": 3979,
+          "mean_rgb": [
+            0.6078299283981323,
+            0.6150665283203125,
+            0.6251673698425293
+          ],
+          "kernel_motion_rms": 0.2659740447998047,
+          "center_motion_rms": 0.21250471472740173,
+          "yellow_like_fraction": 0.27770796682583565,
+          "blue_like_fraction": 0.3837647650163358
+        },
+        {
+          "id": 4,
+          "color": "#a7e36c",
+          "kernels": 19845,
+          "mean_rgb": [
+            0.19733332097530365,
+            0.33971261978149414,
+            0.6859567165374756
+          ],
+          "kernel_motion_rms": 0.16217413544654846,
+          "center_motion_rms": 0.05400189757347107,
+          "yellow_like_fraction": 0.0003527336860670194,
+          "blue_like_fraction": 0.9850340136054422
+        }
+      ],
+      "K": 5,
+      "mode": "trajectory",
+      "assigned_kernels": 48485,
+      "unassigned_kernels": 37658,
+      "total_kernels": 86143,
+      "membership_fixed_across_time": true,
+      "true_instance_labels": false
+    },
+    {
+      "name": "trajectory_K6",
+      "groups": [
+        {
+          "id": 0,
+          "color": "#f26b8a",
+          "kernels": 4450,
+          "mean_rgb": [
+            0.31332889199256897,
+            0.3807675242424011,
+            0.5163822174072266
+          ],
+          "kernel_motion_rms": 0.9252364039421082,
+          "center_motion_rms": 0.859693169593811,
+          "yellow_like_fraction": 0.2408988764044944,
+          "blue_like_fraction": 0.5820224719101124
+        },
+        {
+          "id": 1,
+          "color": "#26d6c5",
+          "kernels": 8535,
+          "mean_rgb": [
+            0.18164348602294922,
+            0.3120441734790802,
+            0.6406172513961792
+          ],
+          "kernel_motion_rms": 0.4217016100883484,
+          "center_motion_rms": 0.2430388629436493,
+          "yellow_like_fraction": 0.00023432923257176333,
+          "blue_like_fraction": 0.9771528998242531
+        },
+        {
+          "id": 2,
+          "color": "#ffb347",
+          "kernels": 3947,
+          "mean_rgb": [
+            0.6863497495651245,
+            0.5978731513023376,
+            0.346325546503067
+          ],
+          "kernel_motion_rms": 0.4410551190376282,
+          "center_motion_rms": 0.2655969262123108,
+          "yellow_like_fraction": 0.7940207752723587,
+          "blue_like_fraction": 0.03977704585761338
+        },
+        {
+          "id": 3,
+          "color": "#b794f6",
+          "kernels": 3566,
+          "mean_rgb": [
+            0.6389346122741699,
+            0.6375173330307007,
+            0.6194288730621338
+          ],
+          "kernel_motion_rms": 0.2834530174732208,
+          "center_motion_rms": 0.22363626956939697,
+          "yellow_like_fraction": 0.3146382501402131,
+          "blue_like_fraction": 0.32080762759394277
+        },
+        {
+          "id": 4,
+          "color": "#a7e36c",
+          "kernels": 12561,
+          "mean_rgb": [
+            0.20236755907535553,
+            0.3167744278907776,
+            0.6143304705619812
+          ],
+          "kernel_motion_rms": 0.26074835658073425,
+          "center_motion_rms": 0.07641077786684036,
+          "yellow_like_fraction": 0.007244646126900725,
+          "blue_like_fraction": 0.9090040601862909
+        },
+        {
+          "id": 5,
+          "color": "#50a4ff",
+          "kernels": 15426,
+          "mean_rgb": [
+            0.20014072954654694,
+            0.34505343437194824,
+            0.6939601898193359
+          ],
+          "kernel_motion_rms": 0.1442120522260666,
+          "center_motion_rms": 0.06133856996893883,
+          "yellow_like_fraction": 0.0005834305717619603,
+          "blue_like_fraction": 0.9826267340853105
+        }
+      ],
+      "K": 6,
+      "mode": "trajectory",
+      "assigned_kernels": 48485,
+      "unassigned_kernels": 37658,
+      "total_kernels": 86143,
+      "membership_fixed_across_time": true,
+      "true_instance_labels": false
+    },
+    {
+      "name": "trajectory_K8",
+      "groups": [
+        {
+          "id": 0,
+          "color": "#f26b8a",
+          "kernels": 1516,
+          "mean_rgb": [
+            0.6295298933982849,
+            0.5824346542358398,
+            0.3814569115638733
+          ],
+          "kernel_motion_rms": 1.2811306715011597,
+          "center_motion_rms": 1.2458170652389526,
+          "yellow_like_fraction": 0.7255936675461742,
+          "blue_like_fraction": 0.08179419525065963
+        },
+        {
+          "id": 1,
+          "color": "#26d6c5",
+          "kernels": 3281,
+          "mean_rgb": [
+            0.15680164098739624,
+            0.2865900695323944,
+            0.5928707122802734
+          ],
+          "kernel_motion_rms": 0.6464525461196899,
+          "center_motion_rms": 0.6141186952590942,
+          "yellow_like_fraction": 0.004266991770801585,
+          "blue_like_fraction": 0.8476074367570863
+        },
+        {
+          "id": 2,
+          "color": "#ffb347",
+          "kernels": 8133,
+          "mean_rgb": [
+            0.18327881395816803,
+            0.314857542514801,
+            0.6474639773368835
+          ],
+          "kernel_motion_rms": 0.42557990550994873,
+          "center_motion_rms": 0.2459789514541626,
+          "yellow_like_fraction": 0.00012295585884667404,
+          "blue_like_fraction": 0.9907783105864995
+        },
+        {
+          "id": 3,
+          "color": "#b794f6",
+          "kernels": 1395,
+          "mean_rgb": [
+            0.05748046934604645,
+            0.04337850585579872,
+            0.042180076241493225
+          ],
+          "kernel_motion_rms": 0.3702607750892639,
+          "center_motion_rms": 0.199905663728714,
+          "yellow_like_fraction": 0.1003584229390681,
+          "blue_like_fraction": 0.07096774193548387
+        },
+        {
+          "id": 4,
+          "color": "#a7e36c",
+          "kernels": 3868,
+          "mean_rgb": [
+            0.6918664574623108,
+            0.6035757064819336,
+            0.34798017144203186
+          ],
+          "kernel_motion_rms": 0.44262006878852844,
+          "center_motion_rms": 0.2672836482524872,
+          "yellow_like_fraction": 0.7996380558428128,
+          "blue_like_fraction": 0.03516028955532575
+        },
+        {
+          "id": 5,
+          "color": "#50a4ff",
+          "kernels": 3607,
+          "mean_rgb": [
+            0.6315839290618896,
+            0.6321943402290344,
+            0.6247450113296509
+          ],
+          "kernel_motion_rms": 0.2750858664512634,
+          "center_motion_rms": 0.21959839761257172,
+          "yellow_like_fraction": 0.299417798724702,
+          "blue_like_fraction": 0.3360133074577211
+        },
+        {
+          "id": 6,
+          "color": "#ed85e6",
+          "kernels": 11362,
+          "mean_rgb": [
+            0.21831466257572174,
+            0.34469887614250183,
+            0.6704408526420593
+          ],
+          "kernel_motion_rms": 0.24794559180736542,
+          "center_motion_rms": 0.08043310046195984,
+          "yellow_like_fraction": 0.0,
+          "blue_like_fraction": 0.9871501496215455
+        },
+        {
+          "id": 7,
+          "color": "#e3d36c",
+          "kernels": 15323,
+          "mean_rgb": [
+            0.20146434009075165,
+            0.3469789922237396,
+            0.6981587409973145
+          ],
+          "kernel_motion_rms": 0.14075380563735962,
+          "center_motion_rms": 0.06011547893285751,
+          "yellow_like_fraction": 0.0001305227435880702,
+          "blue_like_fraction": 0.990732885205247
+        }
+      ],
+      "K": 8,
+      "mode": "trajectory",
+      "assigned_kernels": 48485,
+      "unassigned_kernels": 37658,
+      "total_kernels": 86143,
+      "membership_fixed_across_time": true,
+      "true_instance_labels": false
+    },
+    {
+      "name": "motion_dominant_K5",
+      "groups": [
+        {
+          "id": 0,
+          "color": "#f26b8a",
+          "kernels": 4131,
+          "mean_rgb": [
+            0.3311636447906494,
+            0.3899348974227905,
+            0.5021979212760925
+          ],
+          "kernel_motion_rms": 0.9549039006233215,
+          "center_motion_rms": 0.8936667442321777,
+          "yellow_like_fraction": 0.2645848462841927,
+          "blue_like_fraction": 0.5456305979181796
+        },
+        {
+          "id": 1,
+          "color": "#26d6c5",
+          "kernels": 9375,
+          "mean_rgb": [
+            0.20168136060237885,
+            0.3293398916721344,
+            0.638887882232666
+          ],
+          "kernel_motion_rms": 0.4249846339225769,
+          "center_motion_rms": 0.30460894107818604,
+          "yellow_like_fraction": 0.00416,
+          "blue_like_fraction": 0.9213866666666667
+        },
+        {
+          "id": 2,
+          "color": "#ffb347",
+          "kernels": 3375,
+          "mean_rgb": [
+            0.6802347302436829,
+            0.5807696580886841,
+            0.29613035917282104
+          ],
+          "kernel_motion_rms": 0.4651705026626587,
+          "center_motion_rms": 0.3013264536857605,
+          "yellow_like_fraction": 0.8619259259259259,
+          "blue_like_fraction": 0.018074074074074076
+        },
+        {
+          "id": 3,
+          "color": "#b794f6",
+          "kernels": 4236,
+          "mean_rgb": [
+            0.641362190246582,
+            0.6408075094223022,
+            0.6333154439926147
+          ],
+          "kernel_motion_rms": 0.27778369188308716,
+          "center_motion_rms": 0.20453208684921265,
+          "yellow_like_fraction": 0.3061850802644004,
+          "blue_like_fraction": 0.3352219074598678
+        },
+        {
+          "id": 4,
+          "color": "#a7e36c",
+          "kernels": 27368,
+          "mean_rgb": [
+            0.1932917684316635,
+            0.3259195387363434,
+            0.6583151817321777
+          ],
+          "kernel_motion_rms": 0.19486400485038757,
+          "center_motion_rms": 0.05531078577041626,
+          "yellow_like_fraction": 0.0033615901783104357,
+          "blue_like_fraction": 0.9658725518854137
+        }
+      ],
+      "K": 5,
+      "mode": "motion_dominant",
+      "assigned_kernels": 48485,
+      "unassigned_kernels": 37658,
+      "total_kernels": 86143,
+      "membership_fixed_across_time": true,
+      "true_instance_labels": false
+    },
+    {
+      "name": "motion_dominant_K6",
+      "groups": [
+        {
+          "id": 0,
+          "color": "#f26b8a",
+          "kernels": 1207,
+          "mean_rgb": [
+            0.6218559145927429,
+            0.5758340954780579,
+            0.3993966281414032
+          ],
+          "kernel_motion_rms": 1.406877040863037,
+          "center_motion_rms": 1.380725383758545,
+          "yellow_like_fraction": 0.6901408450704225,
+          "blue_like_fraction": 0.1267605633802817
+        },
+        {
+          "id": 1,
+          "color": "#26d6c5",
+          "kernels": 3505,
+          "mean_rgb": [
+            0.21161088347434998,
+            0.3193403482437134,
+            0.5660866498947144
+          ],
+          "kernel_motion_rms": 0.6522414684295654,
+          "center_motion_rms": 0.6328369379043579,
+          "yellow_like_fraction": 0.07189728958630527,
+          "blue_like_fraction": 0.750641940085592
+        },
+        {
+          "id": 2,
+          "color": "#ffb347",
+          "kernels": 4406,
+          "mean_rgb": [
+            0.14728805422782898,
+            0.26035192608833313,
+            0.5675213932991028
+          ],
+          "kernel_motion_rms": 0.44199755787849426,
+          "center_motion_rms": 0.3501875102519989,
+          "yellow_like_fraction": 0.0006808896958692692,
+          "blue_like_fraction": 0.9380390376758965
+        },
+        {
+          "id": 3,
+          "color": "#b794f6",
+          "kernels": 7380,
+          "mean_rgb": [
+            0.20987169444561005,
+            0.3319561183452606,
+            0.6239075064659119
+          ],
+          "kernel_motion_rms": 0.4295370578765869,
+          "center_motion_rms": 0.32821840047836304,
+          "yellow_like_fraction": 0.013143631436314362,
+          "blue_like_fraction": 0.8700542005420054
+        },
+        {
+          "id": 4,
+          "color": "#a7e36c",
+          "kernels": 6870,
+          "mean_rgb": [
+            0.6810608506202698,
+            0.6265567541122437,
+            0.45923954248428345
+          ],
+          "kernel_motion_rms": 0.3778216242790222,
+          "center_motion_rms": 0.18436668813228607,
+          "yellow_like_fraction": 0.6128093158660844,
+          "blue_like_fraction": 0.12241630276564774
+        },
+        {
+          "id": 5,
+          "color": "#50a4ff",
+          "kernels": 25117,
+          "mean_rgb": [
+            0.2067302167415619,
+            0.34148186445236206,
+            0.6783034801483154
+          ],
+          "kernel_motion_rms": 0.1372644305229187,
+          "center_motion_rms": 0.057032570242881775,
+          "yellow_like_fraction": 0.001393478520523948,
+          "blue_like_fraction": 0.9805311143846797
+        }
+      ],
+      "K": 6,
+      "mode": "motion_dominant",
+      "assigned_kernels": 48485,
+      "unassigned_kernels": 37658,
+      "total_kernels": 86143,
+      "membership_fixed_across_time": true,
+      "true_instance_labels": false
+    }
+  ],
+  "source_sha256": {
+    "runs\\pidg_color_repair\\C1_repaired\\rubber_duck\\model_config.py": "52eeedbbc65c858007831a57cc04d3c0364de5e28e78a2fa276c641cc7feb008",
+    "runs\\pidg_color_repair\\C1_repaired\\rubber_duck\\metric_config.json": "670ffaab5cc02134306dc3a795c8abb34806c6bf4190720ba514af722b3a6054",
+    "runs\\pidg_color_repair\\C1_repaired\\rubber_duck\\point_cloud\\iteration_50000\\point_cloud.ply": "f5ada8e8db1f67d89480349b227d79de0235a1579faa01522fccdd1390362301",
+    "runs\\pidg_color_repair\\C1_repaired\\rubber_duck\\deform\\iteration_50000\\deform.pth": "a5c4d5338fa087f7873249285ffde4eebd420c3d5ee5f74a3743a4107e4e87be"
+  },
+  "output_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_object_centers\\grouping_review\\c1_final50000",
+  "gallery_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_object_centers\\grouping_review\\c1_final50000\\index.html"
+}

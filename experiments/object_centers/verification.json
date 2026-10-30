@@ -1,0 +1,26 @@
+{
+  "triptych_pngs_checked": 72,
+  "GT_and_C1_panels_identical_across_candidates": true,
+  "original_model_hashes_match": true,
+  "validation_or_test_RGB_loaded": false,
+  "code_sha256": {
+    "variants\\object_centers\\audit.py": "63795555e0ac69b5cd73aef9fa434f49ba8006febb650a2b1875e53ede425139",
+    "variants\\object_centers\\grouping.py": "a6315a220f2dc00e9109bd9af48d3d9193dfd5f8388bd2eaa290580e0d165e71",
+    "variants\\object_centers\\model.py": "f308143c1c45670d875f230a89ab8bde113707c0a18606aa4471e34338c48c46",
+    "variants\\object_centers\\__init__.py": "d7c03d8095cae25ba2ed40deec3cc7085cef2fb75978a2d9cff764eb6577f453",
+    "variants\\object_centers\\README.md": "14dd7ff117ef524e8915450a00fb33a284d023c1a6e488e2b03f6b45ff1fe9c9",
+    "tests\\test_object_centers.py": "28545ca334acdc3ced4b7ed7ce3c9f3d90e816c4b60459fa9948183349132e6c"
+  },
+  "visual_review": "Merged ducks, split ducks, and split blue geometry; no candidate accepted as physical object IDs",
+  "training_integration": "none",
+  "long_training_started": false,
+  "tests_exit_code": 0,
+  "tests_stdout": "..........                                                               [100%]\n10 passed in 3.56s\n",
+  "tests_stderr": "F:\\A_Edinburgh\\PhysGauss\\envs\\pidg-cu128\\Lib\\site-packages\\requests\\__init__.py:113: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (7.6.0)/charset_normalizer (3.4.4) doesn't match a supported version!\n  warnings.warn(\n",
+  "verification_utc": "2026-10-30T21:24:02.032201+00:00",
+  "visually_inspected_overviews": [
+    2,
+    146,
+    200
+  ]
+}

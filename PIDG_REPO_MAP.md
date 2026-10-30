@@ -238,3 +238,18 @@ Pa. E/optimizer/canonical graph are checksum-bound to full checkpoints. Conditio
 profiles cannot certify joint identifiability. New code/tests, reports and outputs
 are isolated in `variants/c1_material`, `experiments/c1_material`, and
 `runs/pidg_c1_material`. Old source, weights and test-selection files are preserved.
+
+## Object-center candidate review (offline, no training integration)
+
+`variants/object_centers/audit.py` reads frozen C1 repair final50000 and only
+12 predetermined training frames. `grouping.py` compares fixed canonical,
+trajectory/appearance and motion-dominant K-means candidates. IDs are fixed per
+kernel; unknown kernels remain -1. `model.py` provides separately tested center,
+zero-mean residual, piecewise-linear trajectory, topology inheritance and soft
+overlap primitives. These are not inserted into C1 training or inference.
+
+`experiments/object_centers/grouping_review.json` and the local gallery under
+`runs/pidg_object_centers/grouping_review/c1_final50000` record the source hashes,
+candidate IDs, GT/C1/group panels and measured center curves. Visual review
+finds merged/split objects; clusters are not accepted as contact labels.
+There is no new center-model long training or material segmentation.
