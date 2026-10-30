@@ -7,6 +7,7 @@ from sklearn.cluster import HDBSCAN
 from threadpoolctl import threadpool_limits
 
 from variants.object_centers.motion_grouping import motion_features,stable_ids
+from variants.object_centers.color_features import motion_color_features,color_block
 
 
 def validate(poses,times,eligible,weights):
@@ -18,12 +19,17 @@ def validate(poses,times,eligible,weights):
     return selected
 
 
-def density_motion(poses,times,eligible,weights,mode,min_cluster_size=128,min_samples=16):
+def density_motion(poses,times,eligible,weights,mode,min_cluster_size=128,min_samples=16,
+                   colors=None,color_weight=0.):
     selected=validate(poses,times,eligible,weights)
     if min_cluster_size<2 or min_samples<1:raise ValueError('Invalid density parameters')
+    if not np.isfinite(color_weight) or color_weight<0:raise ValueError('Invalid color weight')
     labels=np.full(poses.shape[1],-1,dtype=np.int32);confidence=np.zeros(len(labels),dtype=np.float32)
     if len(selected)>=max(min_cluster_size,min_samples):
         features=motion_features(poses[:,selected],times,mode)
+        if color_weight>0:
+            rgb=color_block(colors,poses.shape[1])[selected]
+            features=motion_color_features(poses[:,selected],times,mode,rgb,color_weight)
         # Tree-based exact implementation avoids materializing an N*N matrix.
         # Allow one group: do not implicitly require at least two objects.
         with threadpool_limits(limits=1):
@@ -38,11 +44,13 @@ def density_motion(poses,times,eligible,weights,mode,min_cluster_size=128,min_sa
         'allow_single_cluster':True,'eligible_noise_kernels':int((labels[selected]<0).sum()),
         'sample_weights_used_for_density':False,'center_weights_used':True,
         'confidence_mean_assigned':float(confidence[labels>=0].mean()) if (labels>=0).any() else None}
+    if color_weight>0:stats.update(color_weight=color_weight,color_source='mean C1 predicted RGB over12 training views')
     return labels,stats,confidence
 
 
 def spatial_motion_graph(poses,times,eligible,weights,min_cluster_size=128,neighbors=16,
-                         radius_factor=2.5,radius_cap=.08,persistence=.8,motion_radius=.15):
+                         radius_factor=2.5,radius_cap=.08,persistence=.8,motion_radius=.15,
+                         colors=None,color_radius=None):
     """Direct spatial graph with a motion-distance gate; no base clustering.
 
     Edges must satisfy normalized displacement+velocity distance AND persistent
@@ -52,6 +60,8 @@ def spatial_motion_graph(poses,times,eligible,weights,min_cluster_size=128,neigh
     selected=validate(poses,times,eligible,weights);n=len(selected)
     if min_cluster_size<1 or neighbors<1 or min(radius_factor,radius_cap,motion_radius)<=0 or not 0<persistence<=1:
         raise ValueError('Invalid graph parameters')
+    if color_radius is not None and (not np.isfinite(color_radius) or color_radius<=0):
+        raise ValueError('Positive finite color radius required')
     labels=np.full(poses.shape[1],-1,dtype=np.int32)
     stats={'algorithm':'direct motion/spatial graph','requested_group_count':None,
         'actual_groups':0,'min_cluster_size':min_cluster_size,'neighbors':neighbors,
@@ -69,6 +79,11 @@ def spatial_motion_graph(poses,times,eligible,weights,min_cluster_size=128,neigh
     stats['candidate_edges']=len(i)
     compatible=np.linalg.norm(features[i]-features[j],axis=1)<=motion_radius
     i,j=i[compatible],j[compatible];stats['motion_compatible_edges']=len(i)
+    if color_radius is not None:
+        rgb=color_block(colors,poses.shape[1])[selected]
+        same_color=np.linalg.norm(rgb[i]-rgb[j],axis=1)<=color_radius
+        i,j=i[same_color],j[same_color]
+        stats.update(color_radius_RGB=color_radius,color_compatible_edges=len(i))
     threshold=np.minimum(radius_cap,radius_factor*np.minimum(local[i],local[j]))
     hits=np.zeros(len(i),dtype=np.int32)
     for pose in poses:hits+=np.linalg.norm(pose[selected[i]]-pose[selected[j]],axis=-1)<=threshold

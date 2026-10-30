@@ -1,0 +1,2333 @@
+{
+  "status": "completed",
+  "source": "C1_repaired final50000",
+  "source_sha256": {
+    "runs\\pidg_color_repair\\C1_repaired\\rubber_duck\\model_config.py": "52eeedbbc65c858007831a57cc04d3c0364de5e28e78a2fa276c641cc7feb008",
+    "runs\\pidg_color_repair\\C1_repaired\\rubber_duck\\metric_config.json": "670ffaab5cc02134306dc3a795c8abb34806c6bf4190720ba514af722b3a6054",
+    "runs\\pidg_color_repair\\C1_repaired\\rubber_duck\\point_cloud\\iteration_50000\\point_cloud.ply": "f5ada8e8db1f67d89480349b227d79de0235a1579faa01522fccdd1390362301",
+    "runs\\pidg_color_repair\\C1_repaired\\rubber_duck\\deform\\iteration_50000\\deform.pth": "a5c4d5338fa087f7873249285ffde4eebd420c3d5ee5f74a3743a4107e4e87be"
+  },
+  "evidence_sha256": "662e36f271982f1b5a88c47f5e4bda713ad7b77c58e0c421198f0dcff8825b27",
+  "training_frame_ids": [
+    2,
+    19,
+    36,
+    55,
+    74,
+    92,
+    108,
+    127,
+    146,
+    163,
+    182,
+    200
+  ],
+  "fit_split": "train",
+  "validation_RGB_loaded": false,
+  "test_RGB_loaded": false,
+  "GT_RGB_used_as_color_feature": false,
+  "requested_group_count": null,
+  "KMeans_used": false,
+  "new_model_training_started": false,
+  "true_instance_labels": false,
+  "color_feature": "cached mean of C1 positive-SH RGB (clipped0..1) at12 training view/time pairs; includes invisible kernel/view pairs; not intrinsic albedo",
+  "density_color_rule": "append color_weight*mean_RGB to original normalized motion features",
+  "density_color_weight": 1.0,
+  "graph_color_radius_RGB": 0.35,
+  "color_disabled_real_control_density_labels_and_membership_exact_match": true,
+  "color_disabled_real_control_graph_labels_exact_match": true,
+  "baseline_summary_sha256": "2a55a3f425f77af1b5439771a92256ee7dc7d298d6fd7632d8bcc742d37d9336",
+  "density_weights": "same unweighted eligible kernel counts; opacity/vote weights only for centers",
+  "candidates": [
+    {
+      "name": "R1_motion_RGB_min128",
+      "method": "R1_motion_RGB",
+      "feature_mode": "displacement",
+      "requested_group_count": null,
+      "min_cluster_size": 128,
+      "actual_groups": 26,
+      "assigned_kernels": 41301,
+      "unassigned_kernels": 44842,
+      "total_kernels": 86143,
+      "groups": [
+        {
+          "id": 0,
+          "kernels": 801,
+          "color_rgb": [
+            0.9490196108818054,
+            0.41960784792900085,
+            0.5411764979362488
+          ],
+          "center_motion_rms": 1.3965811729431152,
+          "within_group_displacement_rms": 0.19596636295318604,
+          "mean_C1_RGB": [
+            0.6435322761535645,
+            0.5934941172599792,
+            0.3652745187282562
+          ]
+        },
+        {
+          "id": 1,
+          "kernels": 334,
+          "color_rgb": [
+            0.14901961386203766,
+            0.8392156958580017,
+            0.772549033164978
+          ],
+          "center_motion_rms": 0.6816299557685852,
+          "within_group_displacement_rms": 0.10830938071012497,
+          "mean_C1_RGB": [
+            5.682052687916439e-06,
+            4.43123963123071e-06,
+            0.0006163966027088463
+          ]
+        },
+        {
+          "id": 2,
+          "kernels": 232,
+          "color_rgb": [
+            1.0,
+            0.7019608020782471,
+            0.27843138575553894
+          ],
+          "center_motion_rms": 0.6366447806358337,
+          "within_group_displacement_rms": 0.0853748619556427,
+          "mean_C1_RGB": [
+            0.5184885859489441,
+            0.5299461483955383,
+            0.4464832544326782
+          ]
+        },
+        {
+          "id": 3,
+          "kernels": 3423,
+          "color_rgb": [
+            0.7176470756530762,
+            0.5803921818733215,
+            0.9647058844566345
+          ],
+          "center_motion_rms": 0.3545379340648651,
+          "within_group_displacement_rms": 0.26681244373321533,
+          "mean_C1_RGB": [
+            0.15638644993305206,
+            0.281438410282135,
+            0.6088260412216187
+          ]
+        },
+        {
+          "id": 4,
+          "kernels": 3186,
+          "color_rgb": [
+            0.6549019813537598,
+            0.8901960849761963,
+            0.42352941632270813
+          ],
+          "center_motion_rms": 0.39398515224456787,
+          "within_group_displacement_rms": 0.3511018455028534,
+          "mean_C1_RGB": [
+            0.15552671253681183,
+            0.32469356060028076,
+            0.6975643038749695
+          ]
+        },
+        {
+          "id": 5,
+          "kernels": 141,
+          "color_rgb": [
+            0.3137255012989044,
+            0.6431372761726379,
+            1.0
+          ],
+          "center_motion_rms": 0.5256928205490112,
+          "within_group_displacement_rms": 0.0940815880894661,
+          "mean_C1_RGB": [
+            0.17663872241973877,
+            0.35059499740600586,
+            0.7270963788032532
+          ]
+        },
+        {
+          "id": 6,
+          "kernels": 523,
+          "color_rgb": [
+            0.929411768913269,
+            0.5215686559677124,
+            0.9019607901573181
+          ],
+          "center_motion_rms": 0.518048107624054,
+          "within_group_displacement_rms": 0.1697700172662735,
+          "mean_C1_RGB": [
+            0.2363959550857544,
+            0.38801538944244385,
+            0.7363179922103882
+          ]
+        },
+        {
+          "id": 7,
+          "kernels": 298,
+          "color_rgb": [
+            0.8901960849761963,
+            0.8274509906768799,
+            0.42352941632270813
+          ],
+          "center_motion_rms": 0.4544152319431305,
+          "within_group_displacement_rms": 0.2073056697845459,
+          "mean_C1_RGB": [
+            0.15962663292884827,
+            0.31298986077308655,
+            0.6739252209663391
+          ]
+        },
+        {
+          "id": 8,
+          "kernels": 1652,
+          "color_rgb": [
+            0.949999988079071,
+            0.34200000762939453,
+            0.5452960729598999
+          ],
+          "center_motion_rms": 0.3276788294315338,
+          "within_group_displacement_rms": 0.14091496169567108,
+          "mean_C1_RGB": [
+            0.25312039256095886,
+            0.398290753364563,
+            0.7502691149711609
+          ]
+        },
+        {
+          "id": 9,
+          "kernels": 224,
+          "color_rgb": [
+            0.34200000762939453,
+            0.7227081060409546,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.563609778881073,
+          "within_group_displacement_rms": 0.07459893822669983,
+          "mean_C1_RGB": [
+            0.22344724833965302,
+            0.3319372832775116,
+            0.5755134224891663
+          ]
+        },
+        {
+          "id": 10,
+          "kernels": 178,
+          "color_rgb": [
+            0.9001200795173645,
+            0.949999988079071,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.4189895689487457,
+          "within_group_displacement_rms": 0.15307043492794037,
+          "mean_C1_RGB": [
+            0.7736736536026001,
+            0.6693991422653198,
+            0.3303251564502716
+          ]
+        },
+        {
+          "id": 11,
+          "kernels": 729,
+          "color_rgb": [
+            0.8224679231643677,
+            0.34200000762939453,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.5852404236793518,
+          "within_group_displacement_rms": 0.07039661705493927,
+          "mean_C1_RGB": [
+            0.6962520480155945,
+            0.6051311492919922,
+            0.31409206986427307
+          ]
+        },
+        {
+          "id": 12,
+          "kernels": 572,
+          "color_rgb": [
+            0.34200000762939453,
+            0.949999988079071,
+            0.645055890083313
+          ],
+          "center_motion_rms": 0.214115709066391,
+          "within_group_displacement_rms": 0.03984527289867401,
+          "mean_C1_RGB": [
+            0.3039851188659668,
+            0.3918859660625458,
+            0.6323047280311584
+          ]
+        },
+        {
+          "id": 13,
+          "kernels": 434,
+          "color_rgb": [
+            0.949999988079071,
+            0.4676438868045807,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.36840274930000305,
+          "within_group_displacement_rms": 0.12011877447366714,
+          "mean_C1_RGB": [
+            0.23134750127792358,
+            0.36375874280929565,
+            0.5966291427612305
+          ]
+        },
+        {
+          "id": 14,
+          "kernels": 603,
+          "color_rgb": [
+            0.34200000762939453,
+            0.3937681317329407,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.18292640149593353,
+          "within_group_displacement_rms": 0.05771618336439133,
+          "mean_C1_RGB": [
+            0.1691235601902008,
+            0.29985660314559937,
+            0.6407367587089539
+          ]
+        },
+        {
+          "id": 15,
+          "kernels": 320,
+          "color_rgb": [
+            0.5711801648139954,
+            0.949999988079071,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.7459456324577332,
+          "within_group_displacement_rms": 0.0759609043598175,
+          "mean_C1_RGB": [
+            0.721697986125946,
+            0.6214392185211182,
+            0.3215041160583496
+          ]
+        },
+        {
+          "id": 16,
+          "kernels": 1251,
+          "color_rgb": [
+            0.949999988079071,
+            0.34200000762939453,
+            0.7485921382904053
+          ],
+          "center_motion_rms": 0.4891121983528137,
+          "within_group_displacement_rms": 0.12118351459503174,
+          "mean_C1_RGB": [
+            0.191387340426445,
+            0.34826576709747314,
+            0.6994745135307312
+          ]
+        },
+        {
+          "id": 17,
+          "kernels": 1024,
+          "color_rgb": [
+            0.34200000762939453,
+            0.92600417137146,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.31410905718803406,
+          "within_group_displacement_rms": 0.13769181072711945,
+          "mean_C1_RGB": [
+            0.2144920378923416,
+            0.33593836426734924,
+            0.6273110508918762
+          ]
+        },
+        {
+          "id": 18,
+          "kernels": 232,
+          "color_rgb": [
+            0.949999988079071,
+            0.7965838313102722,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.3477020263671875,
+          "within_group_displacement_rms": 0.12162735313177109,
+          "mean_C1_RGB": [
+            0.7237558960914612,
+            0.653224527835846,
+            0.3856508135795593
+          ]
+        },
+        {
+          "id": 19,
+          "kernels": 461,
+          "color_rgb": [
+            0.6191718578338623,
+            0.34200000762939453,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.3812231123447418,
+          "within_group_displacement_rms": 0.19665494561195374,
+          "mean_C1_RGB": [
+            0.05344971641898155,
+            0.04647577926516533,
+            0.02227645367383957
+          ]
+        },
+        {
+          "id": 20,
+          "kernels": 214,
+          "color_rgb": [
+            0.34200000762939453,
+            0.949999988079071,
+            0.4417598247528076
+          ],
+          "center_motion_rms": 0.41991662979125977,
+          "within_group_displacement_rms": 0.21053074300289154,
+          "mean_C1_RGB": [
+            0.00010625234426697716,
+            0.0002459576935507357,
+            0.0001261864963453263
+          ]
+        },
+        {
+          "id": 21,
+          "kernels": 2624,
+          "color_rgb": [
+            0.949999988079071,
+            0.34200000762939453,
+            0.41965219378471375
+          ],
+          "center_motion_rms": 0.26537784934043884,
+          "within_group_displacement_rms": 0.07147330045700073,
+          "mean_C1_RGB": [
+            0.575851559638977,
+            0.5869535803794861,
+            0.581839919090271
+          ]
+        },
+        {
+          "id": 22,
+          "kernels": 198,
+          "color_rgb": [
+            0.34200000762939453,
+            0.597064197063446,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.11561840772628784,
+          "within_group_displacement_rms": 0.0806407630443573,
+          "mean_C1_RGB": [
+            0.001058452995494008,
+            0.000812180747743696,
+            0.0016140170628204942
+          ]
+        },
+        {
+          "id": 23,
+          "kernels": 622,
+          "color_rgb": [
+            0.7744762301445007,
+            0.949999988079071,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.19189342856407166,
+          "within_group_displacement_rms": 0.08984047174453735,
+          "mean_C1_RGB": [
+            0.6906677484512329,
+            0.5827133059501648,
+            0.22491930425167084
+          ]
+        },
+        {
+          "id": 24,
+          "kernels": 20819,
+          "color_rgb": [
+            0.9481117725372314,
+            0.34200000762939453,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.05880260467529297,
+          "within_group_displacement_rms": 0.06438646465539932,
+          "mean_C1_RGB": [
+            0.2072778195142746,
+            0.3472936153411865,
+            0.6908783912658691
+          ]
+        },
+        {
+          "id": 25,
+          "kernels": 206,
+          "color_rgb": [
+            0.34200000762939453,
+            0.949999988079071,
+            0.7706997990608215
+          ],
+          "center_motion_rms": 0.3511198163032532,
+          "within_group_displacement_rms": 0.08489826321601868,
+          "mean_C1_RGB": [
+            0.7558465003967285,
+            0.6310743689537048,
+            0.2336125522851944
+          ]
+        }
+      ],
+      "algorithm_parameters": {
+        "algorithm": "sklearn.HDBSCAN",
+        "requested_group_count": null,
+        "actual_groups": 26,
+        "min_cluster_size": 128,
+        "min_samples": 16,
+        "selection": "eom",
+        "allow_single_cluster": true,
+        "eligible_noise_kernels": 7184,
+        "sample_weights_used_for_density": false,
+        "center_weights_used": true,
+        "confidence_mean_assigned": 0.8626160621643066,
+        "color_weight": 1.0,
+        "color_source": "mean C1 predicted RGB over12 training views"
+      },
+      "baseline_name": "N1_HDB_displacement_min128",
+      "baseline_groups": 47,
+      "baseline_assigned_kernels": 37324,
+      "baseline_labels_sha256": "614bcca62e49ec9b0437258eaef8b1aa8fd71d4fc19a0b8d202573e1a5310ea1",
+      "clustering_elapsed_seconds": 23.344000000011874
+    },
+    {
+      "name": "R2_motion_velocity_RGB_min128",
+      "method": "R2_motion_velocity_RGB",
+      "feature_mode": "displacement_velocity",
+      "requested_group_count": null,
+      "min_cluster_size": 128,
+      "actual_groups": 32,
+      "assigned_kernels": 41768,
+      "unassigned_kernels": 44375,
+      "total_kernels": 86143,
+      "groups": [
+        {
+          "id": 0,
+          "kernels": 318,
+          "color_rgb": [
+            0.9490196108818054,
+            0.41960784792900085,
+            0.5411764979362488
+          ],
+          "center_motion_rms": 1.5920727252960205,
+          "within_group_displacement_rms": 0.07550490647554398,
+          "mean_C1_RGB": [
+            0.6250852346420288,
+            0.5778347849845886,
+            0.38209500908851624
+          ]
+        },
+        {
+          "id": 1,
+          "kernels": 366,
+          "color_rgb": [
+            0.14901961386203766,
+            0.8392156958580017,
+            0.772549033164978
+          ],
+          "center_motion_rms": 1.2611486911773682,
+          "within_group_displacement_rms": 0.10470236092805862,
+          "mean_C1_RGB": [
+            0.6612139344215393,
+            0.6095156669616699,
+            0.35247305035591125
+          ]
+        },
+        {
+          "id": 2,
+          "kernels": 242,
+          "color_rgb": [
+            1.0,
+            0.7019608020782471,
+            0.27843138575553894
+          ],
+          "center_motion_rms": 0.6472505927085876,
+          "within_group_displacement_rms": 0.06337514519691467,
+          "mean_C1_RGB": [
+            0.14721958339214325,
+            0.3289611041545868,
+            0.7065759897232056
+          ]
+        },
+        {
+          "id": 3,
+          "kernels": 330,
+          "color_rgb": [
+            0.7176470756530762,
+            0.5803921818733215,
+            0.9647058844566345
+          ],
+          "center_motion_rms": 0.6822196841239929,
+          "within_group_displacement_rms": 0.10818003863096237,
+          "mean_C1_RGB": [
+            0.00013345158367883414,
+            0.00039969285717234015,
+            0.0012552139814943075
+          ]
+        },
+        {
+          "id": 4,
+          "kernels": 382,
+          "color_rgb": [
+            0.6549019813537598,
+            0.8901960849761963,
+            0.42352941632270813
+          ],
+          "center_motion_rms": 0.7255904078483582,
+          "within_group_displacement_rms": 0.0691283643245697,
+          "mean_C1_RGB": [
+            0.1243644654750824,
+            0.2602687478065491,
+            0.5964922904968262
+          ]
+        },
+        {
+          "id": 5,
+          "kernels": 264,
+          "color_rgb": [
+            0.3137255012989044,
+            0.6431372761726379,
+            1.0
+          ],
+          "center_motion_rms": 0.6889920830726624,
+          "within_group_displacement_rms": 0.06674731522798538,
+          "mean_C1_RGB": [
+            0.15186761319637299,
+            0.3382079303264618,
+            0.7306950092315674
+          ]
+        },
+        {
+          "id": 6,
+          "kernels": 205,
+          "color_rgb": [
+            0.929411768913269,
+            0.5215686559677124,
+            0.9019607901573181
+          ],
+          "center_motion_rms": 0.606343150138855,
+          "within_group_displacement_rms": 0.036086227744817734,
+          "mean_C1_RGB": [
+            0.5225676894187927,
+            0.528511643409729,
+            0.4596726894378662
+          ]
+        },
+        {
+          "id": 7,
+          "kernels": 3936,
+          "color_rgb": [
+            0.8901960849761963,
+            0.8274509906768799,
+            0.42352941632270813
+          ],
+          "center_motion_rms": 0.3442620635032654,
+          "within_group_displacement_rms": 0.2811938524246216,
+          "mean_C1_RGB": [
+            0.15826761722564697,
+            0.285025417804718,
+            0.6143072247505188
+          ]
+        },
+        {
+          "id": 8,
+          "kernels": 570,
+          "color_rgb": [
+            0.949999988079071,
+            0.34200000762939453,
+            0.5452960729598999
+          ],
+          "center_motion_rms": 0.5141895413398743,
+          "within_group_displacement_rms": 0.17136527597904205,
+          "mean_C1_RGB": [
+            0.24632224440574646,
+            0.3916553556919098,
+            0.7343366146087646
+          ]
+        },
+        {
+          "id": 9,
+          "kernels": 1037,
+          "color_rgb": [
+            0.34200000762939453,
+            0.7227081060409546,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.22715716063976288,
+          "within_group_displacement_rms": 0.2605896592140198,
+          "mean_C1_RGB": [
+            0.14611265063285828,
+            0.32223421335220337,
+            0.6967002749443054
+          ]
+        },
+        {
+          "id": 10,
+          "kernels": 606,
+          "color_rgb": [
+            0.9001200795173645,
+            0.949999988079071,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.25938305258750916,
+          "within_group_displacement_rms": 0.26950082182884216,
+          "mean_C1_RGB": [
+            0.18814606964588165,
+            0.355852335691452,
+            0.7249456644058228
+          ]
+        },
+        {
+          "id": 11,
+          "kernels": 1620,
+          "color_rgb": [
+            0.8224679231643677,
+            0.34200000762939453,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.33421579003334045,
+          "within_group_displacement_rms": 0.1370011866092682,
+          "mean_C1_RGB": [
+            0.2540338933467865,
+            0.3983473479747772,
+            0.7500288486480713
+          ]
+        },
+        {
+          "id": 12,
+          "kernels": 201,
+          "color_rgb": [
+            0.34200000762939453,
+            0.949999988079071,
+            0.645055890083313
+          ],
+          "center_motion_rms": 0.3416260778903961,
+          "within_group_displacement_rms": 0.12329455465078354,
+          "mean_C1_RGB": [
+            0.15980364382266998,
+            0.3164631724357605,
+            0.6714945435523987
+          ]
+        },
+        {
+          "id": 13,
+          "kernels": 233,
+          "color_rgb": [
+            0.949999988079071,
+            0.4676438868045807,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.5629180669784546,
+          "within_group_displacement_rms": 0.07560142129659653,
+          "mean_C1_RGB": [
+            0.22275647521018982,
+            0.3312909007072449,
+            0.5756595730781555
+          ]
+        },
+        {
+          "id": 14,
+          "kernels": 178,
+          "color_rgb": [
+            0.34200000762939453,
+            0.3937681317329407,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.4336490035057068,
+          "within_group_displacement_rms": 0.13231348991394043,
+          "mean_C1_RGB": [
+            0.7894318699836731,
+            0.6836658716201782,
+            0.34808599948883057
+          ]
+        },
+        {
+          "id": 15,
+          "kernels": 767,
+          "color_rgb": [
+            0.5711801648139954,
+            0.949999988079071,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.5847230553627014,
+          "within_group_displacement_rms": 0.07160671800374985,
+          "mean_C1_RGB": [
+            0.6957332491874695,
+            0.6017326712608337,
+            0.3160994350910187
+          ]
+        },
+        {
+          "id": 16,
+          "kernels": 617,
+          "color_rgb": [
+            0.949999988079071,
+            0.34200000762939453,
+            0.7485921382904053
+          ],
+          "center_motion_rms": 0.21506786346435547,
+          "within_group_displacement_rms": 0.03967337682843208,
+          "mean_C1_RGB": [
+            0.3157535195350647,
+            0.40007856488227844,
+            0.6328848600387573
+          ]
+        },
+        {
+          "id": 17,
+          "kernels": 296,
+          "color_rgb": [
+            0.34200000762939453,
+            0.92600417137146,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.3836365342140198,
+          "within_group_displacement_rms": 0.0850701704621315,
+          "mean_C1_RGB": [
+            0.3131960928440094,
+            0.3995877504348755,
+            0.5609095096588135
+          ]
+        },
+        {
+          "id": 18,
+          "kernels": 192,
+          "color_rgb": [
+            0.949999988079071,
+            0.7965838313102722,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.3718401789665222,
+          "within_group_displacement_rms": 0.03790910542011261,
+          "mean_C1_RGB": [
+            0.17561645805835724,
+            0.33472740650177,
+            0.6120505332946777
+          ]
+        },
+        {
+          "id": 19,
+          "kernels": 610,
+          "color_rgb": [
+            0.6191718578338623,
+            0.34200000762939453,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.1865326166152954,
+          "within_group_displacement_rms": 0.04728996753692627,
+          "mean_C1_RGB": [
+            0.17481862008571625,
+            0.30539682507514954,
+            0.6458739638328552
+          ]
+        },
+        {
+          "id": 20,
+          "kernels": 326,
+          "color_rgb": [
+            0.34200000762939453,
+            0.949999988079071,
+            0.4417598247528076
+          ],
+          "center_motion_rms": 0.7462679147720337,
+          "within_group_displacement_rms": 0.07595538347959518,
+          "mean_C1_RGB": [
+            0.7184736132621765,
+            0.6190640926361084,
+            0.3259314298629761
+          ]
+        },
+        {
+          "id": 21,
+          "kernels": 1304,
+          "color_rgb": [
+            0.949999988079071,
+            0.34200000762939453,
+            0.41965219378471375
+          ],
+          "center_motion_rms": 0.3177340030670166,
+          "within_group_displacement_rms": 0.14600235223770142,
+          "mean_C1_RGB": [
+            0.2915143370628357,
+            0.38226693868637085,
+            0.5962066054344177
+          ]
+        },
+        {
+          "id": 22,
+          "kernels": 1358,
+          "color_rgb": [
+            0.34200000762939453,
+            0.597064197063446,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.4857774078845978,
+          "within_group_displacement_rms": 0.12502875924110413,
+          "mean_C1_RGB": [
+            0.19449305534362793,
+            0.348531574010849,
+            0.6968504190444946
+          ]
+        },
+        {
+          "id": 23,
+          "kernels": 241,
+          "color_rgb": [
+            0.7744762301445007,
+            0.949999988079071,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.3474418818950653,
+          "within_group_displacement_rms": 0.12107772380113602,
+          "mean_C1_RGB": [
+            0.7194740176200867,
+            0.6472650766372681,
+            0.38758501410484314
+          ]
+        },
+        {
+          "id": 24,
+          "kernels": 461,
+          "color_rgb": [
+            0.9481117725372314,
+            0.34200000762939453,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.3812231123447418,
+          "within_group_displacement_rms": 0.19665494561195374,
+          "mean_C1_RGB": [
+            0.05344971641898155,
+            0.04647577926516533,
+            0.02227645367383957
+          ]
+        },
+        {
+          "id": 25,
+          "kernels": 148,
+          "color_rgb": [
+            0.34200000762939453,
+            0.949999988079071,
+            0.7706997990608215
+          ],
+          "center_motion_rms": 0.4486219584941864,
+          "within_group_displacement_rms": 0.19357363879680634,
+          "mean_C1_RGB": [
+            2.541493751562207e-11,
+            2.7520792936219785e-11,
+            3.4930548037381826e-11
+          ]
+        },
+        {
+          "id": 26,
+          "kernels": 2954,
+          "color_rgb": [
+            0.949999988079071,
+            0.5932877659797668,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.2656939625740051,
+          "within_group_displacement_rms": 0.07130599766969681,
+          "mean_C1_RGB": [
+            0.5635485053062439,
+            0.5756131410598755,
+            0.5791344046592712
+          ]
+        },
+        {
+          "id": 27,
+          "kernels": 179,
+          "color_rgb": [
+            0.41587576270103455,
+            0.34200000762939453,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.11745268851518631,
+          "within_group_displacement_rms": 0.07551601529121399,
+          "mean_C1_RGB": [
+            0.0011494839563965797,
+            0.0008820313960313797,
+            0.0017528287135064602
+          ]
+        },
+        {
+          "id": 28,
+          "kernels": 800,
+          "color_rgb": [
+            0.4455362558364868,
+            0.949999988079071,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.1845950037240982,
+          "within_group_displacement_rms": 0.09129808098077774,
+          "mean_C1_RGB": [
+            0.6916128396987915,
+            0.5791581869125366,
+            0.23225708305835724
+          ]
+        },
+        {
+          "id": 29,
+          "kernels": 261,
+          "color_rgb": [
+            0.949999988079071,
+            0.34200000762939453,
+            0.6229482889175415
+          ],
+          "center_motion_rms": 0.34966355562210083,
+          "within_group_displacement_rms": 0.08754797279834747,
+          "mean_C1_RGB": [
+            0.7579839825630188,
+            0.6325939297676086,
+            0.25309327244758606
+          ]
+        },
+        {
+          "id": 30,
+          "kernels": 20554,
+          "color_rgb": [
+            0.34200000762939453,
+            0.8003602623939514,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.05901606008410454,
+          "within_group_displacement_rms": 0.06291797012090683,
+          "mean_C1_RGB": [
+            0.20540091395378113,
+            0.346748411655426,
+            0.6937683820724487
+          ]
+        },
+        {
+          "id": 31,
+          "kernels": 212,
+          "color_rgb": [
+            0.949999988079071,
+            0.9222277402877808,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.13779102265834808,
+          "within_group_displacement_rms": 0.07532949000597,
+          "mean_C1_RGB": [
+            0.4271329939365387,
+            0.4221353828907013,
+            0.37870779633522034
+          ]
+        }
+      ],
+      "algorithm_parameters": {
+        "algorithm": "sklearn.HDBSCAN",
+        "requested_group_count": null,
+        "actual_groups": 32,
+        "min_cluster_size": 128,
+        "min_samples": 16,
+        "selection": "eom",
+        "allow_single_cluster": true,
+        "eligible_noise_kernels": 6717,
+        "sample_weights_used_for_density": false,
+        "center_weights_used": true,
+        "confidence_mean_assigned": 0.8602146506309509,
+        "color_weight": 1.0,
+        "color_source": "mean C1 predicted RGB over12 training views"
+      },
+      "baseline_name": "N2_HDB_displacement_velocity_min128",
+      "baseline_groups": 49,
+      "baseline_assigned_kernels": 37208,
+      "baseline_labels_sha256": "9f47f14714b65b3af62de12f804f5a6dc611c5023d98cf63c31c2bb3bf8d888a",
+      "clustering_elapsed_seconds": 40.546000000002095
+    },
+    {
+      "name": "R3_motion_spatial_RGB_min128",
+      "method": "R3_motion_spatial_RGB",
+      "feature_mode": "displacement_velocity",
+      "requested_group_count": null,
+      "min_cluster_size": 128,
+      "actual_groups": 17,
+      "assigned_kernels": 45644,
+      "unassigned_kernels": 40499,
+      "total_kernels": 86143,
+      "groups": [
+        {
+          "id": 0,
+          "kernels": 492,
+          "color_rgb": [
+            0.9490196108818054,
+            0.41960784792900085,
+            0.5411764979362488
+          ],
+          "center_motion_rms": 1.597303032875061,
+          "within_group_displacement_rms": 0.07596972584724426,
+          "mean_C1_RGB": [
+            0.5775266885757446,
+            0.5365421175956726,
+            0.3861779570579529
+          ]
+        },
+        {
+          "id": 1,
+          "kernels": 616,
+          "color_rgb": [
+            0.14901961386203766,
+            0.8392156958580017,
+            0.772549033164978
+          ],
+          "center_motion_rms": 1.2526297569274902,
+          "within_group_displacement_rms": 0.10895217955112457,
+          "mean_C1_RGB": [
+            0.6602294445037842,
+            0.6077561974525452,
+            0.38734591007232666
+          ]
+        },
+        {
+          "id": 2,
+          "kernels": 328,
+          "color_rgb": [
+            1.0,
+            0.7019608020782471,
+            0.27843138575553894
+          ],
+          "center_motion_rms": 0.6815345287322998,
+          "within_group_displacement_rms": 0.10816128551959991,
+          "mean_C1_RGB": [
+            1.1054275550481663e-10,
+            8.610853696744414e-11,
+            0.00027745161787606776
+          ]
+        },
+        {
+          "id": 3,
+          "kernels": 4186,
+          "color_rgb": [
+            0.7176470756530762,
+            0.5803921818733215,
+            0.9647058844566345
+          ],
+          "center_motion_rms": 0.4174038767814636,
+          "within_group_displacement_rms": 0.35331007838249207,
+          "mean_C1_RGB": [
+            0.18823537230491638,
+            0.3385518193244934,
+            0.666198194026947
+          ]
+        },
+        {
+          "id": 4,
+          "kernels": 356,
+          "color_rgb": [
+            0.6549019813537598,
+            0.8901960849761963,
+            0.42352941632270813
+          ],
+          "center_motion_rms": 0.5610954165458679,
+          "within_group_displacement_rms": 0.17596594989299774,
+          "mean_C1_RGB": [
+            0.2543661892414093,
+            0.39505890011787415,
+            0.7319101095199585
+          ]
+        },
+        {
+          "id": 5,
+          "kernels": 8226,
+          "color_rgb": [
+            0.3137255012989044,
+            0.6431372761726379,
+            1.0
+          ],
+          "center_motion_rms": 0.2607736885547638,
+          "within_group_displacement_rms": 0.3142808973789215,
+          "mean_C1_RGB": [
+            0.202706977725029,
+            0.33388903737068176,
+            0.666100800037384
+          ]
+        },
+        {
+          "id": 6,
+          "kernels": 128,
+          "color_rgb": [
+            0.929411768913269,
+            0.5215686559677124,
+            0.9019607901573181
+          ],
+          "center_motion_rms": 0.46006670594215393,
+          "within_group_displacement_rms": 0.08640455454587936,
+          "mean_C1_RGB": [
+            0.8113012909889221,
+            0.7123762965202332,
+            0.37789079546928406
+          ]
+        },
+        {
+          "id": 7,
+          "kernels": 1457,
+          "color_rgb": [
+            0.8901960849761963,
+            0.8274509906768799,
+            0.42352941632270813
+          ],
+          "center_motion_rms": 0.5336037874221802,
+          "within_group_displacement_rms": 0.1451345980167389,
+          "mean_C1_RGB": [
+            0.5199410319328308,
+            0.500276505947113,
+            0.4194881319999695
+          ]
+        },
+        {
+          "id": 8,
+          "kernels": 619,
+          "color_rgb": [
+            0.949999988079071,
+            0.34200000762939453,
+            0.5452960729598999
+          ],
+          "center_motion_rms": 0.21512755751609802,
+          "within_group_displacement_rms": 0.03967229276895523,
+          "mean_C1_RGB": [
+            0.3147258758544922,
+            0.3986012637615204,
+            0.6311178207397461
+          ]
+        },
+        {
+          "id": 9,
+          "kernels": 295,
+          "color_rgb": [
+            0.34200000762939453,
+            0.7227081060409546,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.3797740042209625,
+          "within_group_displacement_rms": 0.07439292222261429,
+          "mean_C1_RGB": [
+            0.3509492874145508,
+            0.4176255762577057,
+            0.5313501358032227
+          ]
+        },
+        {
+          "id": 10,
+          "kernels": 242,
+          "color_rgb": [
+            0.9001200795173645,
+            0.949999988079071,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.7594225406646729,
+          "within_group_displacement_rms": 0.06575517356395721,
+          "mean_C1_RGB": [
+            0.7314088940620422,
+            0.6537233591079712,
+            0.349143385887146
+          ]
+        },
+        {
+          "id": 11,
+          "kernels": 1481,
+          "color_rgb": [
+            0.8224679231643677,
+            0.34200000762939453,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.4772881865501404,
+          "within_group_displacement_rms": 0.13363297283649445,
+          "mean_C1_RGB": [
+            0.19659018516540527,
+            0.34819361567497253,
+            0.694819986820221
+          ]
+        },
+        {
+          "id": 12,
+          "kernels": 1224,
+          "color_rgb": [
+            0.34200000762939453,
+            0.949999988079071,
+            0.645055890083313
+          ],
+          "center_motion_rms": 0.30800825357437134,
+          "within_group_displacement_rms": 0.135102778673172,
+          "mean_C1_RGB": [
+            0.25724977254867554,
+            0.3614092469215393,
+            0.607282817363739
+          ]
+        },
+        {
+          "id": 13,
+          "kernels": 298,
+          "color_rgb": [
+            0.949999988079071,
+            0.4676438868045807,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.3380226790904999,
+          "within_group_displacement_rms": 0.09036023914813995,
+          "mean_C1_RGB": [
+            0.6338784098625183,
+            0.5952640175819397,
+            0.4415082335472107
+          ]
+        },
+        {
+          "id": 14,
+          "kernels": 389,
+          "color_rgb": [
+            0.34200000762939453,
+            0.3937681317329407,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.4087463915348053,
+          "within_group_displacement_rms": 0.13183124363422394,
+          "mean_C1_RGB": [
+            0.06248863413929939,
+            0.05431770905852318,
+            0.025991925969719887
+          ]
+        },
+        {
+          "id": 15,
+          "kernels": 3003,
+          "color_rgb": [
+            0.5711801648139954,
+            0.949999988079071,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.2657976746559143,
+          "within_group_displacement_rms": 0.07145745307207108,
+          "mean_C1_RGB": [
+            0.5618874430656433,
+            0.572735071182251,
+            0.5769045352935791
+          ]
+        },
+        {
+          "id": 16,
+          "kernels": 22304,
+          "color_rgb": [
+            0.949999988079071,
+            0.34200000762939453,
+            0.7485921382904053
+          ],
+          "center_motion_rms": 0.05865706130862236,
+          "within_group_displacement_rms": 0.07310426980257034,
+          "mean_C1_RGB": [
+            0.2256992757320404,
+            0.35572582483291626,
+            0.6741010546684265
+          ]
+        }
+      ],
+      "algorithm_parameters": {
+        "algorithm": "direct motion/spatial graph",
+        "requested_group_count": null,
+        "actual_groups": 17,
+        "min_cluster_size": 128,
+        "neighbors": 16,
+        "radius_factor": 2.5,
+        "radius_cap_scene_units": 0.08,
+        "persistence_sample_fraction": 0.8,
+        "motion_radius_normalized_features": 0.15,
+        "candidate_edges": 479710,
+        "motion_compatible_edges": 443931,
+        "persistent_edges": 364576,
+        "raw_components": 891,
+        "color_radius_RGB": 0.35,
+        "color_compatible_edges": 382562,
+        "eligible_noise_kernels": 2841
+      },
+      "baseline_name": "N3_direct_motion_spatial_min128",
+      "baseline_groups": 15,
+      "baseline_assigned_kernels": 47247,
+      "baseline_labels_sha256": "e1fbd27d7efa4771e9a383cbb91c6ee6d37d4b3b7992cd3338b96b8d0c0a9e29",
+      "clustering_elapsed_seconds": 0.875
+    },
+    {
+      "name": "R1_motion_RGB_min256",
+      "method": "R1_motion_RGB",
+      "feature_mode": "displacement",
+      "requested_group_count": null,
+      "min_cluster_size": 256,
+      "actual_groups": 18,
+      "assigned_kernels": 41035,
+      "unassigned_kernels": 45108,
+      "total_kernels": 86143,
+      "groups": [
+        {
+          "id": 0,
+          "kernels": 801,
+          "color_rgb": [
+            0.9490196108818054,
+            0.41960784792900085,
+            0.5411764979362488
+          ],
+          "center_motion_rms": 1.3965811729431152,
+          "within_group_displacement_rms": 0.19596636295318604,
+          "mean_C1_RGB": [
+            0.6435322761535645,
+            0.5934941172599792,
+            0.3652745187282562
+          ]
+        },
+        {
+          "id": 1,
+          "kernels": 334,
+          "color_rgb": [
+            0.14901961386203766,
+            0.8392156958580017,
+            0.772549033164978
+          ],
+          "center_motion_rms": 0.6816299557685852,
+          "within_group_displacement_rms": 0.10830938071012497,
+          "mean_C1_RGB": [
+            5.682052687916439e-06,
+            4.43123963123071e-06,
+            0.0006163966027088463
+          ]
+        },
+        {
+          "id": 2,
+          "kernels": 3971,
+          "color_rgb": [
+            1.0,
+            0.7019608020782471,
+            0.27843138575553894
+          ],
+          "center_motion_rms": 0.42889878153800964,
+          "within_group_displacement_rms": 0.3482612073421478,
+          "mean_C1_RGB": [
+            0.1939959079027176,
+            0.34527823328971863,
+            0.6692367792129517
+          ]
+        },
+        {
+          "id": 3,
+          "kernels": 3601,
+          "color_rgb": [
+            0.7176470756530762,
+            0.5803921818733215,
+            0.9647058844566345
+          ],
+          "center_motion_rms": 0.3532104790210724,
+          "within_group_displacement_rms": 0.27562686800956726,
+          "mean_C1_RGB": [
+            0.15738822519779205,
+            0.28461721539497375,
+            0.6143063306808472
+          ]
+        },
+        {
+          "id": 4,
+          "kernels": 523,
+          "color_rgb": [
+            0.6549019813537598,
+            0.8901960849761963,
+            0.42352941632270813
+          ],
+          "center_motion_rms": 0.518048107624054,
+          "within_group_displacement_rms": 0.1697700172662735,
+          "mean_C1_RGB": [
+            0.2363959550857544,
+            0.38801538944244385,
+            0.7363179922103882
+          ]
+        },
+        {
+          "id": 5,
+          "kernels": 298,
+          "color_rgb": [
+            0.3137255012989044,
+            0.6431372761726379,
+            1.0
+          ],
+          "center_motion_rms": 0.4544152319431305,
+          "within_group_displacement_rms": 0.2073056697845459,
+          "mean_C1_RGB": [
+            0.15962663292884827,
+            0.31298986077308655,
+            0.6739252209663391
+          ]
+        },
+        {
+          "id": 6,
+          "kernels": 1652,
+          "color_rgb": [
+            0.929411768913269,
+            0.5215686559677124,
+            0.9019607901573181
+          ],
+          "center_motion_rms": 0.3276788294315338,
+          "within_group_displacement_rms": 0.14091496169567108,
+          "mean_C1_RGB": [
+            0.25312039256095886,
+            0.398290753364563,
+            0.7502691149711609
+          ]
+        },
+        {
+          "id": 7,
+          "kernels": 1125,
+          "color_rgb": [
+            0.8901960849761963,
+            0.8274509906768799,
+            0.42352941632270813
+          ],
+          "center_motion_rms": 0.5642430782318115,
+          "within_group_displacement_rms": 0.11067023873329163,
+          "mean_C1_RGB": [
+            0.5487506985664368,
+            0.5186904072761536,
+            0.4010845124721527
+          ]
+        },
+        {
+          "id": 8,
+          "kernels": 572,
+          "color_rgb": [
+            0.949999988079071,
+            0.34200000762939453,
+            0.5452960729598999
+          ],
+          "center_motion_rms": 0.214115709066391,
+          "within_group_displacement_rms": 0.03984527289867401,
+          "mean_C1_RGB": [
+            0.3039851188659668,
+            0.3918859660625458,
+            0.6323047280311584
+          ]
+        },
+        {
+          "id": 9,
+          "kernels": 434,
+          "color_rgb": [
+            0.34200000762939453,
+            0.7227081060409546,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.36840274930000305,
+          "within_group_displacement_rms": 0.12011877447366714,
+          "mean_C1_RGB": [
+            0.23134750127792358,
+            0.36375874280929565,
+            0.5966291427612305
+          ]
+        },
+        {
+          "id": 10,
+          "kernels": 603,
+          "color_rgb": [
+            0.9001200795173645,
+            0.949999988079071,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.18292640149593353,
+          "within_group_displacement_rms": 0.05771618336439133,
+          "mean_C1_RGB": [
+            0.1691235601902008,
+            0.29985660314559937,
+            0.6407367587089539
+          ]
+        },
+        {
+          "id": 11,
+          "kernels": 320,
+          "color_rgb": [
+            0.8224679231643677,
+            0.34200000762939453,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.7459456324577332,
+          "within_group_displacement_rms": 0.0759609043598175,
+          "mean_C1_RGB": [
+            0.721697986125946,
+            0.6214392185211182,
+            0.3215041160583496
+          ]
+        },
+        {
+          "id": 12,
+          "kernels": 1251,
+          "color_rgb": [
+            0.34200000762939453,
+            0.949999988079071,
+            0.645055890083313
+          ],
+          "center_motion_rms": 0.4891121983528137,
+          "within_group_displacement_rms": 0.12118351459503174,
+          "mean_C1_RGB": [
+            0.191387340426445,
+            0.34826576709747314,
+            0.6994745135307312
+          ]
+        },
+        {
+          "id": 13,
+          "kernels": 1024,
+          "color_rgb": [
+            0.949999988079071,
+            0.4676438868045807,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.31410905718803406,
+          "within_group_displacement_rms": 0.13769181072711945,
+          "mean_C1_RGB": [
+            0.2144920378923416,
+            0.33593836426734924,
+            0.6273110508918762
+          ]
+        },
+        {
+          "id": 14,
+          "kernels": 461,
+          "color_rgb": [
+            0.34200000762939453,
+            0.3937681317329407,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.3812231123447418,
+          "within_group_displacement_rms": 0.19665494561195374,
+          "mean_C1_RGB": [
+            0.05344971641898155,
+            0.04647577926516533,
+            0.02227645367383957
+          ]
+        },
+        {
+          "id": 15,
+          "kernels": 2624,
+          "color_rgb": [
+            0.5711801648139954,
+            0.949999988079071,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.26537784934043884,
+          "within_group_displacement_rms": 0.07147330045700073,
+          "mean_C1_RGB": [
+            0.575851559638977,
+            0.5869535803794861,
+            0.581839919090271
+          ]
+        },
+        {
+          "id": 16,
+          "kernels": 622,
+          "color_rgb": [
+            0.949999988079071,
+            0.34200000762939453,
+            0.7485921382904053
+          ],
+          "center_motion_rms": 0.19189342856407166,
+          "within_group_displacement_rms": 0.08984047174453735,
+          "mean_C1_RGB": [
+            0.6906677484512329,
+            0.5827133059501648,
+            0.22491930425167084
+          ]
+        },
+        {
+          "id": 17,
+          "kernels": 20819,
+          "color_rgb": [
+            0.34200000762939453,
+            0.92600417137146,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.05880260467529297,
+          "within_group_displacement_rms": 0.06438646465539932,
+          "mean_C1_RGB": [
+            0.2072778195142746,
+            0.3472936153411865,
+            0.6908783912658691
+          ]
+        }
+      ],
+      "algorithm_parameters": {
+        "algorithm": "sklearn.HDBSCAN",
+        "requested_group_count": null,
+        "actual_groups": 18,
+        "min_cluster_size": 256,
+        "min_samples": 16,
+        "selection": "eom",
+        "allow_single_cluster": true,
+        "eligible_noise_kernels": 7450,
+        "sample_weights_used_for_density": false,
+        "center_weights_used": true,
+        "confidence_mean_assigned": 0.863439679145813,
+        "color_weight": 1.0,
+        "color_source": "mean C1 predicted RGB over12 training views"
+      },
+      "baseline_name": "N1_HDB_displacement_min256",
+      "baseline_groups": 30,
+      "baseline_assigned_kernels": 38349,
+      "baseline_labels_sha256": "743cca52307541d891e8285c880f394bdc566148ca715a97237e2896082ed75e",
+      "clustering_elapsed_seconds": 23.469000000011874
+    },
+    {
+      "name": "R2_motion_velocity_RGB_min256",
+      "method": "R2_motion_velocity_RGB",
+      "feature_mode": "displacement_velocity",
+      "requested_group_count": null,
+      "min_cluster_size": 256,
+      "actual_groups": 22,
+      "assigned_kernels": 42303,
+      "unassigned_kernels": 43840,
+      "total_kernels": 86143,
+      "groups": [
+        {
+          "id": 0,
+          "kernels": 318,
+          "color_rgb": [
+            0.9490196108818054,
+            0.41960784792900085,
+            0.5411764979362488
+          ],
+          "center_motion_rms": 1.5920727252960205,
+          "within_group_displacement_rms": 0.07550490647554398,
+          "mean_C1_RGB": [
+            0.6250852346420288,
+            0.5778347849845886,
+            0.38209500908851624
+          ]
+        },
+        {
+          "id": 1,
+          "kernels": 366,
+          "color_rgb": [
+            0.14901961386203766,
+            0.8392156958580017,
+            0.772549033164978
+          ],
+          "center_motion_rms": 1.2611486911773682,
+          "within_group_displacement_rms": 0.10470236092805862,
+          "mean_C1_RGB": [
+            0.6612139344215393,
+            0.6095156669616699,
+            0.35247305035591125
+          ]
+        },
+        {
+          "id": 2,
+          "kernels": 330,
+          "color_rgb": [
+            1.0,
+            0.7019608020782471,
+            0.27843138575553894
+          ],
+          "center_motion_rms": 0.6822196841239929,
+          "within_group_displacement_rms": 0.10818003863096237,
+          "mean_C1_RGB": [
+            0.00013345158367883414,
+            0.00039969285717234015,
+            0.0012552139814943075
+          ]
+        },
+        {
+          "id": 3,
+          "kernels": 570,
+          "color_rgb": [
+            0.7176470756530762,
+            0.5803921818733215,
+            0.9647058844566345
+          ],
+          "center_motion_rms": 0.66969895362854,
+          "within_group_displacement_rms": 0.11051240563392639,
+          "mean_C1_RGB": [
+            0.15065917372703552,
+            0.3332706093788147,
+            0.72139972448349
+          ]
+        },
+        {
+          "id": 4,
+          "kernels": 382,
+          "color_rgb": [
+            0.6549019813537598,
+            0.8901960849761963,
+            0.42352941632270813
+          ],
+          "center_motion_rms": 0.7255904078483582,
+          "within_group_displacement_rms": 0.0691283643245697,
+          "mean_C1_RGB": [
+            0.1243644654750824,
+            0.2602687478065491,
+            0.5964922904968262
+          ]
+        },
+        {
+          "id": 5,
+          "kernels": 3936,
+          "color_rgb": [
+            0.3137255012989044,
+            0.6431372761726379,
+            1.0
+          ],
+          "center_motion_rms": 0.3442620635032654,
+          "within_group_displacement_rms": 0.2811938524246216,
+          "mean_C1_RGB": [
+            0.15826761722564697,
+            0.285025417804718,
+            0.6143072247505188
+          ]
+        },
+        {
+          "id": 6,
+          "kernels": 570,
+          "color_rgb": [
+            0.929411768913269,
+            0.5215686559677124,
+            0.9019607901573181
+          ],
+          "center_motion_rms": 0.5141895413398743,
+          "within_group_displacement_rms": 0.17136527597904205,
+          "mean_C1_RGB": [
+            0.24632224440574646,
+            0.3916553556919098,
+            0.7343366146087646
+          ]
+        },
+        {
+          "id": 7,
+          "kernels": 1037,
+          "color_rgb": [
+            0.8901960849761963,
+            0.8274509906768799,
+            0.42352941632270813
+          ],
+          "center_motion_rms": 0.22715716063976288,
+          "within_group_displacement_rms": 0.2605896592140198,
+          "mean_C1_RGB": [
+            0.14611265063285828,
+            0.32223421335220337,
+            0.6967002749443054
+          ]
+        },
+        {
+          "id": 8,
+          "kernels": 606,
+          "color_rgb": [
+            0.949999988079071,
+            0.34200000762939453,
+            0.5452960729598999
+          ],
+          "center_motion_rms": 0.25938305258750916,
+          "within_group_displacement_rms": 0.26950082182884216,
+          "mean_C1_RGB": [
+            0.18814606964588165,
+            0.355852335691452,
+            0.7249456644058228
+          ]
+        },
+        {
+          "id": 9,
+          "kernels": 2414,
+          "color_rgb": [
+            0.34200000762939453,
+            0.7227081060409546,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.2571989595890045,
+          "within_group_displacement_rms": 0.2917705178260803,
+          "mean_C1_RGB": [
+            0.23556768894195557,
+            0.3822692334651947,
+            0.7368115782737732
+          ]
+        },
+        {
+          "id": 10,
+          "kernels": 1501,
+          "color_rgb": [
+            0.9001200795173645,
+            0.949999988079071,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.5292755365371704,
+          "within_group_displacement_rms": 0.15123654901981354,
+          "mean_C1_RGB": [
+            0.5056341886520386,
+            0.49442365765571594,
+            0.4327508807182312
+          ]
+        },
+        {
+          "id": 11,
+          "kernels": 617,
+          "color_rgb": [
+            0.8224679231643677,
+            0.34200000762939453,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.21506786346435547,
+          "within_group_displacement_rms": 0.03967337682843208,
+          "mean_C1_RGB": [
+            0.3157535195350647,
+            0.40007856488227844,
+            0.6328848600387573
+          ]
+        },
+        {
+          "id": 12,
+          "kernels": 296,
+          "color_rgb": [
+            0.34200000762939453,
+            0.949999988079071,
+            0.645055890083313
+          ],
+          "center_motion_rms": 0.3836365342140198,
+          "within_group_displacement_rms": 0.0850701704621315,
+          "mean_C1_RGB": [
+            0.3131960928440094,
+            0.3995877504348755,
+            0.5609095096588135
+          ]
+        },
+        {
+          "id": 13,
+          "kernels": 610,
+          "color_rgb": [
+            0.949999988079071,
+            0.4676438868045807,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.1865326166152954,
+          "within_group_displacement_rms": 0.04728996753692627,
+          "mean_C1_RGB": [
+            0.17481862008571625,
+            0.30539682507514954,
+            0.6458739638328552
+          ]
+        },
+        {
+          "id": 14,
+          "kernels": 326,
+          "color_rgb": [
+            0.34200000762939453,
+            0.3937681317329407,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.7462679147720337,
+          "within_group_displacement_rms": 0.07595538347959518,
+          "mean_C1_RGB": [
+            0.7184736132621765,
+            0.6190640926361084,
+            0.3259314298629761
+          ]
+        },
+        {
+          "id": 15,
+          "kernels": 1304,
+          "color_rgb": [
+            0.5711801648139954,
+            0.949999988079071,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.3177340030670166,
+          "within_group_displacement_rms": 0.14600235223770142,
+          "mean_C1_RGB": [
+            0.2915143370628357,
+            0.38226693868637085,
+            0.5962066054344177
+          ]
+        },
+        {
+          "id": 16,
+          "kernels": 1358,
+          "color_rgb": [
+            0.949999988079071,
+            0.34200000762939453,
+            0.7485921382904053
+          ],
+          "center_motion_rms": 0.4857774078845978,
+          "within_group_displacement_rms": 0.12502875924110413,
+          "mean_C1_RGB": [
+            0.19449305534362793,
+            0.348531574010849,
+            0.6968504190444946
+          ]
+        },
+        {
+          "id": 17,
+          "kernels": 461,
+          "color_rgb": [
+            0.34200000762939453,
+            0.92600417137146,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.3812231123447418,
+          "within_group_displacement_rms": 0.19665494561195374,
+          "mean_C1_RGB": [
+            0.05344971641898155,
+            0.04647577926516533,
+            0.02227645367383957
+          ]
+        },
+        {
+          "id": 18,
+          "kernels": 2954,
+          "color_rgb": [
+            0.949999988079071,
+            0.7965838313102722,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.2656939625740051,
+          "within_group_displacement_rms": 0.07130599766969681,
+          "mean_C1_RGB": [
+            0.5635485053062439,
+            0.5756131410598755,
+            0.5791344046592712
+          ]
+        },
+        {
+          "id": 19,
+          "kernels": 800,
+          "color_rgb": [
+            0.6191718578338623,
+            0.34200000762939453,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.1845950037240982,
+          "within_group_displacement_rms": 0.09129808098077774,
+          "mean_C1_RGB": [
+            0.6916128396987915,
+            0.5791581869125366,
+            0.23225708305835724
+          ]
+        },
+        {
+          "id": 20,
+          "kernels": 261,
+          "color_rgb": [
+            0.34200000762939453,
+            0.949999988079071,
+            0.4417598247528076
+          ],
+          "center_motion_rms": 0.34966355562210083,
+          "within_group_displacement_rms": 0.08754797279834747,
+          "mean_C1_RGB": [
+            0.7579839825630188,
+            0.6325939297676086,
+            0.25309327244758606
+          ]
+        },
+        {
+          "id": 21,
+          "kernels": 21286,
+          "color_rgb": [
+            0.949999988079071,
+            0.34200000762939453,
+            0.41965219378471375
+          ],
+          "center_motion_rms": 0.058727581053972244,
+          "within_group_displacement_rms": 0.06522700190544128,
+          "mean_C1_RGB": [
+            0.20772892236709595,
+            0.3463224470615387,
+            0.6870136260986328
+          ]
+        }
+      ],
+      "algorithm_parameters": {
+        "algorithm": "sklearn.HDBSCAN",
+        "requested_group_count": null,
+        "actual_groups": 22,
+        "min_cluster_size": 256,
+        "min_samples": 16,
+        "selection": "eom",
+        "allow_single_cluster": true,
+        "eligible_noise_kernels": 6182,
+        "sample_weights_used_for_density": false,
+        "center_weights_used": true,
+        "confidence_mean_assigned": 0.8504926562309265,
+        "color_weight": 1.0,
+        "color_source": "mean C1 predicted RGB over12 training views"
+      },
+      "baseline_name": "N2_HDB_displacement_velocity_min256",
+      "baseline_groups": 33,
+      "baseline_assigned_kernels": 38918,
+      "baseline_labels_sha256": "e46c8ec1d6d2be048fad48eff90b725ae302045ccaa7f2fb2e4337251503d4d1",
+      "clustering_elapsed_seconds": 40.375
+    },
+    {
+      "name": "R3_motion_spatial_RGB_min256",
+      "method": "R3_motion_spatial_RGB",
+      "feature_mode": "displacement_velocity",
+      "requested_group_count": null,
+      "min_cluster_size": 256,
+      "actual_groups": 15,
+      "assigned_kernels": 45274,
+      "unassigned_kernels": 40869,
+      "total_kernels": 86143,
+      "groups": [
+        {
+          "id": 0,
+          "kernels": 492,
+          "color_rgb": [
+            0.9490196108818054,
+            0.41960784792900085,
+            0.5411764979362488
+          ],
+          "center_motion_rms": 1.597303032875061,
+          "within_group_displacement_rms": 0.07596972584724426,
+          "mean_C1_RGB": [
+            0.5775266885757446,
+            0.5365421175956726,
+            0.3861779570579529
+          ]
+        },
+        {
+          "id": 1,
+          "kernels": 616,
+          "color_rgb": [
+            0.14901961386203766,
+            0.8392156958580017,
+            0.772549033164978
+          ],
+          "center_motion_rms": 1.2526297569274902,
+          "within_group_displacement_rms": 0.10895217955112457,
+          "mean_C1_RGB": [
+            0.6602294445037842,
+            0.6077561974525452,
+            0.38734591007232666
+          ]
+        },
+        {
+          "id": 2,
+          "kernels": 328,
+          "color_rgb": [
+            1.0,
+            0.7019608020782471,
+            0.27843138575553894
+          ],
+          "center_motion_rms": 0.6815345287322998,
+          "within_group_displacement_rms": 0.10816128551959991,
+          "mean_C1_RGB": [
+            1.1054275550481663e-10,
+            8.610853696744414e-11,
+            0.00027745161787606776
+          ]
+        },
+        {
+          "id": 3,
+          "kernels": 4186,
+          "color_rgb": [
+            0.7176470756530762,
+            0.5803921818733215,
+            0.9647058844566345
+          ],
+          "center_motion_rms": 0.4174038767814636,
+          "within_group_displacement_rms": 0.35331007838249207,
+          "mean_C1_RGB": [
+            0.18823537230491638,
+            0.3385518193244934,
+            0.666198194026947
+          ]
+        },
+        {
+          "id": 4,
+          "kernels": 356,
+          "color_rgb": [
+            0.6549019813537598,
+            0.8901960849761963,
+            0.42352941632270813
+          ],
+          "center_motion_rms": 0.5610954165458679,
+          "within_group_displacement_rms": 0.17596594989299774,
+          "mean_C1_RGB": [
+            0.2543661892414093,
+            0.39505890011787415,
+            0.7319101095199585
+          ]
+        },
+        {
+          "id": 5,
+          "kernels": 8226,
+          "color_rgb": [
+            0.3137255012989044,
+            0.6431372761726379,
+            1.0
+          ],
+          "center_motion_rms": 0.2607736885547638,
+          "within_group_displacement_rms": 0.3142808973789215,
+          "mean_C1_RGB": [
+            0.202706977725029,
+            0.33388903737068176,
+            0.666100800037384
+          ]
+        },
+        {
+          "id": 6,
+          "kernels": 1457,
+          "color_rgb": [
+            0.929411768913269,
+            0.5215686559677124,
+            0.9019607901573181
+          ],
+          "center_motion_rms": 0.5336037874221802,
+          "within_group_displacement_rms": 0.1451345980167389,
+          "mean_C1_RGB": [
+            0.5199410319328308,
+            0.500276505947113,
+            0.4194881319999695
+          ]
+        },
+        {
+          "id": 7,
+          "kernels": 619,
+          "color_rgb": [
+            0.8901960849761963,
+            0.8274509906768799,
+            0.42352941632270813
+          ],
+          "center_motion_rms": 0.21512755751609802,
+          "within_group_displacement_rms": 0.03967229276895523,
+          "mean_C1_RGB": [
+            0.3147258758544922,
+            0.3986012637615204,
+            0.6311178207397461
+          ]
+        },
+        {
+          "id": 8,
+          "kernels": 295,
+          "color_rgb": [
+            0.949999988079071,
+            0.34200000762939453,
+            0.5452960729598999
+          ],
+          "center_motion_rms": 0.3797740042209625,
+          "within_group_displacement_rms": 0.07439292222261429,
+          "mean_C1_RGB": [
+            0.3509492874145508,
+            0.4176255762577057,
+            0.5313501358032227
+          ]
+        },
+        {
+          "id": 9,
+          "kernels": 1481,
+          "color_rgb": [
+            0.34200000762939453,
+            0.7227081060409546,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.4772881865501404,
+          "within_group_displacement_rms": 0.13363297283649445,
+          "mean_C1_RGB": [
+            0.19659018516540527,
+            0.34819361567497253,
+            0.694819986820221
+          ]
+        },
+        {
+          "id": 10,
+          "kernels": 1224,
+          "color_rgb": [
+            0.9001200795173645,
+            0.949999988079071,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.30800825357437134,
+          "within_group_displacement_rms": 0.135102778673172,
+          "mean_C1_RGB": [
+            0.25724977254867554,
+            0.3614092469215393,
+            0.607282817363739
+          ]
+        },
+        {
+          "id": 11,
+          "kernels": 298,
+          "color_rgb": [
+            0.8224679231643677,
+            0.34200000762939453,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.3380226790904999,
+          "within_group_displacement_rms": 0.09036023914813995,
+          "mean_C1_RGB": [
+            0.6338784098625183,
+            0.5952640175819397,
+            0.4415082335472107
+          ]
+        },
+        {
+          "id": 12,
+          "kernels": 389,
+          "color_rgb": [
+            0.34200000762939453,
+            0.949999988079071,
+            0.645055890083313
+          ],
+          "center_motion_rms": 0.4087463915348053,
+          "within_group_displacement_rms": 0.13183124363422394,
+          "mean_C1_RGB": [
+            0.06248863413929939,
+            0.05431770905852318,
+            0.025991925969719887
+          ]
+        },
+        {
+          "id": 13,
+          "kernels": 3003,
+          "color_rgb": [
+            0.949999988079071,
+            0.4676438868045807,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.2657976746559143,
+          "within_group_displacement_rms": 0.07145745307207108,
+          "mean_C1_RGB": [
+            0.5618874430656433,
+            0.572735071182251,
+            0.5769045352935791
+          ]
+        },
+        {
+          "id": 14,
+          "kernels": 22304,
+          "color_rgb": [
+            0.34200000762939453,
+            0.3937681317329407,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.05865706130862236,
+          "within_group_displacement_rms": 0.07310426980257034,
+          "mean_C1_RGB": [
+            0.2256992757320404,
+            0.35572582483291626,
+            0.6741010546684265
+          ]
+        }
+      ],
+      "algorithm_parameters": {
+        "algorithm": "direct motion/spatial graph",
+        "requested_group_count": null,
+        "actual_groups": 15,
+        "min_cluster_size": 256,
+        "neighbors": 16,
+        "radius_factor": 2.5,
+        "radius_cap_scene_units": 0.08,
+        "persistence_sample_fraction": 0.8,
+        "motion_radius_normalized_features": 0.15,
+        "candidate_edges": 479710,
+        "motion_compatible_edges": 443931,
+        "persistent_edges": 364576,
+        "raw_components": 891,
+        "color_radius_RGB": 0.35,
+        "color_compatible_edges": 382562,
+        "eligible_noise_kernels": 3211
+      },
+      "baseline_name": "N3_direct_motion_spatial_min256",
+      "baseline_groups": 12,
+      "baseline_assigned_kernels": 46562,
+      "baseline_labels_sha256": "53c3b01c29c4929f2f8d09a91c488b33cf3983bde7cf1a867c3f04e3fc6e1740",
+      "clustering_elapsed_seconds": 0.875
+    }
+  ],
+  "output_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_object_centers\\grouping_review\\motion_color_noK_final50000",
+  "gallery_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_object_centers\\grouping_review\\motion_color_noK_final50000\\index.html",
+  "max_cached_pose_error": 0.0,
+  "frozen_C1_RGB_pixel_match_all12": true,
+  "before_after_PNGs_verified": 72,
+  "visual_review": "Color changes grouping but is not a stable instance improvement: R1 merges the two upper ducks in frame2. Some structures look more coherent; split/mixed objects remain. No new training."
+}

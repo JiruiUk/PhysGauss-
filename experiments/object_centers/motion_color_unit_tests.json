@@ -1,0 +1,15 @@
+{
+  "command": [
+    "F:\\A_Edinburgh\\PhysGauss\\envs\\pidg-cu128\\python.exe",
+    "-m",
+    "pytest",
+    "tests/test_motion_color_grouping.py",
+    "tests/test_adaptive_grouping.py",
+    "tests/test_motion_grouping.py",
+    "tests/test_object_centers.py",
+    "-q"
+  ],
+  "returncode": 0,
+  "stdout": "................................                                         [100%]\n32 passed in 3.99s\n",
+  "stderr": "F:\\A_Edinburgh\\PhysGauss\\envs\\pidg-cu128\\Lib\\site-packages\\requests\\__init__.py:113: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (7.6.0)/charset_normalizer (3.4.4) doesn't match a supported version!\n  warnings.warn(\n"
+}

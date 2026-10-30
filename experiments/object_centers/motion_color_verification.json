@@ -1,0 +1,37 @@
+{
+  "checked_PNGs": 96,
+  "GT_C1_pixel_match_previous_review": true,
+  "all_three_group_panels_match_five_column_comparisons": true,
+  "source_hashes_match": true,
+  "max_cached_pose_error": 0.0,
+  "code_sha256": {
+    "variants\\object_centers\\motion_review.py": "9e1921570d05078f59e5f10a891b204bd3420db14bfb1f37d36de8555396e45f",
+    "variants\\object_centers\\motion_grouping.py": "b1988a44950492e4485847efc6f47065f84e6f64d12f267552b6199c7d007c74",
+    "tests\\test_motion_grouping.py": "ca44babbd46e1246ec02c9abd13bf6290f0f8e162d0579f58ee69487af45d049",
+    "variants\\object_centers\\color_review.py": "a2b68560ea8c83a7865a97b9b9271427b09ce2fd585051583285737a256dd3d3",
+    "variants\\object_centers\\adaptive_grouping.py": "7bb8b04d6cb78f65a7f5ddc033e795f9f1ef2dcd6319fbc31d39acb3cabc7a02",
+    "variants\\object_centers\\color_features.py": "d8f26d7f80eeed7e25e8d8f1c942cbd73ff5475bed5299bdf54185ebe1af136b",
+    "tests\\test_motion_color_grouping.py": "a98ca59c4d836722a03de0f593526e4c1707df73bfe76fe3b45e2a31fbf39b47"
+  },
+  "training_integration": "none",
+  "test_RGB_used": false,
+  "before_after_PNGs_verified": 72,
+  "unit_tests_passed": 32,
+  "unit_test_receipt": "experiments/object_centers/motion_color_unit_tests.json",
+  "visually_inspected_overview_frames": [
+    2,
+    146,
+    200
+  ],
+  "visually_inspected_before_after": "R1_motion_RGB_min128/frame2",
+  "graph_refinement_never_merges_previous_groups": true,
+  "gallery_javascript_syntax": "passed",
+  "static_links_checked": [
+    "../adaptive_noK_final50000/index.html",
+    "overview_frame0002.png",
+    "overview_frame0146.png",
+    "overview_frame0200.png",
+    "qa.json",
+    "summary.json"
+  ]
+}

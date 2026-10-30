@@ -165,3 +165,33 @@ Use `--prepare-only` for CPU grouping, or `--render-existing` to render an
 already prepared no-K summary without refitting density models.
 
 See [official sklearn1.8 HDBSCAN parameters](https://scikit-learn.org/1.8/modules/generated/sklearn.cluster.HDBSCAN.html).
+
+## Motion plus predicted color, still without requested group count
+
+```powershell
+. ./reproduction/scripts/enable_cuda.ps1 -ProjectRoot (Get-Location).Path
+& ./envs/pidg-cu128/python.exe -m pytest tests/test_motion_color_grouping.py tests/test_adaptive_grouping.py tests/test_motion_grouping.py tests/test_object_centers.py -q
+& ./envs/pidg-cu128/python.exe -u -m variants.object_centers.color_review
+```
+
+`color_features.py` adds an optional mean-RGB feature block. The density API
+defaults to color_weight=0 and the spatial graph defaults to color_radius=None,
+retaining their no-color paths. Enabled density candidates concatenate
+`[normalized motion features, 1.0*mean_RGB]`; the graph adds an RGB-distance
+gate <=0.35 to the previous motion and persistent-spatial gates. All density,
+motion, spatial and minimum-size parameters otherwise match the no-color study.
+Neither method requests a group count. No PIDG model architecture/loss changes.
+
+Color is the **existing C1 predicted** positive-SH RGB, clipped to[0,1], averaged
+over the12 training view/time pairs. Every kernel/view pair is included, even
+when occluded/off-screen. This is neither GT color nor an intrinsic material
+albedo, and viewpoint effects or existing appearance errors can affect groups.
+Similar-colored ducks remain ambiguous; distinct parts of one object can also
+have different colors. No learned material segmentation is introduced.
+
+The separate `motion_color_noK_final50000` gallery exports the same six
+candidate triptychs and comparison panels, plus72 GT/C1/no-color/with-color
+before/after images. Palette IDs are independent across candidates, so the
+same displayed color is not a cross-candidate identity. Old outputs are read,
+not rerendered or overwritten. Flags-off checks cover synthetic inputs and one
+real no-color density/graph candidate against saved labels and memberships.

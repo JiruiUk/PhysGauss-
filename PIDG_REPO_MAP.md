@@ -271,3 +271,11 @@ min_samples and spatial/motion thresholds remain explicit parameters.
 the same train-only cache and immutable C1 snapshot. Shared export helpers now
 accept an output directory and comparison field; previous default baseK paths
 are retained. No center/contact loss is integrated into training.
+
+`variants/object_centers/color_features.py` supplies an opt-in cached predicted
+mean-RGB block for offline grouping. Density color_weight=0 and graph
+color_radius=None retain the no-color algorithm paths. `color_review.py`
+compares the three no-K methods with color enabled against their saved
+motion-only candidates. Features use existing C1 predictions at training
+views, not GT/test colors. A new gallery includes per-method before/after GT/C1
+panels; C1 model weights, architecture and training losses remain unchanged.
