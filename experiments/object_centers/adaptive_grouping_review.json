@@ -1,0 +1,2259 @@
+{
+  "status": "completed",
+  "source": "C1_repaired final50000",
+  "source_sha256": {
+    "runs\\pidg_color_repair\\C1_repaired\\rubber_duck\\model_config.py": "52eeedbbc65c858007831a57cc04d3c0364de5e28e78a2fa276c641cc7feb008",
+    "runs\\pidg_color_repair\\C1_repaired\\rubber_duck\\metric_config.json": "670ffaab5cc02134306dc3a795c8abb34806c6bf4190720ba514af722b3a6054",
+    "runs\\pidg_color_repair\\C1_repaired\\rubber_duck\\point_cloud\\iteration_50000\\point_cloud.ply": "f5ada8e8db1f67d89480349b227d79de0235a1579faa01522fccdd1390362301",
+    "runs\\pidg_color_repair\\C1_repaired\\rubber_duck\\deform\\iteration_50000\\deform.pth": "a5c4d5338fa087f7873249285ffde4eebd420c3d5ee5f74a3743a4107e4e87be"
+  },
+  "evidence_sha256": "662e36f271982f1b5a88c47f5e4bda713ad7b77c58e0c421198f0dcff8825b27",
+  "training_frame_ids": [
+    2,
+    19,
+    36,
+    55,
+    74,
+    92,
+    108,
+    127,
+    146,
+    163,
+    182,
+    200
+  ],
+  "fit_split": "train",
+  "validation_RGB_loaded": false,
+  "test_RGB_loaded": false,
+  "requested_group_count": null,
+  "KMeans_used": false,
+  "new_model_training_started": false,
+  "true_instance_labels": false,
+  "sklearn_version": "1.8.0",
+  "HDBSCAN_documentation": "https://scikit-learn.org/1.8/modules/generated/sklearn.cluster.HDBSCAN.html",
+  "density_clustering_weights": "unweighted eligible kernel counts; opacity/vote weights only used for center statistics",
+  "feature_rule": "same time-weighted normalized displacement and displacement+trajectory-derived-velocity as preceding review; no RGB or absolute XYZ in density features",
+  "sensitivity": "minimum cluster size128 and256, not requested cluster count; HDBSCAN min_samples16/eom/allow_single_cluster=True",
+  "graph_rule": "direct reference-pose16NN; normalized motion distance<=0.15; spatial distance<=min(0.08,2.5*min(local16NN radii)) at>=80% of12 sampled training poses; no preliminary grouping",
+  "candidates": [
+    {
+      "name": "N1_HDB_displacement_min128",
+      "method": "N1_HDB_displacement",
+      "feature_mode": "displacement",
+      "requested_group_count": null,
+      "min_cluster_size": 128,
+      "actual_groups": 47,
+      "assigned_kernels": 37324,
+      "unassigned_kernels": 48819,
+      "total_kernels": 86143,
+      "groups": [
+        {
+          "id": 0,
+          "kernels": 510,
+          "color_rgb": [
+            0.9490196108818054,
+            0.41960784792900085,
+            0.5411764979362488
+          ],
+          "center_motion_rms": 1.5969222784042358,
+          "within_group_displacement_rms": 0.07602140307426453
+        },
+        {
+          "id": 1,
+          "kernels": 645,
+          "color_rgb": [
+            0.14901961386203766,
+            0.8392156958580017,
+            0.772549033164978
+          ],
+          "center_motion_rms": 1.2564597129821777,
+          "within_group_displacement_rms": 0.10903508961200714
+        },
+        {
+          "id": 2,
+          "kernels": 2652,
+          "color_rgb": [
+            1.0,
+            0.7019608020782471,
+            0.27843138575553894
+          ],
+          "center_motion_rms": 0.37149161100387573,
+          "within_group_displacement_rms": 0.16339020431041718
+        },
+        {
+          "id": 3,
+          "kernels": 4903,
+          "color_rgb": [
+            0.7176470756530762,
+            0.5803921818733215,
+            0.9647058844566345
+          ],
+          "center_motion_rms": 0.44344499707221985,
+          "within_group_displacement_rms": 0.354460209608078
+        },
+        {
+          "id": 4,
+          "kernels": 1003,
+          "color_rgb": [
+            0.6549019813537598,
+            0.8901960849761963,
+            0.42352941632270813
+          ],
+          "center_motion_rms": 0.5112918019294739,
+          "within_group_displacement_rms": 0.12429516762495041
+        },
+        {
+          "id": 5,
+          "kernels": 584,
+          "color_rgb": [
+            0.3137255012989044,
+            0.6431372761726379,
+            1.0
+          ],
+          "center_motion_rms": 0.5134579539299011,
+          "within_group_displacement_rms": 0.1718411147594452
+        },
+        {
+          "id": 6,
+          "kernels": 147,
+          "color_rgb": [
+            0.929411768913269,
+            0.5215686559677124,
+            0.9019607901573181
+          ],
+          "center_motion_rms": 0.6399920582771301,
+          "within_group_displacement_rms": 0.09554797410964966
+        },
+        {
+          "id": 7,
+          "kernels": 1644,
+          "color_rgb": [
+            0.8901960849761963,
+            0.8274509906768799,
+            0.42352941632270813
+          ],
+          "center_motion_rms": 0.3599741756916046,
+          "within_group_displacement_rms": 0.11599591374397278
+        },
+        {
+          "id": 8,
+          "kernels": 234,
+          "color_rgb": [
+            0.949999988079071,
+            0.34200000762939453,
+            0.5452960729598999
+          ],
+          "center_motion_rms": 0.3398880958557129,
+          "within_group_displacement_rms": 0.12009958922863007
+        },
+        {
+          "id": 9,
+          "kernels": 205,
+          "color_rgb": [
+            0.34200000762939453,
+            0.7227081060409546,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.5687276721000671,
+          "within_group_displacement_rms": 0.06982502341270447
+        },
+        {
+          "id": 10,
+          "kernels": 229,
+          "color_rgb": [
+            0.9001200795173645,
+            0.949999988079071,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.4479144215583801,
+          "within_group_displacement_rms": 0.13105574250221252
+        },
+        {
+          "id": 11,
+          "kernels": 203,
+          "color_rgb": [
+            0.8224679231643677,
+            0.34200000762939453,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.1966363787651062,
+          "within_group_displacement_rms": 0.07377225905656815
+        },
+        {
+          "id": 12,
+          "kernels": 814,
+          "color_rgb": [
+            0.34200000762939453,
+            0.949999988079071,
+            0.645055890083313
+          ],
+          "center_motion_rms": 0.583340048789978,
+          "within_group_displacement_rms": 0.0737379938364029
+        },
+        {
+          "id": 13,
+          "kernels": 622,
+          "color_rgb": [
+            0.949999988079071,
+            0.4676438868045807,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.21516253054141998,
+          "within_group_displacement_rms": 0.039635900408029556
+        },
+        {
+          "id": 14,
+          "kernels": 274,
+          "color_rgb": [
+            0.34200000762939453,
+            0.3937681317329407,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.3792109191417694,
+          "within_group_displacement_rms": 0.06039908155798912
+        },
+        {
+          "id": 15,
+          "kernels": 190,
+          "color_rgb": [
+            0.5711801648139954,
+            0.949999988079071,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.37189748883247375,
+          "within_group_displacement_rms": 0.03318919986486435
+        },
+        {
+          "id": 16,
+          "kernels": 139,
+          "color_rgb": [
+            0.949999988079071,
+            0.34200000762939453,
+            0.7485921382904053
+          ],
+          "center_motion_rms": 0.47464045882225037,
+          "within_group_displacement_rms": 0.08779027312994003
+        },
+        {
+          "id": 17,
+          "kernels": 655,
+          "color_rgb": [
+            0.34200000762939453,
+            0.92600417137146,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.18758825957775116,
+          "within_group_displacement_rms": 0.047993339598178864
+        },
+        {
+          "id": 18,
+          "kernels": 226,
+          "color_rgb": [
+            0.949999988079071,
+            0.7965838313102722,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.277391642332077,
+          "within_group_displacement_rms": 0.053016018122434616
+        },
+        {
+          "id": 19,
+          "kernels": 342,
+          "color_rgb": [
+            0.6191718578338623,
+            0.34200000762939453,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.23992732167243958,
+          "within_group_displacement_rms": 0.022906070575118065
+        },
+        {
+          "id": 20,
+          "kernels": 329,
+          "color_rgb": [
+            0.34200000762939453,
+            0.949999988079071,
+            0.4417598247528076
+          ],
+          "center_motion_rms": 0.745818555355072,
+          "within_group_displacement_rms": 0.0761052668094635
+        },
+        {
+          "id": 21,
+          "kernels": 155,
+          "color_rgb": [
+            0.949999988079071,
+            0.34200000762939453,
+            0.41965219378471375
+          ],
+          "center_motion_rms": 0.453064888715744,
+          "within_group_displacement_rms": 0.07222864776849747
+        },
+        {
+          "id": 22,
+          "kernels": 1063,
+          "color_rgb": [
+            0.34200000762939453,
+            0.597064197063446,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.49768561124801636,
+          "within_group_displacement_rms": 0.09654557704925537
+        },
+        {
+          "id": 23,
+          "kernels": 203,
+          "color_rgb": [
+            0.7744762301445007,
+            0.949999988079071,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.34654104709625244,
+          "within_group_displacement_rms": 0.07391989976167679
+        },
+        {
+          "id": 24,
+          "kernels": 461,
+          "color_rgb": [
+            0.9481117725372314,
+            0.34200000762939453,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.3812231123447418,
+          "within_group_displacement_rms": 0.19665494561195374
+        },
+        {
+          "id": 25,
+          "kernels": 137,
+          "color_rgb": [
+            0.34200000762939453,
+            0.949999988079071,
+            0.7706997990608215
+          ],
+          "center_motion_rms": 0.3538385033607483,
+          "within_group_displacement_rms": 0.03896808624267578
+        },
+        {
+          "id": 26,
+          "kernels": 148,
+          "color_rgb": [
+            0.949999988079071,
+            0.5932877659797668,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.3853877782821655,
+          "within_group_displacement_rms": 0.023890741169452667
+        },
+        {
+          "id": 27,
+          "kernels": 3052,
+          "color_rgb": [
+            0.41587576270103455,
+            0.34200000762939453,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.2655436098575592,
+          "within_group_displacement_rms": 0.07136771082878113
+        },
+        {
+          "id": 28,
+          "kernels": 199,
+          "color_rgb": [
+            0.4455362558364868,
+            0.949999988079071,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.04823024570941925,
+          "within_group_displacement_rms": 0.007009174209088087
+        },
+        {
+          "id": 29,
+          "kernels": 554,
+          "color_rgb": [
+            0.949999988079071,
+            0.34200000762939453,
+            0.6229482889175415
+          ],
+          "center_motion_rms": 0.08870618790388107,
+          "within_group_displacement_rms": 0.006017920095473528
+        },
+        {
+          "id": 30,
+          "kernels": 3390,
+          "color_rgb": [
+            0.34200000762939453,
+            0.8003602623939514,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.08653371781110764,
+          "within_group_displacement_rms": 0.04957449063658714
+        },
+        {
+          "id": 31,
+          "kernels": 295,
+          "color_rgb": [
+            0.949999988079071,
+            0.9222277402877808,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.05232514813542366,
+          "within_group_displacement_rms": 0.00806624349206686
+        },
+        {
+          "id": 32,
+          "kernels": 438,
+          "color_rgb": [
+            0.7448157072067261,
+            0.34200000762939453,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.2425500899553299,
+          "within_group_displacement_rms": 0.052460767328739166
+        },
+        {
+          "id": 33,
+          "kernels": 1373,
+          "color_rgb": [
+            0.34200000762939453,
+            0.949999988079071,
+            0.5674036741256714
+          ],
+          "center_motion_rms": 0.04561299830675125,
+          "within_group_displacement_rms": 0.016996489837765694
+        },
+        {
+          "id": 34,
+          "kernels": 409,
+          "color_rgb": [
+            0.949999988079071,
+            0.3899917006492615,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.13268855214118958,
+          "within_group_displacement_rms": 0.059663016349077225
+        },
+        {
+          "id": 35,
+          "kernels": 391,
+          "color_rgb": [
+            0.34200000762939453,
+            0.4714203178882599,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.0900074914097786,
+          "within_group_displacement_rms": 0.011319153010845184
+        },
+        {
+          "id": 36,
+          "kernels": 1679,
+          "color_rgb": [
+            0.6488323211669922,
+            0.949999988079071,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.13494110107421875,
+          "within_group_displacement_rms": 0.025180328637361526
+        },
+        {
+          "id": 37,
+          "kernels": 294,
+          "color_rgb": [
+            0.949999988079071,
+            0.34200000762939453,
+            0.8262443542480469
+          ],
+          "center_motion_rms": 0.3500462472438812,
+          "within_group_displacement_rms": 0.08837717771530151
+        },
+        {
+          "id": 38,
+          "kernels": 872,
+          "color_rgb": [
+            0.34200000762939453,
+            0.949999988079071,
+            0.8963436484336853
+          ],
+          "center_motion_rms": 0.09621421992778778,
+          "within_group_displacement_rms": 0.0043131569400429726
+        },
+        {
+          "id": 39,
+          "kernels": 447,
+          "color_rgb": [
+            0.949999988079071,
+            0.7189316749572754,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.046266645193099976,
+          "within_group_displacement_rms": 0.006810509134083986
+        },
+        {
+          "id": 40,
+          "kernels": 738,
+          "color_rgb": [
+            0.5415196418762207,
+            0.34200000762939453,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.08358350396156311,
+          "within_group_displacement_rms": 0.019544068723917007
+        },
+        {
+          "id": 41,
+          "kernels": 131,
+          "color_rgb": [
+            0.34200000762939453,
+            0.949999988079071,
+            0.3641076385974884
+          ],
+          "center_motion_rms": 0.131083682179451,
+          "within_group_displacement_rms": 0.014274206012487411
+        },
+        {
+          "id": 42,
+          "kernels": 2296,
+          "color_rgb": [
+            0.949999988079071,
+            0.34200000762939453,
+            0.49730437994003296
+          ],
+          "center_motion_rms": 0.045352503657341,
+          "within_group_displacement_rms": 0.01277108583599329
+        },
+        {
+          "id": 43,
+          "kernels": 1542,
+          "color_rgb": [
+            0.34200000762939453,
+            0.6747164130210876,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.07223193347454071,
+          "within_group_displacement_rms": 0.025551410391926765
+        },
+        {
+          "id": 44,
+          "kernels": 154,
+          "color_rgb": [
+            0.8521283864974976,
+            0.949999988079071,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.08441483229398727,
+          "within_group_displacement_rms": 0.007113304454833269
+        },
+        {
+          "id": 45,
+          "kernels": 224,
+          "color_rgb": [
+            0.8704596161842346,
+            0.34200000762939453,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.09825972467660904,
+          "within_group_displacement_rms": 0.021829327568411827
+        },
+        {
+          "id": 46,
+          "kernels": 129,
+          "color_rgb": [
+            0.34200000762939453,
+            0.949999988079071,
+            0.6930475831031799
+          ],
+          "center_motion_rms": 0.12157130986452103,
+          "within_group_displacement_rms": 0.00786922313272953
+        }
+      ],
+      "algorithm_parameters": {
+        "algorithm": "sklearn.HDBSCAN",
+        "requested_group_count": null,
+        "actual_groups": 47,
+        "min_cluster_size": 128,
+        "min_samples": 16,
+        "selection": "eom",
+        "allow_single_cluster": true,
+        "eligible_noise_kernels": 11161,
+        "sample_weights_used_for_density": false,
+        "center_weights_used": true,
+        "confidence_mean_assigned": 0.8503881692886353
+      },
+      "clustering_elapsed_seconds": 17.921999999991385
+    },
+    {
+      "name": "N2_HDB_displacement_velocity_min128",
+      "method": "N2_HDB_displacement_velocity",
+      "feature_mode": "displacement_velocity",
+      "requested_group_count": null,
+      "min_cluster_size": 128,
+      "actual_groups": 49,
+      "assigned_kernels": 37208,
+      "unassigned_kernels": 48935,
+      "total_kernels": 86143,
+      "groups": [
+        {
+          "id": 0,
+          "kernels": 507,
+          "color_rgb": [
+            0.9490196108818054,
+            0.41960784792900085,
+            0.5411764979362488
+          ],
+          "center_motion_rms": 1.5970958471298218,
+          "within_group_displacement_rms": 0.07593999803066254
+        },
+        {
+          "id": 1,
+          "kernels": 635,
+          "color_rgb": [
+            0.14901961386203766,
+            0.8392156958580017,
+            0.772549033164978
+          ],
+          "center_motion_rms": 1.258032202720642,
+          "within_group_displacement_rms": 0.10873471200466156
+        },
+        {
+          "id": 2,
+          "kernels": 291,
+          "color_rgb": [
+            1.0,
+            0.7019608020782471,
+            0.27843138575553894
+          ],
+          "center_motion_rms": 0.6444278955459595,
+          "within_group_displacement_rms": 0.054061561822891235
+        },
+        {
+          "id": 3,
+          "kernels": 163,
+          "color_rgb": [
+            0.7176470756530762,
+            0.5803921818733215,
+            0.9647058844566345
+          ],
+          "center_motion_rms": 0.7307432293891907,
+          "within_group_displacement_rms": 0.03639264032244682
+        },
+        {
+          "id": 4,
+          "kernels": 669,
+          "color_rgb": [
+            0.6549019813537598,
+            0.8901960849761963,
+            0.42352941632270813
+          ],
+          "center_motion_rms": 0.7320989966392517,
+          "within_group_displacement_rms": 0.07016123831272125
+        },
+        {
+          "id": 5,
+          "kernels": 701,
+          "color_rgb": [
+            0.3137255012989044,
+            0.6431372761726379,
+            1.0
+          ],
+          "center_motion_rms": 0.6748033761978149,
+          "within_group_displacement_rms": 0.07244566082954407
+        },
+        {
+          "id": 6,
+          "kernels": 2588,
+          "color_rgb": [
+            0.929411768913269,
+            0.5215686559677124,
+            0.9019607901573181
+          ],
+          "center_motion_rms": 0.3688592314720154,
+          "within_group_displacement_rms": 0.16786284744739532
+        },
+        {
+          "id": 7,
+          "kernels": 167,
+          "color_rgb": [
+            0.8901960849761963,
+            0.8274509906768799,
+            0.42352941632270813
+          ],
+          "center_motion_rms": 0.5515137910842896,
+          "within_group_displacement_rms": 0.08533963561058044
+        },
+        {
+          "id": 8,
+          "kernels": 930,
+          "color_rgb": [
+            0.949999988079071,
+            0.34200000762939453,
+            0.5452960729598999
+          ],
+          "center_motion_rms": 0.5150715708732605,
+          "within_group_displacement_rms": 0.12233323603868484
+        },
+        {
+          "id": 9,
+          "kernels": 495,
+          "color_rgb": [
+            0.34200000762939453,
+            0.7227081060409546,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.3286792039871216,
+          "within_group_displacement_rms": 0.22239862382411957
+        },
+        {
+          "id": 10,
+          "kernels": 359,
+          "color_rgb": [
+            0.9001200795173645,
+            0.949999988079071,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.5151852965354919,
+          "within_group_displacement_rms": 0.14489854872226715
+        },
+        {
+          "id": 11,
+          "kernels": 1140,
+          "color_rgb": [
+            0.8224679231643677,
+            0.34200000762939453,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.19634544849395752,
+          "within_group_displacement_rms": 0.2563289403915405
+        },
+        {
+          "id": 12,
+          "kernels": 1608,
+          "color_rgb": [
+            0.34200000762939453,
+            0.949999988079071,
+            0.645055890083313
+          ],
+          "center_motion_rms": 0.360660195350647,
+          "within_group_displacement_rms": 0.11468630284070969
+        },
+        {
+          "id": 13,
+          "kernels": 263,
+          "color_rgb": [
+            0.949999988079071,
+            0.4676438868045807,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.3308808207511902,
+          "within_group_displacement_rms": 0.12996497750282288
+        },
+        {
+          "id": 14,
+          "kernels": 221,
+          "color_rgb": [
+            0.34200000762939453,
+            0.3937681317329407,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.5656520128250122,
+          "within_group_displacement_rms": 0.07191666215658188
+        },
+        {
+          "id": 15,
+          "kernels": 194,
+          "color_rgb": [
+            0.5711801648139954,
+            0.949999988079071,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.4511359930038452,
+          "within_group_displacement_rms": 0.13022738695144653
+        },
+        {
+          "id": 16,
+          "kernels": 138,
+          "color_rgb": [
+            0.949999988079071,
+            0.34200000762939453,
+            0.7485921382904053
+          ],
+          "center_motion_rms": 0.19706811010837555,
+          "within_group_displacement_rms": 0.0639214813709259
+        },
+        {
+          "id": 17,
+          "kernels": 886,
+          "color_rgb": [
+            0.34200000762939453,
+            0.92600417137146,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.5810322761535645,
+          "within_group_displacement_rms": 0.07529725134372711
+        },
+        {
+          "id": 18,
+          "kernels": 153,
+          "color_rgb": [
+            0.949999988079071,
+            0.7965838313102722,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.30414074659347534,
+          "within_group_displacement_rms": 0.03815922513604164
+        },
+        {
+          "id": 19,
+          "kernels": 622,
+          "color_rgb": [
+            0.6191718578338623,
+            0.34200000762939453,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.21516253054141998,
+          "within_group_displacement_rms": 0.039635900408029556
+        },
+        {
+          "id": 20,
+          "kernels": 287,
+          "color_rgb": [
+            0.34200000762939453,
+            0.949999988079071,
+            0.4417598247528076
+          ],
+          "center_motion_rms": 0.38083624839782715,
+          "within_group_displacement_rms": 0.06544077396392822
+        },
+        {
+          "id": 21,
+          "kernels": 194,
+          "color_rgb": [
+            0.949999988079071,
+            0.34200000762939453,
+            0.41965219378471375
+          ],
+          "center_motion_rms": 0.3720617890357971,
+          "within_group_displacement_rms": 0.03870687633752823
+        },
+        {
+          "id": 22,
+          "kernels": 192,
+          "color_rgb": [
+            0.34200000762939453,
+            0.597064197063446,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.4576321542263031,
+          "within_group_displacement_rms": 0.09525859355926514
+        },
+        {
+          "id": 23,
+          "kernels": 214,
+          "color_rgb": [
+            0.7744762301445007,
+            0.949999988079071,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.27602145075798035,
+          "within_group_displacement_rms": 0.05118873342871666
+        },
+        {
+          "id": 24,
+          "kernels": 656,
+          "color_rgb": [
+            0.9481117725372314,
+            0.34200000762939453,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.18766069412231445,
+          "within_group_displacement_rms": 0.04826381430029869
+        },
+        {
+          "id": 25,
+          "kernels": 329,
+          "color_rgb": [
+            0.34200000762939453,
+            0.949999988079071,
+            0.7706997990608215
+          ],
+          "center_motion_rms": 0.745818555355072,
+          "within_group_displacement_rms": 0.0761052668094635
+        },
+        {
+          "id": 26,
+          "kernels": 514,
+          "color_rgb": [
+            0.949999988079071,
+            0.5932877659797668,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.26752662658691406,
+          "within_group_displacement_rms": 0.07431893050670624
+        },
+        {
+          "id": 27,
+          "kernels": 1096,
+          "color_rgb": [
+            0.41587576270103455,
+            0.34200000762939453,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.49571627378463745,
+          "within_group_displacement_rms": 0.10041853785514832
+        },
+        {
+          "id": 28,
+          "kernels": 207,
+          "color_rgb": [
+            0.4455362558364868,
+            0.949999988079071,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.3464386463165283,
+          "within_group_displacement_rms": 0.07379556447267532
+        },
+        {
+          "id": 29,
+          "kernels": 461,
+          "color_rgb": [
+            0.949999988079071,
+            0.34200000762939453,
+            0.6229482889175415
+          ],
+          "center_motion_rms": 0.3812231123447418,
+          "within_group_displacement_rms": 0.19665494561195374
+        },
+        {
+          "id": 30,
+          "kernels": 130,
+          "color_rgb": [
+            0.34200000762939453,
+            0.8003602623939514,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.3857744038105011,
+          "within_group_displacement_rms": 0.02231898345053196
+        },
+        {
+          "id": 31,
+          "kernels": 130,
+          "color_rgb": [
+            0.949999988079071,
+            0.9222277402877808,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.4468297064304352,
+          "within_group_displacement_rms": 0.19358715415000916
+        },
+        {
+          "id": 32,
+          "kernels": 3052,
+          "color_rgb": [
+            0.7448157072067261,
+            0.34200000762939453,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.2655436098575592,
+          "within_group_displacement_rms": 0.07136771082878113
+        },
+        {
+          "id": 33,
+          "kernels": 1901,
+          "color_rgb": [
+            0.34200000762939453,
+            0.949999988079071,
+            0.5674036741256714
+          ],
+          "center_motion_rms": 0.08559002727270126,
+          "within_group_displacement_rms": 0.042514681816101074
+        },
+        {
+          "id": 34,
+          "kernels": 647,
+          "color_rgb": [
+            0.949999988079071,
+            0.3899917006492615,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.0885067731142044,
+          "within_group_displacement_rms": 0.006618357263505459
+        },
+        {
+          "id": 35,
+          "kernels": 417,
+          "color_rgb": [
+            0.34200000762939453,
+            0.4714203178882599,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.24378077685832977,
+          "within_group_displacement_rms": 0.05200422555208206
+        },
+        {
+          "id": 36,
+          "kernels": 375,
+          "color_rgb": [
+            0.6488323211669922,
+            0.949999988079071,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.1321185678243637,
+          "within_group_displacement_rms": 0.05986338108778
+        },
+        {
+          "id": 37,
+          "kernels": 167,
+          "color_rgb": [
+            0.949999988079071,
+            0.34200000762939453,
+            0.8262443542480469
+          ],
+          "center_motion_rms": 0.11782880127429962,
+          "within_group_displacement_rms": 0.008528538048267365
+        },
+        {
+          "id": 38,
+          "kernels": 360,
+          "color_rgb": [
+            0.34200000762939453,
+            0.949999988079071,
+            0.8963436484336853
+          ],
+          "center_motion_rms": 0.09003312885761261,
+          "within_group_displacement_rms": 0.010809426195919514
+        },
+        {
+          "id": 39,
+          "kernels": 1680,
+          "color_rgb": [
+            0.949999988079071,
+            0.7189316749572754,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.13488778471946716,
+          "within_group_displacement_rms": 0.025362711399793625
+        },
+        {
+          "id": 40,
+          "kernels": 245,
+          "color_rgb": [
+            0.5415196418762207,
+            0.34200000762939453,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.10666920244693756,
+          "within_group_displacement_rms": 0.014660621993243694
+        },
+        {
+          "id": 41,
+          "kernels": 295,
+          "color_rgb": [
+            0.34200000762939453,
+            0.949999988079071,
+            0.3641076385974884
+          ],
+          "center_motion_rms": 0.34956222772598267,
+          "within_group_displacement_rms": 0.08888392150402069
+        },
+        {
+          "id": 42,
+          "kernels": 7292,
+          "color_rgb": [
+            0.949999988079071,
+            0.34200000762939453,
+            0.49730437994003296
+          ],
+          "center_motion_rms": 0.046130772680044174,
+          "within_group_displacement_rms": 0.024704473093152046
+        },
+        {
+          "id": 43,
+          "kernels": 877,
+          "color_rgb": [
+            0.34200000762939453,
+            0.6747164130210876,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.09619858860969543,
+          "within_group_displacement_rms": 0.00437921890988946
+        },
+        {
+          "id": 44,
+          "kernels": 266,
+          "color_rgb": [
+            0.8521283864974976,
+            0.949999988079071,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.13337163627147675,
+          "within_group_displacement_rms": 0.02302737906575203
+        },
+        {
+          "id": 45,
+          "kernels": 618,
+          "color_rgb": [
+            0.8704596161842346,
+            0.34200000762939453,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.08118556439876556,
+          "within_group_displacement_rms": 0.01778504066169262
+        },
+        {
+          "id": 46,
+          "kernels": 1482,
+          "color_rgb": [
+            0.34200000762939453,
+            0.949999988079071,
+            0.6930475831031799
+          ],
+          "center_motion_rms": 0.07088629901409149,
+          "within_group_displacement_rms": 0.022519294172525406
+        },
+        {
+          "id": 47,
+          "kernels": 220,
+          "color_rgb": [
+            0.949999988079071,
+            0.5156355500221252,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.09867651015520096,
+          "within_group_displacement_rms": 0.02081749401986599
+        },
+        {
+          "id": 48,
+          "kernels": 174,
+          "color_rgb": [
+            0.34200000762939453,
+            0.34577643871307373,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.11155787110328674,
+          "within_group_displacement_rms": 0.010434532538056374
+        }
+      ],
+      "algorithm_parameters": {
+        "algorithm": "sklearn.HDBSCAN",
+        "requested_group_count": null,
+        "actual_groups": 49,
+        "min_cluster_size": 128,
+        "min_samples": 16,
+        "selection": "eom",
+        "allow_single_cluster": true,
+        "eligible_noise_kernels": 11277,
+        "sample_weights_used_for_density": false,
+        "center_weights_used": true,
+        "confidence_mean_assigned": 0.8471061587333679
+      },
+      "clustering_elapsed_seconds": 32.594000000011874
+    },
+    {
+      "name": "N3_direct_motion_spatial_min128",
+      "method": "N3_direct_motion_spatial",
+      "feature_mode": "displacement_velocity",
+      "requested_group_count": null,
+      "min_cluster_size": 128,
+      "actual_groups": 15,
+      "assigned_kernels": 47247,
+      "unassigned_kernels": 38896,
+      "total_kernels": 86143,
+      "groups": [
+        {
+          "id": 0,
+          "kernels": 510,
+          "color_rgb": [
+            0.9490196108818054,
+            0.41960784792900085,
+            0.5411764979362488
+          ],
+          "center_motion_rms": 1.5969222784042358,
+          "within_group_displacement_rms": 0.07602140307426453
+        },
+        {
+          "id": 1,
+          "kernels": 655,
+          "color_rgb": [
+            0.14901961386203766,
+            0.8392156958580017,
+            0.772549033164978
+          ],
+          "center_motion_rms": 1.2544993162155151,
+          "within_group_displacement_rms": 0.10978251695632935
+        },
+        {
+          "id": 2,
+          "kernels": 4867,
+          "color_rgb": [
+            1.0,
+            0.7019608020782471,
+            0.27843138575553894
+          ],
+          "center_motion_rms": 0.4401059150695801,
+          "within_group_displacement_rms": 0.35332605242729187
+        },
+        {
+          "id": 3,
+          "kernels": 359,
+          "color_rgb": [
+            0.7176470756530762,
+            0.5803921818733215,
+            0.9647058844566345
+          ],
+          "center_motion_rms": 0.5610344409942627,
+          "within_group_displacement_rms": 0.17591439187526703
+        },
+        {
+          "id": 4,
+          "kernels": 10226,
+          "color_rgb": [
+            0.6549019813537598,
+            0.8901960849761963,
+            0.42352941632270813
+          ],
+          "center_motion_rms": 0.24079196155071259,
+          "within_group_displacement_rms": 0.344719260931015
+        },
+        {
+          "id": 5,
+          "kernels": 181,
+          "color_rgb": [
+            0.3137255012989044,
+            0.6431372761726379,
+            1.0
+          ],
+          "center_motion_rms": 0.4055687487125397,
+          "within_group_displacement_rms": 0.09354379773139954
+        },
+        {
+          "id": 6,
+          "kernels": 253,
+          "color_rgb": [
+            0.929411768913269,
+            0.5215686559677124,
+            0.9019607901573181
+          ],
+          "center_motion_rms": 0.4488500952720642,
+          "within_group_displacement_rms": 0.1323593705892563
+        },
+        {
+          "id": 7,
+          "kernels": 1511,
+          "color_rgb": [
+            0.8901960849761963,
+            0.8274509906768799,
+            0.42352941632270813
+          ],
+          "center_motion_rms": 0.52992182970047,
+          "within_group_displacement_rms": 0.14689850807189941
+        },
+        {
+          "id": 8,
+          "kernels": 622,
+          "color_rgb": [
+            0.949999988079071,
+            0.34200000762939453,
+            0.5452960729598999
+          ],
+          "center_motion_rms": 0.21516253054141998,
+          "within_group_displacement_rms": 0.039635900408029556
+        },
+        {
+          "id": 9,
+          "kernels": 311,
+          "color_rgb": [
+            0.34200000762939453,
+            0.7227081060409546,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.37956419587135315,
+          "within_group_displacement_rms": 0.07668890804052353
+        },
+        {
+          "id": 10,
+          "kernels": 251,
+          "color_rgb": [
+            0.9001200795173645,
+            0.949999988079071,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.7590529918670654,
+          "within_group_displacement_rms": 0.06603928655385971
+        },
+        {
+          "id": 11,
+          "kernels": 1320,
+          "color_rgb": [
+            0.8224679231643677,
+            0.34200000762939453,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.316974937915802,
+          "within_group_displacement_rms": 0.1454191952943802
+        },
+        {
+          "id": 12,
+          "kernels": 389,
+          "color_rgb": [
+            0.34200000762939453,
+            0.949999988079071,
+            0.645055890083313
+          ],
+          "center_motion_rms": 0.4087463915348053,
+          "within_group_displacement_rms": 0.13183124363422394
+        },
+        {
+          "id": 13,
+          "kernels": 25506,
+          "color_rgb": [
+            0.949999988079071,
+            0.4676438868045807,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.07250883430242538,
+          "within_group_displacement_rms": 0.1070844754576683
+        },
+        {
+          "id": 14,
+          "kernels": 286,
+          "color_rgb": [
+            0.34200000762939453,
+            0.3937681317329407,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.3501361906528473,
+          "within_group_displacement_rms": 0.08877835422754288
+        }
+      ],
+      "algorithm_parameters": {
+        "algorithm": "direct motion/spatial graph",
+        "requested_group_count": null,
+        "actual_groups": 15,
+        "min_cluster_size": 128,
+        "neighbors": 16,
+        "radius_factor": 2.5,
+        "radius_cap_scene_units": 0.08,
+        "persistence_sample_fraction": 0.8,
+        "motion_radius_normalized_features": 0.15,
+        "candidate_edges": 479710,
+        "motion_compatible_edges": 443931,
+        "persistent_edges": 421697,
+        "raw_components": 318,
+        "eligible_noise_kernels": 1238
+      },
+      "clustering_elapsed_seconds": 0.7969999999913853
+    },
+    {
+      "name": "N1_HDB_displacement_min256",
+      "method": "N1_HDB_displacement",
+      "feature_mode": "displacement",
+      "requested_group_count": null,
+      "min_cluster_size": 256,
+      "actual_groups": 30,
+      "assigned_kernels": 38349,
+      "unassigned_kernels": 47794,
+      "total_kernels": 86143,
+      "groups": [
+        {
+          "id": 0,
+          "kernels": 510,
+          "color_rgb": [
+            0.9490196108818054,
+            0.41960784792900085,
+            0.5411764979362488
+          ],
+          "center_motion_rms": 1.5969222784042358,
+          "within_group_displacement_rms": 0.07602140307426453
+        },
+        {
+          "id": 1,
+          "kernels": 645,
+          "color_rgb": [
+            0.14901961386203766,
+            0.8392156958580017,
+            0.772549033164978
+          ],
+          "center_motion_rms": 1.2564597129821777,
+          "within_group_displacement_rms": 0.10903508961200714
+        },
+        {
+          "id": 2,
+          "kernels": 2652,
+          "color_rgb": [
+            1.0,
+            0.7019608020782471,
+            0.27843138575553894
+          ],
+          "center_motion_rms": 0.37149161100387573,
+          "within_group_displacement_rms": 0.16339020431041718
+        },
+        {
+          "id": 3,
+          "kernels": 4903,
+          "color_rgb": [
+            0.7176470756530762,
+            0.5803921818733215,
+            0.9647058844566345
+          ],
+          "center_motion_rms": 0.44344499707221985,
+          "within_group_displacement_rms": 0.354460209608078
+        },
+        {
+          "id": 4,
+          "kernels": 1003,
+          "color_rgb": [
+            0.6549019813537598,
+            0.8901960849761963,
+            0.42352941632270813
+          ],
+          "center_motion_rms": 0.5112918019294739,
+          "within_group_displacement_rms": 0.12429516762495041
+        },
+        {
+          "id": 5,
+          "kernels": 584,
+          "color_rgb": [
+            0.3137255012989044,
+            0.6431372761726379,
+            1.0
+          ],
+          "center_motion_rms": 0.5134579539299011,
+          "within_group_displacement_rms": 0.1718411147594452
+        },
+        {
+          "id": 6,
+          "kernels": 2497,
+          "color_rgb": [
+            0.929411768913269,
+            0.5215686559677124,
+            0.9019607901573181
+          ],
+          "center_motion_rms": 0.2850618064403534,
+          "within_group_displacement_rms": 0.21956470608711243
+        },
+        {
+          "id": 7,
+          "kernels": 1549,
+          "color_rgb": [
+            0.8901960849761963,
+            0.8274509906768799,
+            0.42352941632270813
+          ],
+          "center_motion_rms": 0.5283669829368591,
+          "within_group_displacement_rms": 0.15106986463069916
+        },
+        {
+          "id": 8,
+          "kernels": 622,
+          "color_rgb": [
+            0.949999988079071,
+            0.34200000762939453,
+            0.5452960729598999
+          ],
+          "center_motion_rms": 0.21516253054141998,
+          "within_group_displacement_rms": 0.039635900408029556
+        },
+        {
+          "id": 9,
+          "kernels": 274,
+          "color_rgb": [
+            0.34200000762939453,
+            0.7227081060409546,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.3792109191417694,
+          "within_group_displacement_rms": 0.06039908155798912
+        },
+        {
+          "id": 10,
+          "kernels": 1009,
+          "color_rgb": [
+            0.9001200795173645,
+            0.949999988079071,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.21997442841529846,
+          "within_group_displacement_rms": 0.11174092441797256
+        },
+        {
+          "id": 11,
+          "kernels": 329,
+          "color_rgb": [
+            0.8224679231643677,
+            0.34200000762939453,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.745818555355072,
+          "within_group_displacement_rms": 0.0761052668094635
+        },
+        {
+          "id": 12,
+          "kernels": 1329,
+          "color_rgb": [
+            0.34200000762939453,
+            0.949999988079071,
+            0.645055890083313
+          ],
+          "center_motion_rms": 0.3183273375034332,
+          "within_group_displacement_rms": 0.14625488221645355
+        },
+        {
+          "id": 13,
+          "kernels": 1458,
+          "color_rgb": [
+            0.949999988079071,
+            0.4676438868045807,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.4805399477481842,
+          "within_group_displacement_rms": 0.12986168265342712
+        },
+        {
+          "id": 14,
+          "kernels": 461,
+          "color_rgb": [
+            0.34200000762939453,
+            0.3937681317329407,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.3812231123447418,
+          "within_group_displacement_rms": 0.19665494561195374
+        },
+        {
+          "id": 15,
+          "kernels": 3052,
+          "color_rgb": [
+            0.5711801648139954,
+            0.949999988079071,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.2655436098575592,
+          "within_group_displacement_rms": 0.07136771082878113
+        },
+        {
+          "id": 16,
+          "kernels": 515,
+          "color_rgb": [
+            0.949999988079071,
+            0.34200000762939453,
+            0.7485921382904053
+          ],
+          "center_motion_rms": 0.05040916055440903,
+          "within_group_displacement_rms": 0.009996812790632248
+        },
+        {
+          "id": 17,
+          "kernels": 554,
+          "color_rgb": [
+            0.34200000762939453,
+            0.92600417137146,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.08870618790388107,
+          "within_group_displacement_rms": 0.006017920095473528
+        },
+        {
+          "id": 18,
+          "kernels": 3390,
+          "color_rgb": [
+            0.949999988079071,
+            0.7965838313102722,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.08653371781110764,
+          "within_group_displacement_rms": 0.04957449063658714
+        },
+        {
+          "id": 19,
+          "kernels": 438,
+          "color_rgb": [
+            0.6191718578338623,
+            0.34200000762939453,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.2425500899553299,
+          "within_group_displacement_rms": 0.052460767328739166
+        },
+        {
+          "id": 20,
+          "kernels": 1373,
+          "color_rgb": [
+            0.34200000762939453,
+            0.949999988079071,
+            0.4417598247528076
+          ],
+          "center_motion_rms": 0.04561299830675125,
+          "within_group_displacement_rms": 0.016996489837765694
+        },
+        {
+          "id": 21,
+          "kernels": 409,
+          "color_rgb": [
+            0.949999988079071,
+            0.34200000762939453,
+            0.41965219378471375
+          ],
+          "center_motion_rms": 0.13268855214118958,
+          "within_group_displacement_rms": 0.059663016349077225
+        },
+        {
+          "id": 22,
+          "kernels": 391,
+          "color_rgb": [
+            0.34200000762939453,
+            0.597064197063446,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.0900074914097786,
+          "within_group_displacement_rms": 0.011319153010845184
+        },
+        {
+          "id": 23,
+          "kernels": 1679,
+          "color_rgb": [
+            0.7744762301445007,
+            0.949999988079071,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.13494110107421875,
+          "within_group_displacement_rms": 0.025180328637361526
+        },
+        {
+          "id": 24,
+          "kernels": 294,
+          "color_rgb": [
+            0.9481117725372314,
+            0.34200000762939453,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.3500462472438812,
+          "within_group_displacement_rms": 0.08837717771530151
+        },
+        {
+          "id": 25,
+          "kernels": 872,
+          "color_rgb": [
+            0.34200000762939453,
+            0.949999988079071,
+            0.7706997990608215
+          ],
+          "center_motion_rms": 0.09621421992778778,
+          "within_group_displacement_rms": 0.0043131569400429726
+        },
+        {
+          "id": 26,
+          "kernels": 447,
+          "color_rgb": [
+            0.949999988079071,
+            0.5932877659797668,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.046266645193099976,
+          "within_group_displacement_rms": 0.006810509134083986
+        },
+        {
+          "id": 27,
+          "kernels": 738,
+          "color_rgb": [
+            0.41587576270103455,
+            0.34200000762939453,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.08358350396156311,
+          "within_group_displacement_rms": 0.019544068723917007
+        },
+        {
+          "id": 28,
+          "kernels": 2296,
+          "color_rgb": [
+            0.4455362558364868,
+            0.949999988079071,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.045352503657341,
+          "within_group_displacement_rms": 0.01277108583599329
+        },
+        {
+          "id": 29,
+          "kernels": 2076,
+          "color_rgb": [
+            0.949999988079071,
+            0.34200000762939453,
+            0.6229482889175415
+          ],
+          "center_motion_rms": 0.07597625255584717,
+          "within_group_displacement_rms": 0.03238038346171379
+        }
+      ],
+      "algorithm_parameters": {
+        "algorithm": "sklearn.HDBSCAN",
+        "requested_group_count": null,
+        "actual_groups": 30,
+        "min_cluster_size": 256,
+        "min_samples": 16,
+        "selection": "eom",
+        "allow_single_cluster": true,
+        "eligible_noise_kernels": 10136,
+        "sample_weights_used_for_density": false,
+        "center_weights_used": true,
+        "confidence_mean_assigned": 0.7996669411659241
+      },
+      "clustering_elapsed_seconds": 17.671000000002095
+    },
+    {
+      "name": "N2_HDB_displacement_velocity_min256",
+      "method": "N2_HDB_displacement_velocity",
+      "feature_mode": "displacement_velocity",
+      "requested_group_count": null,
+      "min_cluster_size": 256,
+      "actual_groups": 33,
+      "assigned_kernels": 38918,
+      "unassigned_kernels": 47225,
+      "total_kernels": 86143,
+      "groups": [
+        {
+          "id": 0,
+          "kernels": 507,
+          "color_rgb": [
+            0.9490196108818054,
+            0.41960784792900085,
+            0.5411764979362488
+          ],
+          "center_motion_rms": 1.5970958471298218,
+          "within_group_displacement_rms": 0.07593999803066254
+        },
+        {
+          "id": 1,
+          "kernels": 635,
+          "color_rgb": [
+            0.14901961386203766,
+            0.8392156958580017,
+            0.772549033164978
+          ],
+          "center_motion_rms": 1.258032202720642,
+          "within_group_displacement_rms": 0.10873471200466156
+        },
+        {
+          "id": 2,
+          "kernels": 291,
+          "color_rgb": [
+            1.0,
+            0.7019608020782471,
+            0.27843138575553894
+          ],
+          "center_motion_rms": 0.6444278955459595,
+          "within_group_displacement_rms": 0.054061561822891235
+        },
+        {
+          "id": 3,
+          "kernels": 669,
+          "color_rgb": [
+            0.7176470756530762,
+            0.5803921818733215,
+            0.9647058844566345
+          ],
+          "center_motion_rms": 0.7320989966392517,
+          "within_group_displacement_rms": 0.07016123831272125
+        },
+        {
+          "id": 4,
+          "kernels": 701,
+          "color_rgb": [
+            0.6549019813537598,
+            0.8901960849761963,
+            0.42352941632270813
+          ],
+          "center_motion_rms": 0.6748033761978149,
+          "within_group_displacement_rms": 0.07244566082954407
+        },
+        {
+          "id": 5,
+          "kernels": 2588,
+          "color_rgb": [
+            0.3137255012989044,
+            0.6431372761726379,
+            1.0
+          ],
+          "center_motion_rms": 0.3688592314720154,
+          "within_group_displacement_rms": 0.16786284744739532
+        },
+        {
+          "id": 6,
+          "kernels": 584,
+          "color_rgb": [
+            0.929411768913269,
+            0.5215686559677124,
+            0.9019607901573181
+          ],
+          "center_motion_rms": 0.5134579539299011,
+          "within_group_displacement_rms": 0.1718411147594452
+        },
+        {
+          "id": 7,
+          "kernels": 930,
+          "color_rgb": [
+            0.8901960849761963,
+            0.8274509906768799,
+            0.42352941632270813
+          ],
+          "center_motion_rms": 0.5150715708732605,
+          "within_group_displacement_rms": 0.12233323603868484
+        },
+        {
+          "id": 8,
+          "kernels": 495,
+          "color_rgb": [
+            0.949999988079071,
+            0.34200000762939453,
+            0.5452960729598999
+          ],
+          "center_motion_rms": 0.3286792039871216,
+          "within_group_displacement_rms": 0.22239862382411957
+        },
+        {
+          "id": 9,
+          "kernels": 1360,
+          "color_rgb": [
+            0.34200000762939453,
+            0.7227081060409546,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.17745323479175568,
+          "within_group_displacement_rms": 0.2726215720176697
+        },
+        {
+          "id": 10,
+          "kernels": 1915,
+          "color_rgb": [
+            0.9001200795173645,
+            0.949999988079071,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.33228516578674316,
+          "within_group_displacement_rms": 0.14399327337741852
+        },
+        {
+          "id": 11,
+          "kernels": 263,
+          "color_rgb": [
+            0.8224679231643677,
+            0.34200000762939453,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.3308808207511902,
+          "within_group_displacement_rms": 0.12996497750282288
+        },
+        {
+          "id": 12,
+          "kernels": 1552,
+          "color_rgb": [
+            0.34200000762939453,
+            0.949999988079071,
+            0.645055890083313
+          ],
+          "center_motion_rms": 0.5281232595443726,
+          "within_group_displacement_rms": 0.15140452980995178
+        },
+        {
+          "id": 13,
+          "kernels": 622,
+          "color_rgb": [
+            0.949999988079071,
+            0.4676438868045807,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.21516253054141998,
+          "within_group_displacement_rms": 0.039635900408029556
+        },
+        {
+          "id": 14,
+          "kernels": 287,
+          "color_rgb": [
+            0.34200000762939453,
+            0.3937681317329407,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.38083624839782715,
+          "within_group_displacement_rms": 0.06544077396392822
+        },
+        {
+          "id": 15,
+          "kernels": 878,
+          "color_rgb": [
+            0.5711801648139954,
+            0.949999988079071,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.21991188824176788,
+          "within_group_displacement_rms": 0.10006514936685562
+        },
+        {
+          "id": 16,
+          "kernels": 329,
+          "color_rgb": [
+            0.949999988079071,
+            0.34200000762939453,
+            0.7485921382904053
+          ],
+          "center_motion_rms": 0.745818555355072,
+          "within_group_displacement_rms": 0.0761052668094635
+        },
+        {
+          "id": 17,
+          "kernels": 1329,
+          "color_rgb": [
+            0.34200000762939453,
+            0.92600417137146,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.3183273375034332,
+          "within_group_displacement_rms": 0.14625488221645355
+        },
+        {
+          "id": 18,
+          "kernels": 1446,
+          "color_rgb": [
+            0.949999988079071,
+            0.7965838313102722,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.4812604486942291,
+          "within_group_displacement_rms": 0.12919752299785614
+        },
+        {
+          "id": 19,
+          "kernels": 461,
+          "color_rgb": [
+            0.6191718578338623,
+            0.34200000762939453,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.3812231123447418,
+          "within_group_displacement_rms": 0.19665494561195374
+        },
+        {
+          "id": 20,
+          "kernels": 3052,
+          "color_rgb": [
+            0.34200000762939453,
+            0.949999988079071,
+            0.4417598247528076
+          ],
+          "center_motion_rms": 0.2655436098575592,
+          "within_group_displacement_rms": 0.07136771082878113
+        },
+        {
+          "id": 21,
+          "kernels": 647,
+          "color_rgb": [
+            0.949999988079071,
+            0.34200000762939453,
+            0.41965219378471375
+          ],
+          "center_motion_rms": 0.0885067731142044,
+          "within_group_displacement_rms": 0.006618357263505459
+        },
+        {
+          "id": 22,
+          "kernels": 3187,
+          "color_rgb": [
+            0.34200000762939453,
+            0.597064197063446,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.08644449710845947,
+          "within_group_displacement_rms": 0.04922262951731682
+        },
+        {
+          "id": 23,
+          "kernels": 417,
+          "color_rgb": [
+            0.7744762301445007,
+            0.949999988079071,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.24378077685832977,
+          "within_group_displacement_rms": 0.05200422555208206
+        },
+        {
+          "id": 24,
+          "kernels": 375,
+          "color_rgb": [
+            0.9481117725372314,
+            0.34200000762939453,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.1321185678243637,
+          "within_group_displacement_rms": 0.05986338108778
+        },
+        {
+          "id": 25,
+          "kernels": 360,
+          "color_rgb": [
+            0.34200000762939453,
+            0.949999988079071,
+            0.7706997990608215
+          ],
+          "center_motion_rms": 0.09003312885761261,
+          "within_group_displacement_rms": 0.010809426195919514
+        },
+        {
+          "id": 26,
+          "kernels": 1680,
+          "color_rgb": [
+            0.949999988079071,
+            0.5932877659797668,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.13488778471946716,
+          "within_group_displacement_rms": 0.025362711399793625
+        },
+        {
+          "id": 27,
+          "kernels": 295,
+          "color_rgb": [
+            0.41587576270103455,
+            0.34200000762939453,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.34956222772598267,
+          "within_group_displacement_rms": 0.08888392150402069
+        },
+        {
+          "id": 28,
+          "kernels": 7292,
+          "color_rgb": [
+            0.4455362558364868,
+            0.949999988079071,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.046130772680044174,
+          "within_group_displacement_rms": 0.024704473093152046
+        },
+        {
+          "id": 29,
+          "kernels": 877,
+          "color_rgb": [
+            0.949999988079071,
+            0.34200000762939453,
+            0.6229482889175415
+          ],
+          "center_motion_rms": 0.09619858860969543,
+          "within_group_displacement_rms": 0.00437921890988946
+        },
+        {
+          "id": 30,
+          "kernels": 266,
+          "color_rgb": [
+            0.34200000762939453,
+            0.8003602623939514,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.13337163627147675,
+          "within_group_displacement_rms": 0.02302737906575203
+        },
+        {
+          "id": 31,
+          "kernels": 618,
+          "color_rgb": [
+            0.949999988079071,
+            0.9222277402877808,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.08118556439876556,
+          "within_group_displacement_rms": 0.01778504066169262
+        },
+        {
+          "id": 32,
+          "kernels": 2010,
+          "color_rgb": [
+            0.7448157072067261,
+            0.34200000762939453,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.07576662302017212,
+          "within_group_displacement_rms": 0.03226590156555176
+        }
+      ],
+      "algorithm_parameters": {
+        "algorithm": "sklearn.HDBSCAN",
+        "requested_group_count": null,
+        "actual_groups": 33,
+        "min_cluster_size": 256,
+        "min_samples": 16,
+        "selection": "eom",
+        "allow_single_cluster": true,
+        "eligible_noise_kernels": 9567,
+        "sample_weights_used_for_density": false,
+        "center_weights_used": true,
+        "confidence_mean_assigned": 0.8123853802680969
+      },
+      "clustering_elapsed_seconds": 32.921999999991385
+    },
+    {
+      "name": "N3_direct_motion_spatial_min256",
+      "method": "N3_direct_motion_spatial",
+      "feature_mode": "displacement_velocity",
+      "requested_group_count": null,
+      "min_cluster_size": 256,
+      "actual_groups": 12,
+      "assigned_kernels": 46562,
+      "unassigned_kernels": 39581,
+      "total_kernels": 86143,
+      "groups": [
+        {
+          "id": 0,
+          "kernels": 510,
+          "color_rgb": [
+            0.9490196108818054,
+            0.41960784792900085,
+            0.5411764979362488
+          ],
+          "center_motion_rms": 1.5969222784042358,
+          "within_group_displacement_rms": 0.07602140307426453
+        },
+        {
+          "id": 1,
+          "kernels": 655,
+          "color_rgb": [
+            0.14901961386203766,
+            0.8392156958580017,
+            0.772549033164978
+          ],
+          "center_motion_rms": 1.2544993162155151,
+          "within_group_displacement_rms": 0.10978251695632935
+        },
+        {
+          "id": 2,
+          "kernels": 4867,
+          "color_rgb": [
+            1.0,
+            0.7019608020782471,
+            0.27843138575553894
+          ],
+          "center_motion_rms": 0.4401059150695801,
+          "within_group_displacement_rms": 0.35332605242729187
+        },
+        {
+          "id": 3,
+          "kernels": 359,
+          "color_rgb": [
+            0.7176470756530762,
+            0.5803921818733215,
+            0.9647058844566345
+          ],
+          "center_motion_rms": 0.5610344409942627,
+          "within_group_displacement_rms": 0.17591439187526703
+        },
+        {
+          "id": 4,
+          "kernels": 10226,
+          "color_rgb": [
+            0.6549019813537598,
+            0.8901960849761963,
+            0.42352941632270813
+          ],
+          "center_motion_rms": 0.24079196155071259,
+          "within_group_displacement_rms": 0.344719260931015
+        },
+        {
+          "id": 5,
+          "kernels": 1511,
+          "color_rgb": [
+            0.3137255012989044,
+            0.6431372761726379,
+            1.0
+          ],
+          "center_motion_rms": 0.52992182970047,
+          "within_group_displacement_rms": 0.14689850807189941
+        },
+        {
+          "id": 6,
+          "kernels": 622,
+          "color_rgb": [
+            0.929411768913269,
+            0.5215686559677124,
+            0.9019607901573181
+          ],
+          "center_motion_rms": 0.21516253054141998,
+          "within_group_displacement_rms": 0.039635900408029556
+        },
+        {
+          "id": 7,
+          "kernels": 311,
+          "color_rgb": [
+            0.8901960849761963,
+            0.8274509906768799,
+            0.42352941632270813
+          ],
+          "center_motion_rms": 0.37956419587135315,
+          "within_group_displacement_rms": 0.07668890804052353
+        },
+        {
+          "id": 8,
+          "kernels": 1320,
+          "color_rgb": [
+            0.949999988079071,
+            0.34200000762939453,
+            0.5452960729598999
+          ],
+          "center_motion_rms": 0.316974937915802,
+          "within_group_displacement_rms": 0.1454191952943802
+        },
+        {
+          "id": 9,
+          "kernels": 389,
+          "color_rgb": [
+            0.34200000762939453,
+            0.7227081060409546,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.4087463915348053,
+          "within_group_displacement_rms": 0.13183124363422394
+        },
+        {
+          "id": 10,
+          "kernels": 25506,
+          "color_rgb": [
+            0.9001200795173645,
+            0.949999988079071,
+            0.34200000762939453
+          ],
+          "center_motion_rms": 0.07250883430242538,
+          "within_group_displacement_rms": 0.1070844754576683
+        },
+        {
+          "id": 11,
+          "kernels": 286,
+          "color_rgb": [
+            0.8224679231643677,
+            0.34200000762939453,
+            0.949999988079071
+          ],
+          "center_motion_rms": 0.3501361906528473,
+          "within_group_displacement_rms": 0.08877835422754288
+        }
+      ],
+      "algorithm_parameters": {
+        "algorithm": "direct motion/spatial graph",
+        "requested_group_count": null,
+        "actual_groups": 12,
+        "min_cluster_size": 256,
+        "neighbors": 16,
+        "radius_factor": 2.5,
+        "radius_cap_scene_units": 0.08,
+        "persistence_sample_fraction": 0.8,
+        "motion_radius_normalized_features": 0.15,
+        "candidate_edges": 479710,
+        "motion_compatible_edges": 443931,
+        "persistent_edges": 421697,
+        "raw_components": 318,
+        "eligible_noise_kernels": 1923
+      },
+      "clustering_elapsed_seconds": 0.7820000000065193
+    }
+  ],
+  "output_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_object_centers\\grouping_review\\adaptive_noK_final50000",
+  "gallery_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_object_centers\\grouping_review\\adaptive_noK_final50000\\index.html",
+  "max_cached_pose_error": 0.0,
+  "frozen_C1_RGB_pixel_match_all12": true,
+  "visual_review": "No target group count. N1/N2 remain fragmented; N3 is visually more coherent but still has split/mixed objects. None is accepted as physical object identity. No new training."
+}

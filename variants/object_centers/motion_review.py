@@ -73,7 +73,12 @@ def prepare():
     return summary
 
 
-def render_candidates(summary):
+def comparison_folder(field,value):
+    return f'comparison_baseK{value}' if field=='base_K' else f'comparison_{field}{value}'
+
+
+def render_candidates(summary,output=None,comparison_field='base_K'):
+    destination=OUTPUT if output is None else Path(output)
     import torch
     from PIL import Image,ImageDraw,ImageFont
     repo=ROOT/'variants/color_repair/code';sys.path.insert(0,str(repo));sys.path.insert(0,str(ROOT))
@@ -105,7 +110,7 @@ def render_candidates(summary):
         deform.load_weights(str(SOURCE),iteration='50000')
         background=torch.zeros(3,device='cuda');runtime=[]
         for info in summary['candidates']:
-            folder=OUTPUT/info['name'];labels=np.load(folder/'kernel_group_ids.npy');p=palette(info['actual_groups'])
+            folder=destination/info['name'];labels=np.load(folder/'kernel_group_ids.npy');p=palette(info['actual_groups'])
             rgb=np.tile(np.array([.35,.4,.46],dtype=np.float32),(len(labels),1))
             rgb[labels>=0]=p[labels[labels>=0]]
             runtime.append((info,torch.from_numpy(rgb).cuda(),np.load(folder/'center_trajectories.npz')['centers']))
@@ -141,10 +146,10 @@ def render_candidates(summary):
                 for j,(title,panel) in enumerate(zip(['GT / train frame'+view.image_name,'Frozen C1 final50000',info['name']],(gt,rgb,image))):
                     draw.text((j*800+10,12),title,font=font,fill='#17304a');canvas.paste(panel,(j*800,50))
                 draw.text((12,510),f"{k} groups | gray: unknown | labels fixed over time | center markers: up to12 largest groups",font=small,fill='#17304a')
-                canvas.save(OUTPUT/info['name']/f'{index:05d}.png')
-            for k in (5,6):
-                items=[i for i in summary['candidates'] if i['base_K']==k]
-                folder=OUTPUT/f'comparison_baseK{k}';folder.mkdir(exist_ok=True)
+                canvas.save(destination/info['name']/f'{index:05d}.png')
+            for value in sorted({i[comparison_field] for i in summary['candidates']}):
+                items=[i for i in summary['candidates'] if i[comparison_field]==value]
+                folder=destination/comparison_folder(comparison_field,value);folder.mkdir(exist_ok=True)
                 canvas=Image.new('RGB',(4000,500),'#edf2f7');d=ImageDraw.Draw(canvas)
                 for j,(title,panel) in enumerate(zip(['GT / train frame'+view.image_name,'C1 render']+
                     [i['method']+f" / {i['actual_groups']} groups" for i in items],
@@ -157,13 +162,14 @@ def render_candidates(summary):
     summary['frozen_C1_RGB_pixel_match_all12']=True
 
 
-def plots_and_verify(summary):
+def plots_and_verify(summary,output=None,comparison_field='base_K',extra_code_files=()):
+    destination=OUTPUT if output is None else Path(output)
     import matplotlib
     matplotlib.use('Agg')
     import matplotlib.pyplot as plt
     from PIL import Image,ImageDraw,ImageFont
     for info in summary['candidates']:
-        folder=OUTPUT/info['name'];centers=np.load(folder/'center_trajectories.npz')['centers'];p=palette(info['actual_groups'])
+        folder=destination/info['name'];centers=np.load(folder/'center_trajectories.npz')['centers'];p=palette(info['actual_groups'])
         fig,axes=plt.subplots(1,3,figsize=(13,3.5),constrained_layout=True)
         for group in sorted(info['groups'],key=lambda g:g['kernels'],reverse=True)[:24]:
             g=group['id'];c=centers[:,g]
@@ -181,14 +187,14 @@ def plots_and_verify(summary):
         with Image.open(PREVIOUS/'canonical_K5'/f'{index:05d}.png') as ref:
             expected=np.asarray(ref)[50:500,:1600]
         for info in summary['candidates']:
-            with Image.open(OUTPUT/info['name']/f'{index:05d}.png') as im:
+            with Image.open(destination/info['name']/f'{index:05d}.png') as im:
                 assert im.size==(2400,545) and np.array_equal(np.asarray(im)[50:500,:1600],expected)
             checked+=1
-        for k in (5,6):
-            with Image.open(OUTPUT/f'comparison_baseK{k}'/f'{index:05d}.png') as im:
+        for value in sorted({i[comparison_field] for i in summary['candidates']}):
+            with Image.open(destination/comparison_folder(comparison_field,value)/f'{index:05d}.png') as im:
                 assert im.size==(4000,500) and np.array_equal(np.asarray(im)[50:500,:1600],expected)
-                for column,info in enumerate((c for c in summary['candidates'] if c['base_K']==k),start=2):
-                    with Image.open(OUTPUT/info['name']/f'{index:05d}.png') as triptych:
+                for column,info in enumerate((c for c in summary['candidates'] if c[comparison_field]==value),start=2):
+                    with Image.open(destination/info['name']/f'{index:05d}.png') as triptych:
                         assert np.array_equal(np.asarray(im)[50:500,column*800:(column+1)*800],
                                               np.asarray(triptych)[50:500,1600:2400])
             checked+=1
@@ -201,13 +207,13 @@ def plots_and_verify(summary):
         canvas=Image.new('RGB',(1920,780),'#edf2f7');d=ImageDraw.Draw(canvas)
         for j,info in enumerate(summary['candidates']):
             x,y=(j%3)*640,(j//3)*390
-            with Image.open(OUTPUT/info['name']/f'{index:05d}.png') as im:
+            with Image.open(destination/info['name']/f'{index:05d}.png') as im:
                 panel=im.crop((1600,50,2400,500)).resize((640,360),Image.Resampling.LANCZOS)
             d.text((x+6,y+4),info['name']+f" ({info['actual_groups']})",font=font,fill='#17304a')
             canvas.paste(panel,(x,y+30))
-        canvas.save(OUTPUT/f"overview_frame{summary['training_frame_ids'][index]:04d}.png")
-    code=[Path(__file__),ROOT/'variants/object_centers/motion_grouping.py',ROOT/'tests/test_motion_grouping.py']
-    write(OUTPUT/'qa.json',{'checked_PNGs':checked,'GT_C1_pixel_match_previous_review':True,
+        canvas.save(destination/f"overview_frame{summary['training_frame_ids'][index]:04d}.png")
+    code=[Path(__file__),ROOT/'variants/object_centers/motion_grouping.py',ROOT/'tests/test_motion_grouping.py']+list(extra_code_files)
+    write(destination/'qa.json',{'checked_PNGs':checked,'GT_C1_pixel_match_previous_review':True,
         'all_three_group_panels_match_five_column_comparisons':True,
         'source_hashes_match':True,'max_cached_pose_error':summary['max_cached_pose_error'],
         'code_sha256':{str(p.relative_to(ROOT)):digest(p) for p in code},

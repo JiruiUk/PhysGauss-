@@ -128,3 +128,40 @@ Spatial refinement yields19/18 components and modest visual separation of
 initially merged upper ducks. The reviewed later frames still have fragments
 and mixed duck/obstacle groups; no candidate is accepted as physical object
 identity. See `experiments/object_centers/motion_grouping_review.md`.
+
+## No requested group count
+
+```powershell
+. ./reproduction/scripts/enable_cuda.ps1 -ProjectRoot (Get-Location).Path
+& ./envs/pidg-cu128/python.exe -m pytest tests/test_adaptive_grouping.py tests/test_motion_grouping.py tests/test_object_centers.py -q
+& ./envs/pidg-cu128/python.exe -u -m variants.object_centers.adaptive_review
+```
+
+`adaptive_grouping.py` contains **no K-means, target K, or base group labels**:
+
+- N1: HDBSCAN on displacement trajectories;
+- N2: HDBSCAN on displacement plus trajectory finite-difference velocity;
+- N3: a direct motion/spatial graph whose connected components define groups.
+
+N1/N2 use installed scikit-learn1.8.0 HDBSCAN with min_samples16, EOM selection,
+allow_single_cluster=True, and minimum cluster sizes128/256. One group is
+allowed; noisy points stay unknown, without nearest-center reassignment. These
+are density parameters, not a requested object count. Density is unweighted
+kernel count because this sklearn API has no fit sample_weight; the original
+opacity/vote weights are retained only for center/dispersion statistics.
+Exported membership strength is not calibrated instance correctness.
+
+N3 does not start from either K-means or HDBSCAN labels. It applies a normalized
+motion-distance threshold0.15 to reference-pose16NN pairs, then requires spatial
+distance <=min(0.08,2.5*min(local16NN radii)) at >=80% of sampled times.
+Components smaller than128/256 remain unknown. Distances, density and sampling
+still affect counts, so no-K does not mean parameter-free or semantic discovery.
+
+`adaptive_review.py` reuses checksum-verified training evidence and the shared
+GPU export/verification helpers with an explicit output directory. The new
+gallery is `runs/pidg_object_centers/grouping_review/adaptive_noK_final50000`.
+Old candidate PNGs are preserved; earlier galleries receive a navigation link.
+Use `--prepare-only` for CPU grouping, or `--render-existing` to render an
+already prepared no-K summary without refitting density models.
+
+See [official sklearn1.8 HDBSCAN parameters](https://scikit-learn.org/1.8/modules/generated/sklearn.cluster.HDBSCAN.html).

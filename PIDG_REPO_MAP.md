@@ -262,3 +262,12 @@ rendered C1 RGB and deformed poses are verified against that evidence before
 exporting a separate motion-method gallery. Both baseK=5 and6 are inspected.
 Spatial refinement can yield more components than baseK; these remain
 unverified candidates, not accepted object/contact labels or new training.
+
+`variants/object_centers/adaptive_grouping.py` removes the requested count
+entirely: displacement HDBSCAN, displacement/velocity HDBSCAN, and a direct
+motion/spatial graph with no base clustering. Minimum cluster sizes128/256,
+min_samples and spatial/motion thresholds remain explicit parameters.
+`adaptive_review.py` exports these no-K candidates to their own gallery using
+the same train-only cache and immutable C1 snapshot. Shared export helpers now
+accept an output directory and comparison field; previous default baseK paths
+are retained. No center/contact loss is integrated into training.

@@ -1,0 +1,35 @@
+{
+  "checked_PNGs": 96,
+  "GT_C1_pixel_match_previous_review": true,
+  "all_three_group_panels_match_five_column_comparisons": true,
+  "source_hashes_match": true,
+  "max_cached_pose_error": 0.0,
+  "code_sha256": {
+    "variants\\object_centers\\motion_review.py": "9e1921570d05078f59e5f10a891b204bd3420db14bfb1f37d36de8555396e45f",
+    "variants\\object_centers\\motion_grouping.py": "b1988a44950492e4485847efc6f47065f84e6f64d12f267552b6199c7d007c74",
+    "tests\\test_motion_grouping.py": "ca44babbd46e1246ec02c9abd13bf6290f0f8e162d0579f58ee69487af45d049",
+    "variants\\object_centers\\adaptive_review.py": "34ec3930e410d716eee85b1deff6bd9b3981afe25ee86b223bbf918a1ecfccda",
+    "variants\\object_centers\\adaptive_grouping.py": "5c29a5f7684ccb5d177a4f815b11ff7c9fee6726013d47a52d99405584e9621a",
+    "tests\\test_adaptive_grouping.py": "651b4a317c59df9d614ba248bee03c61eb98ca9e62f9ab4a811ca5e8b504654b"
+  },
+  "training_integration": "none",
+  "test_RGB_used": false,
+  "unit_test_receipt": "experiments/object_centers/adaptive_unit_tests.json",
+  "unit_tests_passed": 26,
+  "visually_inspected_overview_frames": [
+    2,
+    146,
+    200
+  ],
+  "gallery_javascript_syntax": "passed",
+  "static_links_checked": [
+    "../motion_methods_final50000/index.html",
+    "overview_frame0002.png",
+    "overview_frame0146.png",
+    "overview_frame0200.png",
+    "qa.json",
+    "summary.json"
+  ],
+  "requested_group_count": null,
+  "KMeans_used": false
+}
