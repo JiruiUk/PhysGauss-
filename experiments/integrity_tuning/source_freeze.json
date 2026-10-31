@@ -1,0 +1,2685 @@
+{
+  "parent": {
+    "parent": {
+      "scratch": {
+        "resplit_source_data": {
+          "code": {
+            "arguments/__init__.py": "df52dc58881dd76f2cfbf9acdfd9f67609d31a679b0da81a58a9acfdcaa6716a",
+            "arguments/dnerf/bouncingballs.py": "3b88f1fd620830b0f3c38712d956c00a3091872fce1cbbcfec1739196ca0a117",
+            "arguments/dnerf/hellwarrior.py": "3b88f1fd620830b0f3c38712d956c00a3091872fce1cbbcfec1739196ca0a117",
+            "arguments/dnerf/hook.py": "3b88f1fd620830b0f3c38712d956c00a3091872fce1cbbcfec1739196ca0a117",
+            "arguments/dnerf/jumpingjacks.py": "3b88f1fd620830b0f3c38712d956c00a3091872fce1cbbcfec1739196ca0a117",
+            "arguments/dnerf/lego.py": "4f6196a2c20bc5f04eac4855ab29d5ebfa174e624a85f6ce20fc02bcd86d2a91",
+            "arguments/dnerf/mutant.py": "3b88f1fd620830b0f3c38712d956c00a3091872fce1cbbcfec1739196ca0a117",
+            "arguments/dnerf/standup.py": "3b88f1fd620830b0f3c38712d956c00a3091872fce1cbbcfec1739196ca0a117",
+            "arguments/dnerf/trex.py": "3b88f1fd620830b0f3c38712d956c00a3091872fce1cbbcfec1739196ca0a117",
+            "arguments/hypernerf/interp_aleks-teapot.py": "8348f2ee49dde21a67ca772d84c23804b98af36709c69d692f673b7ea95f9ee5",
+            "arguments/hypernerf/interp_chickchicken.py": "79b7c9b4df3cf94f5abb26fe20aab61ded2711f0ade44d3bf673a7f8ac9404cf",
+            "arguments/hypernerf/interp_cut-lemon.py": "fa6632c20d44ec89771608afb1bbf997a70565887a395ffd3bc77c86d3d0118a",
+            "arguments/hypernerf/interp_hand.py": "59779158d15f5a60848c2b6abdf07c2a9b9a1ef96ff9564e08e67725e8aea1fb",
+            "arguments/hypernerf/interp_slice-banana.py": "a2534c2b5433be4abfed2b6036505382136c23c64ac4579c5bfc51d842c68e10",
+            "arguments/hypernerf/interp_torchocolate.py": "640f5c582dcf8cd6c5b3135e5022e6b2435cdba1d324da64c3925e16ef413750",
+            "arguments/hypernerf/misc_split-cookie.py": "98df97e1cc23836cba3146396e19b0b63adc28aaf027da4a8aa8c5ebb243d308",
+            "arguments/hypernerf/vrig_3dprinter.py": "2dc8eced06a50ad543a3dae1a7f113c2263dc92add52c6e4dde24b26b25f0a57",
+            "arguments/hypernerf/vrig_broom.py": "1872a0e377aa6a0870a9505349a896944bb610050879ec79e18acb00e349c5a4",
+            "arguments/hypernerf/vrig_chicken.py": "4ae13dd6c54adb08eea9cd5ba8bed49343312ce73e1743b77089397f5a9cc8e5",
+            "arguments/hypernerf/vrig_peel-banana.py": "c246e592c730f36739c8e363943b3bdaf7b3b82508f77c006270b6c0d2c25123",
+            "arguments/neu3d/coffee_martini.py": "409da627f306496544fdbf1bf846903520723ce3d674e1ee1f40c8b44efea11d",
+            "arguments/neu3d/cook_spinach.py": "07c4e9a0fcbd104dff7fc0f0a14c8e2ca14b4a165524281ad4dcb63575e3049a",
+            "arguments/neu3d/cut_roasted_beef.py": "07c4e9a0fcbd104dff7fc0f0a14c8e2ca14b4a165524281ad4dcb63575e3049a",
+            "arguments/neu3d/flame_salmon_1.py": "e0a1d799043b6c1e77fff0ec0aaed37e3598913a01a9e9144235ed9fecf0a1cc",
+            "arguments/neu3d/flame_steak.py": "07c4e9a0fcbd104dff7fc0f0a14c8e2ca14b4a165524281ad4dcb63575e3049a",
+            "arguments/neu3d/sear_steak.py": "07c4e9a0fcbd104dff7fc0f0a14c8e2ca14b4a165524281ad4dcb63575e3049a",
+            "arguments/pidg/balls_reaction.py": "da8008afe18a15e60148aa82c78d60705919a48efa1c57780e1867292eab6428",
+            "arguments/pidg/dry_ice.py": "b16a6212eb36bd7b83c7fc1d6bc53da546646423b81df5947118ff34b53808ec",
+            "arguments/pidg/mechanics_cloth.py": "da8008afe18a15e60148aa82c78d60705919a48efa1c57780e1867292eab6428",
+            "arguments/pidg/motion_kuro.py": "da8008afe18a15e60148aa82c78d60705919a48efa1c57780e1867292eab6428",
+            "arguments/pidg/rubber_dack.py": "2686ee3d40565f08810bca67d8281222d42d0c8f5c475b964ad05d777ad355f1",
+            "gaussian_renderer/__init__.py": "b96d91a8caaa58aca33d523702cde425037c1ad3b79d10b6fd07f7ab00a1c34d",
+            "gaussian_renderer/network_gui.py": "7116ef1f7a4471e5db96de2ea4a148d8138e7ae03b89120606586f9b2a9e66eb",
+            "hashencoder/__init__.py": "c70a9a4be5c48035a0c36783ed8472001fde505c3a1863c08978ad33cc961803",
+            "hashencoder/backend.py": "b22c337259e1b7640749c37902f7bd2882d30e16b52c3370a8f51597d7c8af15",
+            "hashencoder/hashgrid.py": "faf7273ee6c49223b9fd45e6c83abb0353dedd9774ba9453aa2df9206a37bda3",
+            "hashencoder/src/bindings.cpp": "b1eb7265c55203e702f57dae002a0839cf6e90c9dba5f89c201f0efe8cbf0580",
+            "hashencoder/src/hashencoder.cu": "11daddbfe2bf33dd7d2a9ad50f909c6bd14de16d06c1c7e36894bdcf915c58d0",
+            "hashencoder/src/hashencoder.h": "47974781d98b30dc610be461262a4958e9db20a946ba33e6017cf2f77e37f12f",
+            "lpipsPyTorch/__init__.py": "35806c438336e43c00bc7e5edc353c3de03926fc7b58cbb7e40a61678fcef4b5",
+            "lpipsPyTorch/modules/lpips.py": "58adb29b5a1de195467c909ce14ddc69f92bce0254a59c8ee037e3945c8eb0c8",
+            "lpipsPyTorch/modules/networks.py": "92a21e6eaedd0211f2a535f07855447ff4436cdeff66fecedcc943f827d1be98",
+            "lpipsPyTorch/modules/utils.py": "fe54a0764d0eb9839d8165dd73982e22eab6787889cd898f2bff81088de3227d",
+            "metrics.py": "d1c46cd5f0b62c790bc8b7581285a86388e1a547f11a1c0b988e8af7935fbed6",
+            "motion_utils/pidg.py": "e8ffce4ba8ca30619f8c0bcc2322f190d62bd14896b2edb88cdd0a4261c830fe",
+            "render.py": "91baeceb940e57ef67adff97dd0a961ee6658c04a430be89c869fe468ae1a340",
+            "scene_PIDG/__init__.py": "dfa3066e9f3bd8cbcfe1af5c41d263163e5d11220dbca74fb04a9e280360d5b5",
+            "scene_PIDG/cameras.py": "19f13e6422b1d7c45c99c0b35712c4a49fdcf9448fbd35afc2d2e87992a785b7",
+            "scene_PIDG/colmap_loader.py": "b9b8fdabfc90d9ce9d8f48d21cf793de236c44e83def2013dc209e10b42f7a8a",
+            "scene_PIDG/dataset_readers.py": "edff2ee92040cffa4456a567424b84c304c5a7e227581e70781044fcb80a407f",
+            "scene_PIDG/deform_model.py": "4b0c2e6e15d694769998696b96d584ab25ab9ccb01d7608e72f68d0497b24172",
+            "scene_PIDG/gaussian_model.py": "5579bf95a79d471c626910b7b5149802eff8b29069dfea9de60abb7f8858416c",
+            "scene_PIDG/network.py": "fe0fdf54c15f28e6b5041b5080de905961a072dc7cdd9096ef271c1b853cf0b0",
+            "scene_PIDG/neu3d.py": "5cf0add73529a7b1f84394f0e678e732e7f2f087da913fca767f41662f776b6d",
+            "train_pidg.py": "0351ddc43794437eec69e875801ec20abb61ba16cce67dc395c54f8b62cb4886",
+            "utils/camera_utils.py": "8a06ce123657f9e3d120290696ce03e8166b90fdc059d912fb6458a8a196ebff",
+            "utils/flow_utils.py": "26fcb61d5190713a2c4bec304f79ebd9f6558d724487f0a41ae8651bb7b21222",
+            "utils/flow_vis_utils.py": "b63b2cace2b32547b142dc2beca956016ffe95c148a572c8794b5aad80ca2a2e",
+            "utils/general_utils.py": "ef18827054b449c6176591ecac483ea8b7621369b32401c5269d56e4273fdb00",
+            "utils/graphics_utils.py": "01258e06456f785a037ccc0392f7a8e2623f0e70eaf30282fcc95560af876aae",
+            "utils/gui_utils.py": "9c968cdfb4a36f45ca4a1e227c058ffffefff583c57081cd412690cd32db55d2",
+            "utils/image_utils.py": "6cc738e9bda49fd8097ad88960953d67e94cf8a79ccf2fd4cc1d3730e97ee29c",
+            "utils/loss_utils.py": "154477e19df3345aa3b23ba4305b24e5eb59bfe821ee78900e60606122688e4b",
+            "utils/pose_utils.py": "e5de5e17206401b09872e168ed34c9d494a3ab17a5bbb565c62026022d6affbb",
+            "utils/rigid_utils.py": "0da31529d6918ab65d74d89f25cca1e54804ae38ad1ff09baabb090103a469ab",
+            "utils/sh_utils.py": "62153adc4c8ac26f6e5b1046810f5f72dffdb5e4087d18b690ce82e0f7236627",
+            "utils/system_utils.py": "2433fae0334991abac21f068a01c28b0dbabcb4f13300401c4d5f3f8348e911d"
+          },
+          "parent_code": {
+            "arguments/__init__.py": "df52dc58881dd76f2cfbf9acdfd9f67609d31a679b0da81a58a9acfdcaa6716a",
+            "arguments/dnerf/bouncingballs.py": "3b88f1fd620830b0f3c38712d956c00a3091872fce1cbbcfec1739196ca0a117",
+            "arguments/dnerf/hellwarrior.py": "3b88f1fd620830b0f3c38712d956c00a3091872fce1cbbcfec1739196ca0a117",
+            "arguments/dnerf/hook.py": "3b88f1fd620830b0f3c38712d956c00a3091872fce1cbbcfec1739196ca0a117",
+            "arguments/dnerf/jumpingjacks.py": "3b88f1fd620830b0f3c38712d956c00a3091872fce1cbbcfec1739196ca0a117",
+            "arguments/dnerf/lego.py": "4f6196a2c20bc5f04eac4855ab29d5ebfa174e624a85f6ce20fc02bcd86d2a91",
+            "arguments/dnerf/mutant.py": "3b88f1fd620830b0f3c38712d956c00a3091872fce1cbbcfec1739196ca0a117",
+            "arguments/dnerf/standup.py": "3b88f1fd620830b0f3c38712d956c00a3091872fce1cbbcfec1739196ca0a117",
+            "arguments/dnerf/trex.py": "3b88f1fd620830b0f3c38712d956c00a3091872fce1cbbcfec1739196ca0a117",
+            "arguments/hypernerf/interp_aleks-teapot.py": "8348f2ee49dde21a67ca772d84c23804b98af36709c69d692f673b7ea95f9ee5",
+            "arguments/hypernerf/interp_chickchicken.py": "79b7c9b4df3cf94f5abb26fe20aab61ded2711f0ade44d3bf673a7f8ac9404cf",
+            "arguments/hypernerf/interp_cut-lemon.py": "fa6632c20d44ec89771608afb1bbf997a70565887a395ffd3bc77c86d3d0118a",
+            "arguments/hypernerf/interp_hand.py": "59779158d15f5a60848c2b6abdf07c2a9b9a1ef96ff9564e08e67725e8aea1fb",
+            "arguments/hypernerf/interp_slice-banana.py": "a2534c2b5433be4abfed2b6036505382136c23c64ac4579c5bfc51d842c68e10",
+            "arguments/hypernerf/interp_torchocolate.py": "640f5c582dcf8cd6c5b3135e5022e6b2435cdba1d324da64c3925e16ef413750",
+            "arguments/hypernerf/misc_split-cookie.py": "98df97e1cc23836cba3146396e19b0b63adc28aaf027da4a8aa8c5ebb243d308",
+            "arguments/hypernerf/vrig_3dprinter.py": "2dc8eced06a50ad543a3dae1a7f113c2263dc92add52c6e4dde24b26b25f0a57",
+            "arguments/hypernerf/vrig_broom.py": "1872a0e377aa6a0870a9505349a896944bb610050879ec79e18acb00e349c5a4",
+            "arguments/hypernerf/vrig_chicken.py": "4ae13dd6c54adb08eea9cd5ba8bed49343312ce73e1743b77089397f5a9cc8e5",
+            "arguments/hypernerf/vrig_peel-banana.py": "c246e592c730f36739c8e363943b3bdaf7b3b82508f77c006270b6c0d2c25123",
+            "arguments/neu3d/coffee_martini.py": "409da627f306496544fdbf1bf846903520723ce3d674e1ee1f40c8b44efea11d",
+            "arguments/neu3d/cook_spinach.py": "07c4e9a0fcbd104dff7fc0f0a14c8e2ca14b4a165524281ad4dcb63575e3049a",
+            "arguments/neu3d/cut_roasted_beef.py": "07c4e9a0fcbd104dff7fc0f0a14c8e2ca14b4a165524281ad4dcb63575e3049a",
+            "arguments/neu3d/flame_salmon_1.py": "e0a1d799043b6c1e77fff0ec0aaed37e3598913a01a9e9144235ed9fecf0a1cc",
+            "arguments/neu3d/flame_steak.py": "07c4e9a0fcbd104dff7fc0f0a14c8e2ca14b4a165524281ad4dcb63575e3049a",
+            "arguments/neu3d/sear_steak.py": "07c4e9a0fcbd104dff7fc0f0a14c8e2ca14b4a165524281ad4dcb63575e3049a",
+            "arguments/pidg/balls_reaction.py": "da8008afe18a15e60148aa82c78d60705919a48efa1c57780e1867292eab6428",
+            "arguments/pidg/dry_ice.py": "b16a6212eb36bd7b83c7fc1d6bc53da546646423b81df5947118ff34b53808ec",
+            "arguments/pidg/mechanics_cloth.py": "da8008afe18a15e60148aa82c78d60705919a48efa1c57780e1867292eab6428",
+            "arguments/pidg/motion_kuro.py": "da8008afe18a15e60148aa82c78d60705919a48efa1c57780e1867292eab6428",
+            "arguments/pidg/rubber_dack.py": "2686ee3d40565f08810bca67d8281222d42d0c8f5c475b964ad05d777ad355f1",
+            "gaussian_renderer/__init__.py": "b96d91a8caaa58aca33d523702cde425037c1ad3b79d10b6fd07f7ab00a1c34d",
+            "gaussian_renderer/network_gui.py": "7116ef1f7a4471e5db96de2ea4a148d8138e7ae03b89120606586f9b2a9e66eb",
+            "hashencoder/__init__.py": "c70a9a4be5c48035a0c36783ed8472001fde505c3a1863c08978ad33cc961803",
+            "hashencoder/backend.py": "b22c337259e1b7640749c37902f7bd2882d30e16b52c3370a8f51597d7c8af15",
+            "hashencoder/hashgrid.py": "faf7273ee6c49223b9fd45e6c83abb0353dedd9774ba9453aa2df9206a37bda3",
+            "hashencoder/src/bindings.cpp": "b1eb7265c55203e702f57dae002a0839cf6e90c9dba5f89c201f0efe8cbf0580",
+            "hashencoder/src/hashencoder.cu": "11daddbfe2bf33dd7d2a9ad50f909c6bd14de16d06c1c7e36894bdcf915c58d0",
+            "hashencoder/src/hashencoder.h": "47974781d98b30dc610be461262a4958e9db20a946ba33e6017cf2f77e37f12f",
+            "lpipsPyTorch/__init__.py": "35806c438336e43c00bc7e5edc353c3de03926fc7b58cbb7e40a61678fcef4b5",
+            "lpipsPyTorch/modules/lpips.py": "58adb29b5a1de195467c909ce14ddc69f92bce0254a59c8ee037e3945c8eb0c8",
+            "lpipsPyTorch/modules/networks.py": "92a21e6eaedd0211f2a535f07855447ff4436cdeff66fecedcc943f827d1be98",
+            "lpipsPyTorch/modules/utils.py": "fe54a0764d0eb9839d8165dd73982e22eab6787889cd898f2bff81088de3227d",
+            "metrics.py": "d1c46cd5f0b62c790bc8b7581285a86388e1a547f11a1c0b988e8af7935fbed6",
+            "motion_utils/pidg.py": "e8ffce4ba8ca30619f8c0bcc2322f190d62bd14896b2edb88cdd0a4261c830fe",
+            "render.py": "c240e760aa48a5c839a46094cadcdab5beae74d7e7569f425c0d5b8f99e0d052",
+            "scene_PIDG/__init__.py": "dfa3066e9f3bd8cbcfe1af5c41d263163e5d11220dbca74fb04a9e280360d5b5",
+            "scene_PIDG/cameras.py": "19f13e6422b1d7c45c99c0b35712c4a49fdcf9448fbd35afc2d2e87992a785b7",
+            "scene_PIDG/colmap_loader.py": "b9b8fdabfc90d9ce9d8f48d21cf793de236c44e83def2013dc209e10b42f7a8a",
+            "scene_PIDG/dataset_readers.py": "edff2ee92040cffa4456a567424b84c304c5a7e227581e70781044fcb80a407f",
+            "scene_PIDG/deform_model.py": "4b0c2e6e15d694769998696b96d584ab25ab9ccb01d7608e72f68d0497b24172",
+            "scene_PIDG/gaussian_model.py": "5579bf95a79d471c626910b7b5149802eff8b29069dfea9de60abb7f8858416c",
+            "scene_PIDG/network.py": "fe0fdf54c15f28e6b5041b5080de905961a072dc7cdd9096ef271c1b853cf0b0",
+            "scene_PIDG/neu3d.py": "5cf0add73529a7b1f84394f0e678e732e7f2f087da913fca767f41662f776b6d",
+            "train_pidg.py": "4eff4a9f219ac198720aa5d1959702c8158a407fc62172acda4a3029dfdcc380",
+            "utils/camera_utils.py": "8a06ce123657f9e3d120290696ce03e8166b90fdc059d912fb6458a8a196ebff",
+            "utils/flow_utils.py": "26fcb61d5190713a2c4bec304f79ebd9f6558d724487f0a41ae8651bb7b21222",
+            "utils/flow_vis_utils.py": "b63b2cace2b32547b142dc2beca956016ffe95c148a572c8794b5aad80ca2a2e",
+            "utils/general_utils.py": "ef18827054b449c6176591ecac483ea8b7621369b32401c5269d56e4273fdb00",
+            "utils/graphics_utils.py": "01258e06456f785a037ccc0392f7a8e2623f0e70eaf30282fcc95560af876aae",
+            "utils/gui_utils.py": "9c968cdfb4a36f45ca4a1e227c058ffffefff583c57081cd412690cd32db55d2",
+            "utils/image_utils.py": "6cc738e9bda49fd8097ad88960953d67e94cf8a79ccf2fd4cc1d3730e97ee29c",
+            "utils/loss_utils.py": "154477e19df3345aa3b23ba4305b24e5eb59bfe821ee78900e60606122688e4b",
+            "utils/pose_utils.py": "e5de5e17206401b09872e168ed34c9d494a3ab17a5bbb565c62026022d6affbb",
+            "utils/rigid_utils.py": "0da31529d6918ab65d74d89f25cca1e54804ae38ad1ff09baabb090103a469ab",
+            "utils/sh_utils.py": "62153adc4c8ac26f6e5b1046810f5f72dffdb5e4087d18b690ce82e0f7236627",
+            "utils/system_utils.py": "2433fae0334991abac21f068a01c28b0dbabcb4f13300401c4d5f3f8348e911d"
+          },
+          "inputs": {
+            "variants\\kinematic_resplit\\checkpoint.py": "74611ef3c032a421ebea9719efbb4a0e84b2690791817f351bf9c8e219f560e7",
+            "variants\\kinematic_resplit\\data.py": "aa66ad3e335f56976b8717075169896ec8460b82e65d006c255c33b39272214b",
+            "variants\\kinematic_resplit\\prepare.py": "b8fd8b84cff71f92a317d616bd01bb1eda83f98479c5bc23728dba9901239d3b",
+            "variants\\kinematic_resplit\\run.py": "286532bec51a9ab959edafc41f91a9692e12bc48fcefb0eafcf7b51b58b8cf33",
+            "variants\\kinematic_resplit\\runtime.py": "530a6d159235a126a3226631676004f7cb6814d3ebb9945529d1c98cbc11af78",
+            "variants\\metric_tuning\\runtime.py": "2e9c753cdd31c70cd6aad24788ec59431a33882df59ac2b3dbd54eb66131e010",
+            "variants\\metric_tuning\\model.py": "1e721681ecdca131db341a43e7c28302205b75771e5344fc1568354382085cba",
+            "variants\\metric_tuning\\checkpoint.py": "8a05366e61c31e2732b70ddc597310e05f9cc97d7fde61d5eafb7f0fab10fdb1",
+            "variants\\metric_tuning\\run.py": "5002093aae42f402a70e3759d8a6e7efee0a618d31f39115b7c27bce1036b2e9",
+            "variants\\kinematic_tuning\\runtime.py": "c17260ce9974fdafa245dffa4d2921f748ace86d47d0327a437af920b0c94c7d",
+            "variants\\kinematic_tuning\\model.py": "6cc5910330d2d6cb103ab9ef89c9803b6adb40f8e3fbca8a7adc207a3a34de96",
+            "variants\\kinematic_tuning\\run.py": "2bcac0e7d8f123875f3e672652f2d16752c755f7c1a60daff92e59f4e3b834eb",
+            "reproduction\\scripts\\training_checkpoint.py": "f4dec6f08a250b85389ba411bb8ae01f0d880014fa43bc2f83c5fc2661b7bbe5",
+            "scripts\\pidg_variant_entrypoint.py": "7999258423941cf88f4b875b1e7c59ca2beae081622bb2258255801ae7558db2",
+            "data\\derived\\kinematic_resplit\\split_manifest.json": "a6a84f90a57853e18cf94b0ac633496e1d1c5ebd2fa446f3d7872c9523533f6a",
+            "data\\derived\\kinematic_resplit\\transforms_test.json": "bb98013c762294ecaea239b67281436c7da232678403db63b1545d59c5f78c08",
+            "data\\derived\\kinematic_resplit\\transforms_train.json": "270fa34a29b99a4e6b2621d04e1d83f245f5c54bb4f2632ae06051faa83e4868",
+            "data\\derived\\kinematic_resplit\\transforms_val.json": "278e86251f6f20418388d6ce90771aae5f049abae3bb3c94b968549941150ffd",
+            "data\\derived\\kinematic_resplit\\training\\loader_role.json": "f9a7fefd8bddeb5120b3179c95de88939cdc9f26b1b709dfd786486d9ae0b021",
+            "data\\derived\\kinematic_resplit\\training\\transforms_test.json": "278e86251f6f20418388d6ce90771aae5f049abae3bb3c94b968549941150ffd",
+            "data\\derived\\kinematic_resplit\\training\\transforms_train.json": "270fa34a29b99a4e6b2621d04e1d83f245f5c54bb4f2632ae06051faa83e4868",
+            "data\\derived\\kinematic_resplit\\training\\points3d.ply": "4ec22b9160f605e905faf1600e0a5de681db830951359d9f520087d72fe5dc20",
+            "data\\derived\\kinematic_resplit\\final_test\\loader_role.json": "edf7fc4701811b062194945cefb4edda21f7870fa4748428ceb5b42991ccdb66",
+            "data\\derived\\kinematic_resplit\\final_test\\transforms_test.json": "bb98013c762294ecaea239b67281436c7da232678403db63b1545d59c5f78c08",
+            "data\\derived\\kinematic_resplit\\final_test\\transforms_train.json": "270fa34a29b99a4e6b2621d04e1d83f245f5c54bb4f2632ae06051faa83e4868",
+            "data\\derived\\kinematic_resplit\\final_test\\points3d.ply": "4ec22b9160f605e905faf1600e0a5de681db830951359d9f520087d72fe5dc20"
+          }
+        },
+        "code": {
+          "arguments/__init__.py": "df52dc58881dd76f2cfbf9acdfd9f67609d31a679b0da81a58a9acfdcaa6716a",
+          "arguments/dnerf/bouncingballs.py": "3b88f1fd620830b0f3c38712d956c00a3091872fce1cbbcfec1739196ca0a117",
+          "arguments/dnerf/hellwarrior.py": "3b88f1fd620830b0f3c38712d956c00a3091872fce1cbbcfec1739196ca0a117",
+          "arguments/dnerf/hook.py": "3b88f1fd620830b0f3c38712d956c00a3091872fce1cbbcfec1739196ca0a117",
+          "arguments/dnerf/jumpingjacks.py": "3b88f1fd620830b0f3c38712d956c00a3091872fce1cbbcfec1739196ca0a117",
+          "arguments/dnerf/lego.py": "4f6196a2c20bc5f04eac4855ab29d5ebfa174e624a85f6ce20fc02bcd86d2a91",
+          "arguments/dnerf/mutant.py": "3b88f1fd620830b0f3c38712d956c00a3091872fce1cbbcfec1739196ca0a117",
+          "arguments/dnerf/standup.py": "3b88f1fd620830b0f3c38712d956c00a3091872fce1cbbcfec1739196ca0a117",
+          "arguments/dnerf/trex.py": "3b88f1fd620830b0f3c38712d956c00a3091872fce1cbbcfec1739196ca0a117",
+          "arguments/hypernerf/interp_aleks-teapot.py": "8348f2ee49dde21a67ca772d84c23804b98af36709c69d692f673b7ea95f9ee5",
+          "arguments/hypernerf/interp_chickchicken.py": "79b7c9b4df3cf94f5abb26fe20aab61ded2711f0ade44d3bf673a7f8ac9404cf",
+          "arguments/hypernerf/interp_cut-lemon.py": "fa6632c20d44ec89771608afb1bbf997a70565887a395ffd3bc77c86d3d0118a",
+          "arguments/hypernerf/interp_hand.py": "59779158d15f5a60848c2b6abdf07c2a9b9a1ef96ff9564e08e67725e8aea1fb",
+          "arguments/hypernerf/interp_slice-banana.py": "a2534c2b5433be4abfed2b6036505382136c23c64ac4579c5bfc51d842c68e10",
+          "arguments/hypernerf/interp_torchocolate.py": "640f5c582dcf8cd6c5b3135e5022e6b2435cdba1d324da64c3925e16ef413750",
+          "arguments/hypernerf/misc_split-cookie.py": "98df97e1cc23836cba3146396e19b0b63adc28aaf027da4a8aa8c5ebb243d308",
+          "arguments/hypernerf/vrig_3dprinter.py": "2dc8eced06a50ad543a3dae1a7f113c2263dc92add52c6e4dde24b26b25f0a57",
+          "arguments/hypernerf/vrig_broom.py": "1872a0e377aa6a0870a9505349a896944bb610050879ec79e18acb00e349c5a4",
+          "arguments/hypernerf/vrig_chicken.py": "4ae13dd6c54adb08eea9cd5ba8bed49343312ce73e1743b77089397f5a9cc8e5",
+          "arguments/hypernerf/vrig_peel-banana.py": "c246e592c730f36739c8e363943b3bdaf7b3b82508f77c006270b6c0d2c25123",
+          "arguments/neu3d/coffee_martini.py": "409da627f306496544fdbf1bf846903520723ce3d674e1ee1f40c8b44efea11d",
+          "arguments/neu3d/cook_spinach.py": "07c4e9a0fcbd104dff7fc0f0a14c8e2ca14b4a165524281ad4dcb63575e3049a",
+          "arguments/neu3d/cut_roasted_beef.py": "07c4e9a0fcbd104dff7fc0f0a14c8e2ca14b4a165524281ad4dcb63575e3049a",
+          "arguments/neu3d/flame_salmon_1.py": "e0a1d799043b6c1e77fff0ec0aaed37e3598913a01a9e9144235ed9fecf0a1cc",
+          "arguments/neu3d/flame_steak.py": "07c4e9a0fcbd104dff7fc0f0a14c8e2ca14b4a165524281ad4dcb63575e3049a",
+          "arguments/neu3d/sear_steak.py": "07c4e9a0fcbd104dff7fc0f0a14c8e2ca14b4a165524281ad4dcb63575e3049a",
+          "arguments/pidg/balls_reaction.py": "da8008afe18a15e60148aa82c78d60705919a48efa1c57780e1867292eab6428",
+          "arguments/pidg/dry_ice.py": "b16a6212eb36bd7b83c7fc1d6bc53da546646423b81df5947118ff34b53808ec",
+          "arguments/pidg/mechanics_cloth.py": "da8008afe18a15e60148aa82c78d60705919a48efa1c57780e1867292eab6428",
+          "arguments/pidg/motion_kuro.py": "da8008afe18a15e60148aa82c78d60705919a48efa1c57780e1867292eab6428",
+          "arguments/pidg/rubber_dack.py": "2686ee3d40565f08810bca67d8281222d42d0c8f5c475b964ad05d777ad355f1",
+          "gaussian_renderer/__init__.py": "b96d91a8caaa58aca33d523702cde425037c1ad3b79d10b6fd07f7ab00a1c34d",
+          "gaussian_renderer/network_gui.py": "7116ef1f7a4471e5db96de2ea4a148d8138e7ae03b89120606586f9b2a9e66eb",
+          "hashencoder/__init__.py": "c70a9a4be5c48035a0c36783ed8472001fde505c3a1863c08978ad33cc961803",
+          "hashencoder/backend.py": "b22c337259e1b7640749c37902f7bd2882d30e16b52c3370a8f51597d7c8af15",
+          "hashencoder/hashgrid.py": "faf7273ee6c49223b9fd45e6c83abb0353dedd9774ba9453aa2df9206a37bda3",
+          "hashencoder/src/bindings.cpp": "b1eb7265c55203e702f57dae002a0839cf6e90c9dba5f89c201f0efe8cbf0580",
+          "hashencoder/src/hashencoder.cu": "11daddbfe2bf33dd7d2a9ad50f909c6bd14de16d06c1c7e36894bdcf915c58d0",
+          "hashencoder/src/hashencoder.h": "47974781d98b30dc610be461262a4958e9db20a946ba33e6017cf2f77e37f12f",
+          "lpipsPyTorch/__init__.py": "35806c438336e43c00bc7e5edc353c3de03926fc7b58cbb7e40a61678fcef4b5",
+          "lpipsPyTorch/modules/lpips.py": "58adb29b5a1de195467c909ce14ddc69f92bce0254a59c8ee037e3945c8eb0c8",
+          "lpipsPyTorch/modules/networks.py": "92a21e6eaedd0211f2a535f07855447ff4436cdeff66fecedcc943f827d1be98",
+          "lpipsPyTorch/modules/utils.py": "fe54a0764d0eb9839d8165dd73982e22eab6787889cd898f2bff81088de3227d",
+          "metrics.py": "d1c46cd5f0b62c790bc8b7581285a86388e1a547f11a1c0b988e8af7935fbed6",
+          "motion_utils/pidg.py": "e8ffce4ba8ca30619f8c0bcc2322f190d62bd14896b2edb88cdd0a4261c830fe",
+          "render.py": "91baeceb940e57ef67adff97dd0a961ee6658c04a430be89c869fe468ae1a340",
+          "scene_PIDG/__init__.py": "dfa3066e9f3bd8cbcfe1af5c41d263163e5d11220dbca74fb04a9e280360d5b5",
+          "scene_PIDG/cameras.py": "19f13e6422b1d7c45c99c0b35712c4a49fdcf9448fbd35afc2d2e87992a785b7",
+          "scene_PIDG/colmap_loader.py": "b9b8fdabfc90d9ce9d8f48d21cf793de236c44e83def2013dc209e10b42f7a8a",
+          "scene_PIDG/dataset_readers.py": "edff2ee92040cffa4456a567424b84c304c5a7e227581e70781044fcb80a407f",
+          "scene_PIDG/deform_model.py": "4b0c2e6e15d694769998696b96d584ab25ab9ccb01d7608e72f68d0497b24172",
+          "scene_PIDG/gaussian_model.py": "5579bf95a79d471c626910b7b5149802eff8b29069dfea9de60abb7f8858416c",
+          "scene_PIDG/network.py": "fe0fdf54c15f28e6b5041b5080de905961a072dc7cdd9096ef271c1b853cf0b0",
+          "scene_PIDG/neu3d.py": "5cf0add73529a7b1f84394f0e678e732e7f2f087da913fca767f41662f776b6d",
+          "train_pidg.py": "228469e8c3fca052d97fd45ffee42f3a68e5bce2000997f77cd6bd833e852e1a",
+          "utils/camera_utils.py": "8a06ce123657f9e3d120290696ce03e8166b90fdc059d912fb6458a8a196ebff",
+          "utils/flow_utils.py": "26fcb61d5190713a2c4bec304f79ebd9f6558d724487f0a41ae8651bb7b21222",
+          "utils/flow_vis_utils.py": "b63b2cace2b32547b142dc2beca956016ffe95c148a572c8794b5aad80ca2a2e",
+          "utils/general_utils.py": "ef18827054b449c6176591ecac483ea8b7621369b32401c5269d56e4273fdb00",
+          "utils/graphics_utils.py": "01258e06456f785a037ccc0392f7a8e2623f0e70eaf30282fcc95560af876aae",
+          "utils/gui_utils.py": "9c968cdfb4a36f45ca4a1e227c058ffffefff583c57081cd412690cd32db55d2",
+          "utils/image_utils.py": "6cc738e9bda49fd8097ad88960953d67e94cf8a79ccf2fd4cc1d3730e97ee29c",
+          "utils/loss_utils.py": "154477e19df3345aa3b23ba4305b24e5eb59bfe821ee78900e60606122688e4b",
+          "utils/pose_utils.py": "e5de5e17206401b09872e168ed34c9d494a3ab17a5bbb565c62026022d6affbb",
+          "utils/rigid_utils.py": "0da31529d6918ab65d74d89f25cca1e54804ae38ad1ff09baabb090103a469ab",
+          "utils/sh_utils.py": "62153adc4c8ac26f6e5b1046810f5f72dffdb5e4087d18b690ce82e0f7236627",
+          "utils/system_utils.py": "2433fae0334991abac21f068a01c28b0dbabcb4f13300401c4d5f3f8348e911d"
+        },
+        "inputs": {
+          "variants\\v3_iso_scratch\\prepare.py": "b8f330b601b4e2832921ac994d313f792717bb63b8b62a0fa19ade2da8c1224a",
+          "variants\\v3_iso_scratch\\run.py": "6cc7372e379b30cf22df4f184057934c59e4f5c6fd061c2b9cf454f69c7c56b7",
+          "variants\\v3_iso_scratch\\runtime.py": "f8cd23c21fb97367846b92f4bffad07541814a737cfd614ad18389f94cc07de2",
+          "variants\\isotropic_tuning\\model.py": "eb08631ae0138e575c26cd46f516009a9c60847bffb223b0b13b309be7f89860",
+          "variants\\isotropic_tuning\\runtime.py": "9b0c7b66822dd4d48cfcb7293fc217069029ded5d3223ea772e11bae2eeee800",
+          "variants\\v3_isotropic\\runtime.py": "e2d63fa8e35fc7aad4ac1da2645b929bcac7603faa6226c4e57e5940b58a2991",
+          "variants\\v3_isotropic\\prepare.py": "e7c62168d2c3c1d68c7c863db107484b7f52a1b303b7418cdf47d69019a1d312"
+        }
+      },
+      "code": {
+        "arguments/__init__.py": "df52dc58881dd76f2cfbf9acdfd9f67609d31a679b0da81a58a9acfdcaa6716a",
+        "arguments/dnerf/bouncingballs.py": "3b88f1fd620830b0f3c38712d956c00a3091872fce1cbbcfec1739196ca0a117",
+        "arguments/dnerf/hellwarrior.py": "3b88f1fd620830b0f3c38712d956c00a3091872fce1cbbcfec1739196ca0a117",
+        "arguments/dnerf/hook.py": "3b88f1fd620830b0f3c38712d956c00a3091872fce1cbbcfec1739196ca0a117",
+        "arguments/dnerf/jumpingjacks.py": "3b88f1fd620830b0f3c38712d956c00a3091872fce1cbbcfec1739196ca0a117",
+        "arguments/dnerf/lego.py": "4f6196a2c20bc5f04eac4855ab29d5ebfa174e624a85f6ce20fc02bcd86d2a91",
+        "arguments/dnerf/mutant.py": "3b88f1fd620830b0f3c38712d956c00a3091872fce1cbbcfec1739196ca0a117",
+        "arguments/dnerf/standup.py": "3b88f1fd620830b0f3c38712d956c00a3091872fce1cbbcfec1739196ca0a117",
+        "arguments/dnerf/trex.py": "3b88f1fd620830b0f3c38712d956c00a3091872fce1cbbcfec1739196ca0a117",
+        "arguments/hypernerf/interp_aleks-teapot.py": "8348f2ee49dde21a67ca772d84c23804b98af36709c69d692f673b7ea95f9ee5",
+        "arguments/hypernerf/interp_chickchicken.py": "79b7c9b4df3cf94f5abb26fe20aab61ded2711f0ade44d3bf673a7f8ac9404cf",
+        "arguments/hypernerf/interp_cut-lemon.py": "fa6632c20d44ec89771608afb1bbf997a70565887a395ffd3bc77c86d3d0118a",
+        "arguments/hypernerf/interp_hand.py": "59779158d15f5a60848c2b6abdf07c2a9b9a1ef96ff9564e08e67725e8aea1fb",
+        "arguments/hypernerf/interp_slice-banana.py": "a2534c2b5433be4abfed2b6036505382136c23c64ac4579c5bfc51d842c68e10",
+        "arguments/hypernerf/interp_torchocolate.py": "640f5c582dcf8cd6c5b3135e5022e6b2435cdba1d324da64c3925e16ef413750",
+        "arguments/hypernerf/misc_split-cookie.py": "98df97e1cc23836cba3146396e19b0b63adc28aaf027da4a8aa8c5ebb243d308",
+        "arguments/hypernerf/vrig_3dprinter.py": "2dc8eced06a50ad543a3dae1a7f113c2263dc92add52c6e4dde24b26b25f0a57",
+        "arguments/hypernerf/vrig_broom.py": "1872a0e377aa6a0870a9505349a896944bb610050879ec79e18acb00e349c5a4",
+        "arguments/hypernerf/vrig_chicken.py": "4ae13dd6c54adb08eea9cd5ba8bed49343312ce73e1743b77089397f5a9cc8e5",
+        "arguments/hypernerf/vrig_peel-banana.py": "c246e592c730f36739c8e363943b3bdaf7b3b82508f77c006270b6c0d2c25123",
+        "arguments/neu3d/coffee_martini.py": "409da627f306496544fdbf1bf846903520723ce3d674e1ee1f40c8b44efea11d",
+        "arguments/neu3d/cook_spinach.py": "07c4e9a0fcbd104dff7fc0f0a14c8e2ca14b4a165524281ad4dcb63575e3049a",
+        "arguments/neu3d/cut_roasted_beef.py": "07c4e9a0fcbd104dff7fc0f0a14c8e2ca14b4a165524281ad4dcb63575e3049a",
+        "arguments/neu3d/flame_salmon_1.py": "e0a1d799043b6c1e77fff0ec0aaed37e3598913a01a9e9144235ed9fecf0a1cc",
+        "arguments/neu3d/flame_steak.py": "07c4e9a0fcbd104dff7fc0f0a14c8e2ca14b4a165524281ad4dcb63575e3049a",
+        "arguments/neu3d/sear_steak.py": "07c4e9a0fcbd104dff7fc0f0a14c8e2ca14b4a165524281ad4dcb63575e3049a",
+        "arguments/pidg/balls_reaction.py": "da8008afe18a15e60148aa82c78d60705919a48efa1c57780e1867292eab6428",
+        "arguments/pidg/dry_ice.py": "b16a6212eb36bd7b83c7fc1d6bc53da546646423b81df5947118ff34b53808ec",
+        "arguments/pidg/mechanics_cloth.py": "da8008afe18a15e60148aa82c78d60705919a48efa1c57780e1867292eab6428",
+        "arguments/pidg/motion_kuro.py": "da8008afe18a15e60148aa82c78d60705919a48efa1c57780e1867292eab6428",
+        "arguments/pidg/rubber_dack.py": "2686ee3d40565f08810bca67d8281222d42d0c8f5c475b964ad05d777ad355f1",
+        "gaussian_renderer/__init__.py": "b96d91a8caaa58aca33d523702cde425037c1ad3b79d10b6fd07f7ab00a1c34d",
+        "gaussian_renderer/network_gui.py": "7116ef1f7a4471e5db96de2ea4a148d8138e7ae03b89120606586f9b2a9e66eb",
+        "hashencoder/__init__.py": "c70a9a4be5c48035a0c36783ed8472001fde505c3a1863c08978ad33cc961803",
+        "hashencoder/backend.py": "b22c337259e1b7640749c37902f7bd2882d30e16b52c3370a8f51597d7c8af15",
+        "hashencoder/hashgrid.py": "faf7273ee6c49223b9fd45e6c83abb0353dedd9774ba9453aa2df9206a37bda3",
+        "hashencoder/src/bindings.cpp": "b1eb7265c55203e702f57dae002a0839cf6e90c9dba5f89c201f0efe8cbf0580",
+        "hashencoder/src/hashencoder.cu": "11daddbfe2bf33dd7d2a9ad50f909c6bd14de16d06c1c7e36894bdcf915c58d0",
+        "hashencoder/src/hashencoder.h": "47974781d98b30dc610be461262a4958e9db20a946ba33e6017cf2f77e37f12f",
+        "lpipsPyTorch/__init__.py": "35806c438336e43c00bc7e5edc353c3de03926fc7b58cbb7e40a61678fcef4b5",
+        "lpipsPyTorch/modules/lpips.py": "58adb29b5a1de195467c909ce14ddc69f92bce0254a59c8ee037e3945c8eb0c8",
+        "lpipsPyTorch/modules/networks.py": "92a21e6eaedd0211f2a535f07855447ff4436cdeff66fecedcc943f827d1be98",
+        "lpipsPyTorch/modules/utils.py": "fe54a0764d0eb9839d8165dd73982e22eab6787889cd898f2bff81088de3227d",
+        "metrics.py": "d1c46cd5f0b62c790bc8b7581285a86388e1a547f11a1c0b988e8af7935fbed6",
+        "motion_utils/pidg.py": "e8ffce4ba8ca30619f8c0bcc2322f190d62bd14896b2edb88cdd0a4261c830fe",
+        "render.py": "fef28ab3377b532ab61dc74fb7a46c9b05d3349c7cd6045c0545abbfe01cf963",
+        "scene_PIDG/__init__.py": "dfa3066e9f3bd8cbcfe1af5c41d263163e5d11220dbca74fb04a9e280360d5b5",
+        "scene_PIDG/cameras.py": "19f13e6422b1d7c45c99c0b35712c4a49fdcf9448fbd35afc2d2e87992a785b7",
+        "scene_PIDG/colmap_loader.py": "b9b8fdabfc90d9ce9d8f48d21cf793de236c44e83def2013dc209e10b42f7a8a",
+        "scene_PIDG/dataset_readers.py": "edff2ee92040cffa4456a567424b84c304c5a7e227581e70781044fcb80a407f",
+        "scene_PIDG/deform_model.py": "4b0c2e6e15d694769998696b96d584ab25ab9ccb01d7608e72f68d0497b24172",
+        "scene_PIDG/gaussian_model.py": "5579bf95a79d471c626910b7b5149802eff8b29069dfea9de60abb7f8858416c",
+        "scene_PIDG/network.py": "fe0fdf54c15f28e6b5041b5080de905961a072dc7cdd9096ef271c1b853cf0b0",
+        "scene_PIDG/neu3d.py": "5cf0add73529a7b1f84394f0e678e732e7f2f087da913fca767f41662f776b6d",
+        "train_pidg.py": "3220a3701c47be420c6e9207fd93b90b31b72aa32c1ea2489dd6d73ee266727c",
+        "utils/camera_utils.py": "8a06ce123657f9e3d120290696ce03e8166b90fdc059d912fb6458a8a196ebff",
+        "utils/flow_utils.py": "26fcb61d5190713a2c4bec304f79ebd9f6558d724487f0a41ae8651bb7b21222",
+        "utils/flow_vis_utils.py": "b63b2cace2b32547b142dc2beca956016ffe95c148a572c8794b5aad80ca2a2e",
+        "utils/general_utils.py": "ef18827054b449c6176591ecac483ea8b7621369b32401c5269d56e4273fdb00",
+        "utils/graphics_utils.py": "01258e06456f785a037ccc0392f7a8e2623f0e70eaf30282fcc95560af876aae",
+        "utils/gui_utils.py": "9c968cdfb4a36f45ca4a1e227c058ffffefff583c57081cd412690cd32db55d2",
+        "utils/image_utils.py": "6cc738e9bda49fd8097ad88960953d67e94cf8a79ccf2fd4cc1d3730e97ee29c",
+        "utils/loss_utils.py": "154477e19df3345aa3b23ba4305b24e5eb59bfe821ee78900e60606122688e4b",
+        "utils/pose_utils.py": "e5de5e17206401b09872e168ed34c9d494a3ab17a5bbb565c62026022d6affbb",
+        "utils/rigid_utils.py": "0da31529d6918ab65d74d89f25cca1e54804ae38ad1ff09baabb090103a469ab",
+        "utils/sh_utils.py": "62153adc4c8ac26f6e5b1046810f5f72dffdb5e4087d18b690ce82e0f7236627",
+        "utils/system_utils.py": "2433fae0334991abac21f068a01c28b0dbabcb4f13300401c4d5f3f8348e911d"
+      },
+      "inputs": {
+        "variants\\coverage_tuning\\data.py": "97286ffc6ad97042b5d029265496ca819b7e66f722c721cb1c468c8f8ac4340b",
+        "variants\\coverage_tuning\\density.py": "d8c89d53a24499e8c57f8a6b808f305c50b115e82b68b3cc8f694f98687f38ac",
+        "variants\\coverage_tuning\\model.py": "296e2218fb7d2ce1d7033837cea944f2bf0948c6a83184d14a8fc2f99b7933d4",
+        "variants\\coverage_tuning\\prepare.py": "723c9e472a0f83fbf6b4a63e003ac2c3af60e332da6514410b56a4d4817dc38d",
+        "variants\\coverage_tuning\\run.py": "aa00611f7fee967709d4fc4b025b9fe472f42de0a8e8a0b57ab7609fd746a36e",
+        "variants\\coverage_tuning\\runtime.py": "647af84ebc443d6b7f60530318024ad20adbf763304a207a057535400e8afbd3",
+        "variants\\coverage_tuning\\__init__.py": "d236b9e5cc0ba038e98d70a300e5c2754f5aef1926a5b47c8fda8322283f86dc",
+        "variants\\coverage_tuning\\launch.ps1": "1c250e9fac685e6931e83e8132e881cb8600966d8a453f2bdbdd693749ee860e"
+      },
+      "training_alpha": {
+        "source": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training",
+        "supervision_split": "train",
+        "count": 120,
+        "validation_loaded_for_loss": false,
+        "test_loaded_for_loss": false,
+        "frames": [
+          {
+            "id": "0002",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0002.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.08785183376736111,
+            "file_sha256": "38713d68e6629ecbd8709eaf605245e476f52d4df35af0086c366ed5eb32bd58"
+          },
+          {
+            "id": "0003",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0003.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.08783338758680556,
+            "file_sha256": "0185dc8b3c60c130b88a06a7480cb23caaeec633ccd095f738207288e9c3332b"
+          },
+          {
+            "id": "0006",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0006.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.08772623697916666,
+            "file_sha256": "72d18e20073d6c38b7651206e97ecc081a57bb8da42809e40ab91c173afb9fde"
+          },
+          {
+            "id": "0007",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0007.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.08771158854166666,
+            "file_sha256": "50044121a8b9355b709706ea6cf75345859fb30809e0d16c05dd75d8bc0f606b"
+          },
+          {
+            "id": "0008",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0008.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.08767686631944445,
+            "file_sha256": "309ec7400eb1a07a63939f63282de7c0411a0e714b119fb6b34a53706701009c"
+          },
+          {
+            "id": "0010",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0010.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.08757269965277778,
+            "file_sha256": "8c191e16d32ad178d0bf5fb89e3263a9076535933aa5a0c1b78abd58bb5172c0"
+          },
+          {
+            "id": "0012",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0012.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.08746907552083333,
+            "file_sha256": "530399e9215769326b92b702f319dd897d85c18d427087c310c7045bae104358"
+          },
+          {
+            "id": "0014",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0014.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.08743408203125,
+            "file_sha256": "e783a0bd88c24cb9be6a836f108ef5cf808aaceb10d8956ec47be0fb9e5c3906"
+          },
+          {
+            "id": "0015",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0015.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.08753282335069444,
+            "file_sha256": "6ede493ef7e9e938134ab75b58615b9ec0516861ff5ceeeebdd896c7f0fa0398"
+          },
+          {
+            "id": "0016",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0016.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.08768934461805555,
+            "file_sha256": "8cc0e118c135d5b4cf5dcde4dcf419fa4f4c227d280a35ef9d279cd31ae80cc9"
+          },
+          {
+            "id": "0019",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0019.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.08813313802083333,
+            "file_sha256": "31c87fafbd92019a1803d803c0434ba361cf3d6b31011fdd7f321cd67f7eb88f"
+          },
+          {
+            "id": "0020",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0020.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.08823838975694444,
+            "file_sha256": "3d80ec923921897dbf493162cdc9d3b1ba53d209a90e1dbec342efe8cee0b5ee"
+          },
+          {
+            "id": "0022",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0022.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.08846327039930556,
+            "file_sha256": "eb6c0a2e932376ec16d1f055cdf5bc7f901ee100b1a849f92c9aca2ddcb76b7d"
+          },
+          {
+            "id": "0023",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0023.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.08864312065972223,
+            "file_sha256": "6730c0cf825a4f9b2630b86cc4d8b4b81f7aa7a7f6b9a3b0c60780c65facd6eb"
+          },
+          {
+            "id": "0026",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0026.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.08947916666666667,
+            "file_sha256": "600196b5088d2b6681820ea7310db9e46b0c981e26a6a3a5c88bcdf8a12aae11"
+          },
+          {
+            "id": "0027",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0027.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.0897802734375,
+            "file_sha256": "c8808b0b3aa34a292de6f69421f56bf036fd267b0c2bd8f18792dbcac747adfb"
+          },
+          {
+            "id": "0028",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0028.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.09002278645833334,
+            "file_sha256": "f6076dc4921d0fc865822ae48275ed47575e2448c889ffe2ce974b3994cdd817"
+          },
+          {
+            "id": "0030",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0030.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.09046495225694444,
+            "file_sha256": "33a7a2ec4b88011b93517b272d040def5051a441c39b620ff6b0ba9262fba5e0"
+          },
+          {
+            "id": "0032",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0032.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.09102240668402778,
+            "file_sha256": "1f98ce9ee2bccc30e4177c7129515b974fb3fed96b084a6095b185afe7b148cb"
+          },
+          {
+            "id": "0034",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0034.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.09197781032986112,
+            "file_sha256": "a500cb9dd875b5b9a878aad7ed6bf6b0472be49813155aef7148a854a69bee75"
+          },
+          {
+            "id": "0035",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0035.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.09241590711805556,
+            "file_sha256": "d111a05f8c583c2d32d58b8547f866a16523c65a9c1638e7935ee80bca1c2bdd"
+          },
+          {
+            "id": "0036",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0036.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.09276231553819445,
+            "file_sha256": "cc1b241543bade411baff50b4e15cfefe1e2cd3e0c043e793c66a1ddadd2b63c"
+          },
+          {
+            "id": "0039",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0039.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.09342909071180555,
+            "file_sha256": "4096a4f466cfb0831bfde8d98dbced664c97ad445e76798f7fb3be81ee50efd8"
+          },
+          {
+            "id": "0040",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0040.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.09363118489583333,
+            "file_sha256": "fb7b16975615ba13d7f9c6f8fca3c3924b22fab823c8132369cd6967df40cf50"
+          },
+          {
+            "id": "0042",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0042.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.0943874782986111,
+            "file_sha256": "c531d1121e981277dc1dac6da8fba8f55087f931178842606bc27d5e55b67f14"
+          },
+          {
+            "id": "0043",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0043.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.09490912543402778,
+            "file_sha256": "74ec8582c730d7e84fe17e4b4ca42d711fc2765a878fabaf2853fe9ac3c611be"
+          },
+          {
+            "id": "0046",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0046.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.09646999782986111,
+            "file_sha256": "41acfb271a93db6894a96c494b687b3a756cecf9725b9ce8e94e4aa79e62f6f7"
+          },
+          {
+            "id": "0047",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0047.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.09695366753472222,
+            "file_sha256": "343cc46dbb9e80ffbe470192f36bc602fa6f5f8f916ec67bf2c9e5968ab9d994"
+          },
+          {
+            "id": "0048",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0048.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.09743842230902777,
+            "file_sha256": "da0ab3fd4f6eb229d5bd8401759c234e92f71348799c479cc6161eb9a64b7643"
+          },
+          {
+            "id": "0050",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0050.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.09900797526041667,
+            "file_sha256": "096d3fac2ab3dc558310c271b1adbacb1ee278bfb3574127b27a03709d1fc863"
+          },
+          {
+            "id": "0052",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0052.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.10044704861111112,
+            "file_sha256": "0e5c1b8ecf92f836ef753b21f29c667404f0a386a750e1d8dcea5246500f652e"
+          },
+          {
+            "id": "0054",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0054.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.10146538628472222,
+            "file_sha256": "95aafa7fd9d23899a02d01259ce47dc44d7f6a2e5e8e7a6d15521daef34d4a59"
+          },
+          {
+            "id": "0055",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0055.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.10198676215277777,
+            "file_sha256": "e916aec7dead176f2fbc082433d2d04328f44ae246c2904fd7df9e06bce0bc18"
+          },
+          {
+            "id": "0056",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0056.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.10246609157986111,
+            "file_sha256": "3b107b665919b75ce365cd6d9fca69a114c08ec48d01f41d9288b2d689abd128"
+          },
+          {
+            "id": "0059",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0059.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.10257703993055556,
+            "file_sha256": "43bdb580d968a4530f040991836b3011b2fd22f7023c596b3ab3b1e4e6cca279"
+          },
+          {
+            "id": "0060",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0060.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.10248643663194444,
+            "file_sha256": "79ca8e87b0aaac7a4fa79ba15caa6ed7ab9b9a00146c9d57e8ff5915e45a902a"
+          },
+          {
+            "id": "0062",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0062.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.10225830078125,
+            "file_sha256": "bf6c7c3d8e453ee38ae20270db3704cf65026ab89fcd788ac7e9b1bee6ee32cf"
+          },
+          {
+            "id": "0063",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0063.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.10203965928819445,
+            "file_sha256": "d6a8122c9518d7d1ce56911ba7d828f1793819e84523dd8afac52a412c3f6ec3"
+          },
+          {
+            "id": "0066",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0066.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.10143256293402778,
+            "file_sha256": "45418f49801624452901d2158f219e76a5998d5e6bb24168cf0657abb5b4f8b9"
+          },
+          {
+            "id": "0067",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0067.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.1012060546875,
+            "file_sha256": "27095580c4b8ab82f20fd1e491e4ff83d0ad244af805ec48a1981da8827eba00"
+          },
+          {
+            "id": "0068",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0068.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.10086642795138889,
+            "file_sha256": "67cf3fe13bebb3bc80d41364d6413bd1bca9893e7657e24ba11ec6adfd49c771"
+          },
+          {
+            "id": "0070",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0070.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.09980387369791667,
+            "file_sha256": "75ae2b8df924d23cc3fc37d354c288b02c472a31dab7ad99f61c09357c5287ef"
+          },
+          {
+            "id": "0072",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0072.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.09885172526041666,
+            "file_sha256": "479e7ad43600daf1318c438c274d6e4726a165a87f13ea9fc7af1fe8fe92e8e9"
+          },
+          {
+            "id": "0074",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0074.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.09755995008680556,
+            "file_sha256": "f00e0f5f731e553555d6231670db4c031faac43a2522244eedd28f6d3372c754"
+          },
+          {
+            "id": "0075",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0075.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.09691623263888889,
+            "file_sha256": "f243911488c20ec366b1da211b10ac16aa70f502befae1899f2faf15309db6a2"
+          },
+          {
+            "id": "0076",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0076.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.09644829644097222,
+            "file_sha256": "cbe7d842be334df7b30794e11eeec8f059102923fafabc22fff0e4594571961b"
+          },
+          {
+            "id": "0079",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0079.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.09431504991319445,
+            "file_sha256": "f47a971a17ca9e40ec8b4acbd144e5171e948f017cd0e41f638932e29244505e"
+          },
+          {
+            "id": "0080",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0080.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.09355875651041666,
+            "file_sha256": "2aa0a08e8bee866d91fc89d93258225d305e5794267e392c19f4e6f2407e0ecb"
+          },
+          {
+            "id": "0082",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0082.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.0922140842013889,
+            "file_sha256": "7ef6758760ada970fe60e2fbb1e99f4d853276327019ad903ead5b943c3e560e"
+          },
+          {
+            "id": "0083",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0083.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.09141357421875,
+            "file_sha256": "fef31d8b6623ae792b4995ac2c28938bb85c075bb6a749e8a2e43c6504c801ed"
+          },
+          {
+            "id": "0086",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0086.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.09110975477430555,
+            "file_sha256": "382f4d81d52779e5be91b3db646a93539271334981a11bf5898d1c8a10b4d238"
+          },
+          {
+            "id": "0087",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0087.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.09175482855902778,
+            "file_sha256": "ffdd74c5a795179121f367926a43b206e0ea1dae7a2baf93245cf2ca8ac1c56a"
+          },
+          {
+            "id": "0088",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0088.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.09252251519097222,
+            "file_sha256": "c918e2ec1aac0794323910c702adb361c3bf35384667ee484bc9123d23a56450"
+          },
+          {
+            "id": "0090",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0090.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.09425103081597222,
+            "file_sha256": "d7403990794f269e8a1cacf46caafe5061dd6570cabab9e0f11e7e5ecd408281"
+          },
+          {
+            "id": "0092",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0092.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.09628607855902778,
+            "file_sha256": "1b8f1dcd2f4f02ba66543a1c9e0823e094f4d3a7fe2011b3fde5c7ab0ecf276c"
+          },
+          {
+            "id": "0094",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0094.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.09772325303819444,
+            "file_sha256": "af2af01b03da5ef0e93a18965df14ee8f60003052fead24f99ff17ae21d8c798"
+          },
+          {
+            "id": "0095",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0095.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.09860432942708333,
+            "file_sha256": "86fd9d3aa67b8d4430718d6218131ec1e7fa8437497d75c68b7e83bc5148c6d3"
+          },
+          {
+            "id": "0096",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0096.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.09937228732638889,
+            "file_sha256": "b4b42cb2a0ff0aed5868ad1704d508e53859c4f2099d4aa05ce4321005ee9f12"
+          },
+          {
+            "id": "0099",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0099.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.10119466145833333,
+            "file_sha256": "04a32fcb11223790f02efb34fb6769b550c97eb3809f99389c1045991107672d"
+          },
+          {
+            "id": "0100",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0100.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.10176784939236111,
+            "file_sha256": "3a1194a7ada0bb435e6e1f0e927fd78264a08ae2dc3c53c4c6dc77841f2c6700"
+          },
+          {
+            "id": "0102",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0102.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.10272054036458333,
+            "file_sha256": "07157c16e137d98815f1d635534e70047b91b975b1898797d02d0f32f6e32f69"
+          },
+          {
+            "id": "0103",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0103.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.10307942708333333,
+            "file_sha256": "ac214ea5b16a78180ee65e7c6879afa4dfb1d49108c178c4967480b3d9e0a7b3"
+          },
+          {
+            "id": "0106",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0106.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.10431233723958333,
+            "file_sha256": "d0fed4e222ff00102f3626c9897cdcc38ad714f7240a8843de27d8dfcfbdb224"
+          },
+          {
+            "id": "0107",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0107.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.10448079427083333,
+            "file_sha256": "5a55f5a75d3aa6a3a4ffcfe1c3eb49bebb8bc854a8f522e7edc9892f229439a5"
+          },
+          {
+            "id": "0108",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0108.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.10461778428819445,
+            "file_sha256": "f0e6e1adb925312d6421149083b534b648e2ea8fd0a9724b030bfe792706cf48"
+          },
+          {
+            "id": "0110",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0110.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.1051806640625,
+            "file_sha256": "ff848fb546b9df29ec134cc0673639fddd8bb412a0b53df8b240dd7a25d3b7bd"
+          },
+          {
+            "id": "0112",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0112.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.10497694227430555,
+            "file_sha256": "5311616f965dacf920e606ecb56d9126a4deba77c87240e24d5c9fe98d615bc1"
+          },
+          {
+            "id": "0114",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0114.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.10521674262152778,
+            "file_sha256": "e47af8b24b4cb341e195290c169f3e39694bb0f8fa5bc5e56e9860376f6dcc48"
+          },
+          {
+            "id": "0115",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0115.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.1054812282986111,
+            "file_sha256": "9dc5d3d9ebfcaf49d643c2431e89c7a5145a8c40f214429fca189d5e3b573a8b"
+          },
+          {
+            "id": "0116",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0116.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.10574137369791667,
+            "file_sha256": "f21696861631df85adabf280ee61e62225fe01d306a44abe30fd47d9fa47a38a"
+          },
+          {
+            "id": "0119",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0119.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.10570231119791666,
+            "file_sha256": "7aba4c6542f6c545e0f2b7e2b2501a17b36d1d4dd07839b48671927a92bf44ab"
+          },
+          {
+            "id": "0120",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0120.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.10563747829861111,
+            "file_sha256": "b4b5743fe8c934fd2598ac1253f0724e978da594d31da33cc76426ff28397322"
+          },
+          {
+            "id": "0122",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0122.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.10536973741319444,
+            "file_sha256": "a677f3df6d949d7b236454b08aaf43a09b1cc8f86148b711dbdeed727f15b14c"
+          },
+          {
+            "id": "0123",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0123.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.1054031032986111,
+            "file_sha256": "258f5a102d8b962e6ae38d943a03da89cf7fb65436ddb913abc3ee08ab26caaf"
+          },
+          {
+            "id": "0126",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0126.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.10435845269097223,
+            "file_sha256": "d64eee1a94b677932f89139a3ca97a83ab6502cb023a1676281f8d69c1292cfa"
+          },
+          {
+            "id": "0127",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0127.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.10440049913194445,
+            "file_sha256": "7c94b54f1b395e1e7fd7c9247f9dce6063d56aad317e8cbc89ecae933ce19fa8"
+          },
+          {
+            "id": "0128",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0128.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.10470811631944445,
+            "file_sha256": "043462a4ae87decc9dda72aef6f7f48125ef66d17a676b07ce2dc932b2a2184f"
+          },
+          {
+            "id": "0130",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0130.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.10488878038194445,
+            "file_sha256": "6286441c33f8705d72ec6cc23282306a0b18c3cb4ff239ef3aba49b86902add2"
+          },
+          {
+            "id": "0132",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0132.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.10432373046875,
+            "file_sha256": "0b76e6bf939c409b472b26874b9021993339b8d3eba8486d3ec14e4b871746a4"
+          },
+          {
+            "id": "0134",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0134.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.10426839192708333,
+            "file_sha256": "b181832a706a39dd87a73f127323085c60862e7e381c98e4f2a213b49cb2c36b"
+          },
+          {
+            "id": "0135",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0135.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.10378363715277777,
+            "file_sha256": "a9232a125891e8776a7a3541603cf21428afb44ee4337b5a842544f9cb6dc42f"
+          },
+          {
+            "id": "0136",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0136.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.10321587456597223,
+            "file_sha256": "70ca862955f4b5e0af83d5d3efad63f1a56af039415be18dbe40b06a7609f612"
+          },
+          {
+            "id": "0139",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0139.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.10175971137152778,
+            "file_sha256": "6e2764165c58cbc6b161445356e760807c8c63e15bc05533d382aeb5a26a5247"
+          },
+          {
+            "id": "0140",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0140.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.10106608072916666,
+            "file_sha256": "8725f2b7b36d615b8a7d191223331e3c3a718154d6effd0456ab14434e764af7"
+          },
+          {
+            "id": "0142",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0142.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.09988552517361111,
+            "file_sha256": "27a865baf51ac043aa8a647accb088811cde7555e392c0c8bb6e6c615d0801a8"
+          },
+          {
+            "id": "0143",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0143.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.09947238498263888,
+            "file_sha256": "e415b833548e072cb3fe1cfa642951d76dc686983af83e645da9e71e5844bb76"
+          },
+          {
+            "id": "0146",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0146.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.09845350477430556,
+            "file_sha256": "1d949a7f9596bda7fa979eade2e881643eab4ef15c01fde7f1321838a4927c91"
+          },
+          {
+            "id": "0147",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0147.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.09811089409722222,
+            "file_sha256": "83b0523e7ab93a5d7b43beae8e582aa3dac630c7c30767f5c908ccf4eed21f55"
+          },
+          {
+            "id": "0148",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0148.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.09794080946180556,
+            "file_sha256": "998dec3ec8bfd5e639e256a80167046e51610a6a919e199489f8f80e0aeb6ebb"
+          },
+          {
+            "id": "0150",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0150.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.09794704861111111,
+            "file_sha256": "8340f583cffbd53f64142b2931331c531f6fb3fa9c75af2a067539caabdfb0d6"
+          },
+          {
+            "id": "0152",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0152.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.09823079427083334,
+            "file_sha256": "6a9c3c8dc6ac88547bddd33c85ef0aaf42d43906e43ff7d50329f051a9b788e9"
+          },
+          {
+            "id": "0154",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0154.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.09874972873263889,
+            "file_sha256": "365eb25f7ff96a0fbc80a8983c1a09d1fb5ddb9e458b6f6a530e6ae013e9808c"
+          },
+          {
+            "id": "0155",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0155.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.0989718967013889,
+            "file_sha256": "4855700d9b0fb781bb034621d61eea0abaa2ee72aa4d2ff85bccdb27e7cda0ff"
+          },
+          {
+            "id": "0156",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0156.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.09950141059027778,
+            "file_sha256": "b2f7be5e618f2d582fa8f263bac098ae35e54432e2ad4273c72a0fc9153acc67"
+          },
+          {
+            "id": "0159",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0159.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.10080674913194444,
+            "file_sha256": "eef24c7e8ce31fd40ec5a33bf1b6ab4227fc510009439e479a2e7f204b3b5b7f"
+          },
+          {
+            "id": "0160",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0160.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.1012744140625,
+            "file_sha256": "02c5b65fe498a32d6212752433b15c1a6720afb5fcbe41dcee2a98c6bf0ca9d9"
+          },
+          {
+            "id": "0162",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0162.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.10209147135416667,
+            "file_sha256": "8e0d87ed58895dc6c25d3d6c70533a2bc84b1a7fa8121031f771aac1e8ad43f6"
+          },
+          {
+            "id": "0163",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0163.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.10268690321180556,
+            "file_sha256": "59c9c768b183ccfab31e2767a8dc930a82437aeba3b6ff3674916d1c805f64b0"
+          },
+          {
+            "id": "0166",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0166.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.10408393012152778,
+            "file_sha256": "0bae69c42c25d3d3e6841cd344bd13fbe8f5368904f783bb8dd6364ee16e58b8"
+          },
+          {
+            "id": "0167",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0167.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.10429606119791666,
+            "file_sha256": "7da5ce69fece03b72c483c4ae54dada71e2506abb450584d421c61b01293185b"
+          },
+          {
+            "id": "0168",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0168.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.10451090494791666,
+            "file_sha256": "eb5ae17a431c2c70be597b2f9eb4419c06d67c2690cd9b075564990db3443df6"
+          },
+          {
+            "id": "0170",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0170.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.10520317925347222,
+            "file_sha256": "c24d81245b9cdd280bc4647ca882312c91519c45a8947f47b880e5c57d2c9ac5"
+          },
+          {
+            "id": "0172",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0172.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.10611328125,
+            "file_sha256": "378cafab0f403db49df6f72789aacaeb00f1f2a41264711551db25512646e5ac"
+          },
+          {
+            "id": "0174",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0174.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.10679877387152778,
+            "file_sha256": "eb05cefffcd7956998cc8c6b7aa16f4140c421a5c47c623f6fad146386a1684b"
+          },
+          {
+            "id": "0175",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0175.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.10691541883680555,
+            "file_sha256": "2c64abbe5b2f1d2675423f270a26814ad118b5cdb25ba5e12cf37d8bb1c1c9d3"
+          },
+          {
+            "id": "0176",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0176.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.1070681423611111,
+            "file_sha256": "6a73c644d232768ca59b9c0fc21f49ded09f12c94a0385bf2d5dfdf2ed13f596"
+          },
+          {
+            "id": "0179",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0179.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.10759521484375,
+            "file_sha256": "c58be06920d59ea14a3235ef035e0ab61ac15bfec8eab48211011cddeedbac25"
+          },
+          {
+            "id": "0180",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0180.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.10780924479166666,
+            "file_sha256": "435db8e50e312a96328abab544e9dc31a52e6514e6709264d61c019c7a48d891"
+          },
+          {
+            "id": "0182",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0182.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.10819742838541667,
+            "file_sha256": "997be6a5acf184e593e4e13ec89bf9af5d18ad86e93908cc4668e8d5e23d3c5c"
+          },
+          {
+            "id": "0183",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0183.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.1083984375,
+            "file_sha256": "9ce633e0da265311fae39f68bb75dc75ad143ee221faef8de633cf687245a9b7"
+          },
+          {
+            "id": "0186",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0186.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.10879367404513889,
+            "file_sha256": "56e78448c53530c87b47f72294ebb00a8702cea3e81699072f7bae4f16687114"
+          },
+          {
+            "id": "0187",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0187.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.10877197265625,
+            "file_sha256": "c8a4ca9ec9e0c9ce0c1bc075b486cb34e35cbbc88797f9af0cf7f35fa28c98ee"
+          },
+          {
+            "id": "0188",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0188.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.10873589409722222,
+            "file_sha256": "61507d25ecb91293b9934add2db54c441d9ee7e46136261506669e8c3c580ad0"
+          },
+          {
+            "id": "0190",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0190.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.10870442708333333,
+            "file_sha256": "479fa68537cbe89cfeaad9b0958f21c0de1d358a54e4bdc70d11bc019c27781c"
+          },
+          {
+            "id": "0192",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0192.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.10885389539930555,
+            "file_sha256": "b6967c9b27e430f30957765dca225f3930b1a8cff2a3a4f60a6629704e580344"
+          },
+          {
+            "id": "0194",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0194.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.10888943142361111,
+            "file_sha256": "d422c5cca1123dacead5bc31d43d18fb43d1ac19caf1d26f31af24ed5cc52c63"
+          },
+          {
+            "id": "0195",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0195.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.10884575737847223,
+            "file_sha256": "27fac7911252f45836b59470dc7dd75ba9d54de2c12d272c3ac1176b2aae4917"
+          },
+          {
+            "id": "0196",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0196.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.10884765625,
+            "file_sha256": "eb68eb5aa99131af1dc7ff9c11079472ebd87f48ddf44622f1f58312ecab21c6"
+          },
+          {
+            "id": "0199",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0199.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.10902913411458333,
+            "file_sha256": "7b9da2ba5ccfba819052470dae0c7f2226283b58d5c18adabb5f3ff11490a1b2"
+          },
+          {
+            "id": "0200",
+            "path": "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0200.png",
+            "size": [
+              2560,
+              1440
+            ],
+            "alpha_range": [
+              0,
+              255
+            ],
+            "foreground_fraction": 0.1090380859375,
+            "file_sha256": "107850e0081d8dd0bf046a7999d958f764968b01f3ac5db3cb2240d387f15fa1"
+          }
+        ]
+      },
+      "rgba_file_stat": {
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0002.png": [
+          2278206,
+          1791898159158195500
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0003.png": [
+          2280583,
+          1791898159403544200
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0006.png": [
+          2281310,
+          1791898159656470800
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0007.png": [
+          2281808,
+          1791898159707643800
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0008.png": [
+          2281633,
+          1791898159916649600
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0010.png": [
+          2284328,
+          1791898160561480800
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0012.png": [
+          2289074,
+          1791898160470483400
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0014.png": [
+          2285427,
+          1791898160816195100
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0015.png": [
+          2289096,
+          1791898161276449300
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0016.png": [
+          2287619,
+          1791898161230853100
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0019.png": [
+          2294405,
+          1791898161944125600
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0020.png": [
+          2286676,
+          1791898161740784900
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0022.png": [
+          2284032,
+          1791898162190298400
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0023.png": [
+          2283079,
+          1791898162203940700
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0026.png": [
+          2281480,
+          1791898163104725200
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0027.png": [
+          2282640,
+          1791898163011553600
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0028.png": [
+          2283627,
+          1791898163286223800
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0030.png": [
+          2286667,
+          1791898163395528100
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0032.png": [
+          2286543,
+          1791898163878626200
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0034.png": [
+          2287595,
+          1791898164249019400
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0035.png": [
+          2287349,
+          1791898164274682600
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0036.png": [
+          2285173,
+          1791898164263331200
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0039.png": [
+          2280165,
+          1791898165341020200
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0040.png": [
+          2279185,
+          1791898165167574800
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0042.png": [
+          2272148,
+          1791898165257029900
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0043.png": [
+          2267645,
+          1791898165557093400
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0046.png": [
+          2260770,
+          1791898166343544800
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0047.png": [
+          2263012,
+          1791898166209908900
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0048.png": [
+          2260033,
+          1791898166108365200
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0050.png": [
+          2252353,
+          1791898166615939300
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0052.png": [
+          2261317,
+          1791898166896182100
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0054.png": [
+          2261141,
+          1791898167456469100
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0055.png": [
+          2259177,
+          1791898167411145500
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0056.png": [
+          2257601,
+          1791898167909926400
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0059.png": [
+          2266861,
+          1791898167929481300
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0060.png": [
+          2265418,
+          1791898168459295900
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0062.png": [
+          2265413,
+          1791898168573774900
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0063.png": [
+          2260558,
+          1791898168838452300
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0066.png": [
+          2254903,
+          1791898168989442600
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0067.png": [
+          2257754,
+          1791898169248064800
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0068.png": [
+          2250758,
+          1791898169343523700
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0070.png": [
+          2235970,
+          1791898169619265100
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0072.png": [
+          2229249,
+          1791898169788946700
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0074.png": [
+          2216516,
+          1791898170072245200
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0075.png": [
+          2216458,
+          1791898170408018500
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0076.png": [
+          2207249,
+          1791898170449742000
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0079.png": [
+          2192372,
+          1791898170803390500
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0080.png": [
+          2187800,
+          1791898171108461500
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0082.png": [
+          2181732,
+          1791898171987590800
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0083.png": [
+          2177074,
+          1791898171987590800
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0086.png": [
+          2170591,
+          1791898171987590800
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0087.png": [
+          2176788,
+          1791898172188395100
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0088.png": [
+          2173041,
+          1791898172951830200
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0090.png": [
+          2174748,
+          1791898173209447200
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0092.png": [
+          2176246,
+          1791898173314660100
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0094.png": [
+          2189277,
+          1791898173906987900
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0095.png": [
+          2186831,
+          1791898174247642800
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0096.png": [
+          2192624,
+          1791898173889378200
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0099.png": [
+          2214178,
+          1791898174116453600
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0100.png": [
+          2217773,
+          1791898174793470400
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0102.png": [
+          2236750,
+          1791898174989740800
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0103.png": [
+          2236955,
+          1791898175095299100
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0106.png": [
+          2248117,
+          1791898175581709700
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0107.png": [
+          2256402,
+          1791898175598048000
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0108.png": [
+          2249851,
+          1791898175801587600
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0110.png": [
+          2254450,
+          1791898176332593900
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0112.png": [
+          2259430,
+          1791898176348435200
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0114.png": [
+          2265116,
+          1791898176910640500
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0115.png": [
+          2265697,
+          1791898177416085200
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0116.png": [
+          2266791,
+          1791898177151930300
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0119.png": [
+          2274007,
+          1791898177646213600
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0120.png": [
+          2277804,
+          1791898177726494400
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0122.png": [
+          2283324,
+          1791898178072007700
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0123.png": [
+          2278783,
+          1791898178193628100
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0126.png": [
+          2291550,
+          1791898178528434500
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0127.png": [
+          2309792,
+          1791898178856553700
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0128.png": [
+          2306830,
+          1791898179018606800
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0130.png": [
+          2321754,
+          1791898179307384000
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0132.png": [
+          2346575,
+          1791898179507779300
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0134.png": [
+          2360890,
+          1791898179890768800
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0135.png": [
+          2358856,
+          1791898180071055700
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0136.png": [
+          2362408,
+          1791898180417768200
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0139.png": [
+          2362170,
+          1791898180426521600
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0140.png": [
+          2351747,
+          1791898180665087800
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0142.png": [
+          2348856,
+          1791898181019532800
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0143.png": [
+          2339529,
+          1791898181782797000
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0146.png": [
+          2331787,
+          1791898182137256400
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0147.png": [
+          2332829,
+          1791898182003102800
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0148.png": [
+          2323120,
+          1791898182009137600
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0150.png": [
+          2321138,
+          1791898182582843800
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0152.png": [
+          2324705,
+          1791898182696111700
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0154.png": [
+          2330205,
+          1791898182913907100
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0155.png": [
+          2332210,
+          1791898183538498400
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0156.png": [
+          2334911,
+          1791898183550492600
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0159.png": [
+          2343161,
+          1791898183754279500
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0160.png": [
+          2342002,
+          1791898184061548400
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0162.png": [
+          2339395,
+          1791898184299607700
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0163.png": [
+          2336906,
+          1791898184452798200
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0166.png": [
+          2333929,
+          1791898184779648800
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0167.png": [
+          2330801,
+          1791898185086426900
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0168.png": [
+          2331712,
+          1791898185459260900
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0170.png": [
+          2329360,
+          1791898185490109400
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0172.png": [
+          2328656,
+          1791898185847239100
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0174.png": [
+          2330369,
+          1791898186186934400
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0175.png": [
+          2324747,
+          1791898187146354500
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0176.png": [
+          2324774,
+          1791898186274933900
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0179.png": [
+          2318712,
+          1791898186828776200
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0180.png": [
+          2322644,
+          1791898187071663000
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0182.png": [
+          2317816,
+          1791898187519396000
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0183.png": [
+          2314191,
+          1791898187789710600
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0186.png": [
+          2314585,
+          1791898188101729800
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0187.png": [
+          2311539,
+          1791898188487611200
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0188.png": [
+          2310860,
+          1791898188271594200
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0190.png": [
+          2307866,
+          1791898188962314900
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0192.png": [
+          2308322,
+          1791898188962314900
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0194.png": [
+          2310247,
+          1791898189219280100
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0195.png": [
+          2307566,
+          1791898189312724700
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0196.png": [
+          2307548,
+          1791898189772710400
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0199.png": [
+          2308937,
+          1791898190385413100
+        ],
+        "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0200.png": [
+          2306132,
+          1791898190383393900
+        ]
+      }
+    },
+    "code": {
+      "arguments/__init__.py": "df52dc58881dd76f2cfbf9acdfd9f67609d31a679b0da81a58a9acfdcaa6716a",
+      "arguments/dnerf/bouncingballs.py": "3b88f1fd620830b0f3c38712d956c00a3091872fce1cbbcfec1739196ca0a117",
+      "arguments/dnerf/hellwarrior.py": "3b88f1fd620830b0f3c38712d956c00a3091872fce1cbbcfec1739196ca0a117",
+      "arguments/dnerf/hook.py": "3b88f1fd620830b0f3c38712d956c00a3091872fce1cbbcfec1739196ca0a117",
+      "arguments/dnerf/jumpingjacks.py": "3b88f1fd620830b0f3c38712d956c00a3091872fce1cbbcfec1739196ca0a117",
+      "arguments/dnerf/lego.py": "4f6196a2c20bc5f04eac4855ab29d5ebfa174e624a85f6ce20fc02bcd86d2a91",
+      "arguments/dnerf/mutant.py": "3b88f1fd620830b0f3c38712d956c00a3091872fce1cbbcfec1739196ca0a117",
+      "arguments/dnerf/standup.py": "3b88f1fd620830b0f3c38712d956c00a3091872fce1cbbcfec1739196ca0a117",
+      "arguments/dnerf/trex.py": "3b88f1fd620830b0f3c38712d956c00a3091872fce1cbbcfec1739196ca0a117",
+      "arguments/hypernerf/interp_aleks-teapot.py": "8348f2ee49dde21a67ca772d84c23804b98af36709c69d692f673b7ea95f9ee5",
+      "arguments/hypernerf/interp_chickchicken.py": "79b7c9b4df3cf94f5abb26fe20aab61ded2711f0ade44d3bf673a7f8ac9404cf",
+      "arguments/hypernerf/interp_cut-lemon.py": "fa6632c20d44ec89771608afb1bbf997a70565887a395ffd3bc77c86d3d0118a",
+      "arguments/hypernerf/interp_hand.py": "59779158d15f5a60848c2b6abdf07c2a9b9a1ef96ff9564e08e67725e8aea1fb",
+      "arguments/hypernerf/interp_slice-banana.py": "a2534c2b5433be4abfed2b6036505382136c23c64ac4579c5bfc51d842c68e10",
+      "arguments/hypernerf/interp_torchocolate.py": "640f5c582dcf8cd6c5b3135e5022e6b2435cdba1d324da64c3925e16ef413750",
+      "arguments/hypernerf/misc_split-cookie.py": "98df97e1cc23836cba3146396e19b0b63adc28aaf027da4a8aa8c5ebb243d308",
+      "arguments/hypernerf/vrig_3dprinter.py": "2dc8eced06a50ad543a3dae1a7f113c2263dc92add52c6e4dde24b26b25f0a57",
+      "arguments/hypernerf/vrig_broom.py": "1872a0e377aa6a0870a9505349a896944bb610050879ec79e18acb00e349c5a4",
+      "arguments/hypernerf/vrig_chicken.py": "4ae13dd6c54adb08eea9cd5ba8bed49343312ce73e1743b77089397f5a9cc8e5",
+      "arguments/hypernerf/vrig_peel-banana.py": "c246e592c730f36739c8e363943b3bdaf7b3b82508f77c006270b6c0d2c25123",
+      "arguments/neu3d/coffee_martini.py": "409da627f306496544fdbf1bf846903520723ce3d674e1ee1f40c8b44efea11d",
+      "arguments/neu3d/cook_spinach.py": "07c4e9a0fcbd104dff7fc0f0a14c8e2ca14b4a165524281ad4dcb63575e3049a",
+      "arguments/neu3d/cut_roasted_beef.py": "07c4e9a0fcbd104dff7fc0f0a14c8e2ca14b4a165524281ad4dcb63575e3049a",
+      "arguments/neu3d/flame_salmon_1.py": "e0a1d799043b6c1e77fff0ec0aaed37e3598913a01a9e9144235ed9fecf0a1cc",
+      "arguments/neu3d/flame_steak.py": "07c4e9a0fcbd104dff7fc0f0a14c8e2ca14b4a165524281ad4dcb63575e3049a",
+      "arguments/neu3d/sear_steak.py": "07c4e9a0fcbd104dff7fc0f0a14c8e2ca14b4a165524281ad4dcb63575e3049a",
+      "arguments/pidg/balls_reaction.py": "da8008afe18a15e60148aa82c78d60705919a48efa1c57780e1867292eab6428",
+      "arguments/pidg/dry_ice.py": "b16a6212eb36bd7b83c7fc1d6bc53da546646423b81df5947118ff34b53808ec",
+      "arguments/pidg/mechanics_cloth.py": "da8008afe18a15e60148aa82c78d60705919a48efa1c57780e1867292eab6428",
+      "arguments/pidg/motion_kuro.py": "da8008afe18a15e60148aa82c78d60705919a48efa1c57780e1867292eab6428",
+      "arguments/pidg/rubber_dack.py": "2686ee3d40565f08810bca67d8281222d42d0c8f5c475b964ad05d777ad355f1",
+      "gaussian_renderer/__init__.py": "6071dc822efa63ac22e921aef034b8445a1a883fabb9bb6d97ecbfc13e11f9bd",
+      "gaussian_renderer/network_gui.py": "7116ef1f7a4471e5db96de2ea4a148d8138e7ae03b89120606586f9b2a9e66eb",
+      "hashencoder/__init__.py": "c70a9a4be5c48035a0c36783ed8472001fde505c3a1863c08978ad33cc961803",
+      "hashencoder/backend.py": "b22c337259e1b7640749c37902f7bd2882d30e16b52c3370a8f51597d7c8af15",
+      "hashencoder/hashgrid.py": "faf7273ee6c49223b9fd45e6c83abb0353dedd9774ba9453aa2df9206a37bda3",
+      "hashencoder/src/bindings.cpp": "b1eb7265c55203e702f57dae002a0839cf6e90c9dba5f89c201f0efe8cbf0580",
+      "hashencoder/src/hashencoder.cu": "11daddbfe2bf33dd7d2a9ad50f909c6bd14de16d06c1c7e36894bdcf915c58d0",
+      "hashencoder/src/hashencoder.h": "47974781d98b30dc610be461262a4958e9db20a946ba33e6017cf2f77e37f12f",
+      "lpipsPyTorch/__init__.py": "35806c438336e43c00bc7e5edc353c3de03926fc7b58cbb7e40a61678fcef4b5",
+      "lpipsPyTorch/modules/lpips.py": "58adb29b5a1de195467c909ce14ddc69f92bce0254a59c8ee037e3945c8eb0c8",
+      "lpipsPyTorch/modules/networks.py": "92a21e6eaedd0211f2a535f07855447ff4436cdeff66fecedcc943f827d1be98",
+      "lpipsPyTorch/modules/utils.py": "fe54a0764d0eb9839d8165dd73982e22eab6787889cd898f2bff81088de3227d",
+      "metrics.py": "d1c46cd5f0b62c790bc8b7581285a86388e1a547f11a1c0b988e8af7935fbed6",
+      "motion_utils/pidg.py": "e8ffce4ba8ca30619f8c0bcc2322f190d62bd14896b2edb88cdd0a4261c830fe",
+      "render.py": "fef28ab3377b532ab61dc74fb7a46c9b05d3349c7cd6045c0545abbfe01cf963",
+      "scene_PIDG/__init__.py": "dfa3066e9f3bd8cbcfe1af5c41d263163e5d11220dbca74fb04a9e280360d5b5",
+      "scene_PIDG/cameras.py": "19f13e6422b1d7c45c99c0b35712c4a49fdcf9448fbd35afc2d2e87992a785b7",
+      "scene_PIDG/colmap_loader.py": "b9b8fdabfc90d9ce9d8f48d21cf793de236c44e83def2013dc209e10b42f7a8a",
+      "scene_PIDG/dataset_readers.py": "edff2ee92040cffa4456a567424b84c304c5a7e227581e70781044fcb80a407f",
+      "scene_PIDG/deform_model.py": "4b0c2e6e15d694769998696b96d584ab25ab9ccb01d7608e72f68d0497b24172",
+      "scene_PIDG/gaussian_model.py": "5579bf95a79d471c626910b7b5149802eff8b29069dfea9de60abb7f8858416c",
+      "scene_PIDG/network.py": "fe0fdf54c15f28e6b5041b5080de905961a072dc7cdd9096ef271c1b853cf0b0",
+      "scene_PIDG/neu3d.py": "5cf0add73529a7b1f84394f0e678e732e7f2f087da913fca767f41662f776b6d",
+      "train_pidg.py": "1d310587a5d1ece1d498562bde6eff28d3f57fa1c7ec16af8974510fa469afb9",
+      "utils/camera_utils.py": "8a06ce123657f9e3d120290696ce03e8166b90fdc059d912fb6458a8a196ebff",
+      "utils/flow_utils.py": "26fcb61d5190713a2c4bec304f79ebd9f6558d724487f0a41ae8651bb7b21222",
+      "utils/flow_vis_utils.py": "b63b2cace2b32547b142dc2beca956016ffe95c148a572c8794b5aad80ca2a2e",
+      "utils/general_utils.py": "ef18827054b449c6176591ecac483ea8b7621369b32401c5269d56e4273fdb00",
+      "utils/graphics_utils.py": "01258e06456f785a037ccc0392f7a8e2623f0e70eaf30282fcc95560af876aae",
+      "utils/gui_utils.py": "9c968cdfb4a36f45ca4a1e227c058ffffefff583c57081cd412690cd32db55d2",
+      "utils/image_utils.py": "6cc738e9bda49fd8097ad88960953d67e94cf8a79ccf2fd4cc1d3730e97ee29c",
+      "utils/loss_utils.py": "154477e19df3345aa3b23ba4305b24e5eb59bfe821ee78900e60606122688e4b",
+      "utils/pose_utils.py": "e5de5e17206401b09872e168ed34c9d494a3ab17a5bbb565c62026022d6affbb",
+      "utils/rigid_utils.py": "0da31529d6918ab65d74d89f25cca1e54804ae38ad1ff09baabb090103a469ab",
+      "utils/sh_utils.py": "62153adc4c8ac26f6e5b1046810f5f72dffdb5e4087d18b690ce82e0f7236627",
+      "utils/system_utils.py": "2433fae0334991abac21f068a01c28b0dbabcb4f13300401c4d5f3f8348e911d"
+    },
+    "inputs": {
+      "variants\\color_repair\\color.py": "9fe71fab91e2abb08bdd3a808b0d467e715dc6a445828eb078d62f5a511d41fb",
+      "variants\\color_repair\\diagnose.py": "3feb3f05b2bcd2f90498b920fa38a2577c99b2cec07efa807db613fed4e905d1",
+      "variants\\color_repair\\evidence.py": "ef09d9412cdd2c2677880ab68901aa26db9da1210e711f0ef1b24a8d5dc3d291",
+      "variants\\color_repair\\model.py": "1e2600a0ba900980f1562dc170ec29126178b24fd1b7f96ac78f8858af22683f",
+      "variants\\color_repair\\prepare.py": "56de95eb6160f4c8d400dc7cf801fdefc0203382d41af6645059461dc548eb47",
+      "variants\\color_repair\\run.py": "77f34bc8ebf8657797a46df8e7468a7a8129d6609cea0b1b335c877825137799",
+      "variants\\color_repair\\runtime.py": "37e424605dd8759a736828bbeaadb8e014a2836f8d3f7ab3be2c95bc66c27c10",
+      "variants\\color_repair\\__init__.py": "aeec0e34921196fa4617f9d37330e87a5dea4013bcf7db19d3b3c0769f94b561",
+      "variants\\color_repair\\launch.ps1": "4a4f25206fe800815dc26899f1e5c44746f65403515a8d474ac76a53645c36a4",
+      "tests\\test_color_repair.py": "ae54261cd153ab1695259caa7d82e540817e374e9ef221bb4c6338cb100b8025",
+      "tests\\test_color_repair_gpu.py": "cab482e171614de2e1bdb1e8bce28496c1e3bc3dee4251df1d775fbd23ee71b5"
+    },
+    "alpha_audit_sha256": "2e051cfc828fdac4cefc2367db33a6b8ff26d284846177ea89eac7be81ff2a1a",
+    "diagnostic_sha256": "d30e0500171485d285fe14fd32e9f8d7cbf2d47cde1c7dd6af97baf5feb13505"
+  },
+  "code": {
+    "arguments/__init__.py": "df52dc58881dd76f2cfbf9acdfd9f67609d31a679b0da81a58a9acfdcaa6716a",
+    "arguments/dnerf/bouncingballs.py": "3b88f1fd620830b0f3c38712d956c00a3091872fce1cbbcfec1739196ca0a117",
+    "arguments/dnerf/hellwarrior.py": "3b88f1fd620830b0f3c38712d956c00a3091872fce1cbbcfec1739196ca0a117",
+    "arguments/dnerf/hook.py": "3b88f1fd620830b0f3c38712d956c00a3091872fce1cbbcfec1739196ca0a117",
+    "arguments/dnerf/jumpingjacks.py": "3b88f1fd620830b0f3c38712d956c00a3091872fce1cbbcfec1739196ca0a117",
+    "arguments/dnerf/lego.py": "4f6196a2c20bc5f04eac4855ab29d5ebfa174e624a85f6ce20fc02bcd86d2a91",
+    "arguments/dnerf/mutant.py": "3b88f1fd620830b0f3c38712d956c00a3091872fce1cbbcfec1739196ca0a117",
+    "arguments/dnerf/standup.py": "3b88f1fd620830b0f3c38712d956c00a3091872fce1cbbcfec1739196ca0a117",
+    "arguments/dnerf/trex.py": "3b88f1fd620830b0f3c38712d956c00a3091872fce1cbbcfec1739196ca0a117",
+    "arguments/hypernerf/interp_aleks-teapot.py": "8348f2ee49dde21a67ca772d84c23804b98af36709c69d692f673b7ea95f9ee5",
+    "arguments/hypernerf/interp_chickchicken.py": "79b7c9b4df3cf94f5abb26fe20aab61ded2711f0ade44d3bf673a7f8ac9404cf",
+    "arguments/hypernerf/interp_cut-lemon.py": "fa6632c20d44ec89771608afb1bbf997a70565887a395ffd3bc77c86d3d0118a",
+    "arguments/hypernerf/interp_hand.py": "59779158d15f5a60848c2b6abdf07c2a9b9a1ef96ff9564e08e67725e8aea1fb",
+    "arguments/hypernerf/interp_slice-banana.py": "a2534c2b5433be4abfed2b6036505382136c23c64ac4579c5bfc51d842c68e10",
+    "arguments/hypernerf/interp_torchocolate.py": "640f5c582dcf8cd6c5b3135e5022e6b2435cdba1d324da64c3925e16ef413750",
+    "arguments/hypernerf/misc_split-cookie.py": "98df97e1cc23836cba3146396e19b0b63adc28aaf027da4a8aa8c5ebb243d308",
+    "arguments/hypernerf/vrig_3dprinter.py": "2dc8eced06a50ad543a3dae1a7f113c2263dc92add52c6e4dde24b26b25f0a57",
+    "arguments/hypernerf/vrig_broom.py": "1872a0e377aa6a0870a9505349a896944bb610050879ec79e18acb00e349c5a4",
+    "arguments/hypernerf/vrig_chicken.py": "4ae13dd6c54adb08eea9cd5ba8bed49343312ce73e1743b77089397f5a9cc8e5",
+    "arguments/hypernerf/vrig_peel-banana.py": "c246e592c730f36739c8e363943b3bdaf7b3b82508f77c006270b6c0d2c25123",
+    "arguments/neu3d/coffee_martini.py": "409da627f306496544fdbf1bf846903520723ce3d674e1ee1f40c8b44efea11d",
+    "arguments/neu3d/cook_spinach.py": "07c4e9a0fcbd104dff7fc0f0a14c8e2ca14b4a165524281ad4dcb63575e3049a",
+    "arguments/neu3d/cut_roasted_beef.py": "07c4e9a0fcbd104dff7fc0f0a14c8e2ca14b4a165524281ad4dcb63575e3049a",
+    "arguments/neu3d/flame_salmon_1.py": "e0a1d799043b6c1e77fff0ec0aaed37e3598913a01a9e9144235ed9fecf0a1cc",
+    "arguments/neu3d/flame_steak.py": "07c4e9a0fcbd104dff7fc0f0a14c8e2ca14b4a165524281ad4dcb63575e3049a",
+    "arguments/neu3d/sear_steak.py": "07c4e9a0fcbd104dff7fc0f0a14c8e2ca14b4a165524281ad4dcb63575e3049a",
+    "arguments/pidg/balls_reaction.py": "da8008afe18a15e60148aa82c78d60705919a48efa1c57780e1867292eab6428",
+    "arguments/pidg/dry_ice.py": "b16a6212eb36bd7b83c7fc1d6bc53da546646423b81df5947118ff34b53808ec",
+    "arguments/pidg/mechanics_cloth.py": "da8008afe18a15e60148aa82c78d60705919a48efa1c57780e1867292eab6428",
+    "arguments/pidg/motion_kuro.py": "da8008afe18a15e60148aa82c78d60705919a48efa1c57780e1867292eab6428",
+    "arguments/pidg/rubber_dack.py": "2686ee3d40565f08810bca67d8281222d42d0c8f5c475b964ad05d777ad355f1",
+    "gaussian_renderer/__init__.py": "6071dc822efa63ac22e921aef034b8445a1a883fabb9bb6d97ecbfc13e11f9bd",
+    "gaussian_renderer/network_gui.py": "7116ef1f7a4471e5db96de2ea4a148d8138e7ae03b89120606586f9b2a9e66eb",
+    "hashencoder/__init__.py": "c70a9a4be5c48035a0c36783ed8472001fde505c3a1863c08978ad33cc961803",
+    "hashencoder/backend.py": "b22c337259e1b7640749c37902f7bd2882d30e16b52c3370a8f51597d7c8af15",
+    "hashencoder/hashgrid.py": "faf7273ee6c49223b9fd45e6c83abb0353dedd9774ba9453aa2df9206a37bda3",
+    "hashencoder/src/bindings.cpp": "b1eb7265c55203e702f57dae002a0839cf6e90c9dba5f89c201f0efe8cbf0580",
+    "hashencoder/src/hashencoder.cu": "11daddbfe2bf33dd7d2a9ad50f909c6bd14de16d06c1c7e36894bdcf915c58d0",
+    "hashencoder/src/hashencoder.h": "47974781d98b30dc610be461262a4958e9db20a946ba33e6017cf2f77e37f12f",
+    "lpipsPyTorch/__init__.py": "35806c438336e43c00bc7e5edc353c3de03926fc7b58cbb7e40a61678fcef4b5",
+    "lpipsPyTorch/modules/lpips.py": "58adb29b5a1de195467c909ce14ddc69f92bce0254a59c8ee037e3945c8eb0c8",
+    "lpipsPyTorch/modules/networks.py": "92a21e6eaedd0211f2a535f07855447ff4436cdeff66fecedcc943f827d1be98",
+    "lpipsPyTorch/modules/utils.py": "fe54a0764d0eb9839d8165dd73982e22eab6787889cd898f2bff81088de3227d",
+    "metrics.py": "d1c46cd5f0b62c790bc8b7581285a86388e1a547f11a1c0b988e8af7935fbed6",
+    "motion_utils/pidg.py": "e8ffce4ba8ca30619f8c0bcc2322f190d62bd14896b2edb88cdd0a4261c830fe",
+    "render.py": "fef28ab3377b532ab61dc74fb7a46c9b05d3349c7cd6045c0545abbfe01cf963",
+    "scene_PIDG/__init__.py": "dfa3066e9f3bd8cbcfe1af5c41d263163e5d11220dbca74fb04a9e280360d5b5",
+    "scene_PIDG/cameras.py": "19f13e6422b1d7c45c99c0b35712c4a49fdcf9448fbd35afc2d2e87992a785b7",
+    "scene_PIDG/colmap_loader.py": "b9b8fdabfc90d9ce9d8f48d21cf793de236c44e83def2013dc209e10b42f7a8a",
+    "scene_PIDG/dataset_readers.py": "edff2ee92040cffa4456a567424b84c304c5a7e227581e70781044fcb80a407f",
+    "scene_PIDG/deform_model.py": "4b0c2e6e15d694769998696b96d584ab25ab9ccb01d7608e72f68d0497b24172",
+    "scene_PIDG/gaussian_model.py": "5579bf95a79d471c626910b7b5149802eff8b29069dfea9de60abb7f8858416c",
+    "scene_PIDG/network.py": "fe0fdf54c15f28e6b5041b5080de905961a072dc7cdd9096ef271c1b853cf0b0",
+    "scene_PIDG/neu3d.py": "5cf0add73529a7b1f84394f0e678e732e7f2f087da913fca767f41662f776b6d",
+    "train_pidg.py": "335884015abb8926e6ebb4784ba9925a8f2294a07fbc72cfbf81fb48b9116e73",
+    "utils/camera_utils.py": "8a06ce123657f9e3d120290696ce03e8166b90fdc059d912fb6458a8a196ebff",
+    "utils/flow_utils.py": "26fcb61d5190713a2c4bec304f79ebd9f6558d724487f0a41ae8651bb7b21222",
+    "utils/flow_vis_utils.py": "b63b2cace2b32547b142dc2beca956016ffe95c148a572c8794b5aad80ca2a2e",
+    "utils/general_utils.py": "ef18827054b449c6176591ecac483ea8b7621369b32401c5269d56e4273fdb00",
+    "utils/graphics_utils.py": "01258e06456f785a037ccc0392f7a8e2623f0e70eaf30282fcc95560af876aae",
+    "utils/gui_utils.py": "9c968cdfb4a36f45ca4a1e227c058ffffefff583c57081cd412690cd32db55d2",
+    "utils/image_utils.py": "6cc738e9bda49fd8097ad88960953d67e94cf8a79ccf2fd4cc1d3730e97ee29c",
+    "utils/loss_utils.py": "154477e19df3345aa3b23ba4305b24e5eb59bfe821ee78900e60606122688e4b",
+    "utils/pose_utils.py": "e5de5e17206401b09872e168ed34c9d494a3ab17a5bbb565c62026022d6affbb",
+    "utils/rigid_utils.py": "0da31529d6918ab65d74d89f25cca1e54804ae38ad1ff09baabb090103a469ab",
+    "utils/sh_utils.py": "62153adc4c8ac26f6e5b1046810f5f72dffdb5e4087d18b690ce82e0f7236627",
+    "utils/system_utils.py": "2433fae0334991abac21f068a01c28b0dbabcb4f13300401c4d5f3f8348e911d"
+  },
+  "helpers_inputs": {
+    "variants\\integrity_tuning\\diagnose.py": "903996da1a7411fe4f7f0298d87dd3182e96d708d6549eaad3f01df9c762a442",
+    "variants\\integrity_tuning\\export.py": "01e385ea9b2eb876af2800b7114417e6548a0e68cd9554a4d5a89e67b3afe4a6",
+    "variants\\integrity_tuning\\model.py": "ee4cf9b6c3a6b5fce63a2768f1bbe0297ff7452b27d4964e143ecb3ac5b2b557",
+    "variants\\integrity_tuning\\prepare.py": "b3dee9997c7c242ed37f138b3ce506ae31eb610876007485bcd55f5f881ba914",
+    "variants\\integrity_tuning\\run.py": "f7040fe116c45be527d3acfb55fc3f1ac06c59d4f2f5440483e692cdcdd2302a",
+    "variants\\integrity_tuning\\runtime.py": "7994feabf3856a94611b878f2d280dee8e23ba608b92e9cde40ccd80d078a235",
+    "variants\\integrity_tuning\\__init__.py": "6bde17f52d315da9d57b60ba607f60152f28b2388e2a6cd254b5510932cc0b11",
+    "variants\\integrity_tuning\\launch.ps1": "23a31de5453bdc0da47796ccaa2ab8fac6a11964a3a6b78191c9057cb7880dd4",
+    "tests\\test_integrity_tuning.py": "d61edd4865420c81960b1eb2b4cea7b9d2db377b5e75030b25609b4409e53574",
+    "tests\\test_integrity_gpu.py": "59fb09a33907e105abd0f45ab0bb360e3268fdb22c0ad2167026fe2181f3fdd9",
+    "experiments\\integrity_tuning\\budget.json": "8f2ad8f5c91d9e2e374025c78f72c66f16bd07fdcc83ba5dd95602eb1bd25f5d",
+    "experiments\\integrity_tuning\\diagnosis.json": "4db877259e1c846e56e45374bb0609437c20900dcde5f6e5f28b94611b830987",
+    "scripts\\serve_integrity_monitor.py": "458ed1bf7e548465662bc8316b92f6fb3838d24d97a4c3fe0e54f3070218bae7",
+    "runs\\pidg_color_repair\\validation_previews\\C1_repaired_50000\\manifest.json": "f08eba78b1cbfc28afe71b3f3943c356f815a0df17dcb6c16dafff9617c8b1fe",
+    "runs\\pidg_color_repair\\validation_previews\\C1_repaired_50000\\input_manifest.json": "8ec3f9135034ab24ddff301516e1f75d72eabe3cfaf807f417cc4a06f5524d43",
+    "runs\\pidg_color_repair\\validation_previews\\C1_repaired_50000\\results.json": "c13d8f27ea84fa97bdcbd844c876f54c084fe4b4b91216f397174c9db38e02b3",
+    "runs\\pidg_color_repair\\validation_previews\\C1_repaired_50000\\per_view.json": "d9d243dca095b9bf6b2b10e9256287803ffd6cf2ccac03fb758956acfebb2a27",
+    "runs\\pidg_color_repair\\C1_repaired\\rubber_duck\\model_config.py": "52eeedbbc65c858007831a57cc04d3c0364de5e28e78a2fa276c641cc7feb008",
+    "runs\\pidg_color_repair\\C1_repaired\\rubber_duck\\metric_config.json": "670ffaab5cc02134306dc3a795c8abb34806c6bf4190720ba514af722b3a6054",
+    "runs\\pidg_color_repair\\C1_repaired\\rubber_duck\\metric_history.jsonl": "f8034f087b4165d293db9dcf344d53508233ffdc0bf3da20c71945762b70f1b3",
+    "runs\\pidg_color_repair\\C1_repaired\\rubber_duck\\checkpoints\\resume.json": "f00f04b7c2e346fe274308b5762be574f93c9d7b337f8ccaf75c8efd2c859865",
+    "runs\\pidg_color_repair\\C1_repaired\\rubber_duck\\branch.json": "5a53dfe0be8060cbc905f9cf192d02f4efd8c36c7adcb62006502db83cf19e3a",
+    "runs\\pidg_color_repair\\shared_prefix\\rubber_duck\\model_config.py": "52eeedbbc65c858007831a57cc04d3c0364de5e28e78a2fa276c641cc7feb008",
+    "runs\\pidg_color_repair\\shared_prefix\\rubber_duck\\metric_config.json": "387ec61bc50f8ac50bbf9b0942f2238b6d5ee5b81bec94130eaba4a0bdc78113",
+    "runs\\pidg_color_repair\\shared_prefix\\rubber_duck\\checkpoints\\resume.json": "4ec6ed6a10bc2bb48176951c4d76341675070260f8cd94af56f716fa14e73638",
+    "runs\\pidg_color_repair\\shared_prefix\\rubber_duck\\checkpoints\\resume.metrics.json": "c12f85865ef33c90f65c4b7d4b0e14c91ba4bded0546434a98d7eae536039bb3"
+  }
+}
