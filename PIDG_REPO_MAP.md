@@ -279,3 +279,23 @@ compares the three no-K methods with color enabled against their saved
 motion-only candidates. Features use existing C1 predictions at training
 views, not GT/test colors. A new gallery includes per-method before/after GT/C1
 panels; C1 model weights, architecture and training losses remain unchanged.
+
+## Trainable object identity / motion bottleneck (separate C1 fork)
+
+`variants/object_id/prepare.py` copies frozen repaired C1 and inserts opt-in
+deformation/state hooks. `model.py::ObjectMotion` maps canonical XYZ to soft
+candidate membership and normalized time to group-shared SE3 center motion.
+The original nonrigid trajectory is retained with a ramped25% grouped blend;
+covariance rotation/scale, PIDG velocity/stress and C1 image/alpha losses remain.
+The16-candidate ceiling is not a target object count; occupancy/pruning are
+explicit diagnostics, with no GT instance or offline cluster label targets.
+
+`runtime.py` adds separate optimization, RGB-gradient audits, auxiliary motion/
+assignment losses and SHA-bound full-checkpoint sidecars. Selected deformation
+snapshots contain matching object state. Disabled hooks return the original
+warp and allocate no object optimizer. `run.py` compares C1, frozen identity
+and learned identity from the identical retained full3k random-init checkpoint,
+total50k per arm, validation-only selection and locked final testing. Reports
+and new runs are isolated in `experiments/object_id` and `runs/pidg_object_id`.
+This is a custom paper-inspired reconstruction ablation, not physical instance
+ground truth, material segmentation or guaranteed nonpenetration.
