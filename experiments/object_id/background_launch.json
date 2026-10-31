@@ -7,19 +7,19 @@
                     "-File",
                     "F:\\A_Edinburgh\\PhysGauss\\variants\\object_id\\launch.ps1",
                     "-Hours",
-                    "24"
+                    "23.67016"
                 ],
-    "stdout":  "F:\\A_Edinburgh\\PhysGauss\\experiments\\object_id\\queue_20261031_192019.stdout.log",
-    "target_total_iterations_each":  50000,
+    "stdout":  "F:\\A_Edinburgh\\PhysGauss\\experiments\\object_id\\queue_20261031_194016.stdout.log",
+    "original_deadline_utc":  "2026-11-01T19:20:29.137967+00:00",
+    "baseline_reused":  "runs/pidg_color_repair/C1_repaired/rubber_duck",
     "shared_prefix_iteration":  3000,
-    "started_utc":  "2026-10-31T19:20:20.7055593Z",
-    "stderr":  "F:\\A_Edinburgh\\PhysGauss\\experiments\\object_id\\queue_20261031_192019.stderr.log",
-    "commit":  "336c767",
-    "arms":  [
-                 "O0_C1_control",
-                 "O1_frozen_ID",
-                 "O2_selfsup_ID"
-             ],
-    "pid":  133920,
-    "preflight":  "passed"
+    "started_utc":  "2026-10-31T19:40:17.6561890Z",
+    "stderr":  "F:\\A_Edinburgh\\PhysGauss\\experiments\\object_id\\queue_20261031_194016.stderr.log",
+    "commit":  "5c2f131",
+    "target_total_iterations_each":  50000,
+    "pid":  157680,
+    "train_arms":  [
+                       "O1_frozen_ID",
+                       "O2_selfsup_ID"
+                   ]
 }
