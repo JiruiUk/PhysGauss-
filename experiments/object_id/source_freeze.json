@@ -2655,12 +2655,12 @@
     "utils/system_utils.py": "2433fae0334991abac21f068a01c28b0dbabcb4f13300401c4d5f3f8348e911d"
   },
   "helpers_inputs": {
-    "variants\\object_id\\assess.py": "fabf6d30872fd26e696e9f41aa477aad26d5eb122db41aa6b200ad0dc29f52c7",
-    "variants\\object_id\\export.py": "9e935cb0a941f21a604780da99084151428ceb4d62e65685423ced5f02650627",
+    "variants\\object_id\\assess.py": "e92a3080ec6cf8b331b079e9774fb78117ce5c69481a66b5b217282cdb81ec3f",
+    "variants\\object_id\\export.py": "e592ec149b55930ec37e0916f44c219a802bfc8e8c9471d4f79af46eaba69ec3",
     "variants\\object_id\\identity_exports.py": "f82d421430165ce055464897fb2b5dc70a4eec9fc4db6c751d0a2e3cfbd074f6",
     "variants\\object_id\\model.py": "366b62de721a549116585065ef9b29b1c45eb910d9fa94dc06dd9fe1cce7bf5f",
     "variants\\object_id\\prepare.py": "aaa4bcd9867c3afb96a11e27ef84756045934b79e451c4dbbccb28c34140fee1",
-    "variants\\object_id\\run.py": "dcf3219536e5fe9f4a50f0ac990f1d72f8db647d38c8ea3ea7fd4e77fb0f8560",
+    "variants\\object_id\\run.py": "5b0d1e3cdeec3d439f954be1d601d7fa759adb89dda6588f655f9e83e3d7499a",
     "variants\\object_id\\runtime.py": "0dfbbaf02d7f57a99a29e95beef0a2d11c2061e5a597b0829676f0e51c3b5bf8",
     "variants\\object_id\\__init__.py": "4d335fd8961675c9fd3a6d3b88e7593f02e1579fba5da1fc85cdbb5fc70fc4fb",
     "variants\\object_id\\launch.ps1": "0b9a19766e79a85a14b2db61d4abd5a75a70467c032e42ac43b3822faddf2b65",
@@ -2676,6 +2676,21 @@
     "data\\derived\\kinematic_resplit\\training\\transforms_train.json": "270fa34a29b99a4e6b2621d04e1d83f245f5c54bb4f2632ae06051faa83e4868",
     "data\\derived\\kinematic_resplit\\final_test\\loader_role.json": "edf7fc4701811b062194945cefb4edda21f7870fa4748428ceb5b42991ccdb66",
     "data\\derived\\kinematic_resplit\\final_test\\transforms_test.json": "bb98013c762294ecaea239b67281436c7da232678403db63b1545d59c5f78c08",
-    "data\\derived\\kinematic_resplit\\final_test\\transforms_train.json": "270fa34a29b99a4e6b2621d04e1d83f245f5c54bb4f2632ae06051faa83e4868"
+    "data\\derived\\kinematic_resplit\\final_test\\transforms_train.json": "270fa34a29b99a4e6b2621d04e1d83f245f5c54bb4f2632ae06051faa83e4868",
+    "runs\\pidg_color_repair\\C1_repaired\\rubber_duck\\model_config.py": "52eeedbbc65c858007831a57cc04d3c0364de5e28e78a2fa276c641cc7feb008",
+    "runs\\pidg_color_repair\\C1_repaired\\rubber_duck\\metric_config.json": "670ffaab5cc02134306dc3a795c8abb34806c6bf4190720ba514af722b3a6054",
+    "runs\\pidg_color_repair\\C1_repaired\\rubber_duck\\branch.json": "5a53dfe0be8060cbc905f9cf192d02f4efd8c36c7adcb62006502db83cf19e3a",
+    "runs\\pidg_color_repair\\C1_repaired\\rubber_duck\\checkpoints\\resume.json": "f00f04b7c2e346fe274308b5762be574f93c9d7b337f8ccaf75c8efd2c859865",
+    "runs\\pidg_color_repair\\C1_repaired\\rubber_duck\\metric_best.json": "38984e6be04ac7609ddaef7d4ca09b6f6a65fb5b9ac2a64f05828e576edd335a",
+    "runs\\pidg_color_repair\\C1_repaired\\rubber_duck\\metric_history.jsonl": "f8034f087b4165d293db9dcf344d53508233ffdc0bf3da20c71945762b70f1b3",
+    "runs\\pidg_color_repair\\C1_repaired\\rubber_duck\\results.json": "2eed03b9622eac92b05a830ccc866db36a81d13b468216718cf79b44e7d08ddb",
+    "runs\\pidg_color_repair\\C1_repaired\\rubber_duck\\per_view.json": "c57d36557b87fa52301f1285a0e01a842268af0f49c1f2e73230fec6728313c4",
+    "runs\\pidg_color_repair\\C1_repaired\\rubber_duck\\coverage_metrics_test.json": "c5011cb365845df24326160b418ff8218ac577fbbb770837128f53cdcf58646d",
+    "runs\\pidg_color_repair\\selection_lock.json": "b0beb92ebf4885e222f42423f48b4d37d9be9ab062923c3b96894875c6b73f0b",
+    "runs\\pidg_color_repair\\C1_repaired\\rubber_duck\\test\\ours_best\\render_complete.json": "09b89322066e42877232277e896816a6a8967b2d85a8628812001abbcac14fd6",
+    "runs\\pidg_color_repair\\C1_repaired\\rubber_duck\\test\\ours_metric_ssim\\render_complete.json": "09b89322066e42877232277e896816a6a8967b2d85a8628812001abbcac14fd6",
+    "runs\\pidg_color_repair\\C1_repaired\\rubber_duck\\test\\ours_metric_lpips\\render_complete.json": "09b89322066e42877232277e896816a6a8967b2d85a8628812001abbcac14fd6",
+    "runs\\pidg_color_repair\\C1_repaired\\rubber_duck\\test\\ours_metric_ms_ssim\\render_complete.json": "09b89322066e42877232277e896816a6a8967b2d85a8628812001abbcac14fd6",
+    "runs\\pidg_color_repair\\C1_repaired\\rubber_duck\\test\\ours_50000\\render_complete.json": "09b89322066e42877232277e896816a6a8967b2d85a8628812001abbcac14fd6"
   }
 }

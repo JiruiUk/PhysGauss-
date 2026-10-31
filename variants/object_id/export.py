@@ -3,14 +3,27 @@ from concurrent.futures import ThreadPoolExecutor
 import json
 from scripts import export_color_repair_images as collect
 from scripts import export_color_repair_four_panel as four
-from .run import RUNS,NAMES,REPORTS
+from .run import RUNS,NAMES,REPORTS,run_directory
+
+
+def export_arm(name,frames,output):
+    source=run_directory(name);raw=source/'test/ours_50000'
+    with ThreadPoolExecutor(max_workers=3) as pool:
+        records=list(pool.map(lambda item:collect.export_frame(raw,output,name,*item),enumerate(frames)))
+    manifest={'status':'completed','arm':name,'iteration':50000,'split':'test','images':50,
+        'source_run':str(source),'baseline_reused':name==NAMES[0],
+        'source_checkpoint_sha256':collect.read(source/'checkpoints/resume.json')['sha256'],
+        'source_render_receipt_sha256':collect.digest(raw/'render_complete.json'),
+        'split_sha256':collect.digest(collect.SPLIT),'source_image_bytes_preserved':True,
+        'pair_pixels_verified':True,'frames':records}
+    collect.write(output/name/'manifest.json',manifest)
+    return manifest
 
 
 def export():
     output=RUNS/'render_exports/final50000';output.mkdir(parents=True,exist_ok=True)
-    collect.RUNS,collect.OUTPUT=RUNS,output
     frames=collect.read(collect.SPLIT)['frames']
-    manifests=[collect.export_arm(name,frames) for name in NAMES]
+    manifests=[export_arm(name,frames,output) for name in NAMES]
     four.SOURCE,four.OUTPUT,four.ARMS=output,output/'gt_c1_frozen_learned',tuple(NAMES)
     four.OUTPUT.mkdir(exist_ok=True)
     with ThreadPoolExecutor(max_workers=3) as pool:

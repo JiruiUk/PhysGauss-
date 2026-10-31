@@ -20,6 +20,44 @@ from .prepare import prepare
 
 HERE=Path(__file__).parent;RUNS=ROOT/'runs/pidg_object_id';REPORTS=ROOT/'experiments/object_id'
 NAMES=['O0_C1_control','O1_frozen_ID','O2_selfsup_ID']
+REFERENCE=parent.RUNS/'C1_repaired/rubber_duck'
+TRAIN_NAMES=NAMES[1:]
+
+
+def run_directory(name):
+    return REFERENCE if name==NAMES[0] else RUNS/name/'rubber_duck'
+
+
+def reuse_baseline():
+    checkpoint=REFERENCE/'checkpoints/resume.pt'
+    manifest=engine.read_json(checkpoint.with_suffix('.json'))
+    if manifest['iteration']!=50000 or engine.sha256(checkpoint)!=manifest['sha256']:
+        raise ValueError('Reused C1 full checkpoint is incomplete or changed')
+    receipt=engine.read_json(REFERENCE/'branch.json')
+    if receipt['identical_full_checkpoint_sha256']!=engine.read_json(prefix()/'checkpoints/resume.json')['sha256']:
+        raise ValueError('Reused C1 has a different shared initialization')
+    config,text=configuration(NAMES[0])
+    original={k:v for k,v in config.items() if not k.startswith('object_') and k!='learn_object_identity'}
+    if engine.read_json(REFERENCE/'metric_config.json')!=original or (REFERENCE/'model_config.py').read_text()!=text:
+        raise ValueError('Reused C1 recipe does not match the intended control')
+    best=engine.read_json(REFERENCE/'metric_best.json')
+    if engine.read_json(parent.RUNS/'selection_lock.json')['validation_selections']['C1_repaired']!=best:
+        raise ValueError('Reused baseline selection is not locked')
+    base.verify_metrics(engine.read_json(REFERENCE/'results.json'),engine.read_json(REFERENCE/'per_view.json'),base.TAGS,50)
+    for tag in base.TAGS:
+        raw=REFERENCE/'test'/('ours_'+tag)
+        if engine.read_json(raw/'render_complete.json')!={'split':'test','images':50}:
+            raise ValueError('Reused baseline render receipt differs')
+        expected={f'{i:05d}.png' for i in range(50)}
+        if any({p.name for p in (raw/k).glob('*.png')}!=expected for k in ('gt','renders','alpha')):
+            raise ValueError('Reused baseline PNG export is incomplete')
+    destination=RUNS/NAMES[0]/'rubber_duck';destination.mkdir(parents=True,exist_ok=True)
+    result={'status':'reused_completed','source':str(REFERENCE),'iteration':50000,
+        'checkpoint_sha256':manifest['sha256'],'same_prefix_sha256':receipt['identical_full_checkpoint_sha256'],
+        'training_skipped':True,'rendering_skipped':True,'created_utc':engine.now()}
+    engine.write_json(destination/'reference.json',result)
+    engine.write_json(REPORTS/'baseline_reuse.json',result)
+    return REFERENCE
 
 
 def configuration(name,smoke=False,off=False):
@@ -42,6 +80,10 @@ def freeze(repo):
     files=[*HERE.glob('*.py'),HERE/'launch.ps1',ROOT/'tests/test_object_id.py',ROOT/'tests/test_object_id_runtime.py',ROOT/'tests/test_object_id_gpu.py']
     files += [prefix()/p for p in ('model_config.py','metric_config.json','checkpoints/resume.json','checkpoints/resume.metrics.json')]
     files += list((base.DATA/'training').glob('*.json'))+list((base.DATA/'final_test').glob('*.json'))
+    files += [REFERENCE/p for p in ('model_config.py','metric_config.json','branch.json','checkpoints/resume.json',
+        'metric_best.json','metric_history.jsonl','results.json','per_view.json','coverage_metrics_test.json')]
+    files += [parent.RUNS/'selection_lock.json']
+    files += [REFERENCE/'test'/('ours_'+tag)/'render_complete.json' for tag in base.TAGS]
     return {'parent':parent.freeze(parent.HERE/'code'),'code':engine.runtime_hashes(repo),
             'helpers_inputs':{str(p.relative_to(ROOT)):engine.sha256(p) for p in files}}
 
@@ -87,18 +129,19 @@ def report():
     active=engine.read_json(RUNS/'active.json') if (RUNS/'active.json').exists() else {}
     rows=[]
     for name in NAMES:
-        d=RUNS/name/'rubber_duck';history=base.history(d)
+        d=run_directory(name);history=base.history(d)
         object_log=d/'object_loss.jsonl';last=None
         if object_log.exists():
             lines=object_log.read_text(encoding='utf-8').splitlines()
             if lines:last=json.loads(lines[-1])
         rows.append({'id':name,'iteration':base.progress(d),'history':history,'object':last,
+            'reused':name==NAMES[0],'source':str(d),
             'test':engine.read_json(d/'results.json').get('ours_50000') if (d/'results.json').exists() else None})
     result={'updated_utc':engine.now(),'controller':state,'active':active,'rows':rows,
         'split':[120,30,50],'total_iterations_each':50000,'source_prefix_iteration':3000,
         'object_supervision':'none: no instance masks/IDs, no clustering pseudo-targets',
         'C1_foreground_alpha_supervision_retained':True,'candidate_capacity_not_object_count':16,
-        'selection':'validation-only; final test after all3 selections locked',
+        'selection':'new arms validation-only; reused baseline already locked/evaluated; new final test after selection lock',
         'limitations':['single scene/seed','not exact MovingParts/DynaVol reproduction','no ground-truth instance accuracy','historical test exposure']}
     engine.write_json(REPORTS/'results.json',result)
     lines=['# C1 self-supervised Object ID comparison','',
@@ -106,18 +149,21 @@ def report():
         'MovingParts-inspired shared object motion + retained nonrigid C1 path. No instance labels or pseudo-ID targets.',
         'C1 alpha/RGB/perceptual recipe retained in all arms; not a fully RGB-only experiment.',
         'Matched full3k prefix; total50k each;120 train /30 validation /50 final test.',
+        'O0 reuses completed C1 weights, validation history, metrics and renders; only O1/O2 train.',
         '16 candidate slots are a capacity ceiling, not a known or forced object count. Effective occupancy is a diagnostic.',
         '', '| Model | Current iter | Validation PSNR | Final test PSNR | Effective slots >1% |',
         '|---|---:|---:|---:|---:|']
     for r in rows:
         val=r['history'][-1]['metrics']['PSNR'] if r['history'] else '-'
-        lines.append(f"| {r['id']} | {r['iteration']}/50000 | {val} | {(r['test'] or {}).get('PSNR','-')} | {(r['object'] or {}).get('effective_slots_1pct','-')} |")
+        label=r['id']+(' (reused)' if r['reused'] else '')
+        lines.append(f"| {label} | {r['iteration']}/50000 | {val} | {(r['test'] or {}).get('PSNR','-')} | {(r['object'] or {}).get('effective_slots_1pct','-')} |")
     lines+=['','[Monitor](monitor.html) | [Plan](plan.json) | [Preflight](preflight.json)',
-            '','GT/render export after training: '+str(RUNS/'render_comparisons')]
+            '','GT/render export after training: '+str(RUNS/'render_exports/final50000/gt_c1_frozen_learned')]
     engine.write_text_atomic(REPORTS/'results.md','\n'.join(lines)+'\n')
     page='<!doctype html><html lang="zh"><meta charset="utf-8"><meta http-equiv="refresh" content="5"><title>C1 Object ID</title><style>body{font:16px system-ui;background:#142033;color:#edf5ff;margin:24px}section,svg{background:#203047;padding:12px;margin:12px 0}progress{width:90%}a{color:#9be0b8}</style><h1>C1 / frozen ID / self-supervised ID</h1><p>'+html.escape(state.get('status','preparing')+' | '+active.get('id','-')+' / '+active.get('phase','-'))+'</p><p>Shared3k  ->  total50k each.120/30/50. No instance labels; C1 foreground alpha retained.16 candidate slots do not mean16 objects.</p>'
     for r in rows:
         o=r['object'] or {};page+=f"<section><b>{r['id']}</b><h2>{r['iteration']:,} / 50,000 iter</h2><progress value='{r['iteration']}' max='50000'></progress><p>Effective slots >1%: {o.get('effective_slots_1pct','-')} | RGB -> ID grad: {o.get('RGB_to_identity_gradient_norm','-')}</p></section>"
+        if r['reused']:page+='<p>C1 baseline reused: completed weights, metrics and renders. No new training.</p>'
     for key in engine.METRICS:
         values=[h['metrics'][key] for r in rows for h in r['history']]
         if not values:continue
@@ -168,7 +214,8 @@ def main():
     engine.write_json(REPORTS/'plan.json',{'names':NAMES,'configs':{n:configuration(n)[0] for n in NAMES},
         'same_prefix_full_checkpoint_sha256':engine.read_json(prefix()/'checkpoints/resume.json')['sha256'],
         'total_steps':50000,'split':[120,30,50],'no_instance_supervision':True,
-        'C1_alpha_retained':True,'slot_capacity':16,'not_exact_paper_reproduction':True,'hours':args.hours})
+        'C1_alpha_retained':True,'slot_capacity':16,'not_exact_paper_reproduction':True,'hours':args.hours,
+        'baseline_reused_from':str(REFERENCE),'train_names':TRAIN_NAMES})
     deadline=datetime.now(timezone.utc)+timedelta(hours=args.hours)
     state={'pid':os.getpid(),'status':'preflight','started_utc':engine.now(),'deadline_utc':deadline.isoformat(),'completed':[]}
     stop=threading.Event()
@@ -186,8 +233,10 @@ def main():
             if args.smoke:state['status']='preflight_passed'
             else:
                 state['status']='training';engine.write_json(RUNS/'controller.json',state)
+                reuse_baseline()
+                state['completed'].append(NAMES[0]);engine.write_json(RUNS/'controller.json',state)
                 arms=[]
-                for name in NAMES:
+                for name in TRAIN_NAMES:
                     d=initialize(name);branch(prefix(),d,3000);arms.append(d)
                     if coordinator.step(d)<50000:
                         code=base.train(d,repo,deadline)
@@ -195,7 +244,8 @@ def main():
                         if code:raise ValueError('Training failed: '+name)
                     state['completed'].append(name);engine.write_json(RUNS/'controller.json',state)
                 engine.write_json(RUNS/'selection_lock.json',{'locked_utc':engine.now(),
-                    'validation_selections':{d.parent.name:engine.read_json(d/'metric_best.json') for d in arms},'tags':base.TAGS})
+                    'validation_selections':{name:engine.read_json(run_directory(name)/'metric_best.json') for name in NAMES},
+                    'baseline_reused_from':str(REFERENCE),'tags':base.TAGS})
                 state['status']='final_test';engine.write_json(RUNS/'controller.json',state)
                 for d in arms:base.render(d,repo,deadline);base.pairs(d);coverage.coverage_scores(d)
                 from variants.object_id.export import export

@@ -2,13 +2,13 @@
 import json
 import math
 import statistics
-from .run import NAMES,RUNS,REPORTS,engine
+from .run import NAMES,RUNS,REPORTS,engine,run_directory,REFERENCE
 
 
 def assess():
     records={}
     for name in NAMES:
-        d=RUNS/name/'rubber_duck'
+        d=run_directory(name)
         records[name]={'metrics':engine.read_json(d/'results.json')['ours_50000'],
             'per_view':engine.read_json(d/'per_view.json')['ours_50000']}
     comparisons=[]
@@ -22,11 +22,12 @@ def assess():
             'all4_image_metrics_better':all(changes[k]<0 if k=='LPIPS' else changes[k]>0 for k in engine.METRICS)})
     result={'status':'completed','snapshot':'final50000','test_frames':50,'comparisons':comparisons,
         'ground_truth_object_ID_accuracy':'unavailable','semantic_identity_improvement':'not_established_without_instance_evaluation',
-        'historical_test_exposure':True,'single_scene_seed':True,'identity_training_uses_instance_labels':False}
+        'historical_test_exposure':True,'single_scene_seed':True,'identity_training_uses_instance_labels':False,
+        'baseline_reused_from':str(REFERENCE)}
     engine.write_json(REPORTS/'assessment.json',result)
     lines=['# Object ID experiment assessment','',
         'Matched C1, frozen identity and learned identity; total50k each, same full3k prefix.',
-        'Final50k evaluated on the same50 held-out test images after validation selection was locked.','',
+        'C1 uses previously completed50k weights/metrics/renders; new arms use the same50 test frames after selection lock.','',
         '| Model minus reference | PSNR delta | SSIM delta | LPIPS delta | MS-SSIM delta | PSNR better frames |',
         '|---|---:|---:|---:|---:|---:|']
     for c in comparisons:

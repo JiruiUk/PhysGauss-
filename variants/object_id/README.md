@@ -12,6 +12,14 @@ unchanged. No material segmentation, per-kernel stiffness or free force is added
   field frozen; shared motion is trainable. This is not a GT/pseudo-ID target.
 - O2_selfsup_ID: same initialization and motion branch, identity field trainable.
 
+O0 now **reuses the completed C1_repaired50k run**, including weights, validation
+selections, four metrics, per-view metrics and rendered images. It is never
+passed to training or GPU rendering. The duplicate control stopped safely at
+15782 and is archived separately; its partial results are not the reference.
+Only O1 and O2 enter the formal training queue. Baseline provenance and recipe,
+shared-prefix SHA, selection lock and complete image/metric exports are checked
+before the queue starts. Exports read the original C1 files without changing them.
+
 All three branch the identical full C1 random-initialization **3000-step**
 checkpoint (`6da523ea247b4068ec9bd6a7c8f83dacb7506c698daaeecc9eb0ecd93ea1ebce`).
 Each finishes at **50000 total**, not an additional50000 after a converged C1.
