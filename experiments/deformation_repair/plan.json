@@ -1,0 +1,26 @@
+{
+  "models": [
+    "D1_motion_affine",
+    "D2_covariance_continuity",
+    "D3_combined"
+  ],
+  "reference": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_integrity_tuning\\H3_combined\\rubber_duck",
+  "reference_retrained": false,
+  "total_iterations": 50000,
+  "branch_iteration": 3000,
+  "split": [
+    120,
+    30,
+    50
+  ],
+  "new_parameters": false,
+  "loss_targets": "unchanged training RGB/alpha; new terms use predicted geometry/covariance only",
+  "selection": "validation only; preserve H3 if no eligible repair",
+  "data_and_sampler_changed": false,
+  "D1": "Motion-compatible, color/persistence-gated elastic local affine regularization; weight5e-5",
+  "D2": "Curvature of trace-normalized rendered covariance and log trace; weight1e-3; h1/199; tolerance.005/.05",
+  "D3": "D1 plus D2",
+  "new_loss_start": 8000,
+  "new_loss_ramp": 4000,
+  "new_loss_interval": 20
+}

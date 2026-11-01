@@ -1,0 +1,865 @@
+{
+  "metrics": {
+    "PSNR": 40.37668075561523,
+    "SSIM": 0.9946554660797119,
+    "LPIPS": 0.01009880902711302,
+    "MS-SSIM": 0.9964431603749593
+  },
+  "integrity": {
+    "core_low_50": 0.0001793060151612781,
+    "core_low_90": 0.0008101252275341624,
+    "foreground_missing_50": 0.0026763028391354527,
+    "background_false_coverage": 0.008109228660232061,
+    "fragment_loss": 0.006118484071727709,
+    "extra_fragments": 0.0,
+    "opaque_appearance_error": 0.004929671735518317,
+    "foreground_RGB_L1": 0.009824887942522764,
+    "mask_iou": 0.9307479428035488,
+    "integrity_score": 0.0035612189160948156,
+    "worst_score": 0.013867327289124412,
+    "p95_score": 0.007596663824806107
+  },
+  "worst5_PSNR": 34.49996109008789,
+  "per_frame": [
+    {
+      "index": 0,
+      "frame": "0004",
+      "time": 0.015075377188622952,
+      "training_bracket": [
+        0.010050251256281407,
+        0.02512562814070352,
+        0.33333335351198906
+      ],
+      "metrics": {
+        "PSNR": 46.87839889526367,
+        "SSIM": 0.9985073804855347,
+        "LPIPS": 0.0019629797898232937,
+        "MS-SSIM": 0.9996125102043152
+      },
+      "integrity": {
+        "core_low_50": 0.0,
+        "core_low_90": 0.0006754299371330597,
+        "foreground_missing_50": 0.0014806251880473166,
+        "background_false_coverage": 0.0036119302551111286,
+        "fragment_loss": 0.004201036108796408,
+        "extra_fragments": 0.0,
+        "opaque_appearance_error": 0.00022961567087364805,
+        "foreground_RGB_L1": 0.00421343045309186,
+        "mask_iou": 0.9623634990041436,
+        "integrity_score": 0.0018984615830794653
+      }
+    },
+    {
+      "index": 1,
+      "frame": "0011",
+      "time": 0.05025125667452812,
+      "training_bracket": [
+        0.04522613065326633,
+        0.05527638190954774,
+        0.5000000391155479
+      ],
+      "metrics": {
+        "PSNR": 48.629554748535156,
+        "SSIM": 0.9986816048622131,
+        "LPIPS": 0.0017831746954470873,
+        "MS-SSIM": 0.9995989203453064
+      },
+      "integrity": {
+        "core_low_50": 0.0,
+        "core_low_90": 0.0005389851431353287,
+        "foreground_missing_50": 0.0014284127160474234,
+        "background_false_coverage": 0.002977200670326777,
+        "fragment_loss": 0.0037982859629347443,
+        "extra_fragments": 0.0,
+        "opaque_appearance_error": 0.0002142619074071135,
+        "foreground_RGB_L1": 0.004282178822904825,
+        "mask_iou": 0.9685051490848637,
+        "integrity_score": 0.0016784499437830919
+      }
+    },
+    {
+      "index": 2,
+      "frame": "0018",
+      "time": 0.08542713522911072,
+      "training_bracket": [
+        0.07537688442211055,
+        0.09045226130653267,
+        0.6666666368643442
+      ],
+      "metrics": {
+        "PSNR": 47.0567741394043,
+        "SSIM": 0.9984063506126404,
+        "LPIPS": 0.0027751880697906017,
+        "MS-SSIM": 0.9994797706604004
+      },
+      "integrity": {
+        "core_low_50": 0.0,
+        "core_low_90": 4.3197290665929436e-05,
+        "foreground_missing_50": 0.0013019497684107534,
+        "background_false_coverage": 0.0020940143931127485,
+        "fragment_loss": 0.00357056117182758,
+        "extra_fragments": 0.0,
+        "opaque_appearance_error": 3.156241862813947e-05,
+        "foreground_RGB_L1": 0.004705514758825302,
+        "mask_iou": 0.9774873921673115,
+        "integrity_score": 0.0012715961384419613
+      }
+    },
+    {
+      "index": 3,
+      "frame": "0024",
+      "time": 0.11557789146900177,
+      "training_bracket": [
+        0.11055276381909548,
+        0.12562814070351758,
+        0.333333467443784
+      ],
+      "metrics": {
+        "PSNR": 43.0281867980957,
+        "SSIM": 0.9970157146453857,
+        "LPIPS": 0.004591111093759537,
+        "MS-SSIM": 0.9986121654510498
+      },
+      "integrity": {
+        "core_low_50": 1.7047682367582128e-05,
+        "core_low_90": 0.00011933377657307489,
+        "foreground_missing_50": 0.002220172297878328,
+        "background_false_coverage": 0.001813911020805102,
+        "fragment_loss": 0.008272858461057131,
+        "extra_fragments": 0.0,
+        "opaque_appearance_error": 0.000555043074469582,
+        "foreground_RGB_L1": 0.006889963522553444,
+        "mask_iou": 0.9795545595481128,
+        "integrity_score": 0.0025002103756663605
+      }
+    },
+    {
+      "index": 4,
+      "frame": "0031",
+      "time": 0.15075376629829407,
+      "training_bracket": [
+        0.1457286432160804,
+        0.15577889447236182,
+        0.49999974668025965
+      ],
+      "metrics": {
+        "PSNR": 46.240570068359375,
+        "SSIM": 0.9979322552680969,
+        "LPIPS": 0.0035842275246977806,
+        "MS-SSIM": 0.9991199374198914
+      },
+      "integrity": {
+        "core_low_50": 0.0,
+        "core_low_90": 0.0003107102668749265,
+        "foreground_missing_50": 0.001340390168429599,
+        "background_false_coverage": 0.003044810724576365,
+        "fragment_loss": 0.002339813794176082,
+        "extra_fragments": 0.0,
+        "opaque_appearance_error": 0.0003599905023782351,
+        "foreground_RGB_L1": 0.006161379627883434,
+        "mask_iou": 0.9690663416229394,
+        "integrity_score": 0.0012833600437317932
+      }
+    },
+    {
+      "index": 5,
+      "frame": "0038",
+      "time": 0.18592964112758636,
+      "training_bracket": [
+        0.17587939698492464,
+        0.19095477386934673,
+        0.6666661947965622
+      ],
+      "metrics": {
+        "PSNR": 41.97423553466797,
+        "SSIM": 0.9961474537849426,
+        "LPIPS": 0.005093136336654425,
+        "MS-SSIM": 0.9980182647705078
+      },
+      "integrity": {
+        "core_low_50": 0.0,
+        "core_low_90": 0.0004334137465756225,
+        "foreground_missing_50": 0.0009090705870956685,
+        "background_false_coverage": 0.005800289018890379,
+        "fragment_loss": 0.0028385463922188103,
+        "extra_fragments": 0.0,
+        "opaque_appearance_error": 0.003718247729186382,
+        "foreground_RGB_L1": 0.008278865367174149,
+        "mask_iou": 0.9457175705509356,
+        "integrity_score": 0.0019418667859843856
+      }
+    },
+    {
+      "index": 6,
+      "frame": "0044",
+      "time": 0.21608039736747742,
+      "training_bracket": [
+        0.21105527638190955,
+        0.22613065326633167,
+        0.3333330253760019
+      ],
+      "metrics": {
+        "PSNR": 40.62137222290039,
+        "SSIM": 0.9954659342765808,
+        "LPIPS": 0.007117812056094408,
+        "MS-SSIM": 0.997635543346405
+      },
+      "integrity": {
+        "core_low_50": 3.9783577339274344e-05,
+        "core_low_90": 0.0008195416931890515,
+        "foreground_missing_50": 0.001949317738791423,
+        "background_false_coverage": 0.009287409905137442,
+        "fragment_loss": 0.0019493177387914784,
+        "extra_fragments": 0.0,
+        "opaque_appearance_error": 0.005666113875069099,
+        "foreground_RGB_L1": 0.009536721743643284,
+        "mask_iou": 0.9173357578836885,
+        "integrity_score": 0.002741339122411879
+      }
+    },
+    {
+      "index": 7,
+      "frame": "0051",
+      "time": 0.2512562870979309,
+      "training_bracket": [
+        0.24623115577889448,
+        0.2562814070351759,
+        0.5000005662441248
+      ],
+      "metrics": {
+        "PSNR": 39.06713104248047,
+        "SSIM": 0.9945864677429199,
+        "LPIPS": 0.008688533678650856,
+        "MS-SSIM": 0.9967231750488281
+      },
+      "integrity": {
+        "core_low_50": 0.0,
+        "core_low_90": 0.00016041187658979628,
+        "foreground_missing_50": 0.0011909819681151144,
+        "background_false_coverage": 0.01149086600726153,
+        "fragment_loss": 0.001190981968115068,
+        "extra_fragments": 0.0,
+        "opaque_appearance_error": 0.00699266605840687,
+        "foreground_RGB_L1": 0.010952247306704521,
+        "mask_iou": 0.904919356874227,
+        "integrity_score": 0.002456480436684041
+      }
+    },
+    {
+      "index": 8,
+      "frame": "0058",
+      "time": 0.286432147026062,
+      "training_bracket": [
+        0.27638190954773867,
+        0.2914572864321608,
+        0.6666657527287813
+      ],
+      "metrics": {
+        "PSNR": 39.21064758300781,
+        "SSIM": 0.9945643544197083,
+        "LPIPS": 0.009081000462174416,
+        "MS-SSIM": 0.9968929290771484
+      },
+      "integrity": {
+        "core_low_50": 0.0,
+        "core_low_90": 9.689778029546369e-05,
+        "foreground_missing_50": 0.0027429281771688386,
+        "background_false_coverage": 0.009850748810162362,
+        "fragment_loss": 0.009585384312112496,
+        "extra_fragments": 0.0,
+        "opaque_appearance_error": 0.006688420924623523,
+        "foreground_RGB_L1": 0.010648497380316257,
+        "mask_iou": 0.9182986612253023,
+        "integrity_score": 0.004300329881326256
+      }
+    },
+    {
+      "index": 9,
+      "frame": "0064",
+      "time": 0.31658291816711426,
+      "training_bracket": [
+        0.31155778894472363,
+        0.32663316582914576,
+        0.3333335717519111
+      ],
+      "metrics": {
+        "PSNR": 39.12065887451172,
+        "SSIM": 0.9942004680633545,
+        "LPIPS": 0.011514831334352493,
+        "MS-SSIM": 0.996882438659668
+      },
+      "integrity": {
+        "core_low_50": 0.0,
+        "core_low_90": 7.536817352768273e-06,
+        "foreground_missing_50": 0.0019996451141776886,
+        "background_false_coverage": 0.008751625467539355,
+        "fragment_loss": 0.0071966938740126345,
+        "extra_fragments": 0.0,
+        "opaque_appearance_error": 0.00469541241827389,
+        "foreground_RGB_L1": 0.010150047019124031,
+        "mask_iou": 0.9264282908657806,
+        "integrity_score": 0.0032873454097370196
+      }
+    },
+    {
+      "index": 10,
+      "frame": "0071",
+      "time": 0.35175880789756775,
+      "training_bracket": [
+        0.34673366834170855,
+        0.35678391959798994,
+        0.5000013858079914
+      ],
+      "metrics": {
+        "PSNR": 39.03913116455078,
+        "SSIM": 0.9941838979721069,
+        "LPIPS": 0.012203852646052837,
+        "MS-SSIM": 0.9969543218612671
+      },
+      "integrity": {
+        "core_low_50": 0.0,
+        "core_low_90": 0.0011174398212096285,
+        "foreground_missing_50": 0.0033896646678128624,
+        "background_false_coverage": 0.009980584740130062,
+        "fragment_loss": 0.00713896322613398,
+        "extra_fragments": 0.0,
+        "opaque_appearance_error": 0.0027955997260312266,
+        "foreground_RGB_L1": 0.010292899794876575,
+        "mask_iou": 0.9139310114980836,
+        "integrity_score": 0.004055675178340473
+      }
+    },
+    {
+      "index": 11,
+      "frame": "0078",
+      "time": 0.38693466782569885,
+      "training_bracket": [
+        0.3768844221105528,
+        0.39195979899497485,
+        0.6666662991046911
+      ],
+      "metrics": {
+        "PSNR": 32.465919494628906,
+        "SSIM": 0.9889796376228333,
+        "LPIPS": 0.018865646794438362,
+        "MS-SSIM": 0.9901730418205261
+      },
+      "integrity": {
+        "core_low_50": 0.0,
+        "core_low_90": 0.00043163827084079877,
+        "foreground_missing_50": 0.0045305740675786275,
+        "background_false_coverage": 0.009967371419450685,
+        "fragment_loss": 0.016638354045970433,
+        "extra_fragments": 0.0,
+        "opaque_appearance_error": 0.02092832924120192,
+        "foreground_RGB_L1": 0.019057849422097206,
+        "mask_iou": 0.9091746364382629,
+        "integrity_score": 0.007744121614032364
+      }
+    },
+    {
+      "index": 12,
+      "frame": "0084",
+      "time": 0.4170854389667511,
+      "training_bracket": [
+        0.4120603015075377,
+        0.4271356783919598,
+        0.33333411812782215
+      ],
+      "metrics": {
+        "PSNR": 29.910785675048828,
+        "SSIM": 0.9859208464622498,
+        "LPIPS": 0.023901183158159256,
+        "MS-SSIM": 0.9843602180480957
+      },
+      "integrity": {
+        "core_low_50": 0.005056760427432925,
+        "core_low_90": 0.009635178652270844,
+        "foreground_missing_50": 0.011345577898661452,
+        "background_false_coverage": 0.009872340945618098,
+        "fragment_loss": 0.010493378671177575,
+        "extra_fragments": 0.0,
+        "opaque_appearance_error": 0.03609192592139845,
+        "foreground_RGB_L1": 0.030857469886541367,
+        "mask_iou": 0.8998066920702028,
+        "integrity_score": 0.013867327289124412
+      }
+    },
+    {
+      "index": 13,
+      "frame": "0091",
+      "time": 0.4522612988948822,
+      "training_bracket": [
+        0.4472361809045226,
+        0.457286432160804,
+        0.49999924004078034
+      ],
+      "metrics": {
+        "PSNR": 38.345909118652344,
+        "SSIM": 0.992807149887085,
+        "LPIPS": 0.01586024835705757,
+        "MS-SSIM": 0.9950046539306641
+      },
+      "integrity": {
+        "core_low_50": 0.0,
+        "core_low_90": 0.0001949776994256282,
+        "foreground_missing_50": 0.002376075976122623,
+        "background_false_coverage": 0.011608851403785234,
+        "fragment_loss": 0.006228160965969269,
+        "extra_fragments": 0.0,
+        "opaque_appearance_error": 0.005167600819236011,
+        "foreground_RGB_L1": 0.012965884990990162,
+        "mask_iou": 0.8985721319547021,
+        "integrity_score": 0.0036050363742681666
+      }
+    },
+    {
+      "index": 14,
+      "frame": "0098",
+      "time": 0.4874371886253357,
+      "training_bracket": [
+        0.47738693467336685,
+        0.49246231155778897,
+        0.6666668454805997
+      ],
+      "metrics": {
+        "PSNR": 37.21503829956055,
+        "SSIM": 0.9913092255592346,
+        "LPIPS": 0.018376408144831657,
+        "MS-SSIM": 0.9934916496276855
+      },
+      "integrity": {
+        "core_low_50": 0.0,
+        "core_low_90": 0.0011589886864283193,
+        "foreground_missing_50": 0.0027594961160092167,
+        "background_false_coverage": 0.018576174128177688,
+        "fragment_loss": 0.007442171528961465,
+        "extra_fragments": 0.0,
+        "opaque_appearance_error": 0.008471653076148295,
+        "foreground_RGB_L1": 0.012928584590554237,
+        "mask_iou": 0.8552934424386578,
+        "integrity_score": 0.005404635964119939
+      }
+    },
+    {
+      "index": 15,
+      "frame": "0104",
+      "time": 0.5175879597663879,
+      "training_bracket": [
+        0.5125628140703518,
+        0.5276381909547738,
+        0.3333346645037344
+      ],
+      "metrics": {
+        "PSNR": 35.25318145751953,
+        "SSIM": 0.9902648329734802,
+        "LPIPS": 0.020044222474098206,
+        "MS-SSIM": 0.9920310378074646
+      },
+      "integrity": {
+        "core_low_50": 0.00015655985805239537,
+        "core_low_90": 0.0026391518928832363,
+        "foreground_missing_50": 0.004133562379214087,
+        "background_false_coverage": 0.018801279032298043,
+        "fragment_loss": 0.009141459920960965,
+        "extra_fragments": 0.0,
+        "opaque_appearance_error": 0.014870088039510414,
+        "foreground_RGB_L1": 0.016329195350408554,
+        "mask_iou": 0.8563844520358231,
+        "integrity_score": 0.007416437637974017
+      }
+    },
+    {
+      "index": 16,
+      "frame": "0111",
+      "time": 0.552763819694519,
+      "training_bracket": [
+        0.5477386934673367,
+        0.5577889447236181,
+        0.5000000596046441
+      ],
+      "metrics": {
+        "PSNR": 39.93540954589844,
+        "SSIM": 0.9940258264541626,
+        "LPIPS": 0.015037501230835915,
+        "MS-SSIM": 0.9945671558380127
+      },
+      "integrity": {
+        "core_low_50": 7.340149885860669e-06,
+        "core_low_90": 0.0015487716259166013,
+        "foreground_missing_50": 0.0024586425913564174,
+        "background_false_coverage": 0.015055517317104021,
+        "fragment_loss": 0.005313408602921029,
+        "extra_fragments": 0.0,
+        "opaque_appearance_error": 0.0024586425913564174,
+        "foreground_RGB_L1": 0.00938287004828453,
+        "mask_iou": 0.8841627368852699,
+        "integrity_score": 0.004125705590931825
+      }
+    },
+    {
+      "index": 17,
+      "frame": "0118",
+      "time": 0.5879396796226501,
+      "training_bracket": [
+        0.5778894472361809,
+        0.592964824120603,
+        0.6666654149691269
+      ],
+      "metrics": {
+        "PSNR": 37.65488052368164,
+        "SSIM": 0.9931798577308655,
+        "LPIPS": 0.013042903505265713,
+        "MS-SSIM": 0.9951126575469971
+      },
+      "integrity": {
+        "core_low_50": 0.00010168875976030506,
+        "core_low_90": 0.0023969493372071908,
+        "foreground_missing_50": 0.00234542838559631,
+        "background_false_coverage": 0.010482307272387014,
+        "fragment_loss": 0.0018059137013017867,
+        "extra_fragments": 0.0,
+        "opaque_appearance_error": 0.005538364507164397,
+        "foreground_RGB_L1": 0.011101068928837776,
+        "mask_iou": 0.9163840444149418,
+        "integrity_score": 0.0036282342163578116
+      }
+    },
+    {
+      "index": 18,
+      "frame": "0124",
+      "time": 0.6180904507637024,
+      "training_bracket": [
+        0.6130653266331658,
+        0.628140703517588,
+        0.33333323399225795
+      ],
+      "metrics": {
+        "PSNR": 38.5949821472168,
+        "SSIM": 0.993258535861969,
+        "LPIPS": 0.012307878583669662,
+        "MS-SSIM": 0.9958442449569702
+      },
+      "integrity": {
+        "core_low_50": 0.0,
+        "core_low_90": 0.0002930596156523141,
+        "foreground_missing_50": 0.003731762250417759,
+        "background_false_coverage": 0.008720336924577661,
+        "fragment_loss": 0.002855806883811318,
+        "extra_fragments": 0.0,
+        "opaque_appearance_error": 0.0033486786919677946,
+        "foreground_RGB_L1": 0.011230428703129292,
+        "mask_iou": 0.92743482538121,
+        "integrity_score": 0.0028428803280647905
+      }
+    },
+    {
+      "index": 19,
+      "frame": "0131",
+      "time": 0.6532663106918335,
+      "training_bracket": [
+        0.6482412060301508,
+        0.6582914572864321,
+        0.4999979138374331
+      ],
+      "metrics": {
+        "PSNR": 39.89639663696289,
+        "SSIM": 0.9944673776626587,
+        "LPIPS": 0.011734094470739365,
+        "MS-SSIM": 0.9968001246452332
+      },
+      "integrity": {
+        "core_low_50": 0.0,
+        "core_low_90": 0.00016298710920136317,
+        "foreground_missing_50": 0.002423831912237363,
+        "background_false_coverage": 0.0082812941092529,
+        "fragment_loss": 0.005123349887919663,
+        "extra_fragments": 0.0,
+        "opaque_appearance_error": 0.0032339894281084814,
+        "foreground_RGB_L1": 0.010199720971286297,
+        "mask_iou": 0.9315230736795108,
+        "integrity_score": 0.002855500508520025
+      }
+    },
+    {
+      "index": 20,
+      "frame": "0138",
+      "time": 0.6884422302246094,
+      "training_bracket": [
+        0.678391959798995,
+        0.6934673366834171,
+        0.6666679382324205
+      ],
+      "metrics": {
+        "PSNR": 38.7685432434082,
+        "SSIM": 0.993627667427063,
+        "LPIPS": 0.01270317006856203,
+        "MS-SSIM": 0.9958118796348572
+      },
+      "integrity": {
+        "core_low_50": 0.0,
+        "core_low_90": 0.0001668195846192343,
+        "foreground_missing_50": 0.0031117512773127516,
+        "background_false_coverage": 0.010334804024702665,
+        "fragment_loss": 0.009184707069318149,
+        "extra_fragments": 0.0,
+        "opaque_appearance_error": 0.0022828568322643765,
+        "foreground_RGB_L1": 0.009609491564333439,
+        "mask_iou": 0.9139244448596967,
+        "integrity_score": 0.003951714131967177
+      }
+    },
+    {
+      "index": 21,
+      "frame": "0144",
+      "time": 0.7185929417610168,
+      "training_bracket": [
+        0.7135678391959799,
+        0.7286432160804021,
+        0.3333318034807839
+      ],
+      "metrics": {
+        "PSNR": 38.49675750732422,
+        "SSIM": 0.993619441986084,
+        "LPIPS": 0.013622375205159187,
+        "MS-SSIM": 0.9961218237876892
+      },
+      "integrity": {
+        "core_low_50": 0.0,
+        "core_low_90": 1.5604884328794914e-05,
+        "foreground_missing_50": 0.004692665433966493,
+        "background_false_coverage": 0.009116390076039297,
+        "fragment_loss": 0.011505850894944769,
+        "extra_fragments": 0.0,
+        "opaque_appearance_error": 0.0037121084776152854,
+        "foreground_RGB_L1": 0.010699204169213772,
+        "mask_iou": 0.9191731025471856,
+        "integrity_score": 0.0047642085907939925
+      }
+    },
+    {
+      "index": 22,
+      "frame": "0151",
+      "time": 0.7537688612937927,
+      "training_bracket": [
+        0.7487437185929648,
+        0.7587939698492462,
+        0.5000016987323772
+      ],
+      "metrics": {
+        "PSNR": 38.41407775878906,
+        "SSIM": 0.9944794178009033,
+        "LPIPS": 0.011361708864569664,
+        "MS-SSIM": 0.9963266849517822
+      },
+      "integrity": {
+        "core_low_50": 0.0,
+        "core_low_90": 0.00012603387160299332,
+        "foreground_missing_50": 0.002274950036144066,
+        "background_false_coverage": 0.007482496701049659,
+        "fragment_loss": 0.00476741993420086,
+        "extra_fragments": 0.0,
+        "opaque_appearance_error": 0.0022466017490893114,
+        "foreground_RGB_L1": 0.008736878633499146,
+        "mask_iou": 0.9334310208790553,
+        "integrity_score": 0.0025518465831114324
+      }
+    },
+    {
+      "index": 23,
+      "frame": "0158",
+      "time": 0.7889447212219238,
+      "training_bracket": [
+        0.7788944723618091,
+        0.7939698492462312,
+        0.6666665077209465
+      ],
+      "metrics": {
+        "PSNR": 37.86248016357422,
+        "SSIM": 0.9946938753128052,
+        "LPIPS": 0.009759005159139633,
+        "MS-SSIM": 0.9966794848442078
+      },
+      "integrity": {
+        "core_low_50": 0.0,
+        "core_low_90": 0.0008911012782694198,
+        "foreground_missing_50": 0.0024289144620750266,
+        "background_false_coverage": 0.005451986930052003,
+        "fragment_loss": 0.0047251406211050355,
+        "extra_fragments": 0.0,
+        "opaque_appearance_error": 0.0020967552193980996,
+        "foreground_RGB_L1": 0.008067109622061253,
+        "mask_iou": 0.951085952550603,
+        "integrity_score": 0.002708126529906013
+      }
+    },
+    {
+      "index": 24,
+      "frame": "0164",
+      "time": 0.8190954923629761,
+      "training_bracket": [
+        0.8140703517587939,
+        0.8291457286432161,
+        0.33333432674408
+      ],
+      "metrics": {
+        "PSNR": 42.13773727416992,
+        "SSIM": 0.9961361289024353,
+        "LPIPS": 0.00744972936809063,
+        "MS-SSIM": 0.998193621635437
+      },
+      "integrity": {
+        "core_low_50": 0.0,
+        "core_low_90": 0.0002984517813840701,
+        "foreground_missing_50": 0.002004318027428218,
+        "background_false_coverage": 0.004789668873967046,
+        "fragment_loss": 0.004300354129371131,
+        "extra_fragments": 0.0,
+        "opaque_appearance_error": 0.000901270522400608,
+        "foreground_RGB_L1": 0.00715364096686244,
+        "mask_iou": 0.9581374625477839,
+        "integrity_score": 0.0020645475739908777
+      }
+    },
+    {
+      "index": 25,
+      "frame": "0171",
+      "time": 0.8542713522911072,
+      "training_bracket": [
+        0.8492462311557789,
+        0.8592964824120602,
+        0.4999995529651662
+      ],
+      "metrics": {
+        "PSNR": 44.1797981262207,
+        "SSIM": 0.9967754483222961,
+        "LPIPS": 0.006688956171274185,
+        "MS-SSIM": 0.9986018538475037
+      },
+      "integrity": {
+        "core_low_50": 0.0,
+        "core_low_90": 0.0,
+        "foreground_missing_50": 0.0016303668982927165,
+        "background_false_coverage": 0.005189896318543475,
+        "fragment_loss": 0.005352380005894358,
+        "extra_fragments": 0.0,
+        "opaque_appearance_error": 0.0006968503678186611,
+        "foreground_RGB_L1": 0.006246758624911308,
+        "mask_iou": 0.956346782369944,
+        "integrity_score": 0.0020667423943882646
+      }
+    },
+    {
+      "index": 26,
+      "frame": "0178",
+      "time": 0.8894472122192383,
+      "training_bracket": [
+        0.8793969849246231,
+        0.8944723618090452,
+        0.6666650772094725
+      ],
+      "metrics": {
+        "PSNR": 40.61756134033203,
+        "SSIM": 0.9959122538566589,
+        "LPIPS": 0.0071801841259002686,
+        "MS-SSIM": 0.9980337023735046
+      },
+      "integrity": {
+        "core_low_50": 0.0,
+        "core_low_90": 0.0,
+        "foreground_missing_50": 0.0023601223383962807,
+        "background_false_coverage": 0.004635324157601021,
+        "fragment_loss": 0.007214155021912194,
+        "extra_fragments": 0.0,
+        "opaque_appearance_error": 0.002243732743626053,
+        "foreground_RGB_L1": 0.007286868058145046,
+        "mask_iou": 0.9606315881228559,
+        "integrity_score": 0.0027207672791042165
+      }
+    },
+    {
+      "index": 27,
+      "frame": "0184",
+      "time": 0.9195979833602905,
+      "training_bracket": [
+        0.914572864321608,
+        0.9296482412060302,
+        0.333332896232606
+      ],
+      "metrics": {
+        "PSNR": 42.746925354003906,
+        "SSIM": 0.9964303374290466,
+        "LPIPS": 0.006162986159324646,
+        "MS-SSIM": 0.9986724257469177
+      },
+      "integrity": {
+        "core_low_50": 0.0,
+        "core_low_90": 7.064242218737196e-06,
+        "foreground_missing_50": 0.002494100493064482,
+        "background_false_coverage": 0.0050653186157080966,
+        "fragment_loss": 0.007862287981406063,
+        "extra_fragments": 0.0,
+        "opaque_appearance_error": 0.0005883519111844419,
+        "foreground_RGB_L1": 0.006225086282938719,
+        "mask_iou": 0.9576843023005938,
+        "integrity_score": 0.0027645286812350185
+      }
+    },
+    {
+      "index": 28,
+      "frame": "0191",
+      "time": 0.9547738432884216,
+      "training_bracket": [
+        0.949748743718593,
+        0.9597989949748744,
+        0.49999740719794966
+      ],
+      "metrics": {
+        "PSNR": 44.38958740234375,
+        "SSIM": 0.9971626996994019,
+        "LPIPS": 0.0049041081219911575,
+        "MS-SSIM": 0.9990167021751404
+      },
+      "integrity": {
+        "core_low_50": 0.0,
+        "core_low_90": 0.0,
+        "foreground_missing_50": 0.0013474506999080413,
+        "background_false_coverage": 0.005394231608342787,
+        "fragment_loss": 0.004849054598957903,
+        "extra_fragments": 0.0,
+        "opaque_appearance_error": 0.000561969960151221,
+        "foreground_RGB_L1": 0.005144346505403519,
+        "mask_iou": 0.9563709751398954,
+        "integrity_score": 0.0019022937516179916
+      }
+    },
+    {
+      "index": 29,
+      "frame": "0198",
+      "time": 0.9899497628211975,
+      "training_bracket": [
+        0.9798994974874372,
+        0.9949748743718593,
+        0.6666676004727686
+      ],
+      "metrics": {
+        "PSNR": 43.54779052734375,
+        "SSIM": 0.9969215393066406,
+        "LPIPS": 0.0055661131627857685,
+        "MS-SSIM": 0.9989218711853027
+      },
+      "integrity": {
+        "core_low_50": 0.0,
+        "core_low_90": 1.408014418067641e-05,
+        "foreground_missing_50": 0.0018863355383066315,
+        "background_false_coverage": 0.0057478789352512155,
+        "fragment_loss": 0.00666872467555088,
+        "extra_fragments": 0.0,
+        "opaque_appearance_error": 0.0005034476605615672,
+        "foreground_RGB_L1": 0.005412435159087181,
+        "mask_iou": 0.9533090271648823,
+        "integrity_score": 0.002436797544149417
+      }
+    }
+  ]
+}
