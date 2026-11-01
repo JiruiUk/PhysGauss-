@@ -1,0 +1,20 @@
+{
+  "pid": 138416,
+  "started_utc": "2026-11-01T05:57:37.522024+00:00",
+  "stdout": "F:\\A_Edinburgh\\PhysGauss\\experiments\\integrity_continuation\\queue_20261101_055737.stdout.log",
+  "stderr": "F:\\A_Edinburgh\\PhysGauss\\experiments\\integrity_continuation\\queue_20261101_055737.stderr.log",
+  "budget_reused": true,
+  "jobs": [
+    "H1_balanced_coverage",
+    "H4_color_density",
+    "F1_feedback",
+    "F2_conservative_retry"
+  ],
+  "resume_iteration_each": 20000,
+  "target_total_each": 50000,
+  "reused": [
+    "C1",
+    "H2",
+    "H3"
+  ]
+}

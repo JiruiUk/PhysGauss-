@@ -1,0 +1,64 @@
+{
+  "jobs": [
+    {
+      "id": "H1_balanced_coverage",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_integrity_tuning\\H1_balanced_coverage\\rubber_duck",
+      "repo": "F:\\A_Edinburgh\\PhysGauss\\variants\\integrity_tuning\\code",
+      "start": {
+        "iteration": 20000,
+        "sha256": "d0825dbf2597e907eda0535303495e9fb3036b238d1087b822d058ef9c615401",
+        "config_sha256": "bb83a47c7b0d6daf492767363cea9074121cc9fca346717e5de1c4bd5ea2b8ef",
+        "model_config_sha256": "52eeedbbc65c858007831a57cc04d3c0364de5e28e78a2fa276c641cc7feb008",
+        "needs_training": true
+      }
+    },
+    {
+      "id": "H4_color_density",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_integrity_tuning\\H4_color_density\\rubber_duck",
+      "repo": "F:\\A_Edinburgh\\PhysGauss\\variants\\integrity_tuning\\code",
+      "start": {
+        "iteration": 20000,
+        "sha256": "3e7ecf7a8508ea310ab9536edd446f45446af7ff80ce26cd24538d8f58b51bbb",
+        "config_sha256": "77b2f7d296c6691ca64309ddbec821cc9dd0dd9cb6a969e0d65bc6eaef7ad56f",
+        "model_config_sha256": "52eeedbbc65c858007831a57cc04d3c0364de5e28e78a2fa276c641cc7feb008",
+        "needs_training": true
+      }
+    },
+    {
+      "id": "F1_feedback",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_integrity_feedback\\F1_feedback\\rubber_duck",
+      "repo": "F:\\A_Edinburgh\\PhysGauss\\variants\\integrity_feedback\\code",
+      "start": {
+        "iteration": 20000,
+        "sha256": "e9f2930e1743aea0ae25dda12379430547cf47e98233df726584169531806b99",
+        "config_sha256": "0d486d3fab58d5d9edabd7496c6c1b2c73b63e876980f28b0d594a2844dc680b",
+        "model_config_sha256": "52eeedbbc65c858007831a57cc04d3c0364de5e28e78a2fa276c641cc7feb008",
+        "needs_training": true
+      }
+    },
+    {
+      "id": "F2_conservative_retry",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_integrity_feedback\\F2_conservative_retry\\rubber_duck",
+      "repo": "F:\\A_Edinburgh\\PhysGauss\\variants\\integrity_feedback\\code",
+      "start": {
+        "iteration": 20000,
+        "sha256": "9105e0703de59c5be681b07e3ce67eeab486abe5e1b58ac2cce64a18677ae967",
+        "config_sha256": "142da300f6f29c74dc40af90bd2b2345468c6974a2b93acebc2c76e8d29b086e",
+        "model_config_sha256": "52eeedbbc65c858007831a57cc04d3c0364de5e28e78a2fa276c641cc7feb008",
+        "needs_training": true
+      }
+    }
+  ],
+  "target_total": 50000,
+  "reused": {
+    "C1_reused": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_color_repair\\C1_repaired\\rubber_duck",
+    "H2_temporal_cohesion": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_integrity_tuning\\H2_temporal_cohesion\\rubber_duck",
+    "H3_combined": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_integrity_tuning\\H3_combined\\rubber_duck"
+  },
+  "user_overrode_pilot_filter": true,
+  "split": [
+    120,
+    30,
+    50
+  ]
+}
