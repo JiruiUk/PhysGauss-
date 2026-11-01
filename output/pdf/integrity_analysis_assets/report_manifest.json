@@ -1,0 +1,104 @@
+{
+  "pdf": "F:\\A_Edinburgh\\PhysGauss\\output\\pdf\\PIDG_Completeness_Technical_Analysis_CN.pdf",
+  "pages": [
+    {
+      "page": 1,
+      "title": "PIDG 已训练模型技术分析",
+      "content_bottom": 320.89
+    },
+    {
+      "page": 2,
+      "title": "比较是否公平：先固定口径",
+      "content_bottom": 361.39
+    },
+    {
+      "page": 3,
+      "title": "C1 是什么：共同网络与新增项",
+      "content_bottom": 225.39
+    },
+    {
+      "page": 4,
+      "title": "H1 / H2：二维覆盖与运动连续性",
+      "content_bottom": 347.89
+    },
+    {
+      "page": 5,
+      "title": "H4 / F1 / F2：为什么更复杂未必更好",
+      "content_bottom": 348.89
+    },
+    {
+      "page": 6,
+      "title": "四项图像指标：H3 同时占优",
+      "content_bottom": 144.89
+    },
+    {
+      "page": 7,
+      "title": "“完整度”测量的到底是什么",
+      "content_bottom": 325.39
+    },
+    {
+      "page": 8,
+      "title": "完整度收益与单项取舍",
+      "content_bottom": 199.39
+    },
+    {
+      "page": 9,
+      "title": "按原始帧号分析，而非按 PSNR 排序",
+      "content_bottom": 205.89
+    },
+    {
+      "page": 10,
+      "title": "GT 与渲染：同时展示收益和失败",
+      "content_bottom": 213.89
+    },
+    {
+      "page": 11,
+      "title": "短实验排名不能替代最终验证",
+      "content_bottom": 225.39
+    },
+    {
+      "page": 12,
+      "title": "ObjectID：模块被使用，但未带来收益",
+      "content_bottom": 226.89
+    },
+    {
+      "page": 13,
+      "title": "已有其他模块提供了什么线索",
+      "content_bottom": 356.39
+    },
+    {
+      "page": 14,
+      "title": "为什么 H3 更好，下一步该改什么",
+      "content_bottom": 377.89
+    },
+    {
+      "page": 15,
+      "title": "报告、模型与 render 的绝对地址",
+      "content_bottom": 282.89
+    }
+  ],
+  "source_data_sha256": "2d31541693340edcc7822aa01d05836826b7479991006a1513492bc652706690",
+  "generated": "2026-11-01T09:38:03.597574+00:00",
+  "scope": [
+    "C1_reused",
+    "H1_balanced_coverage",
+    "H2_temporal_cohesion",
+    "H3_combined",
+    "H4_color_density",
+    "F1_feedback",
+    "F2_conservative_retry",
+    "O1_frozen_ID",
+    "O2_selfsup_ID"
+  ],
+  "context_models": [
+    "C2_repaired",
+    "C3_repaired",
+    "P0_C1_control",
+    "P1_fixed_E",
+    "P2_learn_E",
+    "G0_control",
+    "G1_centroid",
+    "V3_scratch_control",
+    "V3_scratch_iso_1e3"
+  ]
+}
