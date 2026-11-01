@@ -1,0 +1,21 @@
+{
+  "enabled": true,
+  "source_run": "runs/pidg_integrity_tuning/H3_combined/rubber_duck",
+  "output_run": "runs/pidg_frozen_velocity_probe/H3_final_20261101",
+  "seed": 17,
+  "train_particles": 2048,
+  "heldout_particles": 512,
+  "minimum_opacity": 0.05,
+  "derivative_h": 0.001,
+  "overfit_particles": 128,
+  "overfit_times": 8,
+  "overfit_steps": 4000,
+  "general_steps": 12000,
+  "batch_size": 4096,
+  "evaluation_interval": 1000,
+  "arms": [
+    {"name": "B1_pretrained_lr1e-3", "initialization": "pretrained", "lr": 0.001, "seed": 17},
+    {"name": "B2_pretrained_lr3e-4", "initialization": "pretrained", "lr": 0.0003, "seed": 17},
+    {"name": "B3_scratch_lr1e-3", "initialization": "scratch", "lr": 0.001, "seed": 19}
+  ]
+}

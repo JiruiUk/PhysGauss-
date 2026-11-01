@@ -299,3 +299,23 @@ total50k per arm, validation-only selection and locked final testing. Reports
 and new runs are isolated in `experiments/object_id` and `runs/pidg_object_id`.
 This is a custom paper-inspired reconstruction ablation, not physical instance
 ground truth, material segmentation or guaranteed nonpenetration.
+
+## Frozen trajectory / velocity-only diagnostic (standalone, 2026-11-01)
+
+`variants/frozen_velocity_probe/run.py::{export,train}` reads the H3 final50k
+PLY/material/deformation snapshot, caches detached derivatives of the full
+rendered center using `variants/kinematic_tuning/model.py`, and fits diagnostic
+copies of the existing PIDG VelocityNet. No original training hook is changed.
+Canonical coordinates and deformation/grid states stay frozen; the only fit
+objective is velocity MSE, without momentum, force, image or constitutive loss.
+`core.py` partitions cloned particle-ID families before selecting held-out
+Gaussian rows, freezes the unused stress-head parameters, and reports amplitude,
+direction and RMS alignment. Shared-feature updates can alter unused stress
+outputs, so these velocity-only copies are not drop-in production stress models.
+`report.py` and `collisions.py` inspect fitting/generalization and scalar-time
+encoding aliases; the latter is a post-hoc frozen-teacher mechanism check.
+`clock.py::apply_clock` defaults to a legacy no-op; its opt-in fixed monotonic
+clock is tested in `time_control.py` with the same cached labels and fit budget.
+Config/protocol/results live in `experiments/frozen_velocity_probe`; cached
+targets and independent velocity checkpoints in `runs/pidg_frozen_velocity_probe`.
+Disabled execution exits without model imports, checkpoint access or optimization.

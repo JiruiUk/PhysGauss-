@@ -1,0 +1,76 @@
+{
+  "post_hoc": true,
+  "points": 256,
+  "results": {
+    "source": {
+      "found_fold_collision": true,
+      "t1": 0.006670610031600108,
+      "t2": 0.7883800629939401,
+      "encoded_time_1": 0.3338364362716675,
+      "encoded_time_2": 0.3338363468647003,
+      "encoded_time_absolute_difference": 8.940696716308594e-08,
+      "predicted_vector_difference_rms": 3.536005710458312e-09,
+      "target_vector_difference_rms": 1.706799864768982,
+      "target_rms_1": 0.8495383262634277,
+      "target_rms_2": 1.5025665760040283,
+      "exact_shared_output_pair_relative_rmse_lower_bound": 0.6992003321647644
+    },
+    "A_small_overfit": {
+      "found_fold_collision": true,
+      "t1": 0.01851071606845467,
+      "t2": 0.7575672080256484,
+      "encoded_time_1": 0.4164206087589264,
+      "encoded_time_2": 0.4164206087589264,
+      "encoded_time_absolute_difference": 0.0,
+      "predicted_vector_difference_rms": 0.0,
+      "target_vector_difference_rms": 1.4599429368972778,
+      "target_rms_1": 0.5013372898101807,
+      "target_rms_2": 1.4072020053863525,
+      "exact_shared_output_pair_relative_rmse_lower_bound": 0.6910619139671326
+    },
+    "B1_pretrained_lr1e-3": {
+      "found_fold_collision": true,
+      "t1": 0.03880252931018226,
+      "t2": 0.7951999974762747,
+      "encoded_time_1": 0.3008882999420166,
+      "encoded_time_2": 0.3008883595466614,
+      "encoded_time_absolute_difference": 5.960464477539063e-08,
+      "predicted_vector_difference_rms": 1.3841686268278863e-05,
+      "target_vector_difference_rms": 1.2848960161209106,
+      "target_rms_1": 0.6158841848373413,
+      "target_rms_2": 1.4421199560165405,
+      "exact_shared_output_pair_relative_rmse_lower_bound": 0.5793908834457397
+    },
+    "B2_pretrained_lr3e-4": {
+      "found_fold_collision": true,
+      "t1": 0.09736277387772176,
+      "t2": 0.7975096569362243,
+      "encoded_time_1": 0.35899531841278076,
+      "encoded_time_2": 0.35899531841278076,
+      "encoded_time_absolute_difference": 0.0,
+      "predicted_vector_difference_rms": 0.0,
+      "target_vector_difference_rms": 1.3217923641204834,
+      "target_rms_1": 0.8818489909172058,
+      "target_rms_2": 1.4232631921768188,
+      "exact_shared_output_pair_relative_rmse_lower_bound": 0.5582268238067627
+    },
+    "B3_scratch_lr1e-3": {
+      "found_fold_collision": true,
+      "t1": 0.0038773517226345124,
+      "t2": 0.9449121748450287,
+      "encoded_time_1": -0.14631307125091553,
+      "encoded_time_2": -0.1463129222393036,
+      "encoded_time_absolute_difference": 1.4901161193847656e-07,
+      "predicted_vector_difference_rms": 3.3810783861554228e-06,
+      "target_vector_difference_rms": 1.1544435024261475,
+      "target_rms_1": 0.9128754138946533,
+      "target_rms_2": 0.8935011625289917,
+      "exact_shared_output_pair_relative_rmse_lower_bound": 0.6390567421913147
+    },
+    "C1_fixed_monotonic_lr1e-3": {
+      "found_fold_collision": false
+    }
+  },
+  "limitation": "Paired continuous-time queries, not a global bound on fitted training samples; not physical velocity GT.",
+  "teacher_unchanged": true
+}

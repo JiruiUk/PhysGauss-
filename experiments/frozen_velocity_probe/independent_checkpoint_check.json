@@ -1,0 +1,27 @@
+{
+  "A_small_overfit": {
+    "saved_checkpoint_cpu_relative_rmse": 1.1746358804308608,
+    "logged_gpu_relative_rmse": 1.1746358153466898,
+    "absolute_difference": 6.508417094153174e-08
+  },
+  "B1_pretrained_lr1e-3": {
+    "saved_checkpoint_cpu_relative_rmse": 0.8577206879300298,
+    "logged_gpu_relative_rmse": 0.8577206754741249,
+    "absolute_difference": 1.2455904863095668e-08
+  },
+  "B2_pretrained_lr3e-4": {
+    "saved_checkpoint_cpu_relative_rmse": 0.8099861145436934,
+    "logged_gpu_relative_rmse": 0.8099864284604605,
+    "absolute_difference": 3.139167671362131e-07
+  },
+  "B3_scratch_lr1e-3": {
+    "saved_checkpoint_cpu_relative_rmse": 0.9172533791387368,
+    "logged_gpu_relative_rmse": 0.917253526540745,
+    "absolute_difference": 1.4740200815488436e-07
+  },
+  "C1_fixed_monotonic_lr1e-3": {
+    "saved_checkpoint_cpu_relative_rmse": 0.21970330089340512,
+    "logged_gpu_relative_rmse": 0.21970329505257413,
+    "absolute_difference": 5.8408309855373375e-09
+  }
+}

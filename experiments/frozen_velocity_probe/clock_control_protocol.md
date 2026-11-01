@@ -1,0 +1,7 @@
+# Post-hoc monotonic-clock control
+
+Motivation established before this control: completed B1 uses nearly equal scalar time encodings at t=0.0388025 and0.7952000, resulting in prediction difference RMS~1.38e-5 while the frozen teacher derivative difference RMS~1.28490 (256 fitting points). This is a continuous-time pair diagnostic, not a bound on all training pairs.
+
+Apply only to an independent diagnostic VelocityNet copy. Default clock_mode=legacy returns the original module with no parameter changes/RNG. Opt-in fixed_monotonic replaces Fourier->learned scalar time encoding by q(t)=tanh(2t-1), retaining the same six planes, spatial inputs, index embedding, MLP and velocity head. The clock is fixed, so this decreases trainable parameters; it does not increase spatial/MLP capacity. Checkpoint loading must reapply the saved clock_mode, never load this state as a legacy physical model.
+
+Use exactly B1's cached labels, train/ID splits, pretrained weights outside the clock, seed17, batch4096, Adam lr1e-3, cosine schedule,12000 steps. No image/momentum/stress/force/material loss. No teacher updates. Verify3 clock unit tests and100-step CUDA smoke before the full control. All outcomes will be reported at the fixed budget, alongside original B results. This is a post-hoc diagnostic, not a pre-registered primary arm or proof that the clock alone explains every error. Time range/conditioning changes accompany removal of folds.

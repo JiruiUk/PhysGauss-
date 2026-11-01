@@ -1,0 +1,199 @@
+{
+  "arm": {
+    "enabled": true,
+    "clock_mode": "fixed_monotonic",
+    "name": "C1_fixed_monotonic_lr1e-3",
+    "initialization": "pretrained",
+    "lr": 0.001,
+    "seed": 17,
+    "steps": 12000,
+    "batch_size": 4096,
+    "evaluation_interval": 1000,
+    "post_hoc": true,
+    "reason": "Equal encoded times with distinct frozen trajectory derivatives observed in completed B1; test a fixed injective clock without increasing spatial/MLP capacity."
+  },
+  "initial": {
+    "fit": {
+      "count": 245760,
+      "rmse": 1.9053224010896344,
+      "target_rms": 1.904495470022525,
+      "predicted_rms": 0.04283614324809314,
+      "relative_rmse": 1.0004341995452999,
+      "moving_count": 228103,
+      "direction_count": 228103,
+      "angle_median_deg": 95.35837585663394,
+      "angle_p90_deg": 138.8817280553677,
+      "speed_ratio_median": 0.05078966526411125,
+      "moving_relative_rmse": 1.0004170782974422
+    },
+    "known_train": {
+      "count": 245760,
+      "rmse": 1.9053224010896344,
+      "target_rms": 1.904495470022525,
+      "predicted_rms": 0.04283614324809314,
+      "relative_rmse": 1.0004341995452999,
+      "moving_count": 228103,
+      "direction_count": 228103,
+      "angle_median_deg": 95.35837585663394,
+      "angle_p90_deg": 138.8817280553677,
+      "speed_ratio_median": 0.05078966526411125,
+      "moving_relative_rmse": 1.0004170782974422
+    },
+    "heldout_train": {
+      "count": 61440,
+      "rmse": 1.5641671442061893,
+      "target_rms": 1.56247328519447,
+      "predicted_rms": 0.046703948743859594,
+      "relative_rmse": 1.0010840883026735,
+      "moving_count": 57498,
+      "direction_count": 57498,
+      "angle_median_deg": 94.19360391424806,
+      "angle_p90_deg": 136.61912273063612,
+      "speed_ratio_median": 0.07716798268731312,
+      "moving_relative_rmse": 1.00105493677436
+    },
+    "known_validation": {
+      "count": 61440,
+      "rmse": 1.8949387751326239,
+      "target_rms": 1.8940870831675107,
+      "predicted_rms": 0.042836064528868865,
+      "relative_rmse": 1.0004496582932654,
+      "moving_count": 56720,
+      "direction_count": 56720,
+      "angle_median_deg": 95.51556309416227,
+      "angle_p90_deg": 139.03475441486475,
+      "speed_ratio_median": 0.05075704883696201,
+      "moving_relative_rmse": 1.0004290256803925
+    },
+    "heldout_validation": {
+      "count": 15360,
+      "rmse": 1.5746347459245187,
+      "target_rms": 1.5728305629286214,
+      "predicted_rms": 0.04670391493361837,
+      "relative_rmse": 1.001147093042583,
+      "moving_count": 14332,
+      "direction_count": 14332,
+      "angle_median_deg": 94.56941274426879,
+      "angle_p90_deg": 137.05053438566682,
+      "speed_ratio_median": 0.07593406790228775,
+      "moving_relative_rmse": 1.0011200671779332
+    },
+    "legacy": {
+      "count": 1280,
+      "rmse": 1.5998645268410352,
+      "target_rms": 1.599491563392351,
+      "predicted_rms": 0.04450433618030532,
+      "relative_rmse": 1.000233176252517,
+      "moving_count": 1056,
+      "direction_count": 1056,
+      "angle_median_deg": 96.93913909382424,
+      "angle_p90_deg": 141.21962771183385,
+      "speed_ratio_median": 0.06086690491721056,
+      "moving_relative_rmse": 1.0001694128832246
+    }
+  },
+  "final": {
+    "step": 12000,
+    "seconds": 192.51600000000326,
+    "loss": 0.03990962728857994,
+    "metrics": {
+      "fit": {
+        "count": 245760,
+        "rmse": 0.3859382948494807,
+        "target_rms": 1.904495470022525,
+        "predicted_rms": 1.8615931138910304,
+        "relative_rmse": 0.20264595055451412,
+        "moving_count": 228103,
+        "direction_count": 228103,
+        "angle_median_deg": 10.52325762609505,
+        "angle_p90_deg": 45.84682273593289,
+        "speed_ratio_median": 0.960769594939794,
+        "moving_relative_rmse": 0.20172793483208387
+      },
+      "known_train": {
+        "count": 245760,
+        "rmse": 0.3859382948494807,
+        "target_rms": 1.904495470022525,
+        "predicted_rms": 1.8615931138910304,
+        "relative_rmse": 0.20264595055451412,
+        "moving_count": 228103,
+        "direction_count": 228103,
+        "angle_median_deg": 10.52325762609505,
+        "angle_p90_deg": 45.84682273593289,
+        "speed_ratio_median": 0.960769594939794,
+        "moving_relative_rmse": 0.20172793483208387
+      },
+      "heldout_train": {
+        "count": 61440,
+        "rmse": 1.66940396448383,
+        "target_rms": 1.56247328519447,
+        "predicted_rms": 1.6486882727224874,
+        "relative_rmse": 1.0684368048417872,
+        "moving_count": 57498,
+        "direction_count": 57498,
+        "angle_median_deg": 54.35335029065858,
+        "angle_p90_deg": 145.99161209999096,
+        "speed_ratio_median": 1.4719774335485991,
+        "moving_relative_rmse": 1.0600538149991716
+      },
+      "known_validation": {
+        "count": 61440,
+        "rmse": 0.41613717328842115,
+        "target_rms": 1.8940870831675107,
+        "predicted_rms": 1.9002849872636345,
+        "relative_rmse": 0.21970329505257413,
+        "moving_count": 56720,
+        "direction_count": 56720,
+        "angle_median_deg": 10.845722529433605,
+        "angle_p90_deg": 48.79950403196744,
+        "speed_ratio_median": 0.9743479915491983,
+        "moving_relative_rmse": 0.21875588408386798
+      },
+      "heldout_validation": {
+        "count": 15360,
+        "rmse": 1.697186034775647,
+        "target_rms": 1.5728305629286214,
+        "predicted_rms": 1.6850672154349715,
+        "relative_rmse": 1.0790647605521313,
+        "moving_count": 14332,
+        "direction_count": 14332,
+        "angle_median_deg": 55.12185537015004,
+        "angle_p90_deg": 146.20297929005983,
+        "speed_ratio_median": 1.4594678369035996,
+        "moving_relative_rmse": 1.0717563619914872
+      },
+      "legacy": {
+        "count": 1280,
+        "rmse": 1.008167576878154,
+        "target_rms": 1.599491563392351,
+        "predicted_rms": 1.7326659513448535,
+        "relative_rmse": 0.6303050293931767,
+        "moving_count": 1056,
+        "direction_count": 1056,
+        "angle_median_deg": 23.998807990955413,
+        "angle_p90_deg": 119.75395097780577,
+        "speed_ratio_median": 1.0165263949584533,
+        "moving_relative_rmse": 0.6042157474273061
+      }
+    }
+  },
+  "gradient_norms_first_step": {
+    "planes": 0.0002994803071487695,
+    "index_embed.weight": 0.0005473355413414538,
+    "shared_net.0.weight": 0.007279940880835056,
+    "shared_net.0.bias": 0.0025364323519170284,
+    "shared_net.2.weight": 0.02343893237411976,
+    "shared_net.2.bias": 0.016118871048092842,
+    "velocity_head.weight": 0.0355210117995739,
+    "velocity_head.bias": 0.04944116249680519
+  },
+  "source_sha256": {
+    "variants\\frozen_velocity_probe\\time_control.py": "3d64686095bf6a5dd4ade3ee6de308cd7f6955c1b74df0453274869bf656e698",
+    "variants\\frozen_velocity_probe\\clock.py": "a0feb35cfa1196567e089fed2cc0cc2ea27d3a80a6072cfcd380f3d9c33c0614",
+    "experiments\\frozen_velocity_probe\\clock_control.json": "33d122ae54c5cb61decf887ea02c07713e89c7f66e55cbabf531ebded5ef13b5"
+  },
+  "targets_unchanged": true,
+  "source_hashes_unchanged": true,
+  "heldout_id_embedding_bitwise_unchanged": true,
+  "unused_stress_head_parameters_unchanged": true
+}
