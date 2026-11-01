@@ -396,5 +396,12 @@
     "train-only foreground-error EMA frame sampling",
     "both"
   ],
-  "training_input_policy": "Only train RGB/alpha used; validation chooses; original test already exposed; no baseline weights overwritten"
+  "training_input_policy": "Only train RGB/alpha used; validation chooses; original test already exposed; no baseline weights overwritten",
+  "visual_review": {
+    "frames77_85": "Visible deformation breakup, yellow drag and floating fragments; alpha largely opaque.",
+    "frames101_105": "Blue/yellow appearance mixing and contact-region shape errors.",
+    "frames117_157": "Smaller silhouette/contact/detail mismatches; not globally missing opacity.",
+    "gallery_absolute": "F:\\A_Edinburgh\\PhysGauss\\experiments\\temporal_repair\\diagnosis_images\\index.html",
+    "causality": "Visual categories; not a measured unique3D cause."
+  }
 }
