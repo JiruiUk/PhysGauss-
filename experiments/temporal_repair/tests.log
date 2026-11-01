@@ -1,0 +1,14 @@
+............                                                             [100%]
+============================== warnings summary ===============================
+tests/test_temporal_repair_gpu.py::test_flags_off_matches_frozen_h3_pixels_exactly
+  F:\A_Edinburgh\PhysGauss\variants\color_repair\code\hashencoder\hashgrid.py:16: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+    @custom_fwd(cast_inputs=torch.half)
+
+tests/test_temporal_repair_gpu.py::test_flags_off_matches_frozen_h3_pixels_exactly
+  F:\A_Edinburgh\PhysGauss\variants\color_repair\code\hashencoder\hashgrid.py:56: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+    @custom_bwd
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+12 passed, 2 warnings in 9.41s
+F:\A_Edinburgh\PhysGauss\envs\pidg-cu128\Lib\site-packages\requests\__init__.py:113: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (7.6.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(

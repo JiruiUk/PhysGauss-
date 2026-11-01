@@ -1,0 +1,23 @@
+{
+  "models": [
+    "R1_unit_rotation",
+    "R2_hard_train_frames",
+    "R3_combined"
+  ],
+  "reference": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_integrity_tuning\\H3_combined\\rubber_duck",
+  "reference_retrained": false,
+  "total_iterations": 50000,
+  "branch_iteration": 3000,
+  "split": [
+    120,
+    30,
+    50
+  ],
+  "new_parameters": false,
+  "loss_targets": "training RGB/alpha only",
+  "selection": "validation only; preserve H3 if no eligible repair",
+  "R1": "Normalize additive deformed quaternion before CUDA covariance; no new material or force",
+  "R2": "25% replacement from top25% training foreground-L1 EMA frames, after8k; original stack supplies remaining75%",
+  "R3": "R1 plus R2",
+  "interpolation_prior": "not enabled; simple interpolation worsened validation frame84"
+}
