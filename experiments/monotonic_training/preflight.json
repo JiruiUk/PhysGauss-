@@ -1,0 +1,48 @@
+{
+  "status": "passed",
+  "smoke_steps": 100,
+  "resumed_from": 70,
+  "flags_off_smoke_steps": 20,
+  "legacy_forward_and_gradient_parity": true,
+  "gpu_momentum_second_derivatives": true,
+  "joint_gradients": [
+    {
+      "iteration": 25,
+      "branch": "grid",
+      "finite": true,
+      "gradient_l1": 0.5876670777797699
+    },
+    {
+      "iteration": 25,
+      "branch": "deformation",
+      "finite": true,
+      "gradient_l1": 0.9462563842535019
+    },
+    {
+      "iteration": 25,
+      "branch": "velocity",
+      "finite": true,
+      "gradient_l1": 1.012081677094102
+    },
+    {
+      "iteration": 75,
+      "branch": "grid",
+      "finite": true,
+      "gradient_l1": 1.8640186488628387
+    },
+    {
+      "iteration": 75,
+      "branch": "deformation",
+      "finite": true,
+      "gradient_l1": 4.377960845828056
+    },
+    {
+      "iteration": 75,
+      "branch": "velocity",
+      "finite": true,
+      "gradient_l1": 0.7750345338135958
+    }
+  ],
+  "renderer_dataset_and_camera_sampler_unchanged": true,
+  "completed_utc": "2026-11-01T22:12:15.853506+00:00"
+}

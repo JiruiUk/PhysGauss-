@@ -319,3 +319,22 @@ clock is tested in `time_control.py` with the same cached labels and fit budget.
 Config/protocol/results live in `experiments/frozen_velocity_probe`; cached
 targets and independent velocity checkpoints in `runs/pidg_frozen_velocity_probe`.
 Disabled execution exits without model imports, checkpoint access or optimization.
+
+## Full monotonic-clock / kinematic training (independent H3 fork)
+
+`variants/monotonic_training/prepare.py` copies H3 and changes only the Tuning
+import, the VelocityNet internal clock call, and the Gaussian constructor's
+configuration hook. The renderer, deformation field, data loader and camera
+sampler remain byte-identical to H3. `model.py::time_coordinate` preserves the
+original Fourier/projected path by default; opt-in `velocity_clock_mode` selects
+`tanh(2*t-1)`, retaining every original parameter and optimizer group while
+freezing unused learned clock parameters. Both velocity and predicted stress
+heads use the same existing features. Full resume retains the mode through the
+checksum-bound run config; snapshots require that config when loading physics.
+`runtime.py` reuses H3 and its existing joint full-center kinematic loss.
+`run.py` performs GPU smoke/resume/flags-off checks, copies the identical full3k
+state, trains to total50k, locks validation selection, then renders final test.
+`export.py` checks pixel-identity GT|Render concatenations and independently
+recomputes PNG PSNR before producing videos/gallery/archive. Experiments are in
+`experiments/monotonic_training`; runs in `runs/pidg_monotonic_training`; user
+deliverables in `output/monotonic_training`. No external force is introduced.
