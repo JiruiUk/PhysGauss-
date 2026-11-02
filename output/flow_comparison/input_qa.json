@@ -1,0 +1,32 @@
+{
+  "examples": [
+    {
+      "source": 2,
+      "target": 3,
+      "dt": 0.005025125628140704,
+      "valid_pixels": 4589,
+      "observed_median_px": 0.03532411903142929,
+      "motion_median_px": 0.03885597363114357
+    },
+    {
+      "source": 82,
+      "target": 83,
+      "dt": 0.005025125628140704,
+      "valid_pixels": 3395,
+      "observed_median_px": 1.0453944206237793,
+      "motion_median_px": 2.1995930671691895
+    },
+    {
+      "source": 199,
+      "target": 200,
+      "dt": 0.005025125628140704,
+      "valid_pixels": 2196,
+      "observed_median_px": 0.029541611671447754,
+      "motion_median_px": 0.033774323761463165
+    }
+  ],
+  "pairs": 119,
+  "min_valid_pixels": 2010,
+  "median_valid_pixels": 3272.0,
+  "max_training_gap_frames": 3
+}

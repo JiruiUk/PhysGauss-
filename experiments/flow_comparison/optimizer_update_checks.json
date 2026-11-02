@@ -1,0 +1,24 @@
+{
+  "K1_flow_independent": {
+    "status": "passed",
+    "loss": 0.1913905143737793,
+    "parameter_update_l1": {
+      "grid": 13195.1044921875,
+      "deformation": 4.028404235839844,
+      "stress_head": 0.38400018215179443,
+      "velocity_head": 0.192000150680542
+    },
+    "source_checkpoint_untouched": true
+  },
+  "K2_flow_trajectory": {
+    "status": "passed",
+    "loss": 0.15294349193572998,
+    "parameter_update_l1": {
+      "grid": 13192.15234375,
+      "deformation": 4.4387359619140625,
+      "stress_head": 0.38400018215179443,
+      "velocity_head": 0.0
+    },
+    "source_checkpoint_untouched": true
+  }
+}
