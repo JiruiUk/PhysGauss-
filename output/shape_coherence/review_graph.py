@@ -44,7 +44,11 @@ def main():
     output=OUT/'candidate_graph';output.mkdir(parents=True,exist_ok=True)
     palette=torch.tensor([[.92,.35,.39],[.16,.82,.71],[.96,.67,.25],[.69,.51,.96]],device='cuda')
     known=graph['labels']>=0;rows=[]
-    for number in [2,19,50,62,74,86,98,108,146,200]:
+    assert (graph['labels'][graph['anchors']]>=0).all()
+    assert (graph['labels'][graph['neighbors']]==graph['labels'][graph['anchors'],None]).all()
+    requested=[2,19,50,62,74,86,98,108,146,200]
+    chosen=sorted({min(frames,key=lambda n:abs(n-target)) for target in requested})
+    for number in chosen:
         frame=frames[number];cam=camera(frame,metadata,800)
         pkg=warp_at(d,g.get_xyz.detach(),(number-1)/199)
         centers=center_trajectory(g.get_xyz.detach(),pkg['d_xyz'])
@@ -67,6 +71,7 @@ def main():
     report={'stage':'16k before shape updates','approved':False,'manual_review_pending':True,
         'checkpoint_sha256':receipt['sha256'],'graph_sha256':engine.sha256(path/'shape_reference/reference_graph.pt'),
         'kernel_counts':[int((graph['labels']==i).sum()) for i in range(4)],'anchors':len(graph['anchors']),
+        'requested_frames':requested,'actual_train_only_frames':chosen,'no_cross_inferred_label_edges':True,
         'reference_labels_are_partial_and_not_physical_GT':True,'per_frame':rows}
     engine.write_json(REPORTS/'candidate_graph_evidence.json',report)
     print(json.dumps(report,indent=2))

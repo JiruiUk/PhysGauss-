@@ -1,5 +1,9 @@
 # Codex 工作交接：运动光流与轨迹导出速度对照
 
+> **19:11 当前终态：P1在16k覆盖审阅门槛未通过，已停止剩余34k；本轮不是已训练完50k，也不是已验证形态损失无效。** 原完整3k→16k新增13k，尚无一次新形态项求值/更新。图991个部分标记点/646邻域，早期可见鸭子像素贡献64.60–67.31%，到帧74降至7.29%，86/99/108/146/200为零；已人工看五帧分组与十个早中晚训练帧。图的推断标签隔离通过，但当前监督没有被证实覆盖用户要修复的中段可见形态，因此不盲目训练，不自动追加候选。可见贡献不足不能区分视角/遮挡/有效足迹或对应漂移，不能断言材料ID错或缺外力。历史C1及所有旧模型未变。
+
+终态 `runs/pidg_shape_coherence/controller.json` 为 `rejected_graph_gate`，`candidate_graph_review.json` approved=false/manual_review_pending=false，**不要恢复该候选或运行旧协调器**。16k完整checkpoint SHA b36bfde8e25ffe1057e493a4bcbb40c17236882151e07118f95d091048a82b17，参考图SHA ff302f2d5c0a4853ae57159a43e5b104be680a77c0a6e1098dffa76b76715b79，已核验源码/数据/共同起点/sidecar/有限模型和优化器、历史控制全部SHA。只修了output审阅脚本：原帧98不是训练帧，按训练元数据改用99，未访问本候选测试。报告 `experiments/shape_coherence/assessment.md`，凭据 `{candidate_graph_evidence,candidate_graph_review,gate_verification}.json`，十帧浏览 `output/shape_coherence/index.html`、总览gate_review.png；没有新的50k测试/视频/效果比较。下一步应先验证全时段物体/表面支持、中心与实际渲染足迹的一致性，再决定结构方案；这些尚未实施。自动跟进 **c1已成功删除**。下方18:46启动记录仅保留追溯，不能据此继续训练。
+
 > **18:46 最新用户授权：处理多鸭子接触时形态损坏。独立 P1_local_shape 已实现并通过12测试、真实C1状态形态梯度/优化器更新、GPU100步/70→100完整恢复、flags-off20（启动修复后重复一次，实际关闭预算40）。历史C1原样复用，不重训，不开光流，不引入外力/本构/新参数。新目录 variants/shape_coherence，协议/诊断 experiments/shape_coherence/{plan,diagnosis,preflight,source_freeze}.json 和 diagnosis.md。冻结SHA214b07fc42532c912201dca310387be2f05a85091af1ada4f12fe79ec26390f8。首个启动错误仅缺诊断路径迁移凭据，未发生更新；已修复并归档旧冻结凭据。**
 
 代码/预检里程碑 **a48a790c**。唯一新协调器会话 **37608**、PID **235736**，训练PID **225988**；启动记录 `experiments/shape_coherence/launch.json`。本轮已创建每10分钟自动跟进 **c1**，这是删除旧光流自动化后新建的形态任务，不能按旧光流指令执行。常规健康推进保持安静；完成交付或图门槛失败形成完整诊断交付后删除。

@@ -1,0 +1,82 @@
+{
+  "stage": "16k before shape updates",
+  "approved": false,
+  "manual_review_pending": true,
+  "checkpoint_sha256": "b36bfde8e25ffe1057e493a4bcbb40c17236882151e07118f95d091048a82b17",
+  "graph_sha256": "ff302f2d5c0a4853ae57159a43e5b104be680a77c0a6e1098dffa76b76715b79",
+  "kernel_counts": [
+    115,
+    124,
+    151,
+    601
+  ],
+  "anchors": 646,
+  "requested_frames": [
+    2,
+    19,
+    50,
+    62,
+    74,
+    86,
+    98,
+    108,
+    146,
+    200
+  ],
+  "actual_train_only_frames": [
+    2,
+    19,
+    50,
+    62,
+    74,
+    86,
+    99,
+    108,
+    146,
+    200
+  ],
+  "no_cross_inferred_label_edges": true,
+  "reference_labels_are_partial_and_not_physical_GT": true,
+  "per_frame": [
+    {
+      "frame": 2,
+      "known_contribution_on_duck_pixels": 0.6460374593734741
+    },
+    {
+      "frame": 19,
+      "known_contribution_on_duck_pixels": 0.6731224060058594
+    },
+    {
+      "frame": 50,
+      "known_contribution_on_duck_pixels": 0.29299357533454895
+    },
+    {
+      "frame": 62,
+      "known_contribution_on_duck_pixels": 0.20391663908958435
+    },
+    {
+      "frame": 74,
+      "known_contribution_on_duck_pixels": 0.0729316771030426
+    },
+    {
+      "frame": 86,
+      "known_contribution_on_duck_pixels": 0.0
+    },
+    {
+      "frame": 99,
+      "known_contribution_on_duck_pixels": 0.0
+    },
+    {
+      "frame": 108,
+      "known_contribution_on_duck_pixels": 0.0
+    },
+    {
+      "frame": 146,
+      "known_contribution_on_duck_pixels": 0.0
+    },
+    {
+      "frame": 200,
+      "known_contribution_on_duck_pixels": 0.0
+    }
+  ]
+}

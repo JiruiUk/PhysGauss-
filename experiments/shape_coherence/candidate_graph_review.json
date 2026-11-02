@@ -1,0 +1,106 @@
+{
+  "stage": "16k before shape updates",
+  "approved": false,
+  "manual_review_pending": false,
+  "checkpoint_sha256": "b36bfde8e25ffe1057e493a4bcbb40c17236882151e07118f95d091048a82b17",
+  "graph_sha256": "ff302f2d5c0a4853ae57159a43e5b104be680a77c0a6e1098dffa76b76715b79",
+  "kernel_counts": [
+    115,
+    124,
+    151,
+    601
+  ],
+  "anchors": 646,
+  "requested_frames": [
+    2,
+    19,
+    50,
+    62,
+    74,
+    86,
+    98,
+    108,
+    146,
+    200
+  ],
+  "actual_train_only_frames": [
+    2,
+    19,
+    50,
+    62,
+    74,
+    86,
+    99,
+    108,
+    146,
+    200
+  ],
+  "no_cross_inferred_label_edges": true,
+  "reference_labels_are_partial_and_not_physical_GT": true,
+  "per_frame": [
+    {
+      "frame": 2,
+      "known_contribution_on_duck_pixels": 0.6460374593734741
+    },
+    {
+      "frame": 19,
+      "known_contribution_on_duck_pixels": 0.6731224060058594
+    },
+    {
+      "frame": 50,
+      "known_contribution_on_duck_pixels": 0.29299357533454895
+    },
+    {
+      "frame": 62,
+      "known_contribution_on_duck_pixels": 0.20391663908958435
+    },
+    {
+      "frame": 74,
+      "known_contribution_on_duck_pixels": 0.0729316771030426
+    },
+    {
+      "frame": 86,
+      "known_contribution_on_duck_pixels": 0.0
+    },
+    {
+      "frame": 99,
+      "known_contribution_on_duck_pixels": 0.0
+    },
+    {
+      "frame": 108,
+      "known_contribution_on_duck_pixels": 0.0
+    },
+    {
+      "frame": 146,
+      "known_contribution_on_duck_pixels": 0.0
+    },
+    {
+      "frame": 200,
+      "known_contribution_on_duck_pixels": 0.0
+    }
+  ],
+  "decision_utc": "2026-11-02T19:10:22.027376+00:00",
+  "decision": "rejected_insufficient_visible_coverage_for_contact_target",
+  "reason": "Early reference patches cover 64.6-67.3% of early duck contribution, but 7.29% at74 and zero at86/99/108. Visual review shows sparse colored fragments outside/around current visible bodies. No demonstrated coverage for the intended middle-stage shape repair.",
+  "not_a_predefined_numeric_threshold": "The prospective gate was qualitative reliable coverage; no post-hoc numeric success threshold is claimed.",
+  "manual_reviewed_training_frames": [
+    2,
+    19,
+    50,
+    62,
+    74,
+    86,
+    99,
+    108,
+    146,
+    200
+  ],
+  "early_5_frame_components_reviewed": true,
+  "no_shape_objective_evaluations_before_gate": true,
+  "remaining_training_not_executed": 34000,
+  "total_additional_candidate_steps_executed": 13000,
+  "no_50k_test_or_benefit_claim": true,
+  "causal_limit": "Visibility loss alone cannot distinguish occlusion/viewpoint changes, changing effective Gaussian footprint or correspondence drift. No true 3D material IDs, shape or contact forces are available.",
+  "next_unexecuted_hypothesis": "Validate persistent object/surface support and full center-plus-footprint behavior over the training sequence before applying objectwise shape/contact constraints.",
+  "no_new_candidate_launched": true
+}
