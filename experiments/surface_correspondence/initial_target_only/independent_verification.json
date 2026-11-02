@@ -1,0 +1,265 @@
+{
+  "passed": true,
+  "locked_input_files": 268,
+  "all_SHA_unchanged": true,
+  "historical_C1_protection_passed": true,
+  "full_C1_checkpoint_snapshot_match": true,
+  "frozen_bank_seed_intersections_independently_rechecked": 16,
+  "all120_center_flow_rechecked_on_CPU": true,
+  "maximum_CPU_vs_GPU_flow_error_pixels": 5.729496479034424e-05,
+  "all_cohort_gates_and_particle_unknowns_recalculated": true,
+  "unique_canonical_rows": 3232,
+  "image_fragment_termination_and_qualification_checked": true,
+  "bank_rows_bound_to_exact_C1_full_checkpoint": true,
+  "accepted_forward_bank_frames": 176,
+  "mean_visible_duck_alpha_coverage": 0.18101540501063956,
+  "per_bank_diagnostics": {
+    "A0_F0": {
+      "future_visible": 27,
+      "accepted": 16,
+      "reasons": {
+        "footprint_outside_fragment": 101,
+        "image_fragment_unverified_or_terminated": 90,
+        "insufficient_actual_visible_footprint": 90,
+        "projected_centers_not_supported": 90,
+        "center_motion_disagrees_or_unobserved": 90
+      }
+    },
+    "A0_F1": {
+      "future_visible": 22,
+      "accepted": 21,
+      "reasons": {
+        "footprint_outside_fragment": 96,
+        "image_fragment_unverified_or_terminated": 95,
+        "insufficient_actual_visible_footprint": 95,
+        "projected_centers_not_supported": 95,
+        "center_motion_disagrees_or_unobserved": 95
+      }
+    },
+    "A0_F2": {
+      "future_visible": 22,
+      "accepted": 21,
+      "reasons": {
+        "projected_centers_not_supported": 96,
+        "image_fragment_unverified_or_terminated": 95,
+        "insufficient_actual_visible_footprint": 95,
+        "footprint_outside_fragment": 95,
+        "center_motion_disagrees_or_unobserved": 95
+      }
+    },
+    "A0_F3": {
+      "future_visible": 83,
+      "accepted": 21,
+      "reasons": {
+        "center_motion_disagrees_or_unobserved": 75,
+        "footprint_outside_fragment": 95,
+        "projected_centers_not_supported": 75,
+        "insufficient_actual_visible_footprint": 72,
+        "image_fragment_unverified_or_terminated": 34
+      }
+    },
+    "A1_F0": {
+      "future_visible": 22,
+      "accepted": 0,
+      "reasons": {
+        "projected_centers_not_supported": 80,
+        "footprint_outside_fragment": 79,
+        "center_motion_disagrees_or_unobserved": 77,
+        "insufficient_actual_visible_footprint": 74,
+        "image_fragment_unverified_or_terminated": 58
+      }
+    },
+    "A1_F2": {
+      "future_visible": 47,
+      "accepted": 5,
+      "reasons": {
+        "footprint_outside_fragment": 75,
+        "projected_centers_not_supported": 74,
+        "center_motion_disagrees_or_unobserved": 74,
+        "insufficient_actual_visible_footprint": 72,
+        "image_fragment_unverified_or_terminated": 33
+      }
+    },
+    "A2_F0": {
+      "future_visible": 42,
+      "accepted": 11,
+      "reasons": {
+        "center_motion_disagrees_or_unobserved": 33,
+        "footprint_outside_fragment": 54,
+        "projected_centers_not_supported": 48,
+        "insufficient_actual_visible_footprint": 30,
+        "image_fragment_unverified_or_terminated": 25
+      }
+    },
+    "A2_F1": {
+      "future_visible": 45,
+      "accepted": 5,
+      "reasons": {
+        "footprint_outside_fragment": 62,
+        "projected_centers_not_supported": 49,
+        "center_motion_disagrees_or_unobserved": 29,
+        "insufficient_actual_visible_footprint": 24,
+        "image_fragment_unverified_or_terminated": 22
+      }
+    },
+    "A3_F0": {
+      "future_visible": 38,
+      "accepted": 23,
+      "reasons": {
+        "projected_centers_not_supported": 15,
+        "footprint_outside_fragment": 4
+      }
+    },
+    "A3_F1": {
+      "future_visible": 38,
+      "accepted": 6,
+      "reasons": {
+        "footprint_outside_fragment": 32,
+        "projected_centers_not_supported": 32,
+        "center_motion_disagrees_or_unobserved": 31,
+        "insufficient_actual_visible_footprint": 30
+      }
+    },
+    "A3_F2": {
+      "future_visible": 16,
+      "accepted": 6,
+      "reasons": {
+        "projected_centers_not_supported": 31,
+        "center_motion_disagrees_or_unobserved": 30,
+        "footprint_outside_fragment": 29,
+        "insufficient_actual_visible_footprint": 28,
+        "image_fragment_unverified_or_terminated": 22
+      }
+    },
+    "A3_F3": {
+      "future_visible": 16,
+      "accepted": 3,
+      "reasons": {
+        "footprint_outside_fragment": 35,
+        "projected_centers_not_supported": 34,
+        "center_motion_disagrees_or_unobserved": 24,
+        "image_fragment_unverified_or_terminated": 22,
+        "insufficient_actual_visible_footprint": 22
+      }
+    },
+    "A4_F0": {
+      "future_visible": 15,
+      "accepted": 1,
+      "reasons": {
+        "footprint_outside_fragment": 14,
+        "insufficient_actual_visible_footprint": 12,
+        "projected_centers_not_supported": 10,
+        "center_motion_disagrees_or_unobserved": 10
+      }
+    },
+    "A4_F1": {
+      "future_visible": 15,
+      "accepted": 10,
+      "reasons": {
+        "projected_centers_not_supported": 5
+      }
+    },
+    "A4_F2": {
+      "future_visible": 15,
+      "accepted": 14,
+      "reasons": {
+        "footprint_outside_fragment": 1
+      }
+    },
+    "A4_F3": {
+      "future_visible": 15,
+      "accepted": 13,
+      "reasons": {
+        "footprint_outside_fragment": 2
+      }
+    }
+  },
+  "compositor_visual_frames": [
+    2,
+    6,
+    7,
+    19,
+    43,
+    63,
+    67,
+    68,
+    74,
+    86,
+    88,
+    90,
+    108,
+    134,
+    136,
+    139,
+    172,
+    175,
+    176,
+    200
+  ],
+  "representative_manual_review_completed": true,
+  "new_Gaussian_optimizer_updates": 0,
+  "full_reconstruction_integration_approved": false,
+  "physical_material_identity_accuracy": null,
+  "no_cross_anchor_physical_identity_merge": true,
+  "artifact_sha256": {
+    "experiments\\surface_correspondence\\assessment.md": "157c2c4fe2153f26f9cb1d56680d1e7d13d59884db64e5dfde7d9e070a3ff267",
+    "experiments\\surface_correspondence\\bank_bindings.json": "6cc6978024fc1b20f4ab863abb037b052c31ecc144f41232a118576916e99f0b",
+    "experiments\\surface_correspondence\\image_fragments.json": "3f57766994b81bba7d07637a4615fdc900db0de1b9ac83796875a14e4c4926ce",
+    "experiments\\surface_correspondence\\input_lock.json": "0e1b0050da57a8a5e172386764cfc79cb27a3c2f8a2a8bb38d9c8dbaf93dfa6a",
+    "experiments\\surface_correspondence\\manual_review.json": "e10ee19efc9043b62901cb429f8edee1588782203d4ba9cacd26711ab87291a3",
+    "experiments\\surface_correspondence\\plan.json": "5e6ac75de920ac43d12334c71930c6f0dbf4c814d7df601a789bb590034a5a0a",
+    "experiments\\surface_correspondence\\preflight.json": "e7ad641944f8f5c3a701ef65af8619cdb194a7428b0b63d29df8c1d08675a8a0",
+    "experiments\\surface_correspondence\\renderer_contracts.json": "35b57089cd9b4e4079c10a6f3bd847c78b95055b3c62ea4929d8b69fe8e3d1bb",
+    "experiments\\surface_correspondence\\results.json": "48350a211ff1eff0991ecfd825d57389be8f3ea8ed7b7fb6617fe288f02ce3ae",
+    "experiments\\surface_correspondence\\summary.json": "d6725f927544ad743b73035d64f17bd78eb89dfacb0b66bd3b8c9b4f794274d1",
+    "experiments\\surface_correspondence\\visual_contracts.json": "042549328b007cdc6b31e4cdf6dc3fbfdbfded815d9ff7cca818db354962d4a4",
+    "output\\surface_correspondence\\audit.py": "c0ee0fc32cc6fb5f4bcd7a518f33c6e6f4d52ddf3dbff487d461599c0b3cede8",
+    "output\\surface_correspondence\\bind_banks.py": "7cb72569301a117d91270e3b37676797b355d49535f79ee6d09c6b8da03e8453",
+    "output\\surface_correspondence\\center_footprint_3d.png": "f9cf03f7b31deed8bfbf2dbfc812ef866dfca5480c3368a10113d8cf507cdeae",
+    "output\\surface_correspondence\\common.py": "8407cf5ce705c6df9635b1520f1a752f632d12918202d01521bafcd9043c1d98",
+    "output\\surface_correspondence\\contracts.py": "211400e9a1324d22b80c744e55a4debfbbc8644cf1836d0d6d0247c5ca38e9af",
+    "output\\surface_correspondence\\finalize.py": "6bc8c53da970bfef51c1d9484357525a695e85f724d568b7a89d2c5e0dddab08",
+    "output\\surface_correspondence\\fragment_tracks.npz": "d37a0acc34eade5ec367d4e19b0cd4b3c39c69ce8a787d29d15bb6129438d4be",
+    "output\\surface_correspondence\\index.html": "a56fffddadb1ff015143234b110b6e236aac9f6ba52f3ee363864432c032760e",
+    "output\\surface_correspondence\\support_timeline.png": "a3af11f8cebe7049a11a66239e47986636ec184bddb81eb0112ddcd92e51a70b",
+    "output\\surface_correspondence\\surface_assignments.npz": "6432e53cf7687e849c2fe78c9f8854ff8890a7c698aca8b1836ffa08b995e22e",
+    "output\\surface_correspondence\\surface_trajectories.npz": "ada437f1abe775aef601b9cd345df5f82fa08087e7c771dcb0030429daa4ce6a",
+    "output\\surface_correspondence\\verify.py": "8a437bbb1bd97089ff89780ef70c4d0b5688b69b691f38403fc1e3c7bbc09bd7",
+    "output\\surface_correspondence\\banks\\A0_F0.npz": "461128edfd2971144e0ab75d9bfc600eee9e1dbe4758a199cfd17faa81bd1fb9",
+    "output\\surface_correspondence\\banks\\A0_F1.npz": "4f36316de578a77c2a420686a1ae59505b1de172933d6dc362d53ca8f6c8fc68",
+    "output\\surface_correspondence\\banks\\A0_F2.npz": "a2fed192fc65cf5bcf4cd10c64360cad8bff1c25a8c2d08e3c65b14921fb83af",
+    "output\\surface_correspondence\\banks\\A0_F3.npz": "80749212d8a333bec83930611ec90f213f4ad2b233d937cdbc80deb9c7759688",
+    "output\\surface_correspondence\\banks\\A1_F0.npz": "93bcb50d0d922353f9e0cc4884de93d2f33c23cefd80652350f6c2d058408308",
+    "output\\surface_correspondence\\banks\\A1_F2.npz": "a9baf4ec09e212c661048c4122168a1bc04312f53e335ed1fa3f56d5080ae261",
+    "output\\surface_correspondence\\banks\\A2_F0.npz": "1c60d01aaf8cf4326148c40eb29c5222b33918c5b303e8349491379b8037864a",
+    "output\\surface_correspondence\\banks\\A2_F1.npz": "9f0fc32675a350f05b5d00451185950e254f216966c6b25a151f91060352c1ef",
+    "output\\surface_correspondence\\banks\\A3_F0.npz": "47cf9f39e5cac95fd5f02bc978dba32633449edb21f90f089e5404caf27b79a0",
+    "output\\surface_correspondence\\banks\\A3_F1.npz": "15b93f17d08afe95a05f344551af7c3fbdd8a2098e355b4fc2fe72f07fc2bfb6",
+    "output\\surface_correspondence\\banks\\A3_F2.npz": "8843927333159c1b30abc1b73e089198cf08b28e29c712d28b87a6a2a1d6159d",
+    "output\\surface_correspondence\\banks\\A3_F3.npz": "b6240a4919420fc76710d704d7a3d504aaddbbc4f7d0225376f23f5eacf37e96",
+    "output\\surface_correspondence\\banks\\A4_F0.npz": "204e629a2e896ab9c50e6880b8b0ada684bff61e377303022a33e2b2edcd4ba7",
+    "output\\surface_correspondence\\banks\\A4_F1.npz": "e21065dcbbbdb9cd890158a6f9bf46cb612520b1b55958559b548a75a580d02d",
+    "output\\surface_correspondence\\banks\\A4_F2.npz": "243741258373a930ffc32a217fc6ff24e4c75fd00e2ae7dd5627d7d7ef51bfb1",
+    "output\\surface_correspondence\\banks\\A4_F3.npz": "6f42d028d35c01ac6fdcf5e1ab3b008908d2b503f4f875ea1cb0cf73c1a5933d",
+    "output\\surface_correspondence\\review\\frame0002.png": "e2c4c021efb357b7257788d7dcaf687bb0cd613844c332bfe279dd96419ef5e3",
+    "output\\surface_correspondence\\review\\frame0006.png": "8435a904d3137cfe5ef23192c6a42cfe2502176cb9898fbcef69230221bd7fcb",
+    "output\\surface_correspondence\\review\\frame0007.png": "952363572b490ba934abf9a44fc3556166936699264a4b7b842bfc9918e43d4b",
+    "output\\surface_correspondence\\review\\frame0019.png": "3b6bf5e4269380001d250e8753ff2823468a3d808328219b570d3169974ac4b4",
+    "output\\surface_correspondence\\review\\frame0043.png": "56c23dc7a4607617b1ca025c407f570d8aaa611fc6db2b4b0dbfa8fcf9c805a5",
+    "output\\surface_correspondence\\review\\frame0063.png": "7fb84902790601c5696ba0235604d84ce2fb8931f42f978e4524d69a76dc1cf5",
+    "output\\surface_correspondence\\review\\frame0067.png": "26b9439d2953d807359010666f2ebd260262f54da473793af8e45f51aaa234d7",
+    "output\\surface_correspondence\\review\\frame0068.png": "1d9c71f49218922ec972c12310bb852ff2157ebac6924020826d1fcb57582905",
+    "output\\surface_correspondence\\review\\frame0074.png": "13ca43041164b368ae1df4edba4df2bfdf738b186bdb057bc6bcee4a810b2748",
+    "output\\surface_correspondence\\review\\frame0086.png": "1d55ac9f9c5328fa187c1e760ceb2cf2062d91d6d6c1bdc5520747324891714a",
+    "output\\surface_correspondence\\review\\frame0088.png": "df5facb2814f7769e769c12579ab8ec27bd29788e4358ad6472c8e50918d48a9",
+    "output\\surface_correspondence\\review\\frame0090.png": "280897a9146346c3014a6d774367b18571fdc0d6261356be14d25b8673ab758e",
+    "output\\surface_correspondence\\review\\frame0108.png": "56aecf5ef24e2697da32ba52edd97bb0b6893d795bf04fbc64e0aff5a2da4c83",
+    "output\\surface_correspondence\\review\\frame0134.png": "af315beffb72f7d960a678b03ebbadfe745493cb5f2d8a4fe3c23a65e0c0aebb",
+    "output\\surface_correspondence\\review\\frame0136.png": "07e9ca4533ed8f87553b623b9fb5721b8caad1cafb9f0050e2eb289bc8f36c74",
+    "output\\surface_correspondence\\review\\frame0139.png": "c741ca776ab97317d1d538be7e47d2b2d94b5b5d182afb9d61018551ea0090b0",
+    "output\\surface_correspondence\\review\\frame0172.png": "e59b7ad9d3be24add520b05e786eba297803952679eee60c76bfa6a0c13aa54f",
+    "output\\surface_correspondence\\review\\frame0175.png": "da3dd693615a224e7b5453797479673a16a011f1ad29ff2f6d74a23d55c07caf",
+    "output\\surface_correspondence\\review\\frame0176.png": "b18a48bdb319001a76f85431e7df75c8a24da628c52185a97471aa12c3c0a219",
+    "output\\surface_correspondence\\review\\frame0200.png": "c70a629a89d085a71fb55f114dbdb63ee86ab085dd9695da95dd85d66f356b8f"
+  }
+}

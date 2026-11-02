@@ -1,0 +1,21 @@
+{
+  "candidate": "S1_visible_surface_bank",
+  "purpose": "Bind independently seeded visible image fragments to frozen canonical Gaussian rows, then validate full center trajectories AND actual visible compositing footprints",
+  "model": "Historical C1 final50000; read-only, no new Gaussian optimization",
+  "anchor_original_training_frames": [2, 63, 86, 134, 172],
+  "anchor_selection": "Predeclared early/middle/late separated-component examples from prior audit, not random samples or independently heldout data",
+  "seed_observations": 3,
+  "image_fragment_reference": "Fresh local image labels per anchor. Raw bidirectional flow propagation only while >=30 supported pixels, >=0.95 purity and >=0.25 component area coverage; ambiguous/failed fragments terminate permanently in that anchor. No cross-occlusion identity reset or nearest relabeling.",
+  "fragment_is_not_object_or_material_ID": true,
+  "full_contribution_method": "Derivative of masked complete RGB compositor with respect to per-Gaussian override color, checked against direct binary cohort renders and full alpha; never normalize first20 metadata",
+  "seed_particle_requirements": {"all_three_visible_observations": true, "minimum_mass_pixels_each": 0.02, "minimum_footprint_purity_each": 0.95, "center_inside_eroded_fragment": true, "maximum_raw_flow_EPE_both_intervals_pixels": 2.0, "minimum_particles_per_bank": 20},
+  "frozen_bank": "Canonical row IDs and canonical coordinates selected once at third seed observation. No per-frame reselection or parameter fitting.",
+  "future_visible_association_gate": {"minimum_own_mass_pixels": 0.2, "minimum_own_mass_over_all_image_mass": 0.95, "minimum_mass_weighted_center_inside": 0.9, "minimum_own_mass_weighted_raw_flow_agreement": 0.9},
+  "evaluation": "All120 original training cameras/times, complete frozen cohort trajectories/footprints including prebirth observations. Only frames after third seed observation count as forward validation; no heldout image benchmark/PSNR claim.",
+  "unknown_policy": "Invisible footprint, failed center/flow/purity, terminated image fragment, ambiguous component, inadequate seed support all stay unknown. Record canonical-row overlap across anchors only as model-supported hypothesis, never a physical-ID merge.",
+  "full_reconstruction_gate": "Requires persistent visible support and independently verified identity across occlusion; this bank alone cannot establish physical identity from a symmetric unseen interaction",
+  "new_learned_parameters": 0,
+  "Gaussian_optimizer_updates": 0,
+  "new_shape_contact_force_constitutive_terms": false,
+  "historical_models_and_sources_unchanged": true
+}

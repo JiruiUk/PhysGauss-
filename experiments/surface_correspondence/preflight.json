@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "unit_tests": 12,
+  "pytest_command": "envs/pidg-cu128/python.exe -m pytest tests/test_surface_correspondence.py -q -p no:cacheprovider",
+  "pytest_result": "12 passed in0.09s",
+  "source_sha256": "f7d8136e80839da3080ca763026d9c4537cc5f8abd76f28aa784b64bc847338a",
+  "flags_off": "optional_bank returns before any input/state access; existing PIDG paths untouched",
+  "GPU_smoke": "Full RGB adjoint verified in three real training cameras, direct binary cohort render, full snapshot/complete state and immutable parameter/gradient checks",
+  "optimizer_steps": 0,
+  "training_smoke": "Not applicable to non-neural read-only surface bank; no trainable parameters",
+  "postprocess_observability_correction": "Source-and-target visibility guard;1209 point-frame events removed with frozen banks/parameters; independently checked in verify.py"
+}

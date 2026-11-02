@@ -1,0 +1,39 @@
+{
+  "review_complete": true,
+  "viewed_figures": [
+    "support_timeline.png",
+    "center_footprint_3d.png"
+  ],
+  "scope": "Initial target-only nine frames archived; final source+target guard reviewed on six full six-column images and the support/trajectory plots, not all120 outputs or all20 gallery images",
+  "findings": [
+    "Frame19 early fixed canonical cohorts and their actual footprints align with four visible fragments.",
+    "Frame74 image fragment labels can remain available while early fixed cohorts have left most duck support; only a new locally supported patch is confirmed.",
+    "At86 and136 newly seeded banks are not counted as forward validation. Confirmed colors are withheld during seed frames.",
+    "At200 early bank centers/footprints remain elsewhere; current accepted local patches cover only parts of two visible components. Grey output represents unresolved support.",
+    "World center paths, projected covariance size, and integrated footprint contribution are shown separately for fixed deterministic canonical rows. Their later near-zero footprint is not true3D material GT.",
+    "Post-seed frames68/90/139/176 were inspected: newly fixed banks can support partial current visible surfaces, with unknown regions grey.",
+    "Current footprint colors were re-rendered after requiring same-bank source and target visible support; unsupported source events stay grey."
+  ],
+  "global_physical_identity_approved": false,
+  "full_training_integration_approved": false,
+  "initial_target_only_review_frames": [
+    19,
+    68,
+    74,
+    86,
+    90,
+    136,
+    139,
+    176,
+    200
+  ],
+  "viewed_original_training_frames": [
+    19,
+    74,
+    90,
+    139,
+    176,
+    200
+  ],
+  "source_visibility_correction_reviewed": true
+}

@@ -1,5 +1,23 @@
 # PIDG repository map — M0
 
+## Visible image-fragment / fixed3D surface bank (2026-11-02)
+
+`variants/surface_correspondence/model.py` adds disabled-by-default, non-neural
+joint center/footprint/observed-motion support gates, three-observation fixed
+canonical row selection, and conservative image-fragment qualification. It
+does not edit PIDG paths or assign material/object labels. `output/surface_correspondence`
+contains `common.py` for complete RGB color-adjoint contributions (beyond the
+first20 diagnostics), `contracts.py` for real GPU/full-checkpoint integrity,
+`audit.py` for five local references and all120 frozen-row forward evaluations,
+`finalize.py` for per-point unknown retention/unique coverage/actual compositor
+images/3D center paths, `bind_banks.py` for exact full-checkpoint/data/row SHA
+binding, and `verify.py` for independent CPU flow and gate checks.
+Protocols/results are in `experiments/surface_correspondence`; fixed banks and
+NPZ trajectories/assignments in `output/surface_correspondence`; seed evidence
+caches in `runs/pidg_surface_correspondence/cache`. Tests cover disabled behavior,
+missing support, ambiguity and fixed-row selection. No new Gaussian training,
+shape/contact/force/material objective or cross-occlusion physical-ID merge.
+
 ## Motion-history correspondence prototype (2026-11-02)
 
 `variants/motion_correspondence/model.py` supplies an optional non-neural image

@@ -1,0 +1,8 @@
+{
+  "reason": "Full audit found1209 of40814 initially accepted point-frame events lacked prior visible footprint support in any eligible local bank. Current overlap plus raw background flow is insufficient evidence of surface continuity.",
+  "initial_mean_alpha_coverage": 0.18101540501063956,
+  "diagnostic_unsupported_alpha_fraction": 0.0033803592878785564,
+  "correction": "Require current AND preceding frame footprint purity/mass/center support for the SAME local bank, plus existing FB-consistent center flow. Only then emit a per-point association. No temporal interpolation through invisibility.",
+  "unchanged": "Frozen16 banks, seed selection, C1 weights, actual mass/trajectories, all scalar thresholds and raw cohort tests. No new training.",
+  "initial_output_archive": "initial_target_only/"
+}

@@ -1,0 +1,10 @@
+W1102 20:32:09.064000 229692 envs\pidg-cu128\Lib\site-packages\torch\utils\cpp_extension.py:466] Error checking compiler version for cl: 'cp1' codec can't decode bytes in position 0--1: No mapping for the Unicode character exists in the target code page.
+ninja: no work to do.
+F:\A_Edinburgh\PhysGauss\variants\c1_flow_ablation\code\hashencoder\hashgrid.py:16: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.half)
+F:\A_Edinburgh\PhysGauss\variants\c1_flow_ablation\code\hashencoder\hashgrid.py:56: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+Load weight: F:\A_Edinburgh\PhysGauss\runs\pidg_color_repair\C1_repaired\rubber_duck\deform/iteration_50000/deform.pth
+{'frame': 2, 'maximum_RGB_adjoint_relative_error': 8.253152191173285e-05, 'binary_cohort_integral_relative_error': 0.00013928150292485952, 'projected_center_max_error_pixels': 4.57763671875e-05, 'full_image_alpha_mass': 9054.970703125, 'first20_metadata_mass': 6520.45361328125, 'recovered_mass_beyond_first20': 2534.47021484375}
+{'frame': 86, 'maximum_RGB_adjoint_relative_error': 8.25818206067197e-05, 'binary_cohort_integral_relative_error': 0.00016751258226577193, 'projected_center_max_error_pixels': 3.814697265625e-05, 'full_image_alpha_mass': 10092.7099609375, 'first20_metadata_mass': 7377.4853515625, 'recovered_mass_beyond_first20': 2715.2861328125}
+{'frame': 200, 'maximum_RGB_adjoint_relative_error': 8.110443741315976e-05, 'binary_cohort_integral_relative_error': 9.817680984269828e-05, 'projected_center_max_error_pixels': 3.0517578125e-05, 'full_image_alpha_mass': 11048.435546875, 'first20_metadata_mass': 8156.05029296875, 'recovered_mass_beyond_first20': 2892.32080078125}

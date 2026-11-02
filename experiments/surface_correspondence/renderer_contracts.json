@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "C1_snapshot_matches_full_checkpoint": true,
+  "zero_Gaussian_optimizer_updates": true,
+  "no_model_values_or_gradients_changed": true,
+  "full_contributions_beyond_first20_verified": true,
+  "frames": [
+    {
+      "frame": 2,
+      "maximum_RGB_adjoint_relative_error": 8.253152191173285e-05,
+      "binary_cohort_integral_relative_error": 0.00013928150292485952,
+      "projected_center_max_error_pixels": 4.57763671875e-05,
+      "full_image_alpha_mass": 9054.970703125,
+      "first20_metadata_mass": 6520.45361328125,
+      "recovered_mass_beyond_first20": 2534.47021484375
+    },
+    {
+      "frame": 86,
+      "maximum_RGB_adjoint_relative_error": 8.25818206067197e-05,
+      "binary_cohort_integral_relative_error": 0.00016751258226577193,
+      "projected_center_max_error_pixels": 3.814697265625e-05,
+      "full_image_alpha_mass": 10092.7099609375,
+      "first20_metadata_mass": 7377.4853515625,
+      "recovered_mass_beyond_first20": 2715.2861328125
+    },
+    {
+      "frame": 200,
+      "maximum_RGB_adjoint_relative_error": 8.110443741315976e-05,
+      "binary_cohort_integral_relative_error": 9.817680984269828e-05,
+      "projected_center_max_error_pixels": 3.0517578125e-05,
+      "full_image_alpha_mass": 11048.435546875,
+      "first20_metadata_mass": 8156.05029296875,
+      "recovered_mass_beyond_first20": 2892.32080078125
+    }
+  ],
+  "source_sha256": {
+    "output\\surface_correspondence\\contracts.py": "211400e9a1324d22b80c744e55a4debfbbc8644cf1836d0d6d0247c5ca38e9af",
+    "output\\surface_correspondence\\common.py": "8407cf5ce705c6df9635b1520f1a752f632d12918202d01521bafcd9043c1d98",
+    "variants\\flow_comparison\\code\\gaussian_renderer\\__init__.py": "6071dc822efa63ac22e921aef034b8445a1a883fabb9bb6d97ecbfc13e11f9bd",
+    "envs\\pidg-cu128\\Lib\\site-packages\\diff_gaussian_rasterization\\_C.cp311-win_amd64.pyd": "34e4372886e06c7049ca251277f352a7fd6a20e962d92e2b35b8011a973efcfe",
+    "runs\\pidg_color_repair\\C1_repaired\\rubber_duck\\checkpoints\\resume.pt": "b5d4cf5c9fb8fba4fcc26124555d48aa7d3a963a8be1d28488954752db486480",
+    "third_party\\PIDG\\submodules\\flow-based-diff-gaussian-rasterization\\cuda_rasterizer\\backward.cu": "257307f17e02a1bb92ed8ec8c0129907be42644181e68075ceab67a04390adde"
+  }
+}
