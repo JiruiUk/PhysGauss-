@@ -1,7 +1,13 @@
 # Codex 工作交接：运动光流与轨迹导出速度对照
 
-更新时间：2026-11-02 08:40 UTC（Europe/London）。
+更新时间：2026-11-02 11:56 UTC（Europe/London）。
 工作目录：`F:\A_Edinburgh\PhysGauss`；Windows / PowerShell。
+
+> **11:56 最新授权与接续：用户要求“找到问题自动进行改进”。已完成三个真实同批训练帧的梯度/差分诊断：L1已加权动量/RGB梯度在Grid4D约4884–15748倍、形变网络约850–3241倍；二阶差分未稳定收敛，尚不能据此证明整个退化的因果或缺外力。新增独立开关变体 `variants/momentum_guard`，只对动量共享形变梯度施加同批RGB梯度10%上限，私有stress头及已有force_sigma梯度保留；这是显式一阶梯度策略，真实前向物理残差不缩放。没有新参数、没有新外力/本构/材料未知量，网络/步长/原权重不变。15项测试、100步GPU短训/70→100完整恢复、20步flags-off、实际优化器更新、私有梯度精确相等和共享上限验证全通过。里程碑 `1af20b2`。唯一完整训练协调器工具会话21588，controller PID237464，训练PID235388，日志 `experiments/momentum_repair/training_coordinator.log`；从与L1相同扩展完整3k SHA e361f4ba241a77e4158d341986bf86f2797e24c9a560817b04ad6c18b3a4caa5 到总50k。不要重复启动或修改冻结源码/配置/数据。先读 `experiments/momentum_repair/{diagnosis.md,plan.json,preflight.json}`，执行 `envs/pidg-cu128/python.exe output/momentum_repair/status.py`。健康推进保持安静，不另占GPU。结束自动验证选择锁定→best/final测试→GT|Render PNG/视频/ZIP→V2独立运动与未缩放动量残差→report。completed后仍须运行 `output/momentum_repair/verify_results.py`，人工查看生成的早中晚/原帧85和视频审阅图及图表，补充assessment并独立结果提交。比较M1−L1，报告图像质量、独立二维运动、内部结构一致性/原始残差，不能把小梯度或定义上零速度差说成物理真值。单场景单种子、历史测试暴露。仅新增这一个完整候选，不无边界扩训。完成交付后删除新自动跟进。旧L0/L1及以下历史段落不可作为重新训练依据。**
+
+安全续跑：先确认协调器/训练进程退出，核验最后完整检查点与SHA，归档并移出超出保存边界的诊断（包括momentum_gradient_guard.jsonl），再 `. ./reproduction/scripts/enable_cuda.ps1; envs/pidg-cu128/python.exe -u -m variants.momentum_guard.run --hours 12`。若已到50k且已有selection_lock，禁止重写选择锁；直接在独立辅助脚本中接续未完成render/export/report，保留原锁和原始时间凭据。诊断导入前必须设PIDG_HASH_SOURCE_DIR/BUILD_DIR并先导入本轮扩展架构，避免旧root陈旧build锁和错误网络类。保留所有历史模型与无关脏文件。
+
+已创建每10分钟本聊天自动接续，ID `pidg`；正常推进不通知，完成核验/交付后删除。启动凭据 `experiments/momentum_repair/launch.json`。旧ID `automation` 已在上一轮交付时删除，不能误认成当前跟进。
 
 > 给接手 Codex：K1/K2及后续L0/L1均已完成训练、导出、运动诊断与结果核验。本轮结构尝试已结束，先读下方最新记录及 `experiments/unified_flow/assessment.md`。后面的历史进度和恢复命令只供追溯，禁止据此重启或重复训练。
 
