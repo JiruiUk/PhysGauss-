@@ -1,0 +1,51 @@
+{
+  "model": "K2_flow_trajectory",
+  "selection": {
+    "value": 33.84882113138835,
+    "iteration": 50000,
+    "snapshot": "best",
+    "metrics": {
+      "PSNR": 33.84882113138835,
+      "SSIM": 0.9876289188861846,
+      "LPIPS": 0.02274649093548457,
+      "MS-SSIM": 0.9897195716698964
+    },
+    "selection_split": "validation"
+  },
+  "metrics": {
+    "ours_50000": {
+      "SSIM": 0.9882473945617676,
+      "PSNR": 34.20649719238281,
+      "LPIPS": 0.021984698250889778,
+      "MS-SSIM": 0.9905336499214172
+    },
+    "ours_best": {
+      "SSIM": 0.9882473945617676,
+      "PSNR": 34.20649719238281,
+      "LPIPS": 0.021984698250889778,
+      "MS-SSIM": 0.9905336499214172
+    }
+  },
+  "pairs": 100,
+  "pixel_identity_verified": true,
+  "independent_PSNR_max_difference": 4.0759083077546165e-06,
+  "videos": [
+    {
+      "file": "F:\\A_Edinburgh\\PhysGauss\\output\\flow_comparison\\K2_flow_trajectory\\GT_Render_best.mp4",
+      "frames": 50,
+      "display_fps": 10,
+      "seconds": 5.0,
+      "note": "display rate only; acquisition FPS unknown"
+    },
+    {
+      "file": "F:\\A_Edinburgh\\PhysGauss\\output\\flow_comparison\\K2_flow_trajectory\\GT_Render_50000.mp4",
+      "frames": 50,
+      "display_fps": 10,
+      "seconds": 5.0,
+      "note": "display rate only; acquisition FPS unknown"
+    }
+  ],
+  "velocity_source": "trajectory",
+  "gallery": "F:\\A_Edinburgh\\PhysGauss\\output\\flow_comparison\\K2_flow_trajectory\\index.html",
+  "archive": "F:\\A_Edinburgh\\PhysGauss\\output\\flow_comparison\\K2_flow_trajectory_GT_Render.zip"
+}

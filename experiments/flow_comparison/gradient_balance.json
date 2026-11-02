@@ -1,0 +1,241 @@
+{
+  "status": "complete",
+  "probes": [
+    {
+      "model": "K1_flow_independent",
+      "snapshot": "best",
+      "training_frame": 2,
+      "weighted_momentum_loss": 0.09374264627695084,
+      "weighted_flow_loss": 1.9755730136239436e-06,
+      "groups": {
+        "deformation": {
+          "momentum_norm": 0.5877820573455659,
+          "flow_norm": 0.001493207681342817,
+          "momentum_to_flow_norm_ratio": 393.6371776610358,
+          "cosine": 0.12169182337972069
+        },
+        "velocity_head": {
+          "momentum_norm": 2.592862169674335,
+          "flow_norm": 5.457126436247806e-06,
+          "momentum_to_flow_norm_ratio": 475133.2409034538,
+          "cosine": -0.02174076942513116
+        },
+        "stress_head": {
+          "momentum_norm": 0.024859173277667367,
+          "flow_norm": 0.0,
+          "momentum_to_flow_norm_ratio": null,
+          "cosine": null
+        },
+        "physics_shared": {
+          "momentum_norm": 3.0273623881412552,
+          "flow_norm": 1.5712763043617207e-06,
+          "momentum_to_flow_norm_ratio": 1926690.0288240658,
+          "cosine": -0.015236363486618726
+        },
+        "rate_coefficient": {
+          "momentum_norm": 0.11739501357078552,
+          "flow_norm": 0.0,
+          "momentum_to_flow_norm_ratio": null,
+          "cosine": null
+        }
+      }
+    },
+    {
+      "model": "K1_flow_independent",
+      "snapshot": "best",
+      "training_frame": 83,
+      "weighted_momentum_loss": 0.08455260097980499,
+      "weighted_flow_loss": 0.0002002324181376025,
+      "groups": {
+        "deformation": {
+          "momentum_norm": 1.3885225307472435,
+          "flow_norm": 0.002985909339727616,
+          "momentum_to_flow_norm_ratio": 465.0250134097872,
+          "cosine": -0.24067100205327302
+        },
+        "velocity_head": {
+          "momentum_norm": 1.7548007889042994,
+          "flow_norm": 1.6388854129714282e-05,
+          "momentum_to_flow_norm_ratio": 107072.81760002412,
+          "cosine": 0.03935104804423445
+        },
+        "stress_head": {
+          "momentum_norm": 0.027861175908461076,
+          "flow_norm": 0.0,
+          "momentum_to_flow_norm_ratio": null,
+          "cosine": null
+        },
+        "physics_shared": {
+          "momentum_norm": 2.3851187945301593,
+          "flow_norm": 5.628519664325681e-06,
+          "momentum_to_flow_norm_ratio": 423755.96724790084,
+          "cosine": 0.03935457921437734
+        },
+        "rate_coefficient": {
+          "momentum_norm": 0.10601265728473663,
+          "flow_norm": 0.0,
+          "momentum_to_flow_norm_ratio": null,
+          "cosine": null
+        }
+      }
+    },
+    {
+      "model": "K1_flow_independent",
+      "snapshot": "best",
+      "training_frame": 155,
+      "weighted_momentum_loss": 0.09748084098100662,
+      "weighted_flow_loss": 1.9520230125635862e-05,
+      "groups": {
+        "deformation": {
+          "momentum_norm": 1.340391433159354,
+          "flow_norm": 0.0015837145637196586,
+          "momentum_to_flow_norm_ratio": 846.3592265080815,
+          "cosine": -0.005617887209772326
+        },
+        "velocity_head": {
+          "momentum_norm": 2.0821350946094466,
+          "flow_norm": 3.272718648913079e-06,
+          "momentum_to_flow_norm_ratio": 636209.6220220324,
+          "cosine": -0.045342221755424704
+        },
+        "stress_head": {
+          "momentum_norm": 0.02542047333470765,
+          "flow_norm": 0.0,
+          "momentum_to_flow_norm_ratio": null,
+          "cosine": null
+        },
+        "physics_shared": {
+          "momentum_norm": 2.5557525891646735,
+          "flow_norm": 8.911092184534892e-07,
+          "momentum_to_flow_norm_ratio": 2868057.625528951,
+          "cosine": -0.00441604889119537
+        },
+        "rate_coefficient": {
+          "momentum_norm": 0.1210131049156189,
+          "flow_norm": 0.0,
+          "momentum_to_flow_norm_ratio": null,
+          "cosine": null
+        }
+      }
+    },
+    {
+      "model": "K2_flow_trajectory",
+      "snapshot": "best",
+      "training_frame": 2,
+      "weighted_momentum_loss": 2.519145965576172,
+      "weighted_flow_loss": 5.178555511520244e-06,
+      "groups": {
+        "deformation": {
+          "momentum_norm": 574.5435394828586,
+          "flow_norm": 0.0006055839324750107,
+          "momentum_to_flow_norm_ratio": 948743.0373766845,
+          "cosine": 0.02912404682837775
+        },
+        "velocity_head": {
+          "momentum_norm": 0.0,
+          "flow_norm": 0.0,
+          "momentum_to_flow_norm_ratio": null,
+          "cosine": null
+        },
+        "stress_head": {
+          "momentum_norm": 0.03191212790910155,
+          "flow_norm": 0.0,
+          "momentum_to_flow_norm_ratio": null,
+          "cosine": null
+        },
+        "physics_shared": {
+          "momentum_norm": 0.04185978704956712,
+          "flow_norm": 0.0,
+          "momentum_to_flow_norm_ratio": null,
+          "cosine": null
+        },
+        "rate_coefficient": {
+          "momentum_norm": 3.4011707305908203,
+          "flow_norm": 0.0,
+          "momentum_to_flow_norm_ratio": null,
+          "cosine": null
+        }
+      }
+    },
+    {
+      "model": "K2_flow_trajectory",
+      "snapshot": "best",
+      "training_frame": 83,
+      "weighted_momentum_loss": 4.937742710113525,
+      "weighted_flow_loss": 0.00013560392835643142,
+      "groups": {
+        "deformation": {
+          "momentum_norm": 270.6541165651971,
+          "flow_norm": 0.0014879129191177486,
+          "momentum_to_flow_norm_ratio": 181901.85264718335,
+          "cosine": 0.01639541673887538
+        },
+        "velocity_head": {
+          "momentum_norm": 0.0,
+          "flow_norm": 0.0,
+          "momentum_to_flow_norm_ratio": null,
+          "cosine": null
+        },
+        "stress_head": {
+          "momentum_norm": 0.04683764617027902,
+          "flow_norm": 0.0,
+          "momentum_to_flow_norm_ratio": null,
+          "cosine": null
+        },
+        "physics_shared": {
+          "momentum_norm": 0.06631032351157516,
+          "flow_norm": 0.0,
+          "momentum_to_flow_norm_ratio": null,
+          "cosine": null
+        },
+        "rate_coefficient": {
+          "momentum_norm": 6.580866813659668,
+          "flow_norm": 0.0,
+          "momentum_to_flow_norm_ratio": null,
+          "cosine": null
+        }
+      }
+    },
+    {
+      "model": "K2_flow_trajectory",
+      "snapshot": "best",
+      "training_frame": 155,
+      "weighted_momentum_loss": 1.630130410194397,
+      "weighted_flow_loss": 2.4186922018998303e-05,
+      "groups": {
+        "deformation": {
+          "momentum_norm": 93.58024087387835,
+          "flow_norm": 0.0012238350461398562,
+          "momentum_to_flow_norm_ratio": 76464.75002415014,
+          "cosine": 0.017487392866111034
+        },
+        "velocity_head": {
+          "momentum_norm": 0.0,
+          "flow_norm": 0.0,
+          "momentum_to_flow_norm_ratio": null,
+          "cosine": null
+        },
+        "stress_head": {
+          "momentum_norm": 0.028369195749151845,
+          "flow_norm": 0.0,
+          "momentum_to_flow_norm_ratio": null,
+          "cosine": null
+        },
+        "physics_shared": {
+          "momentum_norm": 0.048834175795953415,
+          "flow_norm": 0.0,
+          "momentum_to_flow_norm_ratio": null,
+          "cosine": null
+        },
+        "rate_coefficient": {
+          "momentum_norm": 2.1767191886901855,
+          "flow_norm": 0.0,
+          "momentum_to_flow_norm_ratio": null,
+          "cosine": null
+        }
+      }
+    }
+  ],
+  "limitations": "local fixed-time probes; not a complete training-gradient audit; norm imbalance alone does not prove causation",
+  "script_sha256": "bec4570123d3c5c905befd48565dc39f9176efcbe28440cae3bcbd10ba9f7bbf"
+}

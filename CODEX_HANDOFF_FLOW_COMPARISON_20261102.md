@@ -15,6 +15,8 @@
 
 ## 2. 接手时的运行状态
 
+**04:25 UTC 最新状态：K1/K2 全部训练、导出和三阶段后处理完成。测试 PSNR 38.301304 / 34.206497。进一步发现原辅助相机 FoV 与真实加载器不符，以及 CUDA mean-minus-pixel 偏移符号、metadata 写入后 T 权重约定有误，均用实际源码及 CUDA 单 Gaussian 测试核验。原训练源码/模型/缓存/V1诊断保持冻结，不能把本轮退化唯一归于结构。新增 `evaluate_motion_v2.py`、`gradient_balance_v2.py`、`summarize_results.py` 已实际执行；`motion_validation_v2.json`、`gradient_balance_v2.json`、`diagnostic_audit_v2.json` 和 assessment.md 为当前解释依据，旧 motion_validation.json / gradient_balance.json / motion_comparison.png 已被 V2 替代。真实相机下 K1/K2 覆盖率99%以上；速度推进 EPE 1.193206 / 0.846755 px，但几何 EPE 0.783709 / 0.846833，K2 仍不满足综合门槛。5项新增测试（含真实 loader CameraInfo 和 CUDA offset/权重）通过，日志 output/flow_comparison/geometry_v2_tests.log。已人工看原帧85拼接、解码视频0/21/49图及训练/运动图。下一轮应使用统一修正流程的分离应力对照 L0 和共享应力候选 L1，以隔离流程修复与共享分支。几何修正与相机契约代码已在 `variants/unified_flow/{flow,camera_contract}.py`；尚未整合完整训练器/启动下一轮。下一步继续实施下述候选，不能重复跑旧后处理。**
+
 **04:08 UTC 接续记录：两组均已完成 50k，验证选择锁已写入。K1 验证 PSNR 38.026127，K2 33.848821；尚不能用内部零速度偏差替代独立运动诊断。原队列正在顺序渲染/导出。已启动唯一后处理等待器 `output/flow_comparison/postprocess_queue.py`（工具会话 87816）：等待 `progress.json` 为 completed 后，顺序执行 evaluate_motion、gradient_balance、finalize。先检查 `experiments/flow_comparison/postprocess_status.json` 和各阶段同名 `.log`；等待器/后处理仍活跃时禁止重复运行 GPU 诊断。若 failed，先修复该阶段并接续，不能冒称已通过。完成之后仍需人工查看输出、补充报告、结果提交和按用户条件做下一轮结构实验。**
 
 最近核验：2026-11-02 02:57 UTC。用户已授权在比较后继续改进，详见 `experiments/flow_comparison/followup_plan.md`。

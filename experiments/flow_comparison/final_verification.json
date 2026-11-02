@@ -1,0 +1,51 @@
+{
+  "status": "passed",
+  "same_full_prefix_sha256": "6da523ea247b4068ec9bd6a7c8f83dacb7506c698daaeecc9eb0ecd93ea1ebce",
+  "only_arm_config_difference": "velocity_source",
+  "identical_flow_frame_schedule": true,
+  "source_and_target_hashes_verified": true,
+  "models": {
+    "K1_flow_independent": {
+      "final_checkpoint_sha256": "1c66a56eb423520be9853e496a76f5deb0caa05de753f4dd27a9621b0ae0e856",
+      "flow_loss_evaluations": 468,
+      "flow_applied_update_iterations": 467,
+      "momentum_loss_evaluations": 420,
+      "momentum_applied_update_iterations": 419,
+      "min_valid_neighborhood_fraction": 0.984375,
+      "frozen_parameter_keys_verified": [
+        "time_embed.frequencies",
+        "time_proj.weight",
+        "time_proj.bias"
+      ],
+      "all_final_parameters_finite": true,
+      "export_pixel_and_metric_checks": true
+    },
+    "K2_flow_trajectory": {
+      "final_checkpoint_sha256": "f56c63c778a00672674e8695f10fd262aa63ef4376b2f2c45eb3fa7b917c86f6",
+      "flow_loss_evaluations": 468,
+      "flow_applied_update_iterations": 467,
+      "momentum_loss_evaluations": 420,
+      "momentum_applied_update_iterations": 419,
+      "min_valid_neighborhood_fraction": 0.96875,
+      "frozen_parameter_keys_verified": [
+        "time_embed.frequencies",
+        "time_proj.weight",
+        "time_proj.bias",
+        "velocity_head.weight",
+        "velocity_head.bias"
+      ],
+      "all_final_parameters_finite": true,
+      "export_pixel_and_metric_checks": true
+    }
+  },
+  "analysis_scripts_sha256": {
+    "evaluate_motion.py": "16833071e5d81cc2565572f4ab7f3f4d41f7ddff6b00900455eb6c1e53c68703",
+    "finalize.py": "e02c5a8cb03bf968cfc5e12adf20757c32554e996f3b78ed97c4b99f1240ec26",
+    "gradient_balance.py": "bec4570123d3c5c905befd48565dc39f9176efcbe28440cae3bcbd10ba9f7bbf",
+    "postprocess_queue.py": "ddbdf25ef293e686bb94c29e37cda885227a4a37336fd7ff8ac79d087816cc9b",
+    "qa_inputs.py": "62b8d5e769be546647f7db586e1a0f44be2e5dab15a819b6e7f06352cc1e5e9f",
+    "reconcile_resume.py": "cb18c1a71cf3fd70609a3abb5a267c54396b5e1477a37fca2f0cd47c30bf62b1",
+    "status.py": "0758ac1972d81a09783198baef1ffd8c7c3c6ce538e769035e359192b1fbd2e9",
+    "verify_optimizer_update.py": "b409f09e830cc32761090d8670c870436de9e4687bda367437e37d6c7b859c68"
+  }
+}

@@ -1,0 +1,18 @@
+F:\A_Edinburgh\PhysGauss\envs\pidg-cu128\Lib\site-packages\requests\__init__.py:113: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (7.6.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+.....                                                                    [100%]
+============================== warnings summary ===============================
+tests/test_unified_flow_geometry.py::test_actual_loader_camera_info_matches_auxiliary_contract
+  F:\A_Edinburgh\PhysGauss\variants\flow_comparison\code\scene_PIDG\dataset_readers.py:239: DeprecationWarning: 'mode' parameter is deprecated and will be removed in Pillow 13 (2026-10-15)
+    image = Image.fromarray((rgb * 255.0).astype(np.uint8), "RGB")
+
+tests/test_unified_flow_geometry.py::test_real_cuda_metadata_offset_and_compositing_weights
+  F:\A_Edinburgh\PhysGauss\variants\flow_comparison\code\hashencoder\hashgrid.py:16: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+    @custom_fwd(cast_inputs=torch.half)
+
+tests/test_unified_flow_geometry.py::test_real_cuda_metadata_offset_and_compositing_weights
+  F:\A_Edinburgh\PhysGauss\variants\flow_comparison\code\hashencoder\hashgrid.py:56: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+    @custom_bwd
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+5 passed, 3 warnings in 3.70s

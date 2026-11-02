@@ -1,0 +1,52 @@
+{
+  "status": "passed",
+  "diagnostic_version": 2,
+  "original_training_unchanged": true,
+  "V1_motion_diagnostic_superseded": true,
+  "V1_training_flow_has_known_geometry_errors": true,
+  "decision": {
+    "PSNR_delta_dB": -4.1773060480753585,
+    "LPIPS_relative_change": 0.6583195130093595,
+    "velocity_EPE_relative_change": -0.29035327939890754,
+    "geometric_EPE_relative_change": 0.08054552922662839,
+    "criteria_passed": [
+      false,
+      false,
+      true,
+      false
+    ],
+    "overall_benefit": false,
+    "next_path": "shared_trajectory_and_stress_branch_with_matched_corrected_flow_control"
+  },
+  "decoded_video_checks": [
+    {
+      "model": "K1_flow_independent",
+      "decoded_best_frames": 50,
+      "review_indices": [
+        0,
+        21,
+        49
+      ]
+    },
+    {
+      "model": "K2_flow_trajectory",
+      "decoded_best_frames": 50,
+      "review_indices": [
+        0,
+        21,
+        49
+      ]
+    }
+  ],
+  "files_sha256": {
+    "experiments\\flow_comparison\\motion_validation_v2.json": "7fd54e64359853d7ed7ed1dc9fd172d396e822f506289717658882801f7cd578",
+    "experiments\\flow_comparison\\gradient_balance_v2.json": "933755c494aab6aa27859387c842202eeb0f34ba2dee6bd89144ae611a92ec1e",
+    "variants\\unified_flow\\camera_contract.py": "503ec9b464820ef4381ca8eaca35c3fe1611a606629773b4e3ac8bf0b6575a14",
+    "variants\\unified_flow\\flow.py": "b642364bd4510b05b1073379ab087d6372d93bae094fa0d998c168b81389679f",
+    "tests\\test_unified_flow_geometry.py": "96b741029a12a2b46019c0c6f017bcd560e34901e96b04e89b913f214a85f062",
+    "output\\flow_comparison\\geometry_v2_tests.log": "9b84ca25aeb08414915b8ac45f450b3fe010785ef3d51f83ca0b5f736fd98b76",
+    "output\\flow_comparison\\evaluate_motion_v2.py": "a7af162b018c0e16e651064d2b3ded1aea1dcf95810ddf14b34f0f7422f47604",
+    "output\\flow_comparison\\gradient_balance_v2.py": "d1cd19dc0aa7f113bb4b32f72030d6ed87ccdffbb96ae4809dab69054a1e4444",
+    "output\\flow_comparison\\summarize_results.py": "962933125a2226210eed59101277f61fa49e1ae3eec63ee0e61587326b4e3d10"
+  }
+}

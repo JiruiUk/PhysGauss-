@@ -1,0 +1,152 @@
+{
+  "rows": [
+    {
+      "model": "K1_flow_independent",
+      "snapshot": "best",
+      "SSIM": 0.9931610226631165,
+      "PSNR": 38.30130386352539,
+      "LPIPS": 0.013030107133090496,
+      "MS-SSIM": 0.9952919483184814
+    },
+    {
+      "model": "K1_flow_independent",
+      "snapshot": "50000",
+      "SSIM": 0.9931610226631165,
+      "PSNR": 38.30130386352539,
+      "LPIPS": 0.013030107133090496,
+      "MS-SSIM": 0.9952919483184814
+    },
+    {
+      "model": "K2_flow_trajectory",
+      "snapshot": "best",
+      "SSIM": 0.9882473945617676,
+      "PSNR": 34.20649719238281,
+      "LPIPS": 0.021984698250889778,
+      "MS-SSIM": 0.9905336499214172
+    },
+    {
+      "model": "K2_flow_trajectory",
+      "snapshot": "50000",
+      "SSIM": 0.9882473945617676,
+      "PSNR": 34.20649719238281,
+      "LPIPS": 0.021984698250889778,
+      "MS-SSIM": 0.9905336499214172
+    }
+  ],
+  "historical_references": [
+    {
+      "model": "H3_combined",
+      "snapshot": "50000",
+      "SSIM": 0.9950646758079529,
+      "PSNR": 40.878231048583984,
+      "LPIPS": 0.009441059082746506,
+      "MS-SSIM": 0.996944785118103
+    },
+    {
+      "model": "J1_monotonic_kinematic",
+      "snapshot": "50000",
+      "SSIM": 0.9945284128189087,
+      "PSNR": 40.07172393798828,
+      "LPIPS": 0.010716607794165611,
+      "MS-SSIM": 0.99663245677948
+    }
+  ],
+  "protocol": {
+    "scene": "Rubber Duck",
+    "seed": 0,
+    "train": 120,
+    "validation": 30,
+    "test": 50,
+    "total_iterations": 50000,
+    "shared_full_checkpoint_iteration": 3000,
+    "models": [
+      "K1_flow_independent",
+      "K2_flow_trajectory"
+    ],
+    "only_difference_between_new_arms": "velocity_source independent versus trajectory; unused velocity head frozen in trajectory arm",
+    "same_in_both": [
+      "UniMatch training-only paired flow",
+      "frozen H3 train-only estimated depth",
+      "camera compensation",
+      "positive color/image/coverage/strain losses",
+      "fixed monotonic physics clock",
+      "material-coordinate local Cauchy residual",
+      "validation selection",
+      "optimization budget"
+    ],
+    "flow_resolution": [
+      400,
+      225
+    ],
+    "flow_estimator_resolution": [
+      800,
+      448
+    ],
+    "rgb_resolution": [
+      1600,
+      900
+    ],
+    "flow_weight": 0.01,
+    "flow_interval": 100,
+    "flow_start": 3000,
+    "flow_ramp": 2000,
+    "momentum_weight": 0.01,
+    "momentum_interval": 100,
+    "momentum_start": 8000,
+    "momentum_ramp": 4000,
+    "momentum_samples": 64,
+    "momentum_neighbors": 12,
+    "momentum_loss": "Huber delta=1, rho=1, no external force, predicted stress and original rate correction retained",
+    "velocity_dt": 0.001,
+    "acceleration_dt": 0.005025125628140704,
+    "flow_objective": "0.5 geometry + 0.5 velocity advection; mean L1 in componentwise image-normalized pixel coordinates",
+    "flow_projection": "Torch forward-equivalent Gaussian center and affine covariance projection; frozen raster visibility/correspondence",
+    "momentum_operator_reason": "hash encoder coordinate Hessians unsupported; common local world-space discretization avoids giving the structural arm an inconsistent legacy Eulerian residual at material coordinates",
+    "baseline_limitations": [
+      "H3 and J1 are historical references, not a pure flow-only causal ablation",
+      "historical test exposure",
+      "single scene/seed",
+      "estimated optical flow/depth are not ground truth",
+      "finite-difference velocity is a structural constraint, not independent evidence of correct physics",
+      "not a verbatim paper LPFM implementation"
+    ],
+    "outputs": [
+      "validation-selected and final metrics",
+      "GT|Render PNG pairs and MP4",
+      "loss/gradient diagnostics",
+      "source/input/checkpoint hash locks"
+    ]
+  },
+  "selection_lock": {
+    "locked_utc": "2026-11-02T04:05:41.753567+00:00",
+    "selection_split": "validation",
+    "models": {
+      "K1_flow_independent": {
+        "value": 38.02612717946371,
+        "iteration": 50000,
+        "snapshot": "best",
+        "metrics": {
+          "PSNR": 38.02612717946371,
+          "SSIM": 0.9927280147870382,
+          "LPIPS": 0.013716591258222858,
+          "MS-SSIM": 0.994804859161377
+        },
+        "selection_split": "validation"
+      },
+      "K2_flow_trajectory": {
+        "value": 33.84882113138835,
+        "iteration": 50000,
+        "snapshot": "best",
+        "metrics": {
+          "PSNR": 33.84882113138835,
+          "SSIM": 0.9876289188861846,
+          "LPIPS": 0.02274649093548457,
+          "MS-SSIM": 0.9897195716698964
+        },
+        "selection_split": "validation"
+      }
+    },
+    "test_opened_before_lock": false,
+    "historical_test_exposure": true
+  }
+}
