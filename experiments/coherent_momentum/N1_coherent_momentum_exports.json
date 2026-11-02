@@ -1,0 +1,51 @@
+{
+  "model": "N1_coherent_momentum",
+  "selection": {
+    "value": 39.27599385579427,
+    "iteration": 50000,
+    "snapshot": "best",
+    "metrics": {
+      "PSNR": 39.27599385579427,
+      "SSIM": 0.9940057317415874,
+      "LPIPS": 0.011500697062971691,
+      "MS-SSIM": 0.9960079987843832
+    },
+    "selection_split": "validation"
+  },
+  "metrics": {
+    "ours_50000": {
+      "SSIM": 0.9944157600402832,
+      "PSNR": 39.90951919555664,
+      "LPIPS": 0.010758144780993462,
+      "MS-SSIM": 0.996470034122467
+    },
+    "ours_best": {
+      "SSIM": 0.9944157600402832,
+      "PSNR": 39.90951919555664,
+      "LPIPS": 0.010758144780993462,
+      "MS-SSIM": 0.996470034122467
+    }
+  },
+  "pairs": 100,
+  "pixel_identity_verified": true,
+  "independent_PSNR_max_difference": 5.269617332714915e-06,
+  "videos": [
+    {
+      "file": "F:\\A_Edinburgh\\PhysGauss\\output\\coherent_momentum\\N1_coherent_momentum\\GT_Render_best.mp4",
+      "frames": 50,
+      "display_fps": 10,
+      "seconds": 5.0,
+      "note": "display rate only; acquisition FPS unknown"
+    },
+    {
+      "file": "F:\\A_Edinburgh\\PhysGauss\\output\\coherent_momentum\\N1_coherent_momentum\\GT_Render_50000.mp4",
+      "frames": 50,
+      "display_fps": 10,
+      "seconds": 5.0,
+      "note": "display rate only; acquisition FPS unknown"
+    }
+  ],
+  "velocity_source": "trajectory",
+  "gallery": "F:\\A_Edinburgh\\PhysGauss\\output\\coherent_momentum\\N1_coherent_momentum\\index.html",
+  "archive": "F:\\A_Edinburgh\\PhysGauss\\output\\coherent_momentum\\N1_coherent_momentum_GT_Render.zip"
+}

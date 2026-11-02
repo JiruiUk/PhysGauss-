@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "optimizer_tensors_checked": 69,
+  "all_optimizer_tensors_finite": true,
+  "guard_scale": {
+    "minimum": 1.6664404792492545e-08,
+    "median": 2.7227334938557502e-06,
+    "maximum": 0.00025228193648927917
+  },
+  "training_valid_fraction_min": 0.890625,
+  "training_valid_fraction_median": 0.984375,
+  "boundary_shift_events": [
+    {
+      "iteration": 20000,
+      "requested_t": 1.0,
+      "center_shift": -0.005025125628140725
+    }
+  ]
+}

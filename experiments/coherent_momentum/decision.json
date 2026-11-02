@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "image_PSNR": true,
+    "image_LPIPS": true,
+    "observed_motion": true,
+    "legacy_momentum": false,
+    "legacy_coverage": true,
+    "coherent_momentum": false,
+    "coherent_coverage": true
+  },
+  "composite_benefit": false,
+  "deltas_N1_minus_M1": {
+    "validation_PSNR": 0.01047604878743158,
+    "validation_LPIPS_relative": 0.011341708346082724,
+    "geometric_EPE_relative": -0.05109293355188371,
+    "velocity_EPE_relative": -0.038475465902647166
+  },
+  "no_further_automatic_full_training": true,
+  "not_physical_ground_truth": true
+}

@@ -1,7 +1,15 @@
 # Codex 工作交接：运动光流与轨迹导出速度对照
 
-更新时间：2026-11-02 13:43 UTC（Europe/London）。
+更新时间：2026-11-02 15:02 UTC（Europe/London）。
 工作目录：`F:\A_Edinburgh\PhysGauss`；Windows / PowerShell。
+
+> **15:02 N1最终交付：已完成总50k、验证选择锁定（best=final50k）、测试/GT|Render PNG/两段视频/ZIP、独立核验、同材料点双算子比较和三维图审阅。本轮已结束，自动跟进 `automation` 已删除，不按以下历史命令重训。相对M1：测试PSNR39.701836→39.909519（+0.2077dB），验证PSNR仅+0.0105dB，测试LPIPS略恶化1.26%；独立二维速度推进EPE降低3.85%、完整轨迹EPE降低5.11%。共同64锚点在帧2/83/155上，原算子Huber中位数降低2.76%，新算子降低7.21%，均未达到预先25%门槛，因此综合收益false。帧83异常明显减轻，帧2反而恶化，不能泛化为物理成功。**
+
+最终报告 `experiments/coherent_momentum/assessment.md`；同步新旧视频/逐帧比较页 `output/coherent_momentum/index.html`；三维全64点位移图 `output/coherent_momentum/rollout_displacement_3d.png`。独立 `final_verification.json` passed且manual_review_pending=false：源码/数据/共同3k/完整50k/快照SHA、验证选择时序、468光流/420动量评估（419次更新）、100张拼接图逐像素、独立PSNR最大误差5.3e-6dB、两视频各50帧/5秒、ZIP CRC均通过；全部参数及69个优化器状态张量有限。完整50k SHA `36308753137b7c1d796ad95f337b50c61aa2d71744dfc32b15e8aecf0accc84d`。best与final模型权重相同，视频标题不同。
+
+剩余问题及边界：率修正散度仍主导；N1时间步减半的加速度变化18.8%～22.1%，空间邻居变化也明显；保持M1 guard使共享物理梯度受到强限制。详见 `field_sensitivity.json` / `additional_verification.json`。N1仍是同一轨迹加软物理目标，不是物理积分器唯一生成渲染中心，不能保证严格共轨；未加外力/本构/未知材料，也不把代数零偏差或h²缩放残差当独立真值。单场景单种子及历史测试暴露限制结论。不再自动增加完整候选；全部历史模型及无关改动保留。
+
+以下13:43及更早记录均为历史追溯，不表示仍有训练或跟进在运行。
 
 > **13:43 新授权：用户要求统一物理动量与形变运动并与之前模型比较。已明确L1/M1本来就由完整渲染中心轨迹导出速度/加速度，因此本轮不是首次消除独立速度分支。新增独立开关候选 `variants/coherent_momentum` / N1_coherent_momentum：统一h=1/199区间的轨迹/弦速度/加速度及物理推进位置，保留stress_pred、原应变率修正和M1梯度策略；用32邻居、FP64归一化二次局部拟合直接计算应力Jacobian与速度Hessian，替换原连续两次线性拟合。不新增参数、外力或本构；这是多个数值环节的改动，不冒称单标量消融或精确物理求解器。24项测试、100步GPU短训70→100完整恢复、20步flags-off、实际优化器更新/私有梯度精确保留/共享梯度上限全通过。`experiments/coherent_momentum/{plan,diagnosis,preflight,source_freeze}.json` 为冻结协议；共同3k检查点SHA仍为 e361f4ba241a77e4158d341986bf86f2797e24c9a560817b04ad6c18b3a4caa5，张量/优化器/RNG字节相同。仅这一个完整候选，从3k到总50k，比较历史M1，禁止重训旧模型。**
 

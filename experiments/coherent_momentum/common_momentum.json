@@ -1,0 +1,185 @@
+{
+  "status": "complete",
+  "rows": [
+    {
+      "model": "M1_guarded_shared",
+      "frame": 2,
+      "operator": "legacy",
+      "valid_fraction": 1.0,
+      "valid_anchors": 64,
+      "raw_huber": 46.74658203125,
+      "residual_rms": 82.17867530986734,
+      "impulse_rms": 0.41295816738626806,
+      "rollout_position_rms": 0.002075166670282754
+    },
+    {
+      "model": "M1_guarded_shared",
+      "frame": 2,
+      "operator": "coherent",
+      "valid_fraction": 1.0,
+      "valid_anchors": 64,
+      "raw_huber": 67.58515852345508,
+      "residual_rms": 142.2628052689841,
+      "impulse_rms": 0.7148884686883623,
+      "rollout_position_rms": 0.003592404365268152
+    },
+    {
+      "model": "M1_guarded_shared",
+      "frame": 83,
+      "operator": "legacy",
+      "valid_fraction": 1.0,
+      "valid_anchors": 64,
+      "raw_huber": 724.2509765625,
+      "residual_rms": 4711.611300849428,
+      "impulse_rms": 23.67643869773582,
+      "rollout_position_rms": 0.11897707888309456
+    },
+    {
+      "model": "M1_guarded_shared",
+      "frame": 83,
+      "operator": "coherent",
+      "valid_fraction": 1.0,
+      "valid_anchors": 64,
+      "raw_huber": 395.6493597843355,
+      "residual_rms": 2589.670046248622,
+      "impulse_rms": 13.013417317832271,
+      "rollout_position_rms": 0.06539405687352899
+    },
+    {
+      "model": "M1_guarded_shared",
+      "frame": 155,
+      "operator": "legacy",
+      "valid_fraction": 1.0,
+      "valid_anchors": 64,
+      "raw_huber": 119.15737915039062,
+      "residual_rms": 288.20140593002424,
+      "impulse_rms": 1.448248271005147,
+      "rollout_position_rms": 0.0072776295025384265
+    },
+    {
+      "model": "M1_guarded_shared",
+      "frame": 155,
+      "operator": "coherent",
+      "valid_fraction": 1.0,
+      "valid_anchors": 64,
+      "raw_huber": 114.98095941032727,
+      "residual_rms": 239.6205872714175,
+      "impulse_rms": 1.2041235541277262,
+      "rollout_position_rms": 0.0060508721312951055
+    },
+    {
+      "model": "N1_coherent_momentum",
+      "frame": 2,
+      "operator": "legacy",
+      "valid_fraction": 1.0,
+      "valid_anchors": 64,
+      "raw_huber": 63.991065979003906,
+      "residual_rms": 156.40333880639741,
+      "impulse_rms": 0.7859464261628011,
+      "rollout_position_rms": 0.003949479528456287
+    },
+    {
+      "model": "N1_coherent_momentum",
+      "frame": 2,
+      "operator": "coherent",
+      "valid_fraction": 1.0,
+      "valid_anchors": 64,
+      "raw_huber": 81.8764626434091,
+      "residual_rms": 195.28969542708958,
+      "impulse_rms": 0.9813552534024602,
+      "rollout_position_rms": 0.004931433434183217
+    },
+    {
+      "model": "N1_coherent_momentum",
+      "frame": 83,
+      "operator": "legacy",
+      "valid_fraction": 1.0,
+      "valid_anchors": 64,
+      "raw_huber": 154.31454467773438,
+      "residual_rms": 404.13401219340415,
+      "impulse_rms": 2.030824181876403,
+      "rollout_position_rms": 0.010205146642594988
+    },
+    {
+      "model": "N1_coherent_momentum",
+      "frame": 83,
+      "operator": "coherent",
+      "valid_fraction": 1.0,
+      "valid_anchors": 64,
+      "raw_huber": 202.05129758600577,
+      "residual_rms": 898.7434853643933,
+      "impulse_rms": 4.5162989214291125,
+      "rollout_position_rms": 0.022694969454417648
+    },
+    {
+      "model": "N1_coherent_momentum",
+      "frame": 155,
+      "operator": "legacy",
+      "valid_fraction": 1.0,
+      "valid_anchors": 64,
+      "raw_huber": 115.87016296386719,
+      "residual_rms": 271.24645543961583,
+      "impulse_rms": 1.3630475147719388,
+      "rollout_position_rms": 0.006849484998853963
+    },
+    {
+      "model": "N1_coherent_momentum",
+      "frame": 155,
+      "operator": "coherent",
+      "valid_fraction": 1.0,
+      "valid_anchors": 64,
+      "raw_huber": 106.68892054022061,
+      "residual_rms": 243.03928143316554,
+      "impulse_rms": 1.2213029217747011,
+      "rollout_position_rms": 0.0061372006119331714
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "operator": "legacy",
+      "matched_huber_by_frame": {
+        "M1_guarded_shared": [
+          46.746580792652686,
+          724.2509142370621,
+          119.15737753603908
+        ],
+        "N1_coherent_momentum": [
+          63.99105852680725,
+          154.31454084035303,
+          115.87016105945368
+        ]
+      },
+      "M1_median": 119.15737753603908,
+      "N1_median": 115.87016105945368,
+      "relative_change": -0.027587183811520033,
+      "min_paired_valid_fraction": 1.0
+    },
+    {
+      "operator": "coherent",
+      "matched_huber_by_frame": {
+        "M1_guarded_shared": [
+          67.58515852345509,
+          395.6493597843355,
+          114.98095941032727
+        ],
+        "N1_coherent_momentum": [
+          81.8764626434091,
+          202.0512975860058,
+          106.68892054022062
+        ]
+      },
+      "M1_median": 114.98095941032727,
+      "N1_median": 106.68892054022062,
+      "relative_change": -0.07211662620169335,
+      "min_paired_valid_fraction": 1.0
+    }
+  ],
+  "prefix_sha256": "e361f4ba241a77e4158d341986bf86f2797e24c9a560817b04ad6c18b3a4caa5",
+  "frames": [
+    2,
+    83,
+    155
+  ],
+  "meaning": "same common canonical anchors; each operator applied identically to both models; residuals from different operators are not interchangeable",
+  "limitations": "No physical ground truth. Prefix points may have been pruned; current geometry/conditioning differs. Rollout error is scaled residual, not independent validation."
+}

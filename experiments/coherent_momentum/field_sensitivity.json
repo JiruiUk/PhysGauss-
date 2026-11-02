@@ -1,0 +1,289 @@
+{
+  "status": "complete",
+  "rows": [
+    {
+      "model": "M1_guarded_shared",
+      "frame": 2,
+      "coefficient": 0.6894205808639526,
+      "acceleration_rms": 25.90671788750785,
+      "predicted_divergence_rms": 0.06855719142205237,
+      "rate_divergence_rms": 141.77583757405728,
+      "residual_rms": 142.2700241801077,
+      "velocity_h_sweep": [
+        {
+          "factor": 0.5,
+          "velocity_relative_change": 0.018924305089151175,
+          "acceleration_relative_change": 0.29337482417213073,
+          "momentum_relative_change": 0.2068800133604749,
+          "paired_valid_fraction": 1.0
+        },
+        {
+          "factor": 2,
+          "skipped": "boundary would move center; different times are not a derivative-sensitivity comparison"
+        }
+      ],
+      "neighbor_sweep": [
+        {
+          "k": 16,
+          "valid_fraction": 1.0,
+          "paired_valid_fraction": 1.0,
+          "residual_rms": 246.934374953553,
+          "relative_change_to_k32": 2.0828289696782547
+        },
+        {
+          "k": 32,
+          "valid_fraction": 1.0,
+          "paired_valid_fraction": 1.0,
+          "residual_rms": 142.2700241801077,
+          "relative_change_to_k32": 0.0
+        },
+        {
+          "k": 48,
+          "valid_fraction": 1.0,
+          "paired_valid_fraction": 1.0,
+          "residual_rms": 86.66512385550234,
+          "relative_change_to_k32": 0.557929346784042
+        }
+      ]
+    },
+    {
+      "model": "M1_guarded_shared",
+      "frame": 83,
+      "coefficient": 0.6894205808639526,
+      "acceleration_rms": 55.10470531710999,
+      "predicted_divergence_rms": 0.07889041077992599,
+      "rate_divergence_rms": 2612.494491437012,
+      "residual_rms": 2589.6801020963803,
+      "velocity_h_sweep": [
+        {
+          "factor": 0.5,
+          "velocity_relative_change": 0.0162048391301158,
+          "acceleration_relative_change": 0.2401226316284007,
+          "momentum_relative_change": 0.0506854548994463,
+          "paired_valid_fraction": 1.0
+        },
+        {
+          "factor": 2,
+          "velocity_relative_change": 0.03104922471693408,
+          "acceleration_relative_change": 0.17360255757403742,
+          "momentum_relative_change": 0.05665170629578622,
+          "paired_valid_fraction": 1.0
+        }
+      ],
+      "neighbor_sweep": [
+        {
+          "k": 16,
+          "valid_fraction": 0.953125,
+          "paired_valid_fraction": 0.953125,
+          "residual_rms": 1483.8919846405215,
+          "relative_change_to_k32": 6.738321296318404
+        },
+        {
+          "k": 32,
+          "valid_fraction": 1.0,
+          "paired_valid_fraction": 1.0,
+          "residual_rms": 2589.6801020963803,
+          "relative_change_to_k32": 0.0
+        },
+        {
+          "k": 48,
+          "valid_fraction": 1.0,
+          "paired_valid_fraction": 1.0,
+          "residual_rms": 646.1514929671002,
+          "relative_change_to_k32": 1.166368706063496
+        }
+      ]
+    },
+    {
+      "model": "M1_guarded_shared",
+      "frame": 155,
+      "coefficient": 0.6894205808639526,
+      "acceleration_rms": 57.1299407560384,
+      "predicted_divergence_rms": 0.07848820355718143,
+      "rate_divergence_rms": 217.9698878137861,
+      "residual_rms": 239.59205374624275,
+      "velocity_h_sweep": [
+        {
+          "factor": 0.5,
+          "velocity_relative_change": 0.018733237821907677,
+          "acceleration_relative_change": 0.22218530342620468,
+          "momentum_relative_change": 0.7048826393231263,
+          "paired_valid_fraction": 1.0
+        },
+        {
+          "factor": 2,
+          "velocity_relative_change": 0.035542418919988744,
+          "acceleration_relative_change": 0.17098082776275575,
+          "momentum_relative_change": 0.3627616984342847,
+          "paired_valid_fraction": 1.0
+        }
+      ],
+      "neighbor_sweep": [
+        {
+          "k": 16,
+          "valid_fraction": 0.984375,
+          "paired_valid_fraction": 0.984375,
+          "residual_rms": 530.0942996556566,
+          "relative_change_to_k32": 1.7882865245921717
+        },
+        {
+          "k": 32,
+          "valid_fraction": 1.0,
+          "paired_valid_fraction": 1.0,
+          "residual_rms": 239.59205374624275,
+          "relative_change_to_k32": 0.0
+        },
+        {
+          "k": 48,
+          "valid_fraction": 1.0,
+          "paired_valid_fraction": 1.0,
+          "residual_rms": 185.12536104720397,
+          "relative_change_to_k32": 0.6529969419784122
+        }
+      ]
+    },
+    {
+      "model": "N1_coherent_momentum",
+      "frame": 2,
+      "coefficient": 0.625067949295044,
+      "acceleration_rms": 25.752565290016747,
+      "predicted_divergence_rms": 0.13050649775352158,
+      "rate_divergence_rms": 203.53797675017563,
+      "residual_rms": 195.29538873454445,
+      "velocity_h_sweep": [
+        {
+          "factor": 0.5,
+          "velocity_relative_change": 0.0159819499007396,
+          "acceleration_relative_change": 0.2206371935764348,
+          "momentum_relative_change": 0.09716717779046037,
+          "paired_valid_fraction": 1.0
+        },
+        {
+          "factor": 2,
+          "skipped": "boundary would move center; different times are not a derivative-sensitivity comparison"
+        }
+      ],
+      "neighbor_sweep": [
+        {
+          "k": 16,
+          "valid_fraction": 1.0,
+          "paired_valid_fraction": 1.0,
+          "residual_rms": 366.1968446180295,
+          "relative_change_to_k32": 2.0433560030743783
+        },
+        {
+          "k": 32,
+          "valid_fraction": 1.0,
+          "paired_valid_fraction": 1.0,
+          "residual_rms": 195.29538873454445,
+          "relative_change_to_k32": 0.0
+        },
+        {
+          "k": 48,
+          "valid_fraction": 1.0,
+          "paired_valid_fraction": 1.0,
+          "residual_rms": 86.3255513078141,
+          "relative_change_to_k32": 0.6562823600196801
+        }
+      ]
+    },
+    {
+      "model": "N1_coherent_momentum",
+      "frame": 83,
+      "coefficient": 0.625067949295044,
+      "acceleration_rms": 73.17036901060145,
+      "predicted_divergence_rms": 0.18290235442904443,
+      "rate_divergence_rms": 888.6264081424943,
+      "residual_rms": 898.7414301576433,
+      "velocity_h_sweep": [
+        {
+          "factor": 0.5,
+          "velocity_relative_change": 0.014703475123405875,
+          "acceleration_relative_change": 0.18774619740297308,
+          "momentum_relative_change": 0.11668161282161962,
+          "paired_valid_fraction": 1.0
+        },
+        {
+          "factor": 2,
+          "velocity_relative_change": 0.03045480248806652,
+          "acceleration_relative_change": 0.13103656414750714,
+          "momentum_relative_change": 0.0595067316176467,
+          "paired_valid_fraction": 1.0
+        }
+      ],
+      "neighbor_sweep": [
+        {
+          "k": 16,
+          "valid_fraction": 0.96875,
+          "paired_valid_fraction": 0.96875,
+          "residual_rms": 403.61457609112995,
+          "relative_change_to_k32": 2.017233043484226
+        },
+        {
+          "k": 32,
+          "valid_fraction": 1.0,
+          "paired_valid_fraction": 1.0,
+          "residual_rms": 898.7414301576433,
+          "relative_change_to_k32": 0.0
+        },
+        {
+          "k": 48,
+          "valid_fraction": 1.0,
+          "paired_valid_fraction": 1.0,
+          "residual_rms": 802.6460678283177,
+          "relative_change_to_k32": 0.16334504706431918
+        }
+      ]
+    },
+    {
+      "model": "N1_coherent_momentum",
+      "frame": 155,
+      "coefficient": 0.625067949295044,
+      "acceleration_rms": 52.579072845138704,
+      "predicted_divergence_rms": 0.10617962662746738,
+      "rate_divergence_rms": 242.70624095981285,
+      "residual_rms": 242.99986325963704,
+      "velocity_h_sweep": [
+        {
+          "factor": 0.5,
+          "velocity_relative_change": 0.016001336594252083,
+          "acceleration_relative_change": 0.21405529005766316,
+          "momentum_relative_change": 0.7073294344646931,
+          "paired_valid_fraction": 1.0
+        },
+        {
+          "factor": 2,
+          "velocity_relative_change": 0.03290459014433325,
+          "acceleration_relative_change": 0.15792036055173123,
+          "momentum_relative_change": 0.5505396415998042,
+          "paired_valid_fraction": 1.0
+        }
+      ],
+      "neighbor_sweep": [
+        {
+          "k": 16,
+          "valid_fraction": 1.0,
+          "paired_valid_fraction": 1.0,
+          "residual_rms": 769.1480183333647,
+          "relative_change_to_k32": 2.9834722221998513
+        },
+        {
+          "k": 32,
+          "valid_fraction": 1.0,
+          "paired_valid_fraction": 1.0,
+          "residual_rms": 242.99986325963704,
+          "relative_change_to_k32": 0.0
+        },
+        {
+          "k": 48,
+          "valid_fraction": 1.0,
+          "paired_valid_fraction": 1.0,
+          "residual_rms": 171.8815789889048,
+          "relative_change_to_k32": 0.8255655495635497
+        }
+      ]
+    }
+  ],
+  "purpose": "Post-selection diagnostics only; same prefix canonical anchors, no optimization or selection changes.",
+  "limitations": "FP32 field values with FP64 differencing; no finest-step ground truth. Changing neighborhood changes the estimator. Common points may have been pruned."
+}

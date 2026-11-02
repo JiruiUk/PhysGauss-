@@ -1,0 +1,8 @@
+W1102 14:58:17.006000 227788 envs\pidg-cu128\Lib\site-packages\torch\utils\cpp_extension.py:466] Error checking compiler version for cl: 'cp1' codec can't decode bytes in position 0--1: No mapping for the Unicode character exists in the target code page.
+ninja: no work to do.
+F:\A_Edinburgh\PhysGauss\variants\coherent_momentum\code\hashencoder\hashgrid.py:16: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.half)
+F:\A_Edinburgh\PhysGauss\variants\coherent_momentum\code\hashencoder\hashgrid.py:56: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+Load weight: F:\A_Edinburgh\PhysGauss\runs\pidg_coherent_momentum\N1_coherent_momentum\rubber_duck\deform/iteration_best/deform.pth
+Operational h motion: {'model_coverage': 0.9999793450037638, 'zero_flow_EPE_px': 1.4555232589443525, 'geometric_EPE_px': 0.7343804289897283, 'geometric_normalized_L1': 0.0015696708132357648, 'velocity_EPE_px': 0.7302790266772111, 'velocity_normalized_L1': 0.0015618935600893262, 'camera_only_static_EPE_px': 1.20454992800951, 'camera_only_static_normalized_L1': 0.0026337833560925597}
