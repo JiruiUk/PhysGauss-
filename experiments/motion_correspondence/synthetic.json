@@ -1,0 +1,1008 @@
+{
+  "hidden_pass": {
+    "no_history": {
+      "accepted": [
+        0,
+        1
+      ],
+      "best": [
+        0,
+        1
+      ],
+      "margins": [
+        3.6602276622973733,
+        3.660227662297377
+      ],
+      "alternatives": [
+        [
+          {
+            "observation": 0,
+            "relative_cost": 0.0
+          },
+          {
+            "observation": -1,
+            "relative_cost": 3.6602276622973733
+          }
+        ],
+        [
+          {
+            "observation": 1,
+            "relative_cost": 0.0
+          },
+          {
+            "observation": -1,
+            "relative_cost": 3.660227662297377
+          }
+        ]
+      ],
+      "reference_assignment": [
+        1,
+        0
+      ],
+      "forecast_before_target_observation": [
+        [
+          18.597316849882485,
+          20.0
+        ],
+        [
+          41.40268315011751,
+          20.0
+        ]
+      ],
+      "accepted_correct": 0,
+      "accepted_wrong": 2,
+      "abstained": 0,
+      "identical_observation_sequel": [
+        {
+          "frame": 13,
+          "accepted": [
+            0,
+            1
+          ],
+          "unresolved_seed_identities": [],
+          "accepted_wrong": 2
+        },
+        {
+          "frame": 14,
+          "accepted": [
+            0,
+            1
+          ],
+          "unresolved_seed_identities": [],
+          "accepted_wrong": 2
+        },
+        {
+          "frame": 15,
+          "accepted": [
+            -1,
+            -1
+          ],
+          "unresolved_seed_identities": [],
+          "accepted_wrong": 0
+        },
+        {
+          "frame": 16,
+          "accepted": [
+            -1,
+            -1
+          ],
+          "unresolved_seed_identities": [],
+          "accepted_wrong": 0
+        },
+        {
+          "frame": 17,
+          "accepted": [
+            -1,
+            -1
+          ],
+          "unresolved_seed_identities": [],
+          "accepted_wrong": 0
+        },
+        {
+          "frame": 18,
+          "accepted": [
+            -1,
+            -1
+          ],
+          "unresolved_seed_identities": [],
+          "accepted_wrong": 0
+        },
+        {
+          "frame": 19,
+          "accepted": [
+            -1,
+            -1
+          ],
+          "unresolved_seed_identities": [],
+          "accepted_wrong": 0
+        },
+        {
+          "frame": 20,
+          "accepted": [
+            -1,
+            -1
+          ],
+          "unresolved_seed_identities": [],
+          "accepted_wrong": 0
+        }
+      ]
+    },
+    "history": {
+      "accepted": [
+        1,
+        0
+      ],
+      "best": [
+        1,
+        0
+      ],
+      "margins": [
+        7.6404791984793565,
+        7.6404791984793565
+      ],
+      "alternatives": [
+        [
+          {
+            "observation": 1,
+            "relative_cost": 0.0
+          },
+          {
+            "observation": -1,
+            "relative_cost": 7.6404791984793565
+          },
+          {
+            "observation": 0,
+            "relative_cost": 20.444113789373365
+          }
+        ],
+        [
+          {
+            "observation": 0,
+            "relative_cost": 0.0
+          },
+          {
+            "observation": -1,
+            "relative_cost": 7.6404791984793565
+          },
+          {
+            "observation": 1,
+            "relative_cost": 20.444113789373368
+          }
+        ]
+      ],
+      "reference_assignment": [
+        1,
+        0
+      ],
+      "forecast_before_target_observation": [
+        [
+          33.98293498888737,
+          20.0
+        ],
+        [
+          26.017065011112624,
+          20.0
+        ]
+      ],
+      "accepted_correct": 2,
+      "accepted_wrong": 0,
+      "abstained": 0,
+      "identical_observation_sequel": [
+        {
+          "frame": 13,
+          "accepted": [
+            1,
+            0
+          ],
+          "unresolved_seed_identities": [],
+          "accepted_wrong": 0
+        },
+        {
+          "frame": 14,
+          "accepted": [
+            1,
+            0
+          ],
+          "unresolved_seed_identities": [],
+          "accepted_wrong": 0
+        },
+        {
+          "frame": 15,
+          "accepted": [
+            1,
+            0
+          ],
+          "unresolved_seed_identities": [],
+          "accepted_wrong": 0
+        },
+        {
+          "frame": 16,
+          "accepted": [
+            1,
+            0
+          ],
+          "unresolved_seed_identities": [],
+          "accepted_wrong": 0
+        },
+        {
+          "frame": 17,
+          "accepted": [
+            1,
+            0
+          ],
+          "unresolved_seed_identities": [],
+          "accepted_wrong": 0
+        },
+        {
+          "frame": 18,
+          "accepted": [
+            1,
+            0
+          ],
+          "unresolved_seed_identities": [],
+          "accepted_wrong": 0
+        },
+        {
+          "frame": 19,
+          "accepted": [
+            1,
+            0
+          ],
+          "unresolved_seed_identities": [],
+          "accepted_wrong": 0
+        },
+        {
+          "frame": 20,
+          "accepted": [
+            1,
+            0
+          ],
+          "unresolved_seed_identities": [],
+          "accepted_wrong": 0
+        }
+      ]
+    },
+    "history_guarded": {
+      "accepted": [
+        -1,
+        -1
+      ],
+      "best": [
+        1,
+        0
+      ],
+      "margins": [
+        0.10825263000373653,
+        0.10825263000373653
+      ],
+      "alternatives": [
+        [
+          {
+            "observation": 1,
+            "relative_cost": 0.0
+          },
+          {
+            "observation": 0,
+            "relative_cost": 0.10825263000373653
+          },
+          {
+            "observation": -1,
+            "relative_cost": 3.191792314653817
+          }
+        ],
+        [
+          {
+            "observation": 0,
+            "relative_cost": 0.0
+          },
+          {
+            "observation": 1,
+            "relative_cost": 0.10825263000373653
+          },
+          {
+            "observation": -1,
+            "relative_cost": 3.191792314653817
+          }
+        ]
+      ],
+      "reference_assignment": [
+        1,
+        0
+      ],
+      "forecast_before_target_observation": [
+        [
+          33.98293498888737,
+          20.0
+        ],
+        [
+          26.017065011112624,
+          20.0
+        ]
+      ],
+      "accepted_correct": 0,
+      "accepted_wrong": 0,
+      "abstained": 2,
+      "identical_observation_sequel": [
+        {
+          "frame": 13,
+          "accepted": [
+            -1,
+            -1
+          ],
+          "unresolved_seed_identities": [
+            0,
+            1
+          ],
+          "accepted_wrong": 0
+        },
+        {
+          "frame": 14,
+          "accepted": [
+            -1,
+            -1
+          ],
+          "unresolved_seed_identities": [
+            0,
+            1
+          ],
+          "accepted_wrong": 0
+        },
+        {
+          "frame": 15,
+          "accepted": [
+            -1,
+            -1
+          ],
+          "unresolved_seed_identities": [
+            0,
+            1
+          ],
+          "accepted_wrong": 0
+        },
+        {
+          "frame": 16,
+          "accepted": [
+            -1,
+            -1
+          ],
+          "unresolved_seed_identities": [
+            0,
+            1
+          ],
+          "accepted_wrong": 0
+        },
+        {
+          "frame": 17,
+          "accepted": [
+            -1,
+            -1
+          ],
+          "unresolved_seed_identities": [
+            0,
+            1
+          ],
+          "accepted_wrong": 0
+        },
+        {
+          "frame": 18,
+          "accepted": [
+            -1,
+            -1
+          ],
+          "unresolved_seed_identities": [
+            0,
+            1
+          ],
+          "accepted_wrong": 0
+        },
+        {
+          "frame": 19,
+          "accepted": [
+            -1,
+            -1
+          ],
+          "unresolved_seed_identities": [
+            0,
+            1
+          ],
+          "accepted_wrong": 0
+        },
+        {
+          "frame": 20,
+          "accepted": [
+            -1,
+            -1
+          ],
+          "unresolved_seed_identities": [
+            0,
+            1
+          ],
+          "accepted_wrong": 0
+        }
+      ]
+    }
+  },
+  "hidden_bounce": {
+    "no_history": {
+      "accepted": [
+        0,
+        1
+      ],
+      "best": [
+        0,
+        1
+      ],
+      "margins": [
+        3.6602276622973733,
+        3.660227662297377
+      ],
+      "alternatives": [
+        [
+          {
+            "observation": 0,
+            "relative_cost": 0.0
+          },
+          {
+            "observation": -1,
+            "relative_cost": 3.6602276622973733
+          }
+        ],
+        [
+          {
+            "observation": 1,
+            "relative_cost": 0.0
+          },
+          {
+            "observation": -1,
+            "relative_cost": 3.660227662297377
+          }
+        ]
+      ],
+      "reference_assignment": [
+        0,
+        1
+      ],
+      "forecast_before_target_observation": [
+        [
+          18.597316849882485,
+          20.0
+        ],
+        [
+          41.40268315011751,
+          20.0
+        ]
+      ],
+      "accepted_correct": 2,
+      "accepted_wrong": 0,
+      "abstained": 0,
+      "identical_observation_sequel": [
+        {
+          "frame": 13,
+          "accepted": [
+            0,
+            1
+          ],
+          "unresolved_seed_identities": [],
+          "accepted_wrong": 0
+        },
+        {
+          "frame": 14,
+          "accepted": [
+            0,
+            1
+          ],
+          "unresolved_seed_identities": [],
+          "accepted_wrong": 0
+        },
+        {
+          "frame": 15,
+          "accepted": [
+            -1,
+            -1
+          ],
+          "unresolved_seed_identities": [],
+          "accepted_wrong": 0
+        },
+        {
+          "frame": 16,
+          "accepted": [
+            -1,
+            -1
+          ],
+          "unresolved_seed_identities": [],
+          "accepted_wrong": 0
+        },
+        {
+          "frame": 17,
+          "accepted": [
+            -1,
+            -1
+          ],
+          "unresolved_seed_identities": [],
+          "accepted_wrong": 0
+        },
+        {
+          "frame": 18,
+          "accepted": [
+            -1,
+            -1
+          ],
+          "unresolved_seed_identities": [],
+          "accepted_wrong": 0
+        },
+        {
+          "frame": 19,
+          "accepted": [
+            -1,
+            -1
+          ],
+          "unresolved_seed_identities": [],
+          "accepted_wrong": 0
+        },
+        {
+          "frame": 20,
+          "accepted": [
+            -1,
+            -1
+          ],
+          "unresolved_seed_identities": [],
+          "accepted_wrong": 0
+        }
+      ]
+    },
+    "history": {
+      "accepted": [
+        1,
+        0
+      ],
+      "best": [
+        1,
+        0
+      ],
+      "margins": [
+        7.6404791984793565,
+        7.6404791984793565
+      ],
+      "alternatives": [
+        [
+          {
+            "observation": 1,
+            "relative_cost": 0.0
+          },
+          {
+            "observation": -1,
+            "relative_cost": 7.6404791984793565
+          },
+          {
+            "observation": 0,
+            "relative_cost": 20.444113789373365
+          }
+        ],
+        [
+          {
+            "observation": 0,
+            "relative_cost": 0.0
+          },
+          {
+            "observation": -1,
+            "relative_cost": 7.6404791984793565
+          },
+          {
+            "observation": 1,
+            "relative_cost": 20.444113789373368
+          }
+        ]
+      ],
+      "reference_assignment": [
+        0,
+        1
+      ],
+      "forecast_before_target_observation": [
+        [
+          33.98293498888737,
+          20.0
+        ],
+        [
+          26.017065011112624,
+          20.0
+        ]
+      ],
+      "accepted_correct": 0,
+      "accepted_wrong": 2,
+      "abstained": 0,
+      "identical_observation_sequel": [
+        {
+          "frame": 13,
+          "accepted": [
+            1,
+            0
+          ],
+          "unresolved_seed_identities": [],
+          "accepted_wrong": 2
+        },
+        {
+          "frame": 14,
+          "accepted": [
+            1,
+            0
+          ],
+          "unresolved_seed_identities": [],
+          "accepted_wrong": 2
+        },
+        {
+          "frame": 15,
+          "accepted": [
+            1,
+            0
+          ],
+          "unresolved_seed_identities": [],
+          "accepted_wrong": 2
+        },
+        {
+          "frame": 16,
+          "accepted": [
+            1,
+            0
+          ],
+          "unresolved_seed_identities": [],
+          "accepted_wrong": 2
+        },
+        {
+          "frame": 17,
+          "accepted": [
+            1,
+            0
+          ],
+          "unresolved_seed_identities": [],
+          "accepted_wrong": 2
+        },
+        {
+          "frame": 18,
+          "accepted": [
+            1,
+            0
+          ],
+          "unresolved_seed_identities": [],
+          "accepted_wrong": 2
+        },
+        {
+          "frame": 19,
+          "accepted": [
+            1,
+            0
+          ],
+          "unresolved_seed_identities": [],
+          "accepted_wrong": 2
+        },
+        {
+          "frame": 20,
+          "accepted": [
+            1,
+            0
+          ],
+          "unresolved_seed_identities": [],
+          "accepted_wrong": 2
+        }
+      ]
+    },
+    "history_guarded": {
+      "accepted": [
+        -1,
+        -1
+      ],
+      "best": [
+        1,
+        0
+      ],
+      "margins": [
+        0.10825263000373653,
+        0.10825263000373653
+      ],
+      "alternatives": [
+        [
+          {
+            "observation": 1,
+            "relative_cost": 0.0
+          },
+          {
+            "observation": 0,
+            "relative_cost": 0.10825263000373653
+          },
+          {
+            "observation": -1,
+            "relative_cost": 3.191792314653817
+          }
+        ],
+        [
+          {
+            "observation": 0,
+            "relative_cost": 0.0
+          },
+          {
+            "observation": 1,
+            "relative_cost": 0.10825263000373653
+          },
+          {
+            "observation": -1,
+            "relative_cost": 3.191792314653817
+          }
+        ]
+      ],
+      "reference_assignment": [
+        0,
+        1
+      ],
+      "forecast_before_target_observation": [
+        [
+          33.98293498888737,
+          20.0
+        ],
+        [
+          26.017065011112624,
+          20.0
+        ]
+      ],
+      "accepted_correct": 0,
+      "accepted_wrong": 0,
+      "abstained": 2,
+      "identical_observation_sequel": [
+        {
+          "frame": 13,
+          "accepted": [
+            -1,
+            -1
+          ],
+          "unresolved_seed_identities": [
+            0,
+            1
+          ],
+          "accepted_wrong": 0
+        },
+        {
+          "frame": 14,
+          "accepted": [
+            -1,
+            -1
+          ],
+          "unresolved_seed_identities": [
+            0,
+            1
+          ],
+          "accepted_wrong": 0
+        },
+        {
+          "frame": 15,
+          "accepted": [
+            -1,
+            -1
+          ],
+          "unresolved_seed_identities": [
+            0,
+            1
+          ],
+          "accepted_wrong": 0
+        },
+        {
+          "frame": 16,
+          "accepted": [
+            -1,
+            -1
+          ],
+          "unresolved_seed_identities": [
+            0,
+            1
+          ],
+          "accepted_wrong": 0
+        },
+        {
+          "frame": 17,
+          "accepted": [
+            -1,
+            -1
+          ],
+          "unresolved_seed_identities": [
+            0,
+            1
+          ],
+          "accepted_wrong": 0
+        },
+        {
+          "frame": 18,
+          "accepted": [
+            -1,
+            -1
+          ],
+          "unresolved_seed_identities": [
+            0,
+            1
+          ],
+          "accepted_wrong": 0
+        },
+        {
+          "frame": 19,
+          "accepted": [
+            -1,
+            -1
+          ],
+          "unresolved_seed_identities": [
+            0,
+            1
+          ],
+          "accepted_wrong": 0
+        },
+        {
+          "frame": 20,
+          "accepted": [
+            -1,
+            -1
+          ],
+          "unresolved_seed_identities": [
+            0,
+            1
+          ],
+          "accepted_wrong": 0
+        }
+      ]
+    }
+  },
+  "symmetric_return": {
+    "no_history": {
+      "accepted": [
+        -1,
+        -1
+      ],
+      "best": [
+        -1,
+        -1
+      ],
+      "margins": [
+        null,
+        null
+      ],
+      "alternatives": [
+        [
+          {
+            "observation": -1,
+            "relative_cost": 0.0
+          }
+        ],
+        [
+          {
+            "observation": -1,
+            "relative_cost": 0.0
+          }
+        ]
+      ],
+      "reference_assignment": null,
+      "forecast_before_target_observation": [
+        [
+          18.597316849882485,
+          20.0
+        ],
+        [
+          41.40268315011751,
+          20.0
+        ]
+      ],
+      "accepted_correct": null,
+      "accepted_wrong": null,
+      "abstained": 2
+    },
+    "history": {
+      "accepted": [
+        -1,
+        -1
+      ],
+      "best": [
+        0,
+        1
+      ],
+      "margins": [
+        0.0,
+        0.0
+      ],
+      "alternatives": [
+        [
+          {
+            "observation": 0,
+            "relative_cost": 0.0
+          },
+          {
+            "observation": 1,
+            "relative_cost": 0.0
+          },
+          {
+            "observation": -1,
+            "relative_cost": 5.326136280712851
+          }
+        ],
+        [
+          {
+            "observation": 1,
+            "relative_cost": 0.0
+          },
+          {
+            "observation": 0,
+            "relative_cost": 0.0
+          },
+          {
+            "observation": -1,
+            "relative_cost": 5.326136280712849
+          }
+        ]
+      ],
+      "reference_assignment": null,
+      "forecast_before_target_observation": [
+        [
+          33.98293498888737,
+          20.0
+        ],
+        [
+          26.017065011112624,
+          20.0
+        ]
+      ],
+      "accepted_correct": null,
+      "accepted_wrong": null,
+      "abstained": 2
+    },
+    "history_guarded": {
+      "accepted": [
+        -1,
+        -1
+      ],
+      "best": [
+        0,
+        1
+      ],
+      "margins": [
+        0.0,
+        0.0
+      ],
+      "alternatives": [
+        [
+          {
+            "observation": 0,
+            "relative_cost": 0.0
+          },
+          {
+            "observation": 1,
+            "relative_cost": 0.0
+          },
+          {
+            "observation": -1,
+            "relative_cost": 3.164729157152884
+          }
+        ],
+        [
+          {
+            "observation": 1,
+            "relative_cost": 0.0
+          },
+          {
+            "observation": 0,
+            "relative_cost": 0.0
+          },
+          {
+            "observation": -1,
+            "relative_cost": 3.164729157152884
+          }
+        ]
+      ],
+      "reference_assignment": null,
+      "forecast_before_target_observation": [
+        [
+          33.98293498888737,
+          20.0
+        ],
+        [
+          26.017065011112624,
+          20.0
+        ]
+      ],
+      "accepted_correct": null,
+      "accepted_wrong": null,
+      "abstained": 2
+    }
+  }
+}

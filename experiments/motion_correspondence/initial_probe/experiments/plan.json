@@ -1,0 +1,41 @@
+{
+  "purpose": "Test history-based correspondence with occlusion uncertainty before changing PIDG shape training",
+  "candidate": "R1_motion_correspondence",
+  "model_scope": "Image-plane probabilistic tracking module, not a new trained Gaussian reconstruction or a 3D dynamics solver",
+  "variants": {
+    "no_history": {"use_history": false, "uncertainty_guard": false},
+    "history": {"use_history": true, "uncertainty_guard": false},
+    "history_guarded": {"use_history": true, "uncertainty_guard": true}
+  },
+  "fixed_parameters": {
+    "measurement_sigma_pixels": 0.75,
+    "acceleration_sigma_pixels_per_normalized_time_squared": 5000.0,
+    "initial_velocity_sigma_pixels_per_normalized_time": 1000.0,
+    "interaction_velocity_sigma_pixels_per_normalized_time": 800.0,
+    "association_mahalanobis_gate": 9.21,
+    "distinct_assignment_cost_margin": 2.3,
+    "beam_width": 32,
+    "max_missing_original_frames": 30,
+    "merged_area_ratio": 1.5
+  },
+  "time": "(original_frame_id-1)/199, retaining irregular training intervals; image position in 400x225 pixels",
+  "data": "120 existing training RGBA frames and conservative visible-only FB tracks from the completed surface-support audit; no new heldout image evaluation",
+  "synthetic_tests": "Known identity passing, symmetric identity ambiguity after hidden interaction, irregular time, covariance growth, outliers, merge rejection and flags-off",
+  "real_controlled_test": {
+    "source": "First25 training frames through original42, before observed component merges",
+    "reference": "Independent frozen visible-only FB partial labels; qualify component purity>=0.95 and >=30 supported pixels; pseudo-reference, not physical identity GT",
+    "gap_start_indices": [8, 12, 16],
+    "missing_training_observations": [2, 4, 6],
+    "hidden_seed_ID_sets": [[0], [1], [1, 2], [0, 1, 2, 3]],
+    "metrics": ["first-reappearance forecast pixel error", "accepted ID correspondence accuracy versus pseudo-reference", "acceptance and abstention", "identity errors", "one-to-one assignment integrity"],
+    "no_reference_leak": "Tracker sees only remaining component observations, not pseudo-reference labels or hidden RGB/flow observations"
+  },
+  "natural_test": "All120 training frames, explicitly retain ambiguity across merge/split intervals; no physical ID accuracy claim without GT",
+  "integration_gate": "Require passing synthetic ambiguity tests and lower controlled forecast error without increased false accepted ID matches; full-sequence surface-support gate remains required separately",
+  "no_new_full_training": true,
+  "no_learned_material_segmentation": true,
+  "no_nearest_kernel_relabeling": true,
+  "no_shape_contact_external_force_or_constitutive_terms": true,
+  "historical_models_protected": true,
+  "budget": "One bounded correspondence prototype and controlled evaluations; optional read-only GPU compositor check, zero Gaussian optimizer steps"
+}

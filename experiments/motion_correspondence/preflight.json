@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "unit_tests": 12,
+  "pytest_command": "envs/pidg-cu128/python.exe -m pytest tests/test_motion_correspondence.py -q",
+  "result": "12 passed in 0.58s",
+  "bounded_model": "non-neural multi-hypothesis association with persistent ambiguity latch",
+  "source_hash_at_evaluation": "f804b51805b8ae9cd7a2f39824124bf88ddf07682f399ccc772567d3ed0f5cd5",
+  "real_sequence_state_save_and_restore": "20 exact replay frames starting after original42; independent_verification.json",
+  "flags_off": "Existing visible propagation delegated exactly; covered by unit test",
+  "training_smoke": "No new trainable parameters or Gaussian optimization. Read-only real GPU compositor smoke instead. No new full training.",
+  "correctness_revision": "Initial probe retained; delayed hidden-bounce ambiguity regression fixed without parameter tuning"
+}

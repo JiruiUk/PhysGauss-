@@ -1,0 +1,355 @@
+{
+  "read_only": true,
+  "new_Gaussian_optimizer_steps": 0,
+  "full_compositor_not_first20": true,
+  "models_unchanged": true,
+  "source_sha256": {
+    "output\\motion_correspondence\\render_support.py": "3525bfa83c3b6a372dede75d41b49ed4f0de55e9165d7f410c3fd61d82ec0ab7",
+    "output\\shape_coherence\\audit\\reference_graph.pt": "305594e93b4ac4c413376623792e01516dea168c1006839f75c13dc63cab1294",
+    "runs\\pidg_color_repair\\C1_repaired\\rubber_duck\\checkpoints\\resume.pt": "b5d4cf5c9fb8fba4fcc26124555d48aa7d3a963a8be1d28488954752db486480"
+  },
+  "frames": [
+    {
+      "frame": 2,
+      "all_early_patch_full_alpha_share_on_yellow": 0.6995506882667542,
+      "per_candidate": [
+        {
+          "seed_ID": 0,
+          "accepted_image_pixels": 260,
+          "early_patch_full_alpha_share_on_candidate": 0.738246738910675,
+          "early_patch_centers_on_candidate_fraction": 0.9947089947089947
+        },
+        {
+          "seed_ID": 1,
+          "accepted_image_pixels": 256,
+          "early_patch_full_alpha_share_on_candidate": 0.667116641998291,
+          "early_patch_centers_on_candidate_fraction": 0.9830508474576272
+        },
+        {
+          "seed_ID": 2,
+          "accepted_image_pixels": 225,
+          "early_patch_full_alpha_share_on_candidate": 0.6046059131622314,
+          "early_patch_centers_on_candidate_fraction": 0.9949238578680203
+        },
+        {
+          "seed_ID": 3,
+          "accepted_image_pixels": 496,
+          "early_patch_full_alpha_share_on_candidate": 0.7390775084495544,
+          "early_patch_centers_on_candidate_fraction": 1.0
+        }
+      ],
+      "not_physical_identity_accuracy": true
+    },
+    {
+      "frame": 42,
+      "all_early_patch_full_alpha_share_on_yellow": 0.5166347622871399,
+      "per_candidate": [
+        {
+          "seed_ID": 0,
+          "accepted_image_pixels": 220,
+          "early_patch_full_alpha_share_on_candidate": 0.657305896282196,
+          "early_patch_centers_on_candidate_fraction": 0.9576719576719577
+        },
+        {
+          "seed_ID": 1,
+          "accepted_image_pixels": 249,
+          "early_patch_full_alpha_share_on_candidate": 0.3296700119972229,
+          "early_patch_centers_on_candidate_fraction": 0.9152542372881356
+        },
+        {
+          "seed_ID": 2,
+          "accepted_image_pixels": 237,
+          "early_patch_full_alpha_share_on_candidate": 0.4523773789405823,
+          "early_patch_centers_on_candidate_fraction": 0.9543147208121827
+        },
+        {
+          "seed_ID": 3,
+          "accepted_image_pixels": 342,
+          "early_patch_full_alpha_share_on_candidate": 0.6067585945129395,
+          "early_patch_centers_on_candidate_fraction": 0.998567335243553
+        }
+      ],
+      "not_physical_identity_accuracy": true
+    },
+    {
+      "frame": 43,
+      "all_early_patch_full_alpha_share_on_yellow": 0.4977225065231323,
+      "per_candidate": [
+        {
+          "seed_ID": 0,
+          "accepted_image_pixels": 224,
+          "early_patch_full_alpha_share_on_candidate": 0.6427944302558899,
+          "early_patch_centers_on_candidate_fraction": 0.9735449735449735
+        },
+        {
+          "seed_ID": 1,
+          "accepted_image_pixels": 0,
+          "early_patch_full_alpha_share_on_candidate": null,
+          "early_patch_centers_on_candidate_fraction": null
+        },
+        {
+          "seed_ID": 2,
+          "accepted_image_pixels": 0,
+          "early_patch_full_alpha_share_on_candidate": null,
+          "early_patch_centers_on_candidate_fraction": null
+        },
+        {
+          "seed_ID": 3,
+          "accepted_image_pixels": 350,
+          "early_patch_full_alpha_share_on_candidate": 0.5961006879806519,
+          "early_patch_centers_on_candidate_fraction": 1.0
+        }
+      ],
+      "not_physical_identity_accuracy": true
+    },
+    {
+      "frame": 55,
+      "all_early_patch_full_alpha_share_on_yellow": 0.4402567148208618,
+      "per_candidate": [
+        {
+          "seed_ID": 0,
+          "accepted_image_pixels": 0,
+          "early_patch_full_alpha_share_on_candidate": null,
+          "early_patch_centers_on_candidate_fraction": null
+        },
+        {
+          "seed_ID": 1,
+          "accepted_image_pixels": 0,
+          "early_patch_full_alpha_share_on_candidate": null,
+          "early_patch_centers_on_candidate_fraction": null
+        },
+        {
+          "seed_ID": 2,
+          "accepted_image_pixels": 0,
+          "early_patch_full_alpha_share_on_candidate": null,
+          "early_patch_centers_on_candidate_fraction": null
+        },
+        {
+          "seed_ID": 3,
+          "accepted_image_pixels": 357,
+          "early_patch_full_alpha_share_on_candidate": 0.591124951839447,
+          "early_patch_centers_on_candidate_fraction": 0.9842406876790831
+        }
+      ],
+      "not_physical_identity_accuracy": true
+    },
+    {
+      "frame": 63,
+      "all_early_patch_full_alpha_share_on_yellow": 0.31399673223495483,
+      "per_candidate": [
+        {
+          "seed_ID": 0,
+          "accepted_image_pixels": 0,
+          "early_patch_full_alpha_share_on_candidate": null,
+          "early_patch_centers_on_candidate_fraction": null
+        },
+        {
+          "seed_ID": 1,
+          "accepted_image_pixels": 0,
+          "early_patch_full_alpha_share_on_candidate": null,
+          "early_patch_centers_on_candidate_fraction": null
+        },
+        {
+          "seed_ID": 2,
+          "accepted_image_pixels": 283,
+          "early_patch_full_alpha_share_on_candidate": 0.2934217154979706,
+          "early_patch_centers_on_candidate_fraction": 0.1218274111675127
+        },
+        {
+          "seed_ID": 3,
+          "accepted_image_pixels": 327,
+          "early_patch_full_alpha_share_on_candidate": 0.5034765005111694,
+          "early_patch_centers_on_candidate_fraction": 0.994269340974212
+        }
+      ],
+      "not_physical_identity_accuracy": true
+    },
+    {
+      "frame": 74,
+      "all_early_patch_full_alpha_share_on_yellow": 0.12949761748313904,
+      "per_candidate": [
+        {
+          "seed_ID": 0,
+          "accepted_image_pixels": 350,
+          "early_patch_full_alpha_share_on_candidate": 0.0013522953959181905,
+          "early_patch_centers_on_candidate_fraction": 0.0
+        },
+        {
+          "seed_ID": 1,
+          "accepted_image_pixels": 238,
+          "early_patch_full_alpha_share_on_candidate": 0.039377473294734955,
+          "early_patch_centers_on_candidate_fraction": 0.20903954802259886
+        },
+        {
+          "seed_ID": 2,
+          "accepted_image_pixels": 277,
+          "early_patch_full_alpha_share_on_candidate": 0.0,
+          "early_patch_centers_on_candidate_fraction": 0.0
+        },
+        {
+          "seed_ID": 3,
+          "accepted_image_pixels": 299,
+          "early_patch_full_alpha_share_on_candidate": 0.36955687403678894,
+          "early_patch_centers_on_candidate_fraction": 0.9899713467048711
+        }
+      ],
+      "not_physical_identity_accuracy": true
+    },
+    {
+      "frame": 86,
+      "all_early_patch_full_alpha_share_on_yellow": 0.0,
+      "per_candidate": [
+        {
+          "seed_ID": 0,
+          "accepted_image_pixels": 318,
+          "early_patch_full_alpha_share_on_candidate": 0.0,
+          "early_patch_centers_on_candidate_fraction": 0.0
+        },
+        {
+          "seed_ID": 1,
+          "accepted_image_pixels": 251,
+          "early_patch_full_alpha_share_on_candidate": 0.0,
+          "early_patch_centers_on_candidate_fraction": 0.0
+        },
+        {
+          "seed_ID": 2,
+          "accepted_image_pixels": 305,
+          "early_patch_full_alpha_share_on_candidate": 0.0,
+          "early_patch_centers_on_candidate_fraction": 0.0
+        },
+        {
+          "seed_ID": 3,
+          "accepted_image_pixels": 285,
+          "early_patch_full_alpha_share_on_candidate": 0.0,
+          "early_patch_centers_on_candidate_fraction": 0.0
+        }
+      ],
+      "not_physical_identity_accuracy": true
+    },
+    {
+      "frame": 108,
+      "all_early_patch_full_alpha_share_on_yellow": 0.0,
+      "per_candidate": [
+        {
+          "seed_ID": 0,
+          "accepted_image_pixels": 276,
+          "early_patch_full_alpha_share_on_candidate": 0.0,
+          "early_patch_centers_on_candidate_fraction": 0.0
+        },
+        {
+          "seed_ID": 1,
+          "accepted_image_pixels": 300,
+          "early_patch_full_alpha_share_on_candidate": 0.0,
+          "early_patch_centers_on_candidate_fraction": 0.0
+        },
+        {
+          "seed_ID": 2,
+          "accepted_image_pixels": 285,
+          "early_patch_full_alpha_share_on_candidate": 0.0,
+          "early_patch_centers_on_candidate_fraction": 0.0
+        },
+        {
+          "seed_ID": 3,
+          "accepted_image_pixels": 258,
+          "early_patch_full_alpha_share_on_candidate": 0.0,
+          "early_patch_centers_on_candidate_fraction": 0.0
+        }
+      ],
+      "not_physical_identity_accuracy": true
+    },
+    {
+      "frame": 134,
+      "all_early_patch_full_alpha_share_on_yellow": 0.0,
+      "per_candidate": [
+        {
+          "seed_ID": 0,
+          "accepted_image_pixels": 0,
+          "early_patch_full_alpha_share_on_candidate": null,
+          "early_patch_centers_on_candidate_fraction": null
+        },
+        {
+          "seed_ID": 1,
+          "accepted_image_pixels": 292,
+          "early_patch_full_alpha_share_on_candidate": 0.0,
+          "early_patch_centers_on_candidate_fraction": 0.0
+        },
+        {
+          "seed_ID": 2,
+          "accepted_image_pixels": 0,
+          "early_patch_full_alpha_share_on_candidate": null,
+          "early_patch_centers_on_candidate_fraction": null
+        },
+        {
+          "seed_ID": 3,
+          "accepted_image_pixels": 0,
+          "early_patch_full_alpha_share_on_candidate": null,
+          "early_patch_centers_on_candidate_fraction": null
+        }
+      ],
+      "not_physical_identity_accuracy": true
+    },
+    {
+      "frame": 172,
+      "all_early_patch_full_alpha_share_on_yellow": 0.0,
+      "per_candidate": [
+        {
+          "seed_ID": 0,
+          "accepted_image_pixels": 224,
+          "early_patch_full_alpha_share_on_candidate": 0.0,
+          "early_patch_centers_on_candidate_fraction": 0.0
+        },
+        {
+          "seed_ID": 1,
+          "accepted_image_pixels": 264,
+          "early_patch_full_alpha_share_on_candidate": 0.0,
+          "early_patch_centers_on_candidate_fraction": 0.0
+        },
+        {
+          "seed_ID": 2,
+          "accepted_image_pixels": 0,
+          "early_patch_full_alpha_share_on_candidate": null,
+          "early_patch_centers_on_candidate_fraction": null
+        },
+        {
+          "seed_ID": 3,
+          "accepted_image_pixels": 0,
+          "early_patch_full_alpha_share_on_candidate": null,
+          "early_patch_centers_on_candidate_fraction": null
+        }
+      ],
+      "not_physical_identity_accuracy": true
+    },
+    {
+      "frame": 200,
+      "all_early_patch_full_alpha_share_on_yellow": 0.0,
+      "per_candidate": [
+        {
+          "seed_ID": 0,
+          "accepted_image_pixels": 240,
+          "early_patch_full_alpha_share_on_candidate": 0.0,
+          "early_patch_centers_on_candidate_fraction": 0.0
+        },
+        {
+          "seed_ID": 1,
+          "accepted_image_pixels": 244,
+          "early_patch_full_alpha_share_on_candidate": 0.0,
+          "early_patch_centers_on_candidate_fraction": 0.0
+        },
+        {
+          "seed_ID": 2,
+          "accepted_image_pixels": 177,
+          "early_patch_full_alpha_share_on_candidate": 0.0,
+          "early_patch_centers_on_candidate_fraction": 0.0
+        },
+        {
+          "seed_ID": 3,
+          "accepted_image_pixels": 207,
+          "early_patch_full_alpha_share_on_candidate": 0.0,
+          "early_patch_centers_on_candidate_fraction": 0.0
+        }
+      ],
+      "not_physical_identity_accuracy": true
+    }
+  ],
+  "interpretation": "Candidate image identity is not material ID. Matching image tracks does not repair missing canonical Gaussian surface support."
+}

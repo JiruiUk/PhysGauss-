@@ -1,5 +1,24 @@
 # PIDG repository map — M0
 
+## Motion-history correspondence prototype (2026-11-02)
+
+`variants/motion_correspondence/model.py` supplies an optional non-neural image
+position/velocity tracker with irregular normalized time, covariance prediction,
+one-to-one multiple hypotheses, merge rejection, expiry, persistent ambiguity
+and JSON state restore. Flags off delegates exactly to the prior visible-only
+`output.surface_support.core.propagate`. Candidate image seed identities are not
+Gaussian/material labels. No PIDG optimizer or training/inference source changes.
+`run.py` evaluates fixed synthetic hidden pass/bounce ambiguity, 36 artificial-gap
+trials against frozen visible FB pseudo-references, and all120 train frames.
+`output/motion_correspondence/rolling_test.py` adds local rolling visible tracklet
+checks across the sequence; these do not provide global physical identities.
+`render_support.py` checks complete C1 early-patch alpha compositing and centers;
+`finalize.py` creates figures/browser; `verify_results.py` independently checks
+inputs, metrics, masks, state replay and protected C1 hashes. Protocol, initial
+failed uncertainty probe, corrected results and assessment are retained in
+`experiments/motion_correspondence`; tests in `tests/test_motion_correspondence.py`.
+This diagnostic does not resolve the rejected persistent-surface gate or resume P1.
+
 ## Full train-sequence surface-support audit (2026-11-02)
 
 `output/surface_support/{core,audit,contracts,finalize,verify}.py` adds read-only

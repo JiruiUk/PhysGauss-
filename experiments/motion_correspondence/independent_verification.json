@@ -1,0 +1,120 @@
+{
+  "passed": true,
+  "locked_input_files": 262,
+  "input_SHA_unchanged": true,
+  "historical_C1_protection_passed": true,
+  "controlled_recalculated": {
+    "no_history": {
+      "correct": 51,
+      "wrong": 0,
+      "unknown": 21,
+      "forecast_mean_pixels": 9.589769926530945
+    },
+    "history": {
+      "correct": 72,
+      "wrong": 0,
+      "unknown": 0,
+      "forecast_mean_pixels": 2.4890033433200807
+    },
+    "history_guarded": {
+      "correct": 29,
+      "wrong": 0,
+      "unknown": 43,
+      "forecast_mean_pixels": 2.4890033433200807
+    }
+  },
+  "synthetic_delayed_ambiguity_passed": true,
+  "initial_failed_probe_source_archive_SHA_verified": true,
+  "representative_manual_review_completed": true,
+  "rolling_windows_independently_recalculated": 19,
+  "rolling_local_pseudo_cases": 76,
+  "natural": {
+    "no_history": {
+      "frames": 120,
+      "accepted_candidate_events": 258,
+      "final_unresolved_seed_IDs": [],
+      "material_accuracy": null
+    },
+    "history": {
+      "frames": 120,
+      "accepted_candidate_events": 374,
+      "final_unresolved_seed_IDs": [],
+      "material_accuracy": null
+    },
+    "history_guarded": {
+      "frames": 120,
+      "accepted_candidate_events": 157,
+      "final_unresolved_seed_IDs": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "material_accuracy": null
+    }
+  },
+  "real_JSON_checkpoint_replay_frames": 20,
+  "all_candidate_masks_one_to_one_checked": true,
+  "full_compositor_frames": [
+    2,
+    42,
+    43,
+    55,
+    63,
+    74,
+    86,
+    108,
+    134,
+    172,
+    200
+  ],
+  "early_patch_zero_yellow_support_from_reviewed_frame86": true,
+  "training_optimizer_steps": 0,
+  "GPU_training_smoke": "Not applicable: non-neural read-only association module; real GPU compositor smoke completed",
+  "flags_off": "Exact delegation unit test; no baseline training/inference source changed",
+  "physical_identity_accuracy": null,
+  "full_reconstruction_integration_gate_passed": false,
+  "gate_reason": "Natural material identities unverified; early canonical patches still lose visible duck support. Motion history alone does not resolve hidden symmetric interactions.",
+  "artifact_sha256": {
+    "experiments\\motion_correspondence\\assessment.md": "0e6e9400ae856b869172c2bd44a47a10fd83c9ec461f274883ce85459ab93998",
+    "experiments\\motion_correspondence\\controlled.json": "a48dc810ddda8a39222e9f056290735a9aafa4d6fc8863603af20c18dac420ca",
+    "experiments\\motion_correspondence\\history.json": "1cb36d9e64da3b94725dc1887209e9471f61cfd475878ef9d19da04e1e006db9",
+    "experiments\\motion_correspondence\\history_guarded.json": "01cd3934cd895c61d508c1ed0ddfbbca417ed7c1e5a93a78a20e3a5f55204cb7",
+    "experiments\\motion_correspondence\\input_lock.json": "ce69c74d1286f439e82134a9e0ccfdce1f7c0a4dca0a0b75d2463eb95329c220",
+    "experiments\\motion_correspondence\\motion_state_frame0042.json": "4342c6fe52d0db1b3b16e538bb0f1505ec182389c65920da3dd7a81c9788feaf",
+    "experiments\\motion_correspondence\\no_history.json": "bad078acada9d2f81c37cdebd40f7f8853087a2376a3df96ba5e9198fa4561e7",
+    "experiments\\motion_correspondence\\plan.json": "1ee5e14b665c78550b7642b6d464253b99ad42e6ac33d55de67f39ec9a884f98",
+    "experiments\\motion_correspondence\\preflight.json": "49abed316cbc7695ef9da0e5dbd1e60c96358ac7069069598ce8649e461d51fd",
+    "experiments\\motion_correspondence\\render_support.json": "efc67b237de2f90ab8309cc0b134bbcf20400efb6f40646e33752bd2a8d06779",
+    "experiments\\motion_correspondence\\rolling_input_lock.json": "e573fa2ffb6b8747b5af3bd9edf714a766d088897f1a04125f3bbc3a3426b213",
+    "experiments\\motion_correspondence\\rolling_plan.json": "1f67b47a94ff094bd7643e2f383e9fd4c9b006bf9bdafe40b933d288b1d48ce2",
+    "experiments\\motion_correspondence\\rolling_results.json": "d41332a2310b8eb824908708d6ce05c246a4e4d0acdfac5dc91424b177b049ee",
+    "experiments\\motion_correspondence\\synthetic.json": "cf5a6748582171afc287ce8b9bd55dc98e721f4a6362b641f40c749bfa4c56c1",
+    "experiments\\motion_correspondence\\verification.json": "0afaa42dcbf72fbdcae9be396a74eac6cac490b61e8844173a20c7732c739d86",
+    "output\\motion_correspondence\\comparison.png": "31428b4be7dd9e2a44353686627ddf2e472cb7342d67cca5bdad0d80e70e8297",
+    "output\\motion_correspondence\\finalize.py": "46541061cf4171f6b94331d77ba2eab3f8d14ce500d106c956eddbbdda19d88b",
+    "output\\motion_correspondence\\forecast_examples.png": "ad2bc987623cc38355963cf895e283d30a67398203c8301c437b0cf70f5f602e",
+    "output\\motion_correspondence\\history.npz": "b52cddee8b135cbb318248e2c0af2e945c45d2040957641e3b2dcf2e9b9d0cce",
+    "output\\motion_correspondence\\history_guarded.npz": "483a01e9afd065627f0bd512342e0569b6e4a769f5f6730e01341b87651095b6",
+    "output\\motion_correspondence\\index.html": "22f288a8d3447f30742021f32bfefcac456572c6bca14db5d53d57a4493e468e",
+    "output\\motion_correspondence\\no_history.npz": "86d2ccd280b4cc474b4e888d174c4ff2b68b301830e737d6bd98b125811c1d2f",
+    "output\\motion_correspondence\\render_review.png": "98fd0ecf3f15bf9f1a1037319b3011be7e7d42d43f7d72dedcf626449812e732",
+    "output\\motion_correspondence\\render_support.py": "3525bfa83c3b6a372dede75d41b49ed4f0de55e9165d7f410c3fd61d82ec0ab7",
+    "output\\motion_correspondence\\rolling_review.png": "0e0c456707a5da3174f74e911806eb0d22d54d2a9697a865d76973101d29777f",
+    "output\\motion_correspondence\\rolling_test.py": "36db8d134a4f3853ae125c1cbd806739aa7f19f531bd41c0027fcf46e6419078",
+    "output\\motion_correspondence\\synthetic_review.png": "30c0c97f80cd2451cd3f400bfb88a7e0cb7e55e31fe512c67c2d8ac61ff4fef0",
+    "output\\motion_correspondence\\verify_results.py": "bdfacf01b5946281beb60c2c25edafed880c9b502f3a4960472116595a670ea6",
+    "output\\motion_correspondence\\render_support\\frame0002.png": "a60267c02a38eeb44fa91b67184c77c47f7eef0b82bfada685cddbd551442882",
+    "output\\motion_correspondence\\render_support\\frame0042.png": "57606c2786bb6ed280fa97c405a46ce0137c4891c7b98b5ea96ea6882f45d7a2",
+    "output\\motion_correspondence\\render_support\\frame0043.png": "ce1a5307082df82dd1bd9cb25b0dd20389dae242e913e86a1b17d66aee9d1751",
+    "output\\motion_correspondence\\render_support\\frame0055.png": "90ad600ab99d6b384d189900e1ee2a615d26933df88d2f2bef867a5904d6cd1b",
+    "output\\motion_correspondence\\render_support\\frame0063.png": "b4f6a3ec50081f87643ec96ff18d2d00bd6250128c8766cf826eae88470ce29e",
+    "output\\motion_correspondence\\render_support\\frame0074.png": "b2acaa876ca29acb3972956b313039cf85a2fda8f43a33e748e49e26064c50a1",
+    "output\\motion_correspondence\\render_support\\frame0086.png": "66f699dd887d983bebc0b2e827917404efe1b31b54b43014f52ead22f2d138e5",
+    "output\\motion_correspondence\\render_support\\frame0108.png": "008fb30591dabfe96fddac1980f2eb7eabad4f9c62a5cd0e5f2e1a55d6ed0ed5",
+    "output\\motion_correspondence\\render_support\\frame0134.png": "de54cdf9e066b4edcd04784b447a468b15fc5f0fee56da07fd3f6397c8295692",
+    "output\\motion_correspondence\\render_support\\frame0172.png": "d3cf05c76f6bb7ca47773f133db91177fe51b0e91d0d5086dd2508c78dc50ceb",
+    "output\\motion_correspondence\\render_support\\frame0200.png": "a78e058f96ed913b728de0fd9e443e8a49ecf6218f5247fef058960c72da025b"
+  },
+  "manual_review_receipt": "manual_review.json"
+}

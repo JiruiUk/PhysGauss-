@@ -1,0 +1,16 @@
+{
+  "reason": "Extended identical-observation hidden pass/bounce test showed guarded model accepted a potentially wrong identity on second return frame. Preserve initial probe; add persistent ambiguity latch, not parameter tuning or new training.",
+  "initial_guarded_first_return": [
+    -1,
+    -1
+  ],
+  "initial_guarded_second_return": [
+    1,
+    0
+  ],
+  "hidden_bounce_truth": [
+    0,
+    1
+  ],
+  "training_steps": 0
+}

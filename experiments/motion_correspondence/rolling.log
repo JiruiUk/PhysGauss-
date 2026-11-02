@@ -1,0 +1,20 @@
+qualified rolling window 2 14 2
+qualified rolling window 2 16 4
+qualified rolling window 12 23 2
+qualified rolling window 12 27 4
+qualified rolling window 22 34 2
+qualified rolling window 22 36 4
+qualified rolling window 72 83 2
+qualified rolling window 72 87 4
+qualified rolling window 82 94 2
+qualified rolling window 82 96 4
+qualified rolling window 92 103 2
+qualified rolling window 92 107 4
+qualified rolling window 142 154 2
+qualified rolling window 142 156 4
+qualified rolling window 152 163 2
+qualified rolling window 172 183 2
+qualified rolling window 172 187 4
+qualified rolling window 182 194 2
+qualified rolling window 182 196 4
+ROLLING COMPLETE {'all': {'no_history': {'windows': 19, 'cases': 76, 'mean_forecast_pixels': 8.56174262009229, 'median_forecast_pixels': 7.090713805281986, 'correct': 51, 'wrong': 1, 'unknown': 24}, 'history': {'windows': 19, 'cases': 76, 'mean_forecast_pixels': 2.0122737061889513, 'median_forecast_pixels': 1.7227149965282873, 'correct': 76, 'wrong': 0, 'unknown': 0}, 'history_guarded': {'windows': 19, 'cases': 76, 'mean_forecast_pixels': 2.0122737061889513, 'median_forecast_pixels': 1.7227149965282873, 'correct': 44, 'wrong': 0, 'unknown': 32}}, 'early': {'no_history': {'windows': 6, 'cases': 24, 'mean_forecast_pixels': 6.7050419920738955, 'median_forecast_pixels': 6.164830237574465, 'correct': 18, 'wrong': 0, 'unknown': 6}, 'history': {'windows': 6, 'cases': 24, 'mean_forecast_pixels': 1.8589274667531095, 'median_forecast_pixels': 1.7618945589380053, 'correct': 24, 'wrong': 0, 'unknown': 0}, 'history_guarded': {'windows': 6, 'cases': 24, 'mean_forecast_pixels': 1.8589274667531095, 'median_forecast_pixels': 1.7618945589380053, 'correct': 13, 'wrong': 0, 'unknown': 11}}, 'middle': {'no_history': {'windows': 6, 'cases': 24, 'mean_forecast_pixels': 12.22576917848165, 'median_forecast_pixels': 11.35290268354063, 'correct': 11, 'wrong': 1, 'unknown': 12}, 'history': {'windows': 6, 'cases': 24, 'mean_forecast_pixels': 2.22093264818049, 'median_forecast_pixels': 1.695811619738441, 'correct': 24, 'wrong': 0, 'unknown': 0}, 'history_guarded': {'windows': 6, 'cases': 24, 'mean_forecast_pixels': 2.22093264818049, 'median_forecast_pixels': 1.695811619738441, 'correct': 14, 'wrong': 0, 'unknown': 10}}, 'late': {'no_history': {'windows': 7, 'cases': 28, 'mean_forecast_pixels': 7.012606108345751, 'median_forecast_pixels': 5.767122287398383, 'correct': 22, 'wrong': 0, 'unknown': 6}, 'history': {'windows': 7, 'cases': 28, 'mean_forecast_pixels': 1.9648628182840682, 'median_forecast_pixels': 1.7560692528880253, 'correct': 28, 'wrong': 0, 'unknown': 0}, 'history_guarded': {'windows': 7, 'cases': 28, 'mean_forecast_pixels': 1.9648628182840682, 'median_forecast_pixels': 1.7560692528880253, 'correct': 17, 'wrong': 0, 'unknown': 11}}}

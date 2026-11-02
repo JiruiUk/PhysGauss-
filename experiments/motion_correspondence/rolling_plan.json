@@ -1,0 +1,17 @@
+{
+  "purpose": "Extend the bounded motion test across the training sequence before inspecting results",
+  "training_steps": 0,
+  "source_training_indices": "range(0, 109, 6)",
+  "warmup_observations": 5,
+  "hidden_observations": [2, 4],
+  "all_four_component_observations_hidden": true,
+  "reference": "Local visible-only FB component tracklets freshly seeded per window; never global object or material IDs",
+  "qualification": "Exactly four components throughout the window, no FB merge ambiguity, every component has >=30 known reference pixels and >=95% single-label purity; all four seed labels present at every observation",
+  "reference_used_by_tracker": false,
+  "tracker_inputs": "Only first five component positions/areas/masks, then no observations until forecast scored before first reappearance observation",
+  "parameters": "Same Config and three variants as initial bounded test, no tuning",
+  "time_strata_by_source_original_frame": {"early": [0, 59], "middle": [60, 139], "late": [140, 200]},
+  "interpretation": "Artificial gaps in qualified visible tracklets, not real fully occluded identity accuracy. Qualification may bias to easier fragments; report every exclusion and per-stratum coverage.",
+  "inputs": "Same frozen training images/components and raw forward/backward flow; ignore H3 motion/valid/depth fields",
+  "gate": "Diagnostic only; no new full reconstruction training while persistent surface support or physical identity remains unverified"
+}

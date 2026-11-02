@@ -1,0 +1,4235 @@
+{
+  "attempted_windows": 38,
+  "qualified_windows": 19,
+  "excluded_windows": [
+    {
+      "start_index": 18,
+      "start_frame": 32,
+      "return_frame": 43,
+      "hidden_observations": 2,
+      "stratum": "early",
+      "reason": "visible_FB_merge_ambiguity",
+      "rejected_at_frame": 43
+    },
+    {
+      "start_index": 18,
+      "start_frame": 32,
+      "return_frame": 47,
+      "hidden_observations": 4,
+      "stratum": "early",
+      "reason": "visible_FB_merge_ambiguity",
+      "rejected_at_frame": 43
+    },
+    {
+      "start_index": 24,
+      "start_frame": 42,
+      "return_frame": 54,
+      "hidden_observations": 2,
+      "stratum": "early",
+      "reason": "visible_FB_merge_ambiguity",
+      "rejected_at_frame": 43
+    },
+    {
+      "start_index": 24,
+      "start_frame": 42,
+      "return_frame": 56,
+      "hidden_observations": 4,
+      "stratum": "early",
+      "reason": "visible_FB_merge_ambiguity",
+      "rejected_at_frame": 43
+    },
+    {
+      "start_index": 30,
+      "start_frame": 52,
+      "return_frame": 63,
+      "hidden_observations": 2,
+      "stratum": "early",
+      "reason": "component_count_not_four",
+      "rejected_at_frame": 52
+    },
+    {
+      "start_index": 30,
+      "start_frame": 52,
+      "return_frame": 67,
+      "hidden_observations": 4,
+      "stratum": "early",
+      "reason": "component_count_not_four",
+      "rejected_at_frame": 52
+    },
+    {
+      "start_index": 36,
+      "start_frame": 62,
+      "return_frame": 74,
+      "hidden_observations": 2,
+      "stratum": "middle",
+      "reason": "component_count_not_four",
+      "rejected_at_frame": 62
+    },
+    {
+      "start_index": 36,
+      "start_frame": 62,
+      "return_frame": 76,
+      "hidden_observations": 4,
+      "stratum": "middle",
+      "reason": "component_count_not_four",
+      "rejected_at_frame": 62
+    },
+    {
+      "start_index": 60,
+      "start_frame": 102,
+      "return_frame": 114,
+      "hidden_observations": 2,
+      "stratum": "middle",
+      "reason": "visible_FB_merge_ambiguity",
+      "rejected_at_frame": 110
+    },
+    {
+      "start_index": 60,
+      "start_frame": 102,
+      "return_frame": 116,
+      "hidden_observations": 4,
+      "stratum": "middle",
+      "reason": "visible_FB_merge_ambiguity",
+      "rejected_at_frame": 110
+    },
+    {
+      "start_index": 66,
+      "start_frame": 112,
+      "return_frame": 123,
+      "hidden_observations": 2,
+      "stratum": "middle",
+      "reason": "component_count_not_four",
+      "rejected_at_frame": 112
+    },
+    {
+      "start_index": 66,
+      "start_frame": 112,
+      "return_frame": 127,
+      "hidden_observations": 4,
+      "stratum": "middle",
+      "reason": "component_count_not_four",
+      "rejected_at_frame": 112
+    },
+    {
+      "start_index": 72,
+      "start_frame": 122,
+      "return_frame": 134,
+      "hidden_observations": 2,
+      "stratum": "middle",
+      "reason": "component_count_not_four",
+      "rejected_at_frame": 122
+    },
+    {
+      "start_index": 72,
+      "start_frame": 122,
+      "return_frame": 136,
+      "hidden_observations": 4,
+      "stratum": "middle",
+      "reason": "component_count_not_four",
+      "rejected_at_frame": 122
+    },
+    {
+      "start_index": 78,
+      "start_frame": 132,
+      "return_frame": 143,
+      "hidden_observations": 2,
+      "stratum": "middle",
+      "reason": "component_count_not_four",
+      "rejected_at_frame": 132
+    },
+    {
+      "start_index": 78,
+      "start_frame": 132,
+      "return_frame": 147,
+      "hidden_observations": 4,
+      "stratum": "middle",
+      "reason": "component_count_not_four",
+      "rejected_at_frame": 132
+    },
+    {
+      "start_index": 90,
+      "start_frame": 152,
+      "return_frame": 167,
+      "hidden_observations": 4,
+      "stratum": "late",
+      "reason": "visible_FB_merge_ambiguity",
+      "rejected_at_frame": 166
+    },
+    {
+      "start_index": 96,
+      "start_frame": 162,
+      "return_frame": 174,
+      "hidden_observations": 2,
+      "stratum": "late",
+      "reason": "visible_FB_merge_ambiguity",
+      "rejected_at_frame": 166
+    },
+    {
+      "start_index": 96,
+      "start_frame": 162,
+      "return_frame": 176,
+      "hidden_observations": 4,
+      "stratum": "late",
+      "reason": "visible_FB_merge_ambiguity",
+      "rejected_at_frame": 166
+    }
+  ],
+  "trials": [
+    {
+      "start_index": 0,
+      "start_frame": 2,
+      "return_frame": 14,
+      "hidden_observations": 2,
+      "stratum": "early",
+      "variants": {
+        "no_history": {
+          "forecast_errors_pixels": [
+            3.0855598042809342,
+            2.6788274231914166,
+            2.530952165207047,
+            4.155633881387051
+          ],
+          "forecast_before_observation": [
+            [
+              208.77395174902378,
+              19.19545836349779
+            ],
+            [
+              192.45027234494992,
+              38.55016901411018
+            ],
+            [
+              199.90899178178202,
+              71.14821782205736
+            ],
+            [
+              201.50038128427522,
+              118.18015741915646
+            ]
+          ],
+          "reference_xy": [
+            [
+              210.41295546558703,
+              21.809716599190285
+            ],
+            [
+              193.87698412698413,
+              40.817460317460316
+            ],
+            [
+              201.13574660633483,
+              73.36199095022624
+            ],
+            [
+              198.57113402061856,
+              121.1278350515464
+            ]
+          ],
+          "outcomes": [
+            {
+              "local_seed": 0,
+              "assigned_local_reference": 0,
+              "correct": true
+            },
+            {
+              "local_seed": 1,
+              "assigned_local_reference": 1,
+              "correct": true
+            },
+            {
+              "local_seed": 2,
+              "assigned_local_reference": 2,
+              "correct": true
+            },
+            {
+              "local_seed": 3,
+              "assigned_local_reference": 3,
+              "correct": true
+            }
+          ]
+        },
+        "history": {
+          "forecast_errors_pixels": [
+            1.8982509122154843,
+            1.4748810561428973,
+            1.4964337902059501,
+            2.385401923594689
+          ],
+          "forecast_before_observation": [
+            [
+              209.30726124671543,
+              20.26673350787631
+            ],
+            [
+              193.2130453818458,
+              39.500471527654824
+            ],
+            [
+              200.5131506985749,
+              72.0012233638579
+            ],
+            [
+              200.2554469186712,
+              119.4386836674062
+            ]
+          ],
+          "reference_xy": [
+            [
+              210.41295546558703,
+              21.809716599190285
+            ],
+            [
+              193.87698412698413,
+              40.817460317460316
+            ],
+            [
+              201.13574660633483,
+              73.36199095022624
+            ],
+            [
+              198.57113402061856,
+              121.1278350515464
+            ]
+          ],
+          "outcomes": [
+            {
+              "local_seed": 0,
+              "assigned_local_reference": 0,
+              "correct": true
+            },
+            {
+              "local_seed": 1,
+              "assigned_local_reference": 1,
+              "correct": true
+            },
+            {
+              "local_seed": 2,
+              "assigned_local_reference": 2,
+              "correct": true
+            },
+            {
+              "local_seed": 3,
+              "assigned_local_reference": 3,
+              "correct": true
+            }
+          ]
+        },
+        "history_guarded": {
+          "forecast_errors_pixels": [
+            1.8982509122154843,
+            1.4748810561428973,
+            1.4964337902059501,
+            2.385401923594689
+          ],
+          "forecast_before_observation": [
+            [
+              209.30726124671543,
+              20.26673350787631
+            ],
+            [
+              193.2130453818458,
+              39.500471527654824
+            ],
+            [
+              200.5131506985749,
+              72.0012233638579
+            ],
+            [
+              200.2554469186712,
+              119.4386836674062
+            ]
+          ],
+          "reference_xy": [
+            [
+              210.41295546558703,
+              21.809716599190285
+            ],
+            [
+              193.87698412698413,
+              40.817460317460316
+            ],
+            [
+              201.13574660633483,
+              73.36199095022624
+            ],
+            [
+              198.57113402061856,
+              121.1278350515464
+            ]
+          ],
+          "outcomes": [
+            {
+              "local_seed": 0,
+              "assigned_local_reference": 0,
+              "correct": true
+            },
+            {
+              "local_seed": 1,
+              "assigned_local_reference": 1,
+              "correct": true
+            },
+            {
+              "local_seed": 2,
+              "assigned_local_reference": 2,
+              "correct": true
+            },
+            {
+              "local_seed": 3,
+              "assigned_local_reference": 3,
+              "correct": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "start_index": 0,
+      "start_frame": 2,
+      "return_frame": 16,
+      "hidden_observations": 4,
+      "stratum": "early",
+      "variants": {
+        "no_history": {
+          "forecast_errors_pixels": [
+            4.3944615581910105,
+            3.9121465804212634,
+            3.4471757293115313,
+            5.770702797880439
+          ],
+          "forecast_before_observation": [
+            [
+              208.77395174902378,
+              19.19545836349779
+            ],
+            [
+              192.45027234494992,
+              38.55016901411018
+            ],
+            [
+              199.90899178178202,
+              71.14821782205736
+            ],
+            [
+              201.50038128427522,
+              118.18015741915646
+            ]
+          ],
+          "reference_xy": [
+            [
+              211.1012145748988,
+              22.923076923076923
+            ],
+            [
+              194.732,
+              41.728
+            ],
+            [
+              201.55454545454546,
+              74.17727272727272
+            ],
+            [
+              197.31578947368422,
+              122.15384615384616
+            ]
+          ],
+          "outcomes": [
+            {
+              "local_seed": 0,
+              "assigned_local_reference": 0,
+              "correct": true
+            },
+            {
+              "local_seed": 1,
+              "assigned_local_reference": 1,
+              "correct": true
+            },
+            {
+              "local_seed": 2,
+              "assigned_local_reference": 2,
+              "correct": true
+            },
+            {
+              "local_seed": 3,
+              "assigned_local_reference": 3,
+              "correct": true
+            }
+          ]
+        },
+        "history": {
+          "forecast_errors_pixels": [
+            2.8434054926423924,
+            2.321841162165961,
+            2.0914693097123913,
+            3.459683284505032
+          ],
+          "forecast_before_observation": [
+            [
+              209.47198983838007,
+              20.592716102623484
+            ],
+            [
+              193.44684176377046,
+              39.794269230172006
+            ],
+            [
+              200.7004010211393,
+              72.26816792125759
+            ],
+            [
+              199.87251735055642,
+              119.8230628106956
+            ]
+          ],
+          "reference_xy": [
+            [
+              211.1012145748988,
+              22.923076923076923
+            ],
+            [
+              194.732,
+              41.728
+            ],
+            [
+              201.55454545454546,
+              74.17727272727272
+            ],
+            [
+              197.31578947368422,
+              122.15384615384616
+            ]
+          ],
+          "outcomes": [
+            {
+              "local_seed": 0,
+              "assigned_local_reference": 0,
+              "correct": true
+            },
+            {
+              "local_seed": 1,
+              "assigned_local_reference": 1,
+              "correct": true
+            },
+            {
+              "local_seed": 2,
+              "assigned_local_reference": 2,
+              "correct": true
+            },
+            {
+              "local_seed": 3,
+              "assigned_local_reference": 3,
+              "correct": true
+            }
+          ]
+        },
+        "history_guarded": {
+          "forecast_errors_pixels": [
+            2.8434054926423924,
+            2.321841162165961,
+            2.0914693097123913,
+            3.459683284505032
+          ],
+          "forecast_before_observation": [
+            [
+              209.47198983838007,
+              20.592716102623484
+            ],
+            [
+              193.44684176377046,
+              39.794269230172006
+            ],
+            [
+              200.7004010211393,
+              72.26816792125759
+            ],
+            [
+              199.87251735055642,
+              119.8230628106956
+            ]
+          ],
+          "reference_xy": [
+            [
+              211.1012145748988,
+              22.923076923076923
+            ],
+            [
+              194.732,
+              41.728
+            ],
+            [
+              201.55454545454546,
+              74.17727272727272
+            ],
+            [
+              197.31578947368422,
+              122.15384615384616
+            ]
+          ],
+          "outcomes": [
+            {
+              "local_seed": 0,
+              "assigned_local_reference": null,
+              "correct": null
+            },
+            {
+              "local_seed": 1,
+              "assigned_local_reference": null,
+              "correct": null
+            },
+            {
+              "local_seed": 2,
+              "assigned_local_reference": null,
+              "correct": null
+            },
+            {
+              "local_seed": 3,
+              "assigned_local_reference": 3,
+              "correct": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "start_index": 6,
+      "start_frame": 12,
+      "return_frame": 23,
+      "hidden_observations": 2,
+      "stratum": "early",
+      "variants": {
+        "no_history": {
+          "forecast_errors_pixels": [
+            4.486838816560814,
+            4.002171263013204,
+            3.750961761321746,
+            5.32175209945573
+          ],
+          "forecast_before_observation": [
+            [
+              211.9721411778969,
+              24.50423743975396
+            ],
+            [
+              195.44878962716263,
+              43.322120863121675
+            ],
+            [
+              202.29125667807395,
+              75.49789330074438
+            ],
+            [
+              195.57324356173814,
+              123.76121055582671
+            ]
+          ],
+          "reference_xy": [
+            [
+              214.03347280334728,
+              28.489539748953973
+            ],
+            [
+              197.5772357723577,
+              46.71138211382114
+            ],
+            [
+              204.03636363636363,
+              78.81818181818181
+            ],
+            [
+              191.6931330472103,
+              127.40343347639485
+            ]
+          ],
+          "outcomes": [
+            {
+              "local_seed": 0,
+              "assigned_local_reference": 0,
+              "correct": true
+            },
+            {
+              "local_seed": 1,
+              "assigned_local_reference": 1,
+              "correct": true
+            },
+            {
+              "local_seed": 2,
+              "assigned_local_reference": 2,
+              "correct": true
+            },
+            {
+              "local_seed": 3,
+              "assigned_local_reference": 3,
+              "correct": true
+            }
+          ]
+        },
+        "history": {
+          "forecast_errors_pixels": [
+            1.1741144224158004,
+            0.856359811542009,
+            1.1108744435075968,
+            0.9689331765534239
+          ],
+          "forecast_before_observation": [
+            [
+              213.64102469052554,
+              27.382955294125765
+            ],
+            [
+              196.98796943541888,
+              46.089998728965256
+            ],
+            [
+              203.57781423514265,
+              77.80636440585971
+            ],
+            [
+              192.34473956109258,
+              126.68632786932426
+            ]
+          ],
+          "reference_xy": [
+            [
+              214.03347280334728,
+              28.489539748953973
+            ],
+            [
+              197.5772357723577,
+              46.71138211382114
+            ],
+            [
+              204.03636363636363,
+              78.81818181818181
+            ],
+            [
+              191.6931330472103,
+              127.40343347639485
+            ]
+          ],
+          "outcomes": [
+            {
+              "local_seed": 0,
+              "assigned_local_reference": 0,
+              "correct": true
+            },
+            {
+              "local_seed": 1,
+              "assigned_local_reference": 1,
+              "correct": true
+            },
+            {
+              "local_seed": 2,
+              "assigned_local_reference": 2,
+              "correct": true
+            },
+            {
+              "local_seed": 3,
+              "assigned_local_reference": 3,
+              "correct": true
+            }
+          ]
+        },
+        "history_guarded": {
+          "forecast_errors_pixels": [
+            1.1741144224158004,
+            0.856359811542009,
+            1.1108744435075968,
+            0.9689331765534239
+          ],
+          "forecast_before_observation": [
+            [
+              213.64102469052554,
+              27.382955294125765
+            ],
+            [
+              196.98796943541888,
+              46.089998728965256
+            ],
+            [
+              203.57781423514265,
+              77.80636440585971
+            ],
+            [
+              192.34473956109258,
+              126.68632786932426
+            ]
+          ],
+          "reference_xy": [
+            [
+              214.03347280334728,
+              28.489539748953973
+            ],
+            [
+              197.5772357723577,
+              46.71138211382114
+            ],
+            [
+              204.03636363636363,
+              78.81818181818181
+            ],
+            [
+              191.6931330472103,
+              127.40343347639485
+            ]
+          ],
+          "outcomes": [
+            {
+              "local_seed": 0,
+              "assigned_local_reference": 0,
+              "correct": true
+            },
+            {
+              "local_seed": 1,
+              "assigned_local_reference": 1,
+              "correct": true
+            },
+            {
+              "local_seed": 2,
+              "assigned_local_reference": 2,
+              "correct": true
+            },
+            {
+              "local_seed": 3,
+              "assigned_local_reference": 3,
+              "correct": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "start_index": 6,
+      "start_frame": 12,
+      "return_frame": 27,
+      "hidden_observations": 4,
+      "stratum": "early",
+      "variants": {
+        "no_history": {
+          "forecast_errors_pixels": [
+            8.889304023922728,
+            8.02009911285658,
+            7.205333746447535,
+            10.940694204275108
+          ],
+          "forecast_before_observation": [
+            [
+              211.9721411778969,
+              24.50423743975396
+            ],
+            [
+              195.44878962716263,
+              43.322120863121675
+            ],
+            [
+              202.29125667807395,
+              75.49789330074438
+            ],
+            [
+              195.57324356173814,
+              123.76121055582671
+            ]
+          ],
+          "reference_xy": [
+            [
+              216.09871244635193,
+              32.377682403433475
+            ],
+            [
+              199.72289156626505,
+              50.10843373493976
+            ],
+            [
+              205.5648148148148,
+              81.91666666666667
+            ],
+            [
+              187.59825327510916,
+              131.25109170305677
+            ]
+          ],
+          "outcomes": [
+            {
+              "local_seed": 0,
+              "assigned_local_reference": 0,
+              "correct": true
+            },
+            {
+              "local_seed": 1,
+              "assigned_local_reference": 1,
+              "correct": true
+            },
+            {
+              "local_seed": 2,
+              "assigned_local_reference": 2,
+              "correct": true
+            },
+            {
+              "local_seed": 3,
+              "assigned_local_reference": 3,
+              "correct": true
+            }
+          ]
+        },
+        "history": {
+          "forecast_errors_pixels": [
+            2.678235075616137,
+            2.108879073553682,
+            2.2467281103975822,
+            2.7844046881795586
+          ],
+          "forecast_before_observation": [
+            [
+              215.07875816035468,
+              29.901266369174202
+            ],
+            [
+              198.3034909608774,
+              48.54873092084412
+            ],
+            [
+              204.69204894030617,
+              79.84638481862186
+            ],
+            [
+              189.5138511366262,
+              129.23035067548602
+            ]
+          ],
+          "reference_xy": [
+            [
+              216.09871244635193,
+              32.377682403433475
+            ],
+            [
+              199.72289156626505,
+              50.10843373493976
+            ],
+            [
+              205.5648148148148,
+              81.91666666666667
+            ],
+            [
+              187.59825327510916,
+              131.25109170305677
+            ]
+          ],
+          "outcomes": [
+            {
+              "local_seed": 0,
+              "assigned_local_reference": 0,
+              "correct": true
+            },
+            {
+              "local_seed": 1,
+              "assigned_local_reference": 1,
+              "correct": true
+            },
+            {
+              "local_seed": 2,
+              "assigned_local_reference": 2,
+              "correct": true
+            },
+            {
+              "local_seed": 3,
+              "assigned_local_reference": 3,
+              "correct": true
+            }
+          ]
+        },
+        "history_guarded": {
+          "forecast_errors_pixels": [
+            2.678235075616137,
+            2.108879073553682,
+            2.2467281103975822,
+            2.7844046881795586
+          ],
+          "forecast_before_observation": [
+            [
+              215.07875816035468,
+              29.901266369174202
+            ],
+            [
+              198.3034909608774,
+              48.54873092084412
+            ],
+            [
+              204.69204894030617,
+              79.84638481862186
+            ],
+            [
+              189.5138511366262,
+              129.23035067548602
+            ]
+          ],
+          "reference_xy": [
+            [
+              216.09871244635193,
+              32.377682403433475
+            ],
+            [
+              199.72289156626505,
+              50.10843373493976
+            ],
+            [
+              205.5648148148148,
+              81.91666666666667
+            ],
+            [
+              187.59825327510916,
+              131.25109170305677
+            ]
+          ],
+          "outcomes": [
+            {
+              "local_seed": 0,
+              "assigned_local_reference": null,
+              "correct": null
+            },
+            {
+              "local_seed": 1,
+              "assigned_local_reference": null,
+              "correct": null
+            },
+            {
+              "local_seed": 2,
+              "assigned_local_reference": null,
+              "correct": null
+            },
+            {
+              "local_seed": 3,
+              "assigned_local_reference": 3,
+              "correct": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "start_index": 12,
+      "start_frame": 22,
+      "return_frame": 34,
+      "hidden_observations": 2,
+      "stratum": "early",
+      "variants": {
+        "no_history": {
+          "forecast_errors_pixels": [
+            8.940223240858243,
+            8.203947348529855,
+            6.5589576772684905,
+            10.418017622738441
+          ],
+          "forecast_before_observation": [
+            [
+              216.3494280325477,
+              32.74231614175613
+            ],
+            [
+              199.93906810103866,
+              50.441807433425254
+            ],
+            [
+              205.7820683781152,
+              82.25854165081118
+            ],
+            [
+              187.21668043606456,
+              131.57748082328362
+            ]
+          ],
+          "reference_xy": [
+            [
+              220.17937219730942,
+              40.82062780269058
+            ],
+            [
+              204.19838056680163,
+              57.45344129554656
+            ],
+            [
+              209.47844827586206,
+              87.67672413793103
+            ],
+            [
+              179.37078651685394,
+              138.4314606741573
+            ]
+          ],
+          "outcomes": [
+            {
+              "local_seed": 0,
+              "assigned_local_reference": null,
+              "correct": null
+            },
+            {
+              "local_seed": 1,
+              "assigned_local_reference": null,
+              "correct": null
+            },
+            {
+              "local_seed": 2,
+              "assigned_local_reference": 2,
+              "correct": true
+            },
+            {
+              "local_seed": 3,
+              "assigned_local_reference": null,
+              "correct": null
+            }
+          ]
+        },
+        "history": {
+          "forecast_errors_pixels": [
+            1.6255382056605263,
+            1.4761022115207207,
+            0.9725651731987441,
+            1.166029433446081
+          ],
+          "forecast_before_observation": [
+            [
+              219.90690325279593,
+              39.21808759029722
+            ],
+            [
+              203.50126405628532,
+              56.15232396431854
+            ],
+            [
+              208.50665552396973,
+              87.6379702544015
+            ],
+            [
+              180.43026747671453,
+              137.94450612252496
+            ]
+          ],
+          "reference_xy": [
+            [
+              220.17937219730942,
+              40.82062780269058
+            ],
+            [
+              204.19838056680163,
+              57.45344129554656
+            ],
+            [
+              209.47844827586206,
+              87.67672413793103
+            ],
+            [
+              179.37078651685394,
+              138.4314606741573
+            ]
+          ],
+          "outcomes": [
+            {
+              "local_seed": 0,
+              "assigned_local_reference": 0,
+              "correct": true
+            },
+            {
+              "local_seed": 1,
+              "assigned_local_reference": 1,
+              "correct": true
+            },
+            {
+              "local_seed": 2,
+              "assigned_local_reference": 2,
+              "correct": true
+            },
+            {
+              "local_seed": 3,
+              "assigned_local_reference": 3,
+              "correct": true
+            }
+          ]
+        },
+        "history_guarded": {
+          "forecast_errors_pixels": [
+            1.6255382056605263,
+            1.4761022115207207,
+            0.9725651731987441,
+            1.166029433446081
+          ],
+          "forecast_before_observation": [
+            [
+              219.90690325279593,
+              39.21808759029722
+            ],
+            [
+              203.50126405628532,
+              56.15232396431854
+            ],
+            [
+              208.50665552396973,
+              87.6379702544015
+            ],
+            [
+              180.43026747671453,
+              137.94450612252496
+            ]
+          ],
+          "reference_xy": [
+            [
+              220.17937219730942,
+              40.82062780269058
+            ],
+            [
+              204.19838056680163,
+              57.45344129554656
+            ],
+            [
+              209.47844827586206,
+              87.67672413793103
+            ],
+            [
+              179.37078651685394,
+              138.4314606741573
+            ]
+          ],
+          "outcomes": [
+            {
+              "local_seed": 0,
+              "assigned_local_reference": null,
+              "correct": null
+            },
+            {
+              "local_seed": 1,
+              "assigned_local_reference": null,
+              "correct": null
+            },
+            {
+              "local_seed": 2,
+              "assigned_local_reference": 2,
+              "correct": true
+            },
+            {
+              "local_seed": 3,
+              "assigned_local_reference": 3,
+              "correct": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "start_index": 12,
+      "start_frame": 22,
+      "return_frame": 36,
+      "hidden_observations": 4,
+      "stratum": "early",
+      "variants": {
+        "no_history": {
+          "forecast_errors_pixels": [
+            11.944681287692882,
+            10.961627549909878,
+            8.18950564825598,
+            13.11143246679558
+          ],
+          "forecast_before_observation": [
+            [
+              216.3494280325477,
+              32.74231614175613
+            ],
+            [
+              199.93906810103866,
+              50.441807433425254
+            ],
+            [
+              205.7820683781152,
+              82.25854165081118
+            ],
+            [
+              187.21668043606456,
+              131.57748082328362
+            ]
+          ],
+          "reference_xy": [
+            [
+              221.54054054054055,
+              43.5
+            ],
+            [
+              205.66533864541833,
+              59.788844621513945
+            ],
+            [
+              210.61603375527426,
+              88.86919831223629
+            ],
+            [
+              176.8722891566265,
+              139.63373493975902
+            ]
+          ],
+          "outcomes": [
+            {
+              "local_seed": 0,
+              "assigned_local_reference": null,
+              "correct": null
+            },
+            {
+              "local_seed": 1,
+              "assigned_local_reference": null,
+              "correct": null
+            },
+            {
+              "local_seed": 2,
+              "assigned_local_reference": 2,
+              "correct": true
+            },
+            {
+              "local_seed": 3,
+              "assigned_local_reference": null,
+              "correct": null
+            }
+          ]
+        },
+        "history": {
+          "forecast_errors_pixels": [
+            2.395213022692304,
+            2.200942689113498,
+            1.347597268230479,
+            1.530375465261686
+          ],
+          "forecast_before_observation": [
+            [
+              220.9810817835576,
+              41.17104072098503
+            ],
+            [
+              204.57475582410052,
+              57.87709729756953
+            ],
+            [
+              209.32574652712955,
+              89.25801352056655
+            ],
+            [
+              178.38555618923772,
+              139.86192773694364
+            ]
+          ],
+          "reference_xy": [
+            [
+              221.54054054054055,
+              43.5
+            ],
+            [
+              205.66533864541833,
+              59.788844621513945
+            ],
+            [
+              210.61603375527426,
+              88.86919831223629
+            ],
+            [
+              176.8722891566265,
+              139.63373493975902
+            ]
+          ],
+          "outcomes": [
+            {
+              "local_seed": 0,
+              "assigned_local_reference": 0,
+              "correct": true
+            },
+            {
+              "local_seed": 1,
+              "assigned_local_reference": 1,
+              "correct": true
+            },
+            {
+              "local_seed": 2,
+              "assigned_local_reference": 2,
+              "correct": true
+            },
+            {
+              "local_seed": 3,
+              "assigned_local_reference": 3,
+              "correct": true
+            }
+          ]
+        },
+        "history_guarded": {
+          "forecast_errors_pixels": [
+            2.395213022692304,
+            2.200942689113498,
+            1.347597268230479,
+            1.530375465261686
+          ],
+          "forecast_before_observation": [
+            [
+              220.9810817835576,
+              41.17104072098503
+            ],
+            [
+              204.57475582410052,
+              57.87709729756953
+            ],
+            [
+              209.32574652712955,
+              89.25801352056655
+            ],
+            [
+              178.38555618923772,
+              139.86192773694364
+            ]
+          ],
+          "reference_xy": [
+            [
+              221.54054054054055,
+              43.5
+            ],
+            [
+              205.66533864541833,
+              59.788844621513945
+            ],
+            [
+              210.61603375527426,
+              88.86919831223629
+            ],
+            [
+              176.8722891566265,
+              139.63373493975902
+            ]
+          ],
+          "outcomes": [
+            {
+              "local_seed": 0,
+              "assigned_local_reference": null,
+              "correct": null
+            },
+            {
+              "local_seed": 1,
+              "assigned_local_reference": null,
+              "correct": null
+            },
+            {
+              "local_seed": 2,
+              "assigned_local_reference": null,
+              "correct": null
+            },
+            {
+              "local_seed": 3,
+              "assigned_local_reference": 3,
+              "correct": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "start_index": 42,
+      "start_frame": 72,
+      "return_frame": 83,
+      "hidden_observations": 2,
+      "stratum": "middle",
+      "variants": {
+        "no_history": {
+          "forecast_errors_pixels": [
+            3.776295452376448,
+            13.430789716880353,
+            1.9676803560069047,
+            13.352004741324814
+          ],
+          "forecast_before_observation": [
+            [
+              219.15326756479442,
+              90.95718438309355
+            ],
+            [
+              239.75415235104418,
+              106.6250774197377
+            ],
+            [
+              151.27064846320292,
+              100.59636276751709
+            ],
+            [
+              206.88545884697402,
+              133.54088311240778
+            ]
+          ],
+          "reference_xy": [
+            [
+              218.11864406779662,
+              94.58898305084746
+            ],
+            [
+              232.16346153846155,
+              117.7051282051282
+            ],
+            [
+              152.78040540540542,
+              99.33445945945945
+            ],
+            [
+              196.9707792207792,
+              142.48376623376623
+            ]
+          ],
+          "outcomes": [
+            {
+              "local_seed": 0,
+              "assigned_local_reference": 0,
+              "correct": true
+            },
+            {
+              "local_seed": 1,
+              "assigned_local_reference": null,
+              "correct": null
+            },
+            {
+              "local_seed": 2,
+              "assigned_local_reference": 2,
+              "correct": true
+            },
+            {
+              "local_seed": 3,
+              "assigned_local_reference": null,
+              "correct": null
+            }
+          ]
+        },
+        "history": {
+          "forecast_errors_pixels": [
+            0.6213512685756929,
+            1.8473938603212154,
+            1.1915346702792249,
+            1.460771165807791
+          ],
+          "forecast_before_observation": [
+            [
+              218.54115581861984,
+              94.1333941798498
+            ],
+            [
+              234.00972139956636,
+              117.76984760272863
+            ],
+            [
+              152.14578911315465,
+              98.32598683608919
+            ],
+            [
+              198.39496424694286,
+              142.80864992080927
+            ]
+          ],
+          "reference_xy": [
+            [
+              218.11864406779662,
+              94.58898305084746
+            ],
+            [
+              232.16346153846155,
+              117.7051282051282
+            ],
+            [
+              152.78040540540542,
+              99.33445945945945
+            ],
+            [
+              196.9707792207792,
+              142.48376623376623
+            ]
+          ],
+          "outcomes": [
+            {
+              "local_seed": 0,
+              "assigned_local_reference": 0,
+              "correct": true
+            },
+            {
+              "local_seed": 1,
+              "assigned_local_reference": 1,
+              "correct": true
+            },
+            {
+              "local_seed": 2,
+              "assigned_local_reference": 2,
+              "correct": true
+            },
+            {
+              "local_seed": 3,
+              "assigned_local_reference": 3,
+              "correct": true
+            }
+          ]
+        },
+        "history_guarded": {
+          "forecast_errors_pixels": [
+            0.6213512685756929,
+            1.8473938603212154,
+            1.1915346702792249,
+            1.460771165807791
+          ],
+          "forecast_before_observation": [
+            [
+              218.54115581861984,
+              94.1333941798498
+            ],
+            [
+              234.00972139956636,
+              117.76984760272863
+            ],
+            [
+              152.14578911315465,
+              98.32598683608919
+            ],
+            [
+              198.39496424694286,
+              142.80864992080927
+            ]
+          ],
+          "reference_xy": [
+            [
+              218.11864406779662,
+              94.58898305084746
+            ],
+            [
+              232.16346153846155,
+              117.7051282051282
+            ],
+            [
+              152.78040540540542,
+              99.33445945945945
+            ],
+            [
+              196.9707792207792,
+              142.48376623376623
+            ]
+          ],
+          "outcomes": [
+            {
+              "local_seed": 0,
+              "assigned_local_reference": 0,
+              "correct": true
+            },
+            {
+              "local_seed": 1,
+              "assigned_local_reference": 1,
+              "correct": true
+            },
+            {
+              "local_seed": 2,
+              "assigned_local_reference": 2,
+              "correct": true
+            },
+            {
+              "local_seed": 3,
+              "assigned_local_reference": 3,
+              "correct": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "start_index": 42,
+      "start_frame": 72,
+      "return_frame": 87,
+      "hidden_observations": 4,
+      "stratum": "middle",
+      "variants": {
+        "no_history": {
+          "forecast_errors_pixels": [
+            7.4190291853631605,
+            23.568385879387773,
+            4.406421645364159,
+            20.81976816791842
+          ],
+          "forecast_before_observation": [
+            [
+              219.15326756479442,
+              90.95718438309355
+            ],
+            [
+              239.75415235104418,
+              106.6250774197377
+            ],
+            [
+              151.27064846320292,
+              100.59636276751709
+            ],
+            [
+              206.88545884697402,
+              133.54088311240778
+            ]
+          ],
+          "reference_xy": [
+            [
+              216.9296875,
+              98.03515625
+            ],
+            [
+              224.51975683890578,
+              124.6079027355623
+            ],
+            [
+              155.34722222222223,
+              98.92361111111111
+            ],
+            [
+              190.37699680511182,
+              146.22683706070288
+            ]
+          ],
+          "outcomes": [
+            {
+              "local_seed": 0,
+              "assigned_local_reference": 0,
+              "correct": true
+            },
+            {
+              "local_seed": 1,
+              "assigned_local_reference": null,
+              "correct": null
+            },
+            {
+              "local_seed": 2,
+              "assigned_local_reference": 2,
+              "correct": true
+            },
+            {
+              "local_seed": 3,
+              "assigned_local_reference": null,
+              "correct": null
+            }
+          ]
+        },
+        "history": {
+          "forecast_errors_pixels": [
+            1.6160339043633478,
+            6.466564095718727,
+            3.38669289707316,
+            3.809846450927077
+          ],
+          "forecast_before_observation": [
+            [
+              218.00836285556818,
+              96.83181712184796
+            ],
+            [
+              230.9282655020931,
+              123.74334046603417
+            ],
+            [
+              153.02373193641185,
+              96.45965460361538
+            ],
+            [
+              193.8696049608249,
+              147.74888116331232
+            ]
+          ],
+          "reference_xy": [
+            [
+              216.9296875,
+              98.03515625
+            ],
+            [
+              224.51975683890578,
+              124.6079027355623
+            ],
+            [
+              155.34722222222223,
+              98.92361111111111
+            ],
+            [
+              190.37699680511182,
+              146.22683706070288
+            ]
+          ],
+          "outcomes": [
+            {
+              "local_seed": 0,
+              "assigned_local_reference": 0,
+              "correct": true
+            },
+            {
+              "local_seed": 1,
+              "assigned_local_reference": 1,
+              "correct": true
+            },
+            {
+              "local_seed": 2,
+              "assigned_local_reference": 2,
+              "correct": true
+            },
+            {
+              "local_seed": 3,
+              "assigned_local_reference": 3,
+              "correct": true
+            }
+          ]
+        },
+        "history_guarded": {
+          "forecast_errors_pixels": [
+            1.6160339043633478,
+            6.466564095718727,
+            3.38669289707316,
+            3.809846450927077
+          ],
+          "forecast_before_observation": [
+            [
+              218.00836285556818,
+              96.83181712184796
+            ],
+            [
+              230.9282655020931,
+              123.74334046603417
+            ],
+            [
+              153.02373193641185,
+              96.45965460361538
+            ],
+            [
+              193.8696049608249,
+              147.74888116331232
+            ]
+          ],
+          "reference_xy": [
+            [
+              216.9296875,
+              98.03515625
+            ],
+            [
+              224.51975683890578,
+              124.6079027355623
+            ],
+            [
+              155.34722222222223,
+              98.92361111111111
+            ],
+            [
+              190.37699680511182,
+              146.22683706070288
+            ]
+          ],
+          "outcomes": [
+            {
+              "local_seed": 0,
+              "assigned_local_reference": null,
+              "correct": null
+            },
+            {
+              "local_seed": 1,
+              "assigned_local_reference": null,
+              "correct": null
+            },
+            {
+              "local_seed": 2,
+              "assigned_local_reference": 2,
+              "correct": true
+            },
+            {
+              "local_seed": 3,
+              "assigned_local_reference": null,
+              "correct": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "start_index": 48,
+      "start_frame": 82,
+      "return_frame": 94,
+      "hidden_observations": 2,
+      "stratum": "middle",
+      "variants": {
+        "no_history": {
+          "forecast_errors_pixels": [
+            6.976093864116437,
+            5.714856189006872,
+            19.98083347126244,
+            10.961966533416511
+          ],
+          "forecast_before_observation": [
+            [
+              216.86323815005298,
+              98.37460539051217
+            ],
+            [
+              155.60289503697282,
+              98.86363673442838
+            ],
+            [
+              225.3251244524047,
+              123.91990477627445
+            ],
+            [
+              190.06176239801476,
+              146.5660572620092
+            ]
+          ],
+          "reference_xy": [
+            [
+              214.76785714285714,
+              105.02857142857142
+            ],
+            [
+              161.18146718146718,
+              100.10424710424711
+            ],
+            [
+              210.27653631284917,
+              137.06424581005587
+            ],
+            [
+              180.42857142857142,
+              151.79734219269102
+            ]
+          ],
+          "outcomes": [
+            {
+              "local_seed": 0,
+              "assigned_local_reference": 0,
+              "correct": true
+            },
+            {
+              "local_seed": 1,
+              "assigned_local_reference": 1,
+              "correct": true
+            },
+            {
+              "local_seed": 2,
+              "assigned_local_reference": null,
+              "correct": null
+            },
+            {
+              "local_seed": 3,
+              "assigned_local_reference": null,
+              "correct": null
+            }
+          ]
+        },
+        "history": {
+          "forecast_errors_pixels": [
+            0.9392919103367751,
+            2.3071890632335204,
+            0.8630764824906006,
+            1.3908726419396633
+          ],
+          "forecast_before_observation": [
+            [
+              214.9541098473761,
+              104.10793076963685
+            ],
+            [
+              159.94590387145044,
+              98.15578497209138
+            ],
+            [
+              211.12523779795427,
+              136.9073802503917
+            ],
+            [
+              179.61922224142336,
+              152.92848347447637
+            ]
+          ],
+          "reference_xy": [
+            [
+              214.76785714285714,
+              105.02857142857142
+            ],
+            [
+              161.18146718146718,
+              100.10424710424711
+            ],
+            [
+              210.27653631284917,
+              137.06424581005587
+            ],
+            [
+              180.42857142857142,
+              151.79734219269102
+            ]
+          ],
+          "outcomes": [
+            {
+              "local_seed": 0,
+              "assigned_local_reference": 0,
+              "correct": true
+            },
+            {
+              "local_seed": 1,
+              "assigned_local_reference": 1,
+              "correct": true
+            },
+            {
+              "local_seed": 2,
+              "assigned_local_reference": 2,
+              "correct": true
+            },
+            {
+              "local_seed": 3,
+              "assigned_local_reference": 3,
+              "correct": true
+            }
+          ]
+        },
+        "history_guarded": {
+          "forecast_errors_pixels": [
+            0.9392919103367751,
+            2.3071890632335204,
+            0.8630764824906006,
+            1.3908726419396633
+          ],
+          "forecast_before_observation": [
+            [
+              214.9541098473761,
+              104.10793076963685
+            ],
+            [
+              159.94590387145044,
+              98.15578497209138
+            ],
+            [
+              211.12523779795427,
+              136.9073802503917
+            ],
+            [
+              179.61922224142336,
+              152.92848347447637
+            ]
+          ],
+          "reference_xy": [
+            [
+              214.76785714285714,
+              105.02857142857142
+            ],
+            [
+              161.18146718146718,
+              100.10424710424711
+            ],
+            [
+              210.27653631284917,
+              137.06424581005587
+            ],
+            [
+              180.42857142857142,
+              151.79734219269102
+            ]
+          ],
+          "outcomes": [
+            {
+              "local_seed": 0,
+              "assigned_local_reference": 0,
+              "correct": true
+            },
+            {
+              "local_seed": 1,
+              "assigned_local_reference": 1,
+              "correct": true
+            },
+            {
+              "local_seed": 2,
+              "assigned_local_reference": 2,
+              "correct": true
+            },
+            {
+              "local_seed": 3,
+              "assigned_local_reference": 3,
+              "correct": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "start_index": 48,
+      "start_frame": 82,
+      "return_frame": 96,
+      "hidden_observations": 4,
+      "stratum": "middle",
+      "variants": {
+        "no_history": {
+          "forecast_errors_pixels": [
+            9.14606619219596,
+            7.911146584785383,
+            24.927529468304364,
+            14.2781188113524
+          ],
+          "forecast_before_observation": [
+            [
+              216.86323815005298,
+              98.37460539051217
+            ],
+            [
+              155.60289503697282,
+              98.86363673442838
+            ],
+            [
+              225.3251244524047,
+              123.91990477627445
+            ],
+            [
+              190.06176239801476,
+              146.5660572620092
+            ]
+          ],
+          "reference_xy": [
+            [
+              214.15570934256056,
+              107.11072664359861
+            ],
+            [
+              163.16666666666666,
+              101.18217054263566
+            ],
+            [
+              206.51657458563537,
+              140.27900552486187
+            ],
+            [
+              177.11418685121106,
+              152.5847750865052
+            ]
+          ],
+          "outcomes": [
+            {
+              "local_seed": 0,
+              "assigned_local_reference": 0,
+              "correct": true
+            },
+            {
+              "local_seed": 1,
+              "assigned_local_reference": 1,
+              "correct": true
+            },
+            {
+              "local_seed": 2,
+              "assigned_local_reference": null,
+              "correct": null
+            },
+            {
+              "local_seed": 3,
+              "assigned_local_reference": null,
+              "correct": null
+            }
+          ]
+        },
+        "history": {
+          "forecast_errors_pixels": [
+            1.296181672355288,
+            3.7516766515481264,
+            0.8033726388762232,
+            2.3339634039548796
+          ],
+          "forecast_before_observation": [
+            [
+              214.37953926134693,
+              105.83401716403569
+            ],
+            [
+              161.2633853593235,
+              97.94912276029629
+            ],
+            [
+              207.31101236825407,
+              140.3984886050148
+            ],
+            [
+              176.49285019553852,
+              154.83451416722508
+            ]
+          ],
+          "reference_xy": [
+            [
+              214.15570934256056,
+              107.11072664359861
+            ],
+            [
+              163.16666666666666,
+              101.18217054263566
+            ],
+            [
+              206.51657458563537,
+              140.27900552486187
+            ],
+            [
+              177.11418685121106,
+              152.5847750865052
+            ]
+          ],
+          "outcomes": [
+            {
+              "local_seed": 0,
+              "assigned_local_reference": 0,
+              "correct": true
+            },
+            {
+              "local_seed": 1,
+              "assigned_local_reference": 1,
+              "correct": true
+            },
+            {
+              "local_seed": 2,
+              "assigned_local_reference": 2,
+              "correct": true
+            },
+            {
+              "local_seed": 3,
+              "assigned_local_reference": 3,
+              "correct": true
+            }
+          ]
+        },
+        "history_guarded": {
+          "forecast_errors_pixels": [
+            1.296181672355288,
+            3.7516766515481264,
+            0.8033726388762232,
+            2.3339634039548796
+          ],
+          "forecast_before_observation": [
+            [
+              214.37953926134693,
+              105.83401716403569
+            ],
+            [
+              161.2633853593235,
+              97.94912276029629
+            ],
+            [
+              207.31101236825407,
+              140.3984886050148
+            ],
+            [
+              176.49285019553852,
+              154.83451416722508
+            ]
+          ],
+          "reference_xy": [
+            [
+              214.15570934256056,
+              107.11072664359861
+            ],
+            [
+              163.16666666666666,
+              101.18217054263566
+            ],
+            [
+              206.51657458563537,
+              140.27900552486187
+            ],
+            [
+              177.11418685121106,
+              152.5847750865052
+            ]
+          ],
+          "outcomes": [
+            {
+              "local_seed": 0,
+              "assigned_local_reference": null,
+              "correct": null
+            },
+            {
+              "local_seed": 1,
+              "assigned_local_reference": 1,
+              "correct": true
+            },
+            {
+              "local_seed": 2,
+              "assigned_local_reference": null,
+              "correct": null
+            },
+            {
+              "local_seed": 3,
+              "assigned_local_reference": null,
+              "correct": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "start_index": 54,
+      "start_frame": 92,
+      "return_frame": 103,
+      "hidden_observations": 2,
+      "stratum": "middle",
+      "variants": {
+        "no_history": {
+          "forecast_errors_pixels": [
+            5.77370498113635,
+            4.234258163088641,
+            18.239388893968417,
+            12.836816533084095
+          ],
+          "forecast_before_observation": [
+            [
+              165.31048886229314,
+              102.62062786221556
+            ],
+            [
+              213.4645436743747,
+              109.67115565128525
+            ],
+            [
+              207.47876696648407,
+              139.46993271722488
+            ],
+            [
+              177.93592208369037,
+              152.42100813459666
+            ]
+          ],
+          "reference_xy": [
+            [
+              169.87596899224806,
+              106.15503875968992
+            ],
+            [
+              211.81410256410257,
+              113.57051282051282
+            ],
+            [
+              192.32565789473685,
+              149.62171052631578
+            ],
+            [
+              165.10943396226415,
+              152.9358490566038
+            ]
+          ],
+          "outcomes": [
+            {
+              "local_seed": 0,
+              "assigned_local_reference": 0,
+              "correct": true
+            },
+            {
+              "local_seed": 1,
+              "assigned_local_reference": 1,
+              "correct": true
+            },
+            {
+              "local_seed": 2,
+              "assigned_local_reference": null,
+              "correct": null
+            },
+            {
+              "local_seed": 3,
+              "assigned_local_reference": null,
+              "correct": null
+            }
+          ]
+        },
+        "history": {
+          "forecast_errors_pixels": [
+            0.9339589376589209,
+            1.2041603444963023,
+            1.0663873381631543,
+            1.7755893351135343
+          ],
+          "forecast_before_observation": [
+            [
+              169.7627343667373,
+              105.22796960540938
+            ],
+            [
+              211.9525817213769,
+              114.76668407006618
+            ],
+            [
+              191.7915382739982,
+              150.54469383371452
+            ],
+            [
+              165.09929607496446,
+              154.71140944989094
+            ]
+          ],
+          "reference_xy": [
+            [
+              169.87596899224806,
+              106.15503875968992
+            ],
+            [
+              211.81410256410257,
+              113.57051282051282
+            ],
+            [
+              192.32565789473685,
+              149.62171052631578
+            ],
+            [
+              165.10943396226415,
+              152.9358490566038
+            ]
+          ],
+          "outcomes": [
+            {
+              "local_seed": 0,
+              "assigned_local_reference": 0,
+              "correct": true
+            },
+            {
+              "local_seed": 1,
+              "assigned_local_reference": 1,
+              "correct": true
+            },
+            {
+              "local_seed": 2,
+              "assigned_local_reference": 2,
+              "correct": true
+            },
+            {
+              "local_seed": 3,
+              "assigned_local_reference": 3,
+              "correct": true
+            }
+          ]
+        },
+        "history_guarded": {
+          "forecast_errors_pixels": [
+            0.9339589376589209,
+            1.2041603444963023,
+            1.0663873381631543,
+            1.7755893351135343
+          ],
+          "forecast_before_observation": [
+            [
+              169.7627343667373,
+              105.22796960540938
+            ],
+            [
+              211.9525817213769,
+              114.76668407006618
+            ],
+            [
+              191.7915382739982,
+              150.54469383371452
+            ],
+            [
+              165.09929607496446,
+              154.71140944989094
+            ]
+          ],
+          "reference_xy": [
+            [
+              169.87596899224806,
+              106.15503875968992
+            ],
+            [
+              211.81410256410257,
+              113.57051282051282
+            ],
+            [
+              192.32565789473685,
+              149.62171052631578
+            ],
+            [
+              165.10943396226415,
+              152.9358490566038
+            ]
+          ],
+          "outcomes": [
+            {
+              "local_seed": 0,
+              "assigned_local_reference": 0,
+              "correct": true
+            },
+            {
+              "local_seed": 1,
+              "assigned_local_reference": 1,
+              "correct": true
+            },
+            {
+              "local_seed": 2,
+              "assigned_local_reference": 2,
+              "correct": true
+            },
+            {
+              "local_seed": 3,
+              "assigned_local_reference": 3,
+              "correct": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "start_index": 54,
+      "start_frame": 92,
+      "return_frame": 107,
+      "hidden_observations": 4,
+      "stratum": "middle",
+      "variants": {
+        "no_history": {
+          "forecast_errors_pixels": [
+            11.743838833664752,
+            6.796248852365368,
+            26.902537417579033,
+            18.254680349610553
+          ],
+          "forecast_before_observation": [
+            [
+              165.31048886229314,
+              102.62062786221556
+            ],
+            [
+              213.4645436743747,
+              109.67115565128525
+            ],
+            [
+              207.47876696648407,
+              139.46993271722488
+            ],
+            [
+              177.93592208369037,
+              152.42100813459666
+            ]
+          ],
+          "reference_xy": [
+            [
+              174.09486166007906,
+              110.41501976284584
+            ],
+            [
+              210.6291390728477,
+              115.8476821192053
+            ],
+            [
+              184.58671586715866,
+              153.60147601476015
+            ],
+            [
+              159.7246376811594,
+              151.16304347826087
+            ]
+          ],
+          "outcomes": [
+            {
+              "local_seed": 0,
+              "assigned_local_reference": null,
+              "correct": null
+            },
+            {
+              "local_seed": 1,
+              "assigned_local_reference": 1,
+              "correct": true
+            },
+            {
+              "local_seed": 2,
+              "assigned_local_reference": null,
+              "correct": null
+            },
+            {
+              "local_seed": 3,
+              "assigned_local_reference": 2,
+              "correct": false
+            }
+          ]
+        },
+        "history": {
+          "forecast_errors_pixels": [
+            2.9155380833354023,
+            3.2611856517342264,
+            3.0772876842259045,
+            4.982463403802996
+          ],
+          "forecast_before_observation": [
+            [
+              173.55096735738059,
+              107.55066271407011
+            ],
+            [
+              210.70734235540164,
+              119.10792997813796
+            ],
+            [
+              183.44709674390828,
+              156.45996648096963
+            ],
+            [
+              158.25303844283098,
+              155.9232259592155
+            ]
+          ],
+          "reference_xy": [
+            [
+              174.09486166007906,
+              110.41501976284584
+            ],
+            [
+              210.6291390728477,
+              115.8476821192053
+            ],
+            [
+              184.58671586715866,
+              153.60147601476015
+            ],
+            [
+              159.7246376811594,
+              151.16304347826087
+            ]
+          ],
+          "outcomes": [
+            {
+              "local_seed": 0,
+              "assigned_local_reference": 0,
+              "correct": true
+            },
+            {
+              "local_seed": 1,
+              "assigned_local_reference": 1,
+              "correct": true
+            },
+            {
+              "local_seed": 2,
+              "assigned_local_reference": 2,
+              "correct": true
+            },
+            {
+              "local_seed": 3,
+              "assigned_local_reference": 3,
+              "correct": true
+            }
+          ]
+        },
+        "history_guarded": {
+          "forecast_errors_pixels": [
+            2.9155380833354023,
+            3.2611856517342264,
+            3.0772876842259045,
+            4.982463403802996
+          ],
+          "forecast_before_observation": [
+            [
+              173.55096735738059,
+              107.55066271407011
+            ],
+            [
+              210.70734235540164,
+              119.10792997813796
+            ],
+            [
+              183.44709674390828,
+              156.45996648096963
+            ],
+            [
+              158.25303844283098,
+              155.9232259592155
+            ]
+          ],
+          "reference_xy": [
+            [
+              174.09486166007906,
+              110.41501976284584
+            ],
+            [
+              210.6291390728477,
+              115.8476821192053
+            ],
+            [
+              184.58671586715866,
+              153.60147601476015
+            ],
+            [
+              159.7246376811594,
+              151.16304347826087
+            ]
+          ],
+          "outcomes": [
+            {
+              "local_seed": 0,
+              "assigned_local_reference": null,
+              "correct": null
+            },
+            {
+              "local_seed": 1,
+              "assigned_local_reference": null,
+              "correct": null
+            },
+            {
+              "local_seed": 2,
+              "assigned_local_reference": null,
+              "correct": null
+            },
+            {
+              "local_seed": 3,
+              "assigned_local_reference": null,
+              "correct": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "start_index": 84,
+      "start_frame": 142,
+      "return_frame": 154,
+      "hidden_observations": 2,
+      "stratum": "late",
+      "variants": {
+        "no_history": {
+          "forecast_errors_pixels": [
+            12.621299372625991,
+            5.763546053023628,
+            10.574154840675662,
+            4.690523418942667
+          ],
+          "forecast_before_observation": [
+            [
+              194.0835162911329,
+              100.42917416547871
+            ],
+            [
+              226.17710080545936,
+              107.99720182923164
+            ],
+            [
+              160.98632052018857,
+              107.53673252976604
+            ],
+            [
+              185.9043455332418,
+              128.4111184962283
+            ]
+          ],
+          "reference_xy": [
+            [
+              206.7037037037037,
+              100.59670781893004
+            ],
+            [
+              231.92307692307693,
+              107.5475113122172
+            ],
+            [
+              169.8904761904762,
+              101.83333333333333
+            ],
+            [
+              185.76712328767124,
+              123.72260273972603
+            ]
+          ],
+          "outcomes": [
+            {
+              "local_seed": 0,
+              "assigned_local_reference": null,
+              "correct": null
+            },
+            {
+              "local_seed": 1,
+              "assigned_local_reference": 1,
+              "correct": true
+            },
+            {
+              "local_seed": 2,
+              "assigned_local_reference": null,
+              "correct": null
+            },
+            {
+              "local_seed": 3,
+              "assigned_local_reference": 3,
+              "correct": true
+            }
+          ]
+        },
+        "history": {
+          "forecast_errors_pixels": [
+            2.567610978814293,
+            1.5876493857939538,
+            3.202795914682829,
+            1.8422978478330099
+          ],
+          "forecast_before_observation": [
+            [
+              206.33939021514215,
+              98.05507412766377
+            ],
+            [
+              230.99329555632647,
+              106.26060137665233
+            ],
+            [
+              167.55542489547798,
+              99.6412026071137
+            ],
+            [
+              183.98327809797496,
+              123.26221410028367
+            ]
+          ],
+          "reference_xy": [
+            [
+              206.7037037037037,
+              100.59670781893004
+            ],
+            [
+              231.92307692307693,
+              107.5475113122172
+            ],
+            [
+              169.8904761904762,
+              101.83333333333333
+            ],
+            [
+              185.76712328767124,
+              123.72260273972603
+            ]
+          ],
+          "outcomes": [
+            {
+              "local_seed": 0,
+              "assigned_local_reference": 0,
+              "correct": true
+            },
+            {
+              "local_seed": 1,
+              "assigned_local_reference": 1,
+              "correct": true
+            },
+            {
+              "local_seed": 2,
+              "assigned_local_reference": 2,
+              "correct": true
+            },
+            {
+              "local_seed": 3,
+              "assigned_local_reference": 3,
+              "correct": true
+            }
+          ]
+        },
+        "history_guarded": {
+          "forecast_errors_pixels": [
+            2.567610978814293,
+            1.5876493857939538,
+            3.202795914682829,
+            1.8422978478330099
+          ],
+          "forecast_before_observation": [
+            [
+              206.33939021514215,
+              98.05507412766377
+            ],
+            [
+              230.99329555632647,
+              106.26060137665233
+            ],
+            [
+              167.55542489547798,
+              99.6412026071137
+            ],
+            [
+              183.98327809797496,
+              123.26221410028367
+            ]
+          ],
+          "reference_xy": [
+            [
+              206.7037037037037,
+              100.59670781893004
+            ],
+            [
+              231.92307692307693,
+              107.5475113122172
+            ],
+            [
+              169.8904761904762,
+              101.83333333333333
+            ],
+            [
+              185.76712328767124,
+              123.72260273972603
+            ]
+          ],
+          "outcomes": [
+            {
+              "local_seed": 0,
+              "assigned_local_reference": 0,
+              "correct": true
+            },
+            {
+              "local_seed": 1,
+              "assigned_local_reference": 1,
+              "correct": true
+            },
+            {
+              "local_seed": 2,
+              "assigned_local_reference": 2,
+              "correct": true
+            },
+            {
+              "local_seed": 3,
+              "assigned_local_reference": 3,
+              "correct": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "start_index": 84,
+      "start_frame": 142,
+      "return_frame": 156,
+      "hidden_observations": 4,
+      "stratum": "late",
+      "variants": {
+        "no_history": {
+          "forecast_errors_pixels": [
+            15.747625377173371,
+            7.373043564186827,
+            13.656764270939172,
+            5.64302198305558
+          ],
+          "forecast_before_observation": [
+            [
+              194.0835162911329,
+              100.42917416547871
+            ],
+            [
+              226.17710080545936,
+              107.99720182923164
+            ],
+            [
+              160.98632052018857,
+              107.53673252976604
+            ],
+            [
+              185.9043455332418,
+              128.4111184962283
+            ]
+          ],
+          "reference_xy": [
+            [
+              209.7983193277311,
+              101.4453781512605
+            ],
+            [
+              233.5418502202643,
+              107.64757709251101
+            ],
+            [
+              172.79899497487438,
+              100.68341708542714
+            ],
+            [
+              186.0174825174825,
+              122.76923076923077
+            ]
+          ],
+          "outcomes": [
+            {
+              "local_seed": 0,
+              "assigned_local_reference": null,
+              "correct": null
+            },
+            {
+              "local_seed": 1,
+              "assigned_local_reference": 1,
+              "correct": true
+            },
+            {
+              "local_seed": 2,
+              "assigned_local_reference": null,
+              "correct": null
+            },
+            {
+              "local_seed": 3,
+              "assigned_local_reference": 3,
+              "correct": true
+            }
+          ]
+        },
+        "history": {
+          "forecast_errors_pixels": [
+            4.1046753491234265,
+            2.193036415322417,
+            4.7131430471259685,
+            2.8167378793835347
+          ],
+          "forecast_before_observation": [
+            [
+              210.0273672948104,
+              97.34709842063225
+            ],
+            [
+              232.445948544298,
+              105.74799602407923
+            ],
+            [
+              169.54353419964258,
+              97.27523684905479
+            ],
+            [
+              183.4094367604136,
+              121.70522437348453
+            ]
+          ],
+          "reference_xy": [
+            [
+              209.7983193277311,
+              101.4453781512605
+            ],
+            [
+              233.5418502202643,
+              107.64757709251101
+            ],
+            [
+              172.79899497487438,
+              100.68341708542714
+            ],
+            [
+              186.0174825174825,
+              122.76923076923077
+            ]
+          ],
+          "outcomes": [
+            {
+              "local_seed": 0,
+              "assigned_local_reference": 0,
+              "correct": true
+            },
+            {
+              "local_seed": 1,
+              "assigned_local_reference": 1,
+              "correct": true
+            },
+            {
+              "local_seed": 2,
+              "assigned_local_reference": 2,
+              "correct": true
+            },
+            {
+              "local_seed": 3,
+              "assigned_local_reference": 3,
+              "correct": true
+            }
+          ]
+        },
+        "history_guarded": {
+          "forecast_errors_pixels": [
+            4.1046753491234265,
+            2.193036415322417,
+            4.7131430471259685,
+            2.8167378793835347
+          ],
+          "forecast_before_observation": [
+            [
+              210.0273672948104,
+              97.34709842063225
+            ],
+            [
+              232.445948544298,
+              105.74799602407923
+            ],
+            [
+              169.54353419964258,
+              97.27523684905479
+            ],
+            [
+              183.4094367604136,
+              121.70522437348453
+            ]
+          ],
+          "reference_xy": [
+            [
+              209.7983193277311,
+              101.4453781512605
+            ],
+            [
+              233.5418502202643,
+              107.64757709251101
+            ],
+            [
+              172.79899497487438,
+              100.68341708542714
+            ],
+            [
+              186.0174825174825,
+              122.76923076923077
+            ]
+          ],
+          "outcomes": [
+            {
+              "local_seed": 0,
+              "assigned_local_reference": null,
+              "correct": null
+            },
+            {
+              "local_seed": 1,
+              "assigned_local_reference": null,
+              "correct": null
+            },
+            {
+              "local_seed": 2,
+              "assigned_local_reference": null,
+              "correct": null
+            },
+            {
+              "local_seed": 3,
+              "assigned_local_reference": null,
+              "correct": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "start_index": 90,
+      "start_frame": 152,
+      "return_frame": 163,
+      "hidden_observations": 2,
+      "stratum": "late",
+      "variants": {
+        "no_history": {
+          "forecast_errors_pixels": [
+            11.440479572228048,
+            11.17869839223851,
+            4.797818216340678,
+            2.5402385598113746
+          ],
+          "forecast_before_observation": [
+            [
+              209.00029628714537,
+              101.22733883199945
+            ],
+            [
+              172.1456397798946,
+              100.94936486383112
+            ],
+            [
+              235.75817029128967,
+              108.07990438444425
+            ],
+            [
+              186.64327587281832,
+              121.08732757747308
+            ]
+          ],
+          "reference_xy": [
+            [
+              218.71945701357467,
+              107.26244343891403
+            ],
+            [
+              183.04433497536945,
+              98.46305418719211
+            ],
+            [
+              240.2594142259414,
+              109.74058577405857
+            ],
+            [
+              187.82868525896416,
+              118.8406374501992
+            ]
+          ],
+          "outcomes": [
+            {
+              "local_seed": 0,
+              "assigned_local_reference": null,
+              "correct": null
+            },
+            {
+              "local_seed": 1,
+              "assigned_local_reference": null,
+              "correct": null
+            },
+            {
+              "local_seed": 2,
+              "assigned_local_reference": 2,
+              "correct": true
+            },
+            {
+              "local_seed": 3,
+              "assigned_local_reference": 3,
+              "correct": true
+            }
+          ]
+        },
+        "history": {
+          "forecast_errors_pixels": [
+            1.6501720679906908,
+            1.1585315963179434,
+            1.0811689940150582,
+            0.8825576738826356
+          ],
+          "forecast_before_observation": [
+            [
+              220.0946228105987,
+              106.35031028817785
+            ],
+            [
+              182.97695679266997,
+              97.30648354941718
+            ],
+            [
+              240.07137452016033,
+              108.67589452178433
+            ],
+            [
+              187.58160703358857,
+              117.99337102322691
+            ]
+          ],
+          "reference_xy": [
+            [
+              218.71945701357467,
+              107.26244343891403
+            ],
+            [
+              183.04433497536945,
+              98.46305418719211
+            ],
+            [
+              240.2594142259414,
+              109.74058577405857
+            ],
+            [
+              187.82868525896416,
+              118.8406374501992
+            ]
+          ],
+          "outcomes": [
+            {
+              "local_seed": 0,
+              "assigned_local_reference": 0,
+              "correct": true
+            },
+            {
+              "local_seed": 1,
+              "assigned_local_reference": 1,
+              "correct": true
+            },
+            {
+              "local_seed": 2,
+              "assigned_local_reference": 2,
+              "correct": true
+            },
+            {
+              "local_seed": 3,
+              "assigned_local_reference": 3,
+              "correct": true
+            }
+          ]
+        },
+        "history_guarded": {
+          "forecast_errors_pixels": [
+            1.6501720679906908,
+            1.1585315963179434,
+            1.0811689940150582,
+            0.8825576738826356
+          ],
+          "forecast_before_observation": [
+            [
+              220.0946228105987,
+              106.35031028817785
+            ],
+            [
+              182.97695679266997,
+              97.30648354941718
+            ],
+            [
+              240.07137452016033,
+              108.67589452178433
+            ],
+            [
+              187.58160703358857,
+              117.99337102322691
+            ]
+          ],
+          "reference_xy": [
+            [
+              218.71945701357467,
+              107.26244343891403
+            ],
+            [
+              183.04433497536945,
+              98.46305418719211
+            ],
+            [
+              240.2594142259414,
+              109.74058577405857
+            ],
+            [
+              187.82868525896416,
+              118.8406374501992
+            ]
+          ],
+          "outcomes": [
+            {
+              "local_seed": 0,
+              "assigned_local_reference": 0,
+              "correct": true
+            },
+            {
+              "local_seed": 1,
+              "assigned_local_reference": 1,
+              "correct": true
+            },
+            {
+              "local_seed": 2,
+              "assigned_local_reference": 2,
+              "correct": true
+            },
+            {
+              "local_seed": 3,
+              "assigned_local_reference": 3,
+              "correct": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "start_index": 102,
+      "start_frame": 172,
+      "return_frame": 183,
+      "hidden_observations": 2,
+      "stratum": "late",
+      "variants": {
+        "no_history": {
+          "forecast_errors_pixels": [
+            10.25447444240365,
+            3.646986339901365,
+            5.770698521773139,
+            2.100501184004773
+          ],
+          "forecast_before_observation": [
+            [
+              200.52397085464932,
+              91.00918678116162
+            ],
+            [
+              231.51175947518848,
+              114.67896068404536
+            ],
+            [
+              255.12535753049002,
+              120.77034096595314
+            ],
+            [
+              193.42860916672973,
+              119.44173911137541
+            ]
+          ],
+          "reference_xy": [
+            [
+              208.80645161290323,
+              84.963133640553
+            ],
+            [
+              233.8372093023256,
+              117.48837209302326
+            ],
+            [
+              258.90725806451616,
+              125.12903225806451
+            ],
+            [
+              195.52100840336135,
+              119.62605042016807
+            ]
+          ],
+          "outcomes": [
+            {
+              "local_seed": 0,
+              "assigned_local_reference": 0,
+              "correct": true
+            },
+            {
+              "local_seed": 1,
+              "assigned_local_reference": 1,
+              "correct": true
+            },
+            {
+              "local_seed": 2,
+              "assigned_local_reference": 2,
+              "correct": true
+            },
+            {
+              "local_seed": 3,
+              "assigned_local_reference": 3,
+              "correct": true
+            }
+          ]
+        },
+        "history": {
+          "forecast_errors_pixels": [
+            1.2548577642458782,
+            0.4376042279716622,
+            0.6032158881917292,
+            0.723180137429218
+          ],
+          "forecast_before_observation": [
+            [
+              210.06091207586107,
+              84.93155904057497
+            ],
+            [
+              234.2579196069559,
+              117.36795490190613
+            ],
+            [
+              259.3471043956208,
+              124.71623132204243
+            ],
+            [
+              195.5662338010263,
+              120.34781504563692
+            ]
+          ],
+          "reference_xy": [
+            [
+              208.80645161290323,
+              84.963133640553
+            ],
+            [
+              233.8372093023256,
+              117.48837209302326
+            ],
+            [
+              258.90725806451616,
+              125.12903225806451
+            ],
+            [
+              195.52100840336135,
+              119.62605042016807
+            ]
+          ],
+          "outcomes": [
+            {
+              "local_seed": 0,
+              "assigned_local_reference": 0,
+              "correct": true
+            },
+            {
+              "local_seed": 1,
+              "assigned_local_reference": 1,
+              "correct": true
+            },
+            {
+              "local_seed": 2,
+              "assigned_local_reference": 2,
+              "correct": true
+            },
+            {
+              "local_seed": 3,
+              "assigned_local_reference": 3,
+              "correct": true
+            }
+          ]
+        },
+        "history_guarded": {
+          "forecast_errors_pixels": [
+            1.2548577642458782,
+            0.4376042279716622,
+            0.6032158881917292,
+            0.723180137429218
+          ],
+          "forecast_before_observation": [
+            [
+              210.06091207586107,
+              84.93155904057497
+            ],
+            [
+              234.2579196069559,
+              117.36795490190613
+            ],
+            [
+              259.3471043956208,
+              124.71623132204243
+            ],
+            [
+              195.5662338010263,
+              120.34781504563692
+            ]
+          ],
+          "reference_xy": [
+            [
+              208.80645161290323,
+              84.963133640553
+            ],
+            [
+              233.8372093023256,
+              117.48837209302326
+            ],
+            [
+              258.90725806451616,
+              125.12903225806451
+            ],
+            [
+              195.52100840336135,
+              119.62605042016807
+            ]
+          ],
+          "outcomes": [
+            {
+              "local_seed": 0,
+              "assigned_local_reference": 0,
+              "correct": true
+            },
+            {
+              "local_seed": 1,
+              "assigned_local_reference": 1,
+              "correct": true
+            },
+            {
+              "local_seed": 2,
+              "assigned_local_reference": 2,
+              "correct": true
+            },
+            {
+              "local_seed": 3,
+              "assigned_local_reference": 3,
+              "correct": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "start_index": 102,
+      "start_frame": 172,
+      "return_frame": 187,
+      "hidden_observations": 4,
+      "stratum": "late",
+      "variants": {
+        "no_history": {
+          "forecast_errors_pixels": [
+            14.855814051332777,
+            5.34156813061134,
+            9.443800030418737,
+            3.288334224342336
+          ],
+          "forecast_before_observation": [
+            [
+              200.52397085464932,
+              91.00918678116162
+            ],
+            [
+              231.51175947518848,
+              114.67896068404536
+            ],
+            [
+              255.12535753049002,
+              120.77034096595314
+            ],
+            [
+              193.42860916672973,
+              119.44173911137541
+            ]
+          ],
+          "reference_xy": [
+            [
+              212.9018691588785,
+              82.79439252336448
+            ],
+            [
+              234.9189189189189,
+              118.7927927927928
+            ],
+            [
+              262.344398340249,
+              126.85892116182572
+            ],
+            [
+              196.70642201834863,
+              119.1788990825688
+            ]
+          ],
+          "outcomes": [
+            {
+              "local_seed": 0,
+              "assigned_local_reference": 0,
+              "correct": true
+            },
+            {
+              "local_seed": 1,
+              "assigned_local_reference": 1,
+              "correct": true
+            },
+            {
+              "local_seed": 2,
+              "assigned_local_reference": 2,
+              "correct": true
+            },
+            {
+              "local_seed": 3,
+              "assigned_local_reference": 3,
+              "correct": true
+            }
+          ]
+        },
+        "history": {
+          "forecast_errors_pixels": [
+            2.521247600527274,
+            1.843836976746179,
+            1.374221870986469,
+            2.0508970830703306
+          ],
+          "forecast_before_observation": [
+            [
+              215.16994801707784,
+              81.69325322420488
+            ],
+            [
+              236.52213485676296,
+              119.70352516482055
+            ],
+            [
+              262.9156606784226,
+              128.10877919043614
+            ],
+            [
+              197.38372935524467,
+              121.11472800495146
+            ]
+          ],
+          "reference_xy": [
+            [
+              212.9018691588785,
+              82.79439252336448
+            ],
+            [
+              234.9189189189189,
+              118.7927927927928
+            ],
+            [
+              262.344398340249,
+              126.85892116182572
+            ],
+            [
+              196.70642201834863,
+              119.1788990825688
+            ]
+          ],
+          "outcomes": [
+            {
+              "local_seed": 0,
+              "assigned_local_reference": 0,
+              "correct": true
+            },
+            {
+              "local_seed": 1,
+              "assigned_local_reference": 1,
+              "correct": true
+            },
+            {
+              "local_seed": 2,
+              "assigned_local_reference": 2,
+              "correct": true
+            },
+            {
+              "local_seed": 3,
+              "assigned_local_reference": 3,
+              "correct": true
+            }
+          ]
+        },
+        "history_guarded": {
+          "forecast_errors_pixels": [
+            2.521247600527274,
+            1.843836976746179,
+            1.374221870986469,
+            2.0508970830703306
+          ],
+          "forecast_before_observation": [
+            [
+              215.16994801707784,
+              81.69325322420488
+            ],
+            [
+              236.52213485676296,
+              119.70352516482055
+            ],
+            [
+              262.9156606784226,
+              128.10877919043614
+            ],
+            [
+              197.38372935524467,
+              121.11472800495146
+            ]
+          ],
+          "reference_xy": [
+            [
+              212.9018691588785,
+              82.79439252336448
+            ],
+            [
+              234.9189189189189,
+              118.7927927927928
+            ],
+            [
+              262.344398340249,
+              126.85892116182572
+            ],
+            [
+              196.70642201834863,
+              119.1788990825688
+            ]
+          ],
+          "outcomes": [
+            {
+              "local_seed": 0,
+              "assigned_local_reference": null,
+              "correct": null
+            },
+            {
+              "local_seed": 1,
+              "assigned_local_reference": null,
+              "correct": null
+            },
+            {
+              "local_seed": 2,
+              "assigned_local_reference": null,
+              "correct": null
+            },
+            {
+              "local_seed": 3,
+              "assigned_local_reference": null,
+              "correct": null
+            }
+          ]
+        }
+      }
+    },
+    {
+      "start_index": 108,
+      "start_frame": 182,
+      "return_frame": 194,
+      "hidden_observations": 2,
+      "stratum": "late",
+      "variants": {
+        "no_history": {
+          "forecast_errors_pixels": [
+            5.418259713922355,
+            1.9310732082554973,
+            2.2999685588669108,
+            6.173232813538387
+          ],
+          "forecast_before_observation": [
+            [
+              213.20549074873023,
+              82.69182556251577
+            ],
+            [
+              234.94599326627966,
+              118.90974695595906
+            ],
+            [
+              196.86082573025263,
+              119.15622454612222
+            ],
+            [
+              262.62582488657415,
+              126.76367133232071
+            ]
+          ],
+          "reference_xy": [
+            [
+              217.9591836734694,
+              80.09183673469387
+            ],
+            [
+              235.94827586206895,
+              120.5603448275862
+            ],
+            [
+              199.05853658536586,
+              118.47804878048781
+            ],
+            [
+              268.7099567099567,
+              125.71861471861472
+            ]
+          ],
+          "outcomes": [
+            {
+              "local_seed": 0,
+              "assigned_local_reference": 0,
+              "correct": true
+            },
+            {
+              "local_seed": 1,
+              "assigned_local_reference": 1,
+              "correct": true
+            },
+            {
+              "local_seed": 2,
+              "assigned_local_reference": 2,
+              "correct": true
+            },
+            {
+              "local_seed": 3,
+              "assigned_local_reference": 3,
+              "correct": true
+            }
+          ]
+        },
+        "history": {
+          "forecast_errors_pixels": [
+            2.1116734931496484,
+            1.1003512504109394,
+            0.1351256051202823,
+            3.6922319871164824
+          ],
+          "forecast_before_observation": [
+            [
+              219.817553807006,
+              79.08902798500627
+            ],
+            [
+              236.8170609810656,
+              121.2356116572846
+            ],
+            [
+              198.92569605635995,
+              118.50279394188462
+            ],
+            [
+              268.28021626751126,
+              129.38575259423556
+            ]
+          ],
+          "reference_xy": [
+            [
+              217.9591836734694,
+              80.09183673469387
+            ],
+            [
+              235.94827586206895,
+              120.5603448275862
+            ],
+            [
+              199.05853658536586,
+              118.47804878048781
+            ],
+            [
+              268.7099567099567,
+              125.71861471861472
+            ]
+          ],
+          "outcomes": [
+            {
+              "local_seed": 0,
+              "assigned_local_reference": 0,
+              "correct": true
+            },
+            {
+              "local_seed": 1,
+              "assigned_local_reference": 1,
+              "correct": true
+            },
+            {
+              "local_seed": 2,
+              "assigned_local_reference": 2,
+              "correct": true
+            },
+            {
+              "local_seed": 3,
+              "assigned_local_reference": 3,
+              "correct": true
+            }
+          ]
+        },
+        "history_guarded": {
+          "forecast_errors_pixels": [
+            2.1116734931496484,
+            1.1003512504109394,
+            0.1351256051202823,
+            3.6922319871164824
+          ],
+          "forecast_before_observation": [
+            [
+              219.817553807006,
+              79.08902798500627
+            ],
+            [
+              236.8170609810656,
+              121.2356116572846
+            ],
+            [
+              198.92569605635995,
+              118.50279394188462
+            ],
+            [
+              268.28021626751126,
+              129.38575259423556
+            ]
+          ],
+          "reference_xy": [
+            [
+              217.9591836734694,
+              80.09183673469387
+            ],
+            [
+              235.94827586206895,
+              120.5603448275862
+            ],
+            [
+              199.05853658536586,
+              118.47804878048781
+            ],
+            [
+              268.7099567099567,
+              125.71861471861472
+            ]
+          ],
+          "outcomes": [
+            {
+              "local_seed": 0,
+              "assigned_local_reference": 0,
+              "correct": true
+            },
+            {
+              "local_seed": 1,
+              "assigned_local_reference": 1,
+              "correct": true
+            },
+            {
+              "local_seed": 2,
+              "assigned_local_reference": 2,
+              "correct": true
+            },
+            {
+              "local_seed": 3,
+              "assigned_local_reference": 3,
+              "correct": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "start_index": 108,
+      "start_frame": 182,
+      "return_frame": 196,
+      "hidden_observations": 4,
+      "stratum": "late",
+      "variants": {
+        "no_history": {
+          "forecast_errors_pixels": [
+            6.674870631666929,
+            2.3124464978922643,
+            3.2518600394697814,
+            7.561869024039244
+          ],
+          "forecast_before_observation": [
+            [
+              213.20549074873023,
+              82.69182556251577
+            ],
+            [
+              234.94599326627966,
+              118.90974695595906
+            ],
+            [
+              196.86082573025263,
+              119.15622454612222
+            ],
+            [
+              262.62582488657415,
+              126.76367133232071
+            ]
+          ],
+          "reference_xy": [
+            [
+              219.1611111111111,
+              79.67777777777778
+            ],
+            [
+              236.0128755364807,
+              120.96137339055794
+            ],
+            [
+              199.8923076923077,
+              117.97948717948718
+            ],
+            [
+              270.1535269709544,
+              126.04564315352697
+            ]
+          ],
+          "outcomes": [
+            {
+              "local_seed": 0,
+              "assigned_local_reference": 0,
+              "correct": true
+            },
+            {
+              "local_seed": 1,
+              "assigned_local_reference": 1,
+              "correct": true
+            },
+            {
+              "local_seed": 2,
+              "assigned_local_reference": 2,
+              "correct": true
+            },
+            {
+              "local_seed": 3,
+              "assigned_local_reference": 3,
+              "correct": true
+            }
+          ]
+        },
+        "history": {
+          "forecast_errors_pixels": [
+            3.121840809145567,
+            1.6698406579430405,
+            0.47799612820221127,
+            4.097660281411227
+          ],
+          "forecast_before_observation": [
+            [
+              221.80559225698636,
+              78.01867877327054
+            ],
+            [
+              237.37324626036093,
+              121.92975312833089
+            ],
+            [
+              199.5447746049658,
+              118.30766556356954
+            ],
+            [
+              269.9848213753818,
+              130.13982905598397
+            ]
+          ],
+          "reference_xy": [
+            [
+              219.1611111111111,
+              79.67777777777778
+            ],
+            [
+              236.0128755364807,
+              120.96137339055794
+            ],
+            [
+              199.8923076923077,
+              117.97948717948718
+            ],
+            [
+              270.1535269709544,
+              126.04564315352697
+            ]
+          ],
+          "outcomes": [
+            {
+              "local_seed": 0,
+              "assigned_local_reference": 0,
+              "correct": true
+            },
+            {
+              "local_seed": 1,
+              "assigned_local_reference": 1,
+              "correct": true
+            },
+            {
+              "local_seed": 2,
+              "assigned_local_reference": 2,
+              "correct": true
+            },
+            {
+              "local_seed": 3,
+              "assigned_local_reference": 3,
+              "correct": true
+            }
+          ]
+        },
+        "history_guarded": {
+          "forecast_errors_pixels": [
+            3.121840809145567,
+            1.6698406579430405,
+            0.47799612820221127,
+            4.097660281411227
+          ],
+          "forecast_before_observation": [
+            [
+              221.80559225698636,
+              78.01867877327054
+            ],
+            [
+              237.37324626036093,
+              121.92975312833089
+            ],
+            [
+              199.5447746049658,
+              118.30766556356954
+            ],
+            [
+              269.9848213753818,
+              130.13982905598397
+            ]
+          ],
+          "reference_xy": [
+            [
+              219.1611111111111,
+              79.67777777777778
+            ],
+            [
+              236.0128755364807,
+              120.96137339055794
+            ],
+            [
+              199.8923076923077,
+              117.97948717948718
+            ],
+            [
+              270.1535269709544,
+              126.04564315352697
+            ]
+          ],
+          "outcomes": [
+            {
+              "local_seed": 0,
+              "assigned_local_reference": 0,
+              "correct": true
+            },
+            {
+              "local_seed": 1,
+              "assigned_local_reference": null,
+              "correct": null
+            },
+            {
+              "local_seed": 2,
+              "assigned_local_reference": null,
+              "correct": null
+            },
+            {
+              "local_seed": 3,
+              "assigned_local_reference": null,
+              "correct": null
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "summary": {
+    "all": {
+      "no_history": {
+        "windows": 19,
+        "cases": 76,
+        "mean_forecast_pixels": 8.56174262009229,
+        "median_forecast_pixels": 7.090713805281986,
+        "correct": 51,
+        "wrong": 1,
+        "unknown": 24
+      },
+      "history": {
+        "windows": 19,
+        "cases": 76,
+        "mean_forecast_pixels": 2.0122737061889513,
+        "median_forecast_pixels": 1.7227149965282873,
+        "correct": 76,
+        "wrong": 0,
+        "unknown": 0
+      },
+      "history_guarded": {
+        "windows": 19,
+        "cases": 76,
+        "mean_forecast_pixels": 2.0122737061889513,
+        "median_forecast_pixels": 1.7227149965282873,
+        "correct": 44,
+        "wrong": 0,
+        "unknown": 32
+      }
+    },
+    "early": {
+      "no_history": {
+        "windows": 6,
+        "cases": 24,
+        "mean_forecast_pixels": 6.7050419920738955,
+        "median_forecast_pixels": 6.164830237574465,
+        "correct": 18,
+        "wrong": 0,
+        "unknown": 6
+      },
+      "history": {
+        "windows": 6,
+        "cases": 24,
+        "mean_forecast_pixels": 1.8589274667531095,
+        "median_forecast_pixels": 1.7618945589380053,
+        "correct": 24,
+        "wrong": 0,
+        "unknown": 0
+      },
+      "history_guarded": {
+        "windows": 6,
+        "cases": 24,
+        "mean_forecast_pixels": 1.8589274667531095,
+        "median_forecast_pixels": 1.7618945589380053,
+        "correct": 13,
+        "wrong": 0,
+        "unknown": 11
+      }
+    },
+    "middle": {
+      "no_history": {
+        "windows": 6,
+        "cases": 24,
+        "mean_forecast_pixels": 12.22576917848165,
+        "median_forecast_pixels": 11.35290268354063,
+        "correct": 11,
+        "wrong": 1,
+        "unknown": 12
+      },
+      "history": {
+        "windows": 6,
+        "cases": 24,
+        "mean_forecast_pixels": 2.22093264818049,
+        "median_forecast_pixels": 1.695811619738441,
+        "correct": 24,
+        "wrong": 0,
+        "unknown": 0
+      },
+      "history_guarded": {
+        "windows": 6,
+        "cases": 24,
+        "mean_forecast_pixels": 2.22093264818049,
+        "median_forecast_pixels": 1.695811619738441,
+        "correct": 14,
+        "wrong": 0,
+        "unknown": 10
+      }
+    },
+    "late": {
+      "no_history": {
+        "windows": 7,
+        "cases": 28,
+        "mean_forecast_pixels": 7.012606108345751,
+        "median_forecast_pixels": 5.767122287398383,
+        "correct": 22,
+        "wrong": 0,
+        "unknown": 6
+      },
+      "history": {
+        "windows": 7,
+        "cases": 28,
+        "mean_forecast_pixels": 1.9648628182840682,
+        "median_forecast_pixels": 1.7560692528880253,
+        "correct": 28,
+        "wrong": 0,
+        "unknown": 0
+      },
+      "history_guarded": {
+        "windows": 7,
+        "cases": 28,
+        "mean_forecast_pixels": 1.9648628182840682,
+        "median_forecast_pixels": 1.7560692528880253,
+        "correct": 17,
+        "wrong": 0,
+        "unknown": 11
+      }
+    }
+  },
+  "physical_ID_accuracy": null,
+  "reference_is_local_FB_pseudo_tracklets": true,
+  "global_seed_IDs_not_transferred_across_windows": true,
+  "Gaussian_optimizer_steps": 0,
+  "all_SHA_unchanged": true
+}

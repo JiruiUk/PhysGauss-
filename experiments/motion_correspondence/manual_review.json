@@ -1,0 +1,45 @@
+{
+  "review_complete": true,
+  "scope": "Representative manual review, not all120 natural frame outputs or all11 compositor frames",
+  "viewed_figures": [
+    "comparison.png",
+    "synthetic_review.png",
+    "rolling_review.png",
+    "forecast_examples.png"
+  ],
+  "viewed_original_training_frames": [
+    2,
+    43,
+    63,
+    86,
+    200
+  ],
+  "columns_checked": [
+    "training RGB",
+    "old visible FB image evidence",
+    "history-only candidate image identities",
+    "guarded candidate or unknown",
+    "full original C1 early-patch alpha contribution",
+    "full original C1 early-patch centers"
+  ],
+  "findings": [
+    "Initially four candidate colors follow four separated image components.",
+    "At first merge43 two image seed identities remain unresolved in guarded mode.",
+    "At63 history-only assigns four colors; guarded confirms only one. These colors are not physical identity truth.",
+    "At86 early-patch visible duck contribution is zero although projected centers/footprints remain elsewhere in the image.",
+    "At200 guarded leaves all four seed identities unknown, while history-only still proposes three; no proof which proposal is physically correct.",
+    "Synthetic hidden-pass and hidden-bounce have the same observed endpoints but different true identities; a motion prior alone cannot distinguish them."
+  ],
+  "full_training_integration_approved": false,
+  "new_Gaussian_training_steps": 0,
+  "rolling_example_return_frames": [
+    14,
+    83,
+    154
+  ],
+  "rolling_findings": [
+    "Forecast positions move closer to local reference circles in all three fixed examples.",
+    "Guarded and history forecast means coincide; these drawings do not imply the same identity acceptance.",
+    "19 of38 predefined windows qualified; excluded windows do not receive invented identity labels."
+  ]
+}
