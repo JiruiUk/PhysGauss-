@@ -1,7 +1,17 @@
 # Codex 工作交接：运动光流与轨迹导出速度对照
 
-更新时间：2026-11-02 16:00 UTC（Europe/London）。
+更新时间：2026-11-02 16:12 UTC（Europe/London）。
 工作目录：`F:\A_Edinburgh\PhysGauss`；Windows / PowerShell。
+
+> **16:12 用户纠正，现行唯一方案：原模型不重新训练，关闭光流组直接复用历史 `runs/pidg_color_repair/C1_repaired/rubber_duck`。旧O0重训已保存停止在9712步（SHA525c29cb286c681f2ea0872951b22fdac03fc6f18a01a01d458716d26f2b08c1），保留全部记录但排除结果，禁止恢复O0。旧双组协调器会话88306已正常退出，旧根目录stop_queue.request故意保留以阻止误启动旧main。只训练O1_C1_flow_on，仍从完全相同原始3k SHA6da523...ebce到总50k，开光流以外的模型/损失/时钟/动量均不改。**
+
+新单模型协调器入口 **`output/c1_flow_ablation/reuse_control.py`**，会话 **33935**，日志 `experiments/c1_flow_ablation/reuse_control_coordinator.log`；新队列控制文件在 `runs/pidg_c1_flow_ablation/reuse_control_queue/`（controller/active/lock），O1模型目录不变。状态查询仍为 `envs/pidg-cu128/python.exe output/c1_flow_ablation/status.py`，已改为显示历史控制复用和新队列。禁止运行 `variants.c1_flow_ablation.run` 原双组main，也不移除旧根目录stop_queue.request；新队列独立lock，不受旧队列stop影响。恢复命令：激活enable_cuda.ps1后，`envs/pidg-cu128/python.exe -u output/c1_flow_ablation/reuse_control.py --hours 16`，先核验新进程确已退出、最后完整checkpoint SHA/边界，归档超界诊断再接续。健康推进不另占GPU，不修改冻结训练源码/配置/数据。
+
+`experiments/c1_flow_ablation/reuse_control_plan.json` 是用户更正后的协议，旧plan/source_freeze作为历史凭据保留不覆盖。原16测试/100步GPU短训/70→100恢复/flags-off20/实际flow-only更新预检仍适用于同一个不变的O1训练代码；新prepare-only检查已核验原控制完整checkpoint、best/final快照、原有PNG/指标/选择锁SHA、同一3k来源及相同模型配置。新增控制复用只读辅助脚本 `output/c1_flow_ablation/compare_reuse.py`，不重新训练或重新选择历史控制。历史C1验证最佳为47k（验证PSNR39.683393，测试best40.334404）；最终50k测试40.372128，不能把50k分数冒称验证best。
+
+O1完成后新队列锁定历史既定47k选择和O1验证best，再只渲染O1 best/final；历史C1直接使用已有PNG/指标导出。辅助脚本输出新旧GT|Render PNG/两视频/ZIP和同步页，固定V2验证raw流、完整状态/快照SHA/原控制未改/采样和光流次数/像素PSNR/帧数/ZIP检查。结果 `results_reuse.json`、`motion_validation_reuse.json`、`final_verification_reuse.json`；人工查看早中晚、原帧85全尺寸、png_review和decoded_video_review及视频，补充assessment和人工核验状态，提交结果里程碑后交付。原历史没有逐步camera_sampling日志，不冒称核验两条实际采样日程相同；相同3k字节状态/配置可核验。只有这一组新完整训练，不增加候选、不加外力/本构/材料未知量。自动跟进仍为c1，已改为复用控制方案，完成交付后删除。
+
+以下16:00原双组安排已被用户纠正，仅作追溯，不能据此恢复O0。
 
 > **16:00 最新授权／正在执行：用户要求用最初C系列表现最好的模型做只开／关光流的完整对照。按历史验证选择C1_repaired（验证PSNR39.664895，测试40.372128仅参考）。新增独立 `variants/c1_flow_ablation`；代码/预检里程碑558019e3。两组新训练 O0_C1_flow_off / O1_C1_flow_on 从完全相同原始C1完整3k状态SHA `6da523ea247b4068ec9bd6a7c8f83dacb7506c698daaeecc9eb0ecd93ea1ebce` 到总50k，各新增47k；不用历史50k权重继续，也不用历史C1代替新控制。唯一配置差别是 `observed_flow_enabled`。保留C1原独立velocity/stress、原Cauchy动量实现、frame-index共享时间、RGB/SSIM/LPIPS/alpha/前景损失及优化器/稠密化；不混入L1/M1/N1的共享应力、guard或新动量公式。开光流采用已修正相机/offset/贡献权重的raw训练UniMatch缓存，无H3深度；几何流和独立速度推进流各半，权重.01、每100步、3k后2k ramp；只改这一个光流监督包。**
 

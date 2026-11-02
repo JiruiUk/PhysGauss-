@@ -1,0 +1,33 @@
+{
+  "session_id": 33935,
+  "controller": {
+    "pid": 235012,
+    "status": "training",
+    "started_utc": "2026-11-02T16:11:12.103180+00:00",
+    "deadline_utc": "2026-11-03T08:11:12.103180+00:00",
+    "control_reused": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_color_repair\\C1_repaired\\rubber_duck",
+    "only_training": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_c1_flow_ablation\\O1_C1_flow_on\\rubber_duck"
+  },
+  "active": {
+    "id": "O1_C1_flow_on",
+    "phase": "long",
+    "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_c1_flow_ablation\\O1_C1_flow_on\\rubber_duck",
+    "pid": 238164,
+    "controller_pid": 235012,
+    "started_utc": "2026-11-02T16:11:13.270207+00:00"
+  },
+  "automation_id": "c1",
+  "prepare_only_historical_checks_passed": true,
+  "helper_sha256": {
+    "output\\c1_flow_ablation\\reuse_control.py": "4a8b1cbc2387cf82718cb678ec692997b3531513c0d4b192f64d89f3df378b52",
+    "output\\c1_flow_ablation\\compare_reuse.py": "48bd6ccdc8da9a465b4f906fc1dd0b582a58ddff2a24e31e95221b60976598ef"
+  },
+  "old_queue_stopped": {
+    "pid": 231636,
+    "status": "saved_stopped",
+    "started_utc": "2026-11-02T15:59:07.511994+00:00",
+    "deadline_utc": "2026-11-03T07:59:07.511994+00:00",
+    "updated_utc": "2026-11-02T16:08:22.263212+00:00"
+  },
+  "old_stop_request_preserved": true
+}

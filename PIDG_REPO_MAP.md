@@ -2,6 +2,12 @@
 
 ## C1 optical-flow-only ablation (2026-11-02)
 
+User correction: reuse historical C1; do not retrain the original. The former
+new O0 was safely stopped and excluded. `output/c1_flow_ablation/reuse_control.py`
+trains only O1 in a separate coordinator queue; `compare_reuse.py` reuses the
+historical locked best/final snapshots and existing PNGs without altering them.
+`reuse_control_plan.json` supersedes the original two-new-arms protocol below.
+
 `variants/c1_flow_ablation/prepare.py` copies the frozen C1_repaired trainer and
 renderer, changing only the optional runtime import and additive observed-flow
 hook. `runtime.py` inherits C1 image/alpha losses, frame-index clock, independent

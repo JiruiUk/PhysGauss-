@@ -1,5 +1,24 @@
 # C1 repaired: optical-flow on/off
 
+**Current protocol, corrected by the user at16:08 UTC:** do not retrain the
+original model. Reuse `runs/pidg_color_repair/C1_repaired/rubber_duck` and train
+only O1. The unnecessary new O0 was saved/stopped at9712 and is excluded. Keep
+the old queue's stop request; do not run its original two-arm main. Current
+entry point is `output/c1_flow_ablation/reuse_control.py`; amended immutable
+protocol is `experiments/c1_flow_ablation/reuse_control_plan.json`. Historical
+best47k and final50k selections are reused without reselection. New O1 still
+starts from the same complete3k state and changes only the flow-supervision
+package. Existing C1 training settings and model configuration were checked.
+
+```powershell
+# After enabling reproduction/scripts/enable_cuda.ps1, only if no active queue:
+envs/pidg-cu128/python.exe -u output/c1_flow_ablation/reuse_control.py --hours 16
+envs/pidg-cu128/python.exe output/c1_flow_ablation/status.py
+```
+
+The original preparation protocol below is retained for audit; its new-control
+retraining instruction has been superseded by the user's correction.
+
 The strongest repaired C-series baseline is C1_repaired by historical validation
 PSNR (39.6648946 dB; test40.3721275 descriptive only). O0 and O1 both branch its
 unchanged complete pre-flow3k state and train to total50k. Historical final50k

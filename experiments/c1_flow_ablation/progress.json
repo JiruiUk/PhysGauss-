@@ -1,23 +1,24 @@
 {
-  "updated_utc": "2026-11-02T15:59:07.789428+00:00",
+  "updated_utc": "2026-11-02T16:08:22.274706+00:00",
   "controller": {
     "pid": 231636,
-    "status": "training",
+    "status": "saved_stopped",
     "started_utc": "2026-11-02T15:59:07.511994+00:00",
-    "deadline_utc": "2026-11-03T07:59:07.511994+00:00"
+    "deadline_utc": "2026-11-03T07:59:07.511994+00:00",
+    "updated_utc": "2026-11-02T16:08:22.263212+00:00"
   },
   "models": [
     {
       "model": "O0_C1_flow_off",
-      "iteration_saved": 3000,
+      "iteration_saved": 9712,
       "validation": {
-        "iteration": 3000,
+        "iteration": 9000,
         "split": "validation",
         "metrics": {
-          "PSNR": 17.570457712809244,
-          "SSIM": 0.879145763317744,
-          "LPIPS": 0.12028692911068599,
-          "MS-SSIM": 0.8563002943992615
+          "PSNR": 30.26023941040039,
+          "SSIM": 0.9802453577518463,
+          "LPIPS": 0.03532888243595759,
+          "MS-SSIM": 0.9809719701608022
         }
       },
       "test": null
