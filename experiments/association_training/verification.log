@@ -1,0 +1,201 @@
+{
+  "passed": true,
+  "frozen_files_verified": 2501,
+  "historical_C1_unchanged": "b5d4cf5c9fb8fba4fcc26124555d48aa7d3a963a8be1d28488954752db486480",
+  "matched_camera_updates": 2000,
+  "association_optimizer_events": 100,
+  "final_checkpoints": {
+    "T0_C1_continue": {
+      "sha256": "67eafd240bf84ecabafa460c3d1ec791c0bec56d3ed67d8047654b9502e967f0",
+      "finite_full_state_and_optimizers": true,
+      "optimizer_step_deltas": {
+        "gaussian_optimizer": {
+          "xyz": [
+            2000
+          ],
+          "f_dc": [
+            2000
+          ],
+          "f_rest": [
+            2000
+          ],
+          "opacity": [
+            2000
+          ],
+          "scaling": [
+            2000
+          ],
+          "rotation": [
+            2000
+          ],
+          "velocity_net_0": [
+            20
+          ],
+          "velocity_net_1": [
+            20
+          ],
+          "velocity_net_2": [
+            20
+          ],
+          "velocity_net_3": [
+            20
+          ],
+          "velocity_net_4": [
+            20
+          ],
+          "velocity_net_5": [
+            20
+          ],
+          "velocity_net_6": [
+            20
+          ],
+          "velocity_net_7": [
+            20
+          ],
+          "velocity_net_8": [
+            20
+          ],
+          "velocity_net_9": [
+            20
+          ],
+          "velocity_net_10": [
+            20
+          ],
+          "velocity_net_11": [
+            20
+          ],
+          "velocity_net_12": [],
+          "force_sigma": [
+            20
+          ]
+        },
+        "deform_optimizer": {
+          "deform": [
+            2000
+          ],
+          "grid": [
+            2000
+          ]
+        }
+      },
+      "iteration": 52000,
+      "point_count": 86143
+    },
+    "T1_association": {
+      "sha256": "82f3c1028db8caa4edcb75a6fc8e8b5e5218a1f90ecc289cb473eaf7f68f402a",
+      "finite_full_state_and_optimizers": true,
+      "optimizer_step_deltas": {
+        "gaussian_optimizer": {
+          "xyz": [
+            2000
+          ],
+          "f_dc": [
+            2000
+          ],
+          "f_rest": [
+            2000
+          ],
+          "opacity": [
+            2000
+          ],
+          "scaling": [
+            2000
+          ],
+          "rotation": [
+            2000
+          ],
+          "velocity_net_0": [
+            20
+          ],
+          "velocity_net_1": [
+            20
+          ],
+          "velocity_net_2": [
+            20
+          ],
+          "velocity_net_3": [
+            20
+          ],
+          "velocity_net_4": [
+            20
+          ],
+          "velocity_net_5": [
+            20
+          ],
+          "velocity_net_6": [
+            20
+          ],
+          "velocity_net_7": [
+            20
+          ],
+          "velocity_net_8": [
+            20
+          ],
+          "velocity_net_9": [
+            20
+          ],
+          "velocity_net_10": [
+            20
+          ],
+          "velocity_net_11": [
+            20
+          ],
+          "velocity_net_12": [],
+          "force_sigma": [
+            20
+          ]
+        },
+        "deform_optimizer": {
+          "deform": [
+            2000
+          ],
+          "grid": [
+            2000
+          ]
+        }
+      },
+      "iteration": 52000,
+      "point_count": 86143
+    }
+  },
+  "full_contribution_reports_recomputed": 360,
+  "native_pair_images_checked": 12,
+  "native_pair_GT_pixel_identity": true,
+  "selected_training_native_PSNR": {
+    "C1_original/43": 39.86822510054518,
+    "C1_original/74": 38.798545209212904,
+    "C1_original/86": 41.31508460098722,
+    "C1_original/200": 45.59064524056698,
+    "T0_C1_continue/43": 40.05492330133917,
+    "T0_C1_continue/74": 38.015239350799405,
+    "T0_C1_continue/86": 40.684337608520394,
+    "T0_C1_continue/200": 45.96175374272085,
+    "T1_association/43": 40.02276079009587,
+    "T1_association/74": 38.23282861180287,
+    "T1_association/86": 40.78431743089857,
+    "T1_association/200": 45.94767065621419
+  },
+  "original_native_cache_frames_compared": 24,
+  "original_native_cache_max_mass_error": 1.33514404296875e-05,
+  "validation_metrics": {
+    "C1_original": {
+      "PSNR": 39.66489397684733,
+      "SSIM": 0.9942710717519124,
+      "LPIPS": 0.01471452641611298,
+      "MS-SSIM": 0.9961092332998912
+    },
+    "T0_C1_continue": {
+      "PSNR": 39.542257690429686,
+      "SSIM": 0.9942178626855215,
+      "LPIPS": 0.01470413498270015,
+      "MS-SSIM": 0.996102492014567
+    },
+    "T1_association": {
+      "PSNR": 39.53545068105062,
+      "SSIM": 0.9942110737164815,
+      "LPIPS": 0.01472347842839857,
+      "MS-SSIM": 0.9960992276668549
+    }
+  },
+  "physical_identity_ground_truth_available": false
+}

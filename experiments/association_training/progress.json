@@ -1,0 +1,41 @@
+{
+  "controller": {
+    "status": "completed",
+    "pid": 230480,
+    "started_utc": "2026-11-02T23:12:57.031817+00:00",
+    "deadline_utc": "2026-11-03T03:12:57.031817+00:00",
+    "finished_utc": "2026-11-02T23:20:38.810436+00:00",
+    "training_finished_utc": "2026-11-02T23:20:38.810436+00:00",
+    "evaluation_completed_utc": "2026-11-02T23:26:52.139696+00:00",
+    "verification_sha256": "682dd892ea1f526cfa5797f3eb49cef093465b93000603ae35329cad20593ec2",
+    "results_sha256": "c14ced6a0ef6a297349bd7a1f6e221d8d2818b89f1b2f6b60a730f12196dd9c4"
+  },
+  "updated_utc": "2026-11-02T23:26:52.149306+00:00",
+  "models": [
+    {
+      "name": "T0_C1_continue",
+      "iteration": 52000,
+      "last_association_loss": null
+    },
+    {
+      "name": "T1_association",
+      "iteration": 52000,
+      "last_association_loss": {
+        "iteration": 52000,
+        "pair": [
+          156,
+          159
+        ],
+        "anchor": 7,
+        "leakage": 0.0019184747943654656,
+        "coverage_floor": 0.0,
+        "temporal": 0.0,
+        "weighted_loss": 0.00038369494723156095,
+        "source_group_mass": 13.272662162780762,
+        "target_group_mass": 21.847137451171875,
+        "valid_forward_pixels": 747,
+        "valid_backward_pixels": 758
+      }
+    }
+  ]
+}

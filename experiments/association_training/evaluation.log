@@ -1,0 +1,44 @@
+W1102 23:22:01.891000 202784 envs\pidg-cu128\Lib\site-packages\torch\utils\cpp_extension.py:466] Error checking compiler version for cl: 'cp1' codec can't decode bytes in position 0--1: No mapping for the Unicode character exists in the target code page.
+ninja: no work to do.
+F:\A_Edinburgh\PhysGauss\variants\association_training\code\hashencoder\hashgrid.py:16: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.half)
+F:\A_Edinburgh\PhysGauss\variants\association_training\code\hashencoder\hashgrid.py:56: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+C1_original support 15 / 120 frame 26 0.7609378306020035
+C1_original support 30 / 120 frame 50 0.6200312472407893
+C1_original support 45 / 120 frame 75 0.20066313187398754
+C1_original support 60 / 120 frame 100 0.0
+C1_original support 75 / 120 frame 126 0.0
+C1_original support 90 / 120 frame 150 0.0
+C1_original support 105 / 120 frame 175 0.0
+C1_original support 120 / 120 frame 200 0.0
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+F:\A_Edinburgh\PhysGauss\envs\pidg-cu128\Lib\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+F:\A_Edinburgh\PhysGauss\envs\pidg-cu128\Lib\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: F:\A_Edinburgh\PhysGauss\envs\pidg-cu128\Lib\site-packages\lpips\weights\v0.1\vgg.pth
+FULL_STATE_VALIDATION C1_original {'PSNR': 39.66489397684733, 'SSIM': 0.9942710717519124, 'LPIPS': 0.01471452641611298, 'MS-SSIM': 0.9961092332998912}
+T0_C1_continue support 15 / 120 frame 26 0.7578604509685789
+T0_C1_continue support 30 / 120 frame 50 0.6191344292417433
+T0_C1_continue support 45 / 120 frame 75 0.20093954807873418
+T0_C1_continue support 60 / 120 frame 100 0.0
+T0_C1_continue support 75 / 120 frame 126 0.0
+T0_C1_continue support 90 / 120 frame 150 0.0
+T0_C1_continue support 105 / 120 frame 175 0.0
+T0_C1_continue support 120 / 120 frame 200 0.0
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+Loading model from: F:\A_Edinburgh\PhysGauss\envs\pidg-cu128\Lib\site-packages\lpips\weights\v0.1\vgg.pth
+FULL_STATE_VALIDATION T0_C1_continue {'PSNR': 39.542257690429686, 'SSIM': 0.9942178626855215, 'LPIPS': 0.01470413498270015, 'MS-SSIM': 0.996102492014567}
+T1_association support 15 / 120 frame 26 0.6639886284277837
+T1_association support 30 / 120 frame 50 0.5750814386737729
+T1_association support 45 / 120 frame 75 0.14297345691859553
+T1_association support 60 / 120 frame 100 0.0
+T1_association support 75 / 120 frame 126 0.0
+T1_association support 90 / 120 frame 150 0.0
+T1_association support 105 / 120 frame 175 0.0
+T1_association support 120 / 120 frame 200 0.0
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+Loading model from: F:\A_Edinburgh\PhysGauss\envs\pidg-cu128\Lib\site-packages\lpips\weights\v0.1\vgg.pth
+FULL_STATE_VALIDATION T1_association {'PSNR': 39.53545068105062, 'SSIM': 0.9942110737164815, 'LPIPS': 0.01472347842839857, 'MS-SSIM': 0.9960992276668549}
+ASSOCIATION EVALUATION COMPLETE

@@ -1,0 +1,3230 @@
+{
+  "status": "completed",
+  "models": {
+    "C1_original": {
+      "validation": {
+        "PSNR": 39.66489397684733,
+        "SSIM": 0.9942710717519124,
+        "LPIPS": 0.01471452641611298,
+        "MS-SSIM": 0.9961092332998912
+      },
+      "windows": {
+        "early_2_27": {
+          "frames": 16,
+          "mean_early_bank_alpha_share_on_any_duck": 0.7545922423005629,
+          "mean_bank_mass_outside_ducks": 0.013301627286418809,
+          "mean_supported_points_on_verified_IDs": 1776.375,
+          "frames_with_four_supported_candidate_groups": 16,
+          "observable_point_pairs": 25729,
+          "observed_flow_agreement_fraction": 1.0
+        },
+        "pre_first_fragment_end_28_42": {
+          "frames": 9,
+          "mean_early_bank_alpha_share_on_any_duck": 0.7153599633130401,
+          "mean_bank_mass_outside_ducks": 0.04221165952506002,
+          "mean_supported_points_on_verified_IDs": 1367.3333333333333,
+          "frames_with_four_supported_candidate_groups": 9,
+          "observable_point_pairs": 11721,
+          "observed_flow_agreement_fraction": 0.9930040098967665
+        },
+        "after_first_fragment_end_43_145": {
+          "frames": 61,
+          "mean_early_bank_alpha_share_on_any_duck": 0.16391303377028893,
+          "mean_bank_mass_outside_ducks": 0.699918257840773,
+          "mean_supported_points_on_verified_IDs": 213.55737704918033,
+          "frames_with_four_supported_candidate_groups": 0,
+          "observable_point_pairs": 14188,
+          "observed_flow_agreement_fraction": 0.9590499013250634
+        },
+        "all_early_IDs_unverified_146_200": {
+          "frames": 34,
+          "mean_early_bank_alpha_share_on_any_duck": 0.0,
+          "mean_bank_mass_outside_ducks": 1.0,
+          "mean_supported_points_on_verified_IDs": 0.0,
+          "frames_with_four_supported_candidate_groups": 0,
+          "observable_point_pairs": 0,
+          "observed_flow_agreement_fraction": null
+        }
+      },
+      "selected_frames": [
+        {
+          "frame": 2,
+          "early_bank_alpha_share_on_any_duck": 0.7439496740819875,
+          "early_bank_mass_on_duck": 917.8390106100705,
+          "early_bank_total_image_mass": 928.5199547329394,
+          "fraction_bank_mass_outside_ducks": 0.01150319286992696,
+          "image_IDs_still_independently_verified": 4,
+          "supported_points_on_independently_verified_IDs": 1799,
+          "supported_alpha_on_verified_IDs": 0.702826730051472,
+          "group_component_mass": [
+            [
+              188.97272389009595,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              177.48916510492563,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              140.58667827158934,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              410.790421012789
+            ]
+          ],
+          "group_center_component_fraction": [
+            [
+              0.9957627118644068,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.9598214285714286,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.9831546707503829
+            ]
+          ],
+          "complete_contribution_relative_error": 1.157309361587977e-05,
+          "candidate": {
+            "best_component_permutation": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "score_mass": 917.8389882793999,
+            "runner_up_gap_mass": 318.07584337651497,
+            "active_groups": [
+              true,
+              true,
+              true,
+              true
+            ],
+            "per_group_duck_region_purity": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "all_four_groups_supported": true,
+            "physical_ID_confirmed": false
+          },
+          "native_total_duck_alpha_area": 1233.738037109375
+        },
+        {
+          "frame": 27,
+          "early_bank_alpha_share_on_any_duck": 0.7587765394477268,
+          "early_bank_mass_on_duck": 876.2056377193877,
+          "early_bank_total_image_mass": 894.5291799792896,
+          "fraction_bank_mass_outside_ducks": 0.020484007307985275,
+          "image_IDs_still_independently_verified": 4,
+          "supported_points_on_independently_verified_IDs": 1586,
+          "supported_alpha_on_verified_IDs": 0.673184372638236,
+          "group_component_mass": [
+            [
+              177.1665807122481,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              167.8895007544926,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              149.53924099313735,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              381.61028385373356
+            ]
+          ],
+          "group_center_component_fraction": [
+            [
+              0.9703389830508474,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.9553571428571429,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.939799331103679,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.9869831546707504
+            ]
+          ],
+          "complete_contribution_relative_error": 1.683210393821355e-05,
+          "candidate": {
+            "best_component_permutation": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "score_mass": 876.2056063136116,
+            "runner_up_gap_mass": 317.42874174762994,
+            "active_groups": [
+              true,
+              true,
+              true,
+              true
+            ],
+            "per_group_duck_region_purity": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "all_four_groups_supported": true,
+            "physical_ID_confirmed": false
+          },
+          "native_total_duck_alpha_area": 1154.7611083984375
+        },
+        {
+          "frame": 43,
+          "early_bank_alpha_share_on_any_duck": 0.6439224160720728,
+          "early_bank_mass_on_duck": 690.7073255109988,
+          "early_bank_total_image_mass": 741.7095073633831,
+          "fraction_bank_mass_outside_ducks": 0.06876301482730895,
+          "image_IDs_still_independently_verified": 2,
+          "supported_points_on_independently_verified_IDs": 892,
+          "supported_alpha_on_verified_IDs": 0.31733312852305195,
+          "group_component_mass": [
+            [
+              146.34160888030306,
+              7.739649845461827e-07,
+              0.0,
+              0.0
+            ],
+            [
+              0.024237576872110367,
+              99.15525405534996,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              174.82388313665234,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              270.36234034278243,
+              0.0
+            ]
+          ],
+          "group_center_component_fraction": [
+            [
+              0.9279661016949152,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.8125,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.9163879598662207,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.9915773353751914,
+              0.0
+            ]
+          ],
+          "complete_contribution_relative_error": 7.643092430953402e-06,
+          "candidate": null,
+          "native_total_duck_alpha_area": 1072.6561279296875
+        },
+        {
+          "frame": 55,
+          "early_bank_alpha_share_on_any_duck": 0.602539583252429,
+          "early_bank_mass_on_duck": 658.5714249153868,
+          "early_bank_total_image_mass": 756.9937804236984,
+          "fraction_bank_mass_outside_ducks": 0.13001738990936407,
+          "image_IDs_still_independently_verified": 1,
+          "supported_points_on_independently_verified_IDs": 609,
+          "supported_alpha_on_verified_IDs": 0.19006537669120507,
+          "group_component_mass": [
+            [
+              109.42207229724863,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              67.37501829047048,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              15.157938781237135,
+              186.2571984714028,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              280.3591844987042,
+              0.0
+            ]
+          ],
+          "group_center_component_fraction": [
+            [
+              0.8516949152542372,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.9107142857142857,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.026755852842809364,
+              0.27424749163879597,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.9287901990811639,
+              0.0
+            ]
+          ],
+          "complete_contribution_relative_error": 8.736872587178368e-06,
+          "candidate": null,
+          "native_total_duck_alpha_area": 1092.9927978515625
+        },
+        {
+          "frame": 63,
+          "early_bank_alpha_share_on_any_duck": 0.4762594241172221,
+          "early_bank_mass_on_duck": 544.6452078621321,
+          "early_bank_total_image_mass": 622.1775942067385,
+          "fraction_bank_mass_outside_ducks": 0.1246145587152786,
+          "image_IDs_still_independently_verified": 1,
+          "supported_points_on_independently_verified_IDs": 603,
+          "supported_alpha_on_verified_IDs": 0.16149807637721533,
+          "group_component_mass": [
+            [
+              0.030368867446668446,
+              2.354593892610339,
+              0.0,
+              0.0
+            ],
+            [
+              50.06309248897141,
+              2.881995698891357,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              60.591095143726605,
+              0.0,
+              192.60829674370416
+            ],
+            [
+              0.0,
+              0.0,
+              236.11574701623866,
+              0.0
+            ]
+          ],
+          "group_center_component_fraction": [
+            [
+              0.0,
+              0.4194915254237288,
+              0.0,
+              0.0
+            ],
+            [
+              0.14732142857142858,
+              0.05357142857142857,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.4782608695652174,
+              0.0,
+              0.20066889632107024
+            ],
+            [
+              0.0,
+              0.0,
+              0.9617151607963247,
+              0.0
+            ]
+          ],
+          "complete_contribution_relative_error": 2.265343391627539e-05,
+          "candidate": {
+            "best_component_permutation": [
+              1,
+              0,
+              3,
+              2
+            ],
+            "score_mass": 481.1417301415246,
+            "runner_up_gap_mass": 49.50532181524375,
+            "active_groups": [
+              true,
+              true,
+              true,
+              true
+            ],
+            "per_group_duck_region_purity": [
+              0.9872665234211278,
+              0.9455663254603468,
+              0.7606981016342068,
+              1.0
+            ],
+            "all_four_groups_supported": false,
+            "physical_ID_confirmed": false
+          },
+          "native_total_duck_alpha_area": 1143.58935546875
+        },
+        {
+          "frame": 74,
+          "early_bank_alpha_share_on_any_duck": 0.20836860759749135,
+          "early_bank_mass_on_duck": 241.76392471370377,
+          "early_bank_total_image_mass": 307.6755896692915,
+          "fraction_bank_mass_outside_ducks": 0.21422455069130975,
+          "image_IDs_still_independently_verified": 1,
+          "supported_points_on_independently_verified_IDs": 432,
+          "supported_alpha_on_verified_IDs": 0.11208500870642502,
+          "group_component_mass": [
+            [
+              0.0,
+              0.0,
+              0.4149244959392746,
+              0.0
+            ],
+            [
+              9.742657877884948,
+              0.0,
+              6.09940904133618,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              38.85537694442428,
+              0.0
+            ],
+            [
+              0.0,
+              186.65154838132372,
+              0.0,
+              0.0
+            ]
+          ],
+          "group_center_component_fraction": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.14285714285714285,
+              0.0,
+              0.14285714285714285,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.006688963210702341,
+              0.0
+            ],
+            [
+              0.0,
+              0.9479326186830015,
+              0.0,
+              0.0
+            ]
+          ],
+          "complete_contribution_relative_error": 5.939940365351504e-06,
+          "candidate": {
+            "best_component_permutation": [
+              3,
+              0,
+              2,
+              1
+            ],
+            "score_mass": 235.24958320363294,
+            "runner_up_gap_mass": 9.742657877884938,
+            "active_groups": [
+              true,
+              true,
+              true,
+              true
+            ],
+            "per_group_duck_region_purity": [
+              0.0,
+              0.6149865372721165,
+              1.0,
+              1.0
+            ],
+            "all_four_groups_supported": false,
+            "physical_ID_confirmed": false
+          },
+          "native_total_duck_alpha_area": 1160.2703857421875
+        },
+        {
+          "frame": 86,
+          "early_bank_alpha_share_on_any_duck": 0.0,
+          "early_bank_mass_on_duck": 0.0,
+          "early_bank_total_image_mass": 84.54011380175535,
+          "fraction_bank_mass_outside_ducks": 1.0,
+          "image_IDs_still_independently_verified": 1,
+          "supported_points_on_independently_verified_IDs": 0,
+          "supported_alpha_on_verified_IDs": 0.0,
+          "group_component_mass": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "group_center_component_fraction": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "complete_contribution_relative_error": 1.4872096471663099e-05,
+          "candidate": {
+            "best_component_permutation": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "score_mass": 0.0,
+            "runner_up_gap_mass": 0.0,
+            "active_groups": [
+              false,
+              false,
+              false,
+              false
+            ],
+            "per_group_duck_region_purity": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "all_four_groups_supported": false,
+            "physical_ID_confirmed": false
+          },
+          "native_total_duck_alpha_area": 1156.732421875
+        },
+        {
+          "frame": 108,
+          "early_bank_alpha_share_on_any_duck": 0.0,
+          "early_bank_mass_on_duck": 0.0,
+          "early_bank_total_image_mass": 21.50281467290306,
+          "fraction_bank_mass_outside_ducks": 1.0,
+          "image_IDs_still_independently_verified": 1,
+          "supported_points_on_independently_verified_IDs": 0,
+          "supported_alpha_on_verified_IDs": 0.0,
+          "group_component_mass": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "group_center_component_fraction": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "complete_contribution_relative_error": 1.3958163435745519e-05,
+          "candidate": {
+            "best_component_permutation": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "score_mass": 0.0,
+            "runner_up_gap_mass": 0.0,
+            "active_groups": [
+              false,
+              false,
+              false,
+              false
+            ],
+            "per_group_duck_region_purity": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "all_four_groups_supported": false,
+            "physical_ID_confirmed": false
+          },
+          "native_total_duck_alpha_area": 1115.1591796875
+        },
+        {
+          "frame": 134,
+          "early_bank_alpha_share_on_any_duck": 0.0,
+          "early_bank_mass_on_duck": 0.0,
+          "early_bank_total_image_mass": 28.735386790472376,
+          "fraction_bank_mass_outside_ducks": 1.0,
+          "image_IDs_still_independently_verified": 1,
+          "supported_points_on_independently_verified_IDs": 0,
+          "supported_alpha_on_verified_IDs": 0.0,
+          "group_component_mass": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "group_center_component_fraction": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "complete_contribution_relative_error": 1.4261574506235775e-05,
+          "candidate": {
+            "best_component_permutation": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "score_mass": 0.0,
+            "runner_up_gap_mass": 0.0,
+            "active_groups": [
+              false,
+              false,
+              false,
+              false
+            ],
+            "per_group_duck_region_purity": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "all_four_groups_supported": false,
+            "physical_ID_confirmed": false
+          },
+          "native_total_duck_alpha_area": 1106.703857421875
+        },
+        {
+          "frame": 172,
+          "early_bank_alpha_share_on_any_duck": 0.0,
+          "early_bank_mass_on_duck": 0.0,
+          "early_bank_total_image_mass": 57.76440592810225,
+          "fraction_bank_mass_outside_ducks": 1.0,
+          "image_IDs_still_independently_verified": 0,
+          "supported_points_on_independently_verified_IDs": 0,
+          "supported_alpha_on_verified_IDs": 0.0,
+          "group_component_mass": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "group_center_component_fraction": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "complete_contribution_relative_error": 1.4596269465982914e-05,
+          "candidate": {
+            "best_component_permutation": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "score_mass": 0.0,
+            "runner_up_gap_mass": 0.0,
+            "active_groups": [
+              false,
+              false,
+              false,
+              false
+            ],
+            "per_group_duck_region_purity": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "all_four_groups_supported": false,
+            "physical_ID_confirmed": false
+          },
+          "native_total_duck_alpha_area": 944.9202270507812
+        },
+        {
+          "frame": 188,
+          "early_bank_alpha_share_on_any_duck": 0.0,
+          "early_bank_mass_on_duck": 0.0,
+          "early_bank_total_image_mass": 43.762604469715086,
+          "fraction_bank_mass_outside_ducks": 1.0,
+          "image_IDs_still_independently_verified": 0,
+          "supported_points_on_independently_verified_IDs": 0,
+          "supported_alpha_on_verified_IDs": 0.0,
+          "group_component_mass": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "group_center_component_fraction": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "complete_contribution_relative_error": 2.157113704015501e-05,
+          "candidate": {
+            "best_component_permutation": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "score_mass": 0.0,
+            "runner_up_gap_mass": 0.0,
+            "active_groups": [
+              false,
+              false,
+              false,
+              false
+            ],
+            "per_group_duck_region_purity": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "all_four_groups_supported": false,
+            "physical_ID_confirmed": false
+          },
+          "native_total_duck_alpha_area": 872.58203125
+        },
+        {
+          "frame": 200,
+          "early_bank_alpha_share_on_any_duck": 0.0,
+          "early_bank_mass_on_duck": 0.0,
+          "early_bank_total_image_mass": 35.53040921790771,
+          "fraction_bank_mass_outside_ducks": 1.0,
+          "image_IDs_still_independently_verified": 0,
+          "supported_points_on_independently_verified_IDs": 0,
+          "supported_alpha_on_verified_IDs": 0.0,
+          "group_component_mass": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "group_center_component_fraction": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "complete_contribution_relative_error": 1.2355028047750238e-05,
+          "candidate": {
+            "best_component_permutation": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "score_mass": 0.0,
+            "runner_up_gap_mass": 0.0,
+            "active_groups": [
+              false,
+              false,
+              false,
+              false
+            ],
+            "per_group_duck_region_purity": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "all_four_groups_supported": false,
+            "physical_ID_confirmed": false
+          },
+          "native_total_duck_alpha_area": 862.4405517578125
+        }
+      ]
+    },
+    "T0_C1_continue": {
+      "validation": {
+        "PSNR": 39.542257690429686,
+        "SSIM": 0.9942178626855215,
+        "LPIPS": 0.01470413498270015,
+        "MS-SSIM": 0.996102492014567
+      },
+      "windows": {
+        "early_2_27": {
+          "frames": 16,
+          "mean_early_bank_alpha_share_on_any_duck": 0.7513954109565095,
+          "mean_bank_mass_outside_ducks": 0.014001022061316558,
+          "mean_supported_points_on_verified_IDs": 1757.6875,
+          "frames_with_four_supported_candidate_groups": 16,
+          "observable_point_pairs": 25498,
+          "observed_flow_agreement_fraction": 1.0
+        },
+        "pre_first_fragment_end_28_42": {
+          "frames": 9,
+          "mean_early_bank_alpha_share_on_any_duck": 0.7132248865593676,
+          "mean_bank_mass_outside_ducks": 0.04286795163475795,
+          "mean_supported_points_on_verified_IDs": 1365.2222222222222,
+          "frames_with_four_supported_candidate_groups": 9,
+          "observable_point_pairs": 11689,
+          "observed_flow_agreement_fraction": 0.992813756523227
+        },
+        "after_first_fragment_end_43_145": {
+          "frames": 61,
+          "mean_early_bank_alpha_share_on_any_duck": 0.16392194775044527,
+          "mean_bank_mass_outside_ducks": 0.6985678855152773,
+          "mean_supported_points_on_verified_IDs": 214.44262295081967,
+          "frames_with_four_supported_candidate_groups": 0,
+          "observable_point_pairs": 14208,
+          "observed_flow_agreement_fraction": 0.9586148648648649
+        },
+        "all_early_IDs_unverified_146_200": {
+          "frames": 34,
+          "mean_early_bank_alpha_share_on_any_duck": 0.0,
+          "mean_bank_mass_outside_ducks": 1.0,
+          "mean_supported_points_on_verified_IDs": 0.0,
+          "frames_with_four_supported_candidate_groups": 0,
+          "observable_point_pairs": 0,
+          "observed_flow_agreement_fraction": null
+        }
+      },
+      "selected_frames": [
+        {
+          "frame": 2,
+          "early_bank_alpha_share_on_any_duck": 0.7404604039379908,
+          "early_bank_mass_on_duck": 913.6023180392804,
+          "early_bank_total_image_mass": 924.8587357786455,
+          "fraction_bank_mass_outside_ducks": 0.012170958984226155,
+          "image_IDs_still_independently_verified": 4,
+          "supported_points_on_independently_verified_IDs": 1779,
+          "supported_alpha_on_verified_IDs": 0.7012379247554262,
+          "group_component_mass": [
+            [
+              186.5598724745214,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              177.2226953599602,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              140.19993243586214,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              409.61980390246026
+            ]
+          ],
+          "group_center_component_fraction": [
+            [
+              0.9915254237288136,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.9419642857142857,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.9966555183946488,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.9839203675344563
+            ]
+          ],
+          "complete_contribution_relative_error": 3.331332845846191e-05,
+          "candidate": {
+            "best_component_permutation": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "score_mass": 913.602304172804,
+            "runner_up_gap_mass": 317.42262779582234,
+            "active_groups": [
+              true,
+              true,
+              true,
+              true
+            ],
+            "per_group_duck_region_purity": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "all_four_groups_supported": true,
+            "physical_ID_confirmed": false
+          },
+          "native_total_duck_alpha_area": 1233.830078125
+        },
+        {
+          "frame": 27,
+          "early_bank_alpha_share_on_any_duck": 0.7549796209207298,
+          "early_bank_mass_on_duck": 871.9307749845799,
+          "early_bank_total_image_mass": 890.7726831212948,
+          "fraction_bank_mass_outside_ducks": 0.021152319209758685,
+          "image_IDs_still_independently_verified": 4,
+          "supported_points_on_independently_verified_IDs": 1587,
+          "supported_alpha_on_verified_IDs": 0.6616761700842436,
+          "group_component_mass": [
+            [
+              175.81570353067946,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              167.6552589891477,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              147.81235637996724,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              380.64744597265235
+            ]
+          ],
+          "group_center_component_fraction": [
+            [
+              0.9703389830508474,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.9464285714285714,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.939799331103679,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.9862174578866769
+            ]
+          ],
+          "complete_contribution_relative_error": 1.0009380275732838e-05,
+          "candidate": {
+            "best_component_permutation": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "score_mass": 871.9307648724467,
+            "runner_up_gap_mass": 315.4676153691149,
+            "active_groups": [
+              true,
+              true,
+              true,
+              true
+            ],
+            "per_group_duck_region_purity": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "all_four_groups_supported": true,
+            "physical_ID_confirmed": false
+          },
+          "native_total_duck_alpha_area": 1154.9063720703125
+        },
+        {
+          "frame": 43,
+          "early_bank_alpha_share_on_any_duck": 0.6422891196956081,
+          "early_bank_mass_on_duck": 689.032902128846,
+          "early_bank_total_image_mass": 741.03734557117,
+          "fraction_bank_mass_outside_ducks": 0.07017789825726062,
+          "image_IDs_still_independently_verified": 2,
+          "supported_points_on_independently_verified_IDs": 888,
+          "supported_alpha_on_verified_IDs": 0.31435323099644374,
+          "group_component_mass": [
+            [
+              146.62143219443084,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.02011852152645588,
+              98.03123305630405,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              175.09726035022982,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              269.2628898763095,
+              0.0
+            ]
+          ],
+          "group_center_component_fraction": [
+            [
+              0.940677966101695,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.8125,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.9063545150501672,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.9908116385911179,
+              0.0
+            ]
+          ],
+          "complete_contribution_relative_error": 3.6219040339346975e-05,
+          "candidate": null,
+          "native_total_duck_alpha_area": 1072.77685546875
+        },
+        {
+          "frame": 55,
+          "early_bank_alpha_share_on_any_duck": 0.6015943591343306,
+          "early_bank_mass_on_duck": 657.3364239673622,
+          "early_bank_total_image_mass": 751.8799414600188,
+          "fraction_bank_mass_outside_ducks": 0.12574283775820605,
+          "image_IDs_still_independently_verified": 1,
+          "supported_points_on_independently_verified_IDs": 608,
+          "supported_alpha_on_verified_IDs": 0.19083025571903256,
+          "group_component_mass": [
+            [
+              109.69203930666117,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              66.68984283387843,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              14.870440612229174,
+              186.6959770640551,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              279.38813194238105,
+              0.0
+            ]
+          ],
+          "group_center_component_fraction": [
+            [
+              0.8432203389830508,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.90625,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.026755852842809364,
+              0.27759197324414714,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.9272588055130169,
+              0.0
+            ]
+          ],
+          "complete_contribution_relative_error": 1.559316660859622e-05,
+          "candidate": null,
+          "native_total_duck_alpha_area": 1092.6572265625
+        },
+        {
+          "frame": 63,
+          "early_bank_alpha_share_on_any_duck": 0.4766677632899887,
+          "early_bank_mass_on_duck": 544.9209195809881,
+          "early_bank_total_image_mass": 620.3168178702042,
+          "fraction_bank_mass_outside_ducks": 0.12154417890535418,
+          "image_IDs_still_independently_verified": 1,
+          "supported_points_on_independently_verified_IDs": 597,
+          "supported_alpha_on_verified_IDs": 0.16217218675400455,
+          "group_component_mass": [
+            [
+              0.026337779068853706,
+              2.560038348503568,
+              0.0,
+              0.0
+            ],
+            [
+              51.15913287514705,
+              3.3235026207162797,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              59.66342044178896,
+              0.0,
+              192.71102370647714
+            ],
+            [
+              0.0,
+              0.0,
+              235.47743024989884,
+              0.0
+            ]
+          ],
+          "group_center_component_fraction": [
+            [
+              0.0,
+              0.4322033898305085,
+              0.0,
+              0.0
+            ],
+            [
+              0.14732142857142858,
+              0.05803571428571429,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.4782608695652174,
+              0.0,
+              0.20066889632107024
+            ],
+            [
+              0.0,
+              0.0,
+              0.9617151607963247,
+              0.0
+            ]
+          ],
+          "complete_contribution_relative_error": 2.3300061002373695e-05,
+          "candidate": {
+            "best_component_permutation": [
+              1,
+              0,
+              3,
+              2
+            ],
+            "score_mass": 481.90762518002657,
+            "runner_up_gap_mass": 50.369330823865425,
+            "active_groups": [
+              true,
+              true,
+              true,
+              true
+            ],
+            "per_group_duck_region_purity": [
+              0.9898167251127645,
+              0.9389988646755419,
+              0.7635916717195913,
+              1.0
+            ],
+            "all_four_groups_supported": false,
+            "physical_ID_confirmed": false
+          },
+          "native_total_duck_alpha_area": 1143.1881103515625
+        },
+        {
+          "frame": 74,
+          "early_bank_alpha_share_on_any_duck": 0.20873864634654582,
+          "early_bank_mass_on_duck": 242.16297305437004,
+          "early_bank_total_image_mass": 305.896836277548,
+          "fraction_bank_mass_outside_ducks": 0.2083508414103067,
+          "image_IDs_still_independently_verified": 1,
+          "supported_points_on_independently_verified_IDs": 431,
+          "supported_alpha_on_verified_IDs": 0.10960152989019717,
+          "group_component_mass": [
+            [
+              0.0,
+              0.0,
+              0.3582615549879904,
+              0.0
+            ],
+            [
+              10.513298425293076,
+              0.0,
+              6.560563356074855,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              38.39859452684959,
+              0.0
+            ],
+            [
+              0.0,
+              186.33225145983974,
+              0.0,
+              0.0
+            ]
+          ],
+          "group_center_component_fraction": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.14732142857142858,
+              0.0,
+              0.15178571428571427,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.006688963210702341,
+              0.0
+            ],
+            [
+              0.0,
+              0.9494640122511485,
+              0.0,
+              0.0
+            ]
+          ],
+          "complete_contribution_relative_error": 2.397971911705099e-05,
+          "candidate": {
+            "best_component_permutation": [
+              3,
+              0,
+              2,
+              1
+            ],
+            "score_mass": 235.2441444119824,
+            "runner_up_gap_mass": 10.513298425293073,
+            "active_groups": [
+              true,
+              true,
+              true,
+              true
+            ],
+            "per_group_duck_region_purity": [
+              0.0,
+              0.6157539846530705,
+              1.0,
+              1.0
+            ],
+            "all_four_groups_supported": false,
+            "physical_ID_confirmed": false
+          },
+          "native_total_duck_alpha_area": 1160.125244140625
+        },
+        {
+          "frame": 86,
+          "early_bank_alpha_share_on_any_duck": 0.0,
+          "early_bank_mass_on_duck": 0.0,
+          "early_bank_total_image_mass": 84.99148943916781,
+          "fraction_bank_mass_outside_ducks": 1.0,
+          "image_IDs_still_independently_verified": 1,
+          "supported_points_on_independently_verified_IDs": 0,
+          "supported_alpha_on_verified_IDs": 0.0,
+          "group_component_mass": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "group_center_component_fraction": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "complete_contribution_relative_error": 1.1025188541680109e-05,
+          "candidate": {
+            "best_component_permutation": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "score_mass": 0.0,
+            "runner_up_gap_mass": 0.0,
+            "active_groups": [
+              false,
+              false,
+              false,
+              false
+            ],
+            "per_group_duck_region_purity": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "all_four_groups_supported": false,
+            "physical_ID_confirmed": false
+          },
+          "native_total_duck_alpha_area": 1156.85400390625
+        },
+        {
+          "frame": 108,
+          "early_bank_alpha_share_on_any_duck": 0.0,
+          "early_bank_mass_on_duck": 0.0,
+          "early_bank_total_image_mass": 21.6039291676733,
+          "fraction_bank_mass_outside_ducks": 1.0,
+          "image_IDs_still_independently_verified": 1,
+          "supported_points_on_independently_verified_IDs": 0,
+          "supported_alpha_on_verified_IDs": 0.0,
+          "group_component_mass": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "group_center_component_fraction": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "complete_contribution_relative_error": 1.2135067663621157e-05,
+          "candidate": {
+            "best_component_permutation": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "score_mass": 0.0,
+            "runner_up_gap_mass": 0.0,
+            "active_groups": [
+              false,
+              false,
+              false,
+              false
+            ],
+            "per_group_duck_region_purity": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "all_four_groups_supported": false,
+            "physical_ID_confirmed": false
+          },
+          "native_total_duck_alpha_area": 1115.0947265625
+        },
+        {
+          "frame": 134,
+          "early_bank_alpha_share_on_any_duck": 0.0,
+          "early_bank_mass_on_duck": 0.0,
+          "early_bank_total_image_mass": 27.940714928169054,
+          "fraction_bank_mass_outside_ducks": 1.0,
+          "image_IDs_still_independently_verified": 1,
+          "supported_points_on_independently_verified_IDs": 0,
+          "supported_alpha_on_verified_IDs": 0.0,
+          "group_component_mass": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "group_center_component_fraction": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "complete_contribution_relative_error": 2.722362660279032e-05,
+          "candidate": {
+            "best_component_permutation": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "score_mass": 0.0,
+            "runner_up_gap_mass": 0.0,
+            "active_groups": [
+              false,
+              false,
+              false,
+              false
+            ],
+            "per_group_duck_region_purity": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "all_four_groups_supported": false,
+            "physical_ID_confirmed": false
+          },
+          "native_total_duck_alpha_area": 1106.5391845703125
+        },
+        {
+          "frame": 172,
+          "early_bank_alpha_share_on_any_duck": 0.0,
+          "early_bank_mass_on_duck": 0.0,
+          "early_bank_total_image_mass": 57.37381998476076,
+          "fraction_bank_mass_outside_ducks": 1.0,
+          "image_IDs_still_independently_verified": 0,
+          "supported_points_on_independently_verified_IDs": 0,
+          "supported_alpha_on_verified_IDs": 0.0,
+          "group_component_mass": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "group_center_component_fraction": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "complete_contribution_relative_error": 6.743106951034861e-06,
+          "candidate": {
+            "best_component_permutation": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "score_mass": 0.0,
+            "runner_up_gap_mass": 0.0,
+            "active_groups": [
+              false,
+              false,
+              false,
+              false
+            ],
+            "per_group_duck_region_purity": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "all_four_groups_supported": false,
+            "physical_ID_confirmed": false
+          },
+          "native_total_duck_alpha_area": 944.7835693359375
+        },
+        {
+          "frame": 188,
+          "early_bank_alpha_share_on_any_duck": 0.0,
+          "early_bank_mass_on_duck": 0.0,
+          "early_bank_total_image_mass": 43.65202239035424,
+          "fraction_bank_mass_outside_ducks": 1.0,
+          "image_IDs_still_independently_verified": 0,
+          "supported_points_on_independently_verified_IDs": 0,
+          "supported_alpha_on_verified_IDs": 0.0,
+          "group_component_mass": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "group_center_component_fraction": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "complete_contribution_relative_error": 6.966205091885058e-06,
+          "candidate": {
+            "best_component_permutation": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "score_mass": 0.0,
+            "runner_up_gap_mass": 0.0,
+            "active_groups": [
+              false,
+              false,
+              false,
+              false
+            ],
+            "per_group_duck_region_purity": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "all_four_groups_supported": false,
+            "physical_ID_confirmed": false
+          },
+          "native_total_duck_alpha_area": 872.5565185546875
+        },
+        {
+          "frame": 200,
+          "early_bank_alpha_share_on_any_duck": 0.0,
+          "early_bank_mass_on_duck": 0.0,
+          "early_bank_total_image_mass": 35.41310491755023,
+          "fraction_bank_mass_outside_ducks": 1.0,
+          "image_IDs_still_independently_verified": 0,
+          "supported_points_on_independently_verified_IDs": 0,
+          "supported_alpha_on_verified_IDs": 0.0,
+          "group_component_mass": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "group_center_component_fraction": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "complete_contribution_relative_error": 7.96435142547125e-06,
+          "candidate": {
+            "best_component_permutation": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "score_mass": 0.0,
+            "runner_up_gap_mass": 0.0,
+            "active_groups": [
+              false,
+              false,
+              false,
+              false
+            ],
+            "per_group_duck_region_purity": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "all_four_groups_supported": false,
+            "physical_ID_confirmed": false
+          },
+          "native_total_duck_alpha_area": 862.5635986328125
+        }
+      ]
+    },
+    "T1_association": {
+      "validation": {
+        "PSNR": 39.53545068105062,
+        "SSIM": 0.9942110737164815,
+        "LPIPS": 0.01472347842839857,
+        "MS-SSIM": 0.9960992276668549
+      },
+      "windows": {
+        "early_2_27": {
+          "frames": 16,
+          "mean_early_bank_alpha_share_on_any_duck": 0.6521941933636114,
+          "mean_bank_mass_outside_ducks": 0.0009626218036588793,
+          "mean_supported_points_on_verified_IDs": 1859.75,
+          "frames_with_four_supported_candidate_groups": 16,
+          "observable_point_pairs": 27583,
+          "observed_flow_agreement_fraction": 1.0
+        },
+        "pre_first_fragment_end_28_42": {
+          "frames": 9,
+          "mean_early_bank_alpha_share_on_any_duck": 0.6441360091918168,
+          "mean_bank_mass_outside_ducks": 0.0267539032702337,
+          "mean_supported_points_on_verified_IDs": 1426.5555555555557,
+          "frames_with_four_supported_candidate_groups": 9,
+          "observable_point_pairs": 12370,
+          "observed_flow_agreement_fraction": 0.9936135812449475
+        },
+        "after_first_fragment_end_43_145": {
+          "frames": 61,
+          "mean_early_bank_alpha_share_on_any_duck": 0.1446234191572777,
+          "mean_bank_mass_outside_ducks": 0.7009709330595837,
+          "mean_supported_points_on_verified_IDs": 209.0655737704918,
+          "frames_with_four_supported_candidate_groups": 0,
+          "observable_point_pairs": 14116,
+          "observed_flow_agreement_fraction": 0.9628081609521111
+        },
+        "all_early_IDs_unverified_146_200": {
+          "frames": 34,
+          "mean_early_bank_alpha_share_on_any_duck": 0.0,
+          "mean_bank_mass_outside_ducks": 1.0,
+          "mean_supported_points_on_verified_IDs": 0.0,
+          "frames_with_four_supported_candidate_groups": 0,
+          "observable_point_pairs": 0,
+          "observed_flow_agreement_fraction": null
+        }
+      },
+      "selected_frames": [
+        {
+          "frame": 2,
+          "early_bank_alpha_share_on_any_duck": 0.6425735805170194,
+          "early_bank_mass_on_duck": 792.5817239997923,
+          "early_bank_total_image_mass": 793.5667643606066,
+          "fraction_bank_mass_outside_ducks": 0.0012412822777526644,
+          "image_IDs_still_independently_verified": 4,
+          "supported_points_on_independently_verified_IDs": 1874,
+          "supported_alpha_on_verified_IDs": 0.639248113403494,
+          "group_component_mass": [
+            [
+              162.42413877299987,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              143.62191256065853,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              112.94036321106978,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              373.59529813739937
+            ]
+          ],
+          "group_center_component_fraction": [
+            [
+              0.9957627118644068,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.9642857142857143,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.9966555183946488,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.9923430321592649
+            ]
+          ],
+          "complete_contribution_relative_error": 7.870487934269477e-06,
+          "candidate": {
+            "best_component_permutation": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "score_mass": 792.5817126821275,
+            "runner_up_gap_mass": 256.5622757717283,
+            "active_groups": [
+              true,
+              true,
+              true,
+              true
+            ],
+            "per_group_duck_region_purity": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "all_four_groups_supported": true,
+            "physical_ID_confirmed": false
+          },
+          "native_total_duck_alpha_area": 1233.448974609375
+        },
+        {
+          "frame": 27,
+          "early_bank_alpha_share_on_any_duck": 0.6628831417303893,
+          "early_bank_mass_on_duck": 765.4773357678812,
+          "early_bank_total_image_mass": 766.8319058030811,
+          "fraction_bank_mass_outside_ducks": 0.0017664497590007544,
+          "image_IDs_still_independently_verified": 4,
+          "supported_points_on_independently_verified_IDs": 1768,
+          "supported_alpha_on_verified_IDs": 0.6570090850651354,
+          "group_component_mass": [
+            [
+              155.3634630885208,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              137.66439106406312,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              125.84355777741754,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              346.6059205153433
+            ]
+          ],
+          "group_center_component_fraction": [
+            [
+              0.9872881355932204,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.9508928571428571,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.9464882943143813,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.9908116385911179
+            ]
+          ],
+          "complete_contribution_relative_error": 1.5541863831458613e-05,
+          "candidate": {
+            "best_component_permutation": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "score_mass": 765.4773324453448,
+            "runner_up_gap_mass": 263.5079488414807,
+            "active_groups": [
+              true,
+              true,
+              true,
+              true
+            ],
+            "per_group_duck_region_purity": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "all_four_groups_supported": true,
+            "physical_ID_confirmed": false
+          },
+          "native_total_duck_alpha_area": 1154.7696533203125
+        },
+        {
+          "frame": 43,
+          "early_bank_alpha_share_on_any_duck": 0.5970429647387199,
+          "early_bank_mass_on_duck": 640.4970810658801,
+          "early_bank_total_image_mass": 680.5338571400823,
+          "fraction_bank_mass_outside_ducks": 0.05883142426220378,
+          "image_IDs_still_independently_verified": 2,
+          "supported_points_on_independently_verified_IDs": 863,
+          "supported_alpha_on_verified_IDs": 0.3060615797047335,
+          "group_component_mass": [
+            [
+              132.76298044624536,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.01998472586274147,
+              76.12543552939921,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              171.4351145494989,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              260.15357283110177,
+              0.0
+            ]
+          ],
+          "group_center_component_fraction": [
+            [
+              0.9322033898305084,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.8214285714285714,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.9130434782608695,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.9915773353751914,
+              0.0
+            ]
+          ],
+          "complete_contribution_relative_error": 4.4606331357499585e-06,
+          "candidate": null,
+          "native_total_duck_alpha_area": 1072.7822265625
+        },
+        {
+          "frame": 55,
+          "early_bank_alpha_share_on_any_duck": 0.5505216006082789,
+          "early_bank_mass_on_duck": 601.5305988552644,
+          "early_bank_total_image_mass": 682.7858927682546,
+          "fraction_bank_mass_outside_ducks": 0.11900552541229659,
+          "image_IDs_still_independently_verified": 1,
+          "supported_points_on_independently_verified_IDs": 604,
+          "supported_alpha_on_verified_IDs": 0.1823096762282197,
+          "group_component_mass": [
+            [
+              96.15221330731038,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              48.06113654699868,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              5.1859622731863055,
+              188.86695392664433,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              263.2643257583918,
+              0.0
+            ]
+          ],
+          "group_center_component_fraction": [
+            [
+              0.8516949152542372,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.9196428571428571,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.026755852842809364,
+              0.2842809364548495,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.9257274119448698,
+              0.0
+            ]
+          ],
+          "complete_contribution_relative_error": 1.4576231478713453e-05,
+          "candidate": null,
+          "native_total_duck_alpha_area": 1092.65576171875
+        },
+        {
+          "frame": 63,
+          "early_bank_alpha_share_on_any_duck": 0.4130580756634451,
+          "early_bank_mass_on_duck": 472.21351836372054,
+          "early_bank_total_image_mass": 538.9217347428707,
+          "fraction_bank_mass_outside_ducks": 0.12378089818733673,
+          "image_IDs_still_independently_verified": 1,
+          "supported_points_on_independently_verified_IDs": 602,
+          "supported_alpha_on_verified_IDs": 0.1508369552992865,
+          "group_component_mass": [
+            [
+              0.014915276959072798,
+              1.305676913318564,
+              0.0,
+              0.0
+            ],
+            [
+              35.3081371172252,
+              0.8240302813330125,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              25.12260706026609,
+              0.0,
+              195.72996235918254
+            ],
+            [
+              0.0,
+              0.0,
+              213.90816732384252,
+              0.0
+            ]
+          ],
+          "group_center_component_fraction": [
+            [
+              0.0,
+              0.4194915254237288,
+              0.0,
+              0.0
+            ],
+            [
+              0.15178571428571427,
+              0.05357142857142857,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.48494983277591974,
+              0.0,
+              0.20066889632107024
+            ],
+            [
+              0.0,
+              0.0,
+              0.9586523736600306,
+              0.0
+            ]
+          ],
+          "complete_contribution_relative_error": 1.8509839719627053e-05,
+          "candidate": {
+            "best_component_permutation": [
+              1,
+              0,
+              3,
+              2
+            ],
+            "score_mass": 446.25194371356883,
+            "runner_up_gap_mass": 35.77486847225168,
+            "active_groups": [
+              true,
+              true,
+              true,
+              true
+            ],
+            "per_group_duck_region_purity": [
+              0.9887056147470196,
+              0.9771939980172379,
+              0.8862471596943361,
+              1.0
+            ],
+            "all_four_groups_supported": false,
+            "physical_ID_confirmed": false
+          },
+          "native_total_duck_alpha_area": 1143.21337890625
+        },
+        {
+          "frame": 74,
+          "early_bank_alpha_share_on_any_duck": 0.15064879789008684,
+          "early_bank_mass_on_duck": 174.70113265390523,
+          "early_bank_total_image_mass": 224.930070500078,
+          "fraction_bank_mass_outside_ducks": 0.22330912774134992,
+          "image_IDs_still_independently_verified": 1,
+          "supported_points_on_independently_verified_IDs": 410,
+          "supported_alpha_on_verified_IDs": 0.09703652460755753,
+          "group_component_mass": [
+            [
+              0.0,
+              0.0,
+              0.15402861053149763,
+              0.0
+            ],
+            [
+              3.5963701362218217,
+              0.0,
+              2.6410535022246115,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              15.170650993801246,
+              0.0
+            ],
+            [
+              0.0,
+              153.13903324368258,
+              0.0,
+              0.0
+            ]
+          ],
+          "group_center_component_fraction": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.12946428571428573,
+              0.0,
+              0.125,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.006688963210702341,
+              0.0
+            ],
+            [
+              0.0,
+              0.94104134762634,
+              0.0,
+              0.0
+            ]
+          ],
+          "complete_contribution_relative_error": 5.34982027602382e-05,
+          "candidate": {
+            "best_component_permutation": [
+              3,
+              0,
+              2,
+              1
+            ],
+            "score_mass": 171.90605437370564,
+            "runner_up_gap_mass": 3.5963701362218217,
+            "active_groups": [
+              false,
+              true,
+              true,
+              true
+            ],
+            "per_group_duck_region_purity": [
+              0.0,
+              0.5765794252060096,
+              1.0,
+              1.0
+            ],
+            "all_four_groups_supported": false,
+            "physical_ID_confirmed": false
+          },
+          "native_total_duck_alpha_area": 1159.6583251953125
+        },
+        {
+          "frame": 86,
+          "early_bank_alpha_share_on_any_duck": 0.0,
+          "early_bank_mass_on_duck": 0.0,
+          "early_bank_total_image_mass": 81.7878296788912,
+          "fraction_bank_mass_outside_ducks": 1.0,
+          "image_IDs_still_independently_verified": 1,
+          "supported_points_on_independently_verified_IDs": 0,
+          "supported_alpha_on_verified_IDs": 0.0,
+          "group_component_mass": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "group_center_component_fraction": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "complete_contribution_relative_error": 2.1920233848504722e-05,
+          "candidate": {
+            "best_component_permutation": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "score_mass": 0.0,
+            "runner_up_gap_mass": 0.0,
+            "active_groups": [
+              false,
+              false,
+              false,
+              false
+            ],
+            "per_group_duck_region_purity": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "all_four_groups_supported": false,
+            "physical_ID_confirmed": false
+          },
+          "native_total_duck_alpha_area": 1156.8671875
+        },
+        {
+          "frame": 108,
+          "early_bank_alpha_share_on_any_duck": 0.0,
+          "early_bank_mass_on_duck": 0.0,
+          "early_bank_total_image_mass": 18.42077634936213,
+          "fraction_bank_mass_outside_ducks": 1.0,
+          "image_IDs_still_independently_verified": 1,
+          "supported_points_on_independently_verified_IDs": 0,
+          "supported_alpha_on_verified_IDs": 0.0,
+          "group_component_mass": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "group_center_component_fraction": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "complete_contribution_relative_error": 9.235600373358466e-06,
+          "candidate": {
+            "best_component_permutation": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "score_mass": 0.0,
+            "runner_up_gap_mass": 0.0,
+            "active_groups": [
+              false,
+              false,
+              false,
+              false
+            ],
+            "per_group_duck_region_purity": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "all_four_groups_supported": false,
+            "physical_ID_confirmed": false
+          },
+          "native_total_duck_alpha_area": 1115.077392578125
+        },
+        {
+          "frame": 134,
+          "early_bank_alpha_share_on_any_duck": 0.0,
+          "early_bank_mass_on_duck": 0.0,
+          "early_bank_total_image_mass": 22.830545165303036,
+          "fraction_bank_mass_outside_ducks": 1.0,
+          "image_IDs_still_independently_verified": 1,
+          "supported_points_on_independently_verified_IDs": 0,
+          "supported_alpha_on_verified_IDs": 0.0,
+          "group_component_mass": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "group_center_component_fraction": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "complete_contribution_relative_error": 1.625325603527017e-05,
+          "candidate": {
+            "best_component_permutation": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "score_mass": 0.0,
+            "runner_up_gap_mass": 0.0,
+            "active_groups": [
+              false,
+              false,
+              false,
+              false
+            ],
+            "per_group_duck_region_purity": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "all_four_groups_supported": false,
+            "physical_ID_confirmed": false
+          },
+          "native_total_duck_alpha_area": 1106.517578125
+        },
+        {
+          "frame": 172,
+          "early_bank_alpha_share_on_any_duck": 0.0,
+          "early_bank_mass_on_duck": 0.0,
+          "early_bank_total_image_mass": 55.69748839846956,
+          "fraction_bank_mass_outside_ducks": 1.0,
+          "image_IDs_still_independently_verified": 0,
+          "supported_points_on_independently_verified_IDs": 0,
+          "supported_alpha_on_verified_IDs": 0.0,
+          "group_component_mass": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "group_center_component_fraction": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "complete_contribution_relative_error": 2.907074667746201e-05,
+          "candidate": {
+            "best_component_permutation": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "score_mass": 0.0,
+            "runner_up_gap_mass": 0.0,
+            "active_groups": [
+              false,
+              false,
+              false,
+              false
+            ],
+            "per_group_duck_region_purity": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "all_four_groups_supported": false,
+            "physical_ID_confirmed": false
+          },
+          "native_total_duck_alpha_area": 944.777099609375
+        },
+        {
+          "frame": 188,
+          "early_bank_alpha_share_on_any_duck": 0.0,
+          "early_bank_mass_on_duck": 0.0,
+          "early_bank_total_image_mass": 41.320234423405054,
+          "fraction_bank_mass_outside_ducks": 1.0,
+          "image_IDs_still_independently_verified": 0,
+          "supported_points_on_independently_verified_IDs": 0,
+          "supported_alpha_on_verified_IDs": 0.0,
+          "group_component_mass": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "group_center_component_fraction": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "complete_contribution_relative_error": 3.4456683351891115e-05,
+          "candidate": {
+            "best_component_permutation": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "score_mass": 0.0,
+            "runner_up_gap_mass": 0.0,
+            "active_groups": [
+              false,
+              false,
+              false,
+              false
+            ],
+            "per_group_duck_region_purity": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "all_four_groups_supported": false,
+            "physical_ID_confirmed": false
+          },
+          "native_total_duck_alpha_area": 872.5534057617188
+        },
+        {
+          "frame": 200,
+          "early_bank_alpha_share_on_any_duck": 0.0,
+          "early_bank_mass_on_duck": 0.0,
+          "early_bank_total_image_mass": 33.006755698467046,
+          "fraction_bank_mass_outside_ducks": 1.0,
+          "image_IDs_still_independently_verified": 0,
+          "supported_points_on_independently_verified_IDs": 0,
+          "supported_alpha_on_verified_IDs": 0.0,
+          "group_component_mass": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "group_center_component_fraction": [
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "complete_contribution_relative_error": 2.0693856640718877e-05,
+          "candidate": {
+            "best_component_permutation": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "score_mass": 0.0,
+            "runner_up_gap_mass": 0.0,
+            "active_groups": [
+              false,
+              false,
+              false,
+              false
+            ],
+            "per_group_duck_region_purity": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "all_four_groups_supported": false,
+            "physical_ID_confirmed": false
+          },
+          "native_total_duck_alpha_area": 862.5587158203125
+        }
+      ]
+    }
+  },
+  "T1_minus_T0_validation": {
+    "PSNR": -0.006807009379066642,
+    "SSIM": -6.788969039939197e-06,
+    "LPIPS": 1.934344569842067e-05,
+    "MS-SSIM": -3.2643477121396813e-06
+  },
+  "temporal_training_signal_by_window": {
+    "early_2_27": {
+      "events": 13,
+      "zero_temporal_events": 0,
+      "mean_temporal": 0.020898184882333644
+    },
+    "pre_first_fragment_end_28_42": {
+      "events": 7,
+      "zero_temporal_events": 0,
+      "mean_temporal": 0.03375481042478766
+    },
+    "after_first_fragment_end_43_145": {
+      "events": 51,
+      "zero_temporal_events": 31,
+      "mean_temporal": 0.06659884663189158
+    },
+    "all_early_IDs_unverified_146_200": {
+      "events": 29,
+      "zero_temporal_events": 29,
+      "mean_temporal": 0.0
+    }
+  },
+  "true_physical_ID_accuracy_available": false,
+  "physical_reidentification_demonstrated": false,
+  "conclusion": "Early local purity improves while visible contribution shrinks; no post-occlusion support extension in this matched2000-update pilot.",
+  "limits": "One fixed-weight continuation pilot, one scene and seed; not proof that all association losses or longer/different training must fail.",
+  "window_definition": {
+    "early_2_27": [
+      2,
+      27
+    ],
+    "pre_first_fragment_end_28_42": [
+      28,
+      42
+    ],
+    "after_first_fragment_end_43_145": [
+      43,
+      145
+    ],
+    "all_early_IDs_unverified_146_200": [
+      146,
+      200
+    ]
+  },
+  "manual_review": "See manual_review.json; generated images do not imply they were all manually inspected."
+}

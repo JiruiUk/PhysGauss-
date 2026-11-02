@@ -1,0 +1,21 @@
+{
+  "reviewed_files": {
+    "output\\association_training\\support_comparison.png": "f9440ac1574d7c40ff63bde6d3a9f0a0597f36f4cd14c7a864504f0cc036351a",
+    "output\\association_training\\rgb_comparison.png": "002f737c6b65f68b4789f6a159e5e65939cc192763d568043a31d2fc4fc736da",
+    "output\\association_training\\groups_comparison.png": "579559023040df916be275456adc7505fec4b56210e62148fa140d0d91d866f1",
+    "output\\association_training\\centers_comparison.png": "c00a9c6df2f9e76c57d256b3633216444ef74d45b5b3fac499eda38d437e926b",
+    "output\\association_training\\T1_association\\native_GT_Render0074.png": "423096e74e0caaff9d18b094c06341760ffb17cd1ad166387556ada6b01a6bc1",
+    "output\\association_training\\T1_association\\native_GT_Render0200.png": "559a6cf22c77ddcb2d575cdb1c7583e7816ca82ade5ea2398c318090bca352eb"
+  },
+  "scope": "Four original frames43/74/86/200 across all3 models in RGB/group/center contact sheets; support timeline; T1 native GT|Render at74 and200.",
+  "observations": [
+    "Small differences in RGB; no visibly recovered persistent early bank after occlusion.",
+    "At74, several early projected centers lie on the blue structure while group contribution no longer covers all visible ducks.",
+    "At200, old colored centers/contribution remain on blue/background regions; visible ducks are rendered by other rows."
+  ],
+  "not_claimed": [
+    "Manual inspection of all120 support frames or all30 validation frames",
+    "True physical identity labels",
+    "Video playback"
+  ]
+}
