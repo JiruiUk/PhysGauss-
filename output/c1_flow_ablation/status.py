@@ -3,6 +3,7 @@ import json
 from pathlib import Path
 import re
 import sys
+sys.stdout.reconfigure(encoding='utf-8', errors='replace')
 ROOT=Path(__file__).resolve().parents[2]
 sys.path.insert(0,str(ROOT))
 from variants.c1_flow_ablation.run import RUNS,NAMES,REPORTS
