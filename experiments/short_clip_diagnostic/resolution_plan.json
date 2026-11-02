@@ -1,0 +1,9 @@
+{
+  "trigger": "Diagnostic direct400 RGB scores differ substantially from historical1600 training/evaluation scores. Check resolution/preprocessing before interpreting reconstruction error.",
+  "scope": "Four fixed clip endpoints and preceding observations:7/8,12/14,26/27,199/200",
+  "held_fixed": "Same frozen C1, same400-selected canonical banks, poses/FoV, times,400 region masks and original scalar gates; no reselection or retraining",
+  "native_width": 1600,
+  "mass_control": "Nearest upsample400 region masks by4; extract full color-adjoint contribution at1600; divide integrated weights by16 to compare alpha-area units. Projected center/source-flow checks remain in400 coordinates.",
+  "RGB_control": "Use original training RGB preprocessing (premultiply original RGBA on black, uint8, default PIL resize), compare direct400 and1600, and1600 rendered RGB downsampled to400. Do not equate400 diagnostic scores with historical test benchmark.",
+  "interpretation": "Post-result numerical/rendering sensitivity control, no training or camera/model change; native mask boundaries still depend on400 fragment evidence"
+}

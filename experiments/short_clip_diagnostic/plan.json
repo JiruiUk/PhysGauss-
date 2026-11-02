@@ -1,0 +1,17 @@
+{
+  "purpose": "Run the four previously selected fixed training clips to separate image correspondence, camera convention and C1 fixed-surface support failures",
+  "clips_from": "experiments/short_clip_audit/results.json:selected; no reselection by diagnostic results",
+  "training": "Read-only historical C1 final50000; zero optimizer updates and no new trainable parameters",
+  "image_checks": "Raw UniMatch FB support plus independently computed OpenCV sparse pyramidal LK forward/backward tracking, inside same source/target yellow component or blue region",
+  "LK_fixed_parameters": {"max_corners_per_region": 300, "quality_level": 0.003, "minimum_distance_pixels": 4, "window": 21, "pyramid_levels": 3, "maximum_FB_error_pixels": 0.5, "maximum_photometric_error": 20, "mask_erosion_pixels": 2},
+  "camera_hypotheses": ["legacy_pose__legacy_K", "legacy_pose__metadata_K", "metadata_cv_pose__legacy_K", "metadata_cv_pose__metadata_K"],
+  "camera_test": "Depth-free Sampson epipolar distance on source/target blue region correspondences, separately for raw flow and LK. Blue structures assumed static only for this conditional test. No K/pose fitting. Metadata-conventional hypothesis is not declared GT.",
+  "model_test": "Select independent fixed local banks from first3 observations of each distinct clip start (2,15,188), with original S1 thresholds. Exclude seed frames from forward evaluation. Short2–8 is nested in2–14 and shares seeds, not an independent replication.",
+  "full_mass_channels": ["yellow_component0", "yellow_component1", "yellow_component2", "yellow_component3", "blue_region", "whole_image"],
+  "surface_gate": "Same original S1 mass/purity/center/raw-flow gates plus source AND target visible footprint and center support in same local fragment. No motion extrapolation as identity evidence.",
+  "camera_object_split": "At C1 source3D center, project with next camera while holding world position fixed; compare camera-only and actual projected motion with observed flow. Depends on C1 depth, not independent3D GT.",
+  "counterfactuals_at_last_frame": ["normal complete scene", "same frozen bank alone, actual footprint", "same isolated bank with first-seed footprint, current centers", "same isolated bank with first-seed world centers, current footprint"],
+  "limits": "Short baselines, blue-region stationarity, estimated flow/LK errors and unknown physical IDs limit causal claims. Counterfactual restorations only show sufficient modeled factors, not true motion/geometry. Old C1 cannot be judged by switching camera conventions without retraining.",
+  "outputs": "Per-pair image/camera scores, local bank support and flow decomposition, controlled footprint/occlusion/center probes, GT|C1 review figures, independent SHA/pixel/gate verification and assessment",
+  "historical_source_config_data_unchanged": true
+}

@@ -1,5 +1,24 @@
 # PIDG repository map — M0
 
+## Fixed short-clip C1 diagnostic (2026-11-02)
+
+`output/short_clip_diagnostic/image_camera.py` computes independent sparse LK
+and raw-flow static-blue epipolar checks for four fixed camera hypotheses.
+`camera_math.py` explicitly separates loader conventions and metadata hypotheses;
+six CPU tests cover projection, epipolar geometry and camera/object decomposition.
+`model_check.py` uses the existing frozen C1 loader/renderer and complete color
+adjoints to select local fixed canonical banks from each clip's first3 views.
+`resolution_control.py` repeats all24 observations at the actual trained width1600,
+with unchanged masks/gates and both original400 and native-selected banks.
+`summarize.py` reports post-result cohort-gate sensitivity without threshold tuning.
+`finalize.py` produces plots/GT|Render gallery; `verify.py` independently checks
+camera arithmetic, bank membership, source/target unknowns, coverage, input/model
+SHA and48 pixel concatenations. Evidence is in `experiments/short_clip_diagnostic`;
+full numerical caches in `runs/pidg_short_clip_diagnostic/cache` must be retained.
+No model, optimizer, PIDG runtime, camera calibration or physical ID is modified.
+Direct400 splatting differs materially from trained1600 rendering; diagnostic
+coverage is not a geometry or material-identity accuracy score.
+
 ## Training-data short-clip selection (2026-11-02)
 
 `output/short_clip_audit/scan.py` searches all eight-observation Rubber Duck

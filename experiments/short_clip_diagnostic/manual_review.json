@@ -1,0 +1,17 @@
+{
+  "review_complete": true,
+  "reviewer": "Codex visual inspection",
+  "reviewed_figures": ["comparison.png", "late_gates.png", "blue_motion.png", "native_review.png", "LK_review.png"],
+  "full_size_native_GT_Render_reviewed": [200],
+  "contact_sheet_native_GT_Render_frames_reviewed": [8, 14, 27, 200],
+  "scope": "Four endpoint contact-sheet pairs and full-size frame200, not all24 native pairs or a video review",
+  "observations": [
+    "Endpoint silhouettes and blue structures visually align closely in the trained-resolution RGB comparisons; frame200 has localized softer duck detail in the C1 render.",
+    "LK endpoint samples fall on blue structures and duck regions, with sparse duck texture; this does not certify dense optical-flow or material identity accuracy.",
+    "The late-gate figure shows marginal threshold crossings and resolution-dependent footprint purity; rejecting an entire bank amplifies a small boundary discrepancy.",
+    "Blue-row world drift is conditional on treating the blue structures as static. The camera-only decomposition depends on C1 depth and cannot establish camera or geometry ground truth.",
+    "Native-resolution selection does not resolve all late local-support loss. The short2-8 control is nested in2-14 and is not an independent replicate."
+  ],
+  "physical_or_material_identity_GT_verified": false,
+  "training_or_model_changes": false
+}

@@ -1,0 +1,6 @@
+{
+  "reason": "After inspecting the frozen late-clip outcomes, some cohort rejections were borderline (purity94.5% vs95%, center89.8% vs90%) despite subpixel raw center flow error. Strict whole-bank rejection can overstate loss of local support.",
+  "analysis": "Report continuous gates and compare raw frozen-bank target mass, original cohort-plus-point accepted mass, and same per-point source/target gates without the additional cohort rejection. All existing scalar thresholds, rows and model weights unchanged.",
+  "status": "Post-result interpretability check, not prospectively declared independent hypothesis, no parameter selection or new training",
+  "purpose": "Avoid interpreting accepted coverage as geometric correctness or causal proof against C1"
+}

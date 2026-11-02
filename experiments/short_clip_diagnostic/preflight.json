@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "tests": 6,
+  "command": "envs/pidg-cu128/python.exe -m pytest tests/test_clip_camera_geometry.py -q -p no:cacheprovider",
+  "result": "6 passed in0.13s",
+  "checks": [
+    "Known static3D projections obey epipolar constraints",
+    "Wrong intrinsics yield nonzero static reprojection residual",
+    "Sampson scale invariance",
+    "Zero baseline is unidentifiable, not perfect",
+    "Legacy/metadata translations are explicit hypotheses",
+    "Camera/object projected displacement decomposition sums exactly"
+  ],
+  "new_physics_or_optimizer_module": false,
+  "new_model_training_steps": 0
+}

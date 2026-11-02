@@ -1,0 +1,36 @@
+W1102 21:54:08.184000 224348 envs\pidg-cu128\Lib\site-packages\torch\utils\cpp_extension.py:466] Error checking compiler version for cl: 'cp1' codec can't decode bytes in position 0--1: No mapping for the Unicode character exists in the target code page.
+ninja: no work to do.
+F:\A_Edinburgh\PhysGauss\variants\c1_flow_ablation\code\hashencoder\hashgrid.py:16: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.half)
+F:\A_Edinburgh\PhysGauss\variants\c1_flow_ablation\code\hashencoder\hashgrid.py:56: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+Load weight: F:\A_Edinburgh\PhysGauss\runs\pidg_color_repair\C1_repaired\rubber_duck\deform/iteration_50000/deform.pth
+C1 frame 2 duckMAE 0.02181272383057558
+C1 frame 3 duckMAE 0.021997792545221783
+C1 frame 6 duckMAE 0.020623017117530527
+C1 frame 7 duckMAE 0.020154109147522154
+C1 frame 8 duckMAE 0.02117210815768078
+C1 frame 10 duckMAE 0.020873056677289392
+C1 frame 12 duckMAE 0.02049042427815682
+C1 frame 14 duckMAE 0.020524951503263927
+C1 frame 15 duckMAE 0.021442869349094954
+C1 frame 16 duckMAE 0.021962543596953172
+C1 frame 19 duckMAE 0.02205105946558769
+C1 frame 20 duckMAE 0.020961352574953077
+C1 frame 22 duckMAE 0.020869742746453573
+C1 frame 23 duckMAE 0.020017321255754252
+C1 frame 26 duckMAE 0.020184537312053576
+C1 frame 27 duckMAE 0.0212279931778116
+C1 frame 188 duckMAE 0.025830022694854224
+C1 frame 190 duckMAE 0.027127531687936832
+C1 frame 192 duckMAE 0.027238260566837116
+C1 frame 194 duckMAE 0.024639508382944132
+C1 frame 195 duckMAE 0.02451691368409195
+C1 frame 196 duckMAE 0.02480934878452368
+C1 frame 199 duckMAE 0.028489712435774056
+C1 frame 200 duckMAE 0.02926957940152099
+clip completed clip1_0002_0014 0.6450596246135999
+clip completed clip2_0188_0200 0.3458680453292834
+clip completed clip3_0015_0027 0.6169551665894909
+clip completed clip4_0002_0008 0.6465386891433089
+FROZEN C1 SHORT CLIP CHECK COMPLETE

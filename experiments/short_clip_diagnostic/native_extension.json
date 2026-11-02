@@ -1,0 +1,10 @@
+{
+  "reason": "Endpoint1600 controls showed large RGB resolution effect and a cohort acceptance change. Extend to ALL24 fixed clip observations, not selected favorable endpoints.",
+  "comparisons": [
+    "400-selected banks evaluated at400",
+    "same400-selected banks evaluated at1600 normalized to400 mass units",
+    "banks selected from same first3 observations at1600, evaluated at1600"
+  ],
+  "held_fixed": "C1 checkpoint/weights, masks at400 upsampled, camera convention, clips, timestamps, same mass/purity/center/flow thresholds; no training",
+  "endpoint_initial_receipt": "resolution_endpoint_initial.json"
+}
