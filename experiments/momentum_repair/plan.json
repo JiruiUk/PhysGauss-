@@ -1,0 +1,17 @@
+{
+  "id": "M1_guarded_shared",
+  "recorded_before_full_training": true,
+  "motivation": "Three same-batch training-frame probes of frozen L1 show weighted momentum/image gradient ratios 4884-15748 on grid and 850-3241 on deformation; near-orthogonal gradients. This is local evidence, not a causal proof.",
+  "control": "Completed frozen L1_shared_stress, validation-selected snapshot; no control retraining",
+  "initialization": "Identical converted full 3000-step checkpoint e361f4ba241a77e4158d341986bf86f2797e24c9a560817b04ad6c18b3a4caa5; identical tensor, optimizer and RNG bytes. No new parameters or optimizer states.",
+  "intervention": "Flag momentum_gradient_guard. On each existing momentum event, cap weighted momentum gradient to 0.1 times same-batch RGB objective gradient in EACH shared group (Grid4D and deformation trunk/warp). One common scale is the minimum required by both groups. Preserve full stress-head and force_sigma gradients. Exact forward residual, first-order explicit gradient surrogate. This changes the gradient policy, not just a scalar objective weight.",
+  "cap": 0.1,
+  "cap_selection": "Prospective conservative reference ratio, no sweep or validation/test-based tuning",
+  "unchanged": ["50k total, 47k additional steps", "seed0", "120 train / 30 validation / 50 test", "1600-wide RGB", "corrected raw optical flow", "momentum and flow weight .01", "velocity h=.001 and acceleration h=1/199", "existing 100-step physics frequency and ramp", "shared stress architecture and initialization", "all image regularizers and learning rates"],
+  "preflight": ["unit tests", "real CUDA model gradients and actual optimizer updates", "100-step training with 70-to-100 complete recovery", "20-step all-flags-off", "guard-off exact parent path", "common full-start SHA"],
+  "budget": "One new 50k total run, one 100-step smoke and 20-step flags-off; no additional prefix fitting, no hyperparameter search. Completed L1 serves as control. Small diagnostic-only optimizer steps are discarded.",
+  "selection": "Lock validation PSNR maximum before opening new test RGB; historical test exposure disclosed. Export best and final GT|Render.",
+  "decision": "Report all axes independently. Image recovery: validation PSNR +>=1 dB with LPIPS no worse >5%. Composite benefit additionally requires independent validation raw-flow velocity EPE >=10% reduction, geometric EPE no worse >5%. Report unweighted momentum residual and finite-difference sensitivity separately; clipping is not physics truth. Do not silently tune or launch further full models.",
+  "limits": "Single scene/seed; gradient norms do not equal Adam parameter-update norms. Cap applies only to momentum component of shared gradients, not total update; stress head still changes shared features indirectly over time. Estimated 2D flow is not physical 3D GT. FD acceleration remains potentially unstable. No claim that missing external force is the cause.",
+  "preserve": "Original PIDG and previous frozen variants/data/models; no force/constitutive/material extension"
+}

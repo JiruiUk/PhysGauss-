@@ -1,5 +1,17 @@
 # PIDG repository map — M0
 
+## Momentum-gradient repair follow-up (2026-11-02)
+
+`variants/momentum_guard/runtime.py` optionally guards the inherited shared
+momentum loss with same-batch RGB gradients. `balance.py` defines the explicit
+first-order per-group policy, leaving private stress/rate-coefficient gradients
+unchanged; `tests/test_momentum_guard.py` checks the policy and exact guard-off
+parent path. `prepare.py` copies the frozen unified architecture and changes only
+the trainer runtime import. `run.py` / `verify_update.py` provide one matched
+full-state experiment, smoke/recovery/flags-off and real optimizer checks.
+`experiments/momentum_repair/{diagnosis,plan}.json` record evidence and prospective
+rules. This adds no constitutive or external-force module.
+
 ## Unified trajectory/stress follow-up (2026-11-02)
 
 `variants/unified_flow/code` is an independent frozen copy of the flow-comparison

@@ -1,0 +1,379 @@
+{
+  "status": "complete",
+  "probes": [
+    {
+      "model": "L0_corrected_trajectory",
+      "training_frame": 2,
+      "image_loss": 0.0032286830246448517,
+      "weighted_flow_loss": 2.5180790999002056e-06,
+      "weighted_momentum_loss": 1.4203743934631348,
+      "groups": {
+        "grid": {
+          "image_norm": 0.004639431024975217,
+          "flow_norm": 2.4536316442999205e-05,
+          "momentum_norm": 23.398701808948907,
+          "momentum_to_image": 5043.442112402975,
+          "momentum_image_cosine": -0.0060050685524597035
+        },
+        "deformation": {
+          "image_norm": 0.24481833824684218,
+          "flow_norm": 0.0011925808136856928,
+          "momentum_norm": 65.59321131016289,
+          "momentum_to_image": 267.92605398713,
+          "momentum_image_cosine": -0.008573005508442881
+        },
+        "stress": {
+          "image_norm": 0.0,
+          "flow_norm": 0.0,
+          "momentum_norm": 0.02941847104882227,
+          "momentum_to_image": null,
+          "momentum_image_cosine": null
+        }
+      },
+      "FD_step_sweep": [
+        {
+          "h": 0.010050251256281407,
+          "acceleration_rms": 57.62012481689453,
+          "relative_difference_to_finest": 1.0868839025497437
+        },
+        {
+          "h": 0.005025125628140704,
+          "acceleration_rms": 35.09461212158203,
+          "relative_difference_to_finest": 0.8364347815513611
+        },
+        {
+          "h": 0.002512562814070352,
+          "acceleration_rms": 36.25983810424805,
+          "relative_difference_to_finest": 0.7788909077644348
+        },
+        {
+          "h": 0.001256281407035176,
+          "acceleration_rms": 38.28046417236328,
+          "relative_difference_to_finest": 0.7051865458488464
+        },
+        {
+          "h": 0.000628140703517588,
+          "acceleration_rms": 45.903236389160156,
+          "relative_difference_to_finest": 0.4682910144329071
+        },
+        {
+          "h": 0.000314070351758794,
+          "acceleration_rms": 61.41761016845703,
+          "relative_difference_to_finest": 0.0
+        }
+      ]
+    },
+    {
+      "model": "L0_corrected_trajectory",
+      "training_frame": 83,
+      "image_loss": 0.009088260121643543,
+      "weighted_flow_loss": 8.354519377462566e-05,
+      "weighted_momentum_loss": 1.5669589042663574,
+      "groups": {
+        "grid": {
+          "image_norm": 0.005878451084761432,
+          "flow_norm": 7.443841223420862e-05,
+          "momentum_norm": 17.264443686981426,
+          "momentum_to_image": 2936.90352068007,
+          "momentum_image_cosine": -0.07909838442999
+        },
+        "deformation": {
+          "image_norm": 0.12428510827074651,
+          "flow_norm": 0.0010083304711078207,
+          "momentum_norm": 66.0486651014657,
+          "momentum_to_image": 531.4286322829864,
+          "momentum_image_cosine": 0.0027085802707931365
+        },
+        "stress": {
+          "image_norm": 0.0,
+          "flow_norm": 0.0,
+          "momentum_norm": 0.03308553852969882,
+          "momentum_to_image": null,
+          "momentum_image_cosine": null
+        }
+      },
+      "FD_step_sweep": [
+        {
+          "h": 0.010050251256281407,
+          "acceleration_rms": 40.89827346801758,
+          "relative_difference_to_finest": 0.8356600403785706
+        },
+        {
+          "h": 0.005025125628140704,
+          "acceleration_rms": 43.08019256591797,
+          "relative_difference_to_finest": 0.8017258048057556
+        },
+        {
+          "h": 0.002512562814070352,
+          "acceleration_rms": 48.378658294677734,
+          "relative_difference_to_finest": 0.7435033321380615
+        },
+        {
+          "h": 0.001256281407035176,
+          "acceleration_rms": 53.88882064819336,
+          "relative_difference_to_finest": 0.6237041354179382
+        },
+        {
+          "h": 0.000628140703517588,
+          "acceleration_rms": 59.61760330200195,
+          "relative_difference_to_finest": 0.3817565143108368
+        },
+        {
+          "h": 0.000314070351758794,
+          "acceleration_rms": 77.84487915039062,
+          "relative_difference_to_finest": 0.0
+        }
+      ]
+    },
+    {
+      "model": "L0_corrected_trajectory",
+      "training_frame": 155,
+      "image_loss": 0.005717592313885689,
+      "weighted_flow_loss": 1.2141761544626206e-05,
+      "weighted_momentum_loss": 2.3293962478637695,
+      "groups": {
+        "grid": {
+          "image_norm": 0.003735871503395805,
+          "flow_norm": 1.624655245897359e-05,
+          "momentum_norm": 82.45116150583867,
+          "momentum_to_image": 22070.127795052056,
+          "momentum_image_cosine": 0.02466449505013293
+        },
+        "deformation": {
+          "image_norm": 0.16193535119578803,
+          "flow_norm": 0.001027192114266348,
+          "momentum_norm": 634.603967237129,
+          "momentum_to_image": 3918.872331155541,
+          "momentum_image_cosine": -0.006371495278770091
+        },
+        "stress": {
+          "image_norm": 0.0,
+          "flow_norm": 0.0,
+          "momentum_norm": 0.052093586030425014,
+          "momentum_to_image": null,
+          "momentum_image_cosine": null
+        }
+      },
+      "FD_step_sweep": [
+        {
+          "h": 0.010050251256281407,
+          "acceleration_rms": 28.461505889892578,
+          "relative_difference_to_finest": 0.9416871666908264
+        },
+        {
+          "h": 0.005025125628140704,
+          "acceleration_rms": 30.99421501159668,
+          "relative_difference_to_finest": 0.9045530557632446
+        },
+        {
+          "h": 0.002512562814070352,
+          "acceleration_rms": 36.86709213256836,
+          "relative_difference_to_finest": 0.8408707976341248
+        },
+        {
+          "h": 0.001256281407035176,
+          "acceleration_rms": 46.808528900146484,
+          "relative_difference_to_finest": 0.7135149240493774
+        },
+        {
+          "h": 0.000628140703517588,
+          "acceleration_rms": 62.081966400146484,
+          "relative_difference_to_finest": 0.4622463583946228
+        },
+        {
+          "h": 0.000314070351758794,
+          "acceleration_rms": 87.46259307861328,
+          "relative_difference_to_finest": 0.0
+        }
+      ]
+    },
+    {
+      "model": "L1_shared_stress",
+      "training_frame": 2,
+      "image_loss": 0.0028957673348486423,
+      "weighted_flow_loss": 2.5942010779544944e-06,
+      "weighted_momentum_loss": 2.114969253540039,
+      "groups": {
+        "grid": {
+          "image_norm": 0.007739392915935574,
+          "flow_norm": 3.440104635679189e-05,
+          "momentum_norm": 37.79789952492975,
+          "momentum_to_image": 4883.83261264628,
+          "momentum_image_cosine": -0.048619442202347186
+        },
+        "deformation": {
+          "image_norm": 0.43260575091050735,
+          "flow_norm": 0.001665125101895722,
+          "momentum_norm": 367.829591658488,
+          "momentum_to_image": 850.2651453068189,
+          "momentum_image_cosine": -0.0246320495505908
+        },
+        "stress": {
+          "image_norm": 0.0,
+          "flow_norm": 0.0,
+          "momentum_norm": 0.001766501073462521,
+          "momentum_to_image": null,
+          "momentum_image_cosine": null
+        }
+      },
+      "FD_step_sweep": [
+        {
+          "h": 0.010050251256281407,
+          "acceleration_rms": 42.97483825683594,
+          "relative_difference_to_finest": 0.8944797515869141
+        },
+        {
+          "h": 0.005025125628140704,
+          "acceleration_rms": 24.19563865661621,
+          "relative_difference_to_finest": 0.7596197724342346
+        },
+        {
+          "h": 0.002512562814070352,
+          "acceleration_rms": 24.585771560668945,
+          "relative_difference_to_finest": 0.7220754623413086
+        },
+        {
+          "h": 0.001256281407035176,
+          "acceleration_rms": 27.102705001831055,
+          "relative_difference_to_finest": 0.6280244588851929
+        },
+        {
+          "h": 0.000628140703517588,
+          "acceleration_rms": 32.3112907409668,
+          "relative_difference_to_finest": 0.4001173675060272
+        },
+        {
+          "h": 0.000314070351758794,
+          "acceleration_rms": 43.93943786621094,
+          "relative_difference_to_finest": 0.0
+        }
+      ]
+    },
+    {
+      "model": "L1_shared_stress",
+      "training_frame": 83,
+      "image_loss": 0.009849615395069122,
+      "weighted_flow_loss": 8.069766772678122e-05,
+      "weighted_momentum_loss": 3.3617937564849854,
+      "groups": {
+        "grid": {
+          "image_norm": 0.006546335382509414,
+          "flow_norm": 6.284403517142791e-05,
+          "momentum_norm": 57.03137132704389,
+          "momentum_to_image": 8711.95378706399,
+          "momentum_image_cosine": -0.0072442463190938
+        },
+        "deformation": {
+          "image_norm": 0.10962180406338409,
+          "flow_norm": 0.0008005102218546377,
+          "momentum_norm": 355.28938992863493,
+          "momentum_to_image": 3241.0467330313604,
+          "momentum_image_cosine": 0.003675088632326256
+        },
+        "stress": {
+          "image_norm": 0.0,
+          "flow_norm": 0.0,
+          "momentum_norm": 0.0015833010091412644,
+          "momentum_to_image": null,
+          "momentum_image_cosine": null
+        }
+      },
+      "FD_step_sweep": [
+        {
+          "h": 0.010050251256281407,
+          "acceleration_rms": 36.2781982421875,
+          "relative_difference_to_finest": 0.8866499066352844
+        },
+        {
+          "h": 0.005025125628140704,
+          "acceleration_rms": 37.6098518371582,
+          "relative_difference_to_finest": 0.864425003528595
+        },
+        {
+          "h": 0.002512562814070352,
+          "acceleration_rms": 39.348384857177734,
+          "relative_difference_to_finest": 0.8113170862197876
+        },
+        {
+          "h": 0.001256281407035176,
+          "acceleration_rms": 42.902828216552734,
+          "relative_difference_to_finest": 0.7044686079025269
+        },
+        {
+          "h": 0.000628140703517588,
+          "acceleration_rms": 47.98539733886719,
+          "relative_difference_to_finest": 0.426841139793396
+        },
+        {
+          "h": 0.000314070351758794,
+          "acceleration_rms": 62.039119720458984,
+          "relative_difference_to_finest": 0.0
+        }
+      ]
+    },
+    {
+      "model": "L1_shared_stress",
+      "training_frame": 155,
+      "image_loss": 0.004604718182235956,
+      "weighted_flow_loss": 1.107690331991762e-05,
+      "weighted_momentum_loss": 2.1576476097106934,
+      "groups": {
+        "grid": {
+          "image_norm": 0.0035371519126728536,
+          "flow_norm": 2.0792326868478075e-05,
+          "momentum_norm": 55.70327419317525,
+          "momentum_to_image": 15748.058202872884,
+          "momentum_image_cosine": 0.0029152571948477634
+        },
+        "deformation": {
+          "image_norm": 0.16312880577761152,
+          "flow_norm": 0.0010831233320865812,
+          "momentum_norm": 278.06543521203577,
+          "momentum_to_image": 1704.5759262843733,
+          "momentum_image_cosine": 0.00471595547732587
+        },
+        "stress": {
+          "image_norm": 0.0,
+          "flow_norm": 0.0,
+          "momentum_norm": 0.0016404435666187815,
+          "momentum_to_image": null,
+          "momentum_image_cosine": null
+        }
+      },
+      "FD_step_sweep": [
+        {
+          "h": 0.010050251256281407,
+          "acceleration_rms": 27.598478317260742,
+          "relative_difference_to_finest": 0.7955498695373535
+        },
+        {
+          "h": 0.005025125628140704,
+          "acceleration_rms": 28.467754364013672,
+          "relative_difference_to_finest": 0.7570986151695251
+        },
+        {
+          "h": 0.002512562814070352,
+          "acceleration_rms": 30.716686248779297,
+          "relative_difference_to_finest": 0.6983357667922974
+        },
+        {
+          "h": 0.001256281407035176,
+          "acceleration_rms": 35.09271240234375,
+          "relative_difference_to_finest": 0.5544757843017578
+        },
+        {
+          "h": 0.000628140703517588,
+          "acceleration_rms": 41.69315719604492,
+          "relative_difference_to_finest": 0.3517340421676636
+        },
+        {
+          "h": 0.000314070351758794,
+          "acceleration_rms": 44.940704345703125,
+          "relative_difference_to_finest": 0.0
+        }
+      ]
+    }
+  ],
+  "protocol": "Three fixed training frames, actual loader RGB/cameras at1600, deterministic deformation; same-batch image/flow/momentum. No optimizer updates or checkpoint writes. Image probe excludes TV/coverage terms.",
+  "limitations": "Post-training local probes; not all historical training batches or a causal ablation. Finest finite difference is not physical GT."
+}

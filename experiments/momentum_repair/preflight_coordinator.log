@@ -1,0 +1,14 @@
+RAW TRAIN FLOW VERIFIED
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "F:\A_Edinburgh\PhysGauss\variants\momentum_guard\run.py", line 129, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\variants\momentum_guard\run.py", line 107, in main
+    monitor('preflight');preflight(repo,deadline)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\variants\momentum_guard\run.py", line 66, in preflight
+    if p.returncode: raise RuntimeError('Unit/CUDA checks failed')
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Unit/CUDA checks failed
