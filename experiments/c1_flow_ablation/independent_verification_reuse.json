@@ -1,0 +1,44 @@
+{
+  "status": "passed",
+  "source_data_SHA_verified": true,
+  "common_3k_sha256": "6da523ea247b4068ec9bd6a7c8f83dacb7506c698daaeecc9eb0ecd93ea1ebce",
+  "historical_control_unchanged": true,
+  "selection_lock_sha256": "d665bc4e553d41e047e5eb6979c71ffc6b8a883b63cef61ce69f8af562813192",
+  "original_frame_85_pair_index": 21,
+  "models": {
+    "C1_repaired": {
+      "pairs": 100,
+      "independent_PSNR_max_difference": 5.6307147175971295e-06,
+      "videos": [
+        {
+          "file": "output\\c1_flow_ablation\\C1_repaired\\GT_Render_best.mp4",
+          "decoded_frames": 50,
+          "sha256": "2e5b2c921204ad7b507bbe23a8b354e14e5416a1f6b704e457bbac39a6ede962"
+        },
+        {
+          "file": "output\\c1_flow_ablation\\C1_repaired\\GT_Render_50000.mp4",
+          "decoded_frames": 50,
+          "sha256": "bfc512461577a9cf6ffa442f271ee88a55651ab51c688d5bce4d31056041adc0"
+        }
+      ],
+      "zip_CRC_and_all_member_bytes": true
+    },
+    "O1_C1_flow_on": {
+      "pairs": 100,
+      "independent_PSNR_max_difference": 5.078139714953522e-06,
+      "videos": [
+        {
+          "file": "output\\c1_flow_ablation\\O1_C1_flow_on\\GT_Render_best.mp4",
+          "decoded_frames": 50,
+          "sha256": "6290eee5559faf38dcbb7feca00e23ef67f344730cc99fb6cdf22bd17f392645"
+        },
+        {
+          "file": "output\\c1_flow_ablation\\O1_C1_flow_on\\GT_Render_50000.mp4",
+          "decoded_frames": 50,
+          "sha256": "7adbf27ed7fe3ad3289e123306f6079a17d1cf220aa781b7ccb0a08f5b2bbb30"
+        }
+      ],
+      "zip_CRC_and_all_member_bytes": true
+    }
+  }
+}

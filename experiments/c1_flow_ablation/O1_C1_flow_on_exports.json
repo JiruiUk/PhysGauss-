@@ -1,0 +1,51 @@
+{
+  "model": "O1_C1_flow_on",
+  "selection": {
+    "value": 39.312936528523764,
+    "iteration": 50000,
+    "snapshot": "best",
+    "metrics": {
+      "PSNR": 39.312936528523764,
+      "SSIM": 0.9941760738690694,
+      "LPIPS": 0.011160459377182026,
+      "MS-SSIM": 0.9961046854654948
+    },
+    "selection_split": "validation"
+  },
+  "metrics": {
+    "ours_50000": {
+      "SSIM": 0.9946059584617615,
+      "PSNR": 39.90061950683594,
+      "LPIPS": 0.010396149940788746,
+      "MS-SSIM": 0.9965742230415344
+    },
+    "ours_best": {
+      "SSIM": 0.9946059584617615,
+      "PSNR": 39.90061950683594,
+      "LPIPS": 0.010396149940788746,
+      "MS-SSIM": 0.9965742230415344
+    }
+  },
+  "pairs": 100,
+  "pixel_identity_verified": true,
+  "independent_PSNR_max_difference": 5.078139714953522e-06,
+  "videos": [
+    {
+      "file": "F:\\A_Edinburgh\\PhysGauss\\output\\c1_flow_ablation\\O1_C1_flow_on\\GT_Render_best.mp4",
+      "frames": 50,
+      "display_fps": 10,
+      "seconds": 5.0,
+      "note": "display rate only; acquisition FPS unknown"
+    },
+    {
+      "file": "F:\\A_Edinburgh\\PhysGauss\\output\\c1_flow_ablation\\O1_C1_flow_on\\GT_Render_50000.mp4",
+      "frames": 50,
+      "display_fps": 10,
+      "seconds": 5.0,
+      "note": "display rate only; acquisition FPS unknown"
+    }
+  ],
+  "velocity_source": "independent",
+  "gallery": "F:\\A_Edinburgh\\PhysGauss\\output\\c1_flow_ablation\\O1_C1_flow_on\\index.html",
+  "archive": "F:\\A_Edinburgh\\PhysGauss\\output\\c1_flow_ablation\\O1_C1_flow_on_GT_Render.zip"
+}

@@ -1,0 +1,70 @@
+{
+  "status": "passed",
+  "historical_control_reused": true,
+  "historical_control_SHA_unchanged": true,
+  "manual_review_pending": false,
+  "same_actual_camera_schedule_claimed": false,
+  "historical_camera_schedule_not_recorded": true,
+  "models": {
+    "C1_repaired": {
+      "full_checkpoint_sha256": "b5d4cf5c9fb8fba4fcc26124555d48aa7d3a963a8be1d28488954752db486480",
+      "full_snapshot_parity": true,
+      "all_parameters_optimizer_finite": true,
+      "snapshot_sha256": {
+        "point_cloud\\iteration_best\\iter.txt": "d9ad617457502be10c737f8e04d2723ba1fa794a12bb0a162bcad0bd96e43e14",
+        "point_cloud\\iteration_best\\material.pt": "6d26e89119cf7a2117bd301f72b728d7eaba3e776943d1999a85ab50df235d91",
+        "point_cloud\\iteration_best\\point_cloud.ply": "63d080893ccb2a0e6b1be8bc6e222641bc14035a9bb003e8633d6f6b75e44fbb",
+        "deform\\iteration_best\\deform.pth": "ce2a5d5dacf3941b49d5a92ef37a8a08d6e72ef69ce24feb5a09b5fd795b30e5",
+        "deform\\iteration_best\\iter.txt": "d9ad617457502be10c737f8e04d2723ba1fa794a12bb0a162bcad0bd96e43e14",
+        "point_cloud\\iteration_50000\\material.pt": "f159735a3b59c812977c9ea8194e3961c799006eef7b81f3ff74c57d976cf31d",
+        "point_cloud\\iteration_50000\\point_cloud.ply": "f5ada8e8db1f67d89480349b227d79de0235a1579faa01522fccdd1390362301",
+        "deform\\iteration_50000\\deform.pth": "a5c4d5338fa087f7873249285ffde4eebd420c3d5ee5f74a3743a4107e4e87be"
+      },
+      "zip_sha256": "602cd43849a7179d0caa0c3d2b5773ef2aeb7a65fa90a34165a3b55c89e1145e"
+    },
+    "O1_C1_flow_on": {
+      "full_checkpoint_sha256": "e937f59b7994dd488cc4b7876ff563234b68d0c611a651d0c21c2959c8e47769",
+      "full_snapshot_parity": true,
+      "all_parameters_optimizer_finite": true,
+      "snapshot_sha256": {
+        "point_cloud\\iteration_best\\iter.txt": "3fd4b74398bc10bf8e6b1bbfb509b5944cbe495c6714802c800c4ca668e1f73d",
+        "point_cloud\\iteration_best\\material.pt": "da3a76e2547f6650bfc3e2fd61e5de16e4deb558f481714fc67c382c350844b5",
+        "point_cloud\\iteration_best\\point_cloud.ply": "bd753d9d53bb0e5195b58e89a2da79574d1bea3c683edce3efed1262fe0a5441",
+        "deform\\iteration_best\\deform.pth": "5c0c495e62ff49dfb9f639482a0b729e98d45644127be98ae3bee6458c53fd9d",
+        "deform\\iteration_best\\iter.txt": "3fd4b74398bc10bf8e6b1bbfb509b5944cbe495c6714802c800c4ca668e1f73d",
+        "point_cloud\\iteration_50000\\material.pt": "da3a76e2547f6650bfc3e2fd61e5de16e4deb558f481714fc67c382c350844b5",
+        "point_cloud\\iteration_50000\\point_cloud.ply": "bd753d9d53bb0e5195b58e89a2da79574d1bea3c683edce3efed1262fe0a5441",
+        "deform\\iteration_50000\\deform.pth": "5c0c495e62ff49dfb9f639482a0b729e98d45644127be98ae3bee6458c53fd9d"
+      },
+      "zip_sha256": "e805422aa7c9f26bc14f822813a3b84aaf2610741e462f2e55129664f00be2f0"
+    }
+  },
+  "candidate_samples": 47000,
+  "flow_events": 470,
+  "flow_evaluations": 468,
+  "flow_updates": 467,
+  "selection_lock_sha256": "d665bc4e553d41e047e5eb6979c71ffc6b8a883b63cef61ce69f8af562813192",
+  "manual_review": {
+    "completed_utc": "2026-11-02T17:36:39.171712+00:00",
+    "reviewed_original_frames": [
+      1,
+      85,
+      101,
+      197
+    ],
+    "frame_85_full_size": true,
+    "best_video_all_50_decoded_frames_reviewed_each_model": true,
+    "all_four_videos_decoded": true,
+    "real_time_playback_review_claimed": false,
+    "figures": [
+      "png_review.png",
+      "decoded_video_review.png",
+      "comparison.png",
+      "C1_repaired_video_all_frames.png",
+      "O1_C1_flow_on_video_all_frames.png"
+    ],
+    "assessment": "experiments/c1_flow_ablation/assessment.md"
+  },
+  "source_data_SHA_verified": true,
+  "independent_verification_sha256": "426b23e493ca5911e0cb549eefd980d68deace0fa4d22d26a2cf7086f5e0cf72"
+}

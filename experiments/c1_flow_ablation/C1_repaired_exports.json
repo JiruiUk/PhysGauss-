@@ -1,0 +1,69 @@
+{
+  "model": "C1_repaired",
+  "selection": {
+    "value": 39.68339277903239,
+    "iteration": 47000,
+    "snapshot": "best",
+    "metrics": {
+      "PSNR": 39.68339277903239,
+      "SSIM": 0.9942728737990062,
+      "LPIPS": 0.011020102305337787,
+      "MS-SSIM": 0.9961262146631876
+    },
+    "selection_split": "validation"
+  },
+  "metrics": {
+    "ours_50000": {
+      "SSIM": 0.9946761131286621,
+      "PSNR": 40.372127532958984,
+      "LPIPS": 0.010437515564262867,
+      "MS-SSIM": 0.9965463280677795
+    },
+    "ours_best": {
+      "SSIM": 0.9946563839912415,
+      "PSNR": 40.33440399169922,
+      "LPIPS": 0.010418016463518143,
+      "MS-SSIM": 0.9965338110923767
+    },
+    "ours_metric_lpips": {
+      "SSIM": 0.9946563839912415,
+      "PSNR": 40.33440399169922,
+      "LPIPS": 0.010418016463518143,
+      "MS-SSIM": 0.9965338110923767
+    },
+    "ours_metric_ms_ssim": {
+      "SSIM": 0.9946563839912415,
+      "PSNR": 40.33440399169922,
+      "LPIPS": 0.010418016463518143,
+      "MS-SSIM": 0.9965338110923767
+    },
+    "ours_metric_ssim": {
+      "SSIM": 0.9946563839912415,
+      "PSNR": 40.33440399169922,
+      "LPIPS": 0.010418016463518143,
+      "MS-SSIM": 0.9965338110923767
+    }
+  },
+  "pairs": 100,
+  "pixel_identity_verified": true,
+  "independent_PSNR_max_difference": 5.630714710491702e-06,
+  "videos": [
+    {
+      "file": "F:\\A_Edinburgh\\PhysGauss\\output\\c1_flow_ablation\\C1_repaired\\GT_Render_best.mp4",
+      "frames": 50,
+      "display_fps": 10,
+      "seconds": 5.0,
+      "note": "display rate only; acquisition FPS unknown"
+    },
+    {
+      "file": "F:\\A_Edinburgh\\PhysGauss\\output\\c1_flow_ablation\\C1_repaired\\GT_Render_50000.mp4",
+      "frames": 50,
+      "display_fps": 10,
+      "seconds": 5.0,
+      "note": "display rate only; acquisition FPS unknown"
+    }
+  ],
+  "velocity_source": "independent",
+  "gallery": "F:\\A_Edinburgh\\PhysGauss\\output\\c1_flow_ablation\\C1_repaired\\index.html",
+  "archive": "F:\\A_Edinburgh\\PhysGauss\\output\\c1_flow_ablation\\C1_repaired_GT_Render.zip"
+}

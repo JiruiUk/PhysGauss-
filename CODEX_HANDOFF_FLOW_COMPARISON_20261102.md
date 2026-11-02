@@ -1,5 +1,10 @@
 # Codex 工作交接：运动光流与轨迹导出速度对照
 
+> **C1光流比较最终完成（2026-11-02 17:34后核验）：历史C1未重训且全部受保护SHA未变；仅O1从同一原完整3k到50k，已锁定best=50k（历史best=47k）。验证PSNR39.683393→39.312937（−0.3705dB），测试验证best40.334404→39.900620（−0.4338dB）；独立验证速度推进EPE降低16.43%（26/30对改善），几何EPE恶化0.84%。预先综合收益false，保留C1画质基线，不追加候选。源码/输入/完整检查点/快照/共同起点SHA、47000次采样、470事件/468求值/467更新、200拼接PNG像素及独立PSNR、4×50视频解码帧、ZIP逐成员字节/CRC全部通过。早中晚、原帧85全尺寸、全部best视频解码序列和图表人工审阅完成；不冒称实时播放审阅或3D物理验证。结果 `experiments/c1_flow_ablation/{results_reuse,final_verification_reuse,independent_verification_reuse,review_statistics}.json`，评估 `assessment.md`，同步页 `output/c1_flow_ablation/index.html`。旧O0继续取消/保留/排除，禁止重启旧main。本轮完成，交付时删除c1自动跟进。**
+
+以下16:12记录是已结束队列的恢复历史，不应再启动。
+
+
 更新时间：2026-11-02 16:12 UTC（Europe/London）。
 工作目录：`F:\A_Edinburgh\PhysGauss`；Windows / PowerShell。
 

@@ -1,0 +1,28 @@
+{
+  "geometric_EPE_px": {
+    "improved_pairs": 12,
+    "pairs": 30,
+    "mean_change": 0.006244887659947077,
+    "median_change": 0.004910528659820557
+  },
+  "velocity_EPE_px": {
+    "improved_pairs": 26,
+    "pairs": 30,
+    "mean_change": -0.20144693752129872,
+    "median_change": -0.1551874876022339
+  },
+  "finite_difference_sensitivity": {
+    "C1_repaired": {
+      "velocity_step_ratio_0.5": 0.008268419653177261,
+      "velocity_step_ratio_2.0": 0.012375138700008392,
+      "acceleration_step_ratio_0.5": 0.4637591242790222,
+      "acceleration_step_ratio_2.0": 0.36160606145858765
+    },
+    "O1_C1_flow_on": {
+      "velocity_step_ratio_0.5": 0.006883813999593258,
+      "velocity_step_ratio_2.0": 0.009539905935525894,
+      "acceleration_step_ratio_0.5": 0.42516574263572693,
+      "acceleration_step_ratio_2.0": 0.3459818661212921
+    }
+  }
+}
