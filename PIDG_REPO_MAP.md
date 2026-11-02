@@ -1,5 +1,18 @@
 # PIDG repository map — M0
 
+## Observable association training pilot (2026-11-02)
+
+`variants/association_training/prepare.py` forks repaired C1 and changes only
+the Tuning import. `runtime.py` inherits original image/physics methods, adding
+an opt-in fixed-row early-object anchor and symmetric raw-flow contribution
+loss via `coverage_loss`. `model.py` contains tested differentiable objectives;
+`prepare_data.py` binds the independently verified early membership to C1 SHA.
+`run.py` compares identical full50k optimizer/RNG/camera states for2,000 actual
+updates; `freeze.py` locks all training inputs. Full-state support and validation
+evaluation is in `evaluate.py`. No learned segmentation/material physics is
+introduced. Runs/reports/output are isolated under `pidg_association_training`
+and `association_training` respectively. See the variant README and plan.
+
 ## Conditional local object membership (2026-11-02)
 
 `variants/object_membership/model.py` is a disabled-by-default non-neural,
