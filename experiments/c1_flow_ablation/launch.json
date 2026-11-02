@@ -1,0 +1,30 @@
+{
+  "started_utc": "2026-11-02T16:00:22.256903+00:00",
+  "code_preflight_commit": "558019e3",
+  "coordinator_session": 88306,
+  "controller": {
+    "pid": 231636,
+    "status": "training",
+    "started_utc": "2026-11-02T15:59:07.511994+00:00",
+    "deadline_utc": "2026-11-03T07:59:07.511994+00:00"
+  },
+  "active": {
+    "id": "O0_C1_flow_off",
+    "phase": "long",
+    "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_c1_flow_ablation\\O0_C1_flow_off\\rubber_duck",
+    "pid": 237932,
+    "controller_pid": 231636,
+    "started_utc": "2026-11-02T15:59:08.770515+00:00"
+  },
+  "automation_id": "c1",
+  "source_freeze_sha256": "fe72d2a5a15b53599df60af6dfee63f0fab186b13adbc662811649fc9786f56e",
+  "common_start": {
+    "status": "passed",
+    "both_full_checkpoint_SHA": "6da523ea247b4068ec9bd6a7c8f83dacb7506c698daaeecc9eb0ecd93ea1ebce",
+    "same_tensor_optimizer_RNG_bytes": true,
+    "same_model_config": true,
+    "only_treatment_flag": "observed_flow_enabled",
+    "no_extra_fit": true
+  },
+  "two_full_arms_only": true
+}

@@ -1,7 +1,19 @@
 # Codex 工作交接：运动光流与轨迹导出速度对照
 
-更新时间：2026-11-02 15:02 UTC（Europe/London）。
+更新时间：2026-11-02 16:00 UTC（Europe/London）。
 工作目录：`F:\A_Edinburgh\PhysGauss`；Windows / PowerShell。
+
+> **16:00 最新授权／正在执行：用户要求用最初C系列表现最好的模型做只开／关光流的完整对照。按历史验证选择C1_repaired（验证PSNR39.664895，测试40.372128仅参考）。新增独立 `variants/c1_flow_ablation`；代码/预检里程碑558019e3。两组新训练 O0_C1_flow_off / O1_C1_flow_on 从完全相同原始C1完整3k状态SHA `6da523ea247b4068ec9bd6a7c8f83dacb7506c698daaeecc9eb0ecd93ea1ebce` 到总50k，各新增47k；不用历史50k权重继续，也不用历史C1代替新控制。唯一配置差别是 `observed_flow_enabled`。保留C1原独立velocity/stress、原Cauchy动量实现、frame-index共享时间、RGB/SSIM/LPIPS/alpha/前景损失及优化器/稠密化；不混入L1/M1/N1的共享应力、guard或新动量公式。开光流采用已修正相机/offset/贡献权重的raw训练UniMatch缓存，无H3深度；几何流和独立速度推进流各半，权重.01、每100步、3k后2k ramp；只改这一个光流监督包。**
+
+预检：16测试通过；两组100步GPU短训，O1完整70→100恢复，all-flags-off20，真实flow-only优化器更新（grid/deformation/velocity_head均改变，私有stress_head无直接光流梯度），继承C1图像loss/时钟精确一致，真实共同3k字节SHA与模型配置一致；无新增参数/优化器组、无额外前缀拟合。协议和冻结凭据 `experiments/c1_flow_ablation/{plan,preflight,source_freeze,common_start_checks,prefix_audit,optimizer_update}.json`。source_freeze SHA `fe72d2a5a15b53599df60af6dfee63f0fab186b13adbc662811649fc9786f56e`。
+
+唯一完整训练协调器会话 **88306**、PID **231636**，O0初始训练PID **237932**；日志 `experiments/c1_flow_ablation/training_coordinator.log`，启动凭据 `launch.json`，先O0再O1，禁止重复启动或另占健康GPU。命令：先 `. ./reproduction/scripts/enable_cuda.ps1`，再 `envs/pidg-cu128/python.exe -u -m variants.c1_flow_ablation.run --hours 16`。当前本聊天自动接续 **c1**（每10分钟）；此前N1的automation已删，不能混淆。状态只读：`envs/pidg-cu128/python.exe output/c1_flow_ablation/status.py`，再核对实际进程及日志更新；健康推进保持安静，不改冻结源码/配置/数据。
+
+若意外退出未完成：先核验最后完整checkpoint SHA/保存边界，归档并移出超界 `camera_sampling.jsonl`、`observed_flow.jsonl`及其他诊断，再安全续跑；不要把未保存步骤日志算到新训练。两组均完成后才锁定验证PSNR选择，再打开50测试帧；已有selection_lock必须原样保留。协调器自动导出best/final的GT|Render PNG/两视频/ZIP，复用冻结V2验证观测做独立运动诊断，并核验源数据SHA、完整状态/快照、采样日程、像素、独立PSNR、视频帧数、ZIP。真实后处理问题用独立output辅助脚本修复，不重训、不改锁、不改冻结训练源码。`variants/c1_flow_ablation/results.py`生成结果和初步assessment，但completed后仍需人工查看早中晚、原帧85全尺寸PNG、`png_review.png`和`decoded_video_review.png`及视频，补全assessment和final_verification的manual_review_pending状态，再提交独立结果里程碑并交付 `output/c1_flow_ablation/index.html` 和两组视频/报告。
+
+判断以新O1−新O0为准；预先综合门槛为验证PSNR下降≤.2dB、LPIPS增幅≤5%、验证速度推进EPE降低≥10%、几何EPE增幅≤5%，各轴如实报告。不得把估计光流或内部一致性当3D物理真值；单场景单种子、CUDA非确定性、历史测试暴露仍适用。只有这两个完整模型，不自动新增候选，不加入外力/本构/材料未知量；保留历史模型和无关改动。最终核验交付后删除c1自动跟进。
+
+以下15:02及更早为已结束实验的历史记录，不代表本次C1光流消融结束。
 
 > **15:02 N1最终交付：已完成总50k、验证选择锁定（best=final50k）、测试/GT|Render PNG/两段视频/ZIP、独立核验、同材料点双算子比较和三维图审阅。本轮已结束，自动跟进 `automation` 已删除，不按以下历史命令重训。相对M1：测试PSNR39.701836→39.909519（+0.2077dB），验证PSNR仅+0.0105dB，测试LPIPS略恶化1.26%；独立二维速度推进EPE降低3.85%、完整轨迹EPE降低5.11%。共同64锚点在帧2/83/155上，原算子Huber中位数降低2.76%，新算子降低7.21%，均未达到预先25%门槛，因此综合收益false。帧83异常明显减轻，帧2反而恶化，不能泛化为物理成功。**
 
