@@ -1,5 +1,16 @@
 # PIDG repository map — M0
 
+## Training-data short-clip selection (2026-11-02)
+
+`output/short_clip_audit/scan.py` searches all eight-observation Rubber Duck
+training windows using visible component separation, frozen raw FB support and
+camera metadata. It never loads C1 or uses model scores for selection. It exports
+contact sheets/native images/crops and a gallery. `verify.py` independently
+checks selected-window FB support, camera angles, RGB pixels and input SHA.
+Plan/results/manual evidence are in `experiments/short_clip_audit`. Candidate
+clips are local diagnostic data, not physical identity/3D calibration GT or new
+heldout benchmarks. No neural training or new physics module is introduced.
+
 ## Visible image-fragment / fixed3D surface bank (2026-11-02)
 
 `variants/surface_correspondence/model.py` adds disabled-by-default, non-neural

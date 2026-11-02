@@ -1,0 +1,170 @@
+{
+  "passed": true,
+  "locked_inputs": 270,
+  "all_input_SHA_unchanged": true,
+  "training_frames_checked": 120,
+  "eight_observation_windows": 113,
+  "qualified_windows": 62,
+  "selected_independently_rechecked": [
+    {
+      "name": "clip1_0002_0014",
+      "frames": [
+        2,
+        3,
+        6,
+        7,
+        8,
+        10,
+        12,
+        14
+      ],
+      "rotation_degrees": 2.2834686484844062,
+      "FB_recheck_passed": true
+    },
+    {
+      "name": "clip2_0188_0200",
+      "frames": [
+        188,
+        190,
+        192,
+        194,
+        195,
+        196,
+        199,
+        200
+      ],
+      "rotation_degrees": 2.5595306808482134,
+      "FB_recheck_passed": true
+    },
+    {
+      "name": "clip3_0015_0027",
+      "frames": [
+        15,
+        16,
+        19,
+        20,
+        22,
+        23,
+        26,
+        27
+      ],
+      "rotation_degrees": 6.122286793632059,
+      "FB_recheck_passed": true
+    },
+    {
+      "name": "clip4_0002_0008",
+      "frames": [
+        2,
+        3,
+        6,
+        7,
+        8
+      ],
+      "rotation_degrees": 0.6651762623720285,
+      "FB_recheck_passed": true
+    }
+  ],
+  "contact_sheet_pixels_match_train_RGB": true,
+  "native_exports_pixel_identical": [
+    {
+      "frame": 2,
+      "size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "frame": 6,
+      "size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "frame": 8,
+      "size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "frame": 14,
+      "size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "frame": 15,
+      "size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "frame": 22,
+      "size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "frame": 27,
+      "size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "frame": 188,
+      "size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "frame": 195,
+      "size": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "frame": 200,
+      "size": [
+        2560,
+        1440
+      ]
+    }
+  ],
+  "manual_review_complete": true,
+  "C1_predictions_not_used_for_selection": true,
+  "new_heldout_RGB_not_used": true,
+  "model_optimizer_steps": 0,
+  "no_3D_or_material_GT_claim": true,
+  "artifact_sha256": {
+    "experiments\\short_clip_audit\\assessment.md": "c67e1b53d19d4c9af3d743c8546b144a2e14417458e02111ba623f1862b47be4",
+    "experiments\\short_clip_audit\\input_lock.json": "3f28048a9451569efe1ee14c97b041ef075df7387b646a0ef3112513c871fa7e",
+    "experiments\\short_clip_audit\\manual_review.json": "ed6b9399e7391e9eb84118e756e171e4b6f7dd2350dc1daafb055655c849d7bf",
+    "experiments\\short_clip_audit\\plan.json": "9e8a03df3d91013d3df6f0cd241b105e37c7463eb095b56b86330ad467663271",
+    "experiments\\short_clip_audit\\results.json": "acb5970fb986669a9f7fbe870155d0d36594b26aea69d4c446fde9c61a8684f3",
+    "output\\short_clip_audit\\clip1_0002_0014.png": "b2dbe4d585cd95065203a8206def3c32a5234ce915cec28d20bd7a381f5a3969",
+    "output\\short_clip_audit\\clip2_0188_0200.png": "09a796c541d033d236c9e8ff9eccdea720676fece17a05732a04e596cab2a2da",
+    "output\\short_clip_audit\\clip3_0015_0027.png": "2648fa5a66b781ebbc4532bbce8b0d4498b70724ea93548c5f3baf157d628318",
+    "output\\short_clip_audit\\clip4_0002_0008.png": "1ee21428d787ba2941cea1a105fd8cc0a841ba31d4f44d9cb4cbc1ce00c692dc",
+    "output\\short_clip_audit\\index.html": "30a3422492d0253d392108682b71a28bac3e014d734cafea09b7b6022a18fa83",
+    "output\\short_clip_audit\\native0002.png": "5ec673d10c90683f890dfebe93fcb41375a4e7037d5ef4e0793b6fee541a4afb",
+    "output\\short_clip_audit\\native0006.png": "74d636acf908ccdb9b3339a3ba537b38ba26281b8ead5dda4d0079947616c23b",
+    "output\\short_clip_audit\\native0008.png": "ff2dc96cec489bacf7039d6033679d1b75306a5810840334336db17d4306af71",
+    "output\\short_clip_audit\\native0014.png": "d79e6e6e0e2ebe9d5d807f84c1776c3ba0559f7cc8d374a8ac4ba27a4018bcb0",
+    "output\\short_clip_audit\\native0015.png": "1d84bcf55fe3c35153e1c5ffc810854fc9ace9545e8fa35db4d0515e6f22847b",
+    "output\\short_clip_audit\\native0022.png": "082291de37620ab1275540b555c818788b9a54a8074f1dcf7f7e02aa56e829a5",
+    "output\\short_clip_audit\\native0027.png": "d60831ddc51d7c441d6adfb16e0551a4315b0edcdb86ce79d25990d8052f0b44",
+    "output\\short_clip_audit\\native0188.png": "a4c7120827455790ed3c3aca9ad353f7638a6f2f79d9931b1a41519f26a9c453",
+    "output\\short_clip_audit\\native0195.png": "8455b9331b3f069fecabec11df5601075ef19c07225428cf443f00398fcc17c2",
+    "output\\short_clip_audit\\native0200.png": "3dadaa33625e0456617630d73296bbd9bbbab59ae7f04aec457577e1bc085569",
+    "output\\short_clip_audit\\primary_duck_crops.png": "02e4fd12a0406d6c663a157a05e6d345dbdfb70b64f264f1c847ac1c5f69ed0b",
+    "output\\short_clip_audit\\scan.py": "fb428d04bf5fb2fcbe7681366e387d0e702581b318c724ce6d0a6de1751fcdd8",
+    "output\\short_clip_audit\\verify.py": "c82f252ba4a5f049a62316d0b91f7cef617a70540adc59e88da7b03f8f10b8cf"
+  }
+}

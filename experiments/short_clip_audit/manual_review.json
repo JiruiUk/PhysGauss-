@@ -1,0 +1,32 @@
+{
+  "review_complete": true,
+  "primary_clip_usable_for_local_diagnostic": true,
+  "viewed_contact_sheets": [
+    "clip1_0002_0014.png",
+    "clip2_0188_0200.png",
+    "clip3_0015_0027.png"
+  ],
+  "primary_control_is_subset_of_reviewed_primary": true,
+  "viewed_detail_sheet": "primary_duck_crops.png",
+  "viewed_native_original_frames": [
+    2,
+    8,
+    14,
+    195
+  ],
+  "native_source_dimensions": [
+    2560,
+    1440
+  ],
+  "findings": [
+    "Primary2\u201314 has four separated visible silhouettes; no obvious inter-duck contour merge in reviewed observations.",
+    "Upper two ducks are visibly separated against black background, useful for initial local checks.",
+    "Blue structure contact, hidden surfaces and self-occlusion not certified absent.",
+    "Late188\u2013200 silhouettes separated but deformed poses and proximity to blue structures make it a supplemental control.",
+    "No pointwise material ID annotation or independent true3D/camera calibration completed.",
+    "Boundary color/alpha speckles present near image border; small speckles excluded by component-area rules."
+  ],
+  "selection_used_C1_predictions": false,
+  "all_other_PIDG_scenes_manually_audited": false,
+  "training_steps": 0
+}

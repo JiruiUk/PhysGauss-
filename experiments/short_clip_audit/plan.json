@@ -1,0 +1,13 @@
+{
+  "purpose": "Find short, visually separable, FB-supported training clips for diagnosing C1 correspondence without fitting or selecting by C1 outcomes",
+  "scene": "rubber_duck",
+  "scope": "Current120 training images and frozen raw training forward/backward flow only; inventory other installed PIDG scenes without claiming detailed review",
+  "windows": "All113 sliding windows of8 training observations, plus first5 observations as a shorter camera-motion control",
+  "data_only_gates": {"components_each_frame": 4, "minimum_component_pixels": 50, "minimum_border_clearance_pixels": 3, "minimum_pairwise_mask_gap_pixels": 2, "minimum_propagated_support_pixels": 30, "minimum_known_label_purity": 0.95, "minimum_component_support_fraction": 0.25},
+  "ranking": "Ascending maximum relative camera rotation from window start among qualified windows; greedy select up to3 windows with disjoint training observation indices; also show the separately declared first5 control",
+  "camera": "Original transform_matrix poses, rotations orthonormalized by SVD only for angular measurement; report translation in scene coordinates, not meters",
+  "flow": "Raw forward/backward fields; yellow and blue structure region flow/FB statistics; blue-region stationarity is a visual assumption, not independent3D GT",
+  "manual_review": "Contact sheets of all selected observations plus native-resolution first/middle/last and per-duck crops in primary clip",
+  "interpretation": "Separated visible silhouettes and supported tracklets do not prove full surfaces unoccluded or zero3D contact. Repeated scene/window observations are correlated. Candidate selection is not a new heldout benchmark or camera calibration proof.",
+  "new_training_or_GPU_model_work": false
+}
