@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "F:\A_Edinburgh\PhysGauss\variants\shape_coherence\run.py", line 158, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\variants\shape_coherence\run.py", line 137, in main
+    if not (REPORTS/'preflight.json').exists():preflight(repo,deadline)
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\variants\shape_coherence\run.py", line 112, in preflight
+    if parent.step(candidate)<50070:assert train_smoke(candidate,repo,deadline,50070)==75
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\variants\shape_coherence\run.py", line 100, in train_smoke
+    return engine.execute(command,path,'smoke',env,deadline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\variants\metric_tuning\run.py", line 224, in execute
+    raise RuntimeError(f'{phase} failed ({child.returncode}): {log}')
+RuntimeError: smoke failed (1): F:\A_Edinburgh\PhysGauss\runs\pidg_shape_coherence\_smoke_P1\rubber_duck\train.log

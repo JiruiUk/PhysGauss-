@@ -1,5 +1,13 @@
 # Codex 工作交接：运动光流与轨迹导出速度对照
 
+> **18:46 最新用户授权：处理多鸭子接触时形态损坏。独立 P1_local_shape 已实现并通过12测试、真实C1状态形态梯度/优化器更新、GPU100步/70→100完整恢复、flags-off20（启动修复后重复一次，实际关闭预算40）。历史C1原样复用，不重训，不开光流，不引入外力/本构/新参数。新目录 variants/shape_coherence，协议/诊断 experiments/shape_coherence/{plan,diagnosis,preflight,source_freeze}.json 和 diagnosis.md。冻结SHA214b07fc42532c912201dca310387be2f05a85091af1ada4f12fe79ec26390f8。首个启动错误仅缺诊断路径迁移凭据，未发生更新；已修复并归档旧冻结凭据。**
+
+**本轮不是已完成训练。** 唯一候选从原完整3k SHA6da523ea247b4068ec9bd6a7c8f83dacb7506c698daaeecc9eb0ecd93ea1ebce至50k，原稠密化15k结束后16k构建参考图，自动保存暂停、等待本聊天人工审阅。启动/恢复入口：激活enable_cuda.ps1后，`envs/pidg-cu128/python.exe -u output/shape_coherence/continue_run.py --hours 12`。只读状态 `output/shape_coherence/status.py`。不要重复启动；健康训练不占GPU，不改冻结源码/配置/数据。若退出，先核验checkpoint SHA/保存边界，归档移出超界shape_loss等诊断再恢复。不要使用旧C1/O0/O1等协调器。
+
+16k停止后运行 `output/shape_coherence/review_graph.py`，实际从完整状态加载，核验图SHA/同组连边，渲染训练早期及62/74/86/98/108等中段，人工看 `shape_reference/early_training_components.png` 与 `output/shape_coherence/candidate_graph/`。必须把中段实际贡献列入判断，再写 `experiments/shape_coherence/candidate_graph_review.json`，`approved` 和 `graph_sha256` 绑定 `run/shape_reference/reference_graph.pt`。不自动批准。早期物体内高置信参考点只是局部表面patch，不是真实持久材料ID；历史C1审计显示它们中后段几乎不再参与鸭子渲染，不能把局部形态项说成完整物体跟踪，也不能用小残差冒称修复碰撞。若无可靠覆盖，记录未过门槛，不盲目训练；需要结构修正时先说明证据，保留这一候选的预算边界。
+
+图通过后用相同入口接续至50k，输出辅助脚本将锁定验证选择，复用C1既定47k best/50k final，仅渲染新P1，生成GT|Render PNG/两视频/ZIP与验证接触ROI、V2独立二维运动对照。`output/shape_coherence/finalize.py`/`verify_results.py` 是允许修复的后处理辅助脚本；不要改锁或重训已完成模型。预先门槛：验证PSNR下降≤.2dB、LPIPS增幅≤5%、验证帧62..108固定黄色鸭子ROI MAE降低≥10%，人工无新增撕裂/粘连/塌缩；窗口是诊断范围，不等于独立接触GT。需核验快照/完整状态/图/输入SHA、锁定顺序、拼接像素/PSNR/视频帧/ZIP，人工看早中晚及原帧85、视频解码图，补assessment并独立结果提交。原C1没有逐步相机日志，新P1仅每100步记录形态诊断，不冒称逐步实际采样一致。原PIDG最后一步无optimizer.step，GPU100为100次求值99次更新。仅一个完整候选，无额外候选、外力或材料未知量。交付后删除本轮自动跟进（若已创建）；未创建时不能冒称后台跟进已安排。
+
 > **C1光流比较最终完成（2026-11-02 17:34后核验）：历史C1未重训且全部受保护SHA未变；仅O1从同一原完整3k到50k，已锁定best=50k（历史best=47k）。验证PSNR39.683393→39.312937（−0.3705dB），测试验证best40.334404→39.900620（−0.4338dB）；独立验证速度推进EPE降低16.43%（26/30对改善），几何EPE恶化0.84%。预先综合收益false，保留C1画质基线，不追加候选。源码/输入/完整检查点/快照/共同起点SHA、47000次采样、470事件/468求值/467更新、200拼接PNG像素及独立PSNR、4×50视频解码帧、ZIP逐成员字节/CRC全部通过。早中晚、原帧85全尺寸、全部best视频解码序列和图表人工审阅完成；不冒称实时播放审阅或3D物理验证。结果 `experiments/c1_flow_ablation/{results_reuse,final_verification_reuse,independent_verification_reuse,review_statistics}.json`，评估 `assessment.md`，同步页 `output/c1_flow_ablation/index.html`。旧O0继续取消/保留/排除，禁止重启旧main。本轮完成，交付时删除c1自动跟进。**
 
 以下16:12记录是已结束队列的恢复历史，不应再启动。

@@ -1,0 +1,72 @@
+{
+  "authorized_scope": "C1 local shape preservation; diagnose, test, GPU short training, then one bounded full candidate if gates pass",
+  "historical_control": "runs/pidg_color_repair/C1_repaired/rubber_duck",
+  "do_not_retrain_control": true,
+  "candidate": "P1_local_shape",
+  "optical_flow": false,
+  "no_learned_segmentation": true,
+  "no_external_force_or_constitutive_law": true,
+  "new_parameters": 0,
+  "new_optimizer_groups": 0,
+  "full_candidate_start": "byte-identical original full3k C1 shared prefix",
+  "full_total_steps": 50000,
+  "additional_full_steps": 47000,
+  "start_shape_after_original_densification": 16000,
+  "reference_frames_train_only": [
+    2,
+    6,
+    10,
+    14,
+    19
+  ],
+  "graph": "early isolated image components, visually verified, opacity contribution weighted kernel votes >=3 frames, purity >=.95; unknown kernels excluded; fixed 12-neighbor reference graph with rank and radius gates",
+  "ID_limitations": "Early surface-patch labels, not complete persistent physical object IDs or true 3D surfaces; no cross-object contact loss",
+  "losses": {
+    "shape_affine_weight": 1e-05,
+    "shape_collapse_weight": 1e-06,
+    "interval": 20,
+    "samples": 128,
+    "ramp_steps": 2000,
+    "allowed_local_singular_values": [
+      0.3,
+      3.0
+    ]
+  },
+  "independent_switches": [
+    "shape_enabled",
+    "shape_affine_weight",
+    "shape_collapse_weight"
+  ],
+  "preflight_budget": "20 flags-off +100 real-checkpoint continuation updates; source final remains immutable; smoke horizon opt.iterations expanded 50000->50100 only in destination",
+  "gates": [
+    "unit tests for affine/rigid/unknown-ID/collapse/gradient/flags-off",
+    "actual shape-only optimizer update on real C1 state",
+    "GPU100 and full70->100 resume with checksum-bound graph state",
+    "manual reference mask and candidate16k graph review before enabling loss",
+    "no further full candidate automatically"
+  ],
+  "validation_selection": "RGB validation PSNR only; lock before final testing; historical C1 already locked47k",
+  "prospective_success": {
+    "validation_PSNR_delta_min_dB": -0.2,
+    "validation_LPIPS_relative_increase_max": 0.05,
+    "validation_contact_ROI_MAE_relative_reduction_min": 0.1,
+    "contact_frame_window": [
+      62,
+      108
+    ],
+    "visual_requirement": "no new tearing, cross-duck adhesion or collapse; inspect separation and reappearance; independent physical truth unavailable"
+  },
+  "ROI": "fixed dilation of GT yellow duck pixels in validation frames62..108, measured after selection; report training diagnostics separately; historical test exposure disclosed",
+  "limits": [
+    "single scene/seed",
+    "GPU nondeterminism",
+    "historical control reuse and historical test exposure",
+    "shape prior is not a constitutive stress or physical validation"
+  ],
+  "diagnostic_corrections": [
+    "Initial dominant-contributor lift was too sparse; final lift uses corrected actual pre-update alpha*T mixture",
+    "Negative additive renderer scales are not physical inversion: signs cancel in covariance",
+    "Compare effective absolute scales with clear reference, not near-zero canonical scales"
+  ],
+  "frozen_training_source_policy": "No edits after preflight; postprocess fixes outside variants/shape_coherence"
+}

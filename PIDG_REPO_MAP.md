@@ -1,5 +1,25 @@
 # PIDG repository map — M0
 
+## C1 local shape-coherence candidate (2026-11-02)
+
+`variants/shape_coherence/prepare.py` copies C1 and changes only the optional
+Tuning import. `model.py` estimates local relative F with rank-gated FP64 fits,
+separately switchable affine and broad stretch/collapse terms, and no material
+law. `observations.py` lifts manually reviewed early train-image components to
+partial reference patch labels using corrected alpha*T contributions. Unknown
+points never connect, and these labels are not physical material IDs.
+`runtime.py` builds a frozen graph only after original densification and binds
+its state to complete checkpoints; disabled flags delegate to original C1.
+`audit.py`, `verify_update.py`, and `tests/test_shape_coherence.py` check the
+train-only evidence, intended gradients, actual optimizer update, affine/rigid
+behavior, label isolation and checkpoint integrity. `run.py` pauses at16k for
+manual graph review before enabling the objective. Historical C1 is reused.
+`output/shape_coherence/{continue_run,review_graph,finalize,verify_results}.py`
+provide launch receipts, a coverage gate, locked-selection comparison and media
+verification. No collision force, constitutive law or learned segmentation is
+introduced. Early points lose visible contribution later in C1, so this weak
+partial prior must not be presented as complete persistent object tracking.
+
 ## C1 optical-flow-only ablation (2026-11-02)
 
 User correction: reuse historical C1; do not retrain the original. The former
