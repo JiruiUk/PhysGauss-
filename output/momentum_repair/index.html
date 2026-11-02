@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PIDG：动量梯度修正对照</title>
+<style>body{font:17px/1.65 system-ui;max-width:1200px;margin:32px auto;padding:0 20px;background:#112035;color:#edf4fc}h1,h2{line-height:1.3}a{color:#8ad8ff}video,img{width:100%;background:#000;border-radius:8px}section{margin:35px 0}strong{color:#bde8ff}input{width:100%}.note{padding:16px;background:#20334b;border-radius:8px}</style>
+<h1>动量梯度修正：M1 对照 L1</h1>
+<p><strong>重建明显恢复，物理可信度尚未改善。</strong>验证选择best：测试PSNR 33.9658 → 39.7018 dB，LPIPS 0.021389 → 0.010624。独立二维速度推进EPE改善8.99%，未达到预设10%门槛；原始动量残差恶化。</p>
+<p class="note">两组均由同一完整3k状态到总50k；M1增加共享形变动量梯度上限。单场景单种子，历史测试暴露；首个物理事件前已有最高0.65dB差异，不能将全部提升严格归于新策略。视频10fps仅为播放速度。</p>
+<section><h2>M1：验证选择49k</h2><video controls loop preload="metadata" src="M1_guarded_shared/GT_Render_best.mp4"></video>
+<p><a href="M1_guarded_shared/GT_Render_50000.mp4">最终50k视频</a> · <a href="M1_guarded_shared/index.html">M1全部帧</a> · <a href="M1_guarded_shared_GT_Render.zip">M1 PNG/视频ZIP</a></p></section>
+<section><h2>L1：原共享分支对照</h2><video controls loop preload="metadata" src="../unified_flow/L1_shared_stress/GT_Render_best.mp4"></video>
+<p><a href="../unified_flow/L1_shared_stress/index.html">L1全部帧</a></p></section>
+<section><h2>同一测试帧对照</h2><p>每张均为左GT、右Render。先显示原帧85，注意悬空鸭子恢复后仍有残影。</p><input id="f" type="range" min="0" max="49" value="21"><p id="v"></p><p>L1</p><img id="a"><p>M1</p><img id="b"></section>
+<section><h2>验证曲线与独立二维运动</h2><img src="comparison.png"><p><a href="../../experiments/momentum_repair/assessment.md">完整研究报告</a> · <a href="../../experiments/momentum_repair/final_verification.json">独立交付核验</a></p></section>
+<script>const f=document.getElementById('f');function u(){let n=String(f.value).padStart(5,'0');document.getElementById('v').textContent='测试序号 '+f.value;document.getElementById('a').src='../unified_flow/L1_shared_stress/pairs/best/'+n+'.png';document.getElementById('b').src='M1_guarded_shared/pairs/best/'+n+'.png'}f.oninput=u;u();</script></html>

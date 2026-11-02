@@ -1,0 +1,80 @@
+{
+  "review_utc": "2026-11-02T12:54:55.064344+00:00",
+  "validation_step": 42000,
+  "latest": {
+    "iteration": 42000,
+    "split": "validation",
+    "metrics": {
+      "PSNR": 38.91655019124349,
+      "SSIM": 0.993892252445221,
+      "LPIPS": 0.011610615882091224,
+      "MS-SSIM": 0.9959149599075318
+    }
+  },
+  "same_step_control": {
+    "iteration": 42000,
+    "split": "validation",
+    "metrics": {
+      "PSNR": 33.528595542907716,
+      "SSIM": 0.9876433650652567,
+      "LPIPS": 0.02274562558159232,
+      "MS-SSIM": 0.9894640207290649
+    }
+  },
+  "current_best": {
+    "value": 39.05105406443278,
+    "iteration": 41000,
+    "snapshot": "best",
+    "metrics": {
+      "PSNR": 39.05105406443278,
+      "SSIM": 0.993897145986557,
+      "LPIPS": 0.011707394003557662,
+      "MS-SSIM": 0.9959016601244609
+    },
+    "selection_split": "validation"
+  },
+  "completed_control_best": {
+    "value": 33.75526212056478,
+    "iteration": 50000,
+    "snapshot": "best",
+    "metrics": {
+      "PSNR": 33.75526212056478,
+      "SSIM": 0.9879473368326823,
+      "LPIPS": 0.022164593109240134,
+      "MS-SSIM": 0.9897397915522258
+    },
+    "selection_split": "validation"
+  },
+  "latest_minus_control_best_PSNR": 5.161288070678708,
+  "LPIPS_reduction_vs_control_best": 0.4761638156465454,
+  "relative_MSE_reduction_from_PSNR": 0.695300884917232,
+  "pre_physics_max_abs_PSNR_difference": 0.653574879964193,
+  "guard_events_checked": 343,
+  "all_guard_caps_valid": true,
+  "last_guard": {
+    "iteration": 42300,
+    "true_momentum_forward": 389.6703796386719,
+    "image_forward": 0.001024480676278472,
+    "physics_weight": 0.01,
+    "scale": 4.422869772546893e-07,
+    "cap": 0.1,
+    "groups": {
+      "grid": {
+        "image_norm": 0.001988582545891404,
+        "weighted_momentum_norm": 449.6136328125,
+        "guarded_momentum_norm": 0.00019885825458914043
+      },
+      "deformation": {
+        "image_norm": 0.06092453375458717,
+        "weighted_momentum_norm": 823.559609375,
+        "guarded_momentum_norm": 0.0003642496902195215
+      }
+    },
+    "private_gradients_preserved": true
+  },
+  "last_3k_raw_huber_mean": {
+    "M1": 2822.00400428772,
+    "L1_same_iteration_window": 215.24497884114584
+  },
+  "limits": "Training in progress; no new test opened or independent 2D evaluation yet. Different point sets and local neighborhoods make raw residual probe averages non-identical samples; finite-difference residual is not physical GT."
+}

@@ -1,0 +1,51 @@
+{
+  "model": "M1_guarded_shared",
+  "selection": {
+    "value": 39.26551780700684,
+    "iteration": 49000,
+    "snapshot": "best",
+    "metrics": {
+      "PSNR": 39.26551780700684,
+      "SSIM": 0.9940162340799967,
+      "LPIPS": 0.011371722305193543,
+      "MS-SSIM": 0.9959900339444479
+    },
+    "selection_split": "validation"
+  },
+  "metrics": {
+    "ours_50000": {
+      "SSIM": 0.9944899678230286,
+      "PSNR": 39.69548034667969,
+      "LPIPS": 0.010564502328634262,
+      "MS-SSIM": 0.9964537620544434
+    },
+    "ours_best": {
+      "SSIM": 0.9944384098052979,
+      "PSNR": 39.70183563232422,
+      "LPIPS": 0.010624375194311142,
+      "MS-SSIM": 0.9964204430580139
+    }
+  },
+  "pairs": 100,
+  "pixel_identity_verified": true,
+  "independent_PSNR_max_difference": 4.212049944385399e-06,
+  "videos": [
+    {
+      "file": "F:\\A_Edinburgh\\PhysGauss\\output\\momentum_repair\\M1_guarded_shared\\GT_Render_best.mp4",
+      "frames": 50,
+      "display_fps": 10,
+      "seconds": 5.0,
+      "note": "display rate only; acquisition FPS unknown"
+    },
+    {
+      "file": "F:\\A_Edinburgh\\PhysGauss\\output\\momentum_repair\\M1_guarded_shared\\GT_Render_50000.mp4",
+      "frames": 50,
+      "display_fps": 10,
+      "seconds": 5.0,
+      "note": "display rate only; acquisition FPS unknown"
+    }
+  ],
+  "velocity_source": "trajectory",
+  "gallery": "F:\\A_Edinburgh\\PhysGauss\\output\\momentum_repair\\M1_guarded_shared\\index.html",
+  "archive": "F:\\A_Edinburgh\\PhysGauss\\output\\momentum_repair\\M1_guarded_shared_GT_Render.zip"
+}

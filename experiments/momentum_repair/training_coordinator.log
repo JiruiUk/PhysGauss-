@@ -1,0 +1,44 @@
+RAW TRAIN FLOW VERIFIED
+Traceback (most recent call last):
+  File "F:\A_Edinburgh\PhysGauss\envs\pidg-cu128\Lib\pathlib.py", line 1116, in mkdir
+    os.mkdir(self, mode)
+FileNotFoundError: [WinError 3] ϵͳ�Ҳ���ָ����·����: 'F:\\A_Edinburgh\\PhysGauss\\output\\momentum_repair\\M1_guarded_shared\\pairs\\best'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "F:\A_Edinburgh\PhysGauss\variants\momentum_guard\run.py", line 129, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\variants\momentum_guard\run.py", line 124, in main
+    monitor('rendering');base.render(d,repo,deadline,split='test',tags=['best','50000']);export(d)
+                                                                                         ^^^^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\variants\momentum_guard\export.py", line 18, in export
+    old.export(directory)
+  File "F:\A_Edinburgh\PhysGauss\variants\flow_comparison\export.py", line 50, in export
+    differences = list(pool.map(pair, [(tag, i) for tag in ['best', '50000'] for i in range(50)]))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\envs\pidg-cu128\Lib\concurrent\futures\_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\envs\pidg-cu128\Lib\concurrent\futures\_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\envs\pidg-cu128\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\envs\pidg-cu128\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "F:\A_Edinburgh\PhysGauss\envs\pidg-cu128\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\variants\flow_comparison\export.py", line 38, in pair
+    destination = out/'pairs'/tag/filename; destination.parent.mkdir(parents=True, exist_ok=True)
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\envs\pidg-cu128\Lib\pathlib.py", line 1120, in mkdir
+    self.parent.mkdir(parents=True, exist_ok=True)
+  File "F:\A_Edinburgh\PhysGauss\envs\pidg-cu128\Lib\pathlib.py", line 1116, in mkdir
+    os.mkdir(self, mode)
+PermissionError: [WinError 5] �ܾ����ʡ�: 'F:\\A_Edinburgh\\PhysGauss\\output\\momentum_repair\\M1_guarded_shared\\pairs'

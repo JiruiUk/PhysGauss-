@@ -1,7 +1,13 @@
 # Codex 工作交接：运动光流与轨迹导出速度对照
 
-更新时间：2026-11-02 11:56 UTC（Europe/London）。
+更新时间：2026-11-02 13:26 UTC（Europe/London）。
 工作目录：`F:\A_Edinburgh\PhysGauss`；Windows / PowerShell。
+
+> **13:26 最终交付：M1_guarded_shared 已完成总50k、best49k/final50k测试、GT|Render导出、独立核验和人工图像/视频审阅。本轮结束，禁止按下文历史启动记录重训；自动跟进 `pidg` 已删除。测试best PSNR由L1的33.965832升至39.701836 dB，LPIPS约降低50.3%；验证二维速度推进EPE降低8.99%，未达到预先10%综合收益门槛，因此只确认重建恢复，不确认物理预测更可靠。未缩放动量残差恶化；同一组共同3k材料点诊断表明，原应变率修正项散度是大残差的主要数值贡献。加速度差分对步长仍敏感，不据此归因缺外力。不启动更多完整训练。单场景单种子，首次guard生效前已有0.26–0.65 dB差异，不能把全部收益唯一归因guard。详细证据、限制和下一步只读/解析测试建议见 `experiments/momentum_repair/assessment.md`；新旧同步视频与逐帧对照 `output/momentum_repair/index.html`。**
+
+最终核验：`experiments/momentum_repair/final_verification.json` passed，人工审阅已完成；100张拼接PNG逐像素一致，独立PSNR误差小于4.3e-6 dB，两段视频各50帧，ZIP CRC和SHA通过。源码/数据/共同3k/完整50k/渲染快照均核验；468次光流、420次动量评估和419次实际动量更新（原trainer末步不执行optimizer.step）。完整50k SHA `c54c4bf8b53f9129e8297e7f7661cdc8e839ad35fba0dbff2ef9be775a0f5684`。原协调器仅在并行导出mkdir处失败；`finish_report.py` 串行建目录后接续，保留原selection_lock SHA `d2617e73482d38d30117da5c08c440f4d53017297709c91c599e0e05b92a660d`，没有重训、重选模型或修改冻结训练源码。所有旧模型和无关改动保留。
+
+以下11:56及更早内容仅为历史追溯，不代表仍有训练或自动跟进。
 
 > **11:56 最新授权与接续：用户要求“找到问题自动进行改进”。已完成三个真实同批训练帧的梯度/差分诊断：L1已加权动量/RGB梯度在Grid4D约4884–15748倍、形变网络约850–3241倍；二阶差分未稳定收敛，尚不能据此证明整个退化的因果或缺外力。新增独立开关变体 `variants/momentum_guard`，只对动量共享形变梯度施加同批RGB梯度10%上限，私有stress头及已有force_sigma梯度保留；这是显式一阶梯度策略，真实前向物理残差不缩放。没有新参数、没有新外力/本构/材料未知量，网络/步长/原权重不变。15项测试、100步GPU短训/70→100完整恢复、20步flags-off、实际优化器更新、私有梯度精确相等和共享上限验证全通过。里程碑 `1af20b2`。唯一完整训练协调器工具会话21588，controller PID237464，训练PID235388，日志 `experiments/momentum_repair/training_coordinator.log`；从与L1相同扩展完整3k SHA e361f4ba241a77e4158d341986bf86f2797e24c9a560817b04ad6c18b3a4caa5 到总50k。不要重复启动或修改冻结源码/配置/数据。先读 `experiments/momentum_repair/{diagnosis.md,plan.json,preflight.json}`，执行 `envs/pidg-cu128/python.exe output/momentum_repair/status.py`。健康推进保持安静，不另占GPU。结束自动验证选择锁定→best/final测试→GT|Render PNG/视频/ZIP→V2独立运动与未缩放动量残差→report。completed后仍须运行 `output/momentum_repair/verify_results.py`，人工查看生成的早中晚/原帧85和视频审阅图及图表，补充assessment并独立结果提交。比较M1−L1，报告图像质量、独立二维运动、内部结构一致性/原始残差，不能把小梯度或定义上零速度差说成物理真值。单场景单种子、历史测试暴露。仅新增这一个完整候选，不无边界扩训。完成交付后删除新自动跟进。旧L0/L1及以下历史段落不可作为重新训练依据。**
 

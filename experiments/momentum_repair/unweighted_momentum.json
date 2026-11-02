@@ -1,0 +1,89 @@
+{
+  "probes": [
+    {
+      "model": "L1_shared_stress",
+      "training_frame": 2,
+      "snapshot": "best",
+      "iteration": 50000,
+      "raw_huber": 211.49693298339844,
+      "residual_rms": 400.3778991699219,
+      "valid_fraction": 1.0,
+      "nodes": 2499,
+      "anchors": 64,
+      "ramp": 1.0,
+      "velocity_source": "trajectory",
+      "stress_source": "shared"
+    },
+    {
+      "model": "L1_shared_stress",
+      "training_frame": 83,
+      "snapshot": "best",
+      "iteration": 50000,
+      "raw_huber": 336.17938232421875,
+      "residual_rms": 948.091552734375,
+      "valid_fraction": 1.0,
+      "nodes": 2499,
+      "anchors": 64,
+      "ramp": 1.0,
+      "velocity_source": "trajectory",
+      "stress_source": "shared"
+    },
+    {
+      "model": "L1_shared_stress",
+      "training_frame": 155,
+      "snapshot": "best",
+      "iteration": 50000,
+      "raw_huber": 215.7647705078125,
+      "residual_rms": 459.4502258300781,
+      "valid_fraction": 1.0,
+      "nodes": 2499,
+      "anchors": 64,
+      "ramp": 1.0,
+      "velocity_source": "trajectory",
+      "stress_source": "shared"
+    },
+    {
+      "model": "M1_guarded_shared",
+      "training_frame": 2,
+      "snapshot": "best",
+      "iteration": 50000,
+      "raw_huber": 2881.498779296875,
+      "residual_rms": 23171.357421875,
+      "valid_fraction": 1.0,
+      "nodes": 2523,
+      "anchors": 64,
+      "ramp": 1.0,
+      "velocity_source": "trajectory",
+      "stress_source": "shared"
+    },
+    {
+      "model": "M1_guarded_shared",
+      "training_frame": 83,
+      "snapshot": "best",
+      "iteration": 50000,
+      "raw_huber": 6879.8583984375,
+      "residual_rms": 48042.9765625,
+      "valid_fraction": 1.0,
+      "nodes": 2523,
+      "anchors": 64,
+      "ramp": 1.0,
+      "velocity_source": "trajectory",
+      "stress_source": "shared"
+    },
+    {
+      "model": "M1_guarded_shared",
+      "training_frame": 155,
+      "snapshot": "best",
+      "iteration": 50000,
+      "raw_huber": 5606.3251953125,
+      "residual_rms": 38120.01171875,
+      "valid_fraction": 0.984375,
+      "nodes": 2523,
+      "anchors": 64,
+      "ramp": 1.0,
+      "velocity_source": "trajectory",
+      "stress_source": "shared"
+    }
+  ],
+  "interpretation": "No clipping/rescaling of reported residual; no physical stress/acceleration GT"
+}

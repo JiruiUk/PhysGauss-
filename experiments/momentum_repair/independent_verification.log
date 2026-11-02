@@ -1,0 +1,70 @@
+RAW TRAIN FLOW VERIFIED
+{
+  "status": "passed",
+  "completed_utc": "2026-11-02T13:18:30.468859+00:00",
+  "source_data_SHA_verified": true,
+  "full_checkpoint_sha256": "c54c4bf8b53f9129e8297e7f7661cdc8e839ad35fba0dbff2ef9be775a0f5684",
+  "common_extended3k_sha256": "e361f4ba241a77e4158d341986bf86f2797e24c9a560817b04ad6c18b3a4caa5",
+  "no_new_parameters": true,
+  "config_difference": [
+    "momentum_gradient_guard",
+    "momentum_shared_ratio"
+  ],
+  "snapshots": {
+    "best": {
+      "selected_iteration": 49000,
+      "sha256": {
+        "runs\\pidg_momentum_guard\\M1_guarded_shared\\rubber_duck\\deform\\iteration_best\\deform.pth": "ac36c3d4a4b472507b390757bd93d347699d7068231fc66a11ffaa749e5503ae",
+        "runs\\pidg_momentum_guard\\M1_guarded_shared\\rubber_duck\\point_cloud\\iteration_best\\material.pt": "bc4083065ce817b98e7e1f0412b9bbe4e8acb10aaa0507883905a21dffb64043",
+        "runs\\pidg_momentum_guard\\M1_guarded_shared\\rubber_duck\\point_cloud\\iteration_best\\point_cloud.ply": "0998460cbf0131d28e80d0008b7880574e2e8997c6c01492bc0555bcc78e2a11"
+      }
+    },
+    "50000": {
+      "selected_iteration": 50000,
+      "sha256": {
+        "runs\\pidg_momentum_guard\\M1_guarded_shared\\rubber_duck\\deform\\iteration_50000\\deform.pth": "342ae0ae6f349dd7efe2d5102ea02c4b483a91c8cdd02b217d10bfcfa5745909",
+        "runs\\pidg_momentum_guard\\M1_guarded_shared\\rubber_duck\\point_cloud\\iteration_50000\\material.pt": "ccdc9518c0449f4ce67d87a615e3c61e46519c7a22c0272967adcf6b534e2cd7",
+        "runs\\pidg_momentum_guard\\M1_guarded_shared\\rubber_duck\\point_cloud\\iteration_50000\\point_cloud.ply": "5a2dc43eaa98c955ff2ff7b13184d8dc6bbfe31f5ccc1993256833ed0bf9faf4"
+      }
+    }
+  },
+  "validation_selection_verified": true,
+  "test_after_selection_lock": true,
+  "unused_physics_unchanged": true,
+  "same_observed_flow_frame_schedule_as_control": true,
+  "flow_events": 468,
+  "momentum_events": 420,
+  "momentum_optimizer_updates": 419,
+  "all_gradient_caps_verified": true,
+  "pixel_identity_pairs_verified": 100,
+  "independent_PSNR_max_error": 4.212049944385399e-06,
+  "ZIP_crc_passed": true,
+  "ZIP_sha256": "774cb4bd169440189e27d6b6a85173e714879345a4cad7f2d2bb635182c72601",
+  "videos": [
+    {
+      "path": "F:\\A_Edinburgh\\PhysGauss\\output\\momentum_repair\\M1_guarded_shared\\GT_Render_best.mp4",
+      "frames": 50,
+      "seconds": 5.0,
+      "sha256": "e6546c3ffa680261a2f620c334e5485a55add59b97961a2af6b391a68712b718"
+    },
+    {
+      "path": "F:\\A_Edinburgh\\PhysGauss\\output\\momentum_repair\\M1_guarded_shared\\GT_Render_50000.mp4",
+      "frames": 50,
+      "seconds": 5.0,
+      "sha256": "f220db9151ad09391fc8675cbee349f1fd79e0801f95420c626a222def15b669"
+    }
+  ],
+  "manual_review_pending": true,
+  "review_frame_ids": [
+    1,
+    85,
+    101,
+    197
+  ],
+  "analysis_scripts_sha256": {
+    "current_training_review.py": "5e20d8a6583c2d34751bf12a47ac809635d65d020dd2f9073eb9bae86a08cab8",
+    "finish_report.py": "2aaad7f42ed4b736f172086b956982b154e38e58dbbb3c640f2dc8b9872ba8eb",
+    "status.py": "22cc8efe3f6de473cecdde35ee7f26fa16d1e23657267f611dc43bb807dd993d",
+    "verify_results.py": "bddd5e0003b95430862b6464aed07a01620cb891e0d45a10e6427946c75321d9"
+  }
+}
