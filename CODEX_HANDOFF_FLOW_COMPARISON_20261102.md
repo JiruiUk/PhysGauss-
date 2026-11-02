@@ -1,6 +1,6 @@
 # Codex 工作交接：运动光流与轨迹导出速度对照
 
-更新时间：2026-11-02 02:31 UTC（Europe/London）。
+更新时间：2026-11-02 02:57 UTC（Europe/London）。
 工作目录：`F:\A_Edinburgh\PhysGauss`；Windows / PowerShell。
 
 > 给接手 Codex：先读本文件和根目录 `AGENTS.md`，检查队列是否仍在推进。训练已经启动，禁止重复启动第二个协调器。继续完成两组训练、渲染、运动诊断、结果解释和验证；不要从头重做已有工作。
@@ -15,14 +15,14 @@
 
 ## 2. 接手时的运行状态
 
-最近核验：2026-11-02 02:31:22 UTC。
+最近核验：2026-11-02 02:57 UTC。用户已授权在比较后继续改进，详见 `experiments/flow_comparison/followup_plan.md`。
 
 | 项目 | 状态 |
 |---|---|
-| K1_flow_independent | 正在完整训练，约 37,900 / 50,000 步 |
-| K1 最近验证 | 第 37,000 步，**验证 PSNR 37.36845 dB** |
-| K1 内部速度相对误差 | 五个训练时间探针平均约 **99.71%**，不是速度真值误差 |
-| K2_flow_trajectory | 尚未启动；K1 完成后队列自动启动 |
+| K1_flow_independent | 已完成 50,000 / 50,000 步 |
+| K1 最近/最佳验证 | 第 50,000 步，**验证 PSNR 38.026127 dB**，LPIPS 0.01371659 |
+| K1 内部速度相对误差 | 五个训练时间探针平均约 **99.80%**，不是速度真值误差 |
+| K2_flow_trajectory | 正在训练，约 4,100 / 50,000 步；4k 验证 PSNR 24.92583 dB |
 | 整个队列 | `training`；最近检查没有数值错误 |
 | 数据/单元/GPU/短训预检 | 全部通过，见第 5 节 |
 
@@ -41,7 +41,11 @@ envs/pidg-cu128/python.exe output/flow_comparison/status.py
 Get-Content experiments/flow_comparison/training_coordinator.log -Tail 20
 ```
 
-当前协调器由本聊天的 `exec_command` 启动，工具会话 ID **14891**；最后轮询仍在运行。不要假设另一聊天可以使用这个会话 ID，优先根据日志时间戳和进度判断是否活跃。启动时间约 01:39 UTC，参数 `--hours 12`；到期限会保存检查点并停止，届时可按下述恢复命令继续。
+旧协调器会话 **14891 已退出**，最后未保存日志到 41,760 步。接手时已确认没有 Python 进程，核验 41,000 步完整检查点，归档并移出超过该边界的 7 条/文件未保存诊断记录，再于约 02:40 UTC 恢复。新协调器工具会话 **76990**，日志 `experiments/flow_comparison/resume_coordinator_20261102.log`，参数 `--hours 12`。K1 随后完成，K2 已启动。不要假设另一聊天可以访问该会话，优先根据日志时间戳和进程判断。
+
+恢复凭据：`experiments/flow_comparison/resume_reconciliation.json`；完整原日志归档 `output/flow_comparison/resume_archives/20261102_024041/`。未改权重、配置或冻结源码；动量 KDTree 缓存未序列化、恢复时重建，因此不声称与不中断运行逐位一致。若再次中断，按新的检查点边界重新归档日志；`reconcile_resume.py` 是本次 K1/41k 的一次性脚本，不可原样重复用于 K2。
+
+已建立当前聊天的自动接续检查（automation ID `automation`，每 10 分钟）。训练正常推进时保持安静；结束后继续诊断和用户授权的条件式下一轮。不要重复创建跟进任务，也不要重复启动协调器。此次接续记录/辅助脚本提交见 `git log`。
 
 **只有确认旧协调器和训练进程已经退出后，才执行恢复命令：**
 
@@ -200,7 +204,7 @@ envs/pidg-cu128/python.exe -u output/flow_comparison/finalize.py
 ### finalize.py
 
 - 核验源码/数据/共同起点哈希、两组仅 velocity_source 不同、最终 50k 完整检查点、闲置时钟/速度头未改变、参数有限、应力头已更新、训练光流配对合法、导出核验。
-- 预期每组动量更新 420 次；还断言两组训练光流帧调度相同。若断言失败，先查日志与 RNG/调用路径，不能为了通过而删断言。
+- 预期每组动量损失计算 420 次，其中原训练器最终步跳过优化器更新，实际参与更新为 419 次；还断言两组训练光流帧调度相同。若断言失败，先查日志与 RNG/调用路径，不能为了通过而删断言。
 - 画 `training_comparison.png`、`motion_comparison.png`；输出 `experiments/flow_comparison/final_verification.json`。
 - 可能还需根据实际日志结构修正辅助脚本。例如历史诊断文件是否存在；必须据证据处理，不能伪造通过。
 
@@ -212,6 +216,8 @@ envs/pidg-cu128/python.exe -u output/flow_comparison/finalize.py
 4. 如结果差，列出有证据的原因与后续可区分原因的实验；不要直接断言一定是缺外力，也不要立刻加所有未知量联合训练。
 5. 单独提交结果里程碑，显式 stage 本任务报告、辅助脚本/图表/验证收据；不要提交巨量 checkpoint/视频/PNG，也不要 stage 无关脏文件。
 6. 中文给用户简短结果表、报告链接、两组 best 拼接视频/浏览页链接；明确还有哪些限制。
+
+用户追加授权：根据比较继续一个受控改进。若综合效果良好，沿当前技术路径处理一个有证据的瓶颈；若不行，尝试形变和应力共享 Grid4D/latent、速度由完整轨迹导出的同一分支。事先记录的门槛、结构含义和测试要求见 `experiments/flow_comparison/followup_plan.md`。不要把本次两组交付当作取消后续授权；下一组必须独立变体、测试、短训、完整训练和 GT|Render 比较，保留 K1/K2。
 
 ## 9. 历史结果与研究背景（勿重跑）
 

@@ -1,0 +1,39 @@
+{
+  "reason": "Previous coordinator and worker absent; last log 41760, saved state 41000.",
+  "created_utc": "2026-11-02T02:40:41.825108+00:00",
+  "boundary": 41000,
+  "checkpoint_sha256": "eedaab580f4beef6c0833bdecd0318e0610e5e4f3c11a1ef3b01ba22a8d1827c",
+  "archive": "F:\\A_Edinburgh\\PhysGauss\\output\\flow_comparison\\resume_archives\\20261102_024041",
+  "files": [
+    {
+      "file": "runs\\pidg_flow_comparison\\K1_flow_independent\\rubber_duck\\integrity_loss.jsonl",
+      "original_sha256": "f84039d4e5c748f1391a140b5acd5c503ff793f3ada2d9ed0470b114cebee352",
+      "retained_sha256": "2fe6378c6156ee7278d736fbf126c39f1764df767a9ff6d52f0e696b3478e77a",
+      "retained_rows": 380,
+      "archived_unsaved_rows": 7
+    },
+    {
+      "file": "runs\\pidg_flow_comparison\\K1_flow_independent\\rubber_duck\\material_momentum.jsonl",
+      "original_sha256": "2c26465fa82da6613161555889c070556edd27c4f517dc57f96686ce7d25fee2",
+      "retained_sha256": "872d15ddabdf105a981379ca7adc7335b30a8c5c77f881f82f6c64646051ef39",
+      "retained_rows": 330,
+      "archived_unsaved_rows": 7
+    },
+    {
+      "file": "runs\\pidg_flow_comparison\\K1_flow_independent\\rubber_duck\\observed_flow.jsonl",
+      "original_sha256": "57b125d6f56382c2ebc8acfe561b5ee88039bf5eb5cf3e7a386d7d04735191ca",
+      "retained_sha256": "12b09a233ef2af338364e7654ee506a7da4d538833a18c044c6a4f6088eb899c",
+      "retained_rows": 378,
+      "archived_unsaved_rows": 7
+    },
+    {
+      "file": "runs\\pidg_flow_comparison\\K1_flow_independent\\rubber_duck\\repair_loss.jsonl",
+      "original_sha256": "4f78b3c679e6ed74a64fbef92a0df02c36467330d99fecc428e25bb37330193b",
+      "retained_sha256": "0bb8f4671e75d3b4b31fe253f4570337045a8f86ef0fe8a7de52bf4dda5cc790",
+      "retained_rows": 381,
+      "archived_unsaved_rows": 7
+    }
+  ],
+  "weights_or_frozen_source_changed": false,
+  "limitation": "Local momentum KDTree cache is rebuilt on resume, not serialized; full optimizer/RNG restored, but bitwise uninterrupted equivalence is not claimed."
+}

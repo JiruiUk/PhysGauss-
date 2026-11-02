@@ -42,8 +42,13 @@ for name in names:
     schedules.append([(r['iteration'], r['source'], r['target']) for r in flow])
     export = read(REPORTS/(name+'_exports.json'))
     assert export['pairs'] == 100 and export['pixel_identity_verified'] and export['independent_PSNR_max_difference'] < 1e-4
-    checks[name] = {'final_checkpoint_sha256': manifest['sha256'], 'flow_updates': len(flow),
-        'momentum_updates': len(momentum), 'min_valid_neighborhood_fraction': min(r['valid_fraction'] for r in momentum),
+    # The inherited trainer evaluates losses but skips optimizer.step at its
+    # final iteration. Count evaluations separately from applied updates.
+    checks[name] = {'final_checkpoint_sha256': manifest['sha256'], 'flow_loss_evaluations': len(flow),
+        'flow_applied_update_iterations': sum(r['iteration'] < 50000 for r in flow),
+        'momentum_loss_evaluations': len(momentum),
+        'momentum_applied_update_iterations': sum(r['iteration'] < 50000 for r in momentum),
+        'min_valid_neighborhood_fraction': min(r['valid_fraction'] for r in momentum),
         'frozen_parameter_keys_verified': frozen, 'all_final_parameters_finite': True,
         'export_pixel_and_metric_checks': True}
     del state
