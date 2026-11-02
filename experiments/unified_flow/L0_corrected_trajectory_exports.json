@@ -1,0 +1,51 @@
+{
+  "model": "L0_corrected_trajectory",
+  "selection": {
+    "value": 33.73549321492513,
+    "iteration": 49000,
+    "snapshot": "best",
+    "metrics": {
+      "PSNR": 33.73549321492513,
+      "SSIM": 0.9872071047623953,
+      "LPIPS": 0.02357833497226238,
+      "MS-SSIM": 0.9894843717416127
+    },
+    "selection_split": "validation"
+  },
+  "metrics": {
+    "ours_50000": {
+      "SSIM": 0.9876661896705627,
+      "PSNR": 33.961578369140625,
+      "LPIPS": 0.022976644337177277,
+      "MS-SSIM": 0.9900357723236084
+    },
+    "ours_best": {
+      "SSIM": 0.9876050353050232,
+      "PSNR": 33.95381546020508,
+      "LPIPS": 0.023048661649227142,
+      "MS-SSIM": 0.9900027513504028
+    }
+  },
+  "pairs": 100,
+  "pixel_identity_verified": true,
+  "independent_PSNR_max_difference": 4.718144744231267e-06,
+  "videos": [
+    {
+      "file": "F:\\A_Edinburgh\\PhysGauss\\output\\unified_flow\\L0_corrected_trajectory\\GT_Render_best.mp4",
+      "frames": 50,
+      "display_fps": 10,
+      "seconds": 5.0,
+      "note": "display rate only; acquisition FPS unknown"
+    },
+    {
+      "file": "F:\\A_Edinburgh\\PhysGauss\\output\\unified_flow\\L0_corrected_trajectory\\GT_Render_50000.mp4",
+      "frames": 50,
+      "display_fps": 10,
+      "seconds": 5.0,
+      "note": "display rate only; acquisition FPS unknown"
+    }
+  ],
+  "velocity_source": "trajectory",
+  "gallery": "F:\\A_Edinburgh\\PhysGauss\\output\\unified_flow\\L0_corrected_trajectory\\index.html",
+  "archive": "F:\\A_Edinburgh\\PhysGauss\\output\\unified_flow\\L0_corrected_trajectory_GT_Render.zip"
+}

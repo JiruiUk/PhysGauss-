@@ -1,9 +1,9 @@
 # Codex 工作交接：运动光流与轨迹导出速度对照
 
-更新时间：2026-11-02 02:57 UTC（Europe/London）。
+更新时间：2026-11-02 08:40 UTC（Europe/London）。
 工作目录：`F:\A_Edinburgh\PhysGauss`；Windows / PowerShell。
 
-> 给接手 Codex：先读本文件和根目录 `AGENTS.md`，检查队列是否仍在推进。训练已经启动，禁止重复启动第二个协调器。继续完成两组训练、渲染、运动诊断、结果解释和验证；不要从头重做已有工作。
+> 给接手 Codex：K1/K2及后续L0/L1均已完成训练、导出、运动诊断与结果核验。本轮结构尝试已结束，先读下方最新记录及 `experiments/unified_flow/assessment.md`。后面的历史进度和恢复命令只供追溯，禁止据此重启或重复训练。
 
 ## 1. 用户目标与授权
 
@@ -14,6 +14,8 @@
 用户中文沟通。不要把“已启动”写成“已完成”，不要用内部自一致性代替物理真值验证。未获授权不要发邮件/Slack 消息；不要主动创建新聊天或子代理。
 
 ## 2. 接手时的运行状态
+
+**08:40 UTC 最新状态：L0/L1均完成总50k、全部GT|Render导出、V2运动诊断及独立核验。L0验证选择49k，L1选择50k；验证PSNR33.735493／33.755262，测试best PSNR33.953815／33.965832。L1验证LPIPS降低6.00%，速度推进EPE仅降低0.12%，轨迹EPE增加0.34%，不满足预先综合收益门槛。原帧85两组都仍漏悬空鸭子。详见 experiments/unified_flow/assessment.md。诊断导入时hash环境变量设置过晚，原协调器23682/PID227560空等陈旧root构建锁；已停止该已完成训练的协调器，以独立finish_report.py提前设路径，08:36:14完成，不改冻结源码、不动旧锁、不重训不重渲染。恢复会话22702及CPU核验82770均成功退出。final_verification.json与snapshot_verification.json通过；早中晚、原帧85、视频解码和图表均人工检查。本轮结构尝试已完成，不启动更多完整训练；结果里程碑提交及自动跟进删除将在本次交付完成。**
 
 **05:45 UTC 最新状态：下一轮完整训练已启动，唯一协调器工具会话23682，日志 experiments/unified_flow/training_coordinator.log。L0_corrected_trajectory 正从扩展共同3k状态恢复，L1_shared_stress 随后自动训练；两组各总50k。不要重复启动。`envs/pidg-cu128/python.exe output/unified_flow/status.py` 查看进度。新变体/协议/预检里程碑提交 e058831；上一轮完整结果和几何审计提交495dff9。15项测试、两组100步GPU短训、70→100恢复、20步flags-off、实际隔离优化器更新均通过。实际更新：L0旧应力头改变/新头不变；L1新应力头改变/旧物理网不变；两组grid/形变均改变、旧velocity头不变。完整共同起点继承张量/优化器状态/RNG逐项核验通过，凭据 experiments/unified_flow/{preflight,optimizer_update_checks,prefix_extension_checks}.json。原3k SHA6da523...ebce，扩展3k SHA e361f4ba241a77e4158d341986bf86f2797e24c9a560817b04ad6c18b3a4caa5；只增加两组同样的seed20261102、std.001、bias0应力Linear(256,6)及空状态优化器组，没有额外拟合。**
 

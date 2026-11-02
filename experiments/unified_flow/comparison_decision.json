@@ -1,0 +1,20 @@
+{
+  "PSNR_delta_dB": 0.01976890563965128,
+  "LPIPS_relative_change": -0.05995935950037934,
+  "velocity_EPE_relative_change": -0.0011982597103928905,
+  "geometric_EPE_relative_change": 0.003364072359533621,
+  "criteria_passed": [
+    true,
+    true,
+    false,
+    true
+  ],
+  "overall_benefit": false,
+  "decision": "Complete structural attempt; no further full training launched",
+  "evidence_limits": [
+    "single scene and seed",
+    "estimated 2D flow",
+    "no physical3D ground truth",
+    "shared latent is not constitutive law"
+  ]
+}

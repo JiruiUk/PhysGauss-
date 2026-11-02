@@ -1,0 +1,53 @@
+{
+  "status": "passed",
+  "models": {
+    "L0_corrected_trajectory": {
+      "best": {
+        "selected_iteration": 49000,
+        "sha256": {
+          "runs\\pidg_unified_flow\\L0_corrected_trajectory\\rubber_duck\\deform\\iteration_best\\deform.pth": "6846bd0e532c2bf558c9c97f0ee98ca594179aad3b136fbf3988c415a347ee5a",
+          "runs\\pidg_unified_flow\\L0_corrected_trajectory\\rubber_duck\\point_cloud\\iteration_best\\material.pt": "efc5ed42ef94f78af91aa92881c97848e27afefcfada717cc8ec8f04e089d533",
+          "runs\\pidg_unified_flow\\L0_corrected_trajectory\\rubber_duck\\point_cloud\\iteration_best\\point_cloud.ply": "f498617821c33526609aa8852096563ab47a331bd7fd68565fd71047c4ca75cb"
+        },
+        "extended_head_present": true,
+        "all_deformation_parameters_finite": true,
+        "final_matches_full_checkpoint": false
+      },
+      "50000": {
+        "selected_iteration": 50000,
+        "sha256": {
+          "runs\\pidg_unified_flow\\L0_corrected_trajectory\\rubber_duck\\deform\\iteration_50000\\deform.pth": "827dabcca95cf8e7d26faee554e9e573d03a11cd35f4a8ac6b89126dc4798da5",
+          "runs\\pidg_unified_flow\\L0_corrected_trajectory\\rubber_duck\\point_cloud\\iteration_50000\\material.pt": "d7034abe4fd1c3310b61c8c9703c63e6e8aff43ae15f7c7f72394b78efd628fc",
+          "runs\\pidg_unified_flow\\L0_corrected_trajectory\\rubber_duck\\point_cloud\\iteration_50000\\point_cloud.ply": "0f7751dfdabe53b6c84b105bf95a6185d4afe469c60008518e7e89d48e9471c4"
+        },
+        "extended_head_present": true,
+        "all_deformation_parameters_finite": true,
+        "final_matches_full_checkpoint": true
+      }
+    },
+    "L1_shared_stress": {
+      "best": {
+        "selected_iteration": 50000,
+        "sha256": {
+          "runs\\pidg_unified_flow\\L1_shared_stress\\rubber_duck\\deform\\iteration_best\\deform.pth": "8fe0656792f384f1c718eb209d03e57c3c4bb43ee8a10f2d6acea7d8a81720f9",
+          "runs\\pidg_unified_flow\\L1_shared_stress\\rubber_duck\\point_cloud\\iteration_best\\material.pt": "6116fb8613cfe3396e26ac923bd32cf3b64325bb8ccade14f5d02637998ffc23",
+          "runs\\pidg_unified_flow\\L1_shared_stress\\rubber_duck\\point_cloud\\iteration_best\\point_cloud.ply": "37ef22babef356d6cdf1a94e04d619ff2f210349cfd16717538858e8c24181b6"
+        },
+        "extended_head_present": true,
+        "all_deformation_parameters_finite": true,
+        "final_matches_full_checkpoint": false
+      },
+      "50000": {
+        "selected_iteration": 50000,
+        "sha256": {
+          "runs\\pidg_unified_flow\\L1_shared_stress\\rubber_duck\\deform\\iteration_50000\\deform.pth": "8fe0656792f384f1c718eb209d03e57c3c4bb43ee8a10f2d6acea7d8a81720f9",
+          "runs\\pidg_unified_flow\\L1_shared_stress\\rubber_duck\\point_cloud\\iteration_50000\\material.pt": "6116fb8613cfe3396e26ac923bd32cf3b64325bb8ccade14f5d02637998ffc23",
+          "runs\\pidg_unified_flow\\L1_shared_stress\\rubber_duck\\point_cloud\\iteration_50000\\point_cloud.ply": "37ef22babef356d6cdf1a94e04d619ff2f210349cfd16717538858e8c24181b6"
+        },
+        "extended_head_present": true,
+        "all_deformation_parameters_finite": true,
+        "final_matches_full_checkpoint": true
+      }
+    }
+  }
+}

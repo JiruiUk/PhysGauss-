@@ -1,0 +1,115 @@
+RAW TRAIN FLOW VERIFIED
+{
+  "status": "passed",
+  "completed_utc": "2026-11-02T08:37:27.640853+00:00",
+  "same_extended_prefix_sha256": "e361f4ba241a77e4158d341986bf86f2797e24c9a560817b04ad6c18b3a4caa5",
+  "only_arm_config_difference": "stress_source",
+  "source_and_data_SHA_verified": true,
+  "identical_flow_frame_schedule": true,
+  "identical_momentum_iteration_schedule": true,
+  "selection_locked_before_test_render": true,
+  "models": {
+    "L0_corrected_trajectory": {
+      "full_checkpoint_sha256": "18024ea2841b3db64c3b997d79e547fea3ee68776f2ce6188064d6ed2def3fa5",
+      "all_parameters_finite": true,
+      "best_iteration": 49000,
+      "best_validation_PSNR": 33.73549321492513,
+      "flow_evaluations": 468,
+      "flow_applied_update_iterations": 467,
+      "momentum_evaluations": 420,
+      "momentum_applied_update_iterations": 419,
+      "unused_physics_keys_unchanged": [
+        "time_embed.frequencies",
+        "time_proj.weight",
+        "time_proj.bias",
+        "velocity_head.weight",
+        "velocity_head.bias"
+      ],
+      "new_stress_head_changed": false,
+      "old_stress_head_changed": true,
+      "pixel_identity_pairs_verified": 100,
+      "independent_PSNR_max_error": 4.718144744231267e-06,
+      "ZIP_crc_passed": true,
+      "ZIP_sha256": "b3b1a728f9f78034252cb88ad4d727737e37c76ad4e4cd83f8bdb92c150ca0bb",
+      "videos": [
+        {
+          "path": "F:\\A_Edinburgh\\PhysGauss\\output\\unified_flow\\L0_corrected_trajectory\\GT_Render_best.mp4",
+          "frames": 50,
+          "seconds": 5.0,
+          "sha256": "fdbc601c161f15a10e53c9a4909fef1cbd0b45907c16efd5c5da8a314aa874f0"
+        },
+        {
+          "path": "F:\\A_Edinburgh\\PhysGauss\\output\\unified_flow\\L0_corrected_trajectory\\GT_Render_50000.mp4",
+          "frames": 50,
+          "seconds": 5.0,
+          "sha256": "c00d9d6bbbb8c3017d1fd0be30dc604372de506dc946ab1d8c3f82f4c4068983"
+        }
+      ]
+    },
+    "L1_shared_stress": {
+      "full_checkpoint_sha256": "c03e1ffdcfb8e5ad3a4711d12bf269a2904cedc8497350d4c4f6366dadeca16c",
+      "all_parameters_finite": true,
+      "best_iteration": 50000,
+      "best_validation_PSNR": 33.75526212056478,
+      "flow_evaluations": 468,
+      "flow_applied_update_iterations": 467,
+      "momentum_evaluations": 420,
+      "momentum_applied_update_iterations": 419,
+      "unused_physics_keys_unchanged": [
+        "planes",
+        "time_embed.frequencies",
+        "time_proj.weight",
+        "time_proj.bias",
+        "index_embed.weight",
+        "shared_net.0.weight",
+        "shared_net.0.bias",
+        "shared_net.2.weight",
+        "shared_net.2.bias",
+        "velocity_head.weight",
+        "velocity_head.bias",
+        "stress_head.weight",
+        "stress_head.bias"
+      ],
+      "new_stress_head_changed": true,
+      "old_stress_head_changed": false,
+      "pixel_identity_pairs_verified": 100,
+      "independent_PSNR_max_error": 4.9358906935026425e-06,
+      "ZIP_crc_passed": true,
+      "ZIP_sha256": "4b52869302ecb1330b080594111b5d79d7bbe2e400de036bee84afbf575816ae",
+      "videos": [
+        {
+          "path": "F:\\A_Edinburgh\\PhysGauss\\output\\unified_flow\\L1_shared_stress\\GT_Render_best.mp4",
+          "frames": 50,
+          "seconds": 5.0,
+          "sha256": "9cb9b5732a46d27b46e866c42acc91782d732928a429e25114ad5a4fa947860a"
+        },
+        {
+          "path": "F:\\A_Edinburgh\\PhysGauss\\output\\unified_flow\\L1_shared_stress\\GT_Render_50000.mp4",
+          "frames": 50,
+          "seconds": 5.0,
+          "sha256": "217f088807a0b25011f09b1c1a5cb8444161866aa0756bbdc2b15ffb4f7c2e5d"
+        }
+      ]
+    }
+  },
+  "manual_review_pending": true,
+  "review_indices": [
+    0,
+    21,
+    25,
+    49
+  ],
+  "review_original_frame_ids": [
+    1,
+    85,
+    101,
+    197
+  ],
+  "analysis_scripts_sha256": {
+    "finish_report.py": "42b5208d35b5e6ac722efc0a5f8f27ab4d4db4b8388bddebc84836b2d4248117",
+    "status.py": "82e016b5e4388ddf1e8e4c0942a3fdfb7b0063c44a999730aa137dfa37a12e41",
+    "verify_optimizer_update.py": "046d676d6532bc5c053a5b0522b8ba2306bc0601030dd5c3f85345d6fba02b3f",
+    "verify_prefix.py": "0aa0b5dc742158508b944858faf9cac856f266e3853d260eb6c4bcf73314f516",
+    "verify_results.py": "49c5d47070de7c72c5384ffdde913d89ccdd0e4f48b8d721a9107458c7433310"
+  }
+}

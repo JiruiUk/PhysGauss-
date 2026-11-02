@@ -1,0 +1,51 @@
+{
+  "model": "L1_shared_stress",
+  "selection": {
+    "value": 33.75526212056478,
+    "iteration": 50000,
+    "snapshot": "best",
+    "metrics": {
+      "PSNR": 33.75526212056478,
+      "SSIM": 0.9879473368326823,
+      "LPIPS": 0.022164593109240134,
+      "MS-SSIM": 0.9897397915522258
+    },
+    "selection_split": "validation"
+  },
+  "metrics": {
+    "ours_50000": {
+      "SSIM": 0.9884188771247864,
+      "PSNR": 33.9658317565918,
+      "LPIPS": 0.02138870395720005,
+      "MS-SSIM": 0.9902878403663635
+    },
+    "ours_best": {
+      "SSIM": 0.9884188771247864,
+      "PSNR": 33.9658317565918,
+      "LPIPS": 0.02138870395720005,
+      "MS-SSIM": 0.9902878403663635
+    }
+  },
+  "pairs": 100,
+  "pixel_identity_verified": true,
+  "independent_PSNR_max_difference": 4.9358906935026425e-06,
+  "videos": [
+    {
+      "file": "F:\\A_Edinburgh\\PhysGauss\\output\\unified_flow\\L1_shared_stress\\GT_Render_best.mp4",
+      "frames": 50,
+      "display_fps": 10,
+      "seconds": 5.0,
+      "note": "display rate only; acquisition FPS unknown"
+    },
+    {
+      "file": "F:\\A_Edinburgh\\PhysGauss\\output\\unified_flow\\L1_shared_stress\\GT_Render_50000.mp4",
+      "frames": 50,
+      "display_fps": 10,
+      "seconds": 5.0,
+      "note": "display rate only; acquisition FPS unknown"
+    }
+  ],
+  "velocity_source": "trajectory",
+  "gallery": "F:\\A_Edinburgh\\PhysGauss\\output\\unified_flow\\L1_shared_stress\\index.html",
+  "archive": "F:\\A_Edinburgh\\PhysGauss\\output\\unified_flow\\L1_shared_stress_GT_Render.zip"
+}

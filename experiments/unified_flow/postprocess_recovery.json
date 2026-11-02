@@ -1,0 +1,30 @@
+{
+  "observed_utc": "2026-11-02T08:33:00Z",
+  "stage": "post-export diagnostic import",
+  "coordinator_pid": 227560,
+  "coordinator_session": 23682,
+  "training_complete": true,
+  "exports_complete": true,
+  "evidence": {
+    "cpu_seconds_samples": [
+      61.44,
+      61.71875
+    ],
+    "no_live_compiler_children": true,
+    "root_tmp_build_lock_last_write_utc": "2026-11-01T12:09:46.6182146Z",
+    "import_order": "evaluate.py imports extended GaussianModel/DeformModel before V2 helper sets PIDG_HASH_SOURCE_DIR and PIDG_HASH_BUILD_DIR",
+    "backend_default": "./tmp_build (contains stale lock)",
+    "trained_backend_path": "third_party/PIDG/tmp_build (no lock)"
+  },
+  "diagnosis": "Import-order defect is consistent with idle extension lock wait. No stack trace was captured; this is an inference from code, stale lock and idle process, not GPU utilization.",
+  "recovery": "Stop only the idle completed-training coordinator; run output/unified_flow/finish_report.py with hash paths set before importing architecture. No training/render restart; root lock untouched; frozen modules unchanged.",
+  "outcome": {
+    "completed_utc": "2026-11-02T08:36:14.161007+00:00",
+    "session": 22702,
+    "new_process_pid": 225784,
+    "all_four_snapshots_loaded": true,
+    "report_completed": true,
+    "extension_build": "ninja: no work to do",
+    "frozen_inputs_verified_before_and_after": true
+  }
+}
