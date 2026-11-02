@@ -1,5 +1,21 @@
 # PIDG repository map — M0
 
+## C1 optical-flow-only ablation (2026-11-02)
+
+`variants/c1_flow_ablation/prepare.py` copies the frozen C1_repaired trainer and
+renderer, changing only the optional runtime import and additive observed-flow
+hook. `runtime.py` inherits C1 image/alpha losses, frame-index clock, independent
+velocity/stress and original Cauchy momentum unchanged. Its single treatment
+flag `observed_flow_enabled` toggles corrected raw train-only geometric and
+independent-velocity flow supervision; no M1/N1 structural or momentum changes
+are inherited. `run.py` branches the identical full pre-flow3k checkpoint into
+two newly trained50k arms. `tests/test_c1_flow_ablation.py`, CUDA smoke/recovery
+and `verify_update.py` validate flag isolation, parent delegation, and actual
+flow-only optimizer updates. `results.py` locks validation selection before test,
+exports GT|Render, evaluates the frozen V2 validation observation cache, checks
+camera schedules, full checkpoints and rendered artifacts. Reports reside in
+`experiments/c1_flow_ablation`; historical C1 is a descriptive reference only.
+
 ## Coherent discrete trajectory momentum (2026-11-02)
 
 `variants/coherent_momentum/operator.py` derives interval chord velocities,

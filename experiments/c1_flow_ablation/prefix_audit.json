@@ -1,0 +1,48 @@
+{
+  "status": "passed",
+  "iteration": 3000,
+  "checkpoint_sha256": "6da523ea247b4068ec9bd6a7c8f83dacb7506c698daaeecc9eb0ecd93ea1ebce",
+  "model_config_exact_C1": true,
+  "full_tensor_optimizer_RNG_state_available": true,
+  "new_parameters": 0,
+  "new_optimizer_groups": 0,
+  "source_to_control_config_difference": {
+    "flow_ramp": [
+      null,
+      2000
+    ],
+    "observed_flow_enabled": [
+      null,
+      false
+    ],
+    "coverage_density": [
+      true,
+      false
+    ],
+    "flow_interval": [
+      null,
+      100
+    ],
+    "record_sampling": [
+      null,
+      true
+    ],
+    "observed_flow_weight": [
+      null,
+      0.01
+    ],
+    "flow_start": [
+      null,
+      3000
+    ],
+    "audit_flow_gradients": [
+      null,
+      false
+    ],
+    "velocity_source": [
+      null,
+      "independent"
+    ]
+  },
+  "original_C1_momentum_unchanged": true
+}
