@@ -15,6 +15,8 @@
 
 ## 2. 接手时的运行状态
 
+**04:08 UTC 接续记录：两组均已完成 50k，验证选择锁已写入。K1 验证 PSNR 38.026127，K2 33.848821；尚不能用内部零速度偏差替代独立运动诊断。原队列正在顺序渲染/导出。已启动唯一后处理等待器 `output/flow_comparison/postprocess_queue.py`（工具会话 87816）：等待 `progress.json` 为 completed 后，顺序执行 evaluate_motion、gradient_balance、finalize。先检查 `experiments/flow_comparison/postprocess_status.json` 和各阶段同名 `.log`；等待器/后处理仍活跃时禁止重复运行 GPU 诊断。若 failed，先修复该阶段并接续，不能冒称已通过。完成之后仍需人工查看输出、补充报告、结果提交和按用户条件做下一轮结构实验。**
+
 最近核验：2026-11-02 02:57 UTC。用户已授权在比较后继续改进，详见 `experiments/flow_comparison/followup_plan.md`。
 
 | 项目 | 状态 |
