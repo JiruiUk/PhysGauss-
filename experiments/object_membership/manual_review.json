@@ -1,0 +1,15 @@
+{
+  "reviewed": [
+    "point_objects.png: six selected GT-image plus supported center overlays at6/14/27/192/195/200; legends explicit independent early/late domains; no visible plot clipping",
+    "evidence.png: historical vs current support counts, same-object bank overlaps and later-frame causal coverage comparison; labels and numerical diagonals readable"
+  ],
+  "not_reviewed": "Not all24 native RGB frames, true3D/material IDs or videos",
+  "image_source": "Native1600 GT crop downsampled for display; support calculated from existing complete1600 renderer contribution, not these display pixels",
+  "reviewed_artifact_sha256": {
+    "output/object_membership/point_objects.png": "237578b9f8c334b43d014e2d914687c1f7bceb3a24827c1223afab2cba7a5dad",
+    "output/object_membership/evidence.png": "fd80e707a5adebaeb4daceb2686e231759b2ec0ad9d2d14d964d26be6b734669",
+    "output/object_membership/index.html": "70dbbf44bfa6e2a80aaf16d7a638533f3b93415ec5de1d1f73b52a35a78b0515",
+    "variants/object_membership/visualize.py": "f1a537ff08f69807a6ef7d7ef6c050b494d2c0c172aaa8ce54936f67534a24e9",
+    "experiments/object_membership/assessment.md": "f79cb160b105d9a0dc2af50d6a18fbb6674d982985e32b917ea7625187b99c3b"
+  }
+}

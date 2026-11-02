@@ -1,0 +1,15 @@
+{
+  "question": "Can frozen C1 Gaussian rows be assigned to a locally continuous observed object, without requiring that every row remain the same visible material patch?",
+  "protocol_version": 1,
+  "enabled_by_default": false,
+  "input": "Existing training-only RGB components, raw bidirectional flow, and immutable short_clip_diagnostic caches/banks from frozen C1 final50k",
+  "domains": {"early_2_27": [2,3,6,7,8,10,12,14,15,16,19,20,22,23,26,27], "late_188_200": [188,190,192,194,195,196,199,200]},
+  "image_identity": "Forward visible-FB tracklets from domain start; verify each local component link with independently seeded reverse visible-FB propagation. Require reciprocal unique mappings. Never bridge the early/late gap.",
+  "point_evidence": "Same historical center/positive covariance/depth and source+target raw-flow gates; use complete native1600 alpha*T contribution divided by16 with original min_mass=.02 and purity=.95. No cohort gate: this is explicitly a different per-point diagnostic, not a replacement historical metric.",
+  "membership": "At least3 consecutive supported observations with one local image identity. Unsupported observations remain unknown for current visibility but do not erase historical membership evidence. Any supported different identity in the same domain latches a conflict and withdraws unique ownership. No nearest-neighbor fill, no learned segmentation.",
+  "patch_bridge": "Compare existing A2 and A15 native seed banks only after image continuity is independently established. Record same-object and cross-object row intersections. Same row alone never proves object identity; a disjoint row set may still support another patch of the same locally tracked object.",
+  "causal_comparison": "On frames20/22/23/26/27 compare A2-only vs A2+A15 bank unions using identical per-point source/target evidence. A15 seed frames15/16/19 are excluded. Use no future-frame evidence to prune current membership. Report later contradictions separately.",
+  "checks": ["unit tests before diagnostic", "disabled path returns without accessing inputs", "all result arrays and summaries independently recomputed", "input/cache/bank/checkpoint hashes unchanged", "synthetic ambiguity and support-loss cases", "manual plot inspection"],
+  "training": "No neural training or optimizer updates; no PIDG runtime integration, physical material IDs, force/constitutive/shape/contact losses or automation",
+  "interpretation": "Conditional observational object association on these selected clear training clips; not physical ID accuracy, material correspondence or complete object reconstruction. Lack of conflicts cannot certify unobserved intervals."
+}

@@ -1,5 +1,21 @@
 # PIDG repository map — M0
 
+## Conditional local object membership (2026-11-02)
+
+`variants/object_membership/model.py` is a disabled-by-default non-neural,
+causal observational ledger: historical association, current visible support
+and latched cross-object conflict are separate. `audit.py` verifies forward and
+reverse visible-FB links on each prefix of the fixed early/late clips, consumes
+the existing native1600 complete-contribution caches and center/motion gates,
+then connects A2/A15 banks only with independent image continuity. It compares
+causal bank additions after the A15 seed period with identical per-point gates.
+`verify.py` independently recomputes all point/ledger arithmetic and343 hashes;
+`visualize.py` writes six-frame center overlays and evidence plots. Protocol,
+results and assessment: `experiments/object_membership`; arrays/figures/gallery:
+`output/object_membership`. NPZ embeds exact historical checkpoint SHA. There
+is no PIDG training integration, model update, learned material segmentation,
+cross-gap identity claim or material correspondence/constitutive evidence.
+
 ## Fixed short-clip C1 diagnostic (2026-11-02)
 
 `output/short_clip_diagnostic/image_camera.py` computes independent sparse LK

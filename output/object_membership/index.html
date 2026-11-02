@@ -1,0 +1,10 @@
+<!doctype html><html lang="zh"><meta charset="utf-8"><title>C1 点与局部物体归属</title>
+<style>body{max-width:1450px;margin:30px auto;padding:0 24px;font:17px system-ui;background:#f8fafc;color:#172033}img{width:100%;margin:12px 0;border:1px solid #dbe3ef;border-radius:8px}p{line-height:1.7}</style>
+<h1>点可以先归到局部物体，再单独验证材料表面身份</h1>
+<p>原2–27的四条连续可见图像对应经正反光流核验；A15四点库分别连至A2四个局部物体。不同点库不必是同一块表面。
+晚期188–200独立编号，与早期相同颜色不表示同一只鸭子。图中仅绘出当前有贡献/中心/运动支持且已积累连续三观测证据的Gaussian中心。</p>
+<img src="point_objects.png" alt="局部物体与Gaussian中心"><img src="evidence.png" alt="历史与可见归属、点库重叠和因果补充对照">
+<p>原C1未重训；使用1600实际渲染完整贡献缓存、400图像掩膜和中心/流坐标。覆盖率不是物理身份准确率。未知、遮挡和跨物体冲突保留未知。
+本诊断逐点规则与先前整库拒绝规则不同，不能直接将两轮覆盖率相减作为模型改进。</p>
+<p><a href="../../experiments/object_membership/assessment.md">判断与下一步</a> · <a href="../../experiments/object_membership/results.json">数值</a> ·
+<a href="../../experiments/object_membership/verification.json">独立核验</a></p></html>
