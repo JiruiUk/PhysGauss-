@@ -1,5 +1,19 @@
 # PIDG repository map — M0
 
+## Full train-sequence surface-support audit (2026-11-02)
+
+`output/surface_support/{core,audit,contracts,finalize,verify}.py` adds read-only
+support diagnostics for historical C1 final50k and rejected P1 at16k. It checks
+all120 train frames, full center trajectories, effective additive covariance,
+full compositor group contributions, isolated/fixed-footprint/fixed-camera
+counterfactuals and conservative raw bidirectional image tracking. The CUDA
+RGB/alpha compositor uses all contributors but its diagnostic IDs/offsets store
+only the first20 per pixel; metadata-normalized coverage is not full coverage.
+No frozen renderer or trainer was changed. The early patch graph still fails
+persistent visible support under complete compositing; unknown IDs stay unknown.
+`experiments/surface_support/assessment.md` records limitations and required
+identity/representation evidence before any new shape/contact training.
+
 ## C1 local shape-coherence candidate (2026-11-02)
 
 `variants/shape_coherence/prepare.py` copies C1 and changes only the optional

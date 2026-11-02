@@ -1,0 +1,160 @@
+{
+  "model": "C1_final",
+  "iteration": 50000,
+  "checkpoint_sha256": "b5d4cf5c9fb8fba4fcc26124555d48aa7d3a963a8be1d28488954752db486480",
+  "graph_sha256": "305594e93b4ac4c413376623792e01516dea168c1006839f75c13dc63cab1294",
+  "point_count": 86143,
+  "early_partial_patch_counts": [
+    189,
+    177,
+    197,
+    698
+  ],
+  "resolution": [
+    400,
+    225
+  ],
+  "note": "Full compositor cohort mass is exact at this resolution. Per-kernel visibility is first20 LOWER BOUND. Counterfactuals do not identify true physical occlusion or material identity.",
+  "frames": [
+    {
+      "frame": 2,
+      "duck_pixels": 1237,
+      "exact_known_share": 0.6995506882667542,
+      "first20_known_share_true_alpha": 0.5893457531929016,
+      "old_first20_normalized_known_share": 0.7250384092330933,
+      "first20_total_share": 0.8128476142883301,
+      "exact_group_share": [
+        0.1551527976989746,
+        0.13804924488067627,
+        0.10998137295246124,
+        0.29636719822883606
+      ],
+      "isolated_known_duck_mass": 1098.5220947265625,
+      "actual_known_duck_mass": 865.0142211914062,
+      "fixed_clear_footprint_duck_mass": 1098.5220947265625,
+      "isolated_known_all_pixels_mass": 1187.7176513671875,
+      "fixed_camera_isolated_all_pixels_mass": 1187.7176513671875,
+      "external_occlusion_retention": 0.7874345183372498,
+      "known_centers_in_frustum_fraction": 1.0,
+      "known_centers_on_duck_fraction": 0.9960348606109619,
+      "world_cov_linear_scale_ratio_p05_p50_p95": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "projected_footprint_sqrt_det_p50_p95": [
+        0.835385262966156,
+        1.8247511386871338
+      ],
+      "visible_duck_kernel_count_first20_lower_bound": 2205,
+      "known_visible_kernel_count_first20_lower_bound": 1146,
+      "adjacent_visible_kernel_jaccard_lower_bound": null,
+      "duck_rgb_mae": 0.0218078956216286
+    },
+    {
+      "frame": 74,
+      "duck_pixels": 1164,
+      "exact_known_share": 0.12949761748313904,
+      "first20_known_share_true_alpha": 0.06794678419828415,
+      "old_first20_normalized_known_share": 0.09650871902704239,
+      "first20_total_share": 0.7040481567382812,
+      "exact_group_share": [
+        0.00040677282959222794,
+        0.010421285405755043,
+        0.023707030341029167,
+        0.09496251493692398
+      ],
+      "isolated_known_duck_mass": 453.95172119140625,
+      "actual_known_duck_mass": 150.631591796875,
+      "fixed_clear_footprint_duck_mass": 310.8382568359375,
+      "isolated_known_all_pixels_mass": 1162.913818359375,
+      "fixed_camera_isolated_all_pixels_mass": 1631.53759765625,
+      "external_occlusion_retention": 0.33182293176651,
+      "known_centers_in_frustum_fraction": 1.0,
+      "known_centers_on_duck_fraction": 0.613005518913269,
+      "world_cov_linear_scale_ratio_p05_p50_p95": [
+        0.6641524750561327,
+        1.5684036226108915,
+        9.020609872677712
+      ],
+      "projected_footprint_sqrt_det_p50_p95": [
+        1.564551830291748,
+        6.285479545593262
+      ],
+      "visible_duck_kernel_count_first20_lower_bound": 1484,
+      "known_visible_kernel_count_first20_lower_bound": 265,
+      "adjacent_visible_kernel_jaccard_lower_bound": 0.14069263637065887,
+      "duck_rgb_mae": 0.025700936686209347
+    },
+    {
+      "frame": 86,
+      "duck_pixels": 1159,
+      "exact_known_share": 0.0,
+      "first20_known_share_true_alpha": 0.0,
+      "old_first20_normalized_known_share": 0.0,
+      "first20_total_share": 0.8490673303604126,
+      "exact_group_share": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "isolated_known_duck_mass": 0.0,
+      "actual_known_duck_mass": 0.0,
+      "fixed_clear_footprint_duck_mass": 0.0,
+      "isolated_known_all_pixels_mass": 344.59722900390625,
+      "fixed_camera_isolated_all_pixels_mass": 469.40777587890625,
+      "external_occlusion_retention": null,
+      "known_centers_in_frustum_fraction": 1.0,
+      "known_centers_on_duck_fraction": 0.0,
+      "world_cov_linear_scale_ratio_p05_p50_p95": [
+        0.06636163133619752,
+        0.7412264104196793,
+        5.816942951126804
+      ],
+      "projected_footprint_sqrt_det_p50_p95": [
+        0.550368070602417,
+        2.4569380283355713
+      ],
+      "visible_duck_kernel_count_first20_lower_bound": 967,
+      "known_visible_kernel_count_first20_lower_bound": 0,
+      "adjacent_visible_kernel_jaccard_lower_bound": 0.03592561185359955,
+      "duck_rgb_mae": 0.017267089242402132
+    },
+    {
+      "frame": 200,
+      "duck_pixels": 868,
+      "exact_known_share": 0.0,
+      "first20_known_share_true_alpha": 0.0,
+      "old_first20_normalized_known_share": 0.0,
+      "first20_total_share": 0.8265066146850586,
+      "exact_group_share": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "isolated_known_duck_mass": 0.0,
+      "actual_known_duck_mass": 0.0,
+      "fixed_clear_footprint_duck_mass": 0.0,
+      "isolated_known_all_pixels_mass": 242.22122192382812,
+      "fixed_camera_isolated_all_pixels_mass": 492.2105712890625,
+      "external_occlusion_retention": null,
+      "known_centers_in_frustum_fraction": 1.0,
+      "known_centers_on_duck_fraction": 0.0,
+      "world_cov_linear_scale_ratio_p05_p50_p95": [
+        0.13853023389478125,
+        0.8611679257156365,
+        3.194095371506294
+      ],
+      "projected_footprint_sqrt_det_p50_p95": [
+        0.5499004125595093,
+        1.2310928106307983
+      ],
+      "visible_duck_kernel_count_first20_lower_bound": 1510,
+      "known_visible_kernel_count_first20_lower_bound": 0,
+      "adjacent_visible_kernel_jaccard_lower_bound": 0.04558885470032692,
+      "duck_rgb_mae": 0.029270794690258964
+    }
+  ]
+}

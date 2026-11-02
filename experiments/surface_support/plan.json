@@ -1,0 +1,19 @@
+{
+  "purpose": "Read-only full training-sequence surface support and visibility audit before further shape training",
+  "models": ["historical C1 final50000", "rejected P1 checkpoint16000 before shape updates"],
+  "images": "All 120 training RGB/RGBA frames only; no new heldout evaluation or selection",
+  "no_training_or_relabeling": true,
+  "fixed_existing_graphs": true,
+  "checks": [
+    "Complete center trajectory plus effective additive scale/quaternion covariance",
+    "Full compositor group-color contribution versus truncated first20 metadata",
+    "Actual cohort contribution versus isolated cohort, fixed clear-pose footprint, and fixed clear camera counterfactuals",
+    "Independent raw bidirectional estimated optical flow with newly computed FB gates; ignore cached depth-derived motion/valid",
+    "Conservative visible-only 2D propagation, reject merged identities, no nearest ID, no reappearance relabeling",
+    "Input/model/graph/protected control SHA before and after"
+  ],
+  "counterfactual_limits": "Removing other points and freezing footprint/camera diagnose support mechanisms, not true object geometry or an additive causal decomposition",
+  "identity_limits": "Early labels are partial surface patches. Kernel self identity and estimated 2D continuity are not physical material GT. Unknown and occluded gaps remain unresolved.",
+  "gate": "Do not resume shape/contact training without persistent independently supported coverage; do not promote unknown kernels to closest duck or smooth cross-object neighbors",
+  "next_action": "Decide representation or reliable identity input requirements from evidence; no automatic new full candidate"
+}

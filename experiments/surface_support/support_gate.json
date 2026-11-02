@@ -1,0 +1,14 @@
+{
+  "diagnostic_integrity_passed": true,
+  "persistent_visible_support_gate_passed": false,
+  "occlusion_reidentification_verified": false,
+  "existing_binary_masks_supply_instance_identity": false,
+  "resume_P1": false,
+  "new_shape_or_contact_training_started": false,
+  "unknown_kernels_assigned_to_nearest_duck": false,
+  "cross_object_spatial_smoothing_added": false,
+  "decision": "Resolve identity and persistent representation support before shape or contact objectives",
+  "causal_limit": "Loss of visible support does not alone prove material drift or uniquely separate genuine occlusion, viewpoint, image-tracking error and representation effects.",
+  "evidence": ["C1_final.json", "P1_16k.json", "image_tracking.json", "renderer_contracts.json", "independent_verification.json", "manual_review.json"],
+  "required_next_evidence": "Verified object/material source IDs or independently checked multi-time instance/surface correspondences; a center-plus-footprint representation retaining unknown states"
+}

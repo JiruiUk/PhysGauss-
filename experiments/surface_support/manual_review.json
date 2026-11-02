@@ -1,0 +1,33 @@
+{
+  "reviewed_utc": "2026-11-02T19:29:21.289296+00:00",
+  "reviewed_training_frames_each": [
+    2,
+    42,
+    43,
+    62,
+    74,
+    86,
+    108,
+    200
+  ],
+  "models": [
+    "C1_final",
+    "P1_16k"
+  ],
+  "all_120_frames_computed_each": true,
+  "not_claiming_manual_review_of_all_240_panels": true,
+  "findings": [
+    "Complete early-cohort contribution fades; isolated/fixed footprints do not recover late visible duck support.",
+    "Center overlays show early known points in view but outside visible yellow bodies at86 and200.",
+    "Visible image identity evidence is deliberately rejected at merged component43; no nearest re-ID at later split.",
+    "3D plots are model center trajectories, not physical GT."
+  ],
+  "reviewed_artifact_sha256": {
+    "output\\surface_support\\comparison.png": "dd428cd1017e178d5ee019a1678fddf7de4d32ab786d2efba4c8259e1c686130",
+    "output\\surface_support\\center_review.png": "3cbe7d3e6202052cf5cc6571d50bf933ec53dc51681e026f46f3fd2ef4a5dfee",
+    "output\\surface_support\\correspondence_and_metadata.png": "f8caa3eca02b9c089c375eca23e05954fabd4fe342cf13a3a02f09c61a6342d7",
+    "output\\surface_support\\center_trajectories_3d.png": "737adac5dc931664f253ab993b1282fee8f734fd713f56d7160227344179e5c6",
+    "output\\surface_support\\review_C1.png": "7f1ca74b6e0c44b4dda17be8bf864dd0b4a7add92fe5cf3cce215b31633c9f6e",
+    "output\\surface_support\\review_P1.png": "2a700b773aa5afb58ba6b0751a7d8b891cfe3ff36f65586b67bee3f228e5ab79"
+  }
+}

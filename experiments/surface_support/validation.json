@@ -1,0 +1,7 @@
+{
+  "tests_passed": 9,
+  "command": "envs/pidg-cu128/python.exe -m pytest tests/test_surface_support.py tests/test_surface_support_advection.py -q",
+  "GPU_read_only_contracts": "renderer_contracts.json",
+  "new_training_or_optimizer_updates": 0,
+  "baseline_flags_off_training_not_rerun": "No training integration or frozen code changes; read-only diagnostics only."
+}
