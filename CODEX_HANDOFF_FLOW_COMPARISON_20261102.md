@@ -2,6 +2,8 @@
 
 > **18:46 最新用户授权：处理多鸭子接触时形态损坏。独立 P1_local_shape 已实现并通过12测试、真实C1状态形态梯度/优化器更新、GPU100步/70→100完整恢复、flags-off20（启动修复后重复一次，实际关闭预算40）。历史C1原样复用，不重训，不开光流，不引入外力/本构/新参数。新目录 variants/shape_coherence，协议/诊断 experiments/shape_coherence/{plan,diagnosis,preflight,source_freeze}.json 和 diagnosis.md。冻结SHA214b07fc42532c912201dca310387be2f05a85091af1ada4f12fe79ec26390f8。首个启动错误仅缺诊断路径迁移凭据，未发生更新；已修复并归档旧冻结凭据。**
 
+代码/预检里程碑 **a48a790c**。唯一新协调器会话 **37608**、PID **235736**，训练PID **225988**；启动记录 `experiments/shape_coherence/launch.json`。本轮已创建每10分钟自动跟进 **c1**，这是删除旧光流自动化后新建的形态任务，不能按旧光流指令执行。常规健康推进保持安静；完成交付或图门槛失败形成完整诊断交付后删除。
+
 **本轮不是已完成训练。** 唯一候选从原完整3k SHA6da523ea247b4068ec9bd6a7c8f83dacb7506c698daaeecc9eb0ecd93ea1ebce至50k，原稠密化15k结束后16k构建参考图，自动保存暂停、等待本聊天人工审阅。启动/恢复入口：激活enable_cuda.ps1后，`envs/pidg-cu128/python.exe -u output/shape_coherence/continue_run.py --hours 12`。只读状态 `output/shape_coherence/status.py`。不要重复启动；健康训练不占GPU，不改冻结源码/配置/数据。若退出，先核验checkpoint SHA/保存边界，归档移出超界shape_loss等诊断再恢复。不要使用旧C1/O0/O1等协调器。
 
 16k停止后运行 `output/shape_coherence/review_graph.py`，实际从完整状态加载，核验图SHA/同组连边，渲染训练早期及62/74/86/98/108等中段，人工看 `shape_reference/early_training_components.png` 与 `output/shape_coherence/candidate_graph/`。必须把中段实际贡献列入判断，再写 `experiments/shape_coherence/candidate_graph_review.json`，`approved` 和 `graph_sha256` 绑定 `run/shape_reference/reference_graph.pt`。不自动批准。早期物体内高置信参考点只是局部表面patch，不是真实持久材料ID；历史C1审计显示它们中后段几乎不再参与鸭子渲染，不能把局部形态项说成完整物体跟踪，也不能用小残差冒称修复碰撞。若无可靠覆盖，记录未过门槛，不盲目训练；需要结构修正时先说明证据，保留这一候选的预算边界。

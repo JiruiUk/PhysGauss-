@@ -1,0 +1,27 @@
+{
+  "coordinator_session": 37608,
+  "active": {
+    "id": "P1_local_shape",
+    "phase": "long",
+    "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_shape_coherence\\P1_local_shape\\rubber_duck",
+    "pid": 225988,
+    "controller_pid": 235736,
+    "started_utc": "2026-11-02T18:46:46.558235+00:00"
+  },
+  "automation_id": "c1",
+  "milestone": "a48a790c",
+  "source_freeze_sha256": "214b07fc42532c912201dca310387be2f05a85091af1ada4f12fe79ec26390f8",
+  "common_start": {
+    "source": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_color_repair\\shared_prefix\\rubber_duck",
+    "iteration": 3000,
+    "destination": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_shape_coherence\\P1_local_shape\\rubber_duck",
+    "identical_full_checkpoint_sha256": "6da523ea247b4068ec9bd6a7c8f83dacb7506c698daaeecc9eb0ecd93ea1ebce",
+    "original_source_checkpoint_sha256": "6da523ea247b4068ec9bd6a7c8f83dacb7506c698daaeecc9eb0ecd93ea1ebce",
+    "branch_checkpoint_sha256": "6da523ea247b4068ec9bd6a7c8f83dacb7506c698daaeecc9eb0ecd93ea1ebce",
+    "tensor_optimizer_RNG_bytes_unchanged": true,
+    "preflight_opt_iterations_only_expansion": false,
+    "additional_training_budget": 47000
+  },
+  "automatic_stop_before_shape_updates": 16000,
+  "created_utc": "2026-11-02T18:47:39.371274+00:00"
+}
