@@ -1,0 +1,44 @@
+{
+  "verification_date": "2026-11-02",
+  "full_training_iteration": 50000,
+  "checkpoint_sha256_matches": true,
+  "original_inputs_unchanged": true,
+  "runtime_source_freeze_matches": true,
+  "PNG_pairs_verified": 100,
+  "PNG_image_regions_pixel_identical": true,
+  "maximum_recomputed_PSNR_difference": 5.612042443203791e-06,
+  "videos": {
+    "best": {
+      "decoded_frames": 50,
+      "dimensions": [
+        3200,
+        950
+      ],
+      "fps": 10.0,
+      "duration": 5.0,
+      "all_frames_nearest_match_expected_PNG_index": true,
+      "maximum_RGB_MAE_after_lossy_video_compression": 0.2962978184223175
+    },
+    "50000": {
+      "decoded_frames": 50,
+      "dimensions": [
+        3200,
+        950
+      ],
+      "fps": 10.0,
+      "duration": 5.0,
+      "all_frames_nearest_match_expected_PNG_index": true,
+      "maximum_RGB_MAE_after_lossy_video_compression": 0.29857367277145386
+    }
+  },
+  "archive": {
+    "CRC_passed": true,
+    "all_entries_identical_to_exported_files": true,
+    "entries": 105,
+    "bytes": 37486057
+  },
+  "independent_mean_PSNR": {
+    "best": 40.080849488008546,
+    "50000": 40.07172263750357
+  }
+}

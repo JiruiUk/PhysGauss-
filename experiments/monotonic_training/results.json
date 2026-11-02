@@ -1,0 +1,998 @@
+{
+  "model": "J1_monotonic_kinematic",
+  "source": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_monotonic_training\\J1_monotonic_kinematic\\rubber_duck",
+  "completed_iteration": 50000,
+  "selection": {
+    "locked_utc": "2026-11-01T23:41:49.584349+00:00",
+    "selection_split": "validation",
+    "best": {
+      "value": 39.54012031555176,
+      "iteration": 49000,
+      "snapshot": "best",
+      "metrics": {
+        "PSNR": 39.54012031555176,
+        "SSIM": 0.9940868993600209,
+        "LPIPS": 0.011516722741847236,
+        "MS-SSIM": 0.9962242662906646
+      },
+      "selection_split": "validation"
+    },
+    "final_iteration": 50000,
+    "test_opened_before_lock": false
+  },
+  "clock_mode": "fixed_monotonic",
+  "kinematic_weight": 0.001,
+  "test_metrics": {
+    "ours_50000": {
+      "SSIM": 0.9945284128189087,
+      "PSNR": 40.07172393798828,
+      "LPIPS": 0.010716607794165611,
+      "MS-SSIM": 0.99663245677948
+    },
+    "ours_best": {
+      "SSIM": 0.9944794178009033,
+      "PSNR": 40.080848693847656,
+      "LPIPS": 0.01077671255916357,
+      "MS-SSIM": 0.996615469455719
+    }
+  },
+  "H3_final_reference": {
+    "SSIM": 0.9950646758079529,
+    "PSNR": 40.878231048583984,
+    "LPIPS": 0.009441059082746506,
+    "MS-SSIM": 0.996944785118103
+  },
+  "paired_test_comparison": {
+    "best": {
+      "mean_PSNR_delta_vs_H3_final": -0.7973808288574219,
+      "median_PSNR_delta": -0.4557971954345703,
+      "improved_frames": 17,
+      "worsened_frames": 33,
+      "worst5_PSNR": 34.42938003540039
+    },
+    "50000": {
+      "mean_PSNR_delta_vs_H3_final": -0.8065081024169922,
+      "median_PSNR_delta": -0.5603981018066406,
+      "improved_frames": 15,
+      "worsened_frames": 35,
+      "worst5_PSNR": 34.4175537109375
+    }
+  },
+  "final_internal_velocity_relative_rmse": 0.9973343512853202,
+  "videos": {
+    "best": {
+      "file": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\GT_Render_best.mp4",
+      "frames": 50,
+      "display_fps": 10,
+      "seconds": 5.0,
+      "note": "display rate only; acquisition FPS unknown"
+    },
+    "50000": {
+      "file": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\GT_Render_50000.mp4",
+      "frames": 50,
+      "display_fps": 10,
+      "seconds": 5.0,
+      "note": "display rate only; acquisition FPS unknown"
+    }
+  },
+  "pair_count": 100,
+  "pixel_identity_verified": true,
+  "maximum_independent_PSNR_difference": 5.612042443203791e-06,
+  "frame_mapping": [
+    {
+      "snapshot": "best",
+      "index": 0,
+      "frame_id": 1,
+      "time": 0.0,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\best\\00000.png",
+      "PSNR": 41.82744475919755,
+      "saved_score_difference": -1.2246891714084995e-06
+    },
+    {
+      "snapshot": "best",
+      "index": 1,
+      "frame_id": 5,
+      "time": 0.020100502512562814,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\best\\00001.png",
+      "PSNR": 43.995409121844276,
+      "saved_score_difference": -5.612042443203791e-06
+    },
+    {
+      "snapshot": "best",
+      "index": 2,
+      "frame_id": 9,
+      "time": 0.04020100502512563,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\best\\00002.png",
+      "PSNR": 45.13036660331004,
+      "saved_score_difference": -6.757426973535985e-07
+    },
+    {
+      "snapshot": "best",
+      "index": 3,
+      "frame_id": 13,
+      "time": 0.06030150753768844,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\best\\00003.png",
+      "PSNR": 45.41912590889713,
+      "saved_score_difference": 1.3056256449317516e-06
+    },
+    {
+      "snapshot": "best",
+      "index": 4,
+      "frame_id": 17,
+      "time": 0.08040201005025126,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\best\\00004.png",
+      "PSNR": 43.881447301725984,
+      "saved_score_difference": 4.6334707803907804e-07
+    },
+    {
+      "snapshot": "best",
+      "index": 5,
+      "frame_id": 21,
+      "time": 0.10050251256281408,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\best\\00005.png",
+      "PSNR": 44.799581446918125,
+      "saved_score_difference": -1.9881404682564607e-06
+    },
+    {
+      "snapshot": "best",
+      "index": 6,
+      "frame_id": 25,
+      "time": 0.12060301507537688,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\best\\00006.png",
+      "PSNR": 42.67856140336927,
+      "saved_score_difference": -7.609373682271325e-07
+    },
+    {
+      "snapshot": "best",
+      "index": 7,
+      "frame_id": 29,
+      "time": 0.1407035175879397,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\best\\00007.png",
+      "PSNR": 44.78411888200003,
+      "saved_score_difference": -3.5850409858539933e-06
+    },
+    {
+      "snapshot": "best",
+      "index": 8,
+      "frame_id": 33,
+      "time": 0.16080402010050251,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\best\\00008.png",
+      "PSNR": 42.392246953969234,
+      "saved_score_difference": -3.107065921881258e-06
+    },
+    {
+      "snapshot": "best",
+      "index": 9,
+      "frame_id": 37,
+      "time": 0.18090452261306533,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\best\\00009.png",
+      "PSNR": 41.43191189363897,
+      "saved_score_difference": -3.3895641564640755e-06
+    },
+    {
+      "snapshot": "best",
+      "index": 10,
+      "frame_id": 41,
+      "time": 0.20100502512562815,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\best\\00010.png",
+      "PSNR": 39.82681216155252,
+      "saved_score_difference": -4.397285373158866e-06
+    },
+    {
+      "snapshot": "best",
+      "index": 11,
+      "frame_id": 45,
+      "time": 0.22110552763819097,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\best\\00011.png",
+      "PSNR": 40.17868548859716,
+      "saved_score_difference": 1.2539780200881978e-06
+    },
+    {
+      "snapshot": "best",
+      "index": 12,
+      "frame_id": 49,
+      "time": 0.24120603015075376,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\best\\00012.png",
+      "PSNR": 40.96059453348329,
+      "saved_score_difference": 3.562371944099141e-07
+    },
+    {
+      "snapshot": "best",
+      "index": 13,
+      "frame_id": 53,
+      "time": 0.2613065326633166,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\best\\00013.png",
+      "PSNR": 36.837157235514155,
+      "saved_score_difference": -9.676108447820297e-07
+    },
+    {
+      "snapshot": "best",
+      "index": 14,
+      "frame_id": 57,
+      "time": 0.2814070351758794,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\best\\00014.png",
+      "PSNR": 33.92765119812511,
+      "saved_score_difference": -3.06823230999953e-06
+    },
+    {
+      "snapshot": "best",
+      "index": 15,
+      "frame_id": 61,
+      "time": 0.3015075376884422,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\best\\00015.png",
+      "PSNR": 36.64468618180068,
+      "saved_score_difference": -1.470787211133029e-06
+    },
+    {
+      "snapshot": "best",
+      "index": 16,
+      "frame_id": 65,
+      "time": 0.32160804020100503,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\best\\00016.png",
+      "PSNR": 36.271440041126006,
+      "saved_score_difference": -2.3722040722873317e-06
+    },
+    {
+      "snapshot": "best",
+      "index": 17,
+      "frame_id": 69,
+      "time": 0.3417085427135678,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\best\\00017.png",
+      "PSNR": 36.49931856851352,
+      "saved_score_difference": -2.4153731956744195e-06
+    },
+    {
+      "snapshot": "best",
+      "index": 18,
+      "frame_id": 73,
+      "time": 0.36180904522613067,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\best\\00018.png",
+      "PSNR": 37.47435585540391,
+      "saved_score_difference": -1.7495765618491532e-06
+    },
+    {
+      "snapshot": "best",
+      "index": 19,
+      "frame_id": 77,
+      "time": 0.38190954773869346,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\best\\00019.png",
+      "PSNR": 34.948361728153245,
+      "saved_score_difference": 1.2850380102236159e-06
+    },
+    {
+      "snapshot": "best",
+      "index": 20,
+      "frame_id": 81,
+      "time": 0.4020100502512563,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\best\\00020.png",
+      "PSNR": 36.80568455406025,
+      "saved_score_difference": 1.4180739213998095e-06
+    },
+    {
+      "snapshot": "best",
+      "index": 21,
+      "frame_id": 85,
+      "time": 0.4221105527638191,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\best\\00021.png",
+      "PSNR": 31.340611667071858,
+      "saved_score_difference": -2.6517757980570877e-06
+    },
+    {
+      "snapshot": "best",
+      "index": 22,
+      "frame_id": 89,
+      "time": 0.44221105527638194,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\best\\00022.png",
+      "PSNR": 36.14544218377874,
+      "saved_score_difference": -7.788677436337821e-07
+    },
+    {
+      "snapshot": "best",
+      "index": 23,
+      "frame_id": 93,
+      "time": 0.4623115577889447,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\best\\00023.png",
+      "PSNR": 37.31692415759212,
+      "saved_score_difference": -8.91236005884366e-07
+    },
+    {
+      "snapshot": "best",
+      "index": 24,
+      "frame_id": 97,
+      "time": 0.4824120603015075,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\best\\00024.png",
+      "PSNR": 37.419768196838255,
+      "saved_score_difference": -1.0902711196081327e-06
+    },
+    {
+      "snapshot": "best",
+      "index": 25,
+      "frame_id": 101,
+      "time": 0.5025125628140703,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\best\\00025.png",
+      "PSNR": 36.732304162832385,
+      "saved_score_difference": -3.2712496462750096e-06
+    },
+    {
+      "snapshot": "best",
+      "index": 26,
+      "frame_id": 105,
+      "time": 0.5226130653266332,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\best\\00026.png",
+      "PSNR": 35.78482497843006,
+      "saved_score_difference": -3.207605097088617e-06
+    },
+    {
+      "snapshot": "best",
+      "index": 27,
+      "frame_id": 109,
+      "time": 0.542713567839196,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\best\\00027.png",
+      "PSNR": 40.10057376542064,
+      "saved_score_difference": -7.279875617882681e-07
+    },
+    {
+      "snapshot": "best",
+      "index": 28,
+      "frame_id": 113,
+      "time": 0.5628140703517588,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\best\\00028.png",
+      "PSNR": 40.51462807832103,
+      "saved_score_difference": -5.100389905976499e-06
+    },
+    {
+      "snapshot": "best",
+      "index": 29,
+      "frame_id": 117,
+      "time": 0.5829145728643216,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\best\\00029.png",
+      "PSNR": 37.75779195130602,
+      "saved_score_difference": -1.4752076538115944e-06
+    },
+    {
+      "snapshot": "best",
+      "index": 30,
+      "frame_id": 121,
+      "time": 0.6030150753768844,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\best\\00030.png",
+      "PSNR": 41.198821653518145,
+      "saved_score_difference": -4.182663495555516e-06
+    },
+    {
+      "snapshot": "best",
+      "index": 31,
+      "frame_id": 125,
+      "time": 0.6231155778894473,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\best\\00031.png",
+      "PSNR": 38.1920283685693,
+      "saved_score_difference": 3.229149996286651e-07
+    },
+    {
+      "snapshot": "best",
+      "index": 32,
+      "frame_id": 129,
+      "time": 0.6432160804020101,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\best\\00032.png",
+      "PSNR": 40.25168932371527,
+      "saved_score_difference": -4.401870668857555e-06
+    },
+    {
+      "snapshot": "best",
+      "index": 33,
+      "frame_id": 133,
+      "time": 0.6633165829145728,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\best\\00033.png",
+      "PSNR": 39.500789614674545,
+      "saved_score_difference": -3.8423567048084806e-06
+    },
+    {
+      "snapshot": "best",
+      "index": 34,
+      "frame_id": 137,
+      "time": 0.6834170854271356,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\best\\00034.png",
+      "PSNR": 38.41722585563504,
+      "saved_score_difference": 9.716018354311018e-07
+    },
+    {
+      "snapshot": "best",
+      "index": 35,
+      "frame_id": 141,
+      "time": 0.7035175879396985,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\best\\00035.png",
+      "PSNR": 40.070174625090836,
+      "saved_score_difference": -5.458076017816893e-07
+    },
+    {
+      "snapshot": "best",
+      "index": 36,
+      "frame_id": 145,
+      "time": 0.7236180904522613,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\best\\00036.png",
+      "PSNR": 38.62581710239675,
+      "saved_score_difference": 7.571819082841102e-07
+    },
+    {
+      "snapshot": "best",
+      "index": 37,
+      "frame_id": 149,
+      "time": 0.7437185929648241,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\best\\00037.png",
+      "PSNR": 40.65351059570477,
+      "saved_score_difference": -4.5165850792727724e-07
+    },
+    {
+      "snapshot": "best",
+      "index": 38,
+      "frame_id": 153,
+      "time": 0.7638190954773869,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\best\\00038.png",
+      "PSNR": 40.0399633590888,
+      "saved_score_difference": 5.905341140532983e-07
+    },
+    {
+      "snapshot": "best",
+      "index": 39,
+      "frame_id": 157,
+      "time": 0.7839195979899497,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\best\\00039.png",
+      "PSNR": 38.47514423044746,
+      "saved_score_difference": 7.978302747346788e-07
+    },
+    {
+      "snapshot": "best",
+      "index": 40,
+      "frame_id": 161,
+      "time": 0.8040201005025126,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\best\\00040.png",
+      "PSNR": 42.52168011581992,
+      "saved_score_difference": -2.623437893589653e-06
+    },
+    {
+      "snapshot": "best",
+      "index": 41,
+      "frame_id": 165,
+      "time": 0.8241206030150754,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\best\\00041.png",
+      "PSNR": 41.42431081163845,
+      "saved_score_difference": -1.7799142852936711e-06
+    },
+    {
+      "snapshot": "best",
+      "index": 42,
+      "frame_id": 169,
+      "time": 0.8442211055276382,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\best\\00042.png",
+      "PSNR": 41.912733769312034,
+      "saved_score_difference": 2.5986577369963015e-06
+    },
+    {
+      "snapshot": "best",
+      "index": 43,
+      "frame_id": 173,
+      "time": 0.864321608040201,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\best\\00043.png",
+      "PSNR": 43.061095046253115,
+      "saved_score_difference": -4.9598504006098665e-06
+    },
+    {
+      "snapshot": "best",
+      "index": 44,
+      "frame_id": 177,
+      "time": 0.8844221105527639,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\best\\00044.png",
+      "PSNR": 42.30877958507048,
+      "saved_score_difference": -4.8997927990512835e-06
+    },
+    {
+      "snapshot": "best",
+      "index": 45,
+      "frame_id": 181,
+      "time": 0.9045226130653267,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\best\\00045.png",
+      "PSNR": 44.1028206633775,
+      "saved_score_difference": -4.501417421920451e-06
+    },
+    {
+      "snapshot": "best",
+      "index": 46,
+      "frame_id": 185,
+      "time": 0.9246231155778895,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\best\\00046.png",
+      "PSNR": 43.49242897589414,
+      "saved_score_difference": 1.1499664083203243e-06
+    },
+    {
+      "snapshot": "best",
+      "index": 47,
+      "frame_id": 189,
+      "time": 0.9447236180904522,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\best\\00047.png",
+      "PSNR": 42.77464807817874,
+      "saved_score_difference": -2.495551726156009e-06
+    },
+    {
+      "snapshot": "best",
+      "index": 48,
+      "frame_id": 193,
+      "time": 0.964824120603015,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\best\\00048.png",
+      "PSNR": 44.056443387404165,
+      "saved_score_difference": 1.126661977934873e-06
+    },
+    {
+      "snapshot": "best",
+      "index": 49,
+      "frame_id": 197,
+      "time": 0.9849246231155779,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\best\\00049.png",
+      "PSNR": 43.13453827584632,
+      "saved_score_difference": -2.2820150107349946e-06
+    },
+    {
+      "snapshot": "50000",
+      "index": 0,
+      "frame_id": 1,
+      "time": 0.0,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\50000\\00000.png",
+      "PSNR": 41.86500706001314,
+      "saved_score_difference": -2.24784818669832e-06
+    },
+    {
+      "snapshot": "50000",
+      "index": 1,
+      "frame_id": 5,
+      "time": 0.020100502512562814,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\50000\\00001.png",
+      "PSNR": 44.41188811088026,
+      "saved_score_difference": -1.1678331190978497e-08
+    },
+    {
+      "snapshot": "50000",
+      "index": 2,
+      "frame_id": 9,
+      "time": 0.04020100502512563,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\50000\\00002.png",
+      "PSNR": 45.46902988001249,
+      "saved_score_difference": -2.4075851641214285e-06
+    },
+    {
+      "snapshot": "50000",
+      "index": 3,
+      "frame_id": 13,
+      "time": 0.06030150753768844,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\50000\\00003.png",
+      "PSNR": 45.09725854030513,
+      "saved_score_difference": -9.811792480718395e-07
+    },
+    {
+      "snapshot": "50000",
+      "index": 4,
+      "frame_id": 17,
+      "time": 0.08040201005025126,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\50000\\00004.png",
+      "PSNR": 44.13399681234744,
+      "saved_score_difference": 1.756195096902502e-06
+    },
+    {
+      "snapshot": "50000",
+      "index": 5,
+      "frame_id": 21,
+      "time": 0.10050251256281408,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\50000\\00005.png",
+      "PSNR": 44.5404817285064,
+      "saved_score_difference": 1.6112358736108945e-07
+    },
+    {
+      "snapshot": "50000",
+      "index": 6,
+      "frame_id": 25,
+      "time": 0.12060301507537688,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\50000\\00006.png",
+      "PSNR": 42.243843974784205,
+      "saved_score_difference": -2.918526341488814e-06
+    },
+    {
+      "snapshot": "50000",
+      "index": 7,
+      "frame_id": 29,
+      "time": 0.1407035175879397,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\50000\\00007.png",
+      "PSNR": 43.89142634182533,
+      "saved_score_difference": -3.5592977170040285e-06
+    },
+    {
+      "snapshot": "50000",
+      "index": 8,
+      "frame_id": 33,
+      "time": 0.16080402010050251,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\50000\\00008.png",
+      "PSNR": 43.059824772446646,
+      "saved_score_difference": -1.1247701507954844e-06
+    },
+    {
+      "snapshot": "50000",
+      "index": 9,
+      "frame_id": 37,
+      "time": 0.18090452261306533,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\50000\\00009.png",
+      "PSNR": 41.62399116154849,
+      "saved_score_difference": -1.7583733864512396e-06
+    },
+    {
+      "snapshot": "50000",
+      "index": 10,
+      "frame_id": 41,
+      "time": 0.20100502512562815,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\50000\\00010.png",
+      "PSNR": 39.78303648435427,
+      "saved_score_difference": -2.6086633084787536e-06
+    },
+    {
+      "snapshot": "50000",
+      "index": 11,
+      "frame_id": 45,
+      "time": 0.22110552763819097,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\50000\\00011.png",
+      "PSNR": 40.248089702113255,
+      "saved_score_difference": -2.949253932627016e-06
+    },
+    {
+      "snapshot": "50000",
+      "index": 12,
+      "frame_id": 49,
+      "time": 0.24120603015075376,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\50000\\00012.png",
+      "PSNR": 40.18848433763466,
+      "saved_score_difference": 1.457401310744899e-07
+    },
+    {
+      "snapshot": "50000",
+      "index": 13,
+      "frame_id": 53,
+      "time": 0.2613065326633166,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\50000\\00013.png",
+      "PSNR": 36.70439019221699,
+      "saved_score_difference": -1.2872751966597207e-06
+    },
+    {
+      "snapshot": "50000",
+      "index": 14,
+      "frame_id": 57,
+      "time": 0.2814070351758794,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\50000\\00014.png",
+      "PSNR": 34.0056415796648,
+      "saved_score_difference": -4.172288328163631e-06
+    },
+    {
+      "snapshot": "50000",
+      "index": 15,
+      "frame_id": 61,
+      "time": 0.3015075376884422,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\50000\\00015.png",
+      "PSNR": 37.150995772752445,
+      "saved_score_difference": -1.3891127892406985e-06
+    },
+    {
+      "snapshot": "50000",
+      "index": 16,
+      "frame_id": 65,
+      "time": 0.32160804020100503,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\50000\\00016.png",
+      "PSNR": 36.641534086008846,
+      "saved_score_difference": -2.6266376380590373e-06
+    },
+    {
+      "snapshot": "50000",
+      "index": 17,
+      "frame_id": 69,
+      "time": 0.3417085427135678,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\50000\\00017.png",
+      "PSNR": 37.00174145886223,
+      "saved_score_difference": -1.8577881633063953e-06
+    },
+    {
+      "snapshot": "50000",
+      "index": 18,
+      "frame_id": 73,
+      "time": 0.36180904522613067,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\50000\\00018.png",
+      "PSNR": 38.14013852976989,
+      "saved_score_difference": 1.811019892272725e-06
+    },
+    {
+      "snapshot": "50000",
+      "index": 19,
+      "frame_id": 77,
+      "time": 0.38190954773869346,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\50000\\00019.png",
+      "PSNR": 34.71291466049513,
+      "saved_score_difference": 1.1473115364424302e-06
+    },
+    {
+      "snapshot": "50000",
+      "index": 20,
+      "frame_id": 81,
+      "time": 0.4020100502512563,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\50000\\00020.png",
+      "PSNR": 36.85597133143289,
+      "saved_score_difference": 2.8560910934061212e-06
+    },
+    {
+      "snapshot": "50000",
+      "index": 21,
+      "frame_id": 85,
+      "time": 0.4221105527638191,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\50000\\00021.png",
+      "PSNR": 31.5152608169358,
+      "saved_score_difference": 2.0278733003920024e-06
+    },
+    {
+      "snapshot": "50000",
+      "index": 22,
+      "frame_id": 89,
+      "time": 0.44221105527638194,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\50000\\00022.png",
+      "PSNR": 36.31640406213842,
+      "saved_score_difference": -2.1878615825698944e-06
+    },
+    {
+      "snapshot": "50000",
+      "index": 23,
+      "frame_id": 93,
+      "time": 0.4623115577889447,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\50000\\00023.png",
+      "PSNR": 37.280361147052446,
+      "saved_score_difference": -3.843181929141792e-06
+    },
+    {
+      "snapshot": "50000",
+      "index": 24,
+      "frame_id": 97,
+      "time": 0.4824120603015075,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\50000\\00024.png",
+      "PSNR": 37.21319416180965,
+      "saved_score_difference": -1.6389715966624863e-06
+    },
+    {
+      "snapshot": "50000",
+      "index": 25,
+      "frame_id": 101,
+      "time": 0.5025125628140703,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\50000\\00025.png",
+      "PSNR": 36.68450127331415,
+      "saved_score_difference": -3.74635071409557e-07
+    },
+    {
+      "snapshot": "50000",
+      "index": 26,
+      "frame_id": 105,
+      "time": 0.5226130653266332,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\50000\\00026.png",
+      "PSNR": 35.53754476713518,
+      "saved_score_difference": 5.166468994843854e-07
+    },
+    {
+      "snapshot": "50000",
+      "index": 27,
+      "frame_id": 109,
+      "time": 0.542713567839196,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\50000\\00027.png",
+      "PSNR": 40.11047733251387,
+      "saved_score_difference": -1.1499589902541629e-07
+    },
+    {
+      "snapshot": "50000",
+      "index": 28,
+      "frame_id": 113,
+      "time": 0.5628140703517588,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\50000\\00028.png",
+      "PSNR": 40.315832911766705,
+      "saved_score_difference": -1.1336434511122206e-06
+    },
+    {
+      "snapshot": "50000",
+      "index": 29,
+      "frame_id": 117,
+      "time": 0.5829145728643216,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\50000\\00029.png",
+      "PSNR": 37.81482538481519,
+      "saved_score_difference": -1.5805168445126583e-06
+    },
+    {
+      "snapshot": "50000",
+      "index": 30,
+      "frame_id": 121,
+      "time": 0.6030150753768844,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\50000\\00030.png",
+      "PSNR": 41.28174635561193,
+      "saved_score_difference": 4.4496739803889795e-07
+    },
+    {
+      "snapshot": "50000",
+      "index": 31,
+      "frame_id": 125,
+      "time": 0.6231155778894473,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\50000\\00031.png",
+      "PSNR": 37.95493120928267,
+      "saved_score_difference": -1.9572212366369968e-06
+    },
+    {
+      "snapshot": "50000",
+      "index": 32,
+      "frame_id": 129,
+      "time": 0.6432160804020101,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\50000\\00032.png",
+      "PSNR": 39.505784720294216,
+      "saved_score_difference": -2.1754577375077133e-06
+    },
+    {
+      "snapshot": "50000",
+      "index": 33,
+      "frame_id": 133,
+      "time": 0.6633165829145728,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\50000\\00033.png",
+      "PSNR": 39.675280298648154,
+      "saved_score_difference": 2.5886872165870045e-06
+    },
+    {
+      "snapshot": "50000",
+      "index": 34,
+      "frame_id": 137,
+      "time": 0.6834170854271356,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\50000\\00034.png",
+      "PSNR": 38.14089006764794,
+      "saved_score_difference": -1.9611606560943073e-06
+    },
+    {
+      "snapshot": "50000",
+      "index": 35,
+      "frame_id": 141,
+      "time": 0.7035175879396985,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\50000\\00035.png",
+      "PSNR": 40.14150240938183,
+      "saved_score_difference": -3.7856865304775056e-06
+    },
+    {
+      "snapshot": "50000",
+      "index": 36,
+      "frame_id": 145,
+      "time": 0.7236180904522613,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\50000\\00036.png",
+      "PSNR": 38.47241006133265,
+      "saved_score_difference": 1.7666549183559255e-06
+    },
+    {
+      "snapshot": "50000",
+      "index": 37,
+      "frame_id": 149,
+      "time": 0.7437185929648241,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\50000\\00037.png",
+      "PSNR": 40.7207422680322,
+      "saved_score_difference": -2.818637724999462e-06
+    },
+    {
+      "snapshot": "50000",
+      "index": 38,
+      "frame_id": 153,
+      "time": 0.7638190954773869,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\50000\\00038.png",
+      "PSNR": 40.20581882826369,
+      "saved_score_difference": -3.162703109182985e-06
+    },
+    {
+      "snapshot": "50000",
+      "index": 39,
+      "frame_id": 157,
+      "time": 0.7839195979899497,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\50000\\00039.png",
+      "PSNR": 38.14195237404362,
+      "saved_score_difference": -1.4060481845490358e-07
+    },
+    {
+      "snapshot": "50000",
+      "index": 40,
+      "frame_id": 161,
+      "time": 0.8040201005025126,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\50000\\00040.png",
+      "PSNR": 42.340476118724695,
+      "saved_score_difference": -8.71021399007077e-07
+    },
+    {
+      "snapshot": "50000",
+      "index": 41,
+      "frame_id": 165,
+      "time": 0.8241206030150754,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\50000\\00041.png",
+      "PSNR": 41.121952758810856,
+      "saved_score_difference": -3.112771175040052e-06
+    },
+    {
+      "snapshot": "50000",
+      "index": 42,
+      "frame_id": 169,
+      "time": 0.8442211055276382,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\50000\\00042.png",
+      "PSNR": 42.17787212110337,
+      "saved_score_difference": 4.1700180730686043e-07
+    },
+    {
+      "snapshot": "50000",
+      "index": 43,
+      "frame_id": 173,
+      "time": 0.864321608040201,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\50000\\00043.png",
+      "PSNR": 42.987622632440036,
+      "saved_score_difference": -2.489630276159005e-06
+    },
+    {
+      "snapshot": "50000",
+      "index": 44,
+      "frame_id": 177,
+      "time": 0.8844221105527639,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\50000\\00044.png",
+      "PSNR": 42.12757823586439,
+      "saved_score_difference": -4.994871716235139e-07
+    },
+    {
+      "snapshot": "50000",
+      "index": 45,
+      "frame_id": 181,
+      "time": 0.9045226130653267,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\50000\\00045.png",
+      "PSNR": 44.554970002947826,
+      "saved_score_difference": -3.5993470959283513e-06
+    },
+    {
+      "snapshot": "50000",
+      "index": 46,
+      "frame_id": 185,
+      "time": 0.9246231155778895,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\50000\\00046.png",
+      "PSNR": 43.165897206569774,
+      "saved_score_difference": -1.6281499171100222e-07
+    },
+    {
+      "snapshot": "50000",
+      "index": 47,
+      "frame_id": 189,
+      "time": 0.9447236180904522,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\50000\\00047.png",
+      "PSNR": 43.282973229655084,
+      "saved_score_difference": -1.0135089780760609e-06
+    },
+    {
+      "snapshot": "50000",
+      "index": 48,
+      "frame_id": 193,
+      "time": 0.964824120603015,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\50000\\00048.png",
+      "PSNR": 43.7694184283772,
+      "saved_score_difference": -2.1954020965608834e-06
+    },
+    {
+      "snapshot": "50000",
+      "index": 49,
+      "frame_id": 197,
+      "time": 0.9849246231155779,
+      "pair": "F:\\A_Edinburgh\\PhysGauss\\output\\monotonic_training\\J1_monotonic_kinematic\\pairs\\50000\\00049.png",
+      "PSNR": 43.25822417269012,
+      "saved_score_difference": -3.1461456728720805e-07
+    }
+  ],
+  "image_shape": [
+    3200,
+    950
+  ],
+  "split": [
+    120,
+    30,
+    50
+  ],
+  "limitations": [
+    "single scene/seed",
+    "clock and kinematic loss jointly changed",
+    "historical test exposure",
+    "internal velocity consistency is not physical GT"
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "date": "2026-11-02",
+  "snapshot_iteration": 50000,
+  "snapshot_matches_full_checkpoint": true,
+  "unused_legacy_clock_weights_match_shared_prefix": true,
+  "clock_strictly_monotonic": true,
+  "no_optimizer_created": true,
+  "model_parameters_unchanged": true,
+  "diagnostic_reproduction": [
+    {
+      "time": 0.005025125574320555,
+      "metrics": {
+        "count": 256,
+        "rmse": 0.23941301794900882,
+        "target_rms": 0.233435751989013,
+        "predicted_rms": 0.1679726074844803,
+        "relative_rmse": 1.0256056148600456,
+        "moving_count": 255,
+        "direction_count": 255,
+        "angle_median_deg": 59.86182818992417,
+        "angle_p90_deg": 126.16329541901948,
+        "speed_ratio_median": 0.8145898210595133,
+        "moving_relative_rmse": 1.0255248246270714
+      },
+      "stored_relative_rmse": 1.0256055813473695,
+      "absolute_difference": 3.351267618967313e-08
+    },
+    {
+      "time": 0.25628140568733215,
+      "metrics": {
+        "count": 256,
+        "rmse": 1.0402589216065188,
+        "target_rms": 1.0700617882153756,
+        "predicted_rms": 0.16464577192412194,
+        "relative_rmse": 0.9721484619513783,
+        "moving_count": 248,
+        "direction_count": 248,
+        "angle_median_deg": 58.05228471964879,
+        "angle_p90_deg": 147.97206878924752,
+        "speed_ratio_median": 0.19467064545399396,
+        "moving_relative_rmse": 0.9721376868992215
+      },
+      "stored_relative_rmse": 0.9721484139006046,
+      "absolute_difference": 4.80507736932978e-08
+    },
+    {
+      "time": 0.5075376629829407,
+      "metrics": {
+        "count": 256,
+        "rmse": 2.6061491809014523,
+        "target_rms": 2.600235190994519,
+        "predicted_rms": 0.15933476822830706,
+        "relative_rmse": 1.0022744057642998,
+        "moving_count": 215,
+        "direction_count": 215,
+        "angle_median_deg": 83.50273089155195,
+        "angle_p90_deg": 141.0471822105876,
+        "speed_ratio_median": 0.12148460833492876,
+        "moving_relative_rmse": 1.0022490233824195
+      },
+      "stored_relative_rmse": 1.0022743991776404,
+      "absolute_difference": 6.586659440088738e-09
+    },
+    {
+      "time": 0.7587939500808716,
+      "metrics": {
+        "count": 256,
+        "rmse": 1.2982714442051553,
+        "target_rms": 1.2668602300321734,
+        "predicted_rms": 0.1593377908188153,
+        "relative_rmse": 1.0247945380463828,
+        "moving_count": 254,
+        "direction_count": 254,
+        "angle_median_deg": 65.6484744294011,
+        "angle_p90_deg": 139.14570806307748,
+        "speed_ratio_median": 0.14794113500569434,
+        "moving_relative_rmse": 1.024779279315297
+      },
+      "stored_relative_rmse": 1.0247945036102664,
+      "absolute_difference": 3.4436116402858374e-08
+    },
+    {
+      "time": 1.0,
+      "metrics": {
+        "count": 256,
+        "rmse": 0.4242514700800844,
+        "target_rms": 0.44107910686003926,
+        "predicted_rms": 0.15811718177379014,
+        "relative_rmse": 0.9618489370313917,
+        "moving_count": 235,
+        "direction_count": 235,
+        "angle_median_deg": 59.3000440296206,
+        "angle_p90_deg": 141.2033361916153,
+        "speed_ratio_median": 0.6256238541094714,
+        "moving_relative_rmse": 0.9594307838150784
+      },
+      "stored_relative_rmse": 0.9618488583907201,
+      "absolute_difference": 7.864067164131683e-08
+    }
+  ],
+  "gradient_probes": [
+    {
+      "time": 0.25628140568733215,
+      "kinematic_huber": 0.05568405240774155,
+      "cmr_raw": 0.003079366637393832,
+      "groups": {
+        "planes": {
+          "kin_raw_grad_norm": 0.0009815343655645847,
+          "cmr_raw_grad_norm": 0.035887159407138824,
+          "cosine": -0.008205761886248006,
+          "same_update_cmr_over_kin_weighted_norm": 8.581592887308348,
+          "frequency_averaged_cmr_over_kin_norm": 0.8581592887308349
+        },
+        "index_embed": {
+          "kin_raw_grad_norm": 0.00047885969979688525,
+          "cmr_raw_grad_norm": 0.0002511226339265704,
+          "cosine": 0.1684153226473556,
+          "same_update_cmr_over_kin_weighted_norm": 0.12308691945563695,
+          "frequency_averaged_cmr_over_kin_norm": 0.012308691945563697
+        },
+        "shared_net": {
+          "kin_raw_grad_norm": 0.008685603737831116,
+          "cmr_raw_grad_norm": 0.01191907748579979,
+          "cosine": -0.10533948481281495,
+          "same_update_cmr_over_kin_weighted_norm": 0.3220897950493629,
+          "frequency_averaged_cmr_over_kin_norm": 0.0322089795049363
+        },
+        "velocity_head": {
+          "kin_raw_grad_norm": 0.01946731097996235,
+          "cmr_raw_grad_norm": 0.011096751317381859,
+          "cosine": -0.30691176576677054,
+          "same_update_cmr_over_kin_weighted_norm": 0.1337901746007299,
+          "frequency_averaged_cmr_over_kin_norm": 0.01337901746007299
+        },
+        "stress_head": {
+          "kin_raw_grad_norm": 0.0,
+          "cmr_raw_grad_norm": 0.01924769952893257,
+          "cosine": null,
+          "same_update_cmr_over_kin_weighted_norm": null,
+          "frequency_averaged_cmr_over_kin_norm": null
+        }
+      }
+    },
+    {
+      "time": 0.5075376629829407,
+      "kinematic_huber": 0.11737734079360962,
+      "cmr_raw": 0.011239323765039444,
+      "groups": {
+        "planes": {
+          "kin_raw_grad_norm": 0.0018027018522843719,
+          "cmr_raw_grad_norm": 0.16295631229877472,
+          "cosine": -0.22841073537619677,
+          "same_update_cmr_over_kin_weighted_norm": 21.216884719539724,
+          "frequency_averaged_cmr_over_kin_norm": 2.1216884719539726
+        },
+        "index_embed": {
+          "kin_raw_grad_norm": 0.0005242446204647422,
+          "cmr_raw_grad_norm": 0.00028540680068545043,
+          "cosine": 0.01938320120604672,
+          "same_update_cmr_over_kin_weighted_norm": 0.1277805250378696,
+          "frequency_averaged_cmr_over_kin_norm": 0.012778052503786962
+        },
+        "shared_net": {
+          "kin_raw_grad_norm": 0.009902698919177055,
+          "cmr_raw_grad_norm": 0.03496038541197777,
+          "cosine": -0.09893830100492164,
+          "same_update_cmr_over_kin_weighted_norm": 0.8286229744309543,
+          "frequency_averaged_cmr_over_kin_norm": 0.08286229744309544
+        },
+        "velocity_head": {
+          "kin_raw_grad_norm": 0.02101984992623329,
+          "cmr_raw_grad_norm": 0.03719797357916832,
+          "cosine": -0.15647176085266526,
+          "same_update_cmr_over_kin_weighted_norm": 0.4153593625232836,
+          "frequency_averaged_cmr_over_kin_norm": 0.04153593625232836
+        },
+        "stress_head": {
+          "kin_raw_grad_norm": 0.0,
+          "cmr_raw_grad_norm": 0.027891894802451134,
+          "cosine": null,
+          "same_update_cmr_over_kin_weighted_norm": null,
+          "frequency_averaged_cmr_over_kin_norm": null
+        }
+      }
+    },
+    {
+      "time": 0.7587939500808716,
+      "kinematic_huber": 0.07166307419538498,
+      "cmr_raw": 0.014251822605729103,
+      "groups": {
+        "planes": {
+          "kin_raw_grad_norm": 0.0014129460323601961,
+          "cmr_raw_grad_norm": 0.15288719534873962,
+          "cosine": -0.31954823755220885,
+          "same_update_cmr_over_kin_weighted_norm": 25.396851125910977,
+          "frequency_averaged_cmr_over_kin_norm": 2.539685112591098
+        },
+        "index_embed": {
+          "kin_raw_grad_norm": 0.0005765893147327006,
+          "cmr_raw_grad_norm": 0.0005406498676165938,
+          "cosine": -0.2551040015887463,
+          "same_update_cmr_over_kin_weighted_norm": 0.22008165576575628,
+          "frequency_averaged_cmr_over_kin_norm": 0.02200816557657563
+        },
+        "shared_net": {
+          "kin_raw_grad_norm": 0.00789144542068243,
+          "cmr_raw_grad_norm": 0.05214439705014229,
+          "cosine": 0.03555409202818096,
+          "same_update_cmr_over_kin_weighted_norm": 1.5509058227571784,
+          "frequency_averaged_cmr_over_kin_norm": 0.15509058227571787
+        },
+        "velocity_head": {
+          "kin_raw_grad_norm": 0.010403006337583065,
+          "cmr_raw_grad_norm": 0.0691729262471199,
+          "cosine": 0.29674031953469865,
+          "same_update_cmr_over_kin_weighted_norm": 1.560671928058851,
+          "frequency_averaged_cmr_over_kin_norm": 0.15606719280588516
+        },
+        "stress_head": {
+          "kin_raw_grad_norm": 0.0,
+          "cmr_raw_grad_norm": 0.039480485022068024,
+          "cosine": null,
+          "same_update_cmr_over_kin_weighted_norm": null,
+          "frequency_averaged_cmr_over_kin_norm": null
+        }
+      }
+    }
+  ],
+  "gradient_probe_limit": "256 deterministic points at3 training times, same points for each loss; not actual20k CMR batches or a proof of whole-training interference.",
+  "supervision_budget": {
+    "joint_velocity_optimizer_updates": 4699,
+    "joint_samples_per_update": 256,
+    "joint_sample_pairs": 1202944,
+    "prior_frozen_probe_updates": 12000,
+    "prior_frozen_probe_batch": 4096,
+    "prior_frozen_probe_sample_pairs": 49152000,
+    "prior_frozen_to_joint_sample_pair_ratio": 40.859757395190464,
+    "other_differences": [
+      "frozen versus evolving targets",
+      "normalized MSE versus weighted Huber",
+      "CMR and image/neighbor objectives present only in joint training"
+    ]
+  }
+}
