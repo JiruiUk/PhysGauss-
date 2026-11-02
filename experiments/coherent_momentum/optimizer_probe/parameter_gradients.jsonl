@@ -1,0 +1,8 @@
+{"loss": "momentum", "group": "grid", "iteration": 100, "gradient_l1": 24527.447265625, "finite": true, "required": true, "stress_source": "shared"}
+{"loss": "momentum", "group": "deformation", "iteration": 100, "gradient_l1": 50767.96554192901, "finite": true, "required": true, "stress_source": "shared"}
+{"loss": "momentum", "group": "stress_head", "iteration": 100, "gradient_l1": 3.4486046731472015, "finite": true, "required": true, "stress_source": "shared"}
+{"loss": "momentum", "group": "legacy_velocity", "iteration": 100, "gradient_l1": 0, "finite": true, "required": false, "stress_source": "shared"}
+{"loss": "flow", "group": "grid", "iteration": 100, "gradient_l1": 0.2461109273135662, "finite": true, "required": true, "stress_source": "shared"}
+{"loss": "flow", "group": "deformation", "iteration": 100, "gradient_l1": 2.123980542557547, "finite": true, "required": true, "stress_source": "shared"}
+{"loss": "flow", "group": "stress_head", "iteration": 100, "gradient_l1": 0, "finite": true, "required": false, "stress_source": "shared"}
+{"loss": "flow", "group": "legacy_velocity", "iteration": 100, "gradient_l1": 0, "finite": true, "required": false, "stress_source": "shared"}

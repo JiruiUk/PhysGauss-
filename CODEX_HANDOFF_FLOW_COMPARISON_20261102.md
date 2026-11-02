@@ -1,7 +1,11 @@
 # Codex 工作交接：运动光流与轨迹导出速度对照
 
-更新时间：2026-11-02 13:26 UTC（Europe/London）。
+更新时间：2026-11-02 13:43 UTC（Europe/London）。
 工作目录：`F:\A_Edinburgh\PhysGauss`；Windows / PowerShell。
+
+> **13:43 新授权：用户要求统一物理动量与形变运动并与之前模型比较。已明确L1/M1本来就由完整渲染中心轨迹导出速度/加速度，因此本轮不是首次消除独立速度分支。新增独立开关候选 `variants/coherent_momentum` / N1_coherent_momentum：统一h=1/199区间的轨迹/弦速度/加速度及物理推进位置，保留stress_pred、原应变率修正和M1梯度策略；用32邻居、FP64归一化二次局部拟合直接计算应力Jacobian与速度Hessian，替换原连续两次线性拟合。不新增参数、外力或本构；这是多个数值环节的改动，不冒称单标量消融或精确物理求解器。24项测试、100步GPU短训70→100完整恢复、20步flags-off、实际优化器更新/私有梯度精确保留/共享梯度上限全通过。`experiments/coherent_momentum/{plan,diagnosis,preflight,source_freeze}.json` 为冻结协议；共同3k检查点SHA仍为 e361f4ba241a77e4158d341986bf86f2797e24c9a560817b04ad6c18b3a4caa5，张量/优化器/RNG字节相同。仅这一个完整候选，从3k到总50k，比较历史M1，禁止重训旧模型。**
+
+本轮命令：`. ./reproduction/scripts/enable_cuda.ps1` 后 `envs/pidg-cu128/python.exe -u -m variants.coherent_momentum.run --hours 12`。唯一协调器日志 `experiments/coherent_momentum/training_coordinator.log`；状态 `envs/pidg-cu128/python.exe output/coherent_momentum/status.py`。健康训练不另占GPU；冻结后不改源码/配置/数据。完成验证选择锁定后自动测试best/final并导出GT|Render/视频/ZIP，使用同一冻结V2观测与同一批canonical锚点、训练时刻，对新旧两个模型分别应用新旧两种动量算子。标准已预先写入plan，不能只用新算子残差降低宣称物理更可靠；推进误差只是h²缩放残差，不是独立验证。还须运行 `output/coherent_momentum/verify_results.py`、人工审阅早中晚/原帧85和视频、补充assessment并提交独立结果里程碑。若意外退出，先核验完整保存边界、归档超界诊断（含coherent_momentum和gradient_guard JSONL）再安全续跑；已有selection_lock不得重写。之前“本轮结束”的13:26内容仅指M1旧轮。
 
 > **13:26 最终交付：M1_guarded_shared 已完成总50k、best49k/final50k测试、GT|Render导出、独立核验和人工图像/视频审阅。本轮结束，禁止按下文历史启动记录重训；自动跟进 `pidg` 已删除。测试best PSNR由L1的33.965832升至39.701836 dB，LPIPS约降低50.3%；验证二维速度推进EPE降低8.99%，未达到预先10%综合收益门槛，因此只确认重建恢复，不确认物理预测更可靠。未缩放动量残差恶化；同一组共同3k材料点诊断表明，原应变率修正项散度是大残差的主要数值贡献。加速度差分对步长仍敏感，不据此归因缺外力。不启动更多完整训练。单场景单种子，首次guard生效前已有0.26–0.65 dB差异，不能把全部收益唯一归因guard。详细证据、限制和下一步只读/解析测试建议见 `experiments/momentum_repair/assessment.md`；新旧同步视频与逐帧对照 `output/momentum_repair/index.html`。**
 

@@ -1,5 +1,21 @@
 # PIDG repository map — M0
 
+## Coherent discrete trajectory momentum (2026-11-02)
+
+`variants/coherent_momentum/operator.py` derives interval chord velocities,
+acceleration and the physics rollout from the same complete center trajectory.
+It retains stress_pred and the original deviatoric rate term, using one
+normalized quadratic current-space fit for the stress Jacobian / velocity
+Hessian instead of successive linear fits. `runtime.py` gates the new operator
+behind `coherent_momentum`, preserving M1's gradient policy and exact new-flag-off
+path. `tests/test_coherent_momentum.py` checks analytic fields, degeneracy,
+gradients and parent parity. `prepare.py` creates an independent trainer copy;
+`run.py`, `evaluate.py`, `export.py` control recovery, validation selection,
+common-anchor dual-operator diagnostics and GT|Render. The frozen old PIDG,
+L1 and M1 trees are unchanged. A shared trajectory was already present in M1;
+the new objective improves discrete compatibility rather than claiming a new
+independent-velocity unification or exact physical integration.
+
 ## Momentum-gradient repair follow-up (2026-11-02)
 
 `variants/momentum_guard/runtime.py` optionally guards the inherited shared

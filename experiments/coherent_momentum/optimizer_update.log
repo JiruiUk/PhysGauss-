@@ -1,0 +1,46 @@
+W1102 13:41:45.881000 222144 envs\pidg-cu128\Lib\site-packages\torch\utils\cpp_extension.py:466] Error checking compiler version for cl: 'cp1' codec can't decode bytes in position 0--1: No mapping for the Unicode character exists in the target code page.
+ninja: no work to do.
+F:\A_Edinburgh\PhysGauss\variants\coherent_momentum\code\hashencoder\hashgrid.py:16: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.half)
+F:\A_Edinburgh\PhysGauss\variants\coherent_momentum\code\hashencoder\hashgrid.py:56: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+F:\A_Edinburgh\PhysGauss\envs\pidg-cu128\Lib\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+F:\A_Edinburgh\PhysGauss\envs\pidg-cu128\Lib\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: F:\A_Edinburgh\PhysGauss\envs\pidg-cu128\Lib\site-packages\lpips\weights\v0.1\vgg.pth
+{
+  "status": "passed",
+  "actual_parameter_update_l1": {
+    "grid": 13748.0302734375,
+    "deformation": 1.654117465019226,
+    "shared_stress": 1.1939998865127563,
+    "legacy": 0.0
+  },
+  "private_gradients_exact": true,
+  "real_shared_gradient_caps_verified": true,
+  "true_forward_equal": true,
+  "source_checkpoint_untouched": true,
+  "guard": {
+    "iteration": 100,
+    "true_momentum_forward": 45.1107909840251,
+    "image_forward": 0.0927833840250969,
+    "physics_weight": 0.01,
+    "scale": 8.278990101840676e-05,
+    "cap": 0.1,
+    "groups": {
+      "grid": {
+        "image_norm": 0.004762641154229641,
+        "weighted_momentum_norm": 5.752683715820313,
+        "guarded_momentum_norm": 0.00047626411542296405
+      },
+      "deformation": {
+        "image_norm": 0.5846464037895203,
+        "weighted_momentum_norm": 7.033369140625,
+        "guarded_momentum_norm": 0.0005822919349782604
+      }
+    },
+    "private_gradients_preserved": true
+  }
+}

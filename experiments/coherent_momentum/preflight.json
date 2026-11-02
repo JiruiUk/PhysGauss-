@@ -1,0 +1,67 @@
+{
+  "status": "passed",
+  "smoke_steps": 100,
+  "complete_resume": {
+    "saved": 70,
+    "next": 71
+  },
+  "flags_off_steps": 20,
+  "actual_optimizer_update": {
+    "status": "passed",
+    "actual_parameter_update_l1": {
+      "grid": 13748.0302734375,
+      "deformation": 1.654117465019226,
+      "shared_stress": 1.1939998865127563,
+      "legacy": 0.0
+    },
+    "private_gradients_exact": true,
+    "real_shared_gradient_caps_verified": true,
+    "true_forward_equal": true,
+    "source_checkpoint_untouched": true,
+    "guard": {
+      "iteration": 100,
+      "true_momentum_forward": 45.1107909840251,
+      "image_forward": 0.0927833840250969,
+      "physics_weight": 0.01,
+      "scale": 8.278990101840676e-05,
+      "cap": 0.1,
+      "groups": {
+        "grid": {
+          "image_norm": 0.004762641154229641,
+          "weighted_momentum_norm": 5.752683715820313,
+          "guarded_momentum_norm": 0.00047626411542296405
+        },
+        "deformation": {
+          "image_norm": 0.5846464037895203,
+          "weighted_momentum_norm": 7.033369140625,
+          "guarded_momentum_norm": 0.0005822919349782604
+        }
+      },
+      "private_gradients_preserved": true
+    }
+  },
+  "guard": [
+    {
+      "iteration": 100,
+      "true_momentum_forward": 38.78643719800587,
+      "image_forward": 0.09924636036157608,
+      "physics_weight": 0.01,
+      "scale": 9.925327966336383e-05,
+      "cap": 0.1,
+      "groups": {
+        "grid": {
+          "image_norm": 0.00485216686502099,
+          "weighted_momentum_norm": 4.8886715698242185,
+          "guarded_momentum_norm": 0.00048521668650209905
+        },
+        "deformation": {
+          "image_norm": 0.25875717401504517,
+          "weighted_momentum_norm": 7.753786010742187,
+          "guarded_momentum_norm": 0.0007695886913740726
+        }
+      },
+      "private_gradients_preserved": true
+    }
+  ],
+  "completed_utc": "2026-11-02T13:41:54.650252+00:00"
+}

@@ -1,0 +1,54 @@
+{
+  "created_before_full_training": true,
+  "scene": "rubber_duck",
+  "seed": 0,
+  "candidate": "N1_coherent_momentum",
+  "reference": "completed M1_guarded_shared and L1_shared_stress, preserved",
+  "new_full_training_budget": {
+    "start": 3000,
+    "end": 50000,
+    "additional_steps": 47000,
+    "candidates": 1
+  },
+  "common_prefix_sha256": "e361f4ba241a77e4158d341986bf86f2797e24c9a560817b04ad6c18b3a4caa5",
+  "new_parameters": 0,
+  "new_optimizer_state": 0,
+  "extra_prefix_fitting": 0,
+  "intervention": [
+    "common normalized h=1/199 for image-flow velocity and momentum interval",
+    "x_minus,x,x_plus generate chord velocities, acceleration and physics rollout",
+    "one-hop 32-neighbor anchored quadratic world-space WLS replaces nested linear gradients",
+    "FP64 differencing/normalized local solve, original FP32 field evaluations",
+    "same learned stress, original deviatoric rate coefficient, density=1, M1 gradient guard retained"
+  ],
+  "not_a_single_scalar_change": true,
+  "coherent_ridge": 1e-05,
+  "valid_rank_ratio_min": 1e-06,
+  "boundary_rule": "shift interval center into [h,1-h], log shift; never extrapolate",
+  "objective_units": "acceleration: (x_plus - physics_rollout)/h^2; no artificial small rollout loss",
+  "success_prospective": {
+    "validation_PSNR_drop_at_most_dB": 0.5,
+    "validation_LPIPS_relative_worse_at_most": 0.1,
+    "independent_velocity_EPE_relative_worse_at_most": 0.05,
+    "common_anchor_legacy_median_Huber_reduction_at_least": 0.25,
+    "common_anchor_coherent_median_Huber_reduction_at_least": 0.25,
+    "both_operator_valid_fraction_at_least": 0.5
+  },
+  "selection": "max validation PSNR, immutable lock before final test",
+  "required_checks": [
+    "analytic manufactured fields",
+    "new flag off exact M1",
+    "all flags off original path",
+    "GPU 100 steps and complete 70->100 restoration",
+    "actual optimizer updates and private gradient parity",
+    "source/data/checkpoint/snapshot hashes",
+    "both discretizations on same canonical points/training times",
+    "motion and image metrics, independent PNG/video/ZIP QA"
+  ],
+  "limitations": [
+    "same trajectory already existed in L1/M1; no claim of first removing an independent velocity branch",
+    "single scene seed, historical test exposure, GPU nondeterminism prevents unique causal attribution",
+    "rank rejection and neighborhood changes must be reported, residual is discretization dependent, no physical GT"
+  ],
+  "no_external_force_constitutive_unknown_material_added": true
+}
