@@ -1,0 +1,12 @@
+{
+  "purpose": "Controlled shared-branch follow-up after unsuccessful K1/K2 composite tradeoff and verified flow-contract bugs",
+  "models": ["L0_corrected_trajectory", "L1_shared_stress"],
+  "only_arm_config_difference": "stress_source independent versus shared; freeze unused heads as part of that choice",
+  "both": {"velocity_source": "trajectory", "flow": "raw UniMatch train flow projected source->target actual scene cameras", "depth_teacher": false, "flow_geometry": "correct CUDA mean-minus-pixel sign and pre-update compositing weights", "flow_weight": 0.01, "flow_interval": 100, "momentum_weight": 0.01, "momentum_interval": 100, "velocity_dt": 0.001, "acceleration_dt": 0.005025125628140704},
+  "protocol": {"scene": "rubber_duck", "seed": 0, "train": 120, "validation": 30, "test": 50, "shared_prefix_iteration": 3000, "total_iterations": 50000, "selection": "validation PSNR, lock both before final test"},
+  "initialization": "Identical receipted extension of original full3k checkpoint, preserving all old tensors, old optimizer states and RNG; both arms contain same independently seeded Linear(256,6) stress head. New head active only L1. No distillation/extra fitting budget. New optimizer group empty state at original velocity LR.",
+  "shared_branch": "Exact existing deformation spatial_mlp/sigmoid, temporal_mlp, product, grid_mlp latent -> stress6. Same deformation Grid4D, no independent physics grid or ID embedding used by L1. Velocity from full R(q)X+b trajectory. Keep original rate coefficient and local momentum operator.",
+  "hypothesis": "Sharing stress representation may reduce incompatibility, but may not fix large second-difference momentum gradients. Do not change weights/time scales in this comparison.",
+  "limits": ["L0/L1 isolate stress representation under corrected flow; K2->L0 also changes optical-flow target/projection/weights", "original inherited camera convention deliberately preserved", "estimated 2D flow, no physical3D GT", "single scene and seed", "historical test exposure", "shared representation is not constitutive consistency"],
+  "forbidden": ["external force", "constitutive law", "per-Gaussian stiffness/force", "learned material segmentation"]
+}

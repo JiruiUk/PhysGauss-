@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "original_sha256": "6da523ea247b4068ec9bd6a7c8f83dacb7506c698daaeecc9eb0ecd93ea1ebce",
+  "converted_sha256": "e361f4ba241a77e4158d341986bf86f2797e24c9a560817b04ad6c18b3a4caa5",
+  "all_inherited_tensors_optimizer_states_and_RNG_identical": true,
+  "only_extra_tensors": [
+    "shared_stress.weight",
+    "shared_stress.bias"
+  ],
+  "new_optimizer_group_empty": true,
+  "new_architecture_flag_only_dataset_change": true,
+  "raw_train_flow_source_artifact_hashes_match_original_manifest": true,
+  "extra_optimization_steps": 0
+}

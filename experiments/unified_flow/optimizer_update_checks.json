@@ -1,0 +1,26 @@
+{
+  "L0_corrected_trajectory": {
+    "status": "passed",
+    "loss": 0.3315528333187103,
+    "parameter_update_l1": {
+      "grid": 13234.052734375,
+      "deformation": 4.662415981292725,
+      "stress_head": 0.38400018215179443,
+      "velocity_head": 0.0,
+      "shared_stress": 0.0
+    },
+    "source_checkpoint_untouched": true
+  },
+  "L1_shared_stress": {
+    "status": "passed",
+    "loss": 0.16248592734336853,
+    "parameter_update_l1": {
+      "grid": 13270.8603515625,
+      "deformation": 4.374191761016846,
+      "stress_head": 0.0,
+      "velocity_head": 0.0,
+      "shared_stress": 1.1639997959136963
+    },
+    "source_checkpoint_untouched": true
+  }
+}

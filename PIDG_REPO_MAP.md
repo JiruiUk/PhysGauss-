@@ -1,5 +1,20 @@
 # PIDG repository map — M0
 
+## Unified trajectory/stress follow-up (2026-11-02)
+
+`variants/unified_flow/code` is an independent frozen copy of the flow-comparison
+trainer. Its optional `DeformNetwork.shared_stress` is Linear(width,6), stored in
+deformation snapshots/full state. `model.predict_stress` evaluates the same
+deformation Grid4D and exact shared trunk latent as `gaussian_warp`; full centre
+velocity remains in `variants/flow_comparison/temporal.py`. `runtime.Tuning`
+selects shared versus original predicted stress in the same local momentum
+operator and integrates corrected raw source→target-camera flow. New optimizer
+group, checkpoint extension, input hashes, matched controls and validation-only
+selection are in `checkpoint.py`, `prepare_data.py`, `run.py` and
+`experiments/unified_flow/plan.json`. Flags off preserve the original paths.
+Original PIDG/K1/K2/source locks and weights remain unchanged. The additional
+head has no constitutive or external-force interpretation.
+
 The execution pack in `pidg_codex_plan.zip` is the current plan. The previous Phase
 0–15 experiments were removed at the user's request and are not resumed.
 
