@@ -288,3 +288,30 @@ Training selected-region24.069166dB does not establish independent performance.
 Do not replace S3-U static support or certify full automatic decomposition.
 Next evidence priority is long-baseline correspondence and coverage validation;
 no color-prior fallback, threshold sweep or physics integration follows.
+
+### Cross-temporal confidence static pilot: S1-CT (2026-11-03)
+
+The user authorized confidence-guided cross-time fusion without known static
+colors. Completed matched fixed/progressive12k arms,53 deduplicated train-RGB
+geometric anchors and a common1954-Gaussian initialization.29 tests, native
+renderer parity, independent40-to80 confidence/Adam/RNG/sampler recovery and
+formal state/source/history audits pass. No old static weights/hull or instance
+count enters; this borrows confidence updates, not the paper's historical3DGS
+or DUSt3R setup.
+
+Fixed-to-progressive common-candidate training PSNR23.1274->29.0826dB;
+held-out-camera inferred-region PSNR16.1345->19.6458dB, while frozen old-seed
+region PSNR26.6069->26.0643dB. Positive-support frames41->81/120 and all-pixel
+fraction0.6261%->1.0921% are selection diagnostics, not static recall. Total
+optimizer steps and camera schedules match; image-supervised steps6000->10946.
+Validation regions are inferred from geometry/RGB, not independent static GT.
+
+Actual native86/188 and early/middle/late comparison retains missing tall
+surfaces, fragments, blur and spill despite local support gains. Preserve the
+mechanism and negative completeness finding; reject S3-U static replacement.
+Prioritize candidate-geometry/occlusion visibility, long-baseline correspondence
+and independent synthetic static/geometry-GT audits before adding missing
+surfaces. No threshold/weight sweep, physics expansion or paused-work resumption.
+Evaluation-only original-trajectory RGB repair preserves the first failed
+export; latest video decodes200 frames, PLY matches checkpoint vertices.
+See [S1-CT assessment](staged_reconstruction/S1_cross_temporal/assessment.md).

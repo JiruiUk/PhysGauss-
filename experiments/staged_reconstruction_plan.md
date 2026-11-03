@@ -188,3 +188,28 @@ to S1 validation. Actual native images retain missing tall surfaces and early
 fragments/spikes. Reject S3-U static replacement; complete automatic reconstruction
 remains unresolved. Preserve this negative result, improve geometric correspondence
 and coverage evidence before another integration, without a color-prior fallback.
+
+### S1-CT: revisable cross-temporal confidence (completed 2026-11-03)
+
+Completed opt-in fixed/progressive12k static arms using the same1954-point
+initialization and camera sequence, without static-color labels or body counts.
+Only the progressive arm refreshes geometry-capped confidence every1k steps;
+both admission and revocation occur.29 tests and full confidence/Adam/RNG/sampler
+resume plus source/history/native-renderer audits pass. This is a cold-start
+adaptation of the confidence idea, not a replication with a historical3DGS prior.
+
+Common-candidate training PSNR23.1274->29.0826dB and held-out-camera inferred
+region16.1345->19.6458dB improve, but old-seed region26.6069->26.0643dB regresses.
+Positive support41->81/120 images; all-pixel0.6261%->1.0921% is not static recall.
+Total12k updates match;6000 versus10946 have nonzero image supervision. Inferred
+validation masks are not independent static or geometric truth.
+
+Actual native fixed86/188 and early/middle/late images still show absent tall
+surfaces, fragmented early geometry, blur and spill. Full static reconstruction
+remains unresolved; do not replace S3-U or claim contact/identity correctness.
+Next evidence priority: long-baseline candidate coverage, depth/occlusion
+visibility and independent synthetic geometry/static-GT admission audits. No
+loss sweep, constitutive/contact/force or old automation resumption follows.
+Frozen evaluation and weights are unchanged; a separate video-RGB path repair
+retains failed outputs and exports a fully decoded200-frame H264 comparison.
+See [S1-CT measured report](staged_reconstruction/S1_cross_temporal/assessment.md).

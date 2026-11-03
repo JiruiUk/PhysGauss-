@@ -1,0 +1,27 @@
+W1103 16:36:20.265000 278768 envs\pidg-cu128\Lib\site-packages\torch\utils\cpp_extension.py:466] Error checking compiler version for cl: 'cp1' codec can't decode bytes in position 0--1: No mapping for the Unicode character exists in the target code page.
+ninja: no work to do.
+F:\A_Edinburgh\PhysGauss\variants\color_repair\code\hashencoder\hashgrid.py:16: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.half)
+F:\A_Edinburgh\PhysGauss\variants\color_repair\code\hashencoder\hashgrid.py:56: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+F:\A_Edinburgh\PhysGauss\variants\staged_reconstruction\cross_temporal_static\evaluate.py:28: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\utils\tensor_numpy.cpp:209.)
+  mask = torch.from_numpy(np.asarray(Image.fromarray(mask).resize((1600, 900), Image.Resampling.NEAREST))).cuda().bool()
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "F:\A_Edinburgh\PhysGauss\variants\staged_reconstruction\cross_temporal_static\evaluate.py", line 165, in <module>
+    if __name__ == '__main__': main()
+                               ^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\envs\pidg-cu128\Lib\site-packages\torch\utils\_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\variants\staged_reconstruction\cross_temporal_static\evaluate.py", line 121, in main
+    images = [('Observed RGB (includes motion)', (rgb(frame, 400)*255).round().astype('uint8'))]
+                                                  ^^^^^^^^^^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\variants\staged_reconstruction\automatic_static\discover.py", line 22, in rgb
+    with Image.open(DATA/(frame['file_path']+'.png')) as image:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\envs\pidg-cu128\Lib\site-packages\PIL\Image.py", line 3513, in open
+    fp = builtins.open(filename, "rb")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training\\train\\0001.png'

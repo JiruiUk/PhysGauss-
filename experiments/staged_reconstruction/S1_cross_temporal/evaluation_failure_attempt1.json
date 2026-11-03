@@ -1,0 +1,11 @@
+{
+  "stage": "video_export",
+  "exception": "FileNotFoundError: derived training/train/0001.png",
+  "reason": "Full200-camera trajectory includes test images absent from derived training directory",
+  "failed_source_sha256": "788f1a29127f105d9e945e05b03303f4252e8171acbf53bc5196406e423f5927",
+  "failed_log": "evaluate.log",
+  "failed_outputs_preserved": "output/staged_reconstruction/S1_cross_temporal (root files)",
+  "training_and_weights_modified": false,
+  "repaired_source_sha256": "f8c97787f2ce4f95ef2ffbba3cb6ab13eff2e0c542c9714e625cb9af38b001b6",
+  "repair_scope": "RGB fallback from original dataset only when derived file absent; new output evaluation_v2; no training or metric threshold changes"
+}

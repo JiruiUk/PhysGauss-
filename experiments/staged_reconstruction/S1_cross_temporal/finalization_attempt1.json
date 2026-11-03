@@ -1,0 +1,5 @@
+{
+  "failure": "Inline Python command quoting truncated HTML string, so manual_review.json was not written; following finalizer correctly refused missing review receipt",
+  "training_or_evaluation_mutated": false,
+  "correction": "Write record_review.py as an ordinary source file, then run independently before finalize.py"
+}

@@ -1,0 +1,31 @@
+{
+  "experiment_completed": true,
+  "full_static_reconstruction_success": false,
+  "checkpoint_sha256": {
+    "S1_A": "168e83d3c9b35eacee9aa74aed4949562f3cf95576882f12b1ec53f5651133f9",
+    "fixed": "e6d2eb0083c860c41762d38a0b2430b3d42440952f9fbb3bd4a176a12c89cb00",
+    "progressive": "1d637a4e25f68d807ab01f795881b3e3ef9aa9c4d4ebe1dd653fec6acc1559ba"
+  },
+  "matched_initialization_and_camera_sequence": true,
+  "formal_updates": {
+    "fixed": 12000,
+    "progressive": 12000
+  },
+  "nonzero_supervision_steps": {
+    "fixed": 6000,
+    "progressive": 10946
+  },
+  "tests_passed": 29,
+  "source_manifest_files_verified": 410,
+  "historical_models_preserved": true,
+  "training_lock_free": true,
+  "active_trainers_or_evaluators": [],
+  "static_bank_replacement_admitted": false,
+  "independent_static_geometry_GT": false,
+  "video_decoded_frames": 200,
+  "manual_review_sha256": "4e700f8063340df96041624d9506fcc1b18c3070673432d6b3fe4c158444fa9d",
+  "PLY_all_vertices_equal_checkpoint_and_finite": true,
+  "video_RGB_fallback_only_test_split_and_400px": true,
+  "assessment_sha256": "489cb8731dc0433a63086d481691d3be8ad4d098b70930c76c80a3a841db7e20",
+  "confidence_chart_sha256": "46d86d438075e2e2669ae01f6f2675609f51e239ffe47ba08b42de59f986afd4"
+}
