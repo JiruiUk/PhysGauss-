@@ -1,0 +1,1348 @@
+{
+  "reference": "C1_original_path",
+  "all_iterations": 15010,
+  "differences": {
+    "flags_off": {
+      "gaussian_parameters": {
+        "_xyz": {
+          "different_elements": 152677,
+          "max_abs": 0.00010526180267333984,
+          "RMS": 1.152327243359491e-06
+        },
+        "_features_dc": {
+          "different_elements": 232746,
+          "max_abs": 0.0050705671310424805,
+          "RMS": 3.291186226883153e-05
+        },
+        "_features_rest": {
+          "different_elements": 3476376,
+          "max_abs": 0.0002804696559906006,
+          "RMS": 1.7181929323984529e-06
+        },
+        "_scaling": {
+          "different_elements": 181138,
+          "max_abs": 0.0058710575103759766,
+          "RMS": 4.8264540133628475e-05
+        },
+        "_rotation": {
+          "different_elements": 294552,
+          "max_abs": 0.0010069608688354492,
+          "RMS": 1.1065193389387396e-05
+        },
+        "_opacity": {
+          "different_elements": 84085,
+          "max_abs": 0.05179933272302151,
+          "RMS": 0.00038788734943570195
+        },
+        "force_sigma": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        }
+      },
+      "gaussian_buffers": {
+        "max_radii2D": {
+          "different_elements": 1,
+          "max_abs": 1.0,
+          "RMS": 0.003353590582675851
+        },
+        "xyz_gradient_accum": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "denom": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "particle_indices": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "dynamic_mask": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        }
+      },
+      "velocity_net": {
+        "planes": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "time_embed.frequencies": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "time_proj.weight": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "time_proj.bias": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "index_embed.weight": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "shared_net.0.weight": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "shared_net.0.bias": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "shared_net.2.weight": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "shared_net.2.bias": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "velocity_head.weight": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "velocity_head.bias": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "stress_head.weight": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "stress_head.bias": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        }
+      },
+      "grid4d": {
+        "xyz_encoding.embeddings": {
+          "different_elements": 4181995,
+          "max_abs": 0.0021468177437782288,
+          "RMS": 3.289222141282943e-06
+        },
+        "xyz_encoding.offsets": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "xyz_encoding.per_level_scale": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "xyz_encoding.base_resolution": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "xyt_encoding.embeddings": {
+          "different_elements": 37462,
+          "max_abs": 0.00024563074111938477,
+          "RMS": 2.1345398999002534e-06
+        },
+        "xyt_encoding.offsets": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "xyt_encoding.per_level_scale": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "xyt_encoding.base_resolution": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "yzt_encoding.embeddings": {
+          "different_elements": 76106,
+          "max_abs": 0.0007740631699562073,
+          "RMS": 5.009512478191627e-06
+        },
+        "yzt_encoding.offsets": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "yzt_encoding.per_level_scale": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "yzt_encoding.base_resolution": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "xzt_encoding.embeddings": {
+          "different_elements": 53196,
+          "max_abs": 0.0006163418292999268,
+          "RMS": 3.94421205771554e-06
+        },
+        "xzt_encoding.offsets": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "xzt_encoding.per_level_scale": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "xzt_encoding.base_resolution": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        }
+      },
+      "deform": {
+        "spatial_mlp.0.weight": {
+          "different_elements": 7623,
+          "max_abs": 2.041459083557129e-06,
+          "RMS": 1.9160191828628884e-07
+        },
+        "spatial_mlp.0.bias": {
+          "different_elements": 223,
+          "max_abs": 5.21540641784668e-07,
+          "RMS": 1.193319833264682e-07
+        },
+        "temporal_mlp.0.weight": {
+          "different_elements": 47571,
+          "max_abs": 2.168118953704834e-06,
+          "RMS": 1.6427962702511274e-07
+        },
+        "temporal_mlp.0.bias": {
+          "different_elements": 242,
+          "max_abs": 6.817281246185303e-07,
+          "RMS": 1.1996011457554916e-07
+        },
+        "gaussian_warp.weight": {
+          "different_elements": 1634,
+          "max_abs": 9.872019290924072e-07,
+          "RMS": 1.0292505128805314e-07
+        },
+        "gaussian_warp.bias": {
+          "different_elements": 7,
+          "max_abs": 6.426125764846802e-08,
+          "RMS": 3.8301272743640566e-08
+        },
+        "gaussian_rotation.weight": {
+          "different_elements": 928,
+          "max_abs": 1.4454126358032227e-06,
+          "RMS": 1.7686485675596737e-07
+        },
+        "gaussian_rotation.bias": {
+          "different_elements": 4,
+          "max_abs": 2.812594175338745e-07,
+          "RMS": 2.0592340325595598e-07
+        },
+        "gaussian_scaling.weight": {
+          "different_elements": 752,
+          "max_abs": 1.471489667892456e-06,
+          "RMS": 2.047333469472732e-07
+        },
+        "gaussian_scaling.bias": {
+          "different_elements": 3,
+          "max_abs": 2.2258609533309937e-07,
+          "RMS": 1.3854004138987694e-07
+        }
+      }
+    },
+    "C1_original_path": {
+      "gaussian_parameters": {
+        "_xyz": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "_features_dc": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "_features_rest": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "_scaling": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "_rotation": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "_opacity": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "force_sigma": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        }
+      },
+      "gaussian_buffers": {
+        "max_radii2D": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "xyz_gradient_accum": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "denom": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "particle_indices": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "dynamic_mask": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        }
+      },
+      "velocity_net": {
+        "planes": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "time_embed.frequencies": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "time_proj.weight": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "time_proj.bias": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "index_embed.weight": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "shared_net.0.weight": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "shared_net.0.bias": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "shared_net.2.weight": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "shared_net.2.bias": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "velocity_head.weight": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "velocity_head.bias": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "stress_head.weight": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "stress_head.bias": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        }
+      },
+      "grid4d": {
+        "xyz_encoding.embeddings": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "xyz_encoding.offsets": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "xyz_encoding.per_level_scale": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "xyz_encoding.base_resolution": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "xyt_encoding.embeddings": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "xyt_encoding.offsets": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "xyt_encoding.per_level_scale": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "xyt_encoding.base_resolution": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "yzt_encoding.embeddings": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "yzt_encoding.offsets": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "yzt_encoding.per_level_scale": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "yzt_encoding.base_resolution": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "xzt_encoding.embeddings": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "xzt_encoding.offsets": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "xzt_encoding.per_level_scale": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "xzt_encoding.base_resolution": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        }
+      },
+      "deform": {
+        "spatial_mlp.0.weight": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "spatial_mlp.0.bias": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "temporal_mlp.0.weight": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "temporal_mlp.0.bias": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "gaussian_warp.weight": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "gaussian_warp.bias": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "gaussian_rotation.weight": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "gaussian_rotation.bias": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "gaussian_scaling.weight": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "gaussian_scaling.bias": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        }
+      }
+    },
+    "C1_original_repeat": {
+      "gaussian_parameters": {
+        "_xyz": {
+          "different_elements": 144719,
+          "max_abs": 2.4318695068359375e-05,
+          "RMS": 5.165721911104885e-07
+        },
+        "_features_dc": {
+          "different_elements": 230571,
+          "max_abs": 0.0010515451431274414,
+          "RMS": 1.5012988133231924e-05
+        },
+        "_features_rest": {
+          "different_elements": 3445504,
+          "max_abs": 6.444007158279419e-05,
+          "RMS": 7.824378321851597e-07
+        },
+        "_scaling": {
+          "different_elements": 174710,
+          "max_abs": 0.0013580322265625,
+          "RMS": 1.9984533494370426e-05
+        },
+        "_rotation": {
+          "different_elements": 290115,
+          "max_abs": 0.00039133429527282715,
+          "RMS": 4.840286560659421e-06
+        },
+        "_opacity": {
+          "different_elements": 83767,
+          "max_abs": 0.009034186601638794,
+          "RMS": 0.00018337908496115569
+        },
+        "force_sigma": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        }
+      },
+      "gaussian_buffers": {
+        "max_radii2D": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "xyz_gradient_accum": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "denom": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "particle_indices": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "dynamic_mask": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        }
+      },
+      "velocity_net": {
+        "planes": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "time_embed.frequencies": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "time_proj.weight": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "time_proj.bias": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "index_embed.weight": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "shared_net.0.weight": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "shared_net.0.bias": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "shared_net.2.weight": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "shared_net.2.bias": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "velocity_head.weight": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "velocity_head.bias": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "stress_head.weight": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "stress_head.bias": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        }
+      },
+      "grid4d": {
+        "xyz_encoding.embeddings": {
+          "different_elements": 4137533,
+          "max_abs": 0.00042777322232723236,
+          "RMS": 1.556656112823353e-06
+        },
+        "xyz_encoding.offsets": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "xyz_encoding.per_level_scale": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "xyz_encoding.base_resolution": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "xyt_encoding.embeddings": {
+          "different_elements": 36464,
+          "max_abs": 0.00020897388458251953,
+          "RMS": 1.7524741919041427e-06
+        },
+        "xyt_encoding.offsets": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "xyt_encoding.per_level_scale": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "xyt_encoding.base_resolution": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "yzt_encoding.embeddings": {
+          "different_elements": 75747,
+          "max_abs": 0.0001342371106147766,
+          "RMS": 1.8059005881115057e-06
+        },
+        "yzt_encoding.offsets": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "yzt_encoding.per_level_scale": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "yzt_encoding.base_resolution": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "xzt_encoding.embeddings": {
+          "different_elements": 52695,
+          "max_abs": 0.00011551380157470703,
+          "RMS": 1.3427944425084119e-06
+        },
+        "xzt_encoding.offsets": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "xzt_encoding.per_level_scale": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "xzt_encoding.base_resolution": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        }
+      },
+      "deform": {
+        "spatial_mlp.0.weight": {
+          "different_elements": 7365,
+          "max_abs": 1.0989606380462646e-06,
+          "RMS": 9.821536293922621e-08
+        },
+        "spatial_mlp.0.bias": {
+          "different_elements": 227,
+          "max_abs": 4.172325134277344e-07,
+          "RMS": 7.984224273729576e-08
+        },
+        "temporal_mlp.0.weight": {
+          "different_elements": 46881,
+          "max_abs": 1.1846423149108887e-06,
+          "RMS": 9.619542184011516e-08
+        },
+        "temporal_mlp.0.bias": {
+          "different_elements": 244,
+          "max_abs": 5.140900611877441e-07,
+          "RMS": 7.876560195256387e-08
+        },
+        "gaussian_warp.weight": {
+          "different_elements": 1612,
+          "max_abs": 6.09084963798523e-07,
+          "RMS": 7.964800872877949e-08
+        },
+        "gaussian_warp.bias": {
+          "different_elements": 7,
+          "max_abs": 5.21540641784668e-08,
+          "RMS": 3.31414959701229e-08
+        },
+        "gaussian_rotation.weight": {
+          "different_elements": 930,
+          "max_abs": 6.109476089477539e-07,
+          "RMS": 8.254877950220255e-08
+        },
+        "gaussian_rotation.bias": {
+          "different_elements": 3,
+          "max_abs": 1.3597309589385986e-07,
+          "RMS": 9.549576594388924e-08
+        },
+        "gaussian_scaling.weight": {
+          "different_elements": 734,
+          "max_abs": 4.0978193283081055e-07,
+          "RMS": 7.41508034612465e-08
+        },
+        "gaussian_scaling.bias": {
+          "different_elements": 3,
+          "max_abs": 1.0032090358436108e-07,
+          "RMS": 5.973868479216822e-08
+        }
+      }
+    },
+    "C1_original_repeat2": {
+      "gaussian_parameters": {
+        "_xyz": {
+          "different_elements": 152178,
+          "max_abs": 6.61611557006836e-05,
+          "RMS": 7.11652411601772e-07
+        },
+        "_features_dc": {
+          "different_elements": 233030,
+          "max_abs": 0.0008481740951538086,
+          "RMS": 1.7047911149633042e-05
+        },
+        "_features_rest": {
+          "different_elements": 3479358,
+          "max_abs": 5.388632416725159e-05,
+          "RMS": 9.006505272486261e-07
+        },
+        "_scaling": {
+          "different_elements": 181080,
+          "max_abs": 0.001676321029663086,
+          "RMS": 2.5947952847744206e-05
+        },
+        "_rotation": {
+          "different_elements": 294746,
+          "max_abs": 0.0003400743007659912,
+          "RMS": 6.055098460883523e-06
+        },
+        "_opacity": {
+          "different_elements": 84156,
+          "max_abs": 0.012322664260864258,
+          "RMS": 0.00024170454419203874
+        },
+        "force_sigma": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        }
+      },
+      "gaussian_buffers": {
+        "max_radii2D": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "xyz_gradient_accum": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "denom": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "particle_indices": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "dynamic_mask": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        }
+      },
+      "velocity_net": {
+        "planes": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "time_embed.frequencies": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "time_proj.weight": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "time_proj.bias": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "index_embed.weight": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "shared_net.0.weight": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "shared_net.0.bias": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "shared_net.2.weight": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "shared_net.2.bias": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "velocity_head.weight": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "velocity_head.bias": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "stress_head.weight": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "stress_head.bias": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        }
+      },
+      "grid4d": {
+        "xyz_encoding.embeddings": {
+          "different_elements": 4185383,
+          "max_abs": 0.00215139240026474,
+          "RMS": 2.557513667204595e-06
+        },
+        "xyz_encoding.offsets": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "xyz_encoding.per_level_scale": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "xyz_encoding.base_resolution": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "xyt_encoding.embeddings": {
+          "different_elements": 37001,
+          "max_abs": 0.00019985437393188477,
+          "RMS": 1.883857457178118e-06
+        },
+        "xyt_encoding.offsets": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "xyt_encoding.per_level_scale": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "xyt_encoding.base_resolution": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "yzt_encoding.embeddings": {
+          "different_elements": 75413,
+          "max_abs": 0.00023852288722991943,
+          "RMS": 2.60832867419266e-06
+        },
+        "yzt_encoding.offsets": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "yzt_encoding.per_level_scale": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "yzt_encoding.base_resolution": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "xzt_encoding.embeddings": {
+          "different_elements": 52760,
+          "max_abs": 0.00015869736671447754,
+          "RMS": 1.7031298049503855e-06
+        },
+        "xzt_encoding.offsets": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "xzt_encoding.per_level_scale": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "xzt_encoding.base_resolution": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        }
+      },
+      "deform": {
+        "spatial_mlp.0.weight": {
+          "different_elements": 7530,
+          "max_abs": 2.205371856689453e-06,
+          "RMS": 1.7393458964284355e-07
+        },
+        "spatial_mlp.0.bias": {
+          "different_elements": 216,
+          "max_abs": 4.023313522338867e-07,
+          "RMS": 9.232309945841213e-08
+        },
+        "temporal_mlp.0.weight": {
+          "different_elements": 47182,
+          "max_abs": 1.6242265701293945e-06,
+          "RMS": 1.186494547553614e-07
+        },
+        "temporal_mlp.0.bias": {
+          "different_elements": 248,
+          "max_abs": 6.854534149169922e-07,
+          "RMS": 9.971181859748215e-08
+        },
+        "gaussian_warp.weight": {
+          "different_elements": 1607,
+          "max_abs": 5.21540641784668e-07,
+          "RMS": 7.744721873788504e-08
+        },
+        "gaussian_warp.bias": {
+          "different_elements": 7,
+          "max_abs": 4.423782229423523e-08,
+          "RMS": 2.7780120704834637e-08
+        },
+        "gaussian_rotation.weight": {
+          "different_elements": 944,
+          "max_abs": 8.642673492431641e-07,
+          "RMS": 1.244663472685483e-07
+        },
+        "gaussian_rotation.bias": {
+          "different_elements": 4,
+          "max_abs": 1.7881393432617188e-07,
+          "RMS": 9.893960064067938e-08
+        },
+        "gaussian_scaling.weight": {
+          "different_elements": 744,
+          "max_abs": 1.4938414096832275e-06,
+          "RMS": 1.7265492367011722e-07
+        },
+        "gaussian_scaling.bias": {
+          "different_elements": 3,
+          "max_abs": 2.4866312742233276e-07,
+          "RMS": 1.4794028707768433e-07
+        }
+      }
+    },
+    "C1_original_repeat3": {
+      "gaussian_parameters": {
+        "_xyz": {
+          "different_elements": 148238,
+          "max_abs": 6.61611557006836e-05,
+          "RMS": 7.138960514854265e-07
+        },
+        "_features_dc": {
+          "different_elements": 232049,
+          "max_abs": 0.0008906126022338867,
+          "RMS": 1.7428493588996298e-05
+        },
+        "_features_rest": {
+          "different_elements": 3465052,
+          "max_abs": 6.907433271408081e-05,
+          "RMS": 9.138579221802212e-07
+        },
+        "_scaling": {
+          "different_elements": 177907,
+          "max_abs": 0.0016438961029052734,
+          "RMS": 2.578057246191052e-05
+        },
+        "_rotation": {
+          "different_elements": 292468,
+          "max_abs": 0.00038242340087890625,
+          "RMS": 5.8614305187059565e-06
+        },
+        "_opacity": {
+          "different_elements": 84025,
+          "max_abs": 0.012353181838989258,
+          "RMS": 0.00025142823918686237
+        },
+        "force_sigma": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        }
+      },
+      "gaussian_buffers": {
+        "max_radii2D": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "xyz_gradient_accum": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "denom": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "particle_indices": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "dynamic_mask": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        }
+      },
+      "velocity_net": {
+        "planes": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "time_embed.frequencies": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "time_proj.weight": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "time_proj.bias": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "index_embed.weight": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "shared_net.0.weight": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "shared_net.0.bias": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "shared_net.2.weight": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "shared_net.2.bias": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "velocity_head.weight": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "velocity_head.bias": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "stress_head.weight": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "stress_head.bias": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        }
+      },
+      "grid4d": {
+        "xyz_encoding.embeddings": {
+          "different_elements": 4150207,
+          "max_abs": 0.002152450382709503,
+          "RMS": 2.45824785539825e-06
+        },
+        "xyz_encoding.offsets": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "xyz_encoding.per_level_scale": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "xyz_encoding.base_resolution": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "xyt_encoding.embeddings": {
+          "different_elements": 36885,
+          "max_abs": 0.0001920759677886963,
+          "RMS": 1.975571748447177e-06
+        },
+        "xyt_encoding.offsets": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "xyt_encoding.per_level_scale": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "xyt_encoding.base_resolution": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "yzt_encoding.embeddings": {
+          "different_elements": 75797,
+          "max_abs": 0.0002382919192314148,
+          "RMS": 3.8077454290745024e-06
+        },
+        "yzt_encoding.offsets": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "yzt_encoding.per_level_scale": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "yzt_encoding.base_resolution": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "xzt_encoding.embeddings": {
+          "different_elements": 52752,
+          "max_abs": 0.00021319091320037842,
+          "RMS": 2.8249775162268073e-06
+        },
+        "xzt_encoding.offsets": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "xzt_encoding.per_level_scale": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        },
+        "xzt_encoding.base_resolution": {
+          "different_elements": 0,
+          "max_abs": 0.0,
+          "RMS": 0.0
+        }
+      },
+      "deform": {
+        "spatial_mlp.0.weight": {
+          "different_elements": 7619,
+          "max_abs": 2.115964889526367e-06,
+          "RMS": 1.7777796519266857e-07
+        },
+        "spatial_mlp.0.bias": {
+          "different_elements": 224,
+          "max_abs": 5.21540641784668e-07,
+          "RMS": 9.577536443366253e-08
+        },
+        "temporal_mlp.0.weight": {
+          "different_elements": 47610,
+          "max_abs": 1.6987323760986328e-06,
+          "RMS": 1.4153989883274764e-07
+        },
+        "temporal_mlp.0.bias": {
+          "different_elements": 248,
+          "max_abs": 5.066394805908203e-07,
+          "RMS": 1.0900041095681523e-07
+        },
+        "gaussian_warp.weight": {
+          "different_elements": 1663,
+          "max_abs": 6.94766640663147e-07,
+          "RMS": 1.0190439351685682e-07
+        },
+        "gaussian_warp.bias": {
+          "different_elements": 7,
+          "max_abs": 6.51925802230835e-08,
+          "RMS": 3.4848677765497466e-08
+        },
+        "gaussian_rotation.weight": {
+          "different_elements": 947,
+          "max_abs": 9.872019290924072e-07,
+          "RMS": 1.3505113573133716e-07
+        },
+        "gaussian_rotation.bias": {
+          "different_elements": 4,
+          "max_abs": 1.862645149230957e-07,
+          "RMS": 1.4477498540317582e-07
+        },
+        "gaussian_scaling.weight": {
+          "different_elements": 752,
+          "max_abs": 1.4901161193847656e-06,
+          "RMS": 1.7180301985611908e-07
+        },
+        "gaussian_scaling.bias": {
+          "different_elements": 3,
+          "max_abs": 7.962808012962341e-08,
+          "RMS": 6.289065987644313e-08
+        }
+      }
+    }
+  },
+  "checkpoints_sha256": {
+    "flags_off": "b7aedc73cd2089b2d87494aa4d733c3456bfc4aeb8b295dfd7e2f7ec44189f6f",
+    "C1_original_path": "6739fc9a23565045e3315b9d76a60b063f4f80860f3a29297e87b586410bf05e",
+    "C1_original_repeat": "329941599ff8df7e086e956a2f28438f3339bddedf96b81670041efef790ba8b",
+    "C1_original_repeat2": "7ffdbd02d293a22cca1bca392d0b9e36743d6de44288bb30706cf2276092ab99",
+    "C1_original_repeat3": "58443d0baaaf54efed075d4e8297e7b3f61160c46a980b9b5d845566d8e3c9ad"
+  }
+}

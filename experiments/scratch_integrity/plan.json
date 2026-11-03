@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "scope": "Matched from-scratch reconstruction/correspondence experiment; not a constitutive physics milestone",
+  "seed": 20261103,
+  "models": ["S0_scratch_control", "S1_scratch_transfer"],
+  "total_actual_optimizer_updates_each": 50000,
+  "native_resolution": [1600, 900],
+  "split": [120, 30, 50],
+  "recipe": "Original repaired C1 architecture, image/physics losses, optimizer and full LR schedule; genuinely new random model, no historical trained tensors",
+  "common_prefix_candidates": [15000, 20000, 25000, 30000],
+  "activation_selection": "First common-prefix candidate passing unchanged training-only binding gates; retain failed attempts; no validation or test outcome selects activation; fail explicitly if none passes",
+  "topology": "Unmodified C1 densify/prune stops before15000; coverage_density=false and affine_weight=0; fresh bindings after topology stabilizes; no historical Gaussian row IDs are reused",
+  "new_main_flag": "transfer_integrity_enabled",
+  "terms": {
+    "observed_coverage_weight": 0.002,
+    "static_position_weight": 0.001,
+    "static_covariance_weight": 0.0001,
+    "static_anchor_weight": 0.001,
+    "track_reprojection_weight": 0.1,
+    "local_shape_weight": 0.0002
+  },
+  "interval": 10,
+  "ramp_updates": 2000,
+  "static_points_per_term": 1024,
+  "tracked_points_per_term": 512,
+  "binding": "Recompute full native color-adjoint contributions and local banks from the fresh common full state. Reuse only model-independent training images, LK triangulation, component continuity and frozen raw FB flow; retain all v1 reliability gates",
+  "validation": "Fixed schedule every5000 updates; no final checkpoint selection by test; both final complete states at50000",
+  "evaluation": "Validation30 and test50 native image metrics; three fixed cameras2/86/188 x all200 times plus moving control; partial geometric diagnostics and own fresh early-bank retention; no dense novel-view pseudo GT or physical ID accuracy",
+  "interpretation": "One seed and scene; previous test exposure is known. Compare S1 against matched S0; report failures and covariance/coverage tradeoffs, not only favorable proxies",
+  "historical_protection": "No writes to PIDG/C1/T1/O1/U0/U1 histories, old bindings, reports or outputs"
+}

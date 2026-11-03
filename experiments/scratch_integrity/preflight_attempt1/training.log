@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "F:\A_Edinburgh\PhysGauss\variants\scratch_integrity\run.py", line 173, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\variants\scratch_integrity\run.py", line 149, in main
+    freeze(repo);preflight(repo,binding,deadline);freeze(repo)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\variants\scratch_integrity\run.py", line 103, in preflight
+    assert differences[key]['RMS']<=3*noise[key]['RMS']+1e-7,(key,differences[key],noise[key])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('gaussian_buffers', {'max_abs': 1.0, 'RMS': 0.0014997713023132664}, {'max_abs': 0.0, 'RMS': 0.0})

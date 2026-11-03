@@ -1,0 +1,68 @@
+{
+  "status": "passed",
+  "binding_sha256": "2116433681160f388945069adf0c4eb252f82f9fd2682165fef7bf7cf7aba35e",
+  "native_resolution": [
+    1600,
+    900
+  ],
+  "off_updates": 10,
+  "enabled_updates": 20,
+  "resume_boundary": [
+    15010,
+    15020
+  ],
+  "actual_gradient_optimizer_probe": true,
+  "off_vs_original_parameter_difference": {
+    "gaussian_parameters": {
+      "max_abs": 0.05179933272302151,
+      "RMS": 5.2290116485875256e-05
+    },
+    "gaussian_buffers": {
+      "max_abs": 0.0,
+      "RMS": 0.0
+    },
+    "velocity_net": {
+      "max_abs": 0.0,
+      "RMS": 0.0
+    },
+    "grid4d": {
+      "max_abs": 0.0021468177437782288,
+      "RMS": 3.3363444925342294e-06
+    },
+    "deform": {
+      "max_abs": 2.168118953704834e-06,
+      "RMS": 1.6720090777872365e-07
+    }
+  },
+  "unchanged_original_repeat_difference": {
+    "gaussian_parameters": {
+      "max_abs": 0.009034186601638794,
+      "RMS": 2.457236273940868e-05
+    },
+    "gaussian_buffers": {
+      "max_abs": 0.0,
+      "RMS": 0.0
+    },
+    "velocity_net": {
+      "max_abs": 0.0,
+      "RMS": 0.0
+    },
+    "grid4d": {
+      "max_abs": 0.00042777322232723236,
+      "RMS": 1.5634462380469802e-06
+    },
+    "deform": {
+      "max_abs": 1.1846423149108887e-06,
+      "RMS": 9.543360581262157e-08
+    }
+  },
+  "RNG_sampler_exact": true,
+  "post_densification_screen_radius_audit": {
+    "different_elements": 1,
+    "max_abs": 1.0,
+    "used_by_future_optimizer_or_renderer": false,
+    "densification_has_ended": true
+  },
+  "native_render_repeat_audit_sha256": "73c983bbba908644cc328b3ff730ae4dc8e5236b812f77d2c1ad7118024e6f87",
+  "numerical_gate": "RMS <= 3x unchanged original-repeat RMS + 1e-7; exact RNG/sampler; max_radii2D bounded separately after its last use; native outputs within original repeat envelope; no bitwise CUDA determinism claim"
+}

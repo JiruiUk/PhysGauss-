@@ -1,5 +1,19 @@
 # PIDG repository map — M0
 
+## Cold-start transfer-integrity version 2 (2026-11-03)
+
+`variants/scratch_integrity/prefix.py` captures and verifies a fresh step-zero
+repaired-C1 state, then runs the unchanged C1 trainer through common preheating.
+`data.py` reuses only image/flow/triangulation evidence and rebuilds every row
+binding from immutable fresh common checkpoints after original topology changes
+stop. `stage.py` checks activation/source/topology; `runtime.py` reuses the v1
+reconstruction objectives with a new relative clock and2k ramp, delegating to
+C1 when disabled. `prepare.py` changes only the C1 Tuning import. `run.py`
+checks original-path numerical repeat controls, real gradients and resume, then
+continues matched arms through50k actual total updates with no LR reset.
+Protocol and records are isolated under `experiments/scratch_integrity`, full
+states under `runs/pidg_scratch_integrity`. This is not a new physics milestone.
+
 ## Optional fixed-view completeness metrics (2026-11-03)
 
 `variants/view_completeness/metrics.py` separates independently observed alpha

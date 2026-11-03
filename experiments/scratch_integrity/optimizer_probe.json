@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "fresh_source_state": {
+    "iteration": 15000,
+    "sha256": "db9560a4e6a62324bb98933da2ec6d21949bdb8619111b939382f80af9c6bb21",
+    "point_count": 88916
+  },
+  "attention_cache_restored": true,
+  "finite_gradient_L1": {
+    "grid": 0.014974131190683693,
+    "deformation": 0.1301425655838102,
+    "canonical_centers": 0.03590930998325348,
+    "opacity": 5.167332233213529e-07,
+    "scales_rotations": 0.00011153966624988243,
+    "velocity_stress": 0
+  },
+  "actual_parameter_L1_change": 0.1273228866084537,
+  "native_renderer_width": 1600,
+  "terms": {
+    "static_position": 0.0544433519244194,
+    "static_covariance": 0.051330652087926865,
+    "static_anchor": 0.4252038598060608,
+    "track_reprojection": 0.00017128286708611995,
+    "local_shape": 0.001060701091773808,
+    "static_displacement_RMS": 0.11727696657180786,
+    "static_anchor_distance": 0.4552038013935089,
+    "track_EPE_400": 0.3127945065498352,
+    "static_sample_time_frame": 63,
+    "track_frame": 20
+  },
+  "original_source_unchanged": true
+}
