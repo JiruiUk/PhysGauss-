@@ -60,6 +60,7 @@ CoTracker3另做训练图像对应审计：28个短窗口的1064个候选仅31�
 - I9与I8的7k同预算实际图像/完整初态和采样/形变对照：`relative_strain/preview07000_assessment.md`
 - I9最终16k失败准入、完整状态、同预算I8对照与实际原生图像：`relative_strain/assessment.md`
 - MonST3R官方模型12个相邻训练图像对实际推理与资格失败：`monst3r_geometry/assessment.md`（未生成PIDG训练目标）
+- MonST3R新的12个较大时间间隔训练图像对：静态尺度对照与已知相机尺度两组均0/12通过；10项合成几何测试通过，实际点图置信度/投影仍不合格，未生成训练目标：`calibrated_pointmaps/assessment.md`
 - 训练视角覆盖与固定点集的只读审计：`canonical_support/assessment.md`（S3-U/I8训练前景alpha很高，仍不能保证新视角完整）
 
 相关原始论文：

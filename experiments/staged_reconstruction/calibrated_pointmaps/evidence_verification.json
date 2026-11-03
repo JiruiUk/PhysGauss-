@@ -1,0 +1,80 @@
+{
+  "predictions": [
+    {
+      "path": "runs/pidg_staged_reconstruction/calibrated_pointmaps/anchor0002_partner0010.npz",
+      "sha256": "e0b05671c6c292cf94962c99a33bf72bf6922ef125f1c9363a79257a9a5b439b"
+    },
+    {
+      "path": "runs/pidg_staged_reconstruction/calibrated_pointmaps/anchor0002_partner0020.npz",
+      "sha256": "575b62c0ab46feff854067bde93b83d04e5938948b3fd30f176063be8ee06b44"
+    },
+    {
+      "path": "runs/pidg_staged_reconstruction/calibrated_pointmaps/anchor0043_partner0034.npz",
+      "sha256": "a72f600b2ed6a4f31a31a8405e1cf5333ae92cdbd5b2549e5fc6ca0257f5e627"
+    },
+    {
+      "path": "runs/pidg_staged_reconstruction/calibrated_pointmaps/anchor0043_partner0052.npz",
+      "sha256": "a56062e54d44e9612d6bd5e6a94c4202a586c4f0a39e5a7e04dae2a44161a169"
+    },
+    {
+      "path": "runs/pidg_staged_reconstruction/calibrated_pointmaps/anchor0086_partner0076.npz",
+      "sha256": "66317c4c9d73b37a198090a530f5cfad2897edc69b1419bdca63419a6a0ad69b"
+    },
+    {
+      "path": "runs/pidg_staged_reconstruction/calibrated_pointmaps/anchor0086_partner0095.npz",
+      "sha256": "f0deea995f3e6c28ea27a4585281e07b77a3706a81a75512953350b36ca83318"
+    },
+    {
+      "path": "runs/pidg_staged_reconstruction/calibrated_pointmaps/anchor0146_partner0136.npz",
+      "sha256": "690f8fb4f5cad8124d6cb0594c37a3db5beff71fae63b6b120f6f1af0948bd9f"
+    },
+    {
+      "path": "runs/pidg_staged_reconstruction/calibrated_pointmaps/anchor0146_partner0155.npz",
+      "sha256": "a3ae2a4c8686a921fbe46e4776db68aa0f3a1b78893997731ccd7aee4abf8e43"
+    },
+    {
+      "path": "runs/pidg_staged_reconstruction/calibrated_pointmaps/anchor0188_partner0179.npz",
+      "sha256": "2df4aa6d885d22cd1506e2df9af491304dc0ec744c3d4b9d05ccfeda8a99c0d2"
+    },
+    {
+      "path": "runs/pidg_staged_reconstruction/calibrated_pointmaps/anchor0188_partner0170.npz",
+      "sha256": "004a84b3d38ca37ed1d3409182f255e00bcf9fccad994880aacf6fa5bca72439"
+    },
+    {
+      "path": "runs/pidg_staged_reconstruction/calibrated_pointmaps/anchor0200_partner0190.npz",
+      "sha256": "fcd609b14006fa9d06b086884349b3e2afbac38256295f09b49ebd34a3be78e1"
+    },
+    {
+      "path": "runs/pidg_staged_reconstruction/calibrated_pointmaps/anchor0200_partner0182.npz",
+      "sha256": "88e5fe134064cc012a361e3d9d5fe249dec488bb73438bb072a59cda5ceed6dc"
+    }
+  ],
+  "protocol_sha256": "a2539bc4ca7522e16659ec55005c04de3c6af15baaa515e6a054a603879e095a",
+  "report_script_sha256": "893300522d6bd15ea837491fb2e0d2a9efcfea255f2213ecd63938e9b5c5b619",
+  "source_freeze_sha256": "462a12600e9d826b3202ca49677c5a2f594578b65da20314c2751335ecbfba60",
+  "inference_sha256": "3a4cd26e3f7a65b9f604212021c17bd2d3915a24470b3a32155652bcb51e4a94",
+  "qualification_sha256": "9bc6a32bc794207cf0570abb74022f70981dde28a160393a2dfc92b552245185",
+  "figure": "output/staged_reconstruction/calibrated_pointmaps/wide_pair_geometry_qualification.png",
+  "figure_sha256": "e651cd4874e6cdda68504f3542c6491863f3d85fdc89fd540affd30b2cbf2c5d",
+  "old_predictions_unchanged": true,
+  "old_qualification_sha256": "b975771ca528e790caabfde0371a7cd18e3a9d696e1ed1c3de82ef2e610d2693",
+  "PIDG_optimizer_updates": 0,
+  "source_frozen_verified": true,
+  "explicit_opt_in_checks": [
+    {
+      "module": "prepare",
+      "exit_code": 1,
+      "refuses_without_opt_in": true
+    },
+    {
+      "module": "infer",
+      "exit_code": 1,
+      "refuses_without_opt_in": true
+    },
+    {
+      "module": "qualify",
+      "exit_code": 1,
+      "refuses_without_opt_in": true
+    }
+  ]
+}

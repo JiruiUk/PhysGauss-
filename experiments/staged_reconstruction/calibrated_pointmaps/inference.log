@@ -1,0 +1,20 @@
+Warning, cannot find cuda-compiled version of RoPE2D, using a slow pytorch version instead
+F:\A_Edinburgh\PhysGauss\envs\pidg-cu128\Lib\site-packages\requests\__init__.py:113: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (7.6.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Freezing encoder parameters
+F:\A_Edinburgh\PhysGauss\third_party\monst3r_pair_vendor\dust3r\model.py:208: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=False):
+CALIBRATED_POINTMAP_INFERRED 2 10 3.9257912635803223 3.8075411319732666
+F:\A_Edinburgh\PhysGauss\third_party\monst3r_pair_vendor\dust3r\model.py:208: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=False):
+CALIBRATED_POINTMAP_INFERRED 2 20 5.401422023773193 5.185508728027344
+CALIBRATED_POINTMAP_INFERRED 43 34 2.8015098571777344 2.005683422088623
+CALIBRATED_POINTMAP_INFERRED 43 52 3.2143731117248535 3.085150718688965
+CALIBRATED_POINTMAP_INFERRED 86 76 3.9279489517211914 2.715756416320801
+CALIBRATED_POINTMAP_INFERRED 86 95 2.464122772216797 2.39914608001709
+CALIBRATED_POINTMAP_INFERRED 146 136 3.9756548404693604 2.9385013580322266
+CALIBRATED_POINTMAP_INFERRED 146 155 4.518932342529297 4.308967590332031
+CALIBRATED_POINTMAP_INFERRED 188 179 5.2870588302612305 4.880381107330322
+CALIBRATED_POINTMAP_INFERRED 188 170 5.648855686187744 4.61296272277832
+CALIBRATED_POINTMAP_INFERRED 200 190 7.634189128875732 7.0362324714660645
+CALIBRATED_POINTMAP_INFERRED 200 182 5.90590763092041 5.426695823669434

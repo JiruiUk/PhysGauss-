@@ -1,0 +1,16 @@
+{
+  "reviewed_utc": "2026-11-03T23:53:36.249074+00:00",
+  "review_method": "Actual full six-row PNG displayed using view_image; not inferred from generating the file",
+  "image": "output/staged_reconstruction/calibrated_pointmaps/wide_pair_geometry_qualification.png",
+  "image_sha256": "e651cd4874e6cdda68504f3542c6491863f3d85fdc89fd540affd30b2cbf2c5d",
+  "observations": [
+    "Early and middle dynamic objects have low confidence; confidence on black background is not observed foreground geometry.",
+    "Anchor86 first-partner dynamic coverage is only1.2 percent and the raw reprojection is grossly inconsistent.",
+    "Late images have stronger predicted confidence, but scaled maps change drastically between static and camera estimates.",
+    "Projection panels show errors over all confident pixels, including unobserved black background; table statistics use eroded dynamic foreground.",
+    "These pointmap panels are diagnostics, not PIDG novel-view renderings or evidence of complete moving objects."
+  ],
+  "qualification_sha256": "9bc6a32bc794207cf0570abb74022f70981dde28a160393a2dfc92b552245185",
+  "no_PIDG_targets_or_updates": true,
+  "completeness_goal_achieved": false
+}

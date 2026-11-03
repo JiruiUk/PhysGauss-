@@ -1,0 +1,1392 @@
+{
+  "pair_rows": [
+    {
+      "arm": "wide_pairs_static_scale_control",
+      "anchor": 2,
+      "partner": 10,
+      "actual_frame_gap": 8,
+      "scale": null,
+      "static_support": 0,
+      "static_fit_support": 0,
+      "static_held_support": 0,
+      "static_depth_error_median_p90": null,
+      "static_reference_is_model_conditioned_not_GT": true,
+      "dynamic_confident_fraction": 0.0,
+      "dynamic_extrapolation_fraction": null,
+      "raw_first_projection_error_median_p90_pixels": null,
+      "checks": {
+        "positive_scalar": false,
+        "static_support": false,
+        "held_static_median": false,
+        "held_static_p90": false,
+        "dynamic_confidence": false,
+        "dynamic_extrapolation": false,
+        "raw_first_projection_median": false,
+        "raw_first_projection_p90": false
+      },
+      "passed": false,
+      "failed_checks": [
+        "positive_scalar",
+        "static_support",
+        "held_static_median",
+        "held_static_p90",
+        "dynamic_confidence",
+        "dynamic_extrapolation",
+        "raw_first_projection_median",
+        "raw_first_projection_p90"
+      ]
+    },
+    {
+      "arm": "wide_pairs_known_camera_scale",
+      "anchor": 2,
+      "partner": 10,
+      "actual_frame_gap": 8,
+      "scale": null,
+      "static_support": 0,
+      "static_fit_support": 0,
+      "static_held_support": 0,
+      "static_depth_error_median_p90": null,
+      "static_reference_is_model_conditioned_not_GT": true,
+      "dynamic_confident_fraction": 0.0,
+      "dynamic_extrapolation_fraction": null,
+      "raw_first_projection_error_median_p90_pixels": null,
+      "checks": {
+        "positive_scalar": false,
+        "static_support": false,
+        "held_static_median": false,
+        "held_static_p90": false,
+        "dynamic_confidence": false,
+        "dynamic_extrapolation": false,
+        "raw_first_projection_median": false,
+        "raw_first_projection_p90": false,
+        "camera_scalar_observable": false,
+        "camera_fit_support": false,
+        "camera_held_support": false,
+        "camera_predicted_parallax": false,
+        "camera_held_projection_median": false,
+        "camera_held_projection_p90": false
+      },
+      "passed": false,
+      "failed_checks": [
+        "positive_scalar",
+        "static_support",
+        "held_static_median",
+        "held_static_p90",
+        "dynamic_confidence",
+        "dynamic_extrapolation",
+        "raw_first_projection_median",
+        "raw_first_projection_p90",
+        "camera_scalar_observable",
+        "camera_fit_support",
+        "camera_held_support",
+        "camera_predicted_parallax",
+        "camera_held_projection_median",
+        "camera_held_projection_p90"
+      ],
+      "camera_calibration": {
+        "scale_observable": false,
+        "scale": null,
+        "camera_baseline": 0.09293898373386571,
+        "fit_support": 0,
+        "reason": "Insufficient fit support"
+      },
+      "second_held_support": 0,
+      "second_held_projection_error_median_p90_pixels": null
+    },
+    {
+      "arm": "wide_pairs_static_scale_control",
+      "anchor": 2,
+      "partner": 20,
+      "actual_frame_gap": 18,
+      "scale": 14.64770846597553,
+      "static_support": 5537,
+      "static_fit_support": 1846,
+      "static_held_support": 3691,
+      "static_depth_error_median_p90": [
+        0.18936110627282332,
+        0.9919742050432294
+      ],
+      "static_reference_is_model_conditioned_not_GT": true,
+      "dynamic_confident_fraction": 0.0,
+      "dynamic_extrapolation_fraction": null,
+      "raw_first_projection_error_median_p90_pixels": null,
+      "checks": {
+        "positive_scalar": true,
+        "static_support": true,
+        "held_static_median": false,
+        "held_static_p90": false,
+        "dynamic_confidence": false,
+        "dynamic_extrapolation": false,
+        "raw_first_projection_median": false,
+        "raw_first_projection_p90": false
+      },
+      "passed": false,
+      "failed_checks": [
+        "held_static_median",
+        "held_static_p90",
+        "dynamic_confidence",
+        "dynamic_extrapolation",
+        "raw_first_projection_median",
+        "raw_first_projection_p90"
+      ]
+    },
+    {
+      "arm": "wide_pairs_known_camera_scale",
+      "anchor": 2,
+      "partner": 20,
+      "actual_frame_gap": 18,
+      "scale": 4.744947581449036,
+      "static_support": 5537,
+      "static_fit_support": 1846,
+      "static_held_support": 3691,
+      "static_depth_error_median_p90": [
+        3.797715838125156,
+        4.259281353925527
+      ],
+      "static_reference_is_model_conditioned_not_GT": true,
+      "dynamic_confident_fraction": 0.0,
+      "dynamic_extrapolation_fraction": null,
+      "raw_first_projection_error_median_p90_pixels": null,
+      "checks": {
+        "positive_scalar": true,
+        "static_support": true,
+        "held_static_median": false,
+        "held_static_p90": false,
+        "dynamic_confidence": false,
+        "dynamic_extrapolation": false,
+        "raw_first_projection_median": false,
+        "raw_first_projection_p90": false,
+        "camera_scalar_observable": true,
+        "camera_fit_support": true,
+        "camera_held_support": true,
+        "camera_predicted_parallax": true,
+        "camera_held_projection_median": false,
+        "camera_held_projection_p90": false
+      },
+      "passed": false,
+      "failed_checks": [
+        "held_static_median",
+        "held_static_p90",
+        "dynamic_confidence",
+        "dynamic_extrapolation",
+        "raw_first_projection_median",
+        "raw_first_projection_p90",
+        "camera_held_projection_median",
+        "camera_held_projection_p90"
+      ],
+      "camera_calibration": {
+        "scale_observable": true,
+        "scale": 4.744947581449036,
+        "camera_baseline": 0.40384466047672996,
+        "fit_support": 2006,
+        "median_predicted_ray_parallax_degrees": 7.2371984814536185,
+        "normalized_cross_residual_median_p90": [
+          0.8470858146998901,
+          1.0788253934990897
+        ],
+        "fit_projection_error_median_p90_pixels": [
+          111.83838132168427,
+          136.47691430623325
+        ]
+      },
+      "second_held_support": 3993,
+      "second_held_projection_error_median_p90_pixels": [
+        111.98916443132929,
+        136.51528958659134
+      ]
+    },
+    {
+      "arm": "wide_pairs_static_scale_control",
+      "anchor": 43,
+      "partner": 34,
+      "actual_frame_gap": 9,
+      "scale": null,
+      "static_support": 0,
+      "static_fit_support": 0,
+      "static_held_support": 0,
+      "static_depth_error_median_p90": null,
+      "static_reference_is_model_conditioned_not_GT": true,
+      "dynamic_confident_fraction": 0.0,
+      "dynamic_extrapolation_fraction": null,
+      "raw_first_projection_error_median_p90_pixels": null,
+      "checks": {
+        "positive_scalar": false,
+        "static_support": false,
+        "held_static_median": false,
+        "held_static_p90": false,
+        "dynamic_confidence": false,
+        "dynamic_extrapolation": false,
+        "raw_first_projection_median": false,
+        "raw_first_projection_p90": false
+      },
+      "passed": false,
+      "failed_checks": [
+        "positive_scalar",
+        "static_support",
+        "held_static_median",
+        "held_static_p90",
+        "dynamic_confidence",
+        "dynamic_extrapolation",
+        "raw_first_projection_median",
+        "raw_first_projection_p90"
+      ]
+    },
+    {
+      "arm": "wide_pairs_known_camera_scale",
+      "anchor": 43,
+      "partner": 34,
+      "actual_frame_gap": 9,
+      "scale": null,
+      "static_support": 0,
+      "static_fit_support": 0,
+      "static_held_support": 0,
+      "static_depth_error_median_p90": null,
+      "static_reference_is_model_conditioned_not_GT": true,
+      "dynamic_confident_fraction": 0.0,
+      "dynamic_extrapolation_fraction": null,
+      "raw_first_projection_error_median_p90_pixels": null,
+      "checks": {
+        "positive_scalar": false,
+        "static_support": false,
+        "held_static_median": false,
+        "held_static_p90": false,
+        "dynamic_confidence": false,
+        "dynamic_extrapolation": false,
+        "raw_first_projection_median": false,
+        "raw_first_projection_p90": false,
+        "camera_scalar_observable": false,
+        "camera_fit_support": false,
+        "camera_held_support": false,
+        "camera_predicted_parallax": false,
+        "camera_held_projection_median": false,
+        "camera_held_projection_p90": false
+      },
+      "passed": false,
+      "failed_checks": [
+        "positive_scalar",
+        "static_support",
+        "held_static_median",
+        "held_static_p90",
+        "dynamic_confidence",
+        "dynamic_extrapolation",
+        "raw_first_projection_median",
+        "raw_first_projection_p90",
+        "camera_scalar_observable",
+        "camera_fit_support",
+        "camera_held_support",
+        "camera_predicted_parallax",
+        "camera_held_projection_median",
+        "camera_held_projection_p90"
+      ],
+      "camera_calibration": {
+        "scale_observable": false,
+        "scale": null,
+        "camera_baseline": 0.6547416356751524,
+        "fit_support": 0,
+        "reason": "Insufficient fit support"
+      },
+      "second_held_support": 0,
+      "second_held_projection_error_median_p90_pixels": null
+    },
+    {
+      "arm": "wide_pairs_static_scale_control",
+      "anchor": 43,
+      "partner": 52,
+      "actual_frame_gap": 9,
+      "scale": 14.627974161163664,
+      "static_support": 512,
+      "static_fit_support": 171,
+      "static_held_support": 341,
+      "static_depth_error_median_p90": [
+        0.019483146003563157,
+        1.4735411056207006
+      ],
+      "static_reference_is_model_conditioned_not_GT": true,
+      "dynamic_confident_fraction": 0.0,
+      "dynamic_extrapolation_fraction": null,
+      "raw_first_projection_error_median_p90_pixels": null,
+      "checks": {
+        "positive_scalar": true,
+        "static_support": false,
+        "held_static_median": true,
+        "held_static_p90": false,
+        "dynamic_confidence": false,
+        "dynamic_extrapolation": false,
+        "raw_first_projection_median": false,
+        "raw_first_projection_p90": false
+      },
+      "passed": false,
+      "failed_checks": [
+        "static_support",
+        "held_static_p90",
+        "dynamic_confidence",
+        "dynamic_extrapolation",
+        "raw_first_projection_median",
+        "raw_first_projection_p90"
+      ]
+    },
+    {
+      "arm": "wide_pairs_known_camera_scale",
+      "anchor": 43,
+      "partner": 52,
+      "actual_frame_gap": 9,
+      "scale": null,
+      "static_support": 512,
+      "static_fit_support": 171,
+      "static_held_support": 341,
+      "static_depth_error_median_p90": null,
+      "static_reference_is_model_conditioned_not_GT": true,
+      "dynamic_confident_fraction": 0.0,
+      "dynamic_extrapolation_fraction": null,
+      "raw_first_projection_error_median_p90_pixels": null,
+      "checks": {
+        "positive_scalar": false,
+        "static_support": false,
+        "held_static_median": false,
+        "held_static_p90": false,
+        "dynamic_confidence": false,
+        "dynamic_extrapolation": false,
+        "raw_first_projection_median": false,
+        "raw_first_projection_p90": false,
+        "camera_scalar_observable": false,
+        "camera_fit_support": false,
+        "camera_held_support": false,
+        "camera_predicted_parallax": false,
+        "camera_held_projection_median": false,
+        "camera_held_projection_p90": false
+      },
+      "passed": false,
+      "failed_checks": [
+        "positive_scalar",
+        "static_support",
+        "held_static_median",
+        "held_static_p90",
+        "dynamic_confidence",
+        "dynamic_extrapolation",
+        "raw_first_projection_median",
+        "raw_first_projection_p90",
+        "camera_scalar_observable",
+        "camera_fit_support",
+        "camera_held_support",
+        "camera_predicted_parallax",
+        "camera_held_projection_median",
+        "camera_held_projection_p90"
+      ],
+      "camera_calibration": {
+        "scale_observable": false,
+        "scale": null,
+        "camera_baseline": 0.7662687459401785,
+        "fit_support": 8,
+        "reason": "Insufficient fit support"
+      },
+      "second_held_support": 21,
+      "second_held_projection_error_median_p90_pixels": null
+    },
+    {
+      "arm": "wide_pairs_static_scale_control",
+      "anchor": 86,
+      "partner": 76,
+      "actual_frame_gap": 10,
+      "scale": 13.17996663359919,
+      "static_support": 3074,
+      "static_fit_support": 1025,
+      "static_held_support": 2049,
+      "static_depth_error_median_p90": [
+        0.14316421527559697,
+        0.5815666620072742
+      ],
+      "static_reference_is_model_conditioned_not_GT": true,
+      "dynamic_confident_fraction": 0.011636927851047323,
+      "dynamic_extrapolation_fraction": 1.0,
+      "raw_first_projection_error_median_p90_pixels": [
+        56.82272328636603,
+        58.83270060974155
+      ],
+      "checks": {
+        "positive_scalar": true,
+        "static_support": true,
+        "held_static_median": false,
+        "held_static_p90": false,
+        "dynamic_confidence": false,
+        "dynamic_extrapolation": false,
+        "raw_first_projection_median": false,
+        "raw_first_projection_p90": false
+      },
+      "passed": false,
+      "failed_checks": [
+        "held_static_median",
+        "held_static_p90",
+        "dynamic_confidence",
+        "dynamic_extrapolation",
+        "raw_first_projection_median",
+        "raw_first_projection_p90"
+      ]
+    },
+    {
+      "arm": "wide_pairs_known_camera_scale",
+      "anchor": 86,
+      "partner": 76,
+      "actual_frame_gap": 10,
+      "scale": null,
+      "static_support": 3074,
+      "static_fit_support": 1025,
+      "static_held_support": 2049,
+      "static_depth_error_median_p90": null,
+      "static_reference_is_model_conditioned_not_GT": true,
+      "dynamic_confident_fraction": 0.011636927851047323,
+      "dynamic_extrapolation_fraction": 1.0,
+      "raw_first_projection_error_median_p90_pixels": [
+        56.82272328636603,
+        58.83270060974155
+      ],
+      "checks": {
+        "positive_scalar": false,
+        "static_support": true,
+        "held_static_median": false,
+        "held_static_p90": false,
+        "dynamic_confidence": false,
+        "dynamic_extrapolation": false,
+        "raw_first_projection_median": false,
+        "raw_first_projection_p90": false,
+        "camera_scalar_observable": false,
+        "camera_fit_support": false,
+        "camera_held_support": false,
+        "camera_predicted_parallax": false,
+        "camera_held_projection_median": false,
+        "camera_held_projection_p90": false
+      },
+      "passed": false,
+      "failed_checks": [
+        "positive_scalar",
+        "held_static_median",
+        "held_static_p90",
+        "dynamic_confidence",
+        "dynamic_extrapolation",
+        "raw_first_projection_median",
+        "raw_first_projection_p90",
+        "camera_scalar_observable",
+        "camera_fit_support",
+        "camera_held_support",
+        "camera_predicted_parallax",
+        "camera_held_projection_median",
+        "camera_held_projection_p90"
+      ],
+      "camera_calibration": {
+        "scale_observable": false,
+        "scale": null,
+        "camera_baseline": 1.1407099878547102,
+        "fit_support": 0,
+        "reason": "Insufficient fit support"
+      },
+      "second_held_support": 0,
+      "second_held_projection_error_median_p90_pixels": null
+    },
+    {
+      "arm": "wide_pairs_static_scale_control",
+      "anchor": 86,
+      "partner": 95,
+      "actual_frame_gap": 9,
+      "scale": null,
+      "static_support": 0,
+      "static_fit_support": 0,
+      "static_held_support": 0,
+      "static_depth_error_median_p90": null,
+      "static_reference_is_model_conditioned_not_GT": true,
+      "dynamic_confident_fraction": 0.0,
+      "dynamic_extrapolation_fraction": null,
+      "raw_first_projection_error_median_p90_pixels": null,
+      "checks": {
+        "positive_scalar": false,
+        "static_support": false,
+        "held_static_median": false,
+        "held_static_p90": false,
+        "dynamic_confidence": false,
+        "dynamic_extrapolation": false,
+        "raw_first_projection_median": false,
+        "raw_first_projection_p90": false
+      },
+      "passed": false,
+      "failed_checks": [
+        "positive_scalar",
+        "static_support",
+        "held_static_median",
+        "held_static_p90",
+        "dynamic_confidence",
+        "dynamic_extrapolation",
+        "raw_first_projection_median",
+        "raw_first_projection_p90"
+      ]
+    },
+    {
+      "arm": "wide_pairs_known_camera_scale",
+      "anchor": 86,
+      "partner": 95,
+      "actual_frame_gap": 9,
+      "scale": null,
+      "static_support": 0,
+      "static_fit_support": 0,
+      "static_held_support": 0,
+      "static_depth_error_median_p90": null,
+      "static_reference_is_model_conditioned_not_GT": true,
+      "dynamic_confident_fraction": 0.0,
+      "dynamic_extrapolation_fraction": null,
+      "raw_first_projection_error_median_p90_pixels": null,
+      "checks": {
+        "positive_scalar": false,
+        "static_support": false,
+        "held_static_median": false,
+        "held_static_p90": false,
+        "dynamic_confidence": false,
+        "dynamic_extrapolation": false,
+        "raw_first_projection_median": false,
+        "raw_first_projection_p90": false,
+        "camera_scalar_observable": false,
+        "camera_fit_support": false,
+        "camera_held_support": false,
+        "camera_predicted_parallax": false,
+        "camera_held_projection_median": false,
+        "camera_held_projection_p90": false
+      },
+      "passed": false,
+      "failed_checks": [
+        "positive_scalar",
+        "static_support",
+        "held_static_median",
+        "held_static_p90",
+        "dynamic_confidence",
+        "dynamic_extrapolation",
+        "raw_first_projection_median",
+        "raw_first_projection_p90",
+        "camera_scalar_observable",
+        "camera_fit_support",
+        "camera_held_support",
+        "camera_predicted_parallax",
+        "camera_held_projection_median",
+        "camera_held_projection_p90"
+      ],
+      "camera_calibration": {
+        "scale_observable": false,
+        "scale": null,
+        "camera_baseline": 1.0578481613681021,
+        "fit_support": 0,
+        "reason": "Insufficient fit support"
+      },
+      "second_held_support": 0,
+      "second_held_projection_error_median_p90_pixels": null
+    },
+    {
+      "arm": "wide_pairs_static_scale_control",
+      "anchor": 146,
+      "partner": 136,
+      "actual_frame_gap": 10,
+      "scale": 9.925641335359362,
+      "static_support": 926,
+      "static_fit_support": 309,
+      "static_held_support": 617,
+      "static_depth_error_median_p90": [
+        0.12002075664770562,
+        0.34299919239908916
+      ],
+      "static_reference_is_model_conditioned_not_GT": true,
+      "dynamic_confident_fraction": 0.0,
+      "dynamic_extrapolation_fraction": null,
+      "raw_first_projection_error_median_p90_pixels": null,
+      "checks": {
+        "positive_scalar": true,
+        "static_support": false,
+        "held_static_median": false,
+        "held_static_p90": false,
+        "dynamic_confidence": false,
+        "dynamic_extrapolation": false,
+        "raw_first_projection_median": false,
+        "raw_first_projection_p90": false
+      },
+      "passed": false,
+      "failed_checks": [
+        "static_support",
+        "held_static_median",
+        "held_static_p90",
+        "dynamic_confidence",
+        "dynamic_extrapolation",
+        "raw_first_projection_median",
+        "raw_first_projection_p90"
+      ]
+    },
+    {
+      "arm": "wide_pairs_known_camera_scale",
+      "anchor": 146,
+      "partner": 136,
+      "actual_frame_gap": 10,
+      "scale": null,
+      "static_support": 926,
+      "static_fit_support": 309,
+      "static_held_support": 617,
+      "static_depth_error_median_p90": null,
+      "static_reference_is_model_conditioned_not_GT": true,
+      "dynamic_confident_fraction": 0.0,
+      "dynamic_extrapolation_fraction": null,
+      "raw_first_projection_error_median_p90_pixels": null,
+      "checks": {
+        "positive_scalar": false,
+        "static_support": false,
+        "held_static_median": false,
+        "held_static_p90": false,
+        "dynamic_confidence": false,
+        "dynamic_extrapolation": false,
+        "raw_first_projection_median": false,
+        "raw_first_projection_p90": false,
+        "camera_scalar_observable": false,
+        "camera_fit_support": false,
+        "camera_held_support": false,
+        "camera_predicted_parallax": false,
+        "camera_held_projection_median": false,
+        "camera_held_projection_p90": false
+      },
+      "passed": false,
+      "failed_checks": [
+        "positive_scalar",
+        "static_support",
+        "held_static_median",
+        "held_static_p90",
+        "dynamic_confidence",
+        "dynamic_extrapolation",
+        "raw_first_projection_median",
+        "raw_first_projection_p90",
+        "camera_scalar_observable",
+        "camera_fit_support",
+        "camera_held_support",
+        "camera_predicted_parallax",
+        "camera_held_projection_median",
+        "camera_held_projection_p90"
+      ],
+      "camera_calibration": {
+        "scale_observable": false,
+        "scale": null,
+        "camera_baseline": 0.9904171953429111,
+        "fit_support": 0,
+        "reason": "Insufficient fit support"
+      },
+      "second_held_support": 0,
+      "second_held_projection_error_median_p90_pixels": null
+    },
+    {
+      "arm": "wide_pairs_static_scale_control",
+      "anchor": 146,
+      "partner": 155,
+      "actual_frame_gap": 9,
+      "scale": 10.182550655785336,
+      "static_support": 3891,
+      "static_fit_support": 1297,
+      "static_held_support": 2594,
+      "static_depth_error_median_p90": [
+        0.11633167411026868,
+        0.33480322699797976
+      ],
+      "static_reference_is_model_conditioned_not_GT": true,
+      "dynamic_confident_fraction": 0.2218214607754734,
+      "dynamic_extrapolation_fraction": 0.9634146341463414,
+      "raw_first_projection_error_median_p90_pixels": [
+        26.411318887037254,
+        29.504697160283015
+      ],
+      "checks": {
+        "positive_scalar": true,
+        "static_support": true,
+        "held_static_median": false,
+        "held_static_p90": false,
+        "dynamic_confidence": false,
+        "dynamic_extrapolation": false,
+        "raw_first_projection_median": false,
+        "raw_first_projection_p90": false
+      },
+      "passed": false,
+      "failed_checks": [
+        "held_static_median",
+        "held_static_p90",
+        "dynamic_confidence",
+        "dynamic_extrapolation",
+        "raw_first_projection_median",
+        "raw_first_projection_p90"
+      ]
+    },
+    {
+      "arm": "wide_pairs_known_camera_scale",
+      "anchor": 146,
+      "partner": 155,
+      "actual_frame_gap": 9,
+      "scale": 9.370612669240376,
+      "static_support": 3891,
+      "static_fit_support": 1297,
+      "static_held_support": 2594,
+      "static_depth_error_median_p90": [
+        0.44810432082330376,
+        0.6257370158484574
+      ],
+      "static_reference_is_model_conditioned_not_GT": true,
+      "dynamic_confident_fraction": 0.2218214607754734,
+      "dynamic_extrapolation_fraction": 0.9634146341463414,
+      "raw_first_projection_error_median_p90_pixels": [
+        26.411318887037254,
+        29.504697160283015
+      ],
+      "checks": {
+        "positive_scalar": true,
+        "static_support": true,
+        "held_static_median": false,
+        "held_static_p90": false,
+        "dynamic_confidence": false,
+        "dynamic_extrapolation": false,
+        "raw_first_projection_median": false,
+        "raw_first_projection_p90": false,
+        "camera_scalar_observable": true,
+        "camera_fit_support": true,
+        "camera_held_support": true,
+        "camera_predicted_parallax": true,
+        "camera_held_projection_median": false,
+        "camera_held_projection_p90": false
+      },
+      "passed": false,
+      "failed_checks": [
+        "held_static_median",
+        "held_static_p90",
+        "dynamic_confidence",
+        "dynamic_extrapolation",
+        "raw_first_projection_median",
+        "raw_first_projection_p90",
+        "camera_held_projection_median",
+        "camera_held_projection_p90"
+      ],
+      "camera_calibration": {
+        "scale_observable": true,
+        "scale": 9.370612669240376,
+        "camera_baseline": 0.799821924272953,
+        "fit_support": 1017,
+        "median_predicted_ray_parallax_degrees": 8.195656107949459,
+        "normalized_cross_residual_median_p90": [
+          0.2610979623508047,
+          0.4217857952849591
+        ],
+        "fit_projection_error_median_p90_pixels": [
+          23.23071071386775,
+          36.273635367362665
+        ]
+      },
+      "second_held_support": 2012,
+      "second_held_projection_error_median_p90_pixels": [
+        23.225322730374245,
+        36.21281708542875
+      ]
+    },
+    {
+      "arm": "wide_pairs_static_scale_control",
+      "anchor": 188,
+      "partner": 179,
+      "actual_frame_gap": 9,
+      "scale": 12.550169805575566,
+      "static_support": 10970,
+      "static_fit_support": 3657,
+      "static_held_support": 7313,
+      "static_depth_error_median_p90": [
+        0.13519329416268722,
+        0.36351469710933665
+      ],
+      "static_reference_is_model_conditioned_not_GT": true,
+      "dynamic_confident_fraction": 0.5736607142857143,
+      "dynamic_extrapolation_fraction": 1.0,
+      "raw_first_projection_error_median_p90_pixels": [
+        21.66234240278603,
+        45.50666460817523
+      ],
+      "checks": {
+        "positive_scalar": true,
+        "static_support": true,
+        "held_static_median": false,
+        "held_static_p90": false,
+        "dynamic_confidence": false,
+        "dynamic_extrapolation": false,
+        "raw_first_projection_median": false,
+        "raw_first_projection_p90": false
+      },
+      "passed": false,
+      "failed_checks": [
+        "held_static_median",
+        "held_static_p90",
+        "dynamic_confidence",
+        "dynamic_extrapolation",
+        "raw_first_projection_median",
+        "raw_first_projection_p90"
+      ]
+    },
+    {
+      "arm": "wide_pairs_known_camera_scale",
+      "anchor": 188,
+      "partner": 179,
+      "actual_frame_gap": 9,
+      "scale": 6.022997052866031,
+      "static_support": 10970,
+      "static_fit_support": 3657,
+      "static_held_support": 7313,
+      "static_depth_error_median_p90": [
+        2.9431515684409737,
+        3.166685716571116
+      ],
+      "static_reference_is_model_conditioned_not_GT": true,
+      "dynamic_confident_fraction": 0.5736607142857143,
+      "dynamic_extrapolation_fraction": 1.0,
+      "raw_first_projection_error_median_p90_pixels": [
+        21.66234240278603,
+        45.50666460817523
+      ],
+      "checks": {
+        "positive_scalar": true,
+        "static_support": true,
+        "held_static_median": false,
+        "held_static_p90": false,
+        "dynamic_confidence": false,
+        "dynamic_extrapolation": false,
+        "raw_first_projection_median": false,
+        "raw_first_projection_p90": false,
+        "camera_scalar_observable": true,
+        "camera_fit_support": true,
+        "camera_held_support": true,
+        "camera_predicted_parallax": true,
+        "camera_held_projection_median": false,
+        "camera_held_projection_p90": false
+      },
+      "passed": false,
+      "failed_checks": [
+        "held_static_median",
+        "held_static_p90",
+        "dynamic_confidence",
+        "dynamic_extrapolation",
+        "raw_first_projection_median",
+        "raw_first_projection_p90",
+        "camera_held_projection_median",
+        "camera_held_projection_p90"
+      ],
+      "camera_calibration": {
+        "scale_observable": true,
+        "scale": 6.022997052866031,
+        "camera_baseline": 0.3251708591828553,
+        "fit_support": 4093,
+        "median_predicted_ray_parallax_degrees": 4.4096564611288755,
+        "normalized_cross_residual_median_p90": [
+          0.7560033351161751,
+          1.2207906457949569
+        ],
+        "fit_projection_error_median_p90_pixels": [
+          52.26921850529308,
+          78.9980052196183
+        ]
+      },
+      "second_held_support": 8188,
+      "second_held_projection_error_median_p90_pixels": [
+        52.301228037132816,
+        79.00130065942585
+      ]
+    },
+    {
+      "arm": "wide_pairs_static_scale_control",
+      "anchor": 188,
+      "partner": 170,
+      "actual_frame_gap": 18,
+      "scale": 12.876294685743918,
+      "static_support": 10625,
+      "static_fit_support": 3542,
+      "static_held_support": 7083,
+      "static_depth_error_median_p90": [
+        0.3080554133989031,
+        0.5937361612883768
+      ],
+      "static_reference_is_model_conditioned_not_GT": true,
+      "dynamic_confident_fraction": 0.8046875,
+      "dynamic_extrapolation_fraction": 0.6990291262135923,
+      "raw_first_projection_error_median_p90_pixels": [
+        28.74253650398171,
+        54.86594252621475
+      ],
+      "checks": {
+        "positive_scalar": true,
+        "static_support": true,
+        "held_static_median": false,
+        "held_static_p90": false,
+        "dynamic_confidence": true,
+        "dynamic_extrapolation": false,
+        "raw_first_projection_median": false,
+        "raw_first_projection_p90": false
+      },
+      "passed": false,
+      "failed_checks": [
+        "held_static_median",
+        "held_static_p90",
+        "dynamic_extrapolation",
+        "raw_first_projection_median",
+        "raw_first_projection_p90"
+      ]
+    },
+    {
+      "arm": "wide_pairs_known_camera_scale",
+      "anchor": 188,
+      "partner": 170,
+      "actual_frame_gap": 18,
+      "scale": 10.25633365826927,
+      "static_support": 10625,
+      "static_fit_support": 3542,
+      "static_held_support": 7083,
+      "static_depth_error_median_p90": [
+        1.1233918783626793,
+        1.4275860846115977
+      ],
+      "static_reference_is_model_conditioned_not_GT": true,
+      "dynamic_confident_fraction": 0.8046875,
+      "dynamic_extrapolation_fraction": 0.6990291262135923,
+      "raw_first_projection_error_median_p90_pixels": [
+        28.74253650398171,
+        54.86594252621475
+      ],
+      "checks": {
+        "positive_scalar": true,
+        "static_support": true,
+        "held_static_median": false,
+        "held_static_p90": false,
+        "dynamic_confidence": true,
+        "dynamic_extrapolation": false,
+        "raw_first_projection_median": false,
+        "raw_first_projection_p90": false,
+        "camera_scalar_observable": true,
+        "camera_fit_support": true,
+        "camera_held_support": true,
+        "camera_predicted_parallax": true,
+        "camera_held_projection_median": false,
+        "camera_held_projection_p90": false
+      },
+      "passed": false,
+      "failed_checks": [
+        "held_static_median",
+        "held_static_p90",
+        "dynamic_extrapolation",
+        "raw_first_projection_median",
+        "raw_first_projection_p90",
+        "camera_held_projection_median",
+        "camera_held_projection_p90"
+      ],
+      "camera_calibration": {
+        "scale_observable": true,
+        "scale": 10.25633365826927,
+        "camera_baseline": 0.80286106152472,
+        "fit_support": 3823,
+        "median_predicted_ray_parallax_degrees": 7.7266630391988524,
+        "normalized_cross_residual_median_p90": [
+          0.4736292591097868,
+          0.7703568564573495
+        ],
+        "fit_projection_error_median_p90_pixels": [
+          52.58604547355043,
+          73.44140845138588
+        ]
+      },
+      "second_held_support": 7662,
+      "second_held_projection_error_median_p90_pixels": [
+        52.60327582800441,
+        73.40994333848273
+      ]
+    },
+    {
+      "arm": "wide_pairs_static_scale_control",
+      "anchor": 200,
+      "partner": 190,
+      "actual_frame_gap": 10,
+      "scale": 13.054280647885982,
+      "static_support": 11147,
+      "static_fit_support": 3716,
+      "static_held_support": 7431,
+      "static_depth_error_median_p90": [
+        0.18631873856357917,
+        0.45390847380324395
+      ],
+      "static_reference_is_model_conditioned_not_GT": true,
+      "dynamic_confident_fraction": 1.0,
+      "dynamic_extrapolation_fraction": 0.8527397260273972,
+      "raw_first_projection_error_median_p90_pixels": [
+        31.300641010394834,
+        62.25003158603604
+      ],
+      "checks": {
+        "positive_scalar": true,
+        "static_support": true,
+        "held_static_median": false,
+        "held_static_p90": false,
+        "dynamic_confidence": true,
+        "dynamic_extrapolation": false,
+        "raw_first_projection_median": false,
+        "raw_first_projection_p90": false
+      },
+      "passed": false,
+      "failed_checks": [
+        "held_static_median",
+        "held_static_p90",
+        "dynamic_extrapolation",
+        "raw_first_projection_median",
+        "raw_first_projection_p90"
+      ]
+    },
+    {
+      "arm": "wide_pairs_known_camera_scale",
+      "anchor": 200,
+      "partner": 190,
+      "actual_frame_gap": 10,
+      "scale": 0.25840149964121223,
+      "static_support": 11147,
+      "static_fit_support": 3716,
+      "static_held_support": 7431,
+      "static_depth_error_median_p90": [
+        5.542060266471654,
+        6.0222168568465575
+      ],
+      "static_reference_is_model_conditioned_not_GT": true,
+      "dynamic_confident_fraction": 1.0,
+      "dynamic_extrapolation_fraction": 0.8527397260273972,
+      "raw_first_projection_error_median_p90_pixels": [
+        31.300641010394834,
+        62.25003158603604
+      ],
+      "checks": {
+        "positive_scalar": true,
+        "static_support": true,
+        "held_static_median": false,
+        "held_static_p90": false,
+        "dynamic_confidence": true,
+        "dynamic_extrapolation": false,
+        "raw_first_projection_median": false,
+        "raw_first_projection_p90": false,
+        "camera_scalar_observable": true,
+        "camera_fit_support": true,
+        "camera_held_support": true,
+        "camera_predicted_parallax": true,
+        "camera_held_projection_median": false,
+        "camera_held_projection_p90": false
+      },
+      "passed": false,
+      "failed_checks": [
+        "held_static_median",
+        "held_static_p90",
+        "dynamic_extrapolation",
+        "raw_first_projection_median",
+        "raw_first_projection_p90",
+        "camera_held_projection_median",
+        "camera_held_projection_p90"
+      ],
+      "camera_calibration": {
+        "scale_observable": true,
+        "scale": 0.25840149964121223,
+        "camera_baseline": 0.115813300986078,
+        "fit_support": 4493,
+        "median_predicted_ray_parallax_degrees": 4.7290410706345645,
+        "normalized_cross_residual_median_p90": [
+          1.0010945414013719,
+          1.0699952930450187
+        ],
+        "fit_projection_error_median_p90_pixels": [
+          653.3879126099582,
+          743.3436432390929
+        ]
+      },
+      "second_held_support": 8991,
+      "second_held_projection_error_median_p90_pixels": [
+        653.1804618926787,
+        742.9105850185081
+      ]
+    },
+    {
+      "arm": "wide_pairs_static_scale_control",
+      "anchor": 200,
+      "partner": 182,
+      "actual_frame_gap": 18,
+      "scale": 12.657063458502254,
+      "static_support": 11028,
+      "static_fit_support": 3676,
+      "static_held_support": 7352,
+      "static_depth_error_median_p90": [
+        0.2408972154106892,
+        0.5068938780492956
+      ],
+      "static_reference_is_model_conditioned_not_GT": true,
+      "dynamic_confident_fraction": 0.5742009132420092,
+      "dynamic_extrapolation_fraction": 0.6540755467196819,
+      "raw_first_projection_error_median_p90_pixels": [
+        23.90555067326415,
+        53.691757446013256
+      ],
+      "checks": {
+        "positive_scalar": true,
+        "static_support": true,
+        "held_static_median": false,
+        "held_static_p90": false,
+        "dynamic_confidence": false,
+        "dynamic_extrapolation": false,
+        "raw_first_projection_median": false,
+        "raw_first_projection_p90": false
+      },
+      "passed": false,
+      "failed_checks": [
+        "held_static_median",
+        "held_static_p90",
+        "dynamic_confidence",
+        "dynamic_extrapolation",
+        "raw_first_projection_median",
+        "raw_first_projection_p90"
+      ]
+    },
+    {
+      "arm": "wide_pairs_known_camera_scale",
+      "anchor": 200,
+      "partner": 182,
+      "actual_frame_gap": 18,
+      "scale": 6.958808083263463,
+      "static_support": 11028,
+      "static_fit_support": 3676,
+      "static_held_support": 7352,
+      "static_depth_error_median_p90": [
+        2.507337683639206,
+        2.6869540979794655
+      ],
+      "static_reference_is_model_conditioned_not_GT": true,
+      "dynamic_confident_fraction": 0.5742009132420092,
+      "dynamic_extrapolation_fraction": 0.6540755467196819,
+      "raw_first_projection_error_median_p90_pixels": [
+        23.90555067326415,
+        53.691757446013256
+      ],
+      "checks": {
+        "positive_scalar": true,
+        "static_support": true,
+        "held_static_median": false,
+        "held_static_p90": false,
+        "dynamic_confidence": false,
+        "dynamic_extrapolation": false,
+        "raw_first_projection_median": false,
+        "raw_first_projection_p90": false,
+        "camera_scalar_observable": true,
+        "camera_fit_support": true,
+        "camera_held_support": true,
+        "camera_predicted_parallax": true,
+        "camera_held_projection_median": false,
+        "camera_held_projection_p90": false
+      },
+      "passed": false,
+      "failed_checks": [
+        "held_static_median",
+        "held_static_p90",
+        "dynamic_confidence",
+        "dynamic_extrapolation",
+        "raw_first_projection_median",
+        "raw_first_projection_p90",
+        "camera_held_projection_median",
+        "camera_held_projection_p90"
+      ],
+      "camera_calibration": {
+        "scale_observable": true,
+        "scale": 6.958808083263463,
+        "camera_baseline": 0.3648271964120155,
+        "fit_support": 3961,
+        "median_predicted_ray_parallax_degrees": 4.517372290314109,
+        "normalized_cross_residual_median_p90": [
+          0.6847306757314191,
+          1.187361462278464
+        ],
+        "fit_projection_error_median_p90_pixels": [
+          46.97588351166167,
+          72.3152016179482
+        ]
+      },
+      "second_held_support": 7898,
+      "second_held_projection_error_median_p90_pixels": [
+        46.91702067965452,
+        72.23005776564865
+      ]
+    }
+  ],
+  "partner_stability": [
+    {
+      "arm": "wide_pairs_static_scale_control",
+      "anchor": 2,
+      "common_dynamic_fraction": 0.0,
+      "partner_depth_difference_median_p90": null,
+      "checks": {
+        "both_scales_available": false,
+        "common_dynamic_coverage": false,
+        "partner_depth_median": false,
+        "partner_depth_p90": false
+      },
+      "passed": false
+    },
+    {
+      "arm": "wide_pairs_static_scale_control",
+      "anchor": 43,
+      "common_dynamic_fraction": 0.0,
+      "partner_depth_difference_median_p90": null,
+      "checks": {
+        "both_scales_available": false,
+        "common_dynamic_coverage": false,
+        "partner_depth_median": false,
+        "partner_depth_p90": false
+      },
+      "passed": false
+    },
+    {
+      "arm": "wide_pairs_static_scale_control",
+      "anchor": 86,
+      "common_dynamic_fraction": 0.0,
+      "partner_depth_difference_median_p90": null,
+      "checks": {
+        "both_scales_available": false,
+        "common_dynamic_coverage": false,
+        "partner_depth_median": false,
+        "partner_depth_p90": false
+      },
+      "passed": false
+    },
+    {
+      "arm": "wide_pairs_static_scale_control",
+      "anchor": 146,
+      "common_dynamic_fraction": 0.0,
+      "partner_depth_difference_median_p90": null,
+      "checks": {
+        "both_scales_available": true,
+        "common_dynamic_coverage": false,
+        "partner_depth_median": false,
+        "partner_depth_p90": false
+      },
+      "passed": false
+    },
+    {
+      "arm": "wide_pairs_static_scale_control",
+      "anchor": 188,
+      "common_dynamic_fraction": 0.5736607142857143,
+      "partner_depth_difference_median_p90": [
+        0.05996390209098168,
+        0.1749517008429789
+      ],
+      "checks": {
+        "both_scales_available": true,
+        "common_dynamic_coverage": false,
+        "partner_depth_median": false,
+        "partner_depth_p90": false
+      },
+      "passed": false
+    },
+    {
+      "arm": "wide_pairs_static_scale_control",
+      "anchor": 200,
+      "common_dynamic_fraction": 0.5742009132420092,
+      "partner_depth_difference_median_p90": [
+        0.15475058224308746,
+        0.18588131828316995
+      ],
+      "checks": {
+        "both_scales_available": true,
+        "common_dynamic_coverage": false,
+        "partner_depth_median": false,
+        "partner_depth_p90": false
+      },
+      "passed": false
+    },
+    {
+      "arm": "wide_pairs_known_camera_scale",
+      "anchor": 2,
+      "common_dynamic_fraction": 0.0,
+      "partner_depth_difference_median_p90": null,
+      "checks": {
+        "both_scales_available": false,
+        "common_dynamic_coverage": false,
+        "partner_depth_median": false,
+        "partner_depth_p90": false
+      },
+      "passed": false
+    },
+    {
+      "arm": "wide_pairs_known_camera_scale",
+      "anchor": 43,
+      "common_dynamic_fraction": 0.0,
+      "partner_depth_difference_median_p90": null,
+      "checks": {
+        "both_scales_available": false,
+        "common_dynamic_coverage": false,
+        "partner_depth_median": false,
+        "partner_depth_p90": false
+      },
+      "passed": false
+    },
+    {
+      "arm": "wide_pairs_known_camera_scale",
+      "anchor": 86,
+      "common_dynamic_fraction": 0.0,
+      "partner_depth_difference_median_p90": null,
+      "checks": {
+        "both_scales_available": false,
+        "common_dynamic_coverage": false,
+        "partner_depth_median": false,
+        "partner_depth_p90": false
+      },
+      "passed": false
+    },
+    {
+      "arm": "wide_pairs_known_camera_scale",
+      "anchor": 146,
+      "common_dynamic_fraction": 0.0,
+      "partner_depth_difference_median_p90": null,
+      "checks": {
+        "both_scales_available": false,
+        "common_dynamic_coverage": false,
+        "partner_depth_median": false,
+        "partner_depth_p90": false
+      },
+      "passed": false
+    },
+    {
+      "arm": "wide_pairs_known_camera_scale",
+      "anchor": 188,
+      "common_dynamic_fraction": 0.5736607142857143,
+      "partner_depth_difference_median_p90": [
+        2.2582904644031547,
+        2.333303220816462
+      ],
+      "checks": {
+        "both_scales_available": true,
+        "common_dynamic_coverage": false,
+        "partner_depth_median": false,
+        "partner_depth_p90": false
+      },
+      "passed": false
+    },
+    {
+      "arm": "wide_pairs_known_camera_scale",
+      "anchor": 200,
+      "common_dynamic_fraction": 0.5742009132420092,
+      "partner_depth_difference_median_p90": [
+        3.6876190407571285,
+        3.7576056125255377
+      ],
+      "checks": {
+        "both_scales_available": true,
+        "common_dynamic_coverage": false,
+        "partner_depth_median": false,
+        "partner_depth_p90": false
+      },
+      "passed": false
+    }
+  ],
+  "arm_passed": {
+    "wide_pairs_static_scale_control": false,
+    "wide_pairs_known_camera_scale": false
+  },
+  "protocol_sha256": "a2539bc4ca7522e16659ec55005c04de3c6af15baaa515e6a054a603879e095a",
+  "inference_sha256": "3a4cd26e3f7a65b9f604212021c17bd2d3915a24470b3a32155652bcb51e4a94",
+  "source_freeze_sha256": "462a12600e9d826b3202ca49677c5a2f594578b65da20314c2751335ecbfba60",
+  "static_reference_is_model_conditioned_not_GT": true,
+  "dynamic_geometry_truth_validated": false,
+  "training_admitted": false,
+  "PIDG_optimizer_updates": 0,
+  "test_or_val_RGB_used": false,
+  "null_metric_means_unavailable_or_nonfinite_not_a_pass": true
+}
