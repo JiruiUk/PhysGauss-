@@ -1,0 +1,225 @@
+{
+  "baseline": "C1_repaired50k; historical export folder C1_original_50k is this repaired model, not official PIDG",
+  "checkpoint_sha256": "b5d4cf5c9fb8fba4fcc26124555d48aa7d3a963a8be1d28488954752db486480",
+  "optimizer_updates": 0,
+  "fixed_pose_frame_ids": [
+    86,
+    188
+  ],
+  "time_policy": "(frame-1)/199 for both branches; same200 frame order",
+  "display_policy": "All200 source frames retained once; C1 display25fps retimed to20fps without interpolation",
+  "native_render_resolution": [
+    1600,
+    900
+  ],
+  "baseline_display_crop": [
+    0,
+    30,
+    800,
+    480
+  ],
+  "comparison_scope": "C1 legacy camera, staged metadata CV camera; different capacity/training budget. Visual context only, not matched causal ablation or novel-view GT.",
+  "S1_video_omitted_reason": "S1 trains static support only; complete dynamic scene comparison starts at S2.",
+  "sources": [
+    {
+      "path": "output/fixed_camera_temporal/C1_original_50k/fixed_0086_RGB.mp4",
+      "sha256": "e2bef5993cfd4c05756905250235c1cc65489820375725edbb78c6eac9249d1d"
+    },
+    {
+      "path": "output/staged_reconstruction/S2_geometry_recovery/fixed86.mp4",
+      "sha256": "8da79849d13817f47310b3baff32b3383bd3001f6b748d2035305e70b7519053"
+    },
+    {
+      "path": "output/staged_reconstruction/S3/fixed86.mp4",
+      "sha256": "cdb901c3e74c116036010f1a057abcf619b758bef7fcf841d3e65a78a38c8d4c"
+    },
+    {
+      "path": "output/staged_reconstruction/S4/fixed86.mp4",
+      "sha256": "daf846f8ccc460a8490e092043aa53a4cec0836aa92308e396ba1c8cd1b92e5a"
+    },
+    {
+      "path": "output/staged_reconstruction/S5/fixed86.mp4",
+      "sha256": "e1a7c0c940e412864bc9b65bfe59f7652ae47c0fe52986c8ec43dc08a37adc74"
+    },
+    {
+      "path": "output/staged_reconstruction/S6/fixed86.mp4",
+      "sha256": "710cbf81fd92ec93d563de92ca522566dec87d7c63868249006c0975546fdf56"
+    },
+    {
+      "path": "output/fixed_camera_temporal/C1_original_50k/fixed_0188_RGB.mp4",
+      "sha256": "7c95b8a8f3bc12cd20f3564b74a3c6b98c1f656551b1dda9fd1d4c2a5a72d0b6"
+    },
+    {
+      "path": "output/staged_reconstruction/S2_geometry_recovery/fixed188.mp4",
+      "sha256": "2abe265481233fca07e50549dffe141e154522bc4ae0c6db49638c45547d4899"
+    },
+    {
+      "path": "output/staged_reconstruction/S3/fixed188.mp4",
+      "sha256": "0fee109943cfa3e0972790b175d5ed07d5789653f33d01c61b3ee3bf31385928"
+    },
+    {
+      "path": "output/staged_reconstruction/S4/fixed188.mp4",
+      "sha256": "fa4d3468ee298aa9a7091f465f9c35ab66b3f6b1e9083720f575e25b0dfb1946"
+    },
+    {
+      "path": "output/staged_reconstruction/S5/fixed188.mp4",
+      "sha256": "4c43004f39f15610ee7a03ae8f32aefee533553f87552a569ab8623c2af19f08"
+    },
+    {
+      "path": "output/staged_reconstruction/S6/fixed188.mp4",
+      "sha256": "161a94ece922ccd4c10e513f4464cd933aa607327b84770895ff4322727b167f"
+    },
+    {
+      "path": "output/fixed_camera_temporal/C1_original_50k/moving_control_RGB.mp4",
+      "sha256": "29bbf883fd6058ab734d82e33668bcf12ea82962e399f2d193c8d45b0ba7887f"
+    },
+    {
+      "path": "output/staged_reconstruction/S2_geometry_recovery/original.mp4",
+      "sha256": "43560012821bd3ed514e698804accfb2a7fdaccdb9e3afdf55a27232ad035a88"
+    },
+    {
+      "path": "output/staged_reconstruction/S3/original.mp4",
+      "sha256": "83e2e7eae3cd186c596f404c546e4e1478299c0556bafbda948a99f9a0687387"
+    },
+    {
+      "path": "output/staged_reconstruction/S4/original.mp4",
+      "sha256": "d0accee107962337afa9740b5def1c383569b52f1612cf6cf370be6f18a2c0f8"
+    },
+    {
+      "path": "output/staged_reconstruction/S5/original.mp4",
+      "sha256": "b8fe1eb869e955662e742e93d4cb5d493060d15f91a4b482aa305ae7d6a8d365"
+    },
+    {
+      "path": "output/staged_reconstruction/S6/original.mp4",
+      "sha256": "730202c834b2073ff1622a99de168add9753ee16b549cafc626c523216bd0204"
+    }
+  ],
+  "protected_checkpoints": {
+    "runs/pidg_color_repair/C1_repaired/rubber_duck/checkpoints/resume.pt": "b5d4cf5c9fb8fba4fcc26124555d48aa7d3a963a8be1d28488954752db486480",
+    "runs/pidg_staged_reconstruction/S1_static/checkpoint.pt": "2dd8d5e0ea35d55e648aa236ea779eebe2fe3d415d34ad931e732f0140b89031",
+    "runs/pidg_staged_reconstruction/S2_geometry_recovery/S2_objects/checkpoint.pt": "8d22348fb5033c1441f598b189000b36a8f965fa8acd7b594871d52849381730",
+    "runs/pidg_staged_reconstruction/S3/formal/checkpoint.pt": "3e91a89f8b8354edc2d1be6b4317e4703c58e2519241a573b4ade0655bae4db6",
+    "runs/pidg_staged_reconstruction/S4/formal/checkpoint.pt": "d903fc96f089994d53f3239de1fce23ffbaffac4e9db6e8f6d1cd13e734a3c1b",
+    "runs/pidg_staged_reconstruction/S5/formal/checkpoint.pt": "0d35b8bce8642264e6963a5becb37408f7b9cc9acce832099e72c53fb0f8ffe3",
+    "runs/pidg_staged_reconstruction/S6/formal/checkpoint.pt": "e302ad64ef08b4e51109567af5bf214acf312fc48a2ed9ffd467cfb8568fdea1"
+  },
+  "videos": [
+    {
+      "view": "fixed86",
+      "kind": "baseline",
+      "path": "output/staged_reconstruction/baseline_comparison/fixed86_C1_repaired.mp4",
+      "size": [
+        800,
+        450
+      ],
+      "frames": 200,
+      "display_fps": 20.0,
+      "sha256": "caaaf728a8d6d308a171e457c32d9d4a15179b72dbbbb2cb1d64e89ebcb362ed",
+      "codec": "H.264 Main/yuv420p/faststart"
+    },
+    {
+      "view": "fixed86",
+      "kind": "pair",
+      "path": "output/staged_reconstruction/baseline_comparison/fixed86_C1_vs_S6.mp4",
+      "size": [
+        1600,
+        490
+      ],
+      "frames": 200,
+      "display_fps": 20.0,
+      "sha256": "12309390071531cb1e94fd9b082146425fcbdbf31a9698c2905fb119c43679c4",
+      "codec": "H.264 Main/yuv420p/faststart"
+    },
+    {
+      "view": "fixed86",
+      "kind": "grid",
+      "path": "output/staged_reconstruction/baseline_comparison/fixed86_all_stages.mp4",
+      "size": [
+        1200,
+        498
+      ],
+      "frames": 200,
+      "display_fps": 20.0,
+      "sha256": "6ebf5cd42e8b6234ffbc3113c7edd05c65e935441158498502fef88628b508de",
+      "codec": "H.264 Main/yuv420p/faststart"
+    },
+    {
+      "view": "fixed188",
+      "kind": "baseline",
+      "path": "output/staged_reconstruction/baseline_comparison/fixed188_C1_repaired.mp4",
+      "size": [
+        800,
+        450
+      ],
+      "frames": 200,
+      "display_fps": 20.0,
+      "sha256": "f9c1671000939dadc88b4435d7ea3668d717082b7c1b2c4bc8208f136bd8bdcd",
+      "codec": "H.264 Main/yuv420p/faststart"
+    },
+    {
+      "view": "fixed188",
+      "kind": "pair",
+      "path": "output/staged_reconstruction/baseline_comparison/fixed188_C1_vs_S6.mp4",
+      "size": [
+        1600,
+        490
+      ],
+      "frames": 200,
+      "display_fps": 20.0,
+      "sha256": "58f1aa8d812c583429e16f8e7d4948d140b8677f3c982b261c42f83b9c425130",
+      "codec": "H.264 Main/yuv420p/faststart"
+    },
+    {
+      "view": "fixed188",
+      "kind": "grid",
+      "path": "output/staged_reconstruction/baseline_comparison/fixed188_all_stages.mp4",
+      "size": [
+        1200,
+        498
+      ],
+      "frames": 200,
+      "display_fps": 20.0,
+      "sha256": "31dfd6b213f024823d2c03d209041cdfc643905bf99973b0e299cc2dcdc6988f",
+      "codec": "H.264 Main/yuv420p/faststart"
+    },
+    {
+      "view": "original",
+      "kind": "baseline",
+      "path": "output/staged_reconstruction/baseline_comparison/original_C1_repaired.mp4",
+      "size": [
+        800,
+        450
+      ],
+      "frames": 200,
+      "display_fps": 20.0,
+      "sha256": "21c56761b3e941a7423b0817acfa08dfe1294b7da125c312496c901c92286410",
+      "codec": "H.264 Main/yuv420p/faststart"
+    },
+    {
+      "view": "original",
+      "kind": "pair",
+      "path": "output/staged_reconstruction/baseline_comparison/original_C1_vs_S6.mp4",
+      "size": [
+        1600,
+        490
+      ],
+      "frames": 200,
+      "display_fps": 20.0,
+      "sha256": "6252a132d62507bdfcc0f0094aa897501508175b12e6775202acbbbb2722f27b",
+      "codec": "H.264 Main/yuv420p/faststart"
+    },
+    {
+      "view": "original",
+      "kind": "grid",
+      "path": "output/staged_reconstruction/baseline_comparison/original_all_stages.mp4",
+      "size": [
+        1200,
+        498
+      ],
+      "frames": 200,
+      "display_fps": 20.0,
+      "sha256": "72b0740f876e9af29538c672f5375c2afa4f06c636a1b2312852ceb6e63b446e",
+      "codec": "H.264 Main/yuv420p/faststart"
+    }
+  ]
+}

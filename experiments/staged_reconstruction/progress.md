@@ -208,3 +208,19 @@ hashes and metrics remain intact. The gallery uses the browser copies and direct
 video links. See playback_fix.md and browser_video_conversion.json. No training
 or automation was resumed. Local-file browser UI observation was blocked by
 the browser tool protocol policy; compatibility checks do not claim UI playback.
+
+C1 reference follow-up: the user explicitly identified C1_repaired50k, whose
+historical export folder is C1_original_50k. Checkpoint/source-video hashes
+verify that identity. Added nine display-only H.264 comparisons covering fixed86,
+fixed188 and the original camera trajectory: C1 alone, C1 versus S6 and the six
+models C1/S2/S3/S4/S5/S6. All200 source frames are retained and displayed at20fps;
+the old C1 label banner is cropped without changing the RGB region. The main
+gallery now links this comparison. Actually reviewed the three early/middle/late
+pair sheets and the fixed86 middle-frame grid. C1 is sharper on the sampled
+original-camera frames but still shows severe novel-view sheets; S6 keeps the
+sampled static support more complete while dynamic fragments remain. Legacy
+versus metadata CV cameras and different capacity/budgets prevent a matched
+causal comparison. C1 leads its C1/C2/C3 image-metric cohort, not a certified
+ranking of all historical geometry. No training or automation resumed; original
+checkpoint/video hashes and historical results remain preserved. See
+C1_baseline_comparison.md and its generation/review receipts.

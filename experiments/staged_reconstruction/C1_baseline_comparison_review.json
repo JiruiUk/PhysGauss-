@@ -1,0 +1,121 @@
+{
+  "verified_utc": "2026-11-03T11:47:29.231807+00:00",
+  "optimizer_updates": 0,
+  "full_decode_receipt": "experiments/staged_reconstruction/C1_baseline_comparison.json",
+  "videos": [
+    {
+      "path": "output/staged_reconstruction/baseline_comparison/fixed86_C1_repaired.mp4",
+      "sha256": "caaaf728a8d6d308a171e457c32d9d4a15179b72dbbbb2cb1d64e89ebcb362ed",
+      "ffmpeg_stream": "Stream #0:0(und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p, 800x450, 468 kb/s, 20 fps, 20 tbr, 10240 tbn, 40 tbc (default)",
+      "moov_before_mdat": true,
+      "full_decode_generation_receipt_frames": 200
+    },
+    {
+      "path": "output/staged_reconstruction/baseline_comparison/fixed86_C1_vs_S6.mp4",
+      "sha256": "12309390071531cb1e94fd9b082146425fcbdbf31a9698c2905fb119c43679c4",
+      "ffmpeg_stream": "Stream #0:0(und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p, 1600x490, 808 kb/s, 20 fps, 20 tbr, 10240 tbn, 40 tbc (default)",
+      "moov_before_mdat": true,
+      "full_decode_generation_receipt_frames": 200
+    },
+    {
+      "path": "output/staged_reconstruction/baseline_comparison/fixed86_all_stages.mp4",
+      "sha256": "6ebf5cd42e8b6234ffbc3113c7edd05c65e935441158498502fef88628b508de",
+      "ffmpeg_stream": "Stream #0:0(und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p, 1200x498, 661 kb/s, 20 fps, 20 tbr, 10240 tbn, 40 tbc (default)",
+      "moov_before_mdat": true,
+      "full_decode_generation_receipt_frames": 200
+    },
+    {
+      "path": "output/staged_reconstruction/baseline_comparison/fixed188_C1_repaired.mp4",
+      "sha256": "f9c1671000939dadc88b4435d7ea3668d717082b7c1b2c4bc8208f136bd8bdcd",
+      "ffmpeg_stream": "Stream #0:0(und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p, 800x450, 460 kb/s, 20 fps, 20 tbr, 10240 tbn, 40 tbc (default)",
+      "moov_before_mdat": true,
+      "full_decode_generation_receipt_frames": 200
+    },
+    {
+      "path": "output/staged_reconstruction/baseline_comparison/fixed188_C1_vs_S6.mp4",
+      "sha256": "58f1aa8d812c583429e16f8e7d4948d140b8677f3c982b261c42f83b9c425130",
+      "ffmpeg_stream": "Stream #0:0(und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p, 1600x490, 753 kb/s, 20 fps, 20 tbr, 10240 tbn, 40 tbc (default)",
+      "moov_before_mdat": true,
+      "full_decode_generation_receipt_frames": 200
+    },
+    {
+      "path": "output/staged_reconstruction/baseline_comparison/fixed188_all_stages.mp4",
+      "sha256": "31dfd6b213f024823d2c03d209041cdfc643905bf99973b0e299cc2dcdc6988f",
+      "ffmpeg_stream": "Stream #0:0(und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p, 1200x498, 592 kb/s, 20 fps, 20 tbr, 10240 tbn, 40 tbc (default)",
+      "moov_before_mdat": true,
+      "full_decode_generation_receipt_frames": 200
+    },
+    {
+      "path": "output/staged_reconstruction/baseline_comparison/original_C1_repaired.mp4",
+      "sha256": "21c56761b3e941a7423b0817acfa08dfe1294b7da125c312496c901c92286410",
+      "ffmpeg_stream": "Stream #0:0(und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p, 800x450, 266 kb/s, 20 fps, 20 tbr, 10240 tbn, 40 tbc (default)",
+      "moov_before_mdat": true,
+      "full_decode_generation_receipt_frames": 200
+    },
+    {
+      "path": "output/staged_reconstruction/baseline_comparison/original_C1_vs_S6.mp4",
+      "sha256": "6252a132d62507bdfcc0f0094aa897501508175b12e6775202acbbbb2722f27b",
+      "ffmpeg_stream": "Stream #0:0(und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p, 1600x490, 589 kb/s, 20 fps, 20 tbr, 10240 tbn, 40 tbc (default)",
+      "moov_before_mdat": true,
+      "full_decode_generation_receipt_frames": 200
+    },
+    {
+      "path": "output/staged_reconstruction/baseline_comparison/original_all_stages.mp4",
+      "sha256": "72b0740f876e9af29538c672f5375c2afa4f06c636a1b2312852ceb6e63b446e",
+      "ffmpeg_stream": "Stream #0:0(und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p, 1200x498, 610 kb/s, 20 fps, 20 tbr, 10240 tbn, 40 tbc (default)",
+      "moov_before_mdat": true,
+      "full_decode_generation_receipt_frames": 200
+    }
+  ],
+  "pages": [
+    {
+      "path": "output/staged_reconstruction/index.html",
+      "local_links_verified": 41,
+      "sha256": "06d32409e946231ccf3d1ffadc2e0c4d0c825e14f69192a9e4b51c86e386b7f7"
+    },
+    {
+      "path": "output/staged_reconstruction/baseline_comparison/index.html",
+      "local_links_verified": 19,
+      "sha256": "5d40dfb4350fa812587caf92e61eb31165fe78f4adb1c8ff2570ffdf4540c599"
+    }
+  ],
+  "frozen_sources_inputs_protocols_verified": 247,
+  "protected_checkpoints_verified": 7,
+  "original_source_videos_verified": 18,
+  "actually_viewed_images": [
+    {
+      "path": "output/staged_reconstruction/baseline_comparison/fixed86_pair_review.png",
+      "sha256": "d661f404b2ab21bfccdb8d769149f797003bbb7bedd3121c5c8ef3b086bac015"
+    },
+    {
+      "path": "output/staged_reconstruction/baseline_comparison/fixed188_pair_review.png",
+      "sha256": "dcd32917e94a97aa1c42e31d1748470a16d8045369cc821515c606352833e69d"
+    },
+    {
+      "path": "output/staged_reconstruction/baseline_comparison/original_pair_review.png",
+      "sha256": "34a45af067b7083ce7cddceb0c0ac148dca8aaa33fc03773867eb8ce6b29441d"
+    },
+    {
+      "path": "output/staged_reconstruction/baseline_comparison/fixed86_grid_t0086.png",
+      "sha256": "d4bf628bf9c352d70b359f133985666d7bbc0b595ada81ea23675976b4f8e1a5"
+    }
+  ],
+  "visual_findings": [
+    "C1 is sharper than S6 in the reviewed original-camera frames.",
+    "C1 has severe blue sheets and stretching away from the corresponding observed camera/time.",
+    "S6 static support is more complete in reviewed fixed-view samples; dynamic fragments and late streaks remain."
+  ],
+  "scope": "Sampled image review only; not all-frame manual playback, matched camera/budget ablation or independent 3D GT.",
+  "browser_UI_playback_verified": false,
+  "python_syntax_verified": true,
+  "verification_attempts": [
+    {
+      "attempt": 1,
+      "outcome": "Verifier expected flat source receipt; S2_source_freeze wraps hashes in sha256. Failed before media/page checks; no artifacts changed."
+    },
+    {
+      "attempt": 2,
+      "outcome": "Both receipt schemas handled; all checks passed."
+    }
+  ]
+}

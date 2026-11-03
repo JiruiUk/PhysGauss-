@@ -1,0 +1,18 @@
+<!doctype html><meta charset="utf-8"><title>C1_repaired 与 S2–S6 固定视角对比</title>
+<style>body{font:17px system-ui;max-width:1600px;margin:30px auto;padding:20px;background:#12151c;color:#eee}video,img{max-width:100%}a{color:#9cf}section{padding:20px 0;border-top:1px solid #555}summary{cursor:pointer;padding:12px 0}</style>
+<h1>C1_repaired 与 S2–S6 对比</h1><p>并排视频：左侧 C1_repaired（50k），右侧 S6。总览排列：C1、S2、S3 / S4、S5、S6。</p>
+<p>固定86/188采用相同帧号的相机，各模型保留训练时的相机约定：C1 为 legacy，本轮为 metadata CV。相机、模型容量和预算不同，因此这是诊断展示，不能作为严格消融。固定视角跨时间没有同步图像真值。</p>
+<p>每段200帧、20展示fps（10秒），按帧号同步；展示速度不代表真实采集秒数。S1仅重建静态支撑，因此动态场景总览从S2开始。</p>
+<p><a href="../index.html">返回本轮完整合集</a></p>
+<section><h2>固定86视角：C1 对 S6</h2><video controls playsinline preload="metadata" poster="fixed86_pair_t0086.png"><source src="fixed86_C1_vs_S6.mp4" type="video/mp4"></video>
+<p><a href="fixed86_C1_vs_S6.mp4">直接打开并排视频</a> · <a href="fixed86_pair_review.png">早/中/晚对照图</a></p>
+<details><summary>C1、S2–S6 六模型总览</summary><video controls playsinline preload="none"><source src="fixed86_all_stages.mp4" type="video/mp4"></video></details>
+<details><summary>C1_repaired 单独视频</summary><video controls playsinline preload="none"><source src="fixed86_C1_repaired.mp4" type="video/mp4"></video></details></section>
+<section><h2>固定188视角：C1 对 S6</h2><video controls playsinline preload="metadata" poster="fixed188_pair_t0086.png"><source src="fixed188_C1_vs_S6.mp4" type="video/mp4"></video>
+<p><a href="fixed188_C1_vs_S6.mp4">直接打开并排视频</a> · <a href="fixed188_pair_review.png">早/中/晚对照图</a></p>
+<details><summary>C1、S2–S6 六模型总览</summary><video controls playsinline preload="none"><source src="fixed188_all_stages.mp4" type="video/mp4"></video></details>
+<details><summary>C1_repaired 单独视频</summary><video controls playsinline preload="none"><source src="fixed188_C1_repaired.mp4" type="video/mp4"></video></details></section>
+<section><h2>原相机轨迹控制：C1 对 S6</h2><video controls playsinline preload="metadata" poster="original_pair_t0086.png"><source src="original_C1_vs_S6.mp4" type="video/mp4"></video>
+<p><a href="original_C1_vs_S6.mp4">直接打开并排视频</a> · <a href="original_pair_review.png">早/中/晚对照图</a></p>
+<details><summary>C1、S2–S6 六模型总览</summary><video controls playsinline preload="none"><source src="original_all_stages.mp4" type="video/mp4"></video></details>
+<details><summary>C1_repaired 单独视频</summary><video controls playsinline preload="none"><source src="original_C1_repaired.mp4" type="video/mp4"></video></details></section>
