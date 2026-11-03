@@ -1,0 +1,23 @@
+W1103 20:46:32.588000 282528 envs\pidg-cu128\Lib\site-packages\torch\utils\cpp_extension.py:466] Error checking compiler version for cl: 'cp1' codec can't decode bytes in position 0--1: No mapping for the Unicode character exists in the target code page.
+ninja: no work to do.
+F:\A_Edinburgh\PhysGauss\variants\color_repair\code\hashencoder\hashgrid.py:16: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.half)
+F:\A_Edinburgh\PhysGauss\variants\color_repair\code\hashencoder\hashgrid.py:56: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+ORDINAL_TRAIN 1 loss 0.02640930563211441 ordinal 1.1230288743972778 elapsed 0.6
+F:\A_Edinburgh\PhysGauss\variants\staged_reconstruction\state_recovery\physics.py:45: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\generated\python_variable_methods.cpp:836.)
+  'spatial_support_radius_mean':float((x[ring]-x[local,None]).norm(dim=-1).max(-1).values.mean()),
+ORDINAL_TRAIN 40 loss 0.056688839096994736 ordinal 0.951191782951355 elapsed 6.7
+ORDINAL_TRAIN 80 loss 0.05176496206241105 ordinal 0.8118009567260742 elapsed 12.7
+ORDINAL_TRAIN 100 loss 0.07693851698816359 ordinal 0.8178632855415344 elapsed 14.8
+ORDINAL_TRAIN 200 loss 0.07563424480789244 ordinal 1.079630732536316 elapsed 24.4
+ORDINAL_TRAIN 400 loss 0.06877847298806498 ordinal 0.9392303824424744 elapsed 36.7
+ORDINAL_TRAIN 600 loss 0.05131789991293648 ordinal 0.662805438041687 elapsed 49.1
+ORDINAL_TRAIN 800 loss 0.0492470647357732 ordinal 0.6115514039993286 elapsed 61.6
+ORDINAL_TRAIN 1000 loss 0.0571624594626614 ordinal 0.5317603349685669 elapsed 75.2
+ORDINAL_TRAIN 1200 loss 0.060014504544441044 ordinal 0.396081805229187 elapsed 89.3
+ORDINAL_TRAIN 1400 loss 0.05653769371348273 ordinal 0.5673028230667114 elapsed 102.4
+ORDINAL_TRAIN 1600 loss 0.0580948905866958 ordinal 0.322643905878067 elapsed 114.8
+ORDINAL_TRAIN 1800 loss 0.03637127985450439 ordinal 0.47407492995262146 elapsed 127.8
+ORDINAL_TRAIN 2000 loss 0.05069769630644156 ordinal 0.30353984236717224 elapsed 140.7

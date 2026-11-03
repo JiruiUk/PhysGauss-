@@ -1,0 +1,85 @@
+{
+  "checkpoint_sha256": "8c767b7835eee936e49989369d7bc0277d7567d3aedaa7385c06654284b68ad0",
+  "rows": [
+    {
+      "frame": 2,
+      "pairs": 34888,
+      "wrong_order_fraction": 0.39288580417633057,
+      "wrong_pairs_near_zero_tanh_gradient_fraction": 0.0,
+      "loss": 0.779109001159668,
+      "camera_depth_difference_quantiles": [
+        0.005572461988776922,
+        0.04189491271972656,
+        0.42825859785079956,
+        0.492412805557251
+      ]
+    },
+    {
+      "frame": 43,
+      "pairs": 29690,
+      "wrong_order_fraction": 0.5281239748001099,
+      "wrong_pairs_near_zero_tanh_gradient_fraction": 0.0,
+      "loss": 1.0499522686004639,
+      "camera_depth_difference_quantiles": [
+        0.014163924381136894,
+        0.08882641792297363,
+        0.3415178656578064,
+        0.4866885542869568
+      ]
+    },
+    {
+      "frame": 86,
+      "pairs": 32438,
+      "wrong_order_fraction": 0.2963499426841736,
+      "wrong_pairs_near_zero_tanh_gradient_fraction": 0.0,
+      "loss": 0.7329829931259155,
+      "camera_depth_difference_quantiles": [
+        0.006597709842026234,
+        0.04111194610595703,
+        0.12127579748630524,
+        0.18711082637310028
+      ]
+    },
+    {
+      "frame": 146,
+      "pairs": 22854,
+      "wrong_order_fraction": 0.4906361997127533,
+      "wrong_pairs_near_zero_tanh_gradient_fraction": 0.12066351622343063,
+      "loss": 0.9361220002174377,
+      "camera_depth_difference_quantiles": [
+        0.02165069617331028,
+        0.21089601516723633,
+        0.9555361866950989,
+        1.407697319984436
+      ]
+    },
+    {
+      "frame": 188,
+      "pairs": 17526,
+      "wrong_order_fraction": 0.5426223874092102,
+      "wrong_pairs_near_zero_tanh_gradient_fraction": 0.0,
+      "loss": 1.0303051471710205,
+      "camera_depth_difference_quantiles": [
+        0.01265859603881836,
+        0.09574699401855469,
+        0.4390406608581543,
+        0.6418168544769287
+      ]
+    },
+    {
+      "frame": 200,
+      "pairs": 19480,
+      "wrong_order_fraction": 0.6116529703140259,
+      "wrong_pairs_near_zero_tanh_gradient_fraction": 0.0,
+      "loss": 1.1908317804336548,
+      "camera_depth_difference_quantiles": [
+        0.012529325671494007,
+        0.07976269721984863,
+        0.4119366705417633,
+        0.6066375970840454
+      ]
+    }
+  ],
+  "test_RGB_read": false,
+  "diagnostic_not_GT": true
+}

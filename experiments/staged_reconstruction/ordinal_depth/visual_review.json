@@ -1,0 +1,30 @@
+{
+  "passed": false,
+  "reviewed": [
+    {
+      "path": "output\\staged_reconstruction\\ordinal_depth\\screen\\fixed86_comparison.png",
+      "sha256": "8b926c3cb6923672561c6be9e920f29fc62041d5dd00301bb73f974fe3e0076a"
+    },
+    {
+      "path": "output\\staged_reconstruction\\ordinal_depth\\screen\\fixed188_comparison.png",
+      "sha256": "b3362cc3bfe528f1167fa31a152513b48041449708500e5c6b49826a551a4041"
+    },
+    {
+      "path": "output\\staged_reconstruction\\ordinal_depth\\screen\\I3_ordinal_depth\\fixed188\\t0062_native.png",
+      "sha256": "97330606cc7efa7f95aadb5bb9cd12ee08bec7322fa74b866215ed2bcdc34ae2"
+    }
+  ],
+  "reviewed_sheet_times": [
+    2,
+    27,
+    43,
+    62,
+    86,
+    108,
+    146,
+    172,
+    200
+  ],
+  "reason": "Persistent missing volumes, stretched sheets and detached support; see assessment.md",
+  "test_RGB_read": false
+}

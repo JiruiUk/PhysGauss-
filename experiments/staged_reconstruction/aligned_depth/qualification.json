@@ -1,0 +1,116 @@
+{
+  "rows": [
+    {
+      "frame": 2,
+      "a": 0.0022977940098270907,
+      "b": 0.12803616501561035,
+      "static_support": 20095,
+      "within_training_frame_held_pixel_depth_error_q50_q90": [
+        0.09252595901489258,
+        0.9240305423736572
+      ],
+      "dynamic_target_depth_quantiles": [
+        5.960015487670899,
+        5.98325777053833,
+        6.1710309982299805,
+        6.396197319030762,
+        6.494197368621826
+      ],
+      "dynamic_fraction_outside_static_pseudo_range": 0.0
+    },
+    {
+      "frame": 43,
+      "a": 0.003938585543512195,
+      "b": 0.09352360839246349,
+      "static_support": 23318,
+      "within_training_frame_held_pixel_depth_error_q50_q90": [
+        0.2191925048828125,
+        0.567409896850586
+      ],
+      "dynamic_target_depth_quantiles": [
+        5.104960327148437,
+        5.1553572654724125,
+        6.137852668762207,
+        6.291685581207275,
+        6.373130283355713
+      ],
+      "dynamic_fraction_outside_static_pseudo_range": 0.0
+    },
+    {
+      "frame": 86,
+      "a": 0.0009571697572298931,
+      "b": 0.15223168541881574,
+      "static_support": 21329,
+      "within_training_frame_held_pixel_depth_error_q50_q90": [
+        0.16052722930908203,
+        0.47031383514404307
+      ],
+      "dynamic_target_depth_quantiles": [
+        5.726638450622558,
+        5.745221138000488,
+        6.003640651702881,
+        6.093434047698975,
+        6.1564829063415525
+      ],
+      "dynamic_fraction_outside_static_pseudo_range": 0.0
+    },
+    {
+      "frame": 146,
+      "a": 0.002695260092667366,
+      "b": 0.1305574056905368,
+      "static_support": 22315,
+      "within_training_frame_held_pixel_depth_error_q50_q90": [
+        0.18640804290771484,
+        0.4627242088317871
+      ],
+      "dynamic_target_depth_quantiles": [
+        5.54624116897583,
+        5.579433727264404,
+        6.332951068878174,
+        6.464999771118164,
+        6.562300243377686
+      ],
+      "dynamic_fraction_outside_static_pseudo_range": 0.0
+    },
+    {
+      "frame": 188,
+      "a": 0.002503113039189868,
+      "b": 0.1330291902528811,
+      "static_support": 28543,
+      "within_training_frame_held_pixel_depth_error_q50_q90": [
+        0.13452434539794922,
+        0.4358003139495848
+      ],
+      "dynamic_target_depth_quantiles": [
+        6.065245223045349,
+        6.106343555450439,
+        6.234371900558472,
+        6.981294870376587,
+        7.046901912689209
+      ],
+      "dynamic_fraction_outside_static_pseudo_range": 0.21077712609970675
+    },
+    {
+      "frame": 200,
+      "a": 0.002280674851980681,
+      "b": 0.13615176405563195,
+      "static_support": 28592,
+      "within_training_frame_held_pixel_depth_error_q50_q90": [
+        0.13007593154907227,
+        0.443479061126709
+      ],
+      "dynamic_target_depth_quantiles": [
+        6.049664373397827,
+        6.076488351821899,
+        6.227784872055054,
+        6.888743829727173,
+        6.96142897605896
+      ],
+      "dynamic_fraction_outside_static_pseudo_range": 0.19932935916542474
+    }
+  ],
+  "training_only": true,
+  "depth_is_GT": false,
+  "optimizer_updates": 0,
+  "calibration_is_model_conditioned": true
+}
