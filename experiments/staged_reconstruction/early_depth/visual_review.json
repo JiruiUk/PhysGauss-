@@ -1,0 +1,13 @@
+{
+  "actual_visual_inspection_completed": true,
+  "stage": "warmup16000_rejected",
+  "images_reviewed": {
+    "fixed86_t0086_native.png": "3f88e1045826b0e6badd86ed4501b4c9a913cc1d85c3c87808f58537f2a27ef1",
+    "fixed188_t0043_native.png": "c57a4772205cfb2546104c413751e9cfd8493c6fd580995f24c2aebd3ac0a462",
+    "fixed188_t0146_native.png": "c7b8c86aafcd05069fe22c3e471289c29792ed1f6b22a8547fba6528ccd5dd9f"
+  },
+  "findings": "Fixed86/t86 retains yellow silhouettes, but fixed188/t43 andt146 show severe elongated ribbons, gaps and detached yellow fragments. Completeness clearly fails.",
+  "completeness_passed": false,
+  "full1200_scan_admitted": false,
+  "test_RGB_read": false
+}
