@@ -430,3 +430,24 @@ Gaussian/旧真实18k→24k，不恢复暂停任务，不重跑D6或旧负分支
 见[D7评估](staged_reconstruction/S1_plane_transport/v1/assessment.md)、
 [后续方向](staged_reconstruction/S1_plane_transport/next_plan.md)和
 [J0固定协议](staged_reconstruction/S1_joint_revocation_audit/protocol.json)。
+
+
+### S1-J0：静态撤销梯度资格通过，尚无更新/清理结果（2026-11-03）
+
+24ccb92d协议，b7e304ba实现与预检，c9ebd762六固定训练帧测量/独立复核完成。
+全图RGB原生单次深度排序使静态opacity/SH和动态canonical/grid/deform六组
+都有有限非零梯度；两独立进程800/1600 RGB/alpha与参数精确一致，原梯度
+atol1e-6/rtol1e-5通过，flags/叶梯度/值/RNG不变。9+2测试、391文件冻结、
+54图哈希解码与原checkpoint核验通过。两次失败及修复receipt单独保留；冻结
+worker、门槛、权重不改。六图opacity正/负梯度不能当静动身份或删点证据。
+
+实际看86/188早中晚分解及两张1600原图，仍见动态碎裂/拉长、静态边缘模糊。
+这是旧S3-U及其自身4126点条件静态库，历史曾用颜色掩膜；本次全RGB诊断
+没有重训未知静态，未拼接新S1-C。optimizer更新0，未验证完整Adam训练恢复，
+未证明清理/几何正确；final_review/status已完成，无新训练PLY/视频。
+
+下一步另立一个匹配RGB联合Gaussian实验：统一canonical动态池，比较静态
+全冻结与开放opacity/SH，保持静态几何不动。先固定两条件合成协议及输入
+来源，完成原生flags-off/梯度、独立完整Adam/RNG/相机恢复及独立静态GT/
+结构/外溢门槛，才考虑Rubber Duck。失败D7深度/法线不进监督，原门槛不放宽，
+不恢复暂停任务，不改并行完整性训练。见S1_joint_revocation_audit/v1/assessment.md。

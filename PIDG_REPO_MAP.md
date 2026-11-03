@@ -923,3 +923,17 @@ D7 has local depth gains but fails both gates, not integrated into Gaussian
 training. No PIDG trainer/renderer, frozen source, weight or physics changes.
 Reports: S1_plane_transport/v1. Next J0 is preregistered no-update full-RGB
 static-opacity/SH gradient audit; no joint-training implementation claimed.
+
+
+## No-update native static-revocation audit (S1-J0, 2026-11-03)
+
+`joint_revocation_audit/core.py` temporarily enables static opacity/SH autograd
+and restores flags/values/leaf gradients/RNG, including exceptions. worker uses
+the pinned historical S3-U scene and unchanged native renderer/full RGB loss;
+no optimizer or sampler updates. Independent receipt wrapper handles virtual
+Torch source paths without editing the frozen worker. preflight reloads in two
+processes; export_review checks six bindings/hashes/sign denominators/54 images.
+finalize records manual old-native-image review and clears pending state under
+both locks. 9 core+2 repair tests pass, gradient path qualified; geometry and
+cleanup unproven. This is not newly trained unknown-static reconstruction.
+All original PIDG/weights/paused stages unchanged. Reports: S1_joint_revocation_audit/v1.
