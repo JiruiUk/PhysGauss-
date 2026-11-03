@@ -1,0 +1,246 @@
+{
+  "scope": "Display copies only; no model, native image, metric or original video changes",
+  "ffmpeg": "F:\\A_Edinburgh\\PhysGauss\\envs\\pidg-cu128\\Lib\\site-packages\\imageio_ffmpeg\\binaries\\ffmpeg-win64-v4.2.2.exe",
+  "videos": [
+    {
+      "stage": "S2",
+      "view": "fixed86",
+      "file": "output/staged_reconstruction/S2_geometry_recovery/fixed86.browser.mp4",
+      "source_sha256": "8da79849d13817f47310b3baff32b3383bd3001f6b748d2035305e70b7519053",
+      "sha256": "7e834c07b9eb82e45b1787780e5ea25579b55068d831e338934b6a2f19114b43",
+      "codec_tag": "h264",
+      "fps": 20.0,
+      "size": [
+        800,
+        450
+      ],
+      "decoded_frames": 200,
+      "profile": "H.264 Main, level3.1, yuv420p",
+      "faststart": true
+    },
+    {
+      "stage": "S2",
+      "view": "fixed188",
+      "file": "output/staged_reconstruction/S2_geometry_recovery/fixed188.browser.mp4",
+      "source_sha256": "2abe265481233fca07e50549dffe141e154522bc4ae0c6db49638c45547d4899",
+      "sha256": "91f1b696c40ff925fd7d869b668b5a9b14b18f48ccab3e27203e9d27d2827302",
+      "codec_tag": "h264",
+      "fps": 20.0,
+      "size": [
+        800,
+        450
+      ],
+      "decoded_frames": 200,
+      "profile": "H.264 Main, level3.1, yuv420p",
+      "faststart": true
+    },
+    {
+      "stage": "S2",
+      "view": "original",
+      "file": "output/staged_reconstruction/S2_geometry_recovery/original.browser.mp4",
+      "source_sha256": "43560012821bd3ed514e698804accfb2a7fdaccdb9e3afdf55a27232ad035a88",
+      "sha256": "1df57c8a0264a05d364b9e1950438a7fa03d55e927038c35813802529e2ae35b",
+      "codec_tag": "h264",
+      "fps": 20.0,
+      "size": [
+        800,
+        450
+      ],
+      "decoded_frames": 200,
+      "profile": "H.264 Main, level3.1, yuv420p",
+      "faststart": true
+    },
+    {
+      "stage": "S3",
+      "view": "fixed86",
+      "file": "output/staged_reconstruction/S3/fixed86.browser.mp4",
+      "source_sha256": "cdb901c3e74c116036010f1a057abcf619b758bef7fcf841d3e65a78a38c8d4c",
+      "sha256": "ecbc8c3668ffa0d05c1a8765ad965363ce0ebb3ea69222c75108feb4370d3f23",
+      "codec_tag": "h264",
+      "fps": 20.0,
+      "size": [
+        800,
+        450
+      ],
+      "decoded_frames": 200,
+      "profile": "H.264 Main, level3.1, yuv420p",
+      "faststart": true
+    },
+    {
+      "stage": "S3",
+      "view": "fixed188",
+      "file": "output/staged_reconstruction/S3/fixed188.browser.mp4",
+      "source_sha256": "0fee109943cfa3e0972790b175d5ed07d5789653f33d01c61b3ee3bf31385928",
+      "sha256": "cec54b89dddbba601940d6c135cd51f7ab8d8b3dbc9dce72cdb9919997bf580b",
+      "codec_tag": "h264",
+      "fps": 20.0,
+      "size": [
+        800,
+        450
+      ],
+      "decoded_frames": 200,
+      "profile": "H.264 Main, level3.1, yuv420p",
+      "faststart": true
+    },
+    {
+      "stage": "S3",
+      "view": "original",
+      "file": "output/staged_reconstruction/S3/original.browser.mp4",
+      "source_sha256": "83e2e7eae3cd186c596f404c546e4e1478299c0556bafbda948a99f9a0687387",
+      "sha256": "8026881777add7b4de539a688cfa4ace699942d0635ee0b54f15743a0bae9d66",
+      "codec_tag": "h264",
+      "fps": 20.0,
+      "size": [
+        800,
+        450
+      ],
+      "decoded_frames": 200,
+      "profile": "H.264 Main, level3.1, yuv420p",
+      "faststart": true
+    },
+    {
+      "stage": "S4",
+      "view": "fixed86",
+      "file": "output/staged_reconstruction/S4/fixed86.browser.mp4",
+      "source_sha256": "daf846f8ccc460a8490e092043aa53a4cec0836aa92308e396ba1c8cd1b92e5a",
+      "sha256": "8150c2014ff1c2def809a5e5594ba71d95ba5f843bdf8bf828eae86cb0c22bd8",
+      "codec_tag": "h264",
+      "fps": 20.0,
+      "size": [
+        800,
+        450
+      ],
+      "decoded_frames": 200,
+      "profile": "H.264 Main, level3.1, yuv420p",
+      "faststart": true
+    },
+    {
+      "stage": "S4",
+      "view": "fixed188",
+      "file": "output/staged_reconstruction/S4/fixed188.browser.mp4",
+      "source_sha256": "fa4d3468ee298aa9a7091f465f9c35ab66b3f6b1e9083720f575e25b0dfb1946",
+      "sha256": "1f842514a12b1cccf4713d2b68e7973c70a8dc6073be2ae57360bb8cdb71d85e",
+      "codec_tag": "h264",
+      "fps": 20.0,
+      "size": [
+        800,
+        450
+      ],
+      "decoded_frames": 200,
+      "profile": "H.264 Main, level3.1, yuv420p",
+      "faststart": true
+    },
+    {
+      "stage": "S4",
+      "view": "original",
+      "file": "output/staged_reconstruction/S4/original.browser.mp4",
+      "source_sha256": "d0accee107962337afa9740b5def1c383569b52f1612cf6cf370be6f18a2c0f8",
+      "sha256": "3169d690226b6511dead00e6a9626cd1581d43187cebb92e13c6f1ab23496e76",
+      "codec_tag": "h264",
+      "fps": 20.0,
+      "size": [
+        800,
+        450
+      ],
+      "decoded_frames": 200,
+      "profile": "H.264 Main, level3.1, yuv420p",
+      "faststart": true
+    },
+    {
+      "stage": "S5",
+      "view": "fixed86",
+      "file": "output/staged_reconstruction/S5/fixed86.browser.mp4",
+      "source_sha256": "e1a7c0c940e412864bc9b65bfe59f7652ae47c0fe52986c8ec43dc08a37adc74",
+      "sha256": "3674b002d64bb50de87994c057e767ba84fd2115d68920b5eb62ad2a8ef1e19c",
+      "codec_tag": "h264",
+      "fps": 20.0,
+      "size": [
+        800,
+        450
+      ],
+      "decoded_frames": 200,
+      "profile": "H.264 Main, level3.1, yuv420p",
+      "faststart": true
+    },
+    {
+      "stage": "S5",
+      "view": "fixed188",
+      "file": "output/staged_reconstruction/S5/fixed188.browser.mp4",
+      "source_sha256": "4c43004f39f15610ee7a03ae8f32aefee533553f87552a569ab8623c2af19f08",
+      "sha256": "62f2aa954876de51e5a3cc2dd2cb50e23e7c548d96d1f440616906b172dc96a5",
+      "codec_tag": "h264",
+      "fps": 20.0,
+      "size": [
+        800,
+        450
+      ],
+      "decoded_frames": 200,
+      "profile": "H.264 Main, level3.1, yuv420p",
+      "faststart": true
+    },
+    {
+      "stage": "S5",
+      "view": "original",
+      "file": "output/staged_reconstruction/S5/original.browser.mp4",
+      "source_sha256": "b8fe1eb869e955662e742e93d4cb5d493060d15f91a4b482aa305ae7d6a8d365",
+      "sha256": "d022fe0cb6f5e3733c0bc601c7902de15a10de288822fef380be47f0fc8a6f6f",
+      "codec_tag": "h264",
+      "fps": 20.0,
+      "size": [
+        800,
+        450
+      ],
+      "decoded_frames": 200,
+      "profile": "H.264 Main, level3.1, yuv420p",
+      "faststart": true
+    },
+    {
+      "stage": "S6",
+      "view": "fixed86",
+      "file": "output/staged_reconstruction/S6/fixed86.browser.mp4",
+      "source_sha256": "710cbf81fd92ec93d563de92ca522566dec87d7c63868249006c0975546fdf56",
+      "sha256": "3026faa60c1185d3cc651e5179700f5ac55b8abdfe5121e8eaa42611d7b31b3b",
+      "codec_tag": "h264",
+      "fps": 20.0,
+      "size": [
+        800,
+        450
+      ],
+      "decoded_frames": 200,
+      "profile": "H.264 Main, level3.1, yuv420p",
+      "faststart": true
+    },
+    {
+      "stage": "S6",
+      "view": "fixed188",
+      "file": "output/staged_reconstruction/S6/fixed188.browser.mp4",
+      "source_sha256": "161a94ece922ccd4c10e513f4464cd933aa607327b84770895ff4322727b167f",
+      "sha256": "04ca301491f788ff516ef277c779294957931f04dc623490a9b509158d32193b",
+      "codec_tag": "h264",
+      "fps": 20.0,
+      "size": [
+        800,
+        450
+      ],
+      "decoded_frames": 200,
+      "profile": "H.264 Main, level3.1, yuv420p",
+      "faststart": true
+    },
+    {
+      "stage": "S6",
+      "view": "original",
+      "file": "output/staged_reconstruction/S6/original.browser.mp4",
+      "source_sha256": "730202c834b2073ff1622a99de168add9753ee16b549cafc626c523216bd0204",
+      "sha256": "76a2ebdd103150abe794f1a3673330a3a10b908bf71477c91b7d6d4bf22cbe51",
+      "codec_tag": "h264",
+      "fps": 20.0,
+      "size": [
+        800,
+        450
+      ],
+      "decoded_frames": 200,
+      "profile": "H.264 Main, level3.1, yuv420p",
+      "faststart": true
+    }
+  ]
+}

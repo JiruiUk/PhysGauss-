@@ -200,3 +200,11 @@ ID/contact limitations and the calibrated-RGB validation dependencies remain
 explicit in both plans. Results are committed separately from implementation
 and smoke milestones; pause pidg-s1-s6 after this final report commit, rather
 than starting an unplanned new run or continuing duplicate notifications.
+
+Playback follow-up: the gallery's original mp4v exports decoded successfully
+but were not HTML5-browser compatible. Fifteen separate H.264 Main/yuv420p/
+faststart display copies now decode200frames each; original exports/checkpoint
+hashes and metrics remain intact. The gallery uses the browser copies and direct
+video links. See playback_fix.md and browser_video_conversion.json. No training
+or automation was resumed. Local-file browser UI observation was blocked by
+the browser tool protocol policy; compatibility checks do not claim UI playback.

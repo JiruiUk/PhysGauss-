@@ -1,0 +1,47 @@
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'F:\A_Edinburgh\PhysGauss\output\staged_reconstruction\S4\original.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2mp41
+    encoder         : Lavf58.76.100
+  Duration: 00:00:10.00, start: 0.000000, bitrate: 411 kb/s
+    Stream #0:0(und): Video: mpeg4 (Simple Profile) (mp4v / 0x7634706D), yuv420p, 800x450 [SAR 1:1 DAR 16:9], 410 kb/s, 20 fps, 20 tbr, 10240 tbn, 20 tbc (default)
+    Metadata:
+      handler_name    : VideoHandler
+Stream mapping:
+  Stream #0:0 -> #0:0 (mpeg4 (native) -> h264 (libx264))
+[libx264 @ 000001f94d978140] using SAR=1/1
+[libx264 @ 000001f94d978140] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2 AVX512
+[libx264 @ 000001f94d978140] profile Main, level 3.1, 4:2:0, 8-bit
+[libx264 @ 000001f94d978140] 264 - core 159 - H.264/MPEG-4 AVC codec - Copyleft 2003-2019 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x1:0x111 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=0 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=14 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=20 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=18.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'F:\A_Edinburgh\PhysGauss\output\staged_reconstruction\S4\original.browser.partial.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2mp41
+    encoder         : Lavf58.29.100
+    Stream #0:0(und): Video: h264 (libx264) (avc1 / 0x31637661), yuv420p, 800x450 [SAR 1:1 DAR 16:9], q=-1--1, 20 fps, 10240 tbn, 20 tbc (default)
+    Metadata:
+      handler_name    : VideoHandler
+      encoder         : Lavc58.54.100 libx264
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: -1
+[mp4 @ 000001f94d95ec40] Starting second pass: moving the moov atom to the beginning of the file
+frame=  200 fps=0.0 q=-1.0 Lsize=     357kB time=00:00:09.85 bitrate= 297.1kbits/s speed=56.8x    
+video:354kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.827601%
+[libx264 @ 000001f94d978140] frame I:1     Avg QP: 3.95  size:  5960
+[libx264 @ 000001f94d978140] frame P:93    Avg QP:14.77  size:  2832
+[libx264 @ 000001f94d978140] frame B:106   Avg QP:19.28  size:   876
+[libx264 @ 000001f94d978140] consecutive B-frames: 20.5% 23.0% 10.5% 46.0%
+[libx264 @ 000001f94d978140] mb I  I16..4: 89.3%  0.0% 10.7%
+[libx264 @ 000001f94d978140] mb P  I16..4:  1.6%  0.0%  0.9%  P16..4:  7.6%  4.7%  2.1%  0.0%  0.0%    skip:83.0%
+[libx264 @ 000001f94d978140] mb B  I16..4:  0.2%  0.0%  0.0%  B16..8: 10.3%  2.1%  0.2%  direct: 0.6%  skip:86.6%  L0:48.1% L1:27.4% BI:24.6%
+[libx264 @ 000001f94d978140] coded y,uvDC,uvAC intra: 22.9% 43.4% 31.8% inter: 3.2% 7.2% 3.1%
+[libx264 @ 000001f94d978140] i16 v,h,dc,p: 78% 11%  9%  1%
+[libx264 @ 000001f94d978140] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 33% 24% 22%  3%  4%  3%  4%  3%  3%
+[libx264 @ 000001f94d978140] i8c dc,h,v,p: 61% 16% 19%  3%
+[libx264 @ 000001f94d978140] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 000001f94d978140] ref P L0: 76.4% 12.5%  8.3%  2.7%
+[libx264 @ 000001f94d978140] ref B L0: 93.2%  5.9%  0.9%
+[libx264 @ 000001f94d978140] ref B L1: 98.8%  1.2%
+[libx264 @ 000001f94d978140] kb/s:289.74

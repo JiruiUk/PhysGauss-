@@ -1,0 +1,15 @@
+{
+  "failure": "Independent validation expected avc1 from OpenCV CAP_PROP_FOURCC but this build reports the decoder identifier h264.",
+  "measured": {
+    "codec_tag": "h264",
+    "fps": 20.0,
+    "size": [
+      800,
+      450
+    ],
+    "decoded_frames": 200
+  },
+  "preserved_output": "output/staged_reconstruction/S2_geometry_recovery/fixed86.browser.validation_attempt1.mp4",
+  "correction": "Accept the H264 decoder identifier and independently require avc1/yuv420p/Main level3.1 in the ffmpeg stream log.",
+  "training_or_original_video_changed": false
+}
