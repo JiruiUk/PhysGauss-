@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "GT_read": false,
+  "results": {
+    "diffuse": {
+      "totals": {
+        "candidates": 423747,
+        "source_queries_admitted": 326275,
+        "valid_source_hypotheses": 321506,
+        "eligible": 142643,
+        "eligible_without_target_slope": 59245,
+        "accepted": 58279,
+        "accepted_without_target_slope": 25119
+      },
+      "all96_parent_source_plane_query_geometry_and_acceptance_replay_exact": true,
+      "full_raw_RGB_fixed_view_replay_exact": [
+        0,
+        24,
+        72
+      ]
+    },
+    "glossy": {
+      "totals": {
+        "candidates": 423100,
+        "source_queries_admitted": 325603,
+        "valid_source_hypotheses": 320887,
+        "eligible": 142515,
+        "eligible_without_target_slope": 59297,
+        "accepted": 58201,
+        "accepted_without_target_slope": 25226
+      },
+      "all96_parent_source_plane_query_geometry_and_acceptance_replay_exact": true,
+      "full_raw_RGB_fixed_view_replay_exact": [
+        0,
+        24,
+        72
+      ]
+    }
+  },
+  "inference_sha256": "98742319e0ccf1f671ce640c0cc48fd362bd26fd2d786de1cb27044d9c4e4bae",
+  "source_sha256": "4b129fabf3df342e3e2abf12e4f5dd605bf36f878181b166d45ac0404d5ff912",
+  "source_original_intercepts_and_admission_unchanged": true,
+  "all_candidate_membership_and_unaccepted_depths_exact": true
+}

@@ -1,0 +1,113 @@
+{
+  "results": {
+    "diffuse": {
+      "groups": {
+        "all": {
+          "rows": 423747,
+          "source_query": 146334,
+          "valid_hypothesis": 142643,
+          "eligible": 142643,
+          "accepted": 58279,
+          "accepted_on_static": 58274,
+          "improved": 44679,
+          "worsened": 13594
+        },
+        "parent_gross_or_no_static": {
+          "rows": 85908,
+          "source_query": 6833,
+          "valid_hypothesis": 4391,
+          "eligible": 4391,
+          "accepted": 1124,
+          "accepted_on_static": 1119,
+          "improved": 927,
+          "worsened": 192
+        },
+        "visible_thin": {
+          "rows": 57107,
+          "source_query": 27937,
+          "valid_hypothesis": 26968,
+          "eligible": 26968,
+          "accepted": 10425,
+          "accepted_on_static": 10425,
+          "improved": 8023,
+          "worsened": 2402
+        },
+        "without_target_slope": {
+          "rows": 325085,
+          "source_query": 62874,
+          "valid_hypothesis": 59245,
+          "eligible": 59245,
+          "accepted": 25119,
+          "accepted_on_static": 25116,
+          "improved": 18474,
+          "worsened": 6642
+        }
+      },
+      "overlapping_rejection_causes_not_partition": {
+        "eligible": 142643,
+        "accepted": 58279,
+        "fit_worse_or_invalid": 58521,
+        "held_invalid": 0,
+        "held_worse": 80562,
+        "held_no_strict_improvement": 40937
+      }
+    },
+    "glossy": {
+      "groups": {
+        "all": {
+          "rows": 423100,
+          "source_query": 146174,
+          "valid_hypothesis": 142515,
+          "eligible": 142515,
+          "accepted": 58201,
+          "accepted_on_static": 58197,
+          "improved": 44668,
+          "worsened": 13529
+        },
+        "parent_gross_or_no_static": {
+          "rows": 85836,
+          "source_query": 6876,
+          "valid_hypothesis": 4443,
+          "eligible": 4443,
+          "accepted": 1165,
+          "accepted_on_static": 1161,
+          "improved": 964,
+          "worsened": 197
+        },
+        "visible_thin": {
+          "rows": 57046,
+          "source_query": 27759,
+          "valid_hypothesis": 26784,
+          "eligible": 26784,
+          "accepted": 10370,
+          "accepted_on_static": 10370,
+          "improved": 7983,
+          "worsened": 2387
+        },
+        "without_target_slope": {
+          "rows": 324596,
+          "source_query": 62893,
+          "valid_hypothesis": 59297,
+          "eligible": 59297,
+          "accepted": 25226,
+          "accepted_on_static": 25224,
+          "improved": 18557,
+          "worsened": 6667
+        }
+      },
+      "overlapping_rejection_causes_not_partition": {
+        "eligible": 142515,
+        "accepted": 58201,
+        "fit_worse_or_invalid": 58462,
+        "held_invalid": 0,
+        "held_worse": 80557,
+        "held_no_strict_improvement": 40877
+      }
+    }
+  },
+  "posthoc_evaluator_only_not_candidate_gate_or_training_input": true,
+  "no_GT_pixel_arrays_exported_or_feedback": true,
+  "all_192_metric_count_MAE_P90_replay_exact": true,
+  "evaluation_sha256": "9b81eef12deb0cc0e07f070e85b5ed7ab4482bebc6e940eeba5dced89c95ebb5",
+  "source_sha256": "3009f2234e48932097c68b3f6403d2aa301babd0ef7257b5e9c2e6f8af7f62c9"
+}

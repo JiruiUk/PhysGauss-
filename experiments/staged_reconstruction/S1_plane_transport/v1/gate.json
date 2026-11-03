@@ -1,0 +1,37 @@
+{
+  "both_cases_numeric_improvement": false,
+  "both_cases_Gaussian_evidence": false,
+  "cases": {
+    "diffuse": {
+      "numeric_improvement_passed": false,
+      "failed_numeric_requirements": [
+        "static_MAE_5percent_improvement",
+        "gross_error_5percent_improvement"
+      ],
+      "Gaussian_evidence_passed": false,
+      "failed_Gaussian_requirements": [
+        "supported_static_depth_MAE",
+        "gross_error_gt_005_or_no_static_fraction",
+        "accurate_visible_static_ray_005_coverage",
+        "accurate_visible_thin_ray_002_coverage"
+      ]
+    },
+    "glossy": {
+      "numeric_improvement_passed": false,
+      "failed_numeric_requirements": [
+        "static_MAE_5percent_improvement",
+        "gross_error_5percent_improvement"
+      ],
+      "Gaussian_evidence_passed": false,
+      "failed_Gaussian_requirements": [
+        "supported_static_depth_MAE",
+        "gross_error_gt_005_or_no_static_fraction",
+        "accurate_visible_static_ray_005_coverage",
+        "accurate_visible_thin_ray_002_coverage"
+      ]
+    }
+  },
+  "Gaussian_training_started": false,
+  "real_training_authorized": false,
+  "separate_paired_Gaussian_protocol_and_full_native_recovery_still_required": true
+}
