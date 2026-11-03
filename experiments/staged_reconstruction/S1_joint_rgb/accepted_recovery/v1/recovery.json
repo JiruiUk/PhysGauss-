@@ -1,0 +1,287 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "case": "diffuse",
+      "arm": "frozen_static",
+      "passed": true,
+      "logs": [
+        {
+          "command": [
+            "F:\\A_Edinburgh\\PhysGauss\\envs\\pidg-cu128\\python.exe",
+            "-u",
+            "F:\\A_Edinburgh\\PhysGauss\\experiments\\staged_reconstruction\\S1_joint_rgb\\accepted_recovery\\launch.py",
+            "--enable-accepted-joint-rgb",
+            "--phase",
+            "train",
+            "--case",
+            "diffuse",
+            "--arm",
+            "frozen_static",
+            "--preflight-tag",
+            "split",
+            "--stop-after",
+            "20"
+          ],
+          "log": "experiments/staged_reconstruction/S1_joint_rgb/accepted_recovery/v1/20261103T233610254563Z_train_diffuse_frozen_static_None.log",
+          "sha256": "ddd74f0561eafa43eb7c9f18b9b5fff2bb34284c4410f7e9b11741773f8691c5"
+        },
+        {
+          "command": [
+            "F:\\A_Edinburgh\\PhysGauss\\envs\\pidg-cu128\\python.exe",
+            "-u",
+            "F:\\A_Edinburgh\\PhysGauss\\experiments\\staged_reconstruction\\S1_joint_rgb\\accepted_recovery\\launch.py",
+            "--enable-accepted-joint-rgb",
+            "--phase",
+            "qualification-worker",
+            "--case",
+            "diffuse",
+            "--arm",
+            "frozen_static",
+            "--replicate",
+            "0"
+          ],
+          "log": "experiments/staged_reconstruction/S1_joint_rgb/accepted_recovery/v1/20261103T233618686844Z_qualification-worker_diffuse_frozen_static_0.log",
+          "sha256": "f5eb7af485f5426e24f466154c954cbc75e99288ff876391a88ab043dd1b9ae3"
+        },
+        {
+          "command": [
+            "F:\\A_Edinburgh\\PhysGauss\\envs\\pidg-cu128\\python.exe",
+            "-u",
+            "F:\\A_Edinburgh\\PhysGauss\\experiments\\staged_reconstruction\\S1_joint_rgb\\accepted_recovery\\launch.py",
+            "--enable-accepted-joint-rgb",
+            "--phase",
+            "qualification-worker",
+            "--case",
+            "diffuse",
+            "--arm",
+            "frozen_static",
+            "--replicate",
+            "1"
+          ],
+          "log": "experiments/staged_reconstruction/S1_joint_rgb/accepted_recovery/v1/20261103T233627652629Z_qualification-worker_diffuse_frozen_static_1.log",
+          "sha256": "190f36bac8c027994c0ed001660e27a80d80efb9e2d9b1e4c6ce1574afccff65"
+        }
+      ],
+      "step20_sha256": "fc83768cc8f3569f5f0195bd66b8532f487ff9342c0eb67fa345e849112f661e",
+      "fixed_native_gradients_sha256": "43ce5dcc41103a0cc3ff7f4d325953deac296d3b2f723d96a4a4888e6c56c71e",
+      "both_raw_native_RGB_alpha_exact_and_gradients_original_tolerance": true,
+      "model_both_Adam_bindings_all_RNG_camera_exact": true,
+      "fixed_gradient_original_Adam_and_constraint_replay_exact": true
+    },
+    {
+      "case": "diffuse",
+      "arm": "revisable_static",
+      "passed": true,
+      "logs": [
+        {
+          "command": [
+            "F:\\A_Edinburgh\\PhysGauss\\envs\\pidg-cu128\\python.exe",
+            "-u",
+            "F:\\A_Edinburgh\\PhysGauss\\experiments\\staged_reconstruction\\S1_joint_rgb\\accepted_recovery\\launch.py",
+            "--enable-accepted-joint-rgb",
+            "--phase",
+            "train",
+            "--case",
+            "diffuse",
+            "--arm",
+            "revisable_static",
+            "--preflight-tag",
+            "split",
+            "--stop-after",
+            "20"
+          ],
+          "log": "experiments/staged_reconstruction/S1_joint_rgb/accepted_recovery/v1/20261103T233637509890Z_train_diffuse_revisable_static_None.log",
+          "sha256": "c9333c10ddd72e1d8df8962b5e00849df9e84fe9cf61bacf070ba84916813943"
+        },
+        {
+          "command": [
+            "F:\\A_Edinburgh\\PhysGauss\\envs\\pidg-cu128\\python.exe",
+            "-u",
+            "F:\\A_Edinburgh\\PhysGauss\\experiments\\staged_reconstruction\\S1_joint_rgb\\accepted_recovery\\launch.py",
+            "--enable-accepted-joint-rgb",
+            "--phase",
+            "qualification-worker",
+            "--case",
+            "diffuse",
+            "--arm",
+            "revisable_static",
+            "--replicate",
+            "0"
+          ],
+          "log": "experiments/staged_reconstruction/S1_joint_rgb/accepted_recovery/v1/20261103T233645320157Z_qualification-worker_diffuse_revisable_static_0.log",
+          "sha256": "d683d4dc7c75b357689d454f97cd3f7761d1c180e38c442fc81cc2515e41d773"
+        },
+        {
+          "command": [
+            "F:\\A_Edinburgh\\PhysGauss\\envs\\pidg-cu128\\python.exe",
+            "-u",
+            "F:\\A_Edinburgh\\PhysGauss\\experiments\\staged_reconstruction\\S1_joint_rgb\\accepted_recovery\\launch.py",
+            "--enable-accepted-joint-rgb",
+            "--phase",
+            "qualification-worker",
+            "--case",
+            "diffuse",
+            "--arm",
+            "revisable_static",
+            "--replicate",
+            "1"
+          ],
+          "log": "experiments/staged_reconstruction/S1_joint_rgb/accepted_recovery/v1/20261103T233652659464Z_qualification-worker_diffuse_revisable_static_1.log",
+          "sha256": "3f9d40dcaae46cbbb7eae702c90ab504390469cb14be58fb3c16ae54a24240b2"
+        }
+      ],
+      "step20_sha256": "c0f30a67bb0d707ee02827b1f5884bd43a19450103d43208a4b811c41c8654d6",
+      "fixed_native_gradients_sha256": "142c3dc2c134ebd54bdde94724bbcc87cb3c37a3d307e14c9311ae0cf1b15bfb",
+      "both_raw_native_RGB_alpha_exact_and_gradients_original_tolerance": true,
+      "model_both_Adam_bindings_all_RNG_camera_exact": true,
+      "fixed_gradient_original_Adam_and_constraint_replay_exact": true
+    },
+    {
+      "case": "glossy",
+      "arm": "frozen_static",
+      "passed": true,
+      "logs": [
+        {
+          "command": [
+            "F:\\A_Edinburgh\\PhysGauss\\envs\\pidg-cu128\\python.exe",
+            "-u",
+            "F:\\A_Edinburgh\\PhysGauss\\experiments\\staged_reconstruction\\S1_joint_rgb\\accepted_recovery\\launch.py",
+            "--enable-accepted-joint-rgb",
+            "--phase",
+            "train",
+            "--case",
+            "glossy",
+            "--arm",
+            "frozen_static",
+            "--preflight-tag",
+            "split",
+            "--stop-after",
+            "20"
+          ],
+          "log": "experiments/staged_reconstruction/S1_joint_rgb/accepted_recovery/v1/20261103T233702832013Z_train_glossy_frozen_static_None.log",
+          "sha256": "4c85b03d9bc35482ece39016c0c0feef0f56c02a6b29852a56d00fbaab910a5b"
+        },
+        {
+          "command": [
+            "F:\\A_Edinburgh\\PhysGauss\\envs\\pidg-cu128\\python.exe",
+            "-u",
+            "F:\\A_Edinburgh\\PhysGauss\\experiments\\staged_reconstruction\\S1_joint_rgb\\accepted_recovery\\launch.py",
+            "--enable-accepted-joint-rgb",
+            "--phase",
+            "qualification-worker",
+            "--case",
+            "glossy",
+            "--arm",
+            "frozen_static",
+            "--replicate",
+            "0"
+          ],
+          "log": "experiments/staged_reconstruction/S1_joint_rgb/accepted_recovery/v1/20261103T233709474503Z_qualification-worker_glossy_frozen_static_0.log",
+          "sha256": "a45d830e0b1118191d1a16b40e8f67795f59c5fbac614a1dc9cd7d9e996cd814"
+        },
+        {
+          "command": [
+            "F:\\A_Edinburgh\\PhysGauss\\envs\\pidg-cu128\\python.exe",
+            "-u",
+            "F:\\A_Edinburgh\\PhysGauss\\experiments\\staged_reconstruction\\S1_joint_rgb\\accepted_recovery\\launch.py",
+            "--enable-accepted-joint-rgb",
+            "--phase",
+            "qualification-worker",
+            "--case",
+            "glossy",
+            "--arm",
+            "frozen_static",
+            "--replicate",
+            "1"
+          ],
+          "log": "experiments/staged_reconstruction/S1_joint_rgb/accepted_recovery/v1/20261103T233716661824Z_qualification-worker_glossy_frozen_static_1.log",
+          "sha256": "c964367db5791a65988da4f06865505d9b9ce5c27a04e81a5f278d6e6e8971b2"
+        }
+      ],
+      "step20_sha256": "a83cd236d01c6b13a3ba181cdf6d9c4353255070b56a1f8c588fe4075df0961b",
+      "fixed_native_gradients_sha256": "5aa7a4136de5f42fc4e5abf0283909791e49a66ddb3fff162787496711b1cf4d",
+      "both_raw_native_RGB_alpha_exact_and_gradients_original_tolerance": true,
+      "model_both_Adam_bindings_all_RNG_camera_exact": true,
+      "fixed_gradient_original_Adam_and_constraint_replay_exact": true
+    },
+    {
+      "case": "glossy",
+      "arm": "revisable_static",
+      "passed": true,
+      "logs": [
+        {
+          "command": [
+            "F:\\A_Edinburgh\\PhysGauss\\envs\\pidg-cu128\\python.exe",
+            "-u",
+            "F:\\A_Edinburgh\\PhysGauss\\experiments\\staged_reconstruction\\S1_joint_rgb\\accepted_recovery\\launch.py",
+            "--enable-accepted-joint-rgb",
+            "--phase",
+            "train",
+            "--case",
+            "glossy",
+            "--arm",
+            "revisable_static",
+            "--preflight-tag",
+            "split",
+            "--stop-after",
+            "20"
+          ],
+          "log": "experiments/staged_reconstruction/S1_joint_rgb/accepted_recovery/v1/20261103T233723923816Z_train_glossy_revisable_static_None.log",
+          "sha256": "73a8da7acb710c993303dca7f9fe0aea5f51ded78e044070b6750c20788680a6"
+        },
+        {
+          "command": [
+            "F:\\A_Edinburgh\\PhysGauss\\envs\\pidg-cu128\\python.exe",
+            "-u",
+            "F:\\A_Edinburgh\\PhysGauss\\experiments\\staged_reconstruction\\S1_joint_rgb\\accepted_recovery\\launch.py",
+            "--enable-accepted-joint-rgb",
+            "--phase",
+            "qualification-worker",
+            "--case",
+            "glossy",
+            "--arm",
+            "revisable_static",
+            "--replicate",
+            "0"
+          ],
+          "log": "experiments/staged_reconstruction/S1_joint_rgb/accepted_recovery/v1/20261103T233731487713Z_qualification-worker_glossy_revisable_static_0.log",
+          "sha256": "a10989de12fdbc160ee041946880e33bc630830b9fb70512fb63d6c27a87e977"
+        },
+        {
+          "command": [
+            "F:\\A_Edinburgh\\PhysGauss\\envs\\pidg-cu128\\python.exe",
+            "-u",
+            "F:\\A_Edinburgh\\PhysGauss\\experiments\\staged_reconstruction\\S1_joint_rgb\\accepted_recovery\\launch.py",
+            "--enable-accepted-joint-rgb",
+            "--phase",
+            "qualification-worker",
+            "--case",
+            "glossy",
+            "--arm",
+            "revisable_static",
+            "--replicate",
+            "1"
+          ],
+          "log": "experiments/staged_reconstruction/S1_joint_rgb/accepted_recovery/v1/20261103T233739321380Z_qualification-worker_glossy_revisable_static_1.log",
+          "sha256": "74514766b74046c0632f82b53f7701758ceb6878d99dd17e896dd9d6d2884bab"
+        }
+      ],
+      "step20_sha256": "0e48d53a035e4a82fa2cf70244fbcf303cfe263d477b0bf9d738b2c0699f2c68",
+      "fixed_native_gradients_sha256": "b2b6194292f076310e90960a2e270762afda8b115b84e92946ea53a97b14e49a",
+      "both_raw_native_RGB_alpha_exact_and_gradients_original_tolerance": true,
+      "model_both_Adam_bindings_all_RNG_camera_exact": true,
+      "fixed_gradient_original_Adam_and_constraint_replay_exact": true
+    }
+  ],
+  "acceptance": "exact full state and parameter bindings; independent native RGB/alpha exact/raw gradients at original tolerance; same native-gradient Adam step exact in both processes for all4 case-arms",
+  "all_four_required": true,
+  "authorization_sha256": "a0bb41a632e457514d0fcc8ab1aff6a60ef89381b988c57ca2882df81b3db059",
+  "source_manifest_sha256": "4587d92a72cf2ba59ff72fdbfe56847038c6d9aa40eee67dcd09e39b307f21f7",
+  "original_full40_gate_still_failed": true,
+  "original_epsilon_1e15_retained": true,
+  "raw_gradient_atol": 1e-06,
+  "raw_gradient_rtol": 1e-05,
+  "quality_gates_unchanged": true,
+  "source_sha256": "a5f0f219704e9555dcc77707b0109bc2a8c5c7076a813d96b364c3e77eb31d62"
+}
