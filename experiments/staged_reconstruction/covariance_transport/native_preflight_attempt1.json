@@ -1,0 +1,355 @@
+{
+  "passed": true,
+  "flags_off_native_rgb_alpha_loss_exact": true,
+  "disabled_install_skips_assets_and_keeps_original_field": true,
+  "gradient_max_abs_difference": 7.450580596923828e-09,
+  "gradient_scale": 0.06791653484106064,
+  "same_original_parameter_objects": true,
+  "inactive_original_covariance_field_queries_per_call": [],
+  "new_shared_position_parameters": 33420,
+  "render_physics_center_max_abs_difference_after_updates": {
+    "0.0": 2.384185791015625e-07,
+    "0.43": 2.384185791015625e-07,
+    "1.0": 2.384185791015625e-07
+  },
+  "initialization_preserves_CPU_and_CUDA_RNG": true,
+  "initial_enabled_rgb_alpha_difference": {
+    "render": {
+      "max": 6.258487701416016e-07,
+      "mean": 1.6395094171173241e-09
+    },
+    "alpha": {
+      "max": 8.046627044677734e-07,
+      "mean": 3.774777379561556e-09
+    }
+  },
+  "dynamic_alpha_uses_precomputed_covariance": true,
+  "round_trip_after_updates_max_abs": {
+    "0.0": 1.1920928955078125e-07,
+    "0.43": 1.7881393432617188e-07,
+    "1.0": 1.1920928955078125e-07
+  },
+  "analytic_determinant_range_after_updates": {
+    "0.0": {
+      "min": 0.903346061706543,
+      "max": 1.0255756378173828
+    },
+    "0.43": {
+      "min": 0.9328526854515076,
+      "max": 1.0633050203323364
+    },
+    "1.0": {
+      "min": 0.9219517707824707,
+      "max": 1.0480191707611084
+    }
+  },
+  "canonical_and_shared_motion_gradients_finite_nonzero": true,
+  "inactive_original_grids_and_heads_have_no_gradients": true,
+  "covariance_only_gradient_abs_sums": {
+    "canonical_xyz": 1.2776821822768625e-09,
+    "canonical_scale": 4.239343098788595e-09,
+    "canonical_rotation": 1.5084464927150876e-11,
+    "shared_motion": 8.809430704359578e-08
+  },
+  "forced_physics_integration_smoke_updates": 20,
+  "forced_physics_calls": 2,
+  "forced_physics_smoke_is_not_actual16k_warmup": true,
+  "physics_smoke_records": [
+    {
+      "global_step": 16001,
+      "phase": "physics",
+      "phase_step": 1,
+      "width": 1600,
+      "frame_index": 0,
+      "rgb": 0.025124723091721535,
+      "covariance_transport": true
+    },
+    {
+      "global_step": 16002,
+      "phase": "physics",
+      "phase_step": 2,
+      "width": 1600,
+      "frame_index": 1,
+      "rgb": 0.025423221290111542,
+      "covariance_transport": true
+    },
+    {
+      "global_step": 16003,
+      "phase": "physics",
+      "phase_step": 3,
+      "width": 1600,
+      "frame_index": 2,
+      "rgb": 0.026945631951093674,
+      "covariance_transport": true
+    },
+    {
+      "global_step": 16004,
+      "phase": "physics",
+      "phase_step": 4,
+      "width": 1600,
+      "frame_index": 3,
+      "rgb": 0.027779366821050644,
+      "covariance_transport": true
+    },
+    {
+      "global_step": 16005,
+      "phase": "physics",
+      "phase_step": 5,
+      "width": 1600,
+      "frame_index": 4,
+      "rgb": 0.02860085666179657,
+      "covariance_transport": true
+    },
+    {
+      "global_step": 16006,
+      "phase": "physics",
+      "phase_step": 6,
+      "width": 1600,
+      "frame_index": 5,
+      "rgb": 0.03564117103815079,
+      "covariance_transport": true
+    },
+    {
+      "global_step": 16007,
+      "phase": "physics",
+      "phase_step": 7,
+      "width": 1600,
+      "frame_index": 6,
+      "rgb": 0.046796031296253204,
+      "covariance_transport": true
+    },
+    {
+      "global_step": 16008,
+      "phase": "physics",
+      "phase_step": 8,
+      "width": 1600,
+      "frame_index": 7,
+      "rgb": 0.06137466803193092,
+      "covariance_transport": true
+    },
+    {
+      "global_step": 16009,
+      "phase": "physics",
+      "phase_step": 9,
+      "width": 1600,
+      "frame_index": 8,
+      "rgb": 0.0629429817199707,
+      "covariance_transport": true
+    },
+    {
+      "global_step": 16010,
+      "phase": "physics",
+      "phase_step": 10,
+      "width": 1600,
+      "frame_index": 9,
+      "rgb": 0.06407009810209274,
+      "physics": {
+        "terms": {
+          "kinematic": 0.0013006221628635002,
+          "CMR": 0.0849850449940769
+        },
+        "diagnostics": [
+          {
+            "object": 0,
+            "time_interval": [
+              0.07035175879396985,
+              0.07537688442211055,
+              0.08040201005025124
+            ],
+            "nodes": 3542,
+            "anchors": 64,
+            "current_world_same_bank_neighbors": 64,
+            "support_attempts": [
+              {
+                "neighbors": 64,
+                "valid_fraction": 1.0
+              }
+            ],
+            "valid_fraction": 1.0,
+            "velocity_trajectory_RMS": 0.05100239529401536,
+            "CMR_RMS": 0.4179124147161559,
+            "trajectory_acceleration_RMS": 1.6824722515791046,
+            "independent_acceleration_RMS": 0.0024950716264226067,
+            "stress_pred_RMS": 0.06232435256242752,
+            "stress_divergence_RMS": 0.029743548318331776,
+            "rate_divergence_RMS": 0.4225112816486142,
+            "spatial_support_radius_mean": 0.04279384287678417,
+            "time_units": "sequence normalized; acquisition seconds unknown",
+            "not_independent_GT": true
+          }
+        ],
+        "guard": {
+          "scale": 1.0,
+          "cap": 0.1,
+          "groups": {
+            "grid": {
+              "image_norm": 0.0,
+              "weighted_momentum_norm": 0.0,
+              "guarded_momentum_norm": 0.0
+            },
+            "deformation": {
+              "image_norm": 0.773542582988739,
+              "weighted_momentum_norm": 0.0012181628262624145,
+              "guarded_momentum_norm": 0.0012181628262624145
+            },
+            "canonical": {
+              "image_norm": 0.049245450645685196,
+              "weighted_momentum_norm": 1.91069848369807e-05,
+              "guarded_momentum_norm": 1.91069848369807e-05
+            }
+          },
+          "private_gradients_preserved": true
+        }
+      },
+      "covariance_transport": true
+    },
+    {
+      "global_step": 16011,
+      "phase": "physics",
+      "phase_step": 11,
+      "width": 1600,
+      "frame_index": 10,
+      "rgb": 0.09808116406202316,
+      "covariance_transport": true
+    },
+    {
+      "global_step": 16012,
+      "phase": "physics",
+      "phase_step": 12,
+      "width": 1600,
+      "frame_index": 11,
+      "rgb": 0.09970739483833313,
+      "covariance_transport": true
+    },
+    {
+      "global_step": 16013,
+      "phase": "physics",
+      "phase_step": 13,
+      "width": 1600,
+      "frame_index": 12,
+      "rgb": 0.11945448815822601,
+      "covariance_transport": true
+    },
+    {
+      "global_step": 16014,
+      "phase": "physics",
+      "phase_step": 14,
+      "width": 1600,
+      "frame_index": 13,
+      "rgb": 0.12071213871240616,
+      "covariance_transport": true
+    },
+    {
+      "global_step": 16015,
+      "phase": "physics",
+      "phase_step": 15,
+      "width": 1600,
+      "frame_index": 14,
+      "rgb": 0.16053931415081024,
+      "covariance_transport": true
+    },
+    {
+      "global_step": 16016,
+      "phase": "physics",
+      "phase_step": 16,
+      "width": 1600,
+      "frame_index": 15,
+      "rgb": 0.16274407505989075,
+      "covariance_transport": true
+    },
+    {
+      "global_step": 16017,
+      "phase": "physics",
+      "phase_step": 17,
+      "width": 1600,
+      "frame_index": 16,
+      "rgb": 0.16434325277805328,
+      "covariance_transport": true
+    },
+    {
+      "global_step": 16018,
+      "phase": "physics",
+      "phase_step": 18,
+      "width": 1600,
+      "frame_index": 17,
+      "rgb": 0.1856047511100769,
+      "covariance_transport": true
+    },
+    {
+      "global_step": 16019,
+      "phase": "physics",
+      "phase_step": 19,
+      "width": 1600,
+      "frame_index": 18,
+      "rgb": 0.20651152729988098,
+      "covariance_transport": true
+    },
+    {
+      "global_step": 16020,
+      "phase": "physics",
+      "phase_step": 20,
+      "width": 1600,
+      "frame_index": 19,
+      "rgb": 0.22343945503234863,
+      "physics": {
+        "terms": {
+          "kinematic": 0.05353235387414234,
+          "CMR": 0.05904062010917336
+        },
+        "diagnostics": [
+          {
+            "object": 0,
+            "time_interval": [
+              0.16080402010050251,
+              0.1658291457286432,
+              0.1708542713567839
+            ],
+            "nodes": 3537,
+            "anchors": 64,
+            "current_world_same_bank_neighbors": 64,
+            "support_attempts": [
+              {
+                "neighbors": 64,
+                "valid_fraction": 1.0
+              }
+            ],
+            "valid_fraction": 1.0,
+            "velocity_trajectory_RMS": 0.3272074384061045,
+            "CMR_RMS": 0.3455649237454552,
+            "trajectory_acceleration_RMS": 2.0002316763996952,
+            "independent_acceleration_RMS": 0.0352879631185941,
+            "stress_pred_RMS": 0.061575599014759064,
+            "stress_divergence_RMS": 0.028302662088280205,
+            "rate_divergence_RMS": 0.339924654332544,
+            "spatial_support_radius_mean": 0.04276135954843058,
+            "time_units": "sequence normalized; acquisition seconds unknown",
+            "not_independent_GT": true
+          }
+        ],
+        "guard": {
+          "scale": 1.0,
+          "cap": 0.1,
+          "groups": {
+            "grid": {
+              "image_norm": 0.0,
+              "weighted_momentum_norm": 0.0,
+              "guarded_momentum_norm": 0.0
+            },
+            "deformation": {
+              "image_norm": 0.43294602632522583,
+              "weighted_momentum_norm": 0.008133172988891602,
+              "guarded_momentum_norm": 0.008133172988891602
+            },
+            "canonical": {
+              "image_norm": 0.059716805815696716,
+              "weighted_momentum_norm": 1.5978403098415583e-05,
+              "guarded_momentum_norm": 1.5978403098415583e-05
+            }
+          },
+          "private_gradients_preserved": true
+        }
+      },
+      "covariance_transport": true
+    }
+  ]
+}
