@@ -1,0 +1,6 @@
+{
+  "test_result": "8 passed,1 failed before dataset discovery",
+  "cause": "Depth was recovered exactly4.0 at all independent synthetic points, but uniqueness compared only3 adjacent grid samples. It changed with depth discretization rather than alternative geometry.",
+  "correction": "Compare hypotheses separated by8% relative depth, preserving depth/held-image gates; keep first source and test log. No actual scene metric informed this correction.",
+  "formal_training_used_failed_revision": false
+}

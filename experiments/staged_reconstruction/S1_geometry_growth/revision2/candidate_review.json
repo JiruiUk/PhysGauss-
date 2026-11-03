@@ -1,0 +1,26 @@
+{
+  "accepted_for_bounded_pilot": true,
+  "actual_image_viewed": "output/staged_reconstruction/S1_geometry_growth/revision2/geometry_proposals.png",
+  "frames": [
+    2,
+    27,
+    43,
+    86,
+    166,
+    188,
+    200
+  ],
+  "observations": [
+    "Early and late column and pedestal edges have dense support, unlike sparse late-anchor prior.",
+    "Large weak-texture interiors remain absent; planar completion is limited and explicit.",
+    "Some moving-object-adjacent edges remain admitted. Generic chromatic agreement does not establish staticity; possible short-window stationarity/occlusion contamination persists.",
+    "Revision2 changed 276801 to276523 supported pixels; do not claim color consistency solved contamination."
+  ],
+  "interpretation": "Conditional geometric hypotheses only; no independent dataset geometry/static GT. Two fixed bounded arms measure reconstruction and contamination tradeoffs; no S3-U replacement is authorized by support count alone.",
+  "unresolved": [
+    "Unseen surfaces",
+    "specular view changes",
+    "stationary-looking dynamic edges"
+  ],
+  "discovery_or_threshold_sweep": false
+}

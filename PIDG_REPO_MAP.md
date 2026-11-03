@@ -734,3 +734,18 @@ protects S1 sources/inputs and inherited baseline files. Flags-off never enters
 the new renderer path. This camera contract is specific to the new branch;
 historical legacy-camera weights/metrics are not a matched control for S1.
 Stages and dependencies remain in `experiments/staged_reconstruction_plan.md`.
+
+## Train-only adaptive static geometry (2026-11-03)
+
+`variants/staged_reconstruction/adaptive_static` is a separate opt-in branch.
+`geometry` implements camera-derived depth bounds, normalized-patch/chromatic
+plane sweep, source-depth/round-trip checks and independently checked planar
+priors. `prepare` fuses verified observations into an unrestricted surface
+reservoir and common coarse initialization. `model.AdaptiveGaussian` and
+`topology` append/prune evidence-supported rows while retaining existing Adam
+moments and counters. `train` compares geometry-only and geometric-birth arms,
+reusing the frozen confidence/objective and unchanged native PIDG renderer.
+`audit` binds source/input hashes, checks full state and replays sampler and
+topology. All new entry points require `--enable-adaptive-static`. Inputs have
+no known static color, instance count or material segmentation. No baseline
+trainer, field, renderer, loader, checkpoint or prior experiment is modified.

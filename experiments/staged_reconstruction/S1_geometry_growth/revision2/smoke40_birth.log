@@ -1,0 +1,11 @@
+W1103 17:46:37.772000 262308 envs\pidg-cu128\Lib\site-packages\torch\utils\cpp_extension.py:466] Error checking compiler version for cl: 'cp1' codec can't decode bytes in position 0--1: No mapping for the Unicode character exists in the target code page.
+ninja: no work to do.
+F:\A_Edinburgh\PhysGauss\variants\color_repair\code\hashencoder\hashgrid.py:16: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.half)
+F:\A_Edinburgh\PhysGauss\variants\color_repair\code\hashencoder\hashgrid.py:56: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+ADAPTIVE_STATIC_REFRESH birth 10 276523 0 0
+ADAPTIVE_STATIC_REFRESH birth 20 263917 0 12606
+ADAPTIVE_STATIC_REFRESH birth 30 245231 0 18686
+ADAPTIVE_TOPOLOGY {'step': 30, 'operation': 'birth', 'ids': [10536, 11094, 16711, 15436, 7204, 8123, 7257, 8128], 'points': 3281, 'support_counts': [4, 5, 4, 4, 5, 5, 4, 5], 'scores': [1.1424254477024078, 1.061557674407959, 1.038951814174652, 1.0358660817146301, 0.9934564471244812, 0.9902150988578796, 0.9807883203029633, 0.9803015232086182], 'geometry_required': True, 'ever_added_count': 3281}
+ADAPTIVE_STATIC_REFRESH birth 40 221797 15 23449

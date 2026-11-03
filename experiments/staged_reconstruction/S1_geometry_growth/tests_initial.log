@@ -1,0 +1,25 @@
+F........                                                                [100%]
+================================== FAILURES ===================================
+______________ test_dense_plane_recovers_independent_known_depth ______________
+
+    def test_dense_plane_recovers_independent_known_depth():
+        images, views, k = synthetic_plane()
+        features, valid = patch_features(images)
+        uv = torch.tensor([[25., 19.], [36, 20], [30, 29], [40, 30]])
+        depths = torch.linspace(3., 5., 161)
+        _, depth, accepted, _, _, _ = sweep(uv, features, valid, views, k, depths, 0, [1, 2, 3, 4, 5, 6], margin=.001, cost_limit=.15)
+>       assert accepted.all()
+E       assert tensor(False)
+E        +  where tensor(False) = <built-in method all of Tensor object at 0x000001BDDF917410>()
+E        +    where <built-in method all of Tensor object at 0x000001BDDF917410> = tensor([False,  True, False, False]).all
+
+tests\test_adaptive_static.py:30: AssertionError
+============================== warnings summary ===============================
+tests/test_adaptive_static.py::test_missing_source_depth_remains_unknown_and_wrong_depth_is_rejected
+  F:\A_Edinburgh\PhysGauss\output\short_clip_diagnostic\camera_math.py:24: RuntimeWarning: invalid value encountered in divide
+    return (p@k.T)[:,:2]/p[:,2:3],p[:,2]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED tests/test_adaptive_static.py::test_dense_plane_recovers_independent_known_depth
+1 failed, 8 passed, 1 warning in 2.73s

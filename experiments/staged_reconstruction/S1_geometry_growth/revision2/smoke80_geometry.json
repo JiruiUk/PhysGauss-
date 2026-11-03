@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "arm": "geometry",
+  "iteration": 80,
+  "checkpoint_sha256": "fe2c9e44fc524117a71b0f455d3baac2aa8df91df9e886f42ff4efa108d67732",
+  "optimizer_steps": [
+    80,
+    80,
+    80,
+    80,
+    80,
+    80
+  ],
+  "point_count": 3273,
+  "topology_history": [],
+  "topology_replay_verified": true,
+  "sampler": null,
+  "confidence_sha256": "a502b3f3c82694ab286a84c815746c23d9bd34f63fac31496b34b7ac04fa1499",
+  "confidence_rounds": [
+    10,
+    20,
+    30,
+    40,
+    50,
+    60,
+    70,
+    80
+  ],
+  "full_Adam_RNG_sampler_and_confidence_checked": true,
+  "geometric_upper_bound_checked": true,
+  "nonzero_supervision_steps": 80,
+  "source_and_historical_checkpoints_preserved": true
+}

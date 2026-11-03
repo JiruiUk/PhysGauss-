@@ -1,0 +1,11 @@
+{
+  "accepted_for_formal_training": false,
+  "reason": "Actual review of geometry_proposals.png shows pillar-edge coverage but some foreground-object edges admitted; grayscale NCC alone lacks cross-color match disambiguation. Add generic pairwise chromaticity check before training; no static class colors are prescribed.",
+  "first_complete_discovery_preserved": true,
+  "original_depths_and_reservoir": "runs/pidg_staged_reconstruction/S1_geometry_growth",
+  "original_outputs": "output/staged_reconstruction/S1_geometry_growth",
+  "source_snapshots": [
+    "geometry_discovery_revision1.py",
+    "prepare_discovery_revision1.py"
+  ]
+}

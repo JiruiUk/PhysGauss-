@@ -1,0 +1,120 @@
+{
+  "passed": true,
+  "arm": "birth",
+  "iteration": 80,
+  "checkpoint_sha256": "5fb6eb0fcd56590c8f4e4751934868d0c0607cf3b904f85976fceeffec859fb7",
+  "optimizer_steps": [
+    80,
+    80,
+    80,
+    80,
+    80,
+    80
+  ],
+  "point_count": 3289,
+  "topology_history": [
+    {
+      "step": 30,
+      "operation": "birth",
+      "ids": [
+        10536,
+        11094,
+        16711,
+        15436,
+        7204,
+        8123,
+        7257,
+        8128
+      ],
+      "points": 3281,
+      "support_counts": [
+        4,
+        5,
+        4,
+        4,
+        5,
+        5,
+        4,
+        5
+      ],
+      "scores": [
+        1.1424254477024078,
+        1.061557674407959,
+        1.038951814174652,
+        1.0358660817146301,
+        0.9934564471244812,
+        0.9902150988578796,
+        0.9807883203029633,
+        0.9803015232086182
+      ],
+      "geometry_required": true,
+      "ever_added_count": 3281
+    },
+    {
+      "step": 50,
+      "operation": "prune",
+      "ids": [],
+      "points": 3281
+    },
+    {
+      "step": 60,
+      "operation": "birth",
+      "ids": [
+        8179,
+        8589,
+        9451,
+        8116,
+        12146,
+        8130,
+        8177,
+        8182
+      ],
+      "points": 3289,
+      "support_counts": [
+        4,
+        5,
+        4,
+        5,
+        4,
+        5,
+        4,
+        4
+      ],
+      "scores": [
+        0.8890194296836853,
+        0.8650216937065125,
+        0.8613000810146332,
+        0.8585200548171997,
+        0.8583759665489197,
+        0.8576243638992309,
+        0.8520849943161011,
+        0.8501972556114197
+      ],
+      "geometry_required": true,
+      "ever_added_count": 3289
+    },
+    {
+      "step": 75,
+      "operation": "prune",
+      "ids": [],
+      "points": 3289
+    }
+  ],
+  "topology_replay_verified": true,
+  "sampler": null,
+  "confidence_sha256": "c1b438d653acfca4ed020036db76f001a1b4fa0634ab9dff874d71bc81ef4fa2",
+  "confidence_rounds": [
+    10,
+    20,
+    30,
+    40,
+    50,
+    60,
+    70,
+    80
+  ],
+  "full_Adam_RNG_sampler_and_confidence_checked": true,
+  "geometric_upper_bound_checked": true,
+  "nonzero_supervision_steps": 80,
+  "source_and_historical_checkpoints_preserved": true
+}
