@@ -1,0 +1,16 @@
+{
+  "full_transition_preflight_expansion": {
+    "initial_updates": 100,
+    "reason": "The100-step smoke only reaches sparse mix0.25; exercise full mapping and its gradients before formal admission",
+    "new_updates": 500,
+    "formal_model_budget_and_weights_changed": false
+  },
+  "expanded_audit_attempt1": {
+    "passed": false,
+    "log": "full_transition_audit.log",
+    "error": "Compared500-step camera record to a100-step I1 smoke record",
+    "affected_model_training": false,
+    "fix": "Use first500 samples of the completed I1 formal run from the identical full parent RNG/sampler; retain independent replay from parent",
+    "quality_gate_lowered": false
+  }
+}

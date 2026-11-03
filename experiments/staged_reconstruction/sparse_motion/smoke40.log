@@ -1,0 +1,11 @@
+W1103 20:31:27.880000 277584 envs\pidg-cu128\Lib\site-packages\torch\utils\cpp_extension.py:466] Error checking compiler version for cl: 'cp1' codec can't decode bytes in position 0--1: No mapping for the Unicode character exists in the target code page.
+ninja: no work to do.
+F:\A_Edinburgh\PhysGauss\variants\color_repair\code\hashencoder\hashgrid.py:16: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.half)
+F:\A_Edinburgh\PhysGauss\variants\color_repair\code\hashencoder\hashgrid.py:56: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+SPARSE_TRAIN 1 mix 0.0025 loss 0.026076320558786392 prior 0.03593098372220993 elapsed 0.6
+F:\A_Edinburgh\PhysGauss\variants\staged_reconstruction\state_recovery\physics.py:45: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\generated\python_variable_methods.cpp:836.)
+  'spatial_support_radius_mean':float((x[ring]-x[local,None]).norm(dim=-1).max(-1).values.mean()),
+SPARSE_TRAIN 40 mix 0.1 loss 0.0463808875444949 prior 0.036104682832956314 elapsed 7.8

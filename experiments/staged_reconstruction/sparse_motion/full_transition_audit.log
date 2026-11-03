@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "F:\A_Edinburgh\PhysGauss\variants\staged_reconstruction\sparse_motion\preflight.py", line 116, in <module>
+    main()
+  File "F:\A_Edinburgh\PhysGauss\variants\staged_reconstruction\sparse_motion\preflight.py", line 110, in main
+    audit(args.audit_smoke)
+  File "F:\A_Edinburgh\PhysGauss\variants\staged_reconstruction\sparse_motion\preflight.py", line 88, in audit
+    assert [r['frame_index'] for r in rows] == [r['frame_index'] for r in other]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

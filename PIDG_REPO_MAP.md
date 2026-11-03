@@ -1,5 +1,21 @@
 # PIDG repository map — M0
 
+## Optional sparse shared dynamic motion (2026-11-03)
+
+`variants/staged_reconstruction/sparse_motion/core.py` implements canonical
+farthest-point control selection, normalized four-neighbor RBF weights,
+hemisphere-aligned quaternion interpolation and a SparseDeform adapter. Its
+complete center mapping is shared by UnionScene rendering and inherited
+finite-difference physics queries; mix0 returns the original deformation path.
+`prepare.py` binds256 fixed controls to S3-U final6k. `train.py` retains full
+original optimization/sampling state, transitions dense to sparse over400 steps,
+then evaluates only control motions; `preflight.py` verifies geometry, gradients,
+flags-off rendering and independent40/80 resume. `evaluate.py` uses identical
+six fixed cameras, native RGB/alpha and validation-only iterative selection.
+`freeze.py` protects both this branch and the previous motion-prior sources.
+No new physical unknowns, learned segmentation, instance count or topology;
+this is an adapted reconstruction representation, not a full SC-GS replication.
+
 ## Opt-in literature-guided dynamic integrity (2026-11-03)
 
 `variants/staged_reconstruction/motion_integrity/core.py` constructs frozen
@@ -790,3 +806,17 @@ functions and conditional ray quarantine without GT; `evaluate` independently
 scores surface precision and visible/thin surface coverage. This is a point
 admission audit, not a full Gaussian training or PIDG physics reproduction.
 Data/input/source checksums and sparse-v1/dense-v2 sampling reasons are retained.
+
+## Native per-image nuisance decomposition (2026-11-03)
+
+`variants/staged_reconstruction/nuisance_static/core.py` defines opt-in
+premultiplied composition and camera-plane Gaussian appearance explanations.
+`runtime` adapts calibrated cameras and calls the unchanged PIDG rasterizer.
+`prepare` builds common initialization/support only from train-RGB inference.
+`train` uses full-RGB and restricted support loss, one independent Adam per
+image, complete static/nuisance optimizer/RNG/sampler checkpoints and user-stop
+saving. `native_check` checks disabled parity and native RGB/alpha/position
+gradients. `audit` freezes code/inputs and replays global/per-view state.
+`evaluate` alone reads independent synthetic static RGB/depth/normal GT; it
+uses expected depthD/alpha and treats view-specific nuisance as appearance,
+not physical identity. Real training is gated on both full synthetic cases.
