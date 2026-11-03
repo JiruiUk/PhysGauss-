@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "arm": "control",
+  "iteration": 18000,
+  "checkpoint_sha256": "b0c5e25b8b3da9013fd745e399f02a9305fa678b49b6d778dd6750ab0701b584",
+  "optimizer_steps": [
+    18000,
+    18000,
+    18000,
+    18000,
+    18000,
+    18000
+  ],
+  "point_count": 3273,
+  "quarantined_count": 0,
+  "sampler": null,
+  "confidence_sha256": "db6ac32e77fe800da1e221b0366e07d5acd37e1607b3474157a2f197ff589c6d",
+  "confidence_rounds": [
+    13000,
+    14000,
+    15000,
+    16000,
+    17000,
+    18000
+  ],
+  "full_parent_model_Adam_RNG_sampler_verified": true,
+  "unchanged_topology_verified": true,
+  "nonzero_supervision_steps": 6000,
+  "source_and_historical_checkpoints_preserved": true
+}

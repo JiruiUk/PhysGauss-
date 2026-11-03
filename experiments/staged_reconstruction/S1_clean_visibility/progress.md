@@ -42,3 +42,11 @@ Next: independent RGB synthetic audit with evaluator-only GT and independent
 camera/time variation. Then choose one bounded surface-constraint or nuisance
 appearance-separation experiment from evidence, as described in the literature
 plan. Do not start competing full candidates or resume old S1–S6 automation.
+
+## Completed control milestone
+
+Unchanged-row arm completed18k from full12k,3273 points. Audit passed:
+all six Adam counters18k,6000 camera samples replayed from parent,6 absolute
+confidence refreshes and frozen source/input/history checks. Checkpoint SHA256:
+`b0c5e25b8b3da9013fd745e399f02a9305fa678b49b6d778dd6750ab0701b584`.
+Visibility arm is running; no final quality conclusion before matched evaluation.
