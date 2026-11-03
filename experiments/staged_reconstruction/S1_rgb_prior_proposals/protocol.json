@@ -1,0 +1,47 @@
+{
+  "stage": "S1-D4 single relative-order proposal verified by original RGB sources",
+  "enabled_by_default": false,
+  "synthetic_cases": ["diffuse", "glossy"],
+  "parent_receipts_sha256": {
+    "experiments/staged_reconstruction/S1_depth_evidence/refinement_v1/inference.json": "4d65222424ed9eadd9432619ec8bb8909c0e4c46f0f9ee25f97c9b80cf18714a",
+    "experiments/staged_reconstruction/S1_depth_uncertainty/v1/inference.json": "489f24f4b9c4d25da6b3ae76e0ecc5176ddbfc0f151dfb6458df0ddcd5adbf3d",
+    "experiments/staged_reconstruction/S1_pretrained_geometry/v1/inference.json": "38b7e82b9ea34409b143c7cf28a524b9831a18c619debd8dd1bb8d9461a3d63b"
+  },
+  "prior_input": "Saved raw_relative only from fixed Small, never aligned_depth or oracle assets",
+  "candidate_membership": "exactly all original D1 positive pixels; original depths copied unless accepted; no point growth/deletion",
+  "anchors": "Original D2 tight UV/depth/lower/upper, maximum256 selected by stable row-major evenly spaced indices inclusive endpoints",
+  "rank_margin_fraction_full_image_q95_q05": 0.1,
+  "anchor_spatial_block_pixels": 8,
+  "minimum_distinct_anchor_blocks_per_bound": 4,
+  "farther_bound": "raw target <= raw anchor - margin: lower bound q80 of those D2 lower depths, only if >=4 distinct anchor blocks",
+  "closer_bound": "raw target >= raw anchor + margin: upper bound q20 of those D2 upper depths, only if >=4 distinct anchor blocks",
+  "missing_bound": "inherited camera-derived near/far on that side; both missing means no proposal",
+  "contradictory_or_zero_width_interval": "unknown/no proposal; old depth retained",
+  "proposal_eligibility": "old depth outside valid nonempty interval by more than1e-6",
+  "depth_samples": 192,
+  "depth_grid": "same inclusive camera-derived near/far inverse-depth grid as original RGB-MVS; no GT alignment or clamp",
+  "fit_sources": "Original six source indices first4; native source_cost and same patch_features5; average best3 of4",
+  "held_sources": "Original six source indices last2; these are acceptance sources, NOT independent GT",
+  "proposal": "minimum finite fit cost within interval, stable first-grid tie; empty means no proposal; no extra continuous refinement",
+  "acceptance": "new fit cost<=old+1e-6; both finite held costs<=old+1e-6; at least one held cost<old-1e-6; original finite positive depths otherwise unchanged",
+  "GT_reads_during_proposals": false,
+  "Gaussian_training_in_this_stage": false,
+  "numeric_improvement_gate_both_cases": {
+    "all_supported_static_depth_MAE_relative_max": 0.95,
+    "gross_error_or_no_static_fraction_relative_max": 0.95,
+    "visible_thin_depth_MAE_and_P90_no_increase": true,
+    "accurate_visible_static_and_thin_ray_coverage_no_decrease": true,
+    "exact_membership_preservation_required": true
+  },
+  "follow_on_Gaussian_protocol_evidence_gate_both_cases": {
+    "supported_static_depth_MAE_max": 0.02,
+    "gross_error_gt_005_or_no_static_fraction_max": 0.02,
+    "accurate_visible_static_ray_005_coverage_min": 0.75,
+    "accurate_visible_thin_ray_002_coverage_min": 0.5,
+    "no_admission_from_partial_mean_improvement": true,
+    "separate_native_gradient_flags_off_full_Adam_RNG_camera_recovery_protocol_required": true
+  },
+  "evaluation": "Frozen independent static GT only after outputs; all original candidates and full visible/thin ray denominators, thin intersect observed static visible; fixed0/24/72 images; source/input/hash/membership/unchanged-depth audit",
+  "no_new_Gaussian_loss_or_material_physics_or_identity": true,
+  "no_threshold_weight_or_model_sweep": true
+}
