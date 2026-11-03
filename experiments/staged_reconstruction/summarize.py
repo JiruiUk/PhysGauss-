@@ -32,8 +32,13 @@ def main():
     rows[1]['track_px400']=None;rows[1].pop('track_value_note')
     assert [r['updates'] for r in rows]==[12000,16000,6000,4000,4000,4000]
     bindings=read(REPORT/'S4/bindings.json')
+    quality={}
+    for r in rows[1:]:
+        folder='S2_geometry_recovery' if r['stage']=='S2' else r['stage']
+        value=read(REPORT/folder/'native_full_quality.json');assert value['checkpoint_sha256']==r['checkpoint_sha256']
+        quality[r['stage']]={split:item['metrics'] for split,item in value['splits'].items()}
     summary={'authorized_reconstruction_curriculum_training_and_review_completed':True,
-        'complete_geometry_or_physical_inference_success':False,'stages':rows,
+        'complete_geometry_or_physical_inference_success':False,'stages':rows,'standard_native_full_quality':quality,
         'accepted_lineage_updates':sum(r['updates'] for r in rows),'failed_S2_additional_updates':32000,
         'sparse_tracklets':len(bindings['bindings']),'sparse_observations':sum(len(x['frames']) for x in bindings['bindings']),
         'physical_ID_after_ambiguity':'unknown','certified_contact_surface':False,'acquisition_seconds_available':False,
@@ -51,6 +56,12 @@ def main():
         '| 阶段 | 正式更新 | 验证动态 PSNR | 动态 alpha | 静态 PSNR | 轨迹误差 px@400 |',
         '|---|---:|---:|---:|---:|---:|']
     for r in rows:text.append(f"| {r['stage']} | {r['updates']} | {f(r['dynamic_PSNR'])} | {f(r['dynamic_alpha'])} | {f(r['static_PSNR'])} | {f(r['track_px400'])} |")
+    text += ['', '原生全画幅标准图像指标（8bit RGB协议，黑色背景会稀释局部误差；不是独立几何指标）：', '',
+        '| 阶段 | 验证 PSNR | 验证 SSIM | 验证 VGG LPIPS | 测试 VGG LPIPS |',
+        '|---|---:|---:|---:|---:|']
+    for stage,value in quality.items():
+        v=value['val'];t=value['test']
+        text.append(f"| {stage} | {f(v['PSNR'])} | {f(v['SSIM'],5)} | {f(v['LPIPS'],5)} | {f(t['LPIPS'],5)} |")
     text += ['',f"条件继承链共 {summary['accepted_lineage_updates']} 次更新；另保留两次失败 S2 的32,000次更新与结果。91条合格轨迹、455次观测来自训练图像，未知身份保持未知。各阶段短训分别检验40→80步完整恢复。", '',
         'S1 提供条件静态初始化；S2 数值门槛通过但固定视角仍碎裂；S3 加入原 PIDG velocity/stress/CMR；S4 使用合格固定行轨迹；S5 使用已声明的静态深内部先验；S6 联合已有目标并解冻静态外观，静态几何仍固定。', '',
         '**S5 的接触力、摩擦、恢复系数未训练**：现有表面、物理身份和秒时钟未获认证。其受控球/平面300步验证只验证算子与优化器，不能代替 Rubber Duck 接触证据。条件非穿透的具体有效/激活样本在 S5/assessment.md 和 final_verification.json。', '',

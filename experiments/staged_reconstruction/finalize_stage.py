@@ -34,6 +34,7 @@ def main():
         'Actual visual findings:', '',*['- '+x for x in manual['findings']], '',
         'Manual review scope is the named native observed/group and fixed-view files in manual_visual_review.json. Every exported video frame was independently decoded, but not every video frame was manually watched.', '',
         f"Qualified track mean projection error at400px: {audit['track_observation_mean_px400']}. Conditional interior diagnostic: {audit['conditional_interior']}.", '',
+        f"Whole-run conditional-interior activation: {audit.get('training_conditional_interior')}.", '',
         'These are training-image correspondences and internal model/conditional-static proxies. They are not independent geometry, material velocity, physical stress or contact GT. Acquisition seconds and late physical identities remain unknown. Novel-view geometry limitations are retained; a successful numeric gate is not geometry success.', '',
         f"Conditional continuation admission: {admitted}. Contact force/friction/restitution, constitutive inference and unknown forces remain off."]
     (report/'assessment.md').write_text('\n'.join(lines)+'\n',encoding='utf8')

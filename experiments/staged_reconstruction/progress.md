@@ -145,3 +145,7 @@ with the predeclared lower S6 learning rates; physical identity stays unknown.
 S5 parent's455 qualified observations have0active conditional interior violations
 (minimum signed distance0.112658, margin0.08). Thus no actual collision correction
 has been demonstrated; S5 real-parent40→80 recovery smoke is now running.
+
+S5 real-parent40→80 recovery passes136 Adam states, exact sampler/RNG and
+static freeze. Formal4000 launched PID263796. All prior losses/weights remain
+frozen. Whole-run conditional-interior activation will be audited explicitly.

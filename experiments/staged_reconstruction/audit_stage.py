@@ -94,6 +94,18 @@ def main():
     test=read(report/f'{stage}_test_{protocol["updates"]:05d}.json')['metrics']
     gates={'dynamic_PSNR':numerical['dynamic_PSNR']>=20.,'dynamic_only_alpha':numerical['dynamic_alpha']>=.85,
         'static_preservation_from_S1':35.643816-numerical['static_PSNR']<=1.}
+    activation=None
+    if stage in ['S5','S6']:
+        lines=[json.loads(s) for s in (RUNS/stage/'formal/objectives.jsonl').read_text(encoding='utf8').splitlines()]
+        values=[x for x in lines if 'conditional_interior' in x]
+        assert len(values)==protocol['updates']//protocol['tracks_every']
+        activation={'objective_calls':len(values),'eligible_observation_instances':sum(x['conditional_interior']['eligible_count'] for x in values),
+            'active_violation_instances':sum(x['conditional_interior']['active_violations'] for x in values),
+            'calls_with_any_active_violation':sum(x['conditional_interior']['active_violations']>0 for x in values),
+            'maximum_proxy_penetration_during_training':max(x['conditional_interior']['max_proxy_penetration'] or 0. for x in values),
+            'nonzero_prior_objective_calls':sum(x['nonpenetration_loss']>0 for x in values),
+            'all_recorded_prior_values_finite':all(np.isfinite(x['nonpenetration_loss']) for x in values),
+            'not_collision_ground_truth':True}
     assert sha(path)==before
     write(report/a.output_name,{'stage':stage,'checkpoint_sha256':before,'iteration':state['iteration'],
         'parent_sha256':sha(parent_path),'numeric_gates':gates,'native_validation':numerical,'native_test':test,
@@ -101,7 +113,7 @@ def main():
         'optimizer_state_count':len(state['optimizer']['state']),'sampler':sampler,'scale_diagnostics':scales,
         'fixed_frame_internal_physics':diagnostics,'all_fixed_frame_physics_valid':all(x['valid'] for x in diagnostics),
         'qualified_tracks':tracks,'track_observation_mean_px400':float(np.mean(all_errors)) if tracks else None,
-        'conditional_interior':interior,'manual_visual_review_pending':True,
+        'conditional_interior':interior,'training_conditional_interior':activation,'manual_visual_review_pending':True,
         'limits':'Training-image correspondences, model stress/velocity consistency and conditional SDF are proxies; no independent 3D/material/force GT; late physical ID remains unknown'})
     print('STAGE_STATE_OBJECTIVE_AUDIT',stage,gates,flush=True)
 
