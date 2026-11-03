@@ -1,0 +1,91 @@
+{
+  "actual_updates_each": 7000,
+  "script_sha256": "f697bd0618c73c7c66fa7df9596e61f544d4c9e6d7ac84730a74c54a3dc7e1f1",
+  "checkpoints": {
+    "I8": {
+      "path": "runs/pidg_staged_reconstruction/covariance_transport/previews/step07000/checkpoint.pt",
+      "sha256": "6a498afc8b694bfaab94ed05927d11dd5fe82279f7baa1ba1eb00bd3a21d3994"
+    },
+    "I9": {
+      "path": "runs/pidg_staged_reconstruction/relative_strain/previews/step07000/checkpoint.pt",
+      "sha256": "3ddcdea111c9bf94eb014647855e35b631f4d879121acc6bbbaa3df77c6a5ccc"
+    }
+  },
+  "extended_initial_model_tensors_exact": true,
+  "initial_optimizer_exact": true,
+  "same_optimizer_groups_and_sampler_and_CPU_CUDA_numpy_rng": true,
+  "same_original_resolution_schedule": true,
+  "physics_calls_each": 0,
+  "training_metadata_sha256": "270fa34a29b99a4e6b2621d04e1d83f245f5c54bb4f2632ae06051faa83e4868",
+  "camera_contract": "Same frozen camera() function, training metadata poses by frame ID, native1600 and (frame-1)/199 in both pinned preview sources",
+  "inputs": {
+    "I8/c188_t43": {
+      "RGB": "output/staged_reconstruction/covariance_transport/previews/step07000/c188_t43_native.png",
+      "RGB_sha256": "20191fe28a68ff8c4c31cf0536f28316dbbe4474bd581ece47e05d8a2ad17148",
+      "alpha": "output/staged_reconstruction/covariance_transport/previews/step07000/c188_t43_alpha.png",
+      "alpha_sha256": "47d64353ee667a406b56928962eddea3f46dab313cb45e3938d6186c43a72f95"
+    },
+    "I9/c188_t43": {
+      "RGB": "output/staged_reconstruction/relative_strain/previews/step07000/c188_t43_native.png",
+      "RGB_sha256": "7e56617ea546f85239f40ab587ab5322d4f8efe9e261ed8926e5b0b33a42b9bc",
+      "alpha": "output/staged_reconstruction/relative_strain/previews/step07000/c188_t43_alpha.png",
+      "alpha_sha256": "4cd9b4f512fca8f39d84b21af575bae8be655af72329ebcaaa003b8a342c3db8"
+    },
+    "I8/c188_t146": {
+      "RGB": "output/staged_reconstruction/covariance_transport/previews/step07000/c188_t146_native.png",
+      "RGB_sha256": "19ee2e915d382b34ee7d322f01c7d77f2672ca1765fd07aad0e8240323dd6c55",
+      "alpha": "output/staged_reconstruction/covariance_transport/previews/step07000/c188_t146_alpha.png",
+      "alpha_sha256": "539b6ba3bd1f48b94b103fe744183633f50015ae3ee5b1624729794b9344182f"
+    },
+    "I9/c188_t146": {
+      "RGB": "output/staged_reconstruction/relative_strain/previews/step07000/c188_t146_native.png",
+      "RGB_sha256": "ec41abba3cd84323d6945e93d361eb0f06fcf8325778751fdf14dd310fd2b8c9",
+      "alpha": "output/staged_reconstruction/relative_strain/previews/step07000/c188_t146_alpha.png",
+      "alpha_sha256": "0f964c09a8f01cdeca25c162fb3c01985792e20c0d672a3d9f5d87b9c01173ff"
+    },
+    "I8/c86_t86": {
+      "RGB": "output/staged_reconstruction/covariance_transport/previews/step07000/c86_t86_native.png",
+      "RGB_sha256": "fdb4a6b9968529b0bbf67cfb935a9d3ad2a9cd28941d6831dd51465ed0b9a828",
+      "alpha": "output/staged_reconstruction/covariance_transport/previews/step07000/c86_t86_alpha.png",
+      "alpha_sha256": "73d02e3cbff59d3b1f290c6ee7ba8c4ac52953165f6cbedac8f4623d3d5eb249"
+    },
+    "I9/c86_t86": {
+      "RGB": "output/staged_reconstruction/relative_strain/previews/step07000/c86_t86_native.png",
+      "RGB_sha256": "3e0c7b0dcf08e3474f9ca2c113dcb8705c6e018b592a19c9c13f1890ed38b14f",
+      "alpha": "output/staged_reconstruction/relative_strain/previews/step07000/c86_t86_alpha.png",
+      "alpha_sha256": "5199705bbbf7a13b19aebe716a96ad551b7d5281eb769d59fd49ef8efac0152a"
+    }
+  },
+  "common_crop_per_row": {
+    "c188_t43": [
+      482,
+      16,
+      1142,
+      684
+    ],
+    "c188_t146": [
+      468,
+      55,
+      1078,
+      601
+    ],
+    "c86_t86": [
+      372,
+      130,
+      1084,
+      694
+    ]
+  },
+  "output_panel_width_per_model": 800,
+  "resize": "Common crop per row, Lanczos; unmodified original1600 images preserved",
+  "outputs_sha256": {
+    "output/staged_reconstruction/relative_strain/compare_step07000/c188_t146_comparison.png": "e7cbe53712a3340bbc8a834018be29b833bef1cf34ce8ca11db18439547c9e9a",
+    "output/staged_reconstruction/relative_strain/compare_step07000/c188_t43_comparison.png": "8dd361eeec08153a22a7b30408356e03bc4d8fbb310ed9ea4f1583ac27389498",
+    "output/staged_reconstruction/relative_strain/compare_step07000/c86_t86_comparison.png": "2aba4d6e2a4c4834c60503f8d5e96c243af9ab15cc7d1c2904ffe5ea7bec4458",
+    "output/staged_reconstruction/relative_strain/compare_step07000/comparison.png": "c4b9bb71e1f0553f8947c9d32ea416951f9d855a320f0555cf971978e776a601"
+  },
+  "optimizer_updates_by_diagnostic": 0,
+  "test_RGB_read": false,
+  "final_candidate_selected": false,
+  "acceptance": "Not evaluated; intermediate comparison only"
+}

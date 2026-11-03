@@ -1,0 +1,40 @@
+{
+  "actual_updates": 7000,
+  "snapshot": "runs/pidg_staged_reconstruction/relative_strain/previews/step07000/checkpoint.pt",
+  "snapshot_sha256": "3ddcdea111c9bf94eb014647855e35b631f4d879121acc6bbbaa3df77c6a5ccc",
+  "source_sha256": "2fd1b800e4669b0fca46c5d2e63f624713dc63e74dd1b54e11e96035765c9142",
+  "native_width": 1600,
+  "RGB_read": false,
+  "optimizer_updates": 0,
+  "purpose": "Intermediate visual diagnosis only; original16k schedule/gates remain. No model selection or final acceptance.",
+  "images_sha256": {
+    "output/staged_reconstruction/relative_strain/previews/step07000/c188_t146_alpha.png": "0f964c09a8f01cdeca25c162fb3c01985792e20c0d672a3d9f5d87b9c01173ff",
+    "output/staged_reconstruction/relative_strain/previews/step07000/c188_t146_native.png": "ec41abba3cd84323d6945e93d361eb0f06fcf8325778751fdf14dd310fd2b8c9",
+    "output/staged_reconstruction/relative_strain/previews/step07000/c188_t43_alpha.png": "4cd9b4f512fca8f39d84b21af575bae8be655af72329ebcaaa003b8a342c3db8",
+    "output/staged_reconstruction/relative_strain/previews/step07000/c188_t43_native.png": "7e56617ea546f85239f40ab587ab5322d4f8efe9e261ed8926e5b0b33a42b9bc",
+    "output/staged_reconstruction/relative_strain/previews/step07000/c86_t86_alpha.png": "5199705bbbf7a13b19aebe716a96ad551b7d5281eb769d59fd49ef8efac0152a",
+    "output/staged_reconstruction/relative_strain/previews/step07000/c86_t86_native.png": "3e0c7b0dcf08e3474f9ca2c113dcb8705c6e018b592a19c9c13f1890ed38b14f",
+    "output/staged_reconstruction/relative_strain/previews/step07000/contact.png": "5ed6eac7076862acec931745b3d783eeaadfe46c58e42fc2366812aeebceaacb"
+  },
+  "actual_visual_inspection_completed": true,
+  "completeness_passed": false,
+  "inspected": [
+    "output/staged_reconstruction/relative_strain/previews/step07000/c188_t43_native.png",
+    "output/staged_reconstruction/relative_strain/previews/step07000/c188_t146_native.png",
+    "output/staged_reconstruction/relative_strain/previews/step07000/c86_t86_native.png",
+    "output/staged_reconstruction/relative_strain/compare_step07000/comparison.png",
+    "output/staged_reconstruction/relative_strain/compare_step07000/c86_t86_comparison.png"
+  ],
+  "inspected_image_sha256": {
+    "output/staged_reconstruction/relative_strain/previews/step07000/c188_t43_native.png": "7e56617ea546f85239f40ab587ab5322d4f8efe9e261ed8926e5b0b33a42b9bc",
+    "output/staged_reconstruction/relative_strain/previews/step07000/c188_t146_native.png": "ec41abba3cd84323d6945e93d361eb0f06fcf8325778751fdf14dd310fd2b8c9",
+    "output/staged_reconstruction/relative_strain/previews/step07000/c86_t86_native.png": "3e0c7b0dcf08e3474f9ca2c113dcb8705c6e018b592a19c9c13f1890ed38b14f",
+    "output/staged_reconstruction/relative_strain/compare_step07000/comparison.png": "c4b9bb71e1f0553f8947c9d32ea416951f9d855a320f0555cf971978e776a601",
+    "output/staged_reconstruction/relative_strain/compare_step07000/c86_t86_comparison.png": "2aba4d6e2a4c4834c60503f8d5e96c243af9ab15cc7d1c2904ffe5ea7bec4458"
+  },
+  "findings": "I9 at7000 updates retains major hollow regions and detached/flattened support at c188/t43 and t146; c86/t86 retains an elongated sheet/bridge and separated upper fragments. Same-budget I8/I9 side-by-side images both fail completeness. Reduced measured relative distortion is not complete geometry.",
+  "training_protocol_changed": false,
+  "formal_warmup_admission_decided": false,
+  "intermediate_model_selected": false,
+  "matched_I8_comparison_receipt": "experiments/staged_reconstruction/relative_strain/comparison07000.json"
+}
