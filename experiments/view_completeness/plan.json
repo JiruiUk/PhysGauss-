@@ -1,0 +1,15 @@
+{
+  "purpose": "Add optional fixed-view shape diagnostics and independently supervised coverage metrics before choosing a novel-view training loss",
+  "diagnostic_only": true,
+  "flag": "evaluate(..., enabled=False) is inert by default",
+  "input": "Existing frozen-model native1600 render sequences, downsampled to400x225; no direct low-resolution resplatting",
+  "models": ["C1_original_50k", "T1_association_52k", "O1_flow_on_50k"],
+  "views": ["fixed_0002", "fixed_0086", "fixed_0188", "moving_control"],
+  "frames": "all200, also report validation30 times separately",
+  "proxy_settings": {"threshold": 0.5, "thin_radius": 2, "island_pixels": 20, "hole_pixels": 4},
+  "supervised_metrics": ["foreground_missing_fraction", "core_alpha_below_09_fraction", "background_spill_fraction", "mask_IoU"],
+  "shape_proxies": ["small_island_fraction", "thin_support_fraction", "enclosed_hole_fraction", "boundary_complexity"],
+  "aggregation": ["mean", "p95", "maximum", "maximum_frame"],
+  "no_GT_policy": "Return observed_coverage=null and full_object_completeness_score=null; never turn a model-generated view or morphologically filled mask into independent truth",
+  "future_training": "Existing observed-alpha coverage loss is differentiable. Novel-view priors need separate validation; no automatic solidification, per-object connectedness, spatial-neighbor gluing, material law, or full training is introduced here."
+}

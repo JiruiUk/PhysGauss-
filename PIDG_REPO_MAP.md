@@ -1,5 +1,17 @@
 # PIDG repository map — M0
 
+## Optional fixed-view completeness metrics (2026-11-03)
+
+`variants/view_completeness/metrics.py` separates independently observed alpha
+coverage metrics from target-free thin-support/island/hole/boundary descriptors.
+Its evaluation entry is disabled by default and never creates novel-view GT or
+a full-object completeness score. `audit.py --enabled` consumes the frozen
+fixed-camera PNGs with source/checkpoint hashes; it reports every camera over
+all200 times and validation30 times separately. Twelve new semantic tests plus
+ten existing integrity tests cover the diagnostic and supervised-loss behavior.
+Reports live in `experiments/view_completeness`; no trainer/physics integration
+or optimizer update is introduced. Future geometry priors remain unimplemented.
+
 ## Fixed-camera temporal completeness diagnostic (2026-11-03)
 
 `output/fixed_camera_temporal/render_sequences.py` restores frozen final C1/T1/O1

@@ -1,0 +1,44 @@
+{
+  "C1_original_50k": {
+    "all200": {
+      "foreground_missing_fraction": 0.0018959175555188785,
+      "core_alpha_below_09_fraction": 0.00038516663479786607,
+      "background_spill_fraction": 0.010061936542178218,
+      "mask_IoU": 0.9165846515105894
+    },
+    "validation30": {
+      "foreground_missing_fraction": 0.002250759057799816,
+      "core_alpha_below_09_fraction": 0.0005292900495500043,
+      "background_spill_fraction": 0.010097878659562324,
+      "mask_IoU": 0.9160635841227942
+    }
+  },
+  "T1_association_52k": {
+    "all200": {
+      "foreground_missing_fraction": 0.0018568962048991669,
+      "core_alpha_below_09_fraction": 0.0003931037850107377,
+      "background_spill_fraction": 0.010047803927014381,
+      "mask_IoU": 0.9167446329625116
+    },
+    "validation30": {
+      "foreground_missing_fraction": 0.002232040821376151,
+      "core_alpha_below_09_fraction": 0.0005277907782060661,
+      "background_spill_fraction": 0.010080980704957847,
+      "mask_IoU": 0.916227521719143
+    }
+  },
+  "O1_flow_on_50k": {
+    "all200": {
+      "foreground_missing_fraction": 0.0020218178888388493,
+      "core_alpha_below_09_fraction": 0.0003488654481606361,
+      "background_spill_fraction": 0.011752293977296411,
+      "mask_IoU": 0.9038902877791852
+    },
+    "validation30": {
+      "foreground_missing_fraction": 0.0024029924987017206,
+      "core_alpha_below_09_fraction": 0.0003442980483866356,
+      "background_spill_fraction": 0.011795334573849006,
+      "mask_IoU": 0.9033315908878744
+    }
+  }
+}

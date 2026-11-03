@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "model_count": 3,
+  "pose_count_with_moving_control": 4,
+  "time_count": 200,
+  "validation_time_count": 30,
+  "alpha_maps_evaluated": 2400,
+  "GT_RGBA_inputs": 200,
+  "full_object_completeness_score_always_null": true,
+  "grounded_metrics_only_at_actual_camera_time_pairs": true,
+  "input_files_unchanged": 2605,
+  "optimizer_updates": 0,
+  "checkpoint_sha256_unchanged": {
+    "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_color_repair\\C1_repaired\\rubber_duck\\checkpoints\\resume.pt": "b5d4cf5c9fb8fba4fcc26124555d48aa7d3a963a8be1d28488954752db486480",
+    "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_association_training\\pilot\\T1_association\\rubber_duck\\checkpoints\\resume.pt": "82f3c1028db8caa4edcb75a6fc8e8b5e5218a1f90ecc289cb473eaf7f68f402a",
+    "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_c1_flow_ablation\\O1_C1_flow_on\\rubber_duck\\checkpoints\\resume.pt": "e937f59b7994dd488cc4b7876ff563234b68d0c611a651d0c21c2959c8e47769"
+  },
+  "training_runtime_or_physics_modified": false,
+  "resolution": [
+    400,
+    225
+  ],
+  "original_render_resolution": [
+    1600,
+    900
+  ],
+  "alpha_precision": "Existing8-bit BOX-downsampled native alpha; not the original float-alpha arrays"
+}
