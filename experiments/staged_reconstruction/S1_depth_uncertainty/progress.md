@@ -20,3 +20,11 @@ runs/pidg_staged_reconstruction/S1_depth_uncertainty/v1 before launching.
 Keep per-view records and preserve user stops. Native full-Gaussian/Adam/RNG
 recovery is required only for a separately declared subsequent training stage;
 do not describe this data-only inference as that training or artifact cleanup.
+
+## Two-condition inference completed
+
+All96 views per case completed with unchanged423747/423100 D1 candidates and
+depths. Predeclared tight evidence:8600/8521 candidates. Every unavailable or
+wide candidate remains stored. All per-view files and parent/source hashes are
+bound in v1/inference.json; no evaluator GT was read. The independent evaluator
+is running. These counts alone establish neither accuracy nor usable coverage.
