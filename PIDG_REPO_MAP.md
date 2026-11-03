@@ -540,6 +540,21 @@ Config/protocol/results live in `experiments/frozen_velocity_probe`; cached
 targets and independent velocity checkpoints in `runs/pidg_frozen_velocity_probe`.
 Disabled execution exits without model imports, checkpoint access or optimization.
 
+## Optional transfer-integrity reconstruction experiment
+
+`variants/transfer_integrity/prepare.py` forks repaired C1 by changing only the
+Tuning import. `runtime.py::Tuning` delegates when its new flag is disabled;
+the enabled path retains original image/physics training and adds real-view
+coverage plus partial static and short-track geometry constraints.
+`static_audit.py` tests a blue-region static hypothesis with independent image
+tracks and held-observation triangulation. `data.py` binds conservative rows
+using complete native-resolution contributions and frozen training-only flow.
+`model.py` contains differentiable reconstruction objectives, not a new physics
+module. `run.py` preserves the full C1 optimizer/RNG/sampler state for matched
+continuations and verifies flags-off parity and enabled checkpoint recovery.
+`experiments/transfer_integrity/evaluate.py` evaluates final full states and
+reuses the frozen-camera renderer without changing historical artifacts.
+
 ## Full monotonic-clock / kinematic training (independent H3 fork)
 
 `variants/monotonic_training/prepare.py` copies H3 and changes only the Tuning

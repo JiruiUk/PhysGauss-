@@ -1,0 +1,83 @@
+{
+  "status": "passed",
+  "flags_off_steps": 10,
+  "on_steps": 20,
+  "resume_boundary": [
+    50010,
+    50020
+  ],
+  "original_C1_path_parameter_difference": {
+    "gaussian_parameters": {
+      "max_abs": 0.005227208137512207,
+      "RMS": 1.4952941693861793e-05
+    },
+    "gaussian_buffers": {
+      "max_abs": 0.0,
+      "RMS": 0.0
+    },
+    "velocity_net": {
+      "max_abs": 0.0,
+      "RMS": 0.0
+    },
+    "grid4d": {
+      "max_abs": 2.0253239199519157e-05,
+      "RMS": 9.152093992193152e-08
+    },
+    "deform": {
+      "max_abs": 5.960464477539063e-08,
+      "RMS": 3.1248816088848274e-09
+    }
+  },
+  "original_path_repeat_difference": {
+    "gaussian_parameters": {
+      "max_abs": 0.007772922515869141,
+      "RMS": 1.7068937624034332e-05
+    },
+    "gaussian_buffers": {
+      "max_abs": 0.0,
+      "RMS": 0.0
+    },
+    "velocity_net": {
+      "max_abs": 0.0,
+      "RMS": 0.0
+    },
+    "grid4d": {
+      "max_abs": 7.416354492306709e-05,
+      "RMS": 1.315259807927125e-07
+    },
+    "deform": {
+      "max_abs": 8.940696716308594e-08,
+      "RMS": 4.112931347041508e-09
+    }
+  },
+  "numerical_gate": "RMS <= 3x independently repeated unchanged-C1 difference + 1e-7; exact RNG/sampler; tight validation tolerance",
+  "validation_metrics_off_original_repeat": [
+    {
+      "PSNR": 39.65552546183268,
+      "SSIM": 0.9942794422308604,
+      "LPIPS": 0.011039776036826272,
+      "MS-SSIM": 0.9961396912733714
+    },
+    {
+      "PSNR": 39.65552151997884,
+      "SSIM": 0.9942794183890025,
+      "LPIPS": 0.011039768951013685,
+      "MS-SSIM": 0.9961396793524424
+    },
+    {
+      "PSNR": 39.65551923116048,
+      "SSIM": 0.994279420375824,
+      "LPIPS": 0.011039743230988582,
+      "MS-SSIM": 0.9961396992206574
+    }
+  ],
+  "validation_tolerance": {
+    "PSNR": 0.0001,
+    "SSIM": 1e-06,
+    "LPIPS": 1e-06,
+    "MS-SSIM": 1e-06
+  },
+  "native_width": 1600,
+  "actual_gradient_optimizer_probe": true,
+  "binding_sha256": "5f15c1926a72a8ab75244934879109a89f69d73c21a76225d3b2d61037c7afd0"
+}

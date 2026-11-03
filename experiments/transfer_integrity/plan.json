@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "scope": "Reconstruction/association experiment, not a constitutive physics milestone",
+  "source": "runs/pidg_color_repair/C1_repaired/rubber_duck/checkpoints/resume.pt",
+  "source_sha256": "b5d4cf5c9fb8fba4fcc26124555d48aa7d3a963a8be1d28488954752db486480",
+  "training": "Matched full-state continuation from50000 for2000 actual optimizer updates, no LR reset/topology changes",
+  "models": ["U0_C1_control", "U1_transfer_geometry"],
+  "new_main_flag": "transfer_integrity_enabled",
+  "terms": {
+    "observed_coverage_weight": 0.002,
+    "static_position_weight": 0.001,
+    "static_covariance_weight": 0.0001,
+    "static_anchor_weight": 0.001,
+    "track_reprojection_weight": 0.1,
+    "local_shape_weight": 0.0002
+  },
+  "interval": 10,
+  "ramp_updates": 400,
+  "static_points_per_term": 1024,
+  "tracked_points_per_term": 512,
+  "static_image_audit": "Independent blue-core LK/FB tracks; static multi-view triangulation with alternating-observation fit/check; actual trained camera convention; no camera fitting",
+  "static_gate": "At least12 tracks with>=8 observations,>=2deg ray baseline, held-observation median<=1.5px andp90<=3px, all positive depth; support in early/mid/late training time thirds",
+  "static_binding": "Complete native1600 color-adjoint contributions over120 training views; blue purity>=.98 of whole-image mass, duck leakage<=.005, >=3 blue-support observations and opacity>=.05",
+  "static_selector_revision": "Core-only semantic selection failed37.29% mean coverage before any training. Revision2 uses full independent blue semantic region for selection; eroded core remains the unchanged evaluation domain. All purity/coverage thresholds retained. Duck-bank rows are explicitly excluded from static rows.",
+  "static_coverage_gate": "Selected rows cover mean>=.5 and every time-third mean>=.3 of blue-core alpha mass; no full-object identity claim",
+  "static_anchors": "Independent LK-triangulated points; bind only already-blue rows with source projection<=3px and multi-observation median<=2px, RMS<=3px; at least8 anchors. Robust3D tolerance.02 scene units. No novel-view dense pseudo GT",
+  "dynamic_clips": ["clip1_0002_0014", "clip3_0015_0027", "clip2_0188_0200"],
+  "dynamic_binding": "Fresh full-state native support; independent image-component continuity and raw frozen flow; same local bank only within its own clip; unknown/occluded associations terminate",
+  "local_shape": "Same-clip same-component fixed edges, log length ratio tolerance[.5,2], rigid-motion invariant; no F/stress/material law or cross-object KNN",
+  "evaluation": "Full-state original-camera validation30+test50; all200 times at3 fixed cameras plus moving control; per-view shape proxies, separately blue/duck appearance; selected native RGB/alpha, videos; training-term diagnostics",
+  "success": "Report reconstruction quality and fixed-view outcomes separately; no success from proxy improvement alone, disappearing objects, or static-only improvement; no new-view PSNR without independent GT",
+  "protection": "Original PIDG/C1/T1/O1 and all previous outputs/caches unchanged; no learned material segmentation, per-Gaussian free stiffness/force, or synthetic novel-view GT"
+}

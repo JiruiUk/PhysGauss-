@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "F:\A_Edinburgh\PhysGauss\variants\transfer_integrity\run.py", line 151, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\variants\transfer_integrity\run.py", line 130, in main
+    preflight(repo,binding,deadline)
+  File "F:\A_Edinburgh\PhysGauss\variants\transfer_integrity\run.py", line 108, in preflight
+    assert maximum<1e-5,(key,maximum)
+           ^^^^^^^^^^^^
+AssertionError: ('gaussian_parameters', 0.005227208137512207)

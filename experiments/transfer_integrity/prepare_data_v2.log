@@ -1,0 +1,36 @@
+W1103 00:37:57.465000 250028 envs\pidg-cu128\Lib\site-packages\torch\utils\cpp_extension.py:466] Error checking compiler version for cl: 'cp1' codec can't decode bytes in position 0--1: No mapping for the Unicode character exists in the target code page.
+ninja: no work to do.
+F:\A_Edinburgh\PhysGauss\variants\association_training\code\hashencoder\hashgrid.py:16: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.half)
+F:\A_Edinburgh\PhysGauss\variants\association_training\code\hashencoder\hashgrid.py:56: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+F:\A_Edinburgh\PhysGauss\variants\transfer_integrity\data.py:41: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\generated\python_variable_methods.cpp:836.)
+  expected=(p['alpha']*m).sum((1,2));error=float(((grad.sum(0)-expected).abs()/expected.clamp_min(1)).max())
+native contribution binding 15 /120
+native contribution binding 30 /120
+native contribution binding 45 /120
+native contribution binding 60 /120
+native contribution binding 75 /120
+native contribution binding 90 /120
+native contribution binding 105 /120
+native contribution binding 120 /120
+{
+  "path": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_transfer_integrity\\training_data.npz",
+  "sha256": "5f15c1926a72a8ab75244934879109a89f69d73c21a76225d3b2d61037c7afd0",
+  "source_checkpoint_sha256": "b5d4cf5c9fb8fba4fcc26124555d48aa7d3a963a8be1d28488954752db486480",
+  "point_count": 86143,
+  "static_points": 16092,
+  "static_mean_blue_alpha_share": 0.6946286559104919,
+  "static_blue_share_time_thirds": [
+    0.6816731095314026,
+    0.6042697429656982,
+    0.7979431748390198
+  ],
+  "independent_static_3D_anchors": 42,
+  "local_observation_batches": 24,
+  "local_point_observations": 33348,
+  "full_material_IDs": false,
+  "new_view_dense_GT": false,
+  "training_only": true
+}

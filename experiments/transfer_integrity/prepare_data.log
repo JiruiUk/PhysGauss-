@@ -1,0 +1,27 @@
+W1103 00:36:20.210000 248280 envs\pidg-cu128\Lib\site-packages\torch\utils\cpp_extension.py:466] Error checking compiler version for cl: 'cp1' codec can't decode bytes in position 0--1: No mapping for the Unicode character exists in the target code page.
+ninja: no work to do.
+F:\A_Edinburgh\PhysGauss\variants\association_training\code\hashencoder\hashgrid.py:16: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.half)
+F:\A_Edinburgh\PhysGauss\variants\association_training\code\hashencoder\hashgrid.py:56: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+F:\A_Edinburgh\PhysGauss\variants\transfer_integrity\data.py:41: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\generated\python_variable_methods.cpp:836.)
+  expected=(p['alpha']*m).sum((1,2));error=float(((grad.sum(0)-expected).abs()/expected.clamp_min(1)).max())
+native contribution binding 15 /120
+native contribution binding 30 /120
+native contribution binding 45 /120
+native contribution binding 60 /120
+native contribution binding 75 /120
+native contribution binding 90 /120
+native contribution binding 105 /120
+native contribution binding 120 /120
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "F:\A_Edinburgh\PhysGauss\variants\transfer_integrity\data.py", line 183, in <module>
+    torch.set_num_threads(4);prepare()
+                             ^^^^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\variants\transfer_integrity\data.py", line 147, in prepare
+    assert share.mean()>=.5 and min(thirds)>=.3, (share.mean(),thirds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: (0.37290242, [0.3325434625148773, 0.2683538794517517, 0.5178099870681763])

@@ -1,0 +1,60 @@
+{
+  "U0_C1_control": {
+    "gaussian_parameters": {
+      "max": 0.005227208137512207,
+      "rms": 1.4952941693861792e-05
+    },
+    "gaussian_buffers": {
+      "max": 0.0,
+      "rms": 0.0
+    },
+    "velocity_net": {
+      "max": 0.0,
+      "rms": 0.0
+    },
+    "grid4d": {
+      "max": 2.0253239199519157e-05,
+      "rms": 9.152093992193151e-08
+    },
+    "deform": {
+      "max": 5.960464477539063e-08,
+      "rms": 3.1248816088848274e-09
+    },
+    "RNG_sampler_exact": {
+      "rng_python": true,
+      "rng_numpy": true,
+      "rng_torch": true,
+      "rng_cuda": true,
+      "viewpoint_stack": true
+    }
+  },
+  "C1_original_repeat": {
+    "gaussian_parameters": {
+      "max": 0.007772922515869141,
+      "rms": 1.706893762403433e-05
+    },
+    "gaussian_buffers": {
+      "max": 0.0,
+      "rms": 0.0
+    },
+    "velocity_net": {
+      "max": 0.0,
+      "rms": 0.0
+    },
+    "grid4d": {
+      "max": 7.416354492306709e-05,
+      "rms": 1.315259807927125e-07
+    },
+    "deform": {
+      "max": 8.940696716308594e-08,
+      "rms": 4.112931347041508e-09
+    },
+    "RNG_sampler_exact": {
+      "rng_python": true,
+      "rng_numpy": true,
+      "rng_torch": true,
+      "rng_cuda": true,
+      "viewpoint_stack": true
+    }
+  }
+}
