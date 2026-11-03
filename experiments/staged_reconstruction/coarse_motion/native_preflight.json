@@ -1,0 +1,338 @@
+{
+  "passed": true,
+  "flags_off_native_rgb_alpha_loss_exact": true,
+  "disabled_install_skips_assets_and_keeps_original_field": true,
+  "gradient_max_abs_difference": 7.450580596923828e-09,
+  "gradient_scale": 0.06791653484106064,
+  "same_original_parameter_objects": true,
+  "active_field_queries_per_call": [
+    16
+  ],
+  "render_physics_center_max_abs_difference_after_updates": {
+    "0.0": 0.0,
+    "0.43": 0.0,
+    "1.0": 0.0
+  },
+  "canonical_and_field_gradients_finite_nonzero": true,
+  "forced_physics_integration_smoke_updates": 20,
+  "forced_physics_calls": 2,
+  "forced_physics_smoke_is_not_actual16k_warmup": true,
+  "physics_smoke_records": [
+    {
+      "global_step": 16001,
+      "phase": "physics",
+      "phase_step": 1,
+      "width": 1600,
+      "frame_index": 0,
+      "rgb": 0.025124719366431236,
+      "shared_motion": true,
+      "control_count": 16
+    },
+    {
+      "global_step": 16002,
+      "phase": "physics",
+      "phase_step": 2,
+      "width": 1600,
+      "frame_index": 1,
+      "rgb": 0.026560185477137566,
+      "shared_motion": true,
+      "control_count": 16
+    },
+    {
+      "global_step": 16003,
+      "phase": "physics",
+      "phase_step": 3,
+      "width": 1600,
+      "frame_index": 2,
+      "rgb": 0.027194282039999962,
+      "shared_motion": true,
+      "control_count": 16
+    },
+    {
+      "global_step": 16004,
+      "phase": "physics",
+      "phase_step": 4,
+      "width": 1600,
+      "frame_index": 3,
+      "rgb": 0.027499590069055557,
+      "shared_motion": true,
+      "control_count": 16
+    },
+    {
+      "global_step": 16005,
+      "phase": "physics",
+      "phase_step": 5,
+      "width": 1600,
+      "frame_index": 4,
+      "rgb": 0.028621694073081017,
+      "shared_motion": true,
+      "control_count": 16
+    },
+    {
+      "global_step": 16006,
+      "phase": "physics",
+      "phase_step": 6,
+      "width": 1600,
+      "frame_index": 5,
+      "rgb": 0.03649403154850006,
+      "shared_motion": true,
+      "control_count": 16
+    },
+    {
+      "global_step": 16007,
+      "phase": "physics",
+      "phase_step": 7,
+      "width": 1600,
+      "frame_index": 6,
+      "rgb": 0.0501348040997982,
+      "shared_motion": true,
+      "control_count": 16
+    },
+    {
+      "global_step": 16008,
+      "phase": "physics",
+      "phase_step": 8,
+      "width": 1600,
+      "frame_index": 7,
+      "rgb": 0.06784633547067642,
+      "shared_motion": true,
+      "control_count": 16
+    },
+    {
+      "global_step": 16009,
+      "phase": "physics",
+      "phase_step": 9,
+      "width": 1600,
+      "frame_index": 8,
+      "rgb": 0.07343750447034836,
+      "shared_motion": true,
+      "control_count": 16
+    },
+    {
+      "global_step": 16010,
+      "phase": "physics",
+      "phase_step": 10,
+      "width": 1600,
+      "frame_index": 9,
+      "rgb": 0.07933907955884933,
+      "physics": {
+        "terms": {
+          "kinematic": 0.00011089623745327767,
+          "CMR": 0.08423129660116124
+        },
+        "diagnostics": [
+          {
+            "object": 0,
+            "time_interval": [
+              0.07035175879396985,
+              0.07537688442211055,
+              0.08040201005025124
+            ],
+            "nodes": 3540,
+            "anchors": 64,
+            "current_world_same_bank_neighbors": 64,
+            "support_attempts": [
+              {
+                "neighbors": 64,
+                "valid_fraction": 1.0
+              }
+            ],
+            "valid_fraction": 1.0,
+            "velocity_trajectory_RMS": 0.014892698711333528,
+            "CMR_RMS": 0.4161547517149202,
+            "trajectory_acceleration_RMS": 0.004800152564446069,
+            "independent_acceleration_RMS": 0.0024954823699350013,
+            "stress_pred_RMS": 0.06232510507106781,
+            "stress_divergence_RMS": 0.029648493016068835,
+            "rate_divergence_RMS": 0.42066920769970084,
+            "spatial_support_radius_mean": 0.04300190392463671,
+            "time_units": "sequence normalized; acquisition seconds unknown",
+            "not_independent_GT": true
+          }
+        ],
+        "guard": {
+          "scale": 1.0,
+          "cap": 0.1,
+          "groups": {
+            "grid": {
+              "image_norm": 0.00024451620993204415,
+              "weighted_momentum_norm": 1.3714739566239587e-07,
+              "guarded_momentum_norm": 1.3714739566239587e-07
+            },
+            "deformation": {
+              "image_norm": 1.384543776512146,
+              "weighted_momentum_norm": 4.917449132335605e-07,
+              "guarded_momentum_norm": 4.917449132335605e-07
+            },
+            "canonical": {
+              "image_norm": 0.05218063294887543,
+              "weighted_momentum_norm": 1.8954217011923902e-05,
+              "guarded_momentum_norm": 1.8954217011923902e-05
+            }
+          },
+          "private_gradients_preserved": true
+        }
+      },
+      "shared_motion": true,
+      "control_count": 16
+    },
+    {
+      "global_step": 16011,
+      "phase": "physics",
+      "phase_step": 11,
+      "width": 1600,
+      "frame_index": 10,
+      "rgb": 0.11384793370962143,
+      "shared_motion": true,
+      "control_count": 16
+    },
+    {
+      "global_step": 16012,
+      "phase": "physics",
+      "phase_step": 12,
+      "width": 1600,
+      "frame_index": 11,
+      "rgb": 0.12061896920204163,
+      "shared_motion": true,
+      "control_count": 16
+    },
+    {
+      "global_step": 16013,
+      "phase": "physics",
+      "phase_step": 13,
+      "width": 1600,
+      "frame_index": 12,
+      "rgb": 0.14195667207241058,
+      "shared_motion": true,
+      "control_count": 16
+    },
+    {
+      "global_step": 16014,
+      "phase": "physics",
+      "phase_step": 14,
+      "width": 1600,
+      "frame_index": 13,
+      "rgb": 0.1486019343137741,
+      "shared_motion": true,
+      "control_count": 16
+    },
+    {
+      "global_step": 16015,
+      "phase": "physics",
+      "phase_step": 15,
+      "width": 1600,
+      "frame_index": 14,
+      "rgb": 0.18593047559261322,
+      "shared_motion": true,
+      "control_count": 16
+    },
+    {
+      "global_step": 16016,
+      "phase": "physics",
+      "phase_step": 16,
+      "width": 1600,
+      "frame_index": 15,
+      "rgb": 0.19318662583827972,
+      "shared_motion": true,
+      "control_count": 16
+    },
+    {
+      "global_step": 16017,
+      "phase": "physics",
+      "phase_step": 17,
+      "width": 1600,
+      "frame_index": 16,
+      "rgb": 0.20013801753520966,
+      "shared_motion": true,
+      "control_count": 16
+    },
+    {
+      "global_step": 16018,
+      "phase": "physics",
+      "phase_step": 18,
+      "width": 1600,
+      "frame_index": 17,
+      "rgb": 0.21874523162841797,
+      "shared_motion": true,
+      "control_count": 16
+    },
+    {
+      "global_step": 16019,
+      "phase": "physics",
+      "phase_step": 19,
+      "width": 1600,
+      "frame_index": 18,
+      "rgb": 0.2313561886548996,
+      "shared_motion": true,
+      "control_count": 16
+    },
+    {
+      "global_step": 16020,
+      "phase": "physics",
+      "phase_step": 20,
+      "width": 1600,
+      "frame_index": 19,
+      "rgb": 0.24084973335266113,
+      "physics": {
+        "terms": {
+          "kinematic": 6.381393523626078e-05,
+          "CMR": 0.05415374439528973
+        },
+        "diagnostics": [
+          {
+            "object": 0,
+            "time_interval": [
+              0.16080402010050251,
+              0.1658291457286432,
+              0.1708542713567839
+            ],
+            "nodes": 3544,
+            "anchors": 64,
+            "current_world_same_bank_neighbors": 64,
+            "support_attempts": [
+              {
+                "neighbors": 64,
+                "valid_fraction": 1.0
+              }
+            ],
+            "valid_fraction": 1.0,
+            "velocity_trajectory_RMS": 0.01129725057137893,
+            "CMR_RMS": 0.331898197949193,
+            "trajectory_acceleration_RMS": 0.010927048879820569,
+            "independent_acceleration_RMS": 0.03415408186337566,
+            "stress_pred_RMS": 0.061261411756277084,
+            "stress_divergence_RMS": 0.028284638385549666,
+            "rate_divergence_RMS": 0.3281197504101872,
+            "spatial_support_radius_mean": 0.043038823825175564,
+            "time_units": "sequence normalized; acquisition seconds unknown",
+            "not_independent_GT": true
+          }
+        ],
+        "guard": {
+          "scale": 1.0,
+          "cap": 0.1,
+          "groups": {
+            "grid": {
+              "image_norm": 0.0010393646080046892,
+              "weighted_momentum_norm": 1.0791962949951994e-06,
+              "guarded_momentum_norm": 1.0791962949951994e-06
+            },
+            "deformation": {
+              "image_norm": 0.5929702520370483,
+              "weighted_momentum_norm": 5.276527645037277e-06,
+              "guarded_momentum_norm": 5.276527645037277e-06
+            },
+            "canonical": {
+              "image_norm": 0.058858077973127365,
+              "weighted_momentum_norm": 1.2913075806864072e-05,
+              "guarded_momentum_norm": 1.2913075806864072e-05
+            }
+          },
+          "private_gradients_preserved": true
+        }
+      },
+      "shared_motion": true,
+      "control_count": 16
+    }
+  ]
+}
