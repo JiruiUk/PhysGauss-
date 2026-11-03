@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "tests": 57,
+  "command": "pytest tests/test_staged_*.py plus tests/test_static_pool.py, explicitly selected 12 files",
+  "scope": "CPU semantics, flags-off, freeze, binding, SDF and graph state; native GPU/Adam/resume separately verified",
+  "smoke_verification": "smoke_verification.json"
+}

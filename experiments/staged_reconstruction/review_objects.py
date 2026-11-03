@@ -62,7 +62,7 @@ def main():
         from variants.staged_reconstruction.geometry_recovery.freeze import verify as verify_geometry
         verify_geometry()
     if args.stage:
-        from variants.staged_reconstruction.stage3.train import freeze as verify_physics
+        from variants.staged_reconstruction.state_recovery.train import freeze as verify_physics
         verify_physics(read(REPORT/'S3/protocol.json'))
         if args.stage!='S3':
             from variants.staged_reconstruction.continuation import freeze as verify_later

@@ -85,7 +85,7 @@ def freeze(stage):
     receipt=REPORT/stage/'source_freeze.json'
     if receipt.exists():assert read(receipt)==values
     else:write(receipt,values)
-    from .stage3.train import freeze as freeze3
+    from .state_recovery.train import freeze as freeze3
     freeze3(read(REPORT/'S3/protocol.json'))
 
 

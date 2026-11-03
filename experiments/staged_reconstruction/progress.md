@@ -105,3 +105,8 @@ and manufactured sphere/plane300-step matched optimization plus independent
 4000-step continuation entries are implemented but remain gated on real-parent
 short training and reviewed prior stage. Physical force/friction/restitution stay
 off.49 earlier related tests and8 new graph/binding/entry tests passed.
+
+Corrected S3 separate40→80 recovery verified136 Adam states, exact Python RNG/
+camera replay, finite updates and static freeze. Formal6000 is now running via
+state_recovery.train (PID267804); the full57-test suite passed. The earlier
+rank failure and frozen source remain preserved, not overwritten.
