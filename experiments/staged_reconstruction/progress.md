@@ -79,3 +79,29 @@ is implemented with a strict reviewed-S2 hash gate and full continuation states;
 formal S3 smoke/training remain pending S2 admission. S4 image-only sparse track
 extraction and two advection tests are also running/prepared, without Gaussian
 bindings or any claim that the later stages are complete.
+
+Third S2 correction completed16000/native val/test and image/video review.
+Validation dynamic24.25343dB, dynamic-only alpha0.982654, static35.53011dB pass
+the unchanged numeric gates. Conditional continuation is allowed for subsequent
+reconstruction corrections; geometry success is NOT established. Fixed86/188
+novel views still fragment, and green own-component share at42 is0.479. These
+unresolved results remain in S2_geometry_recovery/assessment.md; no physical
+identity, contact geometry or complete novel-view claim is made.
+
+Real-parent S3 smoke40→80 failed on insufficient nondegenerate neighborhoods at
+step80. The last atomic40 checkpoint and failure are preserved under
+runs/pidg_staged_reconstruction/S3/pregraph_smoke_failed. The frozen trainer is
+unchanged after this failure. Independent state_recovery entry replaces canonical
+kNN with current-world same-bank kNN, expands support64/128/256 while retaining
+the same rank and25%valid gate, and preserves graph-cache state explicitly.
+The corrected smoke is running; this is not formal S3 training yet.
+
+S4 image fragments131 are prepared without held-out data or Gaussian bindings.
+Binding now requires one fixed row to support every observation with complete
+visible alpha*T, known early component purity and tight reprojection; conflicts
+are rejected. S5's conditional static volume exactly rebuilds S1 eligibility,
+and manufactured sphere/plane300-step matched optimization plus independent
+150→300 recovery passes. It is not Rubber Duck contact validation. S4/S5/S6
+4000-step continuation entries are implemented but remain gated on real-parent
+short training and reviewed prior stage. Physical force/friction/restitution stay
+off.49 earlier related tests and8 new graph/binding/entry tests passed.
