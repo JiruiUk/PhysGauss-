@@ -156,7 +156,7 @@ def main():
                           f'<a href="{name}/{view}/native/alpha{n:04d}.png">alpha</a>　']
             parts += ['</p></details>']
         parts += ['</section>']
-    (OUT/'index.html').write_text('\n'.join(parts), encoding='utf-8')
+    (OUT/'index.html').write_text('\n'.join(p.rstrip() for p in parts)+'\n', encoding='utf-8')
     paths = [p for p in OUT.rglob('*') if p.is_file() and '__pycache__' not in str(p)]
     write(REPORT/'artifact_manifest.json', {str(p.relative_to(ROOT)): digest(p) for p in sorted(paths)})
     write(REPORT/'final_verification.json', {
