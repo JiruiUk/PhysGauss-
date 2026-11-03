@@ -1,0 +1,128 @@
+{
+  "rows": [
+    {
+      "frame": 2,
+      "median": 1.0988494157791138,
+      "p90": 2.2737419605255127,
+      "static_support": 20095,
+      "dynamic_extrapolation_fraction": 0.0431413071557737,
+      "per_frame_scale_diagnostic": 3.8991241455078125,
+      "old_per_frame_affine_inverse_depth_median_p90": [
+        0.09252595901489258,
+        0.9240305423736572
+      ],
+      "dynamic_depth_quantiles": [
+        3.736680841445923,
+        4.645178318023682,
+        5.177489280700684
+      ],
+      "passed": false
+    },
+    {
+      "frame": 43,
+      "median": 0.4460258483886719,
+      "p90": 0.8521553039550781,
+      "static_support": 23318,
+      "dynamic_extrapolation_fraction": 0.15521936459909227,
+      "per_frame_scale_diagnostic": 2.900435447692871,
+      "old_per_frame_affine_inverse_depth_median_p90": [
+        0.2191925048828125,
+        0.567409896850586
+      ],
+      "dynamic_depth_quantiles": [
+        5.28299690246582,
+        6.813855171203613,
+        8.36648696899414
+      ],
+      "passed": false
+    },
+    {
+      "frame": 86,
+      "median": 0.6785101890563965,
+      "p90": 0.9010806083679199,
+      "static_support": 21329,
+      "dynamic_extrapolation_fraction": 0.24832753545624833,
+      "per_frame_scale_diagnostic": 3.5291008949279785,
+      "old_per_frame_affine_inverse_depth_median_p90": [
+        0.16052722930908203,
+        0.47031383514404307
+      ],
+      "dynamic_depth_quantiles": [
+        4.671794795989991,
+        4.972276210784912,
+        5.695371780395508
+      ],
+      "passed": false
+    },
+    {
+      "frame": 146,
+      "median": 1.6515719890594482,
+      "p90": 2.439017176628113,
+      "static_support": 22315,
+      "dynamic_extrapolation_fraction": 0.014790220344099004,
+      "per_frame_scale_diagnostic": 4.376903057098389,
+      "old_per_frame_affine_inverse_depth_median_p90": [
+        0.18640804290771484,
+        0.4627242088317871
+      ],
+      "dynamic_depth_quantiles": [
+        3.3169768047332764,
+        3.611422300338745,
+        4.184639663696289
+      ],
+      "passed": false
+    },
+    {
+      "frame": 188,
+      "median": 0.7913691997528076,
+      "p90": 1.7962809085845945,
+      "static_support": 28543,
+      "dynamic_extrapolation_fraction": 0.1906158357771261,
+      "per_frame_scale_diagnostic": 2.7170584201812744,
+      "old_per_frame_affine_inverse_depth_median_p90": [
+        0.13452434539794922,
+        0.4358003139495848
+      ],
+      "dynamic_depth_quantiles": [
+        7.113139815330506,
+        7.541835069656372,
+        9.13938621520996
+      ],
+      "passed": false
+    },
+    {
+      "frame": 200,
+      "median": 0.5621204376220703,
+      "p90": 1.7806096076965332,
+      "static_support": 28592,
+      "dynamic_extrapolation_fraction": 0.11549925484351714,
+      "per_frame_scale_diagnostic": 2.8243961334228516,
+      "old_per_frame_affine_inverse_depth_median_p90": [
+        0.13007593154907227,
+        0.443479061126709
+      ],
+      "dynamic_depth_quantiles": [
+        6.871242818832397,
+        7.3313000202178955,
+        9.034622230529786
+      ],
+      "passed": false
+    }
+  ],
+  "global_metric_to_scene_scale": 3.1216635704040527,
+  "static_qualification_passed": false,
+  "quality_gates": {
+    "held_static_median_max": 0.05,
+    "held_static_p90_max": 0.15,
+    "dynamic_extrapolation_fraction_max": 0.1,
+    "static_support_min": 1000
+  },
+  "static_reference_is_frozen_model_conditioned_not_GT": true,
+  "irregular_training_time_spacing": true,
+  "reduced_input_size": 280,
+  "training_admitted": false,
+  "dynamic_geometry_and_correspondence_not_independently_validated": true,
+  "optimizer_updates": 0,
+  "test_or_val_RGB_used": false,
+  "PIDG_training_changed": false
+}

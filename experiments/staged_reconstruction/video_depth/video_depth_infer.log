@@ -1,0 +1,19 @@
+F:\A_Edinburgh\PhysGauss\envs\pidg-cu128\Lib\site-packages\requests\__init__.py:113: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (7.6.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+xFormers not available
+xFormers not available
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "F:\A_Edinburgh\PhysGauss\variants\staged_reconstruction\video_depth\infer.py", line 54, in <module>
+    if __name__=='__main__': main()
+                             ^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\variants\staged_reconstruction\video_depth\infer.py", line 26, in main
+    from video_depth_anything.video_depth import VideoDepthAnything
+  File "F:\A_Edinburgh\PhysGauss\third_party\video_depth_research\video_depth_anything\video_depth.py", line 24, in <module>
+    from .dpt_temporal import DPTHeadTemporal
+  File "F:\A_Edinburgh\PhysGauss\third_party\video_depth_research\video_depth_anything\dpt_temporal.py", line 19, in <module>
+    from easydict import EasyDict
+ModuleNotFoundError: No module named 'easydict'
+xFormers not available
+xFormers not available
