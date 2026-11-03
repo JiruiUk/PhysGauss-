@@ -1,0 +1,279 @@
+<!doctype html><meta charset="utf-8"><title>Transfer integrity 第一版测试</title>
+<style>body{background:#11151c;color:#eee;font:17px system-ui;margin:26px;max-width:1600px}img,video{max-width:100%}a{color:#8bc9ff}section{border-top:1px solid #555;margin-top:30px}</style>
+<h1>第一版：真实观测、短时对应与局部几何先验</h1>
+<p id="final-verdict"><strong>实测结论：局部对应改善，但固定视角碎裂和遮挡后身份保留没有明显改善。</strong>两组各继续训练2000步，默认关闭新分支。<a href="native_crop_fixed86_t2.png">查看原生像素局部对比</a>。</p>
+<p>左：原始 C1 50k；中：继续训练的 U0 52k；右：新约束 U1 52k。固定相机与原相机轨迹各200时刻。视频上排RGB、下排透明度。</p>
+<p>由最终完整检查点在1600×900渲染后缩图。只有原轨迹存在图像真值；固定相机跨时刻结果不能计算真实PSNR或证明物理身份。黄色/蓝色只用于外观诊断。25fps为展示速度。</p>
+<p><a href="../../experiments/transfer_integrity/assessment.md">中文测试结论</a></p>
+<section><h2>fixed_0002</h2>
+<video controls loop preload="metadata" src="fixed_0002_comparison_RGB_alpha.mp4"></video>
+<p><a href="fixed_0002_comparison_RGB_alpha.decoded_contact.png">逐帧解码接触表</a></p>
+<img loading="lazy" src="fixed_0002_key_comparison.png">
+<details><summary>C1_original_50k 原图、视频与透明度</summary>
+<video controls loop preload="none" src="C1_original_50k/fixed_0002_RGB.mp4"></video>
+<img loading="lazy" src="C1_original_50k/fixed_0002_RGB_alpha_contact.png">
+<p>1600×900原图：
+<a href="C1_original_50k/fixed_0002/native/rgb0002.png">2 RGB</a> /
+<a href="C1_original_50k/fixed_0002/native/alpha0002.png">alpha</a>
+<a href="C1_original_50k/fixed_0002/native/rgb0027.png">27 RGB</a> /
+<a href="C1_original_50k/fixed_0002/native/alpha0027.png">alpha</a>
+<a href="C1_original_50k/fixed_0002/native/rgb0043.png">43 RGB</a> /
+<a href="C1_original_50k/fixed_0002/native/alpha0043.png">alpha</a>
+<a href="C1_original_50k/fixed_0002/native/rgb0074.png">74 RGB</a> /
+<a href="C1_original_50k/fixed_0002/native/alpha0074.png">alpha</a>
+<a href="C1_original_50k/fixed_0002/native/rgb0086.png">86 RGB</a> /
+<a href="C1_original_50k/fixed_0002/native/alpha0086.png">alpha</a>
+<a href="C1_original_50k/fixed_0002/native/rgb0108.png">108 RGB</a> /
+<a href="C1_original_50k/fixed_0002/native/alpha0108.png">alpha</a>
+<a href="C1_original_50k/fixed_0002/native/rgb0172.png">172 RGB</a> /
+<a href="C1_original_50k/fixed_0002/native/alpha0172.png">alpha</a>
+<a href="C1_original_50k/fixed_0002/native/rgb0200.png">200 RGB</a> /
+<a href="C1_original_50k/fixed_0002/native/alpha0200.png">alpha</a>
+</p></details>
+<details><summary>U0_C1_control 原图、视频与透明度</summary>
+<video controls loop preload="none" src="U0_C1_control/fixed_0002_RGB.mp4"></video>
+<img loading="lazy" src="U0_C1_control/fixed_0002_RGB_alpha_contact.png">
+<p>1600×900原图：
+<a href="U0_C1_control/fixed_0002/native/rgb0002.png">2 RGB</a> /
+<a href="U0_C1_control/fixed_0002/native/alpha0002.png">alpha</a>
+<a href="U0_C1_control/fixed_0002/native/rgb0027.png">27 RGB</a> /
+<a href="U0_C1_control/fixed_0002/native/alpha0027.png">alpha</a>
+<a href="U0_C1_control/fixed_0002/native/rgb0043.png">43 RGB</a> /
+<a href="U0_C1_control/fixed_0002/native/alpha0043.png">alpha</a>
+<a href="U0_C1_control/fixed_0002/native/rgb0074.png">74 RGB</a> /
+<a href="U0_C1_control/fixed_0002/native/alpha0074.png">alpha</a>
+<a href="U0_C1_control/fixed_0002/native/rgb0086.png">86 RGB</a> /
+<a href="U0_C1_control/fixed_0002/native/alpha0086.png">alpha</a>
+<a href="U0_C1_control/fixed_0002/native/rgb0108.png">108 RGB</a> /
+<a href="U0_C1_control/fixed_0002/native/alpha0108.png">alpha</a>
+<a href="U0_C1_control/fixed_0002/native/rgb0172.png">172 RGB</a> /
+<a href="U0_C1_control/fixed_0002/native/alpha0172.png">alpha</a>
+<a href="U0_C1_control/fixed_0002/native/rgb0200.png">200 RGB</a> /
+<a href="U0_C1_control/fixed_0002/native/alpha0200.png">alpha</a>
+</p></details>
+<details><summary>U1_transfer_geometry 原图、视频与透明度</summary>
+<video controls loop preload="none" src="U1_transfer_geometry/fixed_0002_RGB.mp4"></video>
+<img loading="lazy" src="U1_transfer_geometry/fixed_0002_RGB_alpha_contact.png">
+<p>1600×900原图：
+<a href="U1_transfer_geometry/fixed_0002/native/rgb0002.png">2 RGB</a> /
+<a href="U1_transfer_geometry/fixed_0002/native/alpha0002.png">alpha</a>
+<a href="U1_transfer_geometry/fixed_0002/native/rgb0027.png">27 RGB</a> /
+<a href="U1_transfer_geometry/fixed_0002/native/alpha0027.png">alpha</a>
+<a href="U1_transfer_geometry/fixed_0002/native/rgb0043.png">43 RGB</a> /
+<a href="U1_transfer_geometry/fixed_0002/native/alpha0043.png">alpha</a>
+<a href="U1_transfer_geometry/fixed_0002/native/rgb0074.png">74 RGB</a> /
+<a href="U1_transfer_geometry/fixed_0002/native/alpha0074.png">alpha</a>
+<a href="U1_transfer_geometry/fixed_0002/native/rgb0086.png">86 RGB</a> /
+<a href="U1_transfer_geometry/fixed_0002/native/alpha0086.png">alpha</a>
+<a href="U1_transfer_geometry/fixed_0002/native/rgb0108.png">108 RGB</a> /
+<a href="U1_transfer_geometry/fixed_0002/native/alpha0108.png">alpha</a>
+<a href="U1_transfer_geometry/fixed_0002/native/rgb0172.png">172 RGB</a> /
+<a href="U1_transfer_geometry/fixed_0002/native/alpha0172.png">alpha</a>
+<a href="U1_transfer_geometry/fixed_0002/native/rgb0200.png">200 RGB</a> /
+<a href="U1_transfer_geometry/fixed_0002/native/alpha0200.png">alpha</a>
+</p></details>
+</section>
+<section><h2>fixed_0086</h2>
+<video controls loop preload="metadata" src="fixed_0086_comparison_RGB_alpha.mp4"></video>
+<p><a href="fixed_0086_comparison_RGB_alpha.decoded_contact.png">逐帧解码接触表</a></p>
+<img loading="lazy" src="fixed_0086_key_comparison.png">
+<details><summary>C1_original_50k 原图、视频与透明度</summary>
+<video controls loop preload="none" src="C1_original_50k/fixed_0086_RGB.mp4"></video>
+<img loading="lazy" src="C1_original_50k/fixed_0086_RGB_alpha_contact.png">
+<p>1600×900原图：
+<a href="C1_original_50k/fixed_0086/native/rgb0002.png">2 RGB</a> /
+<a href="C1_original_50k/fixed_0086/native/alpha0002.png">alpha</a>
+<a href="C1_original_50k/fixed_0086/native/rgb0027.png">27 RGB</a> /
+<a href="C1_original_50k/fixed_0086/native/alpha0027.png">alpha</a>
+<a href="C1_original_50k/fixed_0086/native/rgb0043.png">43 RGB</a> /
+<a href="C1_original_50k/fixed_0086/native/alpha0043.png">alpha</a>
+<a href="C1_original_50k/fixed_0086/native/rgb0074.png">74 RGB</a> /
+<a href="C1_original_50k/fixed_0086/native/alpha0074.png">alpha</a>
+<a href="C1_original_50k/fixed_0086/native/rgb0086.png">86 RGB</a> /
+<a href="C1_original_50k/fixed_0086/native/alpha0086.png">alpha</a>
+<a href="C1_original_50k/fixed_0086/native/rgb0108.png">108 RGB</a> /
+<a href="C1_original_50k/fixed_0086/native/alpha0108.png">alpha</a>
+<a href="C1_original_50k/fixed_0086/native/rgb0172.png">172 RGB</a> /
+<a href="C1_original_50k/fixed_0086/native/alpha0172.png">alpha</a>
+<a href="C1_original_50k/fixed_0086/native/rgb0200.png">200 RGB</a> /
+<a href="C1_original_50k/fixed_0086/native/alpha0200.png">alpha</a>
+</p></details>
+<details><summary>U0_C1_control 原图、视频与透明度</summary>
+<video controls loop preload="none" src="U0_C1_control/fixed_0086_RGB.mp4"></video>
+<img loading="lazy" src="U0_C1_control/fixed_0086_RGB_alpha_contact.png">
+<p>1600×900原图：
+<a href="U0_C1_control/fixed_0086/native/rgb0002.png">2 RGB</a> /
+<a href="U0_C1_control/fixed_0086/native/alpha0002.png">alpha</a>
+<a href="U0_C1_control/fixed_0086/native/rgb0027.png">27 RGB</a> /
+<a href="U0_C1_control/fixed_0086/native/alpha0027.png">alpha</a>
+<a href="U0_C1_control/fixed_0086/native/rgb0043.png">43 RGB</a> /
+<a href="U0_C1_control/fixed_0086/native/alpha0043.png">alpha</a>
+<a href="U0_C1_control/fixed_0086/native/rgb0074.png">74 RGB</a> /
+<a href="U0_C1_control/fixed_0086/native/alpha0074.png">alpha</a>
+<a href="U0_C1_control/fixed_0086/native/rgb0086.png">86 RGB</a> /
+<a href="U0_C1_control/fixed_0086/native/alpha0086.png">alpha</a>
+<a href="U0_C1_control/fixed_0086/native/rgb0108.png">108 RGB</a> /
+<a href="U0_C1_control/fixed_0086/native/alpha0108.png">alpha</a>
+<a href="U0_C1_control/fixed_0086/native/rgb0172.png">172 RGB</a> /
+<a href="U0_C1_control/fixed_0086/native/alpha0172.png">alpha</a>
+<a href="U0_C1_control/fixed_0086/native/rgb0200.png">200 RGB</a> /
+<a href="U0_C1_control/fixed_0086/native/alpha0200.png">alpha</a>
+</p></details>
+<details><summary>U1_transfer_geometry 原图、视频与透明度</summary>
+<video controls loop preload="none" src="U1_transfer_geometry/fixed_0086_RGB.mp4"></video>
+<img loading="lazy" src="U1_transfer_geometry/fixed_0086_RGB_alpha_contact.png">
+<p>1600×900原图：
+<a href="U1_transfer_geometry/fixed_0086/native/rgb0002.png">2 RGB</a> /
+<a href="U1_transfer_geometry/fixed_0086/native/alpha0002.png">alpha</a>
+<a href="U1_transfer_geometry/fixed_0086/native/rgb0027.png">27 RGB</a> /
+<a href="U1_transfer_geometry/fixed_0086/native/alpha0027.png">alpha</a>
+<a href="U1_transfer_geometry/fixed_0086/native/rgb0043.png">43 RGB</a> /
+<a href="U1_transfer_geometry/fixed_0086/native/alpha0043.png">alpha</a>
+<a href="U1_transfer_geometry/fixed_0086/native/rgb0074.png">74 RGB</a> /
+<a href="U1_transfer_geometry/fixed_0086/native/alpha0074.png">alpha</a>
+<a href="U1_transfer_geometry/fixed_0086/native/rgb0086.png">86 RGB</a> /
+<a href="U1_transfer_geometry/fixed_0086/native/alpha0086.png">alpha</a>
+<a href="U1_transfer_geometry/fixed_0086/native/rgb0108.png">108 RGB</a> /
+<a href="U1_transfer_geometry/fixed_0086/native/alpha0108.png">alpha</a>
+<a href="U1_transfer_geometry/fixed_0086/native/rgb0172.png">172 RGB</a> /
+<a href="U1_transfer_geometry/fixed_0086/native/alpha0172.png">alpha</a>
+<a href="U1_transfer_geometry/fixed_0086/native/rgb0200.png">200 RGB</a> /
+<a href="U1_transfer_geometry/fixed_0086/native/alpha0200.png">alpha</a>
+</p></details>
+</section>
+<section><h2>fixed_0188</h2>
+<video controls loop preload="metadata" src="fixed_0188_comparison_RGB_alpha.mp4"></video>
+<p><a href="fixed_0188_comparison_RGB_alpha.decoded_contact.png">逐帧解码接触表</a></p>
+<img loading="lazy" src="fixed_0188_key_comparison.png">
+<details><summary>C1_original_50k 原图、视频与透明度</summary>
+<video controls loop preload="none" src="C1_original_50k/fixed_0188_RGB.mp4"></video>
+<img loading="lazy" src="C1_original_50k/fixed_0188_RGB_alpha_contact.png">
+<p>1600×900原图：
+<a href="C1_original_50k/fixed_0188/native/rgb0002.png">2 RGB</a> /
+<a href="C1_original_50k/fixed_0188/native/alpha0002.png">alpha</a>
+<a href="C1_original_50k/fixed_0188/native/rgb0027.png">27 RGB</a> /
+<a href="C1_original_50k/fixed_0188/native/alpha0027.png">alpha</a>
+<a href="C1_original_50k/fixed_0188/native/rgb0043.png">43 RGB</a> /
+<a href="C1_original_50k/fixed_0188/native/alpha0043.png">alpha</a>
+<a href="C1_original_50k/fixed_0188/native/rgb0074.png">74 RGB</a> /
+<a href="C1_original_50k/fixed_0188/native/alpha0074.png">alpha</a>
+<a href="C1_original_50k/fixed_0188/native/rgb0086.png">86 RGB</a> /
+<a href="C1_original_50k/fixed_0188/native/alpha0086.png">alpha</a>
+<a href="C1_original_50k/fixed_0188/native/rgb0108.png">108 RGB</a> /
+<a href="C1_original_50k/fixed_0188/native/alpha0108.png">alpha</a>
+<a href="C1_original_50k/fixed_0188/native/rgb0172.png">172 RGB</a> /
+<a href="C1_original_50k/fixed_0188/native/alpha0172.png">alpha</a>
+<a href="C1_original_50k/fixed_0188/native/rgb0200.png">200 RGB</a> /
+<a href="C1_original_50k/fixed_0188/native/alpha0200.png">alpha</a>
+</p></details>
+<details><summary>U0_C1_control 原图、视频与透明度</summary>
+<video controls loop preload="none" src="U0_C1_control/fixed_0188_RGB.mp4"></video>
+<img loading="lazy" src="U0_C1_control/fixed_0188_RGB_alpha_contact.png">
+<p>1600×900原图：
+<a href="U0_C1_control/fixed_0188/native/rgb0002.png">2 RGB</a> /
+<a href="U0_C1_control/fixed_0188/native/alpha0002.png">alpha</a>
+<a href="U0_C1_control/fixed_0188/native/rgb0027.png">27 RGB</a> /
+<a href="U0_C1_control/fixed_0188/native/alpha0027.png">alpha</a>
+<a href="U0_C1_control/fixed_0188/native/rgb0043.png">43 RGB</a> /
+<a href="U0_C1_control/fixed_0188/native/alpha0043.png">alpha</a>
+<a href="U0_C1_control/fixed_0188/native/rgb0074.png">74 RGB</a> /
+<a href="U0_C1_control/fixed_0188/native/alpha0074.png">alpha</a>
+<a href="U0_C1_control/fixed_0188/native/rgb0086.png">86 RGB</a> /
+<a href="U0_C1_control/fixed_0188/native/alpha0086.png">alpha</a>
+<a href="U0_C1_control/fixed_0188/native/rgb0108.png">108 RGB</a> /
+<a href="U0_C1_control/fixed_0188/native/alpha0108.png">alpha</a>
+<a href="U0_C1_control/fixed_0188/native/rgb0172.png">172 RGB</a> /
+<a href="U0_C1_control/fixed_0188/native/alpha0172.png">alpha</a>
+<a href="U0_C1_control/fixed_0188/native/rgb0200.png">200 RGB</a> /
+<a href="U0_C1_control/fixed_0188/native/alpha0200.png">alpha</a>
+</p></details>
+<details><summary>U1_transfer_geometry 原图、视频与透明度</summary>
+<video controls loop preload="none" src="U1_transfer_geometry/fixed_0188_RGB.mp4"></video>
+<img loading="lazy" src="U1_transfer_geometry/fixed_0188_RGB_alpha_contact.png">
+<p>1600×900原图：
+<a href="U1_transfer_geometry/fixed_0188/native/rgb0002.png">2 RGB</a> /
+<a href="U1_transfer_geometry/fixed_0188/native/alpha0002.png">alpha</a>
+<a href="U1_transfer_geometry/fixed_0188/native/rgb0027.png">27 RGB</a> /
+<a href="U1_transfer_geometry/fixed_0188/native/alpha0027.png">alpha</a>
+<a href="U1_transfer_geometry/fixed_0188/native/rgb0043.png">43 RGB</a> /
+<a href="U1_transfer_geometry/fixed_0188/native/alpha0043.png">alpha</a>
+<a href="U1_transfer_geometry/fixed_0188/native/rgb0074.png">74 RGB</a> /
+<a href="U1_transfer_geometry/fixed_0188/native/alpha0074.png">alpha</a>
+<a href="U1_transfer_geometry/fixed_0188/native/rgb0086.png">86 RGB</a> /
+<a href="U1_transfer_geometry/fixed_0188/native/alpha0086.png">alpha</a>
+<a href="U1_transfer_geometry/fixed_0188/native/rgb0108.png">108 RGB</a> /
+<a href="U1_transfer_geometry/fixed_0188/native/alpha0108.png">alpha</a>
+<a href="U1_transfer_geometry/fixed_0188/native/rgb0172.png">172 RGB</a> /
+<a href="U1_transfer_geometry/fixed_0188/native/alpha0172.png">alpha</a>
+<a href="U1_transfer_geometry/fixed_0188/native/rgb0200.png">200 RGB</a> /
+<a href="U1_transfer_geometry/fixed_0188/native/alpha0200.png">alpha</a>
+</p></details>
+</section>
+<section><h2>moving_control</h2>
+<video controls loop preload="metadata" src="moving_control_comparison_RGB_alpha.mp4"></video>
+<p><a href="moving_control_comparison_RGB_alpha.decoded_contact.png">逐帧解码接触表</a></p>
+<img loading="lazy" src="moving_control_key_comparison.png">
+<details><summary>C1_original_50k 原图、视频与透明度</summary>
+<video controls loop preload="none" src="C1_original_50k/moving_control_RGB.mp4"></video>
+<img loading="lazy" src="C1_original_50k/moving_control_RGB_alpha_contact.png">
+<p>1600×900原图：
+<a href="C1_original_50k/moving_control/native/rgb0002.png">2 RGB</a> /
+<a href="C1_original_50k/moving_control/native/alpha0002.png">alpha</a>
+<a href="C1_original_50k/moving_control/native/rgb0027.png">27 RGB</a> /
+<a href="C1_original_50k/moving_control/native/alpha0027.png">alpha</a>
+<a href="C1_original_50k/moving_control/native/rgb0043.png">43 RGB</a> /
+<a href="C1_original_50k/moving_control/native/alpha0043.png">alpha</a>
+<a href="C1_original_50k/moving_control/native/rgb0074.png">74 RGB</a> /
+<a href="C1_original_50k/moving_control/native/alpha0074.png">alpha</a>
+<a href="C1_original_50k/moving_control/native/rgb0086.png">86 RGB</a> /
+<a href="C1_original_50k/moving_control/native/alpha0086.png">alpha</a>
+<a href="C1_original_50k/moving_control/native/rgb0108.png">108 RGB</a> /
+<a href="C1_original_50k/moving_control/native/alpha0108.png">alpha</a>
+<a href="C1_original_50k/moving_control/native/rgb0172.png">172 RGB</a> /
+<a href="C1_original_50k/moving_control/native/alpha0172.png">alpha</a>
+<a href="C1_original_50k/moving_control/native/rgb0200.png">200 RGB</a> /
+<a href="C1_original_50k/moving_control/native/alpha0200.png">alpha</a>
+</p></details>
+<details><summary>U0_C1_control 原图、视频与透明度</summary>
+<video controls loop preload="none" src="U0_C1_control/moving_control_RGB.mp4"></video>
+<img loading="lazy" src="U0_C1_control/moving_control_RGB_alpha_contact.png">
+<p>1600×900原图：
+<a href="U0_C1_control/moving_control/native/rgb0002.png">2 RGB</a> /
+<a href="U0_C1_control/moving_control/native/alpha0002.png">alpha</a>
+<a href="U0_C1_control/moving_control/native/rgb0027.png">27 RGB</a> /
+<a href="U0_C1_control/moving_control/native/alpha0027.png">alpha</a>
+<a href="U0_C1_control/moving_control/native/rgb0043.png">43 RGB</a> /
+<a href="U0_C1_control/moving_control/native/alpha0043.png">alpha</a>
+<a href="U0_C1_control/moving_control/native/rgb0074.png">74 RGB</a> /
+<a href="U0_C1_control/moving_control/native/alpha0074.png">alpha</a>
+<a href="U0_C1_control/moving_control/native/rgb0086.png">86 RGB</a> /
+<a href="U0_C1_control/moving_control/native/alpha0086.png">alpha</a>
+<a href="U0_C1_control/moving_control/native/rgb0108.png">108 RGB</a> /
+<a href="U0_C1_control/moving_control/native/alpha0108.png">alpha</a>
+<a href="U0_C1_control/moving_control/native/rgb0172.png">172 RGB</a> /
+<a href="U0_C1_control/moving_control/native/alpha0172.png">alpha</a>
+<a href="U0_C1_control/moving_control/native/rgb0200.png">200 RGB</a> /
+<a href="U0_C1_control/moving_control/native/alpha0200.png">alpha</a>
+</p></details>
+<details><summary>U1_transfer_geometry 原图、视频与透明度</summary>
+<video controls loop preload="none" src="U1_transfer_geometry/moving_control_RGB.mp4"></video>
+<img loading="lazy" src="U1_transfer_geometry/moving_control_RGB_alpha_contact.png">
+<p>1600×900原图：
+<a href="U1_transfer_geometry/moving_control/native/rgb0002.png">2 RGB</a> /
+<a href="U1_transfer_geometry/moving_control/native/alpha0002.png">alpha</a>
+<a href="U1_transfer_geometry/moving_control/native/rgb0027.png">27 RGB</a> /
+<a href="U1_transfer_geometry/moving_control/native/alpha0027.png">alpha</a>
+<a href="U1_transfer_geometry/moving_control/native/rgb0043.png">43 RGB</a> /
+<a href="U1_transfer_geometry/moving_control/native/alpha0043.png">alpha</a>
+<a href="U1_transfer_geometry/moving_control/native/rgb0074.png">74 RGB</a> /
+<a href="U1_transfer_geometry/moving_control/native/alpha0074.png">alpha</a>
+<a href="U1_transfer_geometry/moving_control/native/rgb0086.png">86 RGB</a> /
+<a href="U1_transfer_geometry/moving_control/native/alpha0086.png">alpha</a>
+<a href="U1_transfer_geometry/moving_control/native/rgb0108.png">108 RGB</a> /
+<a href="U1_transfer_geometry/moving_control/native/alpha0108.png">alpha</a>
+<a href="U1_transfer_geometry/moving_control/native/rgb0172.png">172 RGB</a> /
+<a href="U1_transfer_geometry/moving_control/native/alpha0172.png">alpha</a>
+<a href="U1_transfer_geometry/moving_control/native/rgb0200.png">200 RGB</a> /
+<a href="U1_transfer_geometry/moving_control/native/alpha0200.png">alpha</a>
+</p></details>
+</section>

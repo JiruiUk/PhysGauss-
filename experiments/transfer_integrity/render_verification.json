@@ -1,0 +1,37 @@
+{
+  "checkpoint_sha256_unchanged": {
+    "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_color_repair\\C1_repaired\\rubber_duck\\checkpoints\\resume.pt": "b5d4cf5c9fb8fba4fcc26124555d48aa7d3a963a8be1d28488954752db486480",
+    "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_transfer_integrity\\pilot\\U0_C1_control\\rubber_duck\\checkpoints\\resume.pt": "efd6d78a3f9119641cf0ca64a710cd46b65c70f4771c16c1bab1ae0fcd9128a1",
+    "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_transfer_integrity\\pilot\\U1_transfer_geometry\\rubber_duck\\checkpoints\\resume.pt": "1e1ed3cf99c4037a55a157bed8975d78ea4a9e219f6bdae4c2bd3c2e5edfab1d"
+  },
+  "source_sha256_unchanged": {
+    "output\\fixed_camera_temporal\\render_sequences.py": "3d352e8893f1d73057b65bf7e0e911759ca5019ec986415f366483335c033339",
+    "experiments\\transfer_integrity\\plan.json": "4abc49e6a11287e7c8930aa36c6a3e332f77a03c693783ad735f7c5a1ba0bbc6",
+    "variants\\association_training\\evaluate.py": "dc2eda8345bfbe372f0010cfc3333c0805fb603a7256e581481dea30f02a84c2",
+    "variants\\shape_coherence\\observations.py": "dfc1b991dfeb5ab9f92b248d922ae543403c63f1e98ecb56b961a466443e75cb",
+    "variants\\unified_flow\\camera_contract.py": "503ec9b464820ef4381ca8eaca35c3fe1611a606629773b4e3ac8bf0b6575a14",
+    "variants\\flow_comparison\\temporal.py": "96a262acae73409dc096cf9c4d868dd512021217ad8a7304291387da73ea139a",
+    "data\\derived\\kinematic_resplit\\transforms_train.json": "270fa34a29b99a4e6b2621d04e1d83f245f5c54bb4f2632ae06051faa83e4868",
+    "data\\derived\\kinematic_resplit\\transforms_val.json": "278e86251f6f20418388d6ce90771aae5f049abae3bb3c94b968549941150ffd",
+    "data\\derived\\kinematic_resplit\\transforms_test.json": "bb98013c762294ecaea239b67281436c7da232678403db63b1545d59c5f78c08",
+    "runs\\pidg_color_repair\\C1_repaired\\rubber_duck\\model_config.py": "52eeedbbc65c858007831a57cc04d3c0364de5e28e78a2fa276c641cc7feb008",
+    "runs\\pidg_color_repair\\C1_repaired\\rubber_duck\\metric_config.json": "670ffaab5cc02134306dc3a795c8abb34806c6bf4190720ba514af722b3a6054",
+    "runs\\pidg_transfer_integrity\\pilot\\U0_C1_control\\rubber_duck\\model_config.py": "52eeedbbc65c858007831a57cc04d3c0364de5e28e78a2fa276c641cc7feb008",
+    "runs\\pidg_transfer_integrity\\pilot\\U0_C1_control\\rubber_duck\\metric_config.json": "98320cfb2e6545c43b3568a21823cbec9b74cea507d447ad782fd08ef31d7b68",
+    "runs\\pidg_transfer_integrity\\pilot\\U1_transfer_geometry\\rubber_duck\\model_config.py": "52eeedbbc65c858007831a57cc04d3c0364de5e28e78a2fa276c641cc7feb008",
+    "runs\\pidg_transfer_integrity\\pilot\\U1_transfer_geometry\\rubber_duck\\metric_config.json": "ed4899aa1a51e5da26aede92bda3a46b8df37934de5857c8158860cbdb960c3c"
+  },
+  "optimizer_updates": 0,
+  "fixed_pose_frames": [
+    2,
+    86,
+    188
+  ],
+  "time_count": 200,
+  "native_resolution": [
+    1600,
+    900
+  ],
+  "model_count": 3,
+  "new_view_ground_truth_available": false
+}

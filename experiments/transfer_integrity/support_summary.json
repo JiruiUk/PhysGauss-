@@ -1,0 +1,53 @@
+{
+  "models": {
+    "C1_original_50k": {
+      "early": {
+        "samples": 16,
+        "early_bank_alpha_share_on_any_duck_mean": 0.754592243363513
+      },
+      "middle": {
+        "samples": 87,
+        "early_bank_alpha_share_on_any_duck_mean": 0.18893028469594023
+      },
+      "late": {
+        "samples": 17,
+        "early_bank_alpha_share_on_any_duck_mean": 0.0
+      },
+      "physical_ID_verified_after_occlusion": false
+    },
+    "U0_C1_control": {
+      "early": {
+        "samples": 16,
+        "early_bank_alpha_share_on_any_duck_mean": 0.751485907896412
+      },
+      "middle": {
+        "samples": 87,
+        "early_bank_alpha_share_on_any_duck_mean": 0.188687761420095
+      },
+      "late": {
+        "samples": 17,
+        "early_bank_alpha_share_on_any_duck_mean": 0.0
+      },
+      "physical_ID_verified_after_occlusion": false
+    },
+    "U1_transfer_geometry": {
+      "early": {
+        "samples": 16,
+        "early_bank_alpha_share_on_any_duck_mean": 0.7482630841486839
+      },
+      "middle": {
+        "samples": 87,
+        "early_bank_alpha_share_on_any_duck_mean": 0.1879751613099152
+      },
+      "late": {
+        "samples": 17,
+        "early_bank_alpha_share_on_any_duck_mean": 0.0
+      },
+      "physical_ID_verified_after_occlusion": false
+    }
+  },
+  "binding_sha256": "f891e9ba589083a73e9cec637cc0fb8a77cc51e91f7cf32120bafcaad9520c3c",
+  "limitation": "Visible early-bank support is not physical identity; unknown image associations remain unknown",
+  "evaluator_sha256": "0921b59237ce48a111f228434bf5edad34a3b74c08b61a8716d07a9ccc1a9a75",
+  "historical_evaluator_sha256": "dc2eda8345bfbe372f0010cfc3333c0805fb603a7256e581481dea30f02a84c2"
+}

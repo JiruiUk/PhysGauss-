@@ -1,0 +1,106 @@
+W1103 01:01:13.726000 257732 envs\pidg-cu128\Lib\site-packages\torch\utils\cpp_extension.py:466] Error checking compiler version for cl: 'cp1' codec can't decode bytes in position 0--1: No mapping for the Unicode character exists in the target code page.
+ninja: no work to do.
+F:\A_Edinburgh\PhysGauss\variants\association_training\code\hashencoder\hashgrid.py:16: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.half)
+F:\A_Edinburgh\PhysGauss\variants\association_training\code\hashencoder\hashgrid.py:56: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+F:\A_Edinburgh\PhysGauss\envs\pidg-cu128\Lib\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+F:\A_Edinburgh\PhysGauss\envs\pidg-cu128\Lib\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: F:\A_Edinburgh\PhysGauss\envs\pidg-cu128\Lib\site-packages\lpips\weights\v0.1\vgg.pth
+C1_original_50k val 10 / 30
+C1_original_50k val 20 / 30
+C1_original_50k val 30 / 30
+C1_original_50k val {'PSNR': 39.66487045288086, 'SSIM': 0.9942710737387339, 'LPIPS': 0.01471468888533612, 'MS-SSIM': 0.9961092332998912, 'blue_PSNR': 36.25271466573079, 'duck_PSNR': 27.41117788950602, 'blue_alpha_below09': 0.0021221115127337243, 'duck_alpha_below09': 0.0147152692939045}
+C1_original_50k test 10 / 50
+C1_original_50k test 20 / 50
+C1_original_50k test 30 / 50
+C1_original_50k test 40 / 50
+C1_original_50k test 50 / 50
+C1_original_50k test {'PSNR': 40.3721049118042, 'SSIM': 0.994675669670105, 'LPIPS': 0.013975673392415046, 'MS-SSIM': 0.9965464746952057, 'blue_PSNR': 37.00371059417725, 'duck_PSNR': 27.9783162689209, 'blue_alpha_below09': 0.0020429194750775266, 'duck_alpha_below09': 0.014201216609904675}
+U0_C1_control val 10 / 30
+U0_C1_control val 20 / 30
+U0_C1_control val 30 / 30
+U0_C1_control val {'PSNR': 39.544901784261064, 'SSIM': 0.9942189931869507, 'LPIPS': 0.014705237777282795, 'MS-SSIM': 0.9961027999718984, 'blue_PSNR': 36.26035048166911, 'duck_PSNR': 27.40079142252604, 'blue_alpha_below09': 0.0021073735035811877, 'duck_alpha_below09': 0.014763382924421177}
+U0_C1_control test 10 / 50
+U0_C1_control test 20 / 50
+U0_C1_control test 30 / 50
+U0_C1_control test 40 / 50
+U0_C1_control test 50 / 50
+U0_C1_control test {'PSNR': 40.28541580200195, 'SSIM': 0.9946540713310241, 'LPIPS': 0.013925940776243807, 'MS-SSIM': 0.9965619361400604, 'blue_PSNR': 37.038638763427734, 'duck_PSNR': 27.991596336364747, 'blue_alpha_below09': 0.0019993989795451723, 'duck_alpha_below09': 0.01418180263903168}
+U1_transfer_geometry val 10 / 30
+U1_transfer_geometry val 20 / 30
+U1_transfer_geometry val 30 / 30
+U1_transfer_geometry val {'PSNR': 39.542766125996906, 'SSIM': 0.9942229231198628, 'LPIPS': 0.014710582327097654, 'MS-SSIM': 0.9961090187231699, 'blue_PSNR': 36.25957380930583, 'duck_PSNR': 27.379756991068522, 'blue_alpha_below09': 0.0021125729695769067, 'duck_alpha_below09': 0.014709030659017417}
+U1_transfer_geometry test 10 / 50
+U1_transfer_geometry test 20 / 50
+U1_transfer_geometry test 30 / 50
+U1_transfer_geometry test 40 / 50
+U1_transfer_geometry test 50 / 50
+U1_transfer_geometry test {'PSNR': 40.29112480163574, 'SSIM': 0.9946580302715301, 'LPIPS': 0.01390408307313919, 'MS-SSIM': 0.9965641403198242, 'blue_PSNR': 37.03617618560791, 'duck_PSNR': 27.985845623016356, 'blue_alpha_below09': 0.001996758836190912, 'duck_alpha_below09': 0.014163928809385383}
+C1_original_50k native preflight passed {'camera_fingerprint': 'd1dbe2e32f2358fafa2e35b5da496b36d5872bcb4896116f2af7442a737b2fc3', 'finite': True, 'reference': 'output\\association_training\\C1_original\\native_GT_Render0086.png', 'reference_sha256': 'c9383615a257540751270b52cdec2e335af4ac640a69a908f1df40f460f5e397', 'native_diagonal_max_LSB_error': 0, 'mean_LSB_error': 0.0}
+C1_original_50k 10 / 200 times x 4 cameras; 3.0 s
+C1_original_50k 20 / 200 times x 4 cameras; 5.4 s
+C1_original_50k 30 / 200 times x 4 cameras; 8.2 s
+C1_original_50k 40 / 200 times x 4 cameras; 10.9 s
+C1_original_50k 50 / 200 times x 4 cameras; 13.6 s
+C1_original_50k 60 / 200 times x 4 cameras; 16.0 s
+C1_original_50k 70 / 200 times x 4 cameras; 18.6 s
+C1_original_50k 80 / 200 times x 4 cameras; 21.3 s
+C1_original_50k 90 / 200 times x 4 cameras; 24.1 s
+C1_original_50k 100 / 200 times x 4 cameras; 26.7 s
+C1_original_50k 110 / 200 times x 4 cameras; 29.4 s
+C1_original_50k 120 / 200 times x 4 cameras; 32.0 s
+C1_original_50k 130 / 200 times x 4 cameras; 34.7 s
+C1_original_50k 140 / 200 times x 4 cameras; 37.3 s
+C1_original_50k 150 / 200 times x 4 cameras; 39.8 s
+C1_original_50k 160 / 200 times x 4 cameras; 42.2 s
+C1_original_50k 170 / 200 times x 4 cameras; 44.8 s
+C1_original_50k 180 / 200 times x 4 cameras; 47.4 s
+C1_original_50k 190 / 200 times x 4 cameras; 49.9 s
+C1_original_50k 200 / 200 times x 4 cameras; 52.5 s
+U0_C1_control native preflight passed {'camera_fingerprint': 'd1dbe2e32f2358fafa2e35b5da496b36d5872bcb4896116f2af7442a737b2fc3', 'finite': True}
+U0_C1_control 10 / 200 times x 4 cameras; 2.8 s
+U0_C1_control 20 / 200 times x 4 cameras; 5.5 s
+U0_C1_control 30 / 200 times x 4 cameras; 8.1 s
+U0_C1_control 40 / 200 times x 4 cameras; 10.7 s
+U0_C1_control 50 / 200 times x 4 cameras; 13.4 s
+U0_C1_control 60 / 200 times x 4 cameras; 15.9 s
+U0_C1_control 70 / 200 times x 4 cameras; 18.5 s
+U0_C1_control 80 / 200 times x 4 cameras; 21.1 s
+U0_C1_control 90 / 200 times x 4 cameras; 23.9 s
+U0_C1_control 100 / 200 times x 4 cameras; 26.4 s
+U0_C1_control 110 / 200 times x 4 cameras; 29.2 s
+U0_C1_control 120 / 200 times x 4 cameras; 31.8 s
+U0_C1_control 130 / 200 times x 4 cameras; 34.4 s
+U0_C1_control 140 / 200 times x 4 cameras; 36.9 s
+U0_C1_control 150 / 200 times x 4 cameras; 39.4 s
+U0_C1_control 160 / 200 times x 4 cameras; 41.9 s
+U0_C1_control 170 / 200 times x 4 cameras; 44.4 s
+U0_C1_control 180 / 200 times x 4 cameras; 46.9 s
+U0_C1_control 190 / 200 times x 4 cameras; 49.4 s
+U0_C1_control 200 / 200 times x 4 cameras; 51.9 s
+U1_transfer_geometry native preflight passed {'camera_fingerprint': 'd1dbe2e32f2358fafa2e35b5da496b36d5872bcb4896116f2af7442a737b2fc3', 'finite': True}
+U1_transfer_geometry 10 / 200 times x 4 cameras; 2.9 s
+U1_transfer_geometry 20 / 200 times x 4 cameras; 5.5 s
+U1_transfer_geometry 30 / 200 times x 4 cameras; 8.2 s
+U1_transfer_geometry 40 / 200 times x 4 cameras; 10.9 s
+U1_transfer_geometry 50 / 200 times x 4 cameras; 13.5 s
+U1_transfer_geometry 60 / 200 times x 4 cameras; 16.0 s
+U1_transfer_geometry 70 / 200 times x 4 cameras; 18.5 s
+U1_transfer_geometry 80 / 200 times x 4 cameras; 21.0 s
+U1_transfer_geometry 90 / 200 times x 4 cameras; 23.7 s
+U1_transfer_geometry 100 / 200 times x 4 cameras; 26.2 s
+U1_transfer_geometry 110 / 200 times x 4 cameras; 28.8 s
+U1_transfer_geometry 120 / 200 times x 4 cameras; 31.3 s
+U1_transfer_geometry 130 / 200 times x 4 cameras; 33.7 s
+U1_transfer_geometry 140 / 200 times x 4 cameras; 36.2 s
+U1_transfer_geometry 150 / 200 times x 4 cameras; 38.6 s
+U1_transfer_geometry 160 / 200 times x 4 cameras; 40.9 s
+U1_transfer_geometry 170 / 200 times x 4 cameras; 43.4 s
+U1_transfer_geometry 180 / 200 times x 4 cameras; 46.0 s
+U1_transfer_geometry 190 / 200 times x 4 cameras; 48.4 s
+U1_transfer_geometry 200 / 200 times x 4 cameras; 51.0 s
+COMPLETED all renders and videos
