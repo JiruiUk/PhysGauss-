@@ -167,3 +167,20 @@ Python RNG/camera replay, finite model/optimizer and static geometry freeze.
 The two additional appearance tensors update as intended. Formal4000 launched
 PID262664. Completion still requires native val/test, independent objective and
 source/sampler audits, actual fixed-view review and final measured report.
+
+S6 completed4000 actual updates and native val/test. Independent full-state,
+source/parent hashes and exact camera/Python-RNG replay pass;138 Adam states
+are finite. Static geometry exactly matches S1; static appearance changes as
+planned. Validation dynamic28.327031dB/alpha0.985981/static36.169914dB;
+test dynamic28.563049dB. All455 qualified training-track observations now average
+0.427107px@400 versus S3's0.536841 (20.44% lower), while the intermediate S4
+negative outcome remains preserved. All800 conditional-interior calls are
+inactive, so there is still no demonstrated collision correction.
+
+Actual observed/group panel and nine native fixed86/fixed188/original pixel
+crops were viewed; all three videos independently decode200frames. Observed
+contours improve, but novel-view sheets/holes and long late green-bank streaks
+remain. No complete geometry/physical-ID/contact success is claimed. S6 formal
+result is finalized, completing this revised conditional training curriculum;
+the original full contact scope remains incomplete. Final standard native
+quality and measured report/plan are being consolidated; no new training starts.

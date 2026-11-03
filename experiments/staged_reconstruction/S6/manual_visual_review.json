@@ -1,0 +1,27 @@
+{
+  "checkpoint_sha256": "e302ad64ef08b4e51109567af5bf214acf312fc48a2ed9ffd467cfb8568fdea1",
+  "native_images_reviewed": true,
+  "approve_conditional_continuation": true,
+  "files_reviewed": {
+    "output/staged_reconstruction/S6/S6_review_step04000.png": "7f9f9115cc94d23c15022b87aaaa41fa7949cb357e8a59022c3f0a2b1245de58",
+    "output/staged_reconstruction/S6/native_crop_review.png": "db1c641552c82410774fe85f5aea3553dac131f5e68472a694fa1a9c08c0e288",
+    "output/staged_reconstruction/S6/fixed188_t0002_native.png": "d2cc66280a00a28e150d666ac3a81a5edb87bbc4a73bf0e5357da671b1b3f54f",
+    "output/staged_reconstruction/S6/fixed188_t0086_native.png": "7ad89c053e8d7287ac87c00958f1840e6687e83a445da8404eac4f41ed09c77e",
+    "output/staged_reconstruction/S6/fixed188_t0188_native.png": "b877b84d5026a2c8fba810bc4c79c9643cbba6764f7584f44e0d88141b2ed970",
+    "output/staged_reconstruction/S6/fixed86_t0002_native.png": "d23ea1de41f88b22313c22f24362f8a9e70935319be746988e08b0392cfa7300",
+    "output/staged_reconstruction/S6/fixed86_t0086_native.png": "a08244f3b2205e1acc795dbadf6a69e7ddbf546fbe58e5c391bf7ed185e05c64",
+    "output/staged_reconstruction/S6/fixed86_t0188_native.png": "c79105418142091852614f25401cc30827d446fbc4a0372e1879dfa9ecd0dc62",
+    "output/staged_reconstruction/S6/original_t0002_native.png": "e803888033344cbc8f9b613a6a640a65df2581ac67cbc9925ee31d0b5bd5bdc1",
+    "output/staged_reconstruction/S6/original_t0086_native.png": "a08244f3b2205e1acc795dbadf6a69e7ddbf546fbe58e5c391bf7ed185e05c64",
+    "output/staged_reconstruction/S6/original_t0188_native.png": "b877b84d5026a2c8fba810bc4c79c9643cbba6764f7584f44e0d88141b2ed970"
+  },
+  "manual_scope": "Nine observed/group rows plus nine 1:1 native pixel crops for fixed86/fixed188/original at times2/86/188. The panel provides full-scene context. Three videos independently decoded200frames each; not all video frames manually watched.",
+  "findings": [
+    "Observed-camera silhouettes and contours appear sharper than S5, including the early lower duck and later visible ducks; conditional static support remains visually recognizable.",
+    "Novel fixed86/fixed188 views at other times still have fragmented sheets, holes, speckle and stretched geometry. Complete multi-view geometry has not been recovered.",
+    "Model-bank leakage remains, including a long late green streak. Bank colors are model contributions, not independent physical identity evidence; late physical IDs stay unknown.",
+    "All455 qualified training-image track observations average0.42710676px@400 versus S3 baseline0.53684143, an approximately20.44percent decrease. The S4 intermediate worsening remains preserved. This result applies only to the fixed qualified observations, not independent 3D/material-point or occlusion re-identification truth.",
+    "All800 conditional-interior calls and16000 eligible observation instances in S6 had zero active violations and zero nonzero prior calls. S5 and S6 do not demonstrate actual collision correction; original object-object/contact-force/friction/restitution goals remain unvalidated/off.",
+    "Accept this predeclared final checkpoint for conditional reconstruction reporting only. No additional stage, weight sweep, force or constitutive experiment is started by this review; original full geometry/physical/contact scope remains incomplete."
+  ]
+}
