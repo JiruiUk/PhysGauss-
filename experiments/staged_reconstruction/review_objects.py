@@ -26,10 +26,13 @@ def panel(a,label):
 
 @torch.no_grad()
 def main():
-    p=argparse.ArgumentParser();p.add_argument('--checkpoint-dir',default='S2_objects');p.add_argument('--preview-only',action='store_true');p.add_argument('--recovery',action='store_true');args=p.parse_args()
-    current_report=REPORT/'S2_recovery' if args.recovery else REPORT
+    p=argparse.ArgumentParser();p.add_argument('--checkpoint-dir',default='S2_objects');p.add_argument('--preview-only',action='store_true');p.add_argument('--recovery',action='store_true');p.add_argument('--geometry-recovery',action='store_true');args=p.parse_args()
+    current_report=REPORT/'S2_geometry_recovery' if args.geometry_recovery else REPORT/'S2_recovery' if args.recovery else REPORT
     renderer=setup();torch.set_num_threads(4);protocol=read(current_report/'S2_protocol.json')
-    if args.recovery:
+    if args.geometry_recovery:
+        from variants.staged_reconstruction.geometry_recovery.model import BoundedScene
+        scene=BoundedScene(protocol)
+    elif args.recovery:
         from variants.staged_reconstruction.recovery.train import RecoveryScene
         scene=RecoveryScene(protocol)
     else:scene=ObjectScene(protocol)
@@ -44,9 +47,12 @@ def main():
     if args.recovery:
         from variants.staged_reconstruction.recovery.freeze import verify as verify_recovery
         verify_recovery()
+    if args.geometry_recovery:
+        from variants.staged_reconstruction.geometry_recovery.freeze import verify as verify_geometry
+        verify_geometry()
     meta=read(DATA/'transforms_train.json');byid={int(Path(f['file_path']).stem):f for f in meta['frames']}
     identity=read(REPORT/'S2_identity.json');lookup=dict(zip(identity['frame_ids'],identity['early_owner_to_component']))
-    out=ROOT/'output/staged_reconstruction'/('S2_recovery' if args.recovery else 'S2_preview' if args.preview_only else 'S2_objects');out.mkdir(parents=True,exist_ok=True)
+    out=ROOT/'output/staged_reconstruction'/('S2_geometry_recovery' if args.geometry_recovery else 'S2_recovery' if args.recovery else 'S2_preview' if args.preview_only else 'S2_objects');out.mkdir(parents=True,exist_ok=True)
     selected=[2,27,42,43,52,86,166,188,200];rows=[];panels=[]
     colors=np.array([[1.,.2,.2],[.2,1.,.2],[1.,.8,.1],[.65,.3,1.]])
     for number in selected:

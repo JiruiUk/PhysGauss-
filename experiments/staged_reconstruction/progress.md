@@ -57,3 +57,25 @@ The single repaired candidate retains the same point/network budget and16k final
 state; no sweep or post-hoc threshold relaxation. Reports/state are isolated in
 `S2_recovery/`. S3 semantic operator tests are being prepared independently, but
 S3 training remains gated on actual S2 reconstruction admission.
+
+Second S2 candidate also completed16k/native val/test. Dynamic PSNR25.086dB and
+dynamic-only alpha0.98499 pass, but static31.335dB versus S1's35.644dB fails the
+unchanged1dB preservation gate.5k read-only scale audit shows entire groups0/1
+clamped to1e-4 at42/86 and other groups inflating to0.15. This supports repairing
+the additive scale degeneracy rather than calling high opacity a successful
+persistent-object reconstruction. Final contribution/fixed-camera export is
+running; all prior training code/states are preserved.
+
+Third sequential correction `S2_geometry_recovery` keeps initialization, point
+and network budgets; it adds a flagged positive bounded scale policy and
+symmetric static RGB normalization.40 related tests, native gradient/freeze
+checks and separate40→80 recovery pass. Formal16k training is being started.
+This is a diagnosis-driven correction, not a candidate/weight sweep.
+
+S3 engineering preparation includes six semantic/gating tests, a GPU probe with
+finite gradients into fields, deformation, grids and canonical points, and an
+actual Adam field update; static remains unchanged. The native6000-step S3 entry
+is implemented with a strict reviewed-S2 hash gate and full continuation states;
+formal S3 smoke/training remain pending S2 admission. S4 image-only sparse track
+extraction and two advection tests are also running/prepared, without Gaussian
+bindings or any claim that the later stages are complete.
