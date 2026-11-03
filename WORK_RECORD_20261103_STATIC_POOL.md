@@ -58,3 +58,17 @@ Implementation/preflight committed as `23f53c35`. Hidden formal pipeline launche
 2026-11-03 04:46:16 UTC (PID265148), with matched source receipts and only the main
 flag differing; initial H0 trainer PID270724. The pipeline runs both arms serially
 before evaluation. No formal training result or promotion is claimed at launch.
+
+Final matched training completed2026-11-03 06:19 UTC; pipeline evaluation/export
+completed06:24 UTC. Both arms performed35000 matched camera updates; complete
+final states each retain88916 rows. Native visual review inspected fixed86,
+fixed188 and moving control at2/86/200, using identical native crops.
+Fragmentation remained. Validation image guardrails passed but static blue
+contribution fell51.60%→12.12%, opacity median0.999996→0.003908 and image-track
+reprojection worsened1.84→7.56px. H1 is not promoted; plan revised to R0a static
+selection/reference geometry audit before further full training or R1.
+
+Independent audit checked159 frozen hashes, both final states,35000 matched
+camera samples, per-frame metric means and5084 artifact hashes. All16 videos
+fully decoded to200 frames. No frozen training source or historical model was
+changed. See experiments/static_pool/assessment.md and final_audit.json.

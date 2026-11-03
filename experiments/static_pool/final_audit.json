@@ -1,0 +1,67 @@
+{
+  "passed": true,
+  "frozen_source_input_hashes": 159,
+  "artifact_hashes": 5084,
+  "matched_camera_updates": 35000,
+  "full_checkpoints": {
+    "H0_dynamic_control": {
+      "sha256": "dd0e650dda12c9e78855e01fac4186436a125763e467c2db2641dcfbcbf2df16",
+      "selected_static_opacity_mean": 0.8446364402770996,
+      "selected_static_opacity_median": 0.9999960660934448,
+      "selected_static_opacity_below_001_fraction": 0.026463348418474197
+    },
+    "H1_static_pool": {
+      "sha256": "baadcb2bf9807d45edf64732a70b01fb81ec992a8d5f9d0b4fb121a63c90082f",
+      "selected_static_opacity_mean": 0.2585412263870239,
+      "selected_static_opacity_median": 0.00390780670568347,
+      "selected_static_opacity_below_001_fraction": 0.6817560195922852
+    }
+  },
+  "recomputed_frame_means": {
+    "H0_dynamic_control/val": {
+      "PSNR": 40.455639902750654,
+      "SSIM": 0.9945797542730967,
+      "LPIPS": 0.013603743631392717,
+      "MS-SSIM": 0.9964115778605144,
+      "blue_PSNR": 37.201677004496254,
+      "duck_PSNR": 27.71678549448649,
+      "blue_alpha_below09": 0.001814756571453796,
+      "duck_alpha_below09": 0.015385833789173856
+    },
+    "H0_dynamic_control/test": {
+      "PSNR": 40.846447715759275,
+      "SSIM": 0.9949403166770935,
+      "LPIPS": 0.012932318774983288,
+      "MS-SSIM": 0.9968094515800476,
+      "blue_PSNR": 37.59833648681641,
+      "duck_PSNR": 28.106326637268065,
+      "blue_alpha_below09": 0.0017289485968306774,
+      "duck_alpha_below09": 0.01477017202119961
+    },
+    "H1_static_pool/val": {
+      "PSNR": 40.43773466746013,
+      "SSIM": 0.9944854160149892,
+      "LPIPS": 0.014188887986044089,
+      "MS-SSIM": 0.9962981820106507,
+      "blue_PSNR": 36.9758934656779,
+      "duck_PSNR": 27.752335103352866,
+      "blue_alpha_below09": 0.002404728737044089,
+      "duck_alpha_below09": 0.015809862579752768
+    },
+    "H1_static_pool/test": {
+      "PSNR": 40.79755081176758,
+      "SSIM": 0.9948308515548706,
+      "LPIPS": 0.013546737236902117,
+      "MS-SSIM": 0.9966903007030488,
+      "blue_PSNR": 37.4234587097168,
+      "duck_PSNR": 28.091439628601073,
+      "blue_alpha_below09": 0.002178309705639722,
+      "duck_alpha_below09": 0.015074081928901813
+    }
+  },
+  "videos_fully_decoded_by_exporter": 16,
+  "review_crop_hashes": 3,
+  "review_native_crops_exact": 18,
+  "opacity_is_canonical_not_composited_contribution": true,
+  "audit_script_sha256": "4679849176574941442a288a5fa84e5ca478a8ade5644f88578a6ce5bc156bc2"
+}

@@ -1,0 +1,49 @@
+{
+  "status": "reviewed_not_promoted",
+  "reviewed_utc": "2026-11-03T06:26:47.677954+00:00",
+  "promoted": false,
+  "next_step": "R0a_static_selection_reference_geometry_audit",
+  "new_training_launched": false,
+  "image_guardrails": {
+    "validation_PSNR": true,
+    "validation_standard_LPIPS": true
+  },
+  "validation_PSNR_H1_minus_H0_dB": -0.017905235290527344,
+  "validation_LPIPS_relative_increase": 0.04301348000274441,
+  "inspected_views": [
+    "fixed_0086",
+    "fixed_0188",
+    "moving_control"
+  ],
+  "inspected_frames": [
+    2,
+    86,
+    200
+  ],
+  "native_crop_box": [
+    300,
+    200,
+    1250,
+    800
+  ],
+  "native_crops_resampled": false,
+  "review_image_sha256": {
+    "output/static_pool/review/fixed_0086_native_crops.png": "705414e20d5ad9504dff89c3ce9f1e48919003cf45523b181b297813073155e8",
+    "output/static_pool/review/fixed_0188_native_crops.png": "519722e35ddc02ba1e588701fb7c87d2b2ac70cf051f978f353073cb0ef7b2ea",
+    "output/static_pool/review/moving_control_native_crops.png": "1a018d17b55c7d44a2ed6e99b5ee2315dfe04ec4487f06418778796d4516c8fc"
+  },
+  "observations": [
+    "Fixed86 early/late and fixed188 early/middle remain fragmented in both arms; moving-camera observed combinations look much better.",
+    "Selected-static validation blue composited contribution fell from0.5159905 to0.1212325.",
+    "Selected opacity median fell from0.9999961 to0.0039078; below0.01 fraction reached0.681756.",
+    "Training-image track reprojection worsened1.84295 to7.56417px at400px width."
+  ],
+  "interpretation": "Opacity suppression supports bypass of the fixed subset; root cause between selection, inconsistent reference geometry and observability remains unresolved.",
+  "limits": [
+    "No independent3D or novel-camera/time GT.",
+    "Static image tracks were held from triangulation only, not RGB model training.",
+    "Color regions are appearance proxies, not object/material IDs.",
+    "Zero static time variation is structural and does not establish geometry correctness."
+  ],
+  "assessment": "experiments/static_pool/assessment.md"
+}

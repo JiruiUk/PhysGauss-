@@ -1,22 +1,15 @@
-# R0 progress — 2026-11-03
+# R0 progress — reviewed 2026-11-03
 
-The accepted partial static pool has been bound to the immutable common15k
-state.32 related unit tests passed. Native gradient/Adam, actual dynamic-CMR
-exclusion, flags-off120-update repeat comparison, enabled120-update smoke,
-15060→15120 full-checkpoint recovery and native restored geometry invariance
-passed. The off native RGB RMS0.00178145 and alpha RMS0.00364371 are within
-the predeclared3x unchanged-repeat envelope (0.00117030 and0.00258489).
-This is numerical parity, not a cross-process bitwise determinism claim.
+Both matched15k→50k arms completed35000 actual updates. Evaluation, exports,
+full decoding of16 videos, native visual review and independent evidence audit
+are complete. Training core and immutable protocol were unchanged.
 
-Implementation and preflight were committed as `23f53c35`. Formal R0 pipeline
-started at 2026-11-03 04:46:16 UTC, PID265148; controller PID270036 and H0 trainer
-PID270724. Both branch receipts bind the same full15k checkpoint hash. H0 runs
-first, followed by H1, each targeting50k with35000 actual updates. Launch metadata:
-`background_launch.json`; live state: `runs/pidg_static_pool/pipeline.json`,
-`controller.json` and `active.json`.
+H1 is not promoted. Validation image guardrails passed (PSNR -0.017905dB;
+LPIPS +4.30%), but fixed-view fragmentation remained. Selected-static validation
+blue contribution fell51.60%→12.12%, median opacity0.999996→0.003908, and
+training-image track reprojection worsened1.84→7.56px at400px width.
+Zero static time variation does not establish correct geometry.
 
-No formal R0 result is available yet. The latest completed experiment is
-scratch-integrity v2. The pipeline will evaluate both final50k states and export
-native fixed-view videos; actual image review will determine the next step.
-Thread follow-up automation `pidg` checks for meaningful changes every10 minutes
-and does not start extra candidates.
+Next step: static selection/reference geometry audit, before R1 or another long
+run. No new full candidate or physics module launched. Details and limitations:
+`assessment.md`; evidence: `final_audit.json`, `review_decision.json`.

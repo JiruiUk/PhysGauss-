@@ -17,7 +17,8 @@ M0–M10 physics milestone order remain unchanged. Every new branch defaults off
 
 | Step | Experiment | Admission / decision |
 |---|---|---|
-| R0 | Verified static subset with a time-independent rendering map | Current step; unit tests, native GPU gradient/parity/resume checks precede full training |
+| R0 | Verified static subset with a time-independent rendering map | Completed; image guardrails passed, structure did not improve; H1 not promoted |
+| R0a | Static selection/reference geometry audit | Required after R0: inspect opacity suppression, reference consistency and multi-time support before another long run |
 | R1 | Persistent known object support / object-centric canonical representation | First audit coverage and independent identity evidence; unknown stays unknown |
 | R2 | Reliable tracks, separated from static geometry | Retain confidence gates; do not infer identity through ambiguous occlusion |
 | R3 | Kinematic compatibility, then CMR | Rendered trajectory, velocity and coordinate derivatives must be defined consistently |
@@ -70,9 +71,40 @@ exclusion is part of the declared treatment, not a separate claimed benefit.
 
 R0: implementation and preflight passed. All 32 related tests, native gradient
 and Adam checks, flags-off numerical parity, and full-state recovery passed.
-Implementation milestone: `23f53c35`. The matched pipeline launched at
-2026-11-03 04:46:16 UTC; H0 trains first and H1 follows from the identical full15k
-state. No formal R0 training result exists yet. Immutable settings are in
-`static_pool/plan.json`; observations and plan changes belong in
-`static_pool/progress.md` and assessment. The active thread follow-up checks
-completion every 10 minutes.
+Implementation milestone: `23f53c35`; launch record: `4738e2b9`. Both matched
+arms finished50k with35000 actual updates each. Final metrics, native image
+review,16 fully decoded videos and independent evidence audit are complete.
+H1 is not promoted; the next step is R0a, not a full R1 training run.
+Immutable settings remain in `static_pool/plan.json`.
+
+## R0 completed measurements
+
+Final50k measurements and reviewed images: `static_pool/assessment.md`.
+Both image guardrails passed: validation PSNR40.455640→40.437735dB and standard
+VGG LPIPS0.01360374→0.01418889 (+4.30%). Test PSNR40.846448→40.797551dB.
+Fixed86/188 early/middle/late native crops retained the fragmentation pattern,
+while the observed camera trajectory remained visually good.
+
+Selected-static validation blue contribution fell51.60%→12.12%; selected median
+opacity fell0.999996→0.003908 (68.18% below0.01 in H1). Training-image track
+reprojection worsened1.84→7.56px at400px width. This supports opacity suppression
+of the fixed subset, without identifying its root cause. Static invariance is
+structural; it does not establish geometry recovery. H1 is not promoted.
+
+## R0a admission and audit scope
+
+1. Use training-only observations to map suppressed rows to their reference
+   frames, initial and final coordinates/scales/opacity, and visible support.
+2. Audit whether independent per-row reference warps form consistent static
+   surfaces. Compare initial/final reprojection and cross-time support, including
+   occlusion; retain unknown labels where evidence is ambiguous.
+3. Check feasibility of one consistent reference geometry or calibrated static
+   fit before proposing a short controlled experiment. Do not fix the result by
+   threshold changes chosen on validation/test images.
+4. Only after this audit, write a separate short-run protocol and admission gate.
+   No new full candidate, automatic weight sweep, R1 model, constitutive/contact
+   or unknown-force module has been launched from the R0 result.
+
+Rubber Duck remains the main benchmark. Missing simultaneous multi-view/physical
+GT limits conclusions; the manufactured F/material tests remain supplementary
+and the original M0–M10 order remains unchanged.

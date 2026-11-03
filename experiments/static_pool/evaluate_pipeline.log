@@ -1,0 +1,105 @@
+ninja: no work to do.
+F:\A_Edinburgh\PhysGauss\variants\static_pool\code\hashencoder\hashgrid.py:16: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.half)
+F:\A_Edinburgh\PhysGauss\variants\static_pool\code\hashencoder\hashgrid.py:56: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+F:\A_Edinburgh\PhysGauss\envs\pidg-cu128\Lib\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+F:\A_Edinburgh\PhysGauss\envs\pidg-cu128\Lib\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: F:\A_Edinburgh\PhysGauss\envs\pidg-cu128\Lib\site-packages\lpips\weights\v0.1\vgg.pth
+S0_previous_control val 10 / 30
+S0_previous_control val 20 / 30
+S0_previous_control val 30 / 30
+S0_previous_control val {'PSNR': 40.46634979248047, 'SSIM': 0.994605952501297, 'LPIPS': 0.013619159068912267, 'MS-SSIM': 0.9964217364788055, 'blue_PSNR': 37.231343523661295, 'duck_PSNR': 27.71105168660482, 'blue_alpha_below09': 0.0017955728388118083, 'duck_alpha_below09': 0.015408419535129577}
+S0_previous_control test 10 / 50
+S0_previous_control test 20 / 50
+S0_previous_control test 30 / 50
+S0_previous_control test 40 / 50
+S0_previous_control test 50 / 50
+S0_previous_control test {'PSNR': 40.84751247406006, 'SSIM': 0.9949532628059388, 'LPIPS': 0.012947915899567307, 'MS-SSIM': 0.9968204569816589, 'blue_PSNR': 37.599155311584475, 'duck_PSNR': 28.116185569763182, 'blue_alpha_below09': 0.001653294342558152, 'duck_alpha_below09': 0.014713662578198106}
+H0_dynamic_control val 10 / 30
+H0_dynamic_control val 20 / 30
+H0_dynamic_control val 30 / 30
+H0_dynamic_control val {'PSNR': 40.455639902750654, 'SSIM': 0.9945797542730967, 'LPIPS': 0.013603743631392717, 'MS-SSIM': 0.9964115778605144, 'blue_PSNR': 37.201677004496254, 'duck_PSNR': 27.71678549448649, 'blue_alpha_below09': 0.001814756571453796, 'duck_alpha_below09': 0.015385833789173856}
+H0_dynamic_control test 10 / 50
+H0_dynamic_control test 20 / 50
+H0_dynamic_control test 30 / 50
+H0_dynamic_control test 40 / 50
+H0_dynamic_control test 50 / 50
+H0_dynamic_control test {'PSNR': 40.846447715759275, 'SSIM': 0.9949403166770935, 'LPIPS': 0.012932318774983288, 'MS-SSIM': 0.9968094515800476, 'blue_PSNR': 37.59833648681641, 'duck_PSNR': 28.106326637268065, 'blue_alpha_below09': 0.0017289485968306774, 'duck_alpha_below09': 0.01477017202119961}
+H1_static_pool val 10 / 30
+H1_static_pool val 20 / 30
+H1_static_pool val 30 / 30
+H1_static_pool val {'PSNR': 40.43773466746013, 'SSIM': 0.9944854160149892, 'LPIPS': 0.014188887986044089, 'MS-SSIM': 0.9962981820106507, 'blue_PSNR': 36.9758934656779, 'duck_PSNR': 27.752335103352866, 'blue_alpha_below09': 0.002404728737044089, 'duck_alpha_below09': 0.015809862579752768}
+H1_static_pool test 10 / 50
+H1_static_pool test 20 / 50
+H1_static_pool test 30 / 50
+H1_static_pool test 40 / 50
+H1_static_pool test 50 / 50
+H1_static_pool test {'PSNR': 40.79755081176758, 'SSIM': 0.9948308515548706, 'LPIPS': 0.013546737236902117, 'MS-SSIM': 0.9966903007030488, 'blue_PSNR': 37.4234587097168, 'duck_PSNR': 28.091439628601073, 'blue_alpha_below09': 0.002178309705639722, 'duck_alpha_below09': 0.015074081928901813}
+S0_previous_control native preflight passed {'camera_fingerprint': 'd1dbe2e32f2358fafa2e35b5da496b36d5872bcb4896116f2af7442a737b2fc3', 'finite': True}
+S0_previous_control 10 / 200 times x 4 cameras; 2.6 s
+S0_previous_control 20 / 200 times x 4 cameras; 5.1 s
+S0_previous_control 30 / 200 times x 4 cameras; 7.7 s
+S0_previous_control 40 / 200 times x 4 cameras; 10.2 s
+S0_previous_control 50 / 200 times x 4 cameras; 12.7 s
+S0_previous_control 60 / 200 times x 4 cameras; 15.1 s
+S0_previous_control 70 / 200 times x 4 cameras; 17.5 s
+S0_previous_control 80 / 200 times x 4 cameras; 20.2 s
+S0_previous_control 90 / 200 times x 4 cameras; 22.7 s
+S0_previous_control 100 / 200 times x 4 cameras; 25.2 s
+S0_previous_control 110 / 200 times x 4 cameras; 27.7 s
+S0_previous_control 120 / 200 times x 4 cameras; 30.2 s
+S0_previous_control 130 / 200 times x 4 cameras; 32.6 s
+S0_previous_control 140 / 200 times x 4 cameras; 35.1 s
+S0_previous_control 150 / 200 times x 4 cameras; 37.5 s
+S0_previous_control 160 / 200 times x 4 cameras; 39.9 s
+S0_previous_control 170 / 200 times x 4 cameras; 42.3 s
+S0_previous_control 180 / 200 times x 4 cameras; 44.9 s
+S0_previous_control 190 / 200 times x 4 cameras; 47.3 s
+S0_previous_control 200 / 200 times x 4 cameras; 49.8 s
+H0_dynamic_control native preflight passed {'camera_fingerprint': 'd1dbe2e32f2358fafa2e35b5da496b36d5872bcb4896116f2af7442a737b2fc3', 'finite': True}
+H0_dynamic_control 10 / 200 times x 4 cameras; 2.7 s
+H0_dynamic_control 20 / 200 times x 4 cameras; 5.2 s
+H0_dynamic_control 30 / 200 times x 4 cameras; 7.7 s
+H0_dynamic_control 40 / 200 times x 4 cameras; 10.1 s
+H0_dynamic_control 50 / 200 times x 4 cameras; 12.7 s
+H0_dynamic_control 60 / 200 times x 4 cameras; 15.2 s
+H0_dynamic_control 70 / 200 times x 4 cameras; 17.5 s
+H0_dynamic_control 80 / 200 times x 4 cameras; 20.1 s
+H0_dynamic_control 90 / 200 times x 4 cameras; 22.7 s
+H0_dynamic_control 100 / 200 times x 4 cameras; 25.1 s
+H0_dynamic_control 110 / 200 times x 4 cameras; 27.6 s
+H0_dynamic_control 120 / 200 times x 4 cameras; 30.1 s
+H0_dynamic_control 130 / 200 times x 4 cameras; 32.6 s
+H0_dynamic_control 140 / 200 times x 4 cameras; 35.1 s
+H0_dynamic_control 150 / 200 times x 4 cameras; 37.5 s
+H0_dynamic_control 160 / 200 times x 4 cameras; 40.0 s
+H0_dynamic_control 170 / 200 times x 4 cameras; 42.5 s
+H0_dynamic_control 180 / 200 times x 4 cameras; 45.2 s
+H0_dynamic_control 190 / 200 times x 4 cameras; 47.5 s
+H0_dynamic_control 200 / 200 times x 4 cameras; 50.1 s
+H1_static_pool native preflight passed {'camera_fingerprint': 'd1dbe2e32f2358fafa2e35b5da496b36d5872bcb4896116f2af7442a737b2fc3', 'finite': True}
+H1_static_pool 10 / 200 times x 4 cameras; 2.7 s
+H1_static_pool 20 / 200 times x 4 cameras; 5.2 s
+H1_static_pool 30 / 200 times x 4 cameras; 7.8 s
+H1_static_pool 40 / 200 times x 4 cameras; 10.1 s
+H1_static_pool 50 / 200 times x 4 cameras; 12.7 s
+H1_static_pool 60 / 200 times x 4 cameras; 15.1 s
+H1_static_pool 70 / 200 times x 4 cameras; 17.5 s
+H1_static_pool 80 / 200 times x 4 cameras; 20.1 s
+H1_static_pool 90 / 200 times x 4 cameras; 22.6 s
+H1_static_pool 100 / 200 times x 4 cameras; 25.0 s
+H1_static_pool 110 / 200 times x 4 cameras; 27.6 s
+H1_static_pool 120 / 200 times x 4 cameras; 30.1 s
+H1_static_pool 130 / 200 times x 4 cameras; 32.8 s
+H1_static_pool 140 / 200 times x 4 cameras; 35.3 s
+H1_static_pool 150 / 200 times x 4 cameras; 37.7 s
+H1_static_pool 160 / 200 times x 4 cameras; 40.3 s
+H1_static_pool 170 / 200 times x 4 cameras; 42.8 s
+H1_static_pool 180 / 200 times x 4 cameras; 45.5 s
+H1_static_pool 190 / 200 times x 4 cameras; 47.9 s
+H1_static_pool 200 / 200 times x 4 cameras; 50.6 s
+COMPLETED all renders and videos

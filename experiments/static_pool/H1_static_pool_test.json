@@ -1,0 +1,979 @@
+{
+  "model": "H1_static_pool",
+  "split": "test",
+  "count": 50,
+  "full_state": {
+    "iteration": 50000,
+    "sha256": "baadcb2bf9807d45edf64732a70b01fb81ec992a8d5f9d0b4fb121a63c90082f",
+    "point_count": 88916
+  },
+  "native_resolution": [
+    1600,
+    900
+  ],
+  "evaluator_sha256": "f473f1ef60bd9005b292ba5ea59874cedaf55ba49768184ace51d457b20e84c0",
+  "GT": "original independently held-out observed camera/time RGBA",
+  "region_definition": "fixed GT color subsets, not material IDs; PSNR and alpha coverage only",
+  "metrics": {
+    "PSNR": 40.79755081176758,
+    "SSIM": 0.9948308515548706,
+    "LPIPS": 0.013546737236902117,
+    "MS-SSIM": 0.9966903007030488,
+    "blue_PSNR": 37.4234587097168,
+    "duck_PSNR": 28.091439628601073,
+    "blue_alpha_below09": 0.002178309705639722,
+    "duck_alpha_below09": 0.015074081928901813
+  },
+  "frames": [
+    {
+      "frame": 1,
+      "PSNR": 41.879173278808594,
+      "SSIM": 0.9972785711288452,
+      "LPIPS": 0.004918223712593317,
+      "MS-SSIM": 0.9991580843925476,
+      "observed_coverage": {
+        "foreground_missing_fraction": 0.002169437846397466,
+        "core_alpha_below_09_fraction": 0.0,
+        "background_spill_fraction": 0.0013016670472710665,
+        "mask_IoU": 0.9845012108429029
+      },
+      "blue_pixels": 102371,
+      "blue_PSNR": 42.715049743652344,
+      "blue_alpha_below09": 0.000380967266120288,
+      "duck_pixels": 20258,
+      "duck_PSNR": 31.146617889404297,
+      "duck_alpha_below09": 0.007750024681607267
+    },
+    {
+      "frame": 5,
+      "PSNR": 47.2376594543457,
+      "SSIM": 0.9985166788101196,
+      "LPIPS": 0.0038691326044499874,
+      "MS-SSIM": 0.9995990991592407,
+      "observed_coverage": {
+        "foreground_missing_fraction": 0.0010132353872458995,
+        "core_alpha_below_09_fraction": 0.0,
+        "background_spill_fraction": 0.001189794712835472,
+        "mask_IoU": 0.986777802972844
+      },
+      "blue_pixels": 102405,
+      "blue_PSNR": 43.98609924316406,
+      "blue_alpha_below09": 0.0003515453347004541,
+      "duck_pixels": 20200,
+      "duck_PSNR": 35.64609146118164,
+      "duck_alpha_below09": 0.0015841584158415843
+    },
+    {
+      "frame": 9,
+      "PSNR": 49.411659240722656,
+      "SSIM": 0.9988192319869995,
+      "LPIPS": 0.003490528091788292,
+      "MS-SSIM": 0.9997013807296753,
+      "observed_coverage": {
+        "foreground_missing_fraction": 0.001077885125977824,
+        "core_alpha_below_09_fraction": 0.0,
+        "background_spill_fraction": 0.001080812009495923,
+        "mask_IoU": 0.9878049736270799
+      },
+      "blue_pixels": 102187,
+      "blue_PSNR": 45.76819610595703,
+      "blue_alpha_below09": 0.00021529157329210175,
+      "duck_pixels": 20073,
+      "duck_PSNR": 37.16984939575195,
+      "duck_alpha_below09": 0.001245454092562148
+    },
+    {
+      "frame": 13,
+      "PSNR": 49.14626693725586,
+      "SSIM": 0.9987331032752991,
+      "LPIPS": 0.003780350089073181,
+      "MS-SSIM": 0.9996345043182373,
+      "observed_coverage": {
+        "foreground_missing_fraction": 0.0009853156188417774,
+        "core_alpha_below_09_fraction": 0.0,
+        "background_spill_fraction": 0.0011284843762365388,
+        "mask_IoU": 0.9873793498833748
+      },
+      "blue_pixels": 101924,
+      "blue_PSNR": 44.921295166015625,
+      "blue_alpha_below09": 0.00019622463796554297,
+      "duck_pixels": 19846,
+      "duck_PSNR": 37.17251968383789,
+      "duck_alpha_below09": 0.0006046558500453492
+    },
+    {
+      "frame": 17,
+      "PSNR": 47.04840850830078,
+      "SSIM": 0.9984402656555176,
+      "LPIPS": 0.004544868133962154,
+      "MS-SSIM": 0.999453067779541,
+      "observed_coverage": {
+        "foreground_missing_fraction": 0.0013358838966705663,
+        "core_alpha_below_09_fraction": 0.0,
+        "background_spill_fraction": 0.0010940302643640007,
+        "mask_IoU": 0.9874477314471062
+      },
+      "blue_pixels": 102672,
+      "blue_PSNR": 42.36687088012695,
+      "blue_alpha_below09": 0.00014609630668536698,
+      "duck_pixels": 19573,
+      "duck_PSNR": 36.69540023803711,
+      "duck_alpha_below09": 0.001021815766617279
+    },
+    {
+      "frame": 21,
+      "PSNR": 49.227622985839844,
+      "SSIM": 0.9985726475715637,
+      "LPIPS": 0.0046831779181957245,
+      "MS-SSIM": 0.9995007514953613,
+      "observed_coverage": {
+        "foreground_missing_fraction": 0.001226820176473364,
+        "core_alpha_below_09_fraction": 0.0,
+        "background_spill_fraction": 0.0009985969370266948,
+        "mask_IoU": 0.9885809027858861
+      },
+      "blue_pixels": 103569,
+      "blue_PSNR": 42.9107666015625,
+      "blue_alpha_below09": 0.0001448309822437216,
+      "duck_pixels": 19199,
+      "duck_PSNR": 37.5780143737793,
+      "duck_alpha_below09": 0.0006250325537788426
+    },
+    {
+      "frame": 25,
+      "PSNR": 48.33007049560547,
+      "SSIM": 0.9983887672424316,
+      "LPIPS": 0.005164775066077709,
+      "MS-SSIM": 0.9993295073509216,
+      "observed_coverage": {
+        "foreground_missing_fraction": 0.0014018582409794317,
+        "core_alpha_below_09_fraction": 0.0003152692569870484,
+        "background_spill_fraction": 0.0006068928079390119,
+        "mask_IoU": 0.9924456450227173
+      },
+      "blue_pixels": 104994,
+      "blue_PSNR": 41.551795959472656,
+      "blue_alpha_below09": 0.0005714612263557917,
+      "duck_pixels": 18760,
+      "duck_PSNR": 36.36697006225586,
+      "duck_alpha_below09": 0.0007995735607675906
+    },
+    {
+      "frame": 29,
+      "PSNR": 47.40782928466797,
+      "SSIM": 0.9982956051826477,
+      "LPIPS": 0.004941432271152735,
+      "MS-SSIM": 0.9992682933807373,
+      "observed_coverage": {
+        "foreground_missing_fraction": 0.0013231074563259152,
+        "core_alpha_below_09_fraction": 0.0,
+        "background_spill_fraction": 0.00046488443156237046,
+        "mask_IoU": 0.994020182839992
+      },
+      "blue_pixels": 106669,
+      "blue_PSNR": 40.714073181152344,
+      "blue_alpha_below09": 0.0003281178224226345,
+      "duck_pixels": 18385,
+      "duck_PSNR": 35.54376983642578,
+      "duck_alpha_below09": 0.0010878433505575197
+    },
+    {
+      "frame": 33,
+      "PSNR": 45.79106140136719,
+      "SSIM": 0.9979576468467712,
+      "LPIPS": 0.005061262287199497,
+      "MS-SSIM": 0.9991956949234009,
+      "observed_coverage": {
+        "foreground_missing_fraction": 0.0016318661717937624,
+        "core_alpha_below_09_fraction": 0.0,
+        "background_spill_fraction": 0.0004593926691325581,
+        "mask_IoU": 0.9938346228239845
+      },
+      "blue_pixels": 108329,
+      "blue_PSNR": 40.006439208984375,
+      "blue_alpha_below09": 0.00028616529276555676,
+      "duck_pixels": 18264,
+      "duck_PSNR": 33.689388275146484,
+      "duck_alpha_below09": 0.000657030223390276
+    },
+    {
+      "frame": 37,
+      "PSNR": 43.49436950683594,
+      "SSIM": 0.9970232248306274,
+      "LPIPS": 0.006185302510857582,
+      "MS-SSIM": 0.9985862970352173,
+      "observed_coverage": {
+        "foreground_missing_fraction": 0.0021504412884727386,
+        "core_alpha_below_09_fraction": 0.0,
+        "background_spill_fraction": 0.0005887874653350423,
+        "mask_IoU": 0.9921526411522328
+      },
+      "blue_pixels": 111324,
+      "blue_PSNR": 39.4682731628418,
+      "blue_alpha_below09": 0.000583881283460889,
+      "duck_pixels": 17604,
+      "duck_PSNR": 29.368335723876953,
+      "duck_alpha_below09": 0.003294705748693479
+    },
+    {
+      "frame": 41,
+      "PSNR": 42.822078704833984,
+      "SSIM": 0.9969969987869263,
+      "LPIPS": 0.006688314490020275,
+      "MS-SSIM": 0.9985742568969727,
+      "observed_coverage": {
+        "foreground_missing_fraction": 0.0010793467734184982,
+        "core_alpha_below_09_fraction": 0.0,
+        "background_spill_fraction": 0.002112309568317809,
+        "mask_IoU": 0.9789745187396304
+      },
+      "blue_pixels": 113497,
+      "blue_PSNR": 39.03791046142578,
+      "blue_alpha_below09": 0.0004934051120293929,
+      "duck_pixels": 16528,
+      "duck_PSNR": 28.146770477294922,
+      "duck_alpha_below09": 0.00036302032913843176
+    },
+    {
+      "frame": 45,
+      "PSNR": 42.272735595703125,
+      "SSIM": 0.9964370131492615,
+      "LPIPS": 0.007574969902634621,
+      "MS-SSIM": 0.9983424544334412,
+      "observed_coverage": {
+        "foreground_missing_fraction": 0.0017219673839119047,
+        "core_alpha_below_09_fraction": 0.0,
+        "background_spill_fraction": 0.006047845037510005,
+        "mask_IoU": 0.9444782903338421
+      },
+      "blue_pixels": 115761,
+      "blue_PSNR": 37.17290115356445,
+      "blue_alpha_below09": 0.0009415951831791363,
+      "duck_pixels": 17258,
+      "duck_PSNR": 27.88504409790039,
+      "duck_alpha_below09": 0.0013327152624869627
+    },
+    {
+      "frame": 49,
+      "PSNR": 42.05878448486328,
+      "SSIM": 0.9964452385902405,
+      "LPIPS": 0.008472343906760216,
+      "MS-SSIM": 0.9982184171676636,
+      "observed_coverage": {
+        "foreground_missing_fraction": 0.001387325787979813,
+        "core_alpha_below_09_fraction": 1.552566003462222e-05,
+        "background_spill_fraction": 0.00783848109024186,
+        "mask_IoU": 0.9314930113099915
+      },
+      "blue_pixels": 117743,
+      "blue_PSNR": 37.05215072631836,
+      "blue_alpha_below09": 0.000764376650841239,
+      "duck_pixels": 17985,
+      "duck_PSNR": 28.421554565429688,
+      "duck_alpha_below09": 0.00633861551292744
+    },
+    {
+      "frame": 53,
+      "PSNR": 40.30440902709961,
+      "SSIM": 0.9955037236213684,
+      "LPIPS": 0.010123418644070625,
+      "MS-SSIM": 0.9977108836174011,
+      "observed_coverage": {
+        "foreground_missing_fraction": 0.0017052056904364088,
+        "core_alpha_below_09_fraction": 0.0,
+        "background_spill_fraction": 0.006829331596840015,
+        "mask_IoU": 0.9410868691582728
+      },
+      "blue_pixels": 121939,
+      "blue_PSNR": 36.75816345214844,
+      "blue_alpha_below09": 0.0014433446231312378,
+      "duck_pixels": 18145,
+      "duck_PSNR": 25.788707733154297,
+      "duck_alpha_below09": 0.0071645081289611464
+    },
+    {
+      "frame": 57,
+      "PSNR": 38.10734176635742,
+      "SSIM": 0.993626594543457,
+      "LPIPS": 0.013347105123102665,
+      "MS-SSIM": 0.996130645275116,
+      "observed_coverage": {
+        "foreground_missing_fraction": 0.002697148728487028,
+        "core_alpha_below_09_fraction": 0.0,
+        "background_spill_fraction": 0.005916106452766344,
+        "mask_IoU": 0.9483024592165987
+      },
+      "blue_pixels": 125121,
+      "blue_PSNR": 31.806880950927734,
+      "blue_alpha_below09": 0.001590460434299598,
+      "duck_pixels": 17414,
+      "duck_PSNR": 24.613895416259766,
+      "duck_alpha_below09": 0.015677041460893534
+    },
+    {
+      "frame": 61,
+      "PSNR": 36.58118438720703,
+      "SSIM": 0.9925963878631592,
+      "LPIPS": 0.015381740406155586,
+      "MS-SSIM": 0.9950200319290161,
+      "observed_coverage": {
+        "foreground_missing_fraction": 0.002014105520141055,
+        "core_alpha_below_09_fraction": 4.506534474988734e-05,
+        "background_spill_fraction": 0.005276432450833243,
+        "mask_IoU": 0.9538695877625097
+      },
+      "blue_pixels": 123555,
+      "blue_PSNR": 31.49317741394043,
+      "blue_alpha_below09": 0.0012625956051960665,
+      "duck_pixels": 18537,
+      "duck_PSNR": 20.851295471191406,
+      "duck_alpha_below09": 0.01904299509089928
+    },
+    {
+      "frame": 65,
+      "PSNR": 33.64098358154297,
+      "SSIM": 0.9900875091552734,
+      "LPIPS": 0.018892599269747734,
+      "MS-SSIM": 0.9918493628501892,
+      "observed_coverage": {
+        "foreground_missing_fraction": 0.0023865858829000097,
+        "core_alpha_below_09_fraction": 0.0013043445289572068,
+        "background_spill_fraction": 0.004734240967841171,
+        "mask_IoU": 0.9575082535327746
+      },
+      "blue_pixels": 122173,
+      "blue_PSNR": 28.4517822265625,
+      "blue_alpha_below09": 0.0014569503900207083,
+      "duck_pixels": 18805,
+      "duck_PSNR": 18.211483001708984,
+      "duck_alpha_below09": 0.024674288752991224
+    },
+    {
+      "frame": 69,
+      "PSNR": 37.935062408447266,
+      "SSIM": 0.9929796457290649,
+      "LPIPS": 0.017894769087433815,
+      "MS-SSIM": 0.9958680868148804,
+      "observed_coverage": {
+        "foreground_missing_fraction": 0.0013844662882458812,
+        "core_alpha_below_09_fraction": 0.0,
+        "background_spill_fraction": 0.0040245766244191615,
+        "mask_IoU": 0.9638280529684514
+      },
+      "blue_pixels": 120350,
+      "blue_PSNR": 30.86187171936035,
+      "blue_alpha_below09": 0.0009721645201495638,
+      "duck_pixels": 18464,
+      "duck_PSNR": 25.61105728149414,
+      "duck_alpha_below09": 0.020309792027729635
+    },
+    {
+      "frame": 73,
+      "PSNR": 36.071720123291016,
+      "SSIM": 0.9923617839813232,
+      "LPIPS": 0.01946868747472763,
+      "MS-SSIM": 0.9948538541793823,
+      "observed_coverage": {
+        "foreground_missing_fraction": 0.002057351319250021,
+        "core_alpha_below_09_fraction": 0.00047301825062083644,
+        "background_spill_fraction": 0.0044202945425534206,
+        "mask_IoU": 0.959024078704207
+      },
+      "blue_pixels": 116535,
+      "blue_PSNR": 34.206459045410156,
+      "blue_alpha_below09": 0.0018449392886257347,
+      "duck_pixels": 18944,
+      "duck_PSNR": 24.854969024658203,
+      "duck_alpha_below09": 0.016258445945945946
+    },
+    {
+      "frame": 77,
+      "PSNR": 30.70777130126953,
+      "SSIM": 0.9884387850761414,
+      "LPIPS": 0.023208118975162506,
+      "MS-SSIM": 0.9880408644676208,
+      "observed_coverage": {
+        "foreground_missing_fraction": 0.009479978256930604,
+        "core_alpha_below_09_fraction": 0.0038785425101214577,
+        "background_spill_fraction": 0.00489698738503485,
+        "mask_IoU": 0.9467686403280892
+      },
+      "blue_pixels": 113390,
+      "blue_PSNR": 32.159400939941406,
+      "blue_alpha_below09": 0.001984301966663727,
+      "duck_pixels": 18379,
+      "duck_PSNR": 14.40374755859375,
+      "duck_alpha_below09": 0.06850209478208825
+    },
+    {
+      "frame": 81,
+      "PSNR": 33.33708572387695,
+      "SSIM": 0.9904477000236511,
+      "LPIPS": 0.02241741493344307,
+      "MS-SSIM": 0.991733968257904,
+      "observed_coverage": {
+        "foreground_missing_fraction": 0.0037079399253926604,
+        "core_alpha_below_09_fraction": 0.0006280144694533762,
+        "background_spill_fraction": 0.005966776218331645,
+        "mask_IoU": 0.9414386730808627
+      },
+      "blue_pixels": 109023,
+      "blue_PSNR": 31.756771087646484,
+      "blue_alpha_below09": 0.0024123350118782274,
+      "duck_pixels": 18794,
+      "duck_PSNR": 23.502613067626953,
+      "duck_alpha_below09": 0.028360114930296904
+    },
+    {
+      "frame": 85,
+      "PSNR": 32.305999755859375,
+      "SSIM": 0.9897444248199463,
+      "LPIPS": 0.023574158549308777,
+      "MS-SSIM": 0.9893503189086914,
+      "observed_coverage": {
+        "foreground_missing_fraction": 0.002210832313341493,
+        "core_alpha_below_09_fraction": 8.58236495648741e-06,
+        "background_spill_fraction": 0.006414976170108762,
+        "mask_IoU": 0.9375498673797252
+      },
+      "blue_pixels": 105878,
+      "blue_PSNR": 30.320453643798828,
+      "blue_alpha_below09": 0.0018889665464024632,
+      "duck_pixels": 18701,
+      "duck_PSNR": 16.436765670776367,
+      "duck_alpha_below09": 0.01908988824127052
+    },
+    {
+      "frame": 89,
+      "PSNR": 39.933982849121094,
+      "SSIM": 0.9941332340240479,
+      "LPIPS": 0.017531108111143112,
+      "MS-SSIM": 0.9965691566467285,
+      "observed_coverage": {
+        "foreground_missing_fraction": 0.00282893855247681,
+        "core_alpha_below_09_fraction": 0.0007413824700531463,
+        "background_spill_fraction": 0.006144719125907386,
+        "mask_IoU": 0.9409690268284288
+      },
+      "blue_pixels": 109613,
+      "blue_PSNR": 33.911476135253906,
+      "blue_alpha_below09": 0.00433342760438999,
+      "duck_pixels": 18290,
+      "duck_PSNR": 30.55995750427246,
+      "duck_alpha_below09": 0.017605248769819573
+    },
+    {
+      "frame": 93,
+      "PSNR": 39.50813674926758,
+      "SSIM": 0.99343341588974,
+      "LPIPS": 0.01735975779592991,
+      "MS-SSIM": 0.9960869550704956,
+      "observed_coverage": {
+        "foreground_missing_fraction": 0.0033922322176181377,
+        "core_alpha_below_09_fraction": 0.002912885517197228,
+        "background_spill_fraction": 0.008144468567657923,
+        "mask_IoU": 0.9263975093300337
+      },
+      "blue_pixels": 114144,
+      "blue_PSNR": 33.61249542236328,
+      "blue_alpha_below09": 0.0077971684889262685,
+      "duck_pixels": 18939,
+      "duck_PSNR": 28.332101821899414,
+      "duck_alpha_below09": 0.016737948149321506
+    },
+    {
+      "frame": 97,
+      "PSNR": 37.180267333984375,
+      "SSIM": 0.9904927015304565,
+      "LPIPS": 0.02464878186583519,
+      "MS-SSIM": 0.9940372705459595,
+      "observed_coverage": {
+        "foreground_missing_fraction": 0.0029094393600622164,
+        "core_alpha_below_09_fraction": 0.005079325750478122,
+        "background_spill_fraction": 0.013686876247119954,
+        "mask_IoU": 0.8877479103813245
+      },
+      "blue_pixels": 118333,
+      "blue_PSNR": 33.22334671020508,
+      "blue_alpha_below09": 0.011298623376403878,
+      "duck_pixels": 19218,
+      "duck_PSNR": 24.532052993774414,
+      "duck_alpha_below09": 0.009886564678946821
+    },
+    {
+      "frame": 101,
+      "PSNR": 38.22999572753906,
+      "SSIM": 0.9926649332046509,
+      "LPIPS": 0.02079874463379383,
+      "MS-SSIM": 0.9949423670768738,
+      "observed_coverage": {
+        "foreground_missing_fraction": 0.0031650513132246167,
+        "core_alpha_below_09_fraction": 0.0043888573052870946,
+        "background_spill_fraction": 0.01940024768577787,
+        "mask_IoU": 0.8517465310220355
+      },
+      "blue_pixels": 122007,
+      "blue_PSNR": 33.73439407348633,
+      "blue_alpha_below09": 0.008671633594793742,
+      "duck_pixels": 18998,
+      "duck_PSNR": 23.485937118530273,
+      "duck_alpha_below09": 0.01984419412569744
+    },
+    {
+      "frame": 105,
+      "PSNR": 37.66252136230469,
+      "SSIM": 0.9905974268913269,
+      "LPIPS": 0.026249218732118607,
+      "MS-SSIM": 0.9925632476806641,
+      "observed_coverage": {
+        "foreground_missing_fraction": 0.0033527687057110607,
+        "core_alpha_below_09_fraction": 0.003987946876976303,
+        "background_spill_fraction": 0.019347068411103698,
+        "mask_IoU": 0.8542274886942584
+      },
+      "blue_pixels": 125059,
+      "blue_PSNR": 32.330101013183594,
+      "blue_alpha_below09": 0.007508456008763863,
+      "duck_pixels": 18623,
+      "duck_PSNR": 24.933855056762695,
+      "duck_alpha_below09": 0.025022821242549537
+    },
+    {
+      "frame": 109,
+      "PSNR": 39.499656677246094,
+      "SSIM": 0.9929500818252563,
+      "LPIPS": 0.020368117839097977,
+      "MS-SSIM": 0.9946334362030029,
+      "observed_coverage": {
+        "foreground_missing_fraction": 0.002626668960315465,
+        "core_alpha_below_09_fraction": 0.004487443999056826,
+        "background_spill_fraction": 0.015169242849095866,
+        "mask_IoU": 0.8831352193704487
+      },
+      "blue_pixels": 127062,
+      "blue_PSNR": 33.997474670410156,
+      "blue_alpha_below09": 0.007500275456076561,
+      "duck_pixels": 18320,
+      "duck_PSNR": 26.45474624633789,
+      "duck_alpha_below09": 0.017194323144104802
+    },
+    {
+      "frame": 113,
+      "PSNR": 38.245933532714844,
+      "SSIM": 0.9924634099006653,
+      "LPIPS": 0.02117009460926056,
+      "MS-SSIM": 0.9940881133079529,
+      "observed_coverage": {
+        "foreground_missing_fraction": 0.002235819414585745,
+        "core_alpha_below_09_fraction": 0.0014929214929214928,
+        "background_spill_fraction": 0.011672647566581965,
+        "mask_IoU": 0.9074594360452175
+      },
+      "blue_pixels": 128946,
+      "blue_PSNR": 35.80695343017578,
+      "blue_alpha_below09": 0.0032416670544258837,
+      "duck_pixels": 16703,
+      "duck_PSNR": 24.093751907348633,
+      "duck_alpha_below09": 0.01472789319283961
+    },
+    {
+      "frame": 117,
+      "PSNR": 36.70758056640625,
+      "SSIM": 0.9919981360435486,
+      "LPIPS": 0.019994333386421204,
+      "MS-SSIM": 0.9937726259231567,
+      "observed_coverage": {
+        "foreground_missing_fraction": 0.0023385512806195848,
+        "core_alpha_below_09_fraction": 0.0005969193139795592,
+        "background_spill_fraction": 0.009211279352119829,
+        "mask_IoU": 0.9255422230076846
+      },
+      "blue_pixels": 130331,
+      "blue_PSNR": 36.58106231689453,
+      "blue_alpha_below09": 0.0023018314905893455,
+      "duck_pixels": 16201,
+      "duck_PSNR": 21.961078643798828,
+      "duck_alpha_below09": 0.021109808036540955
+    },
+    {
+      "frame": 121,
+      "PSNR": 39.976585388183594,
+      "SSIM": 0.994668185710907,
+      "LPIPS": 0.014813181944191456,
+      "MS-SSIM": 0.9969459772109985,
+      "observed_coverage": {
+        "foreground_missing_fraction": 0.0019820365590264974,
+        "core_alpha_below_09_fraction": 8.787667972611769e-05,
+        "background_spill_fraction": 0.007920747498711316,
+        "mask_IoU": 0.9351872990800101
+      },
+      "blue_pixels": 129985,
+      "blue_PSNR": 36.1994514465332,
+      "blue_alpha_below09": 0.0008770242720313882,
+      "duck_pixels": 16031,
+      "duck_PSNR": 28.1114501953125,
+      "duck_alpha_below09": 0.012725344644750796
+    },
+    {
+      "frame": 125,
+      "PSNR": 38.92744064331055,
+      "SSIM": 0.9934475421905518,
+      "LPIPS": 0.016463473439216614,
+      "MS-SSIM": 0.995826005935669,
+      "observed_coverage": {
+        "foreground_missing_fraction": 0.0033171896769057254,
+        "core_alpha_below_09_fraction": 1.4773449157174726e-05,
+        "background_spill_fraction": 0.0068333242842849055,
+        "mask_IoU": 0.9416447285947098
+      },
+      "blue_pixels": 128334,
+      "blue_PSNR": 35.215354919433594,
+      "blue_alpha_below09": 0.0013870057817881466,
+      "duck_pixels": 16284,
+      "duck_PSNR": 25.170639038085938,
+      "duck_alpha_below09": 0.009211495946941784
+    },
+    {
+      "frame": 129,
+      "PSNR": 40.06117248535156,
+      "SSIM": 0.9945798516273499,
+      "LPIPS": 0.014872221276164055,
+      "MS-SSIM": 0.9969154596328735,
+      "observed_coverage": {
+        "foreground_missing_fraction": 0.0026369316186652357,
+        "core_alpha_below_09_fraction": 9.600543538464948e-05,
+        "background_spill_fraction": 0.005339520754157852,
+        "mask_IoU": 0.953863993511431
+      },
+      "blue_pixels": 126926,
+      "blue_PSNR": 37.37156295776367,
+      "blue_alpha_below09": 0.0010636118683327294,
+      "duck_pixels": 17787,
+      "duck_PSNR": 26.36366081237793,
+      "duck_alpha_below09": 0.01652892561983471
+    },
+    {
+      "frame": 133,
+      "PSNR": 39.800697326660156,
+      "SSIM": 0.9946516156196594,
+      "LPIPS": 0.015889758244156837,
+      "MS-SSIM": 0.9970073103904724,
+      "observed_coverage": {
+        "foreground_missing_fraction": 0.002110856594928617,
+        "core_alpha_below_09_fraction": 0.0013432234377565183,
+        "background_spill_fraction": 0.005023941250899348,
+        "mask_IoU": 0.9566119395363089
+      },
+      "blue_pixels": 126335,
+      "blue_PSNR": 36.74065017700195,
+      "blue_alpha_below09": 0.0016464162741916333,
+      "duck_pixels": 17744,
+      "duck_PSNR": 28.231407165527344,
+      "duck_alpha_below09": 0.02412082957619477
+    },
+    {
+      "frame": 137,
+      "PSNR": 38.53694534301758,
+      "SSIM": 0.9937220811843872,
+      "LPIPS": 0.018164029344916344,
+      "MS-SSIM": 0.996290385723114,
+      "observed_coverage": {
+        "foreground_missing_fraction": 0.00347786077730865,
+        "core_alpha_below_09_fraction": 0.0008108456286327021,
+        "background_spill_fraction": 0.004900139915555391,
+        "mask_IoU": 0.9555812203161091
+      },
+      "blue_pixels": 123026,
+      "blue_PSNR": 37.36647415161133,
+      "blue_alpha_below09": 0.0011379708354331605,
+      "duck_pixels": 18925,
+      "duck_PSNR": 24.86961555480957,
+      "duck_alpha_below09": 0.02631439894319683
+    },
+    {
+      "frame": 141,
+      "PSNR": 40.98534393310547,
+      "SSIM": 0.9948092699050903,
+      "LPIPS": 0.01619100198149681,
+      "MS-SSIM": 0.9970611929893494,
+      "observed_coverage": {
+        "foreground_missing_fraction": 0.00249407570659721,
+        "core_alpha_below_09_fraction": 0.00014678388776440414,
+        "background_spill_fraction": 0.005022941393098049,
+        "mask_IoU": 0.9545980469292359
+      },
+      "blue_pixels": 120625,
+      "blue_PSNR": 38.54991149902344,
+      "blue_alpha_below09": 0.0008455958549222798,
+      "duck_pixels": 18622,
+      "duck_PSNR": 28.244665145874023,
+      "duck_alpha_below09": 0.015572978197830522
+    },
+    {
+      "frame": 145,
+      "PSNR": 40.04851531982422,
+      "SSIM": 0.9942925572395325,
+      "LPIPS": 0.01768314465880394,
+      "MS-SSIM": 0.9963676333427429,
+      "observed_coverage": {
+        "foreground_missing_fraction": 0.004508331987387906,
+        "core_alpha_below_09_fraction": 0.0002822732404968009,
+        "background_spill_fraction": 0.005903990221925606,
+        "mask_IoU": 0.9446702740164197
+      },
+      "blue_pixels": 118667,
+      "blue_PSNR": 35.56430435180664,
+      "blue_alpha_below09": 0.0015926921553591142,
+      "duck_pixels": 18032,
+      "duck_PSNR": 26.917192459106445,
+      "duck_alpha_below09": 0.025842945874001776
+    },
+    {
+      "frame": 149,
+      "PSNR": 41.645904541015625,
+      "SSIM": 0.9949593544006348,
+      "LPIPS": 0.017263688147068024,
+      "MS-SSIM": 0.9975572824478149,
+      "observed_coverage": {
+        "foreground_missing_fraction": 0.0022919830265529426,
+        "core_alpha_below_09_fraction": 0.00012648121358724436,
+        "background_spill_fraction": 0.005329180631742303,
+        "mask_IoU": 0.9509905376431359
+      },
+      "blue_pixels": 118534,
+      "blue_PSNR": 37.7811393737793,
+      "blue_alpha_below09": 0.000776148615587089,
+      "duck_pixels": 16875,
+      "duck_PSNR": 29.583951950073242,
+      "duck_alpha_below09": 0.014874074074074074
+    },
+    {
+      "frame": 153,
+      "PSNR": 39.67670440673828,
+      "SSIM": 0.9947261214256287,
+      "LPIPS": 0.015476476401090622,
+      "MS-SSIM": 0.996853232383728,
+      "observed_coverage": {
+        "foreground_missing_fraction": 0.004053549146639784,
+        "core_alpha_below_09_fraction": 0.0,
+        "background_spill_fraction": 0.0034256468248251935,
+        "mask_IoU": 0.9656728048230324
+      },
+      "blue_pixels": 119950,
+      "blue_PSNR": 33.774009704589844,
+      "blue_alpha_below09": 0.001125468945393914,
+      "duck_pixels": 16495,
+      "duck_PSNR": 26.593612670898438,
+      "duck_alpha_below09": 0.030918460139436194
+    },
+    {
+      "frame": 157,
+      "PSNR": 35.29154968261719,
+      "SSIM": 0.993634045124054,
+      "LPIPS": 0.016576478257775307,
+      "MS-SSIM": 0.9950229525566101,
+      "observed_coverage": {
+        "foreground_missing_fraction": 0.0022445519235045584,
+        "core_alpha_below_09_fraction": 0.001546706674812655,
+        "background_spill_fraction": 0.0028246364466829616,
+        "mask_IoU": 0.9730017280520449
+      },
+      "blue_pixels": 122614,
+      "blue_PSNR": 31.106643676757812,
+      "blue_alpha_below09": 0.0023896129316391275,
+      "duck_pixels": 15874,
+      "duck_PSNR": 28.88239860534668,
+      "duck_alpha_below09": 0.01864684389567847
+    },
+    {
+      "frame": 161,
+      "PSNR": 40.71197509765625,
+      "SSIM": 0.9956979155540466,
+      "LPIPS": 0.012995554134249687,
+      "MS-SSIM": 0.9978896975517273,
+      "observed_coverage": {
+        "foreground_missing_fraction": 0.0020144218950588623,
+        "core_alpha_below_09_fraction": 0.0017249240121580548,
+        "background_spill_fraction": 0.004254164489206498,
+        "mask_IoU": 0.9618419580511626
+      },
+      "blue_pixels": 125414,
+      "blue_PSNR": 39.89925765991211,
+      "blue_alpha_below09": 0.0024877605371011213,
+      "duck_pixels": 15222,
+      "duck_PSNR": 29.716266632080078,
+      "duck_alpha_below09": 0.014584154513204573
+    },
+    {
+      "frame": 165,
+      "PSNR": 41.07476806640625,
+      "SSIM": 0.9957200288772583,
+      "LPIPS": 0.012277115136384964,
+      "MS-SSIM": 0.9978040456771851,
+      "observed_coverage": {
+        "foreground_missing_fraction": 0.0028575252626647928,
+        "core_alpha_below_09_fraction": 0.0014587892049598833,
+        "background_spill_fraction": 0.0046382606135273565,
+        "mask_IoU": 0.9587365522211355
+      },
+      "blue_pixels": 127522,
+      "blue_PSNR": 39.90406799316406,
+      "blue_alpha_below09": 0.0023760606013080096,
+      "duck_pixels": 15967,
+      "duck_PSNR": 29.263893127441406,
+      "duck_alpha_below09": 0.019352414354606377
+    },
+    {
+      "frame": 169,
+      "PSNR": 43.14898681640625,
+      "SSIM": 0.9961848258972168,
+      "LPIPS": 0.011922633275389671,
+      "MS-SSIM": 0.9982904195785522,
+      "observed_coverage": {
+        "foreground_missing_fraction": 0.0018481839439847905,
+        "core_alpha_below_09_fraction": 0.0009034352574790483,
+        "background_spill_fraction": 0.004940106637414947,
+        "mask_IoU": 0.9577504179193654
+      },
+      "blue_pixels": 129389,
+      "blue_PSNR": 39.78253173828125,
+      "blue_alpha_below09": 0.0013756965429827883,
+      "duck_pixels": 15658,
+      "duck_PSNR": 31.204965591430664,
+      "duck_alpha_below09": 0.012709158257759612
+    },
+    {
+      "frame": 173,
+      "PSNR": 42.81192398071289,
+      "SSIM": 0.9962099194526672,
+      "LPIPS": 0.011943990364670753,
+      "MS-SSIM": 0.9982845187187195,
+      "observed_coverage": {
+        "foreground_missing_fraction": 0.0026271015182430363,
+        "core_alpha_below_09_fraction": 0.0010337972166998013,
+        "background_spill_fraction": 0.005039643276576462,
+        "mask_IoU": 0.956925290052225
+      },
+      "blue_pixels": 131099,
+      "blue_PSNR": 41.09844970703125,
+      "blue_alpha_below09": 0.0014721698868793813,
+      "duck_pixels": 16415,
+      "duck_PSNR": 28.719863891601562,
+      "duck_alpha_below09": 0.02491623515077673
+    },
+    {
+      "frame": 177,
+      "PSNR": 40.87211608886719,
+      "SSIM": 0.9954726696014404,
+      "LPIPS": 0.011779602617025375,
+      "MS-SSIM": 0.9979154467582703,
+      "observed_coverage": {
+        "foreground_missing_fraction": 0.0023706659239443734,
+        "core_alpha_below_09_fraction": 0.0011944852200443255,
+        "background_spill_fraction": 0.005395869519054334,
+        "mask_IoU": 0.9547308521980611
+      },
+      "blue_pixels": 131763,
+      "blue_PSNR": 40.364295959472656,
+      "blue_alpha_below09": 0.001866988456546982,
+      "duck_pixels": 15947,
+      "duck_PSNR": 28.617507934570312,
+      "duck_alpha_below09": 0.017808992286950525
+    },
+    {
+      "frame": 181,
+      "PSNR": 42.91322326660156,
+      "SSIM": 0.9963980317115784,
+      "LPIPS": 0.010731409303843975,
+      "MS-SSIM": 0.9984486103057861,
+      "observed_coverage": {
+        "foreground_missing_fraction": 0.0021863826941379222,
+        "core_alpha_below_09_fraction": 0.0014860751896889244,
+        "background_spill_fraction": 0.00591907150842512,
+        "mask_IoU": 0.9513031003427114
+      },
+      "blue_pixels": 132101,
+      "blue_PSNR": 41.34715270996094,
+      "blue_alpha_below09": 0.002180150036714332,
+      "duck_pixels": 16045,
+      "duck_PSNR": 29.84418487548828,
+      "duck_alpha_below09": 0.018448114677469617
+    },
+    {
+      "frame": 185,
+      "PSNR": 42.724365234375,
+      "SSIM": 0.9962120056152344,
+      "LPIPS": 0.010366598144173622,
+      "MS-SSIM": 0.9983894228935242,
+      "observed_coverage": {
+        "foreground_missing_fraction": 0.002637039874852345,
+        "core_alpha_below_09_fraction": 0.0018122867377422872,
+        "background_spill_fraction": 0.006344160170174967,
+        "mask_IoU": 0.9480750438524616
+      },
+      "blue_pixels": 133205,
+      "blue_PSNR": 41.5723762512207,
+      "blue_alpha_below09": 0.002605007319545062,
+      "duck_pixels": 15840,
+      "duck_PSNR": 29.186277389526367,
+      "duck_alpha_below09": 0.020202020202020204
+    },
+    {
+      "frame": 189,
+      "PSNR": 42.92301559448242,
+      "SSIM": 0.9965740442276001,
+      "LPIPS": 0.0100058289244771,
+      "MS-SSIM": 0.998628556728363,
+      "observed_coverage": {
+        "foreground_missing_fraction": 0.0022040785035265255,
+        "core_alpha_below_09_fraction": 0.0019126283054821595,
+        "background_spill_fraction": 0.006186344540434072,
+        "mask_IoU": 0.9496254590558649
+      },
+      "blue_pixels": 133904,
+      "blue_PSNR": 42.86870574951172,
+      "blue_alpha_below09": 0.002822917911339467,
+      "duck_pixels": 14932,
+      "duck_PSNR": 31.395835876464844,
+      "duck_alpha_below09": 0.01011251004553978
+    },
+    {
+      "frame": 193,
+      "PSNR": 42.95391082763672,
+      "SSIM": 0.9966351985931396,
+      "LPIPS": 0.009975772351026535,
+      "MS-SSIM": 0.9986916780471802,
+      "observed_coverage": {
+        "foreground_missing_fraction": 0.002628037073183178,
+        "core_alpha_below_09_fraction": 0.002048282973824356,
+        "background_spill_fraction": 0.006483643994953356,
+        "mask_IoU": 0.947107958640992
+      },
+      "blue_pixels": 134183,
+      "blue_PSNR": 42.87843704223633,
+      "blue_alpha_below09": 0.002988456063733856,
+      "duck_pixels": 14976,
+      "duck_PSNR": 29.469898223876953,
+      "duck_alpha_below09": 0.015024038461538462
+    },
+    {
+      "frame": 197,
+      "PSNR": 42.70504379272461,
+      "SSIM": 0.9965224266052246,
+      "LPIPS": 0.010142053477466106,
+      "MS-SSIM": 0.9985122084617615,
+      "observed_coverage": {
+        "foreground_missing_fraction": 0.002436255564484241,
+        "core_alpha_below_09_fraction": 0.0020997115547763136,
+        "background_spill_fraction": 0.007038642396130929,
+        "mask_IoU": 0.9432310197189894
+      },
+      "blue_pixels": 134310,
+      "blue_PSNR": 43.10407257080078,
+      "blue_alpha_below09": 0.002985630258357531,
+      "duck_pixels": 14879,
+      "duck_PSNR": 30.72635269165039,
+      "duck_alpha_below09": 0.017877545533974058
+    }
+  ]
+}
