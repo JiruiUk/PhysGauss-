@@ -1,0 +1,32 @@
+{
+  "images": {
+    "output/staged_reconstruction/S1_rgb_prior_proposals/v1/diffuse_only_changed_pixel.png": "74a0e23ee01d5c49489b2fea65165e2fe1565109dda97c8f49f14faffdf7c0ba",
+    "output/staged_reconstruction/S1_rgb_prior_proposals/v1/glossy_only_changed_pixel.png": "6d3961e0aa5bd94fe43f0ea53ba9be7749472bf1e929eff6446d1daaf70b7b7c"
+  },
+  "records": {
+    "diffuse": {
+      "image": "c26_t3",
+      "uv": [
+        85,
+        108
+      ],
+      "old_error": 0.00941610336303711,
+      "new_error": 0.03977489471435547,
+      "fit_increase_within_original_1e6_tolerance": 5.960464477539062e-07,
+      "GT_evaluator_only": true
+    },
+    "glossy": {
+      "image": "c26_t3",
+      "uv": [
+        85,
+        108
+      ],
+      "old_error": 0.00941610336303711,
+      "new_error": 0.03977489471435547,
+      "fit_increase_within_original_1e6_tolerance": 5.960464477539062e-07,
+      "GT_evaluator_only": true
+    }
+  },
+  "source_sha256": "b0b081344f2383d2a1b7ad6f1e18dd9d3b59a54a7aabd6352b6406aca2ad2ded",
+  "original_outputs_and_gates_unchanged": true
+}

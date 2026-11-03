@@ -1,0 +1,25 @@
+{
+  "status": "complete_rejected_no_numeric_improvement",
+  "manual_review_completed": true,
+  "actually_viewed": "Both cases c00_t1/c08_t0/c24_t0 RGB/D1/D4/error-change images and sole c26_t3 changed-pixel full RGB/x4 crop",
+  "finding": "Many finite proposals, native fit cost almost always vetoes; sole accepted point worsens independent GT error.",
+  "original_membership_unaccepted_depths_and_thresholds_preserved": true,
+  "Gaussian_training_started": false,
+  "real_training_authorized": false,
+  "next": "Preregister evaluator-only native photometric-cost oracle/visibility/cross-face audit; no GT assets exported or gate relaxation",
+  "reviewed_images": {
+    "output/staged_reconstruction/S1_rgb_prior_proposals/v1/diffuse_RGB_proposals.png": "21c0d7e836179c5960bc3c10338af0725ae8f00d9eef6233c587785720ced08a",
+    "output/staged_reconstruction/S1_rgb_prior_proposals/v1/glossy_RGB_proposals.png": "bafabcc49c8f6d7be0cf84a42152f469df5b03bf164d78b2da3f88d5ca798226",
+    "output/staged_reconstruction/S1_rgb_prior_proposals/v1/diffuse_only_changed_pixel.png": "74a0e23ee01d5c49489b2fea65165e2fe1565109dda97c8f49f14faffdf7c0ba",
+    "output/staged_reconstruction/S1_rgb_prior_proposals/v1/glossy_only_changed_pixel.png": "6d3961e0aa5bd94fe43f0ea53ba9be7749472bf1e929eff6446d1daaf70b7b7c"
+  },
+  "evidence_sha256": {
+    "source_freeze.json": "dac46336a930ad0eec3648ddea8ca847638d353de6ec4aeb67565d3a04dbff77",
+    "preflight.json": "2f3ef601ace1cf6a421ead42ee6807d1c393680a89f9709cbb320838bdf47a37",
+    "inference.json": "f41415fd5c82cb1069ace4c003c1448f50d44038c2e5657fe0e784d654044be0",
+    "input_audit.json": "e6e38c9c7cf74e2a0ea068f56911c80da9130b8f9591a258cbf2a70889f706d8",
+    "rejection_accounting.json": "44f1dc7c1380172eb99c98749ef81c14e7405788cc69c534516a4b34a7acc695",
+    "evaluation.json": "40afe4fb79ac8022d87c4153a336446a07663717b6036d16d6c6b0151ff06946",
+    "gate.json": "05be9b2398279d1e77335a9a006f13bdbfccb7e850f865829fc1a3b839d7d66f"
+  }
+}

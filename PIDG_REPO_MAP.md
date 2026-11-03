@@ -874,3 +874,17 @@ RGB/anchors/upstream source and replay official weights in a separate process.
 depth, true empty background and same-pose time overlap. No original PIDG
 renderer, Gaussian, optimizer, physics field or identity is changed. Tests:
 test_pretrained_depth.py. Reports: S1_pretrained_geometry/v1; not Gaussian training.
+
+
+## Optional RGB-validated relative-depth proposal (2026-11-03)
+
+`variants/staged_reconstruction/rgb_prior_proposals/core.py` uses frozen raw
+Small ordering and D2 interval anchors to nominate alternative192-grid depths;
+the unchanged patch_features/source_cost and fixed4-fit/2-held checks accept
+or retain old D1 depths. No learned static label or physical identity is made.
+`compute/infer/io` retain full membership with atomic hash-bound per-view saves;
+`preflight` verifies independent2+2 inference recovery and exact disabled identity.
+`audit` replays every saved input/bound/acceptance and actual native RGB costs in
+a separate process; `evaluate` alone reads static GT and visible-thin labels.
+No PIDG renderer/model/optimizer/physics or Gaussian training integration.
+Tests: test_rgb_prior_proposals.py; reports: S1_rgb_prior_proposals/v1.

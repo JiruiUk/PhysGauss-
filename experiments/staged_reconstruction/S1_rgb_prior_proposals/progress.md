@@ -39,3 +39,22 @@ Frozen source/parents/RGB/protocol digest:
 dac46336a930ad0eec3648ddea8ca847638d353de6ec4aeb67565d3a04dbff77.
 Ready for one serialized two-condition proposal inference and independent GT
 audit, then actual fixed-image review. No actual candidate outputs yet.
+
+## Two-condition inference, independent GT and actual review completed
+
+All423747/423100 candidate pixels retained. Bounds support211872/210985;
+eligible39163/38419; finite proposals38290/37475. Fit nonworse only3/2; final
+accepted1/1. Both actual view82 native RGB outputs/costs replay exactly in an
+independent process; all192 saved input/bounds/acceptance/membership audited.
+
+Both numeric and strict Gaussian gates fail. Global MAE effectively unchanged
+0.036805/0.036826; sole accepted point c26_t3(85,108) worsens GT error
+0.009416→0.039775 even though held costs fall. Thin accuracy/coverage unchanged.
+No Gaussian/real training or clean-complete claim. Actual fixed0/24/72 RGB/error
+figures and sole changed-pixel full/crop figures viewed for both cases.
+
+Next independently audit original photometric costs at privileged GT depths,
+separating reference cross-face windows/source visibility/quantization. It is
+an evaluator-only measurement audit, not a threshold retry or new pretrained
+model. No GT arrays, masks, normals, coefficients or selected points may be
+exported as training inputs. Do not rerun D4 or relax old gates.
