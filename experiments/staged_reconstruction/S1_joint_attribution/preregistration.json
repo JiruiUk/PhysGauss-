@@ -1,0 +1,22 @@
+{
+  "stage": "S1-J2",
+  "before_implementation_and_results": true,
+  "files": {
+    "experiments/staged_reconstruction/S1_joint_attribution/plan.md": "3a5ac1beb98783e5d1159eb36d446ceded37d1bb6c763c5d7c8e9fe326db52e8",
+    "experiments/staged_reconstruction/S1_joint_attribution/protocol.json": "4cb7e9052e63f3f16af442c9ef0fe0a3ccad747445db5851f615b05f776cada2",
+    "experiments/staged_reconstruction/S1_joint_rgb/accepted_recovery/protocol.json": "17b0301953f1fa3a32419a7fbfa86f4b99d989fc87e970d73ba463a215230165",
+    "experiments/staged_reconstruction/S1_joint_rgb/accepted_recovery/v1/final_review.json": "94355f709c452d9f6708fa29324ed4ed01895b17600033022bf05a0ab43202a2",
+    "experiments/staged_reconstruction/S1_joint_rgb/accepted_recovery/v1/synthetic_evaluation.json": "c54ccaf908d9c8b12531c59075ebd2c9b70ceb8796368798162bb2b461db05a2",
+    "experiments/staged_reconstruction/S1_joint_rgb/accepted_recovery/v1/synthetic_gate.json": "2025abf9e210372a08baa27f4e8aef4c3be0308a6fbb026d7918ced15889ee59",
+    "experiments/staged_reconstruction/S1_clean_visibility/synthetic_v2/dataset.json": "daff42743af6f46e75903cd40ce0bdc581fbbfe352b9055681a738aaeadcff9a",
+    "variants/staged_reconstruction/train_static.py": "c114c81b9c16570e2ec5101d67332e457946701e5d72f07dec922b09d822a28d",
+    "variants/staged_reconstruction/nuisance_static/evaluate.py": "3d37bcdc2164183c13035f03d228628ecb674540349abd743be1c7d0ab00600b",
+    "variants/staged_reconstruction/adaptive_static/model.py": "e14bb3e18d2d0e256b21cf08d5def492ca7162a76e4324a2d573950d5a7a3b05",
+    "runs/pidg_staged_reconstruction/S1_joint_rgb/accepted_recovery/formal/diffuse/frozen_static/checkpoint.pt": "e6d6daca4578e1ac7b2df1f6d36a10b827505c3bb271f5b1076f684c0586cd54",
+    "runs/pidg_staged_reconstruction/S1_joint_rgb/accepted_recovery/formal/diffuse/revisable_static/checkpoint.pt": "344db4219ec2009ae08ac88717446b93128cbec3335118148be97d734a8a78c2",
+    "runs/pidg_staged_reconstruction/S1_joint_rgb/accepted_recovery/formal/glossy/frozen_static/checkpoint.pt": "13e2436c0f2acb36f93f970e2bcedec93022033f8c761a9773ac9b97d1ebc477",
+    "runs/pidg_staged_reconstruction/S1_joint_rgb/accepted_recovery/formal/glossy/revisable_static/checkpoint.pt": "607b2782f93111f9dfaa2d6559f72c0f6b19bb2576774b80332a52b408d26834"
+  },
+  "training_updates": 0,
+  "quality_gates_changed": false
+}
