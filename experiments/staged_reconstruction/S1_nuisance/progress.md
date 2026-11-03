@@ -66,3 +66,13 @@ six static Adam counters6000,96 view visit counts replayed, RNG/camera stack
 exact, source/input/history unchanged. Checkpoint SHA256
 `64b5bc00a6a1ada7957c4d1bd8087df59c7e4c00f994cf02ace30fa83e3fb45b`.
 No quality conclusion before nuisance/glossy and independent GT evaluation.
+
+## Diffuse full-RGB nuisance completed
+
+6000 updates completed with4000 fixed shared static points and96 independent
+1000-primitive nuisance planes. Full-state audit passed: all six static Adam
+counters6000, per-image Adam counters exactly match62/63 selected-view visits,
+unvisited planes unchanged, RNG/sampler/topology replay verified. Checkpoint
+SHA256 `9dc4322df099a123de1fc18801dbca2dbb621820c5b1239053176990bc87db06`.
+This records execution integrity only; static quality awaits matched independent
+GT evaluation and actual image review. Glossy arms remain serialized.
