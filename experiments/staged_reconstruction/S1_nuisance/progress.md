@@ -84,3 +84,12 @@ counters6000 and the same96-view sampling/RNG/topology/source audits passed.
 Checkpoint SHA256 `c4dd10f4ec2c45fa21a9fcaf296313e0b6ce476299fe21766fd29cfe9fe5fd3a`.
 The glossy nuisance arm is the last formal synthetic arm; no real training has
 started. Quality conclusions remain pending independent evaluation.
+
+## Glossy full-RGB nuisance completed
+
+The fourth formal synthetic arm completed6000 updates. Static Adam counters
+are6000; nuisance selected-view counters, unchanged unvisited planes, full
+RNG/sampler/topology/source recovery all passed. Checkpoint SHA256
+`1a785996a7902f0a65214cb2c1d79289133b8aa98c0b531e724849c90471c47b`.
+All four training milestones are complete; the independent frozen evaluator is
+running. There is no real18k→24k run unless both cases and manual review pass.
