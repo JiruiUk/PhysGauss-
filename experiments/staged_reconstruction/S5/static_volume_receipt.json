@@ -1,0 +1,19 @@
+{
+  "file": "runs/pidg_staged_reconstruction/S5_conditional_static_sdf.npz",
+  "sha256": "0cfe20fa90d2cbc25ed2b325a595a1d0fa4928896591141307cae9b4683dc1d4",
+  "S1_initialization_receipt_sha256": "37bddfd79dc76d41404f9d3bd70c8e5379cca220ac0498aa90499661ab58fe92",
+  "shape": [
+    49,
+    86,
+    74
+  ],
+  "solid_voxels": 15320,
+  "discretization_margin": 0.08,
+  "maximum_interior_distance": 0.2884441020371191,
+  "training_only": true,
+  "identical_S1_voxel_eligibility": true,
+  "independent_geometry_GT": false,
+  "contact_surface_certified": false,
+  "permitted_use": "Conditional deep-interior nonpenetration prior on independently qualified visible tracks only",
+  "not_permitted": "Physical contact-force/restitution/friction inference; unknown body identity or unseen surface as truth"
+}

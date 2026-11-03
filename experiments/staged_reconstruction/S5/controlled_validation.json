@@ -1,0 +1,143 @@
+{
+  "passed": true,
+  "kind": "Manufactured operator/optimizer validation; not RGB/3DGS benchmark or Rubber Duck contact training",
+  "known_geometry": "Rigid sphere radius0.2, static planez=0",
+  "time_units": "Manufactured seconds, not Rubber Duck acquisition time",
+  "biased_measurement_protocol": "Subtract0.04 from center measurements within0.1 seconds of bounce; central observation deliberately ineligible",
+  "weight_fixed_before_run": 10.0,
+  "steps_per_arm": 300,
+  "matched_initialization_and_data": true,
+  "control_max_eligible_penetration": 0.023333332439263665,
+  "constrained_max_eligible_penetration": 0.002043796541448928,
+  "analytic_optimum_max_abs_error": 9.993236793626181e-10,
+  "independent_optimizer_recovery_150_to_300_exact": true,
+  "unknown_observation_not_forced": true,
+  "checkpoint_sha256": "635ce6ca91e8a73f3c456d36c220f9eb25ae671d092598ff57e95b1574037c6e",
+  "input_sha256": "e59fbc5829521ac155c7603a3088c65d721fe4138729409a0b0fc82c3ba304d8",
+  "control_history": [
+    {
+      "step": 25,
+      "measurement_MSE": 0.0,
+      "eligible_proxy_penetration": 0.023333332439263665
+    },
+    {
+      "step": 50,
+      "measurement_MSE": 0.0,
+      "eligible_proxy_penetration": 0.023333332439263665
+    },
+    {
+      "step": 75,
+      "measurement_MSE": 0.0,
+      "eligible_proxy_penetration": 0.023333332439263665
+    },
+    {
+      "step": 100,
+      "measurement_MSE": 0.0,
+      "eligible_proxy_penetration": 0.023333332439263665
+    },
+    {
+      "step": 125,
+      "measurement_MSE": 0.0,
+      "eligible_proxy_penetration": 0.023333332439263665
+    },
+    {
+      "step": 150,
+      "measurement_MSE": 0.0,
+      "eligible_proxy_penetration": 0.023333332439263665
+    },
+    {
+      "step": 175,
+      "measurement_MSE": 0.0,
+      "eligible_proxy_penetration": 0.023333332439263665
+    },
+    {
+      "step": 200,
+      "measurement_MSE": 0.0,
+      "eligible_proxy_penetration": 0.023333332439263665
+    },
+    {
+      "step": 225,
+      "measurement_MSE": 0.0,
+      "eligible_proxy_penetration": 0.023333332439263665
+    },
+    {
+      "step": 250,
+      "measurement_MSE": 0.0,
+      "eligible_proxy_penetration": 0.023333332439263665
+    },
+    {
+      "step": 275,
+      "measurement_MSE": 0.0,
+      "eligible_proxy_penetration": 0.023333332439263665
+    },
+    {
+      "step": 300,
+      "measurement_MSE": 0.0,
+      "eligible_proxy_penetration": 0.023333332439263665
+    }
+  ],
+  "constrained_history": [
+    {
+      "step": 25,
+      "measurement_MSE": 7.264363808416225e-05,
+      "eligible_proxy_penetration": 0.0
+    },
+    {
+      "step": 50,
+      "measurement_MSE": 3.337134642881636e-05,
+      "eligible_proxy_penetration": 0.003882639689504336
+    },
+    {
+      "step": 75,
+      "measurement_MSE": 3.765837011941562e-05,
+      "eligible_proxy_penetration": 0.0025645747570429422
+    },
+    {
+      "step": 100,
+      "measurement_MSE": 3.920233629514818e-05,
+      "eligible_proxy_penetration": 0.002063370464670561
+    },
+    {
+      "step": 125,
+      "measurement_MSE": 3.922692799927194e-05,
+      "eligible_proxy_penetration": 0.002034942308251214
+    },
+    {
+      "step": 150,
+      "measurement_MSE": 3.924772977262679e-05,
+      "eligible_proxy_penetration": 0.0020343089173837925
+    },
+    {
+      "step": 175,
+      "measurement_MSE": 3.9220153573805515e-05,
+      "eligible_proxy_penetration": 0.0020430472485267193
+    },
+    {
+      "step": 200,
+      "measurement_MSE": 3.922144159495546e-05,
+      "eligible_proxy_penetration": 0.0020433472164015087
+    },
+    {
+      "step": 225,
+      "measurement_MSE": 3.922015235975552e-05,
+      "eligible_proxy_penetration": 0.0020435717151132127
+    },
+    {
+      "step": 250,
+      "measurement_MSE": 3.921930445549064e-05,
+      "eligible_proxy_penetration": 0.0020438473067914964
+    },
+    {
+      "step": 275,
+      "measurement_MSE": 3.921957032085601e-05,
+      "eligible_proxy_penetration": 0.002043781679788609
+    },
+    {
+      "step": 300,
+      "measurement_MSE": 3.92194940132427e-05,
+      "eligible_proxy_penetration": 0.0020438002272137323
+    }
+  ],
+  "contact_force_friction_restitution": false,
+  "does_not_admit_real_scene_contact_surface": true
+}
