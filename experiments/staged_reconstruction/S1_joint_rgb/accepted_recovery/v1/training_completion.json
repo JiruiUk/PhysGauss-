@@ -1,0 +1,73 @@
+{
+  "passed": true,
+  "four_full_6000_arms": true,
+  "matched_camera_sequences": true,
+  "all_complete_Adam_RNG_sampler_payloads_present": true,
+  "rows": {
+    "diffuse/frozen_static": {
+      "checkpoint_sha256": "e6d6daca4578e1ac7b2df1f6d36a10b827505c3bb271f5b1076f684c0586cd54",
+      "updates": 6000,
+      "dynamic_Adam_states": 22,
+      "dynamic_Adam_steps": 6000,
+      "static_Adam_steps": [
+        6000,
+        6000,
+        6000,
+        6000,
+        6000,
+        6000
+      ],
+      "visits_min": 62,
+      "visits_max": 63
+    },
+    "diffuse/revisable_static": {
+      "checkpoint_sha256": "344db4219ec2009ae08ac88717446b93128cbec3335118148be97d734a8a78c2",
+      "updates": 6000,
+      "dynamic_Adam_states": 22,
+      "dynamic_Adam_steps": 6000,
+      "static_Adam_steps": [
+        6000,
+        12000,
+        12000,
+        12000,
+        6000,
+        6000
+      ],
+      "visits_min": 62,
+      "visits_max": 63
+    },
+    "glossy/frozen_static": {
+      "checkpoint_sha256": "13e2436c0f2acb36f93f970e2bcedec93022033f8c761a9773ac9b97d1ebc477",
+      "updates": 6000,
+      "dynamic_Adam_states": 22,
+      "dynamic_Adam_steps": 6000,
+      "static_Adam_steps": [
+        6000,
+        6000,
+        6000,
+        6000,
+        6000,
+        6000
+      ],
+      "visits_min": 62,
+      "visits_max": 63
+    },
+    "glossy/revisable_static": {
+      "checkpoint_sha256": "607b2782f93111f9dfaa2d6559f72c0f6b19bb2576774b80332a52b408d26834",
+      "updates": 6000,
+      "dynamic_Adam_states": 22,
+      "dynamic_Adam_steps": 6000,
+      "static_Adam_steps": [
+        6000,
+        12000,
+        12000,
+        12000,
+        6000,
+        6000
+      ],
+      "visits_min": 62,
+      "visits_max": 63
+    }
+  },
+  "independent_GT_evaluation_and_manual_review_still_separate": true
+}
