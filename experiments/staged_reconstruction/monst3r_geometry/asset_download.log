@@ -1,0 +1,38 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "F:\A_Edinburgh\PhysGauss\scripts\prepare_monst3r_assets.py", line 111, in <module>
+    main()
+  File "F:\A_Edinburgh\PhysGauss\scripts\prepare_monst3r_assets.py", line 78, in main
+    download(f'https://codeload.github.com/Junyi42/monst3r/zip/{SOURCE_COMMIT}', archive)
+  File "F:\A_Edinburgh\PhysGauss\scripts\prepare_monst3r_assets.py", line 38, in download
+    with urllib.request.urlopen(url, timeout=60) as response, partial.open('xb') as output:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\envs\pidg-cu128\Lib\urllib\request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\envs\pidg-cu128\Lib\urllib\request.py", line 519, in open
+    response = self._open(req, data)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\envs\pidg-cu128\Lib\urllib\request.py", line 536, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\envs\pidg-cu128\Lib\urllib\request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\envs\pidg-cu128\Lib\urllib\request.py", line 1391, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\envs\pidg-cu128\Lib\urllib\request.py", line 1317, in do_open
+    h = http_class(host, timeout=req.timeout, **http_conn_args)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\envs\pidg-cu128\Lib\http\client.py", line 1442, in __init__
+    context = ssl._create_default_https_context()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\envs\pidg-cu128\Lib\ssl.py", line 775, in create_default_context
+    context.load_default_certs(purpose)
+  File "F:\A_Edinburgh\PhysGauss\envs\pidg-cu128\Lib\ssl.py", line 596, in load_default_certs
+    self._load_windows_store_certs(storename, purpose)
+  File "F:\A_Edinburgh\PhysGauss\envs\pidg-cu128\Lib\ssl.py", line 588, in _load_windows_store_certs
+    self.load_verify_locations(cadata=certs)
+ssl.SSLError: [ASN1: NOT_ENOUGH_DATA] not enough data (_ssl.c:4057)

@@ -1,0 +1,261 @@
+{
+  "pair_rows": [
+    {
+      "anchor": 2,
+      "partner": 3,
+      "static_support": 0,
+      "passed": false,
+      "reason": "Insufficient scale support; no fitted depth or targets",
+      "depth_error_metrics_available": false
+    },
+    {
+      "anchor": 2,
+      "partner": 6,
+      "static_support": 5,
+      "passed": false,
+      "reason": "Insufficient scale support; no fitted depth or targets",
+      "depth_error_metrics_available": false
+    },
+    {
+      "anchor": 43,
+      "partner": 42,
+      "static_support": 0,
+      "passed": false,
+      "reason": "Insufficient scale support; no fitted depth or targets",
+      "depth_error_metrics_available": false
+    },
+    {
+      "anchor": 43,
+      "partner": 40,
+      "static_support": 3,
+      "passed": false,
+      "reason": "Insufficient scale support; no fitted depth or targets",
+      "depth_error_metrics_available": false
+    },
+    {
+      "anchor": 86,
+      "partner": 87,
+      "static_support": 48,
+      "passed": false,
+      "reason": "Insufficient scale support; no fitted depth or targets",
+      "depth_error_metrics_available": false
+    },
+    {
+      "anchor": 86,
+      "partner": 88,
+      "static_support": 0,
+      "passed": false,
+      "reason": "Insufficient scale support; no fitted depth or targets",
+      "depth_error_metrics_available": false
+    },
+    {
+      "anchor": 146,
+      "partner": 147,
+      "scale": 10.992269515991211,
+      "static_support": 3798,
+      "static_error_median_p90": [
+        0.30675435066223145,
+        0.46436724662780765
+      ],
+      "dynamic_confident_fraction": 0.41839495040577096,
+      "dynamic_extrapolation_fraction": 0.6206896551724138,
+      "dynamic_projection_error_median_p90_pixels": [
+        30.435718560818213,
+        38.7050685991405
+      ],
+      "checks": {
+        "static_support": true,
+        "held_static_median": false,
+        "held_static_p90": false,
+        "dynamic_confidence": false,
+        "dynamic_extrapolation": false,
+        "self_projection_median": false,
+        "self_projection_p90": false
+      },
+      "passed": false
+    },
+    {
+      "anchor": 146,
+      "partner": 148,
+      "scale": 11.147375106811523,
+      "static_support": 2274,
+      "static_error_median_p90": [
+        0.25519847869873047,
+        0.44016218185424805
+      ],
+      "dynamic_confident_fraction": 0.33363390441839497,
+      "dynamic_extrapolation_fraction": 0.0,
+      "dynamic_projection_error_median_p90_pixels": [
+        31.28404942061937,
+        36.10506994959498
+      ],
+      "checks": {
+        "static_support": true,
+        "held_static_median": false,
+        "held_static_p90": false,
+        "dynamic_confidence": false,
+        "dynamic_extrapolation": true,
+        "self_projection_median": false,
+        "self_projection_p90": false
+      },
+      "passed": false
+    },
+    {
+      "anchor": 188,
+      "partner": 187,
+      "scale": 12.52392578125,
+      "static_support": 11122,
+      "static_error_median_p90": [
+        0.262115478515625,
+        0.5994592666625976
+      ],
+      "dynamic_confident_fraction": 1.0,
+      "dynamic_extrapolation_fraction": 0.36941964285714285,
+      "dynamic_projection_error_median_p90_pixels": [
+        29.9889510213509,
+        57.765341537634384
+      ],
+      "checks": {
+        "static_support": true,
+        "held_static_median": false,
+        "held_static_p90": false,
+        "dynamic_confidence": true,
+        "dynamic_extrapolation": false,
+        "self_projection_median": false,
+        "self_projection_p90": false
+      },
+      "passed": false
+    },
+    {
+      "anchor": 188,
+      "partner": 186,
+      "scale": 12.449028015136719,
+      "static_support": 11122,
+      "static_error_median_p90": [
+        0.24334406852722168,
+        0.5386782646179199
+      ],
+      "dynamic_confident_fraction": 1.0,
+      "dynamic_extrapolation_fraction": 0.48325892857142855,
+      "dynamic_projection_error_median_p90_pixels": [
+        27.498807605258385,
+        53.040530869513944
+      ],
+      "checks": {
+        "static_support": true,
+        "held_static_median": false,
+        "held_static_p90": false,
+        "dynamic_confidence": true,
+        "dynamic_extrapolation": false,
+        "self_projection_median": false,
+        "self_projection_p90": false
+      },
+      "passed": false
+    },
+    {
+      "anchor": 200,
+      "partner": 199,
+      "scale": 13.089252471923828,
+      "static_support": 11147,
+      "static_error_median_p90": [
+        0.2955741882324219,
+        0.7535190582275391
+      ],
+      "dynamic_confident_fraction": 1.0,
+      "dynamic_extrapolation_fraction": 0.19406392694063926,
+      "dynamic_projection_error_median_p90_pixels": [
+        33.72219843183491,
+        67.68793188642383
+      ],
+      "checks": {
+        "static_support": true,
+        "held_static_median": false,
+        "held_static_p90": false,
+        "dynamic_confidence": true,
+        "dynamic_extrapolation": false,
+        "self_projection_median": false,
+        "self_projection_p90": false
+      },
+      "passed": false
+    },
+    {
+      "anchor": 200,
+      "partner": 196,
+      "scale": 13.039838790893555,
+      "static_support": 11147,
+      "static_error_median_p90": [
+        0.2900056838989258,
+        0.6336989402770996
+      ],
+      "dynamic_confident_fraction": 1.0,
+      "dynamic_extrapolation_fraction": 0.5639269406392694,
+      "dynamic_projection_error_median_p90_pixels": [
+        32.60834423934212,
+        65.65222208315976
+      ],
+      "checks": {
+        "static_support": true,
+        "held_static_median": false,
+        "held_static_p90": false,
+        "dynamic_confidence": true,
+        "dynamic_extrapolation": false,
+        "self_projection_median": false,
+        "self_projection_p90": false
+      },
+      "passed": false
+    }
+  ],
+  "partner_stability": [
+    {
+      "anchor": 2,
+      "passed": false,
+      "reason": "Two supported pair predictions unavailable"
+    },
+    {
+      "anchor": 43,
+      "passed": false,
+      "reason": "Two supported pair predictions unavailable"
+    },
+    {
+      "anchor": 86,
+      "passed": false,
+      "reason": "Two supported pair predictions unavailable"
+    },
+    {
+      "anchor": 146,
+      "common_dynamic_fraction": 0.2660054102795311,
+      "partner_depth_difference_median_p90": [
+        0.10758686065673828,
+        0.13162498474121095
+      ],
+      "passed": false
+    },
+    {
+      "anchor": 188,
+      "common_dynamic_fraction": 1.0,
+      "partner_depth_difference_median_p90": [
+        0.0615694522857666,
+        0.07888197898864746
+      ],
+      "passed": false
+    },
+    {
+      "anchor": 200,
+      "common_dynamic_fraction": 1.0,
+      "partner_depth_difference_median_p90": [
+        0.046166181564331055,
+        0.07271862030029297
+      ],
+      "passed": true
+    }
+  ],
+  "pilot_checks_passed": false,
+  "protocol_sha256": "b941090a4f540f8b395669346d5d19d43ce23772466b2d402d23fb30b8e4bb8e",
+  "inference_sha256": "e4b2cfe64d700b578b33395bc3b7cb0700433c5672f02aaf6fee9e5a830e72e3",
+  "qualification_script_sha256": "fbb0462003dd4662944e6fe174d2b5949bd5abb1b5403f1d899529f2d077b934",
+  "static_reference_is_model_conditioned_not_GT": true,
+  "dynamic_geometry_truth_validated": false,
+  "training_admitted": false,
+  "PIDG_updates": 0,
+  "test_or_val_RGB_used": false
+}

@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "scope": "Evidence integrity and failed qualification only; no geometry success",
+  "inference_script_sha256": "b64f9d4ef936946cd767be4dc905703f043512b7cbf2dd80a71ebcc273a952cd",
+  "final_script_sha256": "fbb0462003dd4662944e6fe174d2b5949bd5abb1b5403f1d899529f2d077b934",
+  "inference_and_preregistered_prepare_functions_AST_unchanged": true,
+  "qualification_reporting_repairs": [
+    "Unsupported scale samples recorded as failure instead of aborting",
+    "NumPy scalar boolean converted to Python boolean for JSON"
+  ],
+  "original_thresholds_and_pairs_unchanged": true,
+  "all12_prediction_hashes_verified": true,
+  "source_and_import_adapter_hashes_verified": true,
+  "all12_pairs_failed_qualification": true,
+  "PIDG_training_targets_created": false,
+  "test_or_val_RGB_used": false,
+  "user_data_uploaded": false,
+  "actually_inspected_figure": {
+    "path": "output/staged_reconstruction/monst3r_geometry/adjacent_pair_confidence.png",
+    "sha256": "10a02f860e1b15456a046e49800ecf662b5e89a7fea54c0a32daeb1e604b0d6c",
+    "actually_viewed": true,
+    "observations": "Early/middle support at confidence>=3 is sparse. Late support is bright but fails separate geometry checks. This sheet displays confidence, not depth accuracy or 3D truth."
+  },
+  "scripts_sha256": {
+    "scripts/audit_monst3r_source.py": "f401c95e9d6b31d8beb7117ffaad9c64c935db793f47bb7e4127243ffefc9bc8",
+    "scripts/prepare_monst3r_assets.py": "34eaafe0768b9ceead5b2aef85128d4e0f631e510431d38783c049dffca7bbb3",
+    "scripts/prepare_monst3r_pair_vendor.py": "fdb2542496e3ef0a49a759f6c13af2aaf66a942165906d73e4fba432f0059bcd",
+    "scripts/qualify_monst3r_pairs.py": "fbb0462003dd4662944e6fe174d2b5949bd5abb1b5403f1d899529f2d077b934",
+    "scripts/audit_monst3r_confidence.py": "489418bb0e54767381be17dd3cd7bf7116b3908fb5ad4a373b7f449b838a9353",
+    "scripts/finalize_monst3r_pilot.py": "d6adb02ec85ad49fa9956111a5a6336ec8a237a0a441003935d2d20b796b3b00"
+  }
+}

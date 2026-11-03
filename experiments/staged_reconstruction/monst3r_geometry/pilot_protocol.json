@@ -1,0 +1,61 @@
+{
+  "anchors": [
+    2,
+    43,
+    86,
+    146,
+    188,
+    200
+  ],
+  "partners": {
+    "2": [
+      3,
+      6
+    ],
+    "43": [
+      42,
+      40
+    ],
+    "86": [
+      87,
+      88
+    ],
+    "146": [
+      147,
+      148
+    ],
+    "188": [
+      187,
+      186
+    ],
+    "200": [
+      199,
+      196
+    ]
+  },
+  "input_size": [
+    512,
+    288
+  ],
+  "RGB_source": "training120 only, black alpha composite, official LANCZOS resizing and [-1,1] normalization",
+  "global_optimizer_used": false,
+  "known_cameras_optimized": false,
+  "reference": "frozen S1 conditioned static depth, not GT",
+  "alignment": "one positive scalar per image pair from every third static-support pixel; no depth shift or affine inverse-depth fit",
+  "why_pair_scale": "Pair predictions have independent scale gauge; this differs from the VDA metric/global-scale protocol.",
+  "held_static_median_max": 0.05,
+  "held_static_p90_max": 0.15,
+  "static_support_min": 1000,
+  "dynamic_confidence_min": 3.0,
+  "dynamic_confident_fraction_min": 0.75,
+  "dynamic_extrapolation_fraction_max": 0.1,
+  "dynamic_partner_depth_median_max": 0.05,
+  "dynamic_partner_depth_p90_max": 0.15,
+  "dynamic_self_projection_median_max_pixels": 2.0,
+  "dynamic_self_projection_p90_max_pixels": 5.0,
+  "source_manifest_sha256": "5190195d6053efd68a292145c9981f67e268f914ab14f106648a877843c2c027",
+  "weights_manifest_sha256": "3796cbfc4d68828ab10b74e7b16b09c9822c39014e526db5ddb0666c8a035bc5",
+  "test_or_val_RGB_used": false,
+  "PIDG_optimizer_updates": 0,
+  "passing_is_not_dynamic_truth_or_full_training_admission": true
+}

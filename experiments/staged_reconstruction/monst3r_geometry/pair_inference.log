@@ -1,0 +1,19 @@
+F:\A_Edinburgh\PhysGauss\envs\pidg-cu128\Lib\site-packages\requests\__init__.py:113: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (7.6.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "F:\A_Edinburgh\PhysGauss\scripts\qualify_monst3r_pairs.py", line 186, in <module>
+    {'prepare': prepare, 'infer': infer, 'qualify': qualify}[args.operation]()
+  File "F:\A_Edinburgh\PhysGauss\scripts\qualify_monst3r_pairs.py", line 61, in infer
+    model.load_state_dict(state, strict=True); del state
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\third_party\monst3r_pair_vendor\dust3r\model.py", line 92, in load_state_dict
+    return super().load_state_dict(new_ckpt, **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\envs\pidg-cu128\Lib\site-packages\torch\nn\modules\module.py", line 2624, in load_state_dict
+    raise RuntimeError(
+RuntimeError: Error(s) in loading state_dict for AsymmetricCroCo3DStereo:
+	Missing key(s) in state_dict: "downstream_head1.dpt.scratch.layer_rn.0.weight", "downstream_head1.dpt.scratch.layer_rn.1.weight", "downstream_head1.dpt.scratch.layer_rn.2.weight", "downstream_head1.dpt.scratch.layer_rn.3.weight", "downstream_head2.dpt.scratch.layer_rn.0.weight", "downstream_head2.dpt.scratch.layer_rn.1.weight", "downstream_head2.dpt.scratch.layer_rn.2.weight", "downstream_head2.dpt.scratch.layer_rn.3.weight". 
+Warning, cannot find cuda-compiled version of RoPE2D, using a slow pytorch version instead
+Freezing encoder parameters
