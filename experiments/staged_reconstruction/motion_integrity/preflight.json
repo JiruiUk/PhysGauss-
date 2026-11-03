@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "arms": [
+    {
+      "arm": "I0_control",
+      "actual_updates": 100,
+      "finite_full_state": true,
+      "exact_sampler_replayed": true,
+      "all_saved_RNG_verified": true,
+      "static_exact": true,
+      "Adam_counter_advances_exact": true,
+      "sha256": "a0cc2a72ecd50cbf96ff3f2911a04627d879bedd370098d2d63f3e6c529114cd"
+    },
+    {
+      "arm": "I1_curve_isometry",
+      "actual_updates": 100,
+      "finite_full_state": true,
+      "exact_sampler_replayed": true,
+      "all_saved_RNG_verified": true,
+      "static_exact": true,
+      "Adam_counter_advances_exact": true,
+      "sha256": "de749453b743a6ebeded2a346d0e09853a58ac2b6abef3bd0c758f503948d20e"
+    }
+  ],
+  "flags_off": {
+    "passed": true,
+    "native_render_alpha_exact": true,
+    "inherited_reconstruction_loss_exact": true,
+    "gradient_max_abs_difference": 1.1175870895385742e-08,
+    "gradient_max_abs_scale": 0.32342830300331116,
+    "CUDA_atomic_gradient_tolerance": "max(1e-7,2e-5*gradient_scale)",
+    "original_model_structure_and_renderer_unchanged": true,
+    "optimizer_updates": 0
+  },
+  "candidate_process_restarted_at_40_and_80": true,
+  "matched_camera_schedule": true,
+  "parent_sha256_unchanged": "8c767b7835eee936e49989369d7bc0277d7567d3aedaa7385c06654284b68ad0",
+  "no_physics_module_added": true
+}
