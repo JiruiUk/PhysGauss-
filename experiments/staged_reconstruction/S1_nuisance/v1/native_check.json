@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "unchanged_native_renderer_disabled_RGB_alpha_depth_exact": true,
+  "static_and_nuisance_alpha_gradients_nonzero": true,
+  "four_native_Adam_updates": true,
+  "gradient_norms": {
+    "static": {
+      "_xyz": 0.013667171820998192,
+      "_features_dc": 0.0006118979072198272,
+      "_features_rest": 0.002369870198890567,
+      "_opacity": 0.0007559012738056481,
+      "_scaling": 0.0008156081312336028,
+      "_rotation": 1.5592187310176087e-06
+    },
+    "nuisance": {
+      "_uv": 0.01870640739798546,
+      "_rgb": 0.015715843066573143,
+      "_log_scale": 0.0012334093917161226,
+      "_opacity": 0.0010331958765164018
+    }
+  },
+  "nuisance_geometry_is_camera_plane_not_physical_identity": true
+}

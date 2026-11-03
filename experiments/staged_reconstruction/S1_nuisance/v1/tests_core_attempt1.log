@@ -1,0 +1,283 @@
+..FFF.F                                                                  [100%]
+================================== FAILURES ===================================
+___________ test_camera_plane_projects_to_initialized_pixel_domain ____________
+
+    def test_camera_plane_projects_to_initialized_pixel_domain():
+>       plane,k = model(); points = plane.get_xyz.detach().numpy()
+                  ^^^^^^^
+
+tests\test_nuisance_static.py:31: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_nuisance_static.py:11: in model
+    return NuisancePlane(np.eye(4),k,image,count=16,seed=seed,device='cpu'),k
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+variants\staged_reconstruction\nuisance_static\core.py:36: in __init__
+    self.register_buffer('half',tensor(half)); self.register_buffer('depth',tensor(depth))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = NuisancePlane(), name = 'half', tensor = tensor([0.0960, 0.0540])
+persistent = True
+
+    def register_buffer(
+        self, name: str, tensor: Optional[Tensor], persistent: bool = True
+    ) -> None:
+        r"""Add a buffer to the module.
+    
+        This is typically used to register a buffer that should not be
+        considered a model parameter. For example, BatchNorm's ``running_mean``
+        is not a parameter, but is part of the module's state. Buffers, by
+        default, are persistent and will be saved alongside parameters. This
+        behavior can be changed by setting :attr:`persistent` to ``False``. The
+        only difference between a persistent buffer and a non-persistent buffer
+        is that the latter will not be a part of this module's
+        :attr:`state_dict`.
+    
+        Buffers can be accessed as attributes using given names.
+    
+        Args:
+            name (str): name of the buffer. The buffer can be accessed
+                from this module using the given name
+            tensor (Tensor or None): buffer to be registered. If ``None``, then operations
+                that run on buffers, such as :attr:`cuda`, are ignored. If ``None``,
+                the buffer is **not** included in the module's :attr:`state_dict`.
+            persistent (bool): whether the buffer is part of this module's
+                :attr:`state_dict`.
+    
+        Example::
+    
+            >>> # xdoctest: +SKIP("undefined vars")
+            >>> self.register_buffer('running_mean', torch.zeros(num_features))
+    
+        """
+        if persistent is False and isinstance(self, torch.jit.ScriptModule):
+            raise RuntimeError("ScriptModule does not support non-persistent buffers")
+    
+        if "_buffers" not in self.__dict__:
+            raise AttributeError("cannot assign buffer before Module.__init__() call")
+        elif not isinstance(name, str):
+            raise TypeError(
+                f"buffer name should be a string. Got {torch.typename(name)}"
+            )
+        elif "." in name:
+            raise KeyError('buffer name can\'t contain "."')
+        elif name == "":
+            raise KeyError('buffer name can\'t be empty string ""')
+        elif hasattr(self, name) and name not in self._buffers:
+>           raise KeyError(f"attribute '{name}' already exists")
+E           KeyError: "attribute 'half' already exists"
+
+envs\pidg-cu128\Lib\site-packages\torch\nn\modules\module.py:570: KeyError
+________________ test_constructor_does_not_consume_global_RNG _________________
+
+    def test_constructor_does_not_consume_global_RNG():
+        a,b,c = random.getstate(),np.random.get_state(),torch.get_rng_state()
+>       model()
+
+tests\test_nuisance_static.py:41: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_nuisance_static.py:11: in model
+    return NuisancePlane(np.eye(4),k,image,count=16,seed=seed,device='cpu'),k
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+variants\staged_reconstruction\nuisance_static\core.py:36: in __init__
+    self.register_buffer('half',tensor(half)); self.register_buffer('depth',tensor(depth))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = NuisancePlane(), name = 'half', tensor = tensor([0.0960, 0.0540])
+persistent = True
+
+    def register_buffer(
+        self, name: str, tensor: Optional[Tensor], persistent: bool = True
+    ) -> None:
+        r"""Add a buffer to the module.
+    
+        This is typically used to register a buffer that should not be
+        considered a model parameter. For example, BatchNorm's ``running_mean``
+        is not a parameter, but is part of the module's state. Buffers, by
+        default, are persistent and will be saved alongside parameters. This
+        behavior can be changed by setting :attr:`persistent` to ``False``. The
+        only difference between a persistent buffer and a non-persistent buffer
+        is that the latter will not be a part of this module's
+        :attr:`state_dict`.
+    
+        Buffers can be accessed as attributes using given names.
+    
+        Args:
+            name (str): name of the buffer. The buffer can be accessed
+                from this module using the given name
+            tensor (Tensor or None): buffer to be registered. If ``None``, then operations
+                that run on buffers, such as :attr:`cuda`, are ignored. If ``None``,
+                the buffer is **not** included in the module's :attr:`state_dict`.
+            persistent (bool): whether the buffer is part of this module's
+                :attr:`state_dict`.
+    
+        Example::
+    
+            >>> # xdoctest: +SKIP("undefined vars")
+            >>> self.register_buffer('running_mean', torch.zeros(num_features))
+    
+        """
+        if persistent is False and isinstance(self, torch.jit.ScriptModule):
+            raise RuntimeError("ScriptModule does not support non-persistent buffers")
+    
+        if "_buffers" not in self.__dict__:
+            raise AttributeError("cannot assign buffer before Module.__init__() call")
+        elif not isinstance(name, str):
+            raise TypeError(
+                f"buffer name should be a string. Got {torch.typename(name)}"
+            )
+        elif "." in name:
+            raise KeyError('buffer name can\'t contain "."')
+        elif name == "":
+            raise KeyError('buffer name can\'t be empty string ""')
+        elif hasattr(self, name) and name not in self._buffers:
+>           raise KeyError(f"attribute '{name}' already exists")
+E           KeyError: "attribute 'half' already exists"
+
+envs\pidg-cu128\Lib\site-packages\torch\nn\modules\module.py:570: KeyError
+_______ test_only_selected_view_receives_updates_and_full_Adam_recovers _______
+
+    def test_only_selected_view_receives_updates_and_full_Adam_recovers():
+>       bank = [model(i)[0] for i in range(3)]; opts = [optimizer_for_nuisance(m) for m in bank]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_nuisance_static.py:47: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_nuisance_static.py:47: in <listcomp>
+    bank = [model(i)[0] for i in range(3)]; opts = [optimizer_for_nuisance(m) for m in bank]
+            ^^^^^^^^
+tests\test_nuisance_static.py:11: in model
+    return NuisancePlane(np.eye(4),k,image,count=16,seed=seed,device='cpu'),k
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+variants\staged_reconstruction\nuisance_static\core.py:36: in __init__
+    self.register_buffer('half',tensor(half)); self.register_buffer('depth',tensor(depth))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = NuisancePlane(), name = 'half', tensor = tensor([0.0960, 0.0540])
+persistent = True
+
+    def register_buffer(
+        self, name: str, tensor: Optional[Tensor], persistent: bool = True
+    ) -> None:
+        r"""Add a buffer to the module.
+    
+        This is typically used to register a buffer that should not be
+        considered a model parameter. For example, BatchNorm's ``running_mean``
+        is not a parameter, but is part of the module's state. Buffers, by
+        default, are persistent and will be saved alongside parameters. This
+        behavior can be changed by setting :attr:`persistent` to ``False``. The
+        only difference between a persistent buffer and a non-persistent buffer
+        is that the latter will not be a part of this module's
+        :attr:`state_dict`.
+    
+        Buffers can be accessed as attributes using given names.
+    
+        Args:
+            name (str): name of the buffer. The buffer can be accessed
+                from this module using the given name
+            tensor (Tensor or None): buffer to be registered. If ``None``, then operations
+                that run on buffers, such as :attr:`cuda`, are ignored. If ``None``,
+                the buffer is **not** included in the module's :attr:`state_dict`.
+            persistent (bool): whether the buffer is part of this module's
+                :attr:`state_dict`.
+    
+        Example::
+    
+            >>> # xdoctest: +SKIP("undefined vars")
+            >>> self.register_buffer('running_mean', torch.zeros(num_features))
+    
+        """
+        if persistent is False and isinstance(self, torch.jit.ScriptModule):
+            raise RuntimeError("ScriptModule does not support non-persistent buffers")
+    
+        if "_buffers" not in self.__dict__:
+            raise AttributeError("cannot assign buffer before Module.__init__() call")
+        elif not isinstance(name, str):
+            raise TypeError(
+                f"buffer name should be a string. Got {torch.typename(name)}"
+            )
+        elif "." in name:
+            raise KeyError('buffer name can\'t contain "."')
+        elif name == "":
+            raise KeyError('buffer name can\'t be empty string ""')
+        elif hasattr(self, name) and name not in self._buffers:
+>           raise KeyError(f"attribute '{name}' already exists")
+E           KeyError: "attribute 'half' already exists"
+
+envs\pidg-cu128\Lib\site-packages\torch\nn\modules\module.py:570: KeyError
+_________ test_derived_world_parameters_all_receive_finite_gradients __________
+
+    def test_derived_world_parameters_all_receive_finite_gradients():
+>       plane,_ = model()
+                  ^^^^^^^
+
+tests\test_nuisance_static.py:69: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_nuisance_static.py:11: in model
+    return NuisancePlane(np.eye(4),k,image,count=16,seed=seed,device='cpu'),k
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+variants\staged_reconstruction\nuisance_static\core.py:36: in __init__
+    self.register_buffer('half',tensor(half)); self.register_buffer('depth',tensor(depth))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = NuisancePlane(), name = 'half', tensor = tensor([0.0960, 0.0540])
+persistent = True
+
+    def register_buffer(
+        self, name: str, tensor: Optional[Tensor], persistent: bool = True
+    ) -> None:
+        r"""Add a buffer to the module.
+    
+        This is typically used to register a buffer that should not be
+        considered a model parameter. For example, BatchNorm's ``running_mean``
+        is not a parameter, but is part of the module's state. Buffers, by
+        default, are persistent and will be saved alongside parameters. This
+        behavior can be changed by setting :attr:`persistent` to ``False``. The
+        only difference between a persistent buffer and a non-persistent buffer
+        is that the latter will not be a part of this module's
+        :attr:`state_dict`.
+    
+        Buffers can be accessed as attributes using given names.
+    
+        Args:
+            name (str): name of the buffer. The buffer can be accessed
+                from this module using the given name
+            tensor (Tensor or None): buffer to be registered. If ``None``, then operations
+                that run on buffers, such as :attr:`cuda`, are ignored. If ``None``,
+                the buffer is **not** included in the module's :attr:`state_dict`.
+            persistent (bool): whether the buffer is part of this module's
+                :attr:`state_dict`.
+    
+        Example::
+    
+            >>> # xdoctest: +SKIP("undefined vars")
+            >>> self.register_buffer('running_mean', torch.zeros(num_features))
+    
+        """
+        if persistent is False and isinstance(self, torch.jit.ScriptModule):
+            raise RuntimeError("ScriptModule does not support non-persistent buffers")
+    
+        if "_buffers" not in self.__dict__:
+            raise AttributeError("cannot assign buffer before Module.__init__() call")
+        elif not isinstance(name, str):
+            raise TypeError(
+                f"buffer name should be a string. Got {torch.typename(name)}"
+            )
+        elif "." in name:
+            raise KeyError('buffer name can\'t contain "."')
+        elif name == "":
+            raise KeyError('buffer name can\'t be empty string ""')
+        elif hasattr(self, name) and name not in self._buffers:
+>           raise KeyError(f"attribute '{name}' already exists")
+E           KeyError: "attribute 'half' already exists"
+
+envs\pidg-cu128\Lib\site-packages\torch\nn\modules\module.py:570: KeyError
+=========================== short test summary info ===========================
+FAILED tests/test_nuisance_static.py::test_camera_plane_projects_to_initialized_pixel_domain
+FAILED tests/test_nuisance_static.py::test_constructor_does_not_consume_global_RNG
+FAILED tests/test_nuisance_static.py::test_only_selected_view_receives_updates_and_full_Adam_recovers
+FAILED tests/test_nuisance_static.py::test_derived_world_parameters_all_receive_finite_gradients
+4 failed, 3 passed in 0.58s

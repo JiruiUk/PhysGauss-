@@ -1,0 +1,109 @@
+.................E......E...........EEEE..............................E. [100%]
+=================================== ERRORS ====================================
+_ ERROR at setup of test_original_row_quarantine_keeps_adam_moments_and_recovers_topology _
+
+self = WindowsPath('F:/A_Edinburgh/PhysGauss/runs/pidg_staged_reconstruction/S1_nuisance/pytest_preflight')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] ϵͳ�Ҳ���ָ����·����: 'F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_staged_reconstruction\\S1_nuisance\\pytest_preflight'
+
+envs\pidg-cu128\Lib\pathlib.py:1116: FileNotFoundError
+_ ERROR at setup of test_input_loader_refuses_gt_fields_and_outside_rgb_path __
+
+self = WindowsPath('F:/A_Edinburgh/PhysGauss/runs/pidg_staged_reconstruction/S1_nuisance/pytest_preflight')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] ϵͳ�Ҳ���ָ����·����: 'F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_staged_reconstruction\\S1_nuisance\\pytest_preflight'
+
+envs\pidg-cu128\Lib\pathlib.py:1116: FileNotFoundError
+_ ERROR at setup of test_birth_preserves_existing_parameters_and_adam_moments _
+
+self = WindowsPath('F:/A_Edinburgh/PhysGauss/runs/pidg_staged_reconstruction/S1_nuisance/pytest_preflight')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] ϵͳ�Ҳ���ָ����·����: 'F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_staged_reconstruction\\S1_nuisance\\pytest_preflight'
+
+envs\pidg-cu128\Lib\pathlib.py:1116: FileNotFoundError
+_ ERROR at setup of test_new_rows_get_gradients_and_survive_exact_topology_restore _
+
+self = WindowsPath('F:/A_Edinburgh/PhysGauss/runs/pidg_staged_reconstruction/S1_nuisance/pytest_preflight')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] ϵͳ�Ҳ���ָ����·����: 'F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_staged_reconstruction\\S1_nuisance\\pytest_preflight'
+
+envs\pidg-cu128\Lib\pathlib.py:1116: FileNotFoundError
+_ ERROR at setup of test_pruning_only_removes_trial_new_rows_and_keeps_old_adam _
+
+self = WindowsPath('F:/A_Edinburgh/PhysGauss/runs/pidg_staged_reconstruction/S1_nuisance/pytest_preflight')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] ϵͳ�Ҳ���ָ����·����: 'F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_staged_reconstruction\\S1_nuisance\\pytest_preflight'
+
+envs\pidg-cu128\Lib\pathlib.py:1116: FileNotFoundError
+__________ ERROR at setup of test_duplicate_point_birth_is_rejected ___________
+
+self = WindowsPath('F:/A_Edinburgh/PhysGauss/runs/pidg_staged_reconstruction/S1_nuisance/pytest_preflight')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] ϵͳ�Ҳ���ָ����·����: 'F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_staged_reconstruction\\S1_nuisance\\pytest_preflight'
+
+envs\pidg-cu128\Lib\pathlib.py:1116: FileNotFoundError
+_ ERROR at setup of test_static_bank_has_no_dynamic_or_material_parameters_and_is_bounded _
+
+self = WindowsPath('F:/A_Edinburgh/PhysGauss/runs/pidg_staged_reconstruction/S1_nuisance/pytest_preflight')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] ϵͳ�Ҳ���ָ����·����: 'F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_staged_reconstruction\\S1_nuisance\\pytest_preflight'
+
+envs\pidg-cu128\Lib\pathlib.py:1116: FileNotFoundError
+=========================== short test summary info ===========================
+ERROR tests/test_clean_static.py::test_original_row_quarantine_keeps_adam_moments_and_recovers_topology
+ERROR tests/test_clean_synthetic.py::test_input_loader_refuses_gt_fields_and_outside_rgb_path
+ERROR tests/test_adaptive_static.py::test_birth_preserves_existing_parameters_and_adam_moments
+ERROR tests/test_adaptive_static.py::test_new_rows_get_gradients_and_survive_exact_topology_restore
+ERROR tests/test_adaptive_static.py::test_pruning_only_removes_trial_new_rows_and_keeps_old_adam
+ERROR tests/test_adaptive_static.py::test_duplicate_point_birth_is_rejected
+ERROR tests/test_staged_static.py::test_static_bank_has_no_dynamic_or_material_parameters_and_is_bounded
+65 passed, 7 errors in 36.88s

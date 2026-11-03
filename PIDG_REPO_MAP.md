@@ -820,3 +820,17 @@ gradients. `audit` freezes code/inputs and replays global/per-view state.
 `evaluate` alone reads independent synthetic static RGB/depth/normal GT; it
 uses expected depthD/alpha and treats view-specific nuisance as appearance,
 not physical identity. Real training is gated on both full synthetic cases.
+
+## Native per-image nuisance decomposition (2026-11-03)
+
+`variants/staged_reconstruction/nuisance_static/core.py` defines opt-in
+premultiplied composition and camera-plane Gaussian appearance explanations.
+`runtime` adapts calibrated cameras and calls the unchanged PIDG rasterizer.
+`prepare` builds common initialization/support only from train-RGB inference.
+`train` uses full-RGB and restricted support loss, one independent Adam per
+image, complete static/nuisance optimizer/RNG/sampler checkpoints and user-stop
+saving. `native_check` checks disabled parity and native RGB/alpha/position
+gradients. `audit` freezes code/inputs and replays global/per-view state.
+`evaluate` alone reads independent synthetic static RGB/depth/normal GT; it
+uses expected depthD/alpha and treats view-specific nuisance as appearance,
+not physical identity. Real training is gated on both full synthetic cases.
