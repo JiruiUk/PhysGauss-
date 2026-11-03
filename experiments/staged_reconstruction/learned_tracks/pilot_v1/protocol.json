@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "starts": [
+    0,
+    54,
+    108
+  ],
+  "clip_length": 12,
+  "width": 400,
+  "max_corners": 64,
+  "quality_level": 0.01,
+  "seed_distance": 4.0,
+  "mask_erosion": 2,
+  "min_observations": 8,
+  "patch_radius": 2,
+  "patch_std_min": 2.0,
+  "ncc_min": 0.6,
+  "closure_max_px": 0.75,
+  "direction_max_px": 0.75,
+  "no_occlusion_reidentification": true,
+  "model_confidence_is_not_identity": true
+}
