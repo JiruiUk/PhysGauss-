@@ -93,3 +93,22 @@ RNG/sampler/topology/source recovery all passed. Checkpoint SHA256
 `1a785996a7902f0a65214cb2c1d79289133b8aa98c0b531e724849c90471c47b`.
 All four training milestones are complete; the independent frozen evaluator is
 running. There is no real18k→24k run unless both cases and manual review pass.
+
+## Independent evaluation and manual review completed: rejected
+
+Both numerical gates failed. Novel-camera static-GT PSNR control→nuisance:
+diffuse34.4082→33.6690dB, glossy33.8767→33.2329dB. Static RGB spill increased
+6.05%/6.44%. Visible-surface coverage changed95.295→95.450%/94.784→95.250%;
+thin99.575→99.089%/99.356→99.393%. Slight conditional depth/coverage gains do
+not meet the required cleanup outcome. No real continuation is authorized by
+this gate, no weight/threshold change, and no S3-U replacement.
+
+Actual native static/decomposition/depth-alpha panels and decoded contacts
+reviewed: detached blocks, base halos and floaters remain; nuisance also
+explains some static appearance. Four finite PLYs match checkpoints exactly;
+two H264 Main/yuv420p/faststart videos fully decode160 frames. They show the
+synthetic camera/time grid, not a real trajectory. See v1/assessment.md and
+final_review.json. Frozen pipeline/gate artifacts are retained unchanged;
+final_review resolves their pending-manual-review status. Next is a separate
+read-only audit of existing RGB-derived depth reliability before choosing a
+surface constraint. Do not restart C1/S1-N or invent real86/188 outputs.

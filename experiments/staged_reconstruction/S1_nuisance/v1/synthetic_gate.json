@@ -1,0 +1,22 @@
+{
+  "numerical_passed": false,
+  "cases": {
+    "diffuse": {
+      "numerical_passed": false,
+      "static_clean_GT_PSNR_gain_dB": -0.7391715392536895,
+      "visible_surface_coverage_loss_percentage_points": -0.1553284408626343,
+      "thin_surface_coverage_loss_percentage_points": 0.4857906242409449,
+      "static_RGB_spill_reduction_fraction": -0.06045515058066231
+    },
+    "glossy": {
+      "numerical_passed": false,
+      "static_clean_GT_PSNR_gain_dB": -0.643784464129979,
+      "visible_surface_coverage_loss_percentage_points": -0.46598532258791403,
+      "thin_surface_coverage_loss_percentage_points": -0.036434296818066425,
+      "static_RGB_spill_reduction_fraction": -0.06440235139244632
+    }
+  },
+  "manual_review_required": true,
+  "passed": false,
+  "real_training_authorized_by_gate": false
+}

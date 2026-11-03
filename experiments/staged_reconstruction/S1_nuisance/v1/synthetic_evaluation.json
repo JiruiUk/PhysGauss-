@@ -1,0 +1,1988 @@
+{
+  "results": {
+    "diffuse": {
+      "aggregate": {
+        "full_RGB_control": {
+          "geometry_active_opacity_ge_01": {
+            "points": 2994,
+            "surface_precision": 0.8256513026052105,
+            "surface_coverage": 0.9529512403763901,
+            "thin_surface_coverage": 0.9957493320378916,
+            "median_point_to_surface_distance": 0.022127662145875703,
+            "mean_clipped_reference_distance": 0.031203105431471676
+          },
+          "images": {
+            "all": {
+              "clean_GT_PSNR": 35.054315644460544,
+              "static_region_PSNR": 33.62000611326913,
+              "static_RGB_spill": 0.0018386965566605795,
+              "static_alpha_recall": 0.9995176356057935,
+              "thin_alpha_recall": 0.9996049570624315,
+              "background_alpha": 0.04620368988253176,
+              "expected_depth_MAE": 0.0282699890085496,
+              "normal_unsigned_error_deg": 14.42818730665508,
+              "normal_evaluated_pixels": 4786.125
+            },
+            "novel_camera": {
+              "clean_GT_PSNR": 34.40819038072083,
+              "static_region_PSNR": 31.89217920698802,
+              "static_RGB_spill": 0.0019140033109579235,
+              "static_alpha_recall": 0.9995989334421131,
+              "thin_alpha_recall": 0.9996280066726513,
+              "background_alpha": 0.04651365848258138,
+              "expected_depth_MAE": 0.028601531172171235,
+              "normal_unsigned_error_deg": 14.58836680803154,
+              "normal_evaluated_pixels": 4755.625
+            }
+          }
+        },
+        "full_RGB_nuisance": {
+          "geometry_active_opacity_ge_01": {
+            "points": 3010,
+            "surface_precision": 0.8245847176079735,
+            "surface_coverage": 0.9545045247850165,
+            "thin_surface_coverage": 0.9908914257954822,
+            "median_point_to_surface_distance": 0.021759494759920894,
+            "mean_clipped_reference_distance": 0.031074123098199756
+          },
+          "images": {
+            "all": {
+              "clean_GT_PSNR": 34.22263393647742,
+              "static_region_PSNR": 32.959239911150874,
+              "static_RGB_spill": 0.0019587532769946847,
+              "static_alpha_recall": 0.9995609390548128,
+              "thin_alpha_recall": 0.9995541606294149,
+              "background_alpha": 0.04961803101468831,
+              "expected_depth_MAE": 0.027414684474933892,
+              "normal_unsigned_error_deg": 14.669068966239006,
+              "normal_evaluated_pixels": 4801.9375
+            },
+            "novel_camera": {
+              "clean_GT_PSNR": 33.66901884146714,
+              "static_region_PSNR": 31.3166860048426,
+              "static_RGB_spill": 0.002029714669333771,
+              "static_alpha_recall": 0.9995815033258147,
+              "thin_alpha_recall": 0.9995981992087615,
+              "background_alpha": 0.049837674014270306,
+              "expected_depth_MAE": 0.027766367187723517,
+              "normal_unsigned_error_deg": 14.807447097149069,
+              "normal_evaluated_pixels": 4767.625
+            }
+          }
+        }
+      },
+      "frames": [
+        {
+          "camera": 0,
+          "novel_camera": false,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 38.69289002128775,
+              "static_region_PSNR": 34.8439765354059,
+              "static_RGB_spill": 0.0010560679947957397,
+              "static_alpha_recall": 0.9998162777879845,
+              "thin_alpha_recall": 0.9971509971509972,
+              "background_alpha": 0.046965356916189194,
+              "expected_depth_MAE": 0.028730563819408417,
+              "normal_unsigned_error_deg": 14.37860003913319,
+              "normal_evaluated_pixels": 4377
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 37.291045282049396,
+              "static_region_PSNR": 33.74779258697754,
+              "static_RGB_spill": 0.0012468260247260332,
+              "static_alpha_recall": 0.9998162777879845,
+              "thin_alpha_recall": 0.9971509971509972,
+              "background_alpha": 0.0543292798101902,
+              "expected_depth_MAE": 0.028059102594852448,
+              "normal_unsigned_error_deg": 14.674262387242742,
+              "normal_evaluated_pixels": 4393
+            }
+          }
+        },
+        {
+          "camera": 1,
+          "novel_camera": false,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 39.217276887158704,
+              "static_region_PSNR": 33.372846409160665,
+              "static_RGB_spill": 0.0007314490503631532,
+              "static_alpha_recall": 1.0,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.04543444514274597,
+              "expected_depth_MAE": 0.031136371195316315,
+              "normal_unsigned_error_deg": 14.860450800941145,
+              "normal_evaluated_pixels": 4297
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 38.460441461359544,
+              "static_region_PSNR": 32.96174128650477,
+              "static_RGB_spill": 0.0008536812965758145,
+              "static_alpha_recall": 1.0,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.052153024822473526,
+              "expected_depth_MAE": 0.030290374532341957,
+              "normal_unsigned_error_deg": 15.195121747622194,
+              "normal_evaluated_pixels": 4324
+            }
+          }
+        },
+        {
+          "camera": 2,
+          "novel_camera": false,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 38.57805470700046,
+              "static_region_PSNR": 32.37785017077878,
+              "static_RGB_spill": 0.0006501184543594718,
+              "static_alpha_recall": 0.9983821388124899,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.04277917370200157,
+              "expected_depth_MAE": 0.02860620617866516,
+              "normal_unsigned_error_deg": 14.198469702071655,
+              "normal_evaluated_pixels": 4800
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 38.24102402666183,
+              "static_region_PSNR": 32.20261063233761,
+              "static_RGB_spill": 0.0006958675221540034,
+              "static_alpha_recall": 0.9982203526937389,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.04786427319049835,
+              "expected_depth_MAE": 0.027714082971215248,
+              "normal_unsigned_error_deg": 15.369770080983036,
+              "normal_evaluated_pixels": 4820
+            }
+          }
+        },
+        {
+          "camera": 3,
+          "novel_camera": true,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 36.53984892356504,
+              "static_region_PSNR": 31.53236524636756,
+              "static_RGB_spill": 0.0009686300763860345,
+              "static_alpha_recall": 1.0,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.04275307431817055,
+              "expected_depth_MAE": 0.029382674023509026,
+              "normal_unsigned_error_deg": 14.538803648414087,
+              "normal_evaluated_pixels": 5085
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 36.00642955336117,
+              "static_region_PSNR": 31.145599386364317,
+              "static_RGB_spill": 0.0009944537887349725,
+              "static_alpha_recall": 1.0,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.04648034647107124,
+              "expected_depth_MAE": 0.028601763769984245,
+              "normal_unsigned_error_deg": 14.977159296671804,
+              "normal_evaluated_pixels": 5107
+            }
+          }
+        },
+        {
+          "camera": 4,
+          "novel_camera": false,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 35.34429265708672,
+              "static_region_PSNR": 34.18190663979263,
+              "static_RGB_spill": 0.0015743834665045142,
+              "static_alpha_recall": 0.9993769470404984,
+              "thin_alpha_recall": 0.9987476518472135,
+              "background_alpha": 0.044645048677921295,
+              "expected_depth_MAE": 0.025918476283550262,
+              "normal_unsigned_error_deg": 12.199414543573104,
+              "normal_evaluated_pixels": 5088
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 34.31402466771169,
+              "static_region_PSNR": 33.94265467773283,
+              "static_RGB_spill": 0.0017143514705821872,
+              "static_alpha_recall": 0.9996884735202493,
+              "thin_alpha_recall": 0.9987476518472135,
+              "background_alpha": 0.04738209769129753,
+              "expected_depth_MAE": 0.025229839608073235,
+              "normal_unsigned_error_deg": 12.956533945546887,
+              "normal_evaluated_pixels": 5112
+            }
+          }
+        },
+        {
+          "camera": 5,
+          "novel_camera": false,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 34.39624604609961,
+              "static_region_PSNR": 34.353494680012,
+              "static_RGB_spill": 0.001961583038792014,
+              "static_alpha_recall": 0.9988846398980242,
+              "thin_alpha_recall": 0.9968895800933126,
+              "background_alpha": 0.047579169273376465,
+              "expected_depth_MAE": 0.020679129287600517,
+              "normal_unsigned_error_deg": 11.294472652551857,
+              "normal_evaluated_pixels": 5045
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 33.18040278457456,
+              "static_region_PSNR": 34.092347625663635,
+              "static_RGB_spill": 0.0021877430845052004,
+              "static_alpha_recall": 0.9993626513702996,
+              "thin_alpha_recall": 0.997926386728875,
+              "background_alpha": 0.04976222291588783,
+              "expected_depth_MAE": 0.020520323887467384,
+              "normal_unsigned_error_deg": 11.916653243933949,
+              "normal_evaluated_pixels": 5055
+            }
+          }
+        },
+        {
+          "camera": 6,
+          "novel_camera": false,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 34.42680701877732,
+              "static_region_PSNR": 34.9871229016513,
+              "static_RGB_spill": 0.002104501472786069,
+              "static_alpha_recall": 0.999664598356532,
+              "thin_alpha_recall": 0.9990863407948835,
+              "background_alpha": 0.048937927931547165,
+              "expected_depth_MAE": 0.018729694187641144,
+              "normal_unsigned_error_deg": 11.05702536073816,
+              "normal_evaluated_pixels": 4841
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 33.07216386449578,
+              "static_region_PSNR": 34.61075182143497,
+              "static_RGB_spill": 0.0023672538809478283,
+              "static_alpha_recall": 0.999664598356532,
+              "thin_alpha_recall": 0.9990863407948835,
+              "background_alpha": 0.050648920238018036,
+              "expected_depth_MAE": 0.01869114302098751,
+              "normal_unsigned_error_deg": 11.546385049192054,
+              "normal_evaluated_pixels": 4858
+            }
+          }
+        },
+        {
+          "camera": 7,
+          "novel_camera": true,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 33.33773962390326,
+              "static_region_PSNR": 31.10763037384742,
+              "static_RGB_spill": 0.002284110290929675,
+              "static_alpha_recall": 0.9992819960509782,
+              "thin_alpha_recall": 0.9987244897959183,
+              "background_alpha": 0.05109712854027748,
+              "expected_depth_MAE": 0.017743272706866264,
+              "normal_unsigned_error_deg": 12.046630062811271,
+              "normal_evaluated_pixels": 4591
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 32.02585685960693,
+              "static_region_PSNR": 30.60889714037905,
+              "static_RGB_spill": 0.0026569082401692867,
+              "static_alpha_recall": 0.9996409980254891,
+              "thin_alpha_recall": 0.9991496598639455,
+              "background_alpha": 0.05219940096139908,
+              "expected_depth_MAE": 0.018163125962018967,
+              "normal_unsigned_error_deg": 12.509158240780936,
+              "normal_evaluated_pixels": 4594
+            }
+          }
+        },
+        {
+          "camera": 8,
+          "novel_camera": false,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 34.72732705252921,
+              "static_region_PSNR": 34.12644617061346,
+              "static_RGB_spill": 0.001936325104907155,
+              "static_alpha_recall": 1.0,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.050468701869249344,
+              "expected_depth_MAE": 0.017694275826215744,
+              "normal_unsigned_error_deg": 11.680067699470131,
+              "normal_evaluated_pixels": 4649
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 33.339205037317306,
+              "static_region_PSNR": 34.61010103120453,
+              "static_RGB_spill": 0.002304559340700507,
+              "static_alpha_recall": 1.0,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.05132034048438072,
+              "expected_depth_MAE": 0.017893480136990547,
+              "normal_unsigned_error_deg": 12.131054701511584,
+              "normal_evaluated_pixels": 4646
+            }
+          }
+        },
+        {
+          "camera": 9,
+          "novel_camera": false,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 34.77321858750532,
+              "static_region_PSNR": 33.6681398501487,
+              "static_RGB_spill": 0.0019453358836472034,
+              "static_alpha_recall": 0.9992819960509782,
+              "thin_alpha_recall": 0.9995748299319728,
+              "background_alpha": 0.053375717252492905,
+              "expected_depth_MAE": 0.018630320206284523,
+              "normal_unsigned_error_deg": 11.932436826584182,
+              "normal_evaluated_pixels": 4597
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 33.449788539541,
+              "static_region_PSNR": 33.069117645143834,
+              "static_RGB_spill": 0.002250417834147811,
+              "static_alpha_recall": 0.9991024950637228,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.054547376930713654,
+              "expected_depth_MAE": 0.019152551889419556,
+              "normal_unsigned_error_deg": 12.64485321137569,
+              "normal_evaluated_pixels": 4604
+            }
+          }
+        },
+        {
+          "camera": 10,
+          "novel_camera": false,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 34.91520945344698,
+              "static_region_PSNR": 34.43103099537329,
+              "static_RGB_spill": 0.0019971539732068777,
+              "static_alpha_recall": 0.9993291967130639,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.051586151123046875,
+              "expected_depth_MAE": 0.01997273601591587,
+              "normal_unsigned_error_deg": 11.549463209516926,
+              "normal_evaluated_pixels": 4864
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 33.80897255412482,
+              "static_region_PSNR": 33.898637140499204,
+              "static_RGB_spill": 0.0021918921265751123,
+              "static_alpha_recall": 0.9989937950695958,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.05291253328323364,
+              "expected_depth_MAE": 0.021102510392665863,
+              "normal_unsigned_error_deg": 12.101797987177978,
+              "normal_evaluated_pixels": 4869
+            }
+          }
+        },
+        {
+          "camera": 11,
+          "novel_camera": true,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 34.71157931140241,
+              "static_region_PSNR": 33.51935447152284,
+              "static_RGB_spill": 0.0021034625824540854,
+              "static_alpha_recall": 0.9992033142128744,
+              "thin_alpha_recall": 0.9994815966822188,
+              "background_alpha": 0.048471253365278244,
+              "expected_depth_MAE": 0.01944645121693611,
+              "normal_unsigned_error_deg": 11.634066595485464,
+              "normal_evaluated_pixels": 5047
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 33.75302821679957,
+              "static_region_PSNR": 33.018115543879716,
+              "static_RGB_spill": 0.0022080030757933855,
+              "static_alpha_recall": 0.9993626513702996,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.049707312136888504,
+              "expected_depth_MAE": 0.02056027203798294,
+              "normal_unsigned_error_deg": 12.396875650136574,
+              "normal_evaluated_pixels": 5052
+            }
+          }
+        },
+        {
+          "camera": 12,
+          "novel_camera": false,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 35.07213789192079,
+              "static_region_PSNR": 35.117778501524384,
+              "static_RGB_spill": 0.0021864278241991997,
+              "static_alpha_recall": 0.9993769470404984,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.048437077552080154,
+              "expected_depth_MAE": 0.021109573543071747,
+              "normal_unsigned_error_deg": 12.726493552344477,
+              "normal_evaluated_pixels": 5088
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 34.24608376246508,
+              "static_region_PSNR": 34.69659771323458,
+              "static_RGB_spill": 0.00221901829354465,
+              "static_alpha_recall": 0.9993769470404984,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.04966207966208458,
+              "expected_depth_MAE": 0.021063772961497307,
+              "normal_unsigned_error_deg": 12.920313984692402,
+              "normal_evaluated_pixels": 5095
+            }
+          }
+        },
+        {
+          "camera": 13,
+          "novel_camera": false,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 35.4052995439031,
+              "static_region_PSNR": 34.12460038406961,
+              "static_RGB_spill": 0.0019624545238912106,
+              "static_alpha_recall": 0.9993783027665527,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.04751279950141907,
+              "expected_depth_MAE": 0.024510178714990616,
+              "normal_unsigned_error_deg": 13.934672773395063,
+              "normal_evaluated_pixels": 5092
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 34.615662383028706,
+              "static_region_PSNR": 34.2356767960431,
+              "static_RGB_spill": 0.0020347274839878082,
+              "static_alpha_recall": 0.9998445756916382,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.04912704601883888,
+              "expected_depth_MAE": 0.023627985268831253,
+              "normal_unsigned_error_deg": 13.959960383938409,
+              "normal_evaluated_pixels": 5107
+            }
+          }
+        },
+        {
+          "camera": 14,
+          "novel_camera": false,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 36.03181288464697,
+              "static_region_PSNR": 33.176391878074114,
+              "static_RGB_spill": 0.001686935080215335,
+              "static_alpha_recall": 0.999352855524996,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.04743361100554466,
+              "expected_depth_MAE": 0.029098404571413994,
+              "normal_unsigned_error_deg": 15.381523005308171,
+              "normal_evaluated_pixels": 4757
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 34.800909597466664,
+              "static_region_PSNR": 32.353240955441514,
+              "static_RGB_spill": 0.001827357104048133,
+              "static_alpha_recall": 1.0,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.049590226262807846,
+              "expected_depth_MAE": 0.028128664940595627,
+              "normal_unsigned_error_deg": 15.601964341868369,
+              "normal_evaluated_pixels": 4757
+            }
+          }
+        },
+        {
+          "camera": 15,
+          "novel_camera": true,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 35.573998529687195,
+              "static_region_PSNR": 30.33279689186802,
+              "static_RGB_spill": 0.0015408833278343081,
+              "static_alpha_recall": 0.9998212050777758,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.04775061830878258,
+              "expected_depth_MAE": 0.03797316178679466,
+              "normal_unsigned_error_deg": 18.044145245973418,
+              "normal_evaluated_pixels": 4306
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 34.50179408460352,
+              "static_region_PSNR": 29.225786979265752,
+              "static_RGB_spill": 0.0016800963785499334,
+              "static_alpha_recall": 0.9998212050777758,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.05100376158952713,
+              "expected_depth_MAE": 0.03662605956196785,
+              "normal_unsigned_error_deg": 18.079110159448824,
+              "normal_evaluated_pixels": 4321
+            }
+          }
+        },
+        {
+          "camera": 16,
+          "novel_camera": false,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 38.09600374989477,
+              "static_region_PSNR": 34.33685648958653,
+              "static_RGB_spill": 0.0010552339954301715,
+              "static_alpha_recall": 1.0,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.044136177748441696,
+              "expected_depth_MAE": 0.04164692386984825,
+              "normal_unsigned_error_deg": 18.392299753716674,
+              "normal_evaluated_pixels": 4364
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 35.84181396344606,
+              "static_region_PSNR": 31.724725004827942,
+              "static_RGB_spill": 0.001303203753195703,
+              "static_alpha_recall": 0.9998162777879845,
+              "thin_alpha_recall": 0.9971509971509972,
+              "background_alpha": 0.04841546714305878,
+              "expected_depth_MAE": 0.04045352339744568,
+              "normal_unsigned_error_deg": 18.547357504774233,
+              "normal_evaluated_pixels": 4389
+            }
+          }
+        },
+        {
+          "camera": 17,
+          "novel_camera": false,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 38.490168186852415,
+              "static_region_PSNR": 32.88842498460327,
+              "static_RGB_spill": 0.0007216210942715406,
+              "static_alpha_recall": 0.9998298451590948,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.04028843343257904,
+              "expected_depth_MAE": 0.04130969196557999,
+              "normal_unsigned_error_deg": 17.209856238045855,
+              "normal_evaluated_pixels": 4550
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 36.87887806194692,
+              "static_region_PSNR": 31.353355866067865,
+              "static_RGB_spill": 0.0008405971457250416,
+              "static_alpha_recall": 0.9998298451590948,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.04463834688067436,
+              "expected_depth_MAE": 0.03965693712234497,
+              "normal_unsigned_error_deg": 17.057585585165118,
+              "normal_evaluated_pixels": 4570
+            }
+          }
+        },
+        {
+          "camera": 18,
+          "novel_camera": false,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 37.41751768533189,
+              "static_region_PSNR": 32.06353008687727,
+              "static_RGB_spill": 0.0007356523419730365,
+              "static_alpha_recall": 0.9995239606474136,
+              "thin_alpha_recall": 0.9988851727982163,
+              "background_alpha": 0.03801339492201805,
+              "expected_depth_MAE": 0.041614238172769547,
+              "normal_unsigned_error_deg": 16.386533044221196,
+              "normal_evaluated_pixels": 4997
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 36.36681734413563,
+              "static_region_PSNR": 31.100451035902914,
+              "static_RGB_spill": 0.0008066042209975421,
+              "static_alpha_recall": 0.9992066010790225,
+              "thin_alpha_recall": 0.9988851727982163,
+              "background_alpha": 0.042052898555994034,
+              "expected_depth_MAE": 0.03937706723809242,
+              "normal_unsigned_error_deg": 16.26172591291135,
+              "normal_evaluated_pixels": 4993
+            }
+          }
+        },
+        {
+          "camera": 19,
+          "novel_camera": true,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 35.909144484649545,
+              "static_region_PSNR": 31.615026803045076,
+              "static_RGB_spill": 0.0011251351097598672,
+              "static_alpha_recall": 0.999218627910611,
+              "thin_alpha_recall": 0.9988179669030733,
+              "background_alpha": 0.039383962750434875,
+              "expected_depth_MAE": 0.038485877215862274,
+              "normal_unsigned_error_deg": 16.1046871696216,
+              "normal_evaluated_pixels": 5136
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 35.06139756803488,
+              "static_region_PSNR": 31.176119248378825,
+              "static_RGB_spill": 0.0011979121481999755,
+              "static_alpha_recall": 0.9989060790748554,
+              "thin_alpha_recall": 0.9976359338061466,
+              "background_alpha": 0.04398006945848465,
+              "expected_depth_MAE": 0.03624146059155464,
+              "normal_unsigned_error_deg": 15.747170025370368,
+              "normal_evaluated_pixels": 5142
+            }
+          }
+        },
+        {
+          "camera": 20,
+          "novel_camera": false,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 35.15649572007544,
+              "static_region_PSNR": 34.193794216202946,
+              "static_RGB_spill": 0.00169736472889781,
+              "static_alpha_recall": 0.9996849401386263,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.04131685569882393,
+              "expected_depth_MAE": 0.03484981507062912,
+              "normal_unsigned_error_deg": 15.353978864384665,
+              "normal_evaluated_pixels": 5116
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 34.77774676200368,
+              "static_region_PSNR": 33.75503109137036,
+              "static_RGB_spill": 0.0016979870852082968,
+              "static_alpha_recall": 0.9996849401386263,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.04644838720560074,
+              "expected_depth_MAE": 0.033181507140398026,
+              "normal_unsigned_error_deg": 14.934348302412355,
+              "normal_evaluated_pixels": 5128
+            }
+          }
+        },
+        {
+          "camera": 21,
+          "novel_camera": false,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 33.76008167873515,
+              "static_region_PSNR": 35.07915020459205,
+              "static_RGB_spill": 0.0022546995896846056,
+              "static_alpha_recall": 0.9991909385113269,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.04298414662480354,
+              "expected_depth_MAE": 0.03019210509955883,
+              "normal_unsigned_error_deg": 14.559228988991348,
+              "normal_evaluated_pixels": 4958
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 33.771837158906976,
+              "static_region_PSNR": 34.552134789939224,
+              "static_RGB_spill": 0.002175167202949524,
+              "static_alpha_recall": 0.9991909385113269,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.047836825251579285,
+              "expected_depth_MAE": 0.02950275130569935,
+              "normal_unsigned_error_deg": 14.2747302158979,
+              "normal_evaluated_pixels": 5000
+            }
+          }
+        },
+        {
+          "camera": 22,
+          "novel_camera": false,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 32.641568725808725,
+              "static_region_PSNR": 34.11302851535465,
+              "static_RGB_spill": 0.002620236948132515,
+              "static_alpha_recall": 0.9989802855200544,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.04517197236418724,
+              "expected_depth_MAE": 0.02895168773829937,
+              "normal_unsigned_error_deg": 15.203404829270507,
+              "normal_evaluated_pixels": 4681
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 32.584173499581816,
+              "static_region_PSNR": 33.860162274702496,
+              "static_RGB_spill": 0.0026095621287822723,
+              "static_alpha_recall": 0.9989802855200544,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.04868312180042267,
+              "expected_depth_MAE": 0.028292978182435036,
+              "normal_unsigned_error_deg": 14.792189642307683,
+              "normal_evaluated_pixels": 4728
+            }
+          }
+        },
+        {
+          "camera": 23,
+          "novel_camera": true,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 31.786857495319254,
+              "static_region_PSNR": 32.25235375081409,
+              "static_RGB_spill": 0.002984687453135848,
+              "static_alpha_recall": 0.9992663242846662,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.0486970879137516,
+              "expected_depth_MAE": 0.0332627110183239,
+              "normal_unsigned_error_deg": 17.16346113829196,
+              "normal_evaluated_pixels": 4334
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 31.550133629812215,
+              "static_region_PSNR": 31.990113475060543,
+              "static_RGB_spill": 0.0031071649864315987,
+              "static_alpha_recall": 0.9990829053558328,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.05120602622628212,
+              "expected_depth_MAE": 0.031432654708623886,
+              "normal_unsigned_error_deg": 16.750920757403208,
+              "normal_evaluated_pixels": 4362
+            }
+          }
+        },
+        {
+          "camera": 24,
+          "novel_camera": false,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 32.13324502447281,
+              "static_region_PSNR": 35.624335033700824,
+              "static_RGB_spill": 0.0028561612125486135,
+              "static_alpha_recall": 1.0,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.04648744314908981,
+              "expected_depth_MAE": 0.03856891393661499,
+              "normal_unsigned_error_deg": 20.983205215987763,
+              "normal_evaluated_pixels": 4559
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 31.63540969254825,
+              "static_region_PSNR": 34.856605012528384,
+              "static_RGB_spill": 0.0030542935710400343,
+              "static_alpha_recall": 1.0,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.04826194420456886,
+              "expected_depth_MAE": 0.036770109087228775,
+              "normal_unsigned_error_deg": 20.705987544419497,
+              "normal_evaluated_pixels": 4603
+            }
+          }
+        },
+        {
+          "camera": 25,
+          "novel_camera": false,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 32.03138083544069,
+              "static_region_PSNR": 36.636279501286296,
+              "static_RGB_spill": 0.0030704413075000048,
+              "static_alpha_recall": 1.0,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.048287201672792435,
+              "expected_depth_MAE": 0.028700539842247963,
+              "normal_unsigned_error_deg": 16.989307187488418,
+              "normal_evaluated_pixels": 4368
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 31.334919396072106,
+              "static_region_PSNR": 35.02070832413705,
+              "static_RGB_spill": 0.003293363144621253,
+              "static_alpha_recall": 1.0,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.05009162053465843,
+              "expected_depth_MAE": 0.027293657884001732,
+              "normal_unsigned_error_deg": 16.893896094877153,
+              "normal_evaluated_pixels": 4394
+            }
+          }
+        },
+        {
+          "camera": 26,
+          "novel_camera": false,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 32.2901427813705,
+              "static_region_PSNR": 34.01198004124733,
+              "static_RGB_spill": 0.002831612015143037,
+              "static_alpha_recall": 0.9989802855200544,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.04690932855010033,
+              "expected_depth_MAE": 0.02632683329284191,
+              "normal_unsigned_error_deg": 14.803556789811516,
+              "normal_evaluated_pixels": 4721
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 31.76475665984514,
+              "static_region_PSNR": 33.825282087793106,
+              "static_RGB_spill": 0.0029400705825537443,
+              "static_alpha_recall": 0.9991502379333786,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.04933319240808487,
+              "expected_depth_MAE": 0.024603592231869698,
+              "normal_unsigned_error_deg": 15.334198770103757,
+              "normal_evaluated_pixels": 4742
+            }
+          }
+        },
+        {
+          "camera": 27,
+          "novel_camera": true,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 32.40715108496759,
+              "static_region_PSNR": 33.5771310849442,
+              "static_RGB_spill": 0.0028065901715308428,
+              "static_alpha_recall": 1.0,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.04768203943967819,
+              "expected_depth_MAE": 0.025584803894162178,
+              "normal_unsigned_error_deg": 13.66523004999323,
+              "normal_evaluated_pixels": 4989
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 31.972891761403975,
+              "static_region_PSNR": 33.065851306534405,
+              "static_RGB_spill": 0.0028285221196711063,
+              "static_alpha_recall": 0.9998381877022654,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.05070844665169716,
+              "expected_depth_MAE": 0.023552462458610535,
+              "normal_unsigned_error_deg": 14.038688447869568,
+              "normal_evaluated_pixels": 5001
+            }
+          }
+        },
+        {
+          "camera": 28,
+          "novel_camera": false,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 33.07892474931777,
+              "static_region_PSNR": 34.442136718466685,
+              "static_RGB_spill": 0.0025108647532761097,
+              "static_alpha_recall": 0.9992123503465659,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.04714161530137062,
+              "expected_depth_MAE": 0.025967106223106384,
+              "normal_unsigned_error_deg": 13.468131046525356,
+              "normal_evaluated_pixels": 5145
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 32.66819520862735,
+              "static_region_PSNR": 33.609228661531716,
+              "static_RGB_spill": 0.002505744341760874,
+              "static_alpha_recall": 0.9995274102079396,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.05109812319278717,
+              "expected_depth_MAE": 0.02404077909886837,
+              "normal_unsigned_error_deg": 13.788553087359576,
+              "normal_evaluated_pixels": 5161
+            }
+          }
+        },
+        {
+          "camera": 29,
+          "novel_camera": false,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 34.17551334212251,
+              "static_region_PSNR": 34.22483995040825,
+              "static_RGB_spill": 0.001936821616254747,
+              "static_alpha_recall": 0.9998437255821222,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.045893795788288116,
+              "expected_depth_MAE": 0.026012614369392395,
+              "normal_unsigned_error_deg": 13.141717421422808,
+              "normal_evaluated_pixels": 5146
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 33.85516966432879,
+              "static_region_PSNR": 33.30582820990791,
+              "static_RGB_spill": 0.0019297335529699922,
+              "static_alpha_recall": 1.0,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.05160047858953476,
+              "expected_depth_MAE": 0.02429940178990364,
+              "normal_unsigned_error_deg": 13.464626266993726,
+              "normal_evaluated_pixels": 5157
+            }
+          }
+        },
+        {
+          "camera": 30,
+          "novel_camera": false,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 35.62096234618516,
+              "static_region_PSNR": 34.326821109776986,
+              "static_RGB_spill": 0.001442817854695022,
+              "static_alpha_recall": 0.999682640431609,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.04462326318025589,
+              "expected_depth_MAE": 0.026870999485254288,
+              "normal_unsigned_error_deg": 13.310749803216101,
+              "normal_evaluated_pixels": 5011
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 35.472693863301195,
+              "static_region_PSNR": 32.777406847160165,
+              "static_RGB_spill": 0.0013923653168603778,
+              "static_alpha_recall": 0.9998413202158045,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.05131577327847481,
+              "expected_depth_MAE": 0.02619282901287079,
+              "normal_unsigned_error_deg": 13.876760150148026,
+              "normal_evaluated_pixels": 5016
+            }
+          }
+        },
+        {
+          "camera": 31,
+          "novel_camera": true,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 34.99920359227238,
+              "static_region_PSNR": 31.200775033494942,
+              "static_RGB_spill": 0.0014985274756327271,
+              "static_alpha_recall": 1.0,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.046274103224277496,
+              "expected_depth_MAE": 0.026933297514915466,
+              "normal_unsigned_error_deg": 13.509910553661278,
+              "normal_evaluated_pixels": 4557
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 34.48061905811488,
+              "static_region_PSNR": 30.3030049588782,
+              "static_RGB_spill": 0.0015646566171199083,
+              "static_alpha_recall": 1.0,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.05341602861881256,
+              "expected_depth_MAE": 0.026953138411045074,
+              "normal_unsigned_error_deg": 13.960494199511277,
+              "normal_evaluated_pixels": 4562
+            }
+          }
+        }
+      ],
+      "matched_6000_camera_sequence": true
+    },
+    "glossy": {
+      "aggregate": {
+        "full_RGB_control": {
+          "geometry_active_opacity_ge_01": {
+            "points": 2956,
+            "surface_precision": 0.8163058186738836,
+            "surface_coverage": 0.9478411597856917,
+            "thin_surface_coverage": 0.9935632742288074,
+            "median_point_to_surface_distance": 0.022912001716341467,
+            "mean_clipped_reference_distance": 0.031782621569007574
+          },
+          "images": {
+            "all": {
+              "clean_GT_PSNR": 34.65273220436499,
+              "static_region_PSNR": 32.54818967029655,
+              "static_RGB_spill": 0.0018441525717207696,
+              "static_alpha_recall": 0.9994147051625863,
+              "thin_alpha_recall": 0.9993715929569886,
+              "background_alpha": 0.0454452222911641,
+              "expected_depth_MAE": 0.03126922529190779,
+              "normal_unsigned_error_deg": 15.890890194151517,
+              "normal_evaluated_pixels": 4780.1875
+            },
+            "novel_camera": {
+              "clean_GT_PSNR": 33.876731138863,
+              "static_region_PSNR": 30.710674393321924,
+              "static_RGB_spill": 0.0019226821532356553,
+              "static_alpha_recall": 0.9992974575403565,
+              "thin_alpha_recall": 0.9989584689709271,
+              "background_alpha": 0.04590510157868266,
+              "expected_depth_MAE": 0.030939652817323804,
+              "normal_unsigned_error_deg": 15.847798508251236,
+              "normal_evaluated_pixels": 4744.875
+            }
+          }
+        },
+        "full_RGB_nuisance": {
+          "geometry_active_opacity_ge_01": {
+            "points": 2996,
+            "surface_precision": 0.8220961281708945,
+            "surface_coverage": 0.9525010130115709,
+            "thin_surface_coverage": 0.9939276171969881,
+            "median_point_to_surface_distance": 0.021529407875471702,
+            "mean_clipped_reference_distance": 0.031204571066068845
+          },
+          "images": {
+            "all": {
+              "clean_GT_PSNR": 33.765439595592866,
+              "static_region_PSNR": 31.59938374069131,
+              "static_RGB_spill": 0.0019674653212859994,
+              "static_alpha_recall": 0.9995850924281521,
+              "thin_alpha_recall": 0.9996561715217904,
+              "background_alpha": 0.0473281821468845,
+              "expected_depth_MAE": 0.028704578639008105,
+              "normal_unsigned_error_deg": 15.293370797420758,
+              "normal_evaluated_pixels": 4797.46875
+            },
+            "novel_camera": {
+              "clean_GT_PSNR": 33.23294667473302,
+              "static_region_PSNR": 30.190817101204786,
+              "static_RGB_spill": 0.0020465074048843235,
+              "static_alpha_recall": 0.9995089566294122,
+              "thin_alpha_recall": 0.9995930137218184,
+              "background_alpha": 0.04772973898798227,
+              "expected_depth_MAE": 0.02880585170350969,
+              "normal_unsigned_error_deg": 15.40902680968182,
+              "normal_evaluated_pixels": 4767.5
+            }
+          }
+        }
+      },
+      "frames": [
+        {
+          "camera": 0,
+          "novel_camera": false,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 38.70209108625508,
+              "static_region_PSNR": 34.80881412860568,
+              "static_RGB_spill": 0.0010666016023606062,
+              "static_alpha_recall": 0.9998162777879845,
+              "thin_alpha_recall": 0.9971509971509972,
+              "background_alpha": 0.04419524967670441,
+              "expected_depth_MAE": 0.031726207584142685,
+              "normal_unsigned_error_deg": 15.742240730467845,
+              "normal_evaluated_pixels": 4337
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 37.17806761392388,
+              "static_region_PSNR": 33.786622040108504,
+              "static_RGB_spill": 0.0012785105500370264,
+              "static_alpha_recall": 0.9998162777879845,
+              "thin_alpha_recall": 0.9971509971509972,
+              "background_alpha": 0.04865795373916626,
+              "expected_depth_MAE": 0.029618995264172554,
+              "normal_unsigned_error_deg": 14.704920100619045,
+              "normal_evaluated_pixels": 4376
+            }
+          }
+        },
+        {
+          "camera": 1,
+          "novel_camera": false,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 39.286528420638504,
+              "static_region_PSNR": 33.51399861879162,
+              "static_RGB_spill": 0.00073532375972718,
+              "static_alpha_recall": 0.9996424101555516,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.04302191734313965,
+              "expected_depth_MAE": 0.03435498848557472,
+              "normal_unsigned_error_deg": 16.552843829256577,
+              "normal_evaluated_pixels": 4295
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 38.693819496494235,
+              "static_region_PSNR": 33.21009632265016,
+              "static_RGB_spill": 0.0008364745881408453,
+              "static_alpha_recall": 1.0,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.046858128160238266,
+              "expected_depth_MAE": 0.03156103193759918,
+              "normal_unsigned_error_deg": 15.62407039105555,
+              "normal_evaluated_pixels": 4320
+            }
+          }
+        },
+        {
+          "camera": 2,
+          "novel_camera": false,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 38.79322997596995,
+              "static_region_PSNR": 32.675348255388805,
+              "static_RGB_spill": 0.0006504683988168836,
+              "static_alpha_recall": 0.9982203526937389,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.03998616337776184,
+              "expected_depth_MAE": 0.03082439675927162,
+              "normal_unsigned_error_deg": 15.644339639099544,
+              "normal_evaluated_pixels": 4801
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 38.13270033847184,
+              "static_region_PSNR": 32.063836232286064,
+              "static_RGB_spill": 0.0006890125805512071,
+              "static_alpha_recall": 0.9980585665749878,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.042617302387952805,
+              "expected_depth_MAE": 0.029232971370220184,
+              "normal_unsigned_error_deg": 15.82097035976901,
+              "normal_evaluated_pixels": 4805
+            }
+          }
+        },
+        {
+          "camera": 3,
+          "novel_camera": true,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 36.3934198704595,
+              "static_region_PSNR": 31.27928210362777,
+              "static_RGB_spill": 0.0009586891974322498,
+              "static_alpha_recall": 1.0,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.03948623314499855,
+              "expected_depth_MAE": 0.030176477506756783,
+              "normal_unsigned_error_deg": 14.783735388497169,
+              "normal_evaluated_pixels": 5066
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 35.692324565846235,
+              "static_region_PSNR": 30.498154058339708,
+              "static_RGB_spill": 0.0009915553964674473,
+              "static_alpha_recall": 1.0,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.04145731404423714,
+              "expected_depth_MAE": 0.028642181307077408,
+              "normal_unsigned_error_deg": 15.422374770942344,
+              "normal_evaluated_pixels": 5086
+            }
+          }
+        },
+        {
+          "camera": 4,
+          "novel_camera": false,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 35.36173335715124,
+              "static_region_PSNR": 33.966255929527584,
+              "static_RGB_spill": 0.0015665518585592508,
+              "static_alpha_recall": 0.9992211838006231,
+              "thin_alpha_recall": 0.9981214777708203,
+              "background_alpha": 0.0416698195040226,
+              "expected_depth_MAE": 0.027271365746855736,
+              "normal_unsigned_error_deg": 13.746047046240411,
+              "normal_evaluated_pixels": 5043
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 34.18814457955099,
+              "static_region_PSNR": 33.321463610482816,
+              "static_RGB_spill": 0.0017250713426619768,
+              "static_alpha_recall": 0.9998442367601246,
+              "thin_alpha_recall": 0.9993738259236068,
+              "background_alpha": 0.043400947004556656,
+              "expected_depth_MAE": 0.02683751843869686,
+              "normal_unsigned_error_deg": 14.08270499151314,
+              "normal_evaluated_pixels": 5091
+            }
+          }
+        },
+        {
+          "camera": 5,
+          "novel_camera": false,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 34.289695416343584,
+              "static_region_PSNR": 34.167593751851605,
+              "static_RGB_spill": 0.0019838251173496246,
+              "static_alpha_recall": 0.9990439770554493,
+              "thin_alpha_recall": 0.9968895800933126,
+              "background_alpha": 0.045523617416620255,
+              "expected_depth_MAE": 0.02248602733016014,
+              "normal_unsigned_error_deg": 12.450326810590225,
+              "normal_evaluated_pixels": 5019
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 33.062954845426574,
+              "static_region_PSNR": 33.885338252434536,
+              "static_RGB_spill": 0.002221089554950595,
+              "static_alpha_recall": 0.9992033142128744,
+              "thin_alpha_recall": 0.997926386728875,
+              "background_alpha": 0.047466494143009186,
+              "expected_depth_MAE": 0.021016737446188927,
+              "normal_unsigned_error_deg": 12.376807811228389,
+              "normal_evaluated_pixels": 5038
+            }
+          }
+        },
+        {
+          "camera": 6,
+          "novel_camera": false,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 34.24167730651099,
+              "static_region_PSNR": 34.23494377865915,
+              "static_RGB_spill": 0.00211510993540287,
+              "static_alpha_recall": 0.999832299178266,
+              "thin_alpha_recall": 0.9995431703974418,
+              "background_alpha": 0.04682372137904167,
+              "expected_depth_MAE": 0.020927133038640022,
+              "normal_unsigned_error_deg": 12.080470048546736,
+              "normal_evaluated_pixels": 4848
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 32.90046951207026,
+              "static_region_PSNR": 34.261037744762994,
+              "static_RGB_spill": 0.0024125336203724146,
+              "static_alpha_recall": 0.999832299178266,
+              "thin_alpha_recall": 0.9995431703974418,
+              "background_alpha": 0.048913080245256424,
+              "expected_depth_MAE": 0.01939263381063938,
+              "normal_unsigned_error_deg": 12.342826979527945,
+              "normal_evaluated_pixels": 4859
+            }
+          }
+        },
+        {
+          "camera": 7,
+          "novel_camera": true,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 33.06369592622141,
+              "static_region_PSNR": 30.36675625284699,
+              "static_RGB_spill": 0.0023084264248609543,
+              "static_alpha_recall": 0.9985639921019566,
+              "thin_alpha_recall": 0.9970238095238095,
+              "background_alpha": 0.04870019853115082,
+              "expected_depth_MAE": 0.019516712054610252,
+              "normal_unsigned_error_deg": 12.724488521777628,
+              "normal_evaluated_pixels": 4577
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 31.879431309901086,
+              "static_region_PSNR": 30.458604811083156,
+              "static_RGB_spill": 0.002711172681301832,
+              "static_alpha_recall": 0.9991024950637228,
+              "thin_alpha_recall": 0.9982993197278912,
+              "background_alpha": 0.050809819251298904,
+              "expected_depth_MAE": 0.01902531273663044,
+              "normal_unsigned_error_deg": 13.531950770589908,
+              "normal_evaluated_pixels": 4600
+            }
+          }
+        },
+        {
+          "camera": 8,
+          "novel_camera": false,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 34.63186928734682,
+              "static_region_PSNR": 33.39174158507519,
+              "static_RGB_spill": 0.0019283737055957317,
+              "static_alpha_recall": 1.0,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.04770275205373764,
+              "expected_depth_MAE": 0.020585818216204643,
+              "normal_unsigned_error_deg": 13.056667900050735,
+              "normal_evaluated_pixels": 4627
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 33.23696177933191,
+              "static_region_PSNR": 34.28511567516518,
+              "static_RGB_spill": 0.0023327425587922335,
+              "static_alpha_recall": 1.0,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.05045783147215843,
+              "expected_depth_MAE": 0.01885822042822838,
+              "normal_unsigned_error_deg": 13.348156085948188,
+              "normal_evaluated_pixels": 4643
+            }
+          }
+        },
+        {
+          "camera": 9,
+          "novel_camera": false,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 34.845432017223644,
+              "static_region_PSNR": 33.58688515405224,
+              "static_RGB_spill": 0.0019378719152882695,
+              "static_alpha_recall": 0.9992819960509782,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.051581308245658875,
+              "expected_depth_MAE": 0.02283043973147869,
+              "normal_unsigned_error_deg": 13.960017369081141,
+              "normal_evaluated_pixels": 4587
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 33.01619837327856,
+              "static_region_PSNR": 31.162066015445795,
+              "static_RGB_spill": 0.0022780275903642178,
+              "static_alpha_recall": 0.9994614970382337,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.053907573223114014,
+              "expected_depth_MAE": 0.020340627059340477,
+              "normal_unsigned_error_deg": 14.113937073564097,
+              "normal_evaluated_pixels": 4598
+            }
+          }
+        },
+        {
+          "camera": 10,
+          "novel_camera": false,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 34.450554951137384,
+              "static_region_PSNR": 32.119451813249825,
+              "static_RGB_spill": 0.002004640642553568,
+              "static_alpha_recall": 0.9989937950695958,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.051097385585308075,
+              "expected_depth_MAE": 0.023928992450237274,
+              "normal_unsigned_error_deg": 13.651880552941178,
+              "normal_evaluated_pixels": 4837
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 32.74109105080684,
+              "static_region_PSNR": 29.576921156235088,
+              "static_RGB_spill": 0.0022459225729107857,
+              "static_alpha_recall": 0.9989937950695958,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.05274545028805733,
+              "expected_depth_MAE": 0.021661698818206787,
+              "normal_unsigned_error_deg": 13.117514764312903,
+              "normal_evaluated_pixels": 4865
+            }
+          }
+        },
+        {
+          "camera": 11,
+          "novel_camera": true,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 33.10617999023042,
+              "static_region_PSNR": 28.820610468911436,
+              "static_RGB_spill": 0.002131812274456024,
+              "static_alpha_recall": 0.9990439770554493,
+              "thin_alpha_recall": 0.9984447900466563,
+              "background_alpha": 0.04851335659623146,
+              "expected_depth_MAE": 0.02240927331149578,
+              "normal_unsigned_error_deg": 13.741047266857045,
+              "normal_evaluated_pixels": 4994
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 32.36885457191836,
+              "static_region_PSNR": 28.433223983985123,
+              "static_RGB_spill": 0.002248250413686037,
+              "static_alpha_recall": 0.9988846398980242,
+              "thin_alpha_recall": 0.9984447900466563,
+              "background_alpha": 0.05011206492781639,
+              "expected_depth_MAE": 0.01956017315387726,
+              "normal_unsigned_error_deg": 12.289610597772851,
+              "normal_evaluated_pixels": 5049
+            }
+          }
+        },
+        {
+          "camera": 12,
+          "novel_camera": false,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 33.08864182443197,
+              "static_region_PSNR": 28.721327526461103,
+              "static_RGB_spill": 0.0022139986976981163,
+              "static_alpha_recall": 0.9990654205607477,
+              "thin_alpha_recall": 0.9987476518472135,
+              "background_alpha": 0.04939430579543114,
+              "expected_depth_MAE": 0.024249877780675888,
+              "normal_unsigned_error_deg": 14.842918214856965,
+              "normal_evaluated_pixels": 5072
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 31.93010236464331,
+              "static_region_PSNR": 27.08725661429107,
+              "static_RGB_spill": 0.002240321831777692,
+              "static_alpha_recall": 0.9992211838006231,
+              "thin_alpha_recall": 0.9993738259236068,
+              "background_alpha": 0.05057089403271675,
+              "expected_depth_MAE": 0.021239401772618294,
+              "normal_unsigned_error_deg": 13.074455677825817,
+              "normal_evaluated_pixels": 5085
+            }
+          }
+        },
+        {
+          "camera": 13,
+          "novel_camera": false,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 33.150082723110586,
+              "static_region_PSNR": 28.30001343647636,
+              "static_RGB_spill": 0.0019908472895622253,
+              "static_alpha_recall": 0.9996891513832763,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.04860993102192879,
+              "expected_depth_MAE": 0.03015240840613842,
+              "normal_unsigned_error_deg": 16.69749233941451,
+              "normal_evaluated_pixels": 5082
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 30.780930232559637,
+              "static_region_PSNR": 24.91796408925906,
+              "static_RGB_spill": 0.002077689627185464,
+              "static_alpha_recall": 1.0,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.05017095431685448,
+              "expected_depth_MAE": 0.02337220124900341,
+              "normal_unsigned_error_deg": 14.208995246290145,
+              "normal_evaluated_pixels": 5102
+            }
+          }
+        },
+        {
+          "camera": 14,
+          "novel_camera": false,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 33.08811883104289,
+              "static_region_PSNR": 27.22629424870106,
+              "static_RGB_spill": 0.0017159403068944812,
+              "static_alpha_recall": 0.9998382138812489,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.04791196063160896,
+              "expected_depth_MAE": 0.035821687430143356,
+              "normal_unsigned_error_deg": 18.525481958109438,
+              "normal_evaluated_pixels": 4745
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 31.130228811053584,
+              "static_region_PSNR": 24.90090902193773,
+              "static_RGB_spill": 0.0018915642285719514,
+              "static_alpha_recall": 0.9998382138812489,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.050038643181324005,
+              "expected_depth_MAE": 0.028739897534251213,
+              "normal_unsigned_error_deg": 16.205733978346256,
+              "normal_evaluated_pixels": 4760
+            }
+          }
+        },
+        {
+          "camera": 15,
+          "novel_camera": true,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 33.52254527241535,
+              "static_region_PSNR": 26.933449246273934,
+              "static_RGB_spill": 0.001535752322524786,
+              "static_alpha_recall": 0.9998212050777758,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.04774399474263191,
+              "expected_depth_MAE": 0.04252731055021286,
+              "normal_unsigned_error_deg": 20.142703971276024,
+              "normal_evaluated_pixels": 4309
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 32.664433773350126,
+              "static_region_PSNR": 26.153641408013314,
+              "static_RGB_spill": 0.0017086956650018692,
+              "static_alpha_recall": 0.9998212050777758,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.05047048255801201,
+              "expected_depth_MAE": 0.03793274238705635,
+              "normal_unsigned_error_deg": 18.84530169703024,
+              "normal_evaluated_pixels": 4323
+            }
+          }
+        },
+        {
+          "camera": 16,
+          "novel_camera": false,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 37.475764463944735,
+              "static_region_PSNR": 33.094076754775934,
+              "static_RGB_spill": 0.001064375275745988,
+              "static_alpha_recall": 1.0,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.04259013384580612,
+              "expected_depth_MAE": 0.04965627193450928,
+              "normal_unsigned_error_deg": 20.385371535465236,
+              "normal_evaluated_pixels": 4370
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 35.015187679040764,
+              "static_region_PSNR": 29.984951868169393,
+              "static_RGB_spill": 0.0013266678433865309,
+              "static_alpha_recall": 1.0,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.04636410251259804,
+              "expected_depth_MAE": 0.043678827583789825,
+              "normal_unsigned_error_deg": 19.138041133974475,
+              "normal_evaluated_pixels": 4388
+            }
+          }
+        },
+        {
+          "camera": 17,
+          "novel_camera": false,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 38.37524267616464,
+              "static_region_PSNR": 32.635165691858255,
+              "static_RGB_spill": 0.0007155229104682803,
+              "static_alpha_recall": 0.9996596903181896,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.03912659361958504,
+              "expected_depth_MAE": 0.04725544527173042,
+              "normal_unsigned_error_deg": 18.930565238368576,
+              "normal_evaluated_pixels": 4561
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 36.876989327947676,
+              "static_region_PSNR": 31.371888963847447,
+              "static_RGB_spill": 0.0008197232382372022,
+              "static_alpha_recall": 0.9998298451590948,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.041649289429187775,
+              "expected_depth_MAE": 0.044215764850378036,
+              "normal_unsigned_error_deg": 17.554762603855277,
+              "normal_evaluated_pixels": 4565
+            }
+          }
+        },
+        {
+          "camera": 18,
+          "novel_camera": false,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 37.19411930121299,
+              "static_region_PSNR": 31.80970789457576,
+              "static_RGB_spill": 0.0007438873290084302,
+              "static_alpha_recall": 0.9993652808632181,
+              "thin_alpha_recall": 0.9977703455964325,
+              "background_alpha": 0.03763750195503235,
+              "expected_depth_MAE": 0.04543871805071831,
+              "normal_unsigned_error_deg": 18.13721323110415,
+              "normal_evaluated_pixels": 5011
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 36.86199732129587,
+              "static_region_PSNR": 31.665626601138253,
+              "static_RGB_spill": 0.0007786485948599875,
+              "static_alpha_recall": 0.999682640431609,
+              "thin_alpha_recall": 0.9988851727982163,
+              "background_alpha": 0.038820862770080566,
+              "expected_depth_MAE": 0.04195305332541466,
+              "normal_unsigned_error_deg": 17.008069293039895,
+              "normal_evaluated_pixels": 5007
+            }
+          }
+        },
+        {
+          "camera": 19,
+          "novel_camera": true,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 35.772761306065014,
+              "static_region_PSNR": 31.257972895476698,
+              "static_RGB_spill": 0.0011180570581927896,
+              "static_alpha_recall": 0.9987498046569776,
+              "thin_alpha_recall": 0.9976359338061466,
+              "background_alpha": 0.0392308384180069,
+              "expected_depth_MAE": 0.041779495775699615,
+              "normal_unsigned_error_deg": 18.050561229854182,
+              "normal_evaluated_pixels": 5146
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 35.31441504935668,
+              "static_region_PSNR": 31.200029493976793,
+              "static_RGB_spill": 0.0011663682525977492,
+              "static_alpha_recall": 0.9996874511642444,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.03996588662266731,
+              "expected_depth_MAE": 0.038134586066007614,
+              "normal_unsigned_error_deg": 16.25793022569221,
+              "normal_evaluated_pixels": 5147
+            }
+          }
+        },
+        {
+          "camera": 20,
+          "novel_camera": false,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 35.08251497521743,
+              "static_region_PSNR": 33.92718534553531,
+              "static_RGB_spill": 0.0016934210434556007,
+              "static_alpha_recall": 0.9995274102079396,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.04097535461187363,
+              "expected_depth_MAE": 0.03724205493927002,
+              "normal_unsigned_error_deg": 16.944908133846386,
+              "normal_evaluated_pixels": 5122
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 34.98825762751924,
+              "static_region_PSNR": 33.58849890969317,
+              "static_RGB_spill": 0.0016548397252336144,
+              "static_alpha_recall": 0.9996849401386263,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.04146619886159897,
+              "expected_depth_MAE": 0.034210454672575,
+              "normal_unsigned_error_deg": 15.72806033144521,
+              "normal_evaluated_pixels": 5112
+            }
+          }
+        },
+        {
+          "camera": 21,
+          "novel_camera": false,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 33.84749208653918,
+              "static_region_PSNR": 35.07008161419271,
+              "static_RGB_spill": 0.0022057094611227512,
+              "static_alpha_recall": 0.9990291262135922,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.04212368279695511,
+              "expected_depth_MAE": 0.03284453600645065,
+              "normal_unsigned_error_deg": 16.489706395978935,
+              "normal_evaluated_pixels": 4991
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 33.91764861848451,
+              "static_region_PSNR": 34.41840563139361,
+              "static_RGB_spill": 0.0021293035242706537,
+              "static_alpha_recall": 0.9990291262135922,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.04257823899388313,
+              "expected_depth_MAE": 0.030569300055503845,
+              "normal_unsigned_error_deg": 15.344848639279382,
+              "normal_evaluated_pixels": 4995
+            }
+          }
+        },
+        {
+          "camera": 22,
+          "novel_camera": false,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 32.65029578973019,
+              "static_region_PSNR": 34.04771214947409,
+              "static_RGB_spill": 0.0025929997209459543,
+              "static_alpha_recall": 0.9984704282800816,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.045086294412612915,
+              "expected_depth_MAE": 0.03171321749687195,
+              "normal_unsigned_error_deg": 16.93895749293546,
+              "normal_evaluated_pixels": 4703
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 32.788115015106484,
+              "static_region_PSNR": 33.931366035320366,
+              "static_RGB_spill": 0.002556592458859086,
+              "static_alpha_recall": 0.9989802855200544,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.045543644577264786,
+              "expected_depth_MAE": 0.02963663823902607,
+              "normal_unsigned_error_deg": 15.964733074774212,
+              "normal_evaluated_pixels": 4704
+            }
+          }
+        },
+        {
+          "camera": 23,
+          "novel_camera": true,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 31.82800739750505,
+              "static_region_PSNR": 32.18922297844612,
+              "static_RGB_spill": 0.00298203038983047,
+              "static_alpha_recall": 0.9985326485693323,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.05002421885728836,
+              "expected_depth_MAE": 0.035207364708185196,
+              "normal_unsigned_error_deg": 18.54506789826583,
+              "normal_evaluated_pixels": 4351
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 31.604327199903466,
+              "static_region_PSNR": 31.829432473991744,
+              "static_RGB_spill": 0.0031220808159559965,
+              "static_alpha_recall": 0.9988994864269992,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.05076426640152931,
+              "expected_depth_MAE": 0.03292025253176689,
+              "normal_unsigned_error_deg": 17.74953998812504,
+              "normal_evaluated_pixels": 4377
+            }
+          }
+        },
+        {
+          "camera": 24,
+          "novel_camera": false,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 32.188077299545036,
+              "static_region_PSNR": 35.33588307494509,
+              "static_RGB_spill": 0.0028447937220335007,
+              "static_alpha_recall": 1.0,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.04794217273592949,
+              "expected_depth_MAE": 0.04201566427946091,
+              "normal_unsigned_error_deg": 21.97024011408582,
+              "normal_evaluated_pixels": 4592
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 31.736746031750968,
+              "static_region_PSNR": 34.79416820771323,
+              "static_RGB_spill": 0.0030504486057907343,
+              "static_alpha_recall": 1.0,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.04860641062259674,
+              "expected_depth_MAE": 0.03875641152262688,
+              "normal_unsigned_error_deg": 21.281324560611043,
+              "normal_evaluated_pixels": 4603
+            }
+          }
+        },
+        {
+          "camera": 25,
+          "novel_camera": false,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 32.060388566537895,
+              "static_region_PSNR": 36.65883084485049,
+              "static_RGB_spill": 0.0030803102999925613,
+              "static_alpha_recall": 1.0,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.05043300241231918,
+              "expected_depth_MAE": 0.031062554568052292,
+              "normal_unsigned_error_deg": 17.473260540330816,
+              "normal_evaluated_pixels": 4370
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 31.39651608426256,
+              "static_region_PSNR": 34.98371333417185,
+              "static_RGB_spill": 0.003302918281406164,
+              "static_alpha_recall": 1.0,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.05085485801100731,
+              "expected_depth_MAE": 0.028582105413079262,
+              "normal_unsigned_error_deg": 17.208193109810363,
+              "normal_evaluated_pixels": 4380
+            }
+          }
+        },
+        {
+          "camera": 26,
+          "novel_camera": false,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 32.223800448176796,
+              "static_region_PSNR": 33.83064561965336,
+              "static_RGB_spill": 0.0028740712441504,
+              "static_alpha_recall": 0.9989802855200544,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.049623340368270874,
+              "expected_depth_MAE": 0.02812722884118557,
+              "normal_unsigned_error_deg": 15.248252257355096,
+              "normal_evaluated_pixels": 4713
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 31.859125503342828,
+              "static_region_PSNR": 33.53057814033976,
+              "static_RGB_spill": 0.0029398752376437187,
+              "static_alpha_recall": 0.9994901427600272,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.05013809725642204,
+              "expected_depth_MAE": 0.025792594999074936,
+              "normal_unsigned_error_deg": 15.554404034440903,
+              "normal_evaluated_pixels": 4735
+            }
+          }
+        },
+        {
+          "camera": 27,
+          "novel_camera": true,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 32.38664107870325,
+              "static_region_PSNR": 33.65809466617576,
+              "static_RGB_spill": 0.002850605407729745,
+              "static_alpha_recall": 0.9998381877022654,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.049636706709861755,
+              "expected_depth_MAE": 0.02668546326458454,
+              "normal_unsigned_error_deg": 14.409393395488227,
+              "normal_evaluated_pixels": 4982
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 32.04974260032235,
+              "static_region_PSNR": 32.883936589604346,
+              "static_RGB_spill": 0.002836354076862335,
+              "static_alpha_recall": 0.9996763754045307,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.05066294223070145,
+              "expected_depth_MAE": 0.02463633008301258,
+              "normal_unsigned_error_deg": 14.593349820703583,
+              "normal_evaluated_pixels": 5000
+            }
+          }
+        },
+        {
+          "camera": 28,
+          "novel_camera": false,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 33.068233708526456,
+              "static_region_PSNR": 34.503789917271064,
+              "static_RGB_spill": 0.0025302814319729805,
+              "static_alpha_recall": 0.9993698802772527,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.04700721427798271,
+              "expected_depth_MAE": 0.026988821104168892,
+              "normal_unsigned_error_deg": 14.18182422866237,
+              "normal_evaluated_pixels": 5137
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 32.867049564763505,
+              "static_region_PSNR": 33.48900071739455,
+              "static_RGB_spill": 0.002468590158969164,
+              "static_alpha_recall": 0.9996849401386263,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.04877268522977829,
+              "expected_depth_MAE": 0.02516116388142109,
+              "normal_unsigned_error_deg": 14.27464920451728,
+              "normal_evaluated_pixels": 5157
+            }
+          }
+        },
+        {
+          "camera": 29,
+          "novel_camera": false,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 34.209719649791786,
+              "static_region_PSNR": 34.15120368852401,
+              "static_RGB_spill": 0.0019292687065899372,
+              "static_alpha_recall": 0.9998437255821222,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.04423094168305397,
+              "expected_depth_MAE": 0.02712986432015896,
+              "normal_unsigned_error_deg": 14.05146134316358,
+              "normal_evaluated_pixels": 5141
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 34.01281998316376,
+              "static_region_PSNR": 32.96857015893997,
+              "static_RGB_spill": 0.0019004709320142865,
+              "static_alpha_recall": 1.0,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.0465046651661396,
+              "expected_depth_MAE": 0.025663232430815697,
+              "normal_unsigned_error_deg": 13.874293626264649,
+              "normal_evaluated_pixels": 5169
+            }
+          }
+        },
+        {
+          "camera": 30,
+          "novel_camera": false,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 35.56827726622588,
+              "static_region_PSNR": 34.07972348041814,
+              "static_RGB_spill": 0.001447230693884194,
+              "static_alpha_recall": 1.0,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.04271193593740463,
+              "expected_depth_MAE": 0.028464267030358315,
+              "normal_unsigned_error_deg": 14.02361119688685,
+              "normal_evaluated_pixels": 5003
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 35.31837190681778,
+              "static_region_PSNR": 32.4683475493029,
+              "static_RGB_spill": 0.0014297917950898409,
+              "static_alpha_recall": 1.0,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.045559611171483994,
+              "expected_depth_MAE": 0.028008220717310905,
+              "normal_unsigned_error_deg": 14.163177967996504,
+              "normal_evaluated_pixels": 5022
+            }
+          }
+        },
+        {
+          "camera": 31,
+          "novel_camera": true,
+          "models": {
+            "full_RGB_control": {
+              "clean_GT_PSNR": 34.94059826930397,
+              "static_region_PSNR": 31.180006534816698,
+              "static_RGB_spill": 0.0014960841508582234,
+              "static_alpha_recall": 0.9998298451590948,
+              "thin_alpha_recall": 0.9985632183908046,
+              "background_alpha": 0.043905265629291534,
+              "expected_depth_MAE": 0.029215125367045403,
+              "normal_unsigned_error_deg": 14.38539039399379,
+              "normal_evaluated_pixels": 4534
+            },
+            "full_RGB_nuisance": {
+              "clean_GT_PSNR": 34.29004432726586,
+              "static_region_PSNR": 30.069513990644108,
+              "static_RGB_spill": 0.0015875819372013211,
+              "static_alpha_recall": 1.0,
+              "thin_alpha_recall": 1.0,
+              "background_alpha": 0.04759513586759567,
+              "expected_depth_MAE": 0.029595235362648964,
+              "normal_unsigned_error_deg": 14.582156606598378,
+              "normal_evaluated_pixels": 4558
+            }
+          }
+        }
+      ],
+      "matched_6000_camera_sequence": true
+    }
+  },
+  "checkpoint_sha256": {
+    "runs/pidg_staged_reconstruction/S1_nuisance/v1/formal/diffuse/full_RGB_control/checkpoint.pt": "64b5bc00a6a1ada7957c4d1bd8087df59c7e4c00f994cf02ace30fa83e3fb45b",
+    "runs/pidg_staged_reconstruction/S1_nuisance/v1/formal/diffuse/full_RGB_nuisance/checkpoint.pt": "9dc4322df099a123de1fc18801dbca2dbb621820c5b1239053176990bc87db06",
+    "runs/pidg_staged_reconstruction/S1_nuisance/v1/formal/glossy/full_RGB_control/checkpoint.pt": "c4dd10f4ec2c45fa21a9fcaf296313e0b6ce476299fe21766fd29cfe9fe5fd3a",
+    "runs/pidg_staged_reconstruction/S1_nuisance/v1/formal/glossy/full_RGB_nuisance/checkpoint.pt": "1a785996a7902f0a65214cb2c1d79289133b8aa98c0b531e724849c90471c47b"
+  },
+  "images": {
+    "output/staged_reconstruction/S1_nuisance/v1/diffuse_full_RGB_control_camera00.png": "df5eea8e05b24715a0a5d2a0237866e784ecfc6ecc089e29042a99edb64267c0",
+    "output/staged_reconstruction/S1_nuisance/v1/diffuse_full_RGB_nuisance_camera00.png": "65558740eddc232991cc0c3bf13ac86988650bb9eb6243f8898953c9bc4f341a",
+    "output/staged_reconstruction/S1_nuisance/v1/diffuse_full_RGB_control_camera03.png": "09a81f19ac41d2f0c59d63f51a0ef5cd9a1938b5101c7f701a3e238165653901",
+    "output/staged_reconstruction/S1_nuisance/v1/diffuse_full_RGB_nuisance_camera03.png": "1af4a4650418e2a28f90ea42fe57e2e01cf66b00d1a64e2e8424cb95dc484939",
+    "output/staged_reconstruction/S1_nuisance/v1/diffuse_full_RGB_control_camera08.png": "ee792399d545407e494ddd9c723a650ec615bf140bc9dbb082438c5ee1978461",
+    "output/staged_reconstruction/S1_nuisance/v1/diffuse_full_RGB_nuisance_camera08.png": "6dedd0a818160ec2b12ac00ca059a41d82833879e157265cb9911072597e2a39",
+    "output/staged_reconstruction/S1_nuisance/v1/diffuse_full_RGB_control_camera15.png": "cc43dae7fed9e0c8d8033a793aad82f4cad02452a0081bded45b6ae92ad029c8",
+    "output/staged_reconstruction/S1_nuisance/v1/diffuse_full_RGB_nuisance_camera15.png": "abdd1c903e9c9fbb8ab28f11c8fbb31f3eec6b913f9af1dfedb1a91d69dcc593",
+    "output/staged_reconstruction/S1_nuisance/v1/diffuse_full_RGB_control_camera24.png": "9264cfd0e2aba2b014c556aa3f98f46665182d60156b2ba087c058c10b091bae",
+    "output/staged_reconstruction/S1_nuisance/v1/diffuse_full_RGB_nuisance_camera24.png": "6eee9e70c6fdfa9b05e066c528052fae8b9918c25ed34f10443ef8192d9c5683",
+    "output/staged_reconstruction/S1_nuisance/v1/diffuse_full_RGB_control_camera31.png": "5bc8fd533a28aa1f486934e0546a8d1e293fe44cc7aa2490bd954f118499a7ef",
+    "output/staged_reconstruction/S1_nuisance/v1/diffuse_full_RGB_nuisance_camera31.png": "260083ec1959d09d6d473e1a4727575101945aa6dd75e5d83043d61f08da1bdc",
+    "output/staged_reconstruction/S1_nuisance/v1/diffuse_static_comparison.png": "011b29235178db3ee122b9a68838fb7735bced42159ca8537258591b01a759b4",
+    "output/staged_reconstruction/S1_nuisance/v1/glossy_full_RGB_control_camera00.png": "57241dda814804ae9a0f5047a50be81cdd7fadeaf6505c67a70cd93895dfae5c",
+    "output/staged_reconstruction/S1_nuisance/v1/glossy_full_RGB_nuisance_camera00.png": "ae67ae08fa8396f5ddd314a3dfd0b75dcf6068a5667b42080ef30fc6d667c42b",
+    "output/staged_reconstruction/S1_nuisance/v1/glossy_full_RGB_control_camera03.png": "6870b0d8aca4eb15df35b159d2edcd618d1c3a8fc4a9415d4598fbff66c2e6b6",
+    "output/staged_reconstruction/S1_nuisance/v1/glossy_full_RGB_nuisance_camera03.png": "669514af5572c6e2c9438de153c76fbd2a40e9e88a2ed0643c1daed5fc7a5bb7",
+    "output/staged_reconstruction/S1_nuisance/v1/glossy_full_RGB_control_camera08.png": "c69220b1ad66bf83fc747c3af9b904e3190a583d73a13661e1a12faf32143bed",
+    "output/staged_reconstruction/S1_nuisance/v1/glossy_full_RGB_nuisance_camera08.png": "8f3ae08643513ea48f7f629949d12a92a232e4556943824c31737e973f16affb",
+    "output/staged_reconstruction/S1_nuisance/v1/glossy_full_RGB_control_camera15.png": "84c0b54bafe5ce0f8faf3b7ee7e3f3b6f080d8596f08328a3cb31ad5e5ccb1b2",
+    "output/staged_reconstruction/S1_nuisance/v1/glossy_full_RGB_nuisance_camera15.png": "94bc2a3eddd3a78d8656eaae95a7cc7bd7bdd4fe920b964dc36d2494e943a49f",
+    "output/staged_reconstruction/S1_nuisance/v1/glossy_full_RGB_control_camera24.png": "93c3e9d2d28bfbe46be12dfb4d6cef4d4bb5e5db1072725d92d661b29ae52006",
+    "output/staged_reconstruction/S1_nuisance/v1/glossy_full_RGB_nuisance_camera24.png": "16ed500c6329d5ae976f06bb4522d1a9f4957ae2399553d980aab01923873404",
+    "output/staged_reconstruction/S1_nuisance/v1/glossy_full_RGB_control_camera31.png": "673da9e82ce65af204df094aabd0060711dc90a0cbb37606be866774cc5e4fb5",
+    "output/staged_reconstruction/S1_nuisance/v1/glossy_full_RGB_nuisance_camera31.png": "ae6bbd9ea52cada71bf436acab898f191fb02aa07df126c8f47e34f0227dd899",
+    "output/staged_reconstruction/S1_nuisance/v1/glossy_static_comparison.png": "8d089c331b99759b1fc7525b4679c4305d45fc776c57b21b98ea7ab4271a91b3"
+  },
+  "independent_static_GT_evaluation": true,
+  "training_GT_read": false,
+  "expected_depth_contract": "native accumulatedD divided by alpha; evaluate only alpha>.5",
+  "normal_contract": "Unsigned normals from expected-depth finite differences, alpha>.95 and constant GT face neighborhood",
+  "geometry_contract": "Active opacity>=.1 model centers to camera-visible GT,0.05 tolerance; thin thickness0.04 is below tolerance, not thickness proof",
+  "primary_image_gate": "8 genuinely novel cameras; static-only render, no nuisance fitted to held-out images",
+  "dataset_file_hashes_verified": true,
+  "evaluation_source_sha256": "3d37bcdc2164183c13035f03d228628ecb674540349abd743be1c7d0ab00600b"
+}

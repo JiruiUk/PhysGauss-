@@ -1,0 +1,131 @@
+{
+  "passed": true,
+  "PLY": {
+    "diffuse/full_RGB_control": {
+      "path": "output/staged_reconstruction/S1_nuisance/v1/diffuse_full_RGB_control_6000.ply",
+      "sha256": "ec924227084a71acbcf2078e67c4ac0379493a48005e40dcfbe4f6ea95be5206",
+      "vertices": 4000,
+      "checkpoint_positions_exact": true,
+      "all_fields_finite": true
+    },
+    "diffuse/full_RGB_nuisance": {
+      "path": "output/staged_reconstruction/S1_nuisance/v1/diffuse_full_RGB_nuisance_6000.ply",
+      "sha256": "d1de941292992fd0591cefb818cf3bfb55b664ecd7a3284e3505f6c24229b43c",
+      "vertices": 4000,
+      "checkpoint_positions_exact": true,
+      "all_fields_finite": true
+    },
+    "glossy/full_RGB_control": {
+      "path": "output/staged_reconstruction/S1_nuisance/v1/glossy_full_RGB_control_6000.ply",
+      "sha256": "21d30f2cdc1e63ef117102046413a162f130d2f868ac6589be318e883f24af72",
+      "vertices": 4000,
+      "checkpoint_positions_exact": true,
+      "all_fields_finite": true
+    },
+    "glossy/full_RGB_nuisance": {
+      "path": "output/staged_reconstruction/S1_nuisance/v1/glossy_full_RGB_nuisance_6000.ply",
+      "sha256": "3edb35748001dfd9903135949331a4719b5f836b94bf461adcca5bc59b638502",
+      "vertices": 4000,
+      "checkpoint_positions_exact": true,
+      "all_fields_finite": true
+    }
+  },
+  "videos": {
+    "diffuse": {
+      "path": "output/staged_reconstruction/S1_nuisance/v1/diffuse_camera_time_comparison.mp4",
+      "sha256": "42cd04f2b45db39f3d57a06239134149f744efba117d08fd00cee9101c86fe8e",
+      "decoded_frames": 160,
+      "codec": "H264 Main/yuv420p/faststart",
+      "actual_browser_playback_checked": false,
+      "content": "Independent synthetic camera/time factor grid; not a real observed camera trajectory or physical motion model."
+    },
+    "glossy": {
+      "path": "output/staged_reconstruction/S1_nuisance/v1/glossy_camera_time_comparison.mp4",
+      "sha256": "bad5fd3eafc57af2aec31747806400a2ca1a03a045b30226d8949d662dd165c6",
+      "decoded_frames": 160,
+      "codec": "H264 Main/yuv420p/faststart",
+      "actual_browser_playback_checked": false,
+      "content": "Independent synthetic camera/time factor grid; not a real observed camera trajectory or physical motion model."
+    }
+  },
+  "camera_fingerprints": {
+    "diffuse/0": "db8b97ef93347d62a5b34f77357d1eb8fed1e435066a2873a3db475c49e4758b",
+    "diffuse/1": "644c005057c1d7f6ae9e6d827de38e0085cf3dd352a4f758ef50720b5a979174",
+    "diffuse/2": "36587b10a15ba03e2aa7a5b5187cd8676d595405ce1b3b9744dddb06eb34728e",
+    "diffuse/3": "ca0fc09f9f696136d683c055f457acfc2013594b49f6fa959f7692cece125b4f",
+    "diffuse/4": "aac86fbf6a57e369d2e899de57ad864b5f565843955fb74bb16ec98ab26322a3",
+    "diffuse/5": "667a7e04670d98aedf0a0c05f6e240238bb671754a3a108baa0422f34b5a3926",
+    "diffuse/6": "50016404c7349db27678b19d33f65b596b9af974c2703d6adf67aa45a3f442cf",
+    "diffuse/7": "012ee1698620d05c630b039ad96195063a56065310ecf8f65c656245b17e41dc",
+    "diffuse/8": "d2606fe2a81745556a1f1d571966e5137a67fc5974a20396fd568f71f679ece9",
+    "diffuse/9": "1742f22393f8844f381943a14ac67bb2d2665d19638edfbb41951f19895cde13",
+    "diffuse/10": "2114ef0b12c4a6e20e49eb1337454724f0d24247c635fa60cba96400ffb10d43",
+    "diffuse/11": "b3dcd28bc72f6262b84926f980ab8ad1ab53e4f082d3dccb35531f941035b6d8",
+    "diffuse/12": "f40f09adc57f48e31883fbbcb2741de7a355507d8bbcc052bb063b0284b347be",
+    "diffuse/13": "15f279c6b339178c53338c94ea314e256e05a89e7201d3e90bd83cc1d6a2309b",
+    "diffuse/14": "2d7651a590b31c34fd6e89685905c8f9e3c751bde77e144c8640349cffa3c2aa",
+    "diffuse/15": "cbaa4d8c80d573c9d006c344e3b73e0520d8cf1cdc6340944bcdbfcb58b897aa",
+    "diffuse/16": "06af018641a14fd229c70ddbd1953d65b8702c5eb89cbe6306f57faf1d426275",
+    "diffuse/17": "87a300d59f2469a0f01cc34c7f9ecfcbea6a5be15400f83a8de6320334bdac17",
+    "diffuse/18": "ba5bf45cac217978e6c53bab1c97a4215d88628eb55e40450601161a8055228c",
+    "diffuse/19": "5eef29f838edaa4df2874443fbd3d780c750e15cd6abc8d0bec884756dcafb41",
+    "diffuse/20": "238f65a166e5e1d8c08ddfd01820b9a331ea4166f2b6aa81fd0c77cf95982242",
+    "diffuse/21": "9c73849986fa194f07342c03067f52e2aebde20a5636ba3968bf6ac8f9f99718",
+    "diffuse/22": "db7bc081a8de5819b1b1b3cd5d2227c1e82ce74d74de0579002542f68b111de8",
+    "diffuse/23": "8cdcc40382b9c6b33a52cf4a2804c2abd96349ddb24369d048a14b8190461218",
+    "diffuse/24": "9d8a904511e735210d4c97eb144747eba9fc530cf1cfeba8922976c513f7c92c",
+    "diffuse/25": "5dac0caa14df4dfc14e5b0d021cbfa5837771ae145f922ad3d070d269b94520a",
+    "diffuse/26": "33ed7884058536cdf386d8c6a4f668645ffaebbd79f9539c8e64c98d05527ba0",
+    "diffuse/27": "3fe4e7e3f5f453aed31cef7c6e543f0fc653bf260a2903c3460a7ee8957e2094",
+    "diffuse/28": "52f69abdcecb69272f1241eee9626244f680e56aad09ef0e9cccd0f6f2fa2cad",
+    "diffuse/29": "62840b2e5777d9ef19809789db2e6140e60f8bd8ce4247d51fb21250567748c4",
+    "diffuse/30": "deeca792936ea0a5e73794a43c2de00602f588abd1f450512121eec40f56cd6b",
+    "diffuse/31": "30065faee28e2f0ff3755fd9b131772b4ad339084e1789d8252aee5645d16a4a",
+    "glossy/0": "db8b97ef93347d62a5b34f77357d1eb8fed1e435066a2873a3db475c49e4758b",
+    "glossy/1": "644c005057c1d7f6ae9e6d827de38e0085cf3dd352a4f758ef50720b5a979174",
+    "glossy/2": "36587b10a15ba03e2aa7a5b5187cd8676d595405ce1b3b9744dddb06eb34728e",
+    "glossy/3": "ca0fc09f9f696136d683c055f457acfc2013594b49f6fa959f7692cece125b4f",
+    "glossy/4": "aac86fbf6a57e369d2e899de57ad864b5f565843955fb74bb16ec98ab26322a3",
+    "glossy/5": "667a7e04670d98aedf0a0c05f6e240238bb671754a3a108baa0422f34b5a3926",
+    "glossy/6": "50016404c7349db27678b19d33f65b596b9af974c2703d6adf67aa45a3f442cf",
+    "glossy/7": "012ee1698620d05c630b039ad96195063a56065310ecf8f65c656245b17e41dc",
+    "glossy/8": "d2606fe2a81745556a1f1d571966e5137a67fc5974a20396fd568f71f679ece9",
+    "glossy/9": "1742f22393f8844f381943a14ac67bb2d2665d19638edfbb41951f19895cde13",
+    "glossy/10": "2114ef0b12c4a6e20e49eb1337454724f0d24247c635fa60cba96400ffb10d43",
+    "glossy/11": "b3dcd28bc72f6262b84926f980ab8ad1ab53e4f082d3dccb35531f941035b6d8",
+    "glossy/12": "f40f09adc57f48e31883fbbcb2741de7a355507d8bbcc052bb063b0284b347be",
+    "glossy/13": "15f279c6b339178c53338c94ea314e256e05a89e7201d3e90bd83cc1d6a2309b",
+    "glossy/14": "2d7651a590b31c34fd6e89685905c8f9e3c751bde77e144c8640349cffa3c2aa",
+    "glossy/15": "cbaa4d8c80d573c9d006c344e3b73e0520d8cf1cdc6340944bcdbfcb58b897aa",
+    "glossy/16": "06af018641a14fd229c70ddbd1953d65b8702c5eb89cbe6306f57faf1d426275",
+    "glossy/17": "87a300d59f2469a0f01cc34c7f9ecfcbea6a5be15400f83a8de6320334bdac17",
+    "glossy/18": "ba5bf45cac217978e6c53bab1c97a4215d88628eb55e40450601161a8055228c",
+    "glossy/19": "5eef29f838edaa4df2874443fbd3d780c750e15cd6abc8d0bec884756dcafb41",
+    "glossy/20": "238f65a166e5e1d8c08ddfd01820b9a331ea4166f2b6aa81fd0c77cf95982242",
+    "glossy/21": "9c73849986fa194f07342c03067f52e2aebde20a5636ba3968bf6ac8f9f99718",
+    "glossy/22": "db7bc081a8de5819b1b1b3cd5d2227c1e82ce74d74de0579002542f68b111de8",
+    "glossy/23": "8cdcc40382b9c6b33a52cf4a2804c2abd96349ddb24369d048a14b8190461218",
+    "glossy/24": "9d8a904511e735210d4c97eb144747eba9fc530cf1cfeba8922976c513f7c92c",
+    "glossy/25": "5dac0caa14df4dfc14e5b0d021cbfa5837771ae145f922ad3d070d269b94520a",
+    "glossy/26": "33ed7884058536cdf386d8c6a4f668645ffaebbd79f9539c8e64c98d05527ba0",
+    "glossy/27": "3fe4e7e3f5f453aed31cef7c6e543f0fc653bf260a2903c3460a7ee8957e2094",
+    "glossy/28": "52f69abdcecb69272f1241eee9626244f680e56aad09ef0e9cccd0f6f2fa2cad",
+    "glossy/29": "62840b2e5777d9ef19809789db2e6140e60f8bd8ce4247d51fb21250567748c4",
+    "glossy/30": "deeca792936ea0a5e73794a43c2de00602f588abd1f450512121eec40f56cd6b",
+    "glossy/31": "30065faee28e2f0ff3755fd9b131772b4ad339084e1789d8252aee5645d16a4a"
+  },
+  "depth_alpha": {
+    "diffuse": {
+      "path": "output/staged_reconstruction/S1_nuisance/v1/diffuse_depth_alpha.png",
+      "sha256": "4eed0e70483ad16d4d778dbfcedf93c308120ebc5ed9c6f546775394c1026fa2",
+      "contract": "ExpectedD/alpha, black if alpha<=.5; shared per-camera GT depth color range; not all invisible surfaces."
+    },
+    "glossy": {
+      "path": "output/staged_reconstruction/S1_nuisance/v1/glossy_depth_alpha.png",
+      "sha256": "6605498beb609bab7f690cc90c5446ab1c8aa5301792eb25d013b7d62b30faa3",
+      "contract": "ExpectedD/alpha, black if alpha<=.5; shared per-camera GT depth color range; not all invisible surfaces."
+    }
+  },
+  "export_source_sha256": "e05818f7033193b1ed2bee027ba082a0b56ec5934fde9427b79b676dd9c19c5c",
+  "training_or_checkpoints_modified": false
+}

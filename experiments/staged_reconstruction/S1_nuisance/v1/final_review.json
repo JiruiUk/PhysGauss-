@@ -1,0 +1,71 @@
+{
+  "completed_at": "2026-11-03T20:43:53.138889+00:00",
+  "status": "complete_rejected",
+  "manual_review_completed": true,
+  "promoted": false,
+  "real_training_started": false,
+  "rejection": "Both fixed synthetic cases fail static-GT PSNR and RGB spill gates; unchanged thresholds.",
+  "actually_viewed": [
+    "diffuse/glossy static native c0/3/8/15/24/31",
+    "diffuse/glossy train decomposition0/24/48/72",
+    "diffuse/glossy D/alpha and alpha c3/24/31",
+    "diffuse/glossy decoded160-frame video contacts"
+  ],
+  "findings": "Column/thin plate retained; detached blocks/base halos/alpha floaters remain; nuisance also explains some static appearance.",
+  "no_real86_188_export_reason": "Synthetic gate failed before real continuation; no new real model exists.",
+  "cautions": [
+    "0.05 coverage tolerance exceeds0.04 plate thickness",
+    "D/alpha and normal errors use conditional, arm-dependent valid pixel sets",
+    "Dark RGB does not establish empty geometry",
+    "Per-image nuisance is not physical identity; preserve S3-U and unknowns"
+  ],
+  "checks": {
+    "tests": 72,
+    "four_full_state_audits": true,
+    "matched6000_camera_sequences": true,
+    "PLY_exact_finite": true,
+    "two_videos_decoded_frames_each": 160,
+    "browser_playback_tested": false
+  },
+  "evidence_sha256": {
+    "synthetic_evaluation.json": "01c3837415e8e0c966ed2ef7954223c025ee1b90e6870ca5d5d53e85474c4f07",
+    "synthetic_gate.json": "ffd49db41009c84995a87d3913d2999bb6dec2c78f02bb46603593c3d260f159",
+    "synthetic_exports.json": "8377a87ec608c07088eaea2146f7f2a5886aadd45b14207ece24c68c4aefd191",
+    "source_freeze.json": "852952eed5d63071760bdc661d221bdf5f9c5bdbe0008348b840644284340d76"
+  },
+  "reviewed_image_sha256": {
+    "output/staged_reconstruction/S1_nuisance/v1/diffuse_camera_time_comparison.decoded.png": "c4a91cacb86f650a8e9e0965c78232640b83460a3b40d796b7afbfae8c70e1ce",
+    "output/staged_reconstruction/S1_nuisance/v1/diffuse_depth_alpha.png": "4eed0e70483ad16d4d778dbfcedf93c308120ebc5ed9c6f546775394c1026fa2",
+    "output/staged_reconstruction/S1_nuisance/v1/diffuse_full_RGB_control_camera00.png": "df5eea8e05b24715a0a5d2a0237866e784ecfc6ecc089e29042a99edb64267c0",
+    "output/staged_reconstruction/S1_nuisance/v1/diffuse_full_RGB_control_camera03.png": "09a81f19ac41d2f0c59d63f51a0ef5cd9a1938b5101c7f701a3e238165653901",
+    "output/staged_reconstruction/S1_nuisance/v1/diffuse_full_RGB_control_camera08.png": "ee792399d545407e494ddd9c723a650ec615bf140bc9dbb082438c5ee1978461",
+    "output/staged_reconstruction/S1_nuisance/v1/diffuse_full_RGB_control_camera15.png": "cc43dae7fed9e0c8d8033a793aad82f4cad02452a0081bded45b6ae92ad029c8",
+    "output/staged_reconstruction/S1_nuisance/v1/diffuse_full_RGB_control_camera24.png": "9264cfd0e2aba2b014c556aa3f98f46665182d60156b2ba087c058c10b091bae",
+    "output/staged_reconstruction/S1_nuisance/v1/diffuse_full_RGB_control_camera31.png": "5bc8fd533a28aa1f486934e0546a8d1e293fe44cc7aa2490bd954f118499a7ef",
+    "output/staged_reconstruction/S1_nuisance/v1/diffuse_full_RGB_nuisance_camera00.png": "65558740eddc232991cc0c3bf13ac86988650bb9eb6243f8898953c9bc4f341a",
+    "output/staged_reconstruction/S1_nuisance/v1/diffuse_full_RGB_nuisance_camera03.png": "1af4a4650418e2a28f90ea42fe57e2e01cf66b00d1a64e2e8424cb95dc484939",
+    "output/staged_reconstruction/S1_nuisance/v1/diffuse_full_RGB_nuisance_camera08.png": "6dedd0a818160ec2b12ac00ca059a41d82833879e157265cb9911072597e2a39",
+    "output/staged_reconstruction/S1_nuisance/v1/diffuse_full_RGB_nuisance_camera15.png": "abdd1c903e9c9fbb8ab28f11c8fbb31f3eec6b913f9af1dfedb1a91d69dcc593",
+    "output/staged_reconstruction/S1_nuisance/v1/diffuse_full_RGB_nuisance_camera24.png": "6eee9e70c6fdfa9b05e066c528052fae8b9918c25ed34f10443ef8192d9c5683",
+    "output/staged_reconstruction/S1_nuisance/v1/diffuse_full_RGB_nuisance_camera31.png": "260083ec1959d09d6d473e1a4727575101945aa6dd75e5d83043d61f08da1bdc",
+    "output/staged_reconstruction/S1_nuisance/v1/diffuse_static_comparison.png": "011b29235178db3ee122b9a68838fb7735bced42159ca8537258591b01a759b4",
+    "output/staged_reconstruction/S1_nuisance/v1/diffuse_train_decomposition.png": "3619b7df07f9aa8f040c6d5279589e262ad3186b43ed7b248c16ab4669a1120f",
+    "output/staged_reconstruction/S1_nuisance/v1/glossy_camera_time_comparison.decoded.png": "e4ee97a7eef12ff8c1097f01a1ed2a44b909f698745b11161be5e77f3167f010",
+    "output/staged_reconstruction/S1_nuisance/v1/glossy_depth_alpha.png": "6605498beb609bab7f690cc90c5446ab1c8aa5301792eb25d013b7d62b30faa3",
+    "output/staged_reconstruction/S1_nuisance/v1/glossy_full_RGB_control_camera00.png": "57241dda814804ae9a0f5047a50be81cdd7fadeaf6505c67a70cd93895dfae5c",
+    "output/staged_reconstruction/S1_nuisance/v1/glossy_full_RGB_control_camera03.png": "6870b0d8aca4eb15df35b159d2edcd618d1c3a8fc4a9415d4598fbff66c2e6b6",
+    "output/staged_reconstruction/S1_nuisance/v1/glossy_full_RGB_control_camera08.png": "c69220b1ad66bf83fc747c3af9b904e3190a583d73a13661e1a12faf32143bed",
+    "output/staged_reconstruction/S1_nuisance/v1/glossy_full_RGB_control_camera15.png": "84c0b54bafe5ce0f8faf3b7ee7e3f3b6f080d8596f08328a3cb31ad5e5ccb1b2",
+    "output/staged_reconstruction/S1_nuisance/v1/glossy_full_RGB_control_camera24.png": "93c3e9d2d28bfbe46be12dfb4d6cef4d4bb5e5db1072725d92d661b29ae52006",
+    "output/staged_reconstruction/S1_nuisance/v1/glossy_full_RGB_control_camera31.png": "673da9e82ce65af204df094aabd0060711dc90a0cbb37606be866774cc5e4fb5",
+    "output/staged_reconstruction/S1_nuisance/v1/glossy_full_RGB_nuisance_camera00.png": "ae67ae08fa8396f5ddd314a3dfd0b75dcf6068a5667b42080ef30fc6d667c42b",
+    "output/staged_reconstruction/S1_nuisance/v1/glossy_full_RGB_nuisance_camera03.png": "669514af5572c6e2c9438de153c76fbd2a40e9e88a2ed0643c1daed5fc7a5bb7",
+    "output/staged_reconstruction/S1_nuisance/v1/glossy_full_RGB_nuisance_camera08.png": "8f3ae08643513ea48f7f629949d12a92a232e4556943824c31737e973f16affb",
+    "output/staged_reconstruction/S1_nuisance/v1/glossy_full_RGB_nuisance_camera15.png": "94bc2a3eddd3a78d8656eaae95a7cc7bd7bdd4fe920b964dc36d2494e943a49f",
+    "output/staged_reconstruction/S1_nuisance/v1/glossy_full_RGB_nuisance_camera24.png": "16ed500c6329d5ae976f06bb4522d1a9f4957ae2399553d980aab01923873404",
+    "output/staged_reconstruction/S1_nuisance/v1/glossy_full_RGB_nuisance_camera31.png": "ae6bbd9ea52cada71bf436acab898f191fb02aa07df126c8f47e34f0227dd899",
+    "output/staged_reconstruction/S1_nuisance/v1/glossy_static_comparison.png": "8d089c331b99759b1fc7525b4679c4305d45fc776c57b21b98ea7ab4271a91b3",
+    "output/staged_reconstruction/S1_nuisance/v1/glossy_train_decomposition.png": "1efc28c2ce4d0aef6fc092b08fc9683e79dd255e2e72beb9bfb7676efea351a6"
+  },
+  "next": "Read-only audit of existing RGB-derived depth reliability before a separate bounded surface-constraint experiment; do not repeat S1-N."
+}

@@ -1,9 +1,10 @@
 # S1-N: one bounded nuisance-separation experiment
 
-Status: research/protocol prepared; implementation and full Gaussian synthetic
-training have not started. Do not describe the completed point-admission audit
-as this experiment. This is the next authorized stage, not an extra candidate
-parallel to active C1 training (C1 is complete and not promoted).
+Status: complete, rejected at the full Gaussian synthetic gate (2026-11-03).
+Four6000-update arms and independent/manual native evaluation are complete.
+No real18k→24k run: static-GT PSNR fell0.739/0.644dB and RGB spill increased
+6.05%/6.44%. See v1/assessment.md and final_review.json. The protocol below is
+preserved; do not restart or change thresholds to promote this candidate.
 
 The completed visibility experiment did not reduce real native artifacts.
 Independent RGB geometric admission benefited modestly from quarantine, while
