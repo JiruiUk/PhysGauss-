@@ -76,3 +76,13 @@ Only RGB-to-geometry admission has been tested, not complete Gaussian training.
 7 mechanism tests and source/train/evaluator-file hash checks passed.
 See synthetic_v2/assessment.md. Next is one per-view nuisance separation pilot,
 first with full Gaussian synthetic validation; do not repeat C1 continuation.
+
+## Next authorized stage is concretely bounded
+
+See experiments/staged_reconstruction/S1_nuisance/plan.md and protocol.json.
+No nuisance implementation/full Gaussian synthetic training has started yet.
+Complete tests/native recovery and both synthetic-case gates first, then one
+matched real18k→24k control/nuisance continuation. Never restart C1 simply
+because its pipeline state still names pending review; final_review.json and
+assessment.md already complete that review. Automatic follow-up remains active
+for this new cleanup scope; oldpidg-s1-s6 remains paused.
