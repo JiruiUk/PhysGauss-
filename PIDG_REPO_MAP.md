@@ -1,5 +1,18 @@
 # PIDG repository map — M0
 
+## Fixed-camera temporal completeness diagnostic (2026-11-03)
+
+`output/fixed_camera_temporal/render_sequences.py` restores frozen final C1/T1/O1
+states through the audited association evaluator, reuses actual trained cameras,
+and varies only deformation time for three fixed poses plus a moving-camera
+control. All2400 renders use native1600x900 before downsampling. Diagonal native
+RGB parity, fixed-camera fingerprints and source/checkpoint hashes are checked.
+`finalize.py` independently decodes all16 videos and verifies selected native
+RGB downsampling; outputs a gallery and GT/original/fixed-view/alpha figure.
+Reports, descriptive masks, exact manual review scope and verification are in
+`experiments/fixed_camera_temporal`. No training integration or physics module,
+optimizer updates, camera recalibration, novel-view GT or physical-ID claim.
+
 ## Observable association training pilot (2026-11-02)
 
 `variants/association_training/prepare.py` forks repaired C1 and changes only

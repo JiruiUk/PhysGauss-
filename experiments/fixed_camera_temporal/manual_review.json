@@ -1,0 +1,34 @@
+{
+  "date": "2026-11-03",
+  "method": "Tool image inspection of actual exported contact sheets, native PNGs and decoded-video contacts",
+  "fixed_camera_contacts": {
+    "models": ["C1_original_50k", "T1_association_52k", "O1_flow_on_50k"],
+    "views": ["fixed_0002", "fixed_0086", "fixed_0188"],
+    "time_frames": [2, 27, 43, 74, 86, 108, 172, 200],
+    "channels": ["RGB", "alpha"],
+    "contact_count": 9
+  },
+  "additional_contact": "C1_original_50k/moving_control_RGB_alpha_contact.png",
+  "decoded_video_contacts": [
+    "fixed_0002_comparison_RGB_alpha.decoded_contact.png",
+    "fixed_0086_comparison_RGB_alpha.decoded_contact.png",
+    "fixed_0188_comparison_RGB_alpha.decoded_contact.png",
+    "moving_control_comparison_RGB_alpha.decoded_contact.png"
+  ],
+  "native_full_size_images": [
+    "C1_original_50k/fixed_0086/native/rgb0200.png",
+    "C1_original_50k/fixed_0086/native/alpha0200.png"
+  ],
+  "key_figure": "key_comparison.png",
+  "observations": [
+    "Fixed86 is clear around its observed time86 but grossly stretched and fragmented at early and late selected times",
+    "Fixed2 is clearer early and substantially distorted at middle and late selected times",
+    "Fixed188 is clearer late and substantially distorted at early and middle selected times",
+    "T1 and O1 retain the major fixed-view completeness problem",
+    "Opacity contains corresponding abnormal strips, connections and gaps; original-trajectory opacity also contains extra support that RGB hides"
+  ],
+  "all_videos_fully_decoded_technically": true,
+  "all_videos_played_in_full_manually": false,
+  "all_native_images_reviewed_individually": false,
+  "physical_identity_or_3D_truth_verified": false
+}

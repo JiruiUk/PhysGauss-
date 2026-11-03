@@ -1,0 +1,15 @@
+{
+  "purpose": "Read-only fixed-camera temporal completeness diagnostic requested by the user",
+  "models": ["C1_original_50k", "T1_association_52k", "O1_flow_on_50k"],
+  "fixed_training_camera_frames": [2, 86, 188],
+  "time_frames": [1, 200],
+  "time_sampling": "all 200 original global times, (frame-1)/199",
+  "moving_camera_control": true,
+  "native_render_size": [1600, 900],
+  "selected_native_frames": [2, 27, 43, 74, 86, 108, 172, 200],
+  "camera_contract": "Reuse actual trained loader FoV/pose; freeze camera matrices and center; vary deformation time only",
+  "preflight": "Native camera86/time86 C1/T1 RGB parity against prior native renders; camera fingerprints; full-state receipts",
+  "outputs": "RGB videos, RGB/alpha comparison videos, contact sheets, selected native RGB/alpha, descriptive 400x225 mask statistics",
+  "prohibitions": ["No training", "No optimizer updates", "No checkpoint edits", "No mask repair", "No novel-view PSNR without GT", "No physical identity or motion truth claim"],
+  "interpretation": "Connected components and holes are descriptive; occlusion, frame exit, appearance and opacity affect them. Novel camera/time combinations have no independent GT."
+}
