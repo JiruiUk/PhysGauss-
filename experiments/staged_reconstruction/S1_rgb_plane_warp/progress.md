@@ -1,6 +1,6 @@
 # S1-D6 RGB support warp
 
-Status: implemented/tested/frozen, recovery verified; full inference next.
+Status: complete; limited numeric improvement, both strict gates failed.
 No D6 trained Gaussians, new86/188, PLY or video. D5 must not repeat.
 See plan.md and protocol.json; inherited gates are exactly the original D4 gates.
 
@@ -17,8 +17,19 @@ file hash match, including coefficients/residuals/costs/acceptance/depth.
 Analytic controls measured once under preregistration, without selecting or
 adjusting the candidate. No Gaussian optimizer/RNG recovery claim is made.
 
-Next one serialized two-condition96-view inference, independent192-view parent/
-slope/acceptance/hash audit plus fixed0/24/72 full raw-RGB replay, then independent
-static GT/structure evaluation. Actual process check found only the unrelated
-integrity monitor and no D6 stop/lock. Keep unrelated jobs untouched. No training
-promotion from oracle/cost decrease; no paused-task recovery or model change.
+Two-case192-view inference and independent192-view parent/slope/acceptance/hash
+audit plus fixed0/24/72 full raw-RGB replay all pass. Measurementaff05616:
+423747/423100 candidates retained;98662/98504 eligible;14731/14655 accepted.
+MAE0.03680488→0.03659113 /0.03682616→0.03661146 (about0.58% reduction), gross
+errors barely change, thin P90 increases. Numerical5% and Gaussian evidence
+gates fail. Updated subset gains cannot establish full geometry/artifact gains.
+Actually viewed both fixed-view triptychs and all analytic control curves;
+fractional control improves but one slanted pixel minimum worsens. No new
+Gaussian/real training/86/188/PLY/video or Gaussian optimizer recovery.
+
+Post-hoc evaluator-only diagnostic (not a changed gate): about98.8% old gross
+errors have no admitted target-local slope. Admitted gross points themselves
+have approximately59deg unoriented normal error, so slopes are not GT normals.
+Next single mechanism: separately preregistered S1-D7 cross-view local-plane
+transport from original four fitting sources; retain original source slope
+checks, do not relax D6 or re-run it. See next_plan.md and v1/assessment.md.

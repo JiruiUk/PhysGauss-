@@ -888,3 +888,20 @@ or retain old D1 depths. No learned static label or physical identity is made.
 a separate process; `evaluate` alone reads static GT and visible-thin labels.
 No PIDG renderer/model/optimizer/physics or Gaussian training integration.
 Tests: test_rgb_prior_proposals.py; reports: S1_rgb_prior_proposals/v1.
+
+
+## Opt-in RGB local-plane support warp (S1-D6, 2026-11-03)
+
+`variants/staged_reconstruction/rgb_plane_warp/core.py` fits/checks original D1
+inverse-depth slopes from disjoint local neighbors, constructs plane_support,
+and samples raw RGB before patch normalization in warped_cost. propose keeps
+all parent depths unless the fixed fit/held equation accepts; disabled calls
+return the same parent object. compute.py retains full slope/cost/rejection
+diagnostics. infer.py is locked/default-off; preflight.py checks both conditions
+in three independent processes, full4 versus2+2 with identical saved arrays.
+prepare.py freezes409 train-only input/source files. audit.py replays192 parent/
+slope/acceptance states and six fixed full RGB views; evaluate.py is independent
+GT-only assessment. No original PIDG trainer/renderer/weight or physics field
+changes. D6 completed with limited small-error gains, failed geometry gates,
+and is not admitted to Gaussian training. Reports under S1_rgb_plane_warp.
+S1-D7 source-plane transport is preregistered only, not implemented here yet.

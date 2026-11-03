@@ -1,0 +1,71 @@
+"""Task-only cached patches for shared plans/map, preserving other edits."""
+import difflib
+import subprocess
+from variants.staged_reconstruction.prepare_data import ROOT
+
+SECTION='''
+
+### S1-D6：warp只改善小误差，跨视角提供下一轮平面备选（2026-11-03）
+
+按3c952319协议完成两例96图，实现/冻结5ca41f68，测量与独立审计aff05616。
+29测试、409文件训练输入/代码冻结、两条件独立进程完整4对2+2保存恢复通过；
+192图原候选/输入/斜率/接受方程及固定0/24/72完整原RGB推断重放逐值一致。
+保留423747/423100候选，98662/98504有合格斜率，14731/14655更新。深度MAE
+0.03680488→0.03659113、0.03682616→0.03661146（约0.58%），较大错误几乎不动，
+薄结构P90略升；数值5%改善/薄结构非恶化及Gaussian严格门槛均未过，不升级。
+解析分数位移平面最低点4.04947→3.99303（真值4），但一个斜面像素反而更差。
+实际看两例三固定原图/误差/更新图及全部解析对比曲线；没有Gaussian/真实
+训练或新86/188/PLY/视频。保存有限局部改进，不冒充伪影减少或结构完整。
+
+事后评估诊断（未回灌或改门槛）：原大错误/无静态85912/85846点，只有974/1004
+通过目标邻域检查，约98.8%无法进入提议；准入且原大错误的可见点法线无向角
+误差约59度。D1局部自洽不能给这些错误提供可靠斜率，不放宽原0.02检查。
+下一步一个S1-D7跨视角局部平面传递候选：固定D6深度作为当前值，从原4个
+fit源的原D1合格局部平面产生射线交点与斜率，保持源准入/5x5支撑范围检查，
+原始warp成本和4fit best3/2held接受方程/1e-6容差不变；目标无需先有好斜率。
+最多4个源平面假设不是物体数，不优化法线/扫参，不换Small、使用GT标签或
+补点；父候选和未知身份、S3-U保留。先测试/冻结/完整独立推断恢复，再一次
+两条件推断及静态GT/薄结构/覆盖审计，D4两组门槛逐值保留。不得启动当前
+Gaussian/旧真实18k→24k，不恢复暂停任务，不重跑D6或旧负分支。
+见[D6评估](staged_reconstruction/S1_rgb_plane_warp/v1/assessment.md)和
+[D7固定协议](staged_reconstruction/S1_plane_transport/protocol.json)。
+'''
+
+MAP='''
+
+## Opt-in RGB local-plane support warp (S1-D6, 2026-11-03)
+
+`variants/staged_reconstruction/rgb_plane_warp/core.py` fits/checks original D1
+inverse-depth slopes from disjoint local neighbors, constructs plane_support,
+and samples raw RGB before patch normalization in warped_cost. propose keeps
+all parent depths unless the fixed fit/held equation accepts; disabled calls
+return the same parent object. compute.py retains full slope/cost/rejection
+diagnostics. infer.py is locked/default-off; preflight.py checks both conditions
+in three independent processes, full4 versus2+2 with identical saved arrays.
+prepare.py freezes409 train-only input/source files. audit.py replays192 parent/
+slope/acceptance states and six fixed full RGB views; evaluate.py is independent
+GT-only assessment. No original PIDG trainer/renderer/weight or physics field
+changes. D6 completed with limited small-error gains, failed geometry gates,
+and is not admitted to Gaussian training. Reports under S1_rgb_plane_warp.
+S1-D7 source-plane transport is preregistered only, not implemented here yet.
+'''
+
+
+def main():
+    patches=[]
+    additions={'experiments/adaptive_reconstruction_plan.md':SECTION,
+               'experiments/staged_reconstruction_plan.md':SECTION,'PIDG_REPO_MAP.md':MAP}
+    for relative,section in additions.items():
+        head=subprocess.check_output(['git','show','HEAD:'+relative],cwd=ROOT).decode('utf-8')
+        path=ROOT/relative; working=path.read_text(encoding='utf-8-sig')
+        marker=section.strip().splitlines()[0]
+        assert marker not in head and marker not in working
+        path.write_text(working.rstrip()+'\n'+section,encoding='utf-8')
+        desired=head.rstrip()+'\n'+section
+        patches.extend(difflib.unified_diff(head.splitlines(True),desired.splitlines(True),fromfile='a/'+relative,tofile='b/'+relative))
+    out=ROOT/'experiments/staged_reconstruction/S1_rgb_plane_warp/v1/shared_cached.patch'
+    out.write_text(''.join(patches),encoding='utf-8',newline='\n')
+    print('D6_TASK_ONLY_SHARED_CACHED_PATCH_READY',flush=True)
+
+
+if __name__=='__main__': main()

@@ -1,0 +1,33 @@
+{
+  "status": "complete_rejected_geometry_gate",
+  "manual_review_completed": true,
+  "reviewed_images": {
+    "output/staged_reconstruction/S1_rgb_plane_warp/v1/diffuse_RGB_warp.png": "8f4ef9c5c5a298632cfacffe1a85b47cd779a3fdd356e62831355d1318058c98",
+    "output/staged_reconstruction/S1_rgb_plane_warp/v1/glossy_RGB_warp.png": "d8b49c44c4c2129df949fa90b63a063fc14b3c39febaacf82c4a35d3f79f6243",
+    "output/staged_reconstruction/S1_rgb_plane_warp/v1/analytic_control_comparison.png": "ee7c8f501c83a73ef5ab941a3c346d372a1c3f2a0ad103efb67ea6c7826b8069"
+  },
+  "actually_viewed": "both cases fixed0/24/72 raw RGB, same-pixel D1/D6 error and accepted change maps; all three analytic controls compared against original cost",
+  "all192_views_and_parent_candidates_complete": true,
+  "source_input_parent_slope_acceptance_audit_passed": true,
+  "fixed0_24_72_full_RGB_replay_exact": true,
+  "flags_off_identity_and_independent2plus2_recovery_passed": true,
+  "Gaussian_or_real_training_started": false,
+  "native86_188_PLY_video_or_Adam_recovery_claim": false,
+  "unknown_identity_and_S3U_preserved": true,
+  "gates_unchanged": true,
+  "evidence_sha256": {
+    "source_freeze.json": "3fbc1cb12072030d011bd9d9223f2923163d8ee3c030a5664f9cd203ba0d0e9c",
+    "tests.log": "9395282d60eb9427365776d74a17fb5174b2c7688b43eb9e56261f9c2b066c12",
+    "preflight.json": "fbf56e0ea0454b3f3430659d0dce666872041f6bd6436337c89cd50ae0c8d3cb",
+    "inference.json": "68487037b322fa3311bcded06c96038154fbcee49c0bdaa63671e5787b4a3680",
+    "input_audit.json": "7dcabd137392a1ea9f8f600ae91fee2f1826128ab68502257f50ce0cb2b6e565",
+    "evaluation.json": "4b3ef28b627b0b07c0e7ddeb5ac583635f2726c1e45337d4dd6338e7137d0e5e",
+    "gate.json": "c495d7bdb91116608b0d2ea4f403e1c86eb76d3e3d8fdb2a840d348eaa5ad5a9",
+    "exports.json": "952bec8afaa95e23089a42c38c9916e7270c914ca8ce022e106781f83fe8b4f8",
+    "coverage_diagnostic.json": "fdc2f1dee79862a26b77024bb56318f6926fd3a0bbc709eb49a8905da22f65b2",
+    "assessment.md": "fc519f9028277ad0a94874b5e83a9569bc0291791b3a37b431621abceaa167d8"
+  },
+  "next_plan_sha256": "9bde0e92f95e92c95aa789a387418bd1a864f35bc77ba4617d4b314060fc53f0",
+  "reviewed_at_utc": "2026-11-03T22:23:52.480885+00:00",
+  "finalizer_sha256": "e16af72b19a6fe671d10fa3b580c41615fbd6943071eb66326669e8a89220614"
+}
