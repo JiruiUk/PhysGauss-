@@ -1,0 +1,75 @@
+F:\A_Edinburgh\PhysGauss\envs\pidg-cu128\Lib\site-packages\requests\__init__.py:113: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (7.6.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+FF                                                                       [100%]
+================================== FAILURES ===================================
+____________ test_constant_rigid_transform_derivative_is_rotation _____________
+
+    def test_constant_rigid_transform_derivative_is_rotation():
+        c,r,node=data(); x=torch.tensor([[.2,.3,.1]],dtype=torch.double)
+>       blend,full=differential(x,c,r,node)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_sparse_blend_diagnostic.py:17: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+query = tensor([[0.2000, 0.3000, 0.1000]], dtype=torch.float64)
+controls = tensor([[0., 0., 0.],
+        [1., 0., 0.],
+        [0., 1., 0.],
+        [0., 0., 1.]], dtype=torch.float64)
+radius = tensor([0.5000, 0.5000, 0.5000, 0.5000], dtype=torch.float64)
+node = {'d_rotation': tensor([[0., 0., 0., 0.],
+        [0., 0., 0., 0.],
+        [0., 0., 0., 0.],
+        [0., 0., 0., 0.]]....1000, 0.2000, 0.3000],
+        [1.0000, 0.1000, 0.2000, 0.3000, 0.1000, 0.2000, 0.3000]],
+       dtype=torch.float64)}
+
+    def differential(query,controls,radius,node):
+        ids,w=weights(query,controls,radius)
+        rotations=matrix(node['d_xyz'][ids,:4])
+        moved=(rotations@query[:,None,:,None]).squeeze(-1)+node['d_xyz'][ids,4:]
+        blend=(w[:,:,None,None]*rotations).sum(1)
+>       log_gradient=-(query[:,None]-controls[ids])/radius[ids,:,None].square()
+                                                    ^^^^^^^^^^^^^^^^^^
+E       IndexError: too many indices for tensor of dimension 1
+
+scripts\audit_sparse_blend.py:13: IndexError
+_____ test_full_weight_derivative_matches_autograd_for_varying_transforms _____
+
+    def test_full_weight_derivative_matches_autograd_for_varying_transforms():
+        c,r,node=data(); node['d_xyz'][1,4]+=.3; node['d_xyz'][2,2]+=.2
+        x=torch.tensor([[.2,.3,.1]],dtype=torch.double,requires_grad=True)
+>       _,analytic=differential(x,c,r,node)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_sparse_blend_diagnostic.py:25: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+query = tensor([[0.2000, 0.3000, 0.1000]], dtype=torch.float64, requires_grad=True)
+controls = tensor([[0., 0., 0.],
+        [1., 0., 0.],
+        [0., 1., 0.],
+        [0., 0., 1.]], dtype=torch.float64)
+radius = tensor([0.5000, 0.5000, 0.5000, 0.5000], dtype=torch.float64)
+node = {'d_rotation': tensor([[0., 0., 0., 0.],
+        [0., 0., 0., 0.],
+        [0., 0., 0., 0.],
+        [0., 0., 0., 0.]]....1000, 0.2000, 0.3000],
+        [1.0000, 0.1000, 0.2000, 0.3000, 0.1000, 0.2000, 0.3000]],
+       dtype=torch.float64)}
+
+    def differential(query,controls,radius,node):
+        ids,w=weights(query,controls,radius)
+        rotations=matrix(node['d_xyz'][ids,:4])
+        moved=(rotations@query[:,None,:,None]).squeeze(-1)+node['d_xyz'][ids,4:]
+        blend=(w[:,:,None,None]*rotations).sum(1)
+>       log_gradient=-(query[:,None]-controls[ids])/radius[ids,:,None].square()
+                                                    ^^^^^^^^^^^^^^^^^^
+E       IndexError: too many indices for tensor of dimension 1
+
+scripts\audit_sparse_blend.py:13: IndexError
+=========================== short test summary info ===========================
+FAILED tests/test_sparse_blend_diagnostic.py::test_constant_rigid_transform_derivative_is_rotation
+FAILED tests/test_sparse_blend_diagnostic.py::test_full_weight_derivative_matches_autograd_for_varying_transforms
+2 failed in 0.63s

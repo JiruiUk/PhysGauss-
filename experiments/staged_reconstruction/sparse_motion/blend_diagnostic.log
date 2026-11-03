@@ -1,0 +1,15 @@
+W1103 21:40:11.334000 276760 envs\pidg-cu128\Lib\site-packages\torch\utils\cpp_extension.py:466] Error checking compiler version for cl: 'cp1' codec can't decode bytes in position 0--1: No mapping for the Unicode character exists in the target code page.
+ninja: no work to do.
+F:\A_Edinburgh\PhysGauss\variants\color_repair\code\hashencoder\hashgrid.py:16: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.half)
+F:\A_Edinburgh\PhysGauss\variants\color_repair\code\hashencoder\hashgrid.py:56: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+SPARSE_BLEND 2 rotation_q10 0.9993424415588379 negative_det 0.011607661843299866
+SPARSE_BLEND 27 rotation_q10 0.9987761378288269 negative_det 0.056619592010974884
+SPARSE_BLEND 43 rotation_q10 0.9978941679000854 negative_det 0.15573613345623016
+SPARSE_BLEND 62 rotation_q10 0.9978743195533752 negative_det 0.1589604765176773
+SPARSE_BLEND 86 rotation_q10 0.9978710412979126 negative_det 0.10356613248586655
+SPARSE_BLEND 108 rotation_q10 0.9978073239326477 negative_det 0.11485136300325394
+SPARSE_BLEND 146 rotation_q10 0.9977194666862488 negative_det 0.10782227665185928
+SPARSE_BLEND 172 rotation_q10 0.9969460368156433 negative_det 0.16244277358055115
+SPARSE_BLEND 200 rotation_q10 0.9965133666992188 negative_det 0.12510479986667633
