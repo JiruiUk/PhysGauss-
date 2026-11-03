@@ -1,5 +1,40 @@
 # PIDG repository map — M0
 
+## Independent S1--S6 reconstruction curriculum (2026-11-03)
+
+This opt-in branch does not modify `train_pidg.py`, baseline `GaussianModel`,
+`DeformModel`, `VelocityNet`, renderer or historical checkpoints. Root
+`variants/staged_reconstruction/{train_static,model,static_gaussian}.py` owns S1;
+`stage2` owns immutable per-object Gaussian banks and original deformation
+networks. Sequential `recovery`/`geometry_recovery` corrections preserve their
+negative results and frozen sources. The camera contract is metadata CV and
+must not be mixed with legacy PIDG checkpoint coordinates.
+
+`stage3/train.py` retains the independent S3 image/physics schedule, optimizer and
+complete state entry. `state_recovery/train.py` is the actual corrected S3 entry;
+its `physics.py` uses original per-object PIDG velocity/stress fields with
+same-bank current-world kNN and tested quadratic momentum derivatives. Invalid
+derivative neighborhoods fail rather than report zero residual. The original
+S3 smoke failure and its frozen source are preserved. `state_recovery/runtime.py`
+serializes derived graph state as well as the model/Adam/RNG/camera payload.
+
+`stage4/{tracks,prepare_tracks,bind,constraints}.py` extracts train-only image
+fragments, binds one immutable model row with full visible alpha*T integrals and
+filters uncertain/conflicting associations. `stage5/{prepare_sdf,nonpenetration,
+controlled}.py` owns the conditional S1-interior prior and manufactured optimizer
+validation. `continuation.py` owns separately gated S4/S5/S6 stages and protocols;
+S6 unfreezes static appearance while keeping static geometry fixed. All are
+explicitly disabled without their CLI enable flag. No contact force, material
+law, unknown force or learned material segmentation is enabled by this branch.
+
+Independent evaluation/review lives under `experiments/staged_reconstruction/`:
+`verify_smoke.py` checks actual optimizer counters and exact sampler recovery;
+`audit_stage.py` checks parent hashes, final sampling and internal objectives;
+`review_objects.py` exports native observed/group/fixed-view images and decodes
+videos; `finalize_stage.py` requires a separate actual image-review receipt.
+These diagnostics do not certify physical IDs, complete geometry or contact
+surfaces. See `runbook.md`, `progress.md` and the stage-specific assessments.
+
 ## Cold-start transfer-integrity version 2 (2026-11-03)
 
 `variants/scratch_integrity/prefix.py` captures and verifies a fresh step-zero

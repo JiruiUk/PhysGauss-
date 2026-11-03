@@ -125,3 +125,30 @@ The initial static reference was not established as consistent geometry; this
 is not solely a late optimization drift result. The audit is read-only and
 does not count as S1 training. Continue S1 reference/mask preparation and then
 independent static optimization; S2–S6 remain pending in the restored stage plan.
+
+## S1--S6 actual continuation (supersedes the earlier pending status)
+
+S1 completed12000 updates and conditional static admission. Three sequential
+S2 candidates completed16000 each; the first two failed and remain preserved.
+The third passes unchanged image gates (dynamic24.25343dB/alpha0.982654,
+static35.53011dB) and permits conditional sequential reconstruction corrections.
+Its fixed-view fragments and imperfect frame42 ownership remain unresolved; no
+physical identity or complete geometry success has been established. See
+staged_reconstruction/S2_geometry_recovery/assessment.md.
+
+S3 real-parent recovery exposed a rank-deficient canonical-neighbor case. A new
+independent state_recovery entry uses actual current-world same-bank neighbors,
+retains the original validity thresholds, and saves derived state. Corrected
+40→80 recovery passes136 Adam states and exact camera/Python-RNG replay;6000
+formal updates are running. Native4k dynamic25.8475dB/static35.7088dB pass.
+All57 related tests pass. S4 train-only fragments131, strict fixed-row binding,
+S5 conditional SDF/nonpenetration and S4--S6 separate4000-step entries are ready;
+formal later stages still require reviewed parents and actual recovery smoke.
+
+S5's manufactured300-step optimizer validation is separate from real-scene
+training. Rubber Duck has no certified contact surface or acquisition seconds;
+contact force/friction/restitution remain off. S6 jointly refines the admitted
+image/kinematic/track/conditional-interior objectives and static appearance at
+0.25 learning rates; static geometry remains S1. Full operational continuation
+is in staged_reconstruction/runbook.md. These are conditional reconstruction
+experiments, not material/contact identifiability claims.
