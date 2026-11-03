@@ -1,0 +1,101 @@
+W1103 21:54:16.707000 280364 envs\pidg-cu128\Lib\site-packages\torch\utils\cpp_extension.py:466] Error checking compiler version for cl: 'cp1' codec can't decode bytes in position 0--1: No mapping for the Unicode character exists in the target code page.
+ninja: no work to do.
+F:\A_Edinburgh\PhysGauss\variants\color_repair\code\hashencoder\hashgrid.py:16: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.half)
+F:\A_Edinburgh\PhysGauss\variants\color_repair\code\hashencoder\hashgrid.py:56: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+INVERTIBLE_MOTION_TRAIN invertible 1 warmup 0.300040602684021 True elapsed 0.5
+INVERTIBLE_MOTION_TRAIN invertible 40 warmup 0.08047369867563248 True elapsed 3.8
+INVERTIBLE_MOTION_TRAIN invertible 80 warmup 0.23649057745933533 True elapsed 7.3
+INVERTIBLE_MOTION_TRAIN invertible 100 warmup 0.09216267615556717 True elapsed 9.1
+INVERTIBLE_MOTION_TRAIN invertible 200 warmup 0.10453787446022034 True elapsed 14.1
+INVERTIBLE_MOTION_TRAIN invertible 400 warmup 0.06990830600261688 True elapsed 21.9
+INVERTIBLE_MOTION_TRAIN invertible 600 warmup 0.0939977690577507 True elapsed 29.6
+INVERTIBLE_MOTION_TRAIN invertible 800 warmup 0.1054970994591713 True elapsed 37.2
+INVERTIBLE_MOTION_TRAIN invertible 1000 warmup 0.09970059245824814 True elapsed 44.8
+INVERTIBLE_MOTION_TRAIN invertible 1200 warmup 0.08447113633155823 True elapsed 52.1
+INVERTIBLE_MOTION_TRAIN invertible 1400 warmup 0.062396254390478134 True elapsed 59.4
+INVERTIBLE_MOTION_TRAIN invertible 1600 warmup 0.06049533188343048 True elapsed 66.8
+INVERTIBLE_MOTION_TRAIN invertible 1800 warmup 0.04594818875193596 True elapsed 74.2
+INVERTIBLE_MOTION_TRAIN invertible 2000 warmup 0.04402635619044304 True elapsed 81.4
+INVERTIBLE_MOTION_TRAIN invertible 2200 warmup 0.0694507360458374 True elapsed 88.9
+INVERTIBLE_MOTION_TRAIN invertible 2400 warmup 0.0494186095893383 True elapsed 96.5
+INVERTIBLE_MOTION_TRAIN invertible 2600 warmup 0.05733538046479225 True elapsed 104.1
+INVERTIBLE_MOTION_TRAIN invertible 2800 warmup 0.04146670550107956 True elapsed 112.9
+INVERTIBLE_MOTION_TRAIN invertible 3000 warmup 0.04169178009033203 True elapsed 121.6
+INVERTIBLE_MOTION_TRAIN invertible 3200 warmup 0.05399296432733536 True elapsed 130.5
+INVERTIBLE_MOTION_TRAIN invertible 3400 warmup 0.052627090364694595 True elapsed 139.1
+INVERTIBLE_MOTION_TRAIN invertible 3600 warmup 0.047811128199100494 True elapsed 147.8
+INVERTIBLE_MOTION_TRAIN invertible 3800 warmup 0.052990540862083435 True elapsed 156.1
+INVERTIBLE_MOTION_TRAIN invertible 4000 warmup 0.054629843682050705 True elapsed 163.9
+INVERTIBLE_MOTION_TRAIN invertible 4200 warmup 0.04520465061068535 True elapsed 170.7
+INVERTIBLE_MOTION_TRAIN invertible 4400 warmup 0.05291155353188515 True elapsed 177.5
+INVERTIBLE_MOTION_TRAIN invertible 4600 warmup 0.0536334328353405 True elapsed 184.7
+INVERTIBLE_MOTION_TRAIN invertible 4800 warmup 0.04782790318131447 True elapsed 192.1
+INVERTIBLE_MOTION_TRAIN invertible 5000 warmup 0.049886174499988556 True elapsed 199.0
+INVERTIBLE_MOTION_TRAIN invertible 5200 warmup 0.049544185400009155 True elapsed 205.8
+INVERTIBLE_MOTION_TRAIN invertible 5400 warmup 0.05068936198949814 True elapsed 212.8
+INVERTIBLE_MOTION_TRAIN invertible 5600 warmup 0.0389309823513031 True elapsed 219.7
+INVERTIBLE_MOTION_TRAIN invertible 5800 warmup 0.04925632104277611 True elapsed 226.3
+INVERTIBLE_MOTION_TRAIN invertible 6000 warmup 0.05417458340525627 True elapsed 232.9
+INVERTIBLE_MOTION_TRAIN invertible 6200 warmup 0.04974106326699257 True elapsed 240.3
+INVERTIBLE_MOTION_TRAIN invertible 6400 warmup 0.03195926919579506 True elapsed 247.2
+INVERTIBLE_MOTION_TRAIN invertible 6600 warmup 0.04621373116970062 True elapsed 254.3
+INVERTIBLE_MOTION_TRAIN invertible 6800 warmup 0.06133108213543892 True elapsed 261.8
+INVERTIBLE_MOTION_TRAIN invertible 7000 warmup 0.0405619852244854 True elapsed 268.9
+INVERTIBLE_MOTION_TRAIN invertible 7200 warmup 0.05357813090085983 True elapsed 276.0
+INVERTIBLE_MOTION_TRAIN invertible 7400 warmup 0.052814677357673645 True elapsed 283.5
+INVERTIBLE_MOTION_TRAIN invertible 7600 warmup 0.044915586709976196 True elapsed 290.8
+INVERTIBLE_MOTION_TRAIN invertible 7800 warmup 0.04480065405368805 True elapsed 297.5
+INVERTIBLE_MOTION_TRAIN invertible 8000 warmup 0.05424400418996811 True elapsed 304.7
+INVERTIBLE_MOTION_TRAIN invertible 8200 warmup 0.05108703300356865 True elapsed 312.3
+INVERTIBLE_MOTION_TRAIN invertible 8400 warmup 0.050801537930965424 True elapsed 319.7
+INVERTIBLE_MOTION_TRAIN invertible 8600 warmup 0.03803557530045509 True elapsed 327.2
+INVERTIBLE_MOTION_TRAIN invertible 8800 warmup 0.04706883057951927 True elapsed 334.7
+INVERTIBLE_MOTION_TRAIN invertible 9000 warmup 0.038502614945173264 True elapsed 343.0
+INVERTIBLE_MOTION_TRAIN invertible 9200 warmup 0.03917958587408066 True elapsed 350.8
+INVERTIBLE_MOTION_TRAIN invertible 9400 warmup 0.03475742042064667 True elapsed 357.8
+INVERTIBLE_MOTION_TRAIN invertible 9600 warmup 0.048761997371912 True elapsed 365.4
+INVERTIBLE_MOTION_TRAIN invertible 9800 warmup 0.037513118237257004 True elapsed 372.3
+INVERTIBLE_MOTION_TRAIN invertible 10000 warmup 0.04503064602613449 True elapsed 379.3
+INVERTIBLE_MOTION_TRAIN invertible 10200 warmup 0.055545829236507416 True elapsed 387.0
+INVERTIBLE_MOTION_TRAIN invertible 10400 warmup 0.04368368908762932 True elapsed 394.2
+INVERTIBLE_MOTION_TRAIN invertible 10600 warmup 0.03295030817389488 True elapsed 401.5
+INVERTIBLE_MOTION_TRAIN invertible 10800 warmup 0.04382438585162163 True elapsed 409.1
+INVERTIBLE_MOTION_TRAIN invertible 11000 warmup 0.05120265856385231 True elapsed 416.7
+INVERTIBLE_MOTION_TRAIN invertible 11200 warmup 0.03427651524543762 True elapsed 424.7
+INVERTIBLE_MOTION_TRAIN invertible 11400 warmup 0.04632028937339783 True elapsed 433.3
+INVERTIBLE_MOTION_TRAIN invertible 11600 warmup 0.043676845729351044 True elapsed 440.6
+INVERTIBLE_MOTION_TRAIN invertible 11800 warmup 0.041566893458366394 True elapsed 447.5
+INVERTIBLE_MOTION_TRAIN invertible 12000 warmup 0.04642004892230034 True elapsed 454.4
+INVERTIBLE_MOTION_TRAIN invertible 12200 warmup 0.03856365755200386 True elapsed 474.8
+INVERTIBLE_MOTION_TRAIN invertible 12400 warmup 0.03950357064604759 True elapsed 485.1
+INVERTIBLE_MOTION_TRAIN invertible 12600 warmup 0.0394473522901535 True elapsed 494.3
+INVERTIBLE_MOTION_TRAIN invertible 12800 warmup 0.04472244903445244 True elapsed 503.5
+INVERTIBLE_MOTION_TRAIN invertible 13000 warmup 0.04189027473330498 True elapsed 513.0
+INVERTIBLE_MOTION_TRAIN invertible 13200 warmup 0.03981451690196991 True elapsed 522.1
+INVERTIBLE_MOTION_TRAIN invertible 13400 warmup 0.047378841787576675 True elapsed 531.7
+INVERTIBLE_MOTION_TRAIN invertible 13600 warmup 0.03627815470099449 True elapsed 542.1
+INVERTIBLE_MOTION_TRAIN invertible 13800 warmup 0.038664817810058594 True elapsed 552.8
+INVERTIBLE_MOTION_TRAIN invertible 14000 warmup 0.03858036920428276 True elapsed 563.0
+INVERTIBLE_MOTION_TRAIN invertible 14200 warmup 0.0266236774623394 True elapsed 573.3
+INVERTIBLE_MOTION_TRAIN invertible 14400 warmup 0.04097965732216835 True elapsed 583.3
+INVERTIBLE_MOTION_TRAIN invertible 14600 warmup 0.02493865415453911 True elapsed 593.0
+INVERTIBLE_MOTION_TRAIN invertible 14800 warmup 0.03745313361287117 True elapsed 602.7
+INVERTIBLE_MOTION_TRAIN invertible 15000 warmup 0.033013660460710526 True elapsed 612.1
+INVERTIBLE_MOTION_TRAIN invertible 15200 warmup 0.04268709570169449 True elapsed 621.8
+INVERTIBLE_MOTION_TRAIN invertible 15400 warmup 0.04600456729531288 True elapsed 631.7
+INVERTIBLE_MOTION_TRAIN invertible 15600 warmup 0.04734216257929802 True elapsed 641.2
+INVERTIBLE_MOTION_TRAIN invertible 15800 warmup 0.03927325829863548 True elapsed 650.5
+INVERTIBLE_MOTION_TRAIN invertible 16000 warmup 0.038898833096027374 True elapsed 660.2
+UNION_EVALUATION warmup 16000 val 1600 {'PSNR': 27.45307559967041, 'dynamic_PSNR': 25.453224245707194, 'dynamic_alpha': 0.9808294316132863, 'static_PSNR': 34.31745491027832, 'static_alpha': 0.9972948988278707, 'background_alpha': 0.020671461010351777, 'dynamic_leakage_on_static': 0.029147861218856028}
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "F:\A_Edinburgh\PhysGauss\variants\staged_reconstruction\invertible_motion\train.py", line 91, in <module>
+    if __name__=='__main__': main()
+                             ^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\variants\staged_reconstruction\invertible_motion\train.py", line 81, in main
+    if not admission['passed']: raise RuntimeError('Original warmup numerical guardrails failed; physics not admitted')
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Original warmup numerical guardrails failed; physics not admitted

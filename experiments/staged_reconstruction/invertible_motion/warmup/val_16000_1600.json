@@ -1,0 +1,321 @@
+{
+  "stage": "S3-U",
+  "phase": "warmup",
+  "iteration": 16000,
+  "split": "val",
+  "width": 1600,
+  "count": 30,
+  "metrics": {
+    "PSNR": 27.45307559967041,
+    "dynamic_PSNR": 25.453224245707194,
+    "dynamic_alpha": 0.9808294316132863,
+    "static_PSNR": 34.31745491027832,
+    "static_alpha": 0.9972948988278707,
+    "background_alpha": 0.020671461010351777,
+    "dynamic_leakage_on_static": 0.029147861218856028
+  },
+  "frames": [
+    {
+      "frame": 4,
+      "PSNR": 27.613662719726562,
+      "dynamic_PSNR": 29.796953201293945,
+      "dynamic_alpha": 0.9960172772407532,
+      "static_PSNR": 38.061424255371094,
+      "static_alpha": 0.9977178573608398,
+      "background_alpha": 0.0028591882437467575,
+      "dynamic_leakage_on_static": 0.009670179337263107
+    },
+    {
+      "frame": 11,
+      "PSNR": 27.808216094970703,
+      "dynamic_PSNR": 29.412517547607422,
+      "dynamic_alpha": 0.9954072833061218,
+      "static_PSNR": 38.87047576904297,
+      "static_alpha": 0.9979038834571838,
+      "background_alpha": 0.0030121393501758575,
+      "dynamic_leakage_on_static": 0.01071081217378378
+    },
+    {
+      "frame": 18,
+      "PSNR": 28.458585739135742,
+      "dynamic_PSNR": 28.722782135009766,
+      "dynamic_alpha": 0.9944983124732971,
+      "static_PSNR": 38.01179504394531,
+      "static_alpha": 0.9982219338417053,
+      "background_alpha": 0.0035674574319273233,
+      "dynamic_leakage_on_static": 0.027743851765990257
+    },
+    {
+      "frame": 24,
+      "PSNR": 29.109638214111328,
+      "dynamic_PSNR": 27.737730026245117,
+      "dynamic_alpha": 0.9945240020751953,
+      "static_PSNR": 36.78258514404297,
+      "static_alpha": 0.9983823299407959,
+      "background_alpha": 0.002724414924159646,
+      "dynamic_leakage_on_static": 0.056691985577344894
+    },
+    {
+      "frame": 31,
+      "PSNR": 28.971343994140625,
+      "dynamic_PSNR": 26.392499923706055,
+      "dynamic_alpha": 0.9941911101341248,
+      "static_PSNR": 32.61997604370117,
+      "static_alpha": 0.9982907176017761,
+      "background_alpha": 0.0013169483281672,
+      "dynamic_leakage_on_static": 0.09188632667064667
+    },
+    {
+      "frame": 38,
+      "PSNR": 29.191370010375977,
+      "dynamic_PSNR": 23.06307029724121,
+      "dynamic_alpha": 0.9894161224365234,
+      "static_PSNR": 32.84496307373047,
+      "static_alpha": 0.9981505274772644,
+      "background_alpha": 0.001389847369864583,
+      "dynamic_leakage_on_static": 0.10966873914003372
+    },
+    {
+      "frame": 44,
+      "PSNR": 29.022863388061523,
+      "dynamic_PSNR": 21.00893783569336,
+      "dynamic_alpha": 0.9657296538352966,
+      "static_PSNR": 32.502017974853516,
+      "static_alpha": 0.9979556202888489,
+      "background_alpha": 0.002270924625918269,
+      "dynamic_leakage_on_static": 0.08558119833469391
+    },
+    {
+      "frame": 51,
+      "PSNR": 28.389341354370117,
+      "dynamic_PSNR": 22.714950561523438,
+      "dynamic_alpha": 0.9754826426506042,
+      "static_PSNR": 32.3133544921875,
+      "static_alpha": 0.9976151585578918,
+      "background_alpha": 0.013659002259373665,
+      "dynamic_leakage_on_static": 0.07138477265834808
+    },
+    {
+      "frame": 58,
+      "PSNR": 28.591999053955078,
+      "dynamic_PSNR": 22.839223861694336,
+      "dynamic_alpha": 0.9622616767883301,
+      "static_PSNR": 32.11055374145508,
+      "static_alpha": 0.9974526762962341,
+      "background_alpha": 0.017893996089696884,
+      "dynamic_leakage_on_static": 0.0218124408274889
+    },
+    {
+      "frame": 64,
+      "PSNR": 28.832984924316406,
+      "dynamic_PSNR": 24.743043899536133,
+      "dynamic_alpha": 0.9726706147193909,
+      "static_PSNR": 33.5634651184082,
+      "static_alpha": 0.9977886080741882,
+      "background_alpha": 0.03284725546836853,
+      "dynamic_leakage_on_static": 0.009366071783006191
+    },
+    {
+      "frame": 71,
+      "PSNR": 27.891942977905273,
+      "dynamic_PSNR": 23.795387268066406,
+      "dynamic_alpha": 0.9687644243240356,
+      "static_PSNR": 30.811853408813477,
+      "static_alpha": 0.9981321692466736,
+      "background_alpha": 0.03783619776368141,
+      "dynamic_leakage_on_static": 0.04276834428310394
+    },
+    {
+      "frame": 78,
+      "PSNR": 27.501089096069336,
+      "dynamic_PSNR": 23.851634979248047,
+      "dynamic_alpha": 0.9721394777297974,
+      "static_PSNR": 33.135074615478516,
+      "static_alpha": 0.9983270168304443,
+      "background_alpha": 0.040152449160814285,
+      "dynamic_leakage_on_static": 0.07349137216806412
+    },
+    {
+      "frame": 84,
+      "PSNR": 26.58953094482422,
+      "dynamic_PSNR": 24.28816795349121,
+      "dynamic_alpha": 0.9694178104400635,
+      "static_PSNR": 30.589702606201172,
+      "static_alpha": 0.998348593711853,
+      "background_alpha": 0.037512414157390594,
+      "dynamic_leakage_on_static": 0.07377763837575912
+    },
+    {
+      "frame": 91,
+      "PSNR": 26.795808792114258,
+      "dynamic_PSNR": 24.5070858001709,
+      "dynamic_alpha": 0.9714643955230713,
+      "static_PSNR": 30.5985050201416,
+      "static_alpha": 0.9980664253234863,
+      "background_alpha": 0.028925476595759392,
+      "dynamic_leakage_on_static": 0.07231228798627853
+    },
+    {
+      "frame": 98,
+      "PSNR": 27.36443519592285,
+      "dynamic_PSNR": 24.41507339477539,
+      "dynamic_alpha": 0.9662153124809265,
+      "static_PSNR": 32.84272766113281,
+      "static_alpha": 0.9975298643112183,
+      "background_alpha": 0.031093118712306023,
+      "dynamic_leakage_on_static": 0.027071818709373474
+    },
+    {
+      "frame": 104,
+      "PSNR": 26.788021087646484,
+      "dynamic_PSNR": 23.73845863342285,
+      "dynamic_alpha": 0.9725533127784729,
+      "static_PSNR": 33.28716278076172,
+      "static_alpha": 0.9978376030921936,
+      "background_alpha": 0.03281180560588837,
+      "dynamic_leakage_on_static": 0.01864565908908844
+    },
+    {
+      "frame": 111,
+      "PSNR": 27.10930824279785,
+      "dynamic_PSNR": 25.015178680419922,
+      "dynamic_alpha": 0.9740881323814392,
+      "static_PSNR": 34.790504455566406,
+      "static_alpha": 0.9977049231529236,
+      "background_alpha": 0.02988262102007866,
+      "dynamic_leakage_on_static": 0.016435343772172928
+    },
+    {
+      "frame": 118,
+      "PSNR": 27.048608779907227,
+      "dynamic_PSNR": 21.774282455444336,
+      "dynamic_alpha": 0.9693487882614136,
+      "static_PSNR": 33.689918518066406,
+      "static_alpha": 0.9973509907722473,
+      "background_alpha": 0.015058798715472221,
+      "dynamic_leakage_on_static": 0.008513062261044979
+    },
+    {
+      "frame": 124,
+      "PSNR": 26.418188095092773,
+      "dynamic_PSNR": 21.8155517578125,
+      "dynamic_alpha": 0.980495810508728,
+      "static_PSNR": 33.88191604614258,
+      "static_alpha": 0.9971100091934204,
+      "background_alpha": 0.0073965671472251415,
+      "dynamic_leakage_on_static": 0.011810911819338799
+    },
+    {
+      "frame": 131,
+      "PSNR": 26.716598510742188,
+      "dynamic_PSNR": 24.696378707885742,
+      "dynamic_alpha": 0.9792126417160034,
+      "static_PSNR": 33.18579864501953,
+      "static_alpha": 0.9961585998535156,
+      "background_alpha": 0.010230096988379955,
+      "dynamic_leakage_on_static": 0.007006707601249218
+    },
+    {
+      "frame": 138,
+      "PSNR": 25.751911163330078,
+      "dynamic_PSNR": 24.911834716796875,
+      "dynamic_alpha": 0.9747735857963562,
+      "static_PSNR": 35.50698471069336,
+      "static_alpha": 0.9956967234611511,
+      "background_alpha": 0.01584789715707302,
+      "dynamic_leakage_on_static": 0.0014312620041891932
+    },
+    {
+      "frame": 144,
+      "PSNR": 25.27796173095703,
+      "dynamic_PSNR": 24.534076690673828,
+      "dynamic_alpha": 0.9724797606468201,
+      "static_PSNR": 34.910064697265625,
+      "static_alpha": 0.9954907894134521,
+      "background_alpha": 0.021969899535179138,
+      "dynamic_leakage_on_static": 0.0009325224091298878
+    },
+    {
+      "frame": 151,
+      "PSNR": 26.435871124267578,
+      "dynamic_PSNR": 26.88593101501465,
+      "dynamic_alpha": 0.9817613959312439,
+      "static_PSNR": 34.36337661743164,
+      "static_alpha": 0.9954838752746582,
+      "background_alpha": 0.024443766102194786,
+      "dynamic_leakage_on_static": 0.002042191568762064
+    },
+    {
+      "frame": 158,
+      "PSNR": 26.938007354736328,
+      "dynamic_PSNR": 26.403085708618164,
+      "dynamic_alpha": 0.9799614548683167,
+      "static_PSNR": 35.380393981933594,
+      "static_alpha": 0.995701789855957,
+      "background_alpha": 0.020607803016901016,
+      "dynamic_leakage_on_static": 0.0008323408546857536
+    },
+    {
+      "frame": 164,
+      "PSNR": 27.988672256469727,
+      "dynamic_PSNR": 27.755191802978516,
+      "dynamic_alpha": 0.9934099316596985,
+      "static_PSNR": 34.88167190551758,
+      "static_alpha": 0.9960235953330994,
+      "background_alpha": 0.019432051107287407,
+      "dynamic_leakage_on_static": 0.001413065241649747
+    },
+    {
+      "frame": 171,
+      "PSNR": 27.778127670288086,
+      "dynamic_PSNR": 27.304916381835938,
+      "dynamic_alpha": 0.9930989146232605,
+      "static_PSNR": 34.34345245361328,
+      "static_alpha": 0.9965230822563171,
+      "background_alpha": 0.01866084523499012,
+      "dynamic_leakage_on_static": 0.002661715494468808
+    },
+    {
+      "frame": 178,
+      "PSNR": 27.45534896850586,
+      "dynamic_PSNR": 28.5489444732666,
+      "dynamic_alpha": 0.9935601353645325,
+      "static_PSNR": 35.35730743408203,
+      "static_alpha": 0.9968568682670593,
+      "background_alpha": 0.02283642813563347,
+      "dynamic_leakage_on_static": 0.004655771888792515
+    },
+    {
+      "frame": 184,
+      "PSNR": 27.018239974975586,
+      "dynamic_PSNR": 28.043846130371094,
+      "dynamic_alpha": 0.9896082878112793,
+      "static_PSNR": 37.02446365356445,
+      "static_alpha": 0.9970068335533142,
+      "background_alpha": 0.030645029619336128,
+      "dynamic_leakage_on_static": 0.003464988199993968
+    },
+    {
+      "frame": 191,
+      "PSNR": 26.65928840637207,
+      "dynamic_PSNR": 28.337495803833008,
+      "dynamic_alpha": 0.9906585216522217,
+      "static_PSNR": 37.67441177368164,
+      "static_alpha": 0.9970138669013977,
+      "background_alpha": 0.04233846068382263,
+      "dynamic_leakage_on_static": 0.004414888098835945
+    },
+    {
+      "frame": 198,
+      "PSNR": 26.075302124023438,
+      "dynamic_PSNR": 26.542495727539062,
+      "dynamic_alpha": 0.991672158241272,
+      "static_PSNR": 35.587745666503906,
+      "static_alpha": 0.9970040321350098,
+      "background_alpha": 0.05092092975974083,
+      "dynamic_leakage_on_static": 0.0062375664710998535
+    }
+  ],
+  "standard_VGG_LPIPS": false,
+  "limit": "Appearance-conditioned union masks; no instance/number or independent geometry truth"
+}
