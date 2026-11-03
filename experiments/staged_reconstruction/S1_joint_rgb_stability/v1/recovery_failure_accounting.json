@@ -1,0 +1,120 @@
+{
+  "initial_complete_state_exact": true,
+  "all_RNG_camera_state_exact": true,
+  "differences": {
+    "dynamic._xyz": {
+      "max_abs": 0.0015048086643218994,
+      "above_tolerance": 10663,
+      "elements": 12000
+    },
+    "dynamic._features_dc": {
+      "max_abs": 0.016169190406799316,
+      "above_tolerance": 11079,
+      "elements": 12000
+    },
+    "dynamic._features_rest": {
+      "max_abs": 0.0007783994078636169,
+      "above_tolerance": 157798,
+      "elements": 180000
+    },
+    "dynamic._opacity": {
+      "max_abs": 0.042623043060302734,
+      "above_tolerance": 3751,
+      "elements": 4000
+    },
+    "dynamic._scaling": {
+      "max_abs": 0.00590205192565918,
+      "above_tolerance": 8316,
+      "elements": 12000
+    },
+    "dynamic._rotation": {
+      "max_abs": 0.008497485890984535,
+      "above_tolerance": 14222,
+      "elements": 16000
+    },
+    "grid.xyz_encoding.embeddings": {
+      "max_abs": 0.0003749126335605979,
+      "above_tolerance": 50998,
+      "elements": 2157206
+    },
+    "grid.xyt_encoding.embeddings": {
+      "max_abs": 0.00044703908497467637,
+      "above_tolerance": 19704,
+      "elements": 169342
+    },
+    "grid.yzt_encoding.embeddings": {
+      "max_abs": 0.0004006391391158104,
+      "above_tolerance": 20855,
+      "elements": 169342
+    },
+    "grid.xzt_encoding.embeddings": {
+      "max_abs": 0.0002701152116060257,
+      "above_tolerance": 21583,
+      "elements": 169342
+    },
+    "network.spatial_mlp.0.weight": {
+      "max_abs": 2.682209014892578e-07,
+      "above_tolerance": 0,
+      "elements": 3072
+    },
+    "network.spatial_mlp.0.bias": {
+      "max_abs": 0.00021719932556152344,
+      "above_tolerance": 62,
+      "elements": 128
+    },
+    "network.temporal_mlp.0.weight": {
+      "max_abs": 1.0300427675247192e-06,
+      "above_tolerance": 0,
+      "elements": 12288
+    },
+    "network.temporal_mlp.0.bias": {
+      "max_abs": 0.0003279369557276368,
+      "above_tolerance": 64,
+      "elements": 128
+    },
+    "network.grid_mlp.0.weight": {
+      "max_abs": 0.00011399388313293457,
+      "above_tolerance": 3938,
+      "elements": 16384
+    },
+    "network.grid_mlp.0.bias": {
+      "max_abs": 0.0002644062042236328,
+      "above_tolerance": 64,
+      "elements": 128
+    },
+    "network.gaussian_warp.weight": {
+      "max_abs": 0.00028006918728351593,
+      "above_tolerance": 441,
+      "elements": 896
+    },
+    "network.gaussian_warp.bias": {
+      "max_abs": 0.0002927742898464203,
+      "above_tolerance": 6,
+      "elements": 7
+    },
+    "network.gaussian_rotation.weight": {
+      "max_abs": 0.0015481117879971862,
+      "above_tolerance": 255,
+      "elements": 512
+    },
+    "network.gaussian_rotation.bias": {
+      "max_abs": 0.001648341421969235,
+      "above_tolerance": 4,
+      "elements": 4
+    },
+    "network.gaussian_scaling.weight": {
+      "max_abs": 0.00012784451246261597,
+      "above_tolerance": 184,
+      "elements": 384
+    },
+    "network.gaussian_scaling.bias": {
+      "max_abs": 3.2668933272361755e-05,
+      "above_tolerance": 3,
+      "elements": 3
+    }
+  },
+  "full40": "093692977108c3ed56d2dec069e4e6795f79d200fe4ea382d12285323b20902e",
+  "split40": "6667674770c0b2f163119669f779c47a4c86d52d472ff801f2c0b0e947dfe46d",
+  "single_fixed_epsilon_failed": true,
+  "no_formal_training": true
+}

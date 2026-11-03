@@ -1,0 +1,57 @@
+{
+  "passed": true,
+  "independent_processes": 2,
+  "immediate_model_both_Adam_and_parameter_binding_exact": true,
+  "identical_saved_native_gradients_produce_exact_model_and_both_Adam_update": true,
+  "all_RNG_camera_stack_visits_trace_exact": true,
+  "original_full40_gate_still_failed": true,
+  "formal_training_admitted": false,
+  "requires_human_selection_to_change_recovery_acceptance": true,
+  "source_sha256": "8a720e7b955913616f34db8c45ef1cb88606e912507cb8f1c1fed11055642b1e",
+  "checkpoint_sha256": "aa2b0273c631282beda5011fd311e0417769d106a0b05cb68cf77b1b4d696ecb",
+  "fixed_native_gradients_sha256": "d6101361f4b05524e544521a0527644aa440a4171d466aaff3184ceaaaeb3bd2",
+  "commands": [
+    {
+      "command": [
+        "F:\\A_Edinburgh\\PhysGauss\\envs\\pidg-cu128\\python.exe",
+        "-u",
+        "F:\\A_Edinburgh\\PhysGauss\\experiments\\staged_reconstruction\\S1_joint_rgb\\recovery_replay_diagnostic.py",
+        "--enable-recovery-replay-diagnostic",
+        "--phase",
+        "fixture",
+        "--replicate",
+        "0"
+      ],
+      "log": "experiments/staged_reconstruction/S1_joint_rgb/v1/recovery_replay_diagnostic/fixture0.log",
+      "sha256": "dfad2463b9a37066dad63f3de61da43815aba399458736eb03133aa5a8112f63"
+    },
+    {
+      "command": [
+        "F:\\A_Edinburgh\\PhysGauss\\envs\\pidg-cu128\\python.exe",
+        "-u",
+        "F:\\A_Edinburgh\\PhysGauss\\experiments\\staged_reconstruction\\S1_joint_rgb\\recovery_replay_diagnostic.py",
+        "--enable-recovery-replay-diagnostic",
+        "--phase",
+        "replay",
+        "--replicate",
+        "0"
+      ],
+      "log": "experiments/staged_reconstruction/S1_joint_rgb/v1/recovery_replay_diagnostic/replay0.log",
+      "sha256": "55f5c486272654a546e47844bf4357c1bc72aef5ed900d21f4ef7095e94c5668"
+    },
+    {
+      "command": [
+        "F:\\A_Edinburgh\\PhysGauss\\envs\\pidg-cu128\\python.exe",
+        "-u",
+        "F:\\A_Edinburgh\\PhysGauss\\experiments\\staged_reconstruction\\S1_joint_rgb\\recovery_replay_diagnostic.py",
+        "--enable-recovery-replay-diagnostic",
+        "--phase",
+        "replay",
+        "--replicate",
+        "1"
+      ],
+      "log": "experiments/staged_reconstruction/S1_joint_rgb/v1/recovery_replay_diagnostic/replay1.log",
+      "sha256": "ff94b7c686aa00b9149c88c3a3cbde4d48d77136d5657b7e8ae43f6bd259c7a8"
+    }
+  ]
+}

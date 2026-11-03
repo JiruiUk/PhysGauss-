@@ -1,0 +1,75 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "case": "diffuse",
+      "same_value_RGB_alpha_exact": true,
+      "native_direct_PIDG_render_exact": true,
+      "frozen_static_geometry_unchanged_after_three_updates": true,
+      "finite_intended_gradients_nonzero_after_identity_head_updates": true,
+      "gradient_L2_by_smoke_step": [
+        {
+          "static_opacity": 0.00011566367532629995,
+          "static_SH_DC": 0.00033949642876448854,
+          "static_SH_rest": 0.001314863962131931,
+          "dynamic_canonical": 0.00015880373783576403,
+          "grid": 0.0,
+          "network": 0.00046471728979895644
+        },
+        {
+          "static_opacity": 0.00010822831891256183,
+          "static_SH_DC": 0.00030194391209975016,
+          "static_SH_rest": 0.0011694236867295302,
+          "dynamic_canonical": 0.0001842046999660572,
+          "grid": 3.4580772289830776e-08,
+          "network": 0.0003073300770156422
+        },
+        {
+          "static_opacity": 9.471176948444915e-05,
+          "static_SH_DC": 0.00025445241552897956,
+          "static_SH_rest": 0.000985489924542996,
+          "dynamic_canonical": 0.00018446495968289588,
+          "grid": 3.771090266329347e-08,
+          "network": 0.0003721414074767038
+        }
+      ]
+    },
+    {
+      "case": "glossy",
+      "same_value_RGB_alpha_exact": true,
+      "native_direct_PIDG_render_exact": true,
+      "frozen_static_geometry_unchanged_after_three_updates": true,
+      "finite_intended_gradients_nonzero_after_identity_head_updates": true,
+      "gradient_L2_by_smoke_step": [
+        {
+          "static_opacity": 0.00013071685238009637,
+          "static_SH_DC": 0.0003850964969820283,
+          "static_SH_rest": 0.001491472277672696,
+          "dynamic_canonical": 0.0001859118866827766,
+          "grid": 0.0,
+          "network": 0.0008366043492638205
+        },
+        {
+          "static_opacity": 0.00012155074676540624,
+          "static_SH_DC": 0.00035077517080447885,
+          "static_SH_rest": 0.0013585463571658398,
+          "dynamic_canonical": 0.000191657978240156,
+          "grid": 3.573802171351857e-08,
+          "network": 0.00032410813856330545
+        },
+        {
+          "static_opacity": 0.00010840000008056814,
+          "static_SH_DC": 0.0003001662132256986,
+          "static_SH_rest": 0.0011625387129715076,
+          "dynamic_canonical": 0.0001967441478718971,
+          "grid": 6.122391564398666e-08,
+          "network": 0.0005640950333324705
+        }
+      ]
+    }
+  ],
+  "formal_updates": 0,
+  "smoke_updates_per_case": 3,
+  "source_manifest_sha256": "30888173264284065bf3ac87fa0d5336042b80aca00e1de125fcf75084633614",
+  "source_sha256": "8277299f9d396e0e19a8e555aa08179b3e903f3eaf61c05cfb712a7475b8b809"
+}

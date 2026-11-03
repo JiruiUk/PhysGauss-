@@ -1,0 +1,63 @@
+{
+  "passed": false,
+  "completed_groups": [],
+  "failed_case": "diffuse",
+  "failed_arm": "frozen_static",
+  "commands": [
+    {
+      "command": [
+        "F:\\A_Edinburgh\\PhysGauss\\envs\\pidg-cu128\\python.exe",
+        "-u",
+        "F:\\A_Edinburgh\\PhysGauss\\experiments\\staged_reconstruction\\S1_joint_rgb_stability\\run_worker.py",
+        "--enable-joint-rgb-stability",
+        "--case",
+        "diffuse",
+        "--arm",
+        "frozen_static",
+        "--preflight-tag",
+        "full"
+      ],
+      "log": "experiments/staged_reconstruction/S1_joint_rgb_stability/v1/20261103T232854861606Z_diffuse_frozen_static_full.log",
+      "sha256": "8b9ff8ad0a266e0ae58a44b16111cb98daba7f1947c1d889d006f89486069675"
+    },
+    {
+      "command": [
+        "F:\\A_Edinburgh\\PhysGauss\\envs\\pidg-cu128\\python.exe",
+        "-u",
+        "F:\\A_Edinburgh\\PhysGauss\\experiments\\staged_reconstruction\\S1_joint_rgb_stability\\run_worker.py",
+        "--enable-joint-rgb-stability",
+        "--case",
+        "diffuse",
+        "--arm",
+        "frozen_static",
+        "--preflight-tag",
+        "split",
+        "--stop-after",
+        "20"
+      ],
+      "log": "experiments/staged_reconstruction/S1_joint_rgb_stability/v1/20261103T232905010290Z_diffuse_frozen_static_split.log",
+      "sha256": "2339320de364eec1dd34510d9555c86cec282b83341e0c93933452b923c2647f"
+    },
+    {
+      "command": [
+        "F:\\A_Edinburgh\\PhysGauss\\envs\\pidg-cu128\\python.exe",
+        "-u",
+        "F:\\A_Edinburgh\\PhysGauss\\experiments\\staged_reconstruction\\S1_joint_rgb_stability\\run_worker.py",
+        "--enable-joint-rgb-stability",
+        "--case",
+        "diffuse",
+        "--arm",
+        "frozen_static",
+        "--preflight-tag",
+        "split"
+      ],
+      "log": "experiments/staged_reconstruction/S1_joint_rgb_stability/v1/20261103T232914974100Z_diffuse_frozen_static_split.log",
+      "sha256": "0066e9884d515596ce023c723d4f9fe4f6435a8488e79836930f709398d47a71"
+    }
+  ],
+  "error": "AssertionError('state/model/dynamic._xyz')",
+  "original_tolerance_unchanged": true,
+  "formal_training_admitted": false,
+  "single_control_no_sweep": true,
+  "source_sha256": "ec37d566b5f87ad592233bf20983e3bd41a49e7719bf1188b53ea1c6a4544b8f"
+}
