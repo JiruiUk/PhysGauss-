@@ -26,21 +26,32 @@ def panel(a,label):
 
 @torch.no_grad()
 def main():
-    p=argparse.ArgumentParser();p.add_argument('--checkpoint-dir',default='S2_objects');p.add_argument('--preview-only',action='store_true');p.add_argument('--recovery',action='store_true');p.add_argument('--geometry-recovery',action='store_true');args=p.parse_args()
-    current_report=REPORT/'S2_geometry_recovery' if args.geometry_recovery else REPORT/'S2_recovery' if args.recovery else REPORT
-    renderer=setup();torch.set_num_threads(4);protocol=read(current_report/'S2_protocol.json')
-    if args.geometry_recovery:
+    p=argparse.ArgumentParser();p.add_argument('--checkpoint-dir',default='S2_objects');p.add_argument('--preview-only',action='store_true');p.add_argument('--recovery',action='store_true');p.add_argument('--geometry-recovery',action='store_true')
+    p.add_argument('--stage',choices=['S3','S4','S5','S6']);args=p.parse_args()
+    prefix=args.stage or 'S2'
+    current_report=REPORT/args.stage if args.stage else REPORT/'S2_geometry_recovery' if args.geometry_recovery else REPORT/'S2_recovery' if args.recovery else REPORT
+    if args.stage:args.checkpoint_dir=f'{args.stage}/formal'
+    directory=RUNS/args.checkpoint_dir;checkpoint=directory/'checkpoint.pt';before=sha(checkpoint)
+    if args.stage:
+        from variants.staged_reconstruction.stage4.bind import load_physics_state
+        renderer=setup();torch.set_num_threads(4);scene,state,_=load_physics_state(checkpoint)
+        protocol=read(current_report/'protocol.json')
+    else:
+        renderer=setup();torch.set_num_threads(4);protocol=read(current_report/'S2_protocol.json')
+    if args.stage:pass
+    elif args.geometry_recovery:
         from variants.staged_reconstruction.geometry_recovery.model import BoundedScene
         scene=BoundedScene(protocol)
     elif args.recovery:
         from variants.staged_reconstruction.recovery.train import RecoveryScene
         scene=RecoveryScene(protocol)
     else:scene=ObjectScene(protocol)
-    directory=RUNS/args.checkpoint_dir;checkpoint=directory/'checkpoint.pt';before=sha(checkpoint)
     state=torch.load(checkpoint,map_location='cpu',weights_only=False);scene.load_state_dict(state['model']);step=state['iteration']
-    assert state['protocol_sha256']==sha(current_report/'S2_protocol.json')
+    assert state['protocol_sha256']==sha(current_report/('protocol.json' if args.stage else 'S2_protocol.json'))
     parent=torch.load(RUNS/'S1_static/checkpoint.pt',map_location='cpu',weights_only=False)['model']
-    assert all(torch.equal(v,scene.static.state_dict()[k].cpu()) for k,v in parent.items())
+    static_exact=all(torch.equal(v,scene.static.state_dict()[k].cpu()) for k,v in parent.items())
+    geometry_exact=all(torch.equal(v,scene.static.state_dict()[k].cpu()) for k,v in parent.items() if not k.startswith('_features'))
+    assert geometry_exact and (static_exact or args.stage=='S6')
     assert all(v.isfinite().all() for v in state['model'].values())
     from variants.staged_reconstruction.stage2.freeze import verify
     verify()
@@ -50,9 +61,15 @@ def main():
     if args.geometry_recovery:
         from variants.staged_reconstruction.geometry_recovery.freeze import verify as verify_geometry
         verify_geometry()
+    if args.stage:
+        from variants.staged_reconstruction.stage3.train import freeze as verify_physics
+        verify_physics(read(REPORT/'S3/protocol.json'))
+        if args.stage!='S3':
+            from variants.staged_reconstruction.continuation import freeze as verify_later
+            verify_later(args.stage)
     meta=read(DATA/'transforms_train.json');byid={int(Path(f['file_path']).stem):f for f in meta['frames']}
     identity=read(REPORT/'S2_identity.json');lookup=dict(zip(identity['frame_ids'],identity['early_owner_to_component']))
-    out=ROOT/'output/staged_reconstruction'/('S2_geometry_recovery' if args.geometry_recovery else 'S2_recovery' if args.recovery else 'S2_preview' if args.preview_only else 'S2_objects');out.mkdir(parents=True,exist_ok=True)
+    out=ROOT/'output/staged_reconstruction'/(args.stage or ('S2_geometry_recovery' if args.geometry_recovery else 'S2_recovery' if args.recovery else 'S2_preview' if args.preview_only else 'S2_objects'));out.mkdir(parents=True,exist_ok=True)
     selected=[2,27,42,43,52,86,166,188,200];rows=[];panels=[]
     colors=np.array([[1.,.2,.2],[.2,1.,.2],[1.,.8,.1],[.65,.3,1.]])
     for number in selected:
@@ -76,9 +93,9 @@ def main():
              'total_visible_dynamic_mass':float(total.sum()),'cross_scale_component_counts':[int(small.max()+1),int(masks.max()+1)]}
         rows.append(row)
         Image.fromarray(uint8(pkg['render'])).save(out/f'train_{number:04d}_step{step:05d}.png')
-        panels.append(np.concatenate([panel(gt,f'{number}: observed RGB'),panel(uint8(pkg['render']),f'S2 step{step}'),
+        panels.append(np.concatenate([panel(gt,f'{number}: observed RGB'),panel(uint8(pkg['render']),f'{prefix} step{step}'),
             panel((np.clip(overlay,0,1)*255).round().astype(np.uint8),'Visible group contributions; unknown after occlusion')],axis=1))
-    Image.fromarray(np.concatenate(panels,axis=0)).save(out/f'S2_review_step{step:05d}.png')
+    Image.fromarray(np.concatenate(panels,axis=0)).save(out/f'{prefix}_review_step{step:05d}.png')
     if not args.preview_only:
         import cv2
         all_meta=read(ROOT/'data/PIDG/rubber_duck/transforms_all.json')
@@ -99,10 +116,10 @@ def main():
             summaries.append({'view':view,'native_render_width':1600,'video_width':800,'decoded_frames':count,
                               'display_fps':20,'acquisition_fps_unknown':True,'novel_view_GT_available':False})
             print('OBJECT_VIDEO_REVIEW',view,count,flush=True)
-        write(current_report/'S2_exports.json',{'iteration':step,'checkpoint_sha256':before,'videos':summaries})
+        write(current_report/f'{prefix}_exports.json',{'iteration':step,'checkpoint_sha256':before,'videos':summaries})
     assert sha(checkpoint)==before
-    write(current_report/('S2_preview.json' if args.preview_only else 'S2_review_numeric.json'),{'iteration':step,
-        'checkpoint_sha256':before,'static_exactly_matches_S1':True,'source_freeze_passed':True,
+    write(current_report/(f'{prefix}_preview.json' if args.preview_only else f'{prefix}_review_numeric.json'),{'iteration':step,
+        'checkpoint_sha256':before,'static_exactly_matches_S1':static_exact,'static_geometry_exactly_matches_S1':geometry_exact,'source_freeze_passed':True,
         'optimizer_finite':all(v.isfinite().all().item() for s in state['optimizer']['state'].values() for v in s.values() if torch.is_tensor(v)),
         'frames':rows,'manual_image_review_pending':True,'physical_ID_after_ambiguity':'unknown'})
     print('OBJECT_REVIEW_NUMERIC_COMPLETE',step,flush=True)

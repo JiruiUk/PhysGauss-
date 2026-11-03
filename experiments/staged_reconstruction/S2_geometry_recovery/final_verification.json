@@ -1,0 +1,57 @@
+{
+  "stage": "S2",
+  "iteration": 16000,
+  "checkpoint_sha256": "8d22348fb5033c1441f598b189000b36a8f965fa8acd7b594871d52849381730",
+  "native_validation": {
+    "PSNR": 27.959808603922525,
+    "dynamic_PSNR": 24.25343265533447,
+    "dynamic_alpha": 0.9826535602410634,
+    "static_PSNR": 35.53011054992676,
+    "static_alpha": 0.9972467422485352,
+    "composite_dynamic_region_alpha": 0.9904871424039204,
+    "dynamic_leakage_on_static": 0.015189842594069584,
+    "background_alpha": 0.007100326552366217
+  },
+  "native_test": {
+    "PSNR": 28.01871654510498,
+    "dynamic_PSNR": 24.360975914001465,
+    "dynamic_alpha": 0.9825879263877869,
+    "static_PSNR": 35.76370594024658,
+    "static_alpha": 0.9972535216808319,
+    "composite_dynamic_region_alpha": 0.9905975222587585,
+    "dynamic_leakage_on_static": 0.015213611507570023,
+    "background_alpha": 0.007004977853503078
+  },
+  "S1_static_validation_PSNR": 35.643816,
+  "gates": {
+    "dynamic_PSNR": true,
+    "dynamic_only_alpha": true,
+    "static_preservation": true
+  },
+  "native_images_reviewed": true,
+  "manual_scope": "Nine observed-camera RGB/group panels plus fixed86/fixed188/original native t2/86/188; videos decoded all200frames, not manually watched every frame",
+  "image_sha256": {
+    "output\\staged_reconstruction\\S2_geometry_recovery\\fixed188_t0002_native.png": "734010a2671b23cde7e72d299e30787fc5b26d79ed702d43803abb55cdf03597",
+    "output\\staged_reconstruction\\S2_geometry_recovery\\fixed188_t0086_native.png": "68ea586fe0b83ee9155ed59c38450af039a6a6a94d75d435aea6083cd24e7801",
+    "output\\staged_reconstruction\\S2_geometry_recovery\\fixed188_t0188_native.png": "cd1aeed60520e52175fb1bcff9442df16012f0ab89d8cf05d0798a0ae3f4d757",
+    "output\\staged_reconstruction\\S2_geometry_recovery\\fixed86_t0002_native.png": "5597ab640a054b9f7fece094d73ad4d80473cef0ca052879a2687d64870ae54f",
+    "output\\staged_reconstruction\\S2_geometry_recovery\\fixed86_t0086_native.png": "a15b716ee54e23f40fb4b894e0c9def9bd729b53367d6c54d6be5d64669267f4",
+    "output\\staged_reconstruction\\S2_geometry_recovery\\fixed86_t0188_native.png": "83ce844e065bc32f02481fa81f33c09996433c908521335c9eab885fe1c88fe5",
+    "output\\staged_reconstruction\\S2_geometry_recovery\\original_t0002_native.png": "b2ab1224fe6e27e8e22441092fb3de8b605f2ca6ebde24b4ca003fcdcca2fe6d",
+    "output\\staged_reconstruction\\S2_geometry_recovery\\original_t0086_native.png": "a15b716ee54e23f40fb4b894e0c9def9bd729b53367d6c54d6be5d64669267f4",
+    "output\\staged_reconstruction\\S2_geometry_recovery\\original_t0188_native.png": "cd1aeed60520e52175fb1bcff9442df16012f0ab89d8cf05d0798a0ae3f4d757",
+    "output\\staged_reconstruction\\S2_geometry_recovery\\S2_review_step16000.png": "76f8579c756a7701e96de9da49876c155fa2ca195aba559db17c9c5a948910e6"
+  },
+  "static_exactly_matches_S1": true,
+  "optimizer_finite": true,
+  "source_freeze_passed": true,
+  "geometry_success_established": false,
+  "physical_reidentification_established": false,
+  "limitations": [
+    "Novel fixed views still have sheets/streaks and incomplete duck surfaces",
+    "At qualified frame42 green-group own-component share is0.479; early visible ownership is imperfect",
+    "Late unknown model banks can cover different ducks; do not interpret bank indices as physical IDs",
+    "Conditional image evidence does not certify static or dynamic contact surfaces"
+  ],
+  "decision": "Admit as image-supported initialization for sequential reconstruction/kinematic/track correction only; no geometry/material/contact inference success claim"
+}
