@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "arms": {
+    "control": {
+      "actual_optimizer_updates": 100,
+      "physics_calls": 0,
+      "checkpoint_sha256": "dc79ae02455fceed725d1643ba10560ad5104a20afc1dba527b1f98010a1bf97",
+      "initial_state_camera_Adam_RNG_exact": true,
+      "same_camera_order_as_original_S3U": true,
+      "static_frozen": true
+    },
+    "ordinal": {
+      "actual_optimizer_updates": 200,
+      "physics_calls": 0,
+      "checkpoint_sha256": "91479f85b019430d5cf02fd72727b65f9a69c0db747e9844023357b82203e4c7",
+      "initial_state_camera_Adam_RNG_exact": true,
+      "same_camera_order_as_original_S3U": true,
+      "static_frozen": true
+    }
+  },
+  "test_RGB_read": false
+}
