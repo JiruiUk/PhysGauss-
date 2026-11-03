@@ -261,3 +261,30 @@ independent novel-view geometry/trajectory evaluation, retaining unknown physica
 identities. It must not reintroduce physical-body-count estimation into this
 unified-pool branch. Original incomplete contact goals stay recorded; no weight
 sweep or paused historical trainer/automation is resumed.
+
+### Unknown static support requirement: S1-A (2026-11-03)
+
+The user requires static discovery without preassigned blue/static labels.
+Prior S1/S3-U remain historical prior-conditioned results, not evidence of this
+ability. New opt-in S1-A uses training RGB, times and supplied calibrated cameras;
+alpha only composites RGB and never gives motion labels. Generic tracks must
+explain held observations by one fixed world point; low-parallax/short/ambiguous
+tracks remain unknown. No original masks, hull, weights or selected tracks enter.
+
+Initial discovery:97 fixed-point candidates/200 incompatible/515 unknown;
+conservative initialization543 Gaussians. Actual inferred-mask inspection reveals
+late support-face coverage with early sampled views unknown. Train the predeclared
+12k conditional static pilot only after tests, native parity and40-to80 recovery.
+Report coverage and limitations; complete static recovery is not established.
+Do not substitute color priors for missing evidence or attach physics/force/contact.
+See [S1-A plan](staged_reconstruction/S1_automatic/plan.md). The next full-scene
+automatic version must also remove S3-U's yellow dynamic initialization/coverage;
+replacing only static support would not meet the user's full no-label intent.
+
+S1-A12k training/recovery audit completed, but actual images show only partial
+late horizontal support and missing tall surfaces/early-view fragments.51/120
+images have some inferred support; all-pixel fraction0.6507% is not static recall.
+Training selected-region24.069166dB does not establish independent performance.
+Do not replace S3-U static support or certify full automatic decomposition.
+Next evidence priority is long-baseline correspondence and coverage validation;
+no color-prior fallback, threshold sweep or physics integration follows.

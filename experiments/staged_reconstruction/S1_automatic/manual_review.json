@@ -1,0 +1,23 @@
+{
+  "checkpoint_sha256": "168e83d3c9b35eacee9aa74aed4949562f3cf95576882f12b1ec53f5651133f9",
+  "native_images_reviewed": true,
+  "review_method": "Actual view_image inspection of inferred_masks.png, native_review.png, static_t0086_native.png and static_t0188_native.png; no claim of manually watching all video frames or browser playback",
+  "findings": [
+    "\u67e5\u770b\u4e862/27/43/86/166/188/200\u65f6\u523b\u7684RGB\u3001\u51e0\u4f55\u521d\u59cb\u5316\u548c12k\u9759\u6001\u91cd\u5efa\u5bf9\u7167\uff0c\u5e76\u5355\u72ec\u67e5\u770b\u56fa\u5b9a86/188\u76841600\u00d7900\u539f\u56fe\u3002",
+    "\u81ea\u52a8\u63a9\u819c\u5728\u65e9\u671f\u62bd\u67e5\u56fe\u4e2d\u6ca1\u6709\u6b63\u652f\u6301\uff0c\u665a\u671f\u4ec5\u652f\u6301\u90e8\u5206\u652f\u6491\u9762\uff1b\u8fd9\u662f\u51e0\u4f55/\u8ddf\u8e2a\u8bc1\u636e\u4e0d\u8db3\uff0c\u4e0d\u80fd\u628a\u672a\u9009\u533a\u57df\u89e3\u91ca\u4e3a\u52a8\u6001\u6216\u7a7a\u80cc\u666f\u3002",
+    "\u8bad\u7ec3\u540e\u7684\u665a\u671f\u4e0b\u65b9\u6c34\u5e73\u7ed3\u6784\u51fa\u73b0\u7c97\u7565\u8f6e\u5ed3\uff0c\u4f46\u9ad8\u7acb\u67f1\u7684\u5927\u90e8\u5206\u8868\u9762\u53ca\u5176\u4ed6\u652f\u6491\u533a\u57df\u7f3a\u5931\uff0c\u8fb9\u754c\u4ecd\u6a21\u7cca\u5e76\u6709\u5916\u6ea2\u3002",
+    "\u65e9\u671f\u89c6\u89d2\u548c\u56fa\u5b9a86\u539f\u56fe\u4ecd\u8868\u73b0\u4e3a\u6a21\u7cca\u7247\u6bb5\u3001\u5c16\u523a\u4e0e\u5149\u6655\uff0c\u672a\u6062\u590d\u5b8c\u6574\u9759\u6001\u51e0\u4f55\uff1b\u65e0\u6cd5\u4ec5\u9760\u8bad\u7ec3\u5df2\u9009\u533a\u57df\u7684\u62df\u5408\u5ba3\u79f0\u65b0\u89c6\u89d2\u6b63\u786e\u3002",
+    "\u6ca1\u6709\u9759\u6001\u6807\u7b7e\u8f93\u5165\u4e0d\u7b49\u4e8e\u81ea\u52a8\u5206\u89e3\u6210\u529f\u3002\u5f53\u524d\u7ed3\u679c\u4e0d\u6ee1\u8db3\u5b8c\u6574\u81ea\u52a8\u9759\u6001\u6062\u590d\uff0c\u4e0d\u63a5\u5165S3-U\u66ff\u6362\u5176\u9759\u6001\u652f\u6491\u3002",
+    "\u6ca1\u6709\u72ec\u7acb\u9759\u6001\u5206\u5272\u6216\u51e0\u4f55\u771f\u503c\uff0c\u4e0d\u80fd\u5b9a\u91cf\u8bc1\u660e\u9759\u6001\u53ec\u56de\u7387\u3001\u6c38\u4e45\u9759\u6b62\u6027\u6216\u63a5\u89e6\u8868\u9762\u51c6\u786e\u6027\u3002"
+  ],
+  "complete_static_geometry_accepted": false,
+  "accepted_for_S3_U_replacement": false,
+  "all_video_frames_manually_watched": false,
+  "browser_playback_observed": false,
+  "viewed_image_sha256": {
+    "output/staged_reconstruction/S1_automatic/inferred_masks.png": "3bb2f88057b114dda862df659b73fa8099334825cf9a71c9f81f4c3ac5227053",
+    "output/staged_reconstruction/S1_automatic/native_review.png": "deee3810caf834f7317c6ca0752856c17ea127ed9f40e7df3b796286a988dd67",
+    "output/staged_reconstruction/S1_automatic/static_t0086_native.png": "5f667f8a5d610f1b397952aa56754ae9aafa678a068bebf4e132d5e8a8059a1e",
+    "output/staged_reconstruction/S1_automatic/static_t0188_native.png": "b863c9f1402a4b8cefe21e472bcab7335d45246f02f6812b973530b0c08d0501"
+  }
+}

@@ -295,3 +295,32 @@ original trajectory. Original stage metrics/figures are unchanged. This request
 ends at S3-U; S4-U--S6-U, new physics and historical paused automations are not
 started. Further evidence work still prioritizes independently observable
 geometry; no count/identity inference is introduced into this unified-pool branch.
+
+## S1-A: unknown static support, without semantic color labels (2026-11-03)
+
+User requires discovering static support from asynchronous cameras/times without
+knowing blue is static. Implemented a separate opt-in RGB-geometric pipeline;
+no S1 masks/weights/hull, old selected tracks or blue/yellow rules are inputs.
+Camera calibration remains supplied. Dataset alpha only composites input RGB.
+Unmasked tracks are fitted/tested against one fixed-world point; insufficient
+parallax/time evidence and unsupported image regions remain unknown.
+
+17 tests and independent40-to80 recovery pass; native renderer parity is exact.
+An initial smoke audit caught RNG consumed by native adapter construction;
+revision2 preserves RNG around the read-only check and retains the failed code/run.
+The declared12k formal static training completed with all6 Adam states, all
+sampling/RNG and378 historical plus new frozen source/input hashes verified.
+
+97 candidate tracklets/200 fixed-point-incompatible/515 unknown yield543 initial
+static Gaussians.51/120 training images have any positive support,41 qualify for
+training. Inferred positive pixels cover0.6507% of all pixels (including empty
+background/dynamic content; not static recall). Training inferred-region PSNR
+24.069166dB is selection-conditioned and not comparable to S1 validation scores.
+
+Actual native inspection shows partial late horizontal support, largely missing
+tall support surfaces and early-view blur/fragments/spikes. Complete unknown-static
+recovery is not achieved; reject automatic replacement of S3-U's static bank.
+PLY/native images and200-frame H264 camera-trajectory video are exported; first
+PLY adapter failure is retained and repaired only in independent export code.
+Original checkpoints remain intact. No physical loss, count/material inference,
+historical automation or follow-on training starts. See S1_automatic/assessment.md.

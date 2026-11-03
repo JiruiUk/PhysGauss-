@@ -156,3 +156,35 @@ remains the calibrated synthetic RGB geometry audit described above. Training
 must preserve this user's choice of a unified pool without estimating count;
 any independent truth remains evaluation-only. Original contact/constitutive/
 force goals remain unresolved and disabled; no historical paused work resumes.
+
+### Unknown static regions: S1-A (user requirement, 2026-11-03)
+
+The user requires discovering static support from different times/cameras,
+without knowing that blue is static. Historical S1 and S3-U do not satisfy this:
+S1 uses blue masks and S3-U also retains yellow dynamic appearance objectives.
+Keep those results, with their prior dependence explicit.
+
+The separate opt-in S1-A branch uses supplied calibrated cameras and training
+RGB (dataset alpha only composites RGB), unmasked tracks, disjoint fit/check
+fixed-world-point reprojection, parallax and temporal evidence. Generic image
+regions receive geometric seeds; unsupported/occluded/mixed regions stay unknown.
+No S1 weights/hull/old color-selected tracks or blue/yellow thresholds are inputs.
+This is static-motion discovery, not material segmentation or object counting.
+
+The first discovery finds97 fixed-point candidate tracklets,200 incompatible
+with a fixed point and515 unknown. A conservative543-point shell passes the
+declared geometric initialization gate. Actual mask inspection shows mostly
+late support faces and no accepted support in sampled early frames; this is
+partial recovery, not complete automatic scene decomposition. Execute only the
+declared12k static pilot after tests/native parity/full-state recovery; report
+unknown coverage rather than filling it from color priors. No automatic physics
+or S3-U static-bank replacement is admitted by these partial observations.
+Detailed protocol/results: [S1_automatic/plan.md](staged_reconstruction/S1_automatic/plan.md).
+
+S1-A final12k result:17 tests, independent recovery and full-state audit pass.
+51/120 images have any positive support(41 trainable); all-pixel support0.6507%
+is not static recall. Training inferred-region PSNR24.069166dB is not comparable
+to S1 validation. Actual native images retain missing tall surfaces and early
+fragments/spikes. Reject S3-U static replacement; complete automatic reconstruction
+remains unresolved. Preserve this negative result, improve geometric correspondence
+and coverage evidence before another integration, without a color-prior fallback.

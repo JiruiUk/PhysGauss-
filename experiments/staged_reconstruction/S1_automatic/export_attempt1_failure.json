@@ -1,0 +1,17 @@
+{
+  "stage": "PLY export only",
+  "training_failed": false,
+  "failure": "Native GaussianModel dynamic_mask remained zero-length while static adapter has543 points",
+  "repair": "Set exporter adapter dynamic_mask to543 false values; do not change trained tensors",
+  "preserved_images": {
+    "output/staged_reconstruction/S1_automatic/inferred_masks.png": "3bb2f88057b114dda862df659b73fa8099334825cf9a71c9f81f4c3ac5227053",
+    "output/staged_reconstruction/S1_automatic/native_review.png": "deee3810caf834f7317c6ca0752856c17ea127ed9f40e7df3b796286a988dd67",
+    "output/staged_reconstruction/S1_automatic/static_t0002_native.png": "56690c9c0c59f6bf1ff8f0bb3a9755dfa43ac6cbc97eaba61a303fbf42c837f9",
+    "output/staged_reconstruction/S1_automatic/static_t0027_native.png": "03ede916b16c295f6554fe3e18610a7428f72b1044a42608a54438617a7a7ff7",
+    "output/staged_reconstruction/S1_automatic/static_t0043_native.png": "2fcac0e3c5e4f0e3a103847e9c2339c0a74435cbc4ad8ceed4568d4ef61a3243",
+    "output/staged_reconstruction/S1_automatic/static_t0086_native.png": "5f667f8a5d610f1b397952aa56754ae9aafa678a068bebf4e132d5e8a8059a1e",
+    "output/staged_reconstruction/S1_automatic/static_t0166_native.png": "d427f770a670a9561b4b74b1693fce4f56412d1b20b84c499bf3ea89e2eaca3d",
+    "output/staged_reconstruction/S1_automatic/static_t0188_native.png": "b863c9f1402a4b8cefe21e472bcab7335d45246f02f6812b973530b0c08d0501",
+    "output/staged_reconstruction/S1_automatic/static_t0200_native.png": "0d1c23f44bb815a30b2e155d884d97b728153523b50d861e9443b5f4174d5be3"
+  }
+}

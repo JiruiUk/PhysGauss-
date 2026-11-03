@@ -1,5 +1,6 @@
 """Native S1-A partial-static artifacts, coverage-aware diagnostics and 3DGS PLY."""
 import json
+import hashlib
 from pathlib import Path
 import subprocess
 import sys
@@ -22,6 +23,11 @@ def pixels(tensor):
     return (tensor.detach().clamp(0, 1).permute(1, 2, 0).cpu().numpy()*255).round().astype('uint8')
 
 
+def camera_hash(cam):
+    values = cam.world_view_transform.detach().cpu().numpy().tobytes()+cam.full_proj_transform.detach().cpu().numpy().tobytes()
+    return hashlib.sha256(values+str((cam.FoVx, cam.FoVy, cam.image_width, cam.image_height)).encode()).hexdigest()
+
+
 @torch.no_grad()
 def main():
     verify()
@@ -37,12 +43,16 @@ def main():
     meta = read(DATA/'transforms_train.json')
     masks = np.load(RUNS/'inferred_masks.npz')
     selected = [2, 27, 43, 86, 166, 188, 200]
-    rows, panels, files = [], [], []
+    rows, panels, files, fixed_cameras = [], [], [], {}
     for frame in meta['frames']:
         number = int(Path(frame['file_path']).stem)
         gt, positive = load_frame(frame, 1600, masks)
         cam = camera(frame, meta, 1600)
+        original_cam = camera_hash(cam)
         package = render_static(renderer, cam, model)
+        assert camera_hash(cam) == original_cam
+        if number in [86, 188]:
+            fixed_cameras[str(number)] = original_cam
         pred = package['render'].clamp(0, 1)
         row = {'frame': number, 'inferred_static_pixels': int(positive.sum()),
                'image_pixels': positive.numel(), 'unknown_fraction': float((~positive).float().mean())}
@@ -64,6 +74,7 @@ def main():
     native = GaussianModel(3); native.active_sh_degree = 3
     for name, parameter in model.named_parameters():
         setattr(native, name, parameter)
+    native.dynamic_mask = torch.zeros(len(model.get_xyz), dtype=torch.bool, device=model.get_xyz.device)
     ply = out/'static_automatic_12000.ply'; native.save_ply(str(ply))
     # Static field rendered from all original cameras. No artificial time deformation.
     all_meta = read(ROOT/'data/PIDG/rubber_duck/transforms_all.json')
@@ -77,7 +88,9 @@ def main():
             '-movflags', '+faststart', str(video)], stdin=subprocess.PIPE, stdout=subprocess.DEVNULL,
             stderr=log, creationflags=subprocess.CREATE_NO_WINDOW)
         for frame in frames:
-            image = pixels(render_static(renderer, camera(frame, all_meta, 1600), model)['render'])
+            cam = camera(frame, all_meta, 1600); original_cam = camera_hash(cam)
+            image = pixels(render_static(renderer, cam, model)['render'])
+            assert camera_hash(cam) == original_cam
             process.stdin.write(np.asarray(Image.fromarray(image).resize((800, 450), Image.Resampling.LANCZOS)).tobytes())
         process.stdin.close(); assert process.wait(timeout=60) == 0
     cap = cv2.VideoCapture(str(video)); count = 0
@@ -98,6 +111,7 @@ def main():
         'frames_with_any_inferred_static_pixels': sum(r['inferred_static_pixels'] > 0 for r in rows),
         'mean_inferred_region_PSNR_nonempty_training_frames_only': float(np.mean([r['training_inferred_region_PSNR'] for r in rows if 'training_inferred_region_PSNR' in r])),
         'frames': rows, 'images': {p.relative_to(ROOT).as_posix(): sha(p) for p in files},
+        'fixed_camera_fingerprints': fixed_cameras, 'camera_matrices_unchanged_after_render': True,
         'PLY': {'path': ply.relative_to(ROOT).as_posix(), 'sha256': sha(ply)},
         'video': {'path': video.relative_to(ROOT).as_posix(), 'sha256': sha(video), 'decoded_frames': count,
                   'fps': 20, 'codec': 'H264 Main/yuv420p/faststart', 'camera_policy': 'original calibrated trajectory; static geometry independent of time'},
