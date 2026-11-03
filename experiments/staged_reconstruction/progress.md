@@ -161,3 +161,9 @@ the predeclared conditional S6 reconstruction continuation; object-object
 nonpenetration/contact forces/friction/restitution remain unvalidated/off.
 S6 real-parent40→80 recovery smoke is now running, with0.25 learning rates,
 static appearance unfrozen and static geometry exactly fixed to S1.
+
+S6 actual40→80 independent-process recovery passes138 Adam states, exact
+Python RNG/camera replay, finite model/optimizer and static geometry freeze.
+The two additional appearance tensors update as intended. Formal4000 launched
+PID262664. Completion still requires native val/test, independent objective and
+source/sampler audits, actual fixed-view review and final measured report.

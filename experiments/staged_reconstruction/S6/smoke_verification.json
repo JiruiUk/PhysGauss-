@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "stage": "S6",
+  "independent_process_resume_40_to_80": true,
+  "checkpoint_sha256": "7ffd87e71af0b2e49d922a6f66d1fb4917d9d293ef509acf3eb689536ebb5abf",
+  "all_actual_Adam_counters_advance_correctly": true,
+  "optimizer_state_count": 138,
+  "python_RNG_and_camera_sampler_exact": true,
+  "all_RNG_payloads_present": true,
+  "derived_physics_graph_state_present": true,
+  "static_geometry_exact_S1": true,
+  "static_appearance_trainable": true,
+  "finite_model_and_optimizer": true,
+  "changed_parameter_tensors": 138,
+  "actual_physics_and_deformation_updates": true,
+  "not_formal_stage_completion": true
+}
