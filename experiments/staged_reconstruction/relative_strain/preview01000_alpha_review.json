@@ -1,0 +1,14 @@
+{
+  "actual_updates": 1000,
+  "snapshot_sha256": "86a4ad78434fdab5d267a91f3a3d05e906ee2841dc30ba51a0a401cdd4a1b461",
+  "native_width": 1600,
+  "actual_visual_inspection_completed": true,
+  "inspected": {
+    "output/staged_reconstruction/relative_strain/previews/step01000/c188_t146_alpha.png": "786b7f1cd3adbde3ba4014be24b17fcbc02bd1d4e73861990fe582d61f4cd303",
+    "output/staged_reconstruction/relative_strain/previews/step01000/c86_t86_alpha.png": "dc4cabfb36e422195844a4b07a10212e692ef646a7dc84f517ab73c96bd5544a"
+  },
+  "findings": "Dynamic-only alpha at c188/t146 retains detached/flattened support. At c86/t86 the long sheet with gaps and incomplete upper support remains in alpha. These failures do not arise only from SH color or static compositing. Early snapshot only; does not establish final outcome or exact true3D geometry.",
+  "optimizer_updates": 0,
+  "test_RGB_read": false,
+  "training_protocol_changed": false
+}

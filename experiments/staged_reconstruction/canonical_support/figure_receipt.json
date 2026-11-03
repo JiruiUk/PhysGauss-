@@ -1,0 +1,14 @@
+{
+  "figure": "output/staged_reconstruction/canonical_support/support_diagnosis.png",
+  "figure_sha256": "9bd051656c40657ce80e5a200eeac9be37a2f888514e713b43430f650583b67e",
+  "model_receipts_sha256": {
+    "experiments/staged_reconstruction/canonical_support/s3u_final6k.json": "6fac70ee116003da94229ca11739148c18d7ed999c480ca1881748cf1c74cfd7",
+    "experiments/staged_reconstruction/canonical_support/i8_final16000.json": "39a139e97b206fee5f8c071b80dbdb10c0260368fe62f142a17907ff3dac8610",
+    "experiments/staged_reconstruction/canonical_support/i9_step01000.json": "330f0f48c5e106952bf35f7d079cf25e1e8e6ece679f31fedf9bada673fc6632"
+  },
+  "actual_visual_inspection_completed": true,
+  "different_budgets_explicitly_labeled": true,
+  "training_frames_per_model": 120,
+  "test_RGB_read": false,
+  "optimizer_updates": 0
+}
