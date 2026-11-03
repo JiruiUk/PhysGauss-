@@ -1,0 +1,226 @@
+{
+  "passed": true,
+  "zero_weight_inherited_loss_exact": true,
+  "gradient_max_abs_difference": 1.4901161193847656e-08,
+  "gradient_scale": 0.9991461038589478,
+  "depth_backward_qualified": {
+    "training_only": true,
+    "depth_is_GT": false,
+    "optimizer_updates": 0,
+    "parent_unchanged": true,
+    "rows": [
+      {
+        "frame": 2,
+        "source_sha256": "4fb9d3c232b0e65ec8284cc2ff85faf3cc4d1d6d357d2d0924cdd53172ba2387",
+        "source_shape": [
+          1440,
+          2560
+        ],
+        "finite": true,
+        "static_pixels": 23697,
+        "static_pseudo_vs_normalized_render_spearman": -0.8232377480680672,
+        "dynamic_pseudo_vs_normalized_render_spearman": -0.5331625871669997,
+        "pseudo_dynamic_quantiles": [
+          10.228158760070801,
+          11.95839195251465,
+          14.344569206237793,
+          16.93199577331543,
+          17.285069885253908
+        ],
+        "render_dynamic_quantiles": [
+          5.834545974731445,
+          5.888969898223877,
+          6.148622989654541,
+          6.360940456390381,
+          6.390615653991699
+        ],
+        "raw_over_alpha_median": 0.9997201561927795,
+        "native_depth_gradient": {
+          "finite": true,
+          "canonical_norm": 0.061156030744314194,
+          "field_norm": 2.319772767368704
+        }
+      },
+      {
+        "frame": 43,
+        "source_sha256": "354639db29622cf00f7f289b615bac6643b96cce4b32cd88e295134cfd0d3447",
+        "source_shape": [
+          1440,
+          2560
+        ],
+        "finite": true,
+        "static_pixels": 26862,
+        "static_pseudo_vs_normalized_render_spearman": -0.8374556637198218,
+        "dynamic_pseudo_vs_normalized_render_spearman": -0.6768554348568692,
+        "pseudo_dynamic_quantiles": [
+          15.740811471939088,
+          16.42663745880127,
+          17.365201950073242,
+          25.36688098907471,
+          25.971838874816893
+        ],
+        "render_dynamic_quantiles": [
+          5.087089786529541,
+          5.197382068634033,
+          6.066619634628296,
+          6.222873163223267,
+          6.4062848472595215
+        ],
+        "raw_over_alpha_median": 0.9996572732925415,
+        "native_depth_gradient": {
+          "finite": true,
+          "canonical_norm": 0.1980443298816681,
+          "field_norm": 2.6871152129024267
+        }
+      },
+      {
+        "frame": 86,
+        "source_sha256": "473a2784351ff665b3e47806dc4cfd7d4f7264477bc933c7339be915ed881bcb",
+        "source_shape": [
+          1440,
+          2560
+        ],
+        "finite": true,
+        "static_pixels": 25286,
+        "static_pseudo_vs_normalized_render_spearman": -0.40286365327846396,
+        "dynamic_pseudo_vs_normalized_render_spearman": -0.6434721580138465,
+        "pseudo_dynamic_quantiles": [
+          10.085946598052978,
+          11.969659614562989,
+          14.830270767211914,
+          22.639165496826173,
+          23.380493717193605
+        ],
+        "render_dynamic_quantiles": [
+          5.54468948841095,
+          5.586204385757446,
+          5.649442195892334,
+          5.751205921173096,
+          5.841319293975831
+        ],
+        "raw_over_alpha_median": 0.9997886419296265,
+        "native_depth_gradient": {
+          "finite": true,
+          "canonical_norm": 0.15427915751934052,
+          "field_norm": 2.426158107817173
+        }
+      },
+      {
+        "frame": 146,
+        "source_sha256": "a77a6d115607352d914978e230834c85490298b14f40f51039f8b2b70167b794",
+        "source_shape": [
+          1440,
+          2560
+        ],
+        "finite": true,
+        "static_pixels": 25256,
+        "static_pseudo_vs_normalized_render_spearman": -0.7839983574329247,
+        "dynamic_pseudo_vs_normalized_render_spearman": -0.25280706715902374,
+        "pseudo_dynamic_quantiles": [
+          7.811315479278565,
+          8.682991790771485,
+          10.052030563354492,
+          17.87713851928711,
+          18.428685073852538
+        ],
+        "render_dynamic_quantiles": [
+          4.0826124000549315,
+          4.576388835906982,
+          4.884879112243652,
+          5.680276012420654,
+          5.951752490997315
+        ],
+        "raw_over_alpha_median": 0.9993977546691895,
+        "native_depth_gradient": {
+          "finite": true,
+          "canonical_norm": 0.9109876155853271,
+          "field_norm": 8.828938856720924
+        }
+      },
+      {
+        "frame": 188,
+        "source_sha256": "ddfc92c2974722fbb80c6a0c57bd3a285de4cd315cf5770fe084f2abbb37039d",
+        "source_shape": [
+          1440,
+          2560
+        ],
+        "finite": true,
+        "static_pixels": 31244,
+        "static_pseudo_vs_normalized_render_spearman": -0.8174221289124259,
+        "dynamic_pseudo_vs_normalized_render_spearman": 0.024305529391381,
+        "pseudo_dynamic_quantiles": [
+          3.4063508129119873,
+          3.98514986038208,
+          10.84057903289795,
+          12.214585304260254,
+          12.711720008850097
+        ],
+        "render_dynamic_quantiles": [
+          5.012788829803466,
+          5.125243282318115,
+          5.530428409576416,
+          5.695436668395996,
+          5.790029363632202
+        ],
+        "raw_over_alpha_median": 0.9994057416915894,
+        "native_depth_gradient": {
+          "finite": true,
+          "canonical_norm": 0.22376717627048492,
+          "field_norm": 3.227064548060298
+        }
+      },
+      {
+        "frame": 200,
+        "source_sha256": "266eeed08322b6d1162b487dea475d8540da0d2bd743751e36dfe562aa651105",
+        "source_shape": [
+          1440,
+          2560
+        ],
+        "finite": true,
+        "static_pixels": 31275,
+        "static_pseudo_vs_normalized_render_spearman": -0.8190921818378368,
+        "dynamic_pseudo_vs_normalized_render_spearman": 0.7244628371653906,
+        "pseudo_dynamic_quantiles": [
+          3.1526371836662292,
+          3.894464111328125,
+          10.574090957641602,
+          12.346284294128418,
+          12.781067094802857
+        ],
+        "render_dynamic_quantiles": [
+          5.027427778244019,
+          5.235990905761719,
+          5.553970575332642,
+          5.667263698577881,
+          5.711074204444885
+        ],
+        "raw_over_alpha_median": 0.9993629455566406,
+        "native_depth_gradient": {
+          "finite": true,
+          "canonical_norm": 0.2624720633029938,
+          "field_norm": 3.767399486154318
+        }
+      }
+    ],
+    "static_comparison_is_model_conditioned": true,
+    "visual_review": "pending"
+  },
+  "parent_unchanged": true,
+  "known_geometry_finite_difference": {
+    "known_camera_z": 5.0,
+    "normalized_render_z": 5.0,
+    "autograd_d_depth_d_z": 1.0000001192092896,
+    "finite_difference_d_depth_d_z": 0.9999274611473083,
+    "passed": true
+  },
+  "original_flags_off_checks": {
+    "passed": true,
+    "native_render_alpha_exact": true,
+    "inherited_reconstruction_loss_exact": true,
+    "gradient_max_abs_difference": 1.1175870895385742e-08,
+    "gradient_max_abs_scale": 0.32342830300331116,
+    "CUDA_atomic_gradient_tolerance": "max(1e-7,2e-5*gradient_scale)",
+    "original_model_structure_and_renderer_unchanged": true,
+    "optimizer_updates": 0
+  }
+}
