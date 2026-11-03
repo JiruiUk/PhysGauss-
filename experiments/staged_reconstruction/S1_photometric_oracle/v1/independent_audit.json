@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "results": {
+    "diffuse": {
+      "aggregate_views_verified": 96,
+      "all_original_D1_candidates_counted": 423747,
+      "independent_original_RGB_cost_and_groups_replay_views": [
+        0,
+        24,
+        72
+      ],
+      "independent_acceptance_and_visibility_counts_exact": true
+    },
+    "glossy": {
+      "aggregate_views_verified": 96,
+      "all_original_D1_candidates_counted": 423100,
+      "independent_original_RGB_cost_and_groups_replay_views": [
+        0,
+        24,
+        72
+      ],
+      "independent_acceptance_and_visibility_counts_exact": true
+    }
+  },
+  "measurement_sha256": "6186fcd4698fbc86c8c21c11c6d5920e8540af455e9b36cb31bd8a866f7602f5",
+  "source_sha256": "b46f452817e323f60c315bf613c656410f442923a4121c9f1d1c8a2cb67b0b00",
+  "frozen_inputs_unchanged": true,
+  "per_pixel_GT_assets_exported": false,
+  "fit_mean_reduction_numeric_tolerance": 0.0001,
+  "source_cost_implementation": "unchanged original source_cost",
+  "GPU_training_state_or_native_render_claim": false
+}
