@@ -8,3 +8,5 @@ Authorized next static reconstruction pilot. New branch only; no known static co
 - Independent40→80 process recovery passed in both arms. Birth smoke added8 points at30 and60; full Adam/RNG/sampler/confidence/topology replay passed. No old Adam counters/moments reset.
 - Formal protocol: geometry and birth arms, same initialization/120-camera pool/order, each12000 steps; progressive confidence every1000. Birth at3000/6000/9000, up to512/event; prune only trial-born points at5000/8000/11000.
 - Pending: formal training, checkpoint audit, native comparison against S1-CT, inferred-mask metrics, PLY, fixed86/188 and original-trajectory H264 exports, actual PNG review and plan update. No replacement of S3-U until evidence warrants it.
+
+G1 geometry completed12000 updates; all six Adam counters12000, finite parameters/moments, full RNG/camera/confidence replay and431 frozen source/input/history hashes passed. Points3273; nonzero image supervision12000/12000. Final numerical/native evaluation remains pending G2.
