@@ -1,0 +1,339 @@
+{
+  "passed": true,
+  "flags_off_native_rgb_alpha_loss_exact": true,
+  "disabled_install_skips_assets_and_keeps_original_field": true,
+  "gradient_max_abs_difference": 3.725290298461914e-09,
+  "gradient_scale": 0.06791653484106064,
+  "same_original_parameter_objects": true,
+  "original_covariance_field_queries_per_call": [
+    15507
+  ],
+  "new_shared_position_parameters": 33420,
+  "render_physics_center_max_abs_difference_after_updates": {
+    "0.0": 2.384185791015625e-07,
+    "0.43": 2.384185791015625e-07,
+    "1.0": 2.384185791015625e-07
+  },
+  "initial_enabled_rgb_alpha_exact": true,
+  "round_trip_after_updates_max_abs": {
+    "0.0": 1.7881393432617188e-07,
+    "0.43": 1.1920928955078125e-07,
+    "1.0": 1.7881393432617188e-07
+  },
+  "analytic_determinant_range_after_updates": {
+    "0.0": {
+      "min": 0.8889198899269104,
+      "max": 1.0185049772262573
+    },
+    "0.43": {
+      "min": 0.9244740605354309,
+      "max": 1.0624288320541382
+    },
+    "1.0": {
+      "min": 0.9126518964767456,
+      "max": 1.046539068222046
+    }
+  },
+  "canonical_and_field_gradients_finite_nonzero": true,
+  "forced_physics_integration_smoke_updates": 20,
+  "forced_physics_calls": 2,
+  "forced_physics_smoke_is_not_actual16k_warmup": true,
+  "physics_smoke_records": [
+    {
+      "global_step": 16001,
+      "phase": "physics",
+      "phase_step": 1,
+      "width": 1600,
+      "frame_index": 0,
+      "rgb": 0.025124723091721535,
+      "invertible_motion": true
+    },
+    {
+      "global_step": 16002,
+      "phase": "physics",
+      "phase_step": 2,
+      "width": 1600,
+      "frame_index": 1,
+      "rgb": 0.025425922125577927,
+      "invertible_motion": true
+    },
+    {
+      "global_step": 16003,
+      "phase": "physics",
+      "phase_step": 3,
+      "width": 1600,
+      "frame_index": 2,
+      "rgb": 0.026904059574007988,
+      "invertible_motion": true
+    },
+    {
+      "global_step": 16004,
+      "phase": "physics",
+      "phase_step": 4,
+      "width": 1600,
+      "frame_index": 3,
+      "rgb": 0.027703458443284035,
+      "invertible_motion": true
+    },
+    {
+      "global_step": 16005,
+      "phase": "physics",
+      "phase_step": 5,
+      "width": 1600,
+      "frame_index": 4,
+      "rgb": 0.028467154130339622,
+      "invertible_motion": true
+    },
+    {
+      "global_step": 16006,
+      "phase": "physics",
+      "phase_step": 6,
+      "width": 1600,
+      "frame_index": 5,
+      "rgb": 0.035426124930381775,
+      "invertible_motion": true
+    },
+    {
+      "global_step": 16007,
+      "phase": "physics",
+      "phase_step": 7,
+      "width": 1600,
+      "frame_index": 6,
+      "rgb": 0.04655267670750618,
+      "invertible_motion": true
+    },
+    {
+      "global_step": 16008,
+      "phase": "physics",
+      "phase_step": 8,
+      "width": 1600,
+      "frame_index": 7,
+      "rgb": 0.061141833662986755,
+      "invertible_motion": true
+    },
+    {
+      "global_step": 16009,
+      "phase": "physics",
+      "phase_step": 9,
+      "width": 1600,
+      "frame_index": 8,
+      "rgb": 0.06263799220323563,
+      "invertible_motion": true
+    },
+    {
+      "global_step": 16010,
+      "phase": "physics",
+      "phase_step": 10,
+      "width": 1600,
+      "frame_index": 9,
+      "rgb": 0.06368639320135117,
+      "physics": {
+        "terms": {
+          "kinematic": 0.001362027011067869,
+          "CMR": 0.08502756452403781
+        },
+        "diagnostics": [
+          {
+            "object": 0,
+            "time_interval": [
+              0.07035175879396985,
+              0.07537688442211055,
+              0.08040201005025124
+            ],
+            "nodes": 3543,
+            "anchors": 64,
+            "current_world_same_bank_neighbors": 64,
+            "support_attempts": [
+              {
+                "neighbors": 64,
+                "valid_fraction": 1.0
+              }
+            ],
+            "valid_fraction": 1.0,
+            "velocity_trajectory_RMS": 0.05219247093341853,
+            "CMR_RMS": 0.41799218154388285,
+            "trajectory_acceleration_RMS": 1.6683032715454875,
+            "independent_acceleration_RMS": 0.002496275869187629,
+            "stress_pred_RMS": 0.06232401356101036,
+            "stress_divergence_RMS": 0.029746955585312068,
+            "rate_divergence_RMS": 0.42260400003625864,
+            "spatial_support_radius_mean": 0.04276329791078355,
+            "time_units": "sequence normalized; acquisition seconds unknown",
+            "not_independent_GT": true
+          }
+        ],
+        "guard": {
+          "scale": 1.0,
+          "cap": 0.1,
+          "groups": {
+            "grid": {
+              "image_norm": 1.1970461173405056e-06,
+              "weighted_momentum_norm": 0.0,
+              "guarded_momentum_norm": 0.0
+            },
+            "deformation": {
+              "image_norm": 0.7779488563537598,
+              "weighted_momentum_norm": 0.0012528038350865245,
+              "guarded_momentum_norm": 0.0012528038350865245
+            },
+            "canonical": {
+              "image_norm": 0.049011074006557465,
+              "weighted_momentum_norm": 1.9090643036179245e-05,
+              "guarded_momentum_norm": 1.9090643036179245e-05
+            }
+          },
+          "private_gradients_preserved": true
+        }
+      },
+      "invertible_motion": true
+    },
+    {
+      "global_step": 16011,
+      "phase": "physics",
+      "phase_step": 11,
+      "width": 1600,
+      "frame_index": 10,
+      "rgb": 0.09775320440530777,
+      "invertible_motion": true
+    },
+    {
+      "global_step": 16012,
+      "phase": "physics",
+      "phase_step": 12,
+      "width": 1600,
+      "frame_index": 11,
+      "rgb": 0.09927282482385635,
+      "invertible_motion": true
+    },
+    {
+      "global_step": 16013,
+      "phase": "physics",
+      "phase_step": 13,
+      "width": 1600,
+      "frame_index": 12,
+      "rgb": 0.11898735165596008,
+      "invertible_motion": true
+    },
+    {
+      "global_step": 16014,
+      "phase": "physics",
+      "phase_step": 14,
+      "width": 1600,
+      "frame_index": 13,
+      "rgb": 0.12012767791748047,
+      "invertible_motion": true
+    },
+    {
+      "global_step": 16015,
+      "phase": "physics",
+      "phase_step": 15,
+      "width": 1600,
+      "frame_index": 14,
+      "rgb": 0.1599361151456833,
+      "invertible_motion": true
+    },
+    {
+      "global_step": 16016,
+      "phase": "physics",
+      "phase_step": 16,
+      "width": 1600,
+      "frame_index": 15,
+      "rgb": 0.16200841963291168,
+      "invertible_motion": true
+    },
+    {
+      "global_step": 16017,
+      "phase": "physics",
+      "phase_step": 17,
+      "width": 1600,
+      "frame_index": 16,
+      "rgb": 0.16347092390060425,
+      "invertible_motion": true
+    },
+    {
+      "global_step": 16018,
+      "phase": "physics",
+      "phase_step": 18,
+      "width": 1600,
+      "frame_index": 17,
+      "rgb": 0.184559166431427,
+      "invertible_motion": true
+    },
+    {
+      "global_step": 16019,
+      "phase": "physics",
+      "phase_step": 19,
+      "width": 1600,
+      "frame_index": 18,
+      "rgb": 0.20537841320037842,
+      "invertible_motion": true
+    },
+    {
+      "global_step": 16020,
+      "phase": "physics",
+      "phase_step": 20,
+      "width": 1600,
+      "frame_index": 19,
+      "rgb": 0.22224026918411255,
+      "physics": {
+        "terms": {
+          "kinematic": 0.05290240467244999,
+          "CMR": 0.059950378746899846
+        },
+        "diagnostics": [
+          {
+            "object": 0,
+            "time_interval": [
+              0.16080402010050251,
+              0.1658291457286432,
+              0.1708542713567839
+            ],
+            "nodes": 3542,
+            "anchors": 64,
+            "current_world_same_bank_neighbors": 64,
+            "support_attempts": [
+              {
+                "neighbors": 64,
+                "valid_fraction": 1.0
+              }
+            ],
+            "valid_fraction": 1.0,
+            "velocity_trajectory_RMS": 0.3252765121322165,
+            "CMR_RMS": 0.3480278254424801,
+            "trajectory_acceleration_RMS": 2.0605104193411203,
+            "independent_acceleration_RMS": 0.03512707101484558,
+            "stress_pred_RMS": 0.062233954668045044,
+            "stress_divergence_RMS": 0.0282890029583718,
+            "rate_divergence_RMS": 0.34214540263240056,
+            "spatial_support_radius_mean": 0.0426361729283435,
+            "time_units": "sequence normalized; acquisition seconds unknown",
+            "not_independent_GT": true
+          }
+        ],
+        "guard": {
+          "scale": 1.0,
+          "cap": 0.1,
+          "groups": {
+            "grid": {
+              "image_norm": 2.0331367522885557e-06,
+              "weighted_momentum_norm": 0.0,
+              "guarded_momentum_norm": 0.0
+            },
+            "deformation": {
+              "image_norm": 0.44077104330062866,
+              "weighted_momentum_norm": 0.00806942768394947,
+              "guarded_momentum_norm": 0.00806942768394947
+            },
+            "canonical": {
+              "image_norm": 0.05891271308064461,
+              "weighted_momentum_norm": 1.612211053725332e-05,
+              "guarded_momentum_norm": 1.612211053725332e-05
+            }
+          },
+          "private_gradients_preserved": true
+        }
+      },
+      "invertible_motion": true
+    }
+  ]
+}
