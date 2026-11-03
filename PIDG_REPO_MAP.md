@@ -847,3 +847,16 @@ independent static/depth/normal GT after inference, compares fixed candidates
 and fixed original normal-valid pixels. No Gaussian optimizer, field, renderer,
 loader or historical checkpoint is altered. `tests/test_depth_refine.py` checks
 the vertex, bounds, invalid/zero steps, held-source refusal and flags-off path.
+
+
+## Optional RGB source-depth interval evidence (2026-11-03)
+
+`variants/staged_reconstruction/depth_uncertainty/core.py` observes the original
+six RGB-derived source depths, counts distinct poses and constructs empirical
+depth envelopes with an inverse-depth quantization floor. Missing/closer-surface
+samples retain unknown status. Disabled calls return the original depth object.
+`infer` preserves all D1 candidates/depths with per-view stop/lock/source checks.
+`evaluate` alone reads GT and measures reliability, width and visible/thin
+retention; `prepare` binds tests, protocol, parent arrays and frozen source.
+This is a geometry-evidence diagnostic, with no change to PIDG models, fields,
+renderer, optimizer or physical identities. Tests: test_depth_uncertainty.py.

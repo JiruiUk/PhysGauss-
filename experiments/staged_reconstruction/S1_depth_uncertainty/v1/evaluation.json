@@ -1,0 +1,1468 @@
+{
+  "results": {
+    "diffuse": {
+      "candidates": 423747,
+      "tight_candidates": 8600,
+      "tight_candidate_retention": 0.020295128933066193,
+      "all_GT_interval_coverage": 0.8113142983903131,
+      "all_interval_width": {
+        "n": 423747,
+        "mean": 0.10631724642579203,
+        "median": 0.06845490928791431,
+        "p90": 0.17997186201521867
+      },
+      "tight_interval_width": {
+        "n": 8600,
+        "mean": 0.036971579184405405,
+        "median": 0.03743503394599523,
+        "p90": 0.03954153015103272
+      },
+      "tight_GT_interval_coverage": 0.9586046511627907,
+      "tight_no_static_or_center_error_gt_005": 0.00686046511627907,
+      "tight_center_static_depth_error": {
+        "n": 8600,
+        "mean": 0.006815060973167419,
+        "median": 0.004831790924072266,
+        "p90": 0.01329946517944336
+      },
+      "tight_supported_visible_static_retention": 0.02041102133437141,
+      "tight_supported_thin_retention": 0.03171258312462216,
+      "uncertainty_identifies_bad_AUROC": 0.7621871703310724,
+      "bad_fraction_all": 0.20274361824390497,
+      "bad_fraction_non_tight": 0.20680144623470723,
+      "possible_closer_surface_ambiguity": 36129,
+      "frames": [
+        {
+          "image": "rgb/c00_t1.png",
+          "time": 0.2,
+          "candidates": 2953,
+          "tight": 163,
+          "available_source_poses_mean": 2.8107009820521505
+        },
+        {
+          "image": "rgb/c00_t2.png",
+          "time": 0.4,
+          "candidates": 4373,
+          "tight": 214,
+          "available_source_poses_mean": 2.7681225703178596
+        },
+        {
+          "image": "rgb/c00_t3.png",
+          "time": 0.6,
+          "candidates": 4413,
+          "tight": 311,
+          "available_source_poses_mean": 2.8470428280081577
+        },
+        {
+          "image": "rgb/c00_t4.png",
+          "time": 0.8,
+          "candidates": 4326,
+          "tight": 265,
+          "available_source_poses_mean": 2.8717059639389735
+        },
+        {
+          "image": "rgb/c01_t0.png",
+          "time": 0.0,
+          "candidates": 2851,
+          "tight": 0,
+          "available_source_poses_mean": 1.9140652402665732
+        },
+        {
+          "image": "rgb/c01_t2.png",
+          "time": 0.4,
+          "candidates": 4661,
+          "tight": 0,
+          "available_source_poses_mean": 1.9156833297575628
+        },
+        {
+          "image": "rgb/c01_t3.png",
+          "time": 0.6,
+          "candidates": 4668,
+          "tight": 0,
+          "available_source_poses_mean": 1.904241645244216
+        },
+        {
+          "image": "rgb/c01_t4.png",
+          "time": 0.8,
+          "candidates": 4671,
+          "tight": 0,
+          "available_source_poses_mean": 1.8893170627274674
+        },
+        {
+          "image": "rgb/c02_t0.png",
+          "time": 0.0,
+          "candidates": 3999,
+          "tight": 166,
+          "available_source_poses_mean": 2.794698674668667
+        },
+        {
+          "image": "rgb/c02_t1.png",
+          "time": 0.2,
+          "candidates": 3992,
+          "tight": 0,
+          "available_source_poses_mean": 1.9193386773547094
+        },
+        {
+          "image": "rgb/c02_t3.png",
+          "time": 0.6,
+          "candidates": 4401,
+          "tight": 177,
+          "available_source_poses_mean": 2.807998182231311
+        },
+        {
+          "image": "rgb/c02_t4.png",
+          "time": 0.8,
+          "candidates": 4421,
+          "tight": 151,
+          "available_source_poses_mean": 2.816557339968333
+        },
+        {
+          "image": "rgb/c04_t0.png",
+          "time": 0.0,
+          "candidates": 4562,
+          "tight": 0,
+          "available_source_poses_mean": 1.753397632617273
+        },
+        {
+          "image": "rgb/c04_t1.png",
+          "time": 0.2,
+          "candidates": 5094,
+          "tight": 49,
+          "available_source_poses_mean": 2.513545347467609
+        },
+        {
+          "image": "rgb/c04_t2.png",
+          "time": 0.4,
+          "candidates": 4952,
+          "tight": 0,
+          "available_source_poses_mean": 1.688004846526656
+        },
+        {
+          "image": "rgb/c04_t3.png",
+          "time": 0.6,
+          "candidates": 5702,
+          "tight": 62,
+          "available_source_poses_mean": 2.5543668888109434
+        },
+        {
+          "image": "rgb/c05_t1.png",
+          "time": 0.2,
+          "candidates": 3842,
+          "tight": 0,
+          "available_source_poses_mean": 1.9599167100468506
+        },
+        {
+          "image": "rgb/c05_t2.png",
+          "time": 0.4,
+          "candidates": 5785,
+          "tight": 0,
+          "available_source_poses_mean": 1.9407087294727745
+        },
+        {
+          "image": "rgb/c05_t3.png",
+          "time": 0.6,
+          "candidates": 4536,
+          "tight": 0,
+          "available_source_poses_mean": 1.9521604938271604
+        },
+        {
+          "image": "rgb/c05_t4.png",
+          "time": 0.8,
+          "candidates": 5174,
+          "tight": 0,
+          "available_source_poses_mean": 1.916505604947816
+        },
+        {
+          "image": "rgb/c06_t0.png",
+          "time": 0.0,
+          "candidates": 3978,
+          "tight": 200,
+          "available_source_poses_mean": 2.553795877325289
+        },
+        {
+          "image": "rgb/c06_t2.png",
+          "time": 0.4,
+          "candidates": 4477,
+          "tight": 263,
+          "available_source_poses_mean": 2.584096493187402
+        },
+        {
+          "image": "rgb/c06_t3.png",
+          "time": 0.6,
+          "candidates": 5188,
+          "tight": 164,
+          "available_source_poses_mean": 2.4811102544333075
+        },
+        {
+          "image": "rgb/c06_t4.png",
+          "time": 0.8,
+          "candidates": 5305,
+          "tight": 219,
+          "available_source_poses_mean": 2.5688972667295005
+        },
+        {
+          "image": "rgb/c08_t0.png",
+          "time": 0.0,
+          "candidates": 3959,
+          "tight": 670,
+          "available_source_poses_mean": 2.73149785299318
+        },
+        {
+          "image": "rgb/c08_t1.png",
+          "time": 0.2,
+          "candidates": 3657,
+          "tight": 0,
+          "available_source_poses_mean": 1.8512441892261418
+        },
+        {
+          "image": "rgb/c08_t2.png",
+          "time": 0.4,
+          "candidates": 3924,
+          "tight": 708,
+          "available_source_poses_mean": 2.7464322120285423
+        },
+        {
+          "image": "rgb/c08_t4.png",
+          "time": 0.8,
+          "candidates": 1530,
+          "tight": 0,
+          "available_source_poses_mean": 1.8640522875816994
+        },
+        {
+          "image": "rgb/c09_t0.png",
+          "time": 0.0,
+          "candidates": 4238,
+          "tight": 0,
+          "available_source_poses_mean": 1.876828692779613
+        },
+        {
+          "image": "rgb/c09_t1.png",
+          "time": 0.2,
+          "candidates": 4083,
+          "tight": 0,
+          "available_source_poses_mean": 1.8349253000244918
+        },
+        {
+          "image": "rgb/c09_t2.png",
+          "time": 0.4,
+          "candidates": 4277,
+          "tight": 0,
+          "available_source_poses_mean": 1.857376665887304
+        },
+        {
+          "image": "rgb/c09_t3.png",
+          "time": 0.6,
+          "candidates": 4266,
+          "tight": 0,
+          "available_source_poses_mean": 1.8349742147210502
+        },
+        {
+          "image": "rgb/c10_t1.png",
+          "time": 0.2,
+          "candidates": 4037,
+          "tight": 406,
+          "available_source_poses_mean": 2.677730988357691
+        },
+        {
+          "image": "rgb/c10_t2.png",
+          "time": 0.4,
+          "candidates": 3966,
+          "tight": 165,
+          "available_source_poses_mean": 2.428643469490671
+        },
+        {
+          "image": "rgb/c10_t3.png",
+          "time": 0.6,
+          "candidates": 4121,
+          "tight": 432,
+          "available_source_poses_mean": 2.6728949284154333
+        },
+        {
+          "image": "rgb/c10_t4.png",
+          "time": 0.8,
+          "candidates": 2476,
+          "tight": 193,
+          "available_source_poses_mean": 2.6518578352180935
+        },
+        {
+          "image": "rgb/c12_t0.png",
+          "time": 0.0,
+          "candidates": 4889,
+          "tight": 0,
+          "available_source_poses_mean": 1.643280834526488
+        },
+        {
+          "image": "rgb/c12_t1.png",
+          "time": 0.2,
+          "candidates": 5128,
+          "tight": 54,
+          "available_source_poses_mean": 2.3984009360374414
+        },
+        {
+          "image": "rgb/c12_t3.png",
+          "time": 0.6,
+          "candidates": 4147,
+          "tight": 0,
+          "available_source_poses_mean": 1.5748734024596094
+        },
+        {
+          "image": "rgb/c12_t4.png",
+          "time": 0.8,
+          "candidates": 4893,
+          "tight": 0,
+          "available_source_poses_mean": 1.6374412425914573
+        },
+        {
+          "image": "rgb/c13_t0.png",
+          "time": 0.0,
+          "candidates": 4158,
+          "tight": 0,
+          "available_source_poses_mean": 1.9535834535834535
+        },
+        {
+          "image": "rgb/c13_t1.png",
+          "time": 0.2,
+          "candidates": 5539,
+          "tight": 0,
+          "available_source_poses_mean": 1.8351688030330384
+        },
+        {
+          "image": "rgb/c13_t2.png",
+          "time": 0.4,
+          "candidates": 4089,
+          "tight": 0,
+          "available_source_poses_mean": 1.8833455612619223
+        },
+        {
+          "image": "rgb/c13_t4.png",
+          "time": 0.8,
+          "candidates": 3963,
+          "tight": 0,
+          "available_source_poses_mean": 1.9573555387332828
+        },
+        {
+          "image": "rgb/c14_t0.png",
+          "time": 0.0,
+          "candidates": 5027,
+          "tight": 0,
+          "available_source_poses_mean": 1.890192958026656
+        },
+        {
+          "image": "rgb/c14_t1.png",
+          "time": 0.2,
+          "candidates": 4431,
+          "tight": 66,
+          "available_source_poses_mean": 2.5445723313021893
+        },
+        {
+          "image": "rgb/c14_t2.png",
+          "time": 0.4,
+          "candidates": 4547,
+          "tight": 82,
+          "available_source_poses_mean": 2.5524521662634703
+        },
+        {
+          "image": "rgb/c14_t3.png",
+          "time": 0.6,
+          "candidates": 4778,
+          "tight": 50,
+          "available_source_poses_mean": 2.5826705734616993
+        },
+        {
+          "image": "rgb/c16_t0.png",
+          "time": 0.0,
+          "candidates": 3700,
+          "tight": 0,
+          "available_source_poses_mean": 1.8775675675675676
+        },
+        {
+          "image": "rgb/c16_t2.png",
+          "time": 0.4,
+          "candidates": 2438,
+          "tight": 0,
+          "available_source_poses_mean": 1.883100902378999
+        },
+        {
+          "image": "rgb/c16_t3.png",
+          "time": 0.6,
+          "candidates": 3479,
+          "tight": 52,
+          "available_source_poses_mean": 2.4995688416211554
+        },
+        {
+          "image": "rgb/c16_t4.png",
+          "time": 0.8,
+          "candidates": 3606,
+          "tight": 0,
+          "available_source_poses_mean": 1.8912922906267333
+        },
+        {
+          "image": "rgb/c17_t0.png",
+          "time": 0.0,
+          "candidates": 2703,
+          "tight": 0,
+          "available_source_poses_mean": 1.9119496855345912
+        },
+        {
+          "image": "rgb/c17_t1.png",
+          "time": 0.2,
+          "candidates": 2887,
+          "tight": 0,
+          "available_source_poses_mean": 1.8517492206442674
+        },
+        {
+          "image": "rgb/c17_t3.png",
+          "time": 0.6,
+          "candidates": 4324,
+          "tight": 0,
+          "available_source_poses_mean": 1.7099907493061979
+        },
+        {
+          "image": "rgb/c17_t4.png",
+          "time": 0.8,
+          "candidates": 2658,
+          "tight": 0,
+          "available_source_poses_mean": 1.9115876598946577
+        },
+        {
+          "image": "rgb/c18_t0.png",
+          "time": 0.0,
+          "candidates": 3844,
+          "tight": 81,
+          "available_source_poses_mean": 2.6810613943808534
+        },
+        {
+          "image": "rgb/c18_t1.png",
+          "time": 0.2,
+          "candidates": 3866,
+          "tight": 86,
+          "available_source_poses_mean": 2.7281427832384892
+        },
+        {
+          "image": "rgb/c18_t2.png",
+          "time": 0.4,
+          "candidates": 3504,
+          "tight": 0,
+          "available_source_poses_mean": 1.8547374429223744
+        },
+        {
+          "image": "rgb/c18_t4.png",
+          "time": 0.8,
+          "candidates": 4041,
+          "tight": 74,
+          "available_source_poses_mean": 2.5803019054689433
+        },
+        {
+          "image": "rgb/c20_t1.png",
+          "time": 0.2,
+          "candidates": 5496,
+          "tight": 50,
+          "available_source_poses_mean": 2.66066229985444
+        },
+        {
+          "image": "rgb/c20_t2.png",
+          "time": 0.4,
+          "candidates": 5617,
+          "tight": 29,
+          "available_source_poses_mean": 2.268114651949439
+        },
+        {
+          "image": "rgb/c20_t3.png",
+          "time": 0.6,
+          "candidates": 5026,
+          "tight": 45,
+          "available_source_poses_mean": 2.6814564265817746
+        },
+        {
+          "image": "rgb/c20_t4.png",
+          "time": 0.8,
+          "candidates": 5544,
+          "tight": 51,
+          "available_source_poses_mean": 2.5622294372294374
+        },
+        {
+          "image": "rgb/c21_t0.png",
+          "time": 0.0,
+          "candidates": 5466,
+          "tight": 0,
+          "available_source_poses_mean": 1.9251738016831321
+        },
+        {
+          "image": "rgb/c21_t2.png",
+          "time": 0.4,
+          "candidates": 5594,
+          "tight": 0,
+          "available_source_poses_mean": 1.9647836968180192
+        },
+        {
+          "image": "rgb/c21_t3.png",
+          "time": 0.6,
+          "candidates": 5070,
+          "tight": 0,
+          "available_source_poses_mean": 1.9570019723865877
+        },
+        {
+          "image": "rgb/c21_t4.png",
+          "time": 0.8,
+          "candidates": 5660,
+          "tight": 0,
+          "available_source_poses_mean": 1.95565371024735
+        },
+        {
+          "image": "rgb/c22_t0.png",
+          "time": 0.0,
+          "candidates": 5370,
+          "tight": 207,
+          "available_source_poses_mean": 2.6262569832402236
+        },
+        {
+          "image": "rgb/c22_t1.png",
+          "time": 0.2,
+          "candidates": 3755,
+          "tight": 0,
+          "available_source_poses_mean": 1.6985352862849534
+        },
+        {
+          "image": "rgb/c22_t3.png",
+          "time": 0.6,
+          "candidates": 5025,
+          "tight": 131,
+          "available_source_poses_mean": 2.5800995024875624
+        },
+        {
+          "image": "rgb/c22_t4.png",
+          "time": 0.8,
+          "candidates": 5345,
+          "tight": 199,
+          "available_source_poses_mean": 2.6389148737137513
+        },
+        {
+          "image": "rgb/c24_t0.png",
+          "time": 0.0,
+          "candidates": 2364,
+          "tight": 106,
+          "available_source_poses_mean": 2.6954314720812182
+        },
+        {
+          "image": "rgb/c24_t1.png",
+          "time": 0.2,
+          "candidates": 3830,
+          "tight": 227,
+          "available_source_poses_mean": 2.8422976501305484
+        },
+        {
+          "image": "rgb/c24_t2.png",
+          "time": 0.4,
+          "candidates": 3343,
+          "tight": 103,
+          "available_source_poses_mean": 2.469937182171702
+        },
+        {
+          "image": "rgb/c24_t3.png",
+          "time": 0.6,
+          "candidates": 3920,
+          "tight": 222,
+          "available_source_poses_mean": 2.867857142857143
+        },
+        {
+          "image": "rgb/c25_t1.png",
+          "time": 0.2,
+          "candidates": 2445,
+          "tight": 0,
+          "available_source_poses_mean": 1.9566462167689163
+        },
+        {
+          "image": "rgb/c25_t2.png",
+          "time": 0.4,
+          "candidates": 4569,
+          "tight": 0,
+          "available_source_poses_mean": 1.843291748741519
+        },
+        {
+          "image": "rgb/c25_t3.png",
+          "time": 0.6,
+          "candidates": 2470,
+          "tight": 0,
+          "available_source_poses_mean": 1.9562753036437246
+        },
+        {
+          "image": "rgb/c25_t4.png",
+          "time": 0.8,
+          "candidates": 2166,
+          "tight": 0,
+          "available_source_poses_mean": 1.8928901200369344
+        },
+        {
+          "image": "rgb/c26_t0.png",
+          "time": 0.0,
+          "candidates": 3557,
+          "tight": 155,
+          "available_source_poses_mean": 2.8628057351700873
+        },
+        {
+          "image": "rgb/c26_t2.png",
+          "time": 0.4,
+          "candidates": 3732,
+          "tight": 128,
+          "available_source_poses_mean": 2.5937834941050375
+        },
+        {
+          "image": "rgb/c26_t3.png",
+          "time": 0.6,
+          "candidates": 5043,
+          "tight": 162,
+          "available_source_poses_mean": 2.5710886377156457
+        },
+        {
+          "image": "rgb/c26_t4.png",
+          "time": 0.8,
+          "candidates": 4419,
+          "tight": 194,
+          "available_source_poses_mean": 2.617786829599457
+        },
+        {
+          "image": "rgb/c28_t0.png",
+          "time": 0.0,
+          "candidates": 5757,
+          "tight": 71,
+          "available_source_poses_mean": 2.8139656070870247
+        },
+        {
+          "image": "rgb/c28_t1.png",
+          "time": 0.2,
+          "candidates": 5964,
+          "tight": 0,
+          "available_source_poses_mean": 1.857645875251509
+        },
+        {
+          "image": "rgb/c28_t2.png",
+          "time": 0.4,
+          "candidates": 6097,
+          "tight": 115,
+          "available_source_poses_mean": 2.7839921272757095
+        },
+        {
+          "image": "rgb/c28_t4.png",
+          "time": 0.8,
+          "candidates": 5423,
+          "tight": 0,
+          "available_source_poses_mean": 1.8519269776876268
+        },
+        {
+          "image": "rgb/c29_t0.png",
+          "time": 0.0,
+          "candidates": 5710,
+          "tight": 0,
+          "available_source_poses_mean": 1.97215411558669
+        },
+        {
+          "image": "rgb/c29_t1.png",
+          "time": 0.2,
+          "candidates": 6080,
+          "tight": 0,
+          "available_source_poses_mean": 1.947203947368421
+        },
+        {
+          "image": "rgb/c29_t2.png",
+          "time": 0.4,
+          "candidates": 6112,
+          "tight": 0,
+          "available_source_poses_mean": 1.9697316753926701
+        },
+        {
+          "image": "rgb/c29_t3.png",
+          "time": 0.6,
+          "candidates": 6094,
+          "tight": 0,
+          "available_source_poses_mean": 1.9442074171316048
+        },
+        {
+          "image": "rgb/c30_t1.png",
+          "time": 0.2,
+          "candidates": 5747,
+          "tight": 199,
+          "available_source_poses_mean": 2.746824430137463
+        },
+        {
+          "image": "rgb/c30_t2.png",
+          "time": 0.4,
+          "candidates": 5637,
+          "tight": 221,
+          "available_source_poses_mean": 2.6930991662231683
+        },
+        {
+          "image": "rgb/c30_t3.png",
+          "time": 0.6,
+          "candidates": 5633,
+          "tight": 234,
+          "available_source_poses_mean": 2.7138292206639445
+        },
+        {
+          "image": "rgb/c30_t4.png",
+          "time": 0.8,
+          "candidates": 5170,
+          "tight": 228,
+          "available_source_poses_mean": 2.74468085106383
+        }
+      ],
+      "ranked_risk_diagnostic_only": {
+        "0.25": {
+          "candidates": 105936,
+          "bad_fraction": 0.04613162664250113,
+          "GT_interval_coverage": 0.8743014650354931
+        },
+        "0.5": {
+          "candidates": 211873,
+          "bad_fraction": 0.08233706040882982,
+          "GT_interval_coverage": 0.8331264483912533
+        },
+        "0.75": {
+          "candidates": 317810,
+          "bad_fraction": 0.1259305874579151,
+          "GT_interval_coverage": 0.8133475976212202
+        },
+        "1.0": {
+          "candidates": 423747,
+          "bad_fraction": 0.20274361824390497,
+          "GT_interval_coverage": 0.8113142983903131
+        }
+      }
+    },
+    "glossy": {
+      "candidates": 423100,
+      "tight_candidates": 8521,
+      "tight_candidate_retention": 0.020139446939257857,
+      "all_GT_interval_coverage": 0.8132592767667218,
+      "all_interval_width": {
+        "n": 423100,
+        "mean": 0.10651583676901266,
+        "median": 0.0687872518254089,
+        "p90": 0.18021418047446713
+      },
+      "tight_interval_width": {
+        "n": 8521,
+        "mean": 0.03696768712662633,
+        "median": 0.03744772632057547,
+        "p90": 0.03954828947296729
+      },
+      "tight_GT_interval_coverage": 0.959629151508039,
+      "tight_no_static_or_center_error_gt_005": 0.00492899894378594,
+      "tight_center_static_depth_error": {
+        "n": 8521,
+        "mean": 0.006729190703481436,
+        "median": 0.004790544509887695,
+        "p90": 0.013255834579467773
+      },
+      "tight_supported_visible_static_retention": 0.020255668377620814,
+      "tight_supported_thin_retention": 0.03149306875929063,
+      "uncertainty_identifies_bad_AUROC": 0.7630531595557476,
+      "bad_fraction_all": 0.20289766012762941,
+      "bad_fraction_non_tight": 0.20696658537938487,
+      "possible_closer_surface_ambiguity": 36036,
+      "frames": [
+        {
+          "image": "rgb/c00_t1.png",
+          "time": 0.2,
+          "candidates": 2968,
+          "tight": 167,
+          "available_source_poses_mean": 2.8086253369272236
+        },
+        {
+          "image": "rgb/c00_t2.png",
+          "time": 0.4,
+          "candidates": 4371,
+          "tight": 210,
+          "available_source_poses_mean": 2.7684740334019673
+        },
+        {
+          "image": "rgb/c00_t3.png",
+          "time": 0.6,
+          "candidates": 4410,
+          "tight": 290,
+          "available_source_poses_mean": 2.8471655328798184
+        },
+        {
+          "image": "rgb/c00_t4.png",
+          "time": 0.8,
+          "candidates": 4330,
+          "tight": 260,
+          "available_source_poses_mean": 2.8702078521939955
+        },
+        {
+          "image": "rgb/c01_t0.png",
+          "time": 0.0,
+          "candidates": 2847,
+          "tight": 0,
+          "available_source_poses_mean": 1.9142957499121882
+        },
+        {
+          "image": "rgb/c01_t2.png",
+          "time": 0.4,
+          "candidates": 4666,
+          "tight": 0,
+          "available_source_poses_mean": 1.9144877839691385
+        },
+        {
+          "image": "rgb/c01_t3.png",
+          "time": 0.6,
+          "candidates": 4666,
+          "tight": 0,
+          "available_source_poses_mean": 1.9048435490784397
+        },
+        {
+          "image": "rgb/c01_t4.png",
+          "time": 0.8,
+          "candidates": 4674,
+          "tight": 0,
+          "available_source_poses_mean": 1.8902439024390243
+        },
+        {
+          "image": "rgb/c02_t0.png",
+          "time": 0.0,
+          "candidates": 4002,
+          "tight": 171,
+          "available_source_poses_mean": 2.7936031984007994
+        },
+        {
+          "image": "rgb/c02_t1.png",
+          "time": 0.2,
+          "candidates": 3995,
+          "tight": 0,
+          "available_source_poses_mean": 1.918648310387985
+        },
+        {
+          "image": "rgb/c02_t3.png",
+          "time": 0.6,
+          "candidates": 4417,
+          "tight": 175,
+          "available_source_poses_mean": 2.8075616934570977
+        },
+        {
+          "image": "rgb/c02_t4.png",
+          "time": 0.8,
+          "candidates": 4436,
+          "tight": 152,
+          "available_source_poses_mean": 2.8131199278629397
+        },
+        {
+          "image": "rgb/c04_t0.png",
+          "time": 0.0,
+          "candidates": 4565,
+          "tight": 0,
+          "available_source_poses_mean": 1.7539978094194961
+        },
+        {
+          "image": "rgb/c04_t1.png",
+          "time": 0.2,
+          "candidates": 5096,
+          "tight": 53,
+          "available_source_poses_mean": 2.516679748822606
+        },
+        {
+          "image": "rgb/c04_t2.png",
+          "time": 0.4,
+          "candidates": 4953,
+          "tight": 0,
+          "available_source_poses_mean": 1.68826973551383
+        },
+        {
+          "image": "rgb/c04_t3.png",
+          "time": 0.6,
+          "candidates": 5706,
+          "tight": 65,
+          "available_source_poses_mean": 2.5576586049772168
+        },
+        {
+          "image": "rgb/c05_t1.png",
+          "time": 0.2,
+          "candidates": 3831,
+          "tight": 0,
+          "available_source_poses_mean": 1.9595405899243017
+        },
+        {
+          "image": "rgb/c05_t2.png",
+          "time": 0.4,
+          "candidates": 5794,
+          "tight": 0,
+          "available_source_poses_mean": 1.9397652744218157
+        },
+        {
+          "image": "rgb/c05_t3.png",
+          "time": 0.6,
+          "candidates": 4534,
+          "tight": 0,
+          "available_source_poses_mean": 1.9536832818703131
+        },
+        {
+          "image": "rgb/c05_t4.png",
+          "time": 0.8,
+          "candidates": 5178,
+          "tight": 0,
+          "available_source_poses_mean": 1.9163769795287755
+        },
+        {
+          "image": "rgb/c06_t0.png",
+          "time": 0.0,
+          "candidates": 3966,
+          "tight": 201,
+          "available_source_poses_mean": 2.5617750882501262
+        },
+        {
+          "image": "rgb/c06_t2.png",
+          "time": 0.4,
+          "candidates": 4491,
+          "tight": 261,
+          "available_source_poses_mean": 2.584947673124026
+        },
+        {
+          "image": "rgb/c06_t3.png",
+          "time": 0.6,
+          "candidates": 5187,
+          "tight": 162,
+          "available_source_poses_mean": 2.4788895315211104
+        },
+        {
+          "image": "rgb/c06_t4.png",
+          "time": 0.8,
+          "candidates": 5301,
+          "tight": 218,
+          "available_source_poses_mean": 2.568949254857574
+        },
+        {
+          "image": "rgb/c08_t0.png",
+          "time": 0.0,
+          "candidates": 3955,
+          "tight": 659,
+          "available_source_poses_mean": 2.7312262958280655
+        },
+        {
+          "image": "rgb/c08_t1.png",
+          "time": 0.2,
+          "candidates": 3662,
+          "tight": 0,
+          "available_source_poses_mean": 1.852812670671764
+        },
+        {
+          "image": "rgb/c08_t2.png",
+          "time": 0.4,
+          "candidates": 3916,
+          "tight": 708,
+          "available_source_poses_mean": 2.746935648621042
+        },
+        {
+          "image": "rgb/c08_t4.png",
+          "time": 0.8,
+          "candidates": 1522,
+          "tight": 0,
+          "available_source_poses_mean": 1.864651773981603
+        },
+        {
+          "image": "rgb/c09_t0.png",
+          "time": 0.0,
+          "candidates": 4231,
+          "tight": 0,
+          "available_source_poses_mean": 1.8766249113684708
+        },
+        {
+          "image": "rgb/c09_t1.png",
+          "time": 0.2,
+          "candidates": 4075,
+          "tight": 0,
+          "available_source_poses_mean": 1.8336196319018405
+        },
+        {
+          "image": "rgb/c09_t2.png",
+          "time": 0.4,
+          "candidates": 4272,
+          "tight": 0,
+          "available_source_poses_mean": 1.8574438202247192
+        },
+        {
+          "image": "rgb/c09_t3.png",
+          "time": 0.6,
+          "candidates": 4254,
+          "tight": 0,
+          "available_source_poses_mean": 1.834978843441467
+        },
+        {
+          "image": "rgb/c10_t1.png",
+          "time": 0.2,
+          "candidates": 4023,
+          "tight": 407,
+          "available_source_poses_mean": 2.6746209296544867
+        },
+        {
+          "image": "rgb/c10_t2.png",
+          "time": 0.4,
+          "candidates": 3955,
+          "tight": 168,
+          "available_source_poses_mean": 2.423008849557522
+        },
+        {
+          "image": "rgb/c10_t3.png",
+          "time": 0.6,
+          "candidates": 4110,
+          "tight": 434,
+          "available_source_poses_mean": 2.672506082725061
+        },
+        {
+          "image": "rgb/c10_t4.png",
+          "time": 0.8,
+          "candidates": 2466,
+          "tight": 190,
+          "available_source_poses_mean": 2.6545012165450124
+        },
+        {
+          "image": "rgb/c12_t0.png",
+          "time": 0.0,
+          "candidates": 4863,
+          "tight": 0,
+          "available_source_poses_mean": 1.644458153403249
+        },
+        {
+          "image": "rgb/c12_t1.png",
+          "time": 0.2,
+          "candidates": 5098,
+          "tight": 42,
+          "available_source_poses_mean": 2.392310710082385
+        },
+        {
+          "image": "rgb/c12_t3.png",
+          "time": 0.6,
+          "candidates": 4101,
+          "tight": 0,
+          "available_source_poses_mean": 1.574250182882224
+        },
+        {
+          "image": "rgb/c12_t4.png",
+          "time": 0.8,
+          "candidates": 4877,
+          "tight": 0,
+          "available_source_poses_mean": 1.639942587656346
+        },
+        {
+          "image": "rgb/c13_t0.png",
+          "time": 0.0,
+          "candidates": 4097,
+          "tight": 0,
+          "available_source_poses_mean": 1.9528923602636075
+        },
+        {
+          "image": "rgb/c13_t1.png",
+          "time": 0.2,
+          "candidates": 5535,
+          "tight": 0,
+          "available_source_poses_mean": 1.8330623306233063
+        },
+        {
+          "image": "rgb/c13_t2.png",
+          "time": 0.4,
+          "candidates": 4034,
+          "tight": 0,
+          "available_source_poses_mean": 1.8820029747149232
+        },
+        {
+          "image": "rgb/c13_t4.png",
+          "time": 0.8,
+          "candidates": 3908,
+          "tight": 0,
+          "available_source_poses_mean": 1.9580348004094166
+        },
+        {
+          "image": "rgb/c14_t0.png",
+          "time": 0.0,
+          "candidates": 5004,
+          "tight": 0,
+          "available_source_poses_mean": 1.8874900079936052
+        },
+        {
+          "image": "rgb/c14_t1.png",
+          "time": 0.2,
+          "candidates": 4374,
+          "tight": 62,
+          "available_source_poses_mean": 2.540695016003658
+        },
+        {
+          "image": "rgb/c14_t2.png",
+          "time": 0.4,
+          "candidates": 4519,
+          "tight": 83,
+          "available_source_poses_mean": 2.55078557202921
+        },
+        {
+          "image": "rgb/c14_t3.png",
+          "time": 0.6,
+          "candidates": 4744,
+          "tight": 48,
+          "available_source_poses_mean": 2.5813659359190555
+        },
+        {
+          "image": "rgb/c16_t0.png",
+          "time": 0.0,
+          "candidates": 3672,
+          "tight": 0,
+          "available_source_poses_mean": 1.8703703703703705
+        },
+        {
+          "image": "rgb/c16_t2.png",
+          "time": 0.4,
+          "candidates": 2421,
+          "tight": 0,
+          "available_source_poses_mean": 1.8781495249896736
+        },
+        {
+          "image": "rgb/c16_t3.png",
+          "time": 0.6,
+          "candidates": 3457,
+          "tight": 48,
+          "available_source_poses_mean": 2.493780734741105
+        },
+        {
+          "image": "rgb/c16_t4.png",
+          "time": 0.8,
+          "candidates": 3576,
+          "tight": 0,
+          "available_source_poses_mean": 1.8825503355704698
+        },
+        {
+          "image": "rgb/c17_t0.png",
+          "time": 0.0,
+          "candidates": 2690,
+          "tight": 0,
+          "available_source_poses_mean": 1.9111524163568774
+        },
+        {
+          "image": "rgb/c17_t1.png",
+          "time": 0.2,
+          "candidates": 2862,
+          "tight": 0,
+          "available_source_poses_mean": 1.8556953179594688
+        },
+        {
+          "image": "rgb/c17_t3.png",
+          "time": 0.6,
+          "candidates": 4304,
+          "tight": 0,
+          "available_source_poses_mean": 1.703763940520446
+        },
+        {
+          "image": "rgb/c17_t4.png",
+          "time": 0.8,
+          "candidates": 2645,
+          "tight": 0,
+          "available_source_poses_mean": 1.9119092627599243
+        },
+        {
+          "image": "rgb/c18_t0.png",
+          "time": 0.0,
+          "candidates": 3839,
+          "tight": 79,
+          "available_source_poses_mean": 2.681948424068768
+        },
+        {
+          "image": "rgb/c18_t1.png",
+          "time": 0.2,
+          "candidates": 3849,
+          "tight": 84,
+          "available_source_poses_mean": 2.7243439854507665
+        },
+        {
+          "image": "rgb/c18_t2.png",
+          "time": 0.4,
+          "candidates": 3508,
+          "tight": 0,
+          "available_source_poses_mean": 1.8537628278221208
+        },
+        {
+          "image": "rgb/c18_t4.png",
+          "time": 0.8,
+          "candidates": 4019,
+          "tight": 71,
+          "available_source_poses_mean": 2.574023388902712
+        },
+        {
+          "image": "rgb/c20_t1.png",
+          "time": 0.2,
+          "candidates": 5502,
+          "tight": 47,
+          "available_source_poses_mean": 2.663031624863686
+        },
+        {
+          "image": "rgb/c20_t2.png",
+          "time": 0.4,
+          "candidates": 5616,
+          "tight": 28,
+          "available_source_poses_mean": 2.2629985754985755
+        },
+        {
+          "image": "rgb/c20_t3.png",
+          "time": 0.6,
+          "candidates": 5008,
+          "tight": 45,
+          "available_source_poses_mean": 2.680511182108626
+        },
+        {
+          "image": "rgb/c20_t4.png",
+          "time": 0.8,
+          "candidates": 5562,
+          "tight": 48,
+          "available_source_poses_mean": 2.560769507371449
+        },
+        {
+          "image": "rgb/c21_t0.png",
+          "time": 0.0,
+          "candidates": 5465,
+          "tight": 0,
+          "available_source_poses_mean": 1.9310155535224154
+        },
+        {
+          "image": "rgb/c21_t2.png",
+          "time": 0.4,
+          "candidates": 5595,
+          "tight": 0,
+          "available_source_poses_mean": 1.966219839142091
+        },
+        {
+          "image": "rgb/c21_t3.png",
+          "time": 0.6,
+          "candidates": 5085,
+          "tight": 0,
+          "available_source_poses_mean": 1.9569321533923303
+        },
+        {
+          "image": "rgb/c21_t4.png",
+          "time": 0.8,
+          "candidates": 5656,
+          "tight": 0,
+          "available_source_poses_mean": 1.9568599717114568
+        },
+        {
+          "image": "rgb/c22_t0.png",
+          "time": 0.0,
+          "candidates": 5379,
+          "tight": 211,
+          "available_source_poses_mean": 2.6270682282952222
+        },
+        {
+          "image": "rgb/c22_t1.png",
+          "time": 0.2,
+          "candidates": 3749,
+          "tight": 0,
+          "available_source_poses_mean": 1.6991197652707388
+        },
+        {
+          "image": "rgb/c22_t3.png",
+          "time": 0.6,
+          "candidates": 5065,
+          "tight": 134,
+          "available_source_poses_mean": 2.578084896347483
+        },
+        {
+          "image": "rgb/c22_t4.png",
+          "time": 0.8,
+          "candidates": 5355,
+          "tight": 205,
+          "available_source_poses_mean": 2.6394024276377217
+        },
+        {
+          "image": "rgb/c24_t0.png",
+          "time": 0.0,
+          "candidates": 2365,
+          "tight": 108,
+          "available_source_poses_mean": 2.693446088794926
+        },
+        {
+          "image": "rgb/c24_t1.png",
+          "time": 0.2,
+          "candidates": 3817,
+          "tight": 222,
+          "available_source_poses_mean": 2.8438564317526853
+        },
+        {
+          "image": "rgb/c24_t2.png",
+          "time": 0.4,
+          "candidates": 3337,
+          "tight": 101,
+          "available_source_poses_mean": 2.470482469283788
+        },
+        {
+          "image": "rgb/c24_t3.png",
+          "time": 0.6,
+          "candidates": 3911,
+          "tight": 218,
+          "available_source_poses_mean": 2.8693428790590643
+        },
+        {
+          "image": "rgb/c25_t1.png",
+          "time": 0.2,
+          "candidates": 2445,
+          "tight": 0,
+          "available_source_poses_mean": 1.9562372188139059
+        },
+        {
+          "image": "rgb/c25_t2.png",
+          "time": 0.4,
+          "candidates": 4571,
+          "tight": 0,
+          "available_source_poses_mean": 1.8420476919711224
+        },
+        {
+          "image": "rgb/c25_t3.png",
+          "time": 0.6,
+          "candidates": 2465,
+          "tight": 0,
+          "available_source_poses_mean": 1.9565922920892496
+        },
+        {
+          "image": "rgb/c25_t4.png",
+          "time": 0.8,
+          "candidates": 2159,
+          "tight": 0,
+          "available_source_poses_mean": 1.890690134321445
+        },
+        {
+          "image": "rgb/c26_t0.png",
+          "time": 0.0,
+          "candidates": 3555,
+          "tight": 154,
+          "available_source_poses_mean": 2.860196905766526
+        },
+        {
+          "image": "rgb/c26_t2.png",
+          "time": 0.4,
+          "candidates": 3723,
+          "tight": 125,
+          "available_source_poses_mean": 2.5952189094816007
+        },
+        {
+          "image": "rgb/c26_t3.png",
+          "time": 0.6,
+          "candidates": 5037,
+          "tight": 159,
+          "available_source_poses_mean": 2.5699821322215604
+        },
+        {
+          "image": "rgb/c26_t4.png",
+          "time": 0.8,
+          "candidates": 4422,
+          "tight": 195,
+          "available_source_poses_mean": 2.6155585707824516
+        },
+        {
+          "image": "rgb/c28_t0.png",
+          "time": 0.0,
+          "candidates": 5757,
+          "tight": 69,
+          "available_source_poses_mean": 2.814313010248393
+        },
+        {
+          "image": "rgb/c28_t1.png",
+          "time": 0.2,
+          "candidates": 5960,
+          "tight": 0,
+          "available_source_poses_mean": 1.857718120805369
+        },
+        {
+          "image": "rgb/c28_t2.png",
+          "time": 0.4,
+          "candidates": 6099,
+          "tight": 114,
+          "available_source_poses_mean": 2.7832431546155108
+        },
+        {
+          "image": "rgb/c28_t4.png",
+          "time": 0.8,
+          "candidates": 5427,
+          "tight": 0,
+          "available_source_poses_mean": 1.8516675879859958
+        },
+        {
+          "image": "rgb/c29_t0.png",
+          "time": 0.0,
+          "candidates": 5708,
+          "tight": 0,
+          "available_source_poses_mean": 1.971969166082691
+        },
+        {
+          "image": "rgb/c29_t1.png",
+          "time": 0.2,
+          "candidates": 6082,
+          "tight": 0,
+          "available_source_poses_mean": 1.9468924695823742
+        },
+        {
+          "image": "rgb/c29_t2.png",
+          "time": 0.4,
+          "candidates": 6113,
+          "tight": 0,
+          "available_source_poses_mean": 1.969245869458531
+        },
+        {
+          "image": "rgb/c29_t3.png",
+          "time": 0.6,
+          "candidates": 6093,
+          "tight": 0,
+          "available_source_poses_mean": 1.9440341375348762
+        },
+        {
+          "image": "rgb/c30_t1.png",
+          "time": 0.2,
+          "candidates": 5748,
+          "tight": 196,
+          "available_source_poses_mean": 2.7473903966597075
+        },
+        {
+          "image": "rgb/c30_t2.png",
+          "time": 0.4,
+          "candidates": 5639,
+          "tight": 220,
+          "available_source_poses_mean": 2.6914346515339598
+        },
+        {
+          "image": "rgb/c30_t3.png",
+          "time": 0.6,
+          "candidates": 5637,
+          "tight": 232,
+          "available_source_poses_mean": 2.7149192833067235
+        },
+        {
+          "image": "rgb/c30_t4.png",
+          "time": 0.8,
+          "candidates": 5172,
+          "tight": 222,
+          "available_source_poses_mean": 2.7436194895591646
+        }
+      ],
+      "ranked_risk_diagnostic_only": {
+        "0.25": {
+          "candidates": 105775,
+          "bad_fraction": 0.04665563696525644,
+          "GT_interval_coverage": 0.8754337036161663
+        },
+        "0.5": {
+          "candidates": 211550,
+          "bad_fraction": 0.08187662491136848,
+          "GT_interval_coverage": 0.8357693216733633
+        },
+        "0.75": {
+          "candidates": 317325,
+          "bad_fraction": 0.12542346175057117,
+          "GT_interval_coverage": 0.8153880091388954
+        },
+        "1.0": {
+          "candidates": 423100,
+          "bad_fraction": 0.20289766012762941,
+          "GT_interval_coverage": 0.8132592767667218
+        }
+      }
+    }
+  },
+  "images": {
+    "output/staged_reconstruction/S1_depth_uncertainty/v1/diffuse_source_intervals.png": "45700e741ebe81a7fedd56cd9def30e630e7e1a46d7403f914935c3584031dc5",
+    "output/staged_reconstruction/S1_depth_uncertainty/v1/glossy_source_intervals.png": "35be58c2b65e8e9fc5205c876b3585fde4aa3ea1bea899b505430e1c6c2f904b"
+  },
+  "independent_GT_evaluation": true,
+  "GT_not_used_for_inference_or_selection": true,
+  "Gaussian_training": false,
+  "inference_sha256": "489f24f4b9c4d25da6b3ae76e0ecc5176ddbfc0f151dfb6458df0ddcd5adbf3d"
+}

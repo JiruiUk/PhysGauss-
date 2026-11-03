@@ -1,0 +1,24 @@
+{
+  "both_cases_evidence_passed": false,
+  "cases": {
+    "diffuse": {
+      "passed": false,
+      "failed_requirements": [
+        "tight_candidate_retention",
+        "tight_supported_visible_static_retention",
+        "tight_supported_thin_retention"
+      ]
+    },
+    "glossy": {
+      "passed": false,
+      "failed_requirements": [
+        "tight_candidate_retention",
+        "tight_supported_visible_static_retention",
+        "tight_supported_thin_retention"
+      ]
+    }
+  },
+  "Gaussian_training_started": false,
+  "real_training_authorized": false,
+  "next_requires_separate_paired_Gaussian_protocol_and_native_recovery": true
+}

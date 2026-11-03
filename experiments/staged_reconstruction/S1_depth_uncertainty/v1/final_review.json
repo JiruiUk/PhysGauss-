@@ -1,0 +1,24 @@
+{
+  "status": "complete_rejected_coverage",
+  "manual_review_completed": true,
+  "Gaussian_training_started": false,
+  "real_training_authorized": false,
+  "thresholds_changed": false,
+  "all_candidates_and_depth_preserved": true,
+  "actually_viewed": "Diffuse/glossy c00_t1/c08_t0/c24_t0 native-size center-error/evidence-score/interval-width/tight-GT panels",
+  "finding": "Tight evidence is accurate but concentrated on a few column patches; base/boundary and thin retention insufficient.",
+  "not_a_data_impossibility_or_Gaussian_cleanup_claim": true,
+  "user_choice_received": "Fixed Depth Anything V2 Small RGB geometry prior; no static labels or object count",
+  "next": "New fixed prior protocol, official code/weights freeze, data-only input boundary and independent synthetic GT audit; no repeated confirmation.",
+  "evidence_sha256": {
+    "inference.json": "489f24f4b9c4d25da6b3ae76e0ecc5176ddbfc0f151dfb6458df0ddcd5adbf3d",
+    "evaluation.json": "aca6021b07cd6532ac7f1906303679f8ed9b3c3d33804d02c7a98f5acb495d41",
+    "gate.json": "5f42556a688ac28dba54a8ee9da421feeae8a34f789ec45731f0ac67e9bc641c",
+    "source_freeze.json": "9032241d689c212b412dcfd23e4e02f0d63fe376ed458bea0477f145f23b7afb",
+    "test_receipt.json": "abb9b1e72fe726037e8ad0f4ec5bd2dbdd0db518c64ab2759f982dbd06658cf3"
+  },
+  "reviewed_images": {
+    "output/staged_reconstruction/S1_depth_uncertainty/v1/diffuse_source_intervals.png": "45700e741ebe81a7fedd56cd9def30e630e7e1a46d7403f914935c3584031dc5",
+    "output/staged_reconstruction/S1_depth_uncertainty/v1/glossy_source_intervals.png": "35be58c2b65e8e9fc5205c876b3585fde4aa3ea1bea899b505430e1c6c2f904b"
+  }
+}

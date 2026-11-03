@@ -292,3 +292,21 @@ D0已提交be408aa4。D1固定候选协议在输出前预声明，7a411aa3提交
 Gaussian训练须另立协议及静态GT/原生恢复门槛。无全图强深度/法线或物理扩展。
 见[深度证据评估](staged_reconstruction/S1_depth_evidence/assessment.md)与
 [进度](staged_reconstruction/S1_depth_evidence/progress.md)。
+
+
+### S1-D2：源视角不确定性有辨别力，但覆盖门槛未过（2026-11-03）
+
+按3b69cf52预声明协议完成两例各96视图，21测试与冻结/父深度/flags-off审计
+通过；全部423747/423100候选及深度保留。经验源包络不是概率置信区间。
+严格支撑GT区间覆盖95.86%/95.96%，大错误0.69%/0.49%，但候选保留仅
+2.03%/2.01%、薄结构支撑保留3.17%/3.15%，未达到预定25%覆盖门槛。
+不放宽区间/机位/门槛，不启动当前区间损失Gaussian训练或旧真实续训。
+实际c00_t1/c08_t0/c24_t0诊断图已看：可靠点集中在立柱少量面片，底座/
+边界支撑仍不足。AUROC约0.76不是静态身份或正确几何证明，亦非伪影改善。
+
+当前已测RGB-MVS证据链存在可靠性/覆盖瓶颈，不证明所有RGB方法都不可解。
+用户已明确选择固定Depth Anything V2 Small预训练RGB几何先验；据此继续
+新代码/权重冻结和两例独立GT审计，无静态标签/物体数，不再次等待确认。
+先验仍非GT，不升级S3-U；新Gaussian训练须另立固定协议和原生完整恢复/
+静态GT完整性门槛。见[D2评估](staged_reconstruction/S1_depth_uncertainty/v1/assessment.md)
+及[已选下一方向](staged_reconstruction/S1_depth_uncertainty/next_choice.md)。

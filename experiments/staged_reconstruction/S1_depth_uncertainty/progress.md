@@ -28,3 +28,24 @@ depths. Predeclared tight evidence:8600/8521 candidates. Every unavailable or
 wide candidate remains stored. All per-view files and parent/source hashes are
 bound in v1/inference.json; no evaluator GT was read. The independent evaluator
 is running. These counts alone establish neither accuracy nor usable coverage.
+
+## Independent audit and actual image review completed
+
+Both cases fail only coverage/retention parts of the fixed evidence gate:
+tight retention2.030%/2.014%, visible supported retention2.041%/2.026%, thin
+supported retention3.171%/3.149%, all below25%. Tight interval GT coverage
+95.860%/95.963%, large-error fraction0.686%/0.493%, depthMAE0.00682/0.00673.
+AUROC0.7622/0.7631 is useful ranking but not a calibrated static probability.
+Widening/relaxing to pass is not permitted; no paired Gaussian or real training.
+
+Actual c00_t1/c08_t0/c24_t0 error/score/width/selection-GT panels reviewed for
+both cases: tight evidence concentrated on a few column patches, not broad
+base/boundary support. All candidates and source/parent data retained. See
+v1/assessment.md, gate.json, final_review.json and ../S1_depth_evidence reports.
+The tested RGB-MVS chain has a measured reliability/coverage bottleneck, not a
+proof of impossibility for all RGB methods. Next requires choosing an external
+learned geometry prior or additional simultaneous views; details next_choice.md.
+User explicitly selected fixed Depth Anything V2 Small RGB geometry prior.
+Continue that new branch after report/plan sync; no pause or repeated approval.
+Do not stop unrelated tasks or invent user stops. Do not repeat S1-C/N/D1/D2
+or sweep this gate. A new prior protocol must not pretend D2 itself passed.
