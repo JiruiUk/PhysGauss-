@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "parent_sha256": "443cebb2becabf98dbbb6680a5c570b872c4a0d6471fd4193a5a547dc761fc90",
+  "quarantined": 242,
+  "remaining": 3031,
+  "frozen_CT_val_inferred_not_GT": {
+    "parent": {
+      "PSNR": 25.493178431193034,
+      "alpha_mean": 0.9822276771068573,
+      "alpha_below_05": 0.006195848505012691
+    },
+    "quarantine": {
+      "PSNR": 25.24858875274658,
+      "alpha_mean": 0.9809644202391307,
+      "alpha_below_05": 0.007382225021077223
+    }
+  },
+  "predeclared_gate": "retain>=75% rows, frozen inferred validation PSNR loss<=0.5dB, alpha_mean loss<=0.02; manual PNG review also required",
+  "manual_review_pending": true,
+  "independent_scene_geometry_GT": false
+}

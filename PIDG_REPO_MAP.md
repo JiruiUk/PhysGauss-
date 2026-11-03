@@ -749,3 +749,16 @@ reusing the frozen confidence/objective and unchanged native PIDG renderer.
 topology. All new entry points require `--enable-adaptive-static`. Inputs have
 no known static color, instance count or material segmentation. No baseline
 trainer, field, renderer, loader, checkpoint or prior experiment is modified.
+
+## Conditional visibility quarantine (2026-11-03)
+
+`variants/staged_reconstruction/clean_static` is a separate opt-in branch.
+`evidence` distinguishes front-of-surface contradictions from occlusion and
+missing evidence. `prepare` queries inherited train-only depths without colors,
+classes or object counts. `probe` renders a reversible initial-row quarantine.
+`train` continues full G1 Adam/RNG/sampler state, comparing unchanged and
+quarantined static rows with the same native objective and camera sequence.
+`audit` checks parent/subset exactness, Adam moments/counters and absolute
+iteration/sampler recovery. `evaluate` uses common frozen proxy masks, native
+PNGs/PLY and decoded fixed-camera/original-trajectory videos. Baseline entry
+points, renderer, physics fields and historical sources remain unchanged.

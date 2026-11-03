@@ -1,0 +1,64 @@
+# Literature and experiment decisions — 2026-11-03
+
+The objective is less visible contamination while preserving thin surfaces,
+boundaries and completeness. PSNR alone cannot decide success. The current
+G1/G2 outputs contain foreground-like smears and floaters despite recovering
+the column. No dataset-independent static or depth GT has been established.
+
+| Primary source | Verified mechanism | Application and limitation here |
+|---|---|---|
+| [RobustSplat, ICCV2025](https://arxiv.org/html/2506.02751v1) | Delayed densification and progressively refined transient masks; its appendix also discusses contaminated initial SfM points. | Keep growth disabled while testing admission. Our geometric visibility audit is an adaptation, not their DINOv2 mask implementation or a paper reproduction. Delaying growth alone cannot remove existing contamination. |
+| [SpotLessSplats, arXiv2024](https://arxiv.org/html/2406.20055v1) | Feature-based robust inlier estimation, gradual mask use and utilization-based pruning; differentiates rendered-image derivatives from loss gradients. | Initial points must be eligible for evidence-based quarantine. Simple residual thresholds or low opacity are insufficient. The present experiment does not implement diffusion features or claim its exact pruning metric. |
+| [RobustNeRF, CVPR2023](https://robustnerf.github.io/) | Robust estimation treats transient observations as outliers without specifying their object class. | Useful baseline for robust supervision; RGB residuals alone can confuse reflections, missing static surfaces and motion. Do not use residual alone to delete structure. |
+| [DeSplat, CVPR2025](https://aaltoml.github.io/desplat/) | Splits persistent scene and per-view distractor Gaussians within alpha compositing, without a pretrained semantic detector. | A later option to explain transient foreground separately without assuming a body count. Per-view distractors do not establish physical trajectories or identity; first test static admission. |
+| [CoR-GS, ECCV2024](https://jiaw-z.github.io/CoR-GS/) | Two jointly trained fields use point/rendering disagreement for co-pruning and pseudo-view regularization. | Disagreement can flag uncertain geometry; agreement cannot prove truth. Our current inherited depths reuse RGB and are not two independent CoR-GS fields. A two-field experiment would be a separate bounded stage. |
+| [2DGS, SIGGRAPH2024](https://surfsplatting.github.io/) | Oriented surface disks, ray/splat rendering, depth distortion and normal consistency. | Motivates a later surface-geometry ablation. Replacing the native PIDG renderer would break the current matched control, so it is not bundled into visibility cleaning. |
+| [DN-Splatter, WACV2025](https://maturk.github.io/dn-splatter/) | Depth/normal supervision and local geometric regularization for 3DGS. | Test reliable train-derived depth/normal constraints next if needed, with a separate switch and an image/structure control. Estimated depth remains a prior, not GT; thin/discontinuous geometry needs protection. |
+| [Cross-Temporal3DGS, arXiv2025](https://arxiv.org/html/2512.00534v1) | Confidence-guided reuse of historical well-observed scene information for sparse updates. | Retain revisable confidence, but our cold-start setting lacks its historical scene prior. Self-render agreement cannot independently admit missing geometry or certify staticity. |
+
+Reading coverage: RobustSplat and SpotLessSplats method/appendix HTML; the
+other linked primary project pages/abstracts and official publication records.
+Some CVF pages returned403 and the AAAI page denied automated access; the
+accessible author/arXiv versions above were used. No inaccessible PDF is
+represented as fully read, and no numerical paper result is imported as ours.
+
+## Current bounded test: C1 visibility quarantine
+
+Start from the complete G1 twelve-thousand-step checkpoint, retaining full
+model/Adam/RNG/sampler state. Compare an unmodified six-thousand-step continuation
+against the same continuation with conditional ray-evidence quarantine. No new
+loss, body count, growth or parameter sweep is included.
+
+A Gaussian in front of a reliable train-inferred surface contradicts that
+surface's observed ray, while one behind it is potentially occluded. Three or
+more contradictory views, at least20 frame indices apart overall, and a
+contradiction fraction of at least0.6 among agree/contradict votes are required.
+Missing/occluded depth supplies no negative vote. RGB error, color labels and
+opacity do not determine this quarantine. All initial rows are eligible; full
+parent state and quarantined hypotheses remain recoverable and are not called
+dynamic objects or empty background. These thresholds were fixed before the
+actual evidence scan; they are not a paper's published hyperparameters.
+
+Analytic ray fixtures test the mechanism with known geometry. They are not an
+end-to-end RGB benchmark. The real-data evidence comes from inherited RGB depth
+estimates and is conditional. Keep old and broad inferred masks frozen for
+evaluation; inspect actual native early/middle/late86/188 images. Refuse
+promotion if apparent cleanup removes structure. Preserve negative results.
+
+## Continued sequence, one bounded experiment at a time
+
+1. Finish C1 matched continuation, numerical and native-image review.
+2. Add a small independent RGB synthetic audit with static/moving surfaces,
+   specular appearance and independently varying time/camera; evaluator-only
+   static/depth GT must not enter the reconstructor. Measure false inclusion,
+   surface coverage, depth error and static texture preservation.
+3. If C1 leaves surface noise, test reliable depth/normal/surface constraints
+   inspired by DN-Splatter/2DGS as one independently switchable stage. If the
+   dominant issue is transient appearance, prioritize DeSplat-style nuisance
+   separation or feature-based masking instead. Do not start both branches.
+4. Consider two-field uncertainty only if the preceding evidence warrants the
+   extra compute. Keep unknown identities and one unified physical dynamic pool.
+
+No clean-static claim follows from deleting points, increasing alpha, unchanged
+fixed-time output, or self-selected PSNR. Historical baselines remain frozen;
+material/constitutive/contact/force extensions are outside this effort.

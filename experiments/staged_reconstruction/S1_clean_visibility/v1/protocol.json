@@ -1,0 +1,29 @@
+{
+  "stage": "S1-C visibility quarantine",
+  "revision": 1,
+  "enabled_by_default": false,
+  "parent": "runs/pidg_staged_reconstruction/S1_geometry_growth/revision2/formal/geometry/checkpoint.pt",
+  "parent_sha256": "443cebb2becabf98dbbb6680a5c570b872c4a0d6471fd4193a5a547dc761fc90",
+  "arms": [
+    "control",
+    "visibility"
+  ],
+  "continuation_updates": 6000,
+  "minimum_contradiction_views": 3,
+  "contradiction_fraction": 0.6,
+  "depth_relative_tolerance": 0.025,
+  "depth_absolute_tolerance": 0.05,
+  "reliable_geometry_min": 0.9,
+  "confidence_interval": 1000,
+  "confidence_rate": 0.5,
+  "admission_threshold": 0.5,
+  "seed": 20261103,
+  "birth": false,
+  "physics": false,
+  "material_segmentation": false,
+  "object_count_estimation": false,
+  "input_contract": "Train RGB and supplied cameras; inherited train-only inferred depths are conditional evidence, not GT. No known static colors, classes, alpha labels, validation/test images or count. Quarantined rows are unknown, not labeled dynamic or empty background; parent full model/Adam preserved.",
+  "comparison_contract": "Matched full12k G1 parent model/Adam/RNG/sampler continuation to18k. Visibility arm filters only independently inferred ray contradictions, all original rows eligible. Same original image objective/rates, no growth or loss-weight sweep. Missing/behind-surface evidence is unknown. No formal run until unit/smoke/source/structure checks.",
+  "promotion_contract": "Require artifact reduction and structure preservation on frozen masks plus actual native images. Deleting structure to reduce artifacts is a failure. No claim of geometry/static GT from proxy gains.",
+  "minimum_contradiction_time_span": 20
+}
