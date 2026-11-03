@@ -1,0 +1,19 @@
+.............E..............                                             [100%]
+=================================== ERRORS ====================================
+______ ERROR at setup of test_independent_process_aggregate_save_resume _______
+
+self = WindowsPath('F:/A_Edinburgh/PhysGauss/runs/pidg_staged_reconstruction/S1_photometric_oracle/pytest_attempt3')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] ϵͳ�Ҳ���ָ����·����: 'F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_staged_reconstruction\\S1_photometric_oracle\\pytest_attempt3'
+
+envs\pidg-cu128\Lib\pathlib.py:1116: FileNotFoundError
+=========================== short test summary info ===========================
+ERROR tests/test_photometric_oracle.py::test_independent_process_aggregate_save_resume
+27 passed, 1 error in 2.90s

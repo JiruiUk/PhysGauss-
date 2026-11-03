@@ -1,0 +1,171 @@
+.............E..............                                             [100%]
+=================================== ERRORS ====================================
+______ ERROR at setup of test_independent_process_aggregate_save_resume _______
+
+path = '\\\\?\\F:\\A_Edinburgh\\PhysGauss\\.pytest-tmp'
+onerror = functools.partial(<function on_rm_rf_error at 0x000001D2FA348720>, start_path=WindowsPath('//?/F:/A_Edinburgh/PhysGauss/.pytest-tmp'))
+
+    def _rmtree_unsafe(path, onerror):
+        try:
+            with os.scandir(path) as scandir_it:
+                entries = list(scandir_it)
+        except OSError:
+            onerror(os.scandir, path, sys.exc_info())
+            entries = []
+        for entry in entries:
+            fullname = entry.path
+            if _rmtree_isdir(entry):
+                try:
+                    if entry.is_symlink():
+                        # This can only happen if someone replaces
+                        # a directory with a symlink after the call to
+                        # os.scandir or entry.is_dir above.
+                        raise OSError("Cannot call rmtree on a symbolic link")
+                except OSError:
+                    onerror(os.path.islink, fullname, sys.exc_info())
+                    continue
+                _rmtree_unsafe(fullname, onerror)
+            else:
+                try:
+                    os.unlink(fullname)
+                except OSError:
+                    onerror(os.unlink, fullname, sys.exc_info())
+        try:
+>           os.rmdir(path)
+E           PermissionError: [WinError 5] �ܾ����ʡ�: '\\\\?\\F:\\A_Edinburgh\\PhysGauss\\.pytest-tmp'
+
+envs\pidg-cu128\Lib\shutil.py:636: PermissionError
+
+During handling of the above exception, another exception occurred:
+
+path = '\\\\?\\F:\\A_Edinburgh\\PhysGauss\\.pytest-tmp', ignore_errors = False
+onerror = functools.partial(<function on_rm_rf_error at 0x000001D2FA348720>, start_path=WindowsPath('//?/F:/A_Edinburgh/PhysGauss/.pytest-tmp'))
+
+    def rmtree(path, ignore_errors=False, onerror=None, *, dir_fd=None):
+        """Recursively delete a directory tree.
+    
+        If dir_fd is not None, it should be a file descriptor open to a directory;
+        path will then be relative to that directory.
+        dir_fd may not be implemented on your platform.
+        If it is unavailable, using it will raise a NotImplementedError.
+    
+        If ignore_errors is set, errors are ignored; otherwise, if onerror
+        is set, it is called to handle the error with arguments (func,
+        path, exc_info) where func is platform and implementation dependent;
+        path is the argument to that function that caused it to fail; and
+        exc_info is a tuple returned by sys.exc_info().  If ignore_errors
+        is false and onerror is None, an exception is raised.
+    
+        """
+        sys.audit("shutil.rmtree", path, dir_fd)
+        if ignore_errors:
+            def onerror(*args):
+                pass
+        elif onerror is None:
+            def onerror(*args):
+                raise
+        if _use_fd_functions:
+            # While the unsafe rmtree works fine on bytes, the fd based does not.
+            if isinstance(path, bytes):
+                path = os.fsdecode(path)
+            # Note: To guard against symlink races, we use the standard
+            # lstat()/open()/fstat() trick.
+            try:
+                orig_st = os.lstat(path, dir_fd=dir_fd)
+            except Exception:
+                onerror(os.lstat, path, sys.exc_info())
+                return
+            try:
+                fd = os.open(path, os.O_RDONLY | os.O_NONBLOCK, dir_fd=dir_fd)
+                fd_closed = False
+            except Exception:
+                onerror(os.open, path, sys.exc_info())
+                return
+            try:
+                if os.path.samestat(orig_st, os.fstat(fd)):
+                    _rmtree_safe_fd(fd, path, onerror)
+                    try:
+                        os.close(fd)
+                    except OSError:
+                        # close() should not be retried after an error.
+                        fd_closed = True
+                        onerror(os.close, path, sys.exc_info())
+                    fd_closed = True
+                    try:
+                        os.rmdir(path, dir_fd=dir_fd)
+                    except OSError:
+                        onerror(os.rmdir, path, sys.exc_info())
+                else:
+                    try:
+                        # symlinks to directories are forbidden, see bug #1669
+                        raise OSError("Cannot call rmtree on a symbolic link")
+                    except OSError:
+                        onerror(os.path.islink, path, sys.exc_info())
+            finally:
+                if not fd_closed:
+                    try:
+                        os.close(fd)
+                    except OSError:
+                        onerror(os.close, path, sys.exc_info())
+        else:
+            if dir_fd is not None:
+                raise NotImplementedError("dir_fd unavailable on this platform")
+            try:
+                if _rmtree_islink(path):
+                    # symlinks to directories are forbidden, see bug #1669
+                    raise OSError("Cannot call rmtree on a symbolic link")
+            except OSError:
+                onerror(os.path.islink, path, sys.exc_info())
+                # can't continue even if onerror hook returns
+                return
+>           return _rmtree_unsafe(path, onerror)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+envs\pidg-cu128\Lib\shutil.py:787: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+path = '\\\\?\\F:\\A_Edinburgh\\PhysGauss\\.pytest-tmp'
+onerror = functools.partial(<function on_rm_rf_error at 0x000001D2FA348720>, start_path=WindowsPath('//?/F:/A_Edinburgh/PhysGauss/.pytest-tmp'))
+
+    def _rmtree_unsafe(path, onerror):
+        try:
+            with os.scandir(path) as scandir_it:
+                entries = list(scandir_it)
+        except OSError:
+            onerror(os.scandir, path, sys.exc_info())
+            entries = []
+        for entry in entries:
+            fullname = entry.path
+            if _rmtree_isdir(entry):
+                try:
+                    if entry.is_symlink():
+                        # This can only happen if someone replaces
+                        # a directory with a symlink after the call to
+                        # os.scandir or entry.is_dir above.
+                        raise OSError("Cannot call rmtree on a symbolic link")
+                except OSError:
+                    onerror(os.path.islink, fullname, sys.exc_info())
+                    continue
+                _rmtree_unsafe(fullname, onerror)
+            else:
+                try:
+                    os.unlink(fullname)
+                except OSError:
+                    onerror(os.unlink, fullname, sys.exc_info())
+        try:
+            os.rmdir(path)
+        except OSError:
+>           onerror(os.rmdir, path, sys.exc_info())
+E           PermissionError: [WinError 5] �ܾ����ʡ�: '\\\\?\\F:\\A_Edinburgh\\PhysGauss\\.pytest-tmp'
+
+envs\pidg-cu128\Lib\shutil.py:638: PermissionError
+============================== warnings summary ===============================
+tests/test_photometric_oracle.py::test_independent_process_aggregate_save_resume
+  F:\A_Edinburgh\PhysGauss\envs\pidg-cu128\Lib\site-packages\_pytest\pathlib.py:103: PytestWarning: (rm_rf) unknown function <built-in function scandir> when removing \\?\F:\A_Edinburgh\PhysGauss\.pytest-tmp:
+  <class 'PermissionError'>: [WinError 5] �ܾ����ʡ�: '\\\\?\\F:\\A_Edinburgh\\PhysGauss\\.pytest-tmp'
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+ERROR tests/test_photometric_oracle.py::test_independent_process_aggregate_save_resume
+27 passed, 1 warning, 1 error in 4.20s
