@@ -8,9 +8,15 @@ passed. The off native RGB RMS0.00178145 and alpha RMS0.00364371 are within
 the predeclared3x unchanged-repeat envelope (0.00117030 and0.00258489).
 This is numerical parity, not a cross-process bitwise determinism claim.
 
-No formal R0 training result is available yet. The latest completed experiment
-is scratch-integrity v2; it is preserved unchanged. Full R0 training begins only
-after the implementation checkpoint commit. The full pipeline will then evaluate
-both final50k states and update this plan's numeric status; native manual review
-will determine the evidence-based next step. Thread follow-up automation `pidg`
-checks for meaningful changes every10 minutes and does not start extra candidates.
+Implementation and preflight were committed as `23f53c35`. Formal R0 pipeline
+started at 2026-11-03 04:46:16 UTC, PID265148; controller PID270036 and H0 trainer
+PID270724. Both branch receipts bind the same full15k checkpoint hash. H0 runs
+first, followed by H1, each targeting50k with35000 actual updates. Launch metadata:
+`background_launch.json`; live state: `runs/pidg_static_pool/pipeline.json`,
+`controller.json` and `active.json`.
+
+No formal R0 result is available yet. The latest completed experiment is
+scratch-integrity v2. The pipeline will evaluate both final50k states and export
+native fixed-view videos; actual image review will determine the next step.
+Thread follow-up automation `pidg` checks for meaningful changes every10 minutes
+and does not start extra candidates.

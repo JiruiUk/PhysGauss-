@@ -70,7 +70,9 @@ exclusion is part of the declared treatment, not a separate claimed benefit.
 
 R0: implementation and preflight passed. All 32 related tests, native gradient
 and Adam checks, flags-off numerical parity, and full-state recovery passed.
-No formal R0 training result exists yet. The matched arms begin after the
-implementation milestone commit. Immutable settings are in `static_pool/plan.json`;
-subsequent observations and plan changes belong in `static_pool/progress.md`
-and assessment. The active thread follow-up checks completion every 10 minutes.
+Implementation milestone: `23f53c35`. The matched pipeline launched at
+2026-11-03 04:46:16 UTC; H0 trains first and H1 follows from the identical full15k
+state. No formal R0 training result exists yet. Immutable settings are in
+`static_pool/plan.json`; observations and plan changes belong in
+`static_pool/progress.md` and assessment. The active thread follow-up checks
+completion every 10 minutes.

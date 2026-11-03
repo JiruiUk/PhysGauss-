@@ -53,3 +53,8 @@ numeric report. A native visual review and plan revision are required before
 promotion. Thread heartbeat `pidg` checks every10min, stays quiet while unchanged,
 and will review completion/failure and revise the plan without weight sweeps or
 automatically adding new physics. Separate implementation and result commits.
+
+Implementation/preflight committed as `23f53c35`. Hidden formal pipeline launched
+2026-11-03 04:46:16 UTC (PID265148), with matched source receipts and only the main
+flag differing; initial H0 trainer PID270724. The pipeline runs both arms serially
+before evaluation. No formal training result or promotion is claimed at launch.

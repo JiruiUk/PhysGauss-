@@ -1,0 +1,28 @@
+{
+  "source_sha256": "db9560a4e6a62324bb98933da2ec6d21949bdb8619111b939382f80af9c6bb21",
+  "binding": {
+    "path": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_static_pool\\static_reference.npz",
+    "sha256": "2aa9c7f68696763eedda0d0d4c8ffdccbeba7faa67a13a7a6d830347be6fb492",
+    "source_checkpoint_sha256": "db9560a4e6a62324bb98933da2ec6d21949bdb8619111b939382f80af9c6bb21",
+    "source_row_binding_sha256": "2116433681160f388945069adf0c4eb252f82f9fd2682165fef7bf7cf7aba35e",
+    "point_count": 88916,
+    "static_points": 14624,
+    "dynamic_or_unknown_points": 74292,
+    "static_blue_contribution_mean": 0.6068087220191956,
+    "static_blue_contribution_time_thirds": [
+      0.6037862300872803,
+      0.4785848557949066,
+      0.7380551099777222
+    ],
+    "train_only": true,
+    "new_Gaussians": 0,
+    "new_learnable_parameters": 0,
+    "reference_policy": "Fixed per-row d_xyz/d_rotation/d_scaling captured at its existing training-only best-support reference frame; underlying canonical Gaussian geometry and appearance remain learnable",
+    "physical_material_ID": false
+  },
+  "only_main_flag_differs": true,
+  "models": {
+    "H0_dynamic_control": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_static_pool\\pilot\\H0_dynamic_control\\rubber_duck",
+    "H1_static_pool": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_static_pool\\pilot\\H1_static_pool\\rubber_duck"
+  }
+}
