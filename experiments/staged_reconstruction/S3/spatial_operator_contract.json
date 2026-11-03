@@ -1,0 +1,13 @@
+{
+  "correction": "Use actual current-world same-bank kNN, instead of canonical neighbors after nonaffine deformation",
+  "support_schedule": [
+    64,
+    128,
+    256
+  ],
+  "minimum_valid_fraction_unchanged": 0.25,
+  "rank_ratio_unchanged": 1e-06,
+  "invalid_neighborhoods": "Fail, never zero residual",
+  "cache": "Current-world neighbors recomputed each objective call; inherited empty caches explicitly checkpointed",
+  "no_stress_geometry_or_physical_ID_GT": true
+}

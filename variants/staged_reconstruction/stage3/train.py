@@ -123,6 +123,7 @@ def main():
             print('S3_FULL_STATE_RESTORED',start,flush=True)
         else:
             rng_restore(parent_state);start=0;stack=parent_state['camera_stack']
+            save(directory,scene,opt,start,stack,protocol_hash,protocol['parent_sha256'])
         if args.evaluate_only:evaluate(renderer,scene,start,'val');evaluate(renderer,scene,start,'test');return
         if not args.smoke:assert read(STAGE_REPORT/'smoke_verification.json')['passed']
         meta=read(DATA/'transforms_train.json');ledger=np.load(RUNS/'S2_observations.npz',allow_pickle=False)
@@ -162,7 +163,10 @@ def main():
         evaluate(renderer,scene,completed,'val');evaluate(renderer,scene,completed,'test');freeze(protocol)
         if not args.smoke:write(RUNS/'state.json',{'stage':'S3','status':'evaluated_pending_review','iteration':completed})
     except Exception as error:
-        if 'completed' in locals():save(directory,scene,opt,completed,stack,protocol_hash,protocol['parent_sha256'])
+        # A failed step may already have popped a camera or partially changed
+        # optimizer state. Preserve the last atomic full checkpoint for replay.
+        write(directory/'failure.json',{'error':repr(error),'last_completed_in_memory':locals().get('completed'),
+            'attempted_iteration':locals().get('step'),'recovery':'Replay from existing atomic checkpoint; never relabel partial state'})
         if not args.smoke:write(RUNS/'state.json',{'stage':'S3','status':'failed','error':str(error),'iteration':locals().get('completed',0)})
         raise
     finally:
