@@ -1,5 +1,21 @@
 # PIDG repository map — M0
 
+## Independent count-free S3-U branch (2026-11-03)
+
+`variants/staged_reconstruction/union/prepare.py` freezes a training-image union
+initialization and separate protocol; `core.py` owns count-free pixel/depth
+sampling and union coverage. `model.py:UnionScene` uses one canonical dynamic
+population, one original DeformModel and one original VelocityNet/stress field.
+It shares only frozen S1 static support. `train.py` owns opt-in16k reconstruction
+warmup/6k S3 continuation, existing image/CMR weights and lock/stop handling;
+`runtime.py` saves model/Adam/RNG/camera/derived graph state. `evaluate.py` writes
+isolated native image metrics. `experiments/staged_reconstruction/verify_union.py`
+checks real40→80 recovery and renderer parity; `review_union.py` exports native
+fixed-view images and H264 comparisons to historical S3. No instance numbering,
+physical body-number estimate or learned material segmentation is introduced.
+Spatial dynamic-only neighborhoods cannot certify physical-boundary exclusion.
+Original PIDG and frozen S1–S6 sources/checkpoints are not edited by this branch.
+
 ## Independent S1--S6 reconstruction curriculum (2026-11-03)
 
 This opt-in branch does not modify `train_pidg.py`, baseline `GaussianModel`,

@@ -197,3 +197,30 @@ truth. Manufactured sphere/plane optimization is not a replacement for this
 RGB reconstruction benchmark. Freeze split/metrics/criteria before running;
 do not increase weights, sweep candidates or add constitutive/unknown forces.
 The concrete retained dependencies are in staged_reconstruction_plan.md.
+
+
+## S3-U: user-authorized unified dynamic population (2026-11-03)
+
+The user selected one unified dynamic Gaussian population without estimating
+body number. This is a separate branch, not unknown-count instance discovery.
+No instance labels, original four-group initializations, identity ledgers or
+trained S2/S3 dynamic weights are inputs. Frozen S1 static support is shared.
+One shared canonical population, deformation network and velocity/stress field
+replace separate instance fields. The global15,507 point budget is unchanged;
+capacity and initialization differences are disclosed rather than treated as
+a matched single-switch ablation.
+
+Frozen protocol: staged_reconstruction/S3_union/protocol.json. Execute16k
+image-only warmup, actual native review and unchanged numeric gates, then6k
+S3 kinematic/CMR continuation. Existing weights, time units, camera convention
+and static freeze remain. Validate each phase's40-to80 full-state recovery
+before formal training. Dynamic-only spatial stencils have no physical-boundary
+exclusion. No contact/constitutive/unknown-force/instance-count inference is on.
+Compare native val/test and fixed86/fixed188/original-camera videos against
+original S3, preserve negative results and late identity uncertainty.
+
+Implementation:49 related tests, native renderer parity(max3.5763e-7) and
+warmup40-to80 Adam/RNG/sampler/static-freeze verification passed. Formal warmup
+is ready; no historical paused trainer or automation is resumed. Test setup
+failures involving the shared temp directory and a missing new parent directory
+are retained in the test receipt; the isolated fresh test directory passes.

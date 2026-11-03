@@ -1,0 +1,23 @@
+{
+  "verified_utc": "2026-11-03T13:28:14.048540+00:00",
+  "passed": 49,
+  "suite": "tests/test_staged_*.py (12 selected files including union)",
+  "command": "PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 python -m pytest [12 selected staged test files] --basetemp=runs/pidg_staged_reconstruction/S3_union/pytest_20261103b -p no:cacheprovider -q",
+  "attempts": [
+    {
+      "attempt": 1,
+      "outcome": "46 passed;3 fixture setup errors because shared .pytest-tmp cannot be removed; no module test failure"
+    },
+    {
+      "attempt": 2,
+      "outcome": "46 passed;3 fixture setup errors because new temp parent did not exist"
+    },
+    {
+      "attempt": 3,
+      "outcome": "49 passed; existing requires_grad-to-scalar warning; isolated temp parent exists"
+    }
+  ],
+  "native_preflight": "native_preflight.json",
+  "warmup_smoke": "warmup_smoke_verification.json",
+  "formal_training_completed": false
+}

@@ -1,0 +1,67 @@
+{
+  "stage": "S3-U",
+  "enabled_by_default": false,
+  "seed": 20261104,
+  "representation": "One unified canonical dynamic population; no physical body numbering or inference",
+  "static_checkpoint_sha256": "2dd8d5e0ea35d55e648aa236ea779eebe2fe3d415d34ad931e732f0140b89031",
+  "static_frozen": true,
+  "data_receipt_sha256": "3bea6cf481a99bc835c3f38999906946af76b434f95fa942df46f4ed6f817184",
+  "camera_contract": "metadata_cv",
+  "dynamic_point_budget": 15507,
+  "grid_args": {
+    "canonical_num_levels": 12,
+    "canonical_log2_hashmap_size": 17,
+    "canonical_desired_resolution": 256,
+    "deform_num_levels": 16,
+    "deform_log2_hashmap_size": 17,
+    "deform_desired_resolution": [
+      32,
+      32,
+      16
+    ]
+  },
+  "net_args": {
+    "depth": 1,
+    "width": 128
+  },
+  "capacity_policy": "One grid with aggregate hash-table cap comparable to prior split grids; one shared MLP/velocity/stress field. Actual parameter counts reported.",
+  "warmup_updates": 16000,
+  "warmup_width_schedule": [
+    [
+      1,
+      800
+    ],
+    [
+      12001,
+      1600
+    ]
+  ],
+  "physics_updates": 6000,
+  "physics_width": 1600,
+  "image_objective": "0.8 L1 +0.2 SSIM +0.5 foreground RGB +0.5 static RGB +2.0 one-sided union coverage",
+  "kinematic_weight": 0.01,
+  "CMR_weight": 1e-05,
+  "physics_every": 10,
+  "shared_gradient_cap": 0.1,
+  "physics_samples_global": 64,
+  "time_step": 0.005025125628140704,
+  "rate_coefficient_fixed": 1.0,
+  "density_fixed": 1.0,
+  "neighborhood_policy": "Current-world kNN inside the dynamic population only; no physical-boundary exclusion is available",
+  "time_units": "sequence normalized; acquisition seconds unknown",
+  "checkpoint_interval": 500,
+  "validation_interval": 2000,
+  "warmup_admission": {
+    "dynamic_PSNR_min": 20.0,
+    "dynamic_only_alpha_min": 0.85,
+    "static_PSNR_drop_max": 1.0
+  },
+  "sparse_tracks": false,
+  "contact": false,
+  "constitutive": false,
+  "unknown_force": false,
+  "densification": false,
+  "final_preselected": true,
+  "comparison_limit": "Fresh union initialization and shared architecture; not a single-switch ablation from an instance-conditioned checkpoint",
+  "success_limit": "No number estimation, physical identities, independent geometry/stress GT or calibrated contact claim"
+}
