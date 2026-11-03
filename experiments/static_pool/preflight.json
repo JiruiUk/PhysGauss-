@@ -1,0 +1,104 @@
+{
+  "status": "passed",
+  "binding_sha256": "2aa9c7f68696763eedda0d0d4c8ffdccbeba7faa67a13a7a6d830347be6fb492",
+  "disabled_updates": 120,
+  "enabled_updates": 120,
+  "resume_boundary": [
+    15060,
+    15120
+  ],
+  "CMR_event_included": true,
+  "disabled_parameter_RMS": {
+    "gaussian_parameters": {
+      "RMS": 0.0036056544024455845,
+      "max_abs": 1.807956576347351
+    },
+    "gaussian_buffers": {
+      "RMS": 0.0,
+      "max_abs": 0.0
+    },
+    "velocity_net": {
+      "RMS": 1.5744439738137104e-08,
+      "max_abs": 1.831725239753723e-05
+    },
+    "grid4d": {
+      "RMS": 0.0005886601434818353,
+      "max_abs": 0.10953560471534729
+    },
+    "deform": {
+      "RMS": 2.6642802634946943e-05,
+      "max_abs": 0.0004262849688529968
+    }
+  },
+  "original_repeat_RMS": {
+    "gaussian_parameters": {
+      "RMS": 0.0030461234976025637,
+      "max_abs": 0.8250258564949036
+    },
+    "gaussian_buffers": {
+      "RMS": 0.0,
+      "max_abs": 0.0
+    },
+    "velocity_net": {
+      "RMS": 1.2355385808339677e-08,
+      "max_abs": 8.903443813323975e-06
+    },
+    "grid4d": {
+      "RMS": 0.0005159155079846961,
+      "max_abs": 0.08811095170676708
+    },
+    "deform": {
+      "RMS": 2.3389302196654896e-05,
+      "max_abs": 0.00048069655895233154
+    }
+  },
+  "RNG_sampler_exact_off": true,
+  "native_render_probe": {
+    "passed": true,
+    "native_resolution": [
+      1600,
+      900
+    ],
+    "training_frames": [
+      2,
+      86,
+      188
+    ],
+    "full_states": {
+      "original": {
+        "iteration": 15120,
+        "sha256": "7e348f6564fa812d8785a68a6e4db91927c8bbcfb96f6610b809d8a1a30aa649",
+        "point_count": 88916
+      },
+      "original_repeat": {
+        "iteration": 15120,
+        "sha256": "ccf231d37c1cd32c59ee533b5c5f771090dc428fc872190e4576daa0fac2fbef",
+        "point_count": 88916
+      },
+      "flags_off": {
+        "iteration": 15120,
+        "sha256": "05a332596229a27706961d1b2ceb4cffa6977a6317ba428915d36522365d70bd",
+        "point_count": 88916
+      },
+      "enabled_resume": {
+        "iteration": 15120,
+        "sha256": "ad4bc8b41ae7ff487e639bc243965c634aa610c1c46e8960bb7fa4dd2e76c0f4",
+        "point_count": 88916
+      }
+    },
+    "comparisons": {
+      "original_repeat": {
+        "render_RMS": 0.001170303985642552,
+        "alpha_RMS": 0.002584887152983257
+      },
+      "flags_off": {
+        "render_RMS": 0.0017814497221835602,
+        "alpha_RMS": 0.00364370849842175
+      }
+    },
+    "gate": "RMS <= 3 x unchanged original-repeat RMS + 1e-7",
+    "enabled_restored_static_center_covariance_time_invariant": true,
+    "new_view_GT_claim": false
+  },
+  "inert_max_radii2D_excluded_from_parameter_gate": "Densification ended at15k; never used by later optimizer or renderer"
+}

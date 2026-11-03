@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "source": {
+    "iteration": 15000,
+    "sha256": "db9560a4e6a62324bb98933da2ec6d21949bdb8619111b939382f80af9c6bb21",
+    "point_count": 88916
+  },
+  "static_rows": 14624,
+  "dynamic_rows": 74292,
+  "native_resolution": [
+    1600,
+    900
+  ],
+  "static_deformation_output_gradients_zero": true,
+  "dynamic_deformation_gradients_nonzero": true,
+  "static_geometry_and_appearance_gradient_L1": {
+    "canonical_xyz": 0.3104972243309021,
+    "opacity": 0.0020710730459541082,
+    "scale": 0.00779655110090971,
+    "rotation": 0.040444523096084595,
+    "SH_DC": 0.016283273696899414
+  },
+  "actual_static_parameter_L1_updates": {
+    "canonical_xyz": 0.023927217349410057,
+    "opacity": 0.004089917056262493,
+    "scale": 0.01124560832977295,
+    "rotation": 0.022474627941846848,
+    "SH_DC": 0.01672292686998844
+  },
+  "time_invariant_center_and_covariance": true,
+  "actual_CMR_excludes_static_rows": true,
+  "CMR_probe_calls_recorded": 256,
+  "CMR_loss": 2.20684874818744e-08,
+  "source_unchanged": true
+}

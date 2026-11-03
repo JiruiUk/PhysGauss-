@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "native_resolution": [
+    1600,
+    900
+  ],
+  "training_frames": [
+    2,
+    86,
+    188
+  ],
+  "full_states": {
+    "original": {
+      "iteration": 15120,
+      "sha256": "7e348f6564fa812d8785a68a6e4db91927c8bbcfb96f6610b809d8a1a30aa649",
+      "point_count": 88916
+    },
+    "original_repeat": {
+      "iteration": 15120,
+      "sha256": "ccf231d37c1cd32c59ee533b5c5f771090dc428fc872190e4576daa0fac2fbef",
+      "point_count": 88916
+    },
+    "flags_off": {
+      "iteration": 15120,
+      "sha256": "05a332596229a27706961d1b2ceb4cffa6977a6317ba428915d36522365d70bd",
+      "point_count": 88916
+    },
+    "enabled_resume": {
+      "iteration": 15120,
+      "sha256": "ad4bc8b41ae7ff487e639bc243965c634aa610c1c46e8960bb7fa4dd2e76c0f4",
+      "point_count": 88916
+    }
+  },
+  "comparisons": {
+    "original_repeat": {
+      "render_RMS": 0.001170303985642552,
+      "alpha_RMS": 0.002584887152983257
+    },
+    "flags_off": {
+      "render_RMS": 0.0017814497221835602,
+      "alpha_RMS": 0.00364370849842175
+    }
+  },
+  "gate": "RMS <= 3 x unchanged original-repeat RMS + 1e-7",
+  "enabled_restored_static_center_covariance_time_invariant": true,
+  "new_view_GT_claim": false
+}

@@ -587,3 +587,23 @@ state, trains to total50k, locks validation selection, then renders final test.
 recomputes PNG PSNR before producing videos/gallery/archive. Experiments are in
 `experiments/monotonic_training`; runs in `runs/pidg_monotonic_training`; user
 deliverables in `output/monotonic_training`. No external force is introduced.
+
+## R0 partial static pool (2026-11-03)
+
+`variants/static_pool/prepare.py` forks repaired C1 without editing original
+PIDG or historical experiments. The only trainer changes are its Tuning import
+and optional exclusion of accepted static rows from dynamic CMR sampling.
+The renderer calls `render.apply_warp` before computing centers/covariances;
+flag-off returns the original objects. `render.StaticPool` binds immutable,
+training-only reference warps to a specific source row/particle map and rejects
+topology/checksum changes. Static geometry and SH remain trainable; no new
+particles, segmentation or material/force parameters are introduced.
+`runtime.Tuning` binds full-state resume and logs matched camera samples.
+`bind`, `probe`, `native_check`, `run` implement source-bound references, native
+GPU gradient/parity/resume gates and matched15k→50k arms. `pipeline` serializes
+training, native fixed-view evaluation, decoded exports and numeric plan status;
+visual review is separate from structural invariance. Plans/evidence live in
+`experiments/static_pool`, outputs in `output/static_pool`, states in
+`runs/pidg_static_pool`. Adaptive decisions are recorded in
+`experiments/adaptive_reconstruction_plan.md`; the original physics ladder is
+not renumbered or bypassed.
