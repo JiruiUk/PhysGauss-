@@ -1,0 +1,23 @@
+{
+  "stage": "D3-O evaluator-only shape and ordinal diagnosis, not a new prior candidate",
+  "parent": "experiments/staged_reconstruction/S1_pretrained_geometry/v1/inference.json",
+  "parent_predictions_frozen": true,
+  "cases": ["diffuse", "glossy"],
+  "views_per_case": 96,
+  "new_predictions_or_model_training": false,
+  "GT_available_only_inside_this_evaluator": true,
+  "oracle_fit": "least-squares affine raw output to inverse static GT depth on visible static pixels where (x//8+y//8)%3!=0; positive slope required",
+  "oracle_check": "disjoint visible static pixels where (x//8+y//8)%3==0, including visible thin; no re-fit, robust trimming or GT-based model choice",
+  "oracle_coefficients_depth_arrays_or_masks_exported": false,
+  "oracle_validity": "finite positive transformed inverse depth, no near/far clamp; report missing held rays",
+  "oracle_interpretation": "privileged diagnostic of remaining shape error, not deployable calibration, training supervision or a proven global error bound",
+  "same_pixel_D1_comparison": "original D1 positive depths intersect held visible static and positive oracle depths",
+  "ordinal_pairs": "grid every4px starting2; offsets (4,0),(0,4),(16,0),(0,16),(64,0),(0,64); also grid point j to (j+997)%N; deduplicate undirected pixel IDs, before reading GT",
+  "strong_order": "abs raw difference >=0.1*(full-image raw q95-q05); a fixed diagnostic, not selection for training",
+  "ordinal_GT_diagnostic": "both endpoints visible static with abs GT depth difference>=0.05; thin subgroup at least one thin endpoint with difference>=0.02; equal-depth diagnostic abs GT difference<0.02",
+  "ordinal_direction": "larger relative prediction is closer; no sign flipping on GT",
+  "report": "all and strong pair sign violations, pair coverage and GT static-visible purity, equal-depth false strong ordering, invalid/missing, per-view and aggregate; original D3 direct-use gate unchanged",
+  "images": "fixed indices0/24/72 RGB, privileged shape error and original D1 error; no GT-fit metric arrays saved",
+  "Gaussian_or_real_training_authorized": false,
+  "no_threshold_weight_model_or_alignment_sweep": true
+}
