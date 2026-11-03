@@ -1,0 +1,27 @@
+{
+  "checkpoint_sha256": "0d35b8bce8642264e6963a5becb37408f7b9cc9acce832099e72c53fb0f8ffe3",
+  "native_images_reviewed": true,
+  "approve_conditional_continuation": true,
+  "files_reviewed": {
+    "output/staged_reconstruction/S5/S5_review_step04000.png": "ef85d39f2edf68c88db7c8c359383eeb99518fda7bffdb5abd7da5b5fcf572d9",
+    "output/staged_reconstruction/S5/native_crop_review.png": "002751f28b856af8eb36941087c16716ecdcbea1892c28f139352d9749ce9fba",
+    "output/staged_reconstruction/S5/fixed188_t0002_native.png": "41a3a11873d4dd528e5292c30c243063d30abfe6aadc5ee8d55be6e000f5aa62",
+    "output/staged_reconstruction/S5/fixed188_t0086_native.png": "59a5ca84d19459c607fb627d0b9c9857ad3f9a4391104f809545312a6a6c89c0",
+    "output/staged_reconstruction/S5/fixed188_t0188_native.png": "bf180412f5df6b2d56258a38cd4f34e3f18f036cbde2fe9f92885df0154d6aa6",
+    "output/staged_reconstruction/S5/fixed86_t0002_native.png": "23b366dee9f4bc2262fad6b2fe5054e9cff99eed7a1db852c55a4c3d9dd535ea",
+    "output/staged_reconstruction/S5/fixed86_t0086_native.png": "62e9304e02d14dcb70dbe4019a105f152358ef21de0109efa988eeba6aecd6b9",
+    "output/staged_reconstruction/S5/fixed86_t0188_native.png": "08f57018cbfe4d6ddfb18194b12a97cd33cfc6e61cc31f432f4038cbf53a6c32",
+    "output/staged_reconstruction/S5/original_t0002_native.png": "2989ea273c1e65659aaeac8c58424c15f34707d3c240f99f3d3e2a5550835f4c",
+    "output/staged_reconstruction/S5/original_t0086_native.png": "62e9304e02d14dcb70dbe4019a105f152358ef21de0109efa988eeba6aecd6b9",
+    "output/staged_reconstruction/S5/original_t0188_native.png": "bf180412f5df6b2d56258a38cd4f34e3f18f036cbde2fe9f92885df0154d6aa6"
+  },
+  "manual_scope": "Nine observed/group rows plus nine native pixel crops; videos independently decoded, not all manually watched. Native crops provide 1:1 detail while the observed/group panel provides full-scene context.",
+  "findings": [
+    "Observed-camera duck silhouettes are recognizable, with blurred contours and early lower-duck streaking.",
+    "Novel fixed86/fixed188 views retain fragmented sheets, speckle and holes, especially at times different from the fixed camera observation; no geometry success established.",
+    "Late model-bank leakage remains; physical identities after ambiguous occlusion stay unknown.",
+    "All455 qualified track observations average0.66467054px@400, worse than the S3 baseline0.53684143; this is not a demonstrated track improvement.",
+    "All800 conditional interior calls during S5 training have zero active violations and zero nonzero prior calls. There was no actual collision correction; the controlled operator fixture is not real-scene contact validation.",
+    "Conditional continuation is limited to the predeclared S6 reconstruction curriculum with lower learning rates and static appearance updates. Original-plan object-object nonpenetration, contact force, friction and restitution remain unvalidated/off."
+  ]
+}

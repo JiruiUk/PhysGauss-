@@ -149,3 +149,15 @@ has been demonstrated; S5 real-parent40→80 recovery smoke is now running.
 S5 real-parent40→80 recovery passes136 Adam states, exact sampler/RNG and
 static freeze. Formal4000 launched PID263796. All prior losses/weights remain
 frozen. Whole-run conditional-interior activation will be audited explicitly.
+
+S5 completed4000 actual updates, independent native val/test and full-state
+audit, observed/group/native fixed-view review and three200-frame video decode
+checks. Validation dynamic25.603743dB, alpha0.984816, static35.983147dB;
+test dynamic25.745418dB. Track error0.664671px@400 remains worse than the
+S3 baseline0.536841. All800 prior calls and16000 eligible observation instances
+had zero active violations: no actual collision correction was demonstrated.
+Novel-view sheets, holes and late-bank leakage remain. S5 is finalized only for
+the predeclared conditional S6 reconstruction continuation; object-object
+nonpenetration/contact forces/friction/restitution remain unvalidated/off.
+S6 real-parent40→80 recovery smoke is now running, with0.25 learning rates,
+static appearance unfrozen and static geometry exactly fixed to S1.
