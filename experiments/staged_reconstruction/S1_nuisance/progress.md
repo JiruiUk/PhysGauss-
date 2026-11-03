@@ -58,3 +58,11 @@ static/RNG/camera sequence matched, all full-state and topology audits passed.
 Prepared common4000-point synthetic initialization and96 per-image planes/arm.
 Formal synthetic training can now start; no real training until both GT gates
 and actual manual review pass.
+
+## Diffuse full-RGB control completed
+
+6000 updates completed with4000 fixed static points. Full-state audit passed:
+six static Adam counters6000,96 view visit counts replayed, RNG/camera stack
+exact, source/input/history unchanged. Checkpoint SHA256
+`64b5bc00a6a1ada7957c4d1bd8087df59c7e4c00f994cf02ace30fa83e3fb45b`.
+No quality conclusion before nuisance/glossy and independent GT evaluation.
