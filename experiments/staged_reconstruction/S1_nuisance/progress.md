@@ -76,3 +76,11 @@ unvisited planes unchanged, RNG/sampler/topology replay verified. Checkpoint
 SHA256 `9dc4322df099a123de1fc18801dbca2dbb621820c5b1239053176990bc87db06`.
 This records execution integrity only; static quality awaits matched independent
 GT evaluation and actual image review. Glossy arms remain serialized.
+
+## Glossy full-RGB control completed
+
+6000 updates completed with4000 fixed static points. All six static Adam
+counters6000 and the same96-view sampling/RNG/topology/source audits passed.
+Checkpoint SHA256 `c4dd10f4ec2c45fa21a9fcaf296313e0b6ce476299fe21766fd29cfe9fe5fd3a`.
+The glossy nuisance arm is the last formal synthetic arm; no real training has
+started. Quality conclusions remain pending independent evaluation.
