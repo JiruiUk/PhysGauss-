@@ -1,0 +1,54 @@
+{
+  "phase": "physics",
+  "checkpoint_sha256": "8c767b7835eee936e49989369d7bc0277d7567d3aedaa7385c06654284b68ad0",
+  "iteration": 6000,
+  "parent_sha256": "0df6eb240b299e79e7fae407286670723de0b904b1c9aa2203b98c46e0e1a646",
+  "all_frozen_sources_inputs_protocols_match": true,
+  "static_exact_S1": true,
+  "finite_model_and_optimizer": true,
+  "one_dynamic_population_and_shared_field": true,
+  "physical_body_number": null,
+  "instance_identity_available": false,
+  "exact_all_step_sampling_and_final_python_RNG": true,
+  "sampler_sequence_sha256": "d36b3fe5ec0e27057c446e3c659c8c696daeb392d8570e22ce06bb3c6fb39ec0",
+  "numpy_CPU_Torch_all_CUDA_RNG_match_no_random_forward_contract": true,
+  "optimizer_state_count": 34,
+  "all_actual_Adam_counters_correct": true,
+  "native_validation": {
+    "PSNR": 28.1662540435791,
+    "dynamic_PSNR": 25.181220690409344,
+    "dynamic_alpha": 0.9884210109710694,
+    "static_PSNR": 34.99995543162028,
+    "static_alpha": 0.9972128828366598,
+    "background_alpha": 0.010029760360096892,
+    "dynamic_leakage_on_static": 0.006813798058768346
+  },
+  "numeric_gates": {
+    "dynamic_PSNR": true,
+    "dynamic_only_alpha": true,
+    "static_preservation": true
+  },
+  "parameters": {
+    "sha256": "43f8c1c521230cb2f053ede942bd3ad71e6e653ff37c119d99ed8c8c0b308a00",
+    "phase": "physics",
+    "trainable_parameters": 3645217,
+    "dynamic_parameters": 914913,
+    "grid_parameters": 2665232,
+    "deform_parameters": 33934,
+    "velocity_stress_parameters": 31138,
+    "physical_body_number": null
+  },
+  "physical_boundary_exclusion_available": false,
+  "manual_image_review_pending": true,
+  "native_test": {
+    "PSNR": 28.221540641784667,
+    "dynamic_PSNR": 25.39307674407959,
+    "dynamic_alpha": 0.9884361302852631,
+    "static_PSNR": 35.199143447875976,
+    "static_alpha": 0.99721635222435,
+    "background_alpha": 0.00985924638574943,
+    "dynamic_leakage_on_static": 0.006971349056402687
+  },
+  "physics_objective_calls": 600,
+  "physics_valid_fraction_min": 0.984375
+}

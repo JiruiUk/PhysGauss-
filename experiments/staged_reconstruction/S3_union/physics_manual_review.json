@@ -1,0 +1,34 @@
+{
+  "checkpoint_sha256": "8c767b7835eee936e49989369d7bc0277d7567d3aedaa7385c06654284b68ad0",
+  "native_images_reviewed": true,
+  "review_method": "Actual view_image inspection of the 13 listed files; no claim of manually watching every video frame or browser playback",
+  "viewed_image_sha256": {
+    "output/staged_reconstruction/S3_union/physics/fixed86_pair_t0002.png": "a4cc933dd5c06dccf61cb8028e539668e0ada7d2c5df56b45c145873baf3a222",
+    "output/staged_reconstruction/S3_union/physics/fixed86_pair_t0086.png": "a89f8c055ebfb1a36414b9070342bff259778268d7b0a337cd210f808b732913",
+    "output/staged_reconstruction/S3_union/physics/fixed86_pair_t0188.png": "935b890124c646681e54fbadb520835130015103b16ee9891309c52f9713aee2",
+    "output/staged_reconstruction/S3_union/physics/fixed188_pair_t0002.png": "aa823c05069b8b9cae51fdf28a52e3d90b9efa339c70012ea9ababee7c8c0d42",
+    "output/staged_reconstruction/S3_union/physics/fixed188_pair_t0086.png": "0552c292e4e336e4a9d8f78e30d116bdef8f3212e5ea2b4498a40979ec9cf673",
+    "output/staged_reconstruction/S3_union/physics/fixed188_pair_t0188.png": "7a5008af79503783773fffe9ffdef0f3e936514d8036d0175274e6763c3d428e",
+    "output/staged_reconstruction/S3_union/physics/original_pair_t0002.png": "e9ecca90c0a7dd6c03d9af6d5547e40588e87d4dfbc4d25ec1e047e68352562b",
+    "output/staged_reconstruction/S3_union/physics/original_pair_t0086.png": "5b9d6045af2533224509d4291921e4ec1a98a72b07051722478838d481ee6ad5",
+    "output/staged_reconstruction/S3_union/physics/original_pair_t0188.png": "813fb47c4e52101b3ff7cede2b94850bf9a08b2b417895fa1a3fd0eed9726b70",
+    "output/staged_reconstruction/S3_union/physics/observed_review.png": "53b172afe1ad80cea1304f431c50222879dc6cc40896adb82390cf2a9674bba7",
+    "output/staged_reconstruction/S3_union/physics/fixed86_t0188_native.png": "7e310c33a4049d030d8b1fde569b419cd15aa9e9e3c2884bb044f6b547107855",
+    "output/staged_reconstruction/S3_union/physics/fixed188_t0086_native.png": "adf49b530ca8242649a05023f42781f1ee94dc61d8384c135e403b3ee672dad0",
+    "output/staged_reconstruction/S3_union/physics/original_t0188_native.png": "24f6624306527206a1e14a3b0c950966064a307b5094411dffc220eb360e4c81"
+  },
+  "findings": [
+    "三个视角各查看2/86/188时刻的原S3与S3-U并排图，另查看9时刻观测/预测/动态单独贡献面板，以及固定86晚期、固定188中期和原轨迹晚期的1600×900原图。",
+    "原相机轨迹下总体轮廓可拟合，部分晚期细节和边缘看起来更清楚；模糊与形状误差仍然存在，不能据少数图像宣称整体胜出。",
+    "42/43附近底部动态前景过亮、涂抹，部分观测区域拟合不完整。",
+    "固定86晚期仍有黄色长条和片状碎裂，固定188中期仍有显著碎片与拉伸，没有恢复完整鸭子几何。",
+    "两种表示均存在新视角几何伪影；S3-U没有证据支持新视角整体优于原S3。固定跨时间视角缺少独立GT。",
+    "静态支撑总体相似且可辨认，其参数完全共享并冻结；动态渲染仍可污染部分静态区域。",
+    "统一池不输入、输出或估计物理物体数，也不提供实例身份；遮挡后物理身份、完整表面和应力正确性保持未知。"
+  ],
+  "geometry_success": false,
+  "physical_body_number": null,
+  "independent_geometry_or_stress_GT_available": false,
+  "all_video_frames_manually_watched": false,
+  "browser_playback_observed": false
+}

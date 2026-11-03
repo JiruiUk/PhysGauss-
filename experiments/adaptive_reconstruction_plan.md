@@ -236,3 +236,28 @@ The real-parent physics40-to80 recovery passes34 Adam states and all RNG/static
 checks. Original sources/weights and loss thresholds are unchanged. See
 S3_union/warmup_assessment.md and receipts. Independent preview failure and
 source are retained; its CPU/CUDA comparison repair changed no training state.
+
+### Completed S3-U evidence and next dependency (2026-11-03)
+
+User-selected unified dynamic Gaussian pool, without body-count or identity
+inference, completed16k warmup+6k S3 continuation.49 related tests, independent
+40-to80 phase recovery and complete sampler/RNG/Adam/source/static-freeze audits
+pass. Native final validation dynamic25.181221dB versus original S3's25.392299dB
+(-0.211079); static34.999955dB, test dynamic25.393077dB. Standard validation
+PSNR28.165765/SSIM0.969167/LPIPS0.045682. The4k dynamic26.156537dB is retained but
+does not replace the preselected6k endpoint. Shared capacity/initialization/
+coverage differ; do not interpret this as a one-switch ablation.
+
+Actual13-image review retains fixed86 late sheets/streaks and fixed188 middle
+fragmentation/stretching. Good observed-image fit/alpha and valid derivative
+stencils do not certify geometry or physical boundaries. Six new H264 comparisons
+and single-model videos decoded200frames each; historical checkpoints/videos
+remain unchanged. See staged_reconstruction/S3_union/assessment.md and
+completion_integrity.json. The main gallery links this count-free branch.
+
+The authorized S3-U comparison is complete, with no automatic S4-U--S6-U or
+physics expansion. Next evidence priority remains calibrated synthetic RGB and
+independent novel-view geometry/trajectory evaluation, retaining unknown physical
+identities. It must not reintroduce physical-body-count estimation into this
+unified-pool branch. Original incomplete contact goals stay recorded; no weight
+sweep or paused historical trainer/automation is resumed.

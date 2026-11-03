@@ -263,3 +263,35 @@ The real-parent physics40-to80 recovery passes34 Adam states and all RNG/static
 checks. Original sources/weights and loss thresholds are unchanged. See
 S3_union/warmup_assessment.md and receipts. Independent preview failure and
 source are retained; its CPU/CUDA comparison repair changed no training state.
+
+### S3-U completed and reviewed (2026-11-03)
+
+The predeclared16k reconstruction warmup plus6k S3 continuation completed22k
+updates. No physical body number is supplied or estimated;15,507 dynamic points
+share one canonical pool, deformation field and original PIDG velocity/stress
+field. S1 static tensors remain exact. All22k sampler choices, final Python/
+NumPy/Torch/CUDA RNG payloads, Adam counts and source/input/protocol freezes
+pass;49 related tests and both independent40-to80 recovery checks pass.
+
+Final native validation dynamic PSNR is25.181221dB versus original S3's
+25.392299dB(delta-0.211079); static34.999955 versus35.941669dB. Standard full-frame
+validation PSNR28.165765/SSIM0.969167/VGG-LPIPS0.045682; test dynamic25.393077dB.
+The4k intermediate dynamic26.156537dB is retained, but the preselected6k endpoint
+is reported without cherry-picking or changing weights. Shared architecture
+has3,645,217 trainable parameters versus5,831,273; fresh initialization and union
+coverage also differ, so this is not a single-switch causal ablation.
+
+Actual review of13 recorded images finds persistent fixed86 late yellow sheets/
+streaks and fixed188 middle fragments/stretching, plus incomplete observed RGB
+fit near42/43. Neither representation certifies complete novel-view geometry;
+physical IDs and boundary-safe neighborhoods remain unknown. Six new H264
+videos fully decoded200frames each; codec/faststart, camera fingerprints and73
+local HTML links verify. All six original final checkpoints, C1 protection hashes
+and15 original stage videos remain intact. No task trainer/evaluator remains;
+training lock is free. See S3_union/assessment.md and completion_integrity.json.
+
+The gallery now links original-S3/S3-U comparisons at fixed86/fixed188 and the
+original trajectory. Original stage metrics/figures are unchanged. This request
+ends at S3-U; S4-U--S6-U, new physics and historical paused automations are not
+started. Further evidence work still prioritizes independently observable
+geometry; no count/identity inference is introduced into this unified-pool branch.

@@ -1,0 +1,454 @@
+{
+  "stage": "S3-U",
+  "scope": "Unified dynamic population; neither input nor estimate physical body number",
+  "training_completed": true,
+  "warmup_updates": 16000,
+  "physics_updates": 6000,
+  "physical_body_number": null,
+  "instance_identity_available": false,
+  "geometry_or_physical_success_claimed": false,
+  "warmup_audit": {
+    "phase": "warmup",
+    "checkpoint_sha256": "0df6eb240b299e79e7fae407286670723de0b904b1c9aa2203b98c46e0e1a646",
+    "iteration": 16000,
+    "parent_sha256": "2dd8d5e0ea35d55e648aa236ea779eebe2fe3d415d34ad931e732f0140b89031",
+    "all_frozen_sources_inputs_protocols_match": true,
+    "static_exact_S1": true,
+    "finite_model_and_optimizer": true,
+    "one_dynamic_population_and_shared_field": true,
+    "physical_body_number": null,
+    "instance_identity_available": false,
+    "exact_all_step_sampling_and_final_python_RNG": true,
+    "sampler_sequence_sha256": "9e586fa6458fb69af92fd2c3bfd68d2f555016bad2c16c64ddd13983ed97c026",
+    "numpy_CPU_Torch_all_CUDA_RNG_match_no_random_forward_contract": true,
+    "optimizer_state_count": 22,
+    "all_actual_Adam_counters_correct": true,
+    "native_validation": {
+      "PSNR": 27.57475102742513,
+      "dynamic_PSNR": 23.990447998046875,
+      "dynamic_alpha": 0.986167989174525,
+      "static_PSNR": 34.8292153040568,
+      "static_alpha": 0.9972119073073069,
+      "background_alpha": 0.008383044231838237,
+      "dynamic_leakage_on_static": 0.006354901500041403
+    },
+    "numeric_gates": {
+      "dynamic_PSNR": true,
+      "dynamic_only_alpha": true,
+      "static_preservation": true
+    },
+    "parameters": {
+      "sha256": "6a4dde83c07f4418dde4549bf2f1cc810f1c001a66614d63505767846dce9b98",
+      "phase": "warmup",
+      "trainable_parameters": 3645217,
+      "dynamic_parameters": 914913,
+      "grid_parameters": 2665232,
+      "deform_parameters": 33934,
+      "velocity_stress_parameters": 31138,
+      "physical_body_number": null
+    },
+    "physical_boundary_exclusion_available": false,
+    "manual_image_review_pending": true
+  },
+  "physics_audit": {
+    "phase": "physics",
+    "checkpoint_sha256": "8c767b7835eee936e49989369d7bc0277d7567d3aedaa7385c06654284b68ad0",
+    "iteration": 6000,
+    "parent_sha256": "0df6eb240b299e79e7fae407286670723de0b904b1c9aa2203b98c46e0e1a646",
+    "all_frozen_sources_inputs_protocols_match": true,
+    "static_exact_S1": true,
+    "finite_model_and_optimizer": true,
+    "one_dynamic_population_and_shared_field": true,
+    "physical_body_number": null,
+    "instance_identity_available": false,
+    "exact_all_step_sampling_and_final_python_RNG": true,
+    "sampler_sequence_sha256": "d36b3fe5ec0e27057c446e3c659c8c696daeb392d8570e22ce06bb3c6fb39ec0",
+    "numpy_CPU_Torch_all_CUDA_RNG_match_no_random_forward_contract": true,
+    "optimizer_state_count": 34,
+    "all_actual_Adam_counters_correct": true,
+    "native_validation": {
+      "PSNR": 28.1662540435791,
+      "dynamic_PSNR": 25.181220690409344,
+      "dynamic_alpha": 0.9884210109710694,
+      "static_PSNR": 34.99995543162028,
+      "static_alpha": 0.9972128828366598,
+      "background_alpha": 0.010029760360096892,
+      "dynamic_leakage_on_static": 0.006813798058768346
+    },
+    "numeric_gates": {
+      "dynamic_PSNR": true,
+      "dynamic_only_alpha": true,
+      "static_preservation": true
+    },
+    "parameters": {
+      "sha256": "43f8c1c521230cb2f053ede942bd3ad71e6e653ff37c119d99ed8c8c0b308a00",
+      "phase": "physics",
+      "trainable_parameters": 3645217,
+      "dynamic_parameters": 914913,
+      "grid_parameters": 2665232,
+      "deform_parameters": 33934,
+      "velocity_stress_parameters": 31138,
+      "physical_body_number": null
+    },
+    "physical_boundary_exclusion_available": false,
+    "manual_image_review_pending": true,
+    "native_test": {
+      "PSNR": 28.221540641784667,
+      "dynamic_PSNR": 25.39307674407959,
+      "dynamic_alpha": 0.9884361302852631,
+      "static_PSNR": 35.199143447875976,
+      "static_alpha": 0.99721635222435,
+      "background_alpha": 0.00985924638574943,
+      "dynamic_leakage_on_static": 0.006971349056402687
+    },
+    "physics_objective_calls": 600,
+    "physics_valid_fraction_min": 0.984375
+  },
+  "preselected_final_iteration": 6000,
+  "intermediate_4000_dynamic_PSNR": 26.156537437438963,
+  "final_selection": "Report the preselected 6000-update endpoint; no intermediate checkpoint selection or retraining",
+  "test_suite": {
+    "verified_utc": "2026-11-03T13:28:14.048540+00:00",
+    "passed": 49,
+    "suite": "tests/test_staged_*.py (12 selected files including union)",
+    "command": "PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 python -m pytest [12 selected staged test files] --basetemp=runs/pidg_staged_reconstruction/S3_union/pytest_20261103b -p no:cacheprovider -q",
+    "attempts": [
+      {
+        "attempt": 1,
+        "outcome": "46 passed;3 fixture setup errors because shared .pytest-tmp cannot be removed; no module test failure"
+      },
+      {
+        "attempt": 2,
+        "outcome": "46 passed;3 fixture setup errors because new temp parent did not exist"
+      },
+      {
+        "attempt": 3,
+        "outcome": "49 passed; existing requires_grad-to-scalar warning; isolated temp parent exists"
+      }
+    ],
+    "native_preflight": "native_preflight.json",
+    "warmup_smoke": "warmup_smoke_verification.json",
+    "formal_training_completed": false
+  },
+  "standard_native_quality": {
+    "val": {
+      "PSNR": 28.1662540435791,
+      "dynamic_PSNR": 25.181220690409344,
+      "dynamic_alpha": 0.9884210109710694,
+      "static_PSNR": 34.99995543162028,
+      "static_alpha": 0.9972128828366598,
+      "background_alpha": 0.010029760360096892,
+      "dynamic_leakage_on_static": 0.006813798058768346,
+      "PSNR_8bit": 28.165765444437664,
+      "SSIM_8bit": 0.9691673358281453,
+      "LPIPS_8bit": 0.045682347690065704
+    },
+    "test": {
+      "PSNR": 28.221540641784667,
+      "dynamic_PSNR": 25.39307674407959,
+      "dynamic_alpha": 0.9884361302852631,
+      "static_PSNR": 35.199143447875976,
+      "static_alpha": 0.99721635222435,
+      "background_alpha": 0.00985924638574943,
+      "dynamic_leakage_on_static": 0.006971349056402687,
+      "PSNR_8bit": 28.221077575683594,
+      "SSIM_8bit": 0.9694899892807007,
+      "LPIPS_8bit": 0.04516255676746368
+    }
+  },
+  "original_S3_native_validation": {
+    "PSNR": 28.466855494181313,
+    "dynamic_PSNR": 25.39229933420817,
+    "dynamic_alpha": 0.9855048636595408,
+    "static_PSNR": 35.94166882832845,
+    "static_alpha": 0.9972510874271393,
+    "composite_dynamic_region_alpha": 0.9928013285001119,
+    "dynamic_leakage_on_static": 0.01615667111655057,
+    "background_alpha": 0.008779177286972603
+  },
+  "comparison_to_original_S3": {
+    "dynamic_PSNR_delta": -0.21107864379882812,
+    "static_PSNR_delta": -0.9417133967081739,
+    "full_PSNR8bit_delta": -0.30055224100748745,
+    "SSIM8bit_delta": 0.0001956363519032278,
+    "LPIPS8bit_delta": -0.0010219269121686594
+  },
+  "parameter_comparison": {
+    "original_S3": {
+      "dynamic_parameters": 914913,
+      "grid_parameters": 4656072,
+      "deform_parameters": 135736,
+      "velocity_stress_parameters": 124552
+    },
+    "S3_U": {
+      "dynamic_parameters": 914913,
+      "grid_parameters": 2665232,
+      "deform_parameters": 33934,
+      "velocity_stress_parameters": 31138
+    },
+    "limit": "Same total dynamic Gaussian count; shared network and grid have different actual parameter counts"
+  },
+  "videos": [
+    {
+      "path": "output/staged_reconstruction/S3_union/physics/fixed86.mp4",
+      "sha256": "dcd1e7956f42b5c3f59ae7cd421eaa7d179d6c68d01f3c99eaa6acacfc17ad10",
+      "frames": 200,
+      "fps": 20,
+      "codec": "H264 Main/yuv420p/faststart",
+      "native_render_size": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "output/staged_reconstruction/S3_union/physics/fixed86_S3_vs_union.mp4",
+      "sha256": "55e48c21ebb8e947260988f78b699751e4a16eab18beb0fa2573f1747ce5b8f7",
+      "frames": 200,
+      "fps": 20,
+      "codec": "H264 Main/yuv420p/faststart",
+      "native_render_size": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "output/staged_reconstruction/S3_union/physics/fixed188.mp4",
+      "sha256": "8f5ff07f3bac6f7c72703b8383bb8b64fbc3e57be45815aee58c952936f985f4",
+      "frames": 200,
+      "fps": 20,
+      "codec": "H264 Main/yuv420p/faststart",
+      "native_render_size": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "output/staged_reconstruction/S3_union/physics/fixed188_S3_vs_union.mp4",
+      "sha256": "bfacb4b60dc0415113e0a8c4ce02c9fe8ce6d1695e31be7cbe24da890bc93062",
+      "frames": 200,
+      "fps": 20,
+      "codec": "H264 Main/yuv420p/faststart",
+      "native_render_size": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "output/staged_reconstruction/S3_union/physics/original.mp4",
+      "sha256": "744db0c9d5e45f863c6eec9efeabac12472f5f86bc01f2959986af172a566130",
+      "frames": 200,
+      "fps": 20,
+      "codec": "H264 Main/yuv420p/faststart",
+      "native_render_size": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "output/staged_reconstruction/S3_union/physics/original_S3_vs_union.mp4",
+      "sha256": "6af950b73f49c14b94437372b4a63aab68b3770362f817413a04edbc2fc912fd",
+      "frames": 200,
+      "fps": 20,
+      "codec": "H264 Main/yuv420p/faststart",
+      "native_render_size": [
+        1600,
+        900
+      ]
+    }
+  ],
+  "fixed_frame_internal_physics": [
+    {
+      "frame": 2,
+      "valid": true,
+      "terms": {
+        "kinematic": 0.06902733802033113,
+        "CMR": 13.939177261605119
+      },
+      "population": [
+        {
+          "object": 0,
+          "time_interval": [
+            0.0,
+            0.005025125628140704,
+            0.010050251256281407
+          ],
+          "nodes": 3669,
+          "anchors": 64,
+          "current_world_same_bank_neighbors": 64,
+          "support_attempts": [
+            {
+              "neighbors": 64,
+              "valid_fraction": 1.0
+            }
+          ],
+          "valid_fraction": 1.0,
+          "velocity_trajectory_RMS": 0.37393812823668754,
+          "CMR_RMS": 41.970936679265925,
+          "trajectory_acceleration_RMS": 23.85458139648318,
+          "independent_acceleration_RMS": 0.6784875461242711,
+          "stress_pred_RMS": 0.11757092922925949,
+          "stress_divergence_RMS": 0.13209551092448243,
+          "rate_divergence_RMS": 41.91952296922125,
+          "spatial_support_radius_mean": 0.04108394708409356,
+          "time_units": "sequence normalized; acquisition seconds unknown",
+          "not_independent_GT": true
+        }
+      ]
+    },
+    {
+      "frame": 86,
+      "valid": true,
+      "terms": {
+        "kinematic": 0.36633723860568285,
+        "CMR": 4.695039334837768
+      },
+      "population": [
+        {
+          "object": 0,
+          "time_interval": [
+            0.4221105527638191,
+            0.4271356783919598,
+            0.43216080402010054
+          ],
+          "nodes": 3710,
+          "anchors": 64,
+          "current_world_same_bank_neighbors": 64,
+          "support_attempts": [
+            {
+              "neighbors": 64,
+              "valid_fraction": 1.0
+            }
+          ],
+          "valid_fraction": 1.0,
+          "velocity_trajectory_RMS": 0.938416384173737,
+          "CMR_RMS": 7.997144683921547,
+          "trajectory_acceleration_RMS": 34.80921269045729,
+          "independent_acceleration_RMS": 0.023283439614678096,
+          "stress_pred_RMS": 0.09864704310894012,
+          "stress_divergence_RMS": 0.09602864202942252,
+          "rate_divergence_RMS": 7.984154119240983,
+          "spatial_support_radius_mean": 0.032741798626840735,
+          "time_units": "sequence normalized; acquisition seconds unknown",
+          "not_independent_GT": true
+        }
+      ]
+    },
+    {
+      "frame": 188,
+      "valid": true,
+      "terms": {
+        "kinematic": 0.16103409249131165,
+        "CMR": 16.22584270784416
+      },
+      "population": [
+        {
+          "object": 0,
+          "time_interval": [
+            0.9346733668341708,
+            0.9396984924623115,
+            0.9447236180904522
+          ],
+          "nodes": 3660,
+          "anchors": 64,
+          "current_world_same_bank_neighbors": 64,
+          "support_attempts": [
+            {
+              "neighbors": 64,
+              "valid_fraction": 1.0
+            }
+          ],
+          "valid_fraction": 1.0,
+          "velocity_trajectory_RMS": 0.5939926957472517,
+          "CMR_RMS": 28.73530405622918,
+          "trajectory_acceleration_RMS": 22.731415126237085,
+          "independent_acceleration_RMS": 0.2364231492382849,
+          "stress_pred_RMS": 0.14638927578926086,
+          "stress_divergence_RMS": 0.1413843973982544,
+          "rate_divergence_RMS": 28.773258435794393,
+          "spatial_support_radius_mean": 0.03177858789817989,
+          "time_units": "sequence normalized; acquisition seconds unknown",
+          "not_independent_GT": true
+        }
+      ]
+    }
+  ],
+  "visual_review": {
+    "checkpoint_sha256": "8c767b7835eee936e49989369d7bc0277d7567d3aedaa7385c06654284b68ad0",
+    "native_images_reviewed": true,
+    "review_method": "Actual view_image inspection of the 13 listed files; no claim of manually watching every video frame or browser playback",
+    "viewed_image_sha256": {
+      "output/staged_reconstruction/S3_union/physics/fixed86_pair_t0002.png": "a4cc933dd5c06dccf61cb8028e539668e0ada7d2c5df56b45c145873baf3a222",
+      "output/staged_reconstruction/S3_union/physics/fixed86_pair_t0086.png": "a89f8c055ebfb1a36414b9070342bff259778268d7b0a337cd210f808b732913",
+      "output/staged_reconstruction/S3_union/physics/fixed86_pair_t0188.png": "935b890124c646681e54fbadb520835130015103b16ee9891309c52f9713aee2",
+      "output/staged_reconstruction/S3_union/physics/fixed188_pair_t0002.png": "aa823c05069b8b9cae51fdf28a52e3d90b9efa339c70012ea9ababee7c8c0d42",
+      "output/staged_reconstruction/S3_union/physics/fixed188_pair_t0086.png": "0552c292e4e336e4a9d8f78e30d116bdef8f3212e5ea2b4498a40979ec9cf673",
+      "output/staged_reconstruction/S3_union/physics/fixed188_pair_t0188.png": "7a5008af79503783773fffe9ffdef0f3e936514d8036d0175274e6763c3d428e",
+      "output/staged_reconstruction/S3_union/physics/original_pair_t0002.png": "e9ecca90c0a7dd6c03d9af6d5547e40588e87d4dfbc4d25ec1e047e68352562b",
+      "output/staged_reconstruction/S3_union/physics/original_pair_t0086.png": "5b9d6045af2533224509d4291921e4ec1a98a72b07051722478838d481ee6ad5",
+      "output/staged_reconstruction/S3_union/physics/original_pair_t0188.png": "813fb47c4e52101b3ff7cede2b94850bf9a08b2b417895fa1a3fd0eed9726b70",
+      "output/staged_reconstruction/S3_union/physics/observed_review.png": "53b172afe1ad80cea1304f431c50222879dc6cc40896adb82390cf2a9674bba7",
+      "output/staged_reconstruction/S3_union/physics/fixed86_t0188_native.png": "7e310c33a4049d030d8b1fde569b419cd15aa9e9e3c2884bb044f6b547107855",
+      "output/staged_reconstruction/S3_union/physics/fixed188_t0086_native.png": "adf49b530ca8242649a05023f42781f1ee94dc61d8384c135e403b3ee672dad0",
+      "output/staged_reconstruction/S3_union/physics/original_t0188_native.png": "24f6624306527206a1e14a3b0c950966064a307b5094411dffc220eb360e4c81"
+    },
+    "findings": [
+      "\u4e09\u4e2a\u89c6\u89d2\u5404\u67e5\u770b2/86/188\u65f6\u523b\u7684\u539fS3\u4e0eS3-U\u5e76\u6392\u56fe\uff0c\u53e6\u67e5\u770b9\u65f6\u523b\u89c2\u6d4b/\u9884\u6d4b/\u52a8\u6001\u5355\u72ec\u8d21\u732e\u9762\u677f\uff0c\u4ee5\u53ca\u56fa\u5b9a86\u665a\u671f\u3001\u56fa\u5b9a188\u4e2d\u671f\u548c\u539f\u8f68\u8ff9\u665a\u671f\u76841600\u00d7900\u539f\u56fe\u3002",
+      "\u539f\u76f8\u673a\u8f68\u8ff9\u4e0b\u603b\u4f53\u8f6e\u5ed3\u53ef\u62df\u5408\uff0c\u90e8\u5206\u665a\u671f\u7ec6\u8282\u548c\u8fb9\u7f18\u770b\u8d77\u6765\u66f4\u6e05\u695a\uff1b\u6a21\u7cca\u4e0e\u5f62\u72b6\u8bef\u5dee\u4ecd\u7136\u5b58\u5728\uff0c\u4e0d\u80fd\u636e\u5c11\u6570\u56fe\u50cf\u5ba3\u79f0\u6574\u4f53\u80dc\u51fa\u3002",
+      "42/43\u9644\u8fd1\u5e95\u90e8\u52a8\u6001\u524d\u666f\u8fc7\u4eae\u3001\u6d82\u62b9\uff0c\u90e8\u5206\u89c2\u6d4b\u533a\u57df\u62df\u5408\u4e0d\u5b8c\u6574\u3002",
+      "\u56fa\u5b9a86\u665a\u671f\u4ecd\u6709\u9ec4\u8272\u957f\u6761\u548c\u7247\u72b6\u788e\u88c2\uff0c\u56fa\u5b9a188\u4e2d\u671f\u4ecd\u6709\u663e\u8457\u788e\u7247\u4e0e\u62c9\u4f38\uff0c\u6ca1\u6709\u6062\u590d\u5b8c\u6574\u9e2d\u5b50\u51e0\u4f55\u3002",
+      "\u4e24\u79cd\u8868\u793a\u5747\u5b58\u5728\u65b0\u89c6\u89d2\u51e0\u4f55\u4f2a\u5f71\uff1bS3-U\u6ca1\u6709\u8bc1\u636e\u652f\u6301\u65b0\u89c6\u89d2\u6574\u4f53\u4f18\u4e8e\u539fS3\u3002\u56fa\u5b9a\u8de8\u65f6\u95f4\u89c6\u89d2\u7f3a\u5c11\u72ec\u7acbGT\u3002",
+      "\u9759\u6001\u652f\u6491\u603b\u4f53\u76f8\u4f3c\u4e14\u53ef\u8fa8\u8ba4\uff0c\u5176\u53c2\u6570\u5b8c\u5168\u5171\u4eab\u5e76\u51bb\u7ed3\uff1b\u52a8\u6001\u6e32\u67d3\u4ecd\u53ef\u6c61\u67d3\u90e8\u5206\u9759\u6001\u533a\u57df\u3002",
+      "\u7edf\u4e00\u6c60\u4e0d\u8f93\u5165\u3001\u8f93\u51fa\u6216\u4f30\u8ba1\u7269\u7406\u7269\u4f53\u6570\uff0c\u4e5f\u4e0d\u63d0\u4f9b\u5b9e\u4f8b\u8eab\u4efd\uff1b\u906e\u6321\u540e\u7269\u7406\u8eab\u4efd\u3001\u5b8c\u6574\u8868\u9762\u548c\u5e94\u529b\u6b63\u786e\u6027\u4fdd\u6301\u672a\u77e5\u3002"
+    ],
+    "geometry_success": false,
+    "physical_body_number": null,
+    "independent_geometry_or_stress_GT_available": false,
+    "all_video_frames_manually_watched": false,
+    "browser_playback_observed": false
+  },
+  "original_final_checkpoints_preserved": [
+    {
+      "stage": "S1",
+      "path": "runs/pidg_staged_reconstruction/S1_static/checkpoint.pt",
+      "sha256": "2dd8d5e0ea35d55e648aa236ea779eebe2fe3d415d34ad931e732f0140b89031",
+      "updates": 12000
+    },
+    {
+      "stage": "S2",
+      "path": "runs/pidg_staged_reconstruction/S2_geometry_recovery/S2_objects/checkpoint.pt",
+      "sha256": "8d22348fb5033c1441f598b189000b36a8f965fa8acd7b594871d52849381730",
+      "updates": 16000
+    },
+    {
+      "stage": "S3",
+      "path": "runs/pidg_staged_reconstruction/S3/formal/checkpoint.pt",
+      "sha256": "3e91a89f8b8354edc2d1be6b4317e4703c58e2519241a573b4ade0655bae4db6",
+      "updates": 6000
+    },
+    {
+      "stage": "S4",
+      "path": "runs/pidg_staged_reconstruction/S4/formal/checkpoint.pt",
+      "sha256": "d903fc96f089994d53f3239de1fce23ffbaffac4e9db6e8f6d1cd13e734a3c1b",
+      "updates": 4000
+    },
+    {
+      "stage": "S5",
+      "path": "runs/pidg_staged_reconstruction/S5/formal/checkpoint.pt",
+      "sha256": "0d35b8bce8642264e6963a5becb37408f7b9cc9acce832099e72c53fb0f8ffe3",
+      "updates": 4000
+    },
+    {
+      "stage": "S6",
+      "path": "runs/pidg_staged_reconstruction/S6/formal/checkpoint.pt",
+      "sha256": "e302ad64ef08b4e51109567af5bf214acf312fc48a2ed9ffd467cfb8568fdea1",
+      "updates": 4000
+    }
+  ],
+  "limits": [
+    "No instance discovery or number inference",
+    "Appearance mask and monocular depth are conditional priors, not GT",
+    "Dynamic-only kNN can cross physical boundaries at close approach",
+    "Stress/velocity/CMR are internal sequence-normalized diagnostics",
+    "Fresh union initialization, union coverage and shared capacity differ; not a matched single-switch causal ablation"
+  ]
+}

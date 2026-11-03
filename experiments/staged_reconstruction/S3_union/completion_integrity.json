@@ -1,0 +1,589 @@
+{
+  "verified_utc": "2026-11-03T13:53:15.868597+00:00",
+  "frozen_source_input_protocol_files_verified": 378,
+  "all_frozen_sources_inputs_protocols_match": true,
+  "checkpoints": [
+    {
+      "phase": "warmup",
+      "updates": 16000,
+      "sha256": "0df6eb240b299e79e7fae407286670723de0b904b1c9aa2203b98c46e0e1a646",
+      "path": "runs/pidg_staged_reconstruction/S3_union/warmup/formal/checkpoint.pt"
+    },
+    {
+      "phase": "physics",
+      "updates": 6000,
+      "sha256": "8c767b7835eee936e49989369d7bc0277d7567d3aedaa7385c06654284b68ad0",
+      "path": "runs/pidg_staged_reconstruction/S3_union/physics/formal/checkpoint.pt"
+    }
+  ],
+  "historical_final_checkpoints_preserved": [
+    {
+      "stage": "S1",
+      "path": "runs/pidg_staged_reconstruction/S1_static/checkpoint.pt",
+      "sha256": "2dd8d5e0ea35d55e648aa236ea779eebe2fe3d415d34ad931e732f0140b89031",
+      "updates": 12000
+    },
+    {
+      "stage": "S2",
+      "path": "runs/pidg_staged_reconstruction/S2_geometry_recovery/S2_objects/checkpoint.pt",
+      "sha256": "8d22348fb5033c1441f598b189000b36a8f965fa8acd7b594871d52849381730",
+      "updates": 16000
+    },
+    {
+      "stage": "S3",
+      "path": "runs/pidg_staged_reconstruction/S3/formal/checkpoint.pt",
+      "sha256": "3e91a89f8b8354edc2d1be6b4317e4703c58e2519241a573b4ade0655bae4db6",
+      "updates": 6000
+    },
+    {
+      "stage": "S4",
+      "path": "runs/pidg_staged_reconstruction/S4/formal/checkpoint.pt",
+      "sha256": "d903fc96f089994d53f3239de1fce23ffbaffac4e9db6e8f6d1cd13e734a3c1b",
+      "updates": 4000
+    },
+    {
+      "stage": "S5",
+      "path": "runs/pidg_staged_reconstruction/S5/formal/checkpoint.pt",
+      "sha256": "0d35b8bce8642264e6963a5becb37408f7b9cc9acce832099e72c53fb0f8ffe3",
+      "updates": 4000
+    },
+    {
+      "stage": "S6",
+      "path": "runs/pidg_staged_reconstruction/S6/formal/checkpoint.pt",
+      "sha256": "e302ad64ef08b4e51109567af5bf214acf312fc48a2ed9ffd467cfb8568fdea1",
+      "updates": 4000
+    }
+  ],
+  "C1_comparison_protected_checkpoints_preserved": {
+    "runs/pidg_color_repair/C1_repaired/rubber_duck/checkpoints/resume.pt": "b5d4cf5c9fb8fba4fcc26124555d48aa7d3a963a8be1d28488954752db486480",
+    "runs/pidg_staged_reconstruction/S1_static/checkpoint.pt": "2dd8d5e0ea35d55e648aa236ea779eebe2fe3d415d34ad931e732f0140b89031",
+    "runs/pidg_staged_reconstruction/S2_geometry_recovery/S2_objects/checkpoint.pt": "8d22348fb5033c1441f598b189000b36a8f965fa8acd7b594871d52849381730",
+    "runs/pidg_staged_reconstruction/S3/formal/checkpoint.pt": "3e91a89f8b8354edc2d1be6b4317e4703c58e2519241a573b4ade0655bae4db6",
+    "runs/pidg_staged_reconstruction/S4/formal/checkpoint.pt": "d903fc96f089994d53f3239de1fce23ffbaffac4e9db6e8f6d1cd13e734a3c1b",
+    "runs/pidg_staged_reconstruction/S5/formal/checkpoint.pt": "0d35b8bce8642264e6963a5becb37408f7b9cc9acce832099e72c53fb0f8ffe3",
+    "runs/pidg_staged_reconstruction/S6/formal/checkpoint.pt": "e302ad64ef08b4e51109567af5bf214acf312fc48a2ed9ffd467cfb8568fdea1"
+  },
+  "historical_original_videos_preserved": [
+    {
+      "stage": "S2",
+      "view": "fixed86",
+      "decoded_frames": 200,
+      "sha256": "8da79849d13817f47310b3baff32b3383bd3001f6b748d2035305e70b7519053"
+    },
+    {
+      "stage": "S2",
+      "view": "fixed188",
+      "decoded_frames": 200,
+      "sha256": "2abe265481233fca07e50549dffe141e154522bc4ae0c6db49638c45547d4899"
+    },
+    {
+      "stage": "S2",
+      "view": "original",
+      "decoded_frames": 200,
+      "sha256": "43560012821bd3ed514e698804accfb2a7fdaccdb9e3afdf55a27232ad035a88"
+    },
+    {
+      "stage": "S3",
+      "view": "fixed86",
+      "decoded_frames": 200,
+      "sha256": "cdb901c3e74c116036010f1a057abcf619b758bef7fcf841d3e65a78a38c8d4c"
+    },
+    {
+      "stage": "S3",
+      "view": "fixed188",
+      "decoded_frames": 200,
+      "sha256": "0fee109943cfa3e0972790b175d5ed07d5789653f33d01c61b3ee3bf31385928"
+    },
+    {
+      "stage": "S3",
+      "view": "original",
+      "decoded_frames": 200,
+      "sha256": "83e2e7eae3cd186c596f404c546e4e1478299c0556bafbda948a99f9a0687387"
+    },
+    {
+      "stage": "S4",
+      "view": "fixed86",
+      "decoded_frames": 200,
+      "sha256": "daf846f8ccc460a8490e092043aa53a4cec0836aa92308e396ba1c8cd1b92e5a"
+    },
+    {
+      "stage": "S4",
+      "view": "fixed188",
+      "decoded_frames": 200,
+      "sha256": "fa4d3468ee298aa9a7091f465f9c35ab66b3f6b1e9083720f575e25b0dfb1946"
+    },
+    {
+      "stage": "S4",
+      "view": "original",
+      "decoded_frames": 200,
+      "sha256": "d0accee107962337afa9740b5def1c383569b52f1612cf6cf370be6f18a2c0f8"
+    },
+    {
+      "stage": "S5",
+      "view": "fixed86",
+      "decoded_frames": 200,
+      "sha256": "e1a7c0c940e412864bc9b65bfe59f7652ae47c0fe52986c8ec43dc08a37adc74"
+    },
+    {
+      "stage": "S5",
+      "view": "fixed188",
+      "decoded_frames": 200,
+      "sha256": "4c43004f39f15610ee7a03ae8f32aefee533553f87552a569ab8623c2af19f08"
+    },
+    {
+      "stage": "S5",
+      "view": "original",
+      "decoded_frames": 200,
+      "sha256": "b8fe1eb869e955662e742e93d4cb5d493060d15f91a4b482aa305ae7d6a8d365"
+    },
+    {
+      "stage": "S6",
+      "view": "fixed86",
+      "decoded_frames": 200,
+      "sha256": "710cbf81fd92ec93d563de92ca522566dec87d7c63868249006c0975546fdf56"
+    },
+    {
+      "stage": "S6",
+      "view": "fixed188",
+      "decoded_frames": 200,
+      "sha256": "161a94ece922ccd4c10e513f4464cd933aa607327b84770895ff4322727b167f"
+    },
+    {
+      "stage": "S6",
+      "view": "original",
+      "decoded_frames": 200,
+      "sha256": "730202c834b2073ff1622a99de168add9753ee16b549cafc626c523216bd0204"
+    }
+  ],
+  "manual_images_hash_verified": 13,
+  "export_images_hash_verified": 31,
+  "videos": [
+    {
+      "path": "output/staged_reconstruction/S3_union/physics/fixed86.mp4",
+      "sha256": "dcd1e7956f42b5c3f59ae7cd421eaa7d179d6c68d01f3c99eaa6acacfc17ad10",
+      "frames": 200,
+      "fps": 20,
+      "codec": "H264 Main/yuv420p/faststart",
+      "native_render_size": [
+        1600,
+        900
+      ],
+      "display_size": [
+        800,
+        450
+      ],
+      "metadata_probe_passed": true,
+      "moov_before_mdat": true,
+      "full_decode_200_frames_receipt": "physics_exports.json"
+    },
+    {
+      "path": "output/staged_reconstruction/S3_union/physics/fixed86_S3_vs_union.mp4",
+      "sha256": "55e48c21ebb8e947260988f78b699751e4a16eab18beb0fa2573f1747ce5b8f7",
+      "frames": 200,
+      "fps": 20,
+      "codec": "H264 Main/yuv420p/faststart",
+      "native_render_size": [
+        1600,
+        900
+      ],
+      "display_size": [
+        1600,
+        480
+      ],
+      "metadata_probe_passed": true,
+      "moov_before_mdat": true,
+      "full_decode_200_frames_receipt": "physics_exports.json"
+    },
+    {
+      "path": "output/staged_reconstruction/S3_union/physics/fixed188.mp4",
+      "sha256": "8f5ff07f3bac6f7c72703b8383bb8b64fbc3e57be45815aee58c952936f985f4",
+      "frames": 200,
+      "fps": 20,
+      "codec": "H264 Main/yuv420p/faststart",
+      "native_render_size": [
+        1600,
+        900
+      ],
+      "display_size": [
+        800,
+        450
+      ],
+      "metadata_probe_passed": true,
+      "moov_before_mdat": true,
+      "full_decode_200_frames_receipt": "physics_exports.json"
+    },
+    {
+      "path": "output/staged_reconstruction/S3_union/physics/fixed188_S3_vs_union.mp4",
+      "sha256": "bfacb4b60dc0415113e0a8c4ce02c9fe8ce6d1695e31be7cbe24da890bc93062",
+      "frames": 200,
+      "fps": 20,
+      "codec": "H264 Main/yuv420p/faststart",
+      "native_render_size": [
+        1600,
+        900
+      ],
+      "display_size": [
+        1600,
+        480
+      ],
+      "metadata_probe_passed": true,
+      "moov_before_mdat": true,
+      "full_decode_200_frames_receipt": "physics_exports.json"
+    },
+    {
+      "path": "output/staged_reconstruction/S3_union/physics/original.mp4",
+      "sha256": "744db0c9d5e45f863c6eec9efeabac12472f5f86bc01f2959986af172a566130",
+      "frames": 200,
+      "fps": 20,
+      "codec": "H264 Main/yuv420p/faststart",
+      "native_render_size": [
+        1600,
+        900
+      ],
+      "display_size": [
+        800,
+        450
+      ],
+      "metadata_probe_passed": true,
+      "moov_before_mdat": true,
+      "full_decode_200_frames_receipt": "physics_exports.json"
+    },
+    {
+      "path": "output/staged_reconstruction/S3_union/physics/original_S3_vs_union.mp4",
+      "sha256": "6af950b73f49c14b94437372b4a63aab68b3770362f817413a04edbc2fc912fd",
+      "frames": 200,
+      "fps": 20,
+      "codec": "H264 Main/yuv420p/faststart",
+      "native_render_size": [
+        1600,
+        900
+      ],
+      "display_size": [
+        1600,
+        480
+      ],
+      "metadata_probe_passed": true,
+      "moov_before_mdat": true,
+      "full_decode_200_frames_receipt": "physics_exports.json"
+    }
+  ],
+  "fixed_camera_fingerprints": {
+    "fixed86": "7a93adafff9f02935e6a129afd0f72ef512e91e8ce532f8f13869559f055597e",
+    "fixed188": "55a63e0292cf7867fdbd0489454d3d361bf4463e0096caad6cfd735aafa80bf6"
+  },
+  "camera_matrices_unchanged_after_render": true,
+  "local_HTML_links_verified": [
+    {
+      "page": "output/staged_reconstruction/index.html",
+      "link": "baseline_comparison/index.html"
+    },
+    {
+      "page": "output/staged_reconstruction/index.html",
+      "link": "S3_union/physics/index.html"
+    },
+    {
+      "page": "output/staged_reconstruction/index.html",
+      "link": "S2_geometry_recovery/S2_review_step16000.png"
+    },
+    {
+      "page": "output/staged_reconstruction/index.html",
+      "link": "S2_geometry_recovery/S2_review_step16000.png"
+    },
+    {
+      "page": "output/staged_reconstruction/index.html",
+      "link": "S2_geometry_recovery/fixed86.browser.mp4"
+    },
+    {
+      "page": "output/staged_reconstruction/index.html",
+      "link": "S2_geometry_recovery/fixed86.browser.mp4"
+    },
+    {
+      "page": "output/staged_reconstruction/index.html",
+      "link": "S2_geometry_recovery/fixed188.browser.mp4"
+    },
+    {
+      "page": "output/staged_reconstruction/index.html",
+      "link": "S2_geometry_recovery/fixed188.browser.mp4"
+    },
+    {
+      "page": "output/staged_reconstruction/index.html",
+      "link": "S2_geometry_recovery/original.browser.mp4"
+    },
+    {
+      "page": "output/staged_reconstruction/index.html",
+      "link": "S2_geometry_recovery/original.browser.mp4"
+    },
+    {
+      "page": "output/staged_reconstruction/index.html",
+      "link": "S3/S3_review_step06000.png"
+    },
+    {
+      "page": "output/staged_reconstruction/index.html",
+      "link": "S3/S3_review_step06000.png"
+    },
+    {
+      "page": "output/staged_reconstruction/index.html",
+      "link": "S3/fixed86.browser.mp4"
+    },
+    {
+      "page": "output/staged_reconstruction/index.html",
+      "link": "S3/fixed86.browser.mp4"
+    },
+    {
+      "page": "output/staged_reconstruction/index.html",
+      "link": "S3/fixed188.browser.mp4"
+    },
+    {
+      "page": "output/staged_reconstruction/index.html",
+      "link": "S3/fixed188.browser.mp4"
+    },
+    {
+      "page": "output/staged_reconstruction/index.html",
+      "link": "S3/original.browser.mp4"
+    },
+    {
+      "page": "output/staged_reconstruction/index.html",
+      "link": "S3/original.browser.mp4"
+    },
+    {
+      "page": "output/staged_reconstruction/index.html",
+      "link": "S4/S4_review_step04000.png"
+    },
+    {
+      "page": "output/staged_reconstruction/index.html",
+      "link": "S4/S4_review_step04000.png"
+    },
+    {
+      "page": "output/staged_reconstruction/index.html",
+      "link": "S4/fixed86.browser.mp4"
+    },
+    {
+      "page": "output/staged_reconstruction/index.html",
+      "link": "S4/fixed86.browser.mp4"
+    },
+    {
+      "page": "output/staged_reconstruction/index.html",
+      "link": "S4/fixed188.browser.mp4"
+    },
+    {
+      "page": "output/staged_reconstruction/index.html",
+      "link": "S4/fixed188.browser.mp4"
+    },
+    {
+      "page": "output/staged_reconstruction/index.html",
+      "link": "S4/original.browser.mp4"
+    },
+    {
+      "page": "output/staged_reconstruction/index.html",
+      "link": "S4/original.browser.mp4"
+    },
+    {
+      "page": "output/staged_reconstruction/index.html",
+      "link": "S5/S5_review_step04000.png"
+    },
+    {
+      "page": "output/staged_reconstruction/index.html",
+      "link": "S5/S5_review_step04000.png"
+    },
+    {
+      "page": "output/staged_reconstruction/index.html",
+      "link": "S5/fixed86.browser.mp4"
+    },
+    {
+      "page": "output/staged_reconstruction/index.html",
+      "link": "S5/fixed86.browser.mp4"
+    },
+    {
+      "page": "output/staged_reconstruction/index.html",
+      "link": "S5/fixed188.browser.mp4"
+    },
+    {
+      "page": "output/staged_reconstruction/index.html",
+      "link": "S5/fixed188.browser.mp4"
+    },
+    {
+      "page": "output/staged_reconstruction/index.html",
+      "link": "S5/original.browser.mp4"
+    },
+    {
+      "page": "output/staged_reconstruction/index.html",
+      "link": "S5/original.browser.mp4"
+    },
+    {
+      "page": "output/staged_reconstruction/index.html",
+      "link": "S6/S6_review_step04000.png"
+    },
+    {
+      "page": "output/staged_reconstruction/index.html",
+      "link": "S6/S6_review_step04000.png"
+    },
+    {
+      "page": "output/staged_reconstruction/index.html",
+      "link": "S6/fixed86.browser.mp4"
+    },
+    {
+      "page": "output/staged_reconstruction/index.html",
+      "link": "S6/fixed86.browser.mp4"
+    },
+    {
+      "page": "output/staged_reconstruction/index.html",
+      "link": "S6/fixed188.browser.mp4"
+    },
+    {
+      "page": "output/staged_reconstruction/index.html",
+      "link": "S6/fixed188.browser.mp4"
+    },
+    {
+      "page": "output/staged_reconstruction/index.html",
+      "link": "S6/original.browser.mp4"
+    },
+    {
+      "page": "output/staged_reconstruction/index.html",
+      "link": "S6/original.browser.mp4"
+    },
+    {
+      "page": "output/staged_reconstruction/S3_union/physics/index.html",
+      "link": "fixed86_pair_t0086.png"
+    },
+    {
+      "page": "output/staged_reconstruction/S3_union/physics/index.html",
+      "link": "fixed86_S3_vs_union.mp4"
+    },
+    {
+      "page": "output/staged_reconstruction/S3_union/physics/index.html",
+      "link": "fixed86_S3_vs_union.mp4"
+    },
+    {
+      "page": "output/staged_reconstruction/S3_union/physics/index.html",
+      "link": "fixed86.mp4"
+    },
+    {
+      "page": "output/staged_reconstruction/S3_union/physics/index.html",
+      "link": "fixed188_pair_t0086.png"
+    },
+    {
+      "page": "output/staged_reconstruction/S3_union/physics/index.html",
+      "link": "fixed188_S3_vs_union.mp4"
+    },
+    {
+      "page": "output/staged_reconstruction/S3_union/physics/index.html",
+      "link": "fixed188_S3_vs_union.mp4"
+    },
+    {
+      "page": "output/staged_reconstruction/S3_union/physics/index.html",
+      "link": "fixed188.mp4"
+    },
+    {
+      "page": "output/staged_reconstruction/S3_union/physics/index.html",
+      "link": "original_pair_t0086.png"
+    },
+    {
+      "page": "output/staged_reconstruction/S3_union/physics/index.html",
+      "link": "original_S3_vs_union.mp4"
+    },
+    {
+      "page": "output/staged_reconstruction/S3_union/physics/index.html",
+      "link": "original_S3_vs_union.mp4"
+    },
+    {
+      "page": "output/staged_reconstruction/S3_union/physics/index.html",
+      "link": "original.mp4"
+    },
+    {
+      "page": "output/staged_reconstruction/baseline_comparison/index.html",
+      "link": "../index.html"
+    },
+    {
+      "page": "output/staged_reconstruction/baseline_comparison/index.html",
+      "link": "fixed86_pair_t0086.png"
+    },
+    {
+      "page": "output/staged_reconstruction/baseline_comparison/index.html",
+      "link": "fixed86_C1_vs_S6.mp4"
+    },
+    {
+      "page": "output/staged_reconstruction/baseline_comparison/index.html",
+      "link": "fixed86_C1_vs_S6.mp4"
+    },
+    {
+      "page": "output/staged_reconstruction/baseline_comparison/index.html",
+      "link": "fixed86_pair_review.png"
+    },
+    {
+      "page": "output/staged_reconstruction/baseline_comparison/index.html",
+      "link": "fixed86_all_stages.mp4"
+    },
+    {
+      "page": "output/staged_reconstruction/baseline_comparison/index.html",
+      "link": "fixed86_C1_repaired.mp4"
+    },
+    {
+      "page": "output/staged_reconstruction/baseline_comparison/index.html",
+      "link": "fixed188_pair_t0086.png"
+    },
+    {
+      "page": "output/staged_reconstruction/baseline_comparison/index.html",
+      "link": "fixed188_C1_vs_S6.mp4"
+    },
+    {
+      "page": "output/staged_reconstruction/baseline_comparison/index.html",
+      "link": "fixed188_C1_vs_S6.mp4"
+    },
+    {
+      "page": "output/staged_reconstruction/baseline_comparison/index.html",
+      "link": "fixed188_pair_review.png"
+    },
+    {
+      "page": "output/staged_reconstruction/baseline_comparison/index.html",
+      "link": "fixed188_all_stages.mp4"
+    },
+    {
+      "page": "output/staged_reconstruction/baseline_comparison/index.html",
+      "link": "fixed188_C1_repaired.mp4"
+    },
+    {
+      "page": "output/staged_reconstruction/baseline_comparison/index.html",
+      "link": "original_pair_t0086.png"
+    },
+    {
+      "page": "output/staged_reconstruction/baseline_comparison/index.html",
+      "link": "original_C1_vs_S6.mp4"
+    },
+    {
+      "page": "output/staged_reconstruction/baseline_comparison/index.html",
+      "link": "original_C1_vs_S6.mp4"
+    },
+    {
+      "page": "output/staged_reconstruction/baseline_comparison/index.html",
+      "link": "original_pair_review.png"
+    },
+    {
+      "page": "output/staged_reconstruction/baseline_comparison/index.html",
+      "link": "original_all_stages.mp4"
+    },
+    {
+      "page": "output/staged_reconstruction/baseline_comparison/index.html",
+      "link": "original_C1_repaired.mp4"
+    }
+  ],
+  "LPIPS_weights_match_original_S3_contract": {
+    "F:\\A_Edinburgh\\PhysGauss\\reproduction\\torch-cache\\hub\\checkpoints\\vgg16-397923af.pth": "397923af8e79cdbb6a7127f12361acd7a2f83e06b05044ddf496e83de57a5bf0",
+    "F:\\A_Edinburgh\\PhysGauss\\envs\\pidg-cu128\\Lib\\site-packages\\lpips\\weights\\v0.1\\vgg.pth": "a78928a0af1e5f0fcb1f3b9e8f8c3a2a5a3de244d830ad5c1feddc79b8432868"
+  },
+  "known_task_processes_exited": [
+    256540,
+    266608,
+    266940
+  ],
+  "training_lock_free": true,
+  "all_new_training_budgets_completed": true,
+  "training_updates": 22000,
+  "geometry_or_physical_inference_success": false,
+  "browser_playback_observed": false,
+  "no_automatic_follow_on_training": true,
+  "preserved_unrelated_tracked_changes": [
+    "experiments/integrity_feedback/proposals.json",
+    "experiments/results.json",
+    "experiments/results.md"
+  ]
+}

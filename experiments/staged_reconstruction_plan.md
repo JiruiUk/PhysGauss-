@@ -126,3 +126,33 @@ The real-parent physics40-to80 recovery passes34 Adam states and all RNG/static
 checks. Original sources/weights and loss thresholds are unchanged. See
 S3_union/warmup_assessment.md and receipts. Independent preview failure and
 source are retained; its CPU/CUDA comparison repair changed no training state.
+
+### S3-U final result and plan revision (2026-11-03)
+
+Executed the declared16k warmup+6k S3 continuation and completed native val/test,
+standard image metrics, fixed86/fixed188/original-trajectory comparisons and
+full-state/lineage audits. Unified dynamic population only: no input/output
+physical body count or instance-ID estimation.49 related tests, both40-to80
+recovery checks and exact frozen-S1/source/RNG/Adam/sampler checks pass.
+
+Use the preselected6k endpoint: validation dynamic25.181221dB, compared with
+original S3's25.392299dB(-0.211079). Static34.999955dB; test dynamic25.393077dB.
+Full-frame validation28.165765dB/SSIM0.969167/LPIPS0.045682. Preserve4k's higher
+26.156537dB as an intermediate observation; no checkpoint selection, weight
+increase or retraining follows. Same15,507-point budget is not matched capacity:
+actual parameters3,645,217 versus5,831,273, with different initialization/coverage.
+
+Sampled native/fixed-view inspection still shows yellow sheets, stretched
+fragments and incomplete foreground fit. Numeric gates/valid derivative support
+do not certify complete geometry, boundary-safe neighborhoods, physical identity
+or calibrated stress. The unified pool satisfies the requested count-free
+representation; it has not established an overall improvement over original S3.
+Evidence and six decoded H264 videos are in staged_reconstruction/S3_union/
+assessment.md and output/staged_reconstruction/S3_union/physics/index.html.
+
+This additional branch is complete; do not automatically extend to S4-U--S6-U
+or transplant original S4's per-group row bindings. Next research dependency
+remains the calibrated synthetic RGB geometry audit described above. Training
+must preserve this user's choice of a unified pool without estimating count;
+any independent truth remains evaluation-only. Original contact/constitutive/
+force goals remain unresolved and disabled; no historical paused work resumes.

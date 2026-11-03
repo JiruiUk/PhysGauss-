@@ -1,5 +1,6 @@
 """Count-free scene review, native RGB and H264 fixed-camera S3 comparisons."""
 import argparse
+import hashlib
 import json
 import os
 import subprocess
@@ -27,6 +28,13 @@ def panel(value, label):
     im.paste(Image.fromarray(value).resize((800, 450), Image.Resampling.LANCZOS), (0, 30))
     ImageDraw.Draw(im).text((8, 6), label, fill='white', font=ImageFont.truetype('C:/Windows/Fonts/arial.ttf', 16))
     return np.asarray(im)
+
+
+def fingerprint(cam):
+    value = cam.world_view_transform.detach().cpu().contiguous().numpy().tobytes()
+    value += cam.full_proj_transform.detach().cpu().contiguous().numpy().tobytes()
+    value += json.dumps([cam.FoVx, cam.FoVy, cam.image_width, cam.image_height]).encode()
+    return hashlib.sha256(value).hexdigest()
 
 
 class Video:
@@ -98,6 +106,7 @@ def main():
     frames = sorted(all_meta['frames'], key=lambda f: int(Path(f['file_path'].replace('\\', '/')).stem))
     assert len(frames) == 200
     video_rows = []
+    camera_records = {}
     legacy = read(REPORT/'completion_integrity.json')
     protected_videos = {(row['stage'], row['view']): row['sha256'] for row in legacy['videos_verified']}
     for view in ['fixed86', 'fixed188', 'original']:
@@ -116,7 +125,12 @@ def main():
                 if args.preview_only and number not in [2, 86, 188]:
                     continue
                 pose = byid[86 if view == 'fixed86' else 188] if view != 'original' else observed
-                value = rgb(scene.render(renderer, camera(pose, meta, 1600), (number-1)/199)['render'])
+                cam = camera(pose, meta, 1600)
+                before_cam = fingerprint(cam)
+                if view != 'original':
+                    assert camera_records.setdefault(view, before_cam) == before_cam
+                value = rgb(scene.render(renderer, cam, (number-1)/199)['render'])
+                assert fingerprint(cam) == before_cam
                 if number in [2, 86, 188]:
                     path = out/f'{view}_t{number:04d}_native.png'
                     Image.fromarray(value).save(path)
@@ -173,6 +187,10 @@ def main():
     receipt = {'checkpoint_sha256': before, 'phase': args.phase, 'iteration': state['iteration'],
         'static_exactly_matches_S1': True, 'physical_body_number': None, 'manual_image_review_pending': True,
         'images': {p.relative_to(ROOT).as_posix(): sha(p) for p in image_files}, 'videos': video_rows,
+        'fixed_camera_fingerprints': camera_records, 'camera_matrices_unchanged_after_render': True,
+        'camera_contract': 'metadata_cv; same frozen camera function and metadata as original S3 export',
+        'training_metadata_sha256': sha(DATA/'transforms_train.json'),
+        'all_camera_metadata_sha256': sha(ROOT/'data/PIDG/rubber_duck/transforms_all.json'),
         'fixed_frame_internal_physics': diagnostics,
         'limits': 'Union population, no instance/number estimate; fixed-time novel views lack independent GT; not matched-capacity causal ablation'}
     write(UNION_REPORT/f'{args.phase}_{"preview" if args.preview_only else "exports"}.json', receipt)

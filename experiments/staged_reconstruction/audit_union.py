@@ -8,6 +8,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT))
 import torch
+import numpy as np
 from variants.staged_reconstruction.prepare_data import REPORT, RUNS, DATA, read, write, sha
 from variants.staged_reconstruction.union.prepare import UNION_REPORT, UNION_RUNS, verify_sources
 
@@ -46,6 +47,14 @@ def main():
             stack = rng.sample(range(120), 120)
         sequence.append(stack.pop())
     assert rng.getstate() == state['rng_python'] and stack == state['camera_stack']
+    # The frozen forward/optimizer path has no NumPy/Torch random draws after
+    # initialization (spatial/temporal perturbation is disabled).
+    assert initial['rng_numpy'][0] == state['rng_numpy'][0]
+    assert np.array_equal(initial['rng_numpy'][1], state['rng_numpy'][1])
+    assert initial['rng_numpy'][2:] == state['rng_numpy'][2:]
+    assert torch.equal(initial['rng_torch'], state['rng_torch'])
+    assert len(initial['rng_cuda']) == len(state['rng_cuda'])
+    assert all(torch.equal(a, b) for a, b in zip(initial['rng_cuda'], state['rng_cuda']))
     actual = [json.loads(line) for line in (directory/'sampling.jsonl').read_text().splitlines()]
     assert [r['step'] for r in actual] == list(range(1, state['iteration']+1))
     assert [r['frame_index'] for r in actual] == sequence
@@ -73,6 +82,7 @@ def main():
         'all_frozen_sources_inputs_protocols_match': True, 'static_exact_S1': True, 'finite_model_and_optimizer': True,
         'one_dynamic_population_and_shared_field': True, 'physical_body_number': None, 'instance_identity_available': False,
         'exact_all_step_sampling_and_final_python_RNG': True, 'sampler_sequence_sha256': hashlib.sha256(json.dumps(sequence).encode()).hexdigest(),
+        'numpy_CPU_Torch_all_CUDA_RNG_match_no_random_forward_contract': True,
         'optimizer_state_count': len(counters), 'all_actual_Adam_counters_correct': True, 'native_validation': val,
         'numeric_gates': gates, 'parameters': read(directory/'initial.json'),
         'physical_boundary_exclusion_available': False, 'manual_image_review_pending': True}
