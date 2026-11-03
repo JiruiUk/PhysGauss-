@@ -904,4 +904,22 @@ slope/acceptance states and six fixed full RGB views; evaluate.py is independent
 GT-only assessment. No original PIDG trainer/renderer/weight or physics field
 changes. D6 completed with limited small-error gains, failed geometry gates,
 and is not admitted to Gaussian training. Reports under S1_rgb_plane_warp.
-S1-D7 source-plane transport is preregistered only, not implemented here yet.
+S1-D7 is implemented and completed; see the following map section.
+
+
+## Opt-in cross-view source-plane transport (S1-D7, 2026-11-03)
+
+`variants/staged_reconstruction/plane_transport/core.py` queries original first4
+fit-source anchors, transforms original D1/D6-admitted planes and intersects
+target rays inside source5x5 footprints. Target slope admission is unnecessary;
+source checks and frozen raw-RGB warp/fit/held equations are unchanged. Disabled
+calls return the same parent object. inputs/compute retain all queries, source
+planes, rejected hypotheses and parent rows. infer is locked/default-off;
+preflight checks independent full4 versus2+2 for both conditions. prepare binds
+809 train-only/source files. audit replays192 states plus six full RGB views;
+evaluate alone reads static/visible-thin GT. Independent export_review replays
+aggregate counts/MAE/P90 and original GT hashes; no GT feedback. 40 tests pass.
+D7 has local depth gains but fails both gates, not integrated into Gaussian
+training. No PIDG trainer/renderer, frozen source, weight or physics changes.
+Reports: S1_plane_transport/v1. Next J0 is preregistered no-update full-RGB
+static-opacity/SH gradient audit; no joint-training implementation claimed.

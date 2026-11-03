@@ -1,0 +1,37 @@
+{
+  "status": "complete_rejected_geometry_gate",
+  "pending_review": false,
+  "manual_review_completed": true,
+  "reviewed_images": {
+    "output/staged_reconstruction/S1_plane_transport/v1/diffuse_RGB_transport.png": "db4ef2314f19e61db56ea9a859a39550601040f21893d7bd2974eea613d77738",
+    "output/staged_reconstruction/S1_plane_transport/v1/glossy_RGB_transport.png": "fff71dc06c448daa1fd40bba4f15df15e2b9f4cc3b819e24f8a474d5f630dd2e",
+    "output/staged_reconstruction/S1_plane_transport/v1/analytic_transport_controls.png": "e128ce71fe64097fbcf5188cba1e470eae92c8b9c617dc43835284c725546a0f"
+  },
+  "actually_viewed": "Both cases fixed0/24/72 RGB, same-pixel D6/D7 errors and change maps; all A/B/C analytic control depths.",
+  "all192_membership_source_query_plane_acceptance_and_hash_replay": true,
+  "fixed0_24_72_full_raw_RGB_replay_exact": true,
+  "independent_GT_count_MAE_P90_replay_and_original_dataset_hashes_passed": true,
+  "flags_off_identity_and_two_condition_three_process4_vs2plus2_recovery_passed": true,
+  "gates_unchanged": true,
+  "Gaussian_or_real_training_started": false,
+  "native86_188_PLY_video_or_Adam_recovery_claim": false,
+  "S3U_and_unknown_identity_preserved": true,
+  "posthoc_coverage_diagnostic_no_GT_feedback": true,
+  "next": "Preregister full-RGB no-update static-revocation audit J0; reuse existing parallel coupling evidence, no depth-training promotion.",
+  "next_plan_sha256": "73db5a1218a73cbf7b6103d5ff12724644973602de0679f468c1b8999267165a",
+  "evidence_sha256": {
+    "source_freeze.json": "84d3730388d9cbe319b037527bdb9f926eea0fa0b6b34cd2a57629ef522ae29a",
+    "tests.log": "bfabcce1a1ab2c0c26f35e640d4b1a54299e445eec4c4ebe1534631d5a56969c",
+    "preflight.json": "5a215ece15993c99b43f8a4fbf3efcca0557137eba16fc86a796dcc908fd27b0",
+    "analytic_controls.json": "21af00ae87468a956f3b5fbf02f29da779f52523ff0b377c6aeb1d92ff5bc8cf",
+    "inference.json": "98742319e0ccf1f671ce640c0cc48fd362bd26fd2d786de1cb27044d9c4e4bae",
+    "input_audit.json": "6749dbbadd08f01581198262c5b08bf19cc5655d44df95cd8524979bf919e6b0",
+    "evaluation.json": "9b81eef12deb0cc0e07f070e85b5ed7ab4482bebc6e940eeba5dced89c95ebb5",
+    "gate.json": "05be9b2398279d1e77335a9a006f13bdbfccb7e850f865829fc1a3b839d7d66f",
+    "exports.json": "4e83bc65de8f449cb510c0576127a40aa5ef00299fe4df744cad038726a6984e",
+    "coverage_diagnostic.json": "6a94c7792fe9bcf54e53d030fa9167486b4ff79976ead3fcfcf6ea86330714ce",
+    "assessment.md": "608688502f18257891cb53155eff8435c66aa5a61159aa8562d32cf00721c4f4"
+  },
+  "reviewed_at_utc": "2026-11-03T22:54:39.529687+00:00",
+  "finalizer_sha256": "3a5cece32875ffc7fe1f3489674cf48adce378aea3bfcb92f317fb1f859ae310"
+}

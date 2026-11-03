@@ -505,3 +505,30 @@ fit源的原D1合格局部平面产生射线交点与斜率，保持源准入/5x
 Gaussian/旧真实18k→24k，不恢复暂停任务，不重跑D6或旧负分支。
 见[D6评估](staged_reconstruction/S1_rgb_plane_warp/v1/assessment.md)和
 [D7固定协议](staged_reconstruction/S1_plane_transport/protocol.json)。
+
+
+### S1-D7：跨视角传递有局部收益，未准入；转查联合撤销路径（2026-11-03）
+
+7680e19a固定协议完整执行，实现/40测试/809文件冻结及三独立进程完整4对2+2
+恢复9b2d4ed4；两条件各96图推断、全192父值/源查询/平面/接受/hash、六固定
+原RGB重放与独立GT/分母/MAE/P90/原始数据SHA核验eca285b4。全部423747/423100
+候选保留，58279/58201更新，其中25119/25226没有自身合格斜率也获外视角更新。
+静态MAE0.03659113→0.03590450、0.03661146→0.03591997（约1.88/1.89%）；大错误
+净减少603/602，仍占20.13/20.15%。准确静态覆盖60.37/60.27%，薄结构42.66/42.47%，
+薄结构MAE/P90均略改善，但原数值5%和Gaussian严格证据门槛均失败，不升级。
+约94.9%的父大错误仍无可用源平面；不放宽原邻域、支撑范围或RGB容差，不重跑。
+实际查看两例固定0/24/72原图/误差/更新及全部解析控制。final_review/status已
+消解pending；无Gaussian/Rubber Duck新训练、原生86/188、PLY或视频结果。
+
+用户提出动态阶段联合清理静态拖影。现S3-U全冻结静态，原S6只放开静态颜色；
+动态拟合不能直接撤销静态opacity。并行static_dynamic_coupling审计9a9c8fb6已
+检查初始化/梯度/遮挡，去掉静态后动态仍碎裂，不把所有缺失归于当前静态遮挡，
+不重复该审计。下一单阶段J0仅检查全RGB无颜色掩膜下开放静态opacity/SH的
+原生梯度与状态可恢复性，无优化器更新、不拼接新旧静态库、保留旧权重条件
+颜色训练的来源说明。它不是联合训练成功或未知静态身份推断，不能绕过失败
+深度/Gaussian门槛。今后学习候选仍须另立匹配协议、完整Adam/RNG/相机恢复及
+两条件独立静态GT/结构审计后再考虑Rubber Duck。S3-U/Small/未知身份与暂停
+任务保留，不新增本构/材料/力/接触、不扫参。
+见[D7评估](staged_reconstruction/S1_plane_transport/v1/assessment.md)、
+[后续方向](staged_reconstruction/S1_plane_transport/next_plan.md)和
+[J0固定协议](staged_reconstruction/S1_joint_revocation_audit/protocol.json)。
