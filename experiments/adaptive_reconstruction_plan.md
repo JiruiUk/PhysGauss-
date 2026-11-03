@@ -3,6 +3,11 @@
 This is a reconstruction/observability branch. The PIDG baseline and the existing
 M0–M10 physics milestone order remain unchanged. Every new branch defaults off.
 
+The original S1–S6 training stages remain the execution plan; their explicit
+status is in `staged_reconstruction_plan.md`. R0–R4 below are diagnostic work
+items, not replacement stages. Completing R0 did not complete S1 or the overall
+task. Negative results require corrective work, without cancelling S2–S6.
+
 ## Evidence and decisions
 
 1. Transfer-integrity v1 (matched 2k continuation) improved local objectives but
@@ -108,3 +113,15 @@ structural; it does not establish geometry recovery. H1 is not promoted.
 Rubber Duck remains the main benchmark. Missing simultaneous multi-view/physical
 GT limits conclusions; the manufactured F/material tests remain supplementary
 and the original M0–M10 order remains unchanged.
+
+## R0a initial reference audit completed
+
+`static_reference_audit/results.json` independently recomputes the same fixed
+mapping in the immutable initial15k and final H1 states. The37 conditional
+tracks/567 observations already had mean7.79751px reprojection error before R0
+training, versus7.56417px afterward (400px width). Initial selected opacity
+below0.01 was0%; final68.18%. The14624 rows use120 separate reference frames.
+The initial static reference was not established as consistent geometry; this
+is not solely a late optimization drift result. The audit is read-only and
+does not count as S1 training. Continue S1 reference/mask preparation and then
+independent static optimization; S2–S6 remain pending in the restored stage plan.
