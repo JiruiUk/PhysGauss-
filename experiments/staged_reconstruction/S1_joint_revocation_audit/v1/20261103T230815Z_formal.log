@@ -1,0 +1,13 @@
+W1103 23:08:22.228000 288564 envs\pidg-cu128\Lib\site-packages\torch\utils\cpp_extension.py:466] Error checking compiler version for cl: 'cp1' codec can't decode bytes in position 0--1: No mapping for the Unicode character exists in the target code page.
+ninja: no work to do.
+F:\A_Edinburgh\PhysGauss\variants\color_repair\code\hashencoder\hashgrid.py:16: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.half)
+F:\A_Edinburgh\PhysGauss\variants\color_repair\code\hashencoder\hashgrid.py:56: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+J0_GRADIENT formal 0 0.009049171581864357 {'static_opacity': 9.828745053231742e-05, 'static_SH_dc': 0.00022087763447160022, 'static_SH_rest': 0.0008554553672922161, 'canonical_xyz': 0.0068080801418907355, 'grids': 0.0008197479102266333, 'deformation_network': 0.06132401554214018}
+J0_GRADIENT formal 24 0.008710680529475212 {'static_opacity': 9.760550043396723e-05, 'static_SH_dc': 0.0002199106945077873, 'static_SH_rest': 0.0008517104260775564, 'canonical_xyz': 0.019470680395112495, 'grids': 0.0019421720103165133, 'deformation_network': 0.06889704607018428}
+J0_GRADIENT formal 48 0.01332911103963852 {'static_opacity': 8.893740300799467e-05, 'static_SH_dc': 0.0002963179691313079, 'static_SH_rest': 0.0011476345220613232, 'canonical_xyz': 0.016721552351997356, 'grids': 0.002656946106233892, 'deformation_network': 0.05106869471157254}
+J0_GRADIENT formal 72 0.012619518674910069 {'static_opacity': 6.288493866747186e-05, 'static_SH_dc': 0.0003053258100650998, 'static_SH_rest': 0.0011825217316775638, 'canonical_xyz': 0.017795279033582596, 'grids': 0.0032811905684476316, 'deformation_network': 0.04491190420738179}
+J0_GRADIENT formal 96 0.011915476992726326 {'static_opacity': 8.639580401068532e-05, 'static_SH_dc': 0.00024622430491642833, 'static_SH_rest': 0.0009536225935170656, 'canonical_xyz': 0.01259414495532949, 'grids': 0.002121281208201509, 'deformation_network': 0.034396977990285155}
+J0_GRADIENT formal 119 0.014290174469351768 {'static_opacity': 7.860733120317165e-05, 'static_SH_dc': 0.00024725564616005796, 'static_SH_rest': 0.0009576169690870192, 'canonical_xyz': 0.01693047453762903, 'grids': 0.0028963067199742018, 'deformation_network': 0.08456803345869046}
+J0_WORKER_COMPLETE formal

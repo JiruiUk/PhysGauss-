@@ -1,0 +1,91 @@
+{
+  "passed": true,
+  "checkpoint_and_six_model_hashes_exact": true,
+  "raw_RGBA_train_target_and_legacy_color_mask_lineage_disclosed": true,
+  "six_fixed_train_bindings_and_gradient_sign_denominators_verified": true,
+  "preflight_index0_aggregate_replay_with_original_tolerance": true,
+  "all54_old_native_and_sheet_image_hashes_and_decode_verified": true,
+  "optimizer_updates": 0,
+  "geometry_staticity_or_cleanup_proven": false,
+  "static_opacity_gradients": [
+    {
+      "frame": "train/0002",
+      "parameters": 4126,
+      "connected_values": 4126,
+      "disconnected_parameters": 0,
+      "finite": true,
+      "l2": 9.828745053231742e-05,
+      "mean_abs": 2.6120419194212647e-07,
+      "positive": 2731,
+      "negative": 1346,
+      "zero": 49
+    },
+    {
+      "frame": "train/0042",
+      "parameters": 4126,
+      "connected_values": 4126,
+      "disconnected_parameters": 0,
+      "finite": true,
+      "l2": 9.760550043396723e-05,
+      "mean_abs": 3.340215116660442e-07,
+      "positive": 2788,
+      "negative": 1230,
+      "zero": 108
+    },
+    {
+      "frame": "train/0082",
+      "parameters": 4126,
+      "connected_values": 4126,
+      "disconnected_parameters": 0,
+      "finite": true,
+      "l2": 8.893740300799467e-05,
+      "mean_abs": 3.587850972442014e-07,
+      "positive": 2982,
+      "negative": 1122,
+      "zero": 22
+    },
+    {
+      "frame": "train/0122",
+      "parameters": 4126,
+      "connected_values": 4126,
+      "disconnected_parameters": 0,
+      "finite": true,
+      "l2": 6.288493866747186e-05,
+      "mean_abs": 3.349831000390689e-07,
+      "positive": 2663,
+      "negative": 1374,
+      "zero": 89
+    },
+    {
+      "frame": "train/0162",
+      "parameters": 4126,
+      "connected_values": 4126,
+      "disconnected_parameters": 0,
+      "finite": true,
+      "l2": 8.639580401068532e-05,
+      "mean_abs": 3.6253720068313707e-07,
+      "positive": 2869,
+      "negative": 1237,
+      "zero": 20
+    },
+    {
+      "frame": "train/0200",
+      "parameters": 4126,
+      "connected_values": 4126,
+      "disconnected_parameters": 0,
+      "finite": true,
+      "l2": 7.860733120317165e-05,
+      "mean_abs": 3.6348597295041653e-07,
+      "positive": 2782,
+      "negative": 1324,
+      "zero": 20
+    }
+  ],
+  "review_images": {
+    "output/staged_reconstruction/S1_joint_revocation_audit/v1/static_opacity_gradient_signs.png": "e8676ccec4b71cf271e604c712a3263a33ea96fa33656e908bdb579d57332293",
+    "output/staged_reconstruction/S1_joint_revocation_audit/v1/fixed_old_model_review.png": "b44cc5cebb7ad3435e04e6928d81f2f812b8ceaa4d45b7d7b7e70c19eb0013dc",
+    "output/staged_reconstruction/S1_joint_revocation_audit/v1/observed_old_model_review.png": "cce61bf6a4975573e38d2a664ad59666cc1e3a837e3d2f661084987885454b7a"
+  },
+  "formal_sha256": "c1803752fd33eedb99f46b3c2a6af2f4f3d0866b50c4a0a2aed042c46eafc28b",
+  "source_sha256": "63ae6c47d0375087708a9fc77871a41faee57b9558b0e6a45c241d8aa1e1a2ad"
+}
