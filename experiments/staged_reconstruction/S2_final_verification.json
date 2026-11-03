@@ -1,0 +1,43 @@
+{
+  "status": "completed_failed_admission_repair_running",
+  "iteration": 16000,
+  "checkpoint_sha256": "ec43a0e2a359f82ebc13014c59864f4cecb5df9c9d890a5b2e63769a64d2c838",
+  "gates": {
+    "dynamic_PSNR": false,
+    "dynamic_only_alpha": false,
+    "static_PSNR_drop": false
+  },
+  "S2_admitted": false,
+  "validation_metrics": {
+    "PSNR": 25.299000930786132,
+    "dynamic_PSNR": 9.351419003804525,
+    "dynamic_alpha": 0.4944900890191396,
+    "static_PSNR": 33.89372208913167,
+    "static_alpha": 0.9972689231236775,
+    "composite_dynamic_region_alpha": 0.6280478258927663,
+    "dynamic_leakage_on_static": 0.05099659491194567,
+    "background_alpha": 0.006335127318743616
+  },
+  "test_metrics": {
+    "PSNR": 25.374804611206056,
+    "dynamic_PSNR": 9.560879974365234,
+    "dynamic_alpha": 0.4972432428598404,
+    "static_PSNR": 34.455386543273924,
+    "static_alpha": 0.9972723150253295,
+    "composite_dynamic_region_alpha": 0.6301094457507134,
+    "dynamic_leakage_on_static": 0.048876239172532226,
+    "background_alpha": 0.006149487779475748
+  },
+  "static_PSNR_drop": 1.7500942230224652,
+  "source_freezes_passed": true,
+  "optimizer_state_count": 88,
+  "optimizer_steps": [
+    16000
+  ],
+  "manual_review_images": {
+    "output\\staged_reconstruction\\S2_objects\\S2_review_step16000.png": "b28a0f92d4183ef99fbbb5e1bae9bd392080cc5c2496ca38ae2d7833d7570707",
+    "output\\staged_reconstruction\\S2_objects\\S2_fixed_review.png": "e90a16a79b68078a64d55adb1207d343b02a5e4b1df2fd1d429c2728e80d95b7"
+  },
+  "manual_review_scope": "Nine original-camera native frames and fixed86/fixed188/original t2/86/188 native renders, viewed via image panels. Videos decoded200 frames each; not manually watched every frame. No novel-view GT.",
+  "next": "S2_recovery formal16000, S3 requires actual reconstruction admission"
+}
