@@ -1,0 +1,26 @@
+{
+  "checkpoint_sha256": "d903fc96f089994d53f3239de1fce23ffbaffac4e9db6e8f6d1cd13e734a3c1b",
+  "native_images_reviewed": true,
+  "approve_conditional_continuation": true,
+  "files_reviewed": {
+    "output/staged_reconstruction/S4/S4_review_step04000.png": "5562578c59fb467ecf01a653226140c689333ca6961deec0ab3beb8a6216aee0",
+    "output/staged_reconstruction/S4/native_crop_review.png": "06d630dff598e0001d2f86f3949b6c8caacb45bee05e2329e2a1358f779a231c",
+    "output/staged_reconstruction/S4/fixed188_t0002_native.png": "fed47a445aa684e1c048474353b39498a5536a12566579a1ae446c32a4eaf75b",
+    "output/staged_reconstruction/S4/fixed188_t0086_native.png": "894fbe10eae7b84e2756fff4c411fc0288ed49688328bc6d4b865deb21e8152d",
+    "output/staged_reconstruction/S4/fixed188_t0188_native.png": "c3d9048fa245057dc5d301436365e41bfff1f2296b93b74ead17552c38a95be4",
+    "output/staged_reconstruction/S4/fixed86_t0002_native.png": "1e0316ddf6f88a758fc7d036f3398fcb126900b6a193af59233c31d5da714f1d",
+    "output/staged_reconstruction/S4/fixed86_t0086_native.png": "ddd504ba35302b41530878bbf3c9acd6c40d2e813d93946edf6478a017eaf051",
+    "output/staged_reconstruction/S4/fixed86_t0188_native.png": "491f5a32e7cfb9e396723a650b9946faf8543d405bd6dda3ecad5386c46e26be",
+    "output/staged_reconstruction/S4/original_t0002_native.png": "b5aaaf3e9276c5c0630bf998480561525a39da08e88f873cecd4e79febdad865",
+    "output/staged_reconstruction/S4/original_t0086_native.png": "ddd504ba35302b41530878bbf3c9acd6c40d2e813d93946edf6478a017eaf051",
+    "output/staged_reconstruction/S4/original_t0188_native.png": "c3d9048fa245057dc5d301436365e41bfff1f2296b93b74ead17552c38a95be4"
+  },
+  "manual_scope": "Nine observed/group rows plus nine native pixel crops; videos independently decoded, not all manually watched.",
+  "findings": [
+    "Observed-camera duck silhouettes are recognizable; lower early duck and some contours remain blurred.",
+    "Novel fixed86/fixed188 views still show sheets, speckle and holes; no geometry success established.",
+    "Late model-bank leakage remains and physical identities stay unknown.",
+    "All455 track observations worsen from0.536841 to0.785017px@400; S4 has not demonstrated improved track accuracy. Retain this negative result; no automatic weight increase or promotion as a track improvement.",
+    "Conditional continuation only to the predeclared joint curriculum; S6 uses its already planned lower learning rates. S5 has455 eligible observations but zero active interior violations and cannot demonstrate collision correction."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "admitted": true,
+  "checkpoint_sha256": "d903fc96f089994d53f3239de1fce23ffbaffac4e9db6e8f6d1cd13e734a3c1b",
+  "native_images_reviewed": true,
+  "scope": "Conditional sequential reconstruction corrections only; no certified complete geometry, physical re-ID or contact forces",
+  "numeric_gates": {
+    "dynamic_PSNR": true,
+    "dynamic_only_alpha": true,
+    "static_preservation_from_S1": true
+  },
+  "independent_physics_GT": false,
+  "all_fixed_frame_internal_physics_valid": true,
+  "geometry_success_established": false,
+  "contact_surface_certified": false,
+  "physical_ID_after_ambiguity": "unknown"
+}

@@ -133,3 +133,15 @@ outside the conditional static interior: signed distance minimum0.113664,
 margin0.08,0active violations. This cannot validate collision. S5 must record
 actual eligibility/activation at its parent/final states; a zero prior may not
 be advertised as a demonstrated nonpenetration improvement.
+
+S4 completed4000 actual updates, native val/test, exact sampler/optimizer audit
+and actual observed/group/native-fixed-view review. Validation dynamic25.34022dB,
+alpha0.986185, static36.19936dB pass unchanged image gates; test dynamic25.50344dB.
+All455 track observations worsen0.536841→0.785017px@400. This is a negative
+track-accuracy result, not a successful correspondence improvement; fragments
+and bank leakage remain. Preserve the outcome and do not increase weights/sweep.
+Conditional continuation permits only the already planned S5/S6 curriculum,
+with the predeclared lower S6 learning rates; physical identity stays unknown.
+S5 parent's455 qualified observations have0active conditional interior violations
+(minimum signed distance0.112658, margin0.08). Thus no actual collision correction
+has been demonstrated; S5 real-parent40→80 recovery smoke is now running.
