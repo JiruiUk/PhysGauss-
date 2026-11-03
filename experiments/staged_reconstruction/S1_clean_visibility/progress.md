@@ -58,3 +58,11 @@ quarantined rows. All six Adam counters18k;6000 parent-continuation camera
 samples,6 confidence refreshes and frozen source/history checks passed.
 Checkpoint SHA256: `883101f36ab668ea6b9d6fb3a5616422ca54b2067f97a50f4d2f220332bcb015`.
 Matched native evaluation is running. No promotion before actual images.
+
+## Final C1 assessment
+
+Both arms and exports completed. Manual native review found no clear cleanup;
+visibility not promoted. Frozen CT val25.7836/control vs25.7377/visibility;
+new val22.0890 vs22.0206. Three videos decode200 frames, PLY exact.
+See v1/assessment.md. Synthetic RGB admission audit is now running separately;
+next single candidate is nuisance separation, not stronger deletion.

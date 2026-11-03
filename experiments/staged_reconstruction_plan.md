@@ -241,3 +241,18 @@ training, threshold/weight search, body-count estimate, physics or paused-work
 resumption follows. Three H264 videos each decode200 frames; PLY positions match
 checkpoints. Static fixed-view time invariance is structural, not geometry proof.
 See [S1-G measured assessment](staged_reconstruction/S1_geometry_growth/revision2/assessment.md).
+
+### S1-C：文献驱动的可见性隔离（2026-11-03，负结果保留）
+
+完成完整G1 12k→18k匹配对照/隔离续训、55测试、双进程短训恢复及正式Adam/RNG/
+相机采样/源文件审计；各6000相机样本一致。3273→3031点的隔离未带来可确认清理：
+CT验证代理PSNR对照25.7836、隔离25.7377dB，新验证22.0890/22.0206dB。
+实际原生86/188及早中晚图仍有黄色拖影、蓝色尖刺/悬浮片。主结构保留不等于完整
+正确；不升级隔离组、不替换S3-U。三视频各完整解码200帧，PLY对应检查点。
+
+用户现已授权持续查文献并改进。下一步使用独立RGB合成审计（相机/时间解耦，
+薄结构/运动/反光，GT仅评估），再选择一个DeSplat启发的干扰层/静态层分离试验。
+未选择区域长期无监督、静态高斯已吸收瞬态外观是待证机制；不反复加步数/删点、
+不自动加权/扫参、不启动材料/本构/接触/力扩展，不恢复旧暂停任务。
+见[实测评估](staged_reconstruction/S1_clean_visibility/v1/assessment.md)与
+[文献和后续顺序](staged_reconstruction/S1_clean_visibility/literature.md)。
