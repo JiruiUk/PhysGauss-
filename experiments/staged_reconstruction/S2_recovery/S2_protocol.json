@@ -1,0 +1,67 @@
+{
+  "version": 2,
+  "stage": "S2",
+  "enabled_by_default": false,
+  "seed": 20261104,
+  "static_checkpoint_sha256": "2dd8d5e0ea35d55e648aa236ea779eebe2fe3d415d34ad931e732f0140b89031",
+  "static_frozen": true,
+  "camera_contract": "metadata_cv",
+  "object_count": 4,
+  "maximum_points_per_object": 8190,
+  "initialization_frame": 2,
+  "initialization_depth_offsets": [
+    -0.15,
+    0.0,
+    0.15
+  ],
+  "deformation": "Original PIDG DeformModel independently per object, coordinates local to each initial center, no baseline edits",
+  "grid_args": {
+    "canonical_num_levels": 12,
+    "canonical_log2_hashmap_size": 15,
+    "canonical_desired_resolution": 256,
+    "deform_num_levels": 16,
+    "deform_log2_hashmap_size": 15,
+    "deform_desired_resolution": [
+      32,
+      32,
+      16
+    ]
+  },
+  "net_args": {
+    "depth": 1,
+    "width": 128
+  },
+  "capacity_reason": "Four independent original PIDG networks with bounded hash budgets; this is not a matched C1 architecture comparison",
+  "stage_updates": 16000,
+  "width_schedule": [
+    [
+      1,
+      800
+    ],
+    [
+      12001,
+      1600
+    ]
+  ],
+  "checkpoint_interval": 1000,
+  "validation_interval": 4000,
+  "final_state_preselected": true,
+  "cmr": false,
+  "contact": false,
+  "sparse_tracks": false,
+  "loss": "Original RGB +0.5 visible-yellow RGB +2.0 conservative one-sided image coverage; no physics/flow/track/contact",
+  "identity_claim": "Qualified early component mapping only; otherwise permutation-invariant unknown union. No occlusion re-ID",
+  "admission": {
+    "validation_dynamic_PSNR_min": 20.0,
+    "validation_dynamic_alpha_min": 0.85,
+    "validation_static_PSNR_drop_max": 1.0
+  },
+  "admission_limit": "Structural identity alone cannot prove physical identity; review per-object contributions and fixed-camera evolution before S3",
+  "candidate": "S2_recovery_one_candidate",
+  "recovery_enabled": true,
+  "coverage_weight": 2.0,
+  "foreground_rgb_weight": 0.5,
+  "repair_trigger": "RGB-only attempt misses dynamic objects despite lower global image loss; original attempt/source/checkpoint preserved",
+  "depth_prior": "Per-object front static-neighborhood depth minus0.25, with continuous uniform depth slab; not depth GT",
+  "comparison_limit": "Depth prior and image objective both change; this is a repair, not a single-factor causal comparison"
+}

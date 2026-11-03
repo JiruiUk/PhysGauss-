@@ -43,3 +43,17 @@ thereafter), final checkpoint, native val/test, dynamic-only alpha and native
 per-object/fixed-camera review. Training admission is not yet established.
 S2–S6 remain active. Automation `pidg-s1-s6` follows the whole sequence and
 does not finish on an implementation, audit or individual stage completion.
+
+S2 RGB-only formal16k completed with native val/test. Native validation dynamic
+PSNR9.351dB and dynamic-only alpha0.4945 fail admission20dB/0.85; composite alpha
+0.6280 would overstate dynamic support. Static validation33.894dB also exceeds
+the allowed1dB loss against S1. This is a failed S2 candidate, not completion.
+Final native/contribution/video review is running; all original sources/states
+remain unchanged. Independent S2 recovery adjusts the uncertain depth prior,
+foreground RGB weighting and conservative one-sided image coverage. Unknown
+physical identities remain unknown; they receive only unlabeled union coverage.
+31 related tests, native gradients/static freeze and separate40→80 recovery pass.
+The single repaired candidate retains the same point/network budget and16k final
+state; no sweep or post-hoc threshold relaxation. Reports/state are isolated in
+`S2_recovery/`. S3 semantic operator tests are being prepared independently, but
+S3 training remains gated on actual S2 reconstruction admission.
