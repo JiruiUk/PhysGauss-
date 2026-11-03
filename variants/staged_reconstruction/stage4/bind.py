@@ -34,20 +34,25 @@ def load_physics_state(path):
     return scene,state,bootstrap
 
 
-def visible_masses(renderer,scene,cam,t,mask,uv):
-    # Three channels measure complete alpha*T integrals for component, whole
-    # image, and the observation patch. No truncated rasterizer row list.
+@torch.no_grad()
+def visible_masses(renderer,scene,cam,t,mask,uv,rows):
+    # Use exact forward one-hot colors for the spatially proposed rows. The
+    # inherited CUDA backward reconstructs transmittance approximately and its
+    # color-gradient sum failed the strict tiny-patch conservation check. Never
+    # relax that check or treat the backward approximation as visible evidence.
     g=scene.at(t)
-    color=torch.ones(len(g.get_xyz),3,device='cuda',requires_grad=True)
     target=torch.ones(3,225,400,device='cuda');target[0]=torch.as_tensor(mask,device='cuda')
     yy,xx=torch.meshgrid(torch.arange(225,device='cuda'),torch.arange(400,device='cuda'),indexing='ij')
     target[2]=((xx-uv[0]).square()+(yy-uv[1]).square()<=4).float()
-    package=renderer(cam,g,PIPE,scene.centers.new_zeros(3),0.,0.,0.,override_color=color)
-    alpha=package['alpha'].squeeze().detach()
-    assert (package['render'].detach()-alpha[None]).abs().max()<1e-6
-    mass=torch.autograd.grad((package['render']*target).sum(),color)[0].detach()
-    expected=(alpha[None]*target).sum((1,2))
-    error=float(((mass.sum(0)-expected).abs()/expected.clamp_min(1)).max())
+    color=torch.zeros(len(g.get_xyz),3,device='cuda');color[rows]=1
+    expected=renderer(cam,g,PIPE,scene.centers.new_zeros(3),0.,0.,0.,override_color=color)['render'][0]
+    summed=torch.zeros_like(expected);mass=torch.zeros_like(color)
+    for start in range(0,len(rows),3):
+        pack=rows[start:start+3];color.zero_();color[pack,torch.arange(len(pack),device='cuda')]=1
+        contribution=renderer(cam,g,PIPE,scene.centers.new_zeros(3),0.,0.,0.,override_color=color)['render'][:len(pack)]
+        mass[pack]=(contribution[:,None]*target[None]).sum((2,3))
+        summed+=contribution.sum(0)
+    error=float((summed-expected).abs().sum()/expected.sum().clamp_min(1))
     assert error<5e-4 and mass.isfinite().all() and mass.min()>=-1e-7
     return mass,error
 
@@ -80,7 +85,8 @@ def main():
                 distance=(projected-projected.new_tensor(uv)).norm(dim=-1)
             candidate &= valid & (distance<=(1.5 if index==0 else 2.))
             if not bool(candidate.any()):break
-            mass,error=visible_masses(renderer,scene,cam,t,label==component,uv);maximum_error=max(maximum_error,error)
+            rows=torch.nonzero(candidate).flatten()+offset
+            mass,error=visible_masses(renderer,scene,cam,t,label==component,uv,rows);maximum_error=max(maximum_error,error)
             mass=mass[offset:offset+count]
             candidate &= eligible_rows(distance,valid,mass[:,0],mass[:,1],mass[:,2],index==0)
             errors.append(distance)
@@ -97,6 +103,7 @@ def main():
     write(output,{'parent_sha256':sha(parent),'parent_admission_sha256':sha(REPORT/'S3/admission.json'),
         'image_tracks_sha256':sha(REPORT/'S4/image_tracks.json'),'topology':[len(o.get_xyz) for o in scene.objects],
         'bindings':bindings,'rejected':rejected,'complete_mass_relative_error_max':maximum_error,
+        'contribution_method':'Exact forward one-hot color for every spatial candidate; pack partition checked against full union render, no truncated metadata or backward transmittance reconstruction',
         'policy':'Fixed same-object row, source<=1.5px, all later<=2px, visible component mass>=.02, purity>=.95, patch mass>=.005; conflicts rejected',
         'heldout_used':False,'physical_material_ID_GT':False,'occlusion_reidentification':False})
     assert sha(parent)==admission['checkpoint_sha256']

@@ -25,6 +25,7 @@ def parent_gate(stage):
         raise RuntimeError(f'{previous} failed admission')
     assert sha(path)==value['checkpoint_sha256']
     bindings=read(REPORT/'S4/bindings.json')
+    assert bindings['image_tracks_sha256']==sha(REPORT/'S4/image_tracks.json')
     if not bindings['bindings']:raise RuntimeError('No qualified fixed-row tracks; do not fabricate S4--S6 training')
     assert bindings['parent_sha256']==sha(RUNS/'S3/formal/checkpoint.pt')
     return path,receipt,bindings
