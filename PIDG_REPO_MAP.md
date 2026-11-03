@@ -834,3 +834,16 @@ gradients. `audit` freezes code/inputs and replays global/per-view state.
 `evaluate` alone reads independent synthetic static RGB/depth/normal GT; it
 uses expected depthD/alpha and treats view-specific nuisance as appearance,
 not physical identity. Real training is gated on both full synthetic cases.
+
+
+## Optional RGB depth evidence refinement (2026-11-03)
+
+`variants/staged_reconstruction/depth_refine/core.py` implements a default-off
+bounded inverse-depth proposal and separate held-source acceptance; disabled
+calls return the original depth tensor unchanged. `infer.py` preserves the
+inherited candidate set and reads only RGB/calibration/time plus saved RGB-MVS
+depths, with per-view save/stop and input/source locks. `evaluate.py` alone reads
+independent static/depth/normal GT after inference, compares fixed candidates
+and fixed original normal-valid pixels. No Gaussian optimizer, field, renderer,
+loader or historical checkpoint is altered. `tests/test_depth_refine.py` checks
+the vertex, bounds, invalid/zero steps, held-source refusal and flags-off path.

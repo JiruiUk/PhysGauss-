@@ -1,0 +1,25 @@
+{
+  "status": "complete_limited_numerical_improvement",
+  "manual_review_completed": true,
+  "Gaussian_training_started": false,
+  "real_training_authorized": false,
+  "actually_viewed": [
+    "diffuse/glossy original/refined depth and absolute error c00_t1/c08_t0/c24_t0",
+    "diffuse/glossy normal errors on original fixed GT-face valid pixels"
+  ],
+  "finding": "Partial reduction of discretization bands/noisy normals, missing evidence and noisy base/edges remain; no Gaussian cleanup claim",
+  "do_not_repeat_or_sweep_D1": true,
+  "next": "Single source-view uncertainty/interval evidence candidate; fixed protocol before outputs, GT only independent evaluation, paired Gaussian training requires its own gates",
+  "evidence_sha256": {
+    "inference.json": "4d65222424ed9eadd9432619ec8bb8909c0e4c46f0f9ee25f97c9b80cf18714a",
+    "evaluation.json": "98b71c276ddb3f0fa1907a9799c45ea329d9f613951529f0b6b05c8c35dfe9c3",
+    "exports.json": "853226a3d64a19a5490ccc48ad72bbc7d7a90c5023bc0c7addd225f42299d7aa",
+    "source_freeze.json": "53292fe1e0731b9b072c52d104ce7da44e9f91c0480d2dfcc65500151d3924cf"
+  },
+  "reviewed_images": {
+    "output/staged_reconstruction/S1_depth_evidence/refinement_v1/diffuse_depth.png": "16d6a756a3e95b5b7ddf44b886f4833d7b22f60cff01d49e7cfaa1a8de599ab5",
+    "output/staged_reconstruction/S1_depth_evidence/refinement_v1/diffuse_normal_error.png": "1ec9e5944db013109420d9256aa5d01d194f821305ae47af4e05f909c52289b7",
+    "output/staged_reconstruction/S1_depth_evidence/refinement_v1/glossy_depth.png": "765e0425f015cc54b6ae170f8f65c05e793fea6d74e73330e41ea691b5d91003",
+    "output/staged_reconstruction/S1_depth_evidence/refinement_v1/glossy_normal_error.png": "39452b9b2d257752c62ba8de91ea913911cb00f7bf04915aa9a60cbced1bb908"
+  }
+}

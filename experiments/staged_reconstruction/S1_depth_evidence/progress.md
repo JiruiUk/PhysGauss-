@@ -20,3 +20,20 @@ Inference does not load evaluator labels; the separate runner verifies all
 dataset hashes before independent GT evaluation. Camera membership and the
 original normal-evaluation pixel set stay fixed. No promotion from average
 error alone; this is not complete Gaussian training or static-GT cleanup.
+
+## D1 completed and reviewed
+
+Both96-view cases completed; all input/output/source/data hashes and candidate
+membership passed. Original→refined static-depth MAE0.03800→0.03680 and
+0.03802→0.03683; same-pixel normal means30.842→26.744deg and30.866→26.775deg.
+Thin errors/P90 improve modestly. About20.3% still disagree with static GT by
+more than0.05 or lie on no static surface. Actual c00_t1/c08_t0/c24_t0 depth/
+error/normal panels for both cases reviewed; missing evidence and noisy edges
+remain. This is a depth-evidence result, not Gaussian artifact cleanup.
+
+See refinement_v1/assessment.md and final_review.json. Do not restart D1 or
+change its fixed parameters; retain local numerical improvement only. Next
+single mechanism is RGB-only source-view uncertainty/interval evidence,
+predeclared before outputs and independently audited before a new paired
+Gaussian synthetic training protocol. No strong blanket depth/normal loss,
+S1-N real continuation, S3-U replacement or paused task resumption follows.
