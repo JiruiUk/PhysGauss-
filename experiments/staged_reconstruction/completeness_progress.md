@@ -49,6 +49,8 @@ CoTracker3另做训练图像对应审计：28个短窗口的1064个候选仅31�
 - I7文献依据与独立预检：`invertible_motion/research.md`
 - I7失败结果：`invertible_motion/assessment.md`
 - 视频深度独立资格检查：`video_depth/assessment.md`（未准入训练）
+- I7实际位置映射应变诊断：`invertible_motion/strain_assessment.md`（固定点/时刻未发现极端局部塌缩）
+- I7实际协方差与原生推理干预：`invertible_motion/covariance_assessment.md`（仅归一化不能恢复完整物体，未训练新模型）
 
 相关原始论文：
 [Dynamic3DGaussians](https://dynamic3dgaussians.github.io/paper.pdf)、

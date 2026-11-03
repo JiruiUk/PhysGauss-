@@ -1,0 +1,35 @@
+{
+  "checkpoint_sha256": "e5eb8b708051a757112a60a9e58f27cea616ab290a4e1d589012c94f15c05190",
+  "actual_visual_inspection": [
+    "comparison.png",
+    "c188_t43_I7_inference_only_unit_quaternion_native.png",
+    "c188_t146_I7_inference_only_unit_quaternion_native.png"
+  ],
+  "native_width": 1600,
+  "read_only_inference_intervention": true,
+  "optimizer_updates": 0,
+  "new_trained_candidate": false,
+  "completeness_passed": false,
+  "observations": "Normalization reduces some inflated/elongated Gaussian supports but exposes detached points and large gaps. c188/t43 and t146 remain incomplete; c86/t86 remains fragmented. No restored persistent surface.",
+  "image_sha256": {
+    "output/staged_reconstruction/invertible_motion/covariance_intervention/c188_t146_comparison.png": "16862af7455dd41ce7a32a65826ee31ed4204df0060cddc5aa4ebcae93e78785",
+    "output/staged_reconstruction/invertible_motion/covariance_intervention/c188_t146_I7_inference_only_unit_quaternion_alpha.png": "39025f3fbc4dbf700a05e4e6cdcd04cd30fbb7ae3f0de4f023f664092414f018",
+    "output/staged_reconstruction/invertible_motion/covariance_intervention/c188_t146_I7_inference_only_unit_quaternion_native.png": "93f9dd766b0797241b8cf6d2cdf2de777559c0f84f02d48b658296a36e620a4e",
+    "output/staged_reconstruction/invertible_motion/covariance_intervention/c188_t146_I7_original_alpha.png": "c5d9d0f423bf02a609f99561aa7f3825dcf67a4d46e973793a1caa6ab26ad8f2",
+    "output/staged_reconstruction/invertible_motion/covariance_intervention/c188_t146_I7_original_native.png": "9663a027abf6cc998d3d9f270c417a18dd1c8437bffb862cd9dd44da0b0227da",
+    "output/staged_reconstruction/invertible_motion/covariance_intervention/c188_t43_comparison.png": "07d7ed1923aac1c2e25e892074998bf130303bec17d4ccb44298ee009ca791f3",
+    "output/staged_reconstruction/invertible_motion/covariance_intervention/c188_t43_I7_inference_only_unit_quaternion_alpha.png": "6e8d51eb9f8bdfcc55dbd1a27b87f909b58062f3415b08bead7e25615298410a",
+    "output/staged_reconstruction/invertible_motion/covariance_intervention/c188_t43_I7_inference_only_unit_quaternion_native.png": "a13e15951342c2d6cb4207f3ce38cbe931d25fd9ed517d328526a001d99d5102",
+    "output/staged_reconstruction/invertible_motion/covariance_intervention/c188_t43_I7_original_alpha.png": "757b75798f24248e49006e26fb904a9aebf8e44e9c4c8d94d55650a704042417",
+    "output/staged_reconstruction/invertible_motion/covariance_intervention/c188_t43_I7_original_native.png": "bc9d7b47a0cb914d85f0d3bf12bc81c9abc6fa72f033026f0eec0b90cdd9e965",
+    "output/staged_reconstruction/invertible_motion/covariance_intervention/c86_t86_comparison.png": "624048908ec400c0083dfe906f21c26da0b661f4a5fd219e4d3bf61cf7b2e15c",
+    "output/staged_reconstruction/invertible_motion/covariance_intervention/c86_t86_I7_inference_only_unit_quaternion_alpha.png": "75951eb0ccf4de3819554ddb50c5445b0a83ccc3c09c7349657ce38f46421e7f",
+    "output/staged_reconstruction/invertible_motion/covariance_intervention/c86_t86_I7_inference_only_unit_quaternion_native.png": "9619dc4c4eac09b4dfdf9418f456848286ec24a1fe698a331682d58dc6c9c745",
+    "output/staged_reconstruction/invertible_motion/covariance_intervention/c86_t86_I7_original_alpha.png": "b6b3819cb89a248b6e4161f7b8752161741535287e6e9b3e949eddb3cfd5eaab",
+    "output/staged_reconstruction/invertible_motion/covariance_intervention/c86_t86_I7_original_native.png": "5a6ddf500e6a8c625d3db1d9f242fe48cd80510a743118ab3c892ac2eef41b4c",
+    "output/staged_reconstruction/invertible_motion/covariance_intervention/comparison.png": "a0d769200cc771f92f1d128572b954afd28fef5145ecbc5f229e7dc246689610"
+  },
+  "receipt_sha256": "c843b4f268f7485ed8bb1bbe7c4d59d3a385a18204dd32f39d023bf3c9579d73",
+  "test_RGB_read": false,
+  "not_full_6x200_acceptance": true
+}

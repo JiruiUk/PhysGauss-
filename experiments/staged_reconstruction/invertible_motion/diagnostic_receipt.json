@@ -1,0 +1,26 @@
+{
+  "unit_tests_passed": 8,
+  "physics_modules_integrated": 0,
+  "optimizer_updates": 0,
+  "historical_sources_unchanged": true,
+  "original_failed_max_pixel_parity_preserved": true,
+  "checkpoint_unchanged": true,
+  "source_and_report_sha256": {
+    "scripts/audit_invertible_strain.py": "01999fac25dd89d188dc06e6a78de02ccc883562f9db5f093e81eeab8d2804bf",
+    "scripts/audit_render_covariance.py": "3963697ab4f1854e202ca235002413ff30d2fa1e5bc480dc51e00b7d911869f2",
+    "scripts/render_covariance_intervention.py": "50755becc512aae050330dd18be1b259c830856bed808b6ee631c23897bb0a6f",
+    "tests/test_invertible_strain_diagnostic.py": "eb978678d2a39cae5af5809a812d962233e8dccd05b28a2e9c81ff420604ea5f",
+    "tests/test_render_covariance_diagnostic.py": "2cbc6a6aaecaffa5166a1f0faa441bcd6c0d3446343527c0c7f0abef05c75de2",
+    "experiments/staged_reconstruction/invertible_motion/strain_diagnostic.json": "e3cce0fb54522720544b2d86bbc94ec1db50d0fb7bd99d92afa49daff53e2197",
+    "experiments/staged_reconstruction/invertible_motion/covariance_diagnostic.json": "de5a5450e764ad4f84da6ae80e342f2f24d76bb044fd4cb4d48b094c6e00548e",
+    "experiments/staged_reconstruction/invertible_motion/strain_assessment.md": "ef5030d1c68f25de1c6bf93514076c572b154b263209be51f55a631eb26cd9c5",
+    "experiments/staged_reconstruction/invertible_motion/covariance_assessment.md": "c6a9cf8544b8e596b3823bf8574ce22b893443af42dfd2ebb9a53a09ce676873",
+    "experiments/staged_reconstruction/invertible_motion/covariance_intervention_review.json": "3e846c1cd21446525ee3f1c8b4c781274037c94e3a05e5403795e88d9f17ed6e",
+    "experiments/staged_reconstruction/invertible_motion/diagnostic_unit_tests.log": "e55ad04ccb8b5fadc54d8a2b77a4777254bc71626a4f14b1ffe806b43d8dde77",
+    "experiments/staged_reconstruction/invertible_motion/strain_diagnostic.log": "dd21c5add995f5ef6e77644fba4537bc9c0a1ffdd18317c722d6ce09aa7392e9",
+    "experiments/staged_reconstruction/invertible_motion/covariance_diagnostic.log": "195cad099035f221c74b45db7f9517e1ea986fdbdf0d1906587850e027e6ff15",
+    "experiments/staged_reconstruction/invertible_motion/covariance_diagnostic_attempt1.log": "781a80f312ba0a389c4f3f936e909525b9bf6e44057c68dd439e7ee544b61e6f",
+    "experiments/staged_reconstruction/invertible_motion/covariance_diagnostic_attempt2.log": "bb6714a96dab0f1ca8dfb9b49303c60d55a8ca462386f4c0a88627f61f7d2714",
+    "experiments/staged_reconstruction/invertible_motion/covariance_intervention.log": "26c93e79e9788954e389a1e1d1124cf37c43183277bf632e631ab4ce759956f2"
+  }
+}
