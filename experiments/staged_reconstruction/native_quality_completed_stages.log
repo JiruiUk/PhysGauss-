@@ -1,0 +1,18 @@
+W1103 10:47:42.598000 266516 envs\pidg-cu128\Lib\site-packages\torch\utils\cpp_extension.py:466] Error checking compiler version for cl: 'cp1' codec can't decode bytes in position 0--1: No mapping for the Unicode character exists in the target code page.
+ninja: no work to do.
+F:\A_Edinburgh\PhysGauss\variants\color_repair\code\hashencoder\hashgrid.py:16: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.half)
+F:\A_Edinburgh\PhysGauss\variants\color_repair\code\hashencoder\hashgrid.py:56: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+F:\A_Edinburgh\PhysGauss\envs\pidg-cu128\Lib\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+F:\A_Edinburgh\PhysGauss\envs\pidg-cu128\Lib\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: F:\A_Edinburgh\PhysGauss\envs\pidg-cu128\Lib\site-packages\lpips\weights\v0.1\vgg.pth
+NATIVE_STANDARD_QUALITY S2 val {'PSNR': 27.959334945678712, 'SSIM': 0.9674482027689616, 'LPIPS': 0.04823736051718394}
+NATIVE_STANDARD_QUALITY S2 test {'PSNR': 28.018291893005372, 'SSIM': 0.9677321529388427, 'LPIPS': 0.04774500746279955}
+NATIVE_STANDARD_QUALITY S3 val {'PSNR': 28.46631768544515, 'SSIM': 0.9689716994762421, 'LPIPS': 0.046704274602234364}
+NATIVE_STANDARD_QUALITY S3 test {'PSNR': 28.546251640319824, 'SSIM': 0.969304188489914, 'LPIPS': 0.04616922095417977}
+NATIVE_STANDARD_QUALITY S4 val {'PSNR': 28.512925148010254, 'SSIM': 0.9694090207417806, 'LPIPS': 0.04616600126028061}
+NATIVE_STANDARD_QUALITY S4 test {'PSNR': 28.568712539672852, 'SSIM': 0.9696732604503632, 'LPIPS': 0.04569471847265959}

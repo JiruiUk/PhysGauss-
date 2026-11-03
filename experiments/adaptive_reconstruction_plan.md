@@ -23,7 +23,7 @@ task. Negative results require corrective work, without cancelling S2–S6.
 | Step | Experiment | Admission / decision |
 |---|---|---|
 | R0 | Verified static subset with a time-independent rendering map | Completed; image guardrails passed, structure did not improve; H1 not promoted |
-| R0a | Static selection/reference geometry audit | Required after R0: inspect opacity suppression, reference consistency and multi-time support before another long run |
+| R0a | Static selection/reference geometry audit | Completed: reference inconsistency already existed at15k; motivated the conditional S1 reconstruction, without certifying contact geometry |
 | R1 | Persistent known object support / object-centric canonical representation | First audit coverage and independent identity evidence; unknown stays unknown |
 | R2 | Reliable tracks, separated from static geometry | Retain confidence gates; do not infer identity through ambiguous occlusion |
 | R3 | Kinematic compatibility, then CMR | Rendered trajectory, velocity and coordinate derivatives must be defined consistently |
@@ -139,11 +139,29 @@ staged_reconstruction/S2_geometry_recovery/assessment.md.
 S3 real-parent recovery exposed a rank-deficient canonical-neighbor case. A new
 independent state_recovery entry uses actual current-world same-bank neighbors,
 retains the original validity thresholds, and saves derived state. Corrected
-40→80 recovery passes136 Adam states and exact camera/Python-RNG replay;6000
-formal updates are running. Native4k dynamic25.8475dB/static35.7088dB pass.
-All57 related tests pass. S4 train-only fragments131, strict fixed-row binding,
-S5 conditional SDF/nonpenetration and S4--S6 separate4000-step entries are ready;
-formal later stages still require reviewed parents and actual recovery smoke.
+40→80 recovery passes136 Adam states and exact camera/Python-RNG replay. Its6000
+formal updates, native evaluation and actual fixed-view review are complete;
+validation dynamic25.392299dB/static35.941669dB. All57 related tests pass.
+
+S4 binds91 train-only fragments/455observations to79 fixed rows and completes
+4000 updates with full evaluation/review. Exact forward one-hot contributions
+pass the original visibility-partition gate after preserving an earlier failed
+backward-approximation attempt. Validation dynamic25.340218dB/static36.199356dB,
+but track projection worsens0.536841→0.785017px@400: retain this negative result.
+
+S5 completes4000 updates with validation dynamic25.603743dB/static35.983147dB
+and actual fixed-view review. Track error0.664671px@400 remains worse than S3.
+All800 conditional-interior calls have zero active violations; there was no
+actual collision correction. Its limited conditional continuation admission
+is not admission of the original-plan complete contact scope. S6 real-parent
+40→80 recovery passes138 Adam states; its predeclared4000 updates, independent
+native val/test, full sampler/state audits and actual image review are complete.
+Validation dynamic28.327031dB/static36.169914dB, test dynamic28.563049dB;
+455 qualified track observations average0.427107px@400 (20.44% below S3).
+All800 conditional-interior calls are inactive. Static geometry is exactly S1;
+only its appearance was unfrozen. Three final videos decode200frames each.
+Observed-view contours improve, but novel-view sheets/holes and long late bank
+streaks remain. Physical IDs after ambiguity remain unknown.
 
 S5's manufactured300-step optimizer validation is separate from real-scene
 training. Rubber Duck has no certified contact surface or acquisition seconds;
@@ -152,3 +170,30 @@ image/kinematic/track/conditional-interior objectives and static appearance at
 0.25 learning rates; static geometry remains S1. Full operational continuation
 is in staged_reconstruction/runbook.md. These are conditional reconstruction
 experiments, not material/contact identifiability claims.
+
+## Measured completion and unresolved original scope
+
+The revised conditional S1--S6 training lineage completed46000 formal updates;
+two failed S2 candidates add32000 preserved updates. Standard native1600x900
+quality is measured for every admitted S2--S6 final state. Final S6 validation
+full PSNR30.58520dB, SSIM0.975011, VGG-LPIPS0.041803; test LPIPS0.041247.
+See staged_reconstruction/final_summary.md and output/staged_reconstruction/index.html.
+These are sequential image/qualified-track results, not causal ablations or
+matched legacy-camera PIDG comparisons.
+
+No further training is automatically queued. The original complete geometry,
+persistent physical identity and contact goals remain unresolved; S5 implemented
+only a conditional static-interior prior that never activated in the real scene.
+Object-object nonpenetration, contact forces, friction and restitution remain
+unvalidated/off, rather than silently removed from the original objective.
+
+Next evidence priority is geometry/identity observability, supported by a small
+calibrated RGB synthetic supplement with metric geometry, acquisition seconds,
+material-point trajectories and persistent IDs. Keep asynchronous single-view
+RGB as training input and synchronized novel views/3D truth as evaluation only.
+First isolate known motion without collision; then admit genuine collision
+tests only with certified surfaces/IDs/time and independently exported contact
+truth. Manufactured sphere/plane optimization is not a replacement for this
+RGB reconstruction benchmark. Freeze split/metrics/criteria before running;
+do not increase weights, sweep candidates or add constitutive/unknown forces.
+The concrete retained dependencies are in staged_reconstruction_plan.md.

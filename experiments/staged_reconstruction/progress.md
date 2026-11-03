@@ -184,3 +184,19 @@ remain. No complete geometry/physical-ID/contact success is claimed. S6 formal
 result is finalized, completing this revised conditional training curriculum;
 the original full contact scope remains incomplete. Final standard native
 quality and measured report/plan are being consolidated; no new training starts.
+
+Final standard native metrics for S2--S6 and the measured report, corrected
+scientific trend figure and local video gallery are complete. Final S6 full-frame
+val PSNR30.585203dB/SSIM0.975011/VGG-LPIPS0.041803, test LPIPS0.041247.
+Actual plot review caught categorical insertion-order error in the first figure;
+the original image/issue receipt are retained and explicit S1--S6 numeric ticks
+fix the chart without changing measurements. The corrected figure was viewed.
+
+Final integrity verifies9 source/input/protocol freezes covering247 unique
+files, all6 final checkpoints, reviewed-image hashes and15 exported videos.
+No task trainer/evaluator remains active. The revised training budgets sum46k;
+two earlier failed S2 runs add32k preserved updates. Original geometry/physical
+ID/contact limitations and the calibrated-RGB validation dependencies remain
+explicit in both plans. Results are committed separately from implementation
+and smoke milestones; pause pidg-s1-s6 after this final report commit, rather
+than starting an unplanned new run or continuing duplicate notifications.

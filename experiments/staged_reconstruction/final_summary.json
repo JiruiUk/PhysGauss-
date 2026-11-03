@@ -1,0 +1,212 @@
+{
+  "authorized_reconstruction_curriculum_training_and_review_completed": true,
+  "complete_geometry_or_physical_inference_success": false,
+  "original_full_contact_scope_completed": false,
+  "stages": [
+    {
+      "stage": "S1",
+      "updates": 12000,
+      "dynamic_PSNR": null,
+      "dynamic_alpha": null,
+      "static_PSNR": 35.64381631215414,
+      "track_px400": null,
+      "conditional_interior": null,
+      "checkpoint_sha256": "2dd8d5e0ea35d55e648aa236ea779eebe2fe3d415d34ad931e732f0140b89031",
+      "scope": "Conditional static initialization"
+    },
+    {
+      "stage": "S2",
+      "updates": 16000,
+      "dynamic_PSNR": 24.25343265533447,
+      "dynamic_alpha": 0.9826535602410634,
+      "static_PSNR": 35.53011054992676,
+      "track_px400": null,
+      "conditional_interior": null,
+      "checkpoint_sha256": "8d22348fb5033c1441f598b189000b36a8f965fa8acd7b594871d52849381730",
+      "scope": "Third16k attempt; two earlier failures retained; novel-view geometry unresolved"
+    },
+    {
+      "stage": "S3",
+      "updates": 6000,
+      "dynamic_PSNR": 25.39229933420817,
+      "dynamic_alpha": 0.9855048636595408,
+      "static_PSNR": 35.94166882832845,
+      "track_px400": 0.5368414296103375,
+      "conditional_interior": null,
+      "whole_run_conditional_interior": null,
+      "checkpoint_sha256": "3e91a89f8b8354edc2d1be6b4317e4703c58e2519241a573b4ade0655bae4db6",
+      "scope": "Conditional reconstruction curriculum; physical geometry/identity unknown"
+    },
+    {
+      "stage": "S4",
+      "updates": 4000,
+      "dynamic_PSNR": 25.34021848042806,
+      "dynamic_alpha": 0.9861849427223206,
+      "static_PSNR": 36.19935646057129,
+      "track_px400": 0.7850169922133069,
+      "conditional_interior": {
+        "eligible_count": 455,
+        "active_violations": 0,
+        "max_proxy_penetration": 0.0,
+        "no_eligible_samples_is_not_collision_validation": false,
+        "distance_is_conditional_geometry_not_GT": true,
+        "signed_distance_min": 0.11265810579061508,
+        "margin": 0.08,
+        "outside_volume_observations": 0
+      },
+      "whole_run_conditional_interior": null,
+      "checkpoint_sha256": "d903fc96f089994d53f3239de1fce23ffbaffac4e9db6e8f6d1cd13e734a3c1b",
+      "scope": "Conditional reconstruction curriculum; physical geometry/identity unknown"
+    },
+    {
+      "stage": "S5",
+      "updates": 4000,
+      "dynamic_PSNR": 25.60374329884847,
+      "dynamic_alpha": 0.9848156948884328,
+      "static_PSNR": 35.983146794637044,
+      "track_px400": 0.6646705402450247,
+      "conditional_interior": {
+        "eligible_count": 455,
+        "active_violations": 0,
+        "max_proxy_penetration": 0.0,
+        "no_eligible_samples_is_not_collision_validation": false,
+        "distance_is_conditional_geometry_not_GT": true,
+        "signed_distance_min": 0.10471511632204056,
+        "margin": 0.08,
+        "outside_volume_observations": 0
+      },
+      "whole_run_conditional_interior": {
+        "objective_calls": 800,
+        "eligible_observation_instances": 16000,
+        "active_violation_instances": 0,
+        "calls_with_any_active_violation": 0,
+        "maximum_proxy_penetration_during_training": 0.0,
+        "nonzero_prior_objective_calls": 0,
+        "all_recorded_prior_values_finite": true,
+        "not_collision_ground_truth": true
+      },
+      "checkpoint_sha256": "0d35b8bce8642264e6963a5becb37408f7b9cc9acce832099e72c53fb0f8ffe3",
+      "scope": "Conditional reconstruction curriculum; physical geometry/identity unknown"
+    },
+    {
+      "stage": "S6",
+      "updates": 4000,
+      "dynamic_PSNR": 28.327031326293945,
+      "dynamic_alpha": 0.9859807133674622,
+      "static_PSNR": 36.16991399129232,
+      "track_px400": 0.42710675626461,
+      "conditional_interior": {
+        "eligible_count": 455,
+        "active_violations": 0,
+        "max_proxy_penetration": 0.0,
+        "no_eligible_samples_is_not_collision_validation": false,
+        "distance_is_conditional_geometry_not_GT": true,
+        "signed_distance_min": 0.11077552288770676,
+        "margin": 0.08,
+        "outside_volume_observations": 0
+      },
+      "whole_run_conditional_interior": {
+        "objective_calls": 800,
+        "eligible_observation_instances": 16000,
+        "active_violation_instances": 0,
+        "calls_with_any_active_violation": 0,
+        "maximum_proxy_penetration_during_training": 0.0,
+        "nonzero_prior_objective_calls": 0,
+        "all_recorded_prior_values_finite": true,
+        "not_collision_ground_truth": true
+      },
+      "checkpoint_sha256": "e302ad64ef08b4e51109567af5bf214acf312fc48a2ed9ffd467cfb8568fdea1",
+      "scope": "Conditional reconstruction curriculum; physical geometry/identity unknown"
+    }
+  ],
+  "standard_native_full_quality": {
+    "S2": {
+      "val": {
+        "PSNR": 27.959334945678712,
+        "SSIM": 0.9674482027689616,
+        "LPIPS": 0.04823736051718394
+      },
+      "test": {
+        "PSNR": 28.018291893005372,
+        "SSIM": 0.9677321529388427,
+        "LPIPS": 0.04774500746279955
+      }
+    },
+    "S3": {
+      "val": {
+        "PSNR": 28.46631768544515,
+        "SSIM": 0.9689716994762421,
+        "LPIPS": 0.046704274602234364
+      },
+      "test": {
+        "PSNR": 28.546251640319824,
+        "SSIM": 0.969304188489914,
+        "LPIPS": 0.04616922095417977
+      }
+    },
+    "S4": {
+      "val": {
+        "PSNR": 28.512925148010254,
+        "SSIM": 0.9694090207417806,
+        "LPIPS": 0.04616600126028061
+      },
+      "test": {
+        "PSNR": 28.568712539672852,
+        "SSIM": 0.9696732604503632,
+        "LPIPS": 0.04569471847265959
+      }
+    },
+    "S5": {
+      "val": {
+        "PSNR": 28.85659688313802,
+        "SSIM": 0.9701497673988342,
+        "LPIPS": 0.045350673918922745
+      },
+      "test": {
+        "PSNR": 28.932458724975586,
+        "SSIM": 0.9704485893249511,
+        "LPIPS": 0.04484231144189835
+      }
+    },
+    "S6": {
+      "val": {
+        "PSNR": 30.58520253499349,
+        "SSIM": 0.975011012951533,
+        "LPIPS": 0.041803208241860075
+      },
+      "test": {
+        "PSNR": 30.66778709411621,
+        "SSIM": 0.9753074431419373,
+        "LPIPS": 0.04124655794352293
+      }
+    }
+  },
+  "accepted_lineage_updates": 46000,
+  "failed_S2_additional_updates": 32000,
+  "sparse_tracklets": 91,
+  "sparse_observations": 455,
+  "physical_ID_after_ambiguity": "unknown",
+  "certified_contact_surface": false,
+  "acquisition_seconds_available": false,
+  "contact_force_friction_restitution_enabled": false,
+  "object_object_nonpenetration_enabled": false,
+  "unknown_force_or_constitutive_enabled": false,
+  "sequential_change_not_causal_ablation": {
+    "S2_to_S6_dynamic_PSNR_dB": 4.073598670959473,
+    "S3_to_S6_qualified_track_error_relative_reduction": 0.204407982121234
+  },
+  "test_suite": {
+    "passed": true,
+    "tests": 57,
+    "command": "pytest tests/test_staged_*.py plus tests/test_static_pool.py, explicitly selected 12 files",
+    "scope": "CPU semantics, flags-off, freeze, binding, SDF and graph state; native GPU/Adam/resume separately verified",
+    "smoke_verification": "smoke_verification.json"
+  },
+  "limits": [
+    "Fixed-view sheets/fragments remain; original-camera image fit is not complete geometry",
+    "Sparse flows and row bindings come from training images, not independent material/3D GT",
+    "Physics residuals are internal sequence-normalized diagnostics, not calibrated stress or force truth",
+    "S5 conditional interior prior does not certify collision; no eligible/active violations means no demonstrated correction",
+    "Sequential checkpoints are not a matched causal ablation or legacy PIDG camera comparison"
+  ]
+}
