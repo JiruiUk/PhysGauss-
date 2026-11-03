@@ -333,3 +333,7 @@ output/staged_reconstruction/surface_trajectory/
 - [S3-U 中心与参数实现](../../variants/staged_reconstruction/union/model.py)、[现有训练目标](../../variants/staged_reconstruction/union/train.py)、[完整恢复](../../variants/staged_reconstruction/union/runtime.py)
 - [历史固定行绑定](../../variants/staged_reconstruction/stage4/bind.py)、[历史轨迹损失](../../variants/staged_reconstruction/stage4/constraints.py)
 - [metadata CV 相机转换](../../output/short_clip_diagnostic/camera_math.py)、[可微投影](../../variants/staged_reconstruction/recovery/coverage.py)
+
+## 12. 执行接续（2026-11-03）
+
+用户随后授权按本预案执行。已完成 R0/R1 的观测、固定支持、分组和实际图像复核；证据准入未通过，未进入 R2 或 T0/T1。具体结果与图像见 [研究执行记录](surface_trajectory/assessment.md)，逐项门槛见 [admission.json](surface_trajectory/admission.json)。以上预案门槛保留，不因本轮数量不足而放宽。

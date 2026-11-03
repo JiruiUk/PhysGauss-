@@ -1,0 +1,746 @@
+{
+  "admitted": false,
+  "reason": "Insufficient disjoint groups for holdout and supervision",
+  "groups": {
+    "0": [
+      0
+    ],
+    "2": [
+      17,
+      23
+    ],
+    "3": [
+      3
+    ],
+    "5": [
+      36,
+      62
+    ],
+    "6": [
+      6,
+      35,
+      39,
+      43,
+      47,
+      53,
+      59
+    ],
+    "8": [
+      8,
+      38,
+      50,
+      56
+    ],
+    "19": [
+      19
+    ],
+    "22": [
+      22
+    ],
+    "30": [
+      30
+    ],
+    "31": [
+      31
+    ],
+    "41": [
+      41
+    ],
+    "65": [
+      65
+    ]
+  },
+  "image_tracks_sha256": "39503bf9e821b72087bb561ad4fa910d025275d8a2656567705c042febfe759b",
+  "binding_sha256": "e951952e0ba2f7525bb7a5376b61a4fe4392606d3339a1abeb1bf2c836903459",
+  "grouping_protocol": {
+    "source_patch_diameter_px": 4.0,
+    "duplicate_minimum_common_frames": 3,
+    "duplicate_median_px": 2.0,
+    "duplicate_maximum_px": 3.0,
+    "weighted_support_overlap": 0.5,
+    "split_seed": 20261103,
+    "minimum_holdout_groups": 20,
+    "minimum_training_tracks": 30
+  },
+  "all_candidate_groups": {
+    "0": [
+      0,
+      9,
+      27
+    ],
+    "1": [
+      1
+    ],
+    "2": [
+      2,
+      17,
+      23,
+      34,
+      44,
+      54,
+      64
+    ],
+    "3": [
+      3
+    ],
+    "4": [
+      4
+    ],
+    "5": [
+      5,
+      11,
+      26,
+      32,
+      36,
+      40,
+      48,
+      52,
+      58,
+      60,
+      62
+    ],
+    "6": [
+      6,
+      24,
+      35,
+      39,
+      43,
+      47,
+      53,
+      59
+    ],
+    "7": [
+      7,
+      28
+    ],
+    "8": [
+      8,
+      38,
+      42,
+      46,
+      50,
+      56
+    ],
+    "10": [
+      10
+    ],
+    "12": [
+      12,
+      49
+    ],
+    "13": [
+      13
+    ],
+    "14": [
+      14
+    ],
+    "15": [
+      15
+    ],
+    "16": [
+      16
+    ],
+    "18": [
+      18
+    ],
+    "19": [
+      19
+    ],
+    "20": [
+      20
+    ],
+    "21": [
+      21,
+      57,
+      61
+    ],
+    "22": [
+      22
+    ],
+    "25": [
+      25
+    ],
+    "29": [
+      29
+    ],
+    "30": [
+      30
+    ],
+    "31": [
+      31
+    ],
+    "33": [
+      33,
+      51,
+      55
+    ],
+    "37": [
+      37,
+      45,
+      63
+    ],
+    "41": [
+      41
+    ],
+    "65": [
+      65
+    ]
+  },
+  "grouping_edges": [
+    {
+      "first": 9,
+      "second": 0,
+      "reasons": [
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 24,
+      "second": 6,
+      "reasons": [
+        "source_patch_overlap",
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 26,
+      "second": 5,
+      "reasons": [
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 27,
+      "second": 0,
+      "reasons": [
+        "source_patch_overlap",
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 27,
+      "second": 9,
+      "reasons": [
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 28,
+      "second": 7,
+      "reasons": [
+        "source_patch_overlap",
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 34,
+      "second": 23,
+      "reasons": [
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 35,
+      "second": 6,
+      "reasons": [
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 35,
+      "second": 24,
+      "reasons": [
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 36,
+      "second": 5,
+      "reasons": [
+        "source_patch_overlap",
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 36,
+      "second": 26,
+      "reasons": [
+        "source_patch_overlap",
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 38,
+      "second": 8,
+      "reasons": [
+        "duplicate_image_correspondence",
+        "weighted_support_overlap"
+      ]
+    },
+    {
+      "first": 39,
+      "second": 6,
+      "reasons": [
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 39,
+      "second": 24,
+      "reasons": [
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 40,
+      "second": 11,
+      "reasons": [
+        "source_patch_overlap",
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 40,
+      "second": 36,
+      "reasons": [
+        "source_patch_overlap"
+      ]
+    },
+    {
+      "first": 43,
+      "second": 6,
+      "reasons": [
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 43,
+      "second": 24,
+      "reasons": [
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 43,
+      "second": 39,
+      "reasons": [
+        "source_patch_overlap",
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 44,
+      "second": 23,
+      "reasons": [
+        "source_patch_overlap",
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 44,
+      "second": 34,
+      "reasons": [
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 45,
+      "second": 37,
+      "reasons": [
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 46,
+      "second": 38,
+      "reasons": [
+        "source_patch_overlap"
+      ]
+    },
+    {
+      "first": 46,
+      "second": 42,
+      "reasons": [
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 47,
+      "second": 6,
+      "reasons": [
+        "source_patch_overlap",
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 47,
+      "second": 24,
+      "reasons": [
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 47,
+      "second": 35,
+      "reasons": [
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 47,
+      "second": 39,
+      "reasons": [
+        "source_patch_overlap",
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 47,
+      "second": 43,
+      "reasons": [
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 48,
+      "second": 5,
+      "reasons": [
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 48,
+      "second": 26,
+      "reasons": [
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 48,
+      "second": 36,
+      "reasons": [
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 49,
+      "second": 12,
+      "reasons": [
+        "source_patch_overlap"
+      ]
+    },
+    {
+      "first": 50,
+      "second": 8,
+      "reasons": [
+        "source_patch_overlap",
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 51,
+      "second": 33,
+      "reasons": [
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 52,
+      "second": 32,
+      "reasons": [
+        "source_patch_overlap",
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 53,
+      "second": 6,
+      "reasons": [
+        "weighted_support_overlap"
+      ]
+    },
+    {
+      "first": 53,
+      "second": 35,
+      "reasons": [
+        "source_patch_overlap",
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 54,
+      "second": 2,
+      "reasons": [
+        "source_patch_overlap"
+      ]
+    },
+    {
+      "first": 54,
+      "second": 17,
+      "reasons": [
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 54,
+      "second": 23,
+      "reasons": [
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 55,
+      "second": 33,
+      "reasons": [
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 55,
+      "second": 51,
+      "reasons": [
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 56,
+      "second": 8,
+      "reasons": [
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 56,
+      "second": 38,
+      "reasons": [
+        "source_patch_overlap"
+      ]
+    },
+    {
+      "first": 56,
+      "second": 50,
+      "reasons": [
+        "source_patch_overlap"
+      ]
+    },
+    {
+      "first": 57,
+      "second": 21,
+      "reasons": [
+        "source_patch_overlap",
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 58,
+      "second": 5,
+      "reasons": [
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 58,
+      "second": 26,
+      "reasons": [
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 58,
+      "second": 32,
+      "reasons": [
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 58,
+      "second": 36,
+      "reasons": [
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 58,
+      "second": 48,
+      "reasons": [
+        "source_patch_overlap",
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 59,
+      "second": 6,
+      "reasons": [
+        "duplicate_image_correspondence",
+        "weighted_support_overlap"
+      ]
+    },
+    {
+      "first": 59,
+      "second": 24,
+      "reasons": [
+        "source_patch_overlap",
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 59,
+      "second": 35,
+      "reasons": [
+        "source_patch_overlap",
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 59,
+      "second": 39,
+      "reasons": [
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 59,
+      "second": 43,
+      "reasons": [
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 59,
+      "second": 47,
+      "reasons": [
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 59,
+      "second": 53,
+      "reasons": [
+        "duplicate_image_correspondence",
+        "weighted_support_overlap"
+      ]
+    },
+    {
+      "first": 60,
+      "second": 5,
+      "reasons": [
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 60,
+      "second": 26,
+      "reasons": [
+        "source_patch_overlap",
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 60,
+      "second": 36,
+      "reasons": [
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 60,
+      "second": 48,
+      "reasons": [
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 60,
+      "second": 58,
+      "reasons": [
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 61,
+      "second": 21,
+      "reasons": [
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 61,
+      "second": 57,
+      "reasons": [
+        "source_patch_overlap",
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 62,
+      "second": 5,
+      "reasons": [
+        "source_patch_overlap",
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 62,
+      "second": 26,
+      "reasons": [
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 62,
+      "second": 36,
+      "reasons": [
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 62,
+      "second": 48,
+      "reasons": [
+        "source_patch_overlap",
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 62,
+      "second": 58,
+      "reasons": [
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 62,
+      "second": 60,
+      "reasons": [
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 63,
+      "second": 37,
+      "reasons": [
+        "source_patch_overlap",
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 63,
+      "second": 45,
+      "reasons": [
+        "source_patch_overlap",
+        "duplicate_image_correspondence"
+      ]
+    },
+    {
+      "first": 64,
+      "second": 17,
+      "reasons": [
+        "source_patch_overlap",
+        "duplicate_image_correspondence"
+      ]
+    }
+  ],
+  "track_loss_holdout_not_image_or_geometry_GT": true,
+  "training_time_bands": {},
+  "holdout_time_bands": {}
+}

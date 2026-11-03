@@ -1,0 +1,59 @@
+{
+  "R0_v1": {
+    "qualified": 22,
+    "time_bands": [
+      10,
+      4,
+      8
+    ],
+    "passed_coverage": false,
+    "retained": true
+  },
+  "R0_v2": {
+    "qualified": 183,
+    "time_bands": [
+      105,
+      36,
+      42
+    ],
+    "changes": [
+      "Source stride 8 to 2 to cover more available training observations",
+      "Check all existing prefixes of 8-16 qualified observations; retain longest prefix satisfying unchanged full reverse closure"
+    ],
+    "unchanged": [
+      "min observations 8",
+      "per-edge FB 0.75 px",
+      "full-fragment closure 0.75 px",
+      "NCC 0.6",
+      "patch std 2",
+      "foreground erosion 2"
+    ],
+    "not_a_weight_sweep": true
+  },
+  "binding_start_failure": {
+    "error": "Ninja executable not on process PATH",
+    "resolution": "Use existing reproduction/scripts/enable_cuda.ps1; no package installation or model changes",
+    "optimizer_updates": 0
+  },
+  "R0_v3": {
+    "reason": "Actual visual review revealed white-highlight/material-feature ambiguity in v2",
+    "changes": [
+      "Expand appearance envelope to include orange bill and small internal dark-eye holes without component IDs",
+      "Exclude a fixed 5x5 neighborhood of bright low-saturation pixels at every supervised observation"
+    ],
+    "not_relaxed": [
+      "minimum8 observations",
+      "FB0.75px",
+      "full fragment closure0.75px",
+      "NCC0.6",
+      "patch std2"
+    ],
+    "qualified": 66,
+    "time_bands": [
+      28,
+      11,
+      27
+    ],
+    "material_identity_not_assumed": true
+  }
+}

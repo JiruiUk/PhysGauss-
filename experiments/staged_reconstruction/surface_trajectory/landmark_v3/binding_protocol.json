@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "observation_version": 3,
+  "candidate_radius_px": 3.0,
+  "patch_radius_px": 2.0,
+  "minimum_total_mass": 0.02,
+  "foreground_purity": 0.95,
+  "minimum_patch_mass": 0.005,
+  "depth_tolerance": 0.0518424834682157,
+  "depth_spacing_multiplier": 4.0,
+  "maximum_support_rows": 8,
+  "bootstrap_max_error_px": 1.0,
+  "ambiguity_gap_px": 0.25,
+  "forward_mass_relative_tolerance": 0.0005,
+  "bootstrap_only": true,
+  "frozen_row_membership_and_weights": true,
+  "foreground_policy": "yellow_orange_holefilled_envelope",
+  "parent_sha256": "8c767b7835eee936e49989369d7bc0277d7567d3aedaa7385c06654284b68ad0",
+  "observation_sha256": "39503bf9e821b72087bb561ad4fa910d025275d8a2656567705c042febfe759b"
+}

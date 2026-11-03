@@ -1,0 +1,36 @@
+{
+  "evidence_admitted": false,
+  "gates": {
+    "at_least_50_fixed_support_tracks": false,
+    "at_least_10_per_time_band": false,
+    "at_least_30_supervised_tracks": false,
+    "at_least_20_holdout_tracks": false,
+    "at_least_20_disjoint_holdout_groups": false,
+    "grouped_split_admitted": false,
+    "actual_visual_review_completed": true,
+    "stable_surface_feature_evidence_sufficient": false
+  },
+  "failed_gates": [
+    "at_least_50_fixed_support_tracks",
+    "at_least_10_per_time_band",
+    "at_least_30_supervised_tracks",
+    "at_least_20_holdout_tracks",
+    "at_least_20_disjoint_holdout_groups",
+    "grouped_split_admitted",
+    "stable_surface_feature_evidence_sufficient"
+  ],
+  "fixed_support_tracks": 23,
+  "counts_by_time_band": [
+    12,
+    3,
+    8
+  ],
+  "training_preflight_completed": false,
+  "formal_training_admitted": false,
+  "optimizer_updates": 0,
+  "status": "evidence_gate_failed",
+  "reason": "Do not weaken observation or grouping thresholds to start T0/T1",
+  "user_authorized_research_execution": true,
+  "data_quality_gates_not_waived": true,
+  "independent_geometry_or_material_GT_available": false
+}

@@ -1,0 +1,21 @@
+{
+  "version": 3,
+  "seed": 20261103,
+  "min_observations": 8,
+  "max_observations": 16,
+  "source_stride": 2,
+  "max_corners": 64,
+  "corner_quality": 0.01,
+  "seed_distance": 4.0,
+  "patch_radius": 2,
+  "patch_std_min": 2.0,
+  "ncc_min": 0.6,
+  "fb_max_px": 0.75,
+  "fragment_closure_max_px": 0.75,
+  "mask_erosion": 2,
+  "candidate_target": 200,
+  "check_valid_prefixes": true,
+  "mask_policy": "yellow_orange_holefilled_envelope",
+  "suppress_highlights": true,
+  "highlight_policy": "minRG>.65,B>.5,B>.65minRG; forbid5x5neighborhood at every visible observation"
+}

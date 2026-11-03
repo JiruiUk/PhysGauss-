@@ -66,6 +66,8 @@ def main():
     fig.tight_layout(rect=[0, .07, 1, .92])
     fig.savefig(output/'diagnostic_summary.png')
     fig.savefig(output/'diagnostic_summary.svg')
+    svg = output/'diagnostic_summary.svg'
+    svg.write_text('\n'.join(line.rstrip() for line in svg.read_text(encoding='utf-8').splitlines())+'\n', encoding='utf-8')
     plt.close(fig)
     report = f'''# S3-U 表面轨迹研究执行记录：R0/R1
 

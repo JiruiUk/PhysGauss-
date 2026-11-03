@@ -1,0 +1,27 @@
+{
+  "train": {
+    "count": 120,
+    "unique_times": 120,
+    "maximum_views_per_time": 1,
+    "metadata_sha256": "270fa34a29b99a4e6b2621d04e1d83f245f5c54bb4f2632ae06051faa83e4868"
+  },
+  "val": {
+    "count": 30,
+    "unique_times": 30,
+    "maximum_views_per_time": 1,
+    "metadata_sha256": "278e86251f6f20418388d6ce90771aae5f049abae3bb3c94b968549941150ffd"
+  },
+  "test": {
+    "count": 50,
+    "unique_times": 50,
+    "maximum_views_per_time": 1,
+    "metadata_sha256": "bb98013c762294ecaea239b67281436c7da232678403db63b1545d59c5f78c08"
+  },
+  "combined": {
+    "count": 200,
+    "unique_times": 200,
+    "maximum_views_per_time": 1
+  },
+  "independent_original_scene_geometry_available": false,
+  "geometry_note": "No audited persistent material IDs, dynamic depth GT or synchronized views admitted; existing synthetic folders alone do not establish these."
+}
