@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "GT_read": false,
+  "all192_views_replayed_exact": true,
+  "unchanged_D2_tight_anchors_and_disjoint_fit_check": true,
+  "results": {
+    "diffuse": {
+      "reasons": {
+        "held_anchor_disagreement": 46,
+        "insufficient_anchors": 49,
+        "passed_train_anchor_check": 1
+      },
+      "counts": {
+        "views": 96,
+        "anchors": 8600,
+        "valid_pixels": 36864
+      }
+    },
+    "glossy": {
+      "reasons": {
+        "held_anchor_disagreement": 45,
+        "insufficient_anchors": 49,
+        "degenerate_anchor_geometry": 1,
+        "passed_train_anchor_check": 1
+      },
+      "counts": {
+        "views": 96,
+        "anchors": 8521,
+        "valid_pixels": 36864
+      }
+    }
+  },
+  "independent_audit_source_sha256": "40115c3ab847d77388bd439c12275c19a3488eb21ffbd62d742c8f9ec8224cc3",
+  "inference_sha256": "38b7e82b9ea34409b143c7cf28a524b9831a18c619debd8dd1bb8d9461a3d63b"
+}

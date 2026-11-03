@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "independent_process_model_reload": true,
+  "Gaussian_Adam_RNG_recovery_claim": false,
+  "checks": {
+    "diffuse": {
+      "exact": true,
+      "maximum_absolute_difference": 0.0
+    },
+    "glossy": {
+      "exact": true,
+      "maximum_absolute_difference": 0.0
+    }
+  },
+  "inference_sha256": "38b7e82b9ea34409b143c7cf28a524b9831a18c619debd8dd1bb8d9461a3d63b"
+}
