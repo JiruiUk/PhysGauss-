@@ -1,0 +1,15 @@
+{
+  "actual_visual_inspection_completed": true,
+  "stage": "warmup16000_rejected",
+  "images_reviewed": {
+    "fixed86_t0086_native.png": "6e62e736ab83cdde0e03c971b186301fc1b1c6b59e385f6735a1d7e0f2d9d5ff",
+    "fixed188_t0043_native.png": "1fea806eb2eb5fd9d1ea82428e0e64c47a936295cd7e3931b4f18d2dc46041f4",
+    "fixed188_t0146_native.png": "1f00629ec942ab688469b603db607346c42e2323b321d4af1d0ea51d0bb763f5",
+    "fixed188_t0200_native.png": "74d90ddef9a355b04cac9c4a4c21480eb3d603352b7abd5d7acda25e3b9294ad"
+  },
+  "findings": "Fixed188/t43 has large black missing regions and detached particles; t146 has elongated, incomplete shapes; t200 remains blurred/incomplete; fixed86/t86 has small detached fragments. Original static preservation also fails.",
+  "completeness_passed": false,
+  "full1200_scan_admitted": false,
+  "formal_physics_admitted": false,
+  "test_RGB_read": false
+}
