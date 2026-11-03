@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "actual_optimizer_updates": 2000,
+  "physics_calls": 200,
+  "source_parent_full_state_exact": true,
+  "camera_Adam_RNG_replay_exact": true,
+  "static_frozen_exact": true,
+  "full_state_finite": true,
+  "camera_sequence_matches_I1": true,
+  "independent_process_resume_40_and_80": false,
+  "native_preflight": {
+    "passed": true,
+    "flags_off_native_rgb_alpha_exact": true,
+    "render_and_physics_full_center_max_abs_difference": {
+      "0.0": 0.0,
+      "0.25": 0.0,
+      "1.0": 0.0
+    },
+    "full_sparse_intended_gradients_finite_and_nonzero": true,
+    "no_new_trainable_parameters": true,
+    "optimizer_updates": 0,
+    "parent_unchanged": true
+  },
+  "fully_sparse_optimizer_updates": 1601,
+  "checkpoint_sha256": "c43d589a7c6918ff96e01511d9441a2d919921f06f97db7353e444dc4ca59863",
+  "test_RGB_read": false
+}

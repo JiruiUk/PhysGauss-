@@ -1,0 +1,37 @@
+{
+  "passed": false,
+  "reviewed": [
+    {
+      "path": "output\\staged_reconstruction\\sparse_motion\\screen\\fixed86_comparison.png",
+      "sha256": "ce89dd6b1163ebfff7925d57d7f6b516a6e02dcb482446f71613f438f8d6a9d5",
+      "reviewed_rows": [
+        2,
+        27,
+        43,
+        62,
+        86,
+        108,
+        146,
+        172,
+        200
+      ]
+    },
+    {
+      "path": "output\\staged_reconstruction\\sparse_motion\\screen\\fixed188_comparison.png",
+      "sha256": "17e7fc9a513056b7c46f19a9e387d005f0f9c45f530173aeeaf1f1e445eeaaa6",
+      "reviewed_rows": [
+        2,
+        27,
+        43,
+        62,
+        86,
+        108,
+        146,
+        172,
+        200
+      ]
+    }
+  ],
+  "reason": "Persistent missing bodies, sheets and detached fragments; see assessment.md",
+  "test_RGB_read": false
+}
