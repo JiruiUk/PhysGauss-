@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "GT_read": false,
+  "results": {
+    "diffuse": {
+      "all96_membership_input_slope_and_acceptance_replay": true,
+      "totals": {
+        "candidates": 423747,
+        "slope_admitted": 98662,
+        "eligible": 98662,
+        "finite_proposals": 98662,
+        "accepted": 14731
+      },
+      "raw_RGB_fixed_full_view_replay_exact": [
+        0,
+        24,
+        72
+      ]
+    },
+    "glossy": {
+      "all96_membership_input_slope_and_acceptance_replay": true,
+      "totals": {
+        "candidates": 423100,
+        "slope_admitted": 98504,
+        "eligible": 98504,
+        "finite_proposals": 98504,
+        "accepted": 14655
+      },
+      "raw_RGB_fixed_full_view_replay_exact": [
+        0,
+        24,
+        72
+      ]
+    }
+  },
+  "inference_sha256": "68487037b322fa3311bcded06c96038154fbcee49c0bdaa63671e5787b4a3680",
+  "source_sha256": "f05cf34fc5c09cdc1ae671d35fa4263d56dab4cb56cdf2c5a81d2ed20a323661",
+  "unaccepted_depths_and_all_candidate_membership_exact": true,
+  "raw_RGB_full_fixed_views_all_fields_exact": true
+}

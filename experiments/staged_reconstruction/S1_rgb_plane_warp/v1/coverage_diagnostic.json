@@ -1,0 +1,75 @@
+{
+  "post_hoc_evaluator_only": true,
+  "used_to_change_D6_candidate_or_gate": false,
+  "GT_pixel_arrays_or_training_normal_assets_exported": false,
+  "results": {
+    "diffuse": {
+      "counts": {
+        "candidates": 423747,
+        "old_gross_or_no_static": 85912,
+        "old_gross_or_no_static_slope_admitted": 974,
+        "old_gross_or_no_static_slope_rejected": 84938,
+        "old_gross_or_no_static_accepted": 100,
+        "visible_old_gross": 84273,
+        "visible_old_gross_slope_admitted": 958,
+        "visible_old_gross_accepted": 99
+      },
+      "unoriented_normal_angle_degrees": {
+        "admitted_visible": {
+          "n": 98626,
+          "mean": 10.193608018790487,
+          "median": 7.382010406677557,
+          "p90": 18.935388819700258
+        },
+        "not_admitted_but_fitted_visible": {
+          "n": 292418,
+          "mean": 25.5579681029092,
+          "median": 16.809983350876806,
+          "p90": 63.00291492208253
+        },
+        "admitted_visible_old_gross": {
+          "n": 958,
+          "mean": 59.47717202530077,
+          "median": 68.04415730282969,
+          "p90": 85.65926352673284
+        }
+      }
+    },
+    "glossy": {
+      "counts": {
+        "candidates": 423100,
+        "old_gross_or_no_static": 85846,
+        "old_gross_or_no_static_slope_admitted": 1004,
+        "old_gross_or_no_static_slope_rejected": 84842,
+        "old_gross_or_no_static_accepted": 101,
+        "visible_old_gross": 84181,
+        "visible_old_gross_slope_admitted": 992,
+        "visible_old_gross_accepted": 100
+      },
+      "unoriented_normal_angle_degrees": {
+        "admitted_visible": {
+          "n": 98480,
+          "mean": 10.261898604068207,
+          "median": 7.446805662325605,
+          "p90": 19.01649175782608
+        },
+        "not_admitted_but_fitted_visible": {
+          "n": 291884,
+          "mean": 25.509643613019268,
+          "median": 16.82063214844344,
+          "p90": 62.87522595402312
+        },
+        "admitted_visible_old_gross": {
+          "n": 992,
+          "mean": 58.90670891590604,
+          "median": 67.15628919151422,
+          "p90": 85.28377386699323
+        }
+      }
+    }
+  },
+  "source_sha256": "0a8b63b65f232a653c6412396ad941819d9064dd6648d0983e355fc532629d5e",
+  "evaluation_sha256": "4b3ef28b627b0b07c0e7ddeb5ac583635f2726c1e45337d4dd6338e7137d0e5e",
+  "inference_sha256": "68487037b322fa3311bcded06c96038154fbcee49c0bdaa63671e5787b4a3680",
+  "note": "Normals only where the least-squares coefficients exist; non-admitted but fitted excludes unfitted/unknown. Unoriented angles cannot establish physical correspondence."
+}
