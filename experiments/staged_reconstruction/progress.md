@@ -24,6 +24,22 @@ training updates and unchanged source/checkpoint. Final checkpoint SHA:
 `2dd8d5e0ea35d55e648aa236ea779eebe2fe3d415d34ad931e732f0140b89031`.
 Assessment: `S1_assessment.md`; full evidence: `S1_final_verification.json`.
 
-S2 is now preparing persistent known local image identities and per-object
-canonical initialization. S2–S6 remain the active task. Automation `pidg-s1-s6`
-follows the whole stage sequence; it does not finish on S1 completion.
+S2 implementation/preflight are complete. Four independent original PIDG
+deformation networks and fixed canonical groups initialize15,507 dynamic
+Gaussians; accepted S1 static4,126 points remain frozen and excluded from Adam.
+27 related tests passed, native1600x900 gradients are finite, all three dynamic
+parameter groups receive gradients, and separate-process40→80 recovery retains
+all88 Adam states at step80 plus RNG/camera stack. CMR/contact/tracks are off.
+
+Training-only adjacent reciprocal raw-FB identity audit covers120 observations
+and119 image pairs. Four early image identities persist through42. Seeds1/2
+lose continuity at43, seed0 at52, seed3 at166; unknown is never filled by nearest
+component or late component number. These local image links are conditional
+evidence, not physical/material identities or a bridge through occlusion.
+The initial depth slab is an explicit monocular prior, not reconstructed depth.
+
+Formal S2 protocol preselects16,000 updates (800px through12k, native1600px
+thereafter), final checkpoint, native val/test, dynamic-only alpha and native
+per-object/fixed-camera review. Training admission is not yet established.
+S2–S6 remain active. Automation `pidg-s1-s6` follows the whole sequence and
+does not finish on an implementation, audit or individual stage completion.
