@@ -1,0 +1,31 @@
+...........F.........                                                    [100%]
+================================== FAILURES ===================================
+_______________ test_native_calibrated_textured_plane_proposal ________________
+
+    def test_native_calibrated_textured_plane_proposal():
+        height = width = 64
+        views = torch.eye(4).repeat(7, 1, 1); views[:, 0, 3] = torch.tensor([0., .2, .4, .6, -.2, -.4, -.6])
+        k = torch.tensor([[35., 0, 31.5], [0, 35., 31.5], [0, 0, 1.]])
+        yy, xx = torch.meshgrid(torch.arange(height), torch.arange(width), indexing='ij')
+        images = []
+        for v in views:
+            wx = (xx-31.5)/35*4-v[0, 3]; wy = (yy-31.5)/35*4
+            g = .45+.15*torch.sin(wx*7)+.1*torch.cos(wy*9+wx*3)
+            images.append(torch.stack([g, g*.9, g*.8]))
+        features, texture = patch_features(torch.stack(images), 5)
+        uv = torch.tensor([[32., 30.], [29., 35.]])
+        old = torch.tensor([4.8, 4.8]); lo = torch.tensor([3.8, 3.8]); hi = torch.tensor([4.2, 4.2])
+        result, diagnostics = propose(uv, old, lo, hi, torch.ones(2, dtype=torch.bool), features, texture, views, k, 0, list(range(1, 7)), 2, 6, True)
+>       assert diagnostics['accepted'].all() and (result-4).abs().max() < .03
+E       assert (tensor(True) and tensor(0.0495) < 0.03)
+E        +  where tensor(True) = <built-in method all of Tensor object at 0x000001D8EDA4E090>()
+E        +    where <built-in method all of Tensor object at 0x000001D8EDA4E090> = tensor([True, True]).all
+E        +  and   tensor(0.0495) = <built-in method max of Tensor object at 0x000001D8EDA3A8D0>()
+E        +    where <built-in method max of Tensor object at 0x000001D8EDA3A8D0> = tensor([0.0495, 0.0495]).max
+E        +      where tensor([0.0495, 0.0495]) = <built-in method abs of Tensor object at 0x000001D8EDA3BE90>()
+E        +        where <built-in method abs of Tensor object at 0x000001D8EDA3BE90> = (tensor([4.0495, 4.0495]) - 4).abs
+
+tests\test_rgb_prior_proposals.py:110: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_rgb_prior_proposals.py::test_native_calibrated_textured_plane_proposal
+1 failed, 20 passed in 0.22s

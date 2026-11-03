@@ -19,3 +19,23 @@ fit/held RGB acceptance and independent GT audit must establish any gain.
 Original source checks are not independent GT. Candidate retention is not
 correctness or missing-surface recovery. Strict follow-on evidence and separate
 matched native full-state checks are still required before Gaussian training.
+
+## Implementation/preflight complete
+
+22 tests pass (14 new/8 inherited). The native analytic plane fixture initially
+showed interpolation bias from fractional source-pixel shifts; preserved
+tests_attempt1.log, then used integer shifts at the known analytic plane.
+Production cameras/costs/thresholds and the original .03 fixture check unchanged.
+Native RGB proposals, held-source rejection/ties, duplicate anchor blocks,
+missing/constant/contradictory bounds and an interval with no grid point tested.
+
+Three independent processes compare a four-view analytic inference with a
+two-view save followed by two-view continuation. All output arrays and costs
+exact, two views restored rather than recomputed. CPU/CUDA disabled calls keep
+the identical original tensor. No Gaussian/Adam/RNG training claim. Per-view
+atomic output and bound input receipts preserve interrupted/failed files.
+
+Frozen source/parents/RGB/protocol digest:
+dac46336a930ad0eec3648ddea8ca847638d353de6ec4aeb67565d3a04dbff77.
+Ready for one serialized two-condition proposal inference and independent GT
+audit, then actual fixed-image review. No actual candidate outputs yet.
