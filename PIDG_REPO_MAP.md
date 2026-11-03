@@ -1,5 +1,21 @@
 # PIDG repository map — M0
 
+## Opt-in cross-temporal static confidence pilot (S1-CT, 2026-11-03)
+
+`variants/staged_reconstruction/cross_temporal_static/prepare.py` combines
+train-only SIFT/LK fixed-point evidence with color-compatible cross-time
+projections to propose generic regions; it never reads semantic static colors,
+old hulls or model weights. `core.py` caps confidence by independent geometric
+support and permits admission/revocation without turning unknown into empty
+background. `train.py` runs matched fixed/progressive12k static arms using the
+unchanged native renderer and saves confidence/Adam/RNG/camera state together.
+`audit.py` freezes inputs/sources/history and independently checks actual
+sampling, optimizer and confidence recovery. `evaluate.py` compares common
+inferred regions and native86/188/original-camera images, exports standard PLY
+and H264. This borrows the confidence-update idea, not a replication of the
+paper's pretrained historical3DGS/DUSt3R setup. No new physics or dynamic pool
+integration. Reports: experiments/staged_reconstruction/S1_cross_temporal.
+
 ## Unknown-static RGB-geometric discovery (S1-A, 2026-11-03)
 
 `variants/staged_reconstruction/automatic_static/geometry.py` tests a fixed

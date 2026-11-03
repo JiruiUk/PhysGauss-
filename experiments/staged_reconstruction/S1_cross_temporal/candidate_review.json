@@ -1,0 +1,13 @@
+{
+  "accepted_for_bounded_pilot": true,
+  "review_method": "Actual view_image inspection of confidence_proposals.png with observed RGB, initial and candidate regions at2/27/43/86/166/188/200",
+  "findings": [
+    "Initial confidence remains concentrated on late observed support faces; most early views have no positive support.",
+    "Cross-time projection adds some early support, including a lower vertical face at2. Many sampled early/middle views still have no region; this is incomplete.",
+    "Candidate selection is generic RGB and fixed-world geometry, without prescribed blue/yellow labels. Apparent color agreement does not prove absence of occlusion or correct depth.",
+    "Proceed with predeclared fixed versus progressive pilot. Do not replace S3-U or declare full static discovery from these masks."
+  ],
+  "geometry_GT_available": false,
+  "preparation_counts": {"deduplicated_anchors": 53, "SIFT_anchors": 14, "LK_anchors": 39, "common_static_Gaussians": 1954, "initial_frames_any": 41, "candidate_frames_any": 85},
+  "training_must_preserve_unknown": true
+}

@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "test_count": 29,
+  "new_tests": 12,
+  "existing_automatic_and_static_tests": 17,
+  "command": "envs/pidg-cu128/python.exe -m pytest tests/test_cross_temporal_static.py tests/test_automatic_static.py tests/test_staged_static.py -q -p no:cacheprovider --basetemp=runs/pidg_staged_reconstruction/S1_cross_temporal/pytest_temp_v2",
+  "environment": {"PYTHONPATH": "workspace;workspace/src", "PYTEST_DISABLE_PLUGIN_AUTOLOAD": "1"},
+  "prior_environment_setup_failures_preserved": [
+    {"attempt": 1, "tests_passed": 27, "fixture_errors": 1, "reason": "Existing .pytest-tmp access denied during pytest cleanup; no source change"},
+    {"attempt": 2, "tests_passed": 27, "fixture_errors": 1, "reason": "Dedicated basetemp parent absent; created parent and used a new basetemp", "log": "tests_attempt2.log"}
+  ],
+  "mechanisms": ["geometry upper bound", "no appearance-only admission", "expansion with missing model support", "revocation", "same-camera merge conflict", "calibrated epipolar gate", "unknown has zero direct gradient", "default-disabled entries"]
+}

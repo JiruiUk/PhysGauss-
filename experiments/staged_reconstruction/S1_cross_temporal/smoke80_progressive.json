@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "arm": "progressive",
+  "iteration": 80,
+  "checkpoint_sha256": "75e8d53da2fc70aa4adfc8360a1dfa423f9fb68857420f1f7274d71d73971e21",
+  "optimizer_steps": [
+    80,
+    80,
+    80,
+    80,
+    80,
+    80
+  ],
+  "sampler": null,
+  "confidence_sha256": "cd13d001a0bf311954e8a97b6fcff637f5ef7843c44c7600414aa5907c452d29",
+  "confidence_rounds": [
+    20,
+    40,
+    60,
+    80
+  ],
+  "full_Adam_RNG_sampler_and_confidence_checked": true,
+  "geometric_upper_bound_checked": true,
+  "nonzero_supervision_steps": 49,
+  "source_and_historical_checkpoints_preserved": true
+}

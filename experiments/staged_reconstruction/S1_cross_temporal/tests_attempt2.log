@@ -1,0 +1,19 @@
+..........................E.                                             [100%]
+=================================== ERRORS ====================================
+_ ERROR at setup of test_static_bank_has_no_dynamic_or_material_parameters_and_is_bounded _
+
+self = WindowsPath('F:/A_Edinburgh/PhysGauss/runs/pidg_staged_reconstruction/S1_cross_temporal/pytest_temp_01')
+mode = 448, parents = False, exist_ok = False
+
+    def mkdir(self, mode=0o777, parents=False, exist_ok=False):
+        """
+        Create a new directory at this given path.
+        """
+        try:
+>           os.mkdir(self, mode)
+E           FileNotFoundError: [WinError 3] ϵͳ�Ҳ���ָ����·����: 'F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_staged_reconstruction\\S1_cross_temporal\\pytest_temp_01'
+
+envs\pidg-cu128\Lib\pathlib.py:1116: FileNotFoundError
+=========================== short test summary info ===========================
+ERROR tests/test_staged_static.py::test_static_bank_has_no_dynamic_or_material_parameters_and_is_bounded
+27 passed, 1 error in 10.85s
