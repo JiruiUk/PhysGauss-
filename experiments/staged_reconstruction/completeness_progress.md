@@ -19,6 +19,7 @@
 | I6 | 原第0步使用16个连续控制点的共享运动，原image/physics目标 |25.5403（仅16k预热）|静态保留护栏失败；新视角仍有大片缺失/拉散|
 | I7 | 原第0步使用时间条件可逆位置映射，保留原协方差头与image/physics目标 |25.4532（仅16k预热）|静态保留护栏失败；可逆性未解决新视角碎片/拉长|
 | I8 | 原第0步使用同一可逆映射共同输运位置和协方差 |23.8760（仅16k预热）|静态PSNR下降2.8281dB，护栏失败；实际图像仍有缺失、薄片和长桥|
+| I9 | I8同架构增加逐点相对Jacobian的鲁棒对数伸长先验 |待正式训练|18项单元测试、原生梯度与独立40/80/200恢复预检通过；尚无完整度结论|
 
 I0–I3正式实验从相同 S3-U final6k 开始，没有挑选或替换基线中间帧。
 I3 使用新的训练深度先验，属于不同监督条件，不能只归因于网络结构。
@@ -55,6 +56,7 @@ CoTracker3另做训练图像对应审计：28个短窗口的1064个候选仅31�
 - I7实际协方差与原生推理干预：`invertible_motion/covariance_assessment.md`（仅归一化不能恢复完整物体，未训练新模型）
 - I8最终16k准入、完整状态审计、实际图像和形变诊断：`covariance_transport/assessment.md`
 - 静态初始化/训练梯度/最终遮挡的独立诊断：`static_dynamic_coupling/assessment.md`（未做因果训练消融）
+- I9论文改编、预注册和正式训练前资格检查：`relative_strain/research.md`、`relative_strain/preflight_assessment.md`
 
 相关原始论文：
 [Dynamic3DGaussians](https://dynamic3dgaussians.github.io/paper.pdf)、

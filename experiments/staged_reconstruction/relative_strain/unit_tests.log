@@ -1,0 +1,4 @@
+Command: envs/pidg-cu128/python.exe -m pytest tests/test_relative_strain.py tests/test_covariance_transport.py -q
+18 passed, 1 warning in 2.07s
+Warning: pytest cache could not be written; all assertions completed.
+CPU tests completed before native integration and before any training run.

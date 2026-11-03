@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "arms": {
+    "control": {
+      "actual_optimizer_updates": 100,
+      "physics_calls": 0,
+      "checkpoint_sha256": "8966c32b338df5438d4508bc2f03e67fe1ad9fc71014788f82f2d83c2145123a",
+      "original_initial_state_preserved_and_sampler_exact": true,
+      "static_frozen": true
+    },
+    "strain": {
+      "actual_optimizer_updates": 200,
+      "physics_calls": 0,
+      "checkpoint_sha256": "fff5ead36a9dd5fa3c4c10c0cee566af3e807b9bb57f9608659528648bf5cdd8",
+      "original_initial_state_preserved_and_sampler_exact": true,
+      "static_frozen": true
+    }
+  },
+  "test_RGB_read": false
+}
