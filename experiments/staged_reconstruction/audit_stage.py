@@ -27,7 +27,9 @@ def sampling(parent,final,updates,frames):
 
 
 def main():
-    p=argparse.ArgumentParser();p.add_argument('--stage',choices=['S3','S4','S5','S6'],required=True);a=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('--stage',choices=['S3','S4','S5','S6'],required=True)
+    p.add_argument('--output-name',default='state_objective_audit.json');a=p.parse_args()
+    if Path(a.output_name).name!=a.output_name or not a.output_name.endswith('.json'):raise ValueError('Expected a report-local JSON filename')
     stage=a.stage;report=REPORT/stage;path=RUNS/stage/'formal/checkpoint.pt';before=sha(path)
     protocol=read(report/'protocol.json');assert before==read(path.with_name('checkpoint.json'))['sha256']
     from variants.staged_reconstruction.state_recovery.train import freeze as verify_physics
@@ -93,7 +95,7 @@ def main():
     gates={'dynamic_PSNR':numerical['dynamic_PSNR']>=20.,'dynamic_only_alpha':numerical['dynamic_alpha']>=.85,
         'static_preservation_from_S1':35.643816-numerical['static_PSNR']<=1.}
     assert sha(path)==before
-    write(report/'state_objective_audit.json',{'stage':stage,'checkpoint_sha256':before,'iteration':state['iteration'],
+    write(report/a.output_name,{'stage':stage,'checkpoint_sha256':before,'iteration':state['iteration'],
         'parent_sha256':sha(parent_path),'numeric_gates':gates,'native_validation':numerical,'native_test':test,
         'static_geometry_exact_S1':static_geometry_equal,'static_all_exact_S1':static_all_equal,'finite_model_and_optimizer':True,
         'optimizer_state_count':len(state['optimizer']['state']),'sampler':sampler,'scale_diagnostics':scales,

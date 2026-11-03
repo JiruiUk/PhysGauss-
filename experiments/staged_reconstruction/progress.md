@@ -119,3 +119,17 @@ for fixed86/fixed188/original at2/86/188 were actually viewed; all3 videos decod
 200frames each. Fragments/sheets and group leakage remain, so admission is only
 for conditional sequential reconstruction correction, not geometry/physical-ID
 success. S4 exact-S3 fixed-row binding is running.
+
+S4 binding accepted91 fragments/455observations/79fixed rows across all4 early
+banks;40 fragments rejected. The inherited CUDA color backward missed the tiny-
+patch conservation gate (relative error0.001116); this failure is preserved.
+Exact forward one-hot contributions replace the approximation without relaxing
+the5e-4 gate; maximum partition error1.62e-7.40→80 smoke verifies136 optimizer
+states and exact sampling; formal4000 S4 is running (PID262500).
+
+An independent new S3 binding-baseline audit (separate output, preserving its
+final report) gives0.536841px at400px over455 observations. All currently lie
+outside the conditional static interior: signed distance minimum0.113664,
+margin0.08,0active violations. This cannot validate collision. S5 must record
+actual eligibility/activation at its parent/final states; a zero prior may not
+be advertised as a demonstrated nonpenetration improvement.
