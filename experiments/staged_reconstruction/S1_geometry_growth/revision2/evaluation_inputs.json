@@ -1,0 +1,30 @@
+{
+  "purpose": "Pre-evaluation fixed common masks and native export protocol. No training update or selection from evaluation metrics.",
+  "source_sha256": {
+    "variants/staged_reconstruction/adaptive_static/evaluate.py": "de0f7c49233613e8acb914ad5c61dd6a81993fa974e9ab85d8f1a13e08c5581d",
+    "experiments/staged_reconstruction/S1_cross_temporal/exports.json": "32c94a0bab9cea255a70c90e0da644228c912830cfcae46f4764acb9f704cc55",
+    "experiments/staged_reconstruction/S1_cross_temporal/protocol.json": "0f3ae4e968f43efd2a27fff98ad2a7d2436652295795645fdac5655a539385ee",
+    "experiments/staged_reconstruction/S1_cross_temporal/discovery.json": "27e895d15f0df90e9ad4f5f1bb4dcf9ef82ab5f6b5af69e2ad3717a5fb3725f1"
+  },
+  "models": [
+    "S1_CT_progressive_12k",
+    "G1_geometry_12k",
+    "G2_birth_12k"
+  ],
+  "resolution": [
+    1600,
+    900
+  ],
+  "old_metrics": [
+    "frozen_S1_A_seed_train",
+    "frozen_CT_candidate_train",
+    "frozen_CT_val_inferred"
+  ],
+  "new_metrics": [
+    "common_new_geometry_train",
+    "common_new_val_inferred"
+  ],
+  "independent_geometry_GT": false,
+  "train_labels_or_object_count_used": false,
+  "video_decode_required_frames": 200
+}

@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "old_CT_checkpoint_metrics_reproduced_tolerance_dB": 0.0001,
+  "historical_fixed_cameras_exact": true,
+  "new_arms_camera_contracts_exact": true,
+  "PLY": [
+    {
+      "arm": "geometry",
+      "all_ply_fields_finite": true,
+      "vertices": 3273,
+      "optimizer_topology_shapes_checked": true
+    },
+    {
+      "arm": "birth",
+      "all_ply_fields_finite": true,
+      "vertices": 3587,
+      "optimizer_topology_shapes_checked": true
+    }
+  ],
+  "media": [
+    {
+      "path": "output/staged_reconstruction/S1_geometry_growth/revision2/original_trajectory_comparison.mp4",
+      "main_h264_yuv420p": true,
+      "moov_before_mdat": true,
+      "previous_full_decode": 200
+    },
+    {
+      "path": "output/staged_reconstruction/S1_geometry_growth/revision2/fixed86_comparison.mp4",
+      "main_h264_yuv420p": true,
+      "moov_before_mdat": true,
+      "previous_full_decode": 200
+    },
+    {
+      "path": "output/staged_reconstruction/S1_geometry_growth/revision2/fixed188_comparison.mp4",
+      "main_h264_yuv420p": true,
+      "moov_before_mdat": true,
+      "previous_full_decode": 200
+    }
+  ],
+  "actual_browser_playback_checked": false
+}

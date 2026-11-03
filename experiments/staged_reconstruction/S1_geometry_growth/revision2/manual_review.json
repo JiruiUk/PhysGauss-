@@ -1,0 +1,38 @@
+{
+  "actual_PNG_review": true,
+  "files": {
+    "native_comparison.png": "f9979b0034484f14c0e342ab9e35ddde1b21a1f29d5f68f79acf821363f45079",
+    "birth_t0002_native.png": "93217625e0b1d360aac1f0efbc5cec2aaba3079bfbc2a8a17b7d8eb681a0c7bf",
+    "birth_t0188_native.png": "5b7c9b5425815263806980b52dda8de1e57eaff4d61cafd3014b588f194e0254",
+    "geometry_t0188_native.png": "c46f9deb1256bf60b47e9fd9458ced6cda83f775e36761fa958fb307815da9e5",
+    "geometry_t0086_native.png": "3cc138d66ab117cabbc595f27f038af783596702da91a0987dd5de1541ca0078",
+    "birth_t0086_native.png": "5349f4ce6831195082d0ab1e6cf2652444f3df37cad9d7006ffc587e1a42b565",
+    "geometry_proposals.png": "fac333edfe9dbe233bc4be4525a8fbf35f0401064eb5d7b3eb53f0f28749f606",
+    "comparison188.png": "b068a8902e7b1484d1cb0491dea270bf0a4ae526aeb27a42b9442f42187c4e98"
+  },
+  "montage_frames": [
+    2,
+    27,
+    43,
+    86,
+    166,
+    188,
+    200
+  ],
+  "native_resolution_views": [
+    "G2 t2",
+    "G2 t86",
+    "G2 t188",
+    "G1 t86",
+    "G1 t188"
+  ],
+  "observations": [
+    "Both new arms recover tall surfaces and much sharper pedestal/column boundaries across early and late viewpoints compared with S1-CT.",
+    "At86 and188 both new arms are visually very similar.",
+    "Yellow foreground-like smears remain on/around the recovered support; blue halos, spikes and floating fragments remain. Partial motion contamination is a concern, not a solved static/dynamic label.",
+    "Appearance/opacity support does not independently verify depth, unseen surfaces or permanent staticity. Initial coarse points are protected; this version only prunes born points and cannot retract contaminated original candidates."
+  ],
+  "actual_video_manual_review": false,
+  "actual_browser_playback_checked": false,
+  "decision": "Retain geometric discovery as useful experimental progress; G1 is simpler reference for next admission audit, G2 is not promoted. Do not replace S3-U static bank or declare complete automatic static decomposition."
+}

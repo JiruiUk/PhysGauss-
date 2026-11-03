@@ -1,3 +1,5 @@
+Status: completed training, evaluation, native PNG review and plan revision. No extra training pending.
+
 # S1-G revision2
 
 Authorized next static reconstruction pilot. New branch only; no known static colors/masks, object count, material segmentation or physics losses. Historical PIDG, C1, S1-CT and S3-U sources/weights remain frozen.
@@ -12,3 +14,5 @@ Authorized next static reconstruction pilot. New branch only; no known static co
 G1 geometry completed12000 updates; all six Adam counters12000, finite parameters/moments, full RNG/camera/confidence replay and431 frozen source/input/history hashes passed. Points3273; nonzero image supervision12000/12000. Final numerical/native evaluation remains pending G2.
 
 G2 birth completed12000 updates; final3587 points. Formal audit passed all six Adam counters12000, finite parameters/moments, full RNG/camera/confidence/topology and frozen history. Actual topology events: [{"step": 3000, "operation": "birth", "count": 512, "points": 3785}, {"step": 5000, "operation": "prune", "count": 320, "points": 3465}, {"step": 6000, "operation": "birth", "count": 512, "points": 3977}, {"step": 8000, "operation": "prune", "count": 442, "points": 3535}, {"step": 9000, "operation": "birth", "count": 512, "points": 4047}, {"step": 11000, "operation": "prune", "count": 460, "points": 3587}]. Evaluation and actual image review remain pending.
+
+Final: see assessment.md and exports.json. Three200-frame H264 videos decoded, native camera/old metric reproduction and PLY checks pass. Static contamination remains; G2 is not promoted, S3-U is unchanged. GPU training/evaluation processes have exited.

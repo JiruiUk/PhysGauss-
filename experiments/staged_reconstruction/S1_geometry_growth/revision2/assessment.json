@@ -1,0 +1,137 @@
+{
+  "status": "completed_partial_reconstruction_not_promoted",
+  "updates_each": 12000,
+  "point_count": {
+    "S1_CT": 1954,
+    "geometry": 3273,
+    "birth": 3587
+  },
+  "metrics": {
+    "common_CT_train_proxy": {
+      "S1_CT": {
+        "nonempty_frames": 85,
+        "pixels_total": 1929600,
+        "PSNR": 29.08261106154498,
+        "alpha_mean": 0.9761956965222078,
+        "alpha_below_05": 0.01511901723981068
+      },
+      "geometry": {
+        "nonempty_frames": 85,
+        "pixels_total": 1929600,
+        "PSNR": 28.297958957447726,
+        "alpha_mean": 0.992596648721134,
+        "alpha_below_05": 4.079994379186674e-05
+      },
+      "birth": {
+        "nonempty_frames": 85,
+        "pixels_total": 1929600,
+        "PSNR": 28.443187455569998,
+        "alpha_mean": 0.9930689545238719,
+        "alpha_below_05": 3.357724105144906e-05
+      }
+    },
+    "common_CT_val_inferred_not_GT": {
+      "S1_CT": {
+        "nonempty_frames": 30,
+        "pixels_total": 2336688,
+        "PSNR": 19.645798842112224,
+        "alpha_mean": 0.9108836094538371,
+        "alpha_below_05": 0.07144666718959343
+      },
+      "geometry": {
+        "nonempty_frames": 30,
+        "pixels_total": 2336688,
+        "PSNR": 25.493178431193034,
+        "alpha_mean": 0.9822276771068573,
+        "alpha_below_05": 0.006195848505012691
+      },
+      "birth": {
+        "nonempty_frames": 30,
+        "pixels_total": 2336688,
+        "PSNR": 25.47421137491862,
+        "alpha_mean": 0.9823105613390605,
+        "alpha_below_05": 0.005252551690985759
+      }
+    },
+    "common_new_geometry_train_proxy": {
+      "S1_CT": {
+        "nonempty_frames": 120,
+        "pixels_total": 4424368,
+        "PSNR": 14.987758874893188,
+        "alpha_mean": 0.8726573432485263,
+        "alpha_below_05": 0.09829292582968871
+      },
+      "geometry": {
+        "nonempty_frames": 120,
+        "pixels_total": 4424368,
+        "PSNR": 26.720843346913657,
+        "alpha_mean": 0.9867300594846408,
+        "alpha_below_05": 0.0013300753263138176
+      },
+      "birth": {
+        "nonempty_frames": 120,
+        "pixels_total": 4424368,
+        "PSNR": 26.913796424865723,
+        "alpha_mean": 0.9886531934142113,
+        "alpha_below_05": 0.0007208862083037578
+      }
+    },
+    "common_new_val_inferred_not_GT": {
+      "S1_CT": {
+        "nonempty_frames": 30,
+        "pixels_total": 2880496,
+        "PSNR": 14.641441218058269,
+        "alpha_mean": 0.8424400190512339,
+        "alpha_below_05": 0.1382287435233593
+      },
+      "geometry": {
+        "nonempty_frames": 30,
+        "pixels_total": 2880496,
+        "PSNR": 22.00326067606608,
+        "alpha_mean": 0.9680380523204803,
+        "alpha_below_05": 0.013880119759899874
+      },
+      "birth": {
+        "nonempty_frames": 30,
+        "pixels_total": 2880496,
+        "PSNR": 22.051213645935057,
+        "alpha_mean": 0.968741261959076,
+        "alpha_below_05": 0.012617846593881647
+      }
+    },
+    "common_old_seed_train_proxy": {
+      "S1_CT": {
+        "nonempty_frames": 51,
+        "pixels_total": 1124352,
+        "PSNR": 26.06432965222527,
+        "alpha_mean": 0.9706352084290748,
+        "alpha_below_05": 0.009013156812893702
+      },
+      "geometry": {
+        "nonempty_frames": 51,
+        "pixels_total": 1124352,
+        "PSNR": 25.201019642399807,
+        "alpha_mean": 0.9913258891479642,
+        "alpha_below_05": 0.00026757505781692907
+      },
+      "birth": {
+        "nonempty_frames": 51,
+        "pixels_total": 1124352,
+        "PSNR": 25.241386002185298,
+        "alpha_mean": 0.9924508543575511,
+        "alpha_below_05": 0.0002663509626918491
+      }
+    }
+  },
+  "no_S3_U_replacement": true,
+  "next_priority": "static admission/visibility/geometry audit with independent synthetic GT; retain G1 as simpler comparison",
+  "G2_promoted": false,
+  "physics_expanded": false,
+  "manual_review": "manual_review.json",
+  "exports": "exports.json",
+  "commits": {
+    "preflight": "ac47b546",
+    "geometry": "0c6ec75a",
+    "birth": "fb2c7819"
+  }
+}

@@ -315,3 +315,31 @@ surfaces. No threshold/weight sweep, physics expansion or paused-work resumption
 Evaluation-only original-trajectory RGB repair preserves the first failed
 export; latest video decodes200 frames, PLY matches checkpoint vertices.
 See [S1-CT assessment](staged_reconstruction/S1_cross_temporal/assessment.md).
+
+### S1-G: dense geometry and evidence-gated birth (completed 2026-11-03)
+
+Completed geometry(G1) and birth(G2),12000 updates each, with common3273-point
+initialization,120-camera pool/order and revisable confidence. No known static
+colors/masks, object count or physics extension.45 tests, independent40-to80
+resume across birth, native parity and full formal Adam/RNG/confidence/topology
+and frozen-history audits passed. G2 tried1536 births, revoked1222 low-opacity
+new points and ended3587 points; G1 retained3273.
+
+Frozen CT validation inferred-region PSNR: oldCT19.6458, G125.4932, G225.4742dB.
+New common inferred validation:14.6414/22.0033/22.0512dB. Frozen old-seed training
+region regressed26.0643->25.2010/25.2414dB; frozen CT training29.0826->28.2980/
+28.4432dB. Inferred regions are conditional proxies, not independent geometry or
+static GT. G2's extra benefit is small and inconsistent; do not promote birth.
+
+Actual native86/188 and early/middle/late panels show much clearer column and
+pedestal surfaces, while yellow foreground-like smears, halos/spikes and floating
+fragments persist. Initial coarse points are protected from pruning, so this
+birth mechanism cannot retract contaminated original candidates. Keep G1 as a
+simpler geometric-admission audit reference; do not replace S3-U static support.
+Next priority is visibility-aware static-candidate/depth audit with independent
+synthetic static/motion/specular GT and decoupled camera/time observations,
+before sustained object attribution. Unseen remains unknown. No automatic third
+training, threshold/weight search, body-count estimate, physics or paused-work
+resumption follows. Three H264 videos each decode200 frames; PLY positions match
+checkpoints. Static fixed-view time invariance is structural, not geometry proof.
+See [S1-G measured assessment](staged_reconstruction/S1_geometry_growth/revision2/assessment.md).
