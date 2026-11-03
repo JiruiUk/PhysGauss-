@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "arm": "fixed",
+  "iteration": 12000,
+  "checkpoint_sha256": "e6d2eb0083c860c41762d38a0b2430b3d42440952f9fbb3bd4a176a12c89cb00",
+  "optimizer_steps": [
+    12000,
+    12000,
+    12000,
+    12000,
+    12000,
+    12000
+  ],
+  "sampler": null,
+  "confidence_sha256": "c1fbef698e1df2711fc0791c42de887584d3f1e8572b2cffbd4093b7c1601690",
+  "confidence_rounds": [],
+  "full_Adam_RNG_sampler_and_confidence_checked": true,
+  "geometric_upper_bound_checked": true,
+  "nonzero_supervision_steps": 6000,
+  "source_and_historical_checkpoints_preserved": true
+}
