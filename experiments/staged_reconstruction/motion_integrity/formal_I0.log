@@ -9,3 +9,15 @@ F:\A_Edinburgh\PhysGauss\variants\staged_reconstruction\state_recovery\physics.p
 Consider using tensor.detach() first. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\generated\python_variable_methods.cpp:836.)
   'spatial_support_radius_mean':float((x[ring]-x[local,None]).norm(dim=-1).max(-1).values.mean()),
 MOTION_TRAIN I0_control 40 0.045214055572614126 None elapsed 5.5
+MOTION_TRAIN I0_control 80 0.03212620017174386 None elapsed 10.8
+MOTION_TRAIN I0_control 100 0.05402311685179503 None elapsed 12.7
+MOTION_TRAIN I0_control 200 0.03949788220464669 None elapsed 19.7
+MOTION_TRAIN I0_control 400 0.03579998690381155 None elapsed 28.9
+MOTION_TRAIN I0_control 600 0.02669770534044304 None elapsed 37.7
+MOTION_TRAIN I0_control 800 0.031056318890825222 None elapsed 46.8
+MOTION_TRAIN I0_control 1000 0.03677287557129609 None elapsed 55.7
+MOTION_TRAIN I0_control 1200 0.04015800221619391 None elapsed 65.4
+MOTION_TRAIN I0_control 1400 0.03581924365310667 None elapsed 74.8
+MOTION_TRAIN I0_control 1600 0.04557448388520731 None elapsed 83.8
+MOTION_TRAIN I0_control 1800 0.026774951626409003 None elapsed 92.7
+MOTION_TRAIN I0_control 2000 0.045912825194828435 None elapsed 101.2

@@ -1,0 +1,14 @@
+{
+  "reviewer": "assistant visual inspection",
+  "method": "view_image of two contact sheets, nine times and three models each",
+  "images": {
+    "output/staged_reconstruction/motion_integrity/screen/fixed86_comparison.png": "47e3f4824a8fed53f8a181e1e704851777cbb2fe50dd46ecc6781cd431c658de",
+    "output/staged_reconstruction/motion_integrity/screen/fixed188_comparison.png": "cf132ef0bda3db0dc5e01ec11a46ca62d5d637717e8b8ad69d5e07ac05edd96a"
+  },
+  "cross_view_integrity_passed": false,
+  "reason": "Obvious stretching, missing parts and sheets remain at fixed86 late and fixed188 middle times",
+  "all_six_cameras_manually_reviewed": false,
+  "all_200_times_evaluated": false,
+  "test_RGB_read": false,
+  "next": "sparse shared motion representation"
+}

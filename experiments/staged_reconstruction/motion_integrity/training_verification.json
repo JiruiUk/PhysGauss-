@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "source_freeze_unchanged": true,
+  "graph_independently_checked": {
+    "edges": 61976,
+    "degree_max": 12,
+    "independent_rest_length_max_abs_error": 4.87612286659278e-09,
+    "train_source_time_count": 40
+  },
+  "arms": {
+    "I0_control": {
+      "actual_optimizer_updates": 2000,
+      "sha256": "1f1ad6a66aef76e23c2685595a8f20f4bb02744ccc04e9cae2003a01fe79fdee",
+      "physics_updates": 200,
+      "initial_full_state_matches_parent": true,
+      "finite_model_and_optimizer": true,
+      "camera_RNG_and_Adam_replayed": true,
+      "static_frozen_exact": true,
+      "initial_100_prior_mean": null,
+      "final_100_prior_mean": null
+    },
+    "I1_curve_isometry": {
+      "actual_optimizer_updates": 2000,
+      "sha256": "98f220e2782a36e930d404df4c41710679edc06d622596a6aa1be6303b73a1f8",
+      "physics_updates": 200,
+      "initial_full_state_matches_parent": true,
+      "finite_model_and_optimizer": true,
+      "camera_RNG_and_Adam_replayed": true,
+      "static_frozen_exact": true,
+      "initial_100_prior_mean": 0.03762575838714838,
+      "final_100_prior_mean": 0.02388970548287034
+    }
+  },
+  "all_camera_samples_matched": true,
+  "test_RGB_used_for_selection": false
+}
