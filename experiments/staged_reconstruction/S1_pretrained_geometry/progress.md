@@ -33,3 +33,22 @@ actually reviewed. See v1/assessment.md. No Gaussian/real training or new86/188.
 Next fixed diagnostic separates relative-order reliability from metric-shape
 error with evaluator-only oracle alignment; no GT coefficient/selection may
 enter training. Do not repeat D3 or relax its anchor/coverage/depth gates.
+
+## D3-O independent shape/order diagnosis completed
+
+Preregistered3fac945b, implemented/frozen5c311055,20 tests. Privileged GT affine
+alignment still gives held-visible MAE0.07223/0.07215, thin0.08082/0.08171;
+same D1 pixels0.06779/0.06766 versus D1's0.03565/0.03569. GT-fit coefficients,
+depth arrays and masks remain evaluator-only and are not saved as assets.
+
+Strong pair static order errors2.23%/2.16%, thin8.76%/8.60%. Only7.42% of strong
+pairs have two visible-static endpoints;91.24% include true empty background.
+Thus high whole-image rank is not safe static or thin supervision. Fixed image
+panels and explicit matched-pixel supplements actually viewed in both cases.
+No PIDG/Gaussian training, candidate/weight/threshold change or old stage resume.
+
+Continue only one RGB-validated ordinal depth-proposal candidate, separately
+preregistered under S1_rgb_prior_proposals. Use learned ordering to propose an
+alternative RGB depth basin, not as a loss or static classifier; retain every
+original candidate and accept only fixed fit/held RGB checks. No GT fit/mask or
+coefficient may enter it. New Gaussian stage remains separately gated.

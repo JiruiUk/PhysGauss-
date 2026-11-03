@@ -1,0 +1,17 @@
+{
+  "status": "complete_diagnostic_no_training_admission",
+  "manual_review_completed": true,
+  "actually_viewed": "Both cases fixed c00_t1/c08_t0/c24_t0 input/all-held-error and explicit common-D1-pixel error panels",
+  "finding": "Affine anchor scarcity is not sole issue; remaining shape bias and thin order errors forbid direct static-depth or full-image ordinal loss.",
+  "GT_fit_coefficients_arrays_masks_not_exported": true,
+  "original_D3_predictions_and_gate_preserved": true,
+  "next": "One separately preregistered RGB-validated ordinal proposal, retaining all D1 candidates; no direct prior loss",
+  "reviewed_images": {
+    "output/staged_reconstruction/S1_pretrained_geometry/oracle_diagnostic/diffuse_privileged_shape.png": "a5c02ff7ed5c6e342e589c0d2accbaedcf3d725606eb4bc4114d31e24da2a2d7",
+    "output/staged_reconstruction/S1_pretrained_geometry/oracle_diagnostic/glossy_privileged_shape.png": "8ec43688dc597b146aac741f73ff37b737d20fcef7232a7d71fe474ee008a37e",
+    "output/staged_reconstruction/S1_pretrained_geometry/oracle_diagnostic/diffuse_matched_pixel_review.png": "36babbd415d03c1a1f86e23b200ba3e6588d7990e8cebc6eb2e8dfa699b475d6",
+    "output/staged_reconstruction/S1_pretrained_geometry/oracle_diagnostic/glossy_matched_pixel_review.png": "cfaec871208a48fcd9e5b6525930edb141980f692404b2b07dc8e20e31df444f"
+  },
+  "evaluation_sha256": "7193b35d71e5dc1db36b116ef74eb9e140f0fde41b90eaaf04a5652d9fe39743",
+  "assessment_sha256": "35707ce249e26d8add896b3b44490c514db196104e43b9b8637c72621f24aaab"
+}
