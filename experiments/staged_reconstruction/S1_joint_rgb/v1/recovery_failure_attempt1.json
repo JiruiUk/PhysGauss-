@@ -1,0 +1,142 @@
+{
+  "failure": "full40 vs20+20 dynamic coordinates exceed original tolerance",
+  "initial_all_state_exact": true,
+  "all_RNG_sampler_exact": true,
+  "parameter_differences": {
+    "dynamic._xyz": {
+      "max_abs": 0.001902461051940918,
+      "outside": 10895,
+      "elements": 12000,
+      "mean_abs": 7.087100675562397e-05
+    },
+    "dynamic._features_dc": {
+      "max_abs": 0.01750338077545166,
+      "outside": 11332,
+      "elements": 12000,
+      "mean_abs": 0.0006939710583537817
+    },
+    "dynamic._features_rest": {
+      "max_abs": 0.0016876677982509136,
+      "outside": 165167,
+      "elements": 180000,
+      "mean_abs": 3.550687324604951e-05
+    },
+    "dynamic._opacity": {
+      "max_abs": 0.07581186294555664,
+      "outside": 3862,
+      "elements": 4000,
+      "mean_abs": 0.002678507938981056
+    },
+    "dynamic._scaling": {
+      "max_abs": 0.023897647857666016,
+      "outside": 10646,
+      "elements": 12000,
+      "mean_abs": 0.0007845382788218558
+    },
+    "dynamic._rotation": {
+      "max_abs": 0.011669399216771126,
+      "outside": 15757,
+      "elements": 16000,
+      "mean_abs": 0.0005110956844873726
+    },
+    "grid.xyz_encoding.embeddings": {
+      "max_abs": 0.039646271616220474,
+      "outside": 332480,
+      "elements": 2157206,
+      "mean_abs": 0.0002626836358103901
+    },
+    "grid.xyt_encoding.embeddings": {
+      "max_abs": 0.04954054206609726,
+      "outside": 51932,
+      "elements": 169342,
+      "mean_abs": 0.0005541011341847479
+    },
+    "grid.yzt_encoding.embeddings": {
+      "max_abs": 0.04445468261837959,
+      "outside": 54779,
+      "elements": 169342,
+      "mean_abs": 0.0005600490258075297
+    },
+    "grid.xzt_encoding.embeddings": {
+      "max_abs": 0.04404466971755028,
+      "outside": 59569,
+      "elements": 169342,
+      "mean_abs": 0.0007304471218958497
+    },
+    "network.spatial_mlp.0.weight": {
+      "max_abs": 0.007987330667674541,
+      "outside": 1958,
+      "elements": 3072,
+      "mean_abs": 0.00036097216070629656
+    },
+    "network.spatial_mlp.0.bias": {
+      "max_abs": 0.004903067834675312,
+      "outside": 82,
+      "elements": 128,
+      "mean_abs": 0.0003471671952866018
+    },
+    "network.temporal_mlp.0.weight": {
+      "max_abs": 0.014174874871969223,
+      "outside": 7857,
+      "elements": 12288,
+      "mean_abs": 0.0005718652973882854
+    },
+    "network.temporal_mlp.0.bias": {
+      "max_abs": 0.009087949991226196,
+      "outside": 82,
+      "elements": 128,
+      "mean_abs": 0.00035105334245599806
+    },
+    "network.grid_mlp.0.weight": {
+      "max_abs": 0.009908027946949005,
+      "outside": 5341,
+      "elements": 16384,
+      "mean_abs": 0.00014104682486504316
+    },
+    "network.grid_mlp.0.bias": {
+      "max_abs": 0.0017363568767905235,
+      "outside": 66,
+      "elements": 128,
+      "mean_abs": 0.00010226626181975007
+    },
+    "network.gaussian_warp.weight": {
+      "max_abs": 0.006610071286559105,
+      "outside": 456,
+      "elements": 896,
+      "mean_abs": 6.995879084570333e-05
+    },
+    "network.gaussian_warp.bias": {
+      "max_abs": 0.00033717788755893707,
+      "outside": 7,
+      "elements": 7,
+      "mean_abs": 9.630043496144935e-05
+    },
+    "network.gaussian_rotation.weight": {
+      "max_abs": 0.008265050128102303,
+      "outside": 262,
+      "elements": 512,
+      "mean_abs": 0.00011306992382742465
+    },
+    "network.gaussian_rotation.bias": {
+      "max_abs": 0.0003730333410203457,
+      "outside": 4,
+      "elements": 4,
+      "mean_abs": 0.00012515050184447318
+    },
+    "network.gaussian_scaling.weight": {
+      "max_abs": 0.00460423156619072,
+      "outside": 193,
+      "elements": 384,
+      "mean_abs": 6.0621026932494715e-05
+    },
+    "network.gaussian_scaling.bias": {
+      "max_abs": 9.668990969657898e-05,
+      "outside": 3,
+      "elements": 3,
+      "mean_abs": 5.9065718232886866e-05
+    }
+  },
+  "tolerance_unchanged": true,
+  "formal_started": false,
+  "preflight_log_sha256": "8067d77b044b4fbe40db25fca4af628fb473b21a5d28b4428555ec24fa7b1f76"
+}

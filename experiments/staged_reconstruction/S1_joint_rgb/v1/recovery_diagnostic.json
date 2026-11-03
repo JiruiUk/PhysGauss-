@@ -1,0 +1,308 @@
+{
+  "status": "completed_read_only_diagnostic",
+  "immediate_two_scene_complete_model_and_both_Adam_reload_exact": true,
+  "fixed_step20_next_view": 87,
+  "identical_state_loss_three_repeats": [
+    0.017240896821022034,
+    0.017240896821022034,
+    0.017240896821022034
+  ],
+  "same_state_RGB_exact": [
+    true,
+    true
+  ],
+  "whole_native_gradient_repeats": [
+    {
+      "dynamic._xyz": {
+        "exact": false,
+        "max_abs": 1.8189894035458565e-12,
+        "above_original_tolerance": 0,
+        "elements": 12000
+      },
+      "dynamic._features_dc": {
+        "exact": false,
+        "max_abs": 5.684341886080802e-14,
+        "above_original_tolerance": 0,
+        "elements": 12000
+      },
+      "dynamic._features_rest": {
+        "exact": false,
+        "max_abs": 1.1368683772161603e-13,
+        "above_original_tolerance": 0,
+        "elements": 180000
+      },
+      "dynamic._opacity": {
+        "exact": false,
+        "max_abs": 1.1368683772161603e-13,
+        "above_original_tolerance": 0,
+        "elements": 4000
+      },
+      "dynamic._scaling": {
+        "exact": false,
+        "max_abs": 2.1316282072803006e-14,
+        "above_original_tolerance": 0,
+        "elements": 12000
+      },
+      "dynamic._rotation": {
+        "exact": false,
+        "max_abs": 1.1368683772161603e-13,
+        "above_original_tolerance": 0,
+        "elements": 16000
+      },
+      "grid.xyz_encoding.embeddings": {
+        "exact": false,
+        "max_abs": 8.881784197001252e-16,
+        "above_original_tolerance": 0,
+        "elements": 2157206
+      },
+      "grid.xyt_encoding.embeddings": {
+        "exact": false,
+        "max_abs": 4.6629367034256575e-15,
+        "above_original_tolerance": 0,
+        "elements": 169342
+      },
+      "grid.yzt_encoding.embeddings": {
+        "exact": false,
+        "max_abs": 7.993605777301127e-15,
+        "above_original_tolerance": 0,
+        "elements": 169342
+      },
+      "grid.xzt_encoding.embeddings": {
+        "exact": false,
+        "max_abs": 1.7763568394002505e-15,
+        "above_original_tolerance": 0,
+        "elements": 169342
+      },
+      "network.spatial_mlp.0.weight": {
+        "exact": false,
+        "max_abs": 2.220446049250313e-16,
+        "above_original_tolerance": 0,
+        "elements": 3072
+      },
+      "network.spatial_mlp.0.bias": {
+        "exact": false,
+        "max_abs": 3.552713678800501e-15,
+        "above_original_tolerance": 0,
+        "elements": 128
+      },
+      "network.temporal_mlp.0.weight": {
+        "exact": false,
+        "max_abs": 2.220446049250313e-16,
+        "above_original_tolerance": 0,
+        "elements": 12288
+      },
+      "network.temporal_mlp.0.bias": {
+        "exact": false,
+        "max_abs": 7.105427357601002e-15,
+        "above_original_tolerance": 0,
+        "elements": 128
+      },
+      "network.grid_mlp.0.weight": {
+        "exact": false,
+        "max_abs": 1.7763568394002505e-15,
+        "above_original_tolerance": 0,
+        "elements": 16384
+      },
+      "network.grid_mlp.0.bias": {
+        "exact": false,
+        "max_abs": 1.1368683772161603e-13,
+        "above_original_tolerance": 0,
+        "elements": 128
+      },
+      "network.gaussian_warp.weight": {
+        "exact": false,
+        "max_abs": 3.637978807091713e-12,
+        "above_original_tolerance": 0,
+        "elements": 896
+      },
+      "network.gaussian_warp.bias": {
+        "exact": false,
+        "max_abs": 3.637978807091713e-12,
+        "above_original_tolerance": 0,
+        "elements": 7
+      },
+      "network.gaussian_rotation.weight": {
+        "exact": false,
+        "max_abs": 1.1368683772161603e-13,
+        "above_original_tolerance": 0,
+        "elements": 512
+      },
+      "network.gaussian_rotation.bias": {
+        "exact": false,
+        "max_abs": 2.2737367544323206e-13,
+        "above_original_tolerance": 0,
+        "elements": 4
+      },
+      "network.gaussian_scaling.weight": {
+        "exact": false,
+        "max_abs": 2.842170943040401e-14,
+        "above_original_tolerance": 0,
+        "elements": 384
+      },
+      "network.gaussian_scaling.bias": {
+        "exact": false,
+        "max_abs": 4.547473508864641e-13,
+        "above_original_tolerance": 0,
+        "elements": 3
+      }
+    },
+    {
+      "dynamic._xyz": {
+        "exact": false,
+        "max_abs": 1.8189894035458565e-12,
+        "above_original_tolerance": 0,
+        "elements": 12000
+      },
+      "dynamic._features_dc": {
+        "exact": false,
+        "max_abs": 4.263256414560601e-14,
+        "above_original_tolerance": 0,
+        "elements": 12000
+      },
+      "dynamic._features_rest": {
+        "exact": false,
+        "max_abs": 8.526512829121202e-14,
+        "above_original_tolerance": 0,
+        "elements": 180000
+      },
+      "dynamic._opacity": {
+        "exact": false,
+        "max_abs": 1.1368683772161603e-13,
+        "above_original_tolerance": 0,
+        "elements": 4000
+      },
+      "dynamic._scaling": {
+        "exact": false,
+        "max_abs": 1.4210854715202004e-14,
+        "above_original_tolerance": 0,
+        "elements": 12000
+      },
+      "dynamic._rotation": {
+        "exact": false,
+        "max_abs": 7.105427357601002e-14,
+        "above_original_tolerance": 0,
+        "elements": 16000
+      },
+      "grid.xyz_encoding.embeddings": {
+        "exact": false,
+        "max_abs": 6.661338147750939e-16,
+        "above_original_tolerance": 0,
+        "elements": 2157206
+      },
+      "grid.xyt_encoding.embeddings": {
+        "exact": false,
+        "max_abs": 4.440892098500626e-15,
+        "above_original_tolerance": 0,
+        "elements": 169342
+      },
+      "grid.yzt_encoding.embeddings": {
+        "exact": false,
+        "max_abs": 5.329070518200751e-15,
+        "above_original_tolerance": 0,
+        "elements": 169342
+      },
+      "grid.xzt_encoding.embeddings": {
+        "exact": false,
+        "max_abs": 2.220446049250313e-15,
+        "above_original_tolerance": 0,
+        "elements": 169342
+      },
+      "network.spatial_mlp.0.weight": {
+        "exact": false,
+        "max_abs": 2.220446049250313e-16,
+        "above_original_tolerance": 0,
+        "elements": 3072
+      },
+      "network.spatial_mlp.0.bias": {
+        "exact": false,
+        "max_abs": 1.7763568394002505e-15,
+        "above_original_tolerance": 0,
+        "elements": 128
+      },
+      "network.temporal_mlp.0.weight": {
+        "exact": false,
+        "max_abs": 1.3877787807814457e-16,
+        "above_original_tolerance": 0,
+        "elements": 12288
+      },
+      "network.temporal_mlp.0.bias": {
+        "exact": false,
+        "max_abs": 1.0658141036401503e-14,
+        "above_original_tolerance": 0,
+        "elements": 128
+      },
+      "network.grid_mlp.0.weight": {
+        "exact": false,
+        "max_abs": 1.7763568394002505e-15,
+        "above_original_tolerance": 0,
+        "elements": 16384
+      },
+      "network.grid_mlp.0.bias": {
+        "exact": false,
+        "max_abs": 1.1368683772161603e-13,
+        "above_original_tolerance": 0,
+        "elements": 128
+      },
+      "network.gaussian_warp.weight": {
+        "exact": false,
+        "max_abs": 3.637978807091713e-12,
+        "above_original_tolerance": 0,
+        "elements": 896
+      },
+      "network.gaussian_warp.bias": {
+        "exact": false,
+        "max_abs": 1.4551915228366852e-11,
+        "above_original_tolerance": 0,
+        "elements": 7
+      },
+      "network.gaussian_rotation.weight": {
+        "exact": false,
+        "max_abs": 5.684341886080802e-14,
+        "above_original_tolerance": 0,
+        "elements": 512
+      },
+      "network.gaussian_rotation.bias": {
+        "exact": false,
+        "max_abs": 2.2737367544323206e-13,
+        "above_original_tolerance": 0,
+        "elements": 4
+      },
+      "network.gaussian_scaling.weight": {
+        "exact": false,
+        "max_abs": 2.842170943040401e-14,
+        "above_original_tolerance": 0,
+        "elements": 384
+      },
+      "network.gaussian_scaling.bias": {
+        "exact": true,
+        "max_abs": 0.0,
+        "above_original_tolerance": 0,
+        "elements": 3
+      }
+    }
+  ],
+  "isolated_original_hash_embedding_gradient_repeats": [
+    {
+      "xyz_embeddings": {
+        "exact": false,
+        "max_abs": 1.4901161193847656e-08,
+        "above_original_tolerance": 0,
+        "elements": 2157206
+      }
+    },
+    {
+      "xyz_embeddings": {
+        "exact": false,
+        "max_abs": 1.4901161193847656e-08,
+        "above_original_tolerance": 0,
+        "elements": 2157206
+      }
+    }
+  ],
+  "no_model_optimizer_sampler_or_RNG_update": true,
+  "failed_full40_gate_unchanged": true,
+  "formal_training_admitted": false,
+  "source_sha256": "58f3a6f3b1fde2a791e2f2d0e0e81667b09048513b50161d2732a20b2305701d",
+  "step20_sha256": "aa2b0273c631282beda5011fd311e0417769d106a0b05cb68cf77b1b4d696ecb",
+  "diagnostic_plan_sha256": "0fa0006b7b814c803fd5ed9047f520642859886960e64d7423faa394e8148a51"
+}

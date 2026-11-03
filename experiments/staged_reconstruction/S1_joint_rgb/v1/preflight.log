@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "F:\A_Edinburgh\PhysGauss\experiments\staged_reconstruction\S1_joint_rgb\preflight.py", line 69, in <module>
+    main()
+  File "F:\A_Edinburgh\PhysGauss\experiments\staged_reconstruction\S1_joint_rgb\preflight.py", line 41, in main
+    assert_equivalent(a, b, protocol['recovery_atol'], protocol['recovery_rtol'])
+  File "F:\A_Edinburgh\PhysGauss\variants\staged_reconstruction\joint_rgb\core.py", line 48, in assert_equivalent
+    assert_equivalent(a[key], b[key], atol, rtol, path+'/'+str(key))
+  File "F:\A_Edinburgh\PhysGauss\variants\staged_reconstruction\joint_rgb\core.py", line 48, in assert_equivalent
+    assert_equivalent(a[key], b[key], atol, rtol, path+'/'+str(key))
+  File "F:\A_Edinburgh\PhysGauss\variants\staged_reconstruction\joint_rgb\core.py", line 40, in assert_equivalent
+    assert torch.allclose(a, b, atol=atol, rtol=rtol), path
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: state/model/dynamic._xyz
