@@ -114,3 +114,15 @@ warmup40-to80 Adam/RNG/sampler/static-freeze verification passed. Formal warmup
 is ready; no historical paused trainer or automation is resumed. Test setup
 failures involving the shared temp directory and a missing new parent directory
 are retained in the test receipt; the isolated fresh test directory passes.
+
+
+S3-U warmup milestone:16k actual updates and native validation completed.
+Dynamic23.990448dB/alpha0.986168/static34.829215dB pass the unchanged gates;
+static drop from S1 is0.814601dB. All16k sampler choices/final RNG and22 Adam
+counters verify; S1 tensors remain exact. Actual observed/fixed-view review
+retains fragmented sheets/streaks and blurred foreground, so admission is only
+for the declared6k S3 representation comparison, not geometry/contact success.
+The real-parent physics40-to80 recovery passes34 Adam states and all RNG/static
+checks. Original sources/weights and loss thresholds are unchanged. See
+S3_union/warmup_assessment.md and receipts. Independent preview failure and
+source are retained; its CPU/CUDA comparison repair changed no training state.

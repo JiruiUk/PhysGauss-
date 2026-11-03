@@ -1,0 +1,39 @@
+{
+  "verified_utc": "2026-11-03T13:38:24.310703+00:00",
+  "checkpoint_sha256": "0df6eb240b299e79e7fae407286670723de0b904b1c9aa2203b98c46e0e1a646",
+  "iteration": 16000,
+  "numeric_gates": {
+    "dynamic_PSNR": true,
+    "dynamic_only_alpha": true,
+    "static_preservation": true
+  },
+  "native_validation": {
+    "PSNR": 27.57475102742513,
+    "dynamic_PSNR": 23.990447998046875,
+    "dynamic_alpha": 0.986167989174525,
+    "static_PSNR": 34.8292153040568,
+    "static_alpha": 0.9972119073073069,
+    "background_alpha": 0.008383044231838237,
+    "dynamic_leakage_on_static": 0.006354901500041403
+  },
+  "native_images_reviewed": true,
+  "viewed_image_sha256": {
+    "output/staged_reconstruction/S3_union/warmup/observed_review.png": "93068b3f809acbff8faa80211af3365d4c1ddd63e55e67b6f79ae7e28b1f1590",
+    "output/staged_reconstruction/S3_union/warmup/fixed86_review.png": "55c9727265d42629dbf1dd4e22b9c91b8f4b7c20ac6341fba7747b48728fef74",
+    "output/staged_reconstruction/S3_union/warmup/fixed188_review.png": "a85bfa9af4cb75cfc9013563eaa66da9116ae705505a8113ac1dd447107138ab",
+    "output/staged_reconstruction/S3_union/warmup/original_review.png": "0d86b09eabb0cc336d2f254578c8305df624f331a4673d996158d990b0a678e2",
+    "output/staged_reconstruction/S3_union/warmup/fixed86_t0188_native.png": "b73168e5a125ded860ff432acc81d3e8dbc571619d808d0783901a411203c82e",
+    "output/staged_reconstruction/S3_union/warmup/fixed188_t0086_native.png": "b1376b83edbf570eafaa3af2900954da91e1c185fcd58520937ed10918630ba2"
+  },
+  "findings": [
+    "Reviewed observed RGB/dynamic-only panels at2/27/42/43/52/86/166/188/200 and fixed86/188/original early-middle-late sheets.",
+    "Observed contours are supported, but base foreground is blurred/saturated near42/43; late observed shapes remain blurred.",
+    "Novel fixed188 middle and fixed86 late show fragmented yellow sheets and long streaks; static support remains recognizably stable.",
+    "Two selected native1600x900 images confirm these artifacts; no complete geometry or physical-identity success."
+  ],
+  "admitted_for_conditional_physics": true,
+  "admission_scope": "Only the predeclared six-thousand-step S3 representation comparison; numeric gates plus actual review, not geometry/contact admission.",
+  "physical_body_number": null,
+  "physical_boundary_exclusion_available": false,
+  "no_independent_3D_GT": true
+}

@@ -71,7 +71,7 @@ def main():
     scene = UnionScene(protocol)
     scene.load_state_dict(state['model'])
     original_static = torch.load(RUNS/'S1_static/checkpoint.pt', map_location='cpu', weights_only=False)['model']
-    assert all(torch.equal(v, scene.static.state_dict()[k]) for k, v in original_static.items())
+    assert all(torch.equal(v, scene.static.state_dict()[k].cpu()) for k, v in original_static.items())
     out = ROOT/'output/staged_reconstruction/S3_union'/args.phase
     out.mkdir(parents=True, exist_ok=True)
     meta = read(DATA/'transforms_train.json')
@@ -158,10 +158,22 @@ def main():
         from variants.staged_reconstruction.union.evaluate import evaluate
         for split in ['val', 'test']:
             evaluate(renderer, scene, args.phase, state['iteration'], split, standard=True)
+    diagnostics = []
+    if args.phase == 'physics':
+        for number in [2, 86, 188]:
+            try:
+                with torch.enable_grad():
+                    terms, rows = scene.physics.loss(scene, (number-1)/199, 9000,
+                        protocol['physics_samples_global'], protocol['time_step'])
+                diagnostics.append({'frame': number, 'valid': True,
+                    'terms': {k: float(v.detach()) for k, v in terms.items()}, 'population': rows})
+            except ValueError as error:
+                diagnostics.append({'frame': number, 'valid': False, 'error': str(error), 'not_zero_residual': True})
     assert sha(checkpoint) == before
     receipt = {'checkpoint_sha256': before, 'phase': args.phase, 'iteration': state['iteration'],
         'static_exactly_matches_S1': True, 'physical_body_number': None, 'manual_image_review_pending': True,
         'images': {p.relative_to(ROOT).as_posix(): sha(p) for p in image_files}, 'videos': video_rows,
+        'fixed_frame_internal_physics': diagnostics,
         'limits': 'Union population, no instance/number estimate; fixed-time novel views lack independent GT; not matched-capacity causal ablation'}
     write(UNION_REPORT/f'{args.phase}_{"preview" if args.preview_only else "exports"}.json', receipt)
     if video_rows:

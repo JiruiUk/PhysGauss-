@@ -1,0 +1,42 @@
+{
+  "phase": "warmup",
+  "checkpoint_sha256": "0df6eb240b299e79e7fae407286670723de0b904b1c9aa2203b98c46e0e1a646",
+  "iteration": 16000,
+  "parent_sha256": "2dd8d5e0ea35d55e648aa236ea779eebe2fe3d415d34ad931e732f0140b89031",
+  "all_frozen_sources_inputs_protocols_match": true,
+  "static_exact_S1": true,
+  "finite_model_and_optimizer": true,
+  "one_dynamic_population_and_shared_field": true,
+  "physical_body_number": null,
+  "instance_identity_available": false,
+  "exact_all_step_sampling_and_final_python_RNG": true,
+  "sampler_sequence_sha256": "9e586fa6458fb69af92fd2c3bfd68d2f555016bad2c16c64ddd13983ed97c026",
+  "optimizer_state_count": 22,
+  "all_actual_Adam_counters_correct": true,
+  "native_validation": {
+    "PSNR": 27.57475102742513,
+    "dynamic_PSNR": 23.990447998046875,
+    "dynamic_alpha": 0.986167989174525,
+    "static_PSNR": 34.8292153040568,
+    "static_alpha": 0.9972119073073069,
+    "background_alpha": 0.008383044231838237,
+    "dynamic_leakage_on_static": 0.006354901500041403
+  },
+  "numeric_gates": {
+    "dynamic_PSNR": true,
+    "dynamic_only_alpha": true,
+    "static_preservation": true
+  },
+  "parameters": {
+    "sha256": "6a4dde83c07f4418dde4549bf2f1cc810f1c001a66614d63505767846dce9b98",
+    "phase": "warmup",
+    "trainable_parameters": 3645217,
+    "dynamic_parameters": 914913,
+    "grid_parameters": 2665232,
+    "deform_parameters": 33934,
+    "velocity_stress_parameters": 31138,
+    "physical_body_number": null
+  },
+  "physical_boundary_exclusion_available": false,
+  "manual_image_review_pending": true
+}

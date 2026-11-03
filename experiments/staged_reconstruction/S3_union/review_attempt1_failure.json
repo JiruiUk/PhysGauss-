@@ -1,0 +1,7 @@
+{
+  "stage": "warmup native review before output generation",
+  "error": "torch.equal compared CPU S1 reference to CUDA scene tensors",
+  "training_or_checkpoint_changed": false,
+  "source_sha256": "4cc0e1c60b63172ae97abca4851d8e2e5394e23df4dd7df52898c755a5f110f9",
+  "repair_scope": "Independent review code only; compare CPU tensor copies"
+}
