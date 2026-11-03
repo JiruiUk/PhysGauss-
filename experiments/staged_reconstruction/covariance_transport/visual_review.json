@@ -1,0 +1,23 @@
+{
+  "actual_updates": 16000,
+  "checkpoint_sha256": "f7ce6470086cf441515fca27a0eda50d1b8079d3576ff5448086e53557133903",
+  "actual_visual_inspection_completed": true,
+  "native_width": 1600,
+  "native_height": 900,
+  "images_sha256": {
+    "output/staged_reconstruction/covariance_transport/warmup/fixed188_t0043_native.png": "63f251fd391ba45f709ea746f9042e1695c2d5affc938a0c7c6c796b5baa3988",
+    "output/staged_reconstruction/covariance_transport/warmup/fixed188_t0146_native.png": "00244c444309522807827273e1ca716f073265f186eae0a63636b5672a210ac2",
+    "output/staged_reconstruction/covariance_transport/warmup/fixed86_t0086_native.png": "f3cccbac37f6d5c84133f3558da82d8c2042afb08995bb50721b72a7adc4e4e1"
+  },
+  "findings": [
+    "c188/t43: major hollow/missing regions, elongated folded sheets and detached support",
+    "c188/t146: incomplete lobes/sheets, large gaps and detached support",
+    "c86/t86: long thin bridge, distorted bodies and detached upper fragment"
+  ],
+  "completeness_passed": false,
+  "formal_physics_admitted": false,
+  "formal_physics_updates": 0,
+  "full1200_scan_admitted": false,
+  "test_RGB_read": false,
+  "failed_original_numeric_receipt_preserved": true
+}

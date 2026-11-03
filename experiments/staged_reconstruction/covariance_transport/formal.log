@@ -1,0 +1,101 @@
+W1103 22:28:48.665000 271852 envs\pidg-cu128\Lib\site-packages\torch\utils\cpp_extension.py:466] Error checking compiler version for cl: 'cp1' codec can't decode bytes in position 0--1: No mapping for the Unicode character exists in the target code page.
+ninja: no work to do.
+F:\A_Edinburgh\PhysGauss\variants\color_repair\code\hashencoder\hashgrid.py:16: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.half)
+F:\A_Edinburgh\PhysGauss\variants\color_repair\code\hashencoder\hashgrid.py:56: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+COVARIANCE_TRANSPORT_TRAIN transport 1 warmup 0.300040602684021 True elapsed 0.5
+COVARIANCE_TRANSPORT_TRAIN transport 40 warmup 0.08178330957889557 True elapsed 4.3
+COVARIANCE_TRANSPORT_TRAIN transport 80 warmup 0.24799701571464539 True elapsed 8.1
+COVARIANCE_TRANSPORT_TRAIN transport 100 warmup 0.07417869567871094 True elapsed 10.0
+COVARIANCE_TRANSPORT_TRAIN transport 200 warmup 0.1745840162038803 True elapsed 15.9
+COVARIANCE_TRANSPORT_TRAIN transport 400 warmup 0.1334981918334961 True elapsed 25.5
+COVARIANCE_TRANSPORT_TRAIN transport 600 warmup 0.16593611240386963 True elapsed 34.9
+COVARIANCE_TRANSPORT_TRAIN transport 800 warmup 0.1401076316833496 True elapsed 44.6
+COVARIANCE_TRANSPORT_TRAIN transport 1000 warmup 0.13354717195034027 True elapsed 54.1
+COVARIANCE_TRANSPORT_TRAIN transport 1200 warmup 0.10615680366754532 True elapsed 64.8
+COVARIANCE_TRANSPORT_TRAIN transport 1400 warmup 0.06619147211313248 True elapsed 74.3
+COVARIANCE_TRANSPORT_TRAIN transport 1600 warmup 0.07623570412397385 True elapsed 84.1
+COVARIANCE_TRANSPORT_TRAIN transport 1800 warmup 0.05316483974456787 True elapsed 94.0
+COVARIANCE_TRANSPORT_TRAIN transport 2000 warmup 0.06805174797773361 True elapsed 103.7
+COVARIANCE_TRANSPORT_TRAIN transport 2200 warmup 0.09708311408758163 True elapsed 113.4
+COVARIANCE_TRANSPORT_TRAIN transport 2400 warmup 0.059768788516521454 True elapsed 123.0
+COVARIANCE_TRANSPORT_TRAIN transport 2600 warmup 0.06611471623182297 True elapsed 132.8
+COVARIANCE_TRANSPORT_TRAIN transport 2800 warmup 0.05847613140940666 True elapsed 142.0
+COVARIANCE_TRANSPORT_TRAIN transport 3000 warmup 0.0586361326277256 True elapsed 151.4
+COVARIANCE_TRANSPORT_TRAIN transport 3200 warmup 0.06535407155752182 True elapsed 160.9
+COVARIANCE_TRANSPORT_TRAIN transport 3400 warmup 0.06184070557355881 True elapsed 170.5
+COVARIANCE_TRANSPORT_TRAIN transport 3600 warmup 0.0689663365483284 True elapsed 180.4
+COVARIANCE_TRANSPORT_TRAIN transport 3800 warmup 0.06176470220088959 True elapsed 190.6
+COVARIANCE_TRANSPORT_TRAIN transport 4000 warmup 0.06178119406104088 True elapsed 200.1
+COVARIANCE_TRANSPORT_TRAIN transport 4200 warmup 0.05552219599485397 True elapsed 209.5
+COVARIANCE_TRANSPORT_TRAIN transport 4400 warmup 0.06221455708146095 True elapsed 218.8
+COVARIANCE_TRANSPORT_TRAIN transport 4600 warmup 0.06518658995628357 True elapsed 228.7
+COVARIANCE_TRANSPORT_TRAIN transport 4800 warmup 0.049326591193675995 True elapsed 238.2
+COVARIANCE_TRANSPORT_TRAIN transport 5000 warmup 0.06337831914424896 True elapsed 247.7
+COVARIANCE_TRANSPORT_TRAIN transport 5200 warmup 0.0641026422381401 True elapsed 258.2
+COVARIANCE_TRANSPORT_TRAIN transport 5400 warmup 0.06254232674837112 True elapsed 268.8
+COVARIANCE_TRANSPORT_TRAIN transport 5600 warmup 0.047085851430892944 True elapsed 278.8
+COVARIANCE_TRANSPORT_TRAIN transport 5800 warmup 0.05531615763902664 True elapsed 288.8
+COVARIANCE_TRANSPORT_TRAIN transport 6000 warmup 0.06974080204963684 True elapsed 298.7
+COVARIANCE_TRANSPORT_TRAIN transport 6200 warmup 0.061566419899463654 True elapsed 308.8
+COVARIANCE_TRANSPORT_TRAIN transport 6400 warmup 0.0341460146009922 True elapsed 318.9
+COVARIANCE_TRANSPORT_TRAIN transport 6600 warmup 0.05435569956898689 True elapsed 329.5
+COVARIANCE_TRANSPORT_TRAIN transport 6800 warmup 0.07504535466432571 True elapsed 341.5
+COVARIANCE_TRANSPORT_TRAIN transport 7000 warmup 0.04900730028748512 True elapsed 352.8
+COVARIANCE_TRANSPORT_TRAIN transport 7200 warmup 0.06219238415360451 True elapsed 364.6
+COVARIANCE_TRANSPORT_TRAIN transport 7400 warmup 0.06303927302360535 True elapsed 375.5
+COVARIANCE_TRANSPORT_TRAIN transport 7600 warmup 0.0552651546895504 True elapsed 385.5
+COVARIANCE_TRANSPORT_TRAIN transport 7800 warmup 0.05506978556513786 True elapsed 395.5
+COVARIANCE_TRANSPORT_TRAIN transport 8000 warmup 0.07564358413219452 True elapsed 405.2
+COVARIANCE_TRANSPORT_TRAIN transport 8200 warmup 0.05474528297781944 True elapsed 415.2
+COVARIANCE_TRANSPORT_TRAIN transport 8400 warmup 0.05812060460448265 True elapsed 425.3
+COVARIANCE_TRANSPORT_TRAIN transport 8600 warmup 0.050166890025138855 True elapsed 435.9
+COVARIANCE_TRANSPORT_TRAIN transport 8800 warmup 0.059775564819574356 True elapsed 448.7
+COVARIANCE_TRANSPORT_TRAIN transport 9000 warmup 0.04500608891248703 True elapsed 459.5
+COVARIANCE_TRANSPORT_TRAIN transport 9200 warmup 0.053394414484500885 True elapsed 470.1
+COVARIANCE_TRANSPORT_TRAIN transport 9400 warmup 0.047414571046829224 True elapsed 480.1
+COVARIANCE_TRANSPORT_TRAIN transport 9600 warmup 0.056286443024873734 True elapsed 489.2
+COVARIANCE_TRANSPORT_TRAIN transport 9800 warmup 0.03722314164042473 True elapsed 498.4
+COVARIANCE_TRANSPORT_TRAIN transport 10000 warmup 0.05001545697450638 True elapsed 510.0
+COVARIANCE_TRANSPORT_TRAIN transport 10200 warmup 0.06600888818502426 True elapsed 522.7
+COVARIANCE_TRANSPORT_TRAIN transport 10400 warmup 0.0601661317050457 True elapsed 535.3
+COVARIANCE_TRANSPORT_TRAIN transport 10600 warmup 0.03260989859700203 True elapsed 547.9
+COVARIANCE_TRANSPORT_TRAIN transport 10800 warmup 0.05538192018866539 True elapsed 560.5
+COVARIANCE_TRANSPORT_TRAIN transport 11000 warmup 0.06265252828598022 True elapsed 573.2
+COVARIANCE_TRANSPORT_TRAIN transport 11200 warmup 0.040094178169965744 True elapsed 586.0
+COVARIANCE_TRANSPORT_TRAIN transport 11400 warmup 0.06246906518936157 True elapsed 598.2
+COVARIANCE_TRANSPORT_TRAIN transport 11600 warmup 0.0573856383562088 True elapsed 610.5
+COVARIANCE_TRANSPORT_TRAIN transport 11800 warmup 0.05205096676945686 True elapsed 622.8
+COVARIANCE_TRANSPORT_TRAIN transport 12000 warmup 0.05292276293039322 True elapsed 635.4
+COVARIANCE_TRANSPORT_TRAIN transport 12200 warmup 0.04512235149741173 True elapsed 662.1
+COVARIANCE_TRANSPORT_TRAIN transport 12400 warmup 0.04964950680732727 True elapsed 677.5
+COVARIANCE_TRANSPORT_TRAIN transport 12600 warmup 0.04775774106383324 True elapsed 693.0
+COVARIANCE_TRANSPORT_TRAIN transport 12800 warmup 0.07028854638338089 True elapsed 708.7
+COVARIANCE_TRANSPORT_TRAIN transport 13000 warmup 0.07390670478343964 True elapsed 724.1
+COVARIANCE_TRANSPORT_TRAIN transport 13200 warmup 0.06875340640544891 True elapsed 738.7
+COVARIANCE_TRANSPORT_TRAIN transport 13400 warmup 0.06539195030927658 True elapsed 753.5
+COVARIANCE_TRANSPORT_TRAIN transport 13600 warmup 0.054578088223934174 True elapsed 768.2
+COVARIANCE_TRANSPORT_TRAIN transport 13800 warmup 0.04951174929738045 True elapsed 782.8
+COVARIANCE_TRANSPORT_TRAIN transport 14000 warmup 0.05680073797702789 True elapsed 797.3
+COVARIANCE_TRANSPORT_TRAIN transport 14200 warmup 0.024780476465821266 True elapsed 812.1
+COVARIANCE_TRANSPORT_TRAIN transport 14400 warmup 0.05370255187153816 True elapsed 827.8
+COVARIANCE_TRANSPORT_TRAIN transport 14600 warmup 0.025533542037010193 True elapsed 844.0
+COVARIANCE_TRANSPORT_TRAIN transport 14800 warmup 0.04848475754261017 True elapsed 858.5
+COVARIANCE_TRANSPORT_TRAIN transport 15000 warmup 0.04603726416826248 True elapsed 873.6
+COVARIANCE_TRANSPORT_TRAIN transport 15200 warmup 0.046913567930459976 True elapsed 886.0
+COVARIANCE_TRANSPORT_TRAIN transport 15400 warmup 0.05155593901872635 True elapsed 897.8
+COVARIANCE_TRANSPORT_TRAIN transport 15600 warmup 0.05776171758770943 True elapsed 908.9
+COVARIANCE_TRANSPORT_TRAIN transport 15800 warmup 0.04526294767856598 True elapsed 920.8
+COVARIANCE_TRANSPORT_TRAIN transport 16000 warmup 0.05657463148236275 True elapsed 931.9
+UNION_EVALUATION warmup 16000 val 1600 {'PSNR': 24.94629389444987, 'dynamic_PSNR': 23.87597942352295, 'dynamic_alpha': 0.9828650852044424, 'static_PSNR': 32.81568501790365, 'static_alpha': 0.9972981154918671, 'background_alpha': 0.010116308543365449, 'dynamic_leakage_on_static': 0.025107953728487096}
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "F:\A_Edinburgh\PhysGauss\variants\staged_reconstruction\covariance_transport\train.py", line 92, in <module>
+    if __name__=='__main__': main()
+                             ^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\variants\staged_reconstruction\covariance_transport\train.py", line 82, in main
+    if not admission['passed']: raise RuntimeError('Original warmup numerical guardrails failed; physics not admitted')
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Original warmup numerical guardrails failed; physics not admitted
