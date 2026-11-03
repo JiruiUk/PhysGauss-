@@ -99,6 +99,8 @@ def main():
                 for field in ['n','continuous_accepted','grid_accepted','unit_source_costs','fit_nonworse','held_nonworse']:
                     assert g[field]==saved[key][field],(case,i,key,field,g[field],saved[key][field])
                 for name,m in g['metrics'].items():
+                    if 'fit' not in name:
+                        assert m==saved[key]['metrics'][name],(case,i,key,name,'source costs must be exact')
                     assert abs(m['sum']-saved[key]['metrics'][name]['sum'])<=1e-4*max(m['n'],1),(case,i,key,name)
         results[case]={'aggregate_views_verified':96,'all_original_D1_candidates_counted':total,
             'independent_original_RGB_cost_and_groups_replay_views':[0,24,72],'independent_acceptance_and_visibility_counts_exact':True}
@@ -107,6 +109,7 @@ def main():
     write(REPORT/'independent_audit.json',{'passed':True,'results':results,'measurement_sha256':sha(REPORT/'measurement.json'),
         'source_sha256':sha(Path(__file__)),'frozen_inputs_unchanged':True,'per_pixel_GT_assets_exported':False,
         'fit_mean_reduction_numeric_tolerance':1e-4,'source_cost_implementation':'unchanged original source_cost',
+        'six_source_and_held_cost_statistics_exact':True,
         'GPU_training_state_or_native_render_claim':False})
     print('D5_INDEPENDENT_ACCOUNTING_AND_RGB_REPLAY_PASS',flush=True)
 

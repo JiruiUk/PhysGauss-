@@ -1,6 +1,6 @@
 # S1-D5 evaluator-only photometric audit
 
-Status: evaluator implemented/tested/frozen; full measurements pending.
+Status: complete and independently reviewed; no reconstruction/training output.
 D4 complete/rejected; all192 candidates' saves and original matcher replay
 audited, no Gaussian training. See S1_rgb_prior_proposals/v1/assessment.md and
 final_review.json. Do not repeat D4/D3/D2, change thresholds or swap Small.
@@ -23,8 +23,23 @@ the evaluator. Distribution quantiles use fixed .01 cost/.02 difference bins;
 means/counts are exact sums. Cross-groups partition candidates, while all6 is
 explicitly a subset of fit3+bothheld visible. Missing candidates remain unknown.
 
-Next execute this one fixed two-condition diagnostic. Actual process check:
-only unrelated serve_integrity_monitor.py; no D5 lock/process/stop request.
+Two-condition192-view measurement and independent replay completed3347ad67.
+All423747/423100 parent candidates counted;421292/420623 have reference-visible
+static GT. Continuous truth passes original acceptance17268/17324 (4.10/4.12%),
+nearest same192-grid truth0/0. Even same-face/all6-visible/gross-error points pass
+only13/27723 and12/27604. Fractional analytic plane still minimizes at4.04947
+instead of4; integer control3.99303. Quantization/visibility alone do not explain
+the objective mismatch. D1 fit optimization creates selection bias; no claim
+that these diagnostics prove one cause or that a new warp has already helped.
+Actually viewed six fixed color figures and all analytic control curves.
+No GT pixel arrays or training assets exported. See v1/assessment.md and
+v1/independent_audit.json. D5 must not restart; no Gaussian/real continuation.
+Next single mechanism is the separately preregistered RGB plane-warped support
+candidate S1-D6, with data-derived reversible local slopes, all parent points
+retained and unchanged strict geometry/Gaussian admission gates.
+
+Original launch process check: only unrelated serve_integrity_monitor.py;
+no D5 lock/process/stop request. Completed evaluator releases its CUDA process.
 No subagents. No source/weight/history rewrites or paused task restoration.
 GT stays evaluator-only; no inferred depth/normal/mask/selected-point assets.
 

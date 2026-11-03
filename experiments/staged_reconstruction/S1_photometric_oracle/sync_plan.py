@@ -1,0 +1,48 @@
+"""Append only this review; stage shared files later via the generated cached patch."""
+import difflib
+import subprocess
+from variants.staged_reconstruction.prepare_data import ROOT
+
+SECTION='''
+
+### S1-D5：真值也难通过原RGB验证，改进支撑匹配（2026-11-03）
+
+按0d983836固定协议完成两例各96图；实现/冻结ccd7ff5b，测量/独立重放3347ad67。
+28测试，192图输入/输出/分母及交叉分组核验、两例固定0/24/72原RGB重放通过；
+六源/held成本统计逐值一致，独立接受/可见性分组计数一致。全部423747/423100
+候选保留，421292/420623有参考可见静态GT，其余2455/2477保留未知。连续GT
+通过原接受17268/17324（约4.1%），理想同192格GT为0/0；同面+六源真实可见+
+误差>0.05的点仅13/27723、12/27604通过。分数像素解析平面真值4，原最低点
+4.04947；整数控制3.99303。边界/量化/中心遮挡均有影响，但不能单独解释。
+D1已优化原fit，存在选择偏差；不能由均值或oracle断言单一病因/数据无解。
+实际查看六固定彩色图与三控制全部曲线，未输出逐像素GT成本或训练几何资产。
+D5仅评估，无Gaussian/真实续训/新86/188/PLY/视频；final_review/status已完成。
+
+下一步一个预声明S1-D6局部平面warp RGB支撑候选：原D1邻域分开拟合/检查
+逆深度斜率，可撤销；投影25条支撑射线后采样原RGB再归一化，代替插值已
+归一化patch。旧深度/备选用同一新成本比较，原4fit best3+2held接受方程和
+1e-6容差保留。没有GT平面/可见性/静态颜色/物体数，Small与S3-U保留；未知
+不叫动态/背景。先测试/冻结/独立完整推断恢复，再一次两条件96图推断及
+静态GT/薄结构审计。D4数值和Gaussian证据门槛逐项复制，不以小幅改进绕过，
+不启动旧真实18k→24k、不恢复暂停分支、不重跑D5或任何已完成负分支。
+见[D5评估](staged_reconstruction/S1_photometric_oracle/v1/assessment.md)及
+[D6协议](staged_reconstruction/S1_rgb_plane_warp/protocol.json)。
+'''
+
+
+def main():
+    patches=[]
+    for relative in ['experiments/adaptive_reconstruction_plan.md','experiments/staged_reconstruction_plan.md']:
+        head=subprocess.check_output(['git','show','HEAD:'+relative],cwd=ROOT).decode('utf-8')
+        path=ROOT/relative; working=path.read_text(encoding='utf-8-sig')
+        marker='### S1-D5：真值也难通过原RGB验证'
+        assert marker not in head and marker not in working
+        path.write_text(working.rstrip()+'\n'+SECTION,encoding='utf-8')
+        desired=head.rstrip()+'\n'+SECTION
+        patches.extend(difflib.unified_diff(head.splitlines(True),desired.splitlines(True),fromfile='a/'+relative,tofile='b/'+relative))
+    dest=ROOT/'experiments/staged_reconstruction/S1_photometric_oracle/v1/shared_plan_cached.patch'
+    dest.write_text(''.join(patches),encoding='utf-8',newline='\n')
+    print('D5_SHARED_PLAN_CACHED_PATCH_READY',flush=True)
+
+
+if __name__=='__main__': main()

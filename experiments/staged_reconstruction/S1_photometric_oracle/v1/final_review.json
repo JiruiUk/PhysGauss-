@@ -1,0 +1,34 @@
+{
+  "status": "complete_matching_measurement_audited",
+  "manual_review_completed": true,
+  "reviewed_images": {
+    "output/staged_reconstruction/S1_photometric_oracle/v1/diffuse_view_000.png": "c60f946c1ec7d9a55f7b086ddb9b6649b979f732536561ac4476512d8d3dd7c4",
+    "output/staged_reconstruction/S1_photometric_oracle/v1/diffuse_view_024.png": "a70aed54bb53fa1db70b338a31d7e2e5f3370533c4c65b8c755902aa20b16a60",
+    "output/staged_reconstruction/S1_photometric_oracle/v1/diffuse_view_072.png": "798113bd75b6155d339b2503693b70c377135be14377dd540384c0e4f4803d56",
+    "output/staged_reconstruction/S1_photometric_oracle/v1/glossy_view_000.png": "b5933736f99b80520ecca4c3d39553f988c234058e1ec83e9e0560987d0f64d1",
+    "output/staged_reconstruction/S1_photometric_oracle/v1/glossy_view_024.png": "d7be639b1d10114dbde5da1b658a1f855a9d538d0c8472986f34670ebac4279a",
+    "output/staged_reconstruction/S1_photometric_oracle/v1/glossy_view_072.png": "bca4e9b53e10cc98dd2d53e4a67343450d3d354afb437a96bcef3e10eeb28fc8",
+    "output/staged_reconstruction/S1_photometric_oracle/v1/analytic_control_curves.png": "e76be1d0c22465b058749a4126d6e1e6aa2b6c39be77ab244d5289172e1ec7ba"
+  },
+  "actually_viewed": "two cases fixed0/24/72 RGB, face/visibility grouping, GT/grid-vs-D1 fit differences and acceptance; all six curves of the three fixed analytic controls",
+  "finding": "Original measurement rejects true large-error correction even on same-face/all6-visible rays; fractional control biased; quantization/center occlusion alone insufficient, one causal mechanism not proven",
+  "source_and_data_freeze_verified": true,
+  "all_original_candidates_retained": true,
+  "six_source_and_held_RGB_cost_statistics_exact_on_independent_fixed_view_replay": true,
+  "GT_training_assets_or_pixel_cost_arrays_exported": false,
+  "Gaussian_training_started": false,
+  "real_training_authorized": false,
+  "native86_188_PLY_video_or_optimizer_recovery_claim": false,
+  "next": "Single preregistered S1-D6 RGB local-plane support warp, data-derived slopes, unchanged strict gates; no D5 rerun",
+  "evidence_sha256": {
+    "source_freeze.json": "1cb17a8cf5353a008cba57cc0cf55367e9668b2cfe19a342930055526eb003ec",
+    "tests.log": "9d64cd1d89122df3593381eb125860e05156ba1c43e772158cd3825c655fee2e",
+    "measurement.json": "6186fcd4698fbc86c8c21c11c6d5920e8540af455e9b36cb31bd8a866f7602f5",
+    "analytic_controls.json": "3efb3bf57c0eb8d4dc2ed94f5bfb76fed6b70c11e5e6d434cb40471ef8afbce5",
+    "independent_audit.json": "7c2b2135209e9b42e605b2fc46fff761239a5ec7acecf08a593aea7f8ad6e007",
+    "exports.json": "1be7231b9b5c71e1956790db755e1ac27e38aca415b4148faff36693820bdb01",
+    "assessment.md": "0c09b759d785c65a663a9a6dfe4fa0bbbcf16ff9fc1ecba9ed78c0c3b7c3a3a1"
+  },
+  "finalizer_sha256": "afc494e64a2b88126baf7dc0cc5384b523466dbcc6d87ccc62137b2069f04257",
+  "reviewed_at_utc": "2026-11-03T22:03:15.989160+00:00"
+}
