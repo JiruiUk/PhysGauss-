@@ -87,3 +87,30 @@ checks. Then run one matched real pilot from the preserved complete parent,
 with full-state recovery and unchanged camera sequence, rendering static-only,
 nuisance and composite outputs separately. Reject improved composite fitting
 if thin/static surfaces disappear. No improvement is claimed in advance.
+
+## S1-N negative result and depth-prior audit
+
+Full Gaussian synthetic nuisance training failed both fixed static-GT gates:
+novel-camera static PSNR fell0.739/0.644dB and RGB spill increased6.05/6.44%.
+See S1_nuisance/v1/assessment.md. No real nuisance continuation or stronger
+alpha regularizer follows. This bounded camera-plane adaptation is not the
+complete DeSplat method and does not refute that paper.
+
+Re-read [DN-Splatter full method, sections4.1–4.4](https://arxiv.org/html/2403.17822v3):
+it combines gradient-aware depth regularization with sensor/scale-aligned
+monocular cues and Gaussian-derived normals supervised by monocular estimates.
+The authors explicitly discuss noisy normals derived from rendered-depth
+gradients. Our RGB-MVS depth is neither their sensor prior nor their monocular
+normal prior. Reusing noisy finite-difference normals would not reproduce their
+method. [2DGS](https://surfsplatting.github.io/) also relies on its own oriented
+disks/ray intersections plus geometric regularizers; simply copying a loss into
+the unchanged native PIDG renderer is not an equivalent implementation.
+
+Read-only S1-D0 fixes the old RGB-only depth selection before accessing GT.
+Same-ray depth agreement is only79.4% at0.05 and52.6% at0.02; checked-depth
+normal error averages30.8–30.9deg on the single-face subset. These differ from
+point-to-nearest-surface precision and must not be conflated. Thin pixel depth
+support is only56.8%, even though spatial point coverage was near99%.
+Do not attach strong depth/normal supervision yet. Next single mechanism is
+continuous inverse-depth refinement with disjoint held-source cost validation,
+first inference/evaluation only; no GT-driven threshold sweep or new losses.

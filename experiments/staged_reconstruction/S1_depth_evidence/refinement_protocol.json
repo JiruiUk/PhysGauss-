@@ -1,0 +1,21 @@
+{
+  "stage": "S1-D1 data-only local inverse-depth refinement",
+  "enabled_by_default": false,
+  "status": "predeclared_before_candidate_outputs",
+  "input": "Existing checked RGB-MVS depths at96 train camera/time samples per diffuse/glossy case; no GT/masks/identity labels",
+  "candidate_membership": "Fixed to inherited checked depths; no additions, pruning, relabeling or GT selection",
+  "fit_sources": "Original first4 of6, robust mean of best3, exactly as parent",
+  "validation_sources": "Original final2, disjoint from fitting4; not independent evaluation since also used by original admission",
+  "proposal": "Three costs at original inverse-depth grid cell and its two neighbors; finite convex quadratic vertex, clamped to half a grid step; boundary cells unchanged",
+  "acceptance": "Every held-source cost no greater than its original cost+1e-6 and proposal fit cost no greater than original fit cost+1e-6; otherwise retain original depth",
+  "epsilon_is_numerical_not_search": 1e-6,
+  "global_depth_samples_unchanged": 192,
+  "new_normal_or_depth_loss": false,
+  "Gaussian_training_started": false,
+  "independent_evaluation": "Same-ray static depth and thin/visible subsets, P90, fixed-neighborhood normal accuracy, count/membership exact; GT never read by inference",
+  "no_promotion_from_average_alone": true,
+  "candidate_search_or_threshold_tuning": false,
+  "next_training": "Requires separately predeclared paired full-Gaussian synthetic protocol and native recovery before any real continuation",
+  "baseline_renderer_fields_weights_untouched": true,
+  "preserve_unknowns_and_unified_dynamic_pool": true
+}

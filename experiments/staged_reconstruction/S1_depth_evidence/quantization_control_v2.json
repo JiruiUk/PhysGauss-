@@ -1,0 +1,64 @@
+{
+  "evaluator_only": true,
+  "oracle_not_reconstructor": true,
+  "GT_never_exported_as_training_input": true,
+  "candidate_thresholds_changed": false,
+  "results": {
+    "diffuse": {
+      "same_pixels_as_audited_normals": true,
+      "exact_GT_depth_to_normal_error_deg": {
+        "n": 252872,
+        "mean": 0.04120928215632536,
+        "median": 0.00013217232288149588,
+        "p90": 0.00039955384332341986
+      },
+      "oracle_nearest192_grid_GT_depth_to_normal_error_deg": {
+        "n": 252872,
+        "mean": 16.197952684566655,
+        "median": 17.280206131852857,
+        "p90": 28.36666124810369
+      },
+      "oracle_nearest192_grid_depth_error": {
+        "n": 422933,
+        "mean": 0.008142760403651682,
+        "median": 0.007975930896114036,
+        "p90": 0.014842265547712508
+      },
+      "local_grid_spacing": {
+        "n": 422933,
+        "mean": 0.03289678667514242,
+        "median": 0.032276232763339685,
+        "p90": 0.039259415126304376
+      }
+    },
+    "glossy": {
+      "same_pixels_as_audited_normals": true,
+      "exact_GT_depth_to_normal_error_deg": {
+        "n": 251715,
+        "mean": 0.037838509714936935,
+        "median": 0.0001326292773966974,
+        "p90": 0.0004001594363755378
+      },
+      "oracle_nearest192_grid_GT_depth_to_normal_error_deg": {
+        "n": 251715,
+        "mean": 16.22863011645416,
+        "median": 17.396969323566026,
+        "p90": 28.36666124810369
+      },
+      "oracle_nearest192_grid_depth_error": {
+        "n": 422284,
+        "mean": 0.008141967734278012,
+        "median": 0.007973078955198165,
+        "p90": 0.014842265547712508
+      },
+      "local_grid_spacing": {
+        "n": 422284,
+        "mean": 0.03289732395842587,
+        "median": 0.032276232763339685,
+        "p90": 0.039259415126304376
+      }
+    }
+  },
+  "input_audit_sha256": "c789bcaa9ffc653c0c3e341c97ba31044e3d7f800244b761722d522dc7eb2997",
+  "source_sha256": "3d4376e1da719afe6f0c84a706065d62b12e94941ed7213542393a3fa29f61df"
+}
