@@ -1,0 +1,23 @@
+{
+  "status": "complete_rejected_direct_static_depth",
+  "manual_review_completed": true,
+  "actually_viewed": "Both cases c00_t1/c08_t0/c24_t0 plus sole accepted c26_t2 RGB/raw/metric/GT-error panels",
+  "finding": "Strong coarse ordering, local anchor calibration fails most views; accepted view extrapolation and empty background unsafe.",
+  "no_Gaussian_or_real_training": true,
+  "no_threshold_weight_or_candidate_changes": true,
+  "next": "Preregister relative-order reliability and evaluator-only oracle metric-shape diagnostic; no GT feedback to training",
+  "evidence_sha256": {
+    "inference.json": "38b7e82b9ea34409b143c7cf28a524b9831a18c619debd8dd1bb8d9461a3d63b",
+    "evaluation.json": "2f3c9c4ad49e73d52d01b6843f02d4a4e2d4018ac370b6d4588da7d880489558",
+    "gate.json": "27196ce2837ca6694a30fc3bbdc458cfb8fd742572bb5cc58bd670522eee8669",
+    "source_freeze.json": "28ebb9f4be8476ff03cf0b21a67e0b80dfa1b5cd0aa87f2b1f92f95d657ca3ad",
+    "input_audit.json": "af61c204261060b193773358b8e417ba1c47313e0be594f7ffa2b35a914cf283",
+    "replay.json": "f25fed84ed024ee6db711169b7bb5db8751efae98d88953d1a23675bed423814"
+  },
+  "reviewed_images": {
+    "output/staged_reconstruction/S1_pretrained_geometry/v1/diffuse_prior_audit.png": "a49935ee3d65401c78019b508b844c632c0e01f4eb4fdbd15c291e13f2fc8079",
+    "output/staged_reconstruction/S1_pretrained_geometry/v1/glossy_prior_audit.png": "bf106b15301b8744187f190535f01d421442b46351061fce58bf8f151b07facb",
+    "output/staged_reconstruction/S1_pretrained_geometry/v1/diffuse_only_calibrated.png": "a9b94db35d3ddbca7c888b10897393b40faf0959070dad0ee4bcbd4804a79b30",
+    "output/staged_reconstruction/S1_pretrained_geometry/v1/glossy_only_calibrated.png": "beb1d1a1f95d09577683e7a3679ec0f00b1c7d0a61cabf08b3eeeee9e81b58b6"
+  }
+}

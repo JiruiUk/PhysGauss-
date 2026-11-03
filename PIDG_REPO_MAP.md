@@ -860,3 +860,17 @@ samples retain unknown status. Disabled calls return the original depth object.
 retention; `prepare` binds tests, protocol, parent arrays and frozen source.
 This is a geometry-evidence diagnostic, with no change to PIDG models, fields,
 renderer, optimizer or physical identities. Tests: test_depth_uncertainty.py.
+
+
+## Optional fixed pretrained RGB observed-depth evidence (2026-11-03)
+
+`variants/staged_reconstruction/pretrained_depth/model.py` lazily loads the
+hash-verified official Small model with weights_only and unchanged518 BGR
+preprocessing; disabled calls retain object identity without model import.
+`core.py` uses disjoint spatial train-anchor checks and Theil-Sen inverse-depth
+calibration, retaining failed views as unknown. `infer/prepare/replay` freeze
+RGB/anchors/upstream source and replay official weights in a separate process.
+`evaluate` alone imports analytic GT ray tracing, checks static/thin/observed
+depth, true empty background and same-pose time overlap. No original PIDG
+renderer, Gaussian, optimizer, physics field or identity is changed. Tests:
+test_pretrained_depth.py. Reports: S1_pretrained_geometry/v1; not Gaussian training.

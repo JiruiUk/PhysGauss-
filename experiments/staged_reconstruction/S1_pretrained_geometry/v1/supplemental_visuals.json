@@ -1,0 +1,22 @@
+{
+  "images": {
+    "output/staged_reconstruction/S1_pretrained_geometry/v1/diffuse_only_calibrated.png": "a9b94db35d3ddbca7c888b10897393b40faf0959070dad0ee4bcbd4804a79b30",
+    "output/staged_reconstruction/S1_pretrained_geometry/v1/glossy_only_calibrated.png": "beb1d1a1f95d09577683e7a3679ec0f00b1c7d0a61cabf08b3eeeee9e81b58b6"
+  },
+  "results": {
+    "diffuse": {
+      "image": "rgb/c26_t2.png",
+      "train_anchor_count": 128,
+      "valid_fraction_of_true_empty_in_accepted_view": 1.0,
+      "no_static_identity_or_accurate_geometry_from_local_anchor_acceptance": true
+    },
+    "glossy": {
+      "image": "rgb/c26_t2.png",
+      "train_anchor_count": 125,
+      "valid_fraction_of_true_empty_in_accepted_view": 1.0,
+      "no_static_identity_or_accurate_geometry_from_local_anchor_acceptance": true
+    }
+  },
+  "original_evaluation_and_gate_unchanged": true,
+  "source_sha256": "5060f0946c3aa34fc71c83c68d02526f87c9dbb6b39e8695a0172acd2ada856a"
+}

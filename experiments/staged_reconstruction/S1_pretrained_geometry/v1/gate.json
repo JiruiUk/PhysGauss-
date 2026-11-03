@@ -1,0 +1,31 @@
+{
+  "both_cases_evidence_passed": false,
+  "cases": {
+    "diffuse": {
+      "passed": false,
+      "failed_requirements": [
+        "calibrated_view_fraction",
+        "accurate_visible_static_ray_005_coverage",
+        "accurate_thin_static_ray_002_coverage",
+        "visible_static_depth_MAE",
+        "visible_static_error_gt_005_fraction",
+        "thin_depth_P90"
+      ]
+    },
+    "glossy": {
+      "passed": false,
+      "failed_requirements": [
+        "calibrated_view_fraction",
+        "accurate_visible_static_ray_005_coverage",
+        "accurate_thin_static_ray_002_coverage",
+        "visible_static_depth_MAE",
+        "visible_static_error_gt_005_fraction",
+        "thin_depth_P90"
+      ]
+    }
+  },
+  "Gaussian_training_started": false,
+  "real_training_authorized": false,
+  "gate_tests_direct_static_use_not_general_observed_depth_utility": true,
+  "next_requires_separate_paired_Gaussian_protocol_and_native_recovery": true
+}

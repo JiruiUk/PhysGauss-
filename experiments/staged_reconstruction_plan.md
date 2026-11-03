@@ -310,3 +310,17 @@ Gaussian训练须另立协议及静态GT/原生恢复门槛。无全图强深度
 先验仍非GT，不升级S3-U；新Gaussian训练须另立固定协议和原生完整恢复/
 静态GT完整性门槛。见[D2评估](staged_reconstruction/S1_depth_uncertainty/v1/assessment.md)
 及[已选下一方向](staged_reconstruction/S1_depth_uncertainty/next_choice.md)。
+
+
+### S1-D3：固定Small已测，局部锚点无法标定全图（2026-11-03）
+
+用户选定Depth Anything V2 Small后，按e47030ac预声明协议实际完成两例各96图。
+官方代码/权重SHA冻结，27测试、192图输入/锚点/标定重放及独立进程模型重载
+逐值通过。仅1/96图/例通过空间检查锚点标定；其可见静态深度MAE0.116/0.112，
+且该图100%真空背景被赋有限深度。两例直接静态监督门槛均失败，无Gaussian/
+真实训练、新86/188/PLY/视频，不放宽旧门槛或更换候选。实际固定0/24/72与
+唯一成功c26_t2的RGB/原始先验/误差图均已查看，不能归因反光或宣称数据无解。
+原始深度顺序与GT相关均值约0.896，但不是几何正确/静态身份的证明。
+下一步固定顺序可靠性及评估专用理想尺度诊断，区分标定瓶颈与单目形状偏差；
+GT仅诊断，不回灌系数/掩膜/训练点。不能以排序均值绕过Gaussian完整性门槛。
+见[Small实测](staged_reconstruction/S1_pretrained_geometry/v1/assessment.md)。
