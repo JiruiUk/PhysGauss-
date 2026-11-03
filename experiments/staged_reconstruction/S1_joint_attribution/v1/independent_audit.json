@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "cases": {
+    "diffuse": {
+      "all32_native_four_state_replays": 32,
+      "full_denominators_and_transition_counts_exact": true,
+      "all_per_camera_RGB_MSE_spill_exact": true,
+      "c24_matches_both_independent_processes": true,
+      "SH_only_depth_alpha_exact": true,
+      "symmetric_marginal_equations_match": true
+    },
+    "glossy": {
+      "all32_native_four_state_replays": 32,
+      "full_denominators_and_transition_counts_exact": true,
+      "all_per_camera_RGB_MSE_spill_exact": true,
+      "c24_matches_both_independent_processes": true,
+      "SH_only_depth_alpha_exact": true,
+      "symmetric_marginal_equations_match": true
+    }
+  },
+  "files_verified_before_and_after": 623,
+  "measurement_sha256": "3109cc9b08d2f05d9173a87ca56289cdb3b9ac98187a724d2cc0e895ff9a1f68",
+  "review_source_sha256": "6bca39f741c1072a317d0e4c7965ca0b42833fa16a3233386be23ab5d9e9a0a2",
+  "training_updates": 0
+}

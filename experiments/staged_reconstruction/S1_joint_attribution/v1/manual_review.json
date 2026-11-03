@@ -1,0 +1,24 @@
+{
+  "actually_viewed_all12_fixed_native_figures": true,
+  "images": {
+    "output/staged_reconstruction/S1_joint_attribution/v1/diffuse_c00_opacity_SH.png": "e205d250b6399636cee5884e41daffa61781b0d043caad140517298e9540fb4d",
+    "output/staged_reconstruction/S1_joint_attribution/v1/diffuse_c00_ray_changes.png": "422934d2f9c7d10ffefca5f012f08dda7d4c3aaeb71b4bdc331ed2f541f12429",
+    "output/staged_reconstruction/S1_joint_attribution/v1/diffuse_c08_opacity_SH.png": "731e93162ef5ac71b4f9653205b0fd135044fb491ea90a2248df5f0ebef621ca",
+    "output/staged_reconstruction/S1_joint_attribution/v1/diffuse_c08_ray_changes.png": "fc14aac68d8ef3792408211e7a15b951a24511104dd22a00768cb5f0ce709cf1",
+    "output/staged_reconstruction/S1_joint_attribution/v1/diffuse_c24_opacity_SH.png": "8bf9f773a86d73177356926b51e8432fa9c132c865a1806c97720e63e55e7d6a",
+    "output/staged_reconstruction/S1_joint_attribution/v1/diffuse_c24_ray_changes.png": "bdd7b15030dacf79a29b33d58f4341afea395016119ccaf12907362717693384",
+    "output/staged_reconstruction/S1_joint_attribution/v1/glossy_c00_opacity_SH.png": "969b3752b3827f36c526db4a3ee48151bb78d70ff20c5c264628bfb046b04d66",
+    "output/staged_reconstruction/S1_joint_attribution/v1/glossy_c00_ray_changes.png": "df988bac10ae55d54c747394bb03a07a21300cfcb4828100e50e99217955d892",
+    "output/staged_reconstruction/S1_joint_attribution/v1/glossy_c08_opacity_SH.png": "d3ef8727017b05665a988c1d68d4c60f3ff797a6a75a441543e3d6fc9c14cb8c",
+    "output/staged_reconstruction/S1_joint_attribution/v1/glossy_c08_ray_changes.png": "239bae7192507df4c65b01215fc4a150b6eba1569061dca79fdf1bba80158d65",
+    "output/staged_reconstruction/S1_joint_attribution/v1/glossy_c24_opacity_SH.png": "18205ff9d19129430a69e898bb8a46b5add4b5a8a8419ddce93d4c6a59f6fdf6",
+    "output/staged_reconstruction/S1_joint_attribution/v1/glossy_c24_ray_changes.png": "66e4d987185891b00ba97497ecff56675ba060f73397fc609bd2790902cf2bec"
+  },
+  "findings": [
+    "c8/c24 RGB blocks fade under either opacity or SH changes",
+    "alpha retains floating support and base halos",
+    "lost-valid rays on pillar/base dominate missing rays; gains include thin structure",
+    "fixed intervention not training causal attribution or physical identity"
+  ],
+  "independent_GT_appears_only_in_evaluation": true
+}
