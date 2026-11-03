@@ -957,3 +957,17 @@ gradient tolerance. All four pass; it does not claim deterministic40-step native
 training. Formal training uses original epsilon/rates and quality gates. A
 serial runner independently evaluates/exports, then waits for manual image and
 geometry review. No physics, original PIDG, renderer or old weight changes.
+
+
+## Frozen joint opacity/SH attribution (S1-J2)
+
+`experiments/staged_reconstruction/S1_joint_attribution/audit.py` is an explicit,
+default-off independent evaluator of four fixed opacity/SH interventions. It
+reuses the unchanged native static renderer on pinned J1-A checkpoint values;
+`core.py` closes all/novel static and thin ray-transition denominators and
+symmetric marginal RGB contributions. `independent_review.py` re-renders all64
+cameras without importing that accounting or mixer. Native SH-only alpha/depth
+invariance and two-process exact output replay pass; no optimizer/model update,
+GT training assets or identity estimates. Tests: `tests/test_joint_attribution.py`.
+J1-A appearance improves but remains unqualified for real training after ray
+accuracy loss. This maps a read-only reconstruction diagnostic, not new physics.
