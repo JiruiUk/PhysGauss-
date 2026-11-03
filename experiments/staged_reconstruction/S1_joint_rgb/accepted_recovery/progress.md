@@ -16,3 +16,15 @@ runs/pidg_staged_reconstruction/S1_joint_rgb/accepted_recovery. One serial runne
 only; do not launch another. Runner proceeds through both arms/two conditions,
 independent evaluator and native exports, then leaves manual review pending.
 Check real processes,locks,state,logs and stop files before any recovery.
+
+COMPLETE: four6000 arms and independent evaluation/exports661d3158. All22 dynamic
+Adam states reach6000; candidate static appearance reaches12000, static geometry
+and control moments remain6000. Camera traces match.8 PLYs match checkpoints;
+two H264 videos fully decode160 frames each. Actually viewed both static/train/
+novel24/all5time/depth-alpha/decoded sheets and native t2 PNGs. Final review
+clears pending: RGB spill -70.28/-68.87%, static GT PSNR +2.411/+2.189dB,
+but accurate static ray coverage -4.378/-4.998points fails<=1 gate. Alpha/depth
+floaters remain, dynamic pool still contains static structure. NOT promoted;
+no Rubber Duck continuation. See v1/assessment.md and final_review.json.
+Next one independent opacity×SH/lost-ray attribution audit, no new training or
+GT feedback; preserve all quality gates and historical failures. Do not rerun.

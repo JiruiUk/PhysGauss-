@@ -1,0 +1,71 @@
+{
+  "status": "completed_not_promoted",
+  "pending_review": false,
+  "numerical_passed": false,
+  "manual_native_images_reviewed": true,
+  "synthetic_joint_cleanup_admitted": false,
+  "Rubber_Duck_training_automatically_admitted": false,
+  "human_approved_recovery_acceptance": true,
+  "original_full40_failures_retained": true,
+  "original_epsilon_and_quality_gates_preserved": true,
+  "full_optimizer_and_sample_audit": {
+    "diffuse/frozen_static": {
+      "static_Adam_steps": [
+        6000,
+        6000,
+        6000,
+        6000,
+        6000,
+        6000
+      ],
+      "dynamic_Adam_states": 22,
+      "all_dynamic_Adam_steps": 6000,
+      "checkpoint_sha256": "e6d6daca4578e1ac7b2df1f6d36a10b827505c3bb271f5b1076f684c0586cd54"
+    },
+    "diffuse/revisable_static": {
+      "static_Adam_steps": [
+        6000,
+        12000,
+        12000,
+        12000,
+        6000,
+        6000
+      ],
+      "dynamic_Adam_states": 22,
+      "all_dynamic_Adam_steps": 6000,
+      "checkpoint_sha256": "344db4219ec2009ae08ac88717446b93128cbec3335118148be97d734a8a78c2"
+    },
+    "glossy/frozen_static": {
+      "static_Adam_steps": [
+        6000,
+        6000,
+        6000,
+        6000,
+        6000,
+        6000
+      ],
+      "dynamic_Adam_states": 22,
+      "all_dynamic_Adam_steps": 6000,
+      "checkpoint_sha256": "13e2436c0f2acb36f93f970e2bcedec93022033f8c761a9773ac9b97d1ebc477"
+    },
+    "glossy/revisable_static": {
+      "static_Adam_steps": [
+        6000,
+        12000,
+        12000,
+        12000,
+        6000,
+        6000
+      ],
+      "dynamic_Adam_states": 22,
+      "all_dynamic_Adam_steps": 6000,
+      "checkpoint_sha256": "607b2782f93111f9dfaa2d6559f72c0f6b19bb2576774b80332a52b408d26834"
+    }
+  },
+  "evaluation_sha256": "c54ccaf908d9c8b12531c59075ebd2c9b70ceb8796368798162bb2b461db05a2",
+  "manual_review_sha256": "5d1807387cad2001001ccd576f79b913f811dd01ccf7ed7e7c07361ececbcd65",
+  "exports_sha256": "d2a81ba004fc7c320466d4029da107bcb72c22687f956c531b5957bc5b574824",
+  "assessment_sha256": "8d5154a46773b510e09a397e2205ff31d45ffd9315996c16f5d5bfb842603148",
+  "completed_UTC": "2026-11-03T23:49:58.904975+00:00",
+  "source_sha256": "01481e6108604e1323133b411a208e2d138f524c8a9a4f02ee0f795af73afa31"
+}

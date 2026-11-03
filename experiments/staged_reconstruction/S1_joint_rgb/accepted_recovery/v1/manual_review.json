@@ -1,0 +1,23 @@
+{
+  "actually_viewed": true,
+  "images": {
+    "output/staged_reconstruction/S1_joint_rgb/accepted_recovery/diffuse_static_comparison.png": "6019e91c57645db2ef586944d9c8ea20e07142fba71caadd8e4717c646c38472",
+    "output/staged_reconstruction/S1_joint_rgb/accepted_recovery/diffuse_train_decomposition.png": "607bd09a2e73dc8cff397e712ad2faf4995483afabbaa452401cfefb33007132",
+    "output/staged_reconstruction/S1_joint_rgb/accepted_recovery/diffuse_static_expected_depth_alpha.png": "d065ddfffb90f7ca5fb19d8cef440978891d1ad7f19b9d45130e3ac79d340a45",
+    "output/staged_reconstruction/S1_joint_rgb/accepted_recovery/diffuse_novel24_temporal_decomposition.png": "4ddfc271de2082fab5e7c3f5e214f0a891f406b98054d88cdcb3d0d4e6364665",
+    "output/staged_reconstruction/S1_joint_rgb/accepted_recovery/diffuse_matched_static_joint.decoded.png": "f4aa625f0c0279574a6a906b02f3128fb0d2ff1bf23bba4b880a7273e5a82d7d",
+    "output/staged_reconstruction/S1_joint_rgb/accepted_recovery/diffuse_revisable_static_c24_t2_combined.png": "c8b6d76b9ae73ed10dd91cc9fb99012c3dcd1b32d263940811b5fd028ead5fa8",
+    "output/staged_reconstruction/S1_joint_rgb/accepted_recovery/glossy_static_comparison.png": "34081140b83b7deb8ba82b35afcf0960dd25c8a459e22c14d7ecd0fe5a0a25c1",
+    "output/staged_reconstruction/S1_joint_rgb/accepted_recovery/glossy_train_decomposition.png": "99277925e39eb98198cfdd928ea8abe5478b009e3f7c7a1dfef8f296c472e947",
+    "output/staged_reconstruction/S1_joint_rgb/accepted_recovery/glossy_static_expected_depth_alpha.png": "d36820d32893135f7e409d1cdf483c26fe70ea82f57127f7363411dec093c194",
+    "output/staged_reconstruction/S1_joint_rgb/accepted_recovery/glossy_novel24_temporal_decomposition.png": "ce6de0c6462d72e8666f253036b46d242fc44413b6500dcac6f2eb1efbf2d89e",
+    "output/staged_reconstruction/S1_joint_rgb/accepted_recovery/glossy_matched_static_joint.decoded.png": "0858d7b3f1d3cb97e92cffab466a7d4d3113e7143e1db331c015040b895a8e19",
+    "output/staged_reconstruction/S1_joint_rgb/accepted_recovery/glossy_revisable_static_c24_t2_combined.png": "6e379002156afe694226d7d4f71d6b55d4d393b6539b2d5a48dcb4e7a8958944"
+  },
+  "appearance_reduction_visible": true,
+  "alpha_depth_floaters_and_background_halos_remain": true,
+  "unified_dynamic_pool_contains_static_structure": true,
+  "clear_artifact_reduction_without_structure_loss": false,
+  "reason": "static RGB cleaner but independent accurate ray coverage regresses4.38/5.00points; alpha/depth artifacts and dynamic static-structure duplication remain",
+  "Rubber_Duck_outputs_reviewed": false
+}
