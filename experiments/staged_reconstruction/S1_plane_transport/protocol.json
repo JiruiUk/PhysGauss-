@@ -1,0 +1,54 @@
+{
+  "stage": "S1-D7 one cross-view local-plane transport candidate",
+  "enabled_by_default": false,
+  "synthetic_cases": [
+    "diffuse",
+    "glossy"
+  ],
+  "views_per_case": 96,
+  "parent_receipts_sha256": {
+    "experiments/staged_reconstruction/S1_rgb_plane_warp/v1/inference.json": "68487037b322fa3311bcded06c96038154fbcee49c0bdaa63671e5787b4a3680"
+  },
+  "candidate_membership": "all fixed D6 UV, current depth from D6 updated; exact rows and unaccepted depths retained; no point growth or pruning",
+  "input_boundary": "D6 saved UV/original/updated/coefficients/slope_admitted/eligible plus original train RGB/cameras/times and original six source lists; no evaluator or aligned prior assets",
+  "source_anchor_views": "exactly first4 of original6 fitting sources; final2 held sources never queried for transport hypotheses",
+  "source_anchor_query": "project current D6 reference world point into each fitting source using original project_torch2px geometry margins; nearest pixel torch.round, require positive original D1 source depth and saved D6 slope_admitted and eligible at that UV",
+  "source_anchor_check_unchanged": "source original D1 5x5 even/odd fit/held each>=6, rank3, fit/held/center max depth residual<=0.02, original plane validity; reuse saved audited D6 admission, do not loosen or refit against GT",
+  "source_plane": "source saved coefficients a,b and original D1 center depth; inverse depth=1/original_source_depth+a*du+b*dv; transform plane normal and source anchor to world space",
+  "transport": "intersect reference ray with source plane; positive finite reference camera depth and induced reference inverse-depth slope; all25 reference support depths within original camera-derived near/far",
+  "source_footprint": "project intersection into originating source, require original geometry margin and abs(projected_u-anchor_u)<=2 and abs(projected_v-anchor_v)<=2, the original5x5 half-width",
+  "numerical_parallel_or_zero_normal_tolerance": 1e-08,
+  "target_own_slope_admission_required_for_external_hypothesis": false,
+  "incumbent_plane": "at current D6 target depth, original target D1 slope if finite and25-depth plane-valid; otherwise zero slope; a comparison hypothesis, never trusted normal",
+  "matcher": "unchanged frozen D6 raw RGB warped_cost and plane_support, same5x5, geometry/texture/chroma/numeric constants; same new cost on incumbent and transported hypotheses with their own slopes",
+  "proposal": "best finite plane-valid hypothesis among at most4 fitting-source planes, minimize same best3/4 fit; stable original source-order tie; no original192-grid search or extra refinement",
+  "fit_sources": "unchanged first4 of original6, best3 mean",
+  "held_sources": "unchanged last2 of original6, acceptance evidence not independent GT",
+  "acceptance": "finite positive different proposed depth; fit_new<=fit_old+1e-6; both finite held_new<=held_old+1e-6; at least one held_new<held_old-1e-6; invalid/absent/rejected retains original D6 depth",
+  "hypothesis_budget_is_object_count": false,
+  "source_planes_are_static_GT_normals_or_physical_correspondence": false,
+  "GT_reads_during_inference": false,
+  "Gaussian_training_in_this_stage": false,
+  "normal_optimization_or_random_bank_or_threshold_sweep": false,
+  "controls": "same fixed D5/D6 A_fractional/B_integer/C_slanted cameras/K/texture/UV and2..6 range; source input planes derived from analytic fixture depths only, current target depth4.8; no control plane used in dataset, record all results without selecting a candidate",
+  "before_full_inference": "geometry/coordinate transport/parallel/behind-camera/footprint/default-off/gradients/acceptance tests, source/train-only input freeze, independent complete4 vs2+2 recovery for both conditions including parent/source-plane lookup/coefficients/costs/acceptance/unchanged depths",
+  "numeric_parent": "D6 current saved depth, local inference result retained for research only, not approved for Gaussian training",
+  "numeric_improvement_gate_both_cases": {
+    "all_supported_static_depth_MAE_relative_max": 0.95,
+    "gross_error_or_no_static_fraction_relative_max": 0.95,
+    "visible_thin_depth_MAE_and_P90_no_increase": true,
+    "accurate_visible_static_and_thin_ray_coverage_no_decrease": true,
+    "exact_membership_preservation_required": true
+  },
+  "follow_on_Gaussian_protocol_evidence_gate_both_cases": {
+    "supported_static_depth_MAE_max": 0.02,
+    "gross_error_gt_005_or_no_static_fraction_max": 0.02,
+    "accurate_visible_static_ray_005_coverage_min": 0.75,
+    "accurate_visible_thin_ray_002_coverage_min": 0.5,
+    "no_admission_from_partial_mean_improvement": true,
+    "separate_native_gradient_flags_off_full_Adam_RNG_camera_recovery_protocol_required": true
+  },
+  "evaluation": "all original rows and full visible/static-thin denominators; thin intersects observed static visible; MAE/P90/gross or no static/accurate coverage; all192 parent/source-plane/admission/acceptance/hash replay and fixed0/24/72 full raw RGB replay; actually view fixed raw RGB and errors; source anchors remain uncertain",
+  "no_PIDG_frozen_source_historical_weight_identity_or_material_change": true,
+  "no_Gaussian_or_real_continuation_from_this_protocol": true
+}
