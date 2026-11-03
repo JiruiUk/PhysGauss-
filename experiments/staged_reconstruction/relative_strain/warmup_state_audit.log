@@ -1,0 +1,7 @@
+W1103 23:34:14.060000 281660 envs\pidg-cu128\Lib\site-packages\torch\utils\cpp_extension.py:466] Error checking compiler version for cl: 'cp1' codec can't decode bytes in position 0--1: No mapping for the Unicode character exists in the target code page.
+ninja: no work to do.
+F:\A_Edinburgh\PhysGauss\variants\color_repair\code\hashencoder\hashgrid.py:16: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.half)
+F:\A_Edinburgh\PhysGauss\variants\color_repair\code\hashencoder\hashgrid.py:56: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+RELATIVE_STRAIN_STATE_AUDIT_PASSED {'strain': {'actual_optimizer_updates': 16000, 'physics_calls': 0, 'checkpoint_sha256': 'ab8a5c64d8ae9671ea23028beb3cba1612a79a7f4caddd424a1254a9f9c773d7', 'original_initial_state_preserved_and_sampler_exact': True, 'static_frozen': True}}

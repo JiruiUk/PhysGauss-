@@ -1,0 +1,73 @@
+{
+  "checkpoints": {
+    "I8": {
+      "path": "runs/pidg_staged_reconstruction/covariance_transport/formal/transport/checkpoint.pt",
+      "sha256": "f7ce6470086cf441515fca27a0eda50d1b8079d3576ff5448086e53557133903"
+    },
+    "I9": {
+      "path": "runs/pidg_staged_reconstruction/relative_strain/formal/strain/checkpoint.pt",
+      "sha256": "ab8a5c64d8ae9671ea23028beb3cba1612a79a7f4caddd424a1254a9f9c773d7"
+    }
+  },
+  "actual_warmup_updates_each": 16000,
+  "physics_calls_each": 0,
+  "extended_initial_model_and_optimizer_exact": true,
+  "same_optimizer_groups_sampler_resolution_and_Python_NumPy_CPU_CUDA_rng": true,
+  "inputs": {
+    "I8/c188_t43": {
+      "path": "output/staged_reconstruction/covariance_transport/warmup/fixed188_t0043_native.png",
+      "sha256": "63f251fd391ba45f709ea746f9042e1695c2d5affc938a0c7c6c796b5baa3988"
+    },
+    "I9/c188_t43": {
+      "path": "output/staged_reconstruction/relative_strain/warmup/fixed188_t0043_native.png",
+      "sha256": "e88f917890903674f4b0443ee42a02615431aae096f69a1bd592b81b1e401120"
+    },
+    "I8/c188_t146": {
+      "path": "output/staged_reconstruction/covariance_transport/warmup/fixed188_t0146_native.png",
+      "sha256": "00244c444309522807827273e1ca716f073265f186eae0a63636b5672a210ac2"
+    },
+    "I9/c188_t146": {
+      "path": "output/staged_reconstruction/relative_strain/warmup/fixed188_t0146_native.png",
+      "sha256": "85948b714dba00f274ef21042b4a2c9c25a7869910453480d6f64edce3c4516e"
+    },
+    "I8/c86_t86": {
+      "path": "output/staged_reconstruction/covariance_transport/warmup/fixed86_t0086_native.png",
+      "sha256": "f3cccbac37f6d5c84133f3558da82d8c2042afb08995bb50721b72a7adc4e4e1"
+    },
+    "I9/c86_t86": {
+      "path": "output/staged_reconstruction/relative_strain/warmup/fixed86_t0086_native.png",
+      "sha256": "3b5d6f13cffa5cbfdc0b49b476ff659aded8172ad0f1feb7efa8efedc3c0341b"
+    }
+  },
+  "common_crop_per_row": {
+    "c188_t43": [
+      423,
+      44,
+      1167,
+      818
+    ],
+    "c188_t146": [
+      423,
+      67,
+      1167,
+      818
+    ],
+    "c86_t86": [
+      323,
+      163,
+      1213,
+      804
+    ]
+  },
+  "original_native_images_preserved": true,
+  "outputs_sha256": {
+    "output/staged_reconstruction/relative_strain/compare_warmup16000/c188_t146.png": "932879739cbfac1930ca1347e7e008152bf2aff5e539f63738c684ae8ba32d6b",
+    "output/staged_reconstruction/relative_strain/compare_warmup16000/c188_t43.png": "fdc56fe304b46d39d9355117325be831d46a72cdfbb6815645c151e4c0d878bf",
+    "output/staged_reconstruction/relative_strain/compare_warmup16000/c86_t86.png": "ac6191a149ba28aa3933b90c19a317a31e9c1ec2a82096cc8208ae6709bf16eb",
+    "output/staged_reconstruction/relative_strain/compare_warmup16000/comparison.png": "d0db489d524bded05a7eafe09e6e3bdc7fbfe4ddee8549f10ec0cf3cc2725a44"
+  },
+  "script_sha256": "318905bb8a7b059cfdf2dc70415802de8272ce6399f04d92c7798b43359b02b3",
+  "optimizer_updates_by_diagnostic": 0,
+  "test_RGB_read": false,
+  "scope": "One matched run per arm; both failed original static-preservation admission. No successful completeness claim."
+}

@@ -1,0 +1,20 @@
+{
+  "passed": false,
+  "numeric_gates": {
+    "dynamic_PSNR": true,
+    "dynamic_alpha": true,
+    "static_preservation": false
+  },
+  "metrics": {
+    "PSNR": 24.688757514953615,
+    "dynamic_PSNR": 22.94633191426595,
+    "dynamic_alpha": 0.9636900107065837,
+    "static_PSNR": 31.89493064880371,
+    "static_alpha": 0.9973318974177042,
+    "background_alpha": 0.011947531858459115,
+    "dynamic_leakage_on_static": 0.031006958428770305
+  },
+  "static_only_PSNR": 35.64381631215414,
+  "native_images_reviewed": false,
+  "admission_scope": "Conditional original6k physics comparison only; no geometry success claim"
+}

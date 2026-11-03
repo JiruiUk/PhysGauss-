@@ -1,0 +1,42 @@
+{
+  "checkpoint_sha256": "ab8a5c64d8ae9671ea23028beb3cba1612a79a7f4caddd424a1254a9f9c773d7",
+  "native_images_reviewed": true,
+  "actually_inspected_native_images": {
+    "output/staged_reconstruction/relative_strain/warmup/fixed188_t0043_native.png": {
+      "sha256": "e88f917890903674f4b0443ee42a02615431aae096f69a1bd592b81b1e401120",
+      "observation": "Large hollow/missing surfaces, flattened separate lobes and detached upper fragments."
+    },
+    "output/staged_reconstruction/relative_strain/warmup/fixed188_t0146_native.png": {
+      "sha256": "85948b714dba00f274ef21042b4a2c9c25a7869910453480d6f64edce3c4516e",
+      "observation": "Major hollow/missing surfaces and detached flattened support persist."
+    },
+    "output/staged_reconstruction/relative_strain/warmup/fixed86_t0086_native.png": {
+      "sha256": "3b5d6f13cffa5cbfdc0b49b476ff659aded8172ad0f1feb7efa8efedc3c0341b",
+      "observation": "Upper hollow sheets/fragments and stretched or blurred support; object completeness fails."
+    }
+  },
+  "actually_inspected_comparison": {
+    "path": "output/staged_reconstruction/relative_strain/compare_warmup16000/comparison.png",
+    "sha256": "d0db489d524bded05a7eafe09e6e3bdc7fbfe4ddee8549f10ec0cf3cc2725a44"
+  },
+  "all_exported_native_images_sha256": {
+    "output/staged_reconstruction/relative_strain/warmup/fixed188_t0002_native.png": "475ac522d91686344e6cecb04216b4abe59a46e4ac628a9846baaa101eb8688a",
+    "output/staged_reconstruction/relative_strain/warmup/fixed188_t0043_native.png": "e88f917890903674f4b0443ee42a02615431aae096f69a1bd592b81b1e401120",
+    "output/staged_reconstruction/relative_strain/warmup/fixed188_t0086_native.png": "df513d1620e3071629e08ff102c2d7ba44c7b5319969d00bc771cf02809f8322",
+    "output/staged_reconstruction/relative_strain/warmup/fixed188_t0146_native.png": "85948b714dba00f274ef21042b4a2c9c25a7869910453480d6f64edce3c4516e",
+    "output/staged_reconstruction/relative_strain/warmup/fixed188_t0200_native.png": "66df1fdace2a176f4a2e0d4bfc8f01dddcd81f6eb485f89c13c26dd9a0568be9",
+    "output/staged_reconstruction/relative_strain/warmup/fixed86_t0002_native.png": "c8dd9fb7211cbf57b495056f08a10c56440a4d3fc1c703a96f318a21dde3d7e7",
+    "output/staged_reconstruction/relative_strain/warmup/fixed86_t0043_native.png": "10858c07d5854ff78e87b234c2de75006e77870a6831f971253dd88b2e1c0dc2",
+    "output/staged_reconstruction/relative_strain/warmup/fixed86_t0086_native.png": "3b5d6f13cffa5cbfdc0b49b476ff659aded8172ad0f1feb7efa8efedc3c0341b",
+    "output/staged_reconstruction/relative_strain/warmup/fixed86_t0146_native.png": "dff5b27e9578a03b41fd32e66f3eddbd29dd1f18d1be90432bfa1dcdc16d64e8",
+    "output/staged_reconstruction/relative_strain/warmup/fixed86_t0200_native.png": "fd0768aaa98647c5ff979cc5257c659b59cf90ff51c17eb80e0956e281124fba"
+  },
+  "visual_completeness_passed": false,
+  "failed_numerical_admission_preserved": true,
+  "admission_sha256": "eeab8afd77d52eea99b958bb76d5a1b904426b53ff4ff34bf00d1c4450dd9357",
+  "formal_physics_admitted": false,
+  "six_camera_nine_time_screen_completed": false,
+  "full1200_acceptance_scan_completed": false,
+  "test_RGB_read": false,
+  "original_thresholds_changed": false
+}
