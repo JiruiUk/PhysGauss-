@@ -1,0 +1,38 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "F:\A_Edinburgh\PhysGauss\variants\staged_reconstruction\joint_revocation_audit\worker.py", line 210, in <module>
+    main()
+  File "F:\A_Edinburgh\PhysGauss\variants\staged_reconstruction\joint_revocation_audit\worker.py", line 149, in main
+    renderer, scene, lineage = load_scene(protocol)
+                               ^^^^^^^^^^^^^^^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\variants\staged_reconstruction\joint_revocation_audit\worker.py", line 25, in load_scene
+    renderer = setup()
+               ^^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\variants\staged_reconstruction\train_static.py", line 28, in setup
+    from gaussian_renderer import render
+  File "F:\A_Edinburgh\PhysGauss\variants\color_repair\code\gaussian_renderer\__init__.py", line 4, in <module>
+    from scene_PIDG.gaussian_model import GaussianModel
+  File "F:\A_Edinburgh\PhysGauss\variants\color_repair\code\scene_PIDG\__init__.py", line 8, in <module>
+    from scene_PIDG.deform_model import DeformModel
+  File "F:\A_Edinburgh\PhysGauss\variants\color_repair\code\scene_PIDG\deform_model.py", line 4, in <module>
+    from scene_PIDG.network import DeformNetwork, Grid4D
+  File "F:\A_Edinburgh\PhysGauss\variants\color_repair\code\scene_PIDG\network.py", line 5, in <module>
+    from hashencoder.hashgrid import HashEncoder
+  File "F:\A_Edinburgh\PhysGauss\variants\color_repair\code\hashencoder\__init__.py", line 1, in <module>
+    from .hashgrid import HashEncoder
+  File "F:\A_Edinburgh\PhysGauss\variants\color_repair\code\hashencoder\hashgrid.py", line 12, in <module>
+    from .backend import _backend
+  File "F:\A_Edinburgh\PhysGauss\variants\color_repair\code\hashencoder\backend.py", line 10, in <module>
+    _backend = load(name='_hash_encoder',
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\envs\pidg-cu128\Lib\site-packages\torch\utils\cpp_extension.py", line 1681, in load
+    return _jit_compile(
+           ^^^^^^^^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\envs\pidg-cu128\Lib\site-packages\torch\utils\cpp_extension.py", line 2138, in _jit_compile
+    _write_ninja_file_and_build_library(
+  File "F:\A_Edinburgh\PhysGauss\envs\pidg-cu128\Lib\site-packages\torch\utils\cpp_extension.py", line 2248, in _write_ninja_file_and_build_library
+    verify_ninja_availability()
+  File "F:\A_Edinburgh\PhysGauss\envs\pidg-cu128\Lib\site-packages\torch\utils\cpp_extension.py", line 2309, in verify_ninja_availability
+    raise RuntimeError("Ninja is required to load C++ extensions (pip install ninja to get it)")
+RuntimeError: Ninja is required to load C++ extensions (pip install ninja to get it)

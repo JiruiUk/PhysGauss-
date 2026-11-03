@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "F:\A_Edinburgh\PhysGauss\variants\staged_reconstruction\joint_revocation_audit\preflight.py", line 56, in <module>
+    main()
+  File "F:\A_Edinburgh\PhysGauss\variants\staged_reconstruction\joint_revocation_audit\preflight.py", line 25, in main
+    assert result.returncode == 0, 'Preserve failed preflight '+str(log)
+           ^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Preserve failed preflight F:\A_Edinburgh\PhysGauss\experiments\staged_reconstruction\S1_joint_revocation_audit\v1\20261103T230351Z_preflight_0.log

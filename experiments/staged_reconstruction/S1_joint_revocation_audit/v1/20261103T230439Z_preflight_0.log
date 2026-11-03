@@ -1,0 +1,25 @@
+W1103 23:04:45.699000 292504 envs\pidg-cu128\Lib\site-packages\torch\utils\cpp_extension.py:466] Error checking compiler version for cl: 'cp1' codec can't decode bytes in position 0--1: No mapping for the Unicode character exists in the target code page.
+ninja: no work to do.
+F:\A_Edinburgh\PhysGauss\variants\color_repair\code\hashencoder\hashgrid.py:16: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.half)
+F:\A_Edinburgh\PhysGauss\variants\color_repair\code\hashencoder\hashgrid.py:56: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+J0_GRADIENT preflight_0 0 0.009049171581864357 {'static_opacity': 9.828741644415525e-05, 'static_SH_dc': 0.0002208776188367721, 'static_SH_rest': 0.0008554553103416079, 'canonical_xyz': 0.006808080263980729, 'grids': 0.0008197479296387505, 'deformation_network': 0.06132401511875589}
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "F:\A_Edinburgh\PhysGauss\variants\staged_reconstruction\joint_revocation_audit\worker.py", line 210, in <module>
+    main()
+  File "F:\A_Edinburgh\PhysGauss\variants\staged_reconstruction\joint_revocation_audit\worker.py", line 184, in main
+    imported = runtime_sources()
+               ^^^^^^^^^^^^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\variants\staged_reconstruction\joint_revocation_audit\worker.py", line 119, in runtime_sources
+    result[path.relative_to(ROOT).as_posix()] = sha(path)
+                                                ^^^^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\variants\staged_reconstruction\prepare_data.py", line 17, in sha
+    with Path(path).open('rb') as stream:
+         ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\envs\pidg-cu128\Lib\pathlib.py", line 1044, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'F:\\A_Edinburgh\\PhysGauss\\_ops.py'
