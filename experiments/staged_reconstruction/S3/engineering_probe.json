@@ -1,0 +1,104 @@
+{
+  "passed": true,
+  "not_formal_training_or_S2_admission": true,
+  "source_smoke_checkpoint_sha256": "faf31f165d92c7d0296ce482b005a24c75c35b052a46e58c0ebc188a36388cbd",
+  "source_smoke_step": 80,
+  "physics_gradient_L1": {
+    "fields": 0.0053382059767450585,
+    "deformation": 0.0007559236331218244,
+    "grid": 0.00035938801090651395,
+    "canonical": 0.0007957426569191739
+  },
+  "raw_terms": {
+    "kinematic": 0.0010384774443722993,
+    "CMR": 0.12802182664028813
+  },
+  "static_tensors_unchanged": true,
+  "static_physics_samples": 0,
+  "cross_object_neighbors": 0,
+  "no_body_force_contact_or_constitutive_loss": true,
+  "independent_velocity_and_predicted_stress_preserved": true,
+  "actual_time": "(original_frame-1)/199, gaps determined by metadata; physical acquisition seconds unavailable",
+  "diagnostics": [
+    {
+      "object": 0,
+      "time_interval": [
+        0.0,
+        0.005025125628140704,
+        0.010050251256281407
+      ],
+      "nodes": 495,
+      "anchors": 16,
+      "valid_fraction": 1.0,
+      "velocity_trajectory_RMS": 0.054041775366856226,
+      "CMR_RMS": 0.4834454920391654,
+      "trajectory_acceleration_RMS": 0.5750373073702897,
+      "independent_acceleration_RMS": 0.0037714684528666236,
+      "stress_pred_RMS": 0.061528321355581284,
+      "stress_divergence_RMS": 0.032816279243558705,
+      "rate_divergence_RMS": 0.4821764966914592,
+      "time_units": "sequence normalized; acquisition seconds unknown",
+      "not_independent_GT": true
+    },
+    {
+      "object": 1,
+      "time_interval": [
+        0.0,
+        0.005025125628140704,
+        0.010050251256281407
+      ],
+      "nodes": 468,
+      "anchors": 16,
+      "valid_fraction": 1.0,
+      "velocity_trajectory_RMS": 0.04018728678414267,
+      "CMR_RMS": 0.4528906748801164,
+      "trajectory_acceleration_RMS": 0.11217412874597377,
+      "independent_acceleration_RMS": 0.008615233959298809,
+      "stress_pred_RMS": 0.0994582548737526,
+      "stress_divergence_RMS": 0.02280588164120948,
+      "rate_divergence_RMS": 0.4560257549307125,
+      "time_units": "sequence normalized; acquisition seconds unknown",
+      "not_independent_GT": true
+    },
+    {
+      "object": 2,
+      "time_interval": [
+        0.0,
+        0.005025125628140704,
+        0.010050251256281407
+      ],
+      "nodes": 470,
+      "anchors": 16,
+      "valid_fraction": 1.0,
+      "velocity_trajectory_RMS": 0.04507050295114283,
+      "CMR_RMS": 0.43489099044259955,
+      "trajectory_acceleration_RMS": 0.3812318810492437,
+      "independent_acceleration_RMS": 0.03454088360824565,
+      "stress_pred_RMS": 0.0695040374994278,
+      "stress_divergence_RMS": 0.054342039463677175,
+      "rate_divergence_RMS": 0.44900630216405846,
+      "time_units": "sequence normalized; acquisition seconds unknown",
+      "not_independent_GT": true
+    },
+    {
+      "object": 3,
+      "time_interval": [
+        0.0,
+        0.005025125628140704,
+        0.010050251256281407
+      ],
+      "nodes": 521,
+      "anchors": 16,
+      "valid_fraction": 1.0,
+      "velocity_trajectory_RMS": 0.04172454690990355,
+      "CMR_RMS": 0.642869524868314,
+      "trajectory_acceleration_RMS": 0.6635398690543296,
+      "independent_acceleration_RMS": 0.013021120463069233,
+      "stress_pred_RMS": 0.1054232269525528,
+      "stress_divergence_RMS": 0.03412917897727845,
+      "rate_divergence_RMS": 0.6395625332586928,
+      "time_units": "sequence normalized; acquisition seconds unknown",
+      "not_independent_GT": true
+    }
+  ]
+}
