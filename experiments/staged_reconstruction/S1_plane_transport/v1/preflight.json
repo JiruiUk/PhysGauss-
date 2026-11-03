@@ -1,0 +1,114 @@
+{
+  "passed": true,
+  "separate_processes": 3,
+  "both_conditions": true,
+  "views_per_condition": 4,
+  "complete_slope_cost_acceptance_and_depth_recovery": true,
+  "checked": {
+    "diffuse/0": {
+      "full_sha256": "e9c71028bb2be7a0c42c04f99cf5f8284a073f1a4744ba6c5ed2c5d1006879ec",
+      "resumed_sha256": "e9c71028bb2be7a0c42c04f99cf5f8284a073f1a4744ba6c5ed2c5d1006879ec",
+      "all_arrays_exact": true,
+      "candidates": 2953
+    },
+    "diffuse/1": {
+      "full_sha256": "af34b4cec58486ab69d8128ec371772055db61f6af0c8bcab8ca24c0cc92ef20",
+      "resumed_sha256": "af34b4cec58486ab69d8128ec371772055db61f6af0c8bcab8ca24c0cc92ef20",
+      "all_arrays_exact": true,
+      "candidates": 4373
+    },
+    "diffuse/2": {
+      "full_sha256": "817ddd4c1d3022b00b45c024b4fc86c15d2ee99df744327df69c1e97878d681e",
+      "resumed_sha256": "817ddd4c1d3022b00b45c024b4fc86c15d2ee99df744327df69c1e97878d681e",
+      "all_arrays_exact": true,
+      "candidates": 4413
+    },
+    "diffuse/3": {
+      "full_sha256": "f83c59b7e66e2f2b64e7393ff82266c99b93aefa2e7e3e246a2ef0580d2a94ef",
+      "resumed_sha256": "f83c59b7e66e2f2b64e7393ff82266c99b93aefa2e7e3e246a2ef0580d2a94ef",
+      "all_arrays_exact": true,
+      "candidates": 4326
+    },
+    "glossy/0": {
+      "full_sha256": "8fff4e04d5619a3ca85777af5b1cc75b7cb53fa731c7444ab2f2e046d7c3d424",
+      "resumed_sha256": "8fff4e04d5619a3ca85777af5b1cc75b7cb53fa731c7444ab2f2e046d7c3d424",
+      "all_arrays_exact": true,
+      "candidates": 2968
+    },
+    "glossy/1": {
+      "full_sha256": "5d803acf355fb67683dd4230e62d653e4ab49e40509d1c1739a28827b15ea351",
+      "resumed_sha256": "5d803acf355fb67683dd4230e62d653e4ab49e40509d1c1739a28827b15ea351",
+      "all_arrays_exact": true,
+      "candidates": 4371
+    },
+    "glossy/2": {
+      "full_sha256": "594f6db821732c79b01147379b01bdf1bcc7ebd1b02b7fe219764c342eec1ec4",
+      "resumed_sha256": "594f6db821732c79b01147379b01bdf1bcc7ebd1b02b7fe219764c342eec1ec4",
+      "all_arrays_exact": true,
+      "candidates": 4410
+    },
+    "glossy/3": {
+      "full_sha256": "c694a2a991ec026bff541e44200be1f746caccc3793883af492a6f045dcba0ad",
+      "resumed_sha256": "c694a2a991ec026bff541e44200be1f746caccc3793883af492a6f045dcba0ad",
+      "all_arrays_exact": true,
+      "candidates": 4330
+    }
+  },
+  "commands": [
+    {
+      "command": [
+        "F:\\A_Edinburgh\\PhysGauss\\envs\\pidg-cu128\\python.exe",
+        "-u",
+        "-m",
+        "variants.staged_reconstruction.plane_transport.infer",
+        "--enable-plane-transport",
+        "--preflight-directory",
+        "full",
+        "--first",
+        "0",
+        "--last",
+        "4"
+      ],
+      "log": "experiments/staged_reconstruction/S1_plane_transport/v1/20261103T223419Z_preflight_full_0_4.log",
+      "sha256": "b444989e4687b806ae2a62a4b1b0edac111cd55dbd1e2e47a5a499eccb956126"
+    },
+    {
+      "command": [
+        "F:\\A_Edinburgh\\PhysGauss\\envs\\pidg-cu128\\python.exe",
+        "-u",
+        "-m",
+        "variants.staged_reconstruction.plane_transport.infer",
+        "--enable-plane-transport",
+        "--preflight-directory",
+        "split",
+        "--first",
+        "0",
+        "--last",
+        "2"
+      ],
+      "log": "experiments/staged_reconstruction/S1_plane_transport/v1/20261103T223419Z_preflight_split_0_2.log",
+      "sha256": "4872da7bf41490f31b1d384eaaf09695c99d7954a124a23e8a7ed09590d98729"
+    },
+    {
+      "command": [
+        "F:\\A_Edinburgh\\PhysGauss\\envs\\pidg-cu128\\python.exe",
+        "-u",
+        "-m",
+        "variants.staged_reconstruction.plane_transport.infer",
+        "--enable-plane-transport",
+        "--preflight-directory",
+        "split",
+        "--first",
+        "2",
+        "--last",
+        "4"
+      ],
+      "log": "experiments/staged_reconstruction/S1_plane_transport/v1/20261103T223419Z_preflight_split_2_4.log",
+      "sha256": "054b8aed90d47798e35a29454f48ae3c85e68f575e8ab4e5e11018417776334e"
+    }
+  ],
+  "GT_read": false,
+  "Gaussian_Adam_RNG_camera_recovery_claim": false,
+  "source_freeze_sha256": "84d3730388d9cbe319b037527bdb9f926eea0fa0b6b34cd2a57629ef522ae29a",
+  "controls_sha256": "21af00ae87468a956f3b5fbf02f29da779f52523ff0b377c6aeb1d92ff5bc8cf"
+}
