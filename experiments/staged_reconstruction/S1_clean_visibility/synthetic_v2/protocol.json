@@ -1,0 +1,20 @@
+{
+  "stage": "Independent RGB-to-geometry admission audit, not full Gaussian training",
+  "revision": 2,
+  "depth_samples": 192,
+  "pixel_chunk": 512,
+  "uniqueness_margin": 0.012,
+  "photometric_cost_limit": 0.28,
+  "depth_relative_tolerance": 0.025,
+  "reprojection_limit_px": 1.5,
+  "depth_consistent_sources": 2,
+  "minimum_source_span": 20,
+  "reservoir_voxel_spacing": 0.025,
+  "minimum_contradiction_views": 3,
+  "contradiction_fraction": 0.6,
+  "depth_absolute_tolerance": 0.05,
+  "minimum_contradiction_time_span": 20,
+  "evaluation_distance_tolerance": 0.05,
+  "planar_completion": false,
+  "training_input_contract": "Only96 train RGB/camera/time per case; evaluator-only files cannot be read by inference. No static colors/alpha/object-count or GT geometry. Thresholds inherited unchanged; no result tuning."
+}

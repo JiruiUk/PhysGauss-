@@ -1,5 +1,22 @@
 # PIDG repository map — M0
 
+## Opt-in literature-guided dynamic integrity (2026-11-03)
+
+`variants/staged_reconstruction/motion_integrity/core.py` constructs frozen
+maximum-trajectory-distance mutual neighborhoods and a robust, rotation-invariant
+local strain prior. `prepare.py` audits the exact S3-U final6k parent using only
+training times. No graph edge is certified as physical/material correspondence.
+`train.py` reuses UnionScene, full Adam/RNG/camera state, inherited reconstruction
+and original guarded kinematic/CMR terms; only its opt-in I1 arm adds the prior.
+`preflight.py` checks flags-off native/loss/gradient parity, actual100-step smokes
+and independent-process40/80 recovery. `evaluate.py` renders native1600 fixed
+cameras/time combinations, full RGB and dynamic-only alpha, reports descriptive
+shape proxies separately from validation appearance, and does not read test RGB
+for iterative selection. Reports: experiments/staged_reconstruction/motion_integrity.
+No original PIDG file, constitutive model, force, material segmentation, object
+count or topology is changed. This is a reconstruction-prior branch, not a new
+physics milestone or admission of the failed surface-trajectory observation set.
+
 ## Opt-in cross-temporal static confidence pilot (S1-CT, 2026-11-03)
 
 `variants/staged_reconstruction/cross_temporal_static/prepare.py` combines
@@ -762,3 +779,14 @@ quarantined static rows with the same native objective and camera sequence.
 iteration/sampler recovery. `evaluate` uses common frozen proxy masks, native
 PNGs/PLY and decoded fixed-camera/original-trajectory videos. Baseline entry
 points, renderer, physics fields and historical sources remain unchanged.
+
+## Independent RGB admission audit (2026-11-03)
+
+`variants/staged_reconstruction/synthetic_audit` ray traces a controlled static,
+transient and glossy scene with independently varied camera/time. `input.load`
+accepts only RGB/calibration/time; generated static RGB/depth/normal/visibility
+are isolated under evaluation_only. `infer` reuses frozen native-branch MVS
+functions and conditional ray quarantine without GT; `evaluate` independently
+scores surface precision and visible/thin surface coverage. This is a point
+admission audit, not a full Gaussian training or PIDG physics reproduction.
+Data/input/source checksums and sparse-v1/dense-v2 sampling reasons are retained.

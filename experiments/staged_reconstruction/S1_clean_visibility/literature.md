@@ -62,3 +62,28 @@ promotion if apparent cleanup removes structure. Preserve negative results.
 No clean-static claim follows from deleting points, increasing alpha, unchanged
 fixed-time output, or self-selected PSNR. Historical baselines remain frozen;
 material/constitutive/contact/force extensions are outside this effort.
+
+## Result-driven decision after C1
+
+Real matched continuation did not clean native artifacts: CT inferred validation
+25.7836/control vs25.7377/quarantine. Independent RGB-derived point admission
+precision improved81.9%→86.1% with visible-surface coverage about99.4%, but this
+is not full Gaussian training. Existing surface SH contamination is the next
+mechanism to test rather than repeating point deletion.
+
+Read [DeSplat method and appendix](https://arxiv.org/html/2411.19756v2),
+sections3.1 andB.3: shared static and per-view nuisance Gaussians are rendered
+separately and alpha composited. Only the selected view nuisance set updates;
+alpha regularizers discourage explaining everything as nuisance. Our next
+bounded adaptation must preserve the native PIDG renderer and unified physical
+dynamic pool. Its background is black/infinite, so a global static-alpha-one
+prior would create false geometry; restrict structural support to independently
+inferred reliable regions. Test full-RGB control versus the same objective with
+per-view nuisance, with no semantic labels, body count, growth or weight sweep.
+Nuisance masks are appearance explanations, not dynamic IDs or force fields.
+
+First require full Gaussian synthetic training and evaluator-only static/depth
+checks. Then run one matched real pilot from the preserved complete parent,
+with full-state recovery and unchanged camera sequence, rendering static-only,
+nuisance and composite outputs separately. Reject improved composite fitting
+if thin/static surfaces disappear. No improvement is claimed in advance.

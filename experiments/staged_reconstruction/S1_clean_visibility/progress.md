@@ -66,3 +66,13 @@ visibility not promoted. Frozen CT val25.7836/control vs25.7377/visibility;
 new val22.0890 vs22.0206. Three videos decode200 frames, PLY exact.
 See v1/assessment.md. Synthetic RGB admission audit is now running separately;
 next single candidate is nuisance separation, not stronger deletion.
+
+## Independent admission audit completed
+
+v1 sparse calibration gate failed0/24; retained. v2 has96 train RGB/camera/time
+per case, all six-source gates passed before inference. Independent static GT
+scores: precision81.9%→86.1%, surface coverage about99.4%, thin coverage100%.
+Only RGB-to-geometry admission has been tested, not complete Gaussian training.
+7 mechanism tests and source/train/evaluator-file hash checks passed.
+See synthetic_v2/assessment.md. Next is one per-view nuisance separation pilot,
+first with full Gaussian synthetic validation; do not repeat C1 continuation.

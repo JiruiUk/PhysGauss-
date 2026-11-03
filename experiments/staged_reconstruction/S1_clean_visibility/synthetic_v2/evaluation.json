@@ -1,0 +1,50 @@
+{
+  "independent_analytic_static_GT": true,
+  "GT_never_loaded_by_RGB_inference": true,
+  "complete_Gaussian_training": false,
+  "point_admission_audit_only": true,
+  "coverage_contract": "Recall of camera-visible static surface samples voxelized at0.015; tolerance0.05 scene units. This is not recall of entirely invisible surfaces.",
+  "results": {
+    "diffuse": {
+      "unfiltered": {
+        "points": 36704,
+        "surface_precision": 0.8191205318221447,
+        "surface_coverage": 0.9944622034127234,
+        "thin_surface_coverage": 1.0,
+        "median_point_to_surface_distance": 0.018031465310864435,
+        "mean_clipped_reference_distance": 0.013305374929926358
+      },
+      "quarantine": {
+        "points": 34733,
+        "surface_precision": 0.8610255376731063,
+        "surface_coverage": 0.9942145783620728,
+        "thin_surface_coverage": 1.0,
+        "median_point_to_surface_distance": 0.016634664966111826,
+        "mean_clipped_reference_distance": 0.013325145466970022
+      },
+      "reference_voxels": 44422,
+      "thin_reference_voxels": 8234
+    },
+    "glossy": {
+      "unfiltered": {
+        "points": 36758,
+        "surface_precision": 0.818570107187551,
+        "surface_coverage": 0.994709828463374,
+        "thin_surface_coverage": 1.0,
+        "median_point_to_surface_distance": 0.018007885469540862,
+        "mean_clipped_reference_distance": 0.013296569914635549
+      },
+      "quarantine": {
+        "points": 34777,
+        "surface_precision": 0.8605975213503178,
+        "surface_coverage": 0.9944622034127234,
+        "thin_surface_coverage": 1.0,
+        "median_point_to_surface_distance": 0.01661329001091304,
+        "mean_clipped_reference_distance": 0.01331708786501791
+      },
+      "reference_voxels": 44422,
+      "thin_reference_voxels": 8234
+    }
+  },
+  "inference_manifest_sha256": "fc0554e03fe18191ca60943515176f477480b5039fda72068f70ca044648ad9a"
+}
