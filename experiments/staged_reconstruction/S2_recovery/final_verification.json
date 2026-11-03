@@ -1,0 +1,41 @@
+{
+  "status": "completed_failed_static_and_object_preservation",
+  "admitted": false,
+  "iteration": 16000,
+  "checkpoint_sha256": "66c2fcbcc3ce8c2b5420473257565bfbc264fe8ed87fc9536b329a344971ee66",
+  "validation_metrics": {
+    "PSNR": 27.239120801289875,
+    "dynamic_PSNR": 25.08640562693278,
+    "dynamic_alpha": 0.9849881092707317,
+    "static_PSNR": 31.334950574239095,
+    "static_alpha": 0.9974088132381439,
+    "composite_dynamic_region_alpha": 0.9910384098688761,
+    "dynamic_leakage_on_static": 0.049647461824739975,
+    "background_alpha": 0.015254520997405051
+  },
+  "test_metrics": {
+    "PSNR": 27.308407402038576,
+    "dynamic_PSNR": 25.242479820251464,
+    "dynamic_alpha": 0.9850391101837158,
+    "static_PSNR": 31.411190299987794,
+    "static_alpha": 0.9974098026752471,
+    "composite_dynamic_region_alpha": 0.9913638579845429,
+    "dynamic_leakage_on_static": 0.04934655260760337,
+    "background_alpha": 0.01494790927739814
+  },
+  "gates": {
+    "dynamic_PSNR": true,
+    "dynamic_only_alpha": true,
+    "static_PSNR_drop": false
+  },
+  "static_PSNR_drop": 4.308865737915042,
+  "native_images_reviewed": true,
+  "source_freezes_passed": true,
+  "optimizer_state_count": 88,
+  "optimizer_steps": [
+    16000
+  ],
+  "manual_review_scope": "Nine observed-camera native frames and fixed86/fixed188/original native2/86/188 image panels; each200-frame video decoded, not manually watched every frame",
+  "physical_reidentification_after_ambiguity": "unknown",
+  "next_candidate": "S2_geometry_recovery"
+}
