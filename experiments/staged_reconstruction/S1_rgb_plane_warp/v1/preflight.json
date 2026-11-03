@@ -1,0 +1,114 @@
+{
+  "passed": true,
+  "separate_processes": 3,
+  "both_conditions": true,
+  "views_per_condition": 4,
+  "complete_slope_cost_acceptance_and_depth_recovery": true,
+  "checked": {
+    "diffuse/0": {
+      "full_sha256": "39425a9fb467ae95684b4d58ddb67937976de400e25ffee53325bf22a8fd0596",
+      "resumed_sha256": "39425a9fb467ae95684b4d58ddb67937976de400e25ffee53325bf22a8fd0596",
+      "all_arrays_exact": true,
+      "candidates": 2953
+    },
+    "diffuse/1": {
+      "full_sha256": "6eab307084e4aaa792904470a26783a3b67f217d12330b18a4f245038fda971d",
+      "resumed_sha256": "6eab307084e4aaa792904470a26783a3b67f217d12330b18a4f245038fda971d",
+      "all_arrays_exact": true,
+      "candidates": 4373
+    },
+    "diffuse/2": {
+      "full_sha256": "0a5f4b09aeba82546f68a1e1ec5724140235b18120c14279681d4af164c9ebc7",
+      "resumed_sha256": "0a5f4b09aeba82546f68a1e1ec5724140235b18120c14279681d4af164c9ebc7",
+      "all_arrays_exact": true,
+      "candidates": 4413
+    },
+    "diffuse/3": {
+      "full_sha256": "7303c60306bef8a11dd9a593b684d09255f02a55cf2d87b22567514f10f595b3",
+      "resumed_sha256": "7303c60306bef8a11dd9a593b684d09255f02a55cf2d87b22567514f10f595b3",
+      "all_arrays_exact": true,
+      "candidates": 4326
+    },
+    "glossy/0": {
+      "full_sha256": "eed55e4b918a04adad3e13d0c6bb89b9af0b19fb1c90899693e2b2afd367938c",
+      "resumed_sha256": "eed55e4b918a04adad3e13d0c6bb89b9af0b19fb1c90899693e2b2afd367938c",
+      "all_arrays_exact": true,
+      "candidates": 2968
+    },
+    "glossy/1": {
+      "full_sha256": "4d710301065c265db823723c5a811c2530711eaff919190546de43ca37917414",
+      "resumed_sha256": "4d710301065c265db823723c5a811c2530711eaff919190546de43ca37917414",
+      "all_arrays_exact": true,
+      "candidates": 4371
+    },
+    "glossy/2": {
+      "full_sha256": "6378cdcb834e3e0c702862e6524f20ab45d80b8e6ac1367fe91b24dd0b3e65b7",
+      "resumed_sha256": "6378cdcb834e3e0c702862e6524f20ab45d80b8e6ac1367fe91b24dd0b3e65b7",
+      "all_arrays_exact": true,
+      "candidates": 4410
+    },
+    "glossy/3": {
+      "full_sha256": "f591c378cca95bb6dc2d577533f0758c69b34967853d4831b21f235af69c729e",
+      "resumed_sha256": "f591c378cca95bb6dc2d577533f0758c69b34967853d4831b21f235af69c729e",
+      "all_arrays_exact": true,
+      "candidates": 4330
+    }
+  },
+  "commands": [
+    {
+      "command": [
+        "F:\\A_Edinburgh\\PhysGauss\\envs\\pidg-cu128\\python.exe",
+        "-u",
+        "-m",
+        "variants.staged_reconstruction.rgb_plane_warp.infer",
+        "--enable-rgb-plane-warp",
+        "--preflight-directory",
+        "full",
+        "--first",
+        "0",
+        "--last",
+        "4"
+      ],
+      "log": "experiments/staged_reconstruction/S1_rgb_plane_warp/v1/20261103T221131Z_preflight_full_0_4.log",
+      "sha256": "3d4971fe8ab5b71d9cb8ad79a5e98916a026999233b605fef594c4a1365bc591"
+    },
+    {
+      "command": [
+        "F:\\A_Edinburgh\\PhysGauss\\envs\\pidg-cu128\\python.exe",
+        "-u",
+        "-m",
+        "variants.staged_reconstruction.rgb_plane_warp.infer",
+        "--enable-rgb-plane-warp",
+        "--preflight-directory",
+        "split",
+        "--first",
+        "0",
+        "--last",
+        "2"
+      ],
+      "log": "experiments/staged_reconstruction/S1_rgb_plane_warp/v1/20261103T221131Z_preflight_split_0_2.log",
+      "sha256": "4e58ad05527cdb80969f7c49a9da2bf36431587b66284764644f03629e5819ad"
+    },
+    {
+      "command": [
+        "F:\\A_Edinburgh\\PhysGauss\\envs\\pidg-cu128\\python.exe",
+        "-u",
+        "-m",
+        "variants.staged_reconstruction.rgb_plane_warp.infer",
+        "--enable-rgb-plane-warp",
+        "--preflight-directory",
+        "split",
+        "--first",
+        "2",
+        "--last",
+        "4"
+      ],
+      "log": "experiments/staged_reconstruction/S1_rgb_plane_warp/v1/20261103T221131Z_preflight_split_2_4.log",
+      "sha256": "c837ecb42fb2b8508e2d10314996a60ca0822788d250d2933fd0a4c4d18882b9"
+    }
+  ],
+  "GT_read": false,
+  "Gaussian_Adam_RNG_camera_recovery_claim": false,
+  "source_freeze_sha256": "3fbc1cb12072030d011bd9d9223f2923163d8ee3c030a5664f9cd203ba0d0e9c",
+  "controls_sha256": "a2e89c841b43de65e8b9544be7fc47daae8cfc11fc30f2a0feabbf0ae8ac443a"
+}
