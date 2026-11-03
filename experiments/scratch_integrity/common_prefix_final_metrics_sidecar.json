@@ -1,0 +1,94 @@
+{
+  "checkpoint_sha256": "db9560a4e6a62324bb98933da2ec6d21949bdb8619111b939382f80af9c6bb21",
+  "iteration": 15000,
+  "config": {
+    "enabled": true,
+    "parent_run": "",
+    "pixel_loss": "l1",
+    "structure": "ssim",
+    "perceptual_weight": 0.02,
+    "perceptual_interval": 4,
+    "timeline": "frame_index",
+    "shared_physics_time": true,
+    "kinematic_weight": 0.0,
+    "isotropic_weight": 0.0,
+    "isotropic_scope": "rendered",
+    "isotropic_eps": 1e-08,
+    "isotropic_start": 0,
+    "engineering_smoke": false,
+    "allow_initial_capture": true,
+    "mask_weight": 0.03,
+    "affine_weight": 0.0,
+    "coverage_density": false,
+    "affine_start": 3000,
+    "affine_ramp": 2000,
+    "affine_interval": 10,
+    "affine_samples": 128,
+    "affine_radius": 0.05,
+    "coverage_start": 16000,
+    "coverage_until": 36000,
+    "coverage_sample_interval": 20,
+    "coverage_window": 2000,
+    "coverage_min_views": 3,
+    "coverage_add_limit": 256,
+    "coverage_max_points": 200000,
+    "positive_color": true,
+    "color_beta": 5.0,
+    "mask_start": 3000,
+    "mask_ramp": 2000,
+    "foreground_rgb_weight": 0.1,
+    "ack_unsegmented_affine": false,
+    "clone_color_std_max": 0.15,
+    "centroid_weight": 0.0
+  },
+  "best": {
+    "PSNR": {
+      "value": 33.17782745361328,
+      "iteration": 15000,
+      "snapshot": "best",
+      "metrics": {
+        "PSNR": 33.17782745361328,
+        "SSIM": 0.9858156740665436,
+        "LPIPS": 0.02286329036578536,
+        "MS-SSIM": 0.9894221663475037
+      },
+      "selection_split": "validation"
+    },
+    "SSIM": {
+      "value": 0.9858156740665436,
+      "iteration": 15000,
+      "snapshot": "metric_ssim",
+      "metrics": {
+        "PSNR": 33.17782745361328,
+        "SSIM": 0.9858156740665436,
+        "LPIPS": 0.02286329036578536,
+        "MS-SSIM": 0.9894221663475037
+      },
+      "selection_split": "validation"
+    },
+    "LPIPS": {
+      "value": 0.02286329036578536,
+      "iteration": 15000,
+      "snapshot": "metric_lpips",
+      "metrics": {
+        "PSNR": 33.17782745361328,
+        "SSIM": 0.9858156740665436,
+        "LPIPS": 0.02286329036578536,
+        "MS-SSIM": 0.9894221663475037
+      },
+      "selection_split": "validation"
+    },
+    "MS-SSIM": {
+      "value": 0.9894221663475037,
+      "iteration": 15000,
+      "snapshot": "metric_ms_ssim",
+      "metrics": {
+        "PSNR": 33.17782745361328,
+        "SSIM": 0.9858156740665436,
+        "LPIPS": 0.02286329036578536,
+        "MS-SSIM": 0.9894221663475037
+      },
+      "selection_split": "validation"
+    }
+  }
+}

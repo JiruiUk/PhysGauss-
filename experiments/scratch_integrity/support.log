@@ -1,0 +1,30 @@
+W1103 04:17:58.602000 259160 envs\pidg-cu128\Lib\site-packages\torch\utils\cpp_extension.py:466] Error checking compiler version for cl: 'cp1' codec can't decode bytes in position 0--1: No mapping for the Unicode character exists in the target code page.
+ninja: no work to do.
+F:\A_Edinburgh\PhysGauss\variants\association_training\code\hashencoder\hashgrid.py:16: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.half)
+F:\A_Edinburgh\PhysGauss\variants\association_training\code\hashencoder\hashgrid.py:56: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+common_prefix support 15 / 120 frame 26 0.6324845519264861
+common_prefix support 30 / 120 frame 50 0.49367984650215174
+common_prefix support 45 / 120 frame 75 0.24043400120300085
+common_prefix support 60 / 120 frame 100 0.0
+common_prefix support 75 / 120 frame 126 0.0
+common_prefix support 90 / 120 frame 150 0.0
+common_prefix support 105 / 120 frame 175 0.0
+common_prefix support 120 / 120 frame 200 0.0
+S0_scratch_control support 15 / 120 frame 26 0.5470329439838894
+S0_scratch_control support 30 / 120 frame 50 0.4589355625577713
+S0_scratch_control support 45 / 120 frame 75 0.19795709634432335
+S0_scratch_control support 60 / 120 frame 100 0.0
+S0_scratch_control support 75 / 120 frame 126 0.0
+S0_scratch_control support 90 / 120 frame 150 0.0
+S0_scratch_control support 105 / 120 frame 175 0.0
+S0_scratch_control support 120 / 120 frame 200 0.0
+S1_scratch_transfer support 15 / 120 frame 26 0.5693601941553696
+S1_scratch_transfer support 30 / 120 frame 50 0.45649973678943634
+S1_scratch_transfer support 45 / 120 frame 75 0.21361398458133354
+S1_scratch_transfer support 60 / 120 frame 100 0.0
+S1_scratch_transfer support 75 / 120 frame 126 0.0
+S1_scratch_transfer support 90 / 120 frame 150 0.0
+S1_scratch_transfer support 105 / 120 frame 175 0.0
+S1_scratch_transfer support 120 / 120 frame 200 0.0

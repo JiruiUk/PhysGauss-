@@ -1,0 +1,25 @@
+{
+  "reviewed_artifacts": {
+    "native_inspection_fixed86.png": "29a2481db3037f69db625de6df9ea3a57047814b784bacb71b5db6b6fdf8ccde",
+    "native_crop_fixed86_t2.png": "014e2826c4981dbb1b5634a7747d39e3b657e18676ef7a38e3f6333f354dd8b9",
+    "native_crop_fixed86_t86.png": "80b04c9c0f1746d36865f7af74e85611c1401a4d0e7296ee5938a74507e88f2d",
+    "native_crop_fixed86_t200.png": "839eac04b4b44e10013350f34c1e5bba2d8fb3d89255955da3024eeca1bb2878",
+    "fixed_0002_comparison_t0086.png": "6b6609b7de5f4746f6c607c48a57468919dc317a8c4978374a445db80e5c788f",
+    "fixed_0188_comparison_t0086.png": "2ff2dc7d9b5db1d75b987164efc2fbbb7629361c170bdfa96016aec99e162c45",
+    "moving_control_comparison_t0002.png": "f5256c883413683eb105d6b10b4bb7961a66b2a999a6f19e42e3275c323b1f0a",
+    "fixed_0086_comparison_RGB_alpha.decoded_contact.png": "fc60dd723834f4188b548ccbf09b8855c6489a5bddec58bf779553b822d69b60"
+  },
+  "finding": "Local geometry constraints improved substantially, but fixed-view fragmentation remains visually similar and late own early-bank support remains negligible; no physical identity recovery demonstrated.",
+  "finding_zh": "局部几何约束明显改善，固定视角碎裂与遮挡后身份保留仍无明显改善。",
+  "native_pixel_crop": [
+    600,
+    220,
+    1250,
+    800
+  ],
+  "decoded_video_contact_inspected": true,
+  "physical_ID_confirmed": false,
+  "blue_structure_review": "Streaking and layered surfaces remain away from the observed diagonal; no clear matched-arm repair.",
+  "yellow_appearance_review": "Incomplete thin yellow fragments persist in novel camera-time combinations; the observed-camera controls remain coherent.",
+  "review_scope": "Native crops at fixed86 times2/86/200, fixed2/188 time86, moving time2, and fixed86 decoded contact at2/27/43/74/86/108/172/200; no claim of manual inspection of every frame."
+}

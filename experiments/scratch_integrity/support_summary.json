@@ -1,0 +1,59 @@
+{
+  "models": {
+    "common_prefix": {
+      "early": {
+        "samples": 16,
+        "early_bank_alpha_share_on_any_duck_mean": 0.6646798098836821
+      },
+      "middle": {
+        "samples": 87,
+        "early_bank_alpha_share_on_any_duck_mean": 0.15455353320907153
+      },
+      "late": {
+        "samples": 17,
+        "early_bank_alpha_share_on_any_duck_mean": 1.951477375993502e-07
+      },
+      "physical_ID_verified_after_occlusion": false
+    },
+    "S0_scratch_control": {
+      "early": {
+        "samples": 16,
+        "early_bank_alpha_share_on_any_duck_mean": 0.5579927311716246
+      },
+      "middle": {
+        "samples": 87,
+        "early_bank_alpha_share_on_any_duck_mean": 0.14291096960779875
+      },
+      "late": {
+        "samples": 17,
+        "early_bank_alpha_share_on_any_duck_mean": 1.9431445343846574e-07
+      },
+      "physical_ID_verified_after_occlusion": false
+    },
+    "S1_scratch_transfer": {
+      "early": {
+        "samples": 16,
+        "early_bank_alpha_share_on_any_duck_mean": 0.5831234632755273
+      },
+      "middle": {
+        "samples": 87,
+        "early_bank_alpha_share_on_any_duck_mean": 0.14885417107957777
+      },
+      "late": {
+        "samples": 17,
+        "early_bank_alpha_share_on_any_duck_mean": 0.0
+      },
+      "physical_ID_verified_after_occlusion": false
+    }
+  },
+  "own_fresh_binding_sha256": "2116433681160f388945069adf0c4eb252f82f9fd2682165fef7bf7cf7aba35e",
+  "own_early_bank_count": 1789,
+  "own_group_counts": [
+    316,
+    226,
+    210,
+    1037
+  ],
+  "adapter_sha256": "7f330e9cda528152ab44c945e56b15d86cb539b207494396cefe01359849fe5d",
+  "limitation": "Partial own early-bank visible support, not physical identity; unknown cross-gap associations remain unknown"
+}

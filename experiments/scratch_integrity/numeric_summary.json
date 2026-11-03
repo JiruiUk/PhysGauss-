@@ -1,0 +1,1343 @@
+{
+  "models": {
+    "C1_original_50k": {
+      "val": {
+        "PSNR": 39.66487045288086,
+        "SSIM": 0.9942710737387339,
+        "LPIPS": 0.01471468888533612,
+        "MS-SSIM": 0.9961092332998912,
+        "blue_PSNR": 36.25271466573079,
+        "duck_PSNR": 27.41117788950602,
+        "blue_alpha_below09": 0.0021221115127337243,
+        "duck_alpha_below09": 0.0147152692939045
+      },
+      "test": {
+        "PSNR": 40.3721049118042,
+        "SSIM": 0.994675669670105,
+        "LPIPS": 0.013975673392415046,
+        "MS-SSIM": 0.9965464746952057,
+        "blue_PSNR": 37.00371059417725,
+        "duck_PSNR": 27.9783162689209,
+        "blue_alpha_below09": 0.0020429194750775266,
+        "duck_alpha_below09": 0.014201216609904675
+      }
+    },
+    "S0_scratch_control": {
+      "val": {
+        "PSNR": 40.46634979248047,
+        "SSIM": 0.994605952501297,
+        "LPIPS": 0.013619159068912267,
+        "MS-SSIM": 0.9964217364788055,
+        "blue_PSNR": 37.231343523661295,
+        "duck_PSNR": 27.71105168660482,
+        "blue_alpha_below09": 0.0017955728388118083,
+        "duck_alpha_below09": 0.015408419535129577
+      },
+      "test": {
+        "PSNR": 40.84751247406006,
+        "SSIM": 0.9949532628059388,
+        "LPIPS": 0.012947915899567307,
+        "MS-SSIM": 0.9968204569816589,
+        "blue_PSNR": 37.599155311584475,
+        "duck_PSNR": 28.116185569763182,
+        "blue_alpha_below09": 0.001653294342558152,
+        "duck_alpha_below09": 0.014713662578198106
+      },
+      "constraints": {
+        "static_position": 0.10840377996986111,
+        "static_covariance": 0.15303592719137668,
+        "static_anchor": 0.4494462897380193,
+        "track_reprojection": 0.0031399316241731865,
+        "local_shape": 0.35387344943980376,
+        "static_displacement_RMS": 0.21430725523581107,
+        "static_anchor_distance": 0.4793735588590304,
+        "track_EPE_400": 1.8039152577519417
+      }
+    },
+    "S1_scratch_transfer": {
+      "val": {
+        "PSNR": 40.4330872853597,
+        "SSIM": 0.9945837100346883,
+        "LPIPS": 0.013693613093346357,
+        "MS-SSIM": 0.9963962296644847,
+        "blue_PSNR": 37.15925381978353,
+        "duck_PSNR": 27.717396227518716,
+        "blue_alpha_below09": 0.0017638122212369968,
+        "duck_alpha_below09": 0.015368082602947308
+      },
+      "test": {
+        "PSNR": 40.82045166015625,
+        "SSIM": 0.9949272394180297,
+        "LPIPS": 0.012984466892667114,
+        "MS-SSIM": 0.9967863535881043,
+        "blue_PSNR": 37.59350875854492,
+        "duck_PSNR": 28.11264389038086,
+        "blue_alpha_below09": 0.0016744414573656606,
+        "duck_alpha_below09": 0.014966514460738932
+      },
+      "constraints": {
+        "static_position": 0.09116647457703948,
+        "static_covariance": 0.14239792414009572,
+        "static_anchor": 0.13557010733832917,
+        "track_reprojection": 0.00014826031704918326,
+        "local_shape": 0.0033808872337891907,
+        "static_displacement_RMS": 0.19041551301876705,
+        "static_anchor_distance": 0.16305571949730316,
+        "track_EPE_400": 0.2800053563589851
+      }
+    },
+    "common_prefix": {
+      "constraints": {
+        "static_position": 0.1053552300358812,
+        "static_covariance": 0.09749056535462539,
+        "static_anchor": 0.44107529471317924,
+        "track_reprojection": 0.000499030030012173,
+        "local_shape": 0.0007290079716123425,
+        "static_displacement_RMS": 0.20947341720263163,
+        "static_anchor_distance": 0.47090373833974203,
+        "track_EPE_400": 0.4555467356440696
+      }
+    }
+  },
+  "S1_minus_S0": {
+    "val": {
+      "PSNR": -0.03326250712077439,
+      "SSIM": -2.2242466608757283e-05,
+      "LPIPS": 7.445402443409001e-05,
+      "MS-SSIM": -2.5506814320785942e-05,
+      "blue_PSNR": -0.07208970387776503,
+      "duck_PSNR": 0.006344540913897134,
+      "blue_alpha_below09": -3.176061757481142e-05,
+      "duck_alpha_below09": -4.033693218226907e-05
+    },
+    "test": {
+      "PSNR": -0.027060813903808878,
+      "SSIM": -2.6023387909024365e-05,
+      "LPIPS": 3.655099309980703e-05,
+      "MS-SSIM": -3.410339355458536e-05,
+      "blue_PSNR": -0.005646553039554192,
+      "duck_PSNR": -0.003541679382323082,
+      "blue_alpha_below09": 2.1147114807508558e-05,
+      "duck_alpha_below09": 0.00025285188254082526
+    },
+    "constraints": {
+      "static_position": -0.01723730539282163,
+      "static_covariance": -0.010638003051280959,
+      "static_anchor": -0.3138761823996902,
+      "track_reprojection": -0.0029916713071240033,
+      "local_shape": -0.35049256220601455,
+      "static_displacement_RMS": -0.023891742217044015,
+      "static_anchor_distance": -0.3163178393617272,
+      "track_EPE_400": -1.5239099013929567
+    }
+  },
+  "shape": {
+    "C1_original_50k/fixed_0002": {
+      "all_alpha": {
+        "samples": 200,
+        "undefined_shape_samples": 0,
+        "small_island_fraction": {
+          "mean": 0.0003506196819308954,
+          "p95": 0.0017673752453467963,
+          "maximum": 0.003225354087785724,
+          "maximum_frame": 158
+        },
+        "thin_support_fraction": {
+          "mean": 0.014920518248711222,
+          "p95": 0.0277952823451947,
+          "maximum": 0.03690973074719699,
+          "maximum_frame": 90
+        },
+        "enclosed_hole_fraction": {
+          "mean": 0.016263452791373773,
+          "p95": 0.03570284173543148,
+          "maximum": 0.04124852420306966,
+          "maximum_frame": 96
+        },
+        "boundary_complexity": {
+          "mean": 10.484559695230642,
+          "p95": 19.921215286644216,
+          "maximum": 21.987304618842625,
+          "maximum_frame": 97
+        },
+        "area_mean": 9565.24,
+        "area_min": 7091,
+        "area_max": 13472
+      },
+      "yellow_appearance": {
+        "samples": 200,
+        "undefined_shape_samples": 0,
+        "small_island_fraction": {
+          "mean": 0.04469497943553547,
+          "p95": 0.1272816338073689,
+          "maximum": 0.2831050228310502,
+          "maximum_frame": 158
+        },
+        "thin_support_fraction": {
+          "mean": 0.22960365901189309,
+          "p95": 0.4894285327586385,
+          "maximum": 0.6048632218844985,
+          "maximum_frame": 150
+        },
+        "enclosed_hole_fraction": {
+          "mean": 0.0057274831412785525,
+          "p95": 0.02097790229265785,
+          "maximum": 0.057692307692307696,
+          "maximum_frame": 159
+        },
+        "boundary_complexity": {
+          "mean": 13.679107448931346,
+          "p95": 24.367074991007097,
+          "maximum": 28.609465517879745,
+          "maximum_frame": 77
+        },
+        "area_mean": 825.73,
+        "area_min": 195,
+        "area_max": 1708
+      },
+      "blue_appearance": {
+        "samples": 200,
+        "undefined_shape_samples": 0,
+        "small_island_fraction": {
+          "mean": 0.0020356910828485423,
+          "p95": 0.005587923736488904,
+          "maximum": 0.008900819440519922,
+          "maximum_frame": 198
+        },
+        "thin_support_fraction": {
+          "mean": 0.030814185908715475,
+          "p95": 0.04745066936405773,
+          "maximum": 0.05558226752572363,
+          "maximum_frame": 92
+        },
+        "enclosed_hole_fraction": {
+          "mean": 0.031973517341924,
+          "p95": 0.06493770820430735,
+          "maximum": 0.08494208494208494,
+          "maximum_frame": 94
+        },
+        "boundary_complexity": {
+          "mean": 14.417096947415933,
+          "p95": 24.487319756912385,
+          "maximum": 29.129428278093695,
+          "maximum_frame": 91
+        },
+        "area_mean": 7739.23,
+        "area_min": 5836,
+        "area_max": 10793
+      }
+    },
+    "C1_original_50k/fixed_0086": {
+      "all_alpha": {
+        "samples": 200,
+        "undefined_shape_samples": 0,
+        "small_island_fraction": {
+          "mean": 0.0015933081129309576,
+          "p95": 0.005480372656522625,
+          "maximum": 0.007141962160130309,
+          "maximum_frame": 199
+        },
+        "thin_support_fraction": {
+          "mean": 0.026178986377175972,
+          "p95": 0.049876529094483514,
+          "maximum": 0.059022118742724096,
+          "maximum_frame": 163
+        },
+        "enclosed_hole_fraction": {
+          "mean": 0.0050649119166709085,
+          "p95": 0.017878635216554837,
+          "maximum": 0.026878381974629648,
+          "maximum_frame": 68
+        },
+        "boundary_complexity": {
+          "mean": 22.160503983220664,
+          "p95": 31.243503546474376,
+          "maximum": 32.98289548799531,
+          "maximum_frame": 144
+        },
+        "area_mean": 10561.58,
+        "area_min": 7969,
+        "area_max": 13925
+      },
+      "yellow_appearance": {
+        "samples": 200,
+        "undefined_shape_samples": 0,
+        "small_island_fraction": {
+          "mean": 0.034027381654481687,
+          "p95": 0.09661721068249252,
+          "maximum": 0.15397350993377484,
+          "maximum_frame": 48
+        },
+        "thin_support_fraction": {
+          "mean": 0.28732760238784555,
+          "p95": 0.5195112068167083,
+          "maximum": 0.678125,
+          "maximum_frame": 53
+        },
+        "enclosed_hole_fraction": {
+          "mean": 0.013703310478271152,
+          "p95": 0.045105559883283325,
+          "maximum": 0.06098964326812428,
+          "maximum_frame": 65
+        },
+        "boundary_complexity": {
+          "mean": 22.47764930520939,
+          "p95": 35.107010071819,
+          "maximum": 38.80805385646215,
+          "maximum_frame": 25
+        },
+        "area_mean": 946.665,
+        "area_min": 536,
+        "area_max": 1506
+      },
+      "blue_appearance": {
+        "samples": 200,
+        "undefined_shape_samples": 0,
+        "small_island_fraction": {
+          "mean": 0.0044327655674575575,
+          "p95": 0.008995551033434659,
+          "maximum": 0.012912298644847865,
+          "maximum_frame": 109
+        },
+        "thin_support_fraction": {
+          "mean": 0.05372956894606782,
+          "p95": 0.0898508408862999,
+          "maximum": 0.10378864857018436,
+          "maximum_frame": 149
+        },
+        "enclosed_hole_fraction": {
+          "mean": 0.01898562835880182,
+          "p95": 0.07819964692681981,
+          "maximum": 0.09740429994756161,
+          "maximum_frame": 86
+        },
+        "boundary_complexity": {
+          "mean": 26.40735074027024,
+          "p95": 38.023691761081686,
+          "maximum": 39.99913823329915,
+          "maximum_frame": 3
+        },
+        "area_mean": 7888.285,
+        "area_min": 5940,
+        "area_max": 10655
+      }
+    },
+    "C1_original_50k/fixed_0188": {
+      "all_alpha": {
+        "samples": 200,
+        "undefined_shape_samples": 0,
+        "small_island_fraction": {
+          "mean": 0.0005787792560664419,
+          "p95": 0.00194080317430808,
+          "maximum": 0.002627341300110179,
+          "maximum_frame": 153
+        },
+        "thin_support_fraction": {
+          "mean": 0.0139205162083253,
+          "p95": 0.021626125784254192,
+          "maximum": 0.02454669859733151,
+          "maximum_frame": 141
+        },
+        "enclosed_hole_fraction": {
+          "mean": 0.007989931411849976,
+          "p95": 0.035896281203244354,
+          "maximum": 0.03714475652318431,
+          "maximum_frame": 2
+        },
+        "boundary_complexity": {
+          "mean": 13.047696851612763,
+          "p95": 22.855173456666865,
+          "maximum": 24.03381307566266,
+          "maximum_frame": 25
+        },
+        "area_mean": 11213.79,
+        "area_min": 8305,
+        "area_max": 13150
+      },
+      "yellow_appearance": {
+        "samples": 200,
+        "undefined_shape_samples": 0,
+        "small_island_fraction": {
+          "mean": 0.03295290582347837,
+          "p95": 0.11788778579116246,
+          "maximum": 0.13751263902932254,
+          "maximum_frame": 2
+        },
+        "thin_support_fraction": {
+          "mean": 0.2048272246958624,
+          "p95": 0.3593089982523719,
+          "maximum": 0.42105263157894735,
+          "maximum_frame": 123
+        },
+        "enclosed_hole_fraction": {
+          "mean": 0.01956625492399293,
+          "p95": 0.08439764629962133,
+          "maximum": 0.1413793103448276,
+          "maximum_frame": 113
+        },
+        "boundary_complexity": {
+          "mean": 22.012423975799628,
+          "p95": 36.46713164789741,
+          "maximum": 39.7019239858328,
+          "maximum_frame": 31
+        },
+        "area_mean": 1245.84,
+        "area_min": 780,
+        "area_max": 2032
+      },
+      "blue_appearance": {
+        "samples": 200,
+        "undefined_shape_samples": 0,
+        "small_island_fraction": {
+          "mean": 0.004663806988845984,
+          "p95": 0.00999863001239241,
+          "maximum": 0.016292068022356998,
+          "maximum_frame": 31
+        },
+        "thin_support_fraction": {
+          "mean": 0.04101503373901236,
+          "p95": 0.07121535145364233,
+          "maximum": 0.08081692195477753,
+          "maximum_frame": 50
+        },
+        "enclosed_hole_fraction": {
+          "mean": 0.008314522110631013,
+          "p95": 0.01895767155675306,
+          "maximum": 0.048464163822525594,
+          "maximum_frame": 98
+        },
+        "boundary_complexity": {
+          "mean": 16.517743546206077,
+          "p95": 26.365836997604077,
+          "maximum": 29.777151772744464,
+          "maximum_frame": 92
+        },
+        "area_mean": 8676.23,
+        "area_min": 6329,
+        "area_max": 10295
+      }
+    },
+    "C1_original_50k/moving_control": {
+      "all_alpha": {
+        "samples": 200,
+        "undefined_shape_samples": 0,
+        "small_island_fraction": {
+          "mean": 0.00046482989492972136,
+          "p95": 0.0014880334595081385,
+          "maximum": 0.002435064935064935,
+          "maximum_frame": 166
+        },
+        "thin_support_fraction": {
+          "mean": 0.006468724598788936,
+          "p95": 0.010971945118167492,
+          "maximum": 0.01415853266116057,
+          "maximum_frame": 83
+        },
+        "enclosed_hole_fraction": {
+          "mean": 0.0015341567358344733,
+          "p95": 0.007848606824427822,
+          "maximum": 0.05521002774854081,
+          "maximum_frame": 49
+        },
+        "boundary_complexity": {
+          "mean": 7.959657565520772,
+          "p95": 10.82838091786728,
+          "maximum": 11.50409105788131,
+          "maximum_frame": 84
+        },
+        "area_mean": 9742.75,
+        "area_min": 8202,
+        "area_max": 11438
+      },
+      "yellow_appearance": {
+        "samples": 200,
+        "undefined_shape_samples": 0,
+        "small_island_fraction": {
+          "mean": 0.00033612267099003746,
+          "p95": 0.0009930919177494426,
+          "maximum": 0.013798701298701298,
+          "maximum_frame": 73
+        },
+        "thin_support_fraction": {
+          "mean": 0.04994365664501146,
+          "p95": 0.0797227843443867,
+          "maximum": 0.09488448844884488,
+          "maximum_frame": 25
+        },
+        "enclosed_hole_fraction": {
+          "mean": 0.005198381132996183,
+          "p95": 0.015025761008854183,
+          "maximum": 0.03186907838070629,
+          "maximum_frame": 77
+        },
+        "boundary_complexity": {
+          "mean": 10.909866911196694,
+          "p95": 14.50450978785162,
+          "maximum": 15.713002590192044,
+          "maximum_frame": 15
+        },
+        "area_mean": 1183.685,
+        "area_min": 1005,
+        "area_max": 1347
+      },
+      "blue_appearance": {
+        "samples": 200,
+        "undefined_shape_samples": 0,
+        "small_island_fraction": {
+          "mean": 0.00030050564495963454,
+          "p95": 0.0018989596287099465,
+          "maximum": 0.004239683436970039,
+          "maximum_frame": 81
+        },
+        "thin_support_fraction": {
+          "mean": 0.0058761313181432085,
+          "p95": 0.01261560097758321,
+          "maximum": 0.014898065865133299,
+          "maximum_frame": 50
+        },
+        "enclosed_hole_fraction": {
+          "mean": 0.024677630567766163,
+          "p95": 0.09177510892229737,
+          "maximum": 0.10588555117575099,
+          "maximum_frame": 18
+        },
+        "boundary_complexity": {
+          "mean": 6.533749685567809,
+          "p95": 11.398400961319446,
+          "maximum": 12.02965194862752,
+          "maximum_frame": 84
+        },
+        "area_mean": 7696.405,
+        "area_min": 6530,
+        "area_max": 8545
+      }
+    },
+    "S0_scratch_control/fixed_0002": {
+      "all_alpha": {
+        "samples": 200,
+        "undefined_shape_samples": 0,
+        "small_island_fraction": {
+          "mean": 0.001518809971929384,
+          "p95": 0.004658731336046141,
+          "maximum": 0.010140500916310323,
+          "maximum_frame": 124
+        },
+        "thin_support_fraction": {
+          "mean": 0.018613410226016484,
+          "p95": 0.03677179595370208,
+          "maximum": 0.06032545176660973,
+          "maximum_frame": 98
+        },
+        "enclosed_hole_fraction": {
+          "mean": 0.011284991755307047,
+          "p95": 0.039029569416097636,
+          "maximum": 0.06296048225050234,
+          "maximum_frame": 93
+        },
+        "boundary_complexity": {
+          "mean": 9.960197982138471,
+          "p95": 20.291039557547116,
+          "maximum": 25.328273384944314,
+          "maximum_frame": 99
+        },
+        "area_mean": 9088.315,
+        "area_min": 6859,
+        "area_max": 11509
+      },
+      "yellow_appearance": {
+        "samples": 200,
+        "undefined_shape_samples": 0,
+        "small_island_fraction": {
+          "mean": 0.057930894210305964,
+          "p95": 0.15196555679745863,
+          "maximum": 0.2764227642276423,
+          "maximum_frame": 156
+        },
+        "thin_support_fraction": {
+          "mean": 0.22407383304755973,
+          "p95": 0.4174473067915689,
+          "maximum": 0.6191646191646192,
+          "maximum_frame": 92
+        },
+        "enclosed_hole_fraction": {
+          "mean": 0.0033117786539460753,
+          "p95": 0.01480955695887822,
+          "maximum": 0.038922155688622756,
+          "maximum_frame": 96
+        },
+        "boundary_complexity": {
+          "mean": 11.740162168753836,
+          "p95": 19.304742492575397,
+          "maximum": 22.52854459766094,
+          "maximum_frame": 87
+        },
+        "area_mean": 768.045,
+        "area_min": 321,
+        "area_max": 1431
+      },
+      "blue_appearance": {
+        "samples": 200,
+        "undefined_shape_samples": 0,
+        "small_island_fraction": {
+          "mean": 0.0018707530173991602,
+          "p95": 0.004968466906228989,
+          "maximum": 0.006567867969013136,
+          "maximum_frame": 148
+        },
+        "thin_support_fraction": {
+          "mean": 0.03247811420690115,
+          "p95": 0.049608131594573814,
+          "maximum": 0.057763797540749215,
+          "maximum_frame": 195
+        },
+        "enclosed_hole_fraction": {
+          "mean": 0.031373474171502595,
+          "p95": 0.06802373707778349,
+          "maximum": 0.09549308344489067,
+          "maximum_frame": 93
+        },
+        "boundary_complexity": {
+          "mean": 13.030298090169044,
+          "p95": 20.942626365389803,
+          "maximum": 29.39871321155658,
+          "maximum_frame": 93
+        },
+        "area_mean": 7578.395,
+        "area_min": 5876,
+        "area_max": 10268
+      }
+    },
+    "S0_scratch_control/fixed_0086": {
+      "all_alpha": {
+        "samples": 200,
+        "undefined_shape_samples": 0,
+        "small_island_fraction": {
+          "mean": 0.0028704132330265924,
+          "p95": 0.007559218160458576,
+          "maximum": 0.008879023307436182,
+          "maximum_frame": 172
+        },
+        "thin_support_fraction": {
+          "mean": 0.02640114695008302,
+          "p95": 0.04667354400510487,
+          "maximum": 0.05785123966942149,
+          "maximum_frame": 157
+        },
+        "enclosed_hole_fraction": {
+          "mean": 0.005028452451896442,
+          "p95": 0.015002904524609272,
+          "maximum": 0.0192064695476371,
+          "maximum_frame": 29
+        },
+        "boundary_complexity": {
+          "mean": 21.574893938540608,
+          "p95": 38.83843422526609,
+          "maximum": 40.725298504464945,
+          "maximum_frame": 1
+        },
+        "area_mean": 10347.36,
+        "area_min": 8658,
+        "area_max": 12686
+      },
+      "yellow_appearance": {
+        "samples": 200,
+        "undefined_shape_samples": 0,
+        "small_island_fraction": {
+          "mean": 0.09334132689588123,
+          "p95": 0.17795115332428757,
+          "maximum": 0.24123711340206186,
+          "maximum_frame": 159
+        },
+        "thin_support_fraction": {
+          "mean": 0.4460269239561778,
+          "p95": 0.6688540604825007,
+          "maximum": 0.8042553191489362,
+          "maximum_frame": 158
+        },
+        "enclosed_hole_fraction": {
+          "mean": 0.010319182876204864,
+          "p95": 0.026225350167314358,
+          "maximum": 0.044141252006420544,
+          "maximum_frame": 109
+        },
+        "boundary_complexity": {
+          "mean": 27.07496513015234,
+          "p95": 37.657648792225075,
+          "maximum": 40.099591095078374,
+          "maximum_frame": 1
+        },
+        "area_mean": 802.09,
+        "area_min": 470,
+        "area_max": 1235
+      },
+      "blue_appearance": {
+        "samples": 200,
+        "undefined_shape_samples": 0,
+        "small_island_fraction": {
+          "mean": 0.004728481909362619,
+          "p95": 0.009784196911234565,
+          "maximum": 0.01343408900083963,
+          "maximum_frame": 26
+        },
+        "thin_support_fraction": {
+          "mean": 0.04340520344027524,
+          "p95": 0.06750758900840644,
+          "maximum": 0.08251886675739206,
+          "maximum_frame": 145
+        },
+        "enclosed_hole_fraction": {
+          "mean": 0.023791860040489485,
+          "p95": 0.07307434867269631,
+          "maximum": 0.09528166252777415,
+          "maximum_frame": 86
+        },
+        "boundary_complexity": {
+          "mean": 24.659874673569647,
+          "p95": 38.109581308085204,
+          "maximum": 39.28742268612325,
+          "maximum_frame": 6
+        },
+        "area_mean": 8318.665,
+        "area_min": 6767,
+        "area_max": 10548
+      }
+    },
+    "S0_scratch_control/fixed_0188": {
+      "all_alpha": {
+        "samples": 200,
+        "undefined_shape_samples": 0,
+        "small_island_fraction": {
+          "mean": 0.0020636809981293656,
+          "p95": 0.007452191278974789,
+          "maximum": 0.00922509225092251,
+          "maximum_frame": 11
+        },
+        "thin_support_fraction": {
+          "mean": 0.02392723326389679,
+          "p95": 0.04948611121020154,
+          "maximum": 0.054456434852118304,
+          "maximum_frame": 19
+        },
+        "enclosed_hole_fraction": {
+          "mean": 0.008244289745475704,
+          "p95": 0.029826276482578705,
+          "maximum": 0.04728474086310138,
+          "maximum_frame": 48
+        },
+        "boundary_complexity": {
+          "mean": 17.757615421567817,
+          "p95": 38.090857874365334,
+          "maximum": 39.148663748265456,
+          "maximum_frame": 4
+        },
+        "area_mean": 10021.415,
+        "area_min": 8019,
+        "area_max": 11177
+      },
+      "yellow_appearance": {
+        "samples": 200,
+        "undefined_shape_samples": 0,
+        "small_island_fraction": {
+          "mean": 0.04077017457543894,
+          "p95": 0.0891209605461685,
+          "maximum": 0.14863258026159334,
+          "maximum_frame": 96
+        },
+        "thin_support_fraction": {
+          "mean": 0.2313774774286811,
+          "p95": 0.4404925745876624,
+          "maximum": 0.46284501061571126,
+          "maximum_frame": 21
+        },
+        "enclosed_hole_fraction": {
+          "mean": 0.009871843628043673,
+          "p95": 0.028611536064366224,
+          "maximum": 0.053125,
+          "maximum_frame": 25
+        },
+        "boundary_complexity": {
+          "mean": 21.170654160188718,
+          "p95": 36.456739004107426,
+          "maximum": 37.62659050773289,
+          "maximum_frame": 14
+        },
+        "area_mean": 1065.15,
+        "area_min": 775,
+        "area_max": 1453
+      },
+      "blue_appearance": {
+        "samples": 200,
+        "undefined_shape_samples": 0,
+        "small_island_fraction": {
+          "mean": 0.0030519596029025832,
+          "p95": 0.006752890008011904,
+          "maximum": 0.009183805458543526,
+          "maximum_frame": 4
+        },
+        "thin_support_fraction": {
+          "mean": 0.038695846793344826,
+          "p95": 0.06353564953653354,
+          "maximum": 0.08062813407231459,
+          "maximum_frame": 94
+        },
+        "enclosed_hole_fraction": {
+          "mean": 0.0109067040307738,
+          "p95": 0.043155848640448295,
+          "maximum": 0.06265508684863523,
+          "maximum_frame": 93
+        },
+        "boundary_complexity": {
+          "mean": 19.259994072540433,
+          "p95": 33.841028503969405,
+          "maximum": 39.72410475174208,
+          "maximum_frame": 93
+        },
+        "area_mean": 7878.11,
+        "area_min": 5824,
+        "area_max": 9142
+      }
+    },
+    "S0_scratch_control/moving_control": {
+      "all_alpha": {
+        "samples": 200,
+        "undefined_shape_samples": 0,
+        "small_island_fraction": {
+          "mean": 0.000320868777306406,
+          "p95": 0.0015744327831691796,
+          "maximum": 0.002015355086372361,
+          "maximum_frame": 99
+        },
+        "thin_support_fraction": {
+          "mean": 0.004879919209631591,
+          "p95": 0.008218106794062544,
+          "maximum": 0.01140863662078069,
+          "maximum_frame": 100
+        },
+        "enclosed_hole_fraction": {
+          "mean": 0.000829148607065293,
+          "p95": 0.0028446929071548567,
+          "maximum": 0.043714199577931864,
+          "maximum_frame": 50
+        },
+        "boundary_complexity": {
+          "mean": 7.197913677009987,
+          "p95": 9.46524376433081,
+          "maximum": 11.480952296623721,
+          "maximum_frame": 100
+        },
+        "area_mean": 9384.07,
+        "area_min": 7950,
+        "area_max": 10854
+      },
+      "yellow_appearance": {
+        "samples": 200,
+        "undefined_shape_samples": 0,
+        "small_island_fraction": {
+          "mean": 0.0007162394451709015,
+          "p95": 0.004490964846880007,
+          "maximum": 0.014964788732394365,
+          "maximum_frame": 61
+        },
+        "thin_support_fraction": {
+          "mean": 0.048749923576143654,
+          "p95": 0.08178988326848247,
+          "maximum": 0.11350293542074363,
+          "maximum_frame": 77
+        },
+        "enclosed_hole_fraction": {
+          "mean": 0.005094960674304809,
+          "p95": 0.017552079264640776,
+          "maximum": 0.03599374021909233,
+          "maximum_frame": 91
+        },
+        "boundary_complexity": {
+          "mean": 10.795811463914452,
+          "p95": 15.016164958247533,
+          "maximum": 16.583678330047405,
+          "maximum_frame": 15
+        },
+        "area_mean": 1180.045,
+        "area_min": 1013,
+        "area_max": 1312
+      },
+      "blue_appearance": {
+        "samples": 200,
+        "undefined_shape_samples": 0,
+        "small_island_fraction": {
+          "mean": 0.00016908746699729384,
+          "p95": 0.0008395523036790828,
+          "maximum": 0.004178072323872641,
+          "maximum_frame": 83
+        },
+        "thin_support_fraction": {
+          "mean": 0.006060899183288215,
+          "p95": 0.012904608147970977,
+          "maximum": 0.014989293361884369,
+          "maximum_frame": 2
+        },
+        "enclosed_hole_fraction": {
+          "mean": 0.02467830757347882,
+          "p95": 0.08712269267914953,
+          "maximum": 0.10587273470500068,
+          "maximum_frame": 17
+        },
+        "boundary_complexity": {
+          "mean": 6.571560673147994,
+          "p95": 11.47391746446278,
+          "maximum": 12.731044560174173,
+          "maximum_frame": 84
+        },
+        "area_mean": 7671.755,
+        "area_min": 6488,
+        "area_max": 8528
+      }
+    },
+    "S1_scratch_transfer/fixed_0002": {
+      "all_alpha": {
+        "samples": 200,
+        "undefined_shape_samples": 0,
+        "small_island_fraction": {
+          "mean": 0.001570477523674516,
+          "p95": 0.004145748715490636,
+          "maximum": 0.00651840490797546,
+          "maximum_frame": 127
+        },
+        "thin_support_fraction": {
+          "mean": 0.018813848018132885,
+          "p95": 0.039297120442632935,
+          "maximum": 0.056445120314876106,
+          "maximum_frame": 97
+        },
+        "enclosed_hole_fraction": {
+          "mean": 0.007703124587473693,
+          "p95": 0.031280450239195116,
+          "maximum": 0.05855666638662522,
+          "maximum_frame": 96
+        },
+        "boundary_complexity": {
+          "mean": 9.915129913603899,
+          "p95": 19.720931883274957,
+          "maximum": 24.494862601878037,
+          "maximum_frame": 97
+        },
+        "area_mean": 9072.665,
+        "area_min": 6846,
+        "area_max": 11336
+      },
+      "yellow_appearance": {
+        "samples": 200,
+        "undefined_shape_samples": 0,
+        "small_island_fraction": {
+          "mean": 0.0538433479753551,
+          "p95": 0.1676477541371158,
+          "maximum": 0.24786324786324787,
+          "maximum_frame": 156
+        },
+        "thin_support_fraction": {
+          "mean": 0.2315573851233644,
+          "p95": 0.3930489964580873,
+          "maximum": 0.6208053691275168,
+          "maximum_frame": 96
+        },
+        "enclosed_hole_fraction": {
+          "mean": 0.003004097787603769,
+          "p95": 0.012898263170002295,
+          "maximum": 0.05325443786982249,
+          "maximum_frame": 88
+        },
+        "boundary_complexity": {
+          "mean": 11.641706512624046,
+          "p95": 19.26984443192569,
+          "maximum": 21.664966628384256,
+          "maximum_frame": 82
+        },
+        "area_mean": 761.51,
+        "area_min": 298,
+        "area_max": 1408
+      },
+      "blue_appearance": {
+        "samples": 200,
+        "undefined_shape_samples": 0,
+        "small_island_fraction": {
+          "mean": 0.0017045151430330962,
+          "p95": 0.00441164761063079,
+          "maximum": 0.007112068965517242,
+          "maximum_frame": 107
+        },
+        "thin_support_fraction": {
+          "mean": 0.03164104859226315,
+          "p95": 0.04749839386777316,
+          "maximum": 0.053735117479717626,
+          "maximum_frame": 98
+        },
+        "enclosed_hole_fraction": {
+          "mean": 0.027559665645277995,
+          "p95": 0.057343636178327675,
+          "maximum": 0.09896907216494845,
+          "maximum_frame": 94
+        },
+        "boundary_complexity": {
+          "mean": 12.984595307871693,
+          "p95": 21.802195872352527,
+          "maximum": 28.860096347330355,
+          "maximum_frame": 93
+        },
+        "area_mean": 7547.875,
+        "area_min": 5897,
+        "area_max": 10123
+      }
+    },
+    "S1_scratch_transfer/fixed_0086": {
+      "all_alpha": {
+        "samples": 200,
+        "undefined_shape_samples": 0,
+        "small_island_fraction": {
+          "mean": 0.0031078613662495237,
+          "p95": 0.007595541823919437,
+          "maximum": 0.009843856076035303,
+          "maximum_frame": 170
+        },
+        "thin_support_fraction": {
+          "mean": 0.026472933896495503,
+          "p95": 0.0452698011922544,
+          "maximum": 0.06083314965836456,
+          "maximum_frame": 157
+        },
+        "enclosed_hole_fraction": {
+          "mean": 0.004137265246484281,
+          "p95": 0.01388257031848686,
+          "maximum": 0.02601414519144785,
+          "maximum_frame": 33
+        },
+        "boundary_complexity": {
+          "mean": 22.50917838581333,
+          "p95": 40.7184684783953,
+          "maximum": 42.005837570569405,
+          "maximum_frame": 1
+        },
+        "area_mean": 10322.665,
+        "area_min": 8586,
+        "area_max": 12396
+      },
+      "yellow_appearance": {
+        "samples": 200,
+        "undefined_shape_samples": 0,
+        "small_island_fraction": {
+          "mean": 0.09426535682129022,
+          "p95": 0.2059252284299365,
+          "maximum": 0.25443786982248523,
+          "maximum_frame": 184
+        },
+        "thin_support_fraction": {
+          "mean": 0.4518790701629099,
+          "p95": 0.7275070290534208,
+          "maximum": 0.8089668615984406,
+          "maximum_frame": 194
+        },
+        "enclosed_hole_fraction": {
+          "mean": 0.011186354178220557,
+          "p95": 0.029489248896881773,
+          "maximum": 0.04297520661157025,
+          "maximum_frame": 44
+        },
+        "boundary_complexity": {
+          "mean": 26.59517996406841,
+          "p95": 34.94006972399296,
+          "maximum": 36.332241916867645,
+          "maximum_frame": 20
+        },
+        "area_mean": 782.41,
+        "area_min": 436,
+        "area_max": 1232
+      },
+      "blue_appearance": {
+        "samples": 200,
+        "undefined_shape_samples": 0,
+        "small_island_fraction": {
+          "mean": 0.004261320584314769,
+          "p95": 0.009346970621715541,
+          "maximum": 0.011694278156759014,
+          "maximum_frame": 199
+        },
+        "thin_support_fraction": {
+          "mean": 0.04239597960874618,
+          "p95": 0.07257725450441395,
+          "maximum": 0.08741976893453145,
+          "maximum_frame": 147
+        },
+        "enclosed_hole_fraction": {
+          "mean": 0.020451465381630826,
+          "p95": 0.0643320449781924,
+          "maximum": 0.09555555555555556,
+          "maximum_frame": 86
+        },
+        "boundary_complexity": {
+          "mean": 25.074997187216812,
+          "p95": 37.23743982203301,
+          "maximum": 39.394780864078214,
+          "maximum_frame": 1
+        },
+        "area_mean": 8264.66,
+        "area_min": 6702,
+        "area_max": 10226
+      }
+    },
+    "S1_scratch_transfer/fixed_0188": {
+      "all_alpha": {
+        "samples": 200,
+        "undefined_shape_samples": 0,
+        "small_island_fraction": {
+          "mean": 0.0018711420711783216,
+          "p95": 0.005633107550209734,
+          "maximum": 0.007256324769562659,
+          "maximum_frame": 19
+        },
+        "thin_support_fraction": {
+          "mean": 0.023144599253648375,
+          "p95": 0.044158499815521425,
+          "maximum": 0.04709621496677261,
+          "maximum_frame": 10
+        },
+        "enclosed_hole_fraction": {
+          "mean": 0.008283176764035885,
+          "p95": 0.03167436568157942,
+          "maximum": 0.0426259173620187,
+          "maximum_frame": 46
+        },
+        "boundary_complexity": {
+          "mean": 17.92561744286088,
+          "p95": 36.602998569857384,
+          "maximum": 37.35877340194403,
+          "maximum_frame": 12
+        },
+        "area_mean": 10063.03,
+        "area_min": 8150,
+        "area_max": 11196
+      },
+      "yellow_appearance": {
+        "samples": 200,
+        "undefined_shape_samples": 0,
+        "small_island_fraction": {
+          "mean": 0.03821302174354033,
+          "p95": 0.0773956409237785,
+          "maximum": 0.09951456310679611,
+          "maximum_frame": 127
+        },
+        "thin_support_fraction": {
+          "mean": 0.22050818417530546,
+          "p95": 0.3618810313397941,
+          "maximum": 0.4229828850855746,
+          "maximum_frame": 102
+        },
+        "enclosed_hole_fraction": {
+          "mean": 0.010716907771615842,
+          "p95": 0.03614671023535977,
+          "maximum": 0.05810055865921788,
+          "maximum_frame": 115
+        },
+        "boundary_complexity": {
+          "mean": 21.32228397172914,
+          "p95": 34.867352913414514,
+          "maximum": 36.16392151352197,
+          "maximum_frame": 4
+        },
+        "area_mean": 1105.695,
+        "area_min": 816,
+        "area_max": 1440
+      },
+      "blue_appearance": {
+        "samples": 200,
+        "undefined_shape_samples": 0,
+        "small_island_fraction": {
+          "mean": 0.0033205075201022892,
+          "p95": 0.006655131411360031,
+          "maximum": 0.009606404269513008,
+          "maximum_frame": 18
+        },
+        "thin_support_fraction": {
+          "mean": 0.04040826017950911,
+          "p95": 0.06741061144891791,
+          "maximum": 0.10133689839572192,
+          "maximum_frame": 95
+        },
+        "enclosed_hole_fraction": {
+          "mean": 0.009075637437060535,
+          "p95": 0.04555716341402855,
+          "maximum": 0.052685421994884914,
+          "maximum_frame": 94
+        },
+        "boundary_complexity": {
+          "mean": 19.19848389638506,
+          "p95": 35.069768485322705,
+          "maximum": 44.74815891563105,
+          "maximum_frame": 94
+        },
+        "area_mean": 7871.77,
+        "area_min": 5915,
+        "area_max": 9170
+      }
+    },
+    "S1_scratch_transfer/moving_control": {
+      "all_alpha": {
+        "samples": 200,
+        "undefined_shape_samples": 0,
+        "small_island_fraction": {
+          "mean": 0.00029205872359856636,
+          "p95": 0.001511233670634024,
+          "maximum": 0.0018173122907699664,
+          "maximum_frame": 112
+        },
+        "thin_support_fraction": {
+          "mean": 0.004724949744011286,
+          "p95": 0.00798577690501157,
+          "maximum": 0.011111111111111112,
+          "maximum_frame": 100
+        },
+        "enclosed_hole_fraction": {
+          "mean": 0.0008653148972087378,
+          "p95": 0.00249418220706475,
+          "maximum": 0.046671380947570465,
+          "maximum_frame": 49
+        },
+        "boundary_complexity": {
+          "mean": 7.210552932975301,
+          "p95": 9.406820194264496,
+          "maximum": 11.465817331260942,
+          "maximum_frame": 100
+        },
+        "area_mean": 9392.4,
+        "area_min": 7942,
+        "area_max": 10882
+      },
+      "yellow_appearance": {
+        "samples": 200,
+        "undefined_shape_samples": 0,
+        "small_island_fraction": {
+          "mean": 0.0007579150205938802,
+          "p95": 0.0038978647551863974,
+          "maximum": 0.03571428571428571,
+          "maximum_frame": 77
+        },
+        "thin_support_fraction": {
+          "mean": 0.04937137532892608,
+          "p95": 0.08030982294013565,
+          "maximum": 0.09583660644147683,
+          "maximum_frame": 6
+        },
+        "enclosed_hole_fraction": {
+          "mean": 0.005215731902822866,
+          "p95": 0.018051333927823744,
+          "maximum": 0.035606060606060606,
+          "maximum_frame": 93
+        },
+        "boundary_complexity": {
+          "mean": 10.815806685888003,
+          "p95": 14.953057868677448,
+          "maximum": 16.31204902983597,
+          "maximum_frame": 15
+        },
+        "area_mean": 1179.03,
+        "area_min": 980,
+        "area_max": 1312
+      },
+      "blue_appearance": {
+        "samples": 200,
+        "undefined_shape_samples": 0,
+        "small_island_fraction": {
+          "mean": 0.00015020143315837224,
+          "p95": 0.0008511688581809215,
+          "maximum": 0.00304916783127938,
+          "maximum_frame": 101
+        },
+        "thin_support_fraction": {
+          "mean": 0.006031498997522106,
+          "p95": 0.01305106308228178,
+          "maximum": 0.01437308868501529,
+          "maximum_frame": 1
+        },
+        "enclosed_hole_fraction": {
+          "mean": 0.024484438295984,
+          "p95": 0.08692975641909234,
+          "maximum": 0.10537780803267528,
+          "maximum_frame": 18
+        },
+        "boundary_complexity": {
+          "mean": 6.565988625856359,
+          "p95": 11.417214795097806,
+          "maximum": 12.944915439333625,
+          "maximum_frame": 84
+        },
+        "area_mean": 7672.16,
+        "area_min": 6487,
+        "area_max": 8521
+      }
+    }
+  },
+  "support": {
+    "models": {
+      "common_prefix": {
+        "early": {
+          "samples": 16,
+          "early_bank_alpha_share_on_any_duck_mean": 0.6646798098836821
+        },
+        "middle": {
+          "samples": 87,
+          "early_bank_alpha_share_on_any_duck_mean": 0.15455353320907153
+        },
+        "late": {
+          "samples": 17,
+          "early_bank_alpha_share_on_any_duck_mean": 1.951477375993502e-07
+        },
+        "physical_ID_verified_after_occlusion": false
+      },
+      "S0_scratch_control": {
+        "early": {
+          "samples": 16,
+          "early_bank_alpha_share_on_any_duck_mean": 0.5579927311716246
+        },
+        "middle": {
+          "samples": 87,
+          "early_bank_alpha_share_on_any_duck_mean": 0.14291096960779875
+        },
+        "late": {
+          "samples": 17,
+          "early_bank_alpha_share_on_any_duck_mean": 1.9431445343846574e-07
+        },
+        "physical_ID_verified_after_occlusion": false
+      },
+      "S1_scratch_transfer": {
+        "early": {
+          "samples": 16,
+          "early_bank_alpha_share_on_any_duck_mean": 0.5831234632755273
+        },
+        "middle": {
+          "samples": 87,
+          "early_bank_alpha_share_on_any_duck_mean": 0.14885417107957777
+        },
+        "late": {
+          "samples": 17,
+          "early_bank_alpha_share_on_any_duck_mean": 0.0
+        },
+        "physical_ID_verified_after_occlusion": false
+      }
+    },
+    "own_fresh_binding_sha256": "2116433681160f388945069adf0c4eb252f82f9fd2682165fef7bf7cf7aba35e",
+    "own_early_bank_count": 1789,
+    "own_group_counts": [
+      316,
+      226,
+      210,
+      1037
+    ],
+    "adapter_sha256": "7f330e9cda528152ab44c945e56b15d86cb539b207494396cefe01359849fe5d",
+    "limitation": "Partial own early-bank visible support, not physical identity; unknown cross-gap associations remain unknown"
+  },
+  "causal_comparison": [
+    "S0_scratch_control",
+    "S1_scratch_transfer"
+  ],
+  "historical_C1_is_reference_only": true,
+  "training_constraint_diagnostics_are_not_independent_3D_GT": true,
+  "novel_view_GT_available": false,
+  "physical_identity_accuracy_measured": false
+}

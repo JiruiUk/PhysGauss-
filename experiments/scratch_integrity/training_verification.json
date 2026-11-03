@@ -1,0 +1,26 @@
+{
+  "states": {
+    "C1_original_50k": {
+      "iteration": 50000,
+      "sha256": "b5d4cf5c9fb8fba4fcc26124555d48aa7d3a963a8be1d28488954752db486480",
+      "point_count": 86143
+    },
+    "S0_scratch_control": {
+      "iteration": 50000,
+      "sha256": "6c2f371cd7529d691381d7e1c994741e644d3851652085bf4167e1e87af41456",
+      "point_count": 88916
+    },
+    "S1_scratch_transfer": {
+      "iteration": 50000,
+      "sha256": "31c05fa919eb7812d58b6acfedd2218edf2f05600e4ab7a508bb123baf6031f3",
+      "point_count": 88916
+    }
+  },
+  "activation": 15000,
+  "same_post_prefix_camera_samples": 35000,
+  "only_main_flag_differs": true,
+  "actual_total_updates_each": 50000,
+  "fresh_zero_optimizer_state_proven": true,
+  "row_topology_preserved_after_binding": true,
+  "historical_trained_states_used_for_cold_arms": false
+}

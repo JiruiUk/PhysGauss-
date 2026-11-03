@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "F:\A_Edinburgh\PhysGauss\experiments\scratch_integrity\finalize.py", line 145, in <module>
+    main()
+  File "F:\A_Edinburgh\PhysGauss\experiments\scratch_integrity\finalize.py", line 31, in main
+    assert '35 passed' in (REPORT / 'tests_final.log').read_text()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
