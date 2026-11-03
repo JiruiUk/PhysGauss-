@@ -1,0 +1,210 @@
+{
+  "source_sha256": "d83db6f6657c119ba880adfcf3be30c2b91e2a18e7b15924939b144c4097c861",
+  "results": {
+    "S3U_final6k": {
+      "checkpoint_sha256": "8c767b7835eee936e49989369d7bc0277d7567d3aedaa7385c06654284b68ad0",
+      "observed_training_gradient_probes": [
+        {
+          "observed_training_frame": 43,
+          "width": 800,
+          "gradient_groups": {
+            "canonical_xyz": {
+              "weighted_static_term_gradient_norm": 0.02978474780881403,
+              "weighted_dynamic_term_gradient_norm": 0.1345070140553699,
+              "complete_image_objective_gradient_norm": 0.12168176995174691,
+              "static_vs_dynamic_gradient_cosine": -0.4756584725165923
+            },
+            "deformation_fields": {
+              "weighted_static_term_gradient_norm": 0.050378637579550405,
+              "weighted_dynamic_term_gradient_norm": 0.6633467620385611,
+              "complete_image_objective_gradient_norm": 0.749828911357608,
+              "static_vs_dynamic_gradient_cosine": 0.18836165830162815
+            }
+          },
+          "static_only_MAE_on_conditional_blue_mask": 0.01623953878879547,
+          "combined_MAE_on_same_mask": 0.018451593816280365
+        },
+        {
+          "observed_training_frame": 86,
+          "width": 800,
+          "gradient_groups": {
+            "canonical_xyz": {
+              "weighted_static_term_gradient_norm": 0.035079727072547105,
+              "weighted_dynamic_term_gradient_norm": 0.05420890068662104,
+              "complete_image_objective_gradient_norm": 0.07859004607298535,
+              "static_vs_dynamic_gradient_cosine": 0.12483821551432832
+            },
+            "deformation_fields": {
+              "weighted_static_term_gradient_norm": 0.0485523416361184,
+              "weighted_dynamic_term_gradient_norm": 0.09006581257811125,
+              "complete_image_objective_gradient_norm": 0.11831527332237439,
+              "static_vs_dynamic_gradient_cosine": -0.05706679312738911
+            }
+          },
+          "static_only_MAE_on_conditional_blue_mask": 0.02541642263531685,
+          "combined_MAE_on_same_mask": 0.02780785597860813
+        },
+        {
+          "observed_training_frame": 146,
+          "width": 800,
+          "gradient_groups": {
+            "canonical_xyz": {
+              "weighted_static_term_gradient_norm": 0.004730541080224873,
+              "weighted_dynamic_term_gradient_norm": 0.09091875934359528,
+              "complete_image_objective_gradient_norm": 0.09556712978454786,
+              "static_vs_dynamic_gradient_cosine": 0.023952651300705487
+            },
+            "deformation_fields": {
+              "weighted_static_term_gradient_norm": 0.030588400865425663,
+              "weighted_dynamic_term_gradient_norm": 0.9699909066313043,
+              "complete_image_objective_gradient_norm": 1.0475656436253318,
+              "static_vs_dynamic_gradient_cosine": 0.600156678540756
+            }
+          },
+          "static_only_MAE_on_conditional_blue_mask": 0.020739775151014328,
+          "combined_MAE_on_same_mask": 0.021379884332418442
+        }
+      ],
+      "native_novel_view_probes": [
+        {
+          "camera": 188,
+          "frame": 43,
+          "dynamic_alpha_mass": 43491.4921875,
+          "visible_dynamic_weight_with_static": 43491.4375,
+          "fraction_dynamic_weight_attenuated_by_static": 1.2789948868885403e-06,
+          "mean_dynamic_alpha_on_its_above005_support": 0.7585195302963257
+        },
+        {
+          "camera": 188,
+          "frame": 146,
+          "dynamic_alpha_mass": 53723.5625,
+          "visible_dynamic_weight_with_static": 52212.2578125,
+          "fraction_dynamic_weight_attenuated_by_static": 0.028131185099482536,
+          "mean_dynamic_alpha_on_its_above005_support": 0.8174676299095154
+        },
+        {
+          "camera": 86,
+          "frame": 86,
+          "dynamic_alpha_mass": 49955.0859375,
+          "visible_dynamic_weight_with_static": 49945.5234375,
+          "fraction_dynamic_weight_attenuated_by_static": 0.0001913845189847052,
+          "mean_dynamic_alpha_on_its_above005_support": 0.6614179611206055
+        }
+      ]
+    },
+    "I8_preview7000": {
+      "checkpoint_sha256": "6a498afc8b694bfaab94ed05927d11dd5fe82279f7baa1ba1eb00bd3a21d3994",
+      "observed_training_gradient_probes": [
+        {
+          "observed_training_frame": 43,
+          "width": 800,
+          "gradient_groups": {
+            "canonical_xyz": {
+              "weighted_static_term_gradient_norm": 0.03410601168488604,
+              "weighted_dynamic_term_gradient_norm": 0.10828879972040294,
+              "complete_image_objective_gradient_norm": 0.09050297414255298,
+              "static_vs_dynamic_gradient_cosine": -0.6509247435528679
+            },
+            "deformation_fields": {
+              "weighted_static_term_gradient_norm": 0.04700525640713213,
+              "weighted_dynamic_term_gradient_norm": 0.33809285756617047,
+              "complete_image_objective_gradient_norm": 0.37917145779741174,
+              "static_vs_dynamic_gradient_cosine": 0.25486532299946163
+            }
+          },
+          "static_only_MAE_on_conditional_blue_mask": 0.01623953878879547,
+          "combined_MAE_on_same_mask": 0.026921575888991356
+        },
+        {
+          "observed_training_frame": 86,
+          "width": 800,
+          "gradient_groups": {
+            "canonical_xyz": {
+              "weighted_static_term_gradient_norm": 0.03734962281032026,
+              "weighted_dynamic_term_gradient_norm": 0.08753342096652439,
+              "complete_image_objective_gradient_norm": 0.10027482705366465,
+              "static_vs_dynamic_gradient_cosine": -0.06650943667381144
+            },
+            "deformation_fields": {
+              "weighted_static_term_gradient_norm": 0.04393717709797155,
+              "weighted_dynamic_term_gradient_norm": 0.16234712936588355,
+              "complete_image_objective_gradient_norm": 0.19372257642180704,
+              "static_vs_dynamic_gradient_cosine": 0.2215968572404455
+            }
+          },
+          "static_only_MAE_on_conditional_blue_mask": 0.02541642263531685,
+          "combined_MAE_on_same_mask": 0.03988175094127655
+        },
+        {
+          "observed_training_frame": 146,
+          "width": 800,
+          "gradient_groups": {
+            "canonical_xyz": {
+              "weighted_static_term_gradient_norm": 0.01661200230187402,
+              "weighted_dynamic_term_gradient_norm": 0.06776288895870078,
+              "complete_image_objective_gradient_norm": 0.07390136995999218,
+              "static_vs_dynamic_gradient_cosine": -0.03806352832488294
+            },
+            "deformation_fields": {
+              "weighted_static_term_gradient_norm": 0.016705731869841606,
+              "weighted_dynamic_term_gradient_norm": 0.10821205568653713,
+              "complete_image_objective_gradient_norm": 0.11860944770307001,
+              "static_vs_dynamic_gradient_cosine": 0.21802415448325613
+            }
+          },
+          "static_only_MAE_on_conditional_blue_mask": 0.020739775151014328,
+          "combined_MAE_on_same_mask": 0.022587407380342484
+        }
+      ],
+      "native_novel_view_probes": [
+        {
+          "camera": 188,
+          "frame": 43,
+          "dynamic_alpha_mass": 60418.859375,
+          "visible_dynamic_weight_with_static": 58002.83203125,
+          "fraction_dynamic_weight_attenuated_by_static": 0.03998800739645958,
+          "mean_dynamic_alpha_on_its_above005_support": 0.8162135481834412
+        },
+        {
+          "camera": 188,
+          "frame": 146,
+          "dynamic_alpha_mass": 53038.484375,
+          "visible_dynamic_weight_with_static": 51829.6171875,
+          "fraction_dynamic_weight_attenuated_by_static": 0.02279229462146759,
+          "mean_dynamic_alpha_on_its_above005_support": 0.8482396006584167
+        },
+        {
+          "camera": 86,
+          "frame": 86,
+          "dynamic_alpha_mass": 47310.6875,
+          "visible_dynamic_weight_with_static": 47310.6875,
+          "fraction_dynamic_weight_attenuated_by_static": 0.0,
+          "mean_dynamic_alpha_on_its_above005_support": 0.8299010992050171
+        }
+      ]
+    }
+  },
+  "optimizer_updates": 0,
+  "test_RGB_read": false,
+  "scope": "Three observed train-frame gradient probes and three native novel-view probes per frozen arm. Static occlusion may be correct; attenuation is not static extraction error. Static-term gradients also respond to dynamic leakage. Removing static at inference does not undo its initialization/training influence. These are not training causal ablations or final completeness metrics.",
+  "image_sha256": {
+    "output/staged_reconstruction/static_dynamic_coupling/I8_preview7000/c188_t146_combined_native.png": "19ee2e915d382b34ee7d322f01c7d77f2672ca1765fd07aad0e8240323dd6c55",
+    "output/staged_reconstruction/static_dynamic_coupling/I8_preview7000/c188_t146_comparison.png": "d9127f719dc6d8fe8edfec82c9d2b5131bf79fcbd7ef43e134b39b0d3452feb3",
+    "output/staged_reconstruction/static_dynamic_coupling/I8_preview7000/c188_t146_dynamic_only_native.png": "3a0a5083b0fcf64787c5c50878a5ba0158977428460222797bfae8ba0fd977b7",
+    "output/staged_reconstruction/static_dynamic_coupling/I8_preview7000/c188_t43_combined_native.png": "20191fe28a68ff8c4c31cf0536f28316dbbe4474bd581ece47e05d8a2ad17148",
+    "output/staged_reconstruction/static_dynamic_coupling/I8_preview7000/c188_t43_comparison.png": "32d86fdacc7f1551e47495799540fb3b0a35aa223d4b5e75163932b202494a74",
+    "output/staged_reconstruction/static_dynamic_coupling/I8_preview7000/c188_t43_dynamic_only_native.png": "fe286e21cebb893cdd0538cb500fcd0d944f5e0a1b0f6b06b9801efe4078c1ec",
+    "output/staged_reconstruction/static_dynamic_coupling/I8_preview7000/c86_t86_combined_native.png": "fdb4a6b9968529b0bbf67cfb935a9d3ad2a9cd28941d6831dd51465ed0b9a828",
+    "output/staged_reconstruction/static_dynamic_coupling/I8_preview7000/c86_t86_comparison.png": "9a79d1b2b824a345375678bb911bc1993e1fe3739369d0d2fad11e34fb1cc004",
+    "output/staged_reconstruction/static_dynamic_coupling/I8_preview7000/c86_t86_dynamic_only_native.png": "59162dde8ca4ecd0e3a62b3d9fa9378d79d1529bc2038aece08ee6d40fc4671e",
+    "output/staged_reconstruction/static_dynamic_coupling/S3U_final6k/c188_t146_combined_native.png": "6b8413c7ffeb3acd74f6938f76bbd16f2c7c2fdb194de95a7bd7bd4fbbe76391",
+    "output/staged_reconstruction/static_dynamic_coupling/S3U_final6k/c188_t146_comparison.png": "02718e275354c14d2ddfef418820cf2275e8be7fe341844f217da7632bf480e1",
+    "output/staged_reconstruction/static_dynamic_coupling/S3U_final6k/c188_t146_dynamic_only_native.png": "a5eae39dda1cd5b119ac3a81b3b7d51864599b2029b6d06304ffa33ca38215fa",
+    "output/staged_reconstruction/static_dynamic_coupling/S3U_final6k/c188_t43_combined_native.png": "f8a220548017300a7ae73f1935c14ceebcf9dae793c2774c5b164f6a9028f40d",
+    "output/staged_reconstruction/static_dynamic_coupling/S3U_final6k/c188_t43_comparison.png": "cfe5fbe96d1bf86b40d223c05708123fc6071494d0e20cf97e00b0aa173f44e9",
+    "output/staged_reconstruction/static_dynamic_coupling/S3U_final6k/c188_t43_dynamic_only_native.png": "328898777bc9a22debbc5356083e124bd1627c2f5d5ea77955a72d690be4315a",
+    "output/staged_reconstruction/static_dynamic_coupling/S3U_final6k/c86_t86_combined_native.png": "b0bca9285c6443e2d382837b02765143c42ae1838424723bd4219f5d14b6217b",
+    "output/staged_reconstruction/static_dynamic_coupling/S3U_final6k/c86_t86_comparison.png": "283a775973af5efe9341ad6374a2d58b14bfd57e994e52a98a70dc0ea85d055b",
+    "output/staged_reconstruction/static_dynamic_coupling/S3U_final6k/c86_t86_dynamic_only_native.png": "b9de92bbfb738e9decea36c9b2f23c57a724a400f8593789da32357cb56a0b2d"
+  }
+}
