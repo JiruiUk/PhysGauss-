@@ -1,0 +1,14 @@
+{
+  "actual_visual_inspection_completed": true,
+  "stage": "warmup16000_rejected",
+  "images_reviewed": {
+    "fixed188_t0043_native.png": "972731754f8778cde8ade42c4d44d6403dcad3ce94044faa43e210668da76bc6",
+    "fixed188_t0146_native.png": "6d72b11b60d53f81c01043a4eed96af193d9291af7aa74e26084a5d69b23c6de",
+    "fixed86_t0086_native.png": "c25e2f2273f5b23e2d3891c9ab96908846fca0c00b29e9ba1afa7bcb74d1a033"
+  },
+  "findings": "Fixed188/t43 has large black holes and detached particles; t146 has stretched, merged-looking incomplete surfaces; fixed86/t86 is smoother but lacks shape detail. Static preservation gate also fails.",
+  "completeness_passed": false,
+  "formal_physics_admitted": false,
+  "full1200_scan_admitted": false,
+  "test_RGB_read": false
+}

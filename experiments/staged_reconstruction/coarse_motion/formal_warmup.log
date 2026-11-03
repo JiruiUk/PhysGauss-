@@ -1,0 +1,101 @@
+W1103 21:37:35.165000 262672 envs\pidg-cu128\Lib\site-packages\torch\utils\cpp_extension.py:466] Error checking compiler version for cl: 'cp1' codec can't decode bytes in position 0--1: No mapping for the Unicode character exists in the target code page.
+ninja: no work to do.
+F:\A_Edinburgh\PhysGauss\variants\color_repair\code\hashencoder\hashgrid.py:16: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.half)
+F:\A_Edinburgh\PhysGauss\variants\color_repair\code\hashencoder\hashgrid.py:56: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+COARSE_MOTION_TRAIN coarse 1 warmup 0.300040602684021 True elapsed 0.5
+COARSE_MOTION_TRAIN coarse 40 warmup 0.049955468624830246 True elapsed 3.6
+COARSE_MOTION_TRAIN coarse 80 warmup 0.24873289465904236 True elapsed 6.9
+COARSE_MOTION_TRAIN coarse 100 warmup 0.07018949091434479 True elapsed 8.5
+COARSE_MOTION_TRAIN coarse 200 warmup 0.1934986114501953 True elapsed 12.5
+COARSE_MOTION_TRAIN coarse 400 warmup 0.08270426094532013 True elapsed 18.2
+COARSE_MOTION_TRAIN coarse 600 warmup 0.0828162208199501 True elapsed 24.0
+COARSE_MOTION_TRAIN coarse 800 warmup 0.10621736198663712 True elapsed 29.8
+COARSE_MOTION_TRAIN coarse 1000 warmup 0.10155817121267319 True elapsed 35.6
+COARSE_MOTION_TRAIN coarse 1200 warmup 0.08973001688718796 True elapsed 41.5
+COARSE_MOTION_TRAIN coarse 1400 warmup 0.06522854417562485 True elapsed 46.9
+COARSE_MOTION_TRAIN coarse 1600 warmup 0.08313126116991043 True elapsed 52.6
+COARSE_MOTION_TRAIN coarse 1800 warmup 0.03914853557944298 True elapsed 58.4
+COARSE_MOTION_TRAIN coarse 2000 warmup 0.06238246336579323 True elapsed 64.2
+COARSE_MOTION_TRAIN coarse 2200 warmup 0.07375186681747437 True elapsed 69.9
+COARSE_MOTION_TRAIN coarse 2400 warmup 0.06231246888637543 True elapsed 75.5
+COARSE_MOTION_TRAIN coarse 2600 warmup 0.06871239840984344 True elapsed 81.1
+COARSE_MOTION_TRAIN coarse 2800 warmup 0.05501409247517586 True elapsed 86.6
+COARSE_MOTION_TRAIN coarse 3000 warmup 0.06939741224050522 True elapsed 92.7
+COARSE_MOTION_TRAIN coarse 3200 warmup 0.07550755888223648 True elapsed 99.1
+COARSE_MOTION_TRAIN coarse 3400 warmup 0.06267419457435608 True elapsed 105.2
+COARSE_MOTION_TRAIN coarse 3600 warmup 0.04169642552733421 True elapsed 110.8
+COARSE_MOTION_TRAIN coarse 3800 warmup 0.06570691615343094 True elapsed 116.4
+COARSE_MOTION_TRAIN coarse 4000 warmup 0.05690053850412369 True elapsed 122.0
+COARSE_MOTION_TRAIN coarse 4200 warmup 0.05315275490283966 True elapsed 128.1
+COARSE_MOTION_TRAIN coarse 4400 warmup 0.05650888383388519 True elapsed 134.5
+COARSE_MOTION_TRAIN coarse 4600 warmup 0.06390226632356644 True elapsed 140.9
+COARSE_MOTION_TRAIN coarse 4800 warmup 0.05759776011109352 True elapsed 147.8
+COARSE_MOTION_TRAIN coarse 5000 warmup 0.0560583770275116 True elapsed 155.0
+COARSE_MOTION_TRAIN coarse 5200 warmup 0.050565529614686966 True elapsed 162.0
+COARSE_MOTION_TRAIN coarse 5400 warmup 0.05619070678949356 True elapsed 168.5
+COARSE_MOTION_TRAIN coarse 5600 warmup 0.04014988988637924 True elapsed 175.3
+COARSE_MOTION_TRAIN coarse 5800 warmup 0.05326447635889053 True elapsed 181.9
+COARSE_MOTION_TRAIN coarse 6000 warmup 0.060745351016521454 True elapsed 188.6
+COARSE_MOTION_TRAIN coarse 6200 warmup 0.05281515046954155 True elapsed 195.2
+COARSE_MOTION_TRAIN coarse 6400 warmup 0.038490019738674164 True elapsed 201.7
+COARSE_MOTION_TRAIN coarse 6600 warmup 0.05092524364590645 True elapsed 208.1
+COARSE_MOTION_TRAIN coarse 6800 warmup 0.08219587802886963 True elapsed 213.9
+COARSE_MOTION_TRAIN coarse 7000 warmup 0.04169078171253204 True elapsed 219.9
+COARSE_MOTION_TRAIN coarse 7200 warmup 0.05506858602166176 True elapsed 226.0
+COARSE_MOTION_TRAIN coarse 7400 warmup 0.048624780029058456 True elapsed 232.0
+COARSE_MOTION_TRAIN coarse 7600 warmup 0.05037468671798706 True elapsed 238.2
+COARSE_MOTION_TRAIN coarse 7800 warmup 0.04916723445057869 True elapsed 244.3
+COARSE_MOTION_TRAIN coarse 8000 warmup 0.046520721167325974 True elapsed 250.3
+COARSE_MOTION_TRAIN coarse 8200 warmup 0.047307342290878296 True elapsed 256.5
+COARSE_MOTION_TRAIN coarse 8400 warmup 0.04753906652331352 True elapsed 262.6
+COARSE_MOTION_TRAIN coarse 8600 warmup 0.04178498312830925 True elapsed 268.7
+COARSE_MOTION_TRAIN coarse 8800 warmup 0.049391716718673706 True elapsed 274.6
+COARSE_MOTION_TRAIN coarse 9000 warmup 0.038760047405958176 True elapsed 280.2
+COARSE_MOTION_TRAIN coarse 9200 warmup 0.04526972770690918 True elapsed 286.3
+COARSE_MOTION_TRAIN coarse 9400 warmup 0.03689980134367943 True elapsed 292.0
+COARSE_MOTION_TRAIN coarse 9600 warmup 0.05366377532482147 True elapsed 297.8
+COARSE_MOTION_TRAIN coarse 9800 warmup 0.02216397225856781 True elapsed 303.8
+COARSE_MOTION_TRAIN coarse 10000 warmup 0.05131039023399353 True elapsed 309.6
+COARSE_MOTION_TRAIN coarse 10200 warmup 0.05207699164748192 True elapsed 315.5
+COARSE_MOTION_TRAIN coarse 10400 warmup 0.05387119948863983 True elapsed 321.0
+COARSE_MOTION_TRAIN coarse 10600 warmup 0.022756174206733704 True elapsed 326.7
+COARSE_MOTION_TRAIN coarse 10800 warmup 0.04448102042078972 True elapsed 332.3
+COARSE_MOTION_TRAIN coarse 11000 warmup 0.044862300157547 True elapsed 338.0
+COARSE_MOTION_TRAIN coarse 11200 warmup 0.03446616232395172 True elapsed 343.8
+COARSE_MOTION_TRAIN coarse 11400 warmup 0.05994128808379173 True elapsed 349.6
+COARSE_MOTION_TRAIN coarse 11600 warmup 0.04617609828710556 True elapsed 355.2
+COARSE_MOTION_TRAIN coarse 11800 warmup 0.045886460691690445 True elapsed 360.9
+COARSE_MOTION_TRAIN coarse 12000 warmup 0.04984082281589508 True elapsed 367.2
+COARSE_MOTION_TRAIN coarse 12200 warmup 0.03909400850534439 True elapsed 386.2
+COARSE_MOTION_TRAIN coarse 12400 warmup 0.05657922849059105 True elapsed 395.0
+COARSE_MOTION_TRAIN coarse 12600 warmup 0.0473296195268631 True elapsed 404.0
+COARSE_MOTION_TRAIN coarse 12800 warmup 0.0473000705242157 True elapsed 412.8
+COARSE_MOTION_TRAIN coarse 13000 warmup 0.037482019513845444 True elapsed 421.9
+COARSE_MOTION_TRAIN coarse 13200 warmup 0.03454148769378662 True elapsed 430.9
+COARSE_MOTION_TRAIN coarse 13400 warmup 0.03805907443165779 True elapsed 439.2
+COARSE_MOTION_TRAIN coarse 13600 warmup 0.04149152711033821 True elapsed 448.0
+COARSE_MOTION_TRAIN coarse 13800 warmup 0.04331746697425842 True elapsed 456.5
+COARSE_MOTION_TRAIN coarse 14000 warmup 0.04292028769850731 True elapsed 465.1
+COARSE_MOTION_TRAIN coarse 14200 warmup 0.020945033058524132 True elapsed 474.2
+COARSE_MOTION_TRAIN coarse 14400 warmup 0.04878731071949005 True elapsed 482.7
+COARSE_MOTION_TRAIN coarse 14600 warmup 0.02067769691348076 True elapsed 491.5
+COARSE_MOTION_TRAIN coarse 14800 warmup 0.04047006741166115 True elapsed 500.0
+COARSE_MOTION_TRAIN coarse 15000 warmup 0.04274582117795944 True elapsed 508.4
+COARSE_MOTION_TRAIN coarse 15200 warmup 0.046644989401102066 True elapsed 516.8
+COARSE_MOTION_TRAIN coarse 15400 warmup 0.049534641206264496 True elapsed 525.1
+COARSE_MOTION_TRAIN coarse 15600 warmup 0.03745618462562561 True elapsed 533.6
+COARSE_MOTION_TRAIN coarse 15800 warmup 0.04667629674077034 True elapsed 542.7
+COARSE_MOTION_TRAIN coarse 16000 warmup 0.04476221650838852 True elapsed 552.0
+UNION_EVALUATION warmup 16000 val 1600 {'PSNR': 26.575204849243164, 'dynamic_PSNR': 25.54028542836507, 'dynamic_alpha': 0.9936560372511546, 'static_PSNR': 34.06588789621989, 'static_alpha': 0.9972903410593669, 'background_alpha': 0.014127869981651504, 'dynamic_leakage_on_static': 0.029434733226662502}
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "F:\A_Edinburgh\PhysGauss\variants\staged_reconstruction\coarse_motion\train.py", line 92, in <module>
+    if __name__=='__main__': main()
+                             ^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\variants\staged_reconstruction\coarse_motion\train.py", line 82, in main
+    if not admission['passed']: raise RuntimeError('Original warmup numerical guardrails failed; physics not admitted')
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Original warmup numerical guardrails failed; physics not admitted
