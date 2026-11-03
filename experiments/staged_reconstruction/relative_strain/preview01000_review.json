@@ -1,0 +1,31 @@
+{
+  "actual_updates": 1000,
+  "snapshot": "runs/pidg_staged_reconstruction/relative_strain/previews/step01000/checkpoint.pt",
+  "snapshot_sha256": "86a4ad78434fdab5d267a91f3a3d05e906ee2841dc30ba51a0a401cdd4a1b461",
+  "source_sha256": "2fd1b800e4669b0fca46c5d2e63f624713dc63e74dd1b54e11e96035765c9142",
+  "native_width": 1600,
+  "RGB_read": false,
+  "optimizer_updates": 0,
+  "purpose": "Intermediate visual diagnosis only; original16k schedule/gates remain. No model selection or final acceptance.",
+  "images_sha256": {
+    "output/staged_reconstruction/relative_strain/previews/step01000/c188_t146_alpha.png": "786b7f1cd3adbde3ba4014be24b17fcbc02bd1d4e73861990fe582d61f4cd303",
+    "output/staged_reconstruction/relative_strain/previews/step01000/c188_t146_native.png": "fc6bb9592d4808668a15ec4a6bda19f088b618adf1190bdee6867fdc152b6673",
+    "output/staged_reconstruction/relative_strain/previews/step01000/c188_t43_alpha.png": "d2bfff3e0e94d4e777f72017d09ffd93d8125465aed2b2d7dde1ce37c8c7fb5a",
+    "output/staged_reconstruction/relative_strain/previews/step01000/c188_t43_native.png": "9f96c19434b19afbf4c2771fbd8a06bfa0b02dbdfda9d4e42f2838d20207f26e",
+    "output/staged_reconstruction/relative_strain/previews/step01000/c86_t86_alpha.png": "dc4cabfb36e422195844a4b07a10212e692ef646a7dc84f517ab73c96bd5544a",
+    "output/staged_reconstruction/relative_strain/previews/step01000/c86_t86_native.png": "f3be8998f3bb549fa7cb2165a0598ccbe173567ee0946e5a28501dad6381135f",
+    "output/staged_reconstruction/relative_strain/previews/step01000/contact.png": "fb2ca44e696ebb22331c06f216f7d5cd02ad879b9d00b96e1b46643ea7711987"
+  },
+  "actual_visual_inspection_completed": true,
+  "completeness_passed": false,
+  "inspected": [
+    "output/staged_reconstruction/relative_strain/previews/step01000/contact.png",
+    "output/staged_reconstruction/relative_strain/previews/step01000/c188_t146_native.png",
+    "output/staged_reconstruction/relative_strain/previews/step01000/c86_t86_native.png"
+  ],
+  "findings": "At1000 updates, c188/t43 contact retains partial flattened lobes and detached support; inspected native c188/t146 has incomplete/sheet-like lobes and detached support, and native c86/t86 has a long thin sheet/bridge with holes and incomplete upper support. Relative differential statistics are moderate at this early snapshot but do not prove complete canonical shape or final improvement.",
+  "training_protocol_changed": false,
+  "formal_warmup_admission_decided": false,
+  "intermediate_model_selected": false,
+  "comparison_with_I8_final_is_matched_budget": false
+}
