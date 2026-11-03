@@ -1,0 +1,53 @@
+{
+  "stage": "S1",
+  "status": "reviewed_accepted_conditional_static_initialization",
+  "numeric_admission": true,
+  "iteration": 12000,
+  "point_count": 4126,
+  "checkpoint_sha256": "2dd8d5e0ea35d55e648aa236ea779eebe2fe3d415d34ad931e732f0140b89031",
+  "model_and_optimizer_finite": true,
+  "opacity_median": 0.6584120988845825,
+  "opacity_below_001_fraction": 0.00290838584585555,
+  "conditional_triangulated_anchor_to_center_median_scene_units": 0.07854097881148805,
+  "conditional_triangulated_anchor_to_center_p95_scene_units": 0.3989966650242512,
+  "native_image_sha256": {
+    "output\\staged_reconstruction\\S1_static\\alpha_t0002.png": "e1dc3d93b4bab0ae06eab6b5ab2e56b985326c8df7af315d3a297c18d4f0ddf1",
+    "output\\staged_reconstruction\\S1_static\\alpha_t0086.png": "c0c5cb020c41d4a9307b0a5f2b4cfdf92ed7cdad93f7d2b622910902e425208f",
+    "output\\staged_reconstruction\\S1_static\\alpha_t0188.png": "b958abe7d2b5e3607434e670a085bd726873b0abfed9c0c3535a667673072f02",
+    "output\\staged_reconstruction\\S1_static\\final_t0002.png": "0c0682e71ca1f5b56bcb207ff65f1b53689089a29909cc81b0231164128d0956",
+    "output\\staged_reconstruction\\S1_static\\final_t0086.png": "693ceb0c4cb36908733fb93398f8a0cf2d1fe5e4d6df5cdb005615547078d441",
+    "output\\staged_reconstruction\\S1_static\\final_t0188.png": "a79202966cf398ebcc34a955844b3dcc3e5f9c36c6c7c03905b94d58e4c2e16c",
+    "output\\staged_reconstruction\\S1_static\\initial_t86.png": "98fbc1af4a578f91b4eeb103f13607c0248f21f880e9fdf7eef4d7a8c257873b",
+    "output\\staged_reconstruction\\S1_static\\S1_review.png": "9836ef2ce4d999b162b992b18ca5e2376d6e4e6c93d82c2f5c2ff7149593a785",
+    "output\\staged_reconstruction\\S1_static\\test_0085_step12000.png": "e0cfd5affd0fb0a96ae41c8294dcb9654f087724afeecf5f1be5d83ae7cfe686",
+    "output\\staged_reconstruction\\S1_static\\test_0189_step12000.png": "dc59a9f503d285a924d0d0435e5e8cde6447fa8b8489806f28380bda4a4373c4",
+    "output\\staged_reconstruction\\S1_static\\test_0197_step12000.png": "6d870f7844dad2aa02ff0b17116d674c61a2989a2697c3439b4c61ca501bfd78",
+    "output\\staged_reconstruction\\S1_static\\val_0004_step12000.png": "49cbbe93a74e18b1c3bd94936d2ac09d8cf2c1ef406325a6c294e8e5f02e7adf"
+  },
+  "validation": {
+    "candidate_static_PSNR": 35.64381631215414,
+    "candidate_static_alpha_mean": 0.997188518444697,
+    "candidate_static_alpha_below_05": 0.0,
+    "background_alpha_mean": 0.0026422541898985705
+  },
+  "test": {
+    "candidate_static_PSNR": 35.791193351745605,
+    "candidate_static_alpha_mean": 0.9971914362907409,
+    "candidate_static_alpha_below_05": 0.0,
+    "background_alpha_mean": 0.002613839397672564
+  },
+  "limits": [
+    "Candidate masks are appearance/geometry hypotheses, not physical IDs.",
+    "Nearest center distance is not surface reconstruction GT.",
+    "Metadata-camera S1 and legacy-camera R0 are not a matched architecture comparison.",
+    "S2-S6 remain authorized and unfinished."
+  ],
+  "native_visual_review": true,
+  "inspected_frames": [
+    2,
+    86,
+    188
+  ],
+  "contact_surface_certified": false,
+  "next_stage": "S2"
+}

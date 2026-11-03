@@ -13,7 +13,17 @@ Metadata-camera static-track held reprojection mean0.536px versus legacy0.757px
 on the same legacy-selected tracks; this is conditional evidence with selection
 bias, not independent calibration truth. The original PIDG loader is unchanged.
 
-Formal S1 protocol:12000 updates (800px first8000,1600px last4000), native final
-evaluation, no densification, no dynamic branch or physics. Formal S1 starts
-after the implementation milestone commit. S2–S6 remain pending implementation
-and training after their dependencies; this queue is not limited to an R0 audit.
+S1 implementation milestone `f92fc7a7`; formal12000 updates completed. Native
+validation/test and actual RGB/alpha review passed conditional admission as the
+static initialization for S2. Test static-region PSNR35.79119dB, mean alpha
+0.997191, known-background mean alpha0.002614. Selected opacity median0.6584;
+only0.291% below0.01. Edges remain imperfect; no dense geometry/contact GT claim.
+
+Final test-path failure was repaired in a separate evaluator, with zero repeated
+training updates and unchanged source/checkpoint. Final checkpoint SHA:
+`2dd8d5e0ea35d55e648aa236ea779eebe2fe3d415d34ad931e732f0140b89031`.
+Assessment: `S1_assessment.md`; full evidence: `S1_final_verification.json`.
+
+S2 is now preparing persistent known local image identities and per-object
+canonical initialization. S2–S6 remain the active task. Automation `pidg-s1-s6`
+follows the whole stage sequence; it does not finish on S1 completion.
