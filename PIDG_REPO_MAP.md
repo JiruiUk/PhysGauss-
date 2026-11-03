@@ -937,3 +937,23 @@ finalize records manual old-native-image review and clears pending state under
 both locks. 9 core+2 repair tests pass, gradient path qualified; geometry and
 cleanup unproven. This is not newly trained unknown-static reconstruction.
 All original PIDG/weights/paused stages unchanged. Reports: S1_joint_revocation_audit/v1.
+
+
+## Opt-in RGB-only joint Gaussian training (S1-J1 and accepted recovery)
+
+`variants/staged_reconstruction/joint_rgb/runtime.py` uses the original PIDG
+deformation/hash-grid and single depth-sorted union with a4000-row unknown-count
+canonical dynamic bank. The only paired switch opens static opacity/DC/rest SH;
+static geometry stays frozen. core is default-off; train saves both complete
+Adam states, RNG, camera stack/visits/trace and immutable source/protocol binding.
+Original40-step cross-run checks failed and stay archived; the fixed epsilon
+control also failed. No source/protocol/failure was overwritten.
+
+`S1_joint_rgb/accepted_recovery/launch.py` redirects paths only, leaving frozen
+J1 training/model code unchanged. Human-approved acceptance checks exact full
+serialization/bindings and same-native-gradient Adam update in two independent
+processes for each of four case-arms, plus native RGB/alpha equality and raw
+gradient tolerance. All four pass; it does not claim deterministic40-step native
+training. Formal training uses original epsilon/rates and quality gates. A
+serial runner independently evaluates/exports, then waits for manual image and
+geometry review. No physics, original PIDG, renderer or old weight changes.

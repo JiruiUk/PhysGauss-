@@ -9,3 +9,10 @@ Adam+constraint update exact. Original40-step failures remain failures.
 Next four serial6000-step Gaussian arms with automatic independent evaluation,
 PLY/RGB/D-alpha/H264 decode exports, then actual manual review. No cleanup or
 Rubber Duck result yet. Source/input freeze and all worker logs verified.
+
+Formal pipeline STARTED after e864d59f recovery milestone. First diffuse/
+frozen_static observed training at100/6000; controller/orchestrator live in
+runs/pidg_staged_reconstruction/S1_joint_rgb/accepted_recovery. One serial runner
+only; do not launch another. Runner proceeds through both arms/two conditions,
+independent evaluator and native exports, then leaves manual review pending.
+Check real processes,locks,state,logs and stop files before any recovery.

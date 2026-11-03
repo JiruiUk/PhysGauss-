@@ -451,3 +451,31 @@ worker、门槛、权重不改。六图opacity正/负梯度不能当静动身份
 来源，完成原生flags-off/梯度、独立完整Adam/RNG/相机恢复及独立静态GT/
 结构/外溢门槛，才考虑Rubber Duck。失败D7深度/法线不进监督，原门槛不放宽，
 不恢复暂停任务，不改并行完整性训练。见S1_joint_revocation_audit/v1/assessment.md。
+
+
+### S1-J1：联合RGB训练与经用户选定的完整恢复验收（2026-11-03）
+
+J0仅证明梯度可达，见c9ebd762/4fbe1832；无更新，不是拖影消除。J1固定
+全RGB统一canonical动态池，与静态全冻结/开放opacity+SH两臂；静态几何不动，
+无新颜色掩膜、静态标签、物体数或GT监督。父模型是两例RGB派生S1-N control6k，
+继承条件几何支持来源，不能称独立几何GT。每条件每臂计划6000新更新。
+
+原f035486d协议/51b7c6f1实现通过6测试、275文件冻结、原生flags-off与梯度，
+但连续40对20+20逐参数轨迹一致失败；原initial/RNG/相机状态精确。独立
+即时加载及原生反传诊断发现断点前就有微小非确定性，不能混同于状态丢失。
+ac16bc95/31f37abf固定共同epsilon1e-8对照也未过；不扫epsilon、保留失败。
+
+用户明确选择“采用精确状态恢复验收（推荐）”，12aae457另行固定接受协议：
+原模型、两个Adam及参数绑定、全部RNG/相机精确加载；独立原生RGB/alpha精确、
+raw梯度按原1e-6/1e-5，使用同一份native梯度后完整Adam/model/constraint更新
+精确一致。四个条件×臂全部通过，已与原40步失败分别存档，不能声称后者通过。
+恢复原J1的epsilon1e-15及所有训练数值，未升级失败epsilon对照。286文件新冻结，
+2个launcher测试与原6测试通过。恢复验收修订不改变任何重建质量/完整性门槛。
+
+当前已进入串行完整Gaussian合成训练：两条件diffuse/glossy × frozen/revisable。
+独立评估静态GT PSNR、可见/薄结构覆盖、RGB外溢、D/alpha全分母及动态泛化，
+并导出固定训练0/24/72、新视角24/各时间、匹配PLY和全解码视频，实际查看后
+再判断；此处无清理改善结论。正式状态见runs/.../S1_joint_rgb/accepted_recovery，
+报告见S1_joint_rgb/accepted_recovery/v1。Rubber Duck仍是目标，合成通过后还须
+另立真实匹配协议；尚无新86/188结果、不启动旧18k→24k，不恢复PAUSED任务。
+原PIDG/历史权重、S3-U与未知身份及并行完整性工作保持，不新增本构/材料/力。
