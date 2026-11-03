@@ -1,0 +1,25 @@
+{
+  "checkpoint_sha256": "3e91a89f8b8354edc2d1be6b4317e4703c58e2519241a573b4ade0655bae4db6",
+  "native_images_reviewed": true,
+  "approve_conditional_continuation": true,
+  "files_reviewed": {
+    "output/staged_reconstruction/S3/S3_review_step06000.png": "53e431924a093efffd78e462c9f58167ab4f46782952f55c25a611cbe84fd0d4",
+    "output/staged_reconstruction/S3/native_crop_review.png": "a94a9be3be28af40f8fd36710f77a9439b7271ac25afb9121190249e2e05bc78",
+    "output/staged_reconstruction/S3/fixed188_t0002_native.png": "978ce72c84ccf74f7dff0f1e1c1822501b1ae2115b24158c507d62203df4d781",
+    "output/staged_reconstruction/S3/fixed188_t0086_native.png": "35eacea623d48ea298d3e7235b49eba5a30c62878e0647435f055434c8fc128f",
+    "output/staged_reconstruction/S3/fixed188_t0188_native.png": "ba260187b7a0050fa7354bba9d4babb50209df4b10016642c640ef6132fe86b5",
+    "output/staged_reconstruction/S3/fixed86_t0002_native.png": "5f333a05cd514ca216ff586c7b5c7d5af366de3b90025d365cb4fe0c134e8c13",
+    "output/staged_reconstruction/S3/fixed86_t0086_native.png": "e9c3053a9b4069e9c7577337913c85fe6dcd05de06edfb5d63d43d4f72c39f5d",
+    "output/staged_reconstruction/S3/fixed86_t0188_native.png": "d3d1370428285ea65b6e5145d0fd517bbb2a85715ae42a62b317edbf7f7b04d1",
+    "output/staged_reconstruction/S3/original_t0002_native.png": "794f079027f45fabca14158ea6ab8b064772af8de6a88fb739e5e9296557ba5a",
+    "output/staged_reconstruction/S3/original_t0086_native.png": "e9c3053a9b4069e9c7577337913c85fe6dcd05de06edfb5d63d43d4f72c39f5d",
+    "output/staged_reconstruction/S3/original_t0188_native.png": "ba260187b7a0050fa7354bba9d4babb50209df4b10016642c640ef6132fe86b5"
+  },
+  "manual_scope": "Nine observed-camera RGB/group rows; 1:1 native pixel crops for fixed86/fixed188/original at2/86/188. Video frames independently decoded, not all manually watched.",
+  "findings": [
+    "Observed-camera ducks remain recognizable, with blurred edges and lower early duck distortion.",
+    "Fixed86 early/late and fixed188 early/middle still have strong sheets, speckle and holes; no complete novel-view geometry improvement established.",
+    "Early groups are distinct, but frame42 mixture and later green/purple bank leakage remain; late physical identity is unknown.",
+    "Static shape remains stable; permit only the predeclared conditional reconstruction correction, not contact-surface or stress/physical-ID inference."
+  ]
+}

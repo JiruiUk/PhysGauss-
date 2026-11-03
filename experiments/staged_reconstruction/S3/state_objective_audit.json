@@ -1,0 +1,744 @@
+{
+  "stage": "S3",
+  "checkpoint_sha256": "3e91a89f8b8354edc2d1be6b4317e4703c58e2519241a573b4ade0655bae4db6",
+  "iteration": 6000,
+  "parent_sha256": "8d22348fb5033c1441f598b189000b36a8f965fa8acd7b594871d52849381730",
+  "numeric_gates": {
+    "dynamic_PSNR": true,
+    "dynamic_only_alpha": true,
+    "static_preservation_from_S1": true
+  },
+  "native_validation": {
+    "PSNR": 28.466855494181313,
+    "dynamic_PSNR": 25.39229933420817,
+    "dynamic_alpha": 0.9855048636595408,
+    "static_PSNR": 35.94166882832845,
+    "static_alpha": 0.9972510874271393,
+    "composite_dynamic_region_alpha": 0.9928013285001119,
+    "dynamic_leakage_on_static": 0.01615667111655057,
+    "background_alpha": 0.008779177286972603
+  },
+  "native_test": {
+    "PSNR": 28.54673542022705,
+    "dynamic_PSNR": 25.557254753112794,
+    "dynamic_alpha": 0.9854299342632293,
+    "static_PSNR": 36.13557025909424,
+    "static_alpha": 0.9972587239742279,
+    "composite_dynamic_region_alpha": 0.9930337882041931,
+    "dynamic_leakage_on_static": 0.016383387085661526,
+    "background_alpha": 0.008605269114486874
+  },
+  "static_geometry_exact_S1": true,
+  "static_all_exact_S1": true,
+  "finite_model_and_optimizer": true,
+  "optimizer_state_count": 136,
+  "sampler": {
+    "exact_python_RNG_and_final_camera_stack": true,
+    "updates_replayed": 6000,
+    "sampled_frame_ids": [
+      2,
+      3,
+      6,
+      7,
+      8,
+      10,
+      12,
+      14,
+      15,
+      16,
+      19,
+      20,
+      22,
+      23,
+      26,
+      27,
+      28,
+      30,
+      32,
+      34,
+      35,
+      36,
+      39,
+      40,
+      42,
+      43,
+      46,
+      47,
+      48,
+      50,
+      52,
+      54,
+      55,
+      56,
+      59,
+      60,
+      62,
+      63,
+      66,
+      67,
+      68,
+      70,
+      72,
+      74,
+      75,
+      76,
+      79,
+      80,
+      82,
+      83,
+      86,
+      87,
+      88,
+      90,
+      92,
+      94,
+      95,
+      96,
+      99,
+      100,
+      102,
+      103,
+      106,
+      107,
+      108,
+      110,
+      112,
+      114,
+      115,
+      116,
+      119,
+      120,
+      122,
+      123,
+      126,
+      127,
+      128,
+      130,
+      132,
+      134,
+      135,
+      136,
+      139,
+      140,
+      142,
+      143,
+      146,
+      147,
+      148,
+      150,
+      152,
+      154,
+      155,
+      156,
+      159,
+      160,
+      162,
+      163,
+      166,
+      167,
+      168,
+      170,
+      172,
+      174,
+      175,
+      176,
+      179,
+      180,
+      182,
+      183,
+      186,
+      187,
+      188,
+      190,
+      192,
+      194,
+      195,
+      196,
+      199,
+      200
+    ],
+    "sequence_sha256": "ddb68db5cc19d7838da2dc6b253f4c44a1b2882c935ba845fa64009aad939997",
+    "sample_counts": {
+      "2": 49,
+      "3": 50,
+      "6": 50,
+      "7": 51,
+      "8": 50,
+      "10": 50,
+      "12": 51,
+      "14": 49,
+      "15": 50,
+      "16": 50,
+      "19": 50,
+      "20": 49,
+      "22": 51,
+      "23": 50,
+      "26": 50,
+      "27": 49,
+      "28": 51,
+      "30": 50,
+      "32": 50,
+      "34": 51,
+      "35": 50,
+      "36": 50,
+      "39": 49,
+      "40": 51,
+      "42": 51,
+      "43": 50,
+      "46": 50,
+      "47": 51,
+      "48": 50,
+      "50": 49,
+      "52": 51,
+      "54": 50,
+      "55": 50,
+      "56": 51,
+      "59": 49,
+      "60": 50,
+      "62": 50,
+      "63": 51,
+      "66": 50,
+      "67": 51,
+      "68": 50,
+      "70": 51,
+      "72": 49,
+      "74": 49,
+      "75": 50,
+      "76": 50,
+      "79": 50,
+      "80": 49,
+      "82": 51,
+      "83": 50,
+      "86": 51,
+      "87": 51,
+      "88": 50,
+      "90": 50,
+      "92": 49,
+      "94": 51,
+      "95": 51,
+      "96": 50,
+      "99": 51,
+      "100": 49,
+      "102": 51,
+      "103": 49,
+      "106": 49,
+      "107": 51,
+      "108": 49,
+      "110": 50,
+      "112": 50,
+      "114": 49,
+      "115": 50,
+      "116": 51,
+      "119": 50,
+      "120": 49,
+      "122": 50,
+      "123": 49,
+      "126": 51,
+      "127": 51,
+      "128": 49,
+      "130": 50,
+      "132": 51,
+      "134": 49,
+      "135": 50,
+      "136": 50,
+      "139": 50,
+      "140": 50,
+      "142": 50,
+      "143": 50,
+      "146": 50,
+      "147": 50,
+      "148": 50,
+      "150": 51,
+      "152": 50,
+      "154": 50,
+      "155": 50,
+      "156": 50,
+      "159": 49,
+      "160": 49,
+      "162": 49,
+      "163": 50,
+      "166": 50,
+      "167": 50,
+      "168": 51,
+      "170": 50,
+      "172": 49,
+      "174": 49,
+      "175": 50,
+      "176": 51,
+      "179": 49,
+      "180": 50,
+      "182": 50,
+      "183": 50,
+      "186": 49,
+      "187": 51,
+      "188": 50,
+      "190": 49,
+      "192": 49,
+      "194": 51,
+      "195": 50,
+      "196": 49,
+      "199": 50,
+      "200": 50
+    }
+  },
+  "scale_diagnostics": [
+    {
+      "object": 0,
+      "time": 0.0,
+      "min": 0.002899778774008155,
+      "median": 0.007265228778123856,
+      "max": 0.02413652092218399
+    },
+    {
+      "object": 1,
+      "time": 0.0,
+      "min": 0.002611559582874179,
+      "median": 0.007015348877757788,
+      "max": 0.02559703215956688
+    },
+    {
+      "object": 2,
+      "time": 0.0,
+      "min": 0.001968774013221264,
+      "median": 0.007011477369815111,
+      "max": 0.024240851402282715
+    },
+    {
+      "object": 3,
+      "time": 0.0,
+      "min": 0.0018986210925504565,
+      "median": 0.006606787908822298,
+      "max": 0.025318749248981476
+    },
+    {
+      "object": 0,
+      "time": 0.4271356783919598,
+      "min": 0.001978681655600667,
+      "median": 0.0019858197774738073,
+      "max": 0.00455624470487237
+    },
+    {
+      "object": 1,
+      "time": 0.4271356783919598,
+      "min": 0.001978670246899128,
+      "median": 0.002079565543681383,
+      "max": 0.021530864760279655
+    },
+    {
+      "object": 2,
+      "time": 0.4271356783919598,
+      "min": 0.0022230392787605524,
+      "median": 0.0075754439458251,
+      "max": 0.027632689103484154
+    },
+    {
+      "object": 3,
+      "time": 0.4271356783919598,
+      "min": 0.0018721821252256632,
+      "median": 0.003438688116148114,
+      "max": 0.02539241500198841
+    },
+    {
+      "object": 0,
+      "time": 0.9396984924623115,
+      "min": 0.0019786707125604153,
+      "median": 0.0019793754909187555,
+      "max": 0.002025159541517496
+    },
+    {
+      "object": 1,
+      "time": 0.9396984924623115,
+      "min": 0.001981255831196904,
+      "median": 0.002474837237969041,
+      "max": 0.023256175220012665
+    },
+    {
+      "object": 2,
+      "time": 0.9396984924623115,
+      "min": 0.0019352108938619494,
+      "median": 0.0029761246405541897,
+      "max": 0.02129850722849369
+    },
+    {
+      "object": 3,
+      "time": 0.9396984924623115,
+      "min": 0.0018741978565230966,
+      "median": 0.003958145622164011,
+      "max": 0.025133531540632248
+    }
+  ],
+  "fixed_frame_internal_physics": [
+    {
+      "frame": 2,
+      "terms": {
+        "kinematic": 0.08691490942233303,
+        "CMR": 2.0173574875385154
+      },
+      "objects": [
+        {
+          "object": 0,
+          "time_interval": [
+            0.0,
+            0.005025125628140704,
+            0.010050251256281407
+          ],
+          "nodes": 865,
+          "anchors": 16,
+          "current_world_same_bank_neighbors": 64,
+          "support_attempts": [
+            {
+              "neighbors": 64,
+              "valid_fraction": 1.0
+            }
+          ],
+          "valid_fraction": 1.0,
+          "velocity_trajectory_RMS": 0.23142780281918207,
+          "CMR_RMS": 0.11797234426073035,
+          "trajectory_acceleration_RMS": 12.050061482625587,
+          "independent_acceleration_RMS": 0.0018233336635970763,
+          "stress_pred_RMS": 0.0835309699177742,
+          "stress_divergence_RMS": 0.0238735180974365,
+          "rate_divergence_RMS": 0.11538886693018974,
+          "spatial_support_radius_mean": 0.03460607649652398,
+          "time_units": "sequence normalized; acquisition seconds unknown",
+          "not_independent_GT": true
+        },
+        {
+          "object": 1,
+          "time_interval": [
+            0.0,
+            0.005025125628140704,
+            0.010050251256281407
+          ],
+          "nodes": 851,
+          "anchors": 16,
+          "current_world_same_bank_neighbors": 64,
+          "support_attempts": [
+            {
+              "neighbors": 64,
+              "valid_fraction": 1.0
+            }
+          ],
+          "valid_fraction": 1.0,
+          "velocity_trajectory_RMS": 0.39657121345463126,
+          "CMR_RMS": 0.09330319970404569,
+          "trajectory_acceleration_RMS": 11.996526927541796,
+          "independent_acceleration_RMS": 0.0005614042685286707,
+          "stress_pred_RMS": 0.1409308910369873,
+          "stress_divergence_RMS": 0.015260391514327296,
+          "rate_divergence_RMS": 0.09337324986440619,
+          "spatial_support_radius_mean": 0.04511694882136515,
+          "time_units": "sequence normalized; acquisition seconds unknown",
+          "not_independent_GT": true
+        },
+        {
+          "object": 2,
+          "time_interval": [
+            0.0,
+            0.005025125628140704,
+            0.010050251256281407
+          ],
+          "nodes": 897,
+          "anchors": 16,
+          "current_world_same_bank_neighbors": 64,
+          "support_attempts": [
+            {
+              "neighbors": 64,
+              "valid_fraction": 1.0
+            }
+          ],
+          "valid_fraction": 1.0,
+          "velocity_trajectory_RMS": 0.2507332091030621,
+          "CMR_RMS": 1.1153720885484852,
+          "trajectory_acceleration_RMS": 11.343020887614145,
+          "independent_acceleration_RMS": 0.006795049597934404,
+          "stress_pred_RMS": 0.07301846891641617,
+          "stress_divergence_RMS": 0.02480010422392675,
+          "rate_divergence_RMS": 1.1112461619827094,
+          "spatial_support_radius_mean": 0.03937495670793064,
+          "time_units": "sequence normalized; acquisition seconds unknown",
+          "not_independent_GT": true
+        },
+        {
+          "object": 3,
+          "time_interval": [
+            0.0,
+            0.005025125628140704,
+            0.010050251256281407
+          ],
+          "nodes": 949,
+          "anchors": 16,
+          "current_world_same_bank_neighbors": 64,
+          "support_attempts": [
+            {
+              "neighbors": 64,
+              "valid_fraction": 1.0
+            }
+          ],
+          "valid_fraction": 1.0,
+          "velocity_trajectory_RMS": 0.6524712246617681,
+          "CMR_RMS": 13.96587527526418,
+          "trajectory_acceleration_RMS": 15.836895743804089,
+          "independent_acceleration_RMS": 3.8286311299394162,
+          "stress_pred_RMS": 0.5339382290840149,
+          "stress_divergence_RMS": 0.17692722769481165,
+          "rate_divergence_RMS": 14.868000990323557,
+          "spatial_support_radius_mean": 0.041293190862707045,
+          "time_units": "sequence normalized; acquisition seconds unknown",
+          "not_independent_GT": true
+        }
+      ],
+      "valid": true
+    },
+    {
+      "frame": 86,
+      "terms": {
+        "kinematic": 0.6360879665787312,
+        "CMR": 8.25380955931345
+      },
+      "objects": [
+        {
+          "object": 0,
+          "time_interval": [
+            0.4221105527638191,
+            0.4271356783919598,
+            0.43216080402010054
+          ],
+          "nodes": 925,
+          "anchors": 16,
+          "current_world_same_bank_neighbors": 64,
+          "support_attempts": [
+            {
+              "neighbors": 64,
+              "valid_fraction": 1.0
+            }
+          ],
+          "valid_fraction": 1.0,
+          "velocity_trajectory_RMS": 0.5387271176221273,
+          "CMR_RMS": 5.804813142365969,
+          "trajectory_acceleration_RMS": 9.72226184323579,
+          "independent_acceleration_RMS": 0.00016503304877975723,
+          "stress_pred_RMS": 0.08350817114114761,
+          "stress_divergence_RMS": 0.17612752591715164,
+          "rate_divergence_RMS": 5.766542289972954,
+          "spatial_support_radius_mean": 0.006086035519258218,
+          "time_units": "sequence normalized; acquisition seconds unknown",
+          "not_independent_GT": true
+        },
+        {
+          "object": 1,
+          "time_interval": [
+            0.4221105527638191,
+            0.4271356783919598,
+            0.43216080402010054
+          ],
+          "nodes": 959,
+          "anchors": 16,
+          "current_world_same_bank_neighbors": 64,
+          "support_attempts": [
+            {
+              "neighbors": 64,
+              "valid_fraction": 1.0
+            }
+          ],
+          "valid_fraction": 1.0,
+          "velocity_trajectory_RMS": 0.31761007929303864,
+          "CMR_RMS": 4.262204701925181,
+          "trajectory_acceleration_RMS": 11.503727941658148,
+          "independent_acceleration_RMS": 0.0014427698702376506,
+          "stress_pred_RMS": 0.14101669192314148,
+          "stress_divergence_RMS": 0.15250092278480287,
+          "rate_divergence_RMS": 4.24376277477129,
+          "spatial_support_radius_mean": 0.014900743452401433,
+          "time_units": "sequence normalized; acquisition seconds unknown",
+          "not_independent_GT": true
+        },
+        {
+          "object": 2,
+          "time_interval": [
+            0.4221105527638191,
+            0.4271356783919598,
+            0.43216080402010054
+          ],
+          "nodes": 917,
+          "anchors": 16,
+          "current_world_same_bank_neighbors": 64,
+          "support_attempts": [
+            {
+              "neighbors": 64,
+              "valid_fraction": 1.0
+            }
+          ],
+          "valid_fraction": 1.0,
+          "velocity_trajectory_RMS": 1.5962860831678833,
+          "CMR_RMS": 0.41807301343247494,
+          "trajectory_acceleration_RMS": 80.6888416208033,
+          "independent_acceleration_RMS": 0.03112644326615221,
+          "stress_pred_RMS": 0.07280731201171875,
+          "stress_divergence_RMS": 0.020486105601087035,
+          "rate_divergence_RMS": 0.42316306899816025,
+          "spatial_support_radius_mean": 0.05533383799909217,
+          "time_units": "sequence normalized; acquisition seconds unknown",
+          "not_independent_GT": true
+        },
+        {
+          "object": 3,
+          "time_interval": [
+            0.4221105527638191,
+            0.4271356783919598,
+            0.43216080402010054
+          ],
+          "nodes": 1020,
+          "anchors": 16,
+          "current_world_same_bank_neighbors": 64,
+          "support_attempts": [
+            {
+              "neighbors": 64,
+              "valid_fraction": 1.0
+            }
+          ],
+          "valid_fraction": 1.0,
+          "velocity_trajectory_RMS": 2.938362339203945,
+          "CMR_RMS": 52.775708885408875,
+          "trajectory_acceleration_RMS": 81.05644847074169,
+          "independent_acceleration_RMS": 2.4746013848534565,
+          "stress_pred_RMS": 0.21527519822120667,
+          "stress_divergence_RMS": 0.11372709091918935,
+          "rate_divergence_RMS": 51.699818521603355,
+          "spatial_support_radius_mean": 0.03294627591931561,
+          "time_units": "sequence normalized; acquisition seconds unknown",
+          "not_independent_GT": true
+        }
+      ],
+      "valid": true
+    },
+    {
+      "frame": 188,
+      "terms": {
+        "kinematic": 0.15981908498276276,
+        "CMR": 16.43414595869369
+      },
+      "objects": [
+        {
+          "object": 0,
+          "time_interval": [
+            0.9346733668341708,
+            0.9396984924623115,
+            0.9447236180904522
+          ],
+          "nodes": 869,
+          "anchors": 16,
+          "current_world_same_bank_neighbors": 64,
+          "support_attempts": [
+            {
+              "neighbors": 64,
+              "valid_fraction": 1.0
+            }
+          ],
+          "valid_fraction": 1.0,
+          "velocity_trajectory_RMS": 0.18575288017015906,
+          "CMR_RMS": 8.696247027651388,
+          "trajectory_acceleration_RMS": 10.530190704917045,
+          "independent_acceleration_RMS": 0.0033920130122029597,
+          "stress_pred_RMS": 0.08343726396560669,
+          "stress_divergence_RMS": 0.26407278061383804,
+          "rate_divergence_RMS": 8.649670600098641,
+          "spatial_support_radius_mean": 0.006230386733363007,
+          "time_units": "sequence normalized; acquisition seconds unknown",
+          "not_independent_GT": true
+        },
+        {
+          "object": 1,
+          "time_interval": [
+            0.9346733668341708,
+            0.9396984924623115,
+            0.9447236180904522
+          ],
+          "nodes": 774,
+          "anchors": 16,
+          "current_world_same_bank_neighbors": 64,
+          "support_attempts": [
+            {
+              "neighbors": 64,
+              "valid_fraction": 1.0
+            }
+          ],
+          "valid_fraction": 1.0,
+          "velocity_trajectory_RMS": 0.9791728222796039,
+          "CMR_RMS": 4.731602529395991,
+          "trajectory_acceleration_RMS": 40.0290695171426,
+          "independent_acceleration_RMS": 0.015989593162115935,
+          "stress_pred_RMS": 0.1408904790878296,
+          "stress_divergence_RMS": 0.09059907689088477,
+          "rate_divergence_RMS": 4.726962911794916,
+          "spatial_support_radius_mean": 0.01885808468203082,
+          "time_units": "sequence normalized; acquisition seconds unknown",
+          "not_independent_GT": true
+        },
+        {
+          "object": 2,
+          "time_interval": [
+            0.9346733668341708,
+            0.9396984924623115,
+            0.9447236180904522
+          ],
+          "nodes": 861,
+          "anchors": 16,
+          "current_world_same_bank_neighbors": 64,
+          "support_attempts": [
+            {
+              "neighbors": 64,
+              "valid_fraction": 1.0
+            }
+          ],
+          "valid_fraction": 1.0,
+          "velocity_trajectory_RMS": 0.6725880586107948,
+          "CMR_RMS": 2.035505112693599,
+          "trajectory_acceleration_RMS": 38.11936843623717,
+          "independent_acceleration_RMS": 0.019787941489074028,
+          "stress_pred_RMS": 0.07287083566188812,
+          "stress_divergence_RMS": 0.04564610850242204,
+          "rate_divergence_RMS": 2.029712935926278,
+          "spatial_support_radius_mean": 0.04215799386586787,
+          "time_units": "sequence normalized; acquisition seconds unknown",
+          "not_independent_GT": true
+        },
+        {
+          "object": 3,
+          "time_interval": [
+            0.9346733668341708,
+            0.9396984924623115,
+            0.9447236180904522
+          ],
+          "nodes": 937,
+          "anchors": 16,
+          "current_world_same_bank_neighbors": 64,
+          "support_attempts": [
+            {
+              "neighbors": 64,
+              "valid_fraction": 1.0
+            }
+          ],
+          "valid_fraction": 1.0,
+          "velocity_trajectory_RMS": 0.5711044240778709,
+          "CMR_RMS": 136.36297064188474,
+          "trajectory_acceleration_RMS": 27.75290765342763,
+          "independent_acceleration_RMS": 0.18645756057141663,
+          "stress_pred_RMS": 0.21260027587413788,
+          "stress_divergence_RMS": 0.3980882071065254,
+          "rate_divergence_RMS": 136.42285872407098,
+          "spatial_support_radius_mean": 0.04684060344928638,
+          "time_units": "sequence normalized; acquisition seconds unknown",
+          "not_independent_GT": true
+        }
+      ],
+      "valid": true
+    }
+  ],
+  "all_fixed_frame_physics_valid": true,
+  "qualified_tracks": [],
+  "track_observation_mean_px400": null,
+  "conditional_interior": null,
+  "manual_visual_review_pending": true,
+  "limits": "Training-image correspondences, model stress/velocity consistency and conditional SDF are proxies; no independent 3D/material/force GT; late physical ID remains unknown"
+}

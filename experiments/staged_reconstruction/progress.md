@@ -110,3 +110,12 @@ Corrected S3 separate40→80 recovery verified136 Adam states, exact Python RNG/
 camera replay, finite updates and static freeze. Formal6000 is now running via
 state_recovery.train (PID267804); the full57-test suite passed. The earlier
 rank failure and frozen source remain preserved, not overwritten.
+
+S3 completed6000 actual updates and native val/test. Validation dynamic25.39230dB,
+dynamic-only alpha0.985505, static35.94167dB; test dynamic25.55725dB. Exact final
+Python RNG/camera replay and finite136-state Adam pass; all fixed-frame current-
+world physics stencils pass. Nine observed/group panels plus native pixel crops
+for fixed86/fixed188/original at2/86/188 were actually viewed; all3 videos decode
+200frames each. Fragments/sheets and group leakage remain, so admission is only
+for conditional sequential reconstruction correction, not geometry/physical-ID
+success. S4 exact-S3 fixed-row binding is running.
