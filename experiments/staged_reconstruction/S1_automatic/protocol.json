@@ -1,0 +1,33 @@
+{
+  "stage": "S1-A",
+  "enabled_by_default": false,
+  "seed": 20261103,
+  "revision": 2,
+  "smoke_directory": "smoke_v2",
+  "revision_reason": "Preserve all RNG around original GaussianModel renderer-parity construction; first failed40-step audit/source/run retained in revisions/smoke_attempt1 and runs/.../smoke. No formal training used revision1.",
+  "input_contract": "Training black-composited RGB, timestamps and supplied camera calibration only. RGBA alpha only produces the dataset RGB; never static/dynamic masks or alpha targets. No blue/yellow thresholds, original S1 weights/hull/selected tracks, instance/material IDs or object-number inputs.",
+  "track_evidence": {
+    "min_observations": 12,
+    "min_span": 30,
+    "min_angle": 2.0,
+    "median_limit": 1.5,
+    "p90_limit": 3.0
+  },
+  "tracking": "400px unmasked grayscale LK; forward/backward <0.5px, both errors<20; generic Shi-Tomasi features every4 train observations; no learned semantics",
+  "region_propagation": "Generic Felzenszwalb RGB regions, scale100/sigma0.8/minsize60; at least2 fixed-world-point seeds and no incompatible-fixed-point seed; erode1; unseeded/mixed/occluded regions unknown",
+  "staticity_limit": "Conditional observed-interval fixed-point compatibility is not proof of permanent physical stationarity",
+  "initialization_gate": "At least12 accepted tracklets and100 supported static surface Gaussians; otherwise report insufficient evidence without color-prior fallback",
+  "voxel_spacing": 0.04,
+  "initialization_support": "Grid within accepted-track bounds plus0.16; nearest accepted triangulation <=0.12 scene units, >=8 positive projected masks, >=12 image-frustum observations, >=2 positives in at least2 global time thirds; shell only. No alpha/background/color negatives.",
+  "training_objective": "Inferred-static-region RGB L1 +0.2 inferred-positive alpha coverage +0.01 position displacement; unknown image pixels have zero direct loss; original alpha channel never supplies targets.",
+  "max_static_points": 14624,
+  "stage_updates": 12000,
+  "width_schedule": [[1,800],[8001,1600]],
+  "physics": false,
+  "material_segmentation": false,
+  "object_count_estimation": false,
+  "historical_checkpoints_modified": false,
+  "full_training_gate": "Unit tests, RGB-geometric discovery audit, actual inferred-mask inspection, renderer parity and independent40-to80 full-state recovery before formal training",
+  "selection": "Use predeclared12k endpoint; no thresholds/weights swept after seeing results",
+  "evaluation": "Held-observation reprojection and unknown coverage, native rendered image inspection and fixed86/188/original views. Any color/alpha-derived historical diagnostics are evaluation-only and cannot choose seeds, checkpoints or thresholds. No independent static/geometry GT currently available."
+}

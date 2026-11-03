@@ -1,5 +1,50 @@
 # PIDG repository map — M0
 
+## Unknown-static RGB-geometric discovery (S1-A, 2026-11-03)
+
+`variants/staged_reconstruction/automatic_static/geometry.py` tests a fixed
+world-point hypothesis using separate fit/check observations and rejects low
+parallax/short evidence as unknown. `discover.py` owns unmasked feature tracking
+and generic region propagation; it consumes training RGB and supplied cameras,
+not S1 masks/weights, blue/yellow rules, old selected tracks or material labels.
+The opt-in protocol and limitations are in experiments/staged_reconstruction/
+S1_automatic. This is reconstruction preprocessing, not learned material
+segmentation or a physics milestone. Existing frozen trainers remain unchanged.
+`initialize.py` builds a conservative shell near automatically triangulated
+points; `train.py` reuses the original renderer/StaticGaussian optimizer through
+separate complete-state checkpoints. Unknown pixels have zero direct loss.
+`experiments/staged_reconstruction/verify_automatic.py` audits all samplers,
+Adam/RNG and native parity; `review_automatic.py` exports native images, standard
+3DGS PLY and a moving-camera H264 video without a time deformation.
+
+## Opt-in S3-U surface trajectory research (2026-11-03)
+
+`variants/staged_reconstruction/surface_trajectory/observations.py` and `prepare.py`
+extract count-free train-image tracks from raw bidirectional RGB flow, with
+appearance, visibility and full-fragment closure checks. Versioned observation
+receipts retain the insufficient first attempt. `binding.py` fits frozen local
+support weights using only three bootstrap observations; `bind.py` audits the
+immutable S3-U final6k state with full forward contribution renders and rejects
+ambiguous depth hypotheses. No original group/row bindings are reused.
+`split.py` groups image duplicates and overlapping weighted supports before
+supervision/track-loss-holdout assignment. `review.py` exports native-image crop
+galleries without claiming that generating images constitutes visual review.
+The parent is `runs/pidg_staged_reconstruction/S3_union/physics/formal/checkpoint.pt`.
+Reports live in `experiments/staged_reconstruction/surface_trajectory`; these
+R0/R1 modules perform zero optimizer updates. Training integration and physics
+expansion require the separately recorded observation, support and preflight
+gates; no material identity or cross-occlusion reidentification is certified.
+
+`diagnostics.py` queries the frozen supports at later observations and reports
+reprojection plus complete visible support without filtering failed observations.
+`admission.py` keeps the evidence gates distinct from user authorization and
+training preflight. `experiments/staged_reconstruction/verify_surface_trajectory.py`
+independently replays raw-flow interpolation, bootstrap bindings and grouped
+splits; `summarize_surface_trajectory.py` writes the result and static figure.
+Completed R0/R1: conservative observations66, fixed supports23 (12/3/8 over
+early/middle/late), duplicate/support groups12. Evidence admission fails; no new
+training integration, optimizer update, constitutive module or force is added.
+
 ## Independent count-free S3-U branch (2026-11-03)
 
 `variants/staged_reconstruction/union/prepare.py` freezes a training-image union

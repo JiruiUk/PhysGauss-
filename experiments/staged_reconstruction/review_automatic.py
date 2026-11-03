@@ -1,0 +1,122 @@
+"""Native S1-A partial-static artifacts, coverage-aware diagnostics and 3DGS PLY."""
+import json
+from pathlib import Path
+import subprocess
+import sys
+import numpy as np
+from PIL import Image, ImageDraw
+import torch
+import cv2
+import imageio_ffmpeg
+ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT))
+from variants.staged_reconstruction.prepare_data import DATA, read, write, sha
+from variants.staged_reconstruction.static_gaussian import StaticGaussian
+from variants.staged_reconstruction.train_static import setup, camera, render_static
+from variants.staged_reconstruction.automatic_static.discover import REPORT, RUNS, rgb
+from variants.staged_reconstruction.automatic_static.initialize import verify
+from variants.staged_reconstruction.automatic_static.train import load_frame
+
+
+def pixels(tensor):
+    return (tensor.detach().clamp(0, 1).permute(1, 2, 0).cpu().numpy()*255).round().astype('uint8')
+
+
+@torch.no_grad()
+def main():
+    verify()
+    audit = read(REPORT/'formal_state_audit.json')
+    checkpoint = RUNS/'formal/checkpoint.pt'
+    assert audit['passed'] and audit['iteration'] == 12000 and sha(checkpoint) == audit['checkpoint_sha256']
+    out = ROOT/'output/staged_reconstruction/S1_automatic'
+    assert not (REPORT/'exports.json').exists(), 'Preserve existing export evidence'
+    renderer = setup(); torch.set_num_threads(4)
+    model = StaticGaussian(RUNS/'initialization.npz')
+    model.load_state_dict(torch.load(checkpoint, map_location='cpu', weights_only=False)['model'])
+    initial = StaticGaussian(RUNS/'initialization.npz')
+    meta = read(DATA/'transforms_train.json')
+    masks = np.load(RUNS/'inferred_masks.npz')
+    selected = [2, 27, 43, 86, 166, 188, 200]
+    rows, panels, files = [], [], []
+    for frame in meta['frames']:
+        number = int(Path(frame['file_path']).stem)
+        gt, positive = load_frame(frame, 1600, masks)
+        cam = camera(frame, meta, 1600)
+        package = render_static(renderer, cam, model)
+        pred = package['render'].clamp(0, 1)
+        row = {'frame': number, 'inferred_static_pixels': int(positive.sum()),
+               'image_pixels': positive.numel(), 'unknown_fraction': float((~positive).float().mean())}
+        if positive.any():
+            row['training_inferred_region_PSNR'] = float(-10*torch.log10((pred[:, positive]-gt[:, positive]).square().mean().clamp_min(1e-12)))
+            row['training_inferred_region_rendered_alpha'] = float(package['alpha'].squeeze()[positive].mean())
+        rows.append(row)
+        if number in selected:
+            image = pixels(pred)
+            path = out/f'static_t{number:04d}_native.png'; Image.fromarray(image).save(path); files.append(path)
+            start = pixels(render_static(renderer, cam, initial)['render'])
+            panel = Image.new('RGB', (1200, 250), '#161922')
+            for i, (value, label) in enumerate([(pixels(gt), 'Observed RGB'), (start, 'Geometric initialization'), (image, '12k partial static 3DGS')]):
+                panel.paste(Image.fromarray(value).resize((400, 225), Image.Resampling.LANCZOS), (400*i, 25))
+                ImageDraw.Draw(panel).text((400*i+8, 5), f't{number} {label}', fill='white')
+            panels.append(np.asarray(panel))
+    panel_path = out/'native_review.png'; Image.fromarray(np.concatenate(panels)).save(panel_path); files.append(panel_path)
+    from scene_PIDG.gaussian_model import GaussianModel
+    native = GaussianModel(3); native.active_sh_degree = 3
+    for name, parameter in model.named_parameters():
+        setattr(native, name, parameter)
+    ply = out/'static_automatic_12000.ply'; native.save_ply(str(ply))
+    # Static field rendered from all original cameras. No artificial time deformation.
+    all_meta = read(ROOT/'data/PIDG/rubber_duck/transforms_all.json')
+    frames = sorted(all_meta['frames'], key=lambda f: int(Path(f['file_path'].replace('\\', '/')).stem))
+    video = out/'original_trajectory.mp4'
+    assert not video.exists(), 'No overwrite of media'
+    with (out/'original_trajectory.encode.log').open('wb') as log:
+        process = subprocess.Popen([imageio_ffmpeg.get_ffmpeg_exe(), '-hide_banner', '-nostdin', '-n',
+            '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-s', '800x450', '-r', '20', '-i', 'pipe:0',
+            '-an', '-c:v', 'libx264', '-profile:v', 'main', '-pix_fmt', 'yuv420p', '-crf', '18',
+            '-movflags', '+faststart', str(video)], stdin=subprocess.PIPE, stdout=subprocess.DEVNULL,
+            stderr=log, creationflags=subprocess.CREATE_NO_WINDOW)
+        for frame in frames:
+            image = pixels(render_static(renderer, camera(frame, all_meta, 1600), model)['render'])
+            process.stdin.write(np.asarray(Image.fromarray(image).resize((800, 450), Image.Resampling.LANCZOS)).tobytes())
+        process.stdin.close(); assert process.wait(timeout=60) == 0
+    cap = cv2.VideoCapture(str(video)); count = 0
+    while cap.read()[0]:
+        count += 1
+    cap.release(); assert count == 200
+    assert sha(checkpoint) == audit['checkpoint_sha256']
+    original = read(ROOT/'experiments/staged_reconstruction/completion_integrity.json')['final_checkpoints']
+    for row in original:
+        assert sha(ROOT/row['path']) == row['sha256']
+    union = read(ROOT/'experiments/staged_reconstruction/S3_union/physics_state_audit.json')['checkpoint_sha256']
+    assert sha(ROOT/'runs/pidg_staged_reconstruction/S3_union/physics/formal/checkpoint.pt') == union
+    coverage = sum(r['inferred_static_pixels'] for r in rows)/sum(r['image_pixels'] for r in rows)
+    result = {'stage': 'S1-A', 'iteration': 12000, 'checkpoint_sha256': audit['checkpoint_sha256'],
+        'static_points': len(model.get_xyz), 'training_image_count': len(rows),
+        'inferred_positive_pixel_fraction_all_training_images': coverage,
+        'unknown_pixel_fraction_all_training_images': 1-coverage,
+        'frames_with_any_inferred_static_pixels': sum(r['inferred_static_pixels'] > 0 for r in rows),
+        'mean_inferred_region_PSNR_nonempty_training_frames_only': float(np.mean([r['training_inferred_region_PSNR'] for r in rows if 'training_inferred_region_PSNR' in r])),
+        'frames': rows, 'images': {p.relative_to(ROOT).as_posix(): sha(p) for p in files},
+        'PLY': {'path': ply.relative_to(ROOT).as_posix(), 'sha256': sha(ply)},
+        'video': {'path': video.relative_to(ROOT).as_posix(), 'sha256': sha(video), 'decoded_frames': count,
+                  'fps': 20, 'codec': 'H264 Main/yuv420p/faststart', 'camera_policy': 'original calibrated trajectory; static geometry independent of time'},
+        'original_S1_S6_and_S3_U_checkpoints_preserved': True,
+        'independent_static_or_geometry_GT': False, 'complete_static_recovery_claimed': False,
+        'limit': 'Training inferred-region metrics are selection-conditioned proxies, not independent image/geometry performance or matched S1 metrics'}
+    write(REPORT/'exports.json', result)
+    (out/'index.html').write_text('<!doctype html><meta charset="utf-8"><title>S1-A automatic static</title>'
+        '<style>body{background:#161922;color:white;font:17px system-ui;max-width:1200px;margin:30px auto}img,video{max-width:100%}a{color:#9cf}</style>'
+        '<h1>S1-A: static discovery without static-color labels</h1>'
+        '<p>543 Gaussians, partial static reconstruction only. Large unknown regions remain; no complete geometry claim.</p>'
+        '<p><a href="static_automatic_12000.ply">Download 3DGS PLY</a> | '
+        '<a href="../../../experiments/staged_reconstruction/S1_automatic/assessment.md">Result report</a></p>'
+        '<h2>Input RGB / inferred geometric support</h2><img src="inferred_masks.png">'
+        '<h2>Observed RGB / initialization / trained static 3DGS</h2><img src="native_review.png">'
+        '<h2>Original camera trajectory</h2><video controls preload="metadata" poster="static_t0086_native.png"><source src="original_trajectory.mp4" type="video/mp4"></video>'
+        '<p><a href="original_trajectory.mp4">Open video</a></p>', encoding='utf8')
+    print('AUTOMATIC_STATIC_EXPORTED', coverage, result['mean_inferred_region_PSNR_nonempty_training_frames_only'], flush=True)
+
+
+if __name__ == '__main__':
+    main()

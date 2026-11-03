@@ -1,0 +1,10 @@
+{
+  "passed": 17,
+  "command": "PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 python -m pytest tests/test_automatic_static.py tests/test_staged_static.py -p no:cacheprovider --basetemp=runs/pidg_staged_reconstruction/S1_automatic/pytest_revision2_20261103 -q",
+  "new_tests": 11,
+  "existing_static_tests": 6,
+  "scope": "Camera-induced motion vs object motion, low parallax and short tracks unknown, held-observation separation, geometry-seeded regions, unknown zero gradients, opt-in disabled paths",
+  "revision": 2,
+  "failed_first_smoke_audit": "revisions/smoke_attempt1/failure.json",
+  "independent_resume_passed": true
+}

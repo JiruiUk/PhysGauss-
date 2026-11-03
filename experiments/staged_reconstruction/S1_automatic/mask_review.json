@@ -1,0 +1,15 @@
+{
+  "accepted_for_conditional_training": true,
+  "scope": "Partial static reconstruction pilot only; not admission of complete static discovery",
+  "review_method": "Actual view_image inspection of output/staged_reconstruction/S1_automatic/inferred_masks.png at train2/27/43/86/166/188/200",
+  "findings": [
+    "Early sampled frames2/27/43/86 have no accepted static region; do not interpret those regions as dynamic or empty.",
+    "Late sampled frames166/188/200 show inferred regions mostly on parts of the support faces. Most visible pixels remain unknown.",
+    "No predefined blue/yellow rules selected these regions; grayscale track consistency under supplied cameras seeds generic RGB regions.",
+    "Sparse tracking and region propagation do not recover the complete static support, concavities or hidden geometry.",
+    "Proceed only with the predeclared12k partial-static 3DGS pilot, preserving unknown coverage and all negative results. Do not transplant into S3-U or claim full scene decomposition."
+  ],
+  "complete_static_discovery": false,
+  "independent_geometry_GT_available": false,
+  "viewed_image_sha256": "3bb2f88057b114dda862df659b73fa8099334825cf9a71c9f81f4c3ac5227053"
+}

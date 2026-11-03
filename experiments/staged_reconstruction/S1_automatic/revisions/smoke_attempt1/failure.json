@@ -1,0 +1,8 @@
+{
+  "stage": "capture40 audit",
+  "failure": "CPU Torch RNG differs from initial state",
+  "cause": "Read-only native GaussianModel parity construction initializes original auxiliary network and consumes RNG after restore",
+  "formal_training_started": false,
+  "preserved_run": "runs/pidg_staged_reconstruction/S1_automatic/smoke",
+  "repair": "Preserve all RNG around parity and use isolated smoke_v2; do not modify previous run or historical models"
+}
