@@ -1,0 +1,27 @@
+{
+  "actual_updates": 7000,
+  "snapshot": "runs/pidg_staged_reconstruction/covariance_transport/previews/step07000/checkpoint.pt",
+  "snapshot_sha256": "6a498afc8b694bfaab94ed05927d11dd5fe82279f7baa1ba1eb00bd3a21d3994",
+  "source_sha256": "21c0eca47020eb259943bad31b2fd3c79748e2bec4e398b91034d5aa65f4eb55",
+  "native_width": 1600,
+  "RGB_read": false,
+  "optimizer_updates": 0,
+  "purpose": "Intermediate visual diagnosis only; original16k schedule/gates remain. No model selection or final acceptance.",
+  "images_sha256": {
+    "output/staged_reconstruction/covariance_transport/previews/step07000/c188_t146_alpha.png": "539b6ba3bd1f48b94b103fe744183633f50015ae3ee5b1624729794b9344182f",
+    "output/staged_reconstruction/covariance_transport/previews/step07000/c188_t146_native.png": "19ee2e915d382b34ee7d322f01c7d77f2672ca1765fd07aad0e8240323dd6c55",
+    "output/staged_reconstruction/covariance_transport/previews/step07000/c188_t43_alpha.png": "47d64353ee667a406b56928962eddea3f46dab313cb45e3938d6186c43a72f95",
+    "output/staged_reconstruction/covariance_transport/previews/step07000/c188_t43_native.png": "20191fe28a68ff8c4c31cf0536f28316dbbe4474bd581ece47e05d8a2ad17148",
+    "output/staged_reconstruction/covariance_transport/previews/step07000/c86_t86_alpha.png": "73d02e3cbff59d3b1f290c6ee7ba8c4ac52953165f6cbedac8f4623d3d5eb249",
+    "output/staged_reconstruction/covariance_transport/previews/step07000/c86_t86_native.png": "fdb4a6b9968529b0bbf67cfb935a9d3ad2a9cd28941d6831dd51465ed0b9a828",
+    "output/staged_reconstruction/covariance_transport/previews/step07000/contact.png": "0b8b4065d09bf88bcf1f6ceaa790f35b9819bee74d2150476cff1412bb783f39"
+  },
+  "actual_visual_inspection_completed": true,
+  "completeness_passed": false,
+  "inspected": [
+    "output/staged_reconstruction/covariance_transport/previews/step07000/contact.png",
+    "output/staged_reconstruction/covariance_transport/previews/step07000/c188_t146_native.png"
+  ],
+  "findings": "At7000 updates, c188/t43 and t146 retain incomplete lobes/sheets and gaps; c86/t86 has a long narrow bridge. More contiguous support in some areas is not completeness. No final acceptance or early model selection.",
+  "training_protocol_changed": false
+}
