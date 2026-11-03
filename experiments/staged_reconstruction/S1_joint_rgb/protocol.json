@@ -1,0 +1,117 @@
+{
+  "stage": "S1-J1 RGB-only coherent joint Gaussian experiment",
+  "enabled_by_default": false,
+  "cases": [
+    "diffuse",
+    "glossy"
+  ],
+  "arms": [
+    "frozen_static",
+    "revisable_static"
+  ],
+  "updates": 6000,
+  "seed": 20261105,
+  "synthetic_data": "data/derived/clean_static_synthetic/v2",
+  "train_input": "RGB/calibrated cameras/timestamps and pinned RGB-derived Gaussian parents only",
+  "evaluator_assets_in_training": false,
+  "parents": {
+    "diffuse": {
+      "checkpoint": "runs/pidg_staged_reconstruction/S1_nuisance/v1/formal/diffuse/full_RGB_control/checkpoint.pt",
+      "sha256": "64b5bc00a6a1ada7957c4d1bd8087df59c7e4c00f994cf02ace30fa83e3fb45b",
+      "initialization": "runs/pidg_staged_reconstruction/S1_nuisance/v1/diffuse/initialization.npz"
+    },
+    "glossy": {
+      "checkpoint": "runs/pidg_staged_reconstruction/S1_nuisance/v1/formal/glossy/full_RGB_control/checkpoint.pt",
+      "sha256": "c4dd10f4ec2c45fa21a9fcaf296313e0b6ce476299fe21766fd29cfe9fe5fd3a",
+      "initialization": "runs/pidg_staged_reconstruction/S1_nuisance/v1/glossy/initialization.npz"
+    }
+  },
+  "dynamic_initialization": "all parent4000 rows, canonical=xyz-mean, copy SH/scale/rotation, opacity0.01, identity original PIDG deformation heads",
+  "initial_dynamic_opacity": 0.01,
+  "dynamic_budget_is_not_body_count": true,
+  "grid_args": {
+    "canonical_num_levels": 12,
+    "canonical_log2_hashmap_size": 17,
+    "canonical_desired_resolution": 256,
+    "deform_num_levels": 16,
+    "deform_log2_hashmap_size": 17,
+    "deform_desired_resolution": [
+      32,
+      32,
+      16
+    ]
+  },
+  "net_args": {
+    "depth": 1,
+    "width": 128
+  },
+  "static_trainable_in_candidate": [
+    "_opacity",
+    "_features_dc",
+    "_features_rest"
+  ],
+  "static_geometry_frozen": true,
+  "loss": {
+    "full_image_L1": 0.8,
+    "DSSIM": 0.2
+  },
+  "static_Adam": "inherit full parent optimizer and exact rates; frozen groups kept without gradients",
+  "dynamic_rates": {
+    "_xyz": 0.00016,
+    "_features_dc": 0.0025,
+    "_features_rest": 0.000125,
+    "_opacity": 0.01,
+    "_scaling": 0.002,
+    "_rotation": 0.001,
+    "grids": 0.003,
+    "deform_network": 0.0008
+  },
+  "Adam_eps": 1e-15,
+  "dynamic_bounds": {
+    "canonical_displacement": 0.4,
+    "scale_log_canonical_min_spacing_factor": 0.15,
+    "scale_log_canonical_max": 0.1,
+    "opacity_logit": [
+      -12,
+      12
+    ],
+    "render_scale": "inherited S3-U bounded_scale(.15,2.5)*spacing"
+  },
+  "checkpoint_interval": 500,
+  "recovery_full_steps": 40,
+  "recovery_split_steps": 20,
+  "recovery_atol": 1e-06,
+  "recovery_rtol": 1e-05,
+  "sampling": "continue parent stack/RNG; identical index sequence between arms",
+  "synthetic_promotion_gate": {
+    "both_cases_required": true,
+    "static_clean_GT_PSNR_gain_min_dB": 0.3,
+    "visible_surface_coverage_loss_max_percentage_points": 1.0,
+    "thin_surface_coverage_loss_max_percentage_points": 2.0,
+    "static_RGB_spill_reduction_min_fraction": 0.1,
+    "additional_requirement": "finite native gradients/recovery, static/native image review and depth/alpha audit; composite PSNR is insufficient; empty support is failure"
+  },
+  "additional_gates": {
+    "novel_composite_PSNR_degradation_max_dB": 0.3,
+    "accurate_static_ray_coverage_loss_max_percentage_points": 1.0,
+    "thin_alpha_recall_loss_max_percentage_points": 1.0,
+    "accurate_static_ray_depth_tolerance": 0.05,
+    "valid_render_alpha_min": 0.5
+  },
+  "fixed_train_indices": [
+    0,
+    24,
+    72
+  ],
+  "fixed_novel_camera": 24,
+  "fixed_time_indices": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "no_depth_normal_or_DAV2_supervision": true,
+  "no_new_masks_counts_growth_pruning_physics_or_sweeps": true,
+  "real_training_admitted": false,
+  "all_evidence_requires_manual_review": true
+}
