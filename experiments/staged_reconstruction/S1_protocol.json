@@ -1,0 +1,41 @@
+{
+  "version": 4,
+  "stage": "S1",
+  "enabled_by_default": false,
+  "seed": 20261103,
+  "static_only": true,
+  "initialization": "Training-only multitime silhouette hull in metadata CV world coordinates; explicit new-camera flag, original PIDG loader unchanged; no trained checkpoint",
+  "max_static_points": 14624,
+  "point_budget": "Static subset budget no greater than R0; no densification or extra Gaussian sweep",
+  "mask_policy": "Blue candidates require multiple train views and time thirds; eroded visible blue is positive, eroded alpha background is negative; yellow occlusion and other foreground are unknown",
+  "stage_updates": 12000,
+  "width_schedule": [
+    [
+      1,
+      800
+    ],
+    [
+      8001,
+      1600
+    ]
+  ],
+  "checkpoint_interval": 1000,
+  "validation_interval": 2000,
+  "final_state_preselected": true,
+  "physics": false,
+  "dynamic_optimizer": false,
+  "anchor_trajectory_loss": false,
+  "native_evaluation_width": 1600,
+  "admission": "Static observed-region coverage, multiview silhouette support, temporal invariance and native visual review; canonical opacity collapse is not success; track geometry assessed only with visible surface evidence, not arbitrary Gaussian row correspondence",
+  "not_GT": "Masks/hull are conditional reconstruction hypotheses; no independent dense geometry or physical IDs",
+  "continuation": "Evaluate S1 and revise/fix it if needed, then implement/train S2-S6 using experiments/staged_reconstruction_plan.md; completion of S1 does not end the user task",
+  "initialization_file": "static_metadata_initialization.npz",
+  "voxel_spacing": 0.04,
+  "world_bounds": "Training-only qualified static triangulations plus0.5 scene-unit padding; not the canonical Gaussian box",
+  "camera_contract": "metadata_cv",
+  "world_bound_camera_audit": "experiments/staged_reconstruction/camera_audit.json",
+  "image_admission": {
+    "validation_static_alpha_mean_min": 0.9,
+    "validation_background_alpha_mean_max": 0.01
+  }
+}

@@ -607,3 +607,18 @@ visual review is separate from structural invariance. Plans/evidence live in
 `runs/pidg_static_pool`. Adaptive decisions are recorded in
 `experiments/adaptive_reconstruction_plan.md`; the original physics ladder is
 not renumbered or bypassed.
+
+## S1–S6 staged reconstruction (2026-11-03)
+
+`variants/staged_reconstruction` is opt-in and leaves every existing trainer and
+loader unchanged. `camera_audit` checks train-only track hypotheses;
+`prepare_data` builds conditional static masks and multitime silhouette hull in
+metadata CV coordinates. `static_gaussian.StaticGaussian` is an independent
+parameter bank consumed by the unmodified C1 renderer. `train_static` trains
+only static geometry/SH/opacity, saves full optimizer/RNG/camera state, and
+evaluates candidate static regions at native resolution. No deformation,
+velocity, constitutive or contact parameter is introduced in S1. `freeze`
+protects S1 sources/inputs and inherited baseline files. Flags-off never enters
+the new renderer path. This camera contract is specific to the new branch;
+historical legacy-camera weights/metrics are not a matched control for S1.
+Stages and dependencies remain in `experiments/staged_reconstruction_plan.md`.
