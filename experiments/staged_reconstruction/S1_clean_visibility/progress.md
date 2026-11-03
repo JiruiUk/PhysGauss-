@@ -50,3 +50,11 @@ all six Adam counters18k,6000 camera samples replayed from parent,6 absolute
 confidence refreshes and frozen source/input/history checks. Checkpoint SHA256:
 `b0c5e25b8b3da9013fd745e399f02a9305fa678b49b6d778dd6750ab0701b584`.
 Visibility arm is running; no final quality conclusion before matched evaluation.
+
+## Completed visibility milestone
+
+Visibility arm also completed18k,3031 retained points and242 reversible
+quarantined rows. All six Adam counters18k;6000 parent-continuation camera
+samples,6 confidence refreshes and frozen source/history checks passed.
+Checkpoint SHA256: `883101f36ab668ea6b9d6fb3a5616422ca54b2067f97a50f4d2f220332bcb015`.
+Matched native evaluation is running. No promotion before actual images.
