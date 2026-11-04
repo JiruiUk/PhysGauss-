@@ -1,0 +1,31 @@
+W1104 00:45:47.478000 285028 envs\pidg-cu128\Lib\site-packages\torch\utils\cpp_extension.py:466] Error checking compiler version for cl: 'cp1' codec can't decode bytes in position 0--1: No mapping for the Unicode character exists in the target code page.
+ninja: no work to do.
+F:\A_Edinburgh\PhysGauss\variants\color_repair\code\hashencoder\hashgrid.py:16: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.half)
+F:\A_Edinburgh\PhysGauss\variants\color_repair\code\hashencoder\hashgrid.py:56: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "F:\A_Edinburgh\PhysGauss\variants\staged_reconstruction\rubber_visibility\worker.py", line 219, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\variants\staged_reconstruction\rubber_visibility\worker.py", line 216, in main
+    if args.phase=='qualify':qualify(args.replicate)
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\envs\pidg-cu128\Lib\site-packages\torch\utils\_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\variants\staged_reconstruction\rubber_visibility\worker.py", line 143, in qualify
+    fixture=single_fixture(renderer);assert_no_update(scene,opts,state,step,trace,before);verify()
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\envs\pidg-cu128\Lib\site-packages\torch\utils\_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\variants\staged_reconstruction\rubber_visibility\worker.py", line 110, in single_fixture
+    cam=calibrated_camera(np.eye(4),np.array([[100.,0.,w/2],[0.,100.,h/2],[0.,0.,1.]]),w,h)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\variants\staged_reconstruction\nuisance_static\runtime.py", line 11, in calibrated_camera
+    assert abs(k[0,2]-(width-1)/2) < 1e-6 and abs(k[1,2]-(height-1)/2) < 1e-6
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

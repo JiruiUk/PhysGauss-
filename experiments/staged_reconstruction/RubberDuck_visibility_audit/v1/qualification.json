@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "independent_processes": 2,
+  "group_hashes_targets_source0_fixture_exact": true,
+  "logs": [
+    {
+      "path": "experiments/staged_reconstruction/RubberDuck_visibility_audit/v1/qualification2.log",
+      "sha256": "0d99f9e3b15c6409abf309a26e812858ba6e19ddd4de562bb9e21ee9d8652fb8"
+    },
+    {
+      "path": "experiments/staged_reconstruction/RubberDuck_visibility_audit/v1/qualification3.log",
+      "sha256": "e4b41f2144f808b6a567c5b31601eb904c2e80342049b2cc9880a9aa7cca3ef5"
+    }
+  ],
+  "single_fixture": {
+    "single_native_white_RGB_equals_alpha_exact": true,
+    "valid_pixels": 148,
+    "alpha_max": 0.754814624786377,
+    "stored_weight_vs_compositing_alpha_max_error": 0.5697451233863831,
+    "stored_weight_vs_alpha_times_one_minus_alpha_max_error": 0.0,
+    "stored_weights_used_in_J5": false,
+    "control_not_a_training_asset": true
+  },
+  "evaluation_repair_receipt": "repair_record.json",
+  "failed_attempt_retained": true
+}
