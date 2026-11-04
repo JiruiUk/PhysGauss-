@@ -44,3 +44,23 @@ inspection. No message authorization is implied. If it finishes without a
 qualified result, review the recorded failure before proposing a new candidate.
 The user's cleanup/completeness objective remains unfulfilled, and no evidence
 here establishes that the available RGB is impossible to reconstruct.
+
+## Dependency followup paused after read-only check (2026-11-04)
+
+The parallel reliable_motion graph did not qualify:8592/12882 active parent
+points covered (66.6977%), below the frozen80% gate. Its pretraining graph
+audit and fixed protocol/array hashes match; this is not a trained-model
+quality result. Coverage diagnosis narrows11236 reference-neighbor targets
+to10127 after common observations,8643 after the all-common-time radius check
+and8592 after rank admission. Expanding currently observed anchors beyond
+top2% is exploratory diagnosis only and does not qualify a replacement graph.
+
+The human instructed the dependency task “这轮后结束” (message ID recorded in
+dependency_review.json). Its final report was still being prepared when read.
+This task does not message, alter, restart or supersede that stopped line and
+does not launch dependent joint training. The local pidg automatic followup
+is paused; no training/GPU workload belongs to this followup. J5 remains
+completed_read_only_not_promoted, not a new failure or new model. The overall
+cleanup/completeness goal remains unmet; this does not establish RGB is
+unsolvable. Resume only after an explicit human request, then read the actual
+dependency final report before a new separately preregistered decision.

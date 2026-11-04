@@ -1,0 +1,30 @@
+{
+  "status": "dependency_not_admitted_followup_paused",
+  "new_training_updates": 0,
+  "dependency_task_title": "动态物体保持完整度",
+  "dependency_thread_id": "01a19e6a-9787-7e01-844e-4d6727a802b7",
+  "human_stop_evidence": {
+    "user_message_id": "01a1a40f-a394-7001-9dda-1db3cb9bf7c5",
+    "exact_text": "这轮后结束",
+    "scope": "Dependency task; this followup will not restart it or launch dependent joint training"
+  },
+  "dependency_final_report_pending_at_observation": true,
+  "graph_passed": false,
+  "active_target_coverage": 0.6669771774569166,
+  "active_target_coverage_min": 0.8,
+  "targets": 8592,
+  "active_parent_points": 12882,
+  "read_only_dependency_files": {
+    "experiments/staged_reconstruction/reliable_motion/graph_protocol.json": "a924b428c1ff209de79a90d3af16be97edf8c3232662bd30796856f931daf8ac",
+    "experiments/staged_reconstruction/reliable_motion/graph_audit.json": "29b6b5abcce5a7108b806aa4000b84a7ceb77148651b3038898bedfa835fa23f",
+    "experiments/staged_reconstruction/reliable_motion/coverage_diagnosis.json": "9f417be2ddce0c64aa80a334df98f4af1ab3aa9055dc439c6bbec0e370984b38"
+  },
+  "dependency_graph_array_SHA_verified": true,
+  "J5_frozen_sources_inputs_verified": true,
+  "no_new_model_video_PLY": true,
+  "no_GPU_training_process_of_this_task": true,
+  "no_dependency_files_or_processes_changed": true,
+  "stop_files_do_not_override_human_stop_request": true,
+  "whole_RGB_problem_declared_unsolvable": false,
+  "next": "Wait for explicit human resumption; read the dependency final report before any newly preregistered candidate. Do not automatically resume the paused dependency."
+}
