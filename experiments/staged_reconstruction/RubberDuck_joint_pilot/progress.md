@@ -13,3 +13,9 @@
   restores. Full model/twoAdam/bindings/RNG/camera/graphs and fixed-native-gradient
   next Adam update are exact. Original native full40 failures remain unchanged.
 - Formal paired2000 updates are now starting; no quality conclusion yet.
+
+- Terminology: “real pilot” in branch/status names means the actual target Rubber
+  Duck dataset rather than the auxiliary fixtures. It does not assert physical
+  camera capture. Rubber Duck belongs to PIDG's synthetic-physics benchmark;
+  this experiment only has its supplied RGB/cameras/times, no independent
+  fixed-view cross-time or static-geometry GT for the reported comparisons.

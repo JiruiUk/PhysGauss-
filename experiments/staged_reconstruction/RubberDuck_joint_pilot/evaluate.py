@@ -131,8 +131,8 @@ def diagnostics(renderer,models):
                 static=statics[name];dynamic=renderer(cam,scene.dynamic_at(t),PIPE,scene.centers.new_zeros(3),0.,0.,0.)
                 joint=scene.render(renderer,cam,t)
                 arrays=[('staticRGB',rgb(static)),('dynamicRGB',rgb(dynamic)),('jointRGB',rgb(joint)),
-                    ('staticAlpha',alpha(static)),('jointAlpha',alpha(joint)),
-                    ('staticD-alpha',depth(static,lo,hi)),('jointD-alpha',depth(joint,lo,hi))]
+                    ('staticAlpha',alpha(static)),('dynamicAlpha',alpha(dynamic)),('jointAlpha',alpha(joint)),
+                    ('staticD-alpha',depth(static,lo,hi)),('dynamicD-alpha',depth(dynamic,lo,hi)),('jointD-alpha',depth(joint,lo,hi))]
                 rows.append((name,arrays));values.append((name,[('jointRGB',rgb(joint))]))
                 for label,array in arrays:
                     path=r.OUT/f'c{camid:03d}_t{number:03d}_{name}_{label}_native.png';Image.fromarray(array).save(path)
