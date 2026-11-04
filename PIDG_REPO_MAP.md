@@ -986,3 +986,21 @@ full-state/fixed-gradient recovery, trains two candidates, and reuses pinned
 historical matched controls without rerunning them. Independent evaluation/
 export retain original quality gates. Tests: `tests/test_joint_depth_trust.py`.
 No original PIDG code, physics or historical weights change; no promotion yet.
+
+## Default-off Rubber Duck paired RGB joint pilot (J4)
+
+`variants/staged_reconstruction/rubber_joint/core.py` opens only static opacity/SH
+when explicitly enabled; the original `UnionScene.render` and frozen PIDG
+renderer remain untouched. It reuses the frozen J3 opacity-only parent-depth
+self-reference. `runtime.py` loads the pinned complete S3-U parent plus the
+exactly matching S1 static Adam, retains complete dynamic Adam/RNG/sampler and
+physics graphs, freezes velocity/stress, and saves/restores both optimizers and
+bindings. This is RGB reconstruction, not original physics continuation; inherited
+color-mask training lineage is disclosed. `RubberDuck_joint_pilot/launch.py`
+freezes train inputs, qualifies original native output/gradients and independent
+exact full-state/fixed-gradient Adam recovery before serial matched2000 updates.
+`evaluate.py` independently audits all initial/final states and30 validation
+images, native fixed86/188 early/mid/late RGB/alpha/D, PLY and fully decoded
+H264. Fixed-view cross-time has no independent GT; teacher is a self-reference.
+Tests: `tests/test_rubber_joint.py`; default off has original object identity.
+No topology/identity/semantic masks/GT or physics modules are added.
