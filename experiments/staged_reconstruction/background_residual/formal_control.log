@@ -1,0 +1,23 @@
+W1104 00:01:42.994000 283784 envs\pidg-cu128\Lib\site-packages\torch\utils\cpp_extension.py:466] Error checking compiler version for cl: 'cp1' codec can't decode bytes in position 0--1: No mapping for the Unicode character exists in the target code page.
+ninja: no work to do.
+F:\A_Edinburgh\PhysGauss\variants\color_repair\code\hashencoder\hashgrid.py:16: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.half)
+F:\A_Edinburgh\PhysGauss\variants\color_repair\code\hashencoder\hashgrid.py:56: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+BACKGROUND_RESIDUAL_TRAIN I10_control 1 0.026069702580571175 elapsed 0.7
+F:\A_Edinburgh\PhysGauss\variants\staged_reconstruction\state_recovery\physics.py:45: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\generated\python_variable_methods.cpp:836.)
+  'spatial_support_radius_mean':float((x[ring]-x[local,None]).norm(dim=-1).max(-1).values.mean()),
+BACKGROUND_RESIDUAL_TRAIN I10_control 40 0.04520073485108819 elapsed 5.7
+BACKGROUND_RESIDUAL_TRAIN I10_control 80 0.032051590055556536 elapsed 11.2
+BACKGROUND_RESIDUAL_TRAIN I10_control 100 0.05450601642619686 elapsed 13.1
+BACKGROUND_RESIDUAL_TRAIN I10_control 200 0.03956080930174233 elapsed 21.0
+BACKGROUND_RESIDUAL_TRAIN I10_control 400 0.0352932111435395 elapsed 31.0
+BACKGROUND_RESIDUAL_TRAIN I10_control 600 0.026378385642554417 elapsed 41.0
+BACKGROUND_RESIDUAL_TRAIN I10_control 800 0.03087484206825351 elapsed 50.9
+BACKGROUND_RESIDUAL_TRAIN I10_control 1000 0.04134798554765925 elapsed 60.8
+BACKGROUND_RESIDUAL_TRAIN I10_control 1200 0.05508593338188081 elapsed 70.8
+BACKGROUND_RESIDUAL_TRAIN I10_control 1400 0.03476762706472773 elapsed 80.7
+BACKGROUND_RESIDUAL_TRAIN I10_control 1600 0.04169172833829218 elapsed 90.7
+BACKGROUND_RESIDUAL_TRAIN I10_control 1800 0.022641703067076763 elapsed 100.6
+BACKGROUND_RESIDUAL_TRAIN I10_control 2000 0.03980718348787039 elapsed 110.4

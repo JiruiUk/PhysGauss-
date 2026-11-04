@@ -20,6 +20,7 @@
 | I7 | 原第0步使用时间条件可逆位置映射，保留原协方差头与image/physics目标 |25.4532（仅16k预热）|静态保留护栏失败；可逆性未解决新视角碎片/拉长|
 | I8 | 原第0步使用同一可逆映射共同输运位置和协方差 |23.8760（仅16k预热）|静态PSNR下降2.8281dB，护栏失败；实际图像仍有缺失、薄片和长桥|
 | I9 | I8同架构增加逐点相对Jacobian的鲁棒对数伸长先验 |22.9463（仅16k预热）|静态PSNR下降3.7489dB，护栏失败；相对形变减小但实际缺面/薄片未修复，正式物理0步|
+| I10 | S3-U final6k继续2k，在可见静态区域中和冻结背景RGB残差 |26.1679|静态区域动态alpha减小，实际缺面/碎片仍在，完整度失败；本次同预算对照26.4786，单次指标差异受数值重复性限制|
 
 I0–I3正式实验从相同 S3-U final6k 开始，没有挑选或替换基线中间帧。
 I3 使用新的训练深度先验，属于不同监督条件，不能只归因于网络结构。
@@ -28,6 +29,10 @@ I7新增33,420个共享位置参数及独立Adam组；原参数/初态及Adam组
 开启时停用原位置输出头。不能把扩展后的全部初态称为与原模型完全相同。
 I4/I5/I6/I7/I8/I9在16k原准入门槛失败，不能把其预热指标当成22k匹配预算结果。
 I8开启时原位置及协方差头均停用，仍保留原张量和Adam组；其有效容量减少。
+I10保持原S3-U表示/初始化和物理项，只改变继续训练中的部分RGB目标。
+历史I0与本次I10对照的完整初态/Adam/RNG/2k采样相同，但微小数值差异
+随训练放大，动态PSNR相差1.6715dB。不能把单次候选/对照差异当成稳定因果效应；
+I10的完整度失败有实际图像支持，未晋级、未宣称6×200验收通过。
 
 CoTracker3另做训练图像对应审计：28个短窗口的1064个候选仅31条通过严格
 检查（早24/中0/晚7），即使全绑定也达不到原R1门槛，未接入模型训练。
@@ -55,7 +60,8 @@ CoTracker3另做训练图像对应审计：28个短窗口的1064个候选仅31�
 - I7实际位置映射应变诊断：`invertible_motion/strain_assessment.md`（固定点/时刻未发现极端局部塌缩）
 - I7实际协方差与原生推理干预：`invertible_motion/covariance_assessment.md`（仅归一化不能恢复完整物体，未训练新模型）
 - I8最终16k准入、完整状态审计、实际图像和形变诊断：`covariance_transport/assessment.md`
-- 静态初始化/训练梯度/最终遮挡的独立诊断：`static_dynamic_coupling/assessment.md`（未做因果训练消融）
+- 静态初始化/训练梯度/最终遮挡的独立诊断：`static_dynamic_coupling/assessment.md`（当次为只读诊断）
+- 冻结背景残差的同起点2k继续训练消融、原生图像及对照数值重复性审计：`background_residual/assessment.md`、`background_residual/control_repeat_audit.json`（不涵盖初始化或早期训练损伤）
 - I9论文改编、预注册和正式训练前资格检查：`relative_strain/research.md`、`relative_strain/preflight_assessment.md`
 - I9与I8的7k同预算实际图像/完整初态和采样/形变对照：`relative_strain/preview07000_assessment.md`
 - I9最终16k失败准入、完整状态、同预算I8对照与实际原生图像：`relative_strain/assessment.md`

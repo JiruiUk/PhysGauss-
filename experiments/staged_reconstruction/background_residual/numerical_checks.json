@@ -1,0 +1,35 @@
+{
+  "models": {
+    "S3U_parent": {
+      "checks": {
+        "dynamic_PSNR": true,
+        "dynamic_alpha": true,
+        "static_preservation": true
+      },
+      "passed": true,
+      "dynamic_PSNR_delta_from_S3U": 0.0,
+      "static_PSNR_drop_from_S1": 0.6438608683797185
+    },
+    "I10_control": {
+      "checks": {
+        "dynamic_PSNR": true,
+        "dynamic_alpha": true,
+        "static_preservation": true
+      },
+      "passed": true,
+      "dynamic_PSNR_delta_from_S3U": 1.2973815282185868,
+      "static_PSNR_drop_from_S1": -0.2615664285766641
+    },
+    "I10_static_residual": {
+      "checks": {
+        "dynamic_PSNR": true,
+        "dynamic_alpha": true,
+        "static_preservation": true
+      },
+      "passed": true,
+      "dynamic_PSNR_delta_from_S3U": 0.9866385777791322,
+      "static_PSNR_drop_from_S1": 0.3907889562499989
+    }
+  },
+  "numerical_checks_alone_do_not_admit_completeness": true
+}

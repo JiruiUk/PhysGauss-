@@ -1,0 +1,60 @@
+{
+  "numeric": {
+    "S3U_parent": {
+      "checks": {
+        "dynamic_PSNR": true,
+        "dynamic_alpha": true,
+        "static_preservation": true
+      },
+      "passed": true,
+      "dynamic_PSNR_delta_from_S3U": 0.0,
+      "static_PSNR_drop_from_S1": 0.6438608683797185
+    },
+    "I10_control": {
+      "checks": {
+        "dynamic_PSNR": true,
+        "dynamic_alpha": true,
+        "static_preservation": true
+      },
+      "passed": true,
+      "dynamic_PSNR_delta_from_S3U": 1.2973815282185868,
+      "static_PSNR_drop_from_S1": -0.2615664285766641
+    },
+    "I10_static_residual": {
+      "checks": {
+        "dynamic_PSNR": true,
+        "dynamic_alpha": true,
+        "static_preservation": true
+      },
+      "passed": true,
+      "dynamic_PSNR_delta_from_S3U": 0.9866385777791322,
+      "static_PSNR_drop_from_S1": 0.3907889562499989
+    }
+  },
+  "validation": {
+    "S3U_parent": {
+      "PSNR": 28.1662540435791,
+      "dynamic_PSNR": 25.181220690409344,
+      "static_PSNR": 34.99995543162028,
+      "dynamic_alpha": 0.9884210109710694,
+      "dynamic_leakage_on_static": 0.006813798058768346,
+      "dynamic_alpha_on_empty": 0.007599882487888484
+    },
+    "I10_control": {
+      "PSNR": 28.487018203735353,
+      "dynamic_PSNR": 26.47860221862793,
+      "static_PSNR": 35.90538272857666,
+      "dynamic_alpha": 0.9898168206214905,
+      "dynamic_leakage_on_static": 0.007037294498150004,
+      "dynamic_alpha_on_empty": 0.007975323131723637
+    },
+    "I10_static_residual": {
+      "PSNR": 28.292568715413413,
+      "dynamic_PSNR": 26.167859268188476,
+      "static_PSNR": 35.25302734375,
+      "dynamic_alpha": 0.9893135050932567,
+      "dynamic_leakage_on_static": 0.002760767029046936,
+      "dynamic_alpha_on_empty": 0.007308928325807073
+    }
+  }
+}

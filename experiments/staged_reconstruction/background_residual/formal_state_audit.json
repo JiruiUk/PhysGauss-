@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "arms": [
+    {
+      "arm": "I10_control",
+      "checkpoint_sha256": "f96103cc1249003e4f1833e0fdec38ee88028bbd91cef8c3b09e6d1ef667be5e",
+      "initial_sha256": "0886cbb544a579d2dd7dc33e30d38d1dc0984f1a6796074b2eda496b2829bb0f",
+      "actual_optimizer_updates": 2000,
+      "actual_original_physics_updates": 200,
+      "initial_model_Adam_all_RNG_sampler_physics_graphs_exact_parent": true,
+      "sampler_all_RNG_Adam_counters_checked": true,
+      "finite_full_state": true,
+      "static_tensors_unchanged": true,
+      "history_sha256": "79375fa61dbb63ff0ee025941e261b5bfe02b3ad0a7966f7cf64db8f9a566a33",
+      "graph_last_values": [
+        -10000
+      ]
+    },
+    {
+      "arm": "I10_static_residual",
+      "checkpoint_sha256": "1a87d0daa1d5a39c94c84611568b38d94d13c5ad6225eb556ba82ecbbf926d1a",
+      "initial_sha256": "03a3ac6fec3f778b24f05216f20b161059bf7a47abbe4ab8138547fd4e32f428",
+      "actual_optimizer_updates": 2000,
+      "actual_original_physics_updates": 200,
+      "initial_model_Adam_all_RNG_sampler_physics_graphs_exact_parent": true,
+      "sampler_all_RNG_Adam_counters_checked": true,
+      "finite_full_state": true,
+      "static_tensors_unchanged": true,
+      "history_sha256": "3ad0de1215c0acb25b8bb2a579a381cb647db9ca042c9d9df18f9ac7c75c6447",
+      "graph_last_values": [
+        -10000
+      ]
+    }
+  ],
+  "matched_all2000_camera_samples_and_final_RNG": true,
+  "parent_sha256": "8c767b7835eee936e49989369d7bc0277d7567d3aedaa7385c06654284b68ad0",
+  "source_freeze_sha256": "e30551f68dabbb0a9f56cdf00cf2fd3f099d7968522f29274628041d8890c00e",
+  "script_sha256": "0117e08a5770a10f3d48e7dfd9623bc9b4159399a54a695cb36b99277c1f3018",
+  "test_RGB_used": false
+}

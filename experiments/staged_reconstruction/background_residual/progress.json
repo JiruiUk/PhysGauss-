@@ -1,0 +1,24 @@
+{
+  "status": "evaluated_completeness_failed",
+  "arms": [
+    "I10_control",
+    "I10_static_residual"
+  ],
+  "actual_updates_per_arm": 2000,
+  "original_physics_updates_per_arm": 200,
+  "source_freeze_verified": true,
+  "candidate_promoted": false,
+  "goal_achieved": false,
+  "terminal_receipts": {
+    "I10_control": {
+      "status": "completed",
+      "iteration": 2000,
+      "sha256": "f96103cc1249003e4f1833e0fdec38ee88028bbd91cef8c3b09e6d1ef667be5e"
+    },
+    "I10_static_residual": {
+      "status": "completed",
+      "iteration": 2000,
+      "sha256": "1a87d0daa1d5a39c94c84611568b38d94d13c5ad6225eb556ba82ecbbf926d1a"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "reviewed_utc": "2026-11-04T00:09:28.757575+00:00",
+  "method": "Actual view_image display of three listed images; comparison uses shared crops from native RGB and dynamic-only alpha",
+  "reviewed_images": [
+    {
+      "path": "output/staged_reconstruction/background_residual/screen/key_probe_comparison.png",
+      "sha256": "2009216818cebb46dc779535ecc41412858e3866e56fc984ea2d5c01721cbb57"
+    },
+    {
+      "path": "output/staged_reconstruction/background_residual/screen/I10_static_residual/fixed188/t0146_dynamic.png",
+      "sha256": "3720ddf72e3565ced46c0d203306f77d88c76f955639efc7391f2306a55a7e1b"
+    },
+    {
+      "path": "output/staged_reconstruction/background_residual/screen/I10_static_residual/fixed86/t0086_dynamic.png",
+      "sha256": "a4826605552b14623b1ecc0563b60f74c4f1e2e282c1090141a7788bdc28c20f"
+    }
+  ],
+  "observations": [
+    "Fixed188/t43: candidate and control retain hollow/missing areas, detached support and elongated streaks in native comparison.",
+    "Fixed188/t146: candidate retains fragmented/folded surface appearance; dynamic-only native image still lacks coherent complete shapes.",
+    "Fixed86/t86: dynamic alpha has large stretched support that RGB conceals; the native dynamic-only image contains blue streaks and detached support.",
+    "Reducing dynamic alpha on observed static-colored pixels did not restore complete dynamic geometry.",
+    "These inspected probes suffice to fail the original no-missing-parts/fragments criterion; not every generated image or full sequence has been visually reviewed."
+  ],
+  "candidate_completeness_passed": false,
+  "control_completeness_passed": false,
+  "candidate_promoted": false,
+  "full6x200_acceptance_scan_performed": false,
+  "goal_achieved": false,
+  "test_RGB_read": false,
+  "evaluation_sha256": "fca4ba85be29d3f4efa122b8394f3593345cff83cae90a0d7f10c30b4cd7cc89",
+  "numeric_checks_are_separate": true,
+  "limit": "Continuation-time residual intervention only. Static initialization and earlier training damage are not ruled out."
+}

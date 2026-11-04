@@ -1,0 +1,100 @@
+{
+  "historical_control_sha256": "1f1ad6a66aef76e23c2685595a8f20f4bb02744ccc04e9cae2003a01fe79fdee",
+  "new_control_sha256": "f96103cc1249003e4f1833e0fdec38ee88028bbd91cef8c3b09e6d1ef667be5e",
+  "historical_initial_sha256": "f9b9ba8743127b0ce95ab715785c0efb77438fd56b6642979afa3e30c9025ef2",
+  "new_initial_sha256": "0886cbb544a579d2dd7dc33e30d38d1dc0984f1a6796074b2eda496b2829bb0f",
+  "initial_state_checks": {
+    "model": true,
+    "optimizer": true,
+    "rng_python": true,
+    "rng_numpy": true,
+    "rng_torch": true,
+    "rng_cuda": true,
+    "camera_stack": true,
+    "physics_graphs": true
+  },
+  "historical_frozen_source_hashes_match": true,
+  "all2000_camera_samples_match": true,
+  "final_RNG_checks": {
+    "rng_python": true,
+    "rng_numpy": true,
+    "rng_torch": true,
+    "rng_cuda": true,
+    "camera_stack": true
+  },
+  "first_nonidentical_logged_RGB_step": 4,
+  "early_RGB": [
+    {
+      "step": 1,
+      "historical": 0.026069702580571175,
+      "new": 0.026069702580571175,
+      "delta": 0.0
+    },
+    {
+      "step": 2,
+      "historical": 0.03318001702427864,
+      "new": 0.03318001702427864,
+      "delta": 0.0
+    },
+    {
+      "step": 3,
+      "historical": 0.031706299632787704,
+      "new": 0.031706299632787704,
+      "delta": 0.0
+    },
+    {
+      "step": 4,
+      "historical": 0.01912776567041874,
+      "new": 0.019127778708934784,
+      "delta": 1.30385160446167e-08
+    },
+    {
+      "step": 5,
+      "historical": 0.03349229320883751,
+      "new": 0.03349228948354721,
+      "delta": -3.725290298461914e-09
+    },
+    {
+      "step": 6,
+      "historical": 0.03283185139298439,
+      "new": 0.032831717282533646,
+      "delta": -1.341104507446289e-07
+    },
+    {
+      "step": 7,
+      "historical": 0.026773251593112946,
+      "new": 0.026773152872920036,
+      "delta": -9.872019290924072e-08
+    },
+    {
+      "step": 8,
+      "historical": 0.04515225440263748,
+      "new": 0.04515208676457405,
+      "delta": -1.6763806343078613e-07
+    },
+    {
+      "step": 9,
+      "historical": 0.033571887761354446,
+      "new": 0.03357195109128952,
+      "delta": 6.332993507385254e-08
+    },
+    {
+      "step": 10,
+      "historical": 0.03612186014652252,
+      "new": 0.03612183406949043,
+      "delta": -2.60770320892334e-08
+    }
+  ],
+  "first_physics_local_step": 10,
+  "first_physics_unique_node_counts": [
+    3642,
+    3641
+  ],
+  "historical_dynamic_PSNR": 24.807066663106283,
+  "new_dynamic_PSNR": 26.47860221862793,
+  "difference_dB": 1.671535555521647,
+  "limit": "Two controls demonstrate numerical trajectory sensitivity, not a distribution or confidence interval. CUDA atomic/numerical variation is plausible, not a uniquely established root cause.",
+  "implication": "A single candidate-control PSNR difference cannot establish a stable causal effect. Actual visible fragmentation independently fails completeness.",
+  "script_sha256": "4bf2ab5c1039a9e4d30c2052702d2c7c88e13dfa45abf08d2f8c78346cf82a7c",
+  "PIDG_optimizer_updates": 0
+}
