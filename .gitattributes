@@ -1,1 +1,11 @@
 *.pdf binary
+# Preserve exact bytes of the native reliability audit and its hashed sources.
+variants/staged_reconstruction/uncertainty_motion/** -text
+experiments/staged_reconstruction/uncertainty_motion/** -text
+tests/test_color_support.py -text
+tests/test_color_support_observed.py -text
+tests/test_color_anchor_selection.py -text
+scripts/fetch_usplat4d_audit.py -text
+scripts/fetch_usplat4d_backend_audit.py -text
+scripts/verify_uncertainty_motion.py -text
+scripts/report_uncertainty_motion.py -text

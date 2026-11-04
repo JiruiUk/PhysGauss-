@@ -1,0 +1,27 @@
+W1104 00:20:30.776000 284696 envs\pidg-cu128\Lib\site-packages\torch\utils\cpp_extension.py:466] Error checking compiler version for cl: 'cp1' codec can't decode bytes in position 0--1: No mapping for the Unicode character exists in the target code page.
+ninja: no work to do.
+F:\A_Edinburgh\PhysGauss\variants\color_repair\code\hashencoder\hashgrid.py:16: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.half)
+F:\A_Edinburgh\PhysGauss\variants\color_repair\code\hashencoder\hashgrid.py:56: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+TINY_SUPPORT_SAMPLE_CONVERGENCE {"active_points": 36, "relative_error_median": 0.16112849077932015, "relative_error_p90": 0.18422653595090935, "spearman": 0.9989703989703991, "top20_overlap": 0.8571428571428571, "max_abs_error": 5.567739402387289, "seed": 104729, "batches": 128, "samples": 384, "passed": false}
+TINY_SUPPORT_SAMPLE_CONVERGENCE {"active_points": 36, "relative_error_median": 0.11113490420236827, "relative_error_p90": 0.12731090890525076, "spearman": 0.9989703989703991, "top20_overlap": 1.0, "max_abs_error": 13.578236848890938, "seed": 130363, "batches": 128, "samples": 384, "passed": false}
+TINY_SUPPORT_SAMPLE_CONVERGENCE {"active_points": 36, "relative_error_median": 0.022894048833683817, "relative_error_p90": 0.03655483725550947, "spearman": 1.0, "top20_overlap": 1.0, "max_abs_error": 4.705776467196159, "seed": 104729, "batches": 512, "samples": 1536, "passed": true}
+TINY_SUPPORT_SAMPLE_CONVERGENCE {"active_points": 36, "relative_error_median": 0.045505423853961995, "relative_error_p90": 0.04761889707565395, "spearman": 1.0, "top20_overlap": 1.0, "max_abs_error": 0.044809399905162195, "seed": 130363, "batches": 512, "samples": 1536, "passed": true}
+TINY_SUPPORT_SAMPLE_CONVERGENCE {"active_points": 36, "relative_error_median": 0.023326844872307285, "relative_error_p90": 0.024658122426806477, "spearman": 0.9997425997425998, "top20_overlap": 1.0, "max_abs_error": 0.3617271499580994, "seed": 104729, "batches": 2048, "samples": 6144, "passed": true}
+TINY_SUPPORT_SAMPLE_CONVERGENCE {"active_points": 36, "relative_error_median": 0.004611893887100754, "relative_error_p90": 0.01011145262524639, "spearman": 1.0, "top20_overlap": 1.0, "max_abs_error": 2.0697008199253872, "seed": 130363, "batches": 2048, "samples": 6144, "passed": true}
+F:\A_Edinburgh\PhysGauss\variants\staged_reconstruction\uncertainty_motion\native_audit.py:110: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\generated\python_variable_methods.cpp:836.)
+  export_difference = float((exported-exact).abs().sum()/exact.sum())
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "F:\A_Edinburgh\PhysGauss\variants\staged_reconstruction\uncertainty_motion\native_audit.py", line 152, in <module>
+    main()
+  File "F:\A_Edinburgh\PhysGauss\variants\staged_reconstruction\uncertainty_motion\native_audit.py", line 145, in main
+    result = tiny(protocol)
+             ^^^^^^^^^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\variants\staged_reconstruction\uncertainty_motion\native_audit.py", line 117, in tiny
+    squared_support=exact.cpu().numpy(), truncated_export_support=exported.cpu().numpy())
+                                                                  ^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Can't call numpy() on Tensor that requires grad. Use tensor.detach().numpy() instead.

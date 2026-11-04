@@ -1,0 +1,91 @@
+{
+  "passed": true,
+  "qualified_batches": [
+    512,
+    2048
+  ],
+  "native_renderer_width": 96,
+  "points": 37,
+  "exact_onehot_rgb_renders": 13,
+  "exact_linear_vjp_max_abs_error": 0.00018952786922454834,
+  "independent_seeds": [
+    {
+      "active_points": 36,
+      "relative_error_median": 0.16112847287307924,
+      "relative_error_p90": 0.18422655816336908,
+      "spearman": 0.9989703989703991,
+      "top20_overlap": 0.8571428571428571,
+      "max_abs_error": 5.567744980161891,
+      "seed": 104729,
+      "batches": 128,
+      "samples": 384,
+      "passed": false
+    },
+    {
+      "active_points": 36,
+      "relative_error_median": 0.1111348975816672,
+      "relative_error_p90": 0.1273108973666114,
+      "spearman": 0.9989703989703991,
+      "top20_overlap": 1.0,
+      "max_abs_error": 13.578255586792395,
+      "seed": 130363,
+      "batches": 128,
+      "samples": 384,
+      "passed": false
+    },
+    {
+      "active_points": 36,
+      "relative_error_median": 0.022894023209291365,
+      "relative_error_p90": 0.03655483539529415,
+      "spearman": 1.0,
+      "top20_overlap": 1.0,
+      "max_abs_error": 4.705775142256115,
+      "seed": 104729,
+      "batches": 512,
+      "samples": 1536,
+      "passed": true
+    },
+    {
+      "active_points": 36,
+      "relative_error_median": 0.04550542812040667,
+      "relative_error_p90": 0.04761889354797676,
+      "spearman": 1.0,
+      "top20_overlap": 1.0,
+      "max_abs_error": 0.04481348452667078,
+      "seed": 130363,
+      "batches": 512,
+      "samples": 1536,
+      "passed": true
+    },
+    {
+      "active_points": 36,
+      "relative_error_median": 0.0233268409758763,
+      "relative_error_p90": 0.024658123032926256,
+      "spearman": 0.9997425997425998,
+      "top20_overlap": 1.0,
+      "max_abs_error": 0.36172859703633264,
+      "seed": 104729,
+      "batches": 2048,
+      "samples": 6144,
+      "passed": true
+    },
+    {
+      "active_points": 36,
+      "relative_error_median": 0.00461188619176481,
+      "relative_error_p90": 0.010111456399528868,
+      "spearman": 1.0,
+      "top20_overlap": 1.0,
+      "max_abs_error": 2.0696988958701326,
+      "seed": 130363,
+      "batches": 2048,
+      "samples": 6144,
+      "passed": true
+    }
+  ],
+  "export_buffer_relative_L1_error": 0.8058935522693842,
+  "later_than20_contributions_explicitly_observed": true,
+  "all_global_RNG_and_geometry_unchanged": true,
+  "optimizer_updates": 0,
+  "explicit_weights_sha256": "4c84de0c7ace93640e94cd072c9713c657a559ceb463cfb31bff14ce391dd812",
+  "qualification_protocol_sha256": "8e9c50b1bccc20ba7ab756a69164e272a81984af8f9606e3f90199e50f037ddb"
+}

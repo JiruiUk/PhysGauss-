@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "official_and_backend_blob_hashes_verified": true,
+  "tiny_exact_weights_and_truncated_export_error_recomputed": true,
+  "observed_audits": [
+    {
+      "name": "observed_pilot",
+      "cases": 7,
+      "passed": true,
+      "exact_support_error_median_across_cases_and_seeds": 0.020118608773806314,
+      "worst_case_median_relative_error": 0.03649414584227831,
+      "result_sha256": "1292f1b55cffe497b0a00b70d522579f5705abe2b58b8a8af0d9bd13e188c97e"
+    }
+  ],
+  "script_sha256": "916346513782e7291b6b9fbec35ee66cef3b8b9265c00b4e3caeba50ed31e8a4",
+  "test_RGB_read": false,
+  "optimizer_updates": 0,
+  "scope": "Verifies pinned numerical evidence; does not certify object completeness or physical identity"
+}

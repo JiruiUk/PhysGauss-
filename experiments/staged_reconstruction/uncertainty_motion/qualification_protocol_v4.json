@@ -1,0 +1,44 @@
+{
+  "enabled_by_default": false,
+  "scope": "Qualify native squared color support only; no anchor training or geometry-confidence claim",
+  "batches": 128,
+  "samples_per_seed": 384,
+  "seeds": [
+    104729,
+    130363
+  ],
+  "tiny_median_relative_error_max": 0.1,
+  "tiny_p90_relative_error_max": 0.25,
+  "tiny_spearman_min": 0.95,
+  "tiny_top20_overlap_min": 0.8,
+  "sources": {
+    "variants/staged_reconstruction/uncertainty_motion/core.py": "9ee9d508c467f7832e654d76098fe92264fa36360363c1c6d63806047eaf81f5",
+    "variants/staged_reconstruction/uncertainty_motion/native_audit.py": "76aebc54055fc08c42d72c3b3e5aaa8fabbde5afd14a1390590c14bd67027fd4",
+    "tests/test_color_support.py": "3cae47e2524c6f2782347235fb862402ebb112f9c6883ee7b6ecefec3cd73dc3",
+    "variants/color_repair/code/gaussian_renderer/__init__.py": "6071dc822efa63ac22e921aef034b8445a1a883fabb9bb6d97ecbfc13e11f9bd",
+    "third_party/PIDG/submodules/flow-based-diff-gaussian-rasterization/cuda_rasterizer/forward.cu": "a951255a0f65c53369fcdb954c1fa404346e26afddfc8e4701adf12e2d6404d7",
+    "third_party/PIDG/submodules/flow-based-diff-gaussian-rasterization/cuda_rasterizer/backward.cu": "257307f17e02a1bb92ed8ec8c0129907be42644181e68075ceab67a04390adde"
+  },
+  "optimizer_updates": 0,
+  "test_RGB_read": false,
+  "previous_attempt": {
+    "protocol_sha256": "d272b253ab771f12c5bc1cb75b87be035adbb96cab7d963a35fff9c48b5e4133",
+    "log_sha256": "94acf94d99d76a1dde36d3bd09a7be47f71514432d48eacce58e1fff3b7d1367",
+    "result": "128 RGB batches failed median relative-error gate; no numerical gates relaxed, no training"
+  },
+  "batch_schedule": [
+    128,
+    512,
+    2048
+  ],
+  "previous_native_wrapper_error": {
+    "protocol_sha256": "4e7ce8f1b29fe054d97216f44044f3d16c8e90dbcda02a49684c55291b68bae0",
+    "log_sha256": "53c0526d6fd4fec7b8e288fff7c1568c9ad1242a8b6a58b1ecf1706ff64c65ca",
+    "reason": "Diagnostic export comparison failed to exclude the renderer -1 empty-slot sentinel; support measurements completed. Only sentinel handling fixed; thresholds and sample schedule unchanged."
+  },
+  "previous_serialization_error": {
+    "protocol_sha256": "847236891035d8831371ad1dad94de13807d7d3dcd31bf0c848a739740413283",
+    "log_sha256": "b7a88e055c29255ba2772b30d180ec9885825ccf7bb91cb3c0de35b7fe816222",
+    "reason": "Export buffer unexpectedly requires grad under the custom autograd function. Detach diagnostic-only exported weights before saving; sampling method and gates unchanged."
+  }
+}

@@ -75,3 +75,17 @@ CoTracker3另做训练图像对应审计：28个短窗口的1064个候选仅31�
 [MoSca](https://arxiv.org/html/2405.17421v2)、
 [MoDGS](https://arxiv.org/html/2406.00434v4)。这些实验是针对 PIDG 的改编，
 不声称复现完整论文系统。
+
+## USplat4D 可靠点输入审计（未训练新模型）
+
+已对原 S3-U final6k 的全部120个训练时刻完成原生1600颜色贡献审计，
+22项独立测试、37点显式渲染核对及120/120逐帧测量通过；逐帧/种子
+误差中位数总体中位数2.33%，最差3.37%。两个独立种子的跨时间候选
+交集2,195点，每帧当前可信交集至少77点，早/中/晚均有反复支持。
+输入、源码、原始数组和实际图像均保留哈希。原模型参数/RNG不变，
+优化器更新0步，未读取test RGB。这些是颜色支持和运动图可行性证据，
+不保证深度、物理身份或完整表面，尚未训练新的运动传播模型。
+实际贡献图仍有空洞和长条支撑；原6×9/6×200完整度目标保持未完成。
+报告：`uncertainty_motion/assessment_zh.md`；详细预注册与逐帧证据：
+`uncertainty_motion/observed_native120_protocol.json`、
+`uncertainty_motion/anchor_selection/assessment.json`。
