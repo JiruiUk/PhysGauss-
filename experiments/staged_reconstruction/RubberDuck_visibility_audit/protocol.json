@@ -1,0 +1,57 @@
+{
+  "stage": "J5 read-only RubberDuck visibility/coverage audit",
+  "default_enabled": false,
+  "models": {
+    "parent6k": {
+      "path": "runs/pidg_staged_reconstruction/S3_union/physics/formal/checkpoint.pt",
+      "sha256": "8c767b7835eee936e49989369d7bc0277d7567d3aedaa7385c06654284b68ad0"
+    },
+    "frozen_static": {
+      "path": "runs/pidg_staged_reconstruction/RubberDuck_joint_pilot/v1/formal/frozen_static/checkpoint.pt",
+      "sha256": "ac10567f996c7cdb8e8da064f528d0e1947dfd66d2488f53059eaf2f86b2de11"
+    },
+    "joint_depth_trust": {
+      "path": "runs/pidg_staged_reconstruction/RubberDuck_joint_pilot/v1/formal/joint_depth_trust/checkpoint.pt",
+      "sha256": "4123471807797cc2f1319e0dbed2908fcdba83eaeba846a5887ab6aca7354b62"
+    }
+  },
+  "width": 1600,
+  "expected_train_views": 120,
+  "fixed_cameras": [
+    86,
+    188
+  ],
+  "fixed_times": [
+    2,
+    100,
+    200
+  ],
+  "observed_source_indices": [
+    0,
+    24,
+    72
+  ],
+  "dark_RGB_mean_lt": 0.05,
+  "high_alpha_gt": 0.5,
+  "native_ID_capacity": 20,
+  "source_support": "same model canonical IDs deformed at source time, native depth-sorted override-color visibility",
+  "stored_weights_not_assumed_compositing_weights": true,
+  "packed_groups_per_native_RGB_pass": 3,
+  "native_single_control": {
+    "width": 64,
+    "height": 36,
+    "z": 4.0,
+    "scale": 0.08,
+    "opacity": 0.8
+  },
+  "state_before_after": "exact model+twoAdam/bindings/RNG/sampler/physics graphs; no updates or backward",
+  "native_parity": "RGB/alpha/D exact; packed/unpacked visible weight atol1e-7 rtol1e-6",
+  "independent_processes": 2,
+  "missing_denominators": "None/unknown; no invented zero error",
+  "same_time_camera_evidence": "metadata time keys and exact transform hashes; no assumption of simultaneous views",
+  "new_semantic_static_dynamic_or_instance_labels": false,
+  "training_or_GT_exports": false,
+  "val_test_RGB_read": false,
+  "threshold_weight_sweep": false,
+  "promotion_authorized": false
+}
