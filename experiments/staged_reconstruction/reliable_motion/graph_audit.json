@@ -1,0 +1,32 @@
+{
+  "passed": false,
+  "targets": 8592,
+  "active_parent_points": 12882,
+  "active_target_coverage": 0.6669771774569166,
+  "candidate_directed_pairs": 683270,
+  "qualified_directed_pairs": 180768,
+  "common_qualified_frame_quantiles": [
+    3.0,
+    6.0,
+    55.0
+  ],
+  "reference_condition_quantiles": [
+    0.01012752577662468,
+    0.06692601814866066,
+    0.28961674869060516,
+    0.980006754398346
+  ],
+  "actual_neighbors_quantiles": [
+    3.0,
+    3.0,
+    7.0,
+    8.0
+  ],
+  "reference_frame_coverage": 120,
+  "graph_sha256": "7bc2650e9b21f305409e75ed46ee37985b781f9fa0f21a39b28d6595e290b96b",
+  "graph_protocol_sha256": "a924b428c1ff209de79a90d3af16be97edf8c3232662bd30796856f931daf8ac",
+  "original_model_and_RNG_unchanged": true,
+  "optimizer_updates": 0,
+  "test_RGB_read": false,
+  "scope": "Conditional graph support, not same-object/material correspondence or geometry GT"
+}
