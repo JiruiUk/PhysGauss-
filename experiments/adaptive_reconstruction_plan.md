@@ -652,3 +652,21 @@ renderer代码不变，进程内默认关适配器提供新增项。保留原eps
 和完整解码视频并实际看图。当前没有新的改善结论或Rubber Duck86/188结果。
 两条件全部原门槛通过人工复核后才另立真实协议。状态runs/.../S1_joint_depth_trust/v1，
 报告experiments/staged_reconstruction/S1_joint_depth_trust；不重跑J1-A/J2或旧任务。
+
+### J3完成与Rubber Duck联合试验J4（2026-11-04）
+
+J3已5a6a61a8完成两新候选各6000步，匹配历史控制未重复。原数值门槛全部通过：
+静态RGB外溢下降41.13/40.10%，准确射线覆盖净+49/+27；但原生alpha/D人工
+复核仍有悬浮与底座晕。独立事后支撑审计outside-GT高alpha仅减2.39/2.59%，
+不能将变暗当几何清理，最终completed_not_promoted/pending:false。8PLY与
+两H264各160完整解码已核验；这是合成Gaussian，不是Rubber Duck结果。
+
+用户明确要求回Rubber Duck检测并联合动态物体提升。另立J4有界真实探索，
+experiments/staged_reconstruction/RubberDuck_joint_pilot/plan.md及protocol.json。
+同一S3-U final6k完整父与其自身静态库：冻结静态对照/开放opacity-SH并加
+固定0.1父D/alpha自身参照候选，各2000步；不嫁接S1-C、不改J3失败结论。
+完整继承动态Adam/RNG/相机与S1静态Adam（静态权重已逐值相同），静态几何
+冻结。physics参数/Adam/图保留且冻结，纯RGB重建试验不能称原物理续训。
+父曾用颜色条件掩膜须披露，新训练无新语义掩膜/GT/数量。先独立完整恢复
+资格再训练，原生86/188早中晚及全序列RGB/alpha/D和全部val比较，缺少独立
+固定视角GT须明说，几何/完整性人工审计决定结果，不按PSNR自动升级。
