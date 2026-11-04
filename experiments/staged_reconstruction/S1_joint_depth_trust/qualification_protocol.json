@@ -1,0 +1,15 @@
+{
+  "before_native_measurement": true,
+  "fixed_native_case": "diffuse",
+  "fixed_train_view_index": 0,
+  "native_opacity_perturbation": "0.03+0.01*cos(row_index)",
+  "finite_difference_single_row": "largest absolute native opacity gradient; diagnostic only, no GT",
+  "finite_difference_step": 0.005,
+  "finite_difference_atol": 0.00001,
+  "finite_difference_rtol": 0.05,
+  "independent_process_smoke_steps": 20,
+  "raw_gradient_atol": 0.000001,
+  "raw_gradient_rtol": 0.00001,
+  "full_state_and_same_gradient_update": "exact",
+  "quality_gates_changed": false
+}
