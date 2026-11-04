@@ -1,0 +1,103 @@
+{
+  "status": "completed_not_promoted",
+  "pending_review": false,
+  "formal_new_updates": 4000,
+  "qualification_updates_excluded": 40,
+  "numerical_PSNR_nonregression_passed": true,
+  "manual_native_images_reviewed": true,
+  "clear_alpha_depth_cleanup_without_visible_structure_loss": false,
+  "pilot_review_admitted": false,
+  "independent_geometry_GT_available": false,
+  "not_a_claim_of_complete_or_correct_geometry": true,
+  "legacy_color_conditioned_parent_disclosed": true,
+  "physics_updated": false,
+  "matched_initial_full_state_and2000_sampling_audited": true,
+  "checkpoint_audits": {
+    "frozen_static": {
+      "checkpoint_sha256": "ac10567f996c7cdb8e8da064f528d0e1947dfd66d2488f53059eaf2f86b2de11",
+      "updates": 2000,
+      "static_Adam_steps": {
+        "_xyz": 12000,
+        "_features_dc": 12000,
+        "_features_rest": 12000,
+        "_opacity": 12000,
+        "_scaling": 12000,
+        "_rotation": 12000
+      },
+      "dynamic_Adam_steps": {
+        "dynamic/_xyz": [
+          24000
+        ],
+        "dynamic/_features_dc": [
+          24000
+        ],
+        "dynamic/_features_rest": [
+          24000
+        ],
+        "dynamic/_opacity": [
+          24000
+        ],
+        "dynamic/_scaling": [
+          24000
+        ],
+        "dynamic/_rotation": [
+          24000
+        ],
+        "grids": [
+          24000
+        ],
+        "deform_network": [
+          24000
+        ]
+      },
+      "sampler_replay_exact": true,
+      "frozen_static_geometry_physics_and_physics_Adam_graphs_exact": true
+    },
+    "joint_depth_trust": {
+      "checkpoint_sha256": "4123471807797cc2f1319e0dbed2908fcdba83eaeba846a5887ab6aca7354b62",
+      "updates": 2000,
+      "static_Adam_steps": {
+        "_xyz": 12000,
+        "_features_dc": 14000,
+        "_features_rest": 14000,
+        "_opacity": 14000,
+        "_scaling": 12000,
+        "_rotation": 12000
+      },
+      "dynamic_Adam_steps": {
+        "dynamic/_xyz": [
+          24000
+        ],
+        "dynamic/_features_dc": [
+          24000
+        ],
+        "dynamic/_features_rest": [
+          24000
+        ],
+        "dynamic/_opacity": [
+          24000
+        ],
+        "dynamic/_scaling": [
+          24000
+        ],
+        "dynamic/_rotation": [
+          24000
+        ],
+        "grids": [
+          24000
+        ],
+        "deform_network": [
+          24000
+        ]
+      },
+      "sampler_replay_exact": true,
+      "frozen_static_geometry_physics_and_physics_Adam_graphs_exact": true
+    }
+  },
+  "evaluation_sha256": "02a837c7a392c3daa2215f6f07d970f4d1198c6fec881f525bea9c0e687c951f",
+  "videos_sha256": "e0bac314609a7c48116170b23e188b8e143e4b861b0ce8097c4c61ebf36114a2",
+  "manual_review_sha256": "21685c5bec2bdebd70a12f397dd319b9b7006992b818a736a1af1c99b833baa5",
+  "assessment_sha256": "3bcedc4c7d58a030e52d15919f7f9a3134104d08fadebb3048cf423d909152da",
+  "source_sha256": "8916cc1d2f1f17a128d299e73cdb274c8f554c0fb6c2907f3354eecd1befe223",
+  "completed_UTC": "2026-11-04T00:38:58.901766+00:00"
+}

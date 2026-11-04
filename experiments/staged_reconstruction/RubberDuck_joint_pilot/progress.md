@@ -19,3 +19,7 @@
   camera capture. Rubber Duck belongs to PIDG's synthetic-physics benchmark;
   this experiment only has its supplied RGB/cameras/times, no independent
   fixed-view cross-time or static-geometry GT for the reported comparisons.
+
+- Formal training complete: two arms2000 each, full30 native validation and state/Adam/sampler audit passed. PSNR parent28.1663/control30.1266/joint31.3365dB.
+- Both fixed86/188 H264s fully decoded200 frames;15 PLYs verified. Actually viewed26 image artifacts, including native early/mid/late, six decompositions, six observed-trajectory comparisons and two decoded contacts.
+- RGB gain retained, but off-trajectory fragmented ducks and dark high-alpha trailing supports remain. Manual clean-support/completeness admission fails; completed_not_promoted. Next remains target Rubber Duck visibility/coverage audit, no repeated or extended J4 training.
