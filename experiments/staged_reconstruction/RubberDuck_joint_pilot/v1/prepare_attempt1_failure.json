@@ -1,0 +1,6 @@
+{
+  "stage": "preparation_before_freeze",
+  "error": "exact tensor comparator encountered CPU-loaded checkpoint vs CUDA runtime tensor",
+  "training_updates": 0,
+  "resolution": "new pilot comparator compares recursive detached CPU values; baseline code unchanged"
+}
