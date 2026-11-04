@@ -21,3 +21,21 @@
   compositing alpha maximum error 0.569745. Stored weights are never used.
 - Formal measurement remains zero optimizer updates. Separate metadata/source
   replay is required before final assessment; no training promotion follows.
+
+- Completed the single serial three-model audit, each all120 native1600 source
+  camera/time pairs. Independent process replay: exact metadata, all18 fixed
+  targets, source0/24/72 original RGB statistics, all120 aggregate denominators
+  and all image hashes match. No state updates in any model.
+- Exact metadata census:120 images/120 times/120 camera transforms, zero times
+  with more than one camera. J4 joint six dark-support groups have75.88--88.48%
+  of source visible mass on dark observations, while11.52--24.12% still falls
+  on brighter observations. These are group-level observations, not point
+  identity, emptiness/deletion labels or independent surface truth.
+- Actually viewed six three-model target comparison sheets, nine source
+  visibility sheets, and two additional native1600 RGB/alpha images. Broad
+  dark high-alpha support and fragmented off-trajectory RGB remain.
+- Final status completed_read_only_not_promoted, pending_review:false. No new
+  model/video/PLY/training. Assessment and manual/independent receipts complete.
+- Parallel reliable_motion already implements the next time-dependent trusted
+  anchor mechanism; reuse that qualification and full completeness evidence
+  before a separate static/dynamic joint protocol, without duplicate training.

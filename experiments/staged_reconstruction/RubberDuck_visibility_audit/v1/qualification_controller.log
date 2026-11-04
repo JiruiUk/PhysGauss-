@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "F:\A_Edinburgh\PhysGauss\experiments\staged_reconstruction\RubberDuck_visibility_audit\launch.py", line 49, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\experiments\staged_reconstruction\RubberDuck_visibility_audit\launch.py", line 47, in main
+    else:qualify()
+         ^^^^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\experiments\staged_reconstruction\RubberDuck_visibility_audit\launch.py", line 34, in qualify
+    assert code==0,f'Keep failed log {path}'
+           ^^^^^^^
+AssertionError: Keep failed log F:\A_Edinburgh\PhysGauss\experiments\staged_reconstruction\RubberDuck_visibility_audit\v1\qualification0.log

@@ -1,0 +1,84 @@
+{
+  "actually_viewed": [
+    {
+      "path": "output/staged_reconstruction/RubberDuck_visibility_audit/v1/comparison_c86_t2.png",
+      "sha256": "556a1952cd9091fc8090b215e028390718e4410c06284163e94074cae8c9c31f"
+    },
+    {
+      "path": "output/staged_reconstruction/RubberDuck_visibility_audit/v1/comparison_c86_t100.png",
+      "sha256": "8ea9176ebf157266ade26e2c59e089539f5bae2612a6101759d6167149cb7479"
+    },
+    {
+      "path": "output/staged_reconstruction/RubberDuck_visibility_audit/v1/comparison_c86_t200.png",
+      "sha256": "5980bf95b55d26ff1db756ecaceff48a446dcbe7fe6a2690a1930ca2c0d2aaa8"
+    },
+    {
+      "path": "output/staged_reconstruction/RubberDuck_visibility_audit/v1/comparison_c188_t2.png",
+      "sha256": "57d2b36a3d7785798fb476dc4424d99e11c88de1a06106336d7665bc8583d547"
+    },
+    {
+      "path": "output/staged_reconstruction/RubberDuck_visibility_audit/v1/comparison_c188_t100.png",
+      "sha256": "484e3e5622731b1fae2a3b9dd37245ab077a9b11560050014caadca7222f9388"
+    },
+    {
+      "path": "output/staged_reconstruction/RubberDuck_visibility_audit/v1/comparison_c188_t200.png",
+      "sha256": "97088220eacdab55e64fc3af85ab99c47689210e464ba82dd41279966e08cc6b"
+    },
+    {
+      "path": "output/staged_reconstruction/RubberDuck_visibility_audit/v1/parent6k_source000_visibility.png",
+      "sha256": "edb76dcf877171c5bcb49e4bdc0be891b5204deb1169f202117b5f10fb1465ae"
+    },
+    {
+      "path": "output/staged_reconstruction/RubberDuck_visibility_audit/v1/parent6k_source024_visibility.png",
+      "sha256": "9ac9d3b895ceebd145f20bac321575a49630f5fca0a945fd4ddfa20f369cb2b5"
+    },
+    {
+      "path": "output/staged_reconstruction/RubberDuck_visibility_audit/v1/parent6k_source072_visibility.png",
+      "sha256": "cacfdd815ac6895dd2015e17b37f36f02c090d93e0153e5293337ff4af3bf45f"
+    },
+    {
+      "path": "output/staged_reconstruction/RubberDuck_visibility_audit/v1/frozen_static_source000_visibility.png",
+      "sha256": "31bd5d718f4867a00852b84f1ab5ec9c21294ffd0c101e9736b77d70f6bbed53"
+    },
+    {
+      "path": "output/staged_reconstruction/RubberDuck_visibility_audit/v1/frozen_static_source024_visibility.png",
+      "sha256": "73f9842d826ee7bbf8f7d44c68eabcfb9cb8cb14f06cdc32cffc8d9753e67eb3"
+    },
+    {
+      "path": "output/staged_reconstruction/RubberDuck_visibility_audit/v1/frozen_static_source072_visibility.png",
+      "sha256": "1c17c4d1228cf08a88e33f812de589d9f81c232b33a31c21f351d8ca4639bc6d"
+    },
+    {
+      "path": "output/staged_reconstruction/RubberDuck_visibility_audit/v1/joint_depth_trust_source000_visibility.png",
+      "sha256": "570493e23b514c2c891b94aca894dd1e7def69fc2cb9f8795ff329db21a631a5"
+    },
+    {
+      "path": "output/staged_reconstruction/RubberDuck_visibility_audit/v1/joint_depth_trust_source024_visibility.png",
+      "sha256": "74d25e1e9b03285c53fd86e9f97961fd6c4818975d0c1e4defd3d720538d526d"
+    },
+    {
+      "path": "output/staged_reconstruction/RubberDuck_visibility_audit/v1/joint_depth_trust_source072_visibility.png",
+      "sha256": "9a070fbfab5f80a18119cdcc143ba294cec15ab800300a54cafd55d8cb9ba2d9"
+    },
+    {
+      "path": "output/staged_reconstruction/RubberDuck_visibility_audit/v1/joint_depth_trust_c86_t200_dynamic_alpha_native.png",
+      "sha256": "47ec5fba1f59de599be4959178eeec7ede525a39798b4336d0d17371e613a6f9"
+    },
+    {
+      "path": "output/staged_reconstruction/RubberDuck_visibility_audit/v1/joint_depth_trust_c188_t100_native_dynamic_RGB_native.png",
+      "sha256": "60ab5726be6f8eb5b6f611c64b2eb315d90a0bb91c0a26533954fc0804c5040f"
+    }
+  ],
+  "comparison_sheets_contain_18_target_cases": true,
+  "sheets_panels_resized_to_400px": true,
+  "additional_native1600_RGB_alpha_viewed": true,
+  "observations": [
+    "At c86/t100 and t200, both J4 arms retain broad bright alpha with little corresponding RGB, extending beyond compact visible yellow fragments.",
+    "At c188/t100 streaked and fragmented RGB remains; at t200 the alpha retains an elongated leftward tail in all three models.",
+    "Early t2 is more compact than later fixed cases, while holes and jagged boundaries remain.",
+    "Source0/24/72 group contributions overlap some bright duck regions, but group-level mass is mostly on dark observations across all120 sources; sheets show contributions, not segmentation or known surfaces."
+  ],
+  "new_model_trained": false,
+  "independent_fixed_view_cross_time_GT_available": false,
+  "geometry_cleanup_claim": false
+}

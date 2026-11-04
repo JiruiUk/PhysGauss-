@@ -9,3 +9,9 @@ scripts/fetch_usplat4d_audit.py -text
 scripts/fetch_usplat4d_backend_audit.py -text
 scripts/verify_uncertainty_motion.py -text
 scripts/report_uncertainty_motion.py -text
+
+# Preserve J5 read-only audit/failure receipts and frozen input code bytes.
+variants/staged_reconstruction/rubber_visibility/** -text
+experiments/staged_reconstruction/RubberDuck_visibility_audit/** -text
+tests/test_rubber_visibility.py -text
+tests/test_rubber_visibility_repair.py -text

@@ -1004,3 +1004,16 @@ images, native fixed86/188 early/mid/late RGB/alpha/D, PLY and fully decoded
 H264. Fixed-view cross-time has no independent GT; teacher is a self-reference.
 Tests: `tests/test_rubber_joint.py`; default off has original object identity.
 No topology/identity/semantic masks/GT or physics modules are added.
+
+### J5 Rubber Duck read-only visibility audit
+
+- `variants/staged_reconstruction/rubber_visibility/{core,worker}.py`: diagnostic
+  subset/denominators, exact camera-time census and original native override-color
+  visibility on three pinned states; no optimizer or baseline changes.
+- `experiments/staged_reconstruction/RubberDuck_visibility_audit/`: frozen plan,
+  inputs, preserved failed evaluation fixture, independent repair and metadata/
+  fixed-source replay, actual image review and final assessment. Native first20
+  IDs select a capacity-limited union; post-T exported weights are never treated
+  as compositing contributions. Historical color-conditioned parent disclosed.
+- `tests/test_rubber_visibility*.py`: six tests. Default off; full state unchanged.
+  This maps a diagnostic only, not new Gaussian training or physics integration.
