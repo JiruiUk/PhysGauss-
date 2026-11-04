@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "disabled_original_class_and_loss_identity": true,
+  "enabled_initial_RGB_alpha_D_exact": true,
+  "zero_initial_self_loss_RGB_gradients_original_tolerance": true,
+  "teacher_excluded_from_state_and_optimizer_parameters": true,
+  "isolated_self_loss_reaches_only_static_opacity": true,
+  "finite_difference": {
+    "row": 2533,
+    "automatic": 0.00021417767857201397,
+    "numerical": 0.0002142100129276514,
+    "step": 0.005,
+    "atol": 1e-05,
+    "rtol": 0.05
+  },
+  "native_diagnostic_updates": 0,
+  "source_sha256": "f1d09970843952edd3b40d36e70aa26f3d50522da49c1d2ddf86db27082f1378"
+}
