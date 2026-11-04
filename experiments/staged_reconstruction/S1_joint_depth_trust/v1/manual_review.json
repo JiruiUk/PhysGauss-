@@ -1,0 +1,27 @@
+{
+  "actually_viewed": true,
+  "images": {
+    "output/staged_reconstruction/S1_joint_depth_trust/v1/diffuse_static_comparison.png": "86f9f12bb57e73f202905368223647ba03ec84743a768e948fc31bc640a771c0",
+    "output/staged_reconstruction/S1_joint_depth_trust/v1/diffuse_train_decomposition.png": "489bd37d02a21cc480c646bf8f987b733ba7762d40275b0c30c668f7bd0acdf7",
+    "output/staged_reconstruction/S1_joint_depth_trust/v1/diffuse_static_expected_depth_alpha.png": "5a18687ffb713ba94979cb3a2cb805e391810cecc11ee46478f010ff59f512a4",
+    "output/staged_reconstruction/S1_joint_depth_trust/v1/diffuse_novel24_temporal_decomposition.png": "1edcf94f429d53c6464144b8614ad321ff5fc262ce1ffe2389dbf15ab005580b",
+    "output/staged_reconstruction/S1_joint_depth_trust/v1/diffuse_matched_static_joint.decoded.png": "9a72632f7645d888a15b2512f0ff431ff261e5c2a7b6f00b61106962a2e516d4",
+    "output/staged_reconstruction/S1_joint_depth_trust/v1/diffuse_revisable_static_c24_t2_combined.png": "d9ba79d1e8d28b849322ef65af0b9ab6e3deb39a031801f311075516f4482461",
+    "output/staged_reconstruction/S1_joint_depth_trust/v1/glossy_static_comparison.png": "8f5a469df99de1aff88f7e8901ed1871458138baff14b0c8025432936bf34a4f",
+    "output/staged_reconstruction/S1_joint_depth_trust/v1/glossy_train_decomposition.png": "7c3136aa1c4da60653c8f5c3664895983fe14ef86128b5922331177047c8974f",
+    "output/staged_reconstruction/S1_joint_depth_trust/v1/glossy_static_expected_depth_alpha.png": "ee746e29675745562a5f9fdbc0df83906f28164c106fce933df6339f51ade0b0",
+    "output/staged_reconstruction/S1_joint_depth_trust/v1/glossy_novel24_temporal_decomposition.png": "be2d06ad737bd09438654ef7c09765d52b0b13eee2577a03806ad3fe685086b4",
+    "output/staged_reconstruction/S1_joint_depth_trust/v1/glossy_matched_static_joint.decoded.png": "4b2ef8addd5b07f78f719450256b4f8a205410e8e35e9428260f3e890a336c36",
+    "output/staged_reconstruction/S1_joint_depth_trust/v1/glossy_revisable_static_c24_t2_combined.png": "5ae4c9294197357c906de1d2ee8c09972f7b555f5875ad40e6f12430906ff68b"
+  },
+  "clear_artifact_reduction_without_structure_loss": false,
+  "numerical_gates_pass_but_clean_geometric_support_not_demonstrated": true,
+  "findings": [
+    "RGB floating blocks fade but remain visible",
+    "alpha and D retain floating support and base halo in c8/c24",
+    "pillar/thin structure broadly retained; accurate-ray coverage restored",
+    "dynamic bank still carries pillar/base structure and blurry motion blobs",
+    "foreground static PSNR declines despite full-image PSNR gain"
+  ],
+  "no_new_Rubber_Duck_86_188_results": true
+}

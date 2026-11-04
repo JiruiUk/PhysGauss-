@@ -1,0 +1,77 @@
+{
+  "status": "completed_not_promoted",
+  "pending_review": false,
+  "numerical_passed": true,
+  "manual_native_images_reviewed": true,
+  "synthetic_joint_cleanup_admitted": false,
+  "Rubber_Duck_training_automatically_admitted": false,
+  "new_formal_training_updates": 12000,
+  "historical_matched_control_updates": 12000,
+  "complete_initial_model_twoAdam_RNG_camera_and6000_sampling_match": true,
+  "full_optimizer_and_sample_audit": {
+    "diffuse/frozen_static": {
+      "static_Adam_steps": [
+        6000,
+        6000,
+        6000,
+        6000,
+        6000,
+        6000
+      ],
+      "dynamic_Adam_states": 22,
+      "all_dynamic_Adam_steps": 6000,
+      "checkpoint_sha256": "e6d6daca4578e1ac7b2df1f6d36a10b827505c3bb271f5b1076f684c0586cd54",
+      "inherited_control_not_retrained": true
+    },
+    "diffuse/revisable_static": {
+      "static_Adam_steps": [
+        6000,
+        12000,
+        12000,
+        12000,
+        6000,
+        6000
+      ],
+      "dynamic_Adam_states": 22,
+      "all_dynamic_Adam_steps": 6000,
+      "checkpoint_sha256": "2dd4992073938a478144b45739b795e67ccb65511b52817e772ab598de621d3c",
+      "inherited_control_not_retrained": false
+    },
+    "glossy/frozen_static": {
+      "static_Adam_steps": [
+        6000,
+        6000,
+        6000,
+        6000,
+        6000,
+        6000
+      ],
+      "dynamic_Adam_states": 22,
+      "all_dynamic_Adam_steps": 6000,
+      "checkpoint_sha256": "13e2436c0f2acb36f93f970e2bcedec93022033f8c761a9773ac9b97d1ebc477",
+      "inherited_control_not_retrained": true
+    },
+    "glossy/revisable_static": {
+      "static_Adam_steps": [
+        6000,
+        12000,
+        12000,
+        12000,
+        6000,
+        6000
+      ],
+      "dynamic_Adam_states": 22,
+      "all_dynamic_Adam_steps": 6000,
+      "checkpoint_sha256": "0ef398d94ad838d90f553181a48356ca7000474c5901cb1a170e846be78bd5d2",
+      "inherited_control_not_retrained": false
+    }
+  },
+  "parent_self_reference_is_not_GT": true,
+  "original_quality_gates_and_full40_failures_retained": true,
+  "evaluation_sha256": "662f42cd3294b8beaf9da295402597e1d56c08231313ee73db4486b8708bea58",
+  "exports_sha256": "f06804c96c8ff070c6787727841f88594703f1a7dece8cfc0dc9fc2ce4548878",
+  "manual_review_sha256": "3f1e2c9804196248ab5f5c7d16275607034e9b9400d6b1f587ba970c03085606",
+  "assessment_sha256": "c8ba370293931b1b9abd68e88727d2057fcb84428511c01f885248d8f399d2aa",
+  "completed_UTC": "2026-11-04T00:15:44.201320+00:00",
+  "source_sha256": "24d7eef29b14712efc5dde0bfb2b2b7d1f18ff95ca7fc8ba21e019d39f004f42"
+}

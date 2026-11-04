@@ -1,0 +1,52 @@
+{
+  "numerical_passed": true,
+  "cases": {
+    "diffuse": {
+      "numerical_passed": true,
+      "checks": {
+        "static_clean_GT_PSNR": true,
+        "spill": true,
+        "surface": true,
+        "thin_surface": true,
+        "dynamic_generalization": true,
+        "accurate_rays": true,
+        "thin_alpha": true,
+        "nonempty_support": true
+      },
+      "deltas": {
+        "static_clean_GT_PSNR_gain_dB": 1.9293745918096832,
+        "static_RGB_spill_reduction_fraction": 0.41128951900650945,
+        "visible_surface_coverage_loss_percentage_points": -0.00900454729637623,
+        "thin_surface_coverage_loss_percentage_points": 0.0,
+        "novel_composite_PSNR_degradation_dB": -0.07395090852292441,
+        "accurate_static_ray_coverage_loss_percentage_points": -0.10254907705830041,
+        "thin_alpha_recall_loss_percentage_points": 0.0
+      }
+    },
+    "glossy": {
+      "numerical_passed": true,
+      "checks": {
+        "static_clean_GT_PSNR": true,
+        "spill": true,
+        "surface": true,
+        "thin_surface": true,
+        "dynamic_generalization": true,
+        "accurate_rays": true,
+        "thin_alpha": true,
+        "nonempty_support": true
+      },
+      "deltas": {
+        "static_clean_GT_PSNR_gain_dB": 1.5812142518635355,
+        "static_RGB_spill_reduction_fraction": 0.4009513621427121,
+        "visible_surface_coverage_loss_percentage_points": 0.013506820944575448,
+        "thin_surface_coverage_loss_percentage_points": 0.0,
+        "novel_composite_PSNR_degradation_dB": -0.8269775403492758,
+        "accurate_static_ray_coverage_loss_percentage_points": -0.05650663429743741,
+        "thin_alpha_recall_loss_percentage_points": 0.011880717595336154
+      }
+    }
+  },
+  "manual_review_required": false,
+  "passed": false,
+  "real_training_authorized": false
+}

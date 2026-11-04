@@ -1,0 +1,1232 @@
+{
+  "passed": true,
+  "posthoc_evaluator_only_not_new_training_gate": true,
+  "existing_alpha05_depth005_thresholds_only": true,
+  "cases": {
+    "diffuse": {
+      "aggregate": {
+        "all32": {
+          "frozen_static": {
+            "background_GT_pixels": 988092,
+            "outside_GT_alpha_gt05_pixels": 39304,
+            "surface_GT_pixels": 191556,
+            "accurate_surface_pixels": 171017
+          },
+          "revisable_static": {
+            "background_GT_pixels": 988092,
+            "outside_GT_alpha_gt05_pixels": 38370,
+            "surface_GT_pixels": 191556,
+            "accurate_surface_pixels": 171136
+          }
+        },
+        "novel8": {
+          "frozen_static": {
+            "background_GT_pixels": 247130,
+            "outside_GT_alpha_gt05_pixels": 9875,
+            "surface_GT_pixels": 47782,
+            "accurate_surface_pixels": 42524
+          },
+          "revisable_static": {
+            "background_GT_pixels": 247130,
+            "outside_GT_alpha_gt05_pixels": 9639,
+            "surface_GT_pixels": 47782,
+            "accurate_surface_pixels": 42573
+          }
+        }
+      },
+      "frames": [
+        {
+          "camera": 0,
+          "novel": false,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 31421,
+              "outside_GT_alpha_gt05_pixels": 1208,
+              "surface_GT_pixels": 5443,
+              "accurate_surface_pixels": 4896
+            },
+            "revisable_static": {
+              "background_GT_pixels": 31421,
+              "outside_GT_alpha_gt05_pixels": 1194,
+              "surface_GT_pixels": 5443,
+              "accurate_surface_pixels": 4909
+            }
+          }
+        },
+        {
+          "camera": 1,
+          "novel": false,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 31271,
+              "outside_GT_alpha_gt05_pixels": 1146,
+              "surface_GT_pixels": 5593,
+              "accurate_surface_pixels": 4886
+            },
+            "revisable_static": {
+              "background_GT_pixels": 31271,
+              "outside_GT_alpha_gt05_pixels": 1142,
+              "surface_GT_pixels": 5593,
+              "accurate_surface_pixels": 4890
+            }
+          }
+        },
+        {
+          "camera": 2,
+          "novel": false,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 30683,
+              "outside_GT_alpha_gt05_pixels": 1105,
+              "surface_GT_pixels": 6181,
+              "accurate_surface_pixels": 5337
+            },
+            "revisable_static": {
+              "background_GT_pixels": 30683,
+              "outside_GT_alpha_gt05_pixels": 1095,
+              "surface_GT_pixels": 6181,
+              "accurate_surface_pixels": 5355
+            }
+          }
+        },
+        {
+          "camera": 3,
+          "novel": true,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 30430,
+              "outside_GT_alpha_gt05_pixels": 1137,
+              "surface_GT_pixels": 6434,
+              "accurate_surface_pixels": 5623
+            },
+            "revisable_static": {
+              "background_GT_pixels": 30430,
+              "outside_GT_alpha_gt05_pixels": 1120,
+              "surface_GT_pixels": 6434,
+              "accurate_surface_pixels": 5633
+            }
+          }
+        },
+        {
+          "camera": 4,
+          "novel": false,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 30444,
+              "outside_GT_alpha_gt05_pixels": 1190,
+              "surface_GT_pixels": 6420,
+              "accurate_surface_pixels": 5848
+            },
+            "revisable_static": {
+              "background_GT_pixels": 30444,
+              "outside_GT_alpha_gt05_pixels": 1174,
+              "surface_GT_pixels": 6420,
+              "accurate_surface_pixels": 5844
+            }
+          }
+        },
+        {
+          "camera": 5,
+          "novel": false,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 30588,
+              "outside_GT_alpha_gt05_pixels": 1294,
+              "surface_GT_pixels": 6276,
+              "accurate_surface_pixels": 5911
+            },
+            "revisable_static": {
+              "background_GT_pixels": 30588,
+              "outside_GT_alpha_gt05_pixels": 1274,
+              "surface_GT_pixels": 6276,
+              "accurate_surface_pixels": 5912
+            }
+          }
+        },
+        {
+          "camera": 6,
+          "novel": false,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 30901,
+              "outside_GT_alpha_gt05_pixels": 1335,
+              "surface_GT_pixels": 5963,
+              "accurate_surface_pixels": 5696
+            },
+            "revisable_static": {
+              "background_GT_pixels": 30901,
+              "outside_GT_alpha_gt05_pixels": 1311,
+              "surface_GT_pixels": 5963,
+              "accurate_surface_pixels": 5690
+            }
+          }
+        },
+        {
+          "camera": 7,
+          "novel": true,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 31293,
+              "outside_GT_alpha_gt05_pixels": 1372,
+              "surface_GT_pixels": 5571,
+              "accurate_surface_pixels": 5363
+            },
+            "revisable_static": {
+              "background_GT_pixels": 31293,
+              "outside_GT_alpha_gt05_pixels": 1352,
+              "surface_GT_pixels": 5571,
+              "accurate_surface_pixels": 5363
+            }
+          }
+        },
+        {
+          "camera": 8,
+          "novel": false,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 31312,
+              "outside_GT_alpha_gt05_pixels": 1375,
+              "surface_GT_pixels": 5552,
+              "accurate_surface_pixels": 5363
+            },
+            "revisable_static": {
+              "background_GT_pixels": 31312,
+              "outside_GT_alpha_gt05_pixels": 1349,
+              "surface_GT_pixels": 5552,
+              "accurate_surface_pixels": 5362
+            }
+          }
+        },
+        {
+          "camera": 9,
+          "novel": false,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 31293,
+              "outside_GT_alpha_gt05_pixels": 1468,
+              "surface_GT_pixels": 5571,
+              "accurate_surface_pixels": 5372
+            },
+            "revisable_static": {
+              "background_GT_pixels": 31293,
+              "outside_GT_alpha_gt05_pixels": 1447,
+              "surface_GT_pixels": 5571,
+              "accurate_surface_pixels": 5370
+            }
+          }
+        },
+        {
+          "camera": 10,
+          "novel": false,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 30901,
+              "outside_GT_alpha_gt05_pixels": 1423,
+              "surface_GT_pixels": 5963,
+              "accurate_surface_pixels": 5558
+            },
+            "revisable_static": {
+              "background_GT_pixels": 30901,
+              "outside_GT_alpha_gt05_pixels": 1383,
+              "surface_GT_pixels": 5963,
+              "accurate_surface_pixels": 5551
+            }
+          }
+        },
+        {
+          "camera": 11,
+          "novel": true,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 30588,
+              "outside_GT_alpha_gt05_pixels": 1296,
+              "surface_GT_pixels": 6276,
+              "accurate_surface_pixels": 5934
+            },
+            "revisable_static": {
+              "background_GT_pixels": 30588,
+              "outside_GT_alpha_gt05_pixels": 1249,
+              "surface_GT_pixels": 6276,
+              "accurate_surface_pixels": 5938
+            }
+          }
+        },
+        {
+          "camera": 12,
+          "novel": false,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 30444,
+              "outside_GT_alpha_gt05_pixels": 1339,
+              "surface_GT_pixels": 6420,
+              "accurate_surface_pixels": 6073
+            },
+            "revisable_static": {
+              "background_GT_pixels": 30444,
+              "outside_GT_alpha_gt05_pixels": 1287,
+              "surface_GT_pixels": 6420,
+              "accurate_surface_pixels": 6068
+            }
+          }
+        },
+        {
+          "camera": 13,
+          "novel": false,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 30430,
+              "outside_GT_alpha_gt05_pixels": 1289,
+              "surface_GT_pixels": 6434,
+              "accurate_surface_pixels": 5942
+            },
+            "revisable_static": {
+              "background_GT_pixels": 30430,
+              "outside_GT_alpha_gt05_pixels": 1235,
+              "surface_GT_pixels": 6434,
+              "accurate_surface_pixels": 5946
+            }
+          }
+        },
+        {
+          "camera": 14,
+          "novel": false,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 30683,
+              "outside_GT_alpha_gt05_pixels": 1271,
+              "surface_GT_pixels": 6181,
+              "accurate_surface_pixels": 5493
+            },
+            "revisable_static": {
+              "background_GT_pixels": 30683,
+              "outside_GT_alpha_gt05_pixels": 1218,
+              "surface_GT_pixels": 6181,
+              "accurate_surface_pixels": 5502
+            }
+          }
+        },
+        {
+          "camera": 15,
+          "novel": true,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 31271,
+              "outside_GT_alpha_gt05_pixels": 1247,
+              "surface_GT_pixels": 5593,
+              "accurate_surface_pixels": 4839
+            },
+            "revisable_static": {
+              "background_GT_pixels": 31271,
+              "outside_GT_alpha_gt05_pixels": 1212,
+              "surface_GT_pixels": 5593,
+              "accurate_surface_pixels": 4851
+            }
+          }
+        },
+        {
+          "camera": 16,
+          "novel": false,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 31421,
+              "outside_GT_alpha_gt05_pixels": 1125,
+              "surface_GT_pixels": 5443,
+              "accurate_surface_pixels": 4699
+            },
+            "revisable_static": {
+              "background_GT_pixels": 31421,
+              "outside_GT_alpha_gt05_pixels": 1104,
+              "surface_GT_pixels": 5443,
+              "accurate_surface_pixels": 4720
+            }
+          }
+        },
+        {
+          "camera": 17,
+          "novel": false,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 30987,
+              "outside_GT_alpha_gt05_pixels": 1000,
+              "surface_GT_pixels": 5877,
+              "accurate_surface_pixels": 5123
+            },
+            "revisable_static": {
+              "background_GT_pixels": 30987,
+              "outside_GT_alpha_gt05_pixels": 988,
+              "surface_GT_pixels": 5877,
+              "accurate_surface_pixels": 5136
+            }
+          }
+        },
+        {
+          "camera": 18,
+          "novel": false,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 30562,
+              "outside_GT_alpha_gt05_pixels": 958,
+              "surface_GT_pixels": 6302,
+              "accurate_surface_pixels": 5481
+            },
+            "revisable_static": {
+              "background_GT_pixels": 30562,
+              "outside_GT_alpha_gt05_pixels": 943,
+              "surface_GT_pixels": 6302,
+              "accurate_surface_pixels": 5492
+            }
+          }
+        },
+        {
+          "camera": 19,
+          "novel": true,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 30465,
+              "outside_GT_alpha_gt05_pixels": 994,
+              "surface_GT_pixels": 6399,
+              "accurate_surface_pixels": 5540
+            },
+            "revisable_static": {
+              "background_GT_pixels": 30465,
+              "outside_GT_alpha_gt05_pixels": 975,
+              "surface_GT_pixels": 6399,
+              "accurate_surface_pixels": 5549
+            }
+          }
+        },
+        {
+          "camera": 20,
+          "novel": false,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 30516,
+              "outside_GT_alpha_gt05_pixels": 1072,
+              "surface_GT_pixels": 6348,
+              "accurate_surface_pixels": 5525
+            },
+            "revisable_static": {
+              "background_GT_pixels": 30516,
+              "outside_GT_alpha_gt05_pixels": 1047,
+              "surface_GT_pixels": 6348,
+              "accurate_surface_pixels": 5532
+            }
+          }
+        },
+        {
+          "camera": 21,
+          "novel": false,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 30684,
+              "outside_GT_alpha_gt05_pixels": 1124,
+              "surface_GT_pixels": 6180,
+              "accurate_surface_pixels": 5338
+            },
+            "revisable_static": {
+              "background_GT_pixels": 30684,
+              "outside_GT_alpha_gt05_pixels": 1095,
+              "surface_GT_pixels": 6180,
+              "accurate_surface_pixels": 5332
+            }
+          }
+        },
+        {
+          "camera": 22,
+          "novel": false,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 30980,
+              "outside_GT_alpha_gt05_pixels": 1177,
+              "surface_GT_pixels": 5884,
+              "accurate_surface_pixels": 4960
+            },
+            "revisable_static": {
+              "background_GT_pixels": 30980,
+              "outside_GT_alpha_gt05_pixels": 1152,
+              "surface_GT_pixels": 5884,
+              "accurate_surface_pixels": 4958
+            }
+          }
+        },
+        {
+          "camera": 23,
+          "novel": true,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 31412,
+              "outside_GT_alpha_gt05_pixels": 1305,
+              "surface_GT_pixels": 5452,
+              "accurate_surface_pixels": 4513
+            },
+            "revisable_static": {
+              "background_GT_pixels": 31412,
+              "outside_GT_alpha_gt05_pixels": 1282,
+              "surface_GT_pixels": 5452,
+              "accurate_surface_pixels": 4511
+            }
+          }
+        },
+        {
+          "camera": 24,
+          "novel": false,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 31506,
+              "outside_GT_alpha_gt05_pixels": 1277,
+              "surface_GT_pixels": 5358,
+              "accurate_surface_pixels": 4323
+            },
+            "revisable_static": {
+              "background_GT_pixels": 31506,
+              "outside_GT_alpha_gt05_pixels": 1241,
+              "surface_GT_pixels": 5358,
+              "accurate_surface_pixels": 4324
+            }
+          }
+        },
+        {
+          "camera": 25,
+          "novel": false,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 31412,
+              "outside_GT_alpha_gt05_pixels": 1341,
+              "surface_GT_pixels": 5452,
+              "accurate_surface_pixels": 4684
+            },
+            "revisable_static": {
+              "background_GT_pixels": 31412,
+              "outside_GT_alpha_gt05_pixels": 1292,
+              "surface_GT_pixels": 5452,
+              "accurate_surface_pixels": 4684
+            }
+          }
+        },
+        {
+          "camera": 26,
+          "novel": false,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 30980,
+              "outside_GT_alpha_gt05_pixels": 1293,
+              "surface_GT_pixels": 5884,
+              "accurate_surface_pixels": 5126
+            },
+            "revisable_static": {
+              "background_GT_pixels": 30980,
+              "outside_GT_alpha_gt05_pixels": 1246,
+              "surface_GT_pixels": 5884,
+              "accurate_surface_pixels": 5122
+            }
+          }
+        },
+        {
+          "camera": 27,
+          "novel": true,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 30684,
+              "outside_GT_alpha_gt05_pixels": 1307,
+              "surface_GT_pixels": 6180,
+              "accurate_surface_pixels": 5433
+            },
+            "revisable_static": {
+              "background_GT_pixels": 30684,
+              "outside_GT_alpha_gt05_pixels": 1255,
+              "surface_GT_pixels": 6180,
+              "accurate_surface_pixels": 5442
+            }
+          }
+        },
+        {
+          "camera": 28,
+          "novel": false,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 30516,
+              "outside_GT_alpha_gt05_pixels": 1266,
+              "surface_GT_pixels": 6348,
+              "accurate_surface_pixels": 5604
+            },
+            "revisable_static": {
+              "background_GT_pixels": 30516,
+              "outside_GT_alpha_gt05_pixels": 1226,
+              "surface_GT_pixels": 6348,
+              "accurate_surface_pixels": 5607
+            }
+          }
+        },
+        {
+          "camera": 29,
+          "novel": false,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 30465,
+              "outside_GT_alpha_gt05_pixels": 1221,
+              "surface_GT_pixels": 6399,
+              "accurate_surface_pixels": 5674
+            },
+            "revisable_static": {
+              "background_GT_pixels": 30465,
+              "outside_GT_alpha_gt05_pixels": 1180,
+              "surface_GT_pixels": 6399,
+              "accurate_surface_pixels": 5672
+            }
+          }
+        },
+        {
+          "camera": 30,
+          "novel": false,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 30562,
+              "outside_GT_alpha_gt05_pixels": 1132,
+              "surface_GT_pixels": 6302,
+              "accurate_surface_pixels": 5581
+            },
+            "revisable_static": {
+              "background_GT_pixels": 30562,
+              "outside_GT_alpha_gt05_pixels": 1108,
+              "surface_GT_pixels": 6302,
+              "accurate_surface_pixels": 5585
+            }
+          }
+        },
+        {
+          "camera": 31,
+          "novel": true,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 30987,
+              "outside_GT_alpha_gt05_pixels": 1217,
+              "surface_GT_pixels": 5877,
+              "accurate_surface_pixels": 5279
+            },
+            "revisable_static": {
+              "background_GT_pixels": 30987,
+              "outside_GT_alpha_gt05_pixels": 1194,
+              "surface_GT_pixels": 5877,
+              "accurate_surface_pixels": 5286
+            }
+          }
+        }
+      ],
+      "original_per_camera_alpha_and_ray_metrics_replayed": true
+    },
+    "glossy": {
+      "aggregate": {
+        "all32": {
+          "frozen_static": {
+            "background_GT_pixels": 988092,
+            "outside_GT_alpha_gt05_pixels": 39309,
+            "surface_GT_pixels": 191556,
+            "accurate_surface_pixels": 166526
+          },
+          "revisable_static": {
+            "background_GT_pixels": 988092,
+            "outside_GT_alpha_gt05_pixels": 38355,
+            "surface_GT_pixels": 191556,
+            "accurate_surface_pixels": 166546
+          }
+        },
+        "novel8": {
+          "frozen_static": {
+            "background_GT_pixels": 247130,
+            "outside_GT_alpha_gt05_pixels": 9921,
+            "surface_GT_pixels": 47782,
+            "accurate_surface_pixels": 41750
+          },
+          "revisable_static": {
+            "background_GT_pixels": 247130,
+            "outside_GT_alpha_gt05_pixels": 9664,
+            "surface_GT_pixels": 47782,
+            "accurate_surface_pixels": 41777
+          }
+        }
+      },
+      "frames": [
+        {
+          "camera": 0,
+          "novel": false,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 31421,
+              "outside_GT_alpha_gt05_pixels": 1160,
+              "surface_GT_pixels": 5443,
+              "accurate_surface_pixels": 4755
+            },
+            "revisable_static": {
+              "background_GT_pixels": 31421,
+              "outside_GT_alpha_gt05_pixels": 1151,
+              "surface_GT_pixels": 5443,
+              "accurate_surface_pixels": 4754
+            }
+          }
+        },
+        {
+          "camera": 1,
+          "novel": false,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 31271,
+              "outside_GT_alpha_gt05_pixels": 1117,
+              "surface_GT_pixels": 5593,
+              "accurate_surface_pixels": 4682
+            },
+            "revisable_static": {
+              "background_GT_pixels": 31271,
+              "outside_GT_alpha_gt05_pixels": 1112,
+              "surface_GT_pixels": 5593,
+              "accurate_surface_pixels": 4682
+            }
+          }
+        },
+        {
+          "camera": 2,
+          "novel": false,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 30683,
+              "outside_GT_alpha_gt05_pixels": 1050,
+              "surface_GT_pixels": 6181,
+              "accurate_surface_pixels": 5151
+            },
+            "revisable_static": {
+              "background_GT_pixels": 30683,
+              "outside_GT_alpha_gt05_pixels": 1044,
+              "surface_GT_pixels": 6181,
+              "accurate_surface_pixels": 5159
+            }
+          }
+        },
+        {
+          "camera": 3,
+          "novel": true,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 30430,
+              "outside_GT_alpha_gt05_pixels": 1054,
+              "surface_GT_pixels": 6434,
+              "accurate_surface_pixels": 5611
+            },
+            "revisable_static": {
+              "background_GT_pixels": 30430,
+              "outside_GT_alpha_gt05_pixels": 1036,
+              "surface_GT_pixels": 6434,
+              "accurate_surface_pixels": 5611
+            }
+          }
+        },
+        {
+          "camera": 4,
+          "novel": false,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 30444,
+              "outside_GT_alpha_gt05_pixels": 1113,
+              "surface_GT_pixels": 6420,
+              "accurate_surface_pixels": 5728
+            },
+            "revisable_static": {
+              "background_GT_pixels": 30444,
+              "outside_GT_alpha_gt05_pixels": 1098,
+              "surface_GT_pixels": 6420,
+              "accurate_surface_pixels": 5722
+            }
+          }
+        },
+        {
+          "camera": 5,
+          "novel": false,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 30588,
+              "outside_GT_alpha_gt05_pixels": 1270,
+              "surface_GT_pixels": 6276,
+              "accurate_surface_pixels": 5856
+            },
+            "revisable_static": {
+              "background_GT_pixels": 30588,
+              "outside_GT_alpha_gt05_pixels": 1242,
+              "surface_GT_pixels": 6276,
+              "accurate_surface_pixels": 5851
+            }
+          }
+        },
+        {
+          "camera": 6,
+          "novel": false,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 30901,
+              "outside_GT_alpha_gt05_pixels": 1297,
+              "surface_GT_pixels": 5963,
+              "accurate_surface_pixels": 5594
+            },
+            "revisable_static": {
+              "background_GT_pixels": 30901,
+              "outside_GT_alpha_gt05_pixels": 1265,
+              "surface_GT_pixels": 5963,
+              "accurate_surface_pixels": 5597
+            }
+          }
+        },
+        {
+          "camera": 7,
+          "novel": true,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 31293,
+              "outside_GT_alpha_gt05_pixels": 1338,
+              "surface_GT_pixels": 5571,
+              "accurate_surface_pixels": 5325
+            },
+            "revisable_static": {
+              "background_GT_pixels": 31293,
+              "outside_GT_alpha_gt05_pixels": 1312,
+              "surface_GT_pixels": 5571,
+              "accurate_surface_pixels": 5320
+            }
+          }
+        },
+        {
+          "camera": 8,
+          "novel": false,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 31312,
+              "outside_GT_alpha_gt05_pixels": 1290,
+              "surface_GT_pixels": 5552,
+              "accurate_surface_pixels": 5247
+            },
+            "revisable_static": {
+              "background_GT_pixels": 31312,
+              "outside_GT_alpha_gt05_pixels": 1267,
+              "surface_GT_pixels": 5552,
+              "accurate_surface_pixels": 5244
+            }
+          }
+        },
+        {
+          "camera": 9,
+          "novel": false,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 31293,
+              "outside_GT_alpha_gt05_pixels": 1394,
+              "surface_GT_pixels": 5571,
+              "accurate_surface_pixels": 5137
+            },
+            "revisable_static": {
+              "background_GT_pixels": 31293,
+              "outside_GT_alpha_gt05_pixels": 1368,
+              "surface_GT_pixels": 5571,
+              "accurate_surface_pixels": 5138
+            }
+          }
+        },
+        {
+          "camera": 10,
+          "novel": false,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 30901,
+              "outside_GT_alpha_gt05_pixels": 1404,
+              "surface_GT_pixels": 5963,
+              "accurate_surface_pixels": 5332
+            },
+            "revisable_static": {
+              "background_GT_pixels": 30901,
+              "outside_GT_alpha_gt05_pixels": 1364,
+              "surface_GT_pixels": 5963,
+              "accurate_surface_pixels": 5325
+            }
+          }
+        },
+        {
+          "camera": 11,
+          "novel": true,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 30588,
+              "outside_GT_alpha_gt05_pixels": 1298,
+              "surface_GT_pixels": 6276,
+              "accurate_surface_pixels": 5746
+            },
+            "revisable_static": {
+              "background_GT_pixels": 30588,
+              "outside_GT_alpha_gt05_pixels": 1241,
+              "surface_GT_pixels": 6276,
+              "accurate_surface_pixels": 5749
+            }
+          }
+        },
+        {
+          "camera": 12,
+          "novel": false,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 30444,
+              "outside_GT_alpha_gt05_pixels": 1366,
+              "surface_GT_pixels": 6420,
+              "accurate_surface_pixels": 5874
+            },
+            "revisable_static": {
+              "background_GT_pixels": 30444,
+              "outside_GT_alpha_gt05_pixels": 1317,
+              "surface_GT_pixels": 6420,
+              "accurate_surface_pixels": 5869
+            }
+          }
+        },
+        {
+          "camera": 13,
+          "novel": false,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 30430,
+              "outside_GT_alpha_gt05_pixels": 1320,
+              "surface_GT_pixels": 6434,
+              "accurate_surface_pixels": 5597
+            },
+            "revisable_static": {
+              "background_GT_pixels": 30430,
+              "outside_GT_alpha_gt05_pixels": 1272,
+              "surface_GT_pixels": 6434,
+              "accurate_surface_pixels": 5592
+            }
+          }
+        },
+        {
+          "camera": 14,
+          "novel": false,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 30683,
+              "outside_GT_alpha_gt05_pixels": 1294,
+              "surface_GT_pixels": 6181,
+              "accurate_surface_pixels": 5027
+            },
+            "revisable_static": {
+              "background_GT_pixels": 30683,
+              "outside_GT_alpha_gt05_pixels": 1246,
+              "surface_GT_pixels": 6181,
+              "accurate_surface_pixels": 5026
+            }
+          }
+        },
+        {
+          "camera": 15,
+          "novel": true,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 31271,
+              "outside_GT_alpha_gt05_pixels": 1263,
+              "surface_GT_pixels": 5593,
+              "accurate_surface_pixels": 4616
+            },
+            "revisable_static": {
+              "background_GT_pixels": 31271,
+              "outside_GT_alpha_gt05_pixels": 1229,
+              "surface_GT_pixels": 5593,
+              "accurate_surface_pixels": 4628
+            }
+          }
+        },
+        {
+          "camera": 16,
+          "novel": false,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 31421,
+              "outside_GT_alpha_gt05_pixels": 1126,
+              "surface_GT_pixels": 5443,
+              "accurate_surface_pixels": 4401
+            },
+            "revisable_static": {
+              "background_GT_pixels": 31421,
+              "outside_GT_alpha_gt05_pixels": 1103,
+              "surface_GT_pixels": 5443,
+              "accurate_surface_pixels": 4420
+            }
+          }
+        },
+        {
+          "camera": 17,
+          "novel": false,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 30987,
+              "outside_GT_alpha_gt05_pixels": 1007,
+              "surface_GT_pixels": 5877,
+              "accurate_surface_pixels": 4915
+            },
+            "revisable_static": {
+              "background_GT_pixels": 30987,
+              "outside_GT_alpha_gt05_pixels": 1003,
+              "surface_GT_pixels": 5877,
+              "accurate_surface_pixels": 4919
+            }
+          }
+        },
+        {
+          "camera": 18,
+          "novel": false,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 30562,
+              "outside_GT_alpha_gt05_pixels": 985,
+              "surface_GT_pixels": 6302,
+              "accurate_surface_pixels": 5333
+            },
+            "revisable_static": {
+              "background_GT_pixels": 30562,
+              "outside_GT_alpha_gt05_pixels": 974,
+              "surface_GT_pixels": 6302,
+              "accurate_surface_pixels": 5347
+            }
+          }
+        },
+        {
+          "camera": 19,
+          "novel": true,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 30465,
+              "outside_GT_alpha_gt05_pixels": 1037,
+              "surface_GT_pixels": 6399,
+              "accurate_surface_pixels": 5384
+            },
+            "revisable_static": {
+              "background_GT_pixels": 30465,
+              "outside_GT_alpha_gt05_pixels": 1013,
+              "surface_GT_pixels": 6399,
+              "accurate_surface_pixels": 5393
+            }
+          }
+        },
+        {
+          "camera": 20,
+          "novel": false,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 30516,
+              "outside_GT_alpha_gt05_pixels": 1113,
+              "surface_GT_pixels": 6348,
+              "accurate_surface_pixels": 5392
+            },
+            "revisable_static": {
+              "background_GT_pixels": 30516,
+              "outside_GT_alpha_gt05_pixels": 1085,
+              "surface_GT_pixels": 6348,
+              "accurate_surface_pixels": 5393
+            }
+          }
+        },
+        {
+          "camera": 21,
+          "novel": false,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 30684,
+              "outside_GT_alpha_gt05_pixels": 1154,
+              "surface_GT_pixels": 6180,
+              "accurate_surface_pixels": 5189
+            },
+            "revisable_static": {
+              "background_GT_pixels": 30684,
+              "outside_GT_alpha_gt05_pixels": 1122,
+              "surface_GT_pixels": 6180,
+              "accurate_surface_pixels": 5188
+            }
+          }
+        },
+        {
+          "camera": 22,
+          "novel": false,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 30980,
+              "outside_GT_alpha_gt05_pixels": 1229,
+              "surface_GT_pixels": 5884,
+              "accurate_surface_pixels": 4881
+            },
+            "revisable_static": {
+              "background_GT_pixels": 30980,
+              "outside_GT_alpha_gt05_pixels": 1201,
+              "surface_GT_pixels": 5884,
+              "accurate_surface_pixels": 4880
+            }
+          }
+        },
+        {
+          "camera": 23,
+          "novel": true,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 31412,
+              "outside_GT_alpha_gt05_pixels": 1400,
+              "surface_GT_pixels": 5452,
+              "accurate_surface_pixels": 4451
+            },
+            "revisable_static": {
+              "background_GT_pixels": 31412,
+              "outside_GT_alpha_gt05_pixels": 1366,
+              "surface_GT_pixels": 5452,
+              "accurate_surface_pixels": 4453
+            }
+          }
+        },
+        {
+          "camera": 24,
+          "novel": false,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 31506,
+              "outside_GT_alpha_gt05_pixels": 1316,
+              "surface_GT_pixels": 5358,
+              "accurate_surface_pixels": 4219
+            },
+            "revisable_static": {
+              "background_GT_pixels": 31506,
+              "outside_GT_alpha_gt05_pixels": 1277,
+              "surface_GT_pixels": 5358,
+              "accurate_surface_pixels": 4220
+            }
+          }
+        },
+        {
+          "camera": 25,
+          "novel": false,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 31412,
+              "outside_GT_alpha_gt05_pixels": 1400,
+              "surface_GT_pixels": 5452,
+              "accurate_surface_pixels": 4566
+            },
+            "revisable_static": {
+              "background_GT_pixels": 31412,
+              "outside_GT_alpha_gt05_pixels": 1353,
+              "surface_GT_pixels": 5452,
+              "accurate_surface_pixels": 4556
+            }
+          }
+        },
+        {
+          "camera": 26,
+          "novel": false,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 30980,
+              "outside_GT_alpha_gt05_pixels": 1378,
+              "surface_GT_pixels": 5884,
+              "accurate_surface_pixels": 5076
+            },
+            "revisable_static": {
+              "background_GT_pixels": 30980,
+              "outside_GT_alpha_gt05_pixels": 1328,
+              "surface_GT_pixels": 5884,
+              "accurate_surface_pixels": 5075
+            }
+          }
+        },
+        {
+          "camera": 27,
+          "novel": true,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 30684,
+              "outside_GT_alpha_gt05_pixels": 1369,
+              "surface_GT_pixels": 6180,
+              "accurate_surface_pixels": 5394
+            },
+            "revisable_static": {
+              "background_GT_pixels": 30684,
+              "outside_GT_alpha_gt05_pixels": 1321,
+              "surface_GT_pixels": 6180,
+              "accurate_surface_pixels": 5397
+            }
+          }
+        },
+        {
+          "camera": 28,
+          "novel": false,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 30516,
+              "outside_GT_alpha_gt05_pixels": 1298,
+              "surface_GT_pixels": 6348,
+              "accurate_surface_pixels": 5609
+            },
+            "revisable_static": {
+              "background_GT_pixels": 30516,
+              "outside_GT_alpha_gt05_pixels": 1252,
+              "surface_GT_pixels": 6348,
+              "accurate_surface_pixels": 5604
+            }
+          }
+        },
+        {
+          "camera": 29,
+          "novel": false,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 30465,
+              "outside_GT_alpha_gt05_pixels": 1185,
+              "surface_GT_pixels": 6399,
+              "accurate_surface_pixels": 5644
+            },
+            "revisable_static": {
+              "background_GT_pixels": 30465,
+              "outside_GT_alpha_gt05_pixels": 1148,
+              "surface_GT_pixels": 6399,
+              "accurate_surface_pixels": 5640
+            }
+          }
+        },
+        {
+          "camera": 30,
+          "novel": false,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 30562,
+              "outside_GT_alpha_gt05_pixels": 1122,
+              "surface_GT_pixels": 6302,
+              "accurate_surface_pixels": 5571
+            },
+            "revisable_static": {
+              "background_GT_pixels": 30562,
+              "outside_GT_alpha_gt05_pixels": 1099,
+              "surface_GT_pixels": 6302,
+              "accurate_surface_pixels": 5568
+            }
+          }
+        },
+        {
+          "camera": 31,
+          "novel": true,
+          "arms": {
+            "frozen_static": {
+              "background_GT_pixels": 30987,
+              "outside_GT_alpha_gt05_pixels": 1162,
+              "surface_GT_pixels": 5877,
+              "accurate_surface_pixels": 5223
+            },
+            "revisable_static": {
+              "background_GT_pixels": 30987,
+              "outside_GT_alpha_gt05_pixels": 1146,
+              "surface_GT_pixels": 5877,
+              "accurate_surface_pixels": 5226
+            }
+          }
+        }
+      ],
+      "original_per_camera_alpha_and_ray_metrics_replayed": true
+    }
+  },
+  "GT_assets_or_masks_exported": false,
+  "evaluation_sha256": "662f42cd3294b8beaf9da295402597e1d56c08231313ee73db4486b8708bea58",
+  "source_sha256": "6622f4fbef38e7fc8ba29e9cda2283083712f756d2017ccfa80be087ccdec219"
+}
