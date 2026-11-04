@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "native_width": 1600,
+  "native_RGB_alpha_exact": true,
+  "original_loss_exact": true,
+  "gradient_max_abs_difference": 5.960464477539063e-08,
+  "gradient_scale": 0.32342827320098877,
+  "CUDA_atomic_tolerance": "max(1e-7,2e-5*scale)",
+  "foreground_empty_unknown_reference_exact": true,
+  "static_reference_detached": true,
+  "actual_original_physics_backward_finite": true,
+  "candidate_gradient_norms": {
+    "canonical": 0.07425373792648315,
+    "grid": 0.009815892204642296,
+    "deformation": 0.4343265891075134,
+    "physics": 0.0033499575220048428
+  },
+  "optimizer_updates": 0,
+  "protocol_sha256": "d1a6ba7307a5130d40960ccf0a7b72323c7b346458645ce58a77d6e8cf3d28d1"
+}

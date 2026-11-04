@@ -1,0 +1,60 @@
+{
+  "passed": true,
+  "arms": [
+    {
+      "arm": "I10_control",
+      "actual_updates": 100,
+      "checkpoint_sha256": "b5bc4cb20a784044ac30a57bba9733b8ccbf39e7723dbed9d1c1e3096d11a890",
+      "exact_parent_tensors_Adam_RNG_camera_stack": true,
+      "finite_state_and_exact_Adam_counters": true,
+      "sampler_and_all_RNG_replayed": true,
+      "frozen_static_exact": true,
+      "launches": [
+        {
+          "pid": 266816,
+          "start": 0,
+          "checkpoint_sha256": "0886cbb544a579d2dd7dc33e30d38d1dc0984f1a6796074b2eda496b2829bb0f",
+          "utc": "2026-11-03T23:59:43.009044+00:00"
+        }
+      ],
+      "physics_updates": 10
+    },
+    {
+      "arm": "I10_static_residual",
+      "actual_updates": 100,
+      "checkpoint_sha256": "45a2336089786fd9e6a03b03bb9c45e211a9e5603f758990eec97ceaced4252e",
+      "exact_parent_tensors_Adam_RNG_camera_stack": true,
+      "finite_state_and_exact_Adam_counters": true,
+      "sampler_and_all_RNG_replayed": true,
+      "frozen_static_exact": true,
+      "launches": [
+        {
+          "pid": 284748,
+          "start": 0,
+          "checkpoint_sha256": "03a3ac6fec3f778b24f05216f20b161059bf7a47abbe4ab8138547fd4e32f428",
+          "utc": "2026-11-04T00:00:05.391921+00:00"
+        },
+        {
+          "pid": 281068,
+          "start": 40,
+          "checkpoint_sha256": "81aae3169901e0f3cb68301abed032f58e94145b5863acc52866ca25471cfc4b",
+          "utc": "2026-11-04T00:00:19.529708+00:00"
+        },
+        {
+          "pid": 271484,
+          "start": 80,
+          "checkpoint_sha256": "c0612cb1e5e4fcca9d9577dfe422fbc938cac2c8295a4639898ec65c07148f96",
+          "utc": "2026-11-04T00:00:33.783263+00:00"
+        }
+      ],
+      "physics_updates": 10
+    }
+  ],
+  "unit_tests": 8,
+  "flags_off_sha256": "062f572a1f72387277d7d04ef2820d4adf6eecee1a923c1bca73fafd9cb0fdf8",
+  "source_freeze_sha256": "e30551f68dabbb0a9f56cdf00cf2fd3f099d7968522f29274628041d8890c00e",
+  "matched_camera_schedule": true,
+  "candidate_independent_process_restart_40_80": true,
+  "PIDG_baseline_sources_unchanged": true,
+  "new_physics_or_material_modules": false
+}
