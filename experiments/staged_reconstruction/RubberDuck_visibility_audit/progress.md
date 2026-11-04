@@ -39,3 +39,11 @@
 - Parallel reliable_motion already implements the next time-dependent trusted
   anchor mechanism; reuse that qualification and full completeness evidence
   before a separate static/dynamic joint protocol, without duplicate training.
+- Final reproducibility check exposed Git's old autocrlf normalization of
+  preregistration/protocol bytes and three qualification logs. Frozen working
+  inputs, sources and measurement/artifact hashes all still passed. Retained
+  the failed index check, added scoped -text and recorded the existing exact
+  working bytes (no protocol/content/threshold changes). The complete source,
+  checkpoint, image and task-index byte validation now passes; worker lock is
+  released. Both master plans and repository mapping contain only J5 additions
+  in the task commit; concurrent worktree edits remain preserved.
