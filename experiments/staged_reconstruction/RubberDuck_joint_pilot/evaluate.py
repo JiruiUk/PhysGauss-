@@ -40,11 +40,22 @@ def load_models():
         physics_group=state['optimizers'][1]['param_groups'][-1]
         for key in physics_group['params']:
             r.assert_equivalent(state['optimizers'][1]['state'].get(key),parent_state['optimizer']['state'].get(key),0,0)
+        dynamic_steps={}
+        for group in state['optimizers'][1]['param_groups']:
+            if group['name']=='PIDG_velocity_stress':continue
+            values=[]
+            for key in group['params']:
+                before=int(parent_state['optimizer']['state'][key]['step'])
+                after=int(state['optimizers'][1]['state'][key]['step'])
+                assert after==before+2000,(arm,group['name'],before,after)
+                values.append(after)
+            dynamic_steps[group['name']]=sorted(set(values))
         static_steps={g['name']:int(state['optimizers'][0]['state'][g['params'][0]]['step'])
             for g in state['optimizers'][0]['param_groups']}
         for name,step in static_steps.items():
             assert step==(14000 if arm=='joint_depth_trust' and name in ['_opacity','_features_dc','_features_rest'] else 12000)
         audits[arm]={'checkpoint_sha256':sha(path),'updates':2000,'static_Adam_steps':static_steps,
+            'dynamic_Adam_steps':dynamic_steps,
             'sampler_replay_exact':True,'frozen_static_geometry_physics_and_physics_Adam_graphs_exact':True}
         initials.append(initial);finals.append(state);models[arm]=scene
     r.assert_equivalent(initials[0],initials[1],0,0)
@@ -123,10 +134,9 @@ def diagnostics(renderer,models):
                     ('staticAlpha',alpha(static)),('jointAlpha',alpha(joint)),
                     ('staticD-alpha',depth(static,lo,hi)),('jointD-alpha',depth(joint,lo,hi))]
                 rows.append((name,arrays));values.append((name,[('jointRGB',rgb(joint))]))
-                if number in [2,200]:
-                    for label,array in arrays:
-                        path=r.OUT/f'c{camid:03d}_t{number:03d}_{name}_{label}_native.png';Image.fromarray(array).save(path)
-                        images[path.relative_to(ROOT).as_posix()]=sha(path)
+                for label,array in arrays:
+                    path=r.OUT/f'c{camid:03d}_t{number:03d}_{name}_{label}_native.png';Image.fromarray(array).save(path)
+                    images[path.relative_to(ROOT).as_posix()]=sha(path)
                 if number==2:
                     mask=(static['alpha'].squeeze()>.5);expected=static['depth'].squeeze()/static['alpha'].squeeze().clamp_min(1e-8)
                     support.append({'camera':camid,'model':name,'pixels':mask.numel(),'alpha_gt05':int(mask.sum()),
