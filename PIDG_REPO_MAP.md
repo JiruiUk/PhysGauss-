@@ -971,3 +971,18 @@ invariance and two-process exact output replay pass; no optimizer/model update,
 GT training assets or identity estimates. Tests: `tests/test_joint_attribution.py`.
 J1-A appearance improves but remains unqualified for real training after ray
 accuracy loss. This maps a read-only reconstruction diagnostic, not new physics.
+
+
+## Default-off native parent depth self-reference (S1-J3)
+
+`variants/staged_reconstruction/joint_depth_trust/core.py` adds one robust
+expected-depth self-reference on fixed parent-render support; disabling returns
+the original JointScene/loss objects. `runtime.py` keeps the immutable RGB-derived
+teacher and deterministic per-camera cache outside model/Adam state; the new
+term connects only static opacity. The parent is not independent geometry GT.
+`experiments/staged_reconstruction/S1_joint_depth_trust/launch.py` adapts the
+frozen original trainer in-process, qualifies native finite differences and exact
+full-state/fixed-gradient recovery, trains two candidates, and reuses pinned
+historical matched controls without rerunning them. Independent evaluation/
+export retain original quality gates. Tests: `tests/test_joint_depth_trust.py`.
+No original PIDG code, physics or historical weights change; no promotion yet.

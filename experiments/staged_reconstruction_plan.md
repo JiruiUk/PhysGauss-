@@ -524,3 +524,29 @@ SH单独改变使外溢下降38.67/36.83%，全部32相机alpha/D精确不变；
 梯度可实现性与固定数值协议，再匹配两条件完整Gaussian及精确状态恢复验收；
 原独立GT/结构门槛通过才另立Rubber Duck协议。不恢复旧暂停任务、不扫参。
 报告：experiments/staged_reconstruction/S1_joint_attribution/v1/assessment.md。
+
+
+### S1-J3进入完整Gaussian训练：固定父渲染深度自身参照（2026-11-04）
+
+825d23a1预声明、c98f6381实施、2e3afbda资格完成：仅增加固定0.1的支持内
+log1p(|D/alpha-parent_D/parent_alpha|)自身参照，teacher来自相同RGB父静态，
+不是GT且可能保留错误支撑。仅该项连接static opacity梯度；联合全图RGB
+照常更新静态SH和统一动态池，静态几何冻结。没有alpha复制/alpha-one/
+新深度法线/DA-V2/GT训练输入、语义掩膜、物体数、删点、扫权重或新物理。
+
+6新+6原测试、295训练输入/源码冻结通过。原生初始RGB/alpha/D精确，flags-off
+返回原class/loss，初始RGB梯度原容差；隔离Lself只到opacity，固定h0.005差分
+0.0002142100对autograd0.0002141777通过。两例各20步smoke及独立双进程
+完整model/两个Adam/绑定/RNG/相机恢复与固定native梯度Adam更新精确通过。
+用户授权验收沿用，旧40步CUDA轨迹和epsilon对照失败保留，没有重试或改判。
+
+当前只训练diffuse/glossy两个新候选各6000步；匹配控制逐字节复用J1-A已完成
+同起点/采样/完整Adam的frozen_static6000，不重复旧训练。原trainer/runtime/
+renderer代码不变，进程内默认关适配器提供新增项。保留原epsilon1e-15/学习率/
+初始化/采样和全部质量门槛，不凭smoke/自身参照当独立几何改善。
+
+结束后独立评估全分母准确射线、GT静态RGB、表面/薄结构/动态泛化和外溢，
+核验匹配6000采样/Adam/原生0/24/72及novel24所有时间、D/alpha/alpha、PLY
+和完整解码视频并实际看图。当前没有新的改善结论或Rubber Duck86/188结果。
+两条件全部原门槛通过人工复核后才另立真实协议。状态runs/.../S1_joint_depth_trust/v1，
+报告experiments/staged_reconstruction/S1_joint_depth_trust；不重跑J1-A/J2或旧任务。
