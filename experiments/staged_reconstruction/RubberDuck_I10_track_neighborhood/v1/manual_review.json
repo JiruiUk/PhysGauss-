@@ -1,0 +1,14 @@
+{
+  "actual_visual_review": true,
+  "images": {
+    "output/staged_reconstruction/RubberDuck_I10_track_neighborhood/v1/bindings_000.png": "75aa95858bcfcdd312f8567ada1bfcf7c7090555cf6754378c58c324156aa32d",
+    "output/staged_reconstruction/RubberDuck_I10_track_neighborhood/v1/bindings_052.png": "5977eb831802a50072695940b03874d7996cc45bc0d528e20c331e44d3f92ed9",
+    "output/staged_reconstruction/RubberDuck_I10_track_neighborhood/v1/bindings_108.png": "177413cc1aadf18ec5225447264c11d1580f879e85ad79e81a588d544b176b25"
+  },
+  "findings": [
+    "Fixed starts0/52/108 show observations on visible duck appearance, including accepted and rejected points.",
+    "Rejection is not evidence of a background class or bad RGB tracker; native contribution and split identity are model-conditioned.",
+    "Multiple nearby late-frame points do not establish whole-body coverage or depth truth."
+  ],
+  "independent_3D_GT": false
+}
