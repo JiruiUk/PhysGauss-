@@ -1,0 +1,37 @@
+W1105 23:53:51.223000 272420 envs\pidg-cu128\Lib\site-packages\torch\utils\cpp_extension.py:466] Error checking compiler version for cl: 'cp1' codec can't decode bytes in position 0--1: No mapping for the Unicode character exists in the target code page.
+ninja: no work to do.
+F:\A_Edinburgh\PhysGauss\variants\color_repair\code\hashencoder\hashgrid.py:16: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.half)
+F:\A_Edinburgh\PhysGauss\variants\color_repair\code\hashencoder\hashgrid.py:56: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+L1_VALIDATION 1 30
+L1_VALIDATION 2 30
+L1_VALIDATION 3 30
+L1_VALIDATION 4 30
+L1_VALIDATION 5 30
+L1_VALIDATION 6 30
+L1_VALIDATION 7 30
+L1_VALIDATION 8 30
+L1_VALIDATION 9 30
+L1_VALIDATION 10 30
+L1_VALIDATION 11 30
+L1_VALIDATION 12 30
+L1_VALIDATION 13 30
+L1_VALIDATION 14 30
+L1_VALIDATION 15 30
+L1_VALIDATION 16 30
+L1_VALIDATION 17 30
+L1_VALIDATION 18 30
+L1_VALIDATION 19 30
+L1_VALIDATION 20 30
+L1_VALIDATION 21 30
+L1_VALIDATION 22 30
+L1_VALIDATION 23 30
+L1_VALIDATION 24 30
+L1_VALIDATION 25 30
+L1_VALIDATION 26 30
+L1_VALIDATION 27 30
+L1_VALIDATION 28 30
+L1_VALIDATION 29 30
+L1_VALIDATION 30 30
+L1_EVALUATION_COMPLETE {'J6_parent': {'PSNR': 31.994673347473146, 'SSIM': 0.9804254770278931, 'L1': 0.0032966943457722665}, 'audited_tracks': {'PSNR': 30.92320613861084, 'SSIM': 0.9784316301345826, 'L1': 0.0037543189789478975}, 'local_motion': {'PSNR': 30.347023646036785, 'SSIM': 0.9774097800254822, 'L1': 0.004053109185770154}}

@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "all_support_equations_and_frame_denominators_recomputed": true,
+  "no_inferred_edges_or_targets_outside_supported_frames": true,
+  "old_global_gate_failure_preserved": true,
+  "actual_two_arm_parameter_updates": true,
+  "arms": {
+    "audited_tracks": {
+      "steps": 2000,
+      "parameter_absolute_changes": {
+        "pools.0._xyz": 105.67433166503906,
+        "grids.": 15507.92333984375,
+        "networks.": 614.1924080308527
+      },
+      "RGB_samples_with_track_support": 1480,
+      "RGB_samples_with_local_support": 1184,
+      "actual_local_loss_enabled": false,
+      "complete_checkpoint_sha256": "283f16d84cc9ad1e750608156bd9e971c25843da8f94f8a29cd6922f00c7e359"
+    },
+    "local_motion": {
+      "steps": 2000,
+      "parameter_absolute_changes": {
+        "pools.0._xyz": 105.31230163574219,
+        "grids.": 15407.340209960938,
+        "networks.": 588.5575391501188
+      },
+      "RGB_samples_with_track_support": 1480,
+      "RGB_samples_with_local_support": 1184,
+      "actual_local_loss_enabled": true,
+      "complete_checkpoint_sha256": "991f1d8cc5d1de06632b6084f52ceb4954a3a4648732ebc58ef3513a3a8da771"
+    }
+  },
+  "source_sha256": "853208b62d2c8ed039037079b28a9698e43e3858e31e1007203705950bd18673"
+}

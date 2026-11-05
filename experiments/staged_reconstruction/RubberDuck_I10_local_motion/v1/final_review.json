@@ -1,0 +1,31 @@
+{
+  "status": "completed_not_promoted",
+  "pending": false,
+  "pending_review": false,
+  "optimizer_updates": 4000,
+  "each_arm_updates": 2000,
+  "current_model_replaced": false,
+  "static_color_reference": false,
+  "historical_color_parent_disclosed": true,
+  "original_T3_T4_global_coverage_failure_preserved": true,
+  "supported_window_experiment": true,
+  "RGB_nonregression_passed": false,
+  "parent_nonregression_passed": false,
+  "manual_completeness_cleanup_passed": false,
+  "independent_geometry_GT": false,
+  "automatic_extension": false,
+  "artifacts_sha256": {
+    "unit_tests.json": "6157eddf44911c5771000bc7c09101646978cca657f05a8562c6943c57aa1acf",
+    "native_check.json": "eca5683506f6f9f94917ec720a89d67e50a72d4348e1c92fc08b809a17daa79c",
+    "recovery.json": "e95987e71b5c6403f48c627c6ff39f991e7ed385781e843cfcf39411c5bdeaa6",
+    "evaluation.json": "c239fe4503e3bfa54c7561b626850798f7c3d66eef6ed385d7926ab5e673c81e",
+    "videos.json": "741f050d9e9749033b869ac682c6ff115b2ed49111948731b5ce7df1e31b05c4",
+    "independent_audit.json": "68c2c121b003da6b66c509d49850cb836c7926ac1bf6fbecec6e19816f81dd44",
+    "support_audit.json": "efbb6e87ec66e15120507dd224ebcb352dedad1111ff93272030a2ec9b32128e",
+    "support.json": "9c8e16c5183d99465a9b2be903fff5bd932261e8acd64d576af4097459b080e3",
+    "manual_review.json": "1086a269e6d07ad6bf6ca1e8db3f5222caa5485be638f1e11d7162875bfdd101",
+    "assessment.md": "4e4440f6b356eee14204c2edb96233c5c8cd6d27207555c8125c2877ab8c9d98",
+    "source_freeze.json": "186857c7f9f7d5f300034df8a099d7b5ff51d4925cc8415a0a265a48f778bafc",
+    "evaluation_freeze.json": "3fec5efcb680ec24dca6836de01f49965df4030ac516e2dba427b5d71adf39b7"
+  }
+}
