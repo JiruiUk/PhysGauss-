@@ -1,0 +1,7 @@
+# T1 evidence admitted; not Gaussian training
+
+4433 full-image texture proposals yielded 730 bidirectionally consistent tracks. The stationary-world test retains 362 stationary-compatible, 222 motion-candidate and 146 unknown tracks. Persistent binding accepts 123 tracks to 116 distinct dynamic Gaussian rows, distributed 98/11/14 across temporal thirds; four conflicting overlapping bindings were rejected. The unchanged >=50/10/25 admission gates pass. This provides sparse motion constraints, not object-count recovery, full-surface coverage or independent 3D GT.
+
+All 28 windows' raw seeds, learned forward/reverse positions, visibility and image acceptance decisions replayed exactly in a second process. All 120 model-conditioned 3D populations, stationary tests, alternatives and binding decisions also replayed exactly in a second process. Native projection discrepancy is <=0.0000362 pixels. Parent model/two Adam/bindings/RNG/physics cache unchanged. Actual fixed starts 0/52/108 were viewed for both extraction and binding. Unknown, rejected and non-bound observations remain saved.
+
+No new color/semantic/alpha mask or physical object count is used. The J6/I10 descendant still has historical color-conditioned initialization and training; this evidence does not remove that lineage. Zero optimizer updates so far. Next: separately preregister one same-parent, same-camera, same-full-state 2000-step RGB versus RGB-plus-track Gaussian continuation, then verify flags-off/native gradients and full state recovery before training.
