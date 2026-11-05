@@ -1,0 +1,6 @@
+{
+  "passed": false,
+  "check": "frozen inputs Git index parity",
+  "first_untracked_input": "runs/pidg_staged_reconstruction/S3_union/physics/formal/checkpoint.pt",
+  "reason": "frozen input receipt also includes preserved untracked checkpoint binaries; verify raw SHA and Git parity only where indexed; no source changed"
+}

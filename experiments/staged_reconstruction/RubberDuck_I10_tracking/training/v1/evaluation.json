@@ -1,0 +1,2599 @@
+{
+  "checkpoint_audits": {
+    "rgb_only": {
+      "checkpoint_sha256": "bbcbc88e68bc4978821276fe4b7d4bb2a0a49a8137d51380e1e02610d1ee5754",
+      "complete_parent_states_exact": true,
+      "static_model_Adam_physics_model_Adam_and_graphs_frozen": true,
+      "all2000_sampler_replay": true
+    },
+    "rgb_tracks": {
+      "checkpoint_sha256": "3fbe511caedbf27143530e8bb453a0e997017547b40bd44c022274f0e92f2745",
+      "complete_parent_states_exact": true,
+      "static_model_Adam_physics_model_Adam_and_graphs_frozen": true,
+      "all2000_sampler_replay": true
+    }
+  },
+  "validation": {
+    "frames": [
+      {
+        "frame": "train/0004",
+        "J6_parent": {
+          "PSNR": 32.05329895019531,
+          "SSIM": 0.9841787219047546,
+          "L1": 0.00248618028126657
+        },
+        "rgb_only": {
+          "PSNR": 31.710315704345703,
+          "SSIM": 0.9830282330513,
+          "L1": 0.0026689115911722183
+        },
+        "rgb_tracks": {
+          "PSNR": 31.48170280456543,
+          "SSIM": 0.9822520613670349,
+          "L1": 0.002790209138765931
+        }
+      },
+      {
+        "frame": "train/0011",
+        "J6_parent": {
+          "PSNR": 32.035316467285156,
+          "SSIM": 0.9845765233039856,
+          "L1": 0.002444289857521653
+        },
+        "rgb_only": {
+          "PSNR": 31.9393310546875,
+          "SSIM": 0.9842034578323364,
+          "L1": 0.002515760250389576
+        },
+        "rgb_tracks": {
+          "PSNR": 31.613773345947266,
+          "SSIM": 0.9829358458518982,
+          "L1": 0.0027280228678137064
+        }
+      },
+      {
+        "frame": "train/0018",
+        "J6_parent": {
+          "PSNR": 32.5270881652832,
+          "SSIM": 0.9857029914855957,
+          "L1": 0.002376693533733487
+        },
+        "rgb_only": {
+          "PSNR": 32.273746490478516,
+          "SSIM": 0.9849187135696411,
+          "L1": 0.002518440131098032
+        },
+        "rgb_tracks": {
+          "PSNR": 32.16181182861328,
+          "SSIM": 0.9844187498092651,
+          "L1": 0.0025995555333793163
+        }
+      },
+      {
+        "frame": "train/0024",
+        "J6_parent": {
+          "PSNR": 33.56655502319336,
+          "SSIM": 0.9867320656776428,
+          "L1": 0.0022272432688623667
+        },
+        "rgb_only": {
+          "PSNR": 33.11716079711914,
+          "SSIM": 0.985723614692688,
+          "L1": 0.0024035172536969185
+        },
+        "rgb_tracks": {
+          "PSNR": 33.01322937011719,
+          "SSIM": 0.9854856133460999,
+          "L1": 0.0024692511651664972
+        }
+      },
+      {
+        "frame": "train/0031",
+        "J6_parent": {
+          "PSNR": 32.233642578125,
+          "SSIM": 0.9841681718826294,
+          "L1": 0.0029023485258221626
+        },
+        "rgb_only": {
+          "PSNR": 31.892005920410156,
+          "SSIM": 0.9832192063331604,
+          "L1": 0.003087385091930628
+        },
+        "rgb_tracks": {
+          "PSNR": 30.90666961669922,
+          "SSIM": 0.9817469716072083,
+          "L1": 0.003455700119957328
+        }
+      },
+      {
+        "frame": "train/0038",
+        "J6_parent": {
+          "PSNR": 31.90798568725586,
+          "SSIM": 0.984046995639801,
+          "L1": 0.0030781785026192665
+        },
+        "rgb_only": {
+          "PSNR": 30.887943267822266,
+          "SSIM": 0.9822247624397278,
+          "L1": 0.0035235306713730097
+        },
+        "rgb_tracks": {
+          "PSNR": 30.650665283203125,
+          "SSIM": 0.9816182851791382,
+          "L1": 0.0036086442414671183
+        }
+      },
+      {
+        "frame": "train/0044",
+        "J6_parent": {
+          "PSNR": 32.506370544433594,
+          "SSIM": 0.9840089082717896,
+          "L1": 0.0029427935369312763
+        },
+        "rgb_only": {
+          "PSNR": 31.654741287231445,
+          "SSIM": 0.9828099608421326,
+          "L1": 0.0032471336890012026
+        },
+        "rgb_tracks": {
+          "PSNR": 31.399620056152344,
+          "SSIM": 0.9825108647346497,
+          "L1": 0.0033659206237643957
+        }
+      },
+      {
+        "frame": "train/0051",
+        "J6_parent": {
+          "PSNR": 32.93768310546875,
+          "SSIM": 0.9833849668502808,
+          "L1": 0.002897292608395219
+        },
+        "rgb_only": {
+          "PSNR": 32.64439010620117,
+          "SSIM": 0.9827156066894531,
+          "L1": 0.0030448860488831997
+        },
+        "rgb_tracks": {
+          "PSNR": 32.06398010253906,
+          "SSIM": 0.9820996522903442,
+          "L1": 0.003259320743381977
+        }
+      },
+      {
+        "frame": "train/0058",
+        "J6_parent": {
+          "PSNR": 33.65757369995117,
+          "SSIM": 0.9826890826225281,
+          "L1": 0.0028411350212991238
+        },
+        "rgb_only": {
+          "PSNR": 32.93211364746094,
+          "SSIM": 0.981587827205658,
+          "L1": 0.003054029308259487
+        },
+        "rgb_tracks": {
+          "PSNR": 32.18162155151367,
+          "SSIM": 0.9811791777610779,
+          "L1": 0.0032174198422580957
+        }
+      },
+      {
+        "frame": "train/0064",
+        "J6_parent": {
+          "PSNR": 33.437904357910156,
+          "SSIM": 0.9815880656242371,
+          "L1": 0.002943216124549508
+        },
+        "rgb_only": {
+          "PSNR": 32.86502456665039,
+          "SSIM": 0.9805512428283691,
+          "L1": 0.0031718146055936813
+        },
+        "rgb_tracks": {
+          "PSNR": 31.894113540649414,
+          "SSIM": 0.9792932868003845,
+          "L1": 0.003459970001131296
+        }
+      },
+      {
+        "frame": "train/0071",
+        "J6_parent": {
+          "PSNR": 32.99154281616211,
+          "SSIM": 0.9809215068817139,
+          "L1": 0.0031270068138837814
+        },
+        "rgb_only": {
+          "PSNR": 31.60760498046875,
+          "SSIM": 0.9790180325508118,
+          "L1": 0.003627344500273466
+        },
+        "rgb_tracks": {
+          "PSNR": 31.00046157836914,
+          "SSIM": 0.97751784324646,
+          "L1": 0.0039658923633396626
+        }
+      },
+      {
+        "frame": "train/0078",
+        "J6_parent": {
+          "PSNR": 31.855146408081055,
+          "SSIM": 0.9785585403442383,
+          "L1": 0.003488645190373063
+        },
+        "rgb_only": {
+          "PSNR": 31.661670684814453,
+          "SSIM": 0.9778532385826111,
+          "L1": 0.003605888457968831
+        },
+        "rgb_tracks": {
+          "PSNR": 30.94245147705078,
+          "SSIM": 0.9761815667152405,
+          "L1": 0.0040002427995204926
+        }
+      },
+      {
+        "frame": "train/0084",
+        "J6_parent": {
+          "PSNR": 29.594226837158203,
+          "SSIM": 0.9740798473358154,
+          "L1": 0.004619202576577663
+        },
+        "rgb_only": {
+          "PSNR": 29.402694702148438,
+          "SSIM": 0.9733116626739502,
+          "L1": 0.004772254731506109
+        },
+        "rgb_tracks": {
+          "PSNR": 29.163005828857422,
+          "SSIM": 0.972443163394928,
+          "L1": 0.005029349122196436
+        }
+      },
+      {
+        "frame": "train/0091",
+        "J6_parent": {
+          "PSNR": 30.831214904785156,
+          "SSIM": 0.976618766784668,
+          "L1": 0.003978523891419172
+        },
+        "rgb_only": {
+          "PSNR": 30.68840217590332,
+          "SSIM": 0.9760590195655823,
+          "L1": 0.004082249477505684
+        },
+        "rgb_tracks": {
+          "PSNR": 30.409738540649414,
+          "SSIM": 0.9750136733055115,
+          "L1": 0.004332700278609991
+        }
+      },
+      {
+        "frame": "train/0098",
+        "J6_parent": {
+          "PSNR": 31.14932632446289,
+          "SSIM": 0.9765233993530273,
+          "L1": 0.003891902742907405
+        },
+        "rgb_only": {
+          "PSNR": 31.39192771911621,
+          "SSIM": 0.9772244095802307,
+          "L1": 0.003772868774831295
+        },
+        "rgb_tracks": {
+          "PSNR": 30.353553771972656,
+          "SSIM": 0.9746382832527161,
+          "L1": 0.004331064410507679
+        }
+      },
+      {
+        "frame": "train/0104",
+        "J6_parent": {
+          "PSNR": 31.76851463317871,
+          "SSIM": 0.978481113910675,
+          "L1": 0.003604056779295206
+        },
+        "rgb_only": {
+          "PSNR": 31.885822296142578,
+          "SSIM": 0.9784535765647888,
+          "L1": 0.00359863368794322
+        },
+        "rgb_tracks": {
+          "PSNR": 30.870304107666016,
+          "SSIM": 0.9763577580451965,
+          "L1": 0.00406816927716136
+        }
+      },
+      {
+        "frame": "train/0111",
+        "J6_parent": {
+          "PSNR": 32.44886779785156,
+          "SSIM": 0.9800988435745239,
+          "L1": 0.003257994307205081
+        },
+        "rgb_only": {
+          "PSNR": 31.375730514526367,
+          "SSIM": 0.9787787199020386,
+          "L1": 0.0036057073157280684
+        },
+        "rgb_tracks": {
+          "PSNR": 31.38521385192871,
+          "SSIM": 0.9784455895423889,
+          "L1": 0.003680382389575243
+        }
+      },
+      {
+        "frame": "train/0118",
+        "J6_parent": {
+          "PSNR": 30.80374526977539,
+          "SSIM": 0.9787120223045349,
+          "L1": 0.003773836186155677
+        },
+        "rgb_only": {
+          "PSNR": 30.310062408447266,
+          "SSIM": 0.9780686497688293,
+          "L1": 0.0040012928657233715
+        },
+        "rgb_tracks": {
+          "PSNR": 30.597187042236328,
+          "SSIM": 0.9782659411430359,
+          "L1": 0.003937091212719679
+        }
+      },
+      {
+        "frame": "train/0124",
+        "J6_parent": {
+          "PSNR": 31.258670806884766,
+          "SSIM": 0.9793321490287781,
+          "L1": 0.0036999934818595648
+        },
+        "rgb_only": {
+          "PSNR": 31.77825164794922,
+          "SSIM": 0.9800825119018555,
+          "L1": 0.0035095319617539644
+        },
+        "rgb_tracks": {
+          "PSNR": 31.34514808654785,
+          "SSIM": 0.9792724251747131,
+          "L1": 0.0037040789611637592
+        }
+      },
+      {
+        "frame": "train/0131",
+        "J6_parent": {
+          "PSNR": 33.06453323364258,
+          "SSIM": 0.9818541407585144,
+          "L1": 0.0032008353155106306
+        },
+        "rgb_only": {
+          "PSNR": 32.522159576416016,
+          "SSIM": 0.9811244010925293,
+          "L1": 0.0033610269892960787
+        },
+        "rgb_tracks": {
+          "PSNR": 30.816143035888672,
+          "SSIM": 0.9791130423545837,
+          "L1": 0.0038909916765987873
+        }
+      },
+      {
+        "frame": "train/0138",
+        "J6_parent": {
+          "PSNR": 32.2402458190918,
+          "SSIM": 0.9799823760986328,
+          "L1": 0.0033944661263376474
+        },
+        "rgb_only": {
+          "PSNR": 31.663448333740234,
+          "SSIM": 0.9790191054344177,
+          "L1": 0.0035714174155145884
+        },
+        "rgb_tracks": {
+          "PSNR": 29.45964813232422,
+          "SSIM": 0.9767123460769653,
+          "L1": 0.004388139117509127
+        }
+      },
+      {
+        "frame": "train/0144",
+        "J6_parent": {
+          "PSNR": 31.146982192993164,
+          "SSIM": 0.9774355292320251,
+          "L1": 0.0037830809596925974
+        },
+        "rgb_only": {
+          "PSNR": 30.108835220336914,
+          "SSIM": 0.9756016135215759,
+          "L1": 0.00423169182613492
+        },
+        "rgb_tracks": {
+          "PSNR": 28.96400260925293,
+          "SSIM": 0.9742298722267151,
+          "L1": 0.004733915440738201
+        }
+      },
+      {
+        "frame": "train/0151",
+        "J6_parent": {
+          "PSNR": 30.739871978759766,
+          "SSIM": 0.975875198841095,
+          "L1": 0.003994752652943134
+        },
+        "rgb_only": {
+          "PSNR": 30.480947494506836,
+          "SSIM": 0.9758080840110779,
+          "L1": 0.004091987386345863
+        },
+        "rgb_tracks": {
+          "PSNR": 29.92137908935547,
+          "SSIM": 0.9749144315719604,
+          "L1": 0.004377690609544516
+        }
+      },
+      {
+        "frame": "train/0158",
+        "J6_parent": {
+          "PSNR": 31.76905059814453,
+          "SSIM": 0.9774503111839294,
+          "L1": 0.0035532822366803885
+        },
+        "rgb_only": {
+          "PSNR": 31.33746337890625,
+          "SSIM": 0.9770314693450928,
+          "L1": 0.003704915987327695
+        },
+        "rgb_tracks": {
+          "PSNR": 30.32505989074707,
+          "SSIM": 0.9755932688713074,
+          "L1": 0.004115304909646511
+        }
+      },
+      {
+        "frame": "train/0164",
+        "J6_parent": {
+          "PSNR": 31.819639205932617,
+          "SSIM": 0.9790430665016174,
+          "L1": 0.0034107177052646875
+        },
+        "rgb_only": {
+          "PSNR": 31.60963249206543,
+          "SSIM": 0.978857159614563,
+          "L1": 0.0034884202759712934
+        },
+        "rgb_tracks": {
+          "PSNR": 30.0948486328125,
+          "SSIM": 0.9762755632400513,
+          "L1": 0.004082536790519953
+        }
+      },
+      {
+        "frame": "train/0171",
+        "J6_parent": {
+          "PSNR": 32.2558479309082,
+          "SSIM": 0.9808104038238525,
+          "L1": 0.0032318951562047005
+        },
+        "rgb_only": {
+          "PSNR": 32.189762115478516,
+          "SSIM": 0.9805582165718079,
+          "L1": 0.003271309193223715
+        },
+        "rgb_tracks": {
+          "PSNR": 29.838031768798828,
+          "SSIM": 0.9763944149017334,
+          "L1": 0.004228885751217604
+        }
+      },
+      {
+        "frame": "train/0178",
+        "J6_parent": {
+          "PSNR": 32.12526321411133,
+          "SSIM": 0.9802050590515137,
+          "L1": 0.003332281019538641
+        },
+        "rgb_only": {
+          "PSNR": 32.20281982421875,
+          "SSIM": 0.9803811311721802,
+          "L1": 0.0033072689548134804
+        },
+        "rgb_tracks": {
+          "PSNR": 29.026582717895508,
+          "SSIM": 0.974902868270874,
+          "L1": 0.004718244541436434
+        }
+      },
+      {
+        "frame": "train/0184",
+        "J6_parent": {
+          "PSNR": 32.03255081176758,
+          "SSIM": 0.979469895362854,
+          "L1": 0.003326999954879284
+        },
+        "rgb_only": {
+          "PSNR": 31.566848754882812,
+          "SSIM": 0.9785928130149841,
+          "L1": 0.0034821375738829374
+        },
+        "rgb_tracks": {
+          "PSNR": 28.845436096191406,
+          "SSIM": 0.9735800623893738,
+          "L1": 0.00475772749632597
+        }
+      },
+      {
+        "frame": "train/0191",
+        "J6_parent": {
+          "PSNR": 31.66411590576172,
+          "SSIM": 0.9787331223487854,
+          "L1": 0.003417533589527011
+        },
+        "rgb_only": {
+          "PSNR": 30.892127990722656,
+          "SSIM": 0.977061927318573,
+          "L1": 0.0037199968937784433
+        },
+        "rgb_tracks": {
+          "PSNR": 29.285316467285156,
+          "SSIM": 0.9739677906036377,
+          "L1": 0.004523806273937225
+        }
+      },
+      {
+        "frame": "train/0198",
+        "J6_parent": {
+          "PSNR": 31.41742515563965,
+          "SSIM": 0.9775025248527527,
+          "L1": 0.0036744524259120226
+        },
+        "rgb_only": {
+          "PSNR": 30.51937484741211,
+          "SSIM": 0.9756230115890503,
+          "L1": 0.004038908053189516
+        },
+        "rgb_tracks": {
+          "PSNR": 29.37994956970215,
+          "SSIM": 0.9739817976951599,
+          "L1": 0.004626662936061621
+        }
+      }
+    ],
+    "means": {
+      "J6_parent": {
+        "PSNR": 31.994673347473146,
+        "SSIM": 0.9804254770278931,
+        "L1": 0.0032966943457722665
+      },
+      "rgb_only": {
+        "PSNR": 31.570412000020344,
+        "SSIM": 0.9796497126420339,
+        "L1": 0.0034693420321370164
+      },
+      "rgb_tracks": {
+        "PSNR": 30.646354993184406,
+        "SSIM": 0.9780447403589885,
+        "L1": 0.00388156302118053
+      }
+    },
+    "all30_native1600": true,
+    "semantic_masks_used": false,
+    "test_not_read": true,
+    "PSNR_nonregression_gate": false,
+    "independent_geometry_GT": false
+  },
+  "diagnostics": {
+    "images": {
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t002_J6_parent_staticRGB_native.png": "46e4698dacaf9b2a9d4820f0d4bb111ea5cfa2dff262cd0f6533ff9a1518b4b1",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t002_J6_parent_dynamicRGB_native.png": "c5ebee60d0666a355f9f210b9304ff4c3025bb5320cc7ef4d67a7a61baa42080",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t002_J6_parent_jointRGB_native.png": "a3bdf524d6c7d22bd66cec0c63107455e18e9d67dd10f8136243af6b58a45bd5",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t002_J6_parent_staticAlpha_native.png": "cf534b4b6e2e2a05c0e7f45fa21c7078aa9891511aa49d1be184f61250f52297",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t002_J6_parent_dynamicAlpha_native.png": "8c12b43722caf05dc2be3e9223eaaf2061b1c25b05058c8eb2c66b1263fa66dd",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t002_J6_parent_jointAlpha_native.png": "66aa57691ee7cf2a0641a9975e671112c21d66522a8288d23f40380954f4b28b",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t002_J6_parent_staticD-alpha_native.png": "52b9caf440d288efc3751948356e89ba405f84fcd951ce72c5086db3cee52e3f",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t002_J6_parent_dynamicD-alpha_native.png": "82d6160cc7be27492a50b99df769dc5d3d4455a6fd7444cf809f5407571aa8ef",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t002_J6_parent_jointD-alpha_native.png": "b70e8870274592a9c0476a1f73d3226b98216a6766bff82c0deee4f61187a215",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t002_rgb_only_staticRGB_native.png": "46e4698dacaf9b2a9d4820f0d4bb111ea5cfa2dff262cd0f6533ff9a1518b4b1",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t002_rgb_only_dynamicRGB_native.png": "2a5c1e95e4e0d489ee9d14fcd4f507167e6511c256460d435daf6f3bb8b743ed",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t002_rgb_only_jointRGB_native.png": "a4bb850a9660299e25723fb1669ef92956f6b8da5f7f756bfa57cd3dd85ca914",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t002_rgb_only_staticAlpha_native.png": "cf534b4b6e2e2a05c0e7f45fa21c7078aa9891511aa49d1be184f61250f52297",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t002_rgb_only_dynamicAlpha_native.png": "01f158775207e0b919bf3415286a96fbf0d3292d0ccc74a066c34f977c9657d5",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t002_rgb_only_jointAlpha_native.png": "64a254962992061807ce76b03722e132259d82d6981fdb7a1605d6abc76d2644",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t002_rgb_only_staticD-alpha_native.png": "52b9caf440d288efc3751948356e89ba405f84fcd951ce72c5086db3cee52e3f",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t002_rgb_only_dynamicD-alpha_native.png": "ab1939cdf822a972e007ad5f3ba15386eb34d5bf573804ee4512a944dfb7dedc",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t002_rgb_only_jointD-alpha_native.png": "e838dcdf70cfa4f4c983650fc5e262b9ca1b09e0370586b98db642b5bacd0784",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t002_rgb_tracks_staticRGB_native.png": "46e4698dacaf9b2a9d4820f0d4bb111ea5cfa2dff262cd0f6533ff9a1518b4b1",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t002_rgb_tracks_dynamicRGB_native.png": "429461201c383c351e947edd50a8f1f3fc622a2ee03e361e9b5b2f7ddac0258d",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t002_rgb_tracks_jointRGB_native.png": "5fde92df8e746d8e814a9cb5e5179db3c2ed0418b5da6c56784521665d7c63ab",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t002_rgb_tracks_staticAlpha_native.png": "cf534b4b6e2e2a05c0e7f45fa21c7078aa9891511aa49d1be184f61250f52297",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t002_rgb_tracks_dynamicAlpha_native.png": "ef291991a0932e6967175a1640ce166cd893b2bf600776c7cf73ae842ebc0cd0",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t002_rgb_tracks_jointAlpha_native.png": "92828017f8859ac0efe04d139f1f37dd82564b339d568bb5446c2bc5f3026d0f",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t002_rgb_tracks_staticD-alpha_native.png": "52b9caf440d288efc3751948356e89ba405f84fcd951ce72c5086db3cee52e3f",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t002_rgb_tracks_dynamicD-alpha_native.png": "caa8f86f5f0e838136ff3fcb7a21a6370ec3f04b3cff6b1c2f41b99e27424880",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t002_rgb_tracks_jointD-alpha_native.png": "cb72d5db5f4f76bd24cd532cd289eb8c0e34f3fd0e45ea4ba3a3e5d9a92aa3b9",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t002_decomposition.png": "516aed04c73e48c96826f2dc466966897ee20fa7fd4244aec4e6617d9eb0c931",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t002_joint_comparison.png": "81cb79ec4d2e430e48865669758638d71c3d4f44a131c668e6bbd4c22abf42e8",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t100_J6_parent_staticRGB_native.png": "46e4698dacaf9b2a9d4820f0d4bb111ea5cfa2dff262cd0f6533ff9a1518b4b1",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t100_J6_parent_dynamicRGB_native.png": "de78b620517d3fd19e8564fb39f08aaf494a2afcbe453845286c61fc294d4f6b",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t100_J6_parent_jointRGB_native.png": "4b25896cefa11edd9bcfde8081b979d89023105da9a49fa3727052b76436cb2f",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t100_J6_parent_staticAlpha_native.png": "cf534b4b6e2e2a05c0e7f45fa21c7078aa9891511aa49d1be184f61250f52297",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t100_J6_parent_dynamicAlpha_native.png": "47e08a1acc63cbd76b30876a7950317e687ca387bc56dcfa46bce437b880b6b5",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t100_J6_parent_jointAlpha_native.png": "8a817d548c2460a1718e4b363855f133cd2fdc4124523b74ce2264f0fcad448e",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t100_J6_parent_staticD-alpha_native.png": "52b9caf440d288efc3751948356e89ba405f84fcd951ce72c5086db3cee52e3f",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t100_J6_parent_dynamicD-alpha_native.png": "12626e0dbb2b1200670a031c364f1c57421460f06b90eb0c1db139540738c1d8",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t100_J6_parent_jointD-alpha_native.png": "2545cbe8c566135078e24f6b69b7e9042e563ef1b87c59b850d66afd904cad17",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t100_rgb_only_staticRGB_native.png": "46e4698dacaf9b2a9d4820f0d4bb111ea5cfa2dff262cd0f6533ff9a1518b4b1",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t100_rgb_only_dynamicRGB_native.png": "458a0d6d8254484bf361f52c03c7c7b16f72a070fabfa5dbccf7f06ab134e0c5",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t100_rgb_only_jointRGB_native.png": "ecd85bd71b2dc2385802c284dbf730ef349c9c2e7975640a25d8c1c71a6532a6",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t100_rgb_only_staticAlpha_native.png": "cf534b4b6e2e2a05c0e7f45fa21c7078aa9891511aa49d1be184f61250f52297",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t100_rgb_only_dynamicAlpha_native.png": "4591eb26666824648ade00463bac0190ce7b50e6c66cf2eefe412145080a2a62",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t100_rgb_only_jointAlpha_native.png": "0f575297ae8d26bdf6d548f2b9b16c17d46c83d1cd8e2dc12cb68f5ff945c7a4",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t100_rgb_only_staticD-alpha_native.png": "52b9caf440d288efc3751948356e89ba405f84fcd951ce72c5086db3cee52e3f",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t100_rgb_only_dynamicD-alpha_native.png": "c624eae3769d33a13b558a01a6a3005687d0eea5d7ef370838f22bd0e8d25c6a",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t100_rgb_only_jointD-alpha_native.png": "831c21c89f331feb4607008f7da221ec2d78f20e245dc74360b4c19734bbef74",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t100_rgb_tracks_staticRGB_native.png": "46e4698dacaf9b2a9d4820f0d4bb111ea5cfa2dff262cd0f6533ff9a1518b4b1",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t100_rgb_tracks_dynamicRGB_native.png": "b32558d2b3ff3db9434748bbee4f00370c933af2ba3a2b7417826452109208d1",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t100_rgb_tracks_jointRGB_native.png": "ce10c279995631145700460e83ddc6588756da58f6854b99abe649affa36184b",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t100_rgb_tracks_staticAlpha_native.png": "cf534b4b6e2e2a05c0e7f45fa21c7078aa9891511aa49d1be184f61250f52297",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t100_rgb_tracks_dynamicAlpha_native.png": "d9ec8ff09a56ba31ac793ccaf7fd0ef7bccbbc6ad75690a60935120c812dd4bf",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t100_rgb_tracks_jointAlpha_native.png": "5d3dae00360aa71002add245b22a8cc230f3d02bbff7a6e6874428194793ae1b",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t100_rgb_tracks_staticD-alpha_native.png": "52b9caf440d288efc3751948356e89ba405f84fcd951ce72c5086db3cee52e3f",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t100_rgb_tracks_dynamicD-alpha_native.png": "97665436f6fdcfbc02b5f712eb9b77eaa2c587f94ec1815b0b5094226ea9673a",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t100_rgb_tracks_jointD-alpha_native.png": "43c432239f5c590d742cff9540bae92ceb58d09c01a01417f9d22d2112d84601",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t100_decomposition.png": "208027c49b20e81b5c439c4aba71d8d5e7b0b00949eb1ec12d508b6f4d663f0d",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t100_joint_comparison.png": "864a6330104b4e2fe28862bd82cfa966e2c00f42ee809dcc7e0f63ea25a6c995",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t200_J6_parent_staticRGB_native.png": "46e4698dacaf9b2a9d4820f0d4bb111ea5cfa2dff262cd0f6533ff9a1518b4b1",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t200_J6_parent_dynamicRGB_native.png": "431c7ef99502964b63a3cae5086d6ae0b778e4dc884b1f716c5e6d65749b5d99",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t200_J6_parent_jointRGB_native.png": "9f679674bfd5d55c45e91e3f4ed29f0c8cfb1ac17fbeb9a147c194db5c14c2e5",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t200_J6_parent_staticAlpha_native.png": "cf534b4b6e2e2a05c0e7f45fa21c7078aa9891511aa49d1be184f61250f52297",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t200_J6_parent_dynamicAlpha_native.png": "83f9383a9befba29e76a6a19225b936a91eb691cde73b9be6b8d6e230f3dfbcf",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t200_J6_parent_jointAlpha_native.png": "6cefe23bd53ed70991e25d03a15e047a30377b40a528306ded5f748a5d5c6603",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t200_J6_parent_staticD-alpha_native.png": "52b9caf440d288efc3751948356e89ba405f84fcd951ce72c5086db3cee52e3f",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t200_J6_parent_dynamicD-alpha_native.png": "1acca1cb065643b4bfe6b82216ed6119e48c727062a82fb3af63df4bfe1a4832",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t200_J6_parent_jointD-alpha_native.png": "57e1005283c3fb71d7b18f60564ee87a42224b7b810a93ea0aff1e12f4d077d0",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t200_rgb_only_staticRGB_native.png": "46e4698dacaf9b2a9d4820f0d4bb111ea5cfa2dff262cd0f6533ff9a1518b4b1",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t200_rgb_only_dynamicRGB_native.png": "c42aa14b52528ef711729103ba151392c31e4d669135274b3decfd1cad28c82a",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t200_rgb_only_jointRGB_native.png": "3ea308e308176e977af32f94ab54f59cc7753aeead2647854400f6ceafbed152",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t200_rgb_only_staticAlpha_native.png": "cf534b4b6e2e2a05c0e7f45fa21c7078aa9891511aa49d1be184f61250f52297",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t200_rgb_only_dynamicAlpha_native.png": "701b90d74fca46e376effb969ec58f6839de086fb44951626b3507dca102c599",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t200_rgb_only_jointAlpha_native.png": "ce25f826ab6b29e0d0fc1ce86d5c4ac88f6dd2aa1ae0a23a0d0f87759d612cb9",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t200_rgb_only_staticD-alpha_native.png": "52b9caf440d288efc3751948356e89ba405f84fcd951ce72c5086db3cee52e3f",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t200_rgb_only_dynamicD-alpha_native.png": "9e8134537bcea2c4564e53c7a6ca84ae876355ac247e93e0ac4793448eea752e",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t200_rgb_only_jointD-alpha_native.png": "01c2052cc6b032f334320d292b508ce6c41d8816e672f8686663b917b5bf2188",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t200_rgb_tracks_staticRGB_native.png": "46e4698dacaf9b2a9d4820f0d4bb111ea5cfa2dff262cd0f6533ff9a1518b4b1",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t200_rgb_tracks_dynamicRGB_native.png": "b62d119ecdfba97ba0772ba744ca3f1d984e1013b9d64dfeec19c5dc21279399",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t200_rgb_tracks_jointRGB_native.png": "1d32120ce64115518a5f1578b839e52c55790723f68fa2d29f67baaf956af608",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t200_rgb_tracks_staticAlpha_native.png": "cf534b4b6e2e2a05c0e7f45fa21c7078aa9891511aa49d1be184f61250f52297",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t200_rgb_tracks_dynamicAlpha_native.png": "d4bbbb982777e41e1206d76cf6eb1daa805f292f93d3595817ff0e2572a24bf8",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t200_rgb_tracks_jointAlpha_native.png": "25d1a480e7a794b518589dbefbcac308162b68adc7b7bf0fe2e857d89cf4c505",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t200_rgb_tracks_staticD-alpha_native.png": "52b9caf440d288efc3751948356e89ba405f84fcd951ce72c5086db3cee52e3f",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t200_rgb_tracks_dynamicD-alpha_native.png": "31a25e1f73c91a55a20ea5f67d486070bdc8533c8836dd3b15c04b5536b60cca",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t200_rgb_tracks_jointD-alpha_native.png": "72adaaf7311972fe2ed60cb0a6bb2ad417756d6c985fa3e6d033bdd736c4cfbe",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t200_decomposition.png": "3ab7088c3e94cef5da1bd24f7e59b727cbf457a02b0cf303eefb096b3a9e034c",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c086_t200_joint_comparison.png": "73b34e146611fafd7848682244dd70fa43fb8cfce7ab965320d0fd3062e43761",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t002_J6_parent_staticRGB_native.png": "3fd5829d1c42d7ff68ae20786768eb39d7c40f6b39a7feb70dd1e8d73f8cf514",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t002_J6_parent_dynamicRGB_native.png": "dad34291506f0362b0699add2a92c4ce50a8cf2182116b76c2525b67e8e2398d",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t002_J6_parent_jointRGB_native.png": "b7d822318ae96e6f70afef44aa45c6629ba7fdae661d079916a32910dd279b1e",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t002_J6_parent_staticAlpha_native.png": "a85f0d95c00c1fd9cb0b2a5aa8b704384aab141d40ac8a57ad3461cfe824f657",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t002_J6_parent_dynamicAlpha_native.png": "1eb995d177af2aaeba205b5d2b04777005e83237b4ee65c21729bb53be5dcdf2",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t002_J6_parent_jointAlpha_native.png": "2238c8c7eacfd9ecb77ffe1c315907465a40e1c219bc8990ab6b248e8d72aca5",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t002_J6_parent_staticD-alpha_native.png": "1ed4a7b5489491c82d5e713fc6866d3acf8bbbdb2877a98711fed555e6e79030",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t002_J6_parent_dynamicD-alpha_native.png": "a3388e57192233ff2ac0eee1eb72cf688e71b08367d686c1d4cdd3b0ca5f78af",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t002_J6_parent_jointD-alpha_native.png": "b59e2764037de097b60fccdbc369ec2a5431296f508a4d7421b296bcfb0afc6a",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t002_rgb_only_staticRGB_native.png": "3fd5829d1c42d7ff68ae20786768eb39d7c40f6b39a7feb70dd1e8d73f8cf514",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t002_rgb_only_dynamicRGB_native.png": "145aab0166d8499d823c793b1728aa65ce7d4031507a42f9fadc2c1ac797c1b8",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t002_rgb_only_jointRGB_native.png": "30de1e6c2de0aa0e7d3f29b6a734f9a6215b9f443040c1428523ec328e9c50c5",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t002_rgb_only_staticAlpha_native.png": "a85f0d95c00c1fd9cb0b2a5aa8b704384aab141d40ac8a57ad3461cfe824f657",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t002_rgb_only_dynamicAlpha_native.png": "acc6f33eca82b3750c21e4bc5ea8515573e14b1d264a183c049c64c4b1a29304",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t002_rgb_only_jointAlpha_native.png": "3898a4c5787b192496c0c0653a909131f1c8d8b5731de5f27c79271a06b0d915",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t002_rgb_only_staticD-alpha_native.png": "1ed4a7b5489491c82d5e713fc6866d3acf8bbbdb2877a98711fed555e6e79030",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t002_rgb_only_dynamicD-alpha_native.png": "9cf476c9aab3aba6b1b54b6f5f14bbf98d06242e1e263f790f4acc62a9eedb83",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t002_rgb_only_jointD-alpha_native.png": "a804afa4add063da714f4569af89bc32c4bf17e09bc57a72182c4a038dd93cef",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t002_rgb_tracks_staticRGB_native.png": "3fd5829d1c42d7ff68ae20786768eb39d7c40f6b39a7feb70dd1e8d73f8cf514",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t002_rgb_tracks_dynamicRGB_native.png": "e331f8577e9c2a77094235d45a2cc08f0fb5089604fa74d7353c76e40b734f03",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t002_rgb_tracks_jointRGB_native.png": "24b08e830fef95bd911169bd25659637fe8560c39cb10f2368f7c8e7a31cf8cb",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t002_rgb_tracks_staticAlpha_native.png": "a85f0d95c00c1fd9cb0b2a5aa8b704384aab141d40ac8a57ad3461cfe824f657",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t002_rgb_tracks_dynamicAlpha_native.png": "95cd35ad26cd36e58300e42d292505148c7716c78c2ad697b06844ee40f10ecf",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t002_rgb_tracks_jointAlpha_native.png": "450a93c664763001f575e1add3eba3cdf4af712fb82fa1fb914a1edfbcdae58b",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t002_rgb_tracks_staticD-alpha_native.png": "1ed4a7b5489491c82d5e713fc6866d3acf8bbbdb2877a98711fed555e6e79030",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t002_rgb_tracks_dynamicD-alpha_native.png": "b4da1ab5bc7a307a2da3fa13e291daf0b16b22cb12d02c5b75379db055072130",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t002_rgb_tracks_jointD-alpha_native.png": "d3ea1ceec43d4968e23572bce430c8049857e228787232e4bab28c21d4cfa9c0",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t002_decomposition.png": "2fdc4f3725402cba2b68092f68a534cc9db58769e293d8cf02ba6afae327b8fb",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t002_joint_comparison.png": "65aad60536290cce8ea7827184e90c66543dbc0cfb1178a38808db33151d191e",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t100_J6_parent_staticRGB_native.png": "3fd5829d1c42d7ff68ae20786768eb39d7c40f6b39a7feb70dd1e8d73f8cf514",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t100_J6_parent_dynamicRGB_native.png": "625b69d8d0ce5a01eae1fd8f6d2549b1229747990c18cfc8fa19495420aaec18",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t100_J6_parent_jointRGB_native.png": "cab4c91857243442d4297e9ebd6a7c0ee98a85ae4edfa9f0837a1609d63365ef",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t100_J6_parent_staticAlpha_native.png": "a85f0d95c00c1fd9cb0b2a5aa8b704384aab141d40ac8a57ad3461cfe824f657",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t100_J6_parent_dynamicAlpha_native.png": "f75b5b0e1af71349883e8d649348e6bfbcaff478bc4f4f5ed71f676eab7ad9e2",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t100_J6_parent_jointAlpha_native.png": "3aa2cc4364ad3b6c1d033783727843a75a01cd33ce8f9ae6f14db44365c88d77",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t100_J6_parent_staticD-alpha_native.png": "1ed4a7b5489491c82d5e713fc6866d3acf8bbbdb2877a98711fed555e6e79030",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t100_J6_parent_dynamicD-alpha_native.png": "bd3d099c51717f012eb31eb58bdc28bcfa1f04295705b1737836d4a416b0cace",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t100_J6_parent_jointD-alpha_native.png": "8e27c68596d4a64acc88bbf71b895b2b6a1dfe4117e42bd41fb3e7c3af0bd873",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t100_rgb_only_staticRGB_native.png": "3fd5829d1c42d7ff68ae20786768eb39d7c40f6b39a7feb70dd1e8d73f8cf514",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t100_rgb_only_dynamicRGB_native.png": "da7aaae7a3b472f19ec29f7fa6bdf78f38018b70af7ccdfe89dd0a428078e036",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t100_rgb_only_jointRGB_native.png": "b499f4577919ed7a27baa555965cd0423ca572ffc53e42d12fe0aeb9cfa71366",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t100_rgb_only_staticAlpha_native.png": "a85f0d95c00c1fd9cb0b2a5aa8b704384aab141d40ac8a57ad3461cfe824f657",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t100_rgb_only_dynamicAlpha_native.png": "e2ddb41ce18aa30b2b16b517c9191e79e33d1d2ba14f6ef4dc89f504f3122b10",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t100_rgb_only_jointAlpha_native.png": "1acaadf02044c2642cc67b0703d56bfaa3f85ead86d9f67c86e9a8c071d8d830",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t100_rgb_only_staticD-alpha_native.png": "1ed4a7b5489491c82d5e713fc6866d3acf8bbbdb2877a98711fed555e6e79030",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t100_rgb_only_dynamicD-alpha_native.png": "e32ebbfafb42d18f00bc5fdbb4c036f45e8d481aee202eb43e5e4707277703e9",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t100_rgb_only_jointD-alpha_native.png": "5b3c40871b5496ad73716a7ac59fb859c9b6d18d9f05626d4ebc20b93d9a420a",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t100_rgb_tracks_staticRGB_native.png": "3fd5829d1c42d7ff68ae20786768eb39d7c40f6b39a7feb70dd1e8d73f8cf514",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t100_rgb_tracks_dynamicRGB_native.png": "a7be86cb50d76a02f81f9f02bb53ad5dcad8b24176dd0305c79c9c0f4dfc45de",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t100_rgb_tracks_jointRGB_native.png": "0ed122cb6ce357e2f4b64f52f9e5bc1f79394df9abd28b6f3bdb4a33962a5c84",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t100_rgb_tracks_staticAlpha_native.png": "a85f0d95c00c1fd9cb0b2a5aa8b704384aab141d40ac8a57ad3461cfe824f657",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t100_rgb_tracks_dynamicAlpha_native.png": "8116117363081c0ef47bc2936fbd95930bc0d9d6bcf393fa64016d409d5a3931",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t100_rgb_tracks_jointAlpha_native.png": "3e542ea75902338a12cdca727b6bc6a969b8d3693a3f1441f3a7b904aa4f4c40",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t100_rgb_tracks_staticD-alpha_native.png": "1ed4a7b5489491c82d5e713fc6866d3acf8bbbdb2877a98711fed555e6e79030",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t100_rgb_tracks_dynamicD-alpha_native.png": "43a81f538eb65b78c8f2eec99cf2dacaa5e26423e18d1b0616d1e667488263b8",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t100_rgb_tracks_jointD-alpha_native.png": "6a7f880630f37715a226675778bc76cedb1d7246ddf6721af9088b546bb3d1c0",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t100_decomposition.png": "829357f031156e0807b0783bd33335621fabec6e1396cd1e881455a2ca1ffb8e",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t100_joint_comparison.png": "3279911aa8f96263373051e306c7c62ad89df7372ecb908b057aefc360d0d2b5",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t200_J6_parent_staticRGB_native.png": "3fd5829d1c42d7ff68ae20786768eb39d7c40f6b39a7feb70dd1e8d73f8cf514",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t200_J6_parent_dynamicRGB_native.png": "2696dab316b4bfe03ced954a61019afe940dca18287094a090331ca14cae2134",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t200_J6_parent_jointRGB_native.png": "922ff6b9a834aeafd842c49dfa62983f1594d08e9346f0f9d6abb7d9bdd57623",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t200_J6_parent_staticAlpha_native.png": "a85f0d95c00c1fd9cb0b2a5aa8b704384aab141d40ac8a57ad3461cfe824f657",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t200_J6_parent_dynamicAlpha_native.png": "1989feca553aa1fa74a32e3286e75550fba61ffd6cd13ead0ee4ae85316c6cc4",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t200_J6_parent_jointAlpha_native.png": "1fc62132e7c39c1cd4c8aff2ad7e8ecf925c8bfbd2ea77264ba12345e6c8e842",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t200_J6_parent_staticD-alpha_native.png": "1ed4a7b5489491c82d5e713fc6866d3acf8bbbdb2877a98711fed555e6e79030",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t200_J6_parent_dynamicD-alpha_native.png": "b51e8d340dfca5b653b092761e40e09bc652de97b49ce1a586dcf0aaa07bb6ab",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t200_J6_parent_jointD-alpha_native.png": "36a1968d1ff4283653a3ff5973e801b75932d224a849b539bd0f3a47bf3804b8",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t200_rgb_only_staticRGB_native.png": "3fd5829d1c42d7ff68ae20786768eb39d7c40f6b39a7feb70dd1e8d73f8cf514",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t200_rgb_only_dynamicRGB_native.png": "c230d3a5e37b8bee57e26af020a95344b00e5d269d759f3803ac77aee9255e78",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t200_rgb_only_jointRGB_native.png": "086d3d71370f538f87f7f168eecab56089f1159e182bb5b37a13938b2a680391",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t200_rgb_only_staticAlpha_native.png": "a85f0d95c00c1fd9cb0b2a5aa8b704384aab141d40ac8a57ad3461cfe824f657",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t200_rgb_only_dynamicAlpha_native.png": "16b8a9af7eaf6df4e8b1a74bf3deca197d45c88b156e53a93eddb281e35bf4be",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t200_rgb_only_jointAlpha_native.png": "905390b8acdcb4f7244753d7b4d88bcec5aa3b77ae06a3a2f590dc07da67bfff",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t200_rgb_only_staticD-alpha_native.png": "1ed4a7b5489491c82d5e713fc6866d3acf8bbbdb2877a98711fed555e6e79030",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t200_rgb_only_dynamicD-alpha_native.png": "051d12be18c656100546490b85d6bac1521274674d09658b61294689a338c736",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t200_rgb_only_jointD-alpha_native.png": "32966331ddf90d487e16b82de51b6f85dc99b1ed497c2381b09782e2eee2e1bb",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t200_rgb_tracks_staticRGB_native.png": "3fd5829d1c42d7ff68ae20786768eb39d7c40f6b39a7feb70dd1e8d73f8cf514",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t200_rgb_tracks_dynamicRGB_native.png": "4b62b0f8521108d8995267467d040dc850e24f9b7f3dae4cd360a4c0c2ae5bd4",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t200_rgb_tracks_jointRGB_native.png": "05ea5ad569a6b75822511eb56e192f2c15f64e4e5274489b5b731995b3abeb13",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t200_rgb_tracks_staticAlpha_native.png": "a85f0d95c00c1fd9cb0b2a5aa8b704384aab141d40ac8a57ad3461cfe824f657",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t200_rgb_tracks_dynamicAlpha_native.png": "0d57f750daebf35d2e127424a501cf101885233787a88af04a16533d101f1900",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t200_rgb_tracks_jointAlpha_native.png": "5a5d75c1e62f23fbdcebdc0a64d88cd0b9ff4a26aaba8d7f33fbc675f3226dc9",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t200_rgb_tracks_staticD-alpha_native.png": "1ed4a7b5489491c82d5e713fc6866d3acf8bbbdb2877a98711fed555e6e79030",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t200_rgb_tracks_dynamicD-alpha_native.png": "be46ae990a338abf2c307db52ed0317c16a43c1e231b6e5c7a907e9b7c21ce2c",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t200_rgb_tracks_jointD-alpha_native.png": "bb58c689d50bb8bea0f2bf1bad0d666765821849941feaed99899a58cbfb5d53",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t200_decomposition.png": "e2e8b6489806dff890347f783599d87fb61633a4db9fa682b375292826e309ce",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/c188_t200_joint_comparison.png": "126782e9f3d2f904c9321b5208aa5389200c3e3d8d414134d903637f6819e86b",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/observed_train_index000.png": "be7409e3ff8b8878faddbc0671c6128c5c133f7be068219b765c4588a8fee622",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/observed_train_index024.png": "dcaab802d7e4a6f0b1f15450f4afb5b69f7ea90952a194f1601954fb82821e89",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/observed_train_index048.png": "85c61771d4fee0e91e44c46ddbd00e677843fabbc23cbe4585b89050c1b918cf",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/observed_train_index072.png": "75ffbac721a6f843c9d2faafa800c11593e78cb50e1c88df170db7ed06ed1cad",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/observed_train_index096.png": "bc8b933452fd2be08bcf8511937e151c9ceaefb53249f8abec9d74d3856a87d7",
+      "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/observed_train_index119.png": "5155a3046b5e23131f091c90b22d4efe511453ef6d6b4244a929aed0cd8abc24"
+    },
+    "fixed_cameras": {
+      "86": {
+        "frame": "train/0086",
+        "transform": [
+          [
+            0.23971359431743622,
+            -0.6610111594200134,
+            0.711056649684906,
+            4.171568393707275
+          ],
+          [
+            0.9708436727523804,
+            0.16321201622486115,
+            -0.17556889355182648,
+            -0.39753779768943787
+          ],
+          [
+            7.450580152834618e-09,
+            0.7324110865592957,
+            0.6808626055717468,
+            4.79702091217041
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "size": [
+          1600,
+          900
+        ]
+      },
+      "188": {
+        "frame": "train/0188",
+        "transform": [
+          [
+            -0.7748000621795654,
+            0.4649222791194916,
+            -0.4284064769744873,
+            -2.3269615173339844
+          ],
+          [
+            -0.6322063207626343,
+            -0.5697851777076721,
+            0.5250332951545715,
+            3.484281539916992
+          ],
+          [
+            1.4901160305669237e-08,
+            0.6776370406150818,
+            0.7353963851928711,
+            4.79702091217041
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "size": [
+          1600,
+          900
+        ]
+      }
+    },
+    "static_RGB_alpha_D_exact": true,
+    "high_alpha_proxies": [
+      {
+        "camera": 86,
+        "time": 2,
+        "model": "J6_parent",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 36399,
+        "dynamic_dark_high_alpha": 941,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 86,
+        "time": 2,
+        "model": "rgb_only",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 37298,
+        "dynamic_dark_high_alpha": 909,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 86,
+        "time": 2,
+        "model": "rgb_tracks",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 36209,
+        "dynamic_dark_high_alpha": 1269,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 86,
+        "time": 100,
+        "model": "J6_parent",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 49417,
+        "dynamic_dark_high_alpha": 23333,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 86,
+        "time": 100,
+        "model": "rgb_only",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 52557,
+        "dynamic_dark_high_alpha": 26381,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 86,
+        "time": 100,
+        "model": "rgb_tracks",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 51775,
+        "dynamic_dark_high_alpha": 26523,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 86,
+        "time": 200,
+        "model": "J6_parent",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 66629,
+        "dynamic_dark_high_alpha": 36539,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 86,
+        "time": 200,
+        "model": "rgb_only",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 81414,
+        "dynamic_dark_high_alpha": 44343,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 86,
+        "time": 200,
+        "model": "rgb_tracks",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 78927,
+        "dynamic_dark_high_alpha": 46297,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 188,
+        "time": 2,
+        "model": "J6_parent",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 43902,
+        "dynamic_dark_high_alpha": 2647,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 188,
+        "time": 2,
+        "model": "rgb_only",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 44078,
+        "dynamic_dark_high_alpha": 2735,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 188,
+        "time": 2,
+        "model": "rgb_tracks",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 43985,
+        "dynamic_dark_high_alpha": 3065,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 188,
+        "time": 100,
+        "model": "J6_parent",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 44161,
+        "dynamic_dark_high_alpha": 15419,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 188,
+        "time": 100,
+        "model": "rgb_only",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 47566,
+        "dynamic_dark_high_alpha": 18612,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 188,
+        "time": 100,
+        "model": "rgb_tracks",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 46929,
+        "dynamic_dark_high_alpha": 18480,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 188,
+        "time": 200,
+        "model": "J6_parent",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 46523,
+        "dynamic_dark_high_alpha": 28619,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 188,
+        "time": 200,
+        "model": "rgb_only",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 51137,
+        "dynamic_dark_high_alpha": 33925,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 188,
+        "time": 200,
+        "model": "rgb_tracks",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 51667,
+        "dynamic_dark_high_alpha": 34139,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      }
+    ],
+    "black_missing_is_not_zero_error": true,
+    "D_div_alpha_is_rendered_proxy": true
+  },
+  "training_track_diagnostic": {
+    "training_fit_only_not_validation_or_3D_GT": true,
+    "models": {
+      "J6_parent": {
+        "count": 1432,
+        "mean_px": 0.8748063888913781,
+        "P90_px": 1.5501108552792213,
+        "frames": [
+          {
+            "index": 0,
+            "count": 1,
+            "mean_px": 1.552619893335439
+          },
+          {
+            "index": 1,
+            "count": 1,
+            "mean_px": 1.6023386227451304
+          },
+          {
+            "index": 2,
+            "count": 1,
+            "mean_px": 1.953349260265001
+          },
+          {
+            "index": 3,
+            "count": 1,
+            "mean_px": 1.9682550466952673
+          },
+          {
+            "index": 4,
+            "count": 37,
+            "mean_px": 0.7721135555166821
+          },
+          {
+            "index": 5,
+            "count": 37,
+            "mean_px": 0.7907594910905086
+          },
+          {
+            "index": 6,
+            "count": 37,
+            "mean_px": 0.8016075566051131
+          },
+          {
+            "index": 7,
+            "count": 37,
+            "mean_px": 0.7632102446002083
+          },
+          {
+            "index": 8,
+            "count": 63,
+            "mean_px": 0.7021409180308618
+          },
+          {
+            "index": 9,
+            "count": 63,
+            "mean_px": 0.7301636069427955
+          },
+          {
+            "index": 10,
+            "count": 63,
+            "mean_px": 0.7145679590684362
+          },
+          {
+            "index": 11,
+            "count": 63,
+            "mean_px": 0.7164256399752126
+          },
+          {
+            "index": 12,
+            "count": 84,
+            "mean_px": 0.7525014044167774
+          },
+          {
+            "index": 13,
+            "count": 84,
+            "mean_px": 0.7580243201085903
+          },
+          {
+            "index": 14,
+            "count": 84,
+            "mean_px": 0.9079593764334504
+          },
+          {
+            "index": 15,
+            "count": 84,
+            "mean_px": 0.9366519060572646
+          },
+          {
+            "index": 16,
+            "count": 60,
+            "mean_px": 0.8065313809188355
+          },
+          {
+            "index": 17,
+            "count": 60,
+            "mean_px": 0.836665414294057
+          },
+          {
+            "index": 18,
+            "count": 60,
+            "mean_px": 0.9353466850129571
+          },
+          {
+            "index": 19,
+            "count": 60,
+            "mean_px": 1.0344470698747927
+          },
+          {
+            "index": 20,
+            "count": 33,
+            "mean_px": 0.8457849041965222
+          },
+          {
+            "index": 21,
+            "count": 33,
+            "mean_px": 0.8416688747108909
+          },
+          {
+            "index": 22,
+            "count": 33,
+            "mean_px": 0.9850519937813881
+          },
+          {
+            "index": 23,
+            "count": 33,
+            "mean_px": 1.0180940741573126
+          },
+          {
+            "index": 24,
+            "count": 7,
+            "mean_px": 0.9078813154292174
+          },
+          {
+            "index": 25,
+            "count": 7,
+            "mean_px": 1.02302266809812
+          },
+          {
+            "index": 26,
+            "count": 7,
+            "mean_px": 1.529992314722334
+          },
+          {
+            "index": 27,
+            "count": 7,
+            "mean_px": 2.108904662112809
+          },
+          {
+            "index": 44,
+            "count": 3,
+            "mean_px": 0.6506157039205104
+          },
+          {
+            "index": 45,
+            "count": 3,
+            "mean_px": 0.6983691199213119
+          },
+          {
+            "index": 46,
+            "count": 3,
+            "mean_px": 0.7924992047237641
+          },
+          {
+            "index": 47,
+            "count": 3,
+            "mean_px": 0.9187560369551265
+          },
+          {
+            "index": 48,
+            "count": 4,
+            "mean_px": 0.9270846984849237
+          },
+          {
+            "index": 49,
+            "count": 4,
+            "mean_px": 1.074787555237772
+          },
+          {
+            "index": 50,
+            "count": 4,
+            "mean_px": 0.6542991107158331
+          },
+          {
+            "index": 51,
+            "count": 4,
+            "mean_px": 0.7215756465202019
+          },
+          {
+            "index": 52,
+            "count": 6,
+            "mean_px": 1.131457626479197
+          },
+          {
+            "index": 53,
+            "count": 6,
+            "mean_px": 0.970261895968318
+          },
+          {
+            "index": 54,
+            "count": 6,
+            "mean_px": 0.9457195348345214
+          },
+          {
+            "index": 55,
+            "count": 6,
+            "mean_px": 1.0068458038274357
+          },
+          {
+            "index": 56,
+            "count": 7,
+            "mean_px": 1.1708226779059419
+          },
+          {
+            "index": 57,
+            "count": 7,
+            "mean_px": 1.074622972943202
+          },
+          {
+            "index": 58,
+            "count": 7,
+            "mean_px": 1.0701092978862496
+          },
+          {
+            "index": 59,
+            "count": 7,
+            "mean_px": 1.128931426862264
+          },
+          {
+            "index": 60,
+            "count": 7,
+            "mean_px": 1.0488124597748973
+          },
+          {
+            "index": 61,
+            "count": 7,
+            "mean_px": 1.2443894624902456
+          },
+          {
+            "index": 62,
+            "count": 7,
+            "mean_px": 1.179630909420012
+          },
+          {
+            "index": 63,
+            "count": 7,
+            "mean_px": 1.1848821475919356
+          },
+          {
+            "index": 64,
+            "count": 5,
+            "mean_px": 0.8815586876412331
+          },
+          {
+            "index": 65,
+            "count": 5,
+            "mean_px": 1.0226238749671783
+          },
+          {
+            "index": 66,
+            "count": 5,
+            "mean_px": 0.8412875315641528
+          },
+          {
+            "index": 67,
+            "count": 5,
+            "mean_px": 1.3371005121181074
+          },
+          {
+            "index": 68,
+            "count": 1,
+            "mean_px": 0.4430488323399317
+          },
+          {
+            "index": 69,
+            "count": 1,
+            "mean_px": 0.36753868926429323
+          },
+          {
+            "index": 70,
+            "count": 1,
+            "mean_px": 2.247692325931074
+          },
+          {
+            "index": 71,
+            "count": 1,
+            "mean_px": 3.076817588081436
+          },
+          {
+            "index": 80,
+            "count": 1,
+            "mean_px": 0.6463751927971306
+          },
+          {
+            "index": 81,
+            "count": 1,
+            "mean_px": 0.18983848182278687
+          },
+          {
+            "index": 82,
+            "count": 1,
+            "mean_px": 0.29280593590914794
+          },
+          {
+            "index": 83,
+            "count": 1,
+            "mean_px": 0.27557580829807987
+          },
+          {
+            "index": 84,
+            "count": 2,
+            "mean_px": 0.8640267323917294
+          },
+          {
+            "index": 85,
+            "count": 2,
+            "mean_px": 0.9011185496099225
+          },
+          {
+            "index": 86,
+            "count": 2,
+            "mean_px": 1.0875318669328524
+          },
+          {
+            "index": 87,
+            "count": 2,
+            "mean_px": 1.0651638617828065
+          },
+          {
+            "index": 88,
+            "count": 3,
+            "mean_px": 1.0472250820692093
+          },
+          {
+            "index": 89,
+            "count": 3,
+            "mean_px": 0.8340953724899034
+          },
+          {
+            "index": 90,
+            "count": 3,
+            "mean_px": 0.6240583170274578
+          },
+          {
+            "index": 91,
+            "count": 3,
+            "mean_px": 0.9408102494920868
+          },
+          {
+            "index": 92,
+            "count": 2,
+            "mean_px": 1.0710695078698782
+          },
+          {
+            "index": 93,
+            "count": 2,
+            "mean_px": 1.0918259447245473
+          },
+          {
+            "index": 94,
+            "count": 2,
+            "mean_px": 0.9976729567348217
+          },
+          {
+            "index": 95,
+            "count": 2,
+            "mean_px": 0.8583166980257919
+          },
+          {
+            "index": 96,
+            "count": 1,
+            "mean_px": 0.13467949977657628
+          },
+          {
+            "index": 97,
+            "count": 1,
+            "mean_px": 0.26415716509404913
+          },
+          {
+            "index": 98,
+            "count": 1,
+            "mean_px": 0.39026603653730363
+          },
+          {
+            "index": 99,
+            "count": 1,
+            "mean_px": 0.43897067474368034
+          },
+          {
+            "index": 100,
+            "count": 2,
+            "mean_px": 1.0637918836771316
+          },
+          {
+            "index": 101,
+            "count": 2,
+            "mean_px": 1.0564790159290667
+          },
+          {
+            "index": 102,
+            "count": 2,
+            "mean_px": 0.6234762395521468
+          },
+          {
+            "index": 103,
+            "count": 2,
+            "mean_px": 0.6525392042974052
+          },
+          {
+            "index": 104,
+            "count": 5,
+            "mean_px": 1.2427315257306055
+          },
+          {
+            "index": 105,
+            "count": 5,
+            "mean_px": 1.2989841033005345
+          },
+          {
+            "index": 106,
+            "count": 5,
+            "mean_px": 1.1647368876366395
+          },
+          {
+            "index": 107,
+            "count": 5,
+            "mean_px": 1.1130603977295528
+          },
+          {
+            "index": 108,
+            "count": 10,
+            "mean_px": 1.3716166225389956
+          },
+          {
+            "index": 109,
+            "count": 10,
+            "mean_px": 1.0339862762740577
+          },
+          {
+            "index": 110,
+            "count": 10,
+            "mean_px": 1.0614578514681212
+          },
+          {
+            "index": 111,
+            "count": 10,
+            "mean_px": 1.1108691806798832
+          },
+          {
+            "index": 112,
+            "count": 9,
+            "mean_px": 0.8856073076098313
+          },
+          {
+            "index": 113,
+            "count": 9,
+            "mean_px": 0.749862564646922
+          },
+          {
+            "index": 114,
+            "count": 9,
+            "mean_px": 0.7589508617034573
+          },
+          {
+            "index": 115,
+            "count": 9,
+            "mean_px": 0.8557852927725019
+          },
+          {
+            "index": 116,
+            "count": 5,
+            "mean_px": 0.8925541504798907
+          },
+          {
+            "index": 117,
+            "count": 5,
+            "mean_px": 0.8365619208155828
+          },
+          {
+            "index": 118,
+            "count": 5,
+            "mean_px": 0.9004886899108012
+          },
+          {
+            "index": 119,
+            "count": 5,
+            "mean_px": 0.9899439111338999
+          }
+        ]
+      },
+      "rgb_only": {
+        "count": 1432,
+        "mean_px": 0.9788030202051726,
+        "P90_px": 1.6985895770579682,
+        "frames": [
+          {
+            "index": 0,
+            "count": 1,
+            "mean_px": 1.392188362667543
+          },
+          {
+            "index": 1,
+            "count": 1,
+            "mean_px": 1.4423082103923957
+          },
+          {
+            "index": 2,
+            "count": 1,
+            "mean_px": 1.7587666440636684
+          },
+          {
+            "index": 3,
+            "count": 1,
+            "mean_px": 1.7712954462700117
+          },
+          {
+            "index": 4,
+            "count": 37,
+            "mean_px": 0.8219472617289086
+          },
+          {
+            "index": 5,
+            "count": 37,
+            "mean_px": 0.8399926437536596
+          },
+          {
+            "index": 6,
+            "count": 37,
+            "mean_px": 0.8403201202486903
+          },
+          {
+            "index": 7,
+            "count": 37,
+            "mean_px": 0.8249795034749461
+          },
+          {
+            "index": 8,
+            "count": 63,
+            "mean_px": 0.7868848013622797
+          },
+          {
+            "index": 9,
+            "count": 63,
+            "mean_px": 0.7931649603566763
+          },
+          {
+            "index": 10,
+            "count": 63,
+            "mean_px": 0.8340062451328814
+          },
+          {
+            "index": 11,
+            "count": 63,
+            "mean_px": 0.8201246585913505
+          },
+          {
+            "index": 12,
+            "count": 84,
+            "mean_px": 0.8482619923562932
+          },
+          {
+            "index": 13,
+            "count": 84,
+            "mean_px": 0.8278069206411044
+          },
+          {
+            "index": 14,
+            "count": 84,
+            "mean_px": 0.9326919189018378
+          },
+          {
+            "index": 15,
+            "count": 84,
+            "mean_px": 0.9476851101128464
+          },
+          {
+            "index": 16,
+            "count": 60,
+            "mean_px": 0.8294688649139289
+          },
+          {
+            "index": 17,
+            "count": 60,
+            "mean_px": 0.9192213152867467
+          },
+          {
+            "index": 18,
+            "count": 60,
+            "mean_px": 1.1277609166668365
+          },
+          {
+            "index": 19,
+            "count": 60,
+            "mean_px": 1.263088299038933
+          },
+          {
+            "index": 20,
+            "count": 33,
+            "mean_px": 1.0791460895648224
+          },
+          {
+            "index": 21,
+            "count": 33,
+            "mean_px": 1.0685788422125337
+          },
+          {
+            "index": 22,
+            "count": 33,
+            "mean_px": 1.076301005996175
+          },
+          {
+            "index": 23,
+            "count": 33,
+            "mean_px": 1.0858550914450613
+          },
+          {
+            "index": 24,
+            "count": 7,
+            "mean_px": 1.088115404571129
+          },
+          {
+            "index": 25,
+            "count": 7,
+            "mean_px": 1.214011587615628
+          },
+          {
+            "index": 26,
+            "count": 7,
+            "mean_px": 1.5291287336636226
+          },
+          {
+            "index": 27,
+            "count": 7,
+            "mean_px": 2.0234293199820788
+          },
+          {
+            "index": 44,
+            "count": 3,
+            "mean_px": 0.9475869451671096
+          },
+          {
+            "index": 45,
+            "count": 3,
+            "mean_px": 0.9608414302143258
+          },
+          {
+            "index": 46,
+            "count": 3,
+            "mean_px": 1.0667824294149144
+          },
+          {
+            "index": 47,
+            "count": 3,
+            "mean_px": 1.2084151669456198
+          },
+          {
+            "index": 48,
+            "count": 4,
+            "mean_px": 1.1830865617967778
+          },
+          {
+            "index": 49,
+            "count": 4,
+            "mean_px": 1.260899971675828
+          },
+          {
+            "index": 50,
+            "count": 4,
+            "mean_px": 0.9128391130962166
+          },
+          {
+            "index": 51,
+            "count": 4,
+            "mean_px": 0.922060715298769
+          },
+          {
+            "index": 52,
+            "count": 6,
+            "mean_px": 1.2894728619695046
+          },
+          {
+            "index": 53,
+            "count": 6,
+            "mean_px": 1.1966754005380107
+          },
+          {
+            "index": 54,
+            "count": 6,
+            "mean_px": 1.1752295424449504
+          },
+          {
+            "index": 55,
+            "count": 6,
+            "mean_px": 1.2801186664818653
+          },
+          {
+            "index": 56,
+            "count": 7,
+            "mean_px": 1.1750786170732088
+          },
+          {
+            "index": 57,
+            "count": 7,
+            "mean_px": 1.0636846083913658
+          },
+          {
+            "index": 58,
+            "count": 7,
+            "mean_px": 1.040185078610453
+          },
+          {
+            "index": 59,
+            "count": 7,
+            "mean_px": 1.2029246866878094
+          },
+          {
+            "index": 60,
+            "count": 7,
+            "mean_px": 1.0894051284861854
+          },
+          {
+            "index": 61,
+            "count": 7,
+            "mean_px": 1.2570228527392142
+          },
+          {
+            "index": 62,
+            "count": 7,
+            "mean_px": 1.1694463535121689
+          },
+          {
+            "index": 63,
+            "count": 7,
+            "mean_px": 1.2120680281048042
+          },
+          {
+            "index": 64,
+            "count": 5,
+            "mean_px": 0.7910994740932435
+          },
+          {
+            "index": 65,
+            "count": 5,
+            "mean_px": 0.8807932611620007
+          },
+          {
+            "index": 66,
+            "count": 5,
+            "mean_px": 0.8554245086450812
+          },
+          {
+            "index": 67,
+            "count": 5,
+            "mean_px": 1.5410642554027365
+          },
+          {
+            "index": 68,
+            "count": 1,
+            "mean_px": 0.7512386458128251
+          },
+          {
+            "index": 69,
+            "count": 1,
+            "mean_px": 0.668557405124074
+          },
+          {
+            "index": 70,
+            "count": 1,
+            "mean_px": 2.307578126691255
+          },
+          {
+            "index": 71,
+            "count": 1,
+            "mean_px": 3.119775940050195
+          },
+          {
+            "index": 80,
+            "count": 1,
+            "mean_px": 1.9874057764037651
+          },
+          {
+            "index": 81,
+            "count": 1,
+            "mean_px": 1.6670972315940655
+          },
+          {
+            "index": 82,
+            "count": 1,
+            "mean_px": 1.5978245151758097
+          },
+          {
+            "index": 83,
+            "count": 1,
+            "mean_px": 1.6094133563562294
+          },
+          {
+            "index": 84,
+            "count": 2,
+            "mean_px": 1.9779699434109363
+          },
+          {
+            "index": 85,
+            "count": 2,
+            "mean_px": 1.9709977727932917
+          },
+          {
+            "index": 86,
+            "count": 2,
+            "mean_px": 1.6522837969431534
+          },
+          {
+            "index": 87,
+            "count": 2,
+            "mean_px": 1.9744842795640078
+          },
+          {
+            "index": 88,
+            "count": 3,
+            "mean_px": 1.5757921494326563
+          },
+          {
+            "index": 89,
+            "count": 3,
+            "mean_px": 1.7117550738143386
+          },
+          {
+            "index": 90,
+            "count": 3,
+            "mean_px": 2.001143556410689
+          },
+          {
+            "index": 91,
+            "count": 3,
+            "mean_px": 2.2190513757337658
+          },
+          {
+            "index": 92,
+            "count": 2,
+            "mean_px": 2.236507693896191
+          },
+          {
+            "index": 93,
+            "count": 2,
+            "mean_px": 2.0982690340437506
+          },
+          {
+            "index": 94,
+            "count": 2,
+            "mean_px": 1.4985175574520255
+          },
+          {
+            "index": 95,
+            "count": 2,
+            "mean_px": 1.492763766247036
+          },
+          {
+            "index": 96,
+            "count": 1,
+            "mean_px": 1.1227855936460105
+          },
+          {
+            "index": 97,
+            "count": 1,
+            "mean_px": 1.1509906055254997
+          },
+          {
+            "index": 98,
+            "count": 1,
+            "mean_px": 0.7647562892157648
+          },
+          {
+            "index": 99,
+            "count": 1,
+            "mean_px": 0.8498485010110433
+          },
+          {
+            "index": 100,
+            "count": 2,
+            "mean_px": 0.8977274789810787
+          },
+          {
+            "index": 101,
+            "count": 2,
+            "mean_px": 0.9644443258303832
+          },
+          {
+            "index": 102,
+            "count": 2,
+            "mean_px": 0.6923414748176921
+          },
+          {
+            "index": 103,
+            "count": 2,
+            "mean_px": 0.901545599627327
+          },
+          {
+            "index": 104,
+            "count": 5,
+            "mean_px": 1.3558366350101645
+          },
+          {
+            "index": 105,
+            "count": 5,
+            "mean_px": 1.2991761935304766
+          },
+          {
+            "index": 106,
+            "count": 5,
+            "mean_px": 0.9614022738170483
+          },
+          {
+            "index": 107,
+            "count": 5,
+            "mean_px": 0.8579688204365346
+          },
+          {
+            "index": 108,
+            "count": 10,
+            "mean_px": 0.9724570886840134
+          },
+          {
+            "index": 109,
+            "count": 10,
+            "mean_px": 0.7520828930103841
+          },
+          {
+            "index": 110,
+            "count": 10,
+            "mean_px": 0.8645782141150244
+          },
+          {
+            "index": 111,
+            "count": 10,
+            "mean_px": 1.0020200603612899
+          },
+          {
+            "index": 112,
+            "count": 9,
+            "mean_px": 0.6569941695528212
+          },
+          {
+            "index": 113,
+            "count": 9,
+            "mean_px": 0.8118534845409889
+          },
+          {
+            "index": 114,
+            "count": 9,
+            "mean_px": 1.0482771134441193
+          },
+          {
+            "index": 115,
+            "count": 9,
+            "mean_px": 1.193305282607537
+          },
+          {
+            "index": 116,
+            "count": 5,
+            "mean_px": 1.1727307592736094
+          },
+          {
+            "index": 117,
+            "count": 5,
+            "mean_px": 1.035234777608021
+          },
+          {
+            "index": 118,
+            "count": 5,
+            "mean_px": 1.3414231194399306
+          },
+          {
+            "index": 119,
+            "count": 5,
+            "mean_px": 1.5422185253554361
+          }
+        ]
+      },
+      "rgb_tracks": {
+        "count": 1432,
+        "mean_px": 0.5747601859436781,
+        "P90_px": 1.170281329159543,
+        "frames": [
+          {
+            "index": 0,
+            "count": 1,
+            "mean_px": 0.5309838451432772
+          },
+          {
+            "index": 1,
+            "count": 1,
+            "mean_px": 0.44547991423009303
+          },
+          {
+            "index": 2,
+            "count": 1,
+            "mean_px": 0.4331641992043611
+          },
+          {
+            "index": 3,
+            "count": 1,
+            "mean_px": 0.4687552720388789
+          },
+          {
+            "index": 4,
+            "count": 37,
+            "mean_px": 0.31424484641145944
+          },
+          {
+            "index": 5,
+            "count": 37,
+            "mean_px": 0.29423279337730635
+          },
+          {
+            "index": 6,
+            "count": 37,
+            "mean_px": 0.31534003843450675
+          },
+          {
+            "index": 7,
+            "count": 37,
+            "mean_px": 0.35376431283286186
+          },
+          {
+            "index": 8,
+            "count": 63,
+            "mean_px": 0.29315427777441755
+          },
+          {
+            "index": 9,
+            "count": 63,
+            "mean_px": 0.24592266654743097
+          },
+          {
+            "index": 10,
+            "count": 63,
+            "mean_px": 0.3025069339018944
+          },
+          {
+            "index": 11,
+            "count": 63,
+            "mean_px": 0.2976095058817141
+          },
+          {
+            "index": 12,
+            "count": 84,
+            "mean_px": 0.24436082676013812
+          },
+          {
+            "index": 13,
+            "count": 84,
+            "mean_px": 0.22028120333687584
+          },
+          {
+            "index": 14,
+            "count": 84,
+            "mean_px": 0.4262172576536767
+          },
+          {
+            "index": 15,
+            "count": 84,
+            "mean_px": 0.4500142348384471
+          },
+          {
+            "index": 16,
+            "count": 60,
+            "mean_px": 0.5485899015129738
+          },
+          {
+            "index": 17,
+            "count": 60,
+            "mean_px": 0.6164318093191227
+          },
+          {
+            "index": 18,
+            "count": 60,
+            "mean_px": 0.7251430799317362
+          },
+          {
+            "index": 19,
+            "count": 60,
+            "mean_px": 0.7653622607281684
+          },
+          {
+            "index": 20,
+            "count": 33,
+            "mean_px": 0.7230336218285691
+          },
+          {
+            "index": 21,
+            "count": 33,
+            "mean_px": 0.6263842254046542
+          },
+          {
+            "index": 22,
+            "count": 33,
+            "mean_px": 0.5351106881331118
+          },
+          {
+            "index": 23,
+            "count": 33,
+            "mean_px": 0.5717429147886334
+          },
+          {
+            "index": 24,
+            "count": 7,
+            "mean_px": 0.5159322606403608
+          },
+          {
+            "index": 25,
+            "count": 7,
+            "mean_px": 0.6183619734036411
+          },
+          {
+            "index": 26,
+            "count": 7,
+            "mean_px": 1.2369031455353157
+          },
+          {
+            "index": 27,
+            "count": 7,
+            "mean_px": 1.6358040311148287
+          },
+          {
+            "index": 44,
+            "count": 3,
+            "mean_px": 0.34675284995837186
+          },
+          {
+            "index": 45,
+            "count": 3,
+            "mean_px": 0.3124240870380376
+          },
+          {
+            "index": 46,
+            "count": 3,
+            "mean_px": 0.4091842302660744
+          },
+          {
+            "index": 47,
+            "count": 3,
+            "mean_px": 0.4312020730644736
+          },
+          {
+            "index": 48,
+            "count": 4,
+            "mean_px": 0.4125910641454815
+          },
+          {
+            "index": 49,
+            "count": 4,
+            "mean_px": 0.42070649546851036
+          },
+          {
+            "index": 50,
+            "count": 4,
+            "mean_px": 0.5653870537700454
+          },
+          {
+            "index": 51,
+            "count": 4,
+            "mean_px": 0.5023106799276411
+          },
+          {
+            "index": 52,
+            "count": 6,
+            "mean_px": 0.5582466375234522
+          },
+          {
+            "index": 53,
+            "count": 6,
+            "mean_px": 0.4129055124309373
+          },
+          {
+            "index": 54,
+            "count": 6,
+            "mean_px": 0.3773949587600276
+          },
+          {
+            "index": 55,
+            "count": 6,
+            "mean_px": 0.4720470206305996
+          },
+          {
+            "index": 56,
+            "count": 7,
+            "mean_px": 0.7492085450894599
+          },
+          {
+            "index": 57,
+            "count": 7,
+            "mean_px": 0.7057748627408339
+          },
+          {
+            "index": 58,
+            "count": 7,
+            "mean_px": 0.832223085094667
+          },
+          {
+            "index": 59,
+            "count": 7,
+            "mean_px": 0.7316611400640435
+          },
+          {
+            "index": 60,
+            "count": 7,
+            "mean_px": 0.9581522836208559
+          },
+          {
+            "index": 61,
+            "count": 7,
+            "mean_px": 0.8938681585664956
+          },
+          {
+            "index": 62,
+            "count": 7,
+            "mean_px": 1.0490025873203914
+          },
+          {
+            "index": 63,
+            "count": 7,
+            "mean_px": 0.9681888813061654
+          },
+          {
+            "index": 64,
+            "count": 5,
+            "mean_px": 0.7293550424926519
+          },
+          {
+            "index": 65,
+            "count": 5,
+            "mean_px": 0.7453873257594887
+          },
+          {
+            "index": 66,
+            "count": 5,
+            "mean_px": 1.081631557043139
+          },
+          {
+            "index": 67,
+            "count": 5,
+            "mean_px": 0.9347177488480287
+          },
+          {
+            "index": 68,
+            "count": 1,
+            "mean_px": 1.1484813680775612
+          },
+          {
+            "index": 69,
+            "count": 1,
+            "mean_px": 1.1317311223768205
+          },
+          {
+            "index": 70,
+            "count": 1,
+            "mean_px": 1.6145121316320687
+          },
+          {
+            "index": 71,
+            "count": 1,
+            "mean_px": 1.9835928056700705
+          },
+          {
+            "index": 80,
+            "count": 1,
+            "mean_px": 4.202286380908582
+          },
+          {
+            "index": 81,
+            "count": 1,
+            "mean_px": 4.511632453737095
+          },
+          {
+            "index": 82,
+            "count": 1,
+            "mean_px": 4.758633516604034
+          },
+          {
+            "index": 83,
+            "count": 1,
+            "mean_px": 4.484947721411879
+          },
+          {
+            "index": 84,
+            "count": 2,
+            "mean_px": 4.031787666784249
+          },
+          {
+            "index": 85,
+            "count": 2,
+            "mean_px": 3.570558690455681
+          },
+          {
+            "index": 86,
+            "count": 2,
+            "mean_px": 3.355248924951824
+          },
+          {
+            "index": 87,
+            "count": 2,
+            "mean_px": 2.881255195269415
+          },
+          {
+            "index": 88,
+            "count": 3,
+            "mean_px": 2.8106628470973476
+          },
+          {
+            "index": 89,
+            "count": 3,
+            "mean_px": 2.536922807838477
+          },
+          {
+            "index": 90,
+            "count": 3,
+            "mean_px": 2.2837801291573845
+          },
+          {
+            "index": 91,
+            "count": 3,
+            "mean_px": 2.1696018671182338
+          },
+          {
+            "index": 92,
+            "count": 2,
+            "mean_px": 2.0152989829636034
+          },
+          {
+            "index": 93,
+            "count": 2,
+            "mean_px": 1.9032673703630298
+          },
+          {
+            "index": 94,
+            "count": 2,
+            "mean_px": 2.151825574373767
+          },
+          {
+            "index": 95,
+            "count": 2,
+            "mean_px": 1.9870444137720327
+          },
+          {
+            "index": 96,
+            "count": 1,
+            "mean_px": 2.4063647490448985
+          },
+          {
+            "index": 97,
+            "count": 1,
+            "mean_px": 2.1206609327313206
+          },
+          {
+            "index": 98,
+            "count": 1,
+            "mean_px": 2.2019562722652664
+          },
+          {
+            "index": 99,
+            "count": 1,
+            "mean_px": 2.0024926567491637
+          },
+          {
+            "index": 100,
+            "count": 2,
+            "mean_px": 1.7182033661856773
+          },
+          {
+            "index": 101,
+            "count": 2,
+            "mean_px": 1.2535158100296886
+          },
+          {
+            "index": 102,
+            "count": 2,
+            "mean_px": 1.2233719141542219
+          },
+          {
+            "index": 103,
+            "count": 2,
+            "mean_px": 1.1245839979462793
+          },
+          {
+            "index": 104,
+            "count": 5,
+            "mean_px": 0.799561545345729
+          },
+          {
+            "index": 105,
+            "count": 5,
+            "mean_px": 1.1149955374963227
+          },
+          {
+            "index": 106,
+            "count": 5,
+            "mean_px": 1.0187283366557203
+          },
+          {
+            "index": 107,
+            "count": 5,
+            "mean_px": 0.9196227888448408
+          },
+          {
+            "index": 108,
+            "count": 10,
+            "mean_px": 0.856380072431534
+          },
+          {
+            "index": 109,
+            "count": 10,
+            "mean_px": 0.8520580302261035
+          },
+          {
+            "index": 110,
+            "count": 10,
+            "mean_px": 0.8081349752011656
+          },
+          {
+            "index": 111,
+            "count": 10,
+            "mean_px": 0.8394277622260029
+          },
+          {
+            "index": 112,
+            "count": 9,
+            "mean_px": 0.8476215840480276
+          },
+          {
+            "index": 113,
+            "count": 9,
+            "mean_px": 0.9374279546092859
+          },
+          {
+            "index": 114,
+            "count": 9,
+            "mean_px": 1.0201756658922212
+          },
+          {
+            "index": 115,
+            "count": 9,
+            "mean_px": 1.2676673340682276
+          },
+          {
+            "index": 116,
+            "count": 5,
+            "mean_px": 1.3620498943310402
+          },
+          {
+            "index": 117,
+            "count": 5,
+            "mean_px": 1.458712740945975
+          },
+          {
+            "index": 118,
+            "count": 5,
+            "mean_px": 1.337543717662371
+          },
+          {
+            "index": 119,
+            "count": 5,
+            "mean_px": 1.139007134846886
+          }
+        ]
+      }
+    }
+  },
+  "plys": {
+    "J6_parent/static": {
+      "path": "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/J6_parent_static.ply",
+      "sha256": "143d149aeb4949e607a9741b8a1a4a36d188fc753c6116922a00aafe06ce6ef5",
+      "vertices": 4126,
+      "checkpoint_position_exact": true,
+      "all_fields_finite": true,
+      "coordinates": "world"
+    },
+    "J6_parent/canonical_dynamic_local": {
+      "path": "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/J6_parent_canonical_dynamic_local.ply",
+      "sha256": "6536bcd449b027e3b733351263f89b1ed93a41c0f72557220f28c00255f9e6a8",
+      "vertices": 15507,
+      "checkpoint_position_exact": true,
+      "all_fields_finite": true,
+      "coordinates": "local canonical; add checkpoint centers after deformation"
+    },
+    "J6_parent/dynamic_world/2": {
+      "path": "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/J6_parent_dynamic_world_t002.ply",
+      "sha256": "c1d4fa85914626c92e35a4982afb02f327df6a7f02c817fd2bc9f05ffc662d76",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "J6_parent/dynamic_world/100": {
+      "path": "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/J6_parent_dynamic_world_t100.ply",
+      "sha256": "084f9c5895db8791878eb254aade7a2c6a93c634d4287f6b28c7f61e744c439e",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "J6_parent/dynamic_world/200": {
+      "path": "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/J6_parent_dynamic_world_t200.ply",
+      "sha256": "4cf7d016077124871078c17154d1f1320cfdc28a8d28e9c47ae6845cd6dddf25",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "rgb_only/static": {
+      "path": "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/rgb_only_static.ply",
+      "sha256": "143d149aeb4949e607a9741b8a1a4a36d188fc753c6116922a00aafe06ce6ef5",
+      "vertices": 4126,
+      "checkpoint_position_exact": true,
+      "all_fields_finite": true,
+      "coordinates": "world"
+    },
+    "rgb_only/canonical_dynamic_local": {
+      "path": "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/rgb_only_canonical_dynamic_local.ply",
+      "sha256": "3198de1e0647459617020aaa05dd27100d80280431596ee1898b86e5c3d6e0ba",
+      "vertices": 15507,
+      "checkpoint_position_exact": true,
+      "all_fields_finite": true,
+      "coordinates": "local canonical; add checkpoint centers after deformation"
+    },
+    "rgb_only/dynamic_world/2": {
+      "path": "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/rgb_only_dynamic_world_t002.ply",
+      "sha256": "ecbd89f8e1548666ee53e56cc22f7eccaa6c4302a52a801faf156043813c02c6",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "rgb_only/dynamic_world/100": {
+      "path": "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/rgb_only_dynamic_world_t100.ply",
+      "sha256": "070772ce789e3301ed5e81f894ff725d88b9a8fe7c663cf38f691f60fd3487f0",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "rgb_only/dynamic_world/200": {
+      "path": "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/rgb_only_dynamic_world_t200.ply",
+      "sha256": "ba5071c5e236aa91fe8af94b6cffc7572d2fe797019367f3caa232c71fce2566",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "rgb_tracks/static": {
+      "path": "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/rgb_tracks_static.ply",
+      "sha256": "143d149aeb4949e607a9741b8a1a4a36d188fc753c6116922a00aafe06ce6ef5",
+      "vertices": 4126,
+      "checkpoint_position_exact": true,
+      "all_fields_finite": true,
+      "coordinates": "world"
+    },
+    "rgb_tracks/canonical_dynamic_local": {
+      "path": "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/rgb_tracks_canonical_dynamic_local.ply",
+      "sha256": "40a1859e35441e92b3a866a77836f99c533d406b681d60c6f744b9f3af6a4883",
+      "vertices": 15507,
+      "checkpoint_position_exact": true,
+      "all_fields_finite": true,
+      "coordinates": "local canonical; add checkpoint centers after deformation"
+    },
+    "rgb_tracks/dynamic_world/2": {
+      "path": "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/rgb_tracks_dynamic_world_t002.ply",
+      "sha256": "34cacf7dff472bd3703c1db946e6b98c4b4418a52c2dbae2675cbb34cd7bfff2",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "rgb_tracks/dynamic_world/100": {
+      "path": "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/rgb_tracks_dynamic_world_t100.ply",
+      "sha256": "6a8e97f76c089c78d84f10f514b40a06a5f1382bfe3b52408b8f73553f5ed7b1",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "rgb_tracks/dynamic_world/200": {
+      "path": "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/rgb_tracks_dynamic_world_t200.ply",
+      "sha256": "489a42f18aa460c8899c0ddcdaf39e33dca53168ce103098cf370a126096125b",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    }
+  },
+  "source_sha256": "b43f8f206983f0b23dd124055f752dc7675d344d7c32e71097666c4b9ccee6ed"
+}

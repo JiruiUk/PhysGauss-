@@ -1,0 +1,78 @@
+{
+  "groups": [
+    {
+      "start": 0,
+      "Gaussian_rows": [
+        124
+      ],
+      "training_frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "start": 52,
+      "Gaussian_rows": [
+        4320,
+        6886
+      ],
+      "training_frame_indices": [
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63
+      ]
+    },
+    {
+      "start": 108,
+      "Gaussian_rows": [
+        3674,
+        5968,
+        8905,
+        10904,
+        12221
+      ],
+      "training_frame_indices": [
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119
+      ]
+    }
+  ],
+  "image": "output/staged_reconstruction/RubberDuck_I10_tracking/training/v1/persistent_3D_trajectories.png",
+  "image_sha256": "5d239a8b2c1f02748d9286f14b36644c6e11c66a00c284b57ee38caea69447e5",
+  "arrays": "runs/pidg_staged_reconstruction/RubberDuck_I10_tracking/training/v1/persistent_3D_trajectories.npz",
+  "arrays_sha256": "f6083b8db437e9394587c632dfd7ec1d603efbadde873e1e3d5d8735b04b0523",
+  "source_sha256": "69204156af41a648009f94f9ed871dbe602f2d5c5383ee58d8b8f7641e6ff0fa",
+  "all_three_models_saved": true,
+  "independent_3D_GT": false,
+  "physical_object_count_or_identity": false,
+  "optimizer_updates": 0
+}

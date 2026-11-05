@@ -1,0 +1,6 @@
+{
+  "passed": false,
+  "check": "all frozen inputs raw SHA equals Git index blob",
+  "first_mismatch": "variants/color_repair/code/utils/system_utils.py",
+  "reason": "inherited text file is normalized in Git; raw frozen file is unchanged; overly broad Git-byte check corrected without changing source or freeze"
+}
