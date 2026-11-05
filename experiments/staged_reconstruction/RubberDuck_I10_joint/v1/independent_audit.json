@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "protocol_source_data_SHA_verified": true,
+  "two_source_model_and_full_Adam_exact": true,
+  "both_initial_snapshots_exact": true,
+  "all_4000_samples_replayed": true,
+  "frozen_parameters_Adam_graphs_exact": true,
+  "full_Gaussian_PLY_all_model_fields_exact": [
+    "I10_J4_initial/static",
+    "I10_J4_initial/canonical_dynamic_local",
+    "frozen_static/static",
+    "frozen_static/canonical_dynamic_local",
+    "joint_depth_trust/static",
+    "joint_depth_trust/canonical_dynamic_local"
+  ],
+  "world_XYZ_parity_verified_by_native_evaluator": true,
+  "images_verified": 180,
+  "two_videos_decoded_frames": [
+    200,
+    200
+  ],
+  "all30_metrics_recomputed": true,
+  "native_trajectory_determinism_not_claimed": true,
+  "independent_geometry_GT": false,
+  "source_sha256": "f7da9aac119bc00a606c3cf7162f9631befd89bd38041dc2c6c1a5278adde212"
+}

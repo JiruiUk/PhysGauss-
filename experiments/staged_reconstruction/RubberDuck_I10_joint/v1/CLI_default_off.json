@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "required_environment": "repository and src in PYTHONPATH",
+  "no_training_or_evaluation_launched": true,
+  "rows": [
+    {
+      "module": "launch.py",
+      "no_flag_exit_code": 1,
+      "output": "J6 default off; pass --enable-i10-joint"
+    },
+    {
+      "module": "evaluate.py",
+      "no_flag_exit_code": 1,
+      "output": "J6 evaluation default off"
+    },
+    {
+      "module": "audit.py",
+      "no_flag_exit_code": 1,
+      "output": "Read-only audit default off"
+    }
+  ]
+}

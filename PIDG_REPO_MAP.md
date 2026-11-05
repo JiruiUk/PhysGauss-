@@ -1027,3 +1027,8 @@ in-process adapter to frozen J4 full-RGB training; no source/history edits.
 Eleven tests, native flags-off/gradient checks, two 20-update smoke arms and
 two-process full-state/fixed-native-gradient Adam replay passed. Static geometry
 and physics remain frozen; historical color-conditioned lineage is retained.
+
+J6 evaluation: `RubberDuck_I10_joint/{evaluate,audit,finalize}.py` records
+all30 native RGB, fixed86/188 decompositions, full Gaussian/XYZ PLY and
+200-frame decoded H264 comparisons. CPU all-field PLY/state/sampler audit
+passes; sampled dynamic cleanup gate fails. No frozen training-source edits.

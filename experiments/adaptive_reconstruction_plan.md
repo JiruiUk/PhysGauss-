@@ -743,3 +743,18 @@ use full RGB, unchanged 0.1 parent self-depth, 2000 updates each. Eleven tests,
 native flags-off/gradients, 20-update smoke and exact two-process state/Adam
 replay passed. This is a new bounded authorization; paused jobs stay paused.
 See RubberDuck_I10_joint; no new quality result or geometry certification yet.
+
+### J6 completed: I10 + accepted J4 static (2026-11-05)
+
+Both matched arms completed 2000 full-RGB updates; initial/control/joint all30
+native val PSNR 29.068226/31.401124/31.994673 dB, joint +0.593549 versus
+control. Complete two-source/dual-Adam state and all4000 camera samples audited;
+static geometry/physics exact, dynamic Adam26k, joint static opacity/SH16k.
+180 image hashes, 6 full Gaussian all-field PLY matches +9 world XYZ exports,
+two H264 videos each200 decoded frames verified. Thirty image files actually
+reviewed: sampled static non-regression retained, but fixed86/t200 and188/t100
+dynamic fragments/dark high-alpha trails persist. completed_not_promoted;
+pending:false. This fulfills the requested bounded joint training, not the
+overall geometric-cleanup objective. No new physics updates, automatic
+extension, old-task resume or historical result rewrite. Full evidence in
+RubberDuck_I10_joint/v1/assessment.md and final_review.json.

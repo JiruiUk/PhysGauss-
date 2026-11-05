@@ -1,0 +1,25 @@
+{
+  "status": "completed_not_promoted",
+  "pending": false,
+  "pending_review": false,
+  "finished_at_UTC": "2026-11-05T21:52:54.449780+00:00",
+  "formal_updates_per_arm": 2000,
+  "formal_updates_total": 4000,
+  "user_requested_I10_joint_training_executed": true,
+  "old_paused_jobs_resumed": false,
+  "PSNR_nonregression_gate": true,
+  "joint_minus_matched_control_PSNR_dB": 0.5935493469238295,
+  "static_visual_nonregression_sampled": true,
+  "dynamic_alpha_depth_cleanup_completeness_gate": false,
+  "independent_artifact_audit": true,
+  "independent_geometry_GT": false,
+  "automatic_extension": false,
+  "old_failure_and_nonpromotion_records_preserved": true,
+  "evidence": {
+    "evaluation.json": "cf3fadecea02f9c8831bccf47c895bbcf39f3fd3d6dc6cfc3697d0206a65b18c",
+    "videos.json": "d503ad62fb47dc96110d46a6f97c0aaee5b7b8d2f029527a13c2fcddc920025e",
+    "manual_review.json": "c4e2ba017d4ea298ae7548a5cc492cec527b127ec2515bfa0c88a4db95d95bcb",
+    "independent_audit.json": "ae4f843ded299e317cfe9f585e274c54b5b7ae0fc1e4cbac3b292af8731b9bef",
+    "recovery.json": "18b34901a6ff72028f0889648cba8fe51e1e2d839f8381ed9237575d5da10508"
+  }
+}
