@@ -1,0 +1,13 @@
+# T0: mask-free I10 descendant trajectory evidence
+
+Human request: 在I10中，不要使用颜色阈值作为静态参考，尝试对移动物体进行3D追踪来进行重建。
+
+Use the completed J6 joint checkpoint as the single fixed parent: it contains I10-derived dynamic weights and the accepted J4-derived static bank. Preserve all historical files and paused work. Historical S1/S3-U/I10 color-conditioned training remains in this parent; this continuation cannot establish from-scratch unknown static discovery.
+
+The new evidence uses only 120 train RGBs, calibrated cameras and times. Composite stored RGBA on black; never threshold alpha or RGB to define foreground/static classes. Select full-image texture points with channel-symmetric grayscale, 4x4 tiles and six points per tile; fixed CoTracker3 forward/reverse tracking. Do not import the old appearance-selected extraction or 2195 color-supported anchors. Preserve rejected evidence and unknown labels.
+
+Test a stationary-world explanation with even observations and odd held observations. This compensates camera motion but is not moving-point triangulation or independent 3D GT. Only well-conditioned, front-facing tracks that fail the stationary explanation by the fixed amount become motion candidates. Binding tests one persistent dynamic Gaussian ID across all times, using even observations to choose and odd observations only to validate. Compare alternatives separated in parent 3D; ambiguous depth or binding remains unknown. A Gaussian ID does not represent a duck or a known object count.
+
+This milestone is evidence extraction, camera/projection and model-conditioned 3D binding, with zero optimizer updates. Require >=50 admitted bindings and >=10 per temporal third before drafting any training protocol. No automatic threshold relaxation. If passed, separately preregister a matched full-RGB continuation with robust reprojection supervision, default-off/native gradient checks and complete double-Adam/RNG/sampler recovery. No color-selected reference, target replacement or I10 union coverage. Keep accepted static geometry frozen. A failure here must be reported as an evidence bottleneck, not failed RGB identifiability or successful reconstruction.
+
+Qualification precedes inference: tests, fixed inputs/code/weights/protocol hashes, stopped/lock check, independent process replay. Inspect fixed starts 0/52/108 and binding overlays. Report every denominator. No val/test track selection, GT geometry, semantic masks, object count, topology change or optimizer updates. Existing Gaussian quality gates remain unchanged for later training; RGB gain alone is insufficient. Retain all failures and commit milestones separately.
