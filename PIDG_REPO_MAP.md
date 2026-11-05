@@ -1017,3 +1017,13 @@ No topology/identity/semantic masks/GT or physics modules are added.
   as compositing contributions. Historical color-conditioned parent disclosed.
 - `tests/test_rubber_visibility*.py`: six tests. Default off; full state unchanged.
   This maps a diagnostic only, not new Gaussian training or physics integration.
+
+### J6 I10 dynamic plus accepted J4 static joint pilot
+
+`variants/staged_reconstruction/i10_joint/{core,runtime}.py` composes only
+static model/Adam from J4 with I10 non-static model/Adam/RNG/sampler/graphs.
+`experiments/staged_reconstruction/RubberDuck_I10_joint/launch.py` is an opt-in
+in-process adapter to frozen J4 full-RGB training; no source/history edits.
+Eleven tests, native flags-off/gradient checks, two 20-update smoke arms and
+two-process full-state/fixed-native-gradient Adam replay passed. Static geometry
+and physics remain frozen; historical color-conditioned lineage is retained.

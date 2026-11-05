@@ -630,3 +630,14 @@ opacity/SH可撤销联合的完整状态匹配协议；原结构/外观门槛保
 GPU训练。J5仍completed_read_only_not_promoted，整体结构清理目标未达到。
 详见RubberDuck_visibility_audit/v1/dependency_review.json及progress.md。
 仅用户明确恢复后先读依赖最终报告，再决定独立预声明候选；不推断RGB无解。
+
+### J6: user-authorized I10 + accepted J4 static (2026-11-05)
+
+User accepts the displayed J4 static starting quality and requests I10 joint
+training. Fixed protocol d02b4976 uses actual I10 final2k non-static model,
+full Adam/RNG/sampler/physics cache plus accepted J4 static model/full Adam.
+No old I10 target replacement: matched frozen-static and opacity/SH-open arms
+use full RGB, unchanged 0.1 parent self-depth, 2000 updates each. Eleven tests,
+native flags-off/gradients, 20-update smoke and exact two-process state/Adam
+replay passed. This is a new bounded authorization; paused jobs stay paused.
+See RubberDuck_I10_joint; no new quality result or geometry certification yet.

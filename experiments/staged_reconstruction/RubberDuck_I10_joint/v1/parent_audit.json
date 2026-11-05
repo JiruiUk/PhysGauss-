@@ -1,0 +1,62 @@
+{
+  "static_points": 4126,
+  "dynamic_points": 15507,
+  "component_parents": "All non-static I10 model+full dynamic Adam/RNG/sampler/physics graphs; J4 static model+static Adam only",
+  "static_Adam_steps": {
+    "_xyz": [
+      12000
+    ],
+    "_features_dc": [
+      14000
+    ],
+    "_features_rest": [
+      14000
+    ],
+    "_opacity": [
+      14000
+    ],
+    "_scaling": [
+      12000
+    ],
+    "_rotation": [
+      12000
+    ]
+  },
+  "dynamic_Adam_steps": {
+    "dynamic/_xyz": [
+      24000
+    ],
+    "dynamic/_features_dc": [
+      24000
+    ],
+    "dynamic/_features_rest": [
+      24000
+    ],
+    "dynamic/_opacity": [
+      24000
+    ],
+    "dynamic/_scaling": [
+      24000
+    ],
+    "dynamic/_rotation": [
+      24000
+    ],
+    "grids": [
+      24000
+    ],
+    "deform_network": [
+      24000
+    ],
+    "PIDG_velocity_stress": [
+      800
+    ]
+  },
+  "static_geometry_and_coordinate_frame_exact": true,
+  "all_non_static_model_Adam_RNG_graphs_exact_I10": true,
+  "static_and_complete_static_Adam_exact_J4": true,
+  "legacy_conditional_color_masks": true,
+  "old_I10_target_neutralization": false,
+  "physics_frozen_RGB_only": true,
+  "camera_stack": 0,
+  "formal_updates": 0
+}
