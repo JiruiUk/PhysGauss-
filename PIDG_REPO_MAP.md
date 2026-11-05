@@ -1032,3 +1032,29 @@ J6 evaluation: `RubberDuck_I10_joint/{evaluate,audit,finalize}.py` records
 all30 native RGB, fixed86/188 decompositions, full Gaussian/XYZ PLY and
 200-frame decoded H264 comparisons. CPU all-field PLY/state/sampler audit
 passes; sampled dynamic cleanup gate fails. No frozen training-source edits.
+
+## Mask-free I10 descendant persistent 3D tracking (T0-T2)
+
+`variants/staged_reconstruction/i10_tracking/core.py` provides full-image
+channel-symmetric texture proposals, bidirectional image gates, camera-motion
+compensated stationary compatibility, persistent Gaussian-ID fitting/held
+validation and separated-3D-alternative ambiguity. `extract.py` uses the pinned
+local CoTracker3; no appearance or alpha foreground/static masks. `bind.py`
+loads the immutable J6 I10-descendant state and checks native camera parity and
+all 120 model-conditioned 3D trajectories. These are not measured 3D GT.
+`i10_tracking_dense/run.py` isolates one denser proposal budget with unchanged
+reliability/admission gates. T0 failed coverage; T1 passed with 123 tracks / 116
+IDs. No physical object number or identity is inferred.
+
+`i10_track_train/core.py` deduplicates persistent (frame,Gaussian ID) observations
+and adds default-off robust 3D-to-image reprojection; `runtime.py` retains the
+original UnionScene/deformation/native renderer and complete two Adam/RNG/
+camera/physics state. Static background and physics are fully frozen; original
+observed full RGB is retained. No old I10 target substitution, color-selected
+static reference, foreground/union coverage term or new topology. Historical
+color-conditioned parent lineage is disclosed. `RubberDuck_I10_tracking/
+training/launch.py` tests native flags-off/gradient and independent exact-state/
+fixed-native-gradient Adam recovery before matched 2000-step arms. Independent
+native RGB/alpha/D, PLY and H264 evaluation is in task-local evaluate/audit files.
+Tests: test_i10_tracking.py and test_i10_track_train.py. Original PIDG and all
+frozen experiments remain untouched.
