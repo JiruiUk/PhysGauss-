@@ -1058,3 +1058,17 @@ fixed-native-gradient Adam recovery before matched 2000-step arms. Independent
 native RGB/alpha/D, PLY and H264 evaluation is in task-local evaluate/audit files.
 Tests: test_i10_tracking.py and test_i10_track_train.py. Original PIDG and all
 frozen experiments remain untouched.
+
+### Audited I10 binding and persistent local-neighborhood evidence (T3/T4)
+
+- `variants/staged_reconstruction/i10_track_neighborhood/core.py`: reciprocal
+  split/equivalent-surface checks, native patch visibility and short-trajectory
+  local neighbors; model-conditioned, no physical instances or GT.
+- `audit.py`: opt-in123-binding native visibility/no-mutation audit, independent replay.
+- `visible_core.py` and `visible.py`: split-independent first20 native-ID nomination,
+  actual one-hot compositing, persistent visible-first binding over222 original tracks.
+- `experiments/staged_reconstruction/RubberDuck_I10_track_neighborhood/`: fixed
+  protocols,337/343-file freezes, independent accounting, real source-RGB diagrams.
+  T3/T4 fail temporal coverage; zero optimizer updates, no trained neighborhood prior.
+- Tests: `tests/test_i10_track_neighborhood.py` (11), `test_i10_track_visible.py` (7).
+  Original PIDG and all frozen historical modules/weights remain unchanged.

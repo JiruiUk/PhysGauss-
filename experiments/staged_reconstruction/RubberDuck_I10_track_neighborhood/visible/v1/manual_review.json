@@ -1,0 +1,19 @@
+{
+  "actual_visual_review": true,
+  "images_sha256": {
+    "output/staged_reconstruction/RubberDuck_I10_track_neighborhood/visible/v1/bindings_000.png": "e738756f42c9fd96cf6c053a3635304c5b1d75effe0fc1c714f65b97a6cec856",
+    "output/staged_reconstruction/RubberDuck_I10_track_neighborhood/visible/v1/bindings_052.png": "a40498eff7327b373fb4317de4b44201a6a81f5db3f4a0042eed21ada591c3f2",
+    "output/staged_reconstruction/RubberDuck_I10_track_neighborhood/visible/v1/bindings_108.png": "ef48fee62078e9a9b7d090cb2e52f4cb5321129ba2b1ac948c1762b75cf9ac97",
+    "output/staged_reconstruction/RubberDuck_I10_track_neighborhood/visible/v1/local_neighborhoods_RGB.png": "54d33da024286584b3988f777193b290c85a26f786db5769ab242f0f9fe4c69d",
+    "output/staged_reconstruction/RubberDuck_I10_track_neighborhood/visible/v1/temporal_coverage.png": "fa0cbe5ed6d9ae8e4b3f4f1ac91c098abd9ac361880196fa5890561abf42981b"
+  },
+  "findings": [
+    "All0/52/108 twelve-frame sheets and local-neighborhood/coverage diagrams actually reviewed.",
+    "Accepted observations cluster on small visible parts of duck appearance; neither full body nor hidden surface is verified.",
+    "Model-inferred neighbors remain near the displayed track on source views; this is not independent3D or physical identity evidence.",
+    "Rejected observations are unknown, not background labels; the current graph is early-heavy."
+  ],
+  "new_reconstruction_or_artifact_reduction": false,
+  "independent_3D_GT": false,
+  "historical_color_parent_disclosed": true
+}
