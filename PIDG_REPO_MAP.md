@@ -1072,3 +1072,17 @@ frozen experiments remain untouched.
   T3/T4 fail temporal coverage; zero optimizer updates, no trained neighborhood prior.
 - Tests: `tests/test_i10_track_neighborhood.py` (11), `test_i10_track_visible.py` (7).
   Original PIDG and all frozen historical modules/weights remain unchanged.
+
+### L1 supported-window I10 local motion training
+
+- `variants/staged_reconstruction/i10_local_motion/core.py::support`: current-frame
+  visible persistent observations and undirected pairs within audited12-frame windows;
+  no graph extrapolation or new labels. `add_local`: robust relative-correction prior,
+  default identity; parent-derived local offsets are not ground-truth geometry.
+- `runtime.py::{load,objective,snapshot,install}`: isolated native PIDG adapter,
+  exact J6 full-state start; static and physics frozen, dynamic Adam retained.
+- `experiments/staged_reconstruction/RubberDuck_I10_local_motion/launch.py`:
+  default-off preparation/native gradients, matched smoke/recovery/full training.
+  Global T3/T4 coverage rejection remains; this is a separately scoped local trial.
+- `tests/test_i10_local_motion.py`: nine locality/occlusion/shape/gradient tests,
+  plus five retained direct-track tests. No constitutive/material/force additions.

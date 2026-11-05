@@ -1,0 +1,6 @@
+{
+  "passed": false,
+  "reason": "first CLI assertion omitted repository PYTHONPATH; environment repair only",
+  "returncode": 1,
+  "stderr": "Traceback (most recent call last):\n  File \"F:\\A_Edinburgh\\PhysGauss\\experiments\\staged_reconstruction\\RubberDuck_I10_local_motion\\launch.py\", line 7, in <module>\n    from variants.staged_reconstruction.i10_local_motion import runtime as a\nModuleNotFoundError: No module named 'variants'\n"
+}
