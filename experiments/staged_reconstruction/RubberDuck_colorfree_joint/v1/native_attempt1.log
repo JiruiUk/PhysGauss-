@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "F:\A_Edinburgh\PhysGauss\experiments\staged_reconstruction\RubberDuck_colorfree_joint\launch.py", line 117, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\experiments\staged_reconstruction\RubberDuck_colorfree_joint\launch.py", line 109, in main
+    elif args.phase=='native':native()
+                              ^^^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\experiments\staged_reconstruction\RubberDuck_colorfree_joint\launch.py", line 65, in native
+    rows={};meta=read(DATA/'transforms_train.json');frame=meta['frames'][0];cam=camera(frame,meta,1600)
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\variants\staged_reconstruction\train_static.py", line 34, in camera
+    from utils.graphics_utils import getProjectionMatrix
+ModuleNotFoundError: No module named 'utils'

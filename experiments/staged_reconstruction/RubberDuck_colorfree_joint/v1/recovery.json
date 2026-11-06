@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "arm": "old_static_control",
+      "passed": true,
+      "logs": [
+        {
+          "log": "experiments/staged_reconstruction/RubberDuck_colorfree_joint/v1/20261106T134739150325Z_smoke_old_static_control_0.log",
+          "sha256": "90a69094bf80bc4c4966010afee9802cdb3d2bd194ad95110dbdc8db21ca1024"
+        },
+        {
+          "log": "experiments/staged_reconstruction/RubberDuck_colorfree_joint/v1/20261106T134750285958Z_recovery_old_static_control_0.log",
+          "sha256": "27c9e96f793454a65f05af64ee2eb4f8f2d7658c58c4fcbed8e4e2c6e6aefd08"
+        },
+        {
+          "log": "experiments/staged_reconstruction/RubberDuck_colorfree_joint/v1/20261106T134759175762Z_recovery_old_static_control_1.log",
+          "sha256": "a48d6f5759bfe6da32075af7155481b32d8e4f7b1df03acb2404abfb2da65d6c"
+        }
+      ],
+      "model_two_Adam_bindings_RNG_sampler_graphs_exact": true,
+      "native_render_exact_gradients_original_tolerance": true,
+      "same_native_gradient_Adam_update_exact": true
+    },
+    {
+      "arm": "colorfree_static",
+      "passed": true,
+      "logs": [
+        {
+          "log": "experiments/staged_reconstruction/RubberDuck_colorfree_joint/v1/20261106T134807745366Z_smoke_colorfree_static_0.log",
+          "sha256": "17650d6af91fb1f1e927af2025b1bd89359e345395b3573e97cac30569d59fcc"
+        },
+        {
+          "log": "experiments/staged_reconstruction/RubberDuck_colorfree_joint/v1/20261106T134819524363Z_recovery_colorfree_static_0.log",
+          "sha256": "fe82bced172dcb59c9327b2507ed2e0254fe5ba6c2d6632c97ef13f3aea15b7b"
+        },
+        {
+          "log": "experiments/staged_reconstruction/RubberDuck_colorfree_joint/v1/20261106T134827825786Z_recovery_colorfree_static_1.log",
+          "sha256": "237e2b67cf2a7fd0f3ebfce2f3a8892b0bfb9b2164d8d51cba14fccfe3007c7c"
+        }
+      ],
+      "model_two_Adam_bindings_RNG_sampler_graphs_exact": true,
+      "native_render_exact_gradients_original_tolerance": true,
+      "same_native_gradient_Adam_update_exact": true
+    }
+  ],
+  "human_approved_acceptance_inherited": true,
+  "old_full40_failures_preserved": true
+}

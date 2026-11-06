@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "arms": {
+    "old_static_control": {
+      "passed": true,
+      "native_RGB_alpha_D_exact": true,
+      "own_teacher_initial_depth_zero": true,
+      "intended_finite_nonzero_gradients": true,
+      "isolated_depth_opacity_only": true,
+      "full_state_no_optimizer_mutation": true
+    },
+    "colorfree_static": {
+      "passed": true,
+      "native_RGB_alpha_D_exact": true,
+      "own_teacher_initial_depth_zero": true,
+      "intended_finite_nonzero_gradients": true,
+      "isolated_depth_opacity_only": true,
+      "full_state_no_optimizer_mutation": true
+    }
+  },
+  "formal_updates": 0
+}

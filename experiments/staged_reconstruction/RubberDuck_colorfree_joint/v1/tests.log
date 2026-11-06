@@ -1,0 +1,10 @@
+F:\A_Edinburgh\PhysGauss\envs\pidg-cu128\Lib\site-packages\requests\__init__.py:113: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (7.6.0)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+.........                                                                [100%]
+============================== warnings summary ===============================
+envs\pidg-cu128\Lib\site-packages\_pytest\cacheprovider.py:475
+  F:\A_Edinburgh\PhysGauss\envs\pidg-cu128\Lib\site-packages\_pytest\cacheprovider.py:475: PytestCacheWarning: could not create cache path F:\A_Edinburgh\PhysGauss\.pytest_cache\v\cache\nodeids: [WinError 5] �ܾ����ʡ�: 'F:\\A_Edinburgh\\PhysGauss\\.pytest_cache\\v\\cache'
+    config.cache.set("cache/nodeids", sorted(self.cached_nodeids))
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+9 passed, 1 warning in 0.14s

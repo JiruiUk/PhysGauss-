@@ -1,0 +1,7 @@
+ninja: no work to do.
+F:\A_Edinburgh\PhysGauss\variants\color_repair\code\hashencoder\hashgrid.py:16: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.half)
+F:\A_Edinburgh\PhysGauss\variants\color_repair\code\hashencoder\hashgrid.py:56: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+J7_STEP {'iteration': 1, 'total': 20, 'arm': 'colorfree_static', 'rgb_loss': 0.013305328786373138, 'self_depth_loss': 0.0, 'sample': 43}
+J7_STEP {'iteration': 20, 'total': 20, 'arm': 'colorfree_static', 'rgb_loss': 0.01258670724928379, 'self_depth_loss': 0.00059167091967538, 'sample': 105}
