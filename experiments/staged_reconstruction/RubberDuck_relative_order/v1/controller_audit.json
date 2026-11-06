@@ -1,0 +1,98 @@
+{
+  "passed": true,
+  "ten_native_model_replays_exact": true,
+  "independent_state_transitions_exact": true,
+  "all1200_usage_rows_checked": true,
+  "arms": {
+    "rgb_control": {
+      "refreshes": [
+        {
+          "completed_updates": 100,
+          "pairs": 30,
+          "active": 19,
+          "suspended": 2,
+          "revoked": 9
+        },
+        {
+          "completed_updates": 200,
+          "pairs": 30,
+          "active": 15,
+          "suspended": 6,
+          "revoked": 9
+        },
+        {
+          "completed_updates": 300,
+          "pairs": 30,
+          "active": 15,
+          "suspended": 2,
+          "revoked": 13
+        },
+        {
+          "completed_updates": 400,
+          "pairs": 30,
+          "active": 15,
+          "suspended": 2,
+          "revoked": 13
+        },
+        {
+          "completed_updates": 500,
+          "pairs": 30,
+          "active": 15,
+          "suspended": 6,
+          "revoked": 9
+        }
+      ],
+      "usage_steps": 600,
+      "used_pair_observations": 0,
+      "steps_using_pairs": 0,
+      "positive_auxiliary_steps": 0,
+      "sum_weighted_auxiliary_loss": 0.0
+    },
+    "ordinal_depth": {
+      "refreshes": [
+        {
+          "completed_updates": 100,
+          "pairs": 30,
+          "active": 15,
+          "suspended": 6,
+          "revoked": 9
+        },
+        {
+          "completed_updates": 200,
+          "pairs": 30,
+          "active": 15,
+          "suspended": 2,
+          "revoked": 13
+        },
+        {
+          "completed_updates": 300,
+          "pairs": 30,
+          "active": 15,
+          "suspended": 2,
+          "revoked": 13
+        },
+        {
+          "completed_updates": 400,
+          "pairs": 30,
+          "active": 7,
+          "suspended": 10,
+          "revoked": 13
+        },
+        {
+          "completed_updates": 500,
+          "pairs": 30,
+          "active": 7,
+          "suspended": 2,
+          "revoked": 21
+        }
+      ],
+      "usage_steps": 600,
+      "used_pair_observations": 74,
+      "steps_using_pairs": 20,
+      "positive_auxiliary_steps": 20,
+      "sum_weighted_auxiliary_loss": 0.004142213771046954
+    }
+  },
+  "optimizer_updates": 0,
+  "source_sha256": "5a08afdf2ddc577b8a7efcaf00a5116d3d78b55e216ac9e3aa4a25ede4b80b50"
+}

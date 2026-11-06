@@ -1,0 +1,37 @@
+{
+  "status": "completed_local_trial_not_promoted",
+  "pending": false,
+  "pending_review": false,
+  "promoted": false,
+  "retained_model": "J6",
+  "retained_parent_sha256": "89109bdb3990c95037924fdf0985e07302ed67065d98971d77209780b96e0502",
+  "matched_completed_updates": {
+    "rgb_control": 600,
+    "ordinal_depth": 600
+  },
+  "discarded_failed_attempt_updates": 100,
+  "old_interval_failure_preserved": true,
+  "original_training_source_protocol_pairs_and_thresholds_unchanged": true,
+  "separate_metadata_refresh_repair": true,
+  "numeric_RGB_gates": {
+    "vs_control": true,
+    "vs_parent": true
+  },
+  "visual_cleanup_pass": false,
+  "visual_completeness_pass": false,
+  "full_state_and_artifact_audits_passed": true,
+  "coverage": {
+    "training_pairs": 30,
+    "held_pairs": 32,
+    "dynamic_rows": 2,
+    "early_and_middle_pairs": 0
+  },
+  "absolute_depth_supervision": false,
+  "independent_geometry_GT": false,
+  "new_semantic_masks_counts": false,
+  "historical_color_conditioned_parent_lineage": true,
+  "old_global_gates_unchanged": true,
+  "automatic_extension": false,
+  "manual_review_sha256": "7cbfe8921bb5033f83ea6a2e7bfa191903602e63f09b5a84a0e3555e5b2d9bae",
+  "source_sha256": "0421a881f9dcedf4f82596a1ce689d088c77afa4eb255e96daf80c8ea1e376f6"
+}

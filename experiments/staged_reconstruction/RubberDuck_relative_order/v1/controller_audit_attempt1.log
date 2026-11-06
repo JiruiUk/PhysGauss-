@@ -1,0 +1,17 @@
+W1106 11:52:58.523000 315384 envs\pidg-cu128\Lib\site-packages\torch\utils\cpp_extension.py:466] Error checking compiler version for cl: 'cp1' codec can't decode bytes in position 0--1: No mapping for the Unicode character exists in the target code page.
+ninja: no work to do.
+F:\A_Edinburgh\PhysGauss\variants\color_repair\code\hashencoder\hashgrid.py:16: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.half)
+F:\A_Edinburgh\PhysGauss\variants\color_repair\code\hashencoder\hashgrid.py:56: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+L8R_CONTROLLER_REPLAY rgb_control 100 {'completed_updates': 100, 'pairs': 30, 'active': 19, 'suspended': 2, 'revoked': 9}
+L8R_CONTROLLER_REPLAY rgb_control 200 {'completed_updates': 200, 'pairs': 30, 'active': 15, 'suspended': 6, 'revoked': 9}
+L8R_CONTROLLER_REPLAY rgb_control 300 {'completed_updates': 300, 'pairs': 30, 'active': 15, 'suspended': 2, 'revoked': 13}
+L8R_CONTROLLER_REPLAY rgb_control 400 {'completed_updates': 400, 'pairs': 30, 'active': 15, 'suspended': 2, 'revoked': 13}
+L8R_CONTROLLER_REPLAY rgb_control 500 {'completed_updates': 500, 'pairs': 30, 'active': 15, 'suspended': 6, 'revoked': 9}
+L8R_CONTROLLER_REPLAY ordinal_depth 100 {'completed_updates': 100, 'pairs': 30, 'active': 15, 'suspended': 6, 'revoked': 9}
+L8R_CONTROLLER_REPLAY ordinal_depth 200 {'completed_updates': 200, 'pairs': 30, 'active': 15, 'suspended': 2, 'revoked': 13}
+L8R_CONTROLLER_REPLAY ordinal_depth 300 {'completed_updates': 300, 'pairs': 30, 'active': 15, 'suspended': 2, 'revoked': 13}
+L8R_CONTROLLER_REPLAY ordinal_depth 400 {'completed_updates': 400, 'pairs': 30, 'active': 7, 'suspended': 10, 'revoked': 13}
+L8R_CONTROLLER_REPLAY ordinal_depth 500 {'completed_updates': 500, 'pairs': 30, 'active': 7, 'suspended': 2, 'revoked': 21}
+L8R_EVIDENCE_AUDIT_PASS controller
