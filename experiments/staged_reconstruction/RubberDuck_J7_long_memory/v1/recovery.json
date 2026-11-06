@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "arm": "rgb_control",
+      "passed": true,
+      "logs": [
+        {
+          "log": "experiments/staged_reconstruction/RubberDuck_J7_long_memory/v1/20261106T142231892480Z_smoke_rgb_control_0.log",
+          "sha256": "0429fd4564f9204e95f82eb381446f759645e43055ab65e9164b9c7db71eb199"
+        },
+        {
+          "log": "experiments/staged_reconstruction/RubberDuck_J7_long_memory/v1/20261106T142243392448Z_recovery_rgb_control_0.log",
+          "sha256": "f3aeab54a1b9d19d208538d791a5a5342421dc718e554dabd7cb3fded15428e2"
+        },
+        {
+          "log": "experiments/staged_reconstruction/RubberDuck_J7_long_memory/v1/20261106T142252202480Z_recovery_rgb_control_1.log",
+          "sha256": "12da4e67363071dcbfa0edb31df12c0b2aadc4bc662d3773ed070527b2e929c7"
+        }
+      ],
+      "model_two_Adam_bindings_RNG_sampler_graphs_exact": true,
+      "native_render_exact_gradients_original_tolerance": true,
+      "same_native_gradient_Adam_update_exact": true
+    },
+    {
+      "arm": "temporal_memory",
+      "passed": true,
+      "logs": [
+        {
+          "log": "experiments/staged_reconstruction/RubberDuck_J7_long_memory/v1/20261106T142301097296Z_smoke_temporal_memory_0.log",
+          "sha256": "6b17cecbb42b9d1ff7d1ed48eeda773501a25de32b373ec962aa186fee1cef68"
+        },
+        {
+          "log": "experiments/staged_reconstruction/RubberDuck_J7_long_memory/v1/20261106T142313199413Z_recovery_temporal_memory_0.log",
+          "sha256": "d0114a0d0db40ef0e356af8558f83f6a9cb060fae56440718b36e1ccac49ed65"
+        },
+        {
+          "log": "experiments/staged_reconstruction/RubberDuck_J7_long_memory/v1/20261106T142322304959Z_recovery_temporal_memory_1.log",
+          "sha256": "25d16f74b3acd10d1c4581268dd6d866321562adba3270a1da6dcf7bd5022b4b"
+        }
+      ],
+      "model_two_Adam_bindings_RNG_sampler_graphs_exact": true,
+      "native_render_exact_gradients_original_tolerance": true,
+      "same_native_gradient_Adam_update_exact": true
+    }
+  ],
+  "human_approved_acceptance_inherited": true,
+  "old_full40_failures_preserved": true
+}
