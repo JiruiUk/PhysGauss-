@@ -1,0 +1,1189 @@
+{
+  "checkpoint_audits": {
+    "fixed_surface": {
+      "checkpoint_sha256": "f7e143e5063767ec4aa5fec244640410f0cd5fbd621e872b9a45a66aa7c71fd0",
+      "complete_parent_states_exact": true,
+      "static_model_Adam_physics_model_Adam_and_graphs_frozen": true,
+      "all2000_sampler_replay": true
+    },
+    "revocable_surface": {
+      "checkpoint_sha256": "df8f7630715d713e5709f15ccf1b27ad5d46acb51c99a20337d95ba7de83c592",
+      "complete_parent_states_exact": true,
+      "static_model_Adam_physics_model_Adam_and_graphs_frozen": true,
+      "all2000_sampler_replay": true
+    }
+  },
+  "validation": {
+    "frames": [
+      {
+        "frame": "train/0004",
+        "J6_parent": {
+          "PSNR": 32.05329895019531,
+          "SSIM": 0.9841787219047546,
+          "L1": 0.00248618028126657
+        },
+        "fixed_surface": {
+          "PSNR": 31.686399459838867,
+          "SSIM": 0.9828144311904907,
+          "L1": 0.0027006014715880156
+        },
+        "revocable_surface": {
+          "PSNR": 31.901973724365234,
+          "SSIM": 0.9836533665657043,
+          "L1": 0.002586720511317253
+        }
+      },
+      {
+        "frame": "train/0011",
+        "J6_parent": {
+          "PSNR": 32.035316467285156,
+          "SSIM": 0.9845765233039856,
+          "L1": 0.002444289857521653
+        },
+        "fixed_surface": {
+          "PSNR": 31.59682273864746,
+          "SSIM": 0.9828159809112549,
+          "L1": 0.0027250158600509167
+        },
+        "revocable_surface": {
+          "PSNR": 31.887657165527344,
+          "SSIM": 0.9838799834251404,
+          "L1": 0.0025647790171205997
+        }
+      },
+      {
+        "frame": "train/0018",
+        "J6_parent": {
+          "PSNR": 32.5270881652832,
+          "SSIM": 0.9857029914855957,
+          "L1": 0.002376693533733487
+        },
+        "fixed_surface": {
+          "PSNR": 32.11796569824219,
+          "SSIM": 0.9842087626457214,
+          "L1": 0.0026275026611983776
+        },
+        "revocable_surface": {
+          "PSNR": 32.267642974853516,
+          "SSIM": 0.9847548604011536,
+          "L1": 0.0025369112845510244
+        }
+      },
+      {
+        "frame": "train/0024",
+        "J6_parent": {
+          "PSNR": 33.56655502319336,
+          "SSIM": 0.9867320656776428,
+          "L1": 0.0022272432688623667
+        },
+        "fixed_surface": {
+          "PSNR": 33.14713668823242,
+          "SSIM": 0.9856919050216675,
+          "L1": 0.002426326973363757
+        },
+        "revocable_surface": {
+          "PSNR": 32.952674865722656,
+          "SSIM": 0.9852026700973511,
+          "L1": 0.0024774554185569286
+        }
+      },
+      {
+        "frame": "train/0031",
+        "J6_parent": {
+          "PSNR": 32.233642578125,
+          "SSIM": 0.9841681718826294,
+          "L1": 0.0029023485258221626
+        },
+        "fixed_surface": {
+          "PSNR": 30.54015350341797,
+          "SSIM": 0.9805664420127869,
+          "L1": 0.0036670558620244265
+        },
+        "revocable_surface": {
+          "PSNR": 30.057199478149414,
+          "SSIM": 0.9800215363502502,
+          "L1": 0.0037907976657152176
+        }
+      },
+      {
+        "frame": "train/0038",
+        "J6_parent": {
+          "PSNR": 31.90798568725586,
+          "SSIM": 0.984046995639801,
+          "L1": 0.0030781785026192665
+        },
+        "fixed_surface": {
+          "PSNR": 30.067928314208984,
+          "SSIM": 0.9805082082748413,
+          "L1": 0.003898992668837309
+        },
+        "revocable_surface": {
+          "PSNR": 28.95893096923828,
+          "SSIM": 0.9789330959320068,
+          "L1": 0.004391110502183437
+        }
+      },
+      {
+        "frame": "train/0044",
+        "J6_parent": {
+          "PSNR": 32.506370544433594,
+          "SSIM": 0.9840089082717896,
+          "L1": 0.0029427935369312763
+        },
+        "fixed_surface": {
+          "PSNR": 31.601913452148438,
+          "SSIM": 0.9826560020446777,
+          "L1": 0.003320633200928569
+        },
+        "revocable_surface": {
+          "PSNR": 31.416833877563477,
+          "SSIM": 0.9821457266807556,
+          "L1": 0.0033959918655455112
+        }
+      },
+      {
+        "frame": "train/0051",
+        "J6_parent": {
+          "PSNR": 32.93768310546875,
+          "SSIM": 0.9833849668502808,
+          "L1": 0.002897292608395219
+        },
+        "fixed_surface": {
+          "PSNR": 31.819589614868164,
+          "SSIM": 0.9820877313613892,
+          "L1": 0.0032678130082786083
+        },
+        "revocable_surface": {
+          "PSNR": 32.02328872680664,
+          "SSIM": 0.9819116592407227,
+          "L1": 0.0032277076970785856
+        }
+      },
+      {
+        "frame": "train/0058",
+        "J6_parent": {
+          "PSNR": 33.65757369995117,
+          "SSIM": 0.9826890826225281,
+          "L1": 0.0028411350212991238
+        },
+        "fixed_surface": {
+          "PSNR": 31.431589126586914,
+          "SSIM": 0.9803413152694702,
+          "L1": 0.0034213229082524776
+        },
+        "revocable_surface": {
+          "PSNR": 32.21599578857422,
+          "SSIM": 0.9812461733818054,
+          "L1": 0.003189836163073778
+        }
+      },
+      {
+        "frame": "train/0064",
+        "J6_parent": {
+          "PSNR": 33.437904357910156,
+          "SSIM": 0.9815880656242371,
+          "L1": 0.002943216124549508
+        },
+        "fixed_surface": {
+          "PSNR": 31.828720092773438,
+          "SSIM": 0.9795451164245605,
+          "L1": 0.0034394729882478714
+        },
+        "revocable_surface": {
+          "PSNR": 32.382286071777344,
+          "SSIM": 0.9806371331214905,
+          "L1": 0.0031839164439588785
+        }
+      },
+      {
+        "frame": "train/0071",
+        "J6_parent": {
+          "PSNR": 32.99154281616211,
+          "SSIM": 0.9809215068817139,
+          "L1": 0.0031270068138837814
+        },
+        "fixed_surface": {
+          "PSNR": 31.170913696289062,
+          "SSIM": 0.9783293604850769,
+          "L1": 0.0037727849557995796
+        },
+        "revocable_surface": {
+          "PSNR": 32.34795379638672,
+          "SSIM": 0.9799747467041016,
+          "L1": 0.003357241628691554
+        }
+      },
+      {
+        "frame": "train/0078",
+        "J6_parent": {
+          "PSNR": 31.855146408081055,
+          "SSIM": 0.9785585403442383,
+          "L1": 0.003488645190373063
+        },
+        "fixed_surface": {
+          "PSNR": 30.86095428466797,
+          "SSIM": 0.9764994382858276,
+          "L1": 0.003922419156879187
+        },
+        "revocable_surface": {
+          "PSNR": 31.315820693969727,
+          "SSIM": 0.9773597121238708,
+          "L1": 0.003717675805091858
+        }
+      },
+      {
+        "frame": "train/0084",
+        "J6_parent": {
+          "PSNR": 29.594226837158203,
+          "SSIM": 0.9740798473358154,
+          "L1": 0.004619202576577663
+        },
+        "fixed_surface": {
+          "PSNR": 29.250232696533203,
+          "SSIM": 0.9727910757064819,
+          "L1": 0.0048494162037968636
+        },
+        "revocable_surface": {
+          "PSNR": 29.237037658691406,
+          "SSIM": 0.972879946231842,
+          "L1": 0.004884849768131971
+        }
+      },
+      {
+        "frame": "train/0091",
+        "J6_parent": {
+          "PSNR": 30.831214904785156,
+          "SSIM": 0.976618766784668,
+          "L1": 0.003978523891419172
+        },
+        "fixed_surface": {
+          "PSNR": 30.27381134033203,
+          "SSIM": 0.9749104976654053,
+          "L1": 0.004304839298129082
+        },
+        "revocable_surface": {
+          "PSNR": 30.397693634033203,
+          "SSIM": 0.975226640701294,
+          "L1": 0.004249919205904007
+        }
+      },
+      {
+        "frame": "train/0098",
+        "J6_parent": {
+          "PSNR": 31.14932632446289,
+          "SSIM": 0.9765233993530273,
+          "L1": 0.003891902742907405
+        },
+        "fixed_surface": {
+          "PSNR": 30.64556121826172,
+          "SSIM": 0.9753413200378418,
+          "L1": 0.004147443454712629
+        },
+        "revocable_surface": {
+          "PSNR": 30.83970832824707,
+          "SSIM": 0.9759284853935242,
+          "L1": 0.004065757617354393
+        }
+      },
+      {
+        "frame": "train/0104",
+        "J6_parent": {
+          "PSNR": 31.76851463317871,
+          "SSIM": 0.978481113910675,
+          "L1": 0.003604056779295206
+        },
+        "fixed_surface": {
+          "PSNR": 31.00182342529297,
+          "SSIM": 0.9768316149711609,
+          "L1": 0.003934592008590698
+        },
+        "revocable_surface": {
+          "PSNR": 30.709854125976562,
+          "SSIM": 0.9763659834861755,
+          "L1": 0.004103194456547499
+        }
+      },
+      {
+        "frame": "train/0111",
+        "J6_parent": {
+          "PSNR": 32.44886779785156,
+          "SSIM": 0.9800988435745239,
+          "L1": 0.003257994307205081
+        },
+        "fixed_surface": {
+          "PSNR": 30.030620574951172,
+          "SSIM": 0.9767051935195923,
+          "L1": 0.004158236086368561
+        },
+        "revocable_surface": {
+          "PSNR": 30.456993103027344,
+          "SSIM": 0.9777518510818481,
+          "L1": 0.003991172183305025
+        }
+      },
+      {
+        "frame": "train/0118",
+        "J6_parent": {
+          "PSNR": 30.80374526977539,
+          "SSIM": 0.9787120223045349,
+          "L1": 0.003773836186155677
+        },
+        "fixed_surface": {
+          "PSNR": 29.860660552978516,
+          "SSIM": 0.9773944616317749,
+          "L1": 0.004216947127133608
+        },
+        "revocable_surface": {
+          "PSNR": 29.584392547607422,
+          "SSIM": 0.9773424863815308,
+          "L1": 0.0043037282302975655
+        }
+      },
+      {
+        "frame": "train/0124",
+        "J6_parent": {
+          "PSNR": 31.258670806884766,
+          "SSIM": 0.9793321490287781,
+          "L1": 0.0036999934818595648
+        },
+        "fixed_surface": {
+          "PSNR": 31.596811294555664,
+          "SSIM": 0.9795055389404297,
+          "L1": 0.0036248592659831047
+        },
+        "revocable_surface": {
+          "PSNR": 30.110584259033203,
+          "SSIM": 0.9779297113418579,
+          "L1": 0.0041296775452792645
+        }
+      },
+      {
+        "frame": "train/0131",
+        "J6_parent": {
+          "PSNR": 33.06453323364258,
+          "SSIM": 0.9818541407585144,
+          "L1": 0.0032008353155106306
+        },
+        "fixed_surface": {
+          "PSNR": 33.04203414916992,
+          "SSIM": 0.9818379282951355,
+          "L1": 0.0032342057675123215
+        },
+        "revocable_surface": {
+          "PSNR": 31.536666870117188,
+          "SSIM": 0.9803462624549866,
+          "L1": 0.003633286105468869
+        }
+      },
+      {
+        "frame": "train/0138",
+        "J6_parent": {
+          "PSNR": 32.2402458190918,
+          "SSIM": 0.9799823760986328,
+          "L1": 0.0033944661263376474
+        },
+        "fixed_surface": {
+          "PSNR": 31.279224395751953,
+          "SSIM": 0.978379487991333,
+          "L1": 0.003740115324035287
+        },
+        "revocable_surface": {
+          "PSNR": 30.40164566040039,
+          "SSIM": 0.9774411916732788,
+          "L1": 0.0040244110859930515
+        }
+      },
+      {
+        "frame": "train/0144",
+        "J6_parent": {
+          "PSNR": 31.146982192993164,
+          "SSIM": 0.9774355292320251,
+          "L1": 0.0037830809596925974
+        },
+        "fixed_surface": {
+          "PSNR": 30.077028274536133,
+          "SSIM": 0.9751363396644592,
+          "L1": 0.004254251718521118
+        },
+        "revocable_surface": {
+          "PSNR": 29.842838287353516,
+          "SSIM": 0.9754161834716797,
+          "L1": 0.004298030398786068
+        }
+      },
+      {
+        "frame": "train/0151",
+        "J6_parent": {
+          "PSNR": 30.739871978759766,
+          "SSIM": 0.975875198841095,
+          "L1": 0.003994752652943134
+        },
+        "fixed_surface": {
+          "PSNR": 30.182235717773438,
+          "SSIM": 0.9748314619064331,
+          "L1": 0.004274140112102032
+        },
+        "revocable_surface": {
+          "PSNR": 29.515369415283203,
+          "SSIM": 0.9737129807472229,
+          "L1": 0.004530843812972307
+        }
+      },
+      {
+        "frame": "train/0158",
+        "J6_parent": {
+          "PSNR": 31.76905059814453,
+          "SSIM": 0.9774503111839294,
+          "L1": 0.0035532822366803885
+        },
+        "fixed_surface": {
+          "PSNR": 30.08314323425293,
+          "SSIM": 0.9748422503471375,
+          "L1": 0.00425332598388195
+        },
+        "revocable_surface": {
+          "PSNR": 30.353605270385742,
+          "SSIM": 0.9756421446800232,
+          "L1": 0.004071133676916361
+        }
+      },
+      {
+        "frame": "train/0164",
+        "J6_parent": {
+          "PSNR": 31.819639205932617,
+          "SSIM": 0.9790430665016174,
+          "L1": 0.0034107177052646875
+        },
+        "fixed_surface": {
+          "PSNR": 29.846851348876953,
+          "SSIM": 0.9757763743400574,
+          "L1": 0.004283530171960592
+        },
+        "revocable_surface": {
+          "PSNR": 31.180288314819336,
+          "SSIM": 0.977544903755188,
+          "L1": 0.0037336423993110657
+        }
+      },
+      {
+        "frame": "train/0171",
+        "J6_parent": {
+          "PSNR": 32.2558479309082,
+          "SSIM": 0.9808104038238525,
+          "L1": 0.0032318951562047005
+        },
+        "fixed_surface": {
+          "PSNR": 30.224550247192383,
+          "SSIM": 0.9774866700172424,
+          "L1": 0.004075394943356514
+        },
+        "revocable_surface": {
+          "PSNR": 31.862728118896484,
+          "SSIM": 0.979525089263916,
+          "L1": 0.003442808287218213
+        }
+      },
+      {
+        "frame": "train/0178",
+        "J6_parent": {
+          "PSNR": 32.12526321411133,
+          "SSIM": 0.9802050590515137,
+          "L1": 0.003332281019538641
+        },
+        "fixed_surface": {
+          "PSNR": 30.01287269592285,
+          "SSIM": 0.9767681360244751,
+          "L1": 0.004230921622365713
+        },
+        "revocable_surface": {
+          "PSNR": 30.944164276123047,
+          "SSIM": 0.977839469909668,
+          "L1": 0.003811079077422619
+        }
+      },
+      {
+        "frame": "train/0184",
+        "J6_parent": {
+          "PSNR": 32.03255081176758,
+          "SSIM": 0.979469895362854,
+          "L1": 0.003326999954879284
+        },
+        "fixed_surface": {
+          "PSNR": 29.440521240234375,
+          "SSIM": 0.9751164317131042,
+          "L1": 0.004456098657101393
+        },
+        "revocable_surface": {
+          "PSNR": 30.441162109375,
+          "SSIM": 0.9762745499610901,
+          "L1": 0.003966012969613075
+        }
+      },
+      {
+        "frame": "train/0191",
+        "J6_parent": {
+          "PSNR": 31.66411590576172,
+          "SSIM": 0.9787331223487854,
+          "L1": 0.003417533589527011
+        },
+        "fixed_surface": {
+          "PSNR": 29.05695343017578,
+          "SSIM": 0.9739977717399597,
+          "L1": 0.004627569578588009
+        },
+        "revocable_surface": {
+          "PSNR": 29.287940979003906,
+          "SSIM": 0.9735917448997498,
+          "L1": 0.004514770582318306
+        }
+      },
+      {
+        "frame": "train/0198",
+        "J6_parent": {
+          "PSNR": 31.41742515563965,
+          "SSIM": 0.9775025248527527,
+          "L1": 0.0036744524259120226
+        },
+        "fixed_surface": {
+          "PSNR": 28.912660598754883,
+          "SSIM": 0.9730719923973083,
+          "L1": 0.004878738429397345
+        },
+        "revocable_surface": {
+          "PSNR": 29.106109619140625,
+          "SSIM": 0.9729218482971191,
+          "L1": 0.004705152474343777
+        }
+      }
+    ],
+    "means": {
+      "J6_parent": {
+        "PSNR": 31.994673347473146,
+        "SSIM": 0.9804254770278931,
+        "L1": 0.0032966943457722665
+      },
+      "fixed_surface": {
+        "PSNR": 30.756256103515625,
+        "SSIM": 0.9782263080279032,
+        "L1": 0.0038244855822995305
+      },
+      "revocable_surface": {
+        "PSNR": 30.851234690348306,
+        "SSIM": 0.9784467379252116,
+        "L1": 0.003762653796002269
+      }
+    },
+    "all30_native1600": true,
+    "semantic_masks_used": false,
+    "test_not_read": true,
+    "PSNR_nonregression_gate": true,
+    "parent_nonregression_gate": false,
+    "independent_geometry_GT": false
+  },
+  "diagnostics": {
+    "images": {
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t002_J6_parent_staticRGB_native.png": "46e4698dacaf9b2a9d4820f0d4bb111ea5cfa2dff262cd0f6533ff9a1518b4b1",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t002_J6_parent_dynamicRGB_native.png": "c5ebee60d0666a355f9f210b9304ff4c3025bb5320cc7ef4d67a7a61baa42080",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t002_J6_parent_jointRGB_native.png": "a3bdf524d6c7d22bd66cec0c63107455e18e9d67dd10f8136243af6b58a45bd5",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t002_J6_parent_staticAlpha_native.png": "cf534b4b6e2e2a05c0e7f45fa21c7078aa9891511aa49d1be184f61250f52297",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t002_J6_parent_dynamicAlpha_native.png": "8c12b43722caf05dc2be3e9223eaaf2061b1c25b05058c8eb2c66b1263fa66dd",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t002_J6_parent_jointAlpha_native.png": "66aa57691ee7cf2a0641a9975e671112c21d66522a8288d23f40380954f4b28b",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t002_J6_parent_staticD-alpha_native.png": "52b9caf440d288efc3751948356e89ba405f84fcd951ce72c5086db3cee52e3f",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t002_J6_parent_dynamicD-alpha_native.png": "82d6160cc7be27492a50b99df769dc5d3d4455a6fd7444cf809f5407571aa8ef",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t002_J6_parent_jointD-alpha_native.png": "b70e8870274592a9c0476a1f73d3226b98216a6766bff82c0deee4f61187a215",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t002_fixed_surface_staticRGB_native.png": "46e4698dacaf9b2a9d4820f0d4bb111ea5cfa2dff262cd0f6533ff9a1518b4b1",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t002_fixed_surface_dynamicRGB_native.png": "574963fe3d8fcb45b2c868b5fea0adf5f667ca6d81679858fecc934303486cc2",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t002_fixed_surface_jointRGB_native.png": "8eaed049d8ddeed84a51efc1c52f90d506797e0c0127a0db421fe7e88ebec988",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t002_fixed_surface_staticAlpha_native.png": "cf534b4b6e2e2a05c0e7f45fa21c7078aa9891511aa49d1be184f61250f52297",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t002_fixed_surface_dynamicAlpha_native.png": "9d78f757c89ffed4890817dfe85f3b1886f9ed048121ec256e31d39919a90d2b",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t002_fixed_surface_jointAlpha_native.png": "981e5a98cfdb830f3a9b01da08d052bb74810d9e5bdf93ac3ab77c7d571346d7",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t002_fixed_surface_staticD-alpha_native.png": "52b9caf440d288efc3751948356e89ba405f84fcd951ce72c5086db3cee52e3f",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t002_fixed_surface_dynamicD-alpha_native.png": "0a513de85d857af8e259d3c37537e7f33f45f6e83748671798becb3300de57f6",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t002_fixed_surface_jointD-alpha_native.png": "428994d644d75e58ae8f70bee0f7b66ea03b19a8882ee22a36519de6dd6c6e77",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t002_revocable_surface_staticRGB_native.png": "46e4698dacaf9b2a9d4820f0d4bb111ea5cfa2dff262cd0f6533ff9a1518b4b1",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t002_revocable_surface_dynamicRGB_native.png": "7b111ae5ef3bb9b587f81a9478f215a8ecf77b6d2b34155c885fa14081fe6fd8",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t002_revocable_surface_jointRGB_native.png": "c5ad023a417901b41f0da1d43963a10ef5d7c59ed7124dfeebaa165844c01016",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t002_revocable_surface_staticAlpha_native.png": "cf534b4b6e2e2a05c0e7f45fa21c7078aa9891511aa49d1be184f61250f52297",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t002_revocable_surface_dynamicAlpha_native.png": "f084f0619961de35fdc7df5f5072049e8ecc3f3552a6081a4a3c60150d18e652",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t002_revocable_surface_jointAlpha_native.png": "2ea1621e8342207c591c15abdb14099b425c53d8fbacd5036bfa7ff4bf243f7a",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t002_revocable_surface_staticD-alpha_native.png": "52b9caf440d288efc3751948356e89ba405f84fcd951ce72c5086db3cee52e3f",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t002_revocable_surface_dynamicD-alpha_native.png": "96d432da35155cb10e320bb916bede7ec0515491fd5669a6e4941664ad521409",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t002_revocable_surface_jointD-alpha_native.png": "18d9f990faff93db654e689cbe94ae56afd5729daa41b9ef6c1b5edcc2f793e5",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t002_decomposition.png": "9bd95d7e3904196b7b60d88bc9890754a1b4c7ccfe004805699de2e74f851776",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t002_joint_comparison.png": "2c285f9e011a5c3075e28aa08b0df4ae7c54f1798bc2cee16160e8c81fb144dc",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t100_J6_parent_staticRGB_native.png": "46e4698dacaf9b2a9d4820f0d4bb111ea5cfa2dff262cd0f6533ff9a1518b4b1",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t100_J6_parent_dynamicRGB_native.png": "de78b620517d3fd19e8564fb39f08aaf494a2afcbe453845286c61fc294d4f6b",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t100_J6_parent_jointRGB_native.png": "4b25896cefa11edd9bcfde8081b979d89023105da9a49fa3727052b76436cb2f",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t100_J6_parent_staticAlpha_native.png": "cf534b4b6e2e2a05c0e7f45fa21c7078aa9891511aa49d1be184f61250f52297",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t100_J6_parent_dynamicAlpha_native.png": "47e08a1acc63cbd76b30876a7950317e687ca387bc56dcfa46bce437b880b6b5",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t100_J6_parent_jointAlpha_native.png": "8a817d548c2460a1718e4b363855f133cd2fdc4124523b74ce2264f0fcad448e",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t100_J6_parent_staticD-alpha_native.png": "52b9caf440d288efc3751948356e89ba405f84fcd951ce72c5086db3cee52e3f",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t100_J6_parent_dynamicD-alpha_native.png": "12626e0dbb2b1200670a031c364f1c57421460f06b90eb0c1db139540738c1d8",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t100_J6_parent_jointD-alpha_native.png": "2545cbe8c566135078e24f6b69b7e9042e563ef1b87c59b850d66afd904cad17",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t100_fixed_surface_staticRGB_native.png": "46e4698dacaf9b2a9d4820f0d4bb111ea5cfa2dff262cd0f6533ff9a1518b4b1",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t100_fixed_surface_dynamicRGB_native.png": "fdd1492a59bdc04558eb43a18a2dd3a0f41de753f0258ecd8bd2fade9a9ab72e",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t100_fixed_surface_jointRGB_native.png": "5010a620ec28109fa1120b5345f38a9ddaa463e5d6a447528e87a40b9881489b",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t100_fixed_surface_staticAlpha_native.png": "cf534b4b6e2e2a05c0e7f45fa21c7078aa9891511aa49d1be184f61250f52297",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t100_fixed_surface_dynamicAlpha_native.png": "fc43f1b5e0ad35a40e9c0eaf0811b730aabf7b747147c54aedd57c7e2421efbb",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t100_fixed_surface_jointAlpha_native.png": "56de8e9e6aad7b34a0a16d9b2c4243a3bec5830ec7546158293759b634966491",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t100_fixed_surface_staticD-alpha_native.png": "52b9caf440d288efc3751948356e89ba405f84fcd951ce72c5086db3cee52e3f",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t100_fixed_surface_dynamicD-alpha_native.png": "85f3f81312f6abe2f54c375d98b8cf7cb0034f3ccc8b61befe8e664e4245f419",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t100_fixed_surface_jointD-alpha_native.png": "12016b26878b04a510b6f488f71202c88147f698affc0e22809c793d2bcd919b",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t100_revocable_surface_staticRGB_native.png": "46e4698dacaf9b2a9d4820f0d4bb111ea5cfa2dff262cd0f6533ff9a1518b4b1",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t100_revocable_surface_dynamicRGB_native.png": "fec27b76cc63cb44f795b8a12ba3e1251f9214d488b7d851b870bdcd648388ea",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t100_revocable_surface_jointRGB_native.png": "d5fd90db48c8a1d05c49cccd19faf5e645133417cad8e819fcc794f40a78934d",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t100_revocable_surface_staticAlpha_native.png": "cf534b4b6e2e2a05c0e7f45fa21c7078aa9891511aa49d1be184f61250f52297",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t100_revocable_surface_dynamicAlpha_native.png": "69c105793fdf00065d47443c436475de1c4de11b34e737dea723773ca92d8003",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t100_revocable_surface_jointAlpha_native.png": "a491606e6df64cdab625a3dfb2a096860d1330580ab718973a4b1be0b2684edd",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t100_revocable_surface_staticD-alpha_native.png": "52b9caf440d288efc3751948356e89ba405f84fcd951ce72c5086db3cee52e3f",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t100_revocable_surface_dynamicD-alpha_native.png": "8c662e15d6077131a745157ebcadf68230da57588d5e42bf70ea4e45b01b9fe5",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t100_revocable_surface_jointD-alpha_native.png": "122da22e80df656881aedf5c0ce666515d86cb324b785adbcc92aba1f1057961",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t100_decomposition.png": "b7e3b92525a966b1ad1116c40a1cf8fd67dbe5972213d0b24514b93a5a208067",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t100_joint_comparison.png": "0c112ea70725b5af9432e463059de6115cfab6c2cfc6e08dbee7164f9004c73c",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t200_J6_parent_staticRGB_native.png": "46e4698dacaf9b2a9d4820f0d4bb111ea5cfa2dff262cd0f6533ff9a1518b4b1",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t200_J6_parent_dynamicRGB_native.png": "431c7ef99502964b63a3cae5086d6ae0b778e4dc884b1f716c5e6d65749b5d99",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t200_J6_parent_jointRGB_native.png": "9f679674bfd5d55c45e91e3f4ed29f0c8cfb1ac17fbeb9a147c194db5c14c2e5",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t200_J6_parent_staticAlpha_native.png": "cf534b4b6e2e2a05c0e7f45fa21c7078aa9891511aa49d1be184f61250f52297",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t200_J6_parent_dynamicAlpha_native.png": "83f9383a9befba29e76a6a19225b936a91eb691cde73b9be6b8d6e230f3dfbcf",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t200_J6_parent_jointAlpha_native.png": "6cefe23bd53ed70991e25d03a15e047a30377b40a528306ded5f748a5d5c6603",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t200_J6_parent_staticD-alpha_native.png": "52b9caf440d288efc3751948356e89ba405f84fcd951ce72c5086db3cee52e3f",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t200_J6_parent_dynamicD-alpha_native.png": "1acca1cb065643b4bfe6b82216ed6119e48c727062a82fb3af63df4bfe1a4832",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t200_J6_parent_jointD-alpha_native.png": "57e1005283c3fb71d7b18f60564ee87a42224b7b810a93ea0aff1e12f4d077d0",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t200_fixed_surface_staticRGB_native.png": "46e4698dacaf9b2a9d4820f0d4bb111ea5cfa2dff262cd0f6533ff9a1518b4b1",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t200_fixed_surface_dynamicRGB_native.png": "4f609849d7edaddb23d5c30e2b8b1a5f116a9c7c95a95d87074853875e129c82",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t200_fixed_surface_jointRGB_native.png": "9632c40d4e00da5a4caee7764d8ab21a800ae562800d29f7b986a1980fc66cf7",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t200_fixed_surface_staticAlpha_native.png": "cf534b4b6e2e2a05c0e7f45fa21c7078aa9891511aa49d1be184f61250f52297",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t200_fixed_surface_dynamicAlpha_native.png": "3197f3f639dcabe306c4ebb305791bfa3c71ff1f2bc11b0dc6d4a1203c06bed0",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t200_fixed_surface_jointAlpha_native.png": "cc7bd76fd0b65b8f17b2bad387db7fb3a040dee8a68455c88def6351461e046d",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t200_fixed_surface_staticD-alpha_native.png": "52b9caf440d288efc3751948356e89ba405f84fcd951ce72c5086db3cee52e3f",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t200_fixed_surface_dynamicD-alpha_native.png": "bc9d7a51185ff82071859bfec9d3e4cbba02f2d1813333c49de0817006233725",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t200_fixed_surface_jointD-alpha_native.png": "d65dd5248dd972dd12bc6b55a46d675d4e2321ada61e2e069225fadf888742c6",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t200_revocable_surface_staticRGB_native.png": "46e4698dacaf9b2a9d4820f0d4bb111ea5cfa2dff262cd0f6533ff9a1518b4b1",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t200_revocable_surface_dynamicRGB_native.png": "d288d781889a31c25d76282d8b3112af652572b94ff2d3ec132853c8a2b6c0d0",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t200_revocable_surface_jointRGB_native.png": "0b40a96ef27aac3474acb51d9f410e7fee3c15c6f8e2d2cdfe595ed9429f7eff",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t200_revocable_surface_staticAlpha_native.png": "cf534b4b6e2e2a05c0e7f45fa21c7078aa9891511aa49d1be184f61250f52297",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t200_revocable_surface_dynamicAlpha_native.png": "022110b8e19f462a087915fb489ed75c3190079223c618744126a5c462703136",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t200_revocable_surface_jointAlpha_native.png": "989506bb9c97b679631f41a37a7d5e5e7d4b28661bf383eb8c67d88174877a44",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t200_revocable_surface_staticD-alpha_native.png": "52b9caf440d288efc3751948356e89ba405f84fcd951ce72c5086db3cee52e3f",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t200_revocable_surface_dynamicD-alpha_native.png": "7b4cd6b912d746203eb86864ea6da60154d2af5966f737a7f626fbcb99be339f",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t200_revocable_surface_jointD-alpha_native.png": "6cd49861fb0e843a9adfa86c94a50bafe77eb68916eb700508fc76c49f1262e0",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t200_decomposition.png": "52d763d6903ece3d346095397b71ff97f468abdc5dab2bc71dd85e923a60e741",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c086_t200_joint_comparison.png": "7270e429ead27e31622102054541d8746192a17d71d3ca1a7cfbc1f92fb969b0",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t002_J6_parent_staticRGB_native.png": "3fd5829d1c42d7ff68ae20786768eb39d7c40f6b39a7feb70dd1e8d73f8cf514",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t002_J6_parent_dynamicRGB_native.png": "dad34291506f0362b0699add2a92c4ce50a8cf2182116b76c2525b67e8e2398d",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t002_J6_parent_jointRGB_native.png": "b7d822318ae96e6f70afef44aa45c6629ba7fdae661d079916a32910dd279b1e",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t002_J6_parent_staticAlpha_native.png": "a85f0d95c00c1fd9cb0b2a5aa8b704384aab141d40ac8a57ad3461cfe824f657",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t002_J6_parent_dynamicAlpha_native.png": "1eb995d177af2aaeba205b5d2b04777005e83237b4ee65c21729bb53be5dcdf2",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t002_J6_parent_jointAlpha_native.png": "2238c8c7eacfd9ecb77ffe1c315907465a40e1c219bc8990ab6b248e8d72aca5",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t002_J6_parent_staticD-alpha_native.png": "1ed4a7b5489491c82d5e713fc6866d3acf8bbbdb2877a98711fed555e6e79030",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t002_J6_parent_dynamicD-alpha_native.png": "a3388e57192233ff2ac0eee1eb72cf688e71b08367d686c1d4cdd3b0ca5f78af",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t002_J6_parent_jointD-alpha_native.png": "b59e2764037de097b60fccdbc369ec2a5431296f508a4d7421b296bcfb0afc6a",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t002_fixed_surface_staticRGB_native.png": "3fd5829d1c42d7ff68ae20786768eb39d7c40f6b39a7feb70dd1e8d73f8cf514",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t002_fixed_surface_dynamicRGB_native.png": "77a087cd16f36c004e491f0c5e1a42dce417102c1ac1d833d0d9e7f58420843a",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t002_fixed_surface_jointRGB_native.png": "db55cd95973b7d0cdd67664c26db1c8b15adcd5b183b5d12ae2266b296df5d1e",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t002_fixed_surface_staticAlpha_native.png": "a85f0d95c00c1fd9cb0b2a5aa8b704384aab141d40ac8a57ad3461cfe824f657",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t002_fixed_surface_dynamicAlpha_native.png": "1b9e67091f38a573ca199f7cd9d25c564091cfdd5aecc3abfb833140f2bfcb17",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t002_fixed_surface_jointAlpha_native.png": "c9f41c00a4cbf0671c6e8c2a9a3013b528a062e717d3fd2d4895679bc283c214",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t002_fixed_surface_staticD-alpha_native.png": "1ed4a7b5489491c82d5e713fc6866d3acf8bbbdb2877a98711fed555e6e79030",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t002_fixed_surface_dynamicD-alpha_native.png": "55845da51ebce14bbbe4ed9ac3fa3885ef6c594538fda94950274716173f368b",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t002_fixed_surface_jointD-alpha_native.png": "874bd4e3015e483d89424a3b7ce2587c42c24d40daf16e07202fb8d50670f0e0",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t002_revocable_surface_staticRGB_native.png": "3fd5829d1c42d7ff68ae20786768eb39d7c40f6b39a7feb70dd1e8d73f8cf514",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t002_revocable_surface_dynamicRGB_native.png": "c2c13ff103a96b5fb22f3b893a8714116d1e3d625032281bfdf7ef962acaa97f",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t002_revocable_surface_jointRGB_native.png": "235e61750e9430061a5ccc3c0e6649fc11f35564b995adbe06ca9f94b82581c9",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t002_revocable_surface_staticAlpha_native.png": "a85f0d95c00c1fd9cb0b2a5aa8b704384aab141d40ac8a57ad3461cfe824f657",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t002_revocable_surface_dynamicAlpha_native.png": "65bbd287cfbf3187cd141dd89ed334d3fbb960814ac37cc456b86d747fac15f3",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t002_revocable_surface_jointAlpha_native.png": "ad8de4ba6f5609d1589eb386195b5c5416cc6b3bcb1501ff8fb64875cf3269f3",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t002_revocable_surface_staticD-alpha_native.png": "1ed4a7b5489491c82d5e713fc6866d3acf8bbbdb2877a98711fed555e6e79030",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t002_revocable_surface_dynamicD-alpha_native.png": "302a2d75a9c3e74001fae0080b56d045675ba076aaf048b15753801bb7b8ede3",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t002_revocable_surface_jointD-alpha_native.png": "6e757f9aec19cee1a997b46e6ba4429e9f64ee5f3815a5513746908ee273d918",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t002_decomposition.png": "088ade21c68b3120da0d3bbd4fe07b678814f40b817fac2ef044c9f54e2e93da",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t002_joint_comparison.png": "6a90b029b2a3d32f747ffd9ac215f932d1b4c4b61951a1362cc876be9b9e26db",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t100_J6_parent_staticRGB_native.png": "3fd5829d1c42d7ff68ae20786768eb39d7c40f6b39a7feb70dd1e8d73f8cf514",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t100_J6_parent_dynamicRGB_native.png": "625b69d8d0ce5a01eae1fd8f6d2549b1229747990c18cfc8fa19495420aaec18",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t100_J6_parent_jointRGB_native.png": "cab4c91857243442d4297e9ebd6a7c0ee98a85ae4edfa9f0837a1609d63365ef",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t100_J6_parent_staticAlpha_native.png": "a85f0d95c00c1fd9cb0b2a5aa8b704384aab141d40ac8a57ad3461cfe824f657",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t100_J6_parent_dynamicAlpha_native.png": "f75b5b0e1af71349883e8d649348e6bfbcaff478bc4f4f5ed71f676eab7ad9e2",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t100_J6_parent_jointAlpha_native.png": "3aa2cc4364ad3b6c1d033783727843a75a01cd33ce8f9ae6f14db44365c88d77",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t100_J6_parent_staticD-alpha_native.png": "1ed4a7b5489491c82d5e713fc6866d3acf8bbbdb2877a98711fed555e6e79030",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t100_J6_parent_dynamicD-alpha_native.png": "bd3d099c51717f012eb31eb58bdc28bcfa1f04295705b1737836d4a416b0cace",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t100_J6_parent_jointD-alpha_native.png": "8e27c68596d4a64acc88bbf71b895b2b6a1dfe4117e42bd41fb3e7c3af0bd873",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t100_fixed_surface_staticRGB_native.png": "3fd5829d1c42d7ff68ae20786768eb39d7c40f6b39a7feb70dd1e8d73f8cf514",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t100_fixed_surface_dynamicRGB_native.png": "a77a400effcd0fe42cab37eaa753546c7a001d18df1d060979d831fa2bf4be5a",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t100_fixed_surface_jointRGB_native.png": "9a24b687d6a08d5f2bb03f9f8d411d6f61fa7a0a6b291babbb97163419dcec7e",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t100_fixed_surface_staticAlpha_native.png": "a85f0d95c00c1fd9cb0b2a5aa8b704384aab141d40ac8a57ad3461cfe824f657",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t100_fixed_surface_dynamicAlpha_native.png": "eb9e6e48a2dae3832ca4dacdab05c2272f890c4c2e3b084f86c31baa200cc394",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t100_fixed_surface_jointAlpha_native.png": "89445ff1436ef88e4d4a4dd89c22292c9442bd7ece8b045cf0a3d4f8be23bf37",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t100_fixed_surface_staticD-alpha_native.png": "1ed4a7b5489491c82d5e713fc6866d3acf8bbbdb2877a98711fed555e6e79030",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t100_fixed_surface_dynamicD-alpha_native.png": "355d59f4c09bec67a1b3ab5783bf453e5e854ae68689f29e3707e0a53f940e63",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t100_fixed_surface_jointD-alpha_native.png": "dcc314cadf37e3a583dd1ab8e54fabe40d7c5b2d3f619d2910b9e848b910d86f",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t100_revocable_surface_staticRGB_native.png": "3fd5829d1c42d7ff68ae20786768eb39d7c40f6b39a7feb70dd1e8d73f8cf514",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t100_revocable_surface_dynamicRGB_native.png": "03065c619f40b4a39f7f3b0bfdd45054e8e1de202fc3158f369361c6914fa983",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t100_revocable_surface_jointRGB_native.png": "3723403e2442af3893540e53b42d8ab5ab070fc35ceab6b6bdfee697c300fcdb",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t100_revocable_surface_staticAlpha_native.png": "a85f0d95c00c1fd9cb0b2a5aa8b704384aab141d40ac8a57ad3461cfe824f657",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t100_revocable_surface_dynamicAlpha_native.png": "859cda5684ca302c898c4e2cc7334f9209cd5d98218f76ad5d72fb40b6312640",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t100_revocable_surface_jointAlpha_native.png": "e94a809b7a3ebfa33b7e901d20b25f4875cdc73035cc2e4d6fabda76feef76bd",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t100_revocable_surface_staticD-alpha_native.png": "1ed4a7b5489491c82d5e713fc6866d3acf8bbbdb2877a98711fed555e6e79030",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t100_revocable_surface_dynamicD-alpha_native.png": "faa240661be89387f2d50dbb04d11777be3b0d9f5f28c73f8ca0eb02134e21a0",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t100_revocable_surface_jointD-alpha_native.png": "68175073c7afcabf45cd7df51e76f5d048a2b4aaf360bf7eae59331063852523",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t100_decomposition.png": "77ba706ae7115c5f160ec9da127e5e0ac9f950588b0f3e52356a16a3ce9f8a4f",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t100_joint_comparison.png": "812911f4f2d350e477fb92a6736593274c098faa60ee8ea7c49c1255bd570dfe",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t200_J6_parent_staticRGB_native.png": "3fd5829d1c42d7ff68ae20786768eb39d7c40f6b39a7feb70dd1e8d73f8cf514",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t200_J6_parent_dynamicRGB_native.png": "2696dab316b4bfe03ced954a61019afe940dca18287094a090331ca14cae2134",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t200_J6_parent_jointRGB_native.png": "922ff6b9a834aeafd842c49dfa62983f1594d08e9346f0f9d6abb7d9bdd57623",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t200_J6_parent_staticAlpha_native.png": "a85f0d95c00c1fd9cb0b2a5aa8b704384aab141d40ac8a57ad3461cfe824f657",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t200_J6_parent_dynamicAlpha_native.png": "1989feca553aa1fa74a32e3286e75550fba61ffd6cd13ead0ee4ae85316c6cc4",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t200_J6_parent_jointAlpha_native.png": "1fc62132e7c39c1cd4c8aff2ad7e8ecf925c8bfbd2ea77264ba12345e6c8e842",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t200_J6_parent_staticD-alpha_native.png": "1ed4a7b5489491c82d5e713fc6866d3acf8bbbdb2877a98711fed555e6e79030",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t200_J6_parent_dynamicD-alpha_native.png": "b51e8d340dfca5b653b092761e40e09bc652de97b49ce1a586dcf0aaa07bb6ab",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t200_J6_parent_jointD-alpha_native.png": "36a1968d1ff4283653a3ff5973e801b75932d224a849b539bd0f3a47bf3804b8",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t200_fixed_surface_staticRGB_native.png": "3fd5829d1c42d7ff68ae20786768eb39d7c40f6b39a7feb70dd1e8d73f8cf514",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t200_fixed_surface_dynamicRGB_native.png": "80885c64099e1e51444ead6aa0b7a063e58ac151c72237f20a99e199255986af",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t200_fixed_surface_jointRGB_native.png": "aa374c6a04c88713f27a8479c6354b6cf9a1503ca95cc58423181e483cdc3632",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t200_fixed_surface_staticAlpha_native.png": "a85f0d95c00c1fd9cb0b2a5aa8b704384aab141d40ac8a57ad3461cfe824f657",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t200_fixed_surface_dynamicAlpha_native.png": "14fd217d510785b8eb0daf024d62f4f02fb36159b0d2e05d24eebc0d6c6e406c",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t200_fixed_surface_jointAlpha_native.png": "d27a322183580da284cb5b356b4da699e9fddceba6f27d8ed72686baab0822ec",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t200_fixed_surface_staticD-alpha_native.png": "1ed4a7b5489491c82d5e713fc6866d3acf8bbbdb2877a98711fed555e6e79030",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t200_fixed_surface_dynamicD-alpha_native.png": "5edd0071300049cd26105473ec458c643782a42adb68f36e9ca34afe51bcc542",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t200_fixed_surface_jointD-alpha_native.png": "c5f440862782f25fe8f0e8350c5963db3b059b9c12189bc488896160c64ca939",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t200_revocable_surface_staticRGB_native.png": "3fd5829d1c42d7ff68ae20786768eb39d7c40f6b39a7feb70dd1e8d73f8cf514",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t200_revocable_surface_dynamicRGB_native.png": "b8f454c86502c781febb67fc2ae00fcf00be77a03d1fc297c9c994b9d6c1bf97",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t200_revocable_surface_jointRGB_native.png": "39f50666e35ab82ffdc1d496988fecacbfc3422793d92d30854335d4d482f09d",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t200_revocable_surface_staticAlpha_native.png": "a85f0d95c00c1fd9cb0b2a5aa8b704384aab141d40ac8a57ad3461cfe824f657",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t200_revocable_surface_dynamicAlpha_native.png": "6838b59988d7c50bc3e452bd2e168aa12be2506e7738c642a73ccc83dfe72a82",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t200_revocable_surface_jointAlpha_native.png": "febe3dd7967da16e0ce6a0ebb2a324057e75650ac098101e0c12fcb22f5d2aa8",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t200_revocable_surface_staticD-alpha_native.png": "1ed4a7b5489491c82d5e713fc6866d3acf8bbbdb2877a98711fed555e6e79030",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t200_revocable_surface_dynamicD-alpha_native.png": "4f99523d12e02335501a5910d72eeb5f4860ee38d5fe6a5fbae753220ca76f52",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t200_revocable_surface_jointD-alpha_native.png": "489efd20db7cdb3ddf18deefb14202cc4efb60feae3b02e9ee2a0b536528ad0b",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t200_decomposition.png": "6c9b6f091cc74085c61cf4b4c269b8ddfbd8c484896bee1135dedf469692dd1c",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/c188_t200_joint_comparison.png": "2a50c3b609d21d4988b655053117e0b711e1005edb4c6e133cceabc9d19ab0e0",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/observed_train_index000.png": "8cad80a0530df1d171bc1c7a4cd80d0929cdb6c5044ee28a854a2161d58664d0",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/observed_train_index024.png": "a83e41cf66c19040bc7684a108de80da7aeae08796ba69bb46cc52c89d428f47",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/observed_train_index048.png": "137bcce1768aceb71773cbeae38b7fb52a9ccdff8f1c6c8f5d6c1a4c0ae26e0f",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/observed_train_index072.png": "0cf0bd24ce81662897e727b51c405bc2713bc025e79c248c3b5ccef4ebff1fd0",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/observed_train_index096.png": "3a93ca97d3c1db487a389fcf9c87ea41bc004e45912ebc0728f680e35bcbfeaf",
+      "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/observed_train_index119.png": "7c3f10d824576c8e42f9be900affb5222641a9d90e39077ed780547d8fff5244"
+    },
+    "fixed_cameras": {
+      "86": {
+        "frame": "train/0086",
+        "transform": [
+          [
+            0.23971359431743622,
+            -0.6610111594200134,
+            0.711056649684906,
+            4.171568393707275
+          ],
+          [
+            0.9708436727523804,
+            0.16321201622486115,
+            -0.17556889355182648,
+            -0.39753779768943787
+          ],
+          [
+            7.450580152834618e-09,
+            0.7324110865592957,
+            0.6808626055717468,
+            4.79702091217041
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "size": [
+          1600,
+          900
+        ]
+      },
+      "188": {
+        "frame": "train/0188",
+        "transform": [
+          [
+            -0.7748000621795654,
+            0.4649222791194916,
+            -0.4284064769744873,
+            -2.3269615173339844
+          ],
+          [
+            -0.6322063207626343,
+            -0.5697851777076721,
+            0.5250332951545715,
+            3.484281539916992
+          ],
+          [
+            1.4901160305669237e-08,
+            0.6776370406150818,
+            0.7353963851928711,
+            4.79702091217041
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "size": [
+          1600,
+          900
+        ]
+      }
+    },
+    "static_RGB_alpha_D_exact": true,
+    "high_alpha_proxies": [
+      {
+        "camera": 86,
+        "time": 2,
+        "model": "J6_parent",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 36399,
+        "dynamic_dark_high_alpha": 941,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 86,
+        "time": 2,
+        "model": "fixed_surface",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 36972,
+        "dynamic_dark_high_alpha": 1062,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 86,
+        "time": 2,
+        "model": "revocable_surface",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 36824,
+        "dynamic_dark_high_alpha": 1013,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 86,
+        "time": 100,
+        "model": "J6_parent",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 49417,
+        "dynamic_dark_high_alpha": 23333,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 86,
+        "time": 100,
+        "model": "fixed_surface",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 51090,
+        "dynamic_dark_high_alpha": 25280,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 86,
+        "time": 100,
+        "model": "revocable_surface",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 52572,
+        "dynamic_dark_high_alpha": 27019,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 86,
+        "time": 200,
+        "model": "J6_parent",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 66629,
+        "dynamic_dark_high_alpha": 36539,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 86,
+        "time": 200,
+        "model": "fixed_surface",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 76530,
+        "dynamic_dark_high_alpha": 46211,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 86,
+        "time": 200,
+        "model": "revocable_surface",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 70308,
+        "dynamic_dark_high_alpha": 35363,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 188,
+        "time": 2,
+        "model": "J6_parent",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 43902,
+        "dynamic_dark_high_alpha": 2647,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 188,
+        "time": 2,
+        "model": "fixed_surface",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 45146,
+        "dynamic_dark_high_alpha": 3057,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 188,
+        "time": 2,
+        "model": "revocable_surface",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 44411,
+        "dynamic_dark_high_alpha": 2804,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 188,
+        "time": 100,
+        "model": "J6_parent",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 44161,
+        "dynamic_dark_high_alpha": 15419,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 188,
+        "time": 100,
+        "model": "fixed_surface",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 46998,
+        "dynamic_dark_high_alpha": 18096,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 188,
+        "time": 100,
+        "model": "revocable_surface",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 48955,
+        "dynamic_dark_high_alpha": 20326,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 188,
+        "time": 200,
+        "model": "J6_parent",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 46523,
+        "dynamic_dark_high_alpha": 28619,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 188,
+        "time": 200,
+        "model": "fixed_surface",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 52360,
+        "dynamic_dark_high_alpha": 35875,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 188,
+        "time": 200,
+        "model": "revocable_surface",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 48101,
+        "dynamic_dark_high_alpha": 30273,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      }
+    ],
+    "black_missing_is_not_zero_error": true,
+    "D_div_alpha_is_rendered_proxy": true
+  },
+  "training_track_diagnostic": {
+    "all_original_patches_unfiltered": true,
+    "held_not_auxiliary_trained_but_RGB_trained": true,
+    "independent_3D_GT": false,
+    "models": {
+      "J6_parent": {
+        "total": 1464,
+        "finite_count": 1464,
+        "missing": 0,
+        "mean_px": 0.8915911443348796,
+        "P90_px": 1.580417169503632,
+        "fit_mean_px": 0.887165832172549,
+        "held_mean_px": 0.8960164564972104
+      },
+      "fixed_surface": {
+        "total": 1464,
+        "finite_count": 1464,
+        "missing": 0,
+        "mean_px": 0.6829007283894519,
+        "P90_px": 1.3761372006887438,
+        "fit_mean_px": 0.6522533999946294,
+        "held_mean_px": 0.7135480567842742
+      },
+      "revocable_surface": {
+        "total": 1464,
+        "finite_count": 1464,
+        "missing": 0,
+        "mean_px": 0.9305820826255244,
+        "P90_px": 2.074893443518983,
+        "fit_mean_px": 0.8854632414617554,
+        "held_mean_px": 0.9757009237892939
+      }
+    }
+  },
+  "local_graph_diagnostic": {
+    "parent_reference_is_not_geometry_GT": true,
+    "all_proposed_edges_unfiltered": true,
+    "models": {
+      "J6_parent": {
+        "pairs": 36,
+        "mean_world": 0.0,
+        "P90_world": 0.0
+      },
+      "fixed_surface": {
+        "pairs": 36,
+        "mean_world": 0.010976438038459869,
+        "P90_world": 0.015002681365044838
+      },
+      "revocable_surface": {
+        "pairs": 36,
+        "mean_world": 0.010628016555978184,
+        "P90_world": 0.02145917498297791
+      }
+    }
+  },
+  "plys": {
+    "J6_parent/static": {
+      "path": "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/J6_parent_static.ply",
+      "sha256": "143d149aeb4949e607a9741b8a1a4a36d188fc753c6116922a00aafe06ce6ef5",
+      "vertices": 4126,
+      "checkpoint_position_exact": true,
+      "all_fields_finite": true,
+      "coordinates": "world"
+    },
+    "J6_parent/canonical_dynamic_local": {
+      "path": "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/J6_parent_canonical_dynamic_local.ply",
+      "sha256": "6536bcd449b027e3b733351263f89b1ed93a41c0f72557220f28c00255f9e6a8",
+      "vertices": 15507,
+      "checkpoint_position_exact": true,
+      "all_fields_finite": true,
+      "coordinates": "local canonical; add checkpoint centers after deformation"
+    },
+    "J6_parent/dynamic_world/2": {
+      "path": "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/J6_parent_dynamic_world_t002.ply",
+      "sha256": "c1d4fa85914626c92e35a4982afb02f327df6a7f02c817fd2bc9f05ffc662d76",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "J6_parent/dynamic_world/100": {
+      "path": "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/J6_parent_dynamic_world_t100.ply",
+      "sha256": "084f9c5895db8791878eb254aade7a2c6a93c634d4287f6b28c7f61e744c439e",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "J6_parent/dynamic_world/200": {
+      "path": "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/J6_parent_dynamic_world_t200.ply",
+      "sha256": "4cf7d016077124871078c17154d1f1320cfdc28a8d28e9c47ae6845cd6dddf25",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "fixed_surface/static": {
+      "path": "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/fixed_surface_static.ply",
+      "sha256": "143d149aeb4949e607a9741b8a1a4a36d188fc753c6116922a00aafe06ce6ef5",
+      "vertices": 4126,
+      "checkpoint_position_exact": true,
+      "all_fields_finite": true,
+      "coordinates": "world"
+    },
+    "fixed_surface/canonical_dynamic_local": {
+      "path": "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/fixed_surface_canonical_dynamic_local.ply",
+      "sha256": "8abf72d0ab05d0e60a52b074145df6606bf3f59a9bbb35f717377bbfeaa1a385",
+      "vertices": 15507,
+      "checkpoint_position_exact": true,
+      "all_fields_finite": true,
+      "coordinates": "local canonical; add checkpoint centers after deformation"
+    },
+    "fixed_surface/dynamic_world/2": {
+      "path": "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/fixed_surface_dynamic_world_t002.ply",
+      "sha256": "18ba3a7dba6d5f066e905e5407aef3c281761ae4656310ce33982fb1392b4247",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "fixed_surface/dynamic_world/100": {
+      "path": "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/fixed_surface_dynamic_world_t100.ply",
+      "sha256": "5a1244cb9056981e83caf1dfb0365de20750c6024d2d96ceed46efcf5b072f80",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "fixed_surface/dynamic_world/200": {
+      "path": "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/fixed_surface_dynamic_world_t200.ply",
+      "sha256": "3d963c7aeb58b3761b2f99bfa5d5d2c7b42185b0fa52570808db8184f9571951",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "revocable_surface/static": {
+      "path": "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/revocable_surface_static.ply",
+      "sha256": "143d149aeb4949e607a9741b8a1a4a36d188fc753c6116922a00aafe06ce6ef5",
+      "vertices": 4126,
+      "checkpoint_position_exact": true,
+      "all_fields_finite": true,
+      "coordinates": "world"
+    },
+    "revocable_surface/canonical_dynamic_local": {
+      "path": "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/revocable_surface_canonical_dynamic_local.ply",
+      "sha256": "56126c4065a83799d58662f9a0ea0487d92015d6a52fe81db8003a27818d4e66",
+      "vertices": 15507,
+      "checkpoint_position_exact": true,
+      "all_fields_finite": true,
+      "coordinates": "local canonical; add checkpoint centers after deformation"
+    },
+    "revocable_surface/dynamic_world/2": {
+      "path": "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/revocable_surface_dynamic_world_t002.ply",
+      "sha256": "9f632c876b7bf16813608180f43ce4e36ff74a781e956262aa04b91b3384512f",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "revocable_surface/dynamic_world/100": {
+      "path": "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/revocable_surface_dynamic_world_t100.ply",
+      "sha256": "11984c2c69d2129e8f789414546f54411bb224f63aa05d65f65fb86f772a0503",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "revocable_surface/dynamic_world/200": {
+      "path": "output/staged_reconstruction/RubberDuck_I10_revocable_surface/v1/revocable_surface_dynamic_world_t200.ply",
+      "sha256": "cdefc7421d5bcf5390364cd6e5038100be1948a6722916cea25d7e31466f6171",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    }
+  },
+  "source_sha256": "8aea1d9faadaaf0fc60a46eb358e50c1446cef315046e81e379d047c2bb5c0e1"
+}

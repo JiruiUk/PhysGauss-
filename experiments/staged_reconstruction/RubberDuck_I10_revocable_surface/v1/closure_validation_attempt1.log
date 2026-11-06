@@ -1,0 +1,4 @@
+Final ad-hoc read-only manifest check failed before validating data: pathlib.read_text() used Windows gbk instead of explicit UTF-8.
+UnicodeDecodeError: 'gbk' codec can't decode byte 0xaf in position 150: illegal multibyte sequence
+This was a diagnostic JSON-decoding failure, with no training, checkpoint, frozen source or threshold changes.
+Independent closure_check.py uses explicit UTF-8 and preserves this attempt.

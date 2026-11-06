@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "source_protocol_input_SHA": true,
+  "model_twoAdam_RNG_sampler_initial_parent_exact": true,
+  "all4000_samples_replayed": true,
+  "static_model_Adam_physics_model_Adam_graphs_exact": true,
+  "PLY_all_Gaussian_fields_exact": [
+    "J6_parent/static",
+    "J6_parent/canonical_dynamic_local",
+    "fixed_surface/static",
+    "fixed_surface/canonical_dynamic_local",
+    "revocable_surface/static",
+    "revocable_surface/canonical_dynamic_local"
+  ],
+  "world_XYZ_checked_by_native_evaluator": true,
+  "images_verified": 180,
+  "two_H264_independently_decoded": [
+    200,
+    200
+  ],
+  "all30_RGB_averages_recomputed": true,
+  "independent_geometry_GT": false,
+  "training_tracks_not_independent_validation": true,
+  "source_sha256": "f81b5f373cb27d19856b7e7f7a640f81db2a115dfade19865ab100b20541a012"
+}

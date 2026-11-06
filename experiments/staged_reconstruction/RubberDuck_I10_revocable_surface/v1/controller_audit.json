@@ -1,0 +1,1356 @@
+{
+  "passed": true,
+  "all7_native_refreshes_replayed": [
+    {
+      "completed_updates": 250,
+      "native_all122_replay_exact": true,
+      "model_sha256": "c74aeb5eab2a0eb16c36098bec8832809e8ec4dbdbda27e57ecf05e9ac48d0fe",
+      "record_sha256": "631d5ac11456da5445df2820219290d424b43d098bd6a8b0a85f5c4e56dec1e5",
+      "summary": {
+        "completed_updates": 250,
+        "patches": 122,
+        "edges": 3,
+        "active_patches": 93,
+        "active_edges": 1,
+        "suspended_patches": 29,
+        "revoked_patches": 0,
+        "unknown_measurements": 14,
+        "patch_transitions": [
+          {
+            "id": "004_009",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "008_022",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "008_045",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "008_068",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "012_002",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "012_004",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "012_007",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "012_012",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "012_015",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "012_017",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "016_003",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "016_005",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "016_006",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "016_017",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "016_024",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "016_032",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "044_005",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "044_035",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "048_011",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "048_039",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "052_020",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "056_017",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "080_063",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "084_070",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "088_110",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "100_040",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "104_041",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "108_041",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "108_044",
+            "old": "active",
+            "new": "suspended"
+          }
+        ],
+        "edge_transitions": [
+          {
+            "index": 0,
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "index": 2,
+            "old": "suspended",
+            "new": "revoked"
+          }
+        ]
+      }
+    },
+    {
+      "completed_updates": 500,
+      "native_all122_replay_exact": true,
+      "model_sha256": "3ceb75e27669d72e71cc66e3ea0471b84ff54ed0b08cd64d8d05c70f336ec017",
+      "record_sha256": "7983fb1eec474146586110b1347afa94eccfb5b099457e15eb2df11121e3a9e2",
+      "summary": {
+        "completed_updates": 500,
+        "patches": 122,
+        "edges": 3,
+        "active_patches": 87,
+        "active_edges": 1,
+        "suspended_patches": 29,
+        "revoked_patches": 6,
+        "unknown_measurements": 7,
+        "patch_transitions": [
+          {
+            "id": "000_093",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "004_021",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "004_068",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "008_031",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "012_010",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "016_024",
+            "old": "suspended",
+            "new": "revoked"
+          },
+          {
+            "id": "044_005",
+            "old": "suspended",
+            "new": "revoked"
+          },
+          {
+            "id": "052_020",
+            "old": "suspended",
+            "new": "revoked"
+          },
+          {
+            "id": "088_110",
+            "old": "suspended",
+            "new": "revoked"
+          },
+          {
+            "id": "100_040",
+            "old": "suspended",
+            "new": "revoked"
+          },
+          {
+            "id": "108_028",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "108_041",
+            "old": "suspended",
+            "new": "revoked"
+          }
+        ],
+        "edge_transitions": [
+          {
+            "index": 0,
+            "old": "suspended",
+            "new": "revoked"
+          }
+        ]
+      }
+    },
+    {
+      "completed_updates": 750,
+      "native_all122_replay_exact": true,
+      "model_sha256": "c3c6efd8a49f9ce4bd7954b837eef7968d51680d0461eeecd843ec920b5d3f6c",
+      "record_sha256": "4e70faf0c3c949d1e5a6bb6980085e92caae5b0abdb4a07486539366b0642d8c",
+      "summary": {
+        "completed_updates": 750,
+        "patches": 122,
+        "edges": 3,
+        "active_patches": 94,
+        "active_edges": 1,
+        "suspended_patches": 20,
+        "revoked_patches": 8,
+        "unknown_measurements": 14,
+        "patch_transitions": [
+          {
+            "id": "004_004",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "012_002",
+            "old": "suspended",
+            "new": "active"
+          },
+          {
+            "id": "012_004",
+            "old": "suspended",
+            "new": "active"
+          },
+          {
+            "id": "012_007",
+            "old": "suspended",
+            "new": "active"
+          },
+          {
+            "id": "012_012",
+            "old": "suspended",
+            "new": "active"
+          },
+          {
+            "id": "012_015",
+            "old": "suspended",
+            "new": "active"
+          },
+          {
+            "id": "012_017",
+            "old": "suspended",
+            "new": "active"
+          },
+          {
+            "id": "016_005",
+            "old": "suspended",
+            "new": "active"
+          },
+          {
+            "id": "016_006",
+            "old": "suspended",
+            "new": "active"
+          },
+          {
+            "id": "016_017",
+            "old": "suspended",
+            "new": "active"
+          },
+          {
+            "id": "016_032",
+            "old": "suspended",
+            "new": "active"
+          },
+          {
+            "id": "044_025",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "080_063",
+            "old": "suspended",
+            "new": "revoked"
+          },
+          {
+            "id": "084_070",
+            "old": "suspended",
+            "new": "revoked"
+          },
+          {
+            "id": "108_042",
+            "old": "active",
+            "new": "suspended"
+          }
+        ],
+        "edge_transitions": []
+      }
+    },
+    {
+      "completed_updates": 1000,
+      "native_all122_replay_exact": true,
+      "model_sha256": "da3cdcac775c3baa44284908dd9be1cdb9f4fc08b3ef21a2b4e68bfe413a1125",
+      "record_sha256": "3c178cd1b394753d60b8d5014f7374ff87c9503ed068f6658edacc6e79b2f2ae",
+      "summary": {
+        "completed_updates": 1000,
+        "patches": 122,
+        "edges": 3,
+        "active_patches": 91,
+        "active_edges": 0,
+        "suspended_patches": 22,
+        "revoked_patches": 9,
+        "unknown_measurements": 13,
+        "patch_transitions": [
+          {
+            "id": "000_072",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "000_093",
+            "old": "suspended",
+            "new": "active"
+          },
+          {
+            "id": "004_021",
+            "old": "suspended",
+            "new": "active"
+          },
+          {
+            "id": "004_034",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "008_068",
+            "old": "suspended",
+            "new": "revoked"
+          },
+          {
+            "id": "012_006",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "016_005",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "016_017",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "044_006",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "108_028",
+            "old": "suspended",
+            "new": "active"
+          }
+        ],
+        "edge_transitions": [
+          {
+            "index": 1,
+            "old": "active",
+            "new": "suspended"
+          }
+        ]
+      }
+    },
+    {
+      "completed_updates": 1250,
+      "native_all122_replay_exact": true,
+      "model_sha256": "00a134d0489e0748b6d58b05c4bf8552d3a7d3bc5f61fa11b86986707aa498cf",
+      "record_sha256": "53c8df6d6665be8ea5ae08f767053df85f3e75fc4cb227b0846c1c1fb91a9e50",
+      "summary": {
+        "completed_updates": 1250,
+        "patches": 122,
+        "edges": 3,
+        "active_patches": 87,
+        "active_edges": 0,
+        "suspended_patches": 23,
+        "revoked_patches": 12,
+        "unknown_measurements": 15,
+        "patch_transitions": [
+          {
+            "id": "004_021",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "004_086",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "008_013",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "012_010",
+            "old": "suspended",
+            "new": "revoked"
+          },
+          {
+            "id": "016_006",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "016_019",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "016_032",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "044_025",
+            "old": "suspended",
+            "new": "active"
+          },
+          {
+            "id": "044_035",
+            "old": "suspended",
+            "new": "revoked"
+          },
+          {
+            "id": "056_017",
+            "old": "suspended",
+            "new": "revoked"
+          },
+          {
+            "id": "108_042",
+            "old": "suspended",
+            "new": "active"
+          }
+        ],
+        "edge_transitions": []
+      }
+    },
+    {
+      "completed_updates": 1500,
+      "native_all122_replay_exact": true,
+      "model_sha256": "1b00c1aeb1b706c1ce4d69b815fc87ba0570cdf6dfc3d29c8fddebce99585ced",
+      "record_sha256": "72805cb1b48063c045bf0b7aafb03d9186acf2f260a01872b62d3a2bc6e7cea0",
+      "summary": {
+        "completed_updates": 1500,
+        "patches": 122,
+        "edges": 3,
+        "active_patches": 82,
+        "active_edges": 0,
+        "suspended_patches": 27,
+        "revoked_patches": 13,
+        "unknown_measurements": 24,
+        "patch_transitions": [
+          {
+            "id": "004_000",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "004_007",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "004_011",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "004_021",
+            "old": "suspended",
+            "new": "revoked"
+          },
+          {
+            "id": "004_025",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "004_028",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "012_006",
+            "old": "suspended",
+            "new": "active"
+          },
+          {
+            "id": "012_033",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "016_005",
+            "old": "suspended",
+            "new": "active"
+          },
+          {
+            "id": "016_017",
+            "old": "suspended",
+            "new": "active"
+          },
+          {
+            "id": "016_024",
+            "old": "revoked",
+            "new": "active"
+          },
+          {
+            "id": "016_032",
+            "old": "suspended",
+            "new": "revoked"
+          },
+          {
+            "id": "044_025",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "108_028",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "108_042",
+            "old": "active",
+            "new": "suspended"
+          }
+        ],
+        "edge_transitions": []
+      }
+    },
+    {
+      "completed_updates": 1750,
+      "native_all122_replay_exact": true,
+      "model_sha256": "2df1e5da59bd52f1b1e76fc14545834826d35e354477374528cfdb95e33c862f",
+      "record_sha256": "f21d5e9ae7bb3dce3932eb89981b2c041ffe0954e3786d144105e876e7161d4e",
+      "summary": {
+        "completed_updates": 1750,
+        "patches": 122,
+        "edges": 3,
+        "active_patches": 77,
+        "active_edges": 0,
+        "suspended_patches": 33,
+        "revoked_patches": 12,
+        "unknown_measurements": 26,
+        "patch_transitions": [
+          {
+            "id": "004_065",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "004_091",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "008_027",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "008_065",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "012_002",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "012_010",
+            "old": "revoked",
+            "new": "active"
+          },
+          {
+            "id": "012_022",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "012_028",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "016_006",
+            "old": "suspended",
+            "new": "active"
+          },
+          {
+            "id": "016_016",
+            "old": "active",
+            "new": "suspended"
+          },
+          {
+            "id": "016_019",
+            "old": "suspended",
+            "new": "active"
+          }
+        ],
+        "edge_transitions": []
+      }
+    }
+  ],
+  "explicit_CPU_status_and_confidence_equations": true,
+  "all4000_usage_records_replayed": true,
+  "arms": {
+    "fixed_surface": {
+      "checkpoint_sha256": "f7e143e5063767ec4aa5fec244640410f0cd5fbd621e872b9a45a66aa7c71fd0",
+      "updates": 2000,
+      "history": [
+        {
+          "completed_updates": 0,
+          "patches": 122,
+          "edges": 3,
+          "active_patches": 122,
+          "active_edges": 2,
+          "suspended_patches": 0,
+          "revoked_patches": 0,
+          "unknown_measurements": 0
+        }
+      ],
+      "samples_with_track": 693,
+      "samples_with_edge": 77,
+      "total_patch_applications": 11204,
+      "total_edge_applications": 78,
+      "weighted_track_mean": 0.001380059485511083,
+      "weighted_local_mean": 1.380928862580455e-07
+    },
+    "revocable_surface": {
+      "checkpoint_sha256": "df8f7630715d713e5709f15ccf1b27ad5d46acb51c99a20337d95ba7de83c592",
+      "updates": 2000,
+      "history": [
+        {
+          "completed_updates": 0,
+          "patches": 122,
+          "edges": 3,
+          "active_patches": 122,
+          "active_edges": 2,
+          "suspended_patches": 0,
+          "revoked_patches": 0,
+          "unknown_measurements": 0
+        },
+        {
+          "completed_updates": 250,
+          "patches": 122,
+          "edges": 3,
+          "active_patches": 93,
+          "active_edges": 1,
+          "suspended_patches": 29,
+          "revoked_patches": 0,
+          "unknown_measurements": 14,
+          "patch_transitions": [
+            {
+              "id": "004_009",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "008_022",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "008_045",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "008_068",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "012_002",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "012_004",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "012_007",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "012_012",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "012_015",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "012_017",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "016_003",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "016_005",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "016_006",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "016_017",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "016_024",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "016_032",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "044_005",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "044_035",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "048_011",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "048_039",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "052_020",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "056_017",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "080_063",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "084_070",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "088_110",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "100_040",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "104_041",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "108_041",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "108_044",
+              "old": "active",
+              "new": "suspended"
+            }
+          ],
+          "edge_transitions": [
+            {
+              "index": 0,
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "index": 2,
+              "old": "suspended",
+              "new": "revoked"
+            }
+          ]
+        },
+        {
+          "completed_updates": 500,
+          "patches": 122,
+          "edges": 3,
+          "active_patches": 87,
+          "active_edges": 1,
+          "suspended_patches": 29,
+          "revoked_patches": 6,
+          "unknown_measurements": 7,
+          "patch_transitions": [
+            {
+              "id": "000_093",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "004_021",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "004_068",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "008_031",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "012_010",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "016_024",
+              "old": "suspended",
+              "new": "revoked"
+            },
+            {
+              "id": "044_005",
+              "old": "suspended",
+              "new": "revoked"
+            },
+            {
+              "id": "052_020",
+              "old": "suspended",
+              "new": "revoked"
+            },
+            {
+              "id": "088_110",
+              "old": "suspended",
+              "new": "revoked"
+            },
+            {
+              "id": "100_040",
+              "old": "suspended",
+              "new": "revoked"
+            },
+            {
+              "id": "108_028",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "108_041",
+              "old": "suspended",
+              "new": "revoked"
+            }
+          ],
+          "edge_transitions": [
+            {
+              "index": 0,
+              "old": "suspended",
+              "new": "revoked"
+            }
+          ]
+        },
+        {
+          "completed_updates": 750,
+          "patches": 122,
+          "edges": 3,
+          "active_patches": 94,
+          "active_edges": 1,
+          "suspended_patches": 20,
+          "revoked_patches": 8,
+          "unknown_measurements": 14,
+          "patch_transitions": [
+            {
+              "id": "004_004",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "012_002",
+              "old": "suspended",
+              "new": "active"
+            },
+            {
+              "id": "012_004",
+              "old": "suspended",
+              "new": "active"
+            },
+            {
+              "id": "012_007",
+              "old": "suspended",
+              "new": "active"
+            },
+            {
+              "id": "012_012",
+              "old": "suspended",
+              "new": "active"
+            },
+            {
+              "id": "012_015",
+              "old": "suspended",
+              "new": "active"
+            },
+            {
+              "id": "012_017",
+              "old": "suspended",
+              "new": "active"
+            },
+            {
+              "id": "016_005",
+              "old": "suspended",
+              "new": "active"
+            },
+            {
+              "id": "016_006",
+              "old": "suspended",
+              "new": "active"
+            },
+            {
+              "id": "016_017",
+              "old": "suspended",
+              "new": "active"
+            },
+            {
+              "id": "016_032",
+              "old": "suspended",
+              "new": "active"
+            },
+            {
+              "id": "044_025",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "080_063",
+              "old": "suspended",
+              "new": "revoked"
+            },
+            {
+              "id": "084_070",
+              "old": "suspended",
+              "new": "revoked"
+            },
+            {
+              "id": "108_042",
+              "old": "active",
+              "new": "suspended"
+            }
+          ],
+          "edge_transitions": []
+        },
+        {
+          "completed_updates": 1000,
+          "patches": 122,
+          "edges": 3,
+          "active_patches": 91,
+          "active_edges": 0,
+          "suspended_patches": 22,
+          "revoked_patches": 9,
+          "unknown_measurements": 13,
+          "patch_transitions": [
+            {
+              "id": "000_072",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "000_093",
+              "old": "suspended",
+              "new": "active"
+            },
+            {
+              "id": "004_021",
+              "old": "suspended",
+              "new": "active"
+            },
+            {
+              "id": "004_034",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "008_068",
+              "old": "suspended",
+              "new": "revoked"
+            },
+            {
+              "id": "012_006",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "016_005",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "016_017",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "044_006",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "108_028",
+              "old": "suspended",
+              "new": "active"
+            }
+          ],
+          "edge_transitions": [
+            {
+              "index": 1,
+              "old": "active",
+              "new": "suspended"
+            }
+          ]
+        },
+        {
+          "completed_updates": 1250,
+          "patches": 122,
+          "edges": 3,
+          "active_patches": 87,
+          "active_edges": 0,
+          "suspended_patches": 23,
+          "revoked_patches": 12,
+          "unknown_measurements": 15,
+          "patch_transitions": [
+            {
+              "id": "004_021",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "004_086",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "008_013",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "012_010",
+              "old": "suspended",
+              "new": "revoked"
+            },
+            {
+              "id": "016_006",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "016_019",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "016_032",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "044_025",
+              "old": "suspended",
+              "new": "active"
+            },
+            {
+              "id": "044_035",
+              "old": "suspended",
+              "new": "revoked"
+            },
+            {
+              "id": "056_017",
+              "old": "suspended",
+              "new": "revoked"
+            },
+            {
+              "id": "108_042",
+              "old": "suspended",
+              "new": "active"
+            }
+          ],
+          "edge_transitions": []
+        },
+        {
+          "completed_updates": 1500,
+          "patches": 122,
+          "edges": 3,
+          "active_patches": 82,
+          "active_edges": 0,
+          "suspended_patches": 27,
+          "revoked_patches": 13,
+          "unknown_measurements": 24,
+          "patch_transitions": [
+            {
+              "id": "004_000",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "004_007",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "004_011",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "004_021",
+              "old": "suspended",
+              "new": "revoked"
+            },
+            {
+              "id": "004_025",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "004_028",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "012_006",
+              "old": "suspended",
+              "new": "active"
+            },
+            {
+              "id": "012_033",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "016_005",
+              "old": "suspended",
+              "new": "active"
+            },
+            {
+              "id": "016_017",
+              "old": "suspended",
+              "new": "active"
+            },
+            {
+              "id": "016_024",
+              "old": "revoked",
+              "new": "active"
+            },
+            {
+              "id": "016_032",
+              "old": "suspended",
+              "new": "revoked"
+            },
+            {
+              "id": "044_025",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "108_028",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "108_042",
+              "old": "active",
+              "new": "suspended"
+            }
+          ],
+          "edge_transitions": []
+        },
+        {
+          "completed_updates": 1750,
+          "patches": 122,
+          "edges": 3,
+          "active_patches": 77,
+          "active_edges": 0,
+          "suspended_patches": 33,
+          "revoked_patches": 12,
+          "unknown_measurements": 26,
+          "patch_transitions": [
+            {
+              "id": "004_065",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "004_091",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "008_027",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "008_065",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "012_002",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "012_010",
+              "old": "revoked",
+              "new": "active"
+            },
+            {
+              "id": "012_022",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "012_028",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "016_006",
+              "old": "suspended",
+              "new": "active"
+            },
+            {
+              "id": "016_016",
+              "old": "active",
+              "new": "suspended"
+            },
+            {
+              "id": "016_019",
+              "old": "suspended",
+              "new": "active"
+            }
+          ],
+          "edge_transitions": []
+        }
+      ],
+      "samples_with_track": 380,
+      "samples_with_edge": 48,
+      "total_patch_applications": 8699,
+      "total_edge_applications": 49,
+      "weighted_track_mean": 0.0003413782093550708,
+      "weighted_local_mean": 1.189889600644034e-07
+    }
+  },
+  "no_learned_confidence_or_deletion": true,
+  "terminal_probe_read_only": true,
+  "source_sha256": "1d76aae77a363746523eedee9ed2b23982f83d6c6877d59a391e2c125206e522"
+}
