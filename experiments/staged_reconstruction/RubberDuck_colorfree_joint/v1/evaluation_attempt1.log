@@ -1,0 +1,37 @@
+W1106 13:59:32.369000 272504 envs\pidg-cu128\Lib\site-packages\torch\utils\cpp_extension.py:466] Error checking compiler version for cl: 'cp1' codec can't decode bytes in position 0--1: No mapping for the Unicode character exists in the target code page.
+ninja: no work to do.
+F:\A_Edinburgh\PhysGauss\variants\color_repair\code\hashencoder\hashgrid.py:16: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.half)
+F:\A_Edinburgh\PhysGauss\variants\color_repair\code\hashencoder\hashgrid.py:56: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+J7_VALIDATION 1 30
+J7_VALIDATION 2 30
+J7_VALIDATION 3 30
+J7_VALIDATION 4 30
+J7_VALIDATION 5 30
+J7_VALIDATION 6 30
+J7_VALIDATION 7 30
+J7_VALIDATION 8 30
+J7_VALIDATION 9 30
+J7_VALIDATION 10 30
+J7_VALIDATION 11 30
+J7_VALIDATION 12 30
+J7_VALIDATION 13 30
+J7_VALIDATION 14 30
+J7_VALIDATION 15 30
+J7_VALIDATION 16 30
+J7_VALIDATION 17 30
+J7_VALIDATION 18 30
+J7_VALIDATION 19 30
+J7_VALIDATION 20 30
+J7_VALIDATION 21 30
+J7_VALIDATION 22 30
+J7_VALIDATION 23 30
+J7_VALIDATION 24 30
+J7_VALIDATION 25 30
+J7_VALIDATION 26 30
+J7_VALIDATION 27 30
+J7_VALIDATION 28 30
+J7_VALIDATION 29 30
+J7_VALIDATION 30 30
+J7_NATIVE_EVALUATION_DONE {'J6_parent': {'PSNR': 31.994673347473146, 'SSIM': 0.9804254770278931, 'L1': 0.0032966943457722665}, 'direct_fusion': {'PSNR': 29.393543688456216, 'SSIM': 0.9575940291086833, 'L1': 0.006033325823955238}, 'old_static_control': {'PSNR': 32.106180826822914, 'SSIM': 0.9807194133599599, 'L1': 0.0032740727377434573}, 'colorfree_static': {'PSNR': 34.04507541656494, 'SSIM': 0.9865881542364756, 'L1': 0.002814061458533009}}

@@ -828,3 +828,20 @@ dcac0409预声明一个候选。两臂同完整J6及L4时序记忆各2000步原�
 视觉清理False、完整性False，状态completed_local_trial_not_promoted、pending:false，保留J6不自动加训。
 图像射线D/alpha及排序不是高斯语义身份、整鸭距离/厚度或准确几何，父历史颜色来源及未知保留。
 详见RubberDuck_relative_order/v1/assessment.md；旧T4/L7失败不改判。
+
+
+### J7 color-free static library replacement：融合匹配训练完成
+
+用户要求先展示无蓝色阈值静态重建、再融合J6实测，现已完整执行。
+3273点S1-G/S1-C control18k替换J6的4126点静态；两组相同J6完整动态/Adam/RNG/
+相机起点，各2000原生1600更新。两组均训练静态opacity/SH及动态，静态几何和physics冻结；
+候选用自身无颜色静态库作深度自参照，不用旧蓝色条件库深度。没有新颜色掩膜/数量/GT。
+动态历史颜色来源、静态点数/Adam/教师差别披露；不是只切换颜色规则的单因素消融。
+全30val PSNR：J6 31.994673、直接替换29.393544、旧库对照32.106181、候选34.045075dB；
+候选较对照+1.938895dB，较J6+2.050402dB，RGB门槛通过。实际35图复核：静态RGB残留减弱，
+主体仍在，但静态alpha广支撑/尖刺和动态碎裂/暗高alpha拖尾仍在，完整性与清理门槛失败。
+9测试、原生flags-off/梯度、两组20步和各两进程完整双Adam/RNG/相机精确恢复通过；
+505训练源/输入、35评估源/输入、4000采样、234图、8完整Gaussian+12XYZ PLY审计，
+两H264各200帧独立全解码通过。保留外观收益和原J6，不自动替换/延长/扫参；
+status=completed_rgb_improved_not_geometry_promoted，pending:false，无新增物理更新。
+详见experiments/staged_reconstruction/RubberDuck_colorfree_joint/v1/assessment.md。

@@ -37,3 +37,26 @@
   are in `runs/pidg_staged_reconstruction/RubberDuck_colorfree_joint/v1/formal`.
 - `v1/independent_audit.json` records the full-state checks. Quality evaluation,
   native PNG/PLY/video export and manual review are pending; no promotion.
+
+## Evaluation and actual review completed
+
+- All30 native1600 validation means PSNR: retained J6=31.994673,
+  direct replacement=29.393544, old-static control=32.106181,
+  color-free joint=34.045075dB. Candidate exceeds control by1.938895dB and
+  J6 by2.050402dB; both fixed0.3dB nonregression gates pass.
+- Actually inspected35 PNG files: both source static views, all6 fixed
+  comparisons/decompositions/candidate native RGBs,6 observed training views,
+  selected static RGB/alpha/D,2 summary sheets and2 decoded video contacts.
+- Static RGB residuals reduce, but broad static alpha/spikes and dynamic dark
+  high-alpha oval/streak support and fragmentation remain. No consistent
+  completeness/geometry-cleanup improvement; no geometry promotion.
+- Independent final audit passed:505 frozen training inputs/sources,35 eval
+  inputs/sources,4000 samples,234 eval PNGs,8 complete Gaussian PLY all fields,
+  12 world XYZ diagnostic PLY hashes/parity,30 metric aggregates, and two H264
+  faststart videos independently fully decoded200 frames each.
+- Complete receipts: `v1/{assessment.md,final_validation.json,manual_review.json,
+  final_review.json,final_status.json}`. Status
+  `completed_rgb_improved_not_geometry_promoted`, pending:false. Original J6
+  remains intact; candidate is retained as an appearance improvement result.
+- Training/evaluation processes exited. No extra run, sweep, paused-job resume,
+  old-model replacement or physics update is scheduled by this task.

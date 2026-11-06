@@ -1217,3 +1217,22 @@ frozen experiments remain untouched.
 - Original training/config/Gaussian/deformation/velocity/stress/flow/momentum,
   renderer/loaders/metrics/checkpoints retain previously mapped PIDG paths;
   no physics extension or original PIDG rewrite. Test: test_i10_relative_order.py.
+
+
+### J7 color-free static library replacement
+
+- `variants/staged_reconstruction/colorfree_joint/core.py`: schema/finite/row-ID
+  validation and explicit static-module replacement; default-off returns caller unchanged.
+- `runtime.py`: exact J6 non-static/two-Adam/RNG/camera/physics graph composition
+  with selected3273-row RGB-geometric static bank; each arm's own static teacher,
+  opacity/SH and dynamic-only updates, frozen static geometry/physics, full snapshots.
+- `RubberDuck_colorfree_joint/launch.py`: opt-in qualification and one serial matched
+  2000-step pair. `audit.py` replays source/state/Adam/sampling independently;
+  `evaluate.py`/`diagnostics.py` compare4models using native PIDG RGB/alpha/D,
+  all30val, fixed86/188 and original trajectory, PLY and decoded H264.
+- `final_verify.py` verifies all full-Gaussian fields, frozen inputs, images/means
+  and complete video decoding. `finalize.py` records actual reviewed result without promotion.
+- Tests: `tests/test_colorfree_joint.py`. Original PIDG training/config/Gaussian/
+  deformation/velocity/stress/flow/momentum/render/data/checkpoint paths above remain
+  unchanged. No new physical field, object count or semantic labels. Dynamic historic
+  color lineage persists; source replacement is not a from-scratch label-free model.

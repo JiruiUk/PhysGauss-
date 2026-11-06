@@ -1,0 +1,1397 @@
+{
+  "stage": "J7",
+  "labels": {
+    "J6_parent": "retained J6",
+    "direct_fusion": "replacement before training",
+    "old_static_control": "old static + matched2000",
+    "colorfree_static": "color-free static + matched2000"
+  },
+  "checkpoint_audits": {
+    "passed": true,
+    "arms": {
+      "old_static_control": {
+        "checkpoint_sha256": "4acf65350f1fa3fbca4891134b7691ac65690e9d7baabe777874b9063a2e700c",
+        "updates": 2000,
+        "source_model_two_Adam_exact": true,
+        "sampler_and_all_RNG_replayed": true,
+        "static_geometry_physics_Adam_graphs_frozen": true,
+        "static_points": 4126,
+        "dynamic_points": 15507,
+        "optimizer_steps": {
+          "0/_xyz": [
+            12000
+          ],
+          "0/_features_dc": [
+            18000
+          ],
+          "0/_features_rest": [
+            18000
+          ],
+          "0/_opacity": [
+            18000
+          ],
+          "0/_scaling": [
+            12000
+          ],
+          "0/_rotation": [
+            12000
+          ],
+          "1/dynamic/_xyz": [
+            28000
+          ],
+          "1/dynamic/_features_dc": [
+            28000
+          ],
+          "1/dynamic/_features_rest": [
+            28000
+          ],
+          "1/dynamic/_opacity": [
+            28000
+          ],
+          "1/dynamic/_scaling": [
+            28000
+          ],
+          "1/dynamic/_rotation": [
+            28000
+          ],
+          "1/grids": [
+            28000
+          ],
+          "1/deform_network": [
+            28000
+          ],
+          "1/PIDG_velocity_stress": [
+            800
+          ]
+        }
+      },
+      "colorfree_static": {
+        "checkpoint_sha256": "56496592beb55daf82444e34268b8e7b772a5819fa686cc5b95e3c63d348e4ad",
+        "updates": 2000,
+        "source_model_two_Adam_exact": true,
+        "sampler_and_all_RNG_replayed": true,
+        "static_geometry_physics_Adam_graphs_frozen": true,
+        "static_points": 3273,
+        "dynamic_points": 15507,
+        "optimizer_steps": {
+          "0/_xyz": [
+            18000
+          ],
+          "0/_features_dc": [
+            20000
+          ],
+          "0/_features_rest": [
+            20000
+          ],
+          "0/_opacity": [
+            20000
+          ],
+          "0/_scaling": [
+            18000
+          ],
+          "0/_rotation": [
+            18000
+          ],
+          "1/dynamic/_xyz": [
+            28000
+          ],
+          "1/dynamic/_features_dc": [
+            28000
+          ],
+          "1/dynamic/_features_rest": [
+            28000
+          ],
+          "1/dynamic/_opacity": [
+            28000
+          ],
+          "1/dynamic/_scaling": [
+            28000
+          ],
+          "1/dynamic/_rotation": [
+            28000
+          ],
+          "1/grids": [
+            28000
+          ],
+          "1/deform_network": [
+            28000
+          ],
+          "1/PIDG_velocity_stress": [
+            800
+          ]
+        }
+      }
+    },
+    "matched_dynamic_start_Adam_RNG_camera_and_budget": true,
+    "static_source_count_and_Adam_history_differ": true,
+    "independent_geometry_GT": false
+  },
+  "validation": {
+    "frames": [
+      {
+        "frame": "train/0004",
+        "J6_parent": {
+          "PSNR": 32.05329895019531,
+          "SSIM": 0.9841787219047546,
+          "L1": 0.00248618028126657
+        },
+        "direct_fusion": {
+          "PSNR": 31.421016693115234,
+          "SSIM": 0.979458212852478,
+          "L1": 0.003557996591553092
+        },
+        "old_static_control": {
+          "PSNR": 32.28087615966797,
+          "SSIM": 0.9840947985649109,
+          "L1": 0.0024898212868720293
+        },
+        "colorfree_static": {
+          "PSNR": 36.7064208984375,
+          "SSIM": 0.9907745122909546,
+          "L1": 0.001885749283246696
+        }
+      },
+      {
+        "frame": "train/0011",
+        "J6_parent": {
+          "PSNR": 32.035316467285156,
+          "SSIM": 0.9845765233039856,
+          "L1": 0.002444289857521653
+        },
+        "direct_fusion": {
+          "PSNR": 31.956798553466797,
+          "SSIM": 0.9806132912635803,
+          "L1": 0.0032882478553801775
+        },
+        "old_static_control": {
+          "PSNR": 32.27996826171875,
+          "SSIM": 0.984398365020752,
+          "L1": 0.002478342968970537
+        },
+        "colorfree_static": {
+          "PSNR": 37.4736213684082,
+          "SSIM": 0.9914562702178955,
+          "L1": 0.0017293321434408426
+        }
+      },
+      {
+        "frame": "train/0018",
+        "J6_parent": {
+          "PSNR": 32.5270881652832,
+          "SSIM": 0.9857029914855957,
+          "L1": 0.002376693533733487
+        },
+        "direct_fusion": {
+          "PSNR": 32.29273986816406,
+          "SSIM": 0.9815266132354736,
+          "L1": 0.003202487016096711
+        },
+        "old_static_control": {
+          "PSNR": 32.89828872680664,
+          "SSIM": 0.9860827326774597,
+          "L1": 0.002335274126380682
+        },
+        "colorfree_static": {
+          "PSNR": 37.53053283691406,
+          "SSIM": 0.991951584815979,
+          "L1": 0.0017451551975682378
+        }
+      },
+      {
+        "frame": "train/0024",
+        "J6_parent": {
+          "PSNR": 33.56655502319336,
+          "SSIM": 0.9867320656776428,
+          "L1": 0.0022272432688623667
+        },
+        "direct_fusion": {
+          "PSNR": 32.11471939086914,
+          "SSIM": 0.9813071489334106,
+          "L1": 0.0033653113059699535
+        },
+        "old_static_control": {
+          "PSNR": 33.2902946472168,
+          "SSIM": 0.9858644604682922,
+          "L1": 0.002386762062087655
+        },
+        "colorfree_static": {
+          "PSNR": 36.553829193115234,
+          "SSIM": 0.9913508892059326,
+          "L1": 0.0018928733188658953
+        }
+      },
+      {
+        "frame": "train/0031",
+        "J6_parent": {
+          "PSNR": 32.233642578125,
+          "SSIM": 0.9841681718826294,
+          "L1": 0.0029023485258221626
+        },
+        "direct_fusion": {
+          "PSNR": 29.46843719482422,
+          "SSIM": 0.9768978953361511,
+          "L1": 0.004706638865172863
+        },
+        "old_static_control": {
+          "PSNR": 31.825340270996094,
+          "SSIM": 0.9829986095428467,
+          "L1": 0.003171873977407813
+        },
+        "colorfree_static": {
+          "PSNR": 32.46508026123047,
+          "SSIM": 0.987754762172699,
+          "L1": 0.0029150154441595078
+        }
+      },
+      {
+        "frame": "train/0038",
+        "J6_parent": {
+          "PSNR": 31.90798568725586,
+          "SSIM": 0.984046995639801,
+          "L1": 0.0030781785026192665
+        },
+        "direct_fusion": {
+          "PSNR": 29.733177185058594,
+          "SSIM": 0.9766920208930969,
+          "L1": 0.004680277779698372
+        },
+        "old_static_control": {
+          "PSNR": 32.11664581298828,
+          "SSIM": 0.9846246242523193,
+          "L1": 0.0030581376049667597
+        },
+        "colorfree_static": {
+          "PSNR": 31.7623348236084,
+          "SSIM": 0.9869549870491028,
+          "L1": 0.0031541327480226755
+        }
+      },
+      {
+        "frame": "train/0044",
+        "J6_parent": {
+          "PSNR": 32.506370544433594,
+          "SSIM": 0.9840089082717896,
+          "L1": 0.0029427935369312763
+        },
+        "direct_fusion": {
+          "PSNR": 30.676755905151367,
+          "SSIM": 0.9766830801963806,
+          "L1": 0.00434249360114336
+        },
+        "old_static_control": {
+          "PSNR": 32.16298294067383,
+          "SSIM": 0.9837120175361633,
+          "L1": 0.003077712608501315
+        },
+        "colorfree_static": {
+          "PSNR": 32.873573303222656,
+          "SSIM": 0.9874078631401062,
+          "L1": 0.0028527930844575167
+        }
+      },
+      {
+        "frame": "train/0051",
+        "J6_parent": {
+          "PSNR": 32.93768310546875,
+          "SSIM": 0.9833849668502808,
+          "L1": 0.002897292608395219
+        },
+        "direct_fusion": {
+          "PSNR": 30.40819549560547,
+          "SSIM": 0.973872184753418,
+          "L1": 0.004604480229318142
+        },
+        "old_static_control": {
+          "PSNR": 32.53723907470703,
+          "SSIM": 0.982787013053894,
+          "L1": 0.003071796614676714
+        },
+        "colorfree_static": {
+          "PSNR": 33.63907241821289,
+          "SSIM": 0.9866834282875061,
+          "L1": 0.0028415706474334
+        }
+      },
+      {
+        "frame": "train/0058",
+        "J6_parent": {
+          "PSNR": 33.65757369995117,
+          "SSIM": 0.9826890826225281,
+          "L1": 0.0028411350212991238
+        },
+        "direct_fusion": {
+          "PSNR": 29.90591049194336,
+          "SSIM": 0.9697932600975037,
+          "L1": 0.0051781050860881805
+        },
+        "old_static_control": {
+          "PSNR": 32.79811096191406,
+          "SSIM": 0.9823071956634521,
+          "L1": 0.0029874539468437433
+        },
+        "colorfree_static": {
+          "PSNR": 34.26567077636719,
+          "SSIM": 0.9861236214637756,
+          "L1": 0.002854833146557212
+        }
+      },
+      {
+        "frame": "train/0064",
+        "J6_parent": {
+          "PSNR": 33.437904357910156,
+          "SSIM": 0.9815880656242371,
+          "L1": 0.002943216124549508
+        },
+        "direct_fusion": {
+          "PSNR": 29.592178344726562,
+          "SSIM": 0.9640972018241882,
+          "L1": 0.005679041147232056
+        },
+        "old_static_control": {
+          "PSNR": 33.16465759277344,
+          "SSIM": 0.9820846915245056,
+          "L1": 0.002941710874438286
+        },
+        "colorfree_static": {
+          "PSNR": 33.87693786621094,
+          "SSIM": 0.985863208770752,
+          "L1": 0.0029783016070723534
+        }
+      },
+      {
+        "frame": "train/0071",
+        "J6_parent": {
+          "PSNR": 32.99154281616211,
+          "SSIM": 0.9809215068817139,
+          "L1": 0.0031270068138837814
+        },
+        "direct_fusion": {
+          "PSNR": 29.267595291137695,
+          "SSIM": 0.9600412249565125,
+          "L1": 0.006130766123533249
+        },
+        "old_static_control": {
+          "PSNR": 33.32373809814453,
+          "SSIM": 0.9822532534599304,
+          "L1": 0.0030248849652707577
+        },
+        "colorfree_static": {
+          "PSNR": 33.263946533203125,
+          "SSIM": 0.9865495562553406,
+          "L1": 0.003066431498154998
+        }
+      },
+      {
+        "frame": "train/0078",
+        "J6_parent": {
+          "PSNR": 31.855146408081055,
+          "SSIM": 0.9785585403442383,
+          "L1": 0.003488645190373063
+        },
+        "direct_fusion": {
+          "PSNR": 29.130022048950195,
+          "SSIM": 0.9542961716651917,
+          "L1": 0.006465127691626549
+        },
+        "old_static_control": {
+          "PSNR": 32.10200500488281,
+          "SSIM": 0.9791001081466675,
+          "L1": 0.0035261434968560934
+        },
+        "colorfree_static": {
+          "PSNR": 35.06726837158203,
+          "SSIM": 0.9870121479034424,
+          "L1": 0.002673384500667453
+        }
+      },
+      {
+        "frame": "train/0084",
+        "J6_parent": {
+          "PSNR": 29.594226837158203,
+          "SSIM": 0.9740798473358154,
+          "L1": 0.004619202576577663
+        },
+        "direct_fusion": {
+          "PSNR": 28.411846160888672,
+          "SSIM": 0.9481335878372192,
+          "L1": 0.007036436814814806
+        },
+        "old_static_control": {
+          "PSNR": 29.995601654052734,
+          "SSIM": 0.9748955965042114,
+          "L1": 0.004457429051399231
+        },
+        "colorfree_static": {
+          "PSNR": 34.54995346069336,
+          "SSIM": 0.9859182834625244,
+          "L1": 0.0026608239859342575
+        }
+      },
+      {
+        "frame": "train/0091",
+        "J6_parent": {
+          "PSNR": 30.831214904785156,
+          "SSIM": 0.976618766784668,
+          "L1": 0.003978523891419172
+        },
+        "direct_fusion": {
+          "PSNR": 28.146570205688477,
+          "SSIM": 0.9443489909172058,
+          "L1": 0.0072690704837441444
+        },
+        "old_static_control": {
+          "PSNR": 31.228132247924805,
+          "SSIM": 0.9769907593727112,
+          "L1": 0.003879379015415907
+        },
+        "colorfree_static": {
+          "PSNR": 34.739078521728516,
+          "SSIM": 0.9875712990760803,
+          "L1": 0.0025973261799663305
+        }
+      },
+      {
+        "frame": "train/0098",
+        "J6_parent": {
+          "PSNR": 31.14932632446289,
+          "SSIM": 0.9765233993530273,
+          "L1": 0.003891902742907405
+        },
+        "direct_fusion": {
+          "PSNR": 27.27093505859375,
+          "SSIM": 0.9374232292175293,
+          "L1": 0.00842972006648779
+        },
+        "old_static_control": {
+          "PSNR": 31.911584854125977,
+          "SSIM": 0.9781118035316467,
+          "L1": 0.0036382204852998257
+        },
+        "colorfree_static": {
+          "PSNR": 35.07647705078125,
+          "SSIM": 0.9874883890151978,
+          "L1": 0.002603337401524186
+        }
+      },
+      {
+        "frame": "train/0104",
+        "J6_parent": {
+          "PSNR": 31.76851463317871,
+          "SSIM": 0.978481113910675,
+          "L1": 0.003604056779295206
+        },
+        "direct_fusion": {
+          "PSNR": 27.157440185546875,
+          "SSIM": 0.9366216063499451,
+          "L1": 0.008485578000545502
+        },
+        "old_static_control": {
+          "PSNR": 32.668113708496094,
+          "SSIM": 0.9796483516693115,
+          "L1": 0.00336057529784739
+        },
+        "colorfree_static": {
+          "PSNR": 35.67629623413086,
+          "SSIM": 0.9875907301902771,
+          "L1": 0.002446261467412114
+        }
+      },
+      {
+        "frame": "train/0111",
+        "J6_parent": {
+          "PSNR": 32.44886779785156,
+          "SSIM": 0.9800988435745239,
+          "L1": 0.003257994307205081
+        },
+        "direct_fusion": {
+          "PSNR": 27.24407386779785,
+          "SSIM": 0.9380487203598022,
+          "L1": 0.008262967690825462
+        },
+        "old_static_control": {
+          "PSNR": 32.88247299194336,
+          "SSIM": 0.9808030128479004,
+          "L1": 0.0031164896208792925
+        },
+        "colorfree_static": {
+          "PSNR": 34.95862579345703,
+          "SSIM": 0.9866030216217041,
+          "L1": 0.0025569158606231213
+        }
+      },
+      {
+        "frame": "train/0118",
+        "J6_parent": {
+          "PSNR": 30.80374526977539,
+          "SSIM": 0.9787120223045349,
+          "L1": 0.003773836186155677
+        },
+        "direct_fusion": {
+          "PSNR": 26.406381607055664,
+          "SSIM": 0.9350489377975464,
+          "L1": 0.009142412804067135
+        },
+        "old_static_control": {
+          "PSNR": 31.17566680908203,
+          "SSIM": 0.979526162147522,
+          "L1": 0.003665945027023554
+        },
+        "colorfree_static": {
+          "PSNR": 31.883039474487305,
+          "SSIM": 0.9833498597145081,
+          "L1": 0.0034617602359503508
+        }
+      },
+      {
+        "frame": "train/0124",
+        "J6_parent": {
+          "PSNR": 31.258670806884766,
+          "SSIM": 0.9793321490287781,
+          "L1": 0.0036999934818595648
+        },
+        "direct_fusion": {
+          "PSNR": 26.697322845458984,
+          "SSIM": 0.9329153895378113,
+          "L1": 0.008926152251660824
+        },
+        "old_static_control": {
+          "PSNR": 31.507627487182617,
+          "SSIM": 0.9799666404724121,
+          "L1": 0.0036000823602080345
+        },
+        "colorfree_static": {
+          "PSNR": 32.411808013916016,
+          "SSIM": 0.9831703901290894,
+          "L1": 0.003428051248192787
+        }
+      },
+      {
+        "frame": "train/0131",
+        "J6_parent": {
+          "PSNR": 33.06453323364258,
+          "SSIM": 0.9818541407585144,
+          "L1": 0.0032008353155106306
+        },
+        "direct_fusion": {
+          "PSNR": 28.9560546875,
+          "SSIM": 0.9427247643470764,
+          "L1": 0.006857787258923054
+        },
+        "old_static_control": {
+          "PSNR": 32.29164505004883,
+          "SSIM": 0.9813357591629028,
+          "L1": 0.0034064152278006077
+        },
+        "colorfree_static": {
+          "PSNR": 34.04301452636719,
+          "SSIM": 0.9860131740570068,
+          "L1": 0.0030107791535556316
+        }
+      },
+      {
+        "frame": "train/0138",
+        "J6_parent": {
+          "PSNR": 32.2402458190918,
+          "SSIM": 0.9799823760986328,
+          "L1": 0.0033944661263376474
+        },
+        "direct_fusion": {
+          "PSNR": 29.83765411376953,
+          "SSIM": 0.9582604169845581,
+          "L1": 0.005976771004498005
+        },
+        "old_static_control": {
+          "PSNR": 32.142147064208984,
+          "SSIM": 0.9804702401161194,
+          "L1": 0.0034192996099591255
+        },
+        "colorfree_static": {
+          "PSNR": 32.67325973510742,
+          "SSIM": 0.9840111136436462,
+          "L1": 0.0034990296699106693
+        }
+      },
+      {
+        "frame": "train/0144",
+        "J6_parent": {
+          "PSNR": 31.146982192993164,
+          "SSIM": 0.9774355292320251,
+          "L1": 0.0037830809596925974
+        },
+        "direct_fusion": {
+          "PSNR": 30.48935890197754,
+          "SSIM": 0.9637051820755005,
+          "L1": 0.005651118699461222
+        },
+        "old_static_control": {
+          "PSNR": 31.418010711669922,
+          "SSIM": 0.97801274061203,
+          "L1": 0.0037157037295401096
+        },
+        "colorfree_static": {
+          "PSNR": 31.42472267150879,
+          "SSIM": 0.981532633304596,
+          "L1": 0.004048987757414579
+        }
+      },
+      {
+        "frame": "train/0151",
+        "J6_parent": {
+          "PSNR": 30.739871978759766,
+          "SSIM": 0.975875198841095,
+          "L1": 0.003994752652943134
+        },
+        "direct_fusion": {
+          "PSNR": 30.42247772216797,
+          "SSIM": 0.9616451859474182,
+          "L1": 0.005676801782101393
+        },
+        "old_static_control": {
+          "PSNR": 32.25048065185547,
+          "SSIM": 0.979290246963501,
+          "L1": 0.003377047134563327
+        },
+        "colorfree_static": {
+          "PSNR": 32.41484832763672,
+          "SSIM": 0.9839574098587036,
+          "L1": 0.0035527043510228395
+        }
+      },
+      {
+        "frame": "train/0158",
+        "J6_parent": {
+          "PSNR": 31.76905059814453,
+          "SSIM": 0.9774503111839294,
+          "L1": 0.0035532822366803885
+        },
+        "direct_fusion": {
+          "PSNR": 30.445667266845703,
+          "SSIM": 0.960656464099884,
+          "L1": 0.00542062520980835
+        },
+        "old_static_control": {
+          "PSNR": 31.910688400268555,
+          "SSIM": 0.9781700372695923,
+          "L1": 0.003485530847683549
+        },
+        "colorfree_static": {
+          "PSNR": 34.71921920776367,
+          "SSIM": 0.9865976572036743,
+          "L1": 0.0028750104829669
+        }
+      },
+      {
+        "frame": "train/0164",
+        "J6_parent": {
+          "PSNR": 31.819639205932617,
+          "SSIM": 0.9790430665016174,
+          "L1": 0.0034107177052646875
+        },
+        "direct_fusion": {
+          "PSNR": 29.644393920898438,
+          "SSIM": 0.9595449566841125,
+          "L1": 0.005620508920401335
+        },
+        "old_static_control": {
+          "PSNR": 32.172096252441406,
+          "SSIM": 0.9803631901741028,
+          "L1": 0.0032730556558817625
+        },
+        "colorfree_static": {
+          "PSNR": 33.816341400146484,
+          "SSIM": 0.9864606261253357,
+          "L1": 0.0028628825675696135
+        }
+      },
+      {
+        "frame": "train/0171",
+        "J6_parent": {
+          "PSNR": 32.2558479309082,
+          "SSIM": 0.9808104038238525,
+          "L1": 0.0032318951562047005
+        },
+        "direct_fusion": {
+          "PSNR": 29.093997955322266,
+          "SSIM": 0.9546984434127808,
+          "L1": 0.00614533107727766
+        },
+        "old_static_control": {
+          "PSNR": 32.58733367919922,
+          "SSIM": 0.9811268448829651,
+          "L1": 0.0031852524261921644
+        },
+        "colorfree_static": {
+          "PSNR": 34.09488296508789,
+          "SSIM": 0.9868285655975342,
+          "L1": 0.0027432418428361416
+        }
+      },
+      {
+        "frame": "train/0178",
+        "J6_parent": {
+          "PSNR": 32.12526321411133,
+          "SSIM": 0.9802050590515137,
+          "L1": 0.003332281019538641
+        },
+        "direct_fusion": {
+          "PSNR": 29.168441772460938,
+          "SSIM": 0.9505143165588379,
+          "L1": 0.00623500719666481
+        },
+        "old_static_control": {
+          "PSNR": 32.411739349365234,
+          "SSIM": 0.9806545972824097,
+          "L1": 0.003246452659368515
+        },
+        "colorfree_static": {
+          "PSNR": 33.83479690551758,
+          "SSIM": 0.9865707159042358,
+          "L1": 0.0026710403617471457
+        }
+      },
+      {
+        "frame": "train/0184",
+        "J6_parent": {
+          "PSNR": 32.03255081176758,
+          "SSIM": 0.979469895362854,
+          "L1": 0.003326999954879284
+        },
+        "direct_fusion": {
+          "PSNR": 29.024717330932617,
+          "SSIM": 0.945914626121521,
+          "L1": 0.0064924233593046665
+        },
+        "old_static_control": {
+          "PSNR": 31.893024444580078,
+          "SSIM": 0.9787421226501465,
+          "L1": 0.0033597731962800026
+        },
+        "colorfree_static": {
+          "PSNR": 33.34560775756836,
+          "SSIM": 0.9856105446815491,
+          "L1": 0.002756556961685419
+        }
+      },
+      {
+        "frame": "train/0191",
+        "J6_parent": {
+          "PSNR": 31.66411590576172,
+          "SSIM": 0.9787331223487854,
+          "L1": 0.003417533589527011
+        },
+        "direct_fusion": {
+          "PSNR": 28.768404006958008,
+          "SSIM": 0.9421303272247314,
+          "L1": 0.006945846602320671
+        },
+        "old_static_control": {
+          "PSNR": 31.13622283935547,
+          "SSIM": 0.977201521396637,
+          "L1": 0.003607187420129776
+        },
+        "colorfree_static": {
+          "PSNR": 33.45924377441406,
+          "SSIM": 0.9849196672439575,
+          "L1": 0.0028770037461072206
+        }
+      },
+      {
+        "frame": "train/0198",
+        "J6_parent": {
+          "PSNR": 31.41742515563965,
+          "SSIM": 0.9775025248527527,
+          "L1": 0.0036744524259120226
+        },
+        "direct_fusion": {
+          "PSNR": 28.653026580810547,
+          "SSIM": 0.9402074217796326,
+          "L1": 0.007224242202937603
+        },
+        "old_static_control": {
+          "PSNR": 30.822689056396484,
+          "SSIM": 0.9759649038314819,
+          "L1": 0.0038784288335591555
+        },
+        "colorfree_static": {
+          "PSNR": 32.75275802612305,
+          "SSIM": 0.9835677146911621,
+          "L1": 0.0031805578619241714
+        }
+      }
+    ],
+    "means": {
+      "J6_parent": {
+        "PSNR": 31.994673347473146,
+        "SSIM": 0.9804254770278931,
+        "L1": 0.0032966943457722665
+      },
+      "direct_fusion": {
+        "PSNR": 29.393543688456216,
+        "SSIM": 0.9575940291086833,
+        "L1": 0.006033325823955238
+      },
+      "old_static_control": {
+        "PSNR": 32.106180826822914,
+        "SSIM": 0.9807194133599599,
+        "L1": 0.0032740727377434573
+      },
+      "colorfree_static": {
+        "PSNR": 34.04507541656494,
+        "SSIM": 0.9865881542364756,
+        "L1": 0.002814061458533009
+      }
+    },
+    "native_width": 1600,
+    "all30_full_RGB": true,
+    "test_RGB_not_read": true,
+    "semantic_masks_used": false,
+    "independent_geometry_GT": false,
+    "candidate_minus_control_PSNR_dB": 1.938894589742027,
+    "candidate_minus_J6_PSNR_dB": 2.0504020690917955,
+    "PSNR_nonregression_gate": true,
+    "manual_geometry_cleanup_required": true
+  },
+  "diagnostics": {
+    "images": {
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t002_J6_parent_staticRGB_native.png": "46e4698dacaf9b2a9d4820f0d4bb111ea5cfa2dff262cd0f6533ff9a1518b4b1",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t002_J6_parent_dynamicRGB_native.png": "c5ebee60d0666a355f9f210b9304ff4c3025bb5320cc7ef4d67a7a61baa42080",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t002_J6_parent_jointRGB_native.png": "a3bdf524d6c7d22bd66cec0c63107455e18e9d67dd10f8136243af6b58a45bd5",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t002_J6_parent_staticAlpha_native.png": "cf534b4b6e2e2a05c0e7f45fa21c7078aa9891511aa49d1be184f61250f52297",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t002_J6_parent_dynamicAlpha_native.png": "8c12b43722caf05dc2be3e9223eaaf2061b1c25b05058c8eb2c66b1263fa66dd",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t002_J6_parent_jointAlpha_native.png": "66aa57691ee7cf2a0641a9975e671112c21d66522a8288d23f40380954f4b28b",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t002_J6_parent_staticD-alpha_native.png": "52b9caf440d288efc3751948356e89ba405f84fcd951ce72c5086db3cee52e3f",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t002_J6_parent_dynamicD-alpha_native.png": "82d6160cc7be27492a50b99df769dc5d3d4455a6fd7444cf809f5407571aa8ef",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t002_J6_parent_jointD-alpha_native.png": "b70e8870274592a9c0476a1f73d3226b98216a6766bff82c0deee4f61187a215",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t002_direct_fusion_staticRGB_native.png": "5f874f01389af92fc1b064881f3e7dcf266c8728c2f63be1b92103d460a44bcb",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t002_direct_fusion_dynamicRGB_native.png": "c5ebee60d0666a355f9f210b9304ff4c3025bb5320cc7ef4d67a7a61baa42080",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t002_direct_fusion_jointRGB_native.png": "0e878395d7ced37b9511a4c271b86901ee7d9cd04d971a56f2cc5d5c3c23fed3",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t002_direct_fusion_staticAlpha_native.png": "83b0c2d70985145fe1150a85ef72e666d85c8f91f20c39584c61a295643ed7c9",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t002_direct_fusion_dynamicAlpha_native.png": "8c12b43722caf05dc2be3e9223eaaf2061b1c25b05058c8eb2c66b1263fa66dd",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t002_direct_fusion_jointAlpha_native.png": "119ed0e6413e473ae02c6984a38140ae32238efadeb2102b2c077c6a6f5d9ce4",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t002_direct_fusion_staticD-alpha_native.png": "30fe74208304b2d78fd217362e0ca8acb0368c5cf4b9309e58e717d27845aaba",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t002_direct_fusion_dynamicD-alpha_native.png": "82d6160cc7be27492a50b99df769dc5d3d4455a6fd7444cf809f5407571aa8ef",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t002_direct_fusion_jointD-alpha_native.png": "26551f983e489ba8785bd2e8e4af73fae1654d7ac5bb1cff26e5bdc182e062c1",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t002_old_static_control_staticRGB_native.png": "f3cec8ba9050e047c5f7c6c0eb2d83d5497955947bda77a59a81afce4e9e2206",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t002_old_static_control_dynamicRGB_native.png": "3088d97378a6d1ef7f440f432c3cf0f9ae023af1c693ec58915d558573a571d6",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t002_old_static_control_jointRGB_native.png": "5ae171205a3bb91dae1444fa27a46a860e1caa3df9ec8c3ba57513d9d91153fa",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t002_old_static_control_staticAlpha_native.png": "cee857d3b45bef775dff934c34ff1750c34b3d46b8c992e993d2a72b8dfaeb10",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t002_old_static_control_dynamicAlpha_native.png": "f0c11a7dd5e8e63e87159d6cc1af8e6faefb03bcf65578537e1e0e9ee00a9d80",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t002_old_static_control_jointAlpha_native.png": "290ff69bbdc7fbfc7603db185cd6b7c71a065db085700f26bb17d6b4ea484859",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t002_old_static_control_staticD-alpha_native.png": "fc509d30b830a6035974cb64265a75406bdd9b85dd69ff457b2dee5c768e84bb",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t002_old_static_control_dynamicD-alpha_native.png": "2e3165ad559fa47abced7dcdcd77537355c1d52edc2f1e1883ce457084de5ba8",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t002_old_static_control_jointD-alpha_native.png": "e17241245a135c2093b2a2c273c65491d71150731195a3fcca640f47230877d0",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t002_colorfree_static_staticRGB_native.png": "c08f8e33a8f5fe7cb68828f98d2463e4e306195d3a773b4b18771df1cd52bf81",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t002_colorfree_static_dynamicRGB_native.png": "85546165933be08431f0b669f2110ec99c0f2886b5a0c8e060a3e5d86da5cf1e",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t002_colorfree_static_jointRGB_native.png": "45d19aba0201b56cf4a206f7eaafe10ae53b5442c1e12c1e32c0731901a5171c",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t002_colorfree_static_staticAlpha_native.png": "a0baaa13b4ba58a62d4fc9332670a4a4b9a5da238c16efc5fd233fa632f51dd2",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t002_colorfree_static_dynamicAlpha_native.png": "1e69ca8e62dbe947ad7b2f5532b0f5b9dd7d226fe152ee48b2d23b3711716b4b",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t002_colorfree_static_jointAlpha_native.png": "fb320ca4a8353ee6baa6845b9da4e6053b560df5a17b8a9ae624af0747432a46",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t002_colorfree_static_staticD-alpha_native.png": "92dbeb2231cb44500966e2a19c352b7c00f154dd52d57693ac5e99f8c24d52b0",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t002_colorfree_static_dynamicD-alpha_native.png": "eebbca423080f98d444928710f59915ff283d5b678a5fe14d45ced4077190386",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t002_colorfree_static_jointD-alpha_native.png": "c01e2ae6f08d049d34131eb8640abdf1262047900907d1bf7c72dba936bac20d",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t002_decomposition.png": "197d71f027be4a0964456434ff08926c4fdc09aa5be435f4d42654af24d8bc7d",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t002_joint_comparison.png": "11cd63ab3026f215d738071801cfa8abd5785bb41da537570f8f97cd5e10a903",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t100_J6_parent_staticRGB_native.png": "46e4698dacaf9b2a9d4820f0d4bb111ea5cfa2dff262cd0f6533ff9a1518b4b1",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t100_J6_parent_dynamicRGB_native.png": "de78b620517d3fd19e8564fb39f08aaf494a2afcbe453845286c61fc294d4f6b",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t100_J6_parent_jointRGB_native.png": "4b25896cefa11edd9bcfde8081b979d89023105da9a49fa3727052b76436cb2f",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t100_J6_parent_staticAlpha_native.png": "cf534b4b6e2e2a05c0e7f45fa21c7078aa9891511aa49d1be184f61250f52297",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t100_J6_parent_dynamicAlpha_native.png": "47e08a1acc63cbd76b30876a7950317e687ca387bc56dcfa46bce437b880b6b5",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t100_J6_parent_jointAlpha_native.png": "8a817d548c2460a1718e4b363855f133cd2fdc4124523b74ce2264f0fcad448e",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t100_J6_parent_staticD-alpha_native.png": "52b9caf440d288efc3751948356e89ba405f84fcd951ce72c5086db3cee52e3f",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t100_J6_parent_dynamicD-alpha_native.png": "12626e0dbb2b1200670a031c364f1c57421460f06b90eb0c1db139540738c1d8",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t100_J6_parent_jointD-alpha_native.png": "2545cbe8c566135078e24f6b69b7e9042e563ef1b87c59b850d66afd904cad17",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t100_direct_fusion_staticRGB_native.png": "5f874f01389af92fc1b064881f3e7dcf266c8728c2f63be1b92103d460a44bcb",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t100_direct_fusion_dynamicRGB_native.png": "de78b620517d3fd19e8564fb39f08aaf494a2afcbe453845286c61fc294d4f6b",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t100_direct_fusion_jointRGB_native.png": "c450e1cff7b262822b74e36352e0de9fa95e1df045531af22038ba805f797d09",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t100_direct_fusion_staticAlpha_native.png": "83b0c2d70985145fe1150a85ef72e666d85c8f91f20c39584c61a295643ed7c9",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t100_direct_fusion_dynamicAlpha_native.png": "47e08a1acc63cbd76b30876a7950317e687ca387bc56dcfa46bce437b880b6b5",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t100_direct_fusion_jointAlpha_native.png": "bc29eb79bb1d6b6f4583ba18c5f75e10fb67e18abb8e87cb7ea27fe5792d02fe",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t100_direct_fusion_staticD-alpha_native.png": "30fe74208304b2d78fd217362e0ca8acb0368c5cf4b9309e58e717d27845aaba",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t100_direct_fusion_dynamicD-alpha_native.png": "12626e0dbb2b1200670a031c364f1c57421460f06b90eb0c1db139540738c1d8",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t100_direct_fusion_jointD-alpha_native.png": "84da93b7efba50659895d28870577bad36b00332fdbd6287996be910f7c837bd",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t100_old_static_control_staticRGB_native.png": "f3cec8ba9050e047c5f7c6c0eb2d83d5497955947bda77a59a81afce4e9e2206",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t100_old_static_control_dynamicRGB_native.png": "07452af7a1c24de24ee56cf5509a20eccde15a4870d401e035b1034fda3da27c",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t100_old_static_control_jointRGB_native.png": "0374a406073a9fc0ea2115f77152f77a6290ea88ab1ac46008bddd1efb772b24",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t100_old_static_control_staticAlpha_native.png": "cee857d3b45bef775dff934c34ff1750c34b3d46b8c992e993d2a72b8dfaeb10",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t100_old_static_control_dynamicAlpha_native.png": "cf6a4e5581977a1c7717e0dc7938331bd75a45c6d69ce9d39eb316ac1f184c6b",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t100_old_static_control_jointAlpha_native.png": "2288c799e72ab0583986cbec7266136160d698f25c4ddf2882e7cd47d61a3dc9",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t100_old_static_control_staticD-alpha_native.png": "fc509d30b830a6035974cb64265a75406bdd9b85dd69ff457b2dee5c768e84bb",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t100_old_static_control_dynamicD-alpha_native.png": "7cdafe02f32cfb319a081556d711137246eeac6880f1374146a7ccdde3263d7d",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t100_old_static_control_jointD-alpha_native.png": "c7973fc020647d1a1a68a94ecbaa01792ac6388cdc3a82778cfd92adbf7ee87e",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t100_colorfree_static_staticRGB_native.png": "c08f8e33a8f5fe7cb68828f98d2463e4e306195d3a773b4b18771df1cd52bf81",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t100_colorfree_static_dynamicRGB_native.png": "aa6cbcaadce765d9341fa61bd9c25b53bb7ae3e8c3b201cceb44fe9685748f6b",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t100_colorfree_static_jointRGB_native.png": "101c6802ca2edb37a72c206ddf2e92a241dab6554153b97e7a375defe5ed1bf6",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t100_colorfree_static_staticAlpha_native.png": "a0baaa13b4ba58a62d4fc9332670a4a4b9a5da238c16efc5fd233fa632f51dd2",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t100_colorfree_static_dynamicAlpha_native.png": "b79cef755a79b9849015bd0172bc766862b0d2ebbcede5cad5e112a969690656",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t100_colorfree_static_jointAlpha_native.png": "ca3380c0ce90db4a1064ea44cebc41485a7e745e2f84de83f0f61aeea51cb919",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t100_colorfree_static_staticD-alpha_native.png": "92dbeb2231cb44500966e2a19c352b7c00f154dd52d57693ac5e99f8c24d52b0",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t100_colorfree_static_dynamicD-alpha_native.png": "f3d98e09b241317b9aabab696423add6cb6d448f2c6c7874ec3fe00a84a2061a",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t100_colorfree_static_jointD-alpha_native.png": "2acd7cbe350b604a83e00c4c3112e79bf56dbd4c12ffc6d2a63823666e69de59",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t100_decomposition.png": "b78d54fa25025a815b6e495172c109b51a88a826febb2d975f3a97f3582bfecd",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t100_joint_comparison.png": "20af892fc6bc5b3de43ad4c1c266d1d5379d7c44a89a0f0d4b374f17b1c6615f",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t200_J6_parent_staticRGB_native.png": "46e4698dacaf9b2a9d4820f0d4bb111ea5cfa2dff262cd0f6533ff9a1518b4b1",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t200_J6_parent_dynamicRGB_native.png": "431c7ef99502964b63a3cae5086d6ae0b778e4dc884b1f716c5e6d65749b5d99",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t200_J6_parent_jointRGB_native.png": "9f679674bfd5d55c45e91e3f4ed29f0c8cfb1ac17fbeb9a147c194db5c14c2e5",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t200_J6_parent_staticAlpha_native.png": "cf534b4b6e2e2a05c0e7f45fa21c7078aa9891511aa49d1be184f61250f52297",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t200_J6_parent_dynamicAlpha_native.png": "83f9383a9befba29e76a6a19225b936a91eb691cde73b9be6b8d6e230f3dfbcf",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t200_J6_parent_jointAlpha_native.png": "6cefe23bd53ed70991e25d03a15e047a30377b40a528306ded5f748a5d5c6603",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t200_J6_parent_staticD-alpha_native.png": "52b9caf440d288efc3751948356e89ba405f84fcd951ce72c5086db3cee52e3f",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t200_J6_parent_dynamicD-alpha_native.png": "1acca1cb065643b4bfe6b82216ed6119e48c727062a82fb3af63df4bfe1a4832",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t200_J6_parent_jointD-alpha_native.png": "57e1005283c3fb71d7b18f60564ee87a42224b7b810a93ea0aff1e12f4d077d0",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t200_direct_fusion_staticRGB_native.png": "5f874f01389af92fc1b064881f3e7dcf266c8728c2f63be1b92103d460a44bcb",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t200_direct_fusion_dynamicRGB_native.png": "431c7ef99502964b63a3cae5086d6ae0b778e4dc884b1f716c5e6d65749b5d99",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t200_direct_fusion_jointRGB_native.png": "153078d9632f5356cf79b00dab144da0a2341900ec023755a1d89d845c7a8b1c",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t200_direct_fusion_staticAlpha_native.png": "83b0c2d70985145fe1150a85ef72e666d85c8f91f20c39584c61a295643ed7c9",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t200_direct_fusion_dynamicAlpha_native.png": "83f9383a9befba29e76a6a19225b936a91eb691cde73b9be6b8d6e230f3dfbcf",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t200_direct_fusion_jointAlpha_native.png": "0278a88cf83e7495be38d843bb20332124cc0df5ffcfd725b601fc04e79505c9",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t200_direct_fusion_staticD-alpha_native.png": "30fe74208304b2d78fd217362e0ca8acb0368c5cf4b9309e58e717d27845aaba",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t200_direct_fusion_dynamicD-alpha_native.png": "1acca1cb065643b4bfe6b82216ed6119e48c727062a82fb3af63df4bfe1a4832",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t200_direct_fusion_jointD-alpha_native.png": "57f75e96eeb48937f02444721f9ccf447d5850983630899888a6d6492af42d84",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t200_old_static_control_staticRGB_native.png": "f3cec8ba9050e047c5f7c6c0eb2d83d5497955947bda77a59a81afce4e9e2206",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t200_old_static_control_dynamicRGB_native.png": "63322dc640a72e6678eef0fa0e8244d8a7a42ac74c2e3edcae3bd5a867d35dfe",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t200_old_static_control_jointRGB_native.png": "f4b5acc8e0d312a7be8d6c45a491da407dae49987e8250a65fbf7033abd06097",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t200_old_static_control_staticAlpha_native.png": "cee857d3b45bef775dff934c34ff1750c34b3d46b8c992e993d2a72b8dfaeb10",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t200_old_static_control_dynamicAlpha_native.png": "d73de0812ca991b0f15e5e02cef598434e36d52e66144277b781b8d99c6ff79a",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t200_old_static_control_jointAlpha_native.png": "b95c5b9d4f072f384f74005f90ceaac9925b1aa8b7004bd07044d14be868cb4d",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t200_old_static_control_staticD-alpha_native.png": "fc509d30b830a6035974cb64265a75406bdd9b85dd69ff457b2dee5c768e84bb",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t200_old_static_control_dynamicD-alpha_native.png": "7d28d4360eb9d8293c0c27b179a047b0999035ba60ae874612b3cbd331f15019",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t200_old_static_control_jointD-alpha_native.png": "69d544fb4639945c0b644a741f5749ab59351f0236a361ef8393013b68d9da94",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t200_colorfree_static_staticRGB_native.png": "c08f8e33a8f5fe7cb68828f98d2463e4e306195d3a773b4b18771df1cd52bf81",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t200_colorfree_static_dynamicRGB_native.png": "a39046036687cdc771959c0b879e4caad16371f16ce336def104c4ea02b649f8",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t200_colorfree_static_jointRGB_native.png": "cde1fe13ac9f838cbca88e5ecc4e6da9648ae9b05a5d5c972c8802f43fd22874",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t200_colorfree_static_staticAlpha_native.png": "a0baaa13b4ba58a62d4fc9332670a4a4b9a5da238c16efc5fd233fa632f51dd2",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t200_colorfree_static_dynamicAlpha_native.png": "9d8d57bf80db8b551f5af38b25a2ca6ed69526dd7991d4ea46b5167de5f480bc",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t200_colorfree_static_jointAlpha_native.png": "0ee83e7e86c54443b071dbdecb4e15e38638a8e99660e77f980b3b57cc34f92e",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t200_colorfree_static_staticD-alpha_native.png": "92dbeb2231cb44500966e2a19c352b7c00f154dd52d57693ac5e99f8c24d52b0",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t200_colorfree_static_dynamicD-alpha_native.png": "225cfc13980e04d4feee751c5c7d96e6a9ebbf7703094b1e498689233f8fb93d",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t200_colorfree_static_jointD-alpha_native.png": "d9dfd1220a0f18511bb2a91aea4adfff3fd9cb45950c1b43e7190119a8b5dcd1",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t200_decomposition.png": "9dc02a1a0c2852658b6c70e1cac40b49d4b2774b2296d145eb09bc564f40f1d3",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c086_t200_joint_comparison.png": "b53543649f5553acadb0c53ff6db33670334a75522a30bee46ebfd8e32e44257",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t002_J6_parent_staticRGB_native.png": "3fd5829d1c42d7ff68ae20786768eb39d7c40f6b39a7feb70dd1e8d73f8cf514",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t002_J6_parent_dynamicRGB_native.png": "dad34291506f0362b0699add2a92c4ce50a8cf2182116b76c2525b67e8e2398d",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t002_J6_parent_jointRGB_native.png": "b7d822318ae96e6f70afef44aa45c6629ba7fdae661d079916a32910dd279b1e",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t002_J6_parent_staticAlpha_native.png": "a85f0d95c00c1fd9cb0b2a5aa8b704384aab141d40ac8a57ad3461cfe824f657",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t002_J6_parent_dynamicAlpha_native.png": "1eb995d177af2aaeba205b5d2b04777005e83237b4ee65c21729bb53be5dcdf2",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t002_J6_parent_jointAlpha_native.png": "2238c8c7eacfd9ecb77ffe1c315907465a40e1c219bc8990ab6b248e8d72aca5",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t002_J6_parent_staticD-alpha_native.png": "1ed4a7b5489491c82d5e713fc6866d3acf8bbbdb2877a98711fed555e6e79030",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t002_J6_parent_dynamicD-alpha_native.png": "a3388e57192233ff2ac0eee1eb72cf688e71b08367d686c1d4cdd3b0ca5f78af",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t002_J6_parent_jointD-alpha_native.png": "b59e2764037de097b60fccdbc369ec2a5431296f508a4d7421b296bcfb0afc6a",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t002_direct_fusion_staticRGB_native.png": "42beb3c991061c3896d9988531269df3b92288d0b5693be47078a0ca26311f9e",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t002_direct_fusion_dynamicRGB_native.png": "dad34291506f0362b0699add2a92c4ce50a8cf2182116b76c2525b67e8e2398d",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t002_direct_fusion_jointRGB_native.png": "dfd64244e2b1b93602cf266c2a27da013e7a73ce5dee25a8100d1a5b7200a5bb",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t002_direct_fusion_staticAlpha_native.png": "f8d1d420a566b8131c7a9a2bf034bd832c2a2413acb03019862378ffecd649e5",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t002_direct_fusion_dynamicAlpha_native.png": "1eb995d177af2aaeba205b5d2b04777005e83237b4ee65c21729bb53be5dcdf2",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t002_direct_fusion_jointAlpha_native.png": "a4b03d3b99a1e5aba1367e4d946d4d836eb1c5f187675ec06c5159e194455751",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t002_direct_fusion_staticD-alpha_native.png": "8200fb98597ace3a06f460a56463af4c2f9da3aa36224c649d1cb93a1b5eb4bf",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t002_direct_fusion_dynamicD-alpha_native.png": "a3388e57192233ff2ac0eee1eb72cf688e71b08367d686c1d4cdd3b0ca5f78af",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t002_direct_fusion_jointD-alpha_native.png": "b18ec37ec381c6faed27e8c5807027562a839721165ce6aac2b78c0971d84279",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t002_old_static_control_staticRGB_native.png": "058628cad2d3534c7e89fbb5c2a02a7ac50f29fcc9f843160e63d950bc6183a1",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t002_old_static_control_dynamicRGB_native.png": "7d260da3cccfe0ae2e6c5952aca33a0ff80e61552f3f061f311797a856f60904",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t002_old_static_control_jointRGB_native.png": "fff936fc6b92963421bf2ec06b5b2ac9063eeb561c4ce23f79f5bdffb80854b4",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t002_old_static_control_staticAlpha_native.png": "9bfa9f8d21535a01341949e20582ba5bbf49ff7a350fdc90c95cdb82162bb574",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t002_old_static_control_dynamicAlpha_native.png": "46389ba00ebbeb72c131cf83da50d680c92f7e2fcd7fbf6cb7dd2ae3bf4ca02f",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t002_old_static_control_jointAlpha_native.png": "4c4e088e8c066a83bd2fa347d7b3b652bfd6b1b3b6012f2c93b25b7dc66cad4a",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t002_old_static_control_staticD-alpha_native.png": "92d57be17f270f5ebcfeac6b84a55496a1f54166766e1fef3e2b22c9fe954d6a",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t002_old_static_control_dynamicD-alpha_native.png": "14715ade3938194dea206af08923ff62a9932e5ceea7f2f2e7db8ce737a619a5",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t002_old_static_control_jointD-alpha_native.png": "b67389a63f5e5054cd682851c3c5fe63ed3eb10ab7d3379849815e34bffe142a",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t002_colorfree_static_staticRGB_native.png": "5f9bd529166e3253deffbc4fdc94fdc6edc5293619733a3f1f9a180ca325dc6b",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t002_colorfree_static_dynamicRGB_native.png": "92fc56dc6cf0a90b78e47fd72a53367a57e0f03f5e1c023e32c9c3565e6ccdb3",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t002_colorfree_static_jointRGB_native.png": "2d8becc8f35b0e2ce5d383ec517c036604bfa4261e35e723bc8b3e1e1adeeb1b",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t002_colorfree_static_staticAlpha_native.png": "830575f6dcd20fb3800cd946111b745caaad25cb8c12c3f3fa87e535039cd519",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t002_colorfree_static_dynamicAlpha_native.png": "d010c5e64d8ec78f23306bbe004dcf16472e3fdd110398070a595cfc0a4c6495",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t002_colorfree_static_jointAlpha_native.png": "085cef7869deb5a39183a6a864061103a14e1ed55e3cc8a99531b551b43412bb",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t002_colorfree_static_staticD-alpha_native.png": "54af607a302039d85057cae6487d5f2052e2a923fa6fa1f9ac92b9ff9e25f544",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t002_colorfree_static_dynamicD-alpha_native.png": "2958310e94a8d5f8dd68547a2b18276176529f12d4b62624634612dbfebcecf5",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t002_colorfree_static_jointD-alpha_native.png": "bca6d414d8da5cae565570386dc8e5d25cc4591072bb3204edbed1e9c0290243",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t002_decomposition.png": "c0d5d77f8f0057b09d6561eec8c61fe30790e5413987937f106c3b526abdfbf0",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t002_joint_comparison.png": "760a4f9f3a06f31c8bc0bb0b6840f177e78cc84f496b7e5a1a2665b73a50c204",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t100_J6_parent_staticRGB_native.png": "3fd5829d1c42d7ff68ae20786768eb39d7c40f6b39a7feb70dd1e8d73f8cf514",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t100_J6_parent_dynamicRGB_native.png": "625b69d8d0ce5a01eae1fd8f6d2549b1229747990c18cfc8fa19495420aaec18",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t100_J6_parent_jointRGB_native.png": "cab4c91857243442d4297e9ebd6a7c0ee98a85ae4edfa9f0837a1609d63365ef",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t100_J6_parent_staticAlpha_native.png": "a85f0d95c00c1fd9cb0b2a5aa8b704384aab141d40ac8a57ad3461cfe824f657",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t100_J6_parent_dynamicAlpha_native.png": "f75b5b0e1af71349883e8d649348e6bfbcaff478bc4f4f5ed71f676eab7ad9e2",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t100_J6_parent_jointAlpha_native.png": "3aa2cc4364ad3b6c1d033783727843a75a01cd33ce8f9ae6f14db44365c88d77",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t100_J6_parent_staticD-alpha_native.png": "1ed4a7b5489491c82d5e713fc6866d3acf8bbbdb2877a98711fed555e6e79030",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t100_J6_parent_dynamicD-alpha_native.png": "bd3d099c51717f012eb31eb58bdc28bcfa1f04295705b1737836d4a416b0cace",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t100_J6_parent_jointD-alpha_native.png": "8e27c68596d4a64acc88bbf71b895b2b6a1dfe4117e42bd41fb3e7c3af0bd873",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t100_direct_fusion_staticRGB_native.png": "42beb3c991061c3896d9988531269df3b92288d0b5693be47078a0ca26311f9e",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t100_direct_fusion_dynamicRGB_native.png": "625b69d8d0ce5a01eae1fd8f6d2549b1229747990c18cfc8fa19495420aaec18",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t100_direct_fusion_jointRGB_native.png": "f3f11559992f973a42e0069d73af89284d6f560699fa0a10e8bba6cf7fe36093",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t100_direct_fusion_staticAlpha_native.png": "f8d1d420a566b8131c7a9a2bf034bd832c2a2413acb03019862378ffecd649e5",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t100_direct_fusion_dynamicAlpha_native.png": "f75b5b0e1af71349883e8d649348e6bfbcaff478bc4f4f5ed71f676eab7ad9e2",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t100_direct_fusion_jointAlpha_native.png": "52895f8e15b4f03dfb60f2feba6df10f793e80e93b3c997030f8d8d0ecd4aaf4",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t100_direct_fusion_staticD-alpha_native.png": "8200fb98597ace3a06f460a56463af4c2f9da3aa36224c649d1cb93a1b5eb4bf",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t100_direct_fusion_dynamicD-alpha_native.png": "bd3d099c51717f012eb31eb58bdc28bcfa1f04295705b1737836d4a416b0cace",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t100_direct_fusion_jointD-alpha_native.png": "bcd7ae567f4bf1b4c795799cae343471e800c74cb60ea71897d216ab6fbba0dd",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t100_old_static_control_staticRGB_native.png": "058628cad2d3534c7e89fbb5c2a02a7ac50f29fcc9f843160e63d950bc6183a1",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t100_old_static_control_dynamicRGB_native.png": "d805f48b74b561b0ebefadfef8e2f2369f950e692cd8d347ac95b6160797dd1d",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t100_old_static_control_jointRGB_native.png": "35936018fecfedc41bff5032250f762f7085d1c862fe845081fcbc003d994c09",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t100_old_static_control_staticAlpha_native.png": "9bfa9f8d21535a01341949e20582ba5bbf49ff7a350fdc90c95cdb82162bb574",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t100_old_static_control_dynamicAlpha_native.png": "b54799778129fa405443f04e7431ea53695f1e249ed04d8d474e6a02718aed0f",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t100_old_static_control_jointAlpha_native.png": "b745f4f031fc572e7f9b7328a31ddcea4db4fccbe05f48b22df8a651b4480a7f",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t100_old_static_control_staticD-alpha_native.png": "92d57be17f270f5ebcfeac6b84a55496a1f54166766e1fef3e2b22c9fe954d6a",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t100_old_static_control_dynamicD-alpha_native.png": "30881e8adc57f22cd846c708119af0583da55ae3c7eb525db5a9b1dd32267690",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t100_old_static_control_jointD-alpha_native.png": "5c80427214151ce1a94bdf1314742fe43d365a4931d52323d13bb0ca7bc9263a",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t100_colorfree_static_staticRGB_native.png": "5f9bd529166e3253deffbc4fdc94fdc6edc5293619733a3f1f9a180ca325dc6b",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t100_colorfree_static_dynamicRGB_native.png": "63813664d559439debc3f500627eff836c49e8a1a7665bff8b956fd88dcb1385",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t100_colorfree_static_jointRGB_native.png": "7991c78811e85af839b91affaa5f560f1901f04906d9e72375b5f6d3d687e40d",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t100_colorfree_static_staticAlpha_native.png": "830575f6dcd20fb3800cd946111b745caaad25cb8c12c3f3fa87e535039cd519",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t100_colorfree_static_dynamicAlpha_native.png": "a27f1445a8e16072d0abafa0793b39c3d0bb7a9e1f4c9a23700f73824674068b",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t100_colorfree_static_jointAlpha_native.png": "6e53b57be2a0d647b6ee33dcbda5ca3bb4674598eded85034e535fd18c8373e6",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t100_colorfree_static_staticD-alpha_native.png": "54af607a302039d85057cae6487d5f2052e2a923fa6fa1f9ac92b9ff9e25f544",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t100_colorfree_static_dynamicD-alpha_native.png": "2912a58b0a79ca74bf70f00b6cf83feb573ec66422ad459e45c99598c3ade50c",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t100_colorfree_static_jointD-alpha_native.png": "a51596648bfa132d6bef1592cb7cdfa3c86e131ab2bf9bd88b8f1c28f47fb109",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t100_decomposition.png": "b181bfc91390037d4ab22a1f8a4f373c444d9d42e5dd5e9e16d9874ed4d6aa87",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t100_joint_comparison.png": "2b8545d81c64fd5b2c2a91891eb5890713f33778fd9f18f9a149cb745da73127",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t200_J6_parent_staticRGB_native.png": "3fd5829d1c42d7ff68ae20786768eb39d7c40f6b39a7feb70dd1e8d73f8cf514",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t200_J6_parent_dynamicRGB_native.png": "2696dab316b4bfe03ced954a61019afe940dca18287094a090331ca14cae2134",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t200_J6_parent_jointRGB_native.png": "922ff6b9a834aeafd842c49dfa62983f1594d08e9346f0f9d6abb7d9bdd57623",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t200_J6_parent_staticAlpha_native.png": "a85f0d95c00c1fd9cb0b2a5aa8b704384aab141d40ac8a57ad3461cfe824f657",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t200_J6_parent_dynamicAlpha_native.png": "1989feca553aa1fa74a32e3286e75550fba61ffd6cd13ead0ee4ae85316c6cc4",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t200_J6_parent_jointAlpha_native.png": "1fc62132e7c39c1cd4c8aff2ad7e8ecf925c8bfbd2ea77264ba12345e6c8e842",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t200_J6_parent_staticD-alpha_native.png": "1ed4a7b5489491c82d5e713fc6866d3acf8bbbdb2877a98711fed555e6e79030",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t200_J6_parent_dynamicD-alpha_native.png": "b51e8d340dfca5b653b092761e40e09bc652de97b49ce1a586dcf0aaa07bb6ab",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t200_J6_parent_jointD-alpha_native.png": "36a1968d1ff4283653a3ff5973e801b75932d224a849b539bd0f3a47bf3804b8",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t200_direct_fusion_staticRGB_native.png": "42beb3c991061c3896d9988531269df3b92288d0b5693be47078a0ca26311f9e",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t200_direct_fusion_dynamicRGB_native.png": "2696dab316b4bfe03ced954a61019afe940dca18287094a090331ca14cae2134",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t200_direct_fusion_jointRGB_native.png": "35c8d72e62f301ddd856601a097522e466bea7f4790ed6a1c41f29ac2f76601d",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t200_direct_fusion_staticAlpha_native.png": "f8d1d420a566b8131c7a9a2bf034bd832c2a2413acb03019862378ffecd649e5",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t200_direct_fusion_dynamicAlpha_native.png": "1989feca553aa1fa74a32e3286e75550fba61ffd6cd13ead0ee4ae85316c6cc4",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t200_direct_fusion_jointAlpha_native.png": "7f533c7e4985e5c4117bf2e00b8ee1e944b7c5f98ccbef5d38d6c9dbc93b7a6b",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t200_direct_fusion_staticD-alpha_native.png": "8200fb98597ace3a06f460a56463af4c2f9da3aa36224c649d1cb93a1b5eb4bf",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t200_direct_fusion_dynamicD-alpha_native.png": "b51e8d340dfca5b653b092761e40e09bc652de97b49ce1a586dcf0aaa07bb6ab",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t200_direct_fusion_jointD-alpha_native.png": "a4b8050d2b5b52aa98f0e96489017da21b6255a00fa053f6624bd8430a23a834",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t200_old_static_control_staticRGB_native.png": "058628cad2d3534c7e89fbb5c2a02a7ac50f29fcc9f843160e63d950bc6183a1",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t200_old_static_control_dynamicRGB_native.png": "fdb3059ec7cee6abc4b6324ea866d777dcdfc5d3ba2eb66ec7ac636b7db1bf0f",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t200_old_static_control_jointRGB_native.png": "e89049413a787ac95c7b4302910883ba9986a3bc58002b638dd7cbb06058cd5d",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t200_old_static_control_staticAlpha_native.png": "9bfa9f8d21535a01341949e20582ba5bbf49ff7a350fdc90c95cdb82162bb574",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t200_old_static_control_dynamicAlpha_native.png": "5ff2d4293fd2221b5da8f06f76235e03c40b957ffc69f2b7cc8c58ac5915de8d",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t200_old_static_control_jointAlpha_native.png": "2302e16481394a28fe4371df72ffb26773b6e7c645a7c686da2f41045ec21449",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t200_old_static_control_staticD-alpha_native.png": "92d57be17f270f5ebcfeac6b84a55496a1f54166766e1fef3e2b22c9fe954d6a",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t200_old_static_control_dynamicD-alpha_native.png": "6bae704dc4aef5b86b507f6a5b307754e96daf1a04f27799f6b25a28cd7701db",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t200_old_static_control_jointD-alpha_native.png": "2ae3e5df267c9ad0ed721f8b9521188b7e9ca17f2c12ed8660e02162acdfcd53",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t200_colorfree_static_staticRGB_native.png": "5f9bd529166e3253deffbc4fdc94fdc6edc5293619733a3f1f9a180ca325dc6b",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t200_colorfree_static_dynamicRGB_native.png": "ed4023f8d104887cbc2a1baf0ef2ba240dd914998ed3e4c65a3f2f9d29074564",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t200_colorfree_static_jointRGB_native.png": "95f58d8ba66a8ebd77f7b0aef505f51a825a2fa144d961f827ea78f934b12c33",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t200_colorfree_static_staticAlpha_native.png": "830575f6dcd20fb3800cd946111b745caaad25cb8c12c3f3fa87e535039cd519",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t200_colorfree_static_dynamicAlpha_native.png": "349ca43606001c67e07b15dcde790d021927b89b06be0c60f2d75bb6e3d4e84c",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t200_colorfree_static_jointAlpha_native.png": "0a89b5b5c94f1d5a414d006c186c3c80ae208d742a368c826eba09f2f308efe7",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t200_colorfree_static_staticD-alpha_native.png": "54af607a302039d85057cae6487d5f2052e2a923fa6fa1f9ac92b9ff9e25f544",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t200_colorfree_static_dynamicD-alpha_native.png": "c363cb06db40ff71837c2c6e77b387ca3e0e4d1b448e8d145701845d7fa4d001",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t200_colorfree_static_jointD-alpha_native.png": "602d5e640521cb5c5d7ce64f032c96df0a2b025c635896cc25a259cbf10d9935",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t200_decomposition.png": "ed2fabe34be803b2211a21921c144cc4157e390a80b8356156d1eb4be4a8c637",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/c188_t200_joint_comparison.png": "23f3cedaa528d926dfb839aeecf7cf49361db0ab98aeb619251e3e8ab85be046",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/observed_train_index000.png": "37978623ed1a6a48fabb8294cce415cc73f51b02fa5c2c62356b7b0a5a74e0f0",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/observed_train_index024.png": "da582bb0c76f497d935c4f9c988aadd9881666812bb5dafb76015c96085d1527",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/observed_train_index048.png": "8637f6567a5f702ef4695907f145e22df2be882671bedac0d07dc0d096cfe6ad",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/observed_train_index072.png": "66ab28d15a42f24251844ff69b3249785ef1dd4352fb2266b7bdc856251046ec",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/observed_train_index096.png": "329d4624b79a316d62934b5b5a747643e05dc430479d5ea224e7c9a99e9a7adf",
+      "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/observed_train_index119.png": "64e327cd77075abcd5852cdcf23db6f034b8f7199c19198cadbdf9aad783bcf5"
+    },
+    "fixed_cameras": {
+      "86": {
+        "frame": "train/0086",
+        "camera_transform": [
+          [
+            0.23971359431743622,
+            -0.6610111594200134,
+            0.711056649684906,
+            4.171568393707275
+          ],
+          [
+            0.9708436727523804,
+            0.16321201622486115,
+            -0.17556889355182648,
+            -0.39753779768943787
+          ],
+          [
+            7.450580152834618e-09,
+            0.7324110865592957,
+            0.6808626055717468,
+            4.79702091217041
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "FoVx": 0.8457078337669373,
+        "FoVy": 0.4958353284296838,
+        "size": [
+          1600,
+          900
+        ]
+      },
+      "188": {
+        "frame": "train/0188",
+        "camera_transform": [
+          [
+            -0.7748000621795654,
+            0.4649222791194916,
+            -0.4284064769744873,
+            -2.3269615173339844
+          ],
+          [
+            -0.6322063207626343,
+            -0.5697851777076721,
+            0.5250332951545715,
+            3.484281539916992
+          ],
+          [
+            1.4901160305669237e-08,
+            0.6776370406150818,
+            0.7353963851928711,
+            4.79702091217041
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "FoVx": 0.8457078337669373,
+        "FoVy": 0.4958353284296838,
+        "size": [
+          1600,
+          900
+        ]
+      }
+    },
+    "static_support_proxies": [
+      {
+        "camera": 86,
+        "model": "J6_parent",
+        "pixels": 1440000,
+        "alpha_gt05": 133871,
+        "parent_support": 133871,
+        "parent_support_now_missing": 0,
+        "D_alpha_parent_support_MAE_proxy": 0.0,
+        "not_independent_geometry_accuracy": true
+      },
+      {
+        "camera": 86,
+        "model": "direct_fusion",
+        "pixels": 1440000,
+        "alpha_gt05": 236450,
+        "parent_support": 133871,
+        "parent_support_now_missing": 509,
+        "D_alpha_parent_support_MAE_proxy": 0.11438260227441788,
+        "not_independent_geometry_accuracy": true
+      },
+      {
+        "camera": 86,
+        "model": "old_static_control",
+        "pixels": 1440000,
+        "alpha_gt05": 133742,
+        "parent_support": 133871,
+        "parent_support_now_missing": 131,
+        "D_alpha_parent_support_MAE_proxy": 0.00034338858677074313,
+        "not_independent_geometry_accuracy": true
+      },
+      {
+        "camera": 86,
+        "model": "colorfree_static",
+        "pixels": 1440000,
+        "alpha_gt05": 232832,
+        "parent_support": 133871,
+        "parent_support_now_missing": 507,
+        "D_alpha_parent_support_MAE_proxy": 0.11388050019741058,
+        "not_independent_geometry_accuracy": true
+      },
+      {
+        "camera": 188,
+        "model": "J6_parent",
+        "pixels": 1440000,
+        "alpha_gt05": 147326,
+        "parent_support": 147326,
+        "parent_support_now_missing": 0,
+        "D_alpha_parent_support_MAE_proxy": 0.0,
+        "not_independent_geometry_accuracy": true
+      },
+      {
+        "camera": 188,
+        "model": "direct_fusion",
+        "pixels": 1440000,
+        "alpha_gt05": 231753,
+        "parent_support": 147326,
+        "parent_support_now_missing": 184,
+        "D_alpha_parent_support_MAE_proxy": 0.13959747552871704,
+        "not_independent_geometry_accuracy": true
+      },
+      {
+        "camera": 188,
+        "model": "old_static_control",
+        "pixels": 1440000,
+        "alpha_gt05": 147242,
+        "parent_support": 147326,
+        "parent_support_now_missing": 90,
+        "D_alpha_parent_support_MAE_proxy": 0.0005214927368797362,
+        "not_independent_geometry_accuracy": true
+      },
+      {
+        "camera": 188,
+        "model": "colorfree_static",
+        "pixels": 1440000,
+        "alpha_gt05": 226412,
+        "parent_support": 147326,
+        "parent_support_now_missing": 185,
+        "D_alpha_parent_support_MAE_proxy": 0.13852457702159882,
+        "not_independent_geometry_accuracy": true
+      }
+    ],
+    "missing_black_depth_is_not_zero_error": true
+  },
+  "plys": {
+    "J6_parent/static": {
+      "path": "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/J6_parent_static.ply",
+      "sha256": "143d149aeb4949e607a9741b8a1a4a36d188fc753c6116922a00aafe06ce6ef5",
+      "vertices": 4126,
+      "checkpoint_position_exact": true,
+      "all_fields_finite": true,
+      "coordinates": "world"
+    },
+    "J6_parent/canonical_dynamic_local": {
+      "path": "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/J6_parent_canonical_dynamic_local.ply",
+      "sha256": "6536bcd449b027e3b733351263f89b1ed93a41c0f72557220f28c00255f9e6a8",
+      "vertices": 15507,
+      "checkpoint_position_exact": true,
+      "all_fields_finite": true,
+      "coordinates": "local canonical; add checkpoint centers after deformation"
+    },
+    "J6_parent/dynamic_world/2": {
+      "path": "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/J6_parent_dynamic_world_t002.ply",
+      "sha256": "c1d4fa85914626c92e35a4982afb02f327df6a7f02c817fd2bc9f05ffc662d76",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "J6_parent/dynamic_world/100": {
+      "path": "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/J6_parent_dynamic_world_t100.ply",
+      "sha256": "084f9c5895db8791878eb254aade7a2c6a93c634d4287f6b28c7f61e744c439e",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "J6_parent/dynamic_world/200": {
+      "path": "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/J6_parent_dynamic_world_t200.ply",
+      "sha256": "4cf7d016077124871078c17154d1f1320cfdc28a8d28e9c47ae6845cd6dddf25",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "direct_fusion/static": {
+      "path": "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/direct_fusion_static.ply",
+      "sha256": "db92d78f5fa61325549d25a06ed68d76279d12209dc37f716685aa58d6726e36",
+      "vertices": 3273,
+      "checkpoint_position_exact": true,
+      "all_fields_finite": true,
+      "coordinates": "world"
+    },
+    "direct_fusion/canonical_dynamic_local": {
+      "path": "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/direct_fusion_canonical_dynamic_local.ply",
+      "sha256": "6536bcd449b027e3b733351263f89b1ed93a41c0f72557220f28c00255f9e6a8",
+      "vertices": 15507,
+      "checkpoint_position_exact": true,
+      "all_fields_finite": true,
+      "coordinates": "local canonical; add checkpoint centers after deformation"
+    },
+    "direct_fusion/dynamic_world/2": {
+      "path": "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/direct_fusion_dynamic_world_t002.ply",
+      "sha256": "c1d4fa85914626c92e35a4982afb02f327df6a7f02c817fd2bc9f05ffc662d76",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "direct_fusion/dynamic_world/100": {
+      "path": "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/direct_fusion_dynamic_world_t100.ply",
+      "sha256": "084f9c5895db8791878eb254aade7a2c6a93c634d4287f6b28c7f61e744c439e",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "direct_fusion/dynamic_world/200": {
+      "path": "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/direct_fusion_dynamic_world_t200.ply",
+      "sha256": "4cf7d016077124871078c17154d1f1320cfdc28a8d28e9c47ae6845cd6dddf25",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "old_static_control/static": {
+      "path": "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/old_static_control_static.ply",
+      "sha256": "f29def0cf28d00a8731363f04e2f3a75120a783a5654ef94c40339bc51f3f5d5",
+      "vertices": 4126,
+      "checkpoint_position_exact": true,
+      "all_fields_finite": true,
+      "coordinates": "world"
+    },
+    "old_static_control/canonical_dynamic_local": {
+      "path": "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/old_static_control_canonical_dynamic_local.ply",
+      "sha256": "4e376cb607c2993883a7e55a1dff01646f674ca257203603f84805f71ca27770",
+      "vertices": 15507,
+      "checkpoint_position_exact": true,
+      "all_fields_finite": true,
+      "coordinates": "local canonical; add checkpoint centers after deformation"
+    },
+    "old_static_control/dynamic_world/2": {
+      "path": "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/old_static_control_dynamic_world_t002.ply",
+      "sha256": "d1422f0835a337ead7856ed0dbc56aa30ee8dfa957641c5688a2ceaf3c031f94",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "old_static_control/dynamic_world/100": {
+      "path": "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/old_static_control_dynamic_world_t100.ply",
+      "sha256": "8005eb8def4dcfe1bdd0b30c426bce72faed7a1980f8e896b07b94ec33893358",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "old_static_control/dynamic_world/200": {
+      "path": "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/old_static_control_dynamic_world_t200.ply",
+      "sha256": "e7b9b30a0d302c7ddf79f5f9c4fe12b5ec89209ea49ce57b5d338b696accb7cb",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "colorfree_static/static": {
+      "path": "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/colorfree_static_static.ply",
+      "sha256": "f411ab78035381acefb5db00ec895e5976516facab2dcf9db882a5e7003c874c",
+      "vertices": 3273,
+      "checkpoint_position_exact": true,
+      "all_fields_finite": true,
+      "coordinates": "world"
+    },
+    "colorfree_static/canonical_dynamic_local": {
+      "path": "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/colorfree_static_canonical_dynamic_local.ply",
+      "sha256": "211197c0e14cb335cd9d402a0a8c9d594930bd301cafbf1f24c859ad32b9fcff",
+      "vertices": 15507,
+      "checkpoint_position_exact": true,
+      "all_fields_finite": true,
+      "coordinates": "local canonical; add checkpoint centers after deformation"
+    },
+    "colorfree_static/dynamic_world/2": {
+      "path": "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/colorfree_static_dynamic_world_t002.ply",
+      "sha256": "c22435ae64f8f17bedb432f79f7576568695a628eca15cb5690a72b98d488677",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "colorfree_static/dynamic_world/100": {
+      "path": "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/colorfree_static_dynamic_world_t100.ply",
+      "sha256": "1314cf68153239415024aef8b668b0269a4f99a8270df0c4501b73586229f769",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "colorfree_static/dynamic_world/200": {
+      "path": "output/staged_reconstruction/RubberDuck_colorfree_joint/v1/colorfree_static_dynamic_world_t200.ply",
+      "sha256": "1619bfcc5571360062d43e4aa87efd9328e2001b26a8eac91c1269b80e638b70",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    }
+  }
+}

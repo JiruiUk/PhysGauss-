@@ -1,0 +1,30 @@
+{
+  "stage": "J7",
+  "status": "completed_rgb_improved_not_geometry_promoted",
+  "pending": false,
+  "completed_utc": "2026-11-06T14:05:37.521821+00:00",
+  "human_requested_display_fusion_and_test_completed": true,
+  "formal_updates": 4000,
+  "updates_per_arm": 2000,
+  "RGB_gate": true,
+  "manual_geometry_cleanup_gate": false,
+  "retained_model": "runs/pidg_staged_reconstruction/RubberDuck_I10_joint/v1/formal/joint_depth_trust/checkpoint.pt",
+  "retained_model_sha256": "89109bdb3990c95037924fdf0985e07302ed67065d98971d77209780b96e0502",
+  "candidate_retained_as_appearance_result": true,
+  "automatic_promotion": false,
+  "automatic_extension": false,
+  "candidate_checkpoint": "runs/pidg_staged_reconstruction/RubberDuck_colorfree_joint/v1/formal/colorfree_static/checkpoint.pt",
+  "candidate_sha256": "56496592beb55daf82444e34268b8e7b772a5819fa686cc5b95e3c63d348e4ad",
+  "training_process_exited": true,
+  "no_new_physics_or_object_identity": true,
+  "independent_geometry_GT": false,
+  "receipts": {
+    "evaluation.json": "378e9c6736224edd998ddd38d61e659424044766ae2997dbad64d3c0ee79854a",
+    "videos.json": "ba1accfe993eb3587579a51432f81e2430e96cd1991168d1a07d00c535ea63df",
+    "final_validation.json": "db677b0b035fc117253c9ee59125ac2df0c0d99d92ee82f8ec94bd7e733ef4a9",
+    "manual_review.json": "95deb03d15d6fc2c19b6a28784bcb41e114ab11604dd2f7a01a39dd43321369d",
+    "assessment.md": "a174b437a16b6a6f88ca9e63daabb206122554f14fe9f91d794ea98e5f9c66bf",
+    "presentation.json": "c830e46eddf608c68c430ff21ebd52c2c85ca092ad00cf17a61e65a64bd26640"
+  },
+  "finalization_source_sha256": "8eac0a18eddbfbd8104510ce151c480d6322d42367b6729eca157a21fdccf5fa"
+}
