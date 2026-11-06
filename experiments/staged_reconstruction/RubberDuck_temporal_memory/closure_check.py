@@ -8,7 +8,11 @@ from variants.staged_reconstruction.i10_tracking.io import ROOT,read,write,sha
 def main():
     b=Path(__file__).parent;v=b/'v1';r=ROOT/'runs/pidg_staged_reconstruction/RubberDuck_temporal_memory/v1'
     final=read(v/'final_review.json');assert not final['pending_review']
-    for name,h in final['artifacts_sha256'].items():assert sha(v/name)==h,name
+    for name,h in final['artifacts_sha256'].items():
+        assert sha(v/name)==h,name
+        path=(v/name).relative_to(ROOT).as_posix()
+        raw=subprocess.check_output(['git','show','HEAD:'+path],cwd=ROOT)
+        assert hashlib.sha256(raw).hexdigest()==h,path
     manual=read(v/'manual_review.json');assert len(manual['reviewed_images_sha256'])==34
     for path,h in manual['reviewed_images_sha256'].items():assert sha(ROOT/path)==h,path
     for name in ['final_status.json','pipeline.json','active.json']:
@@ -28,6 +32,7 @@ def main():
                 count+=1
     write(v/'closure_validation.json',dict(passed=True,actual_reviewed_images=34,
         full_checkpoints_checked=2,frozen_task_Git_checks=count,final_manifest_checked=len(final['artifacts_sha256']),
+        final_manifest_Git_checked=len(final['artifacts_sha256']),
         final_review_sha256=sha(v/'final_review.json'),closed_states=True,no_training_modified=True,source_sha256=sha(Path(__file__))))
     print('L4_CLOSURE_PASS',count,'frozen Git checks,34 actual image checks,two complete checkpoints')
 
