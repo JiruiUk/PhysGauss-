@@ -1,3 +1,6 @@
 # Progress
 
 - New user authorization: one anchor-propagated, revocable local graph candidate and matched pureRGB control; preregistered before candidate measurement. L2 negative result preserved. No new training yet.
+- Protocol ec06e5ac fixed before outputs. Fifteen CPU tests pass (first import collection failure retained), native1600 disabled RGB/alpha/D exact and gradients original tolerance, all789 measurements independent-process exact, no-mutation/exception RNG/flags and canonical/grid/deform local gradients passed. Pre-freeze syntax failure retained.
+- Fit-only construction:122 measured RGB anchors,667 transported neighbor hypotheses,666 nominated distinct rows and1188 proposed edges. Initial native checks retain448 nodes,276 distinct neighbor rows and373 edges; all122 roots pass. Parent-conditioned neighbors are not independently measured material tracks; partial coverage remains.
+- All122 per-window held-corruption nomination checks and complete789-node/1188-edge CPU input replay pass. Both20-step native smoke runs and four independent complete twoAdam/model/RNG/camera/controller/physics recoveries with same-native-gradient exact Adam pass. Frozen356 training inputs/imported sources. No formal updates yet.

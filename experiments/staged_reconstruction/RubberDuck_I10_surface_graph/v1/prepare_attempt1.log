@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "F:\A_Edinburgh\PhysGauss\experiments\staged_reconstruction\RubberDuck_I10_surface_graph\launch.py", line 8, in <module>
+    from variants.staged_reconstruction.i10_surface_graph import runtime as a
+  File "F:\A_Edinburgh\PhysGauss\variants\staged_reconstruction\i10_surface_graph\runtime.py", line 112
+    active_neighbor_rows=len({q['rows'][0] for q,s in zip(PATCHES,states) if not q['is_anchor'] and s['status']=='active'))
+                                                                                                                         ^
+SyntaxError: closing parenthesis ')' does not match opening parenthesis '{'

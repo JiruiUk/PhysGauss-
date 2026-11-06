@@ -1103,3 +1103,18 @@ frozen experiments remain untouched.
 - `evaluate.py`, `audit.py`, `controller_audit.py`: independent native RGB/artifact,
   complete refresh replay and explicit CPU decision accounting. No geometry GT,
   physical identities, new color static references or new physics are introduced.
+
+### L3 anchor-guided revocable local surface graph
+
+- `variants/staged_reconstruction/i10_surface_graph/core.py`: fit-only bounded
+  overlapping neighbor hypotheses, native-checked satellites, anchor spokes and
+  triangle links, root-only measured RGB reprojection, local rotation-invariant
+  length/strain constraints; default-off exact identity and unknown suspension.
+- `runtime.py`: native full-scene compositing evidence, root dependency, per-node
+  reversible confidence, seven scheduled refreshes, full controller/twoAdam/RNG/
+  camera/physics state; pureRGB matched control has exactly zero auxiliary loss.
+- `RubberDuck_I10_surface_graph/{launch,launch_trace,evaluate,audit,controller_audit}.py`:
+  qualification/full-state recovery, matched training, immutable refresh models,
+  independent artifact and native replay. Tests: test_i10_surface_graph.py.
+- Satellite targets are parent-transported proxies, not new measured tracks or
+  physical identities. No new static labels, count, depth/normal GT or physics.
