@@ -866,3 +866,13 @@ fit/held重投影对照1.026963/1.026156→0.652001/0.650365px，held仍受普�
 completed_not_promoted，pending:false。原J7及旧40步/L4失败保留，无新增物理更新。
 下一研究先固定更广可靠表面记忆与重现覆盖验收，不自动放大同一小组轨迹权重或开新候选。
 详见experiments/staged_reconstruction/RubberDuck_J7_long_memory/v1/assessment.md。
+
+## V0：J7/J8相机—时间交叉检查（2026-11-06，完成）
+
+三个检查点各482组、共1446组交叉渲染及63组原生1600导出；独立进程
+全部RGB/alpha/D哈希、分母与完整状态复核通过。120图=120时间=120相机，
+同时间多相机0。中晚期可见外观在观测组合附近较完整，偏离组合后碎裂；
+原视角灰色动态支撑也存在大片拖尾，不能只归因SH或静态遮挡。J8两臂仍有
+此现象；暗高alpha比例下降不代表结构变好。支持轨迹相关拟合/几何欠约束，
+无同时间新视角GT，不给真实准确率或唯一因果判断。保留J7，0训练/0晋级。
+完整报告：staged_reconstruction/RubberDuck_view_time_audit/v1/assessment.md。

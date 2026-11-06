@@ -1257,3 +1257,14 @@ frozen experiments remain untouched.
   PIDG training/render/physics/data/checkpoint sources remain unchanged. Dynamic
   historical color lineage is disclosed; persistent memory is not object identity,
   full-sequence coverage, new surface generation or independently measured3D.
+
+## Read-only camera/time coupling audit V0 (2026-11-06)
+
+`variants/staged_reconstruction/view_time_audit/core.py` owns pair deduplication,
+actual-pose distances, undefined-aware dark/support proxies and angular accounting.
+`worker.py` defaults off and loads exact J7/J8 full states via the frozen adapter;
+native joint/dynamic/gray renders preserve both Adam/RNG/camera/physics/controller
+states, including exception-path flags. Independent process replays every metric
+and raw render hash. Reports/presentation/independent accounting live in
+experiments/staged_reconstruction/RubberDuck_view_time_audit. No new training,
+physics, labels, instances or model parameters; proxy support is not geometry GT.

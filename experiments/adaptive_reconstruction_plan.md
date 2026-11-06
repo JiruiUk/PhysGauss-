@@ -968,3 +968,15 @@ fit/held重投影对照1.026963/1.026156→0.652001/0.650365px，held仍受普�
 completed_not_promoted，pending:false。原J7及旧40步/L4失败保留，无新增物理更新。
 下一研究先固定更广可靠表面记忆与重现覆盖验收，不自动放大同一小组轨迹权重或开新候选。
 详见experiments/staged_reconstruction/RubberDuck_J7_long_memory/v1/assessment.md。
+
+## V0 camera/time coupling check completed (2026-11-06)
+
+Preregistered read-only J7/J8 audit: 482 pairs/model, 1446 model/pairs and63
+native1600 combinations; all second-process native hashes/metrics and full-state
+no-mutation checks pass. RGB completeness is localized near observed camera/time
+combinations, especially middle/late; gray dynamic support retains large dark
+elongated support even at matched views. Both J8 continuations retain this pattern.
+This supports trajectory-specific fitting/underconstrained geometry, without
+simultaneous novel-view GT or proof of a sole cause. Dark fractions are nonmonotonic
+and cannot rank structural accuracy. No new training/promotion; retain J7.
+See staged_reconstruction/RubberDuck_view_time_audit/v1/assessment.md.
