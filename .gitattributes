@@ -15,3 +15,8 @@ variants/staged_reconstruction/rubber_visibility/** -text
 experiments/staged_reconstruction/RubberDuck_visibility_audit/** -text
 tests/test_rubber_visibility.py -text
 tests/test_rubber_visibility_repair.py -text
+
+# Preserve exact J8 protocol, source and evidence receipt bytes.
+variants/staged_reconstruction/j7_long_memory/** -text
+experiments/staged_reconstruction/RubberDuck_J7_long_memory/** -text
+tests/test_j7_long_memory.py -text
