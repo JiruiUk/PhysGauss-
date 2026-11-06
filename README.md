@@ -1,109 +1,160 @@
 # PhysGauss
 
-新 PIDG 扩展计划的运行、停训续训与配置范围见 [实验说明](experiments/README.md)。
-当前只比较 Rubber Duck 的 50k 训练，原始基线复用；进度与结果见 [自动汇总](experiments/results.md)，
-五秒监控地址为 <http://127.0.0.1:8765/>。
+**基于 Physics-Informed Deformable Gaussian Splatting（PIDG）的动态场景重建研究。**
 
-## PIDG 官方复现入口
+当前重点是 Rubber Duck 场景：在不预设动态物体数量的前提下，研究静态/动态联合重建、可撤销表面追踪、局部结构约束及长期观测记忆，尽可能减少拖影、碎裂和悬浮支撑，同时保留结构完整性。
 
-当前优先推进 PIDG 官方实现及其五个自建场景的复现。请先阅读 [复现说明](reproduction/README.md)，官方代码、CUDA 渲染、训练和评估独立运行于 reproduction/ 流程。下文记录的是前期 PhysGauss 参考架构。
+本仓库保存源代码、实验协议、正负结果与审计记录。**目前尚未解决稳定的新视角完整重建，也没有验证真实材料参数或接触力恢复。** 实验执行完成与几何成功分别记录。
 
-当前执行 `pidg_codex_plan.zip` 中的 [新计划](CODEX_TASK.md)，遵循 [AGENTS.md](AGENTS.md)
-逐阶段验证。原始五场景50k基线已核验复用，见 [baseline_metrics.json](baseline_metrics.json)。
-实际PIDG模块映射见 [PIDG_REPO_MAP.md](PIDG_REPO_MAP.md)，独立扩展源码位于
-`variants/constitutive_pidg/code` 与 `pidg_ext/`，配置位于 `experiments/configs/`。
-旧Phase 0–15队列已按用户要求停止并移入回收站；新计划不依赖其目录。
+[当前实验总计划](experiments/staged_reconstruction_plan.md) · [重建改进计划](experiments/adaptive_reconstruction_plan.md) · [源码映射](PIDG_REPO_MAP.md) · [PIDG 复现说明](reproduction/README.md)
 
+## 当前模型结构
 
-**Uncertainty-Aware Physics Estimation from Limited Observations with 4D Gaussian Splatting**
-
-根据聊天「物理变形高斯详解」建立的研究项目。当前版本是**可运行、可测试的基础架构**：从 canonical 高斯出发，同时学习动态形变、速度／应力场与观测不确定性，完成训练、断点续训、测试集评估和物理状态导出。
-
-## 两种实验设置
-
-| 设置 | Canonical 初始化 | 视频监督 | 约束 |
-| --- | --- | --- | --- |
-| Public / image-only | 图像重建点云 → 可优化 3DGS | RGB、可选 flow/depth | 禁止 CT 初始化；需保留官方 split 与输入协议 |
-| Trachea / CT-assisted | 配准后的 CT 表面点云 → 3DGS | RGB、可选 depth/flow | CT 仅用于 canonical 初始化；默认固定 canonical 几何 |
-
-当前支持读取统一的 `manifest.json + frames.npz + canonical.npz`。真实 PIDG、HyperNeRF、D-NeRF 和 CT 文件的自动转换尚未实现；格式见 [数据接口](docs/data_contract.md)。不能把这两种设置的结果混成同一个公平性比较。
-
-## 已实现
-
-- 完整高斯参数：中心、三轴尺度、四元数旋转、RGB、opacity。
-- 时间锚定的形变场：在 `canonical_time` 精确回到 canonical 状态。
-- 独立 Eulerian 材料场：预测速度与对称 Cauchy 应力。
-- 有界 photometric variance、RGB Gaussian NLL 与 variance prior。
-- RGB、参考 SSIM、可选深度和投影光流损失。
-- 自动微分 Cauchy 动量残差、3D trajectory–velocity consistency。
-- 物理约束 warmup/ramp、基于 EMA 残差的自适应 collocation 采样。
-- 配置、严格数据校验、训练日志、checkpoint、可复现续训、测试集评估、状态导出。
-
-## 快速启动（Windows PowerShell）
-
-```powershell
-Set-Location 'F:\A_Edinburgh\PhysGauss'
-# 当前目录若已有 .venv，可直接运行以下两条。
-.\.venv\Scripts\python.exe -m pytest -q
-.\scripts\run_smoke.ps1 -RunName demo
+```mermaid
+flowchart LR
+    S[静态 Gaussian 库] --> R[原生 PIDG Gaussian 渲染器]
+    X[统一动态 canonical Gaussian 池] --> D[原 PIDG 时空 hash grid 与形变网络]
+    T[时间 t] --> D
+    D --> G[时刻 t 的动态位置 / 尺度 / 旋转]
+    G --> R
+    C[相机位姿与内参] --> R
+    R --> I[RGB / alpha / 累积深度 D]
+    P[原 PIDG 速度与应力分支] -.保留，按实验协议启用或冻结.-> X
+    M[可撤销观测 / 表面连接 / 长期记忆] -.独立配置开关.-> D
 ```
 
-全新机器需要 Python 3.10+，先执行：
+- **静态分支**：独立 Gaussian 库；当前 J7 使用由 RGB/多视角几何发现和训练得到的 3,273 点静态库，未使用蓝色阈值。联合阶段冻结静态位置、尺度与旋转，仅更新 opacity 和球谐外观（SH）。
+- **动态分支**：15,507 点统一 canonical Gaussian 池，加原 PIDG 时空形变场。点数是表示容量，不是鸭子数量；未知身份与遮挡保持不确定。
+- **原生合成**：静态和变形后的动态 Gaussian 在同一渲染器中共同深度排序、alpha 合成。动态单独渲染只用于明确标注的诊断。
+- **物理分支**：保留 PIDG 的速度/应力与相关接口；近期 J6/J7/J8 联合实验冻结物理参数、物理 Adam 和图缓存，属于 RGB 重建续训，不能称为新增物理训练。
+- **来源限制**：当前静态发现已移除蓝色阈值，但动态父模型仍有历史颜色条件掩膜来源。整模型不能称为从零完全无标签重建。
+
+新增研究模块默认关闭。`src/physgauss` 是早期独立参考架构；正式 PIDG 原生实验主要位于 `reproduction/`、`variants/` 和 `pidg_ext/`，两者的结果不能混用。
+
+## 最近实验结果
+
+以下 RGB 指标来自对应协议的 30 张验证图、原生宽度 1600；它们不是独立三维几何指标。
+
+| 实验 | 做了什么 | 实测结果与结论 |
+|---|---|---|
+| [J6：I10 静动态联合](experiments/staged_reconstruction/RubberDuck_I10_joint/v1/assessment.md) | 匹配的静态冻结/静态 opacity 与 SH 联合，两臂各 2,000 步 | 联合 PSNR **31.9947 dB**，较对照 +0.5935 dB；动态碎裂与暗色拖尾仍存在 |
+| [J7：无蓝色阈值静态库融合](experiments/staged_reconstruction/RubberDuck_colorfree_joint/v1/assessment.md) | 用 RGB/几何静态库替换旧库，匹配联合训练各 2,000 步 | 候选 PSNR **34.0451 dB**，对照 32.1062 dB；外观改善，未通过完整几何清理门槛 |
+| [J8：J7＋长期观测记忆](experiments/staged_reconstruction/RubberDuck_J7_long_memory/v1/assessment.md) | 可保存、可暂停/撤销的观测记忆，匹配续训各 2,000 步 | 记忆组 **34.1731 dB**，对照 34.3005 dB；局部追踪改善，未稳定修复完整性，保留 J7 |
+| [V0：相机×时间检查](experiments/staged_reconstruction/RubberDuck_view_time_audit/v1/assessment.md) | J7/J8 三模型、共 **1,446** 组只读交叉渲染；独立进程逐值复算 | 支持训练轨迹附近拟合较好的现象；灰色动态支撑仍有拖尾，不能只归因颜色或静态遮挡 |
+
+### 固定时间、改变相机
+
+下图来自 J7。所有格子使用同一时间；上排是 RGB，下排移除静态遮挡并把动态 Gaussian 统一渲染为灰色。绿色框是该时间的原训练相机，左右相机视线分别偏离约 42.8°/45.5°。
+
+![J7 固定时间跨视角 RGB 与灰色动态支撑](docs/assets/J7_camera_time_a60.png)
+
+原相机 RGB 相对完整，但灰色支撑已经有大片拉长区域；换视角后表面明显碎裂。这支持轨迹相关拟合和几何欠约束，**没有同时间的新视角真值，因此不能证明过拟合是唯一原因或给出真实几何误差**。
+
+训练派生划分有 120 张训练图、120 个精确时间和 120 个不同相机位姿，同时间多相机观测为 0。该 120/30/50 重建划分与官方基线的 150/50 划分不同，不能直接混合比较。Rubber Duck 是 PIDG 发布的物理基准场景，不应将目录中的 `real` 标签解释为本项目采集的真实相机数据。
+
+更多完整记录：[S1–S6 汇总](experiments/staged_reconstruction/final_summary.md)、[J7/J8/V0 协议与审计](experiments/staged_reconstruction/)。失败候选、CUDA 恢复差异与未晋级结果均保留，没有只展示最优指标。
+
+## 获取项目
 
 ```powershell
-.\scripts\bootstrap.ps1 -PythonExecutable 'python' -Cpu
+git clone -c core.autocrlf=false https://github.com/JiruiUk/PhysGauss-.git
+Set-Location PhysGauss-
 ```
 
-若 Python 不在 PATH，`-PythonExecutable` 传入 Python 可执行文件的绝对路径。`-Cpu` 安装 CPU PyTorch；GPU 环境需按 [PyTorch 官方安装说明](https://pytorch.org/get-started/locally/)选择与 CUDA 匹配的 wheel，再安装项目。无需额外 YAML 依赖，配置采用 JSON。
+部分实验使用源码原始字节的 SHA256；避免自动换行转换，并遵循对应实验的 `.gitattributes` 和冻结清单。
 
-## 单独执行
+仓库包含代码、配置、文本报告及部分小型可视化；以下内容不随 Git 上传：
+
+- `data/` 数据集与派生资产；
+- `runs/` 完整模型、Adam、RNG、相机状态等检查点；
+- `models/` 预训练模型、第三方本地下载与 `third_party/`；
+- `envs/`、缓存、编译产物和临时目录；
+- 未纳入版本控制的批量 `output/` 渲染、视频与点云。
+
+已有历史提交中的小型输出保留。实验报告内的本地绝对路径、完整视频/PLY 和检查点哈希是来源记录，不代表克隆后相应资产已存在。**J7/J8 等完整继承链需要取得协议指定且 SHA 匹配的本地资产，不能仅凭克隆直接恢复。**
+
+## 运行与验证
+
+### 1. 原生 PIDG 路径
+
+已使用的环境为 Windows、Python 3.11.14、PyTorch 2.8.0+cu128、CUDA Toolkit 12.8、MSVC 14.44、RTX 5070 Ti。该组合是已验证记录，不是对所有硬件/平台的兼容承诺。
+
+上游版本：
+
+| 依赖 | 固定来源 |
+|---|---|
+| PIDG | [官方仓库](https://github.com/SCAILab-USTC/Physics-Informed-Deformable-Gaussian-Splatting)，`b77fd2107a50c875d7219bb4f82388d5e5ea1319` |
+| 光流 rasterizer | [上游仓库](https://github.com/HaoqinHong/flow-based-diff-gaussian-rasterization)，`2146a1c0dc3558644af420f20c21a0ad07ffa67a` |
+| PIDG 数据 | [Hugging Face](https://huggingface.co/datasets/HaoqinHong/Physics-Informed-Deformable-Gaussian-Splatting)，`46b23520acaaf5d58938fb19b50a3a62d12c55df` |
+
+先将对应上游代码及子模块放到 `third_party/PIDG/`，准备 `envs/pidg-cu128/` 环境并安装 [固定依赖](reproduction/requirements-windows.txt)。数据下载/哈希校验入口为 [download_dataset.py](reproduction/scripts/download_dataset.py)，其 `--manifest` 输入需提供对应发布修订的文件清单。详细兼容修复和论文/公开代码差异见 [复现说明](reproduction/README.md)。
 
 ```powershell
-.\.venv\Scripts\python.exe -m physgauss make-synthetic --output data/synthetic
-.\.venv\Scripts\python.exe -m physgauss validate-data --manifest data/synthetic/manifest.json
-.\.venv\Scripts\python.exe -m physgauss train --manifest data/synthetic/manifest.json --config configs/smoke.json --output runs/experiment
-.\.venv\Scripts\python.exe -m physgauss evaluate --manifest data/synthetic/manifest.json --checkpoint runs/experiment/checkpoint.pt --output runs/experiment/evaluation
-.\.venv\Scripts\python.exe -m physgauss export-state --manifest data/synthetic/manifest.json --checkpoint runs/experiment/checkpoint.pt --time 0.5 --output runs/experiment/state_t050.npz
+# 在准备好上游源码和 Python/CUDA 环境后执行。
+envs/pidg-cu128/python.exe reproduction/scripts/apply_compatibility.py --repo third_party/PIDG
+./reproduction/scripts/build_extensions.ps1 -ProjectRoot (Get-Location).Path
+
+# 数据位于 data/PIDG/，CUDA 扩展可用后，先跑独立 smoke。
+./reproduction/scripts/run_reproduction.ps1 -Smoke -Tag localcheck
+
+# Rubber Duck 官方公开代码基线；新 Tag 避免覆盖已有结果。
+./reproduction/scripts/run_reproduction.ps1 -Scenes rubber_duck -Iterations 50000 -Tag baseline1
 ```
 
-已有 synthetic 数据时跳过 `make-synthetic`。续训保持模型／损失／物理设置一致，`--steps` 表示目标总步数：
+上游配置将 Rubber Duck 拼写为 `rubber_dack`；runner 已显式映射。上述基线使用官方 split，与后续重建派生 split 分开记录。平台脚本包含本机路径/编译器设置，新机器应核对路径；不要修改历史冻结源码后把结果当成原协议重放。
+
+### 2. 默认关闭与只读诊断单测
+
+安装原生研究依赖后，以下测试无需启动训练：
 
 ```powershell
-.\.venv\Scripts\python.exe -m physgauss train --manifest data/synthetic/manifest.json --config configs/smoke.json --output runs/experiment --resume runs/experiment/checkpoint.pt --steps 60
+$env:PYTHONPATH = "$PWD;$PWD/src"
+envs/pidg-cu128/python.exe -m pytest tests/test_view_time_audit.py -q -p no:cacheprovider
+envs/pidg-cu128/python.exe -m variants.staged_reconstruction.view_time_audit.worker
+# 输出 V0_DISABLED，不加载模型或启动渲染。
 ```
 
-## 目录
+完整 V0 渲染需要协议中的三个原模型及父链资产。启用前检查 `plan.md`、`protocol.json`、冻结 SHA、停止文件和锁；不要为了运行演示而重启已完成训练。
+
+### 3. 早期 CPU 参考架构（独立工程 smoke）
+
+这一路径验证 manifest、参考渲染器、训练/恢复与状态导出接口，**不是原生 PIDG 基准，也不生成上表结果**。
+
+```powershell
+./scripts/bootstrap.ps1 -PythonExecutable python -Cpu
+./.venv/Scripts/python.exe -m physgauss --help
+./scripts/run_smoke.ps1 -RunName local_reference_smoke
+```
+
+配置在 `configs/`，数据约定在 [docs/data_contract.md](docs/data_contract.md)。
+
+## 目录导航
 
 ```text
-PhysGauss/
-├── configs/                 # smoke / public image-only / trachea CT-assisted
-├── src/physgauss/
-│   ├── data/                # manifest 校验、加载、合成数据
-│   ├── models/              # canonical GS、形变、材料、不确定性
-│   ├── rendering/           # Renderer 协议与 PyTorch 参考实现
-│   ├── physics/             # 动量、轨迹、自适应采样、warmup
-│   ├── engine/              # 训练、续训、评估、状态导出
-│   ├── config.py
-│   ├── losses.py
-│   └── cli.py
-├── tests/                   # 解析物理例、渲染梯度、协议与续训测试
-├── scripts/                 # Windows 环境安装与端到端 smoke
-├── docs/                    # 架构、数据约定、研究路线、验证记录
-├── data/                    # 本地数据，Git 忽略
-└── runs/                    # 实验与模型，Git 忽略
+reproduction/                    PIDG 来源、环境、兼容修复、基线训练/恢复脚本
+variants/staged_reconstruction/   静态发现、统一动态池、追踪/结构/联合/记忆实验
+variants/                        其他独立历史对照及其原生代码快照
+pidg_ext/                        独立物理扩展算子
+src/physgauss/                   早期 CPU/PyTorch 参考架构
+experiments/                     协议、配置、评估、失败和独立审计记录
+tests/                          算子、默认关闭、状态与原生路径测试
+scripts/                        环境、实验与报告工具
+docs/                           技术说明与 README 示意图
+external/                       少量固定第三方源码/许可记录
 ```
 
-## 当前边界
+实际函数映射以 [PIDG_REPO_MAP.md](PIDG_REPO_MAP.md) 为准。实验计划里的“下一步”不是默认自动队列；恢复暂停任务需要用户明确指示。
 
-渲染器是有透视协方差投影和深度排序 alpha 合成的 PyTorch 小场景参考实现，复杂度 `O(NHW)`，限制 `N*H*W <= 2,000,000`。它支持反向传播，但不是正式 CUDA 3DGS 实现。模型用 Fourier features + MLP，尚未接入 4D decomposed hash grids、SH 外观或 densification/pruning。两个真实场景配置是起始模板；参数尚未通过真实实验调优，默认 CUDA 也不会自动切换渲染后端。
+## 实验约定与当前限制
 
-当前估计的是**速度与应力场**。没有接入本构关系、外部载荷、边界条件和参数 GT，因此尚不能可靠宣称估计了 Young's modulus、压力或材料常数。`density` 是给定常数；气管模板的 1000 kg/m³ 只是需要核实的初始假设。variance 是光度误差模型，也不等于校准过的物理参数后验。
+- 保留原 PIDG 路径，新增模块通过独立开关启用，不重写基线。
+- 单候选协议先声明输入、损失和门槛，再测试、训练与评估；每个里程碑独立提交。
+- 完整训练恢复包括模型、两个 Adam、参数绑定、RNG、相机采样及物理图；原生 CUDA 的长轨迹差异和用户接受的精确状态/固定梯度验收分别保留。
+- RGB/PSNR、alpha、D/alpha、训练图像轨迹和合成独立 GT 分开报告。低 alpha 黑色表示缺失，不能当作零几何误差。
+- 几何/身份不确定时保持未知；不根据暗色、RGB 残差或遮挡直接删点或判背景。
+- 当前仍缺少经过独立验证的完整动态表面、跨遮挡持续身份、厚度及接触几何。单次图像指标提升不代表这些问题已解决。
+- 本构、材料参数、多材料、未知力和可辨识性是 [AGENTS.md](AGENTS.md) 中的独立路线；不能把近期 RGB 实验写成已完成物理参数恢复，也不将固体本构用于烟/流体。
 
-合成 smoke 由同一个参考渲染器生成，只能验证工程闭环。评估会标记 `benchmark_compatible=false`：PSNR 是测试帧结果，SSIM 使用简化 3×3 窗口，LPIPS 尚未接入。正式刷点前需要完成 [后续路线](docs/roadmap.md) 中的真实数据和 evaluator 工作。
+## 上游与许可
 
-## 依据
-
-聊天参考：`chatgpt-conversation://6acdffb0-de6c-83eb-b0dd-e2cfdba87f87`，标题「物理变形高斯详解」。聊天里的 PDF／LaTeX 附件未取得，当前实现依据可读取的对话需求。
-
-PIDG 的动态高斯、材料场与公开数据设置已对照 [官方仓库](https://github.com/SCAILab-USTC/Physics-Informed-Deformable-Gaussian-Splatting)与[论文](https://ojs.aaai.org/index.php/AAAI/article/view/42474)核实。该项目采用独立基础实现，没有复制 PIDG 源码，也不是 PIDG 官方复现。
-
+本项目以 [Physics-Informed Deformable Gaussian Splatting](https://github.com/SCAILab-USTC/Physics-Informed-Deformable-Gaussian-Splatting) 为基础；论文见 [AAAI](https://ojs.aaai.org/index.php/AAAI/article/view/42474)。3DGS/rasterizer、hash encoder 和其他第三方源码保留各自来源及许可/文件头；本仓库不改变它们的许可条件。当前未为项目新增统一开源许可证。

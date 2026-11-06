@@ -24,3 +24,29 @@ variants/**/code_*/tmp_build/
 variants/upgrade/*.log
 variants/upgrade/controller.lock
 variants/constitutive_pidg/code/tmp_build/
+
+# Local weights, generated render collections and compiler/test scratch space.
+# Existing versioned evidence remains tracked; selected README figures are in docs/assets/.
+/models/
+/output/*
+/tmp/
+/tmp_build/
+/reproduction/flow-assets/
+*.pt
+*.pth
+*.safetensors
+*.ckpt
+*.log
+*.lock
+*.pid
+events.out.tfevents.*
+stop.request*
+
+# Machine-local settings and credentials.
+/.codex/
+/.agents/
+.env
+.env.*
+!.env.example
+*.pem
+*.pfx
