@@ -1189,3 +1189,17 @@ frozen experiments remain untouched.
   Original PIDG training, Gaussian/deformation/velocity/stress/flow/momentum,
   loaders, metrics and checkpoint paths remain as mapped above. This audit is
   not a new physics milestone or Gaussian training qualification.
+
+### L8 explicitly authorized local ordinal-depth pilot
+
+- `i10_ordinal_depth/core.py`: frozen Small robust order pairs with full/disjoint
+  calibration intervals, fit/check separation, default-off one-sided robust log
+  ranking and reversible evidence states; no absolute depth targets or labels.
+- `runtime.py`: complete J6/twoAdam/RNG/sampler/physics restoration, native own-row
+  visibility and RGB eligibility, local400 D/alpha supervision, pureRGB control,
+  static/physics/topology frozen; checkpoints include evidence controller.
+- `RubberDuck_ordinal_depth/launch.py`: native/flags-off/gradient qualification,
+  accepted independent fixed-gradient Adam recovery, one matched600-step pair.
+- Original training/config/Gaussian/deformation/velocity/stress/flow/momentum,
+  renderer/loaders/metrics/checkpoints retain previously mapped PIDG paths;
+  no physics extension or original PIDG rewrite. Test: test_i10_ordinal_depth.py.
