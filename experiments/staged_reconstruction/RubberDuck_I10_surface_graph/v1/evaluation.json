@@ -1,0 +1,1189 @@
+{
+  "checkpoint_audits": {
+    "rgb_control": {
+      "checkpoint_sha256": "7372e9536771afa3861d32a3c35785c442616f4f16534f25b241c05ed601ab43",
+      "complete_parent_states_exact": true,
+      "static_model_Adam_physics_model_Adam_and_graphs_frozen": true,
+      "all2000_sampler_replay": true
+    },
+    "surface_graph": {
+      "checkpoint_sha256": "96d728eb3901c1a1ad8a01c761224c8fcd79fef48a8a357098d216141019d299",
+      "complete_parent_states_exact": true,
+      "static_model_Adam_physics_model_Adam_and_graphs_frozen": true,
+      "all2000_sampler_replay": true
+    }
+  },
+  "validation": {
+    "frames": [
+      {
+        "frame": "train/0004",
+        "J6_parent": {
+          "PSNR": 32.05329895019531,
+          "SSIM": 0.9841787219047546,
+          "L1": 0.00248618028126657
+        },
+        "rgb_control": {
+          "PSNR": 31.824234008789062,
+          "SSIM": 0.9833654761314392,
+          "L1": 0.002610052702948451
+        },
+        "surface_graph": {
+          "PSNR": 31.270925521850586,
+          "SSIM": 0.9813393354415894,
+          "L1": 0.002924456028267741
+        }
+      },
+      {
+        "frame": "train/0011",
+        "J6_parent": {
+          "PSNR": 32.035316467285156,
+          "SSIM": 0.9845765233039856,
+          "L1": 0.002444289857521653
+        },
+        "rgb_control": {
+          "PSNR": 32.023590087890625,
+          "SSIM": 0.9845250844955444,
+          "L1": 0.002458574017509818
+        },
+        "surface_graph": {
+          "PSNR": 31.787755966186523,
+          "SSIM": 0.9834555387496948,
+          "L1": 0.0026401469949632883
+        }
+      },
+      {
+        "frame": "train/0018",
+        "J6_parent": {
+          "PSNR": 32.5270881652832,
+          "SSIM": 0.9857029914855957,
+          "L1": 0.002376693533733487
+        },
+        "rgb_control": {
+          "PSNR": 32.42866516113281,
+          "SSIM": 0.9853076338768005,
+          "L1": 0.0024418325629085302
+        },
+        "surface_graph": {
+          "PSNR": 32.3675651550293,
+          "SSIM": 0.984947919845581,
+          "L1": 0.0024871653877198696
+        }
+      },
+      {
+        "frame": "train/0024",
+        "J6_parent": {
+          "PSNR": 33.56655502319336,
+          "SSIM": 0.9867320656776428,
+          "L1": 0.0022272432688623667
+        },
+        "rgb_control": {
+          "PSNR": 33.589141845703125,
+          "SSIM": 0.9867900609970093,
+          "L1": 0.0022189542651176453
+        },
+        "surface_graph": {
+          "PSNR": 33.162742614746094,
+          "SSIM": 0.9855571389198303,
+          "L1": 0.002428563078865409
+        }
+      },
+      {
+        "frame": "train/0031",
+        "J6_parent": {
+          "PSNR": 32.233642578125,
+          "SSIM": 0.9841681718826294,
+          "L1": 0.0029023485258221626
+        },
+        "rgb_control": {
+          "PSNR": 32.45518493652344,
+          "SSIM": 0.9846699237823486,
+          "L1": 0.0028363706078380346
+        },
+        "surface_graph": {
+          "PSNR": 29.48019790649414,
+          "SSIM": 0.9787351489067078,
+          "L1": 0.004123265389353037
+        }
+      },
+      {
+        "frame": "train/0038",
+        "J6_parent": {
+          "PSNR": 31.90798568725586,
+          "SSIM": 0.984046995639801,
+          "L1": 0.0030781785026192665
+        },
+        "rgb_control": {
+          "PSNR": 31.48078155517578,
+          "SSIM": 0.983003556728363,
+          "L1": 0.003298019990324974
+        },
+        "surface_graph": {
+          "PSNR": 30.014720916748047,
+          "SSIM": 0.9802407026290894,
+          "L1": 0.003931338898837566
+        }
+      },
+      {
+        "frame": "train/0044",
+        "J6_parent": {
+          "PSNR": 32.506370544433594,
+          "SSIM": 0.9840089082717896,
+          "L1": 0.0029427935369312763
+        },
+        "rgb_control": {
+          "PSNR": 32.442657470703125,
+          "SSIM": 0.9837923645973206,
+          "L1": 0.0030000999104231596
+        },
+        "surface_graph": {
+          "PSNR": 31.528043746948242,
+          "SSIM": 0.9822327494621277,
+          "L1": 0.0033696338068693876
+        }
+      },
+      {
+        "frame": "train/0051",
+        "J6_parent": {
+          "PSNR": 32.93768310546875,
+          "SSIM": 0.9833849668502808,
+          "L1": 0.002897292608395219
+        },
+        "rgb_control": {
+          "PSNR": 32.790443420410156,
+          "SSIM": 0.9829145669937134,
+          "L1": 0.0029820872005075216
+        },
+        "surface_graph": {
+          "PSNR": 31.562728881835938,
+          "SSIM": 0.981952428817749,
+          "L1": 0.0033187223598361015
+        }
+      },
+      {
+        "frame": "train/0058",
+        "J6_parent": {
+          "PSNR": 33.65757369995117,
+          "SSIM": 0.9826890826225281,
+          "L1": 0.0028411350212991238
+        },
+        "rgb_control": {
+          "PSNR": 33.25217819213867,
+          "SSIM": 0.9820870161056519,
+          "L1": 0.002964458428323269
+        },
+        "surface_graph": {
+          "PSNR": 32.018524169921875,
+          "SSIM": 0.9811286926269531,
+          "L1": 0.003245971631258726
+        }
+      },
+      {
+        "frame": "train/0064",
+        "J6_parent": {
+          "PSNR": 33.437904357910156,
+          "SSIM": 0.9815880656242371,
+          "L1": 0.002943216124549508
+        },
+        "rgb_control": {
+          "PSNR": 33.05110168457031,
+          "SSIM": 0.9811180233955383,
+          "L1": 0.003078809008002281
+        },
+        "surface_graph": {
+          "PSNR": 32.603118896484375,
+          "SSIM": 0.9808377027511597,
+          "L1": 0.003156013088300824
+        }
+      },
+      {
+        "frame": "train/0071",
+        "J6_parent": {
+          "PSNR": 32.99154281616211,
+          "SSIM": 0.9809215068817139,
+          "L1": 0.0031270068138837814
+        },
+        "rgb_control": {
+          "PSNR": 32.330230712890625,
+          "SSIM": 0.9798889756202698,
+          "L1": 0.0034011206589639187
+        },
+        "surface_graph": {
+          "PSNR": 32.72545623779297,
+          "SSIM": 0.9804854989051819,
+          "L1": 0.00323044927790761
+        }
+      },
+      {
+        "frame": "train/0078",
+        "J6_parent": {
+          "PSNR": 31.855146408081055,
+          "SSIM": 0.9785585403442383,
+          "L1": 0.003488645190373063
+        },
+        "rgb_control": {
+          "PSNR": 31.85077476501465,
+          "SSIM": 0.9783213138580322,
+          "L1": 0.0035287593491375446
+        },
+        "surface_graph": {
+          "PSNR": 31.646190643310547,
+          "SSIM": 0.9776797294616699,
+          "L1": 0.003635033965110779
+        }
+      },
+      {
+        "frame": "train/0084",
+        "J6_parent": {
+          "PSNR": 29.594226837158203,
+          "SSIM": 0.9740798473358154,
+          "L1": 0.004619202576577663
+        },
+        "rgb_control": {
+          "PSNR": 29.68134880065918,
+          "SSIM": 0.9744497537612915,
+          "L1": 0.004555821418762207
+        },
+        "surface_graph": {
+          "PSNR": 29.456510543823242,
+          "SSIM": 0.9733998775482178,
+          "L1": 0.004756934475153685
+        }
+      },
+      {
+        "frame": "train/0091",
+        "J6_parent": {
+          "PSNR": 30.831214904785156,
+          "SSIM": 0.976618766784668,
+          "L1": 0.003978523891419172
+        },
+        "rgb_control": {
+          "PSNR": 30.647600173950195,
+          "SSIM": 0.9759213924407959,
+          "L1": 0.004107865039259195
+        },
+        "surface_graph": {
+          "PSNR": 30.311182022094727,
+          "SSIM": 0.9749087691307068,
+          "L1": 0.004306532442569733
+        }
+      },
+      {
+        "frame": "train/0098",
+        "J6_parent": {
+          "PSNR": 31.14932632446289,
+          "SSIM": 0.9765233993530273,
+          "L1": 0.003891902742907405
+        },
+        "rgb_control": {
+          "PSNR": 31.21552276611328,
+          "SSIM": 0.9766984581947327,
+          "L1": 0.00389675609767437
+        },
+        "surface_graph": {
+          "PSNR": 30.905994415283203,
+          "SSIM": 0.9756168723106384,
+          "L1": 0.004075994249433279
+        }
+      },
+      {
+        "frame": "train/0104",
+        "J6_parent": {
+          "PSNR": 31.76851463317871,
+          "SSIM": 0.978481113910675,
+          "L1": 0.003604056779295206
+        },
+        "rgb_control": {
+          "PSNR": 32.055110931396484,
+          "SSIM": 0.9786978960037231,
+          "L1": 0.0035678360145539045
+        },
+        "surface_graph": {
+          "PSNR": 31.130704879760742,
+          "SSIM": 0.9768520593643188,
+          "L1": 0.0039887274615466595
+        }
+      },
+      {
+        "frame": "train/0111",
+        "J6_parent": {
+          "PSNR": 32.44886779785156,
+          "SSIM": 0.9800988435745239,
+          "L1": 0.003257994307205081
+        },
+        "rgb_control": {
+          "PSNR": 32.097564697265625,
+          "SSIM": 0.9795992970466614,
+          "L1": 0.0034072757698595524
+        },
+        "surface_graph": {
+          "PSNR": 30.031938552856445,
+          "SSIM": 0.9772331118583679,
+          "L1": 0.004169358406215906
+        }
+      },
+      {
+        "frame": "train/0118",
+        "J6_parent": {
+          "PSNR": 30.80374526977539,
+          "SSIM": 0.9787120223045349,
+          "L1": 0.003773836186155677
+        },
+        "rgb_control": {
+          "PSNR": 30.87881088256836,
+          "SSIM": 0.9789807796478271,
+          "L1": 0.0037675455678254366
+        },
+        "surface_graph": {
+          "PSNR": 29.543380737304688,
+          "SSIM": 0.976746141910553,
+          "L1": 0.004411784000694752
+        }
+      },
+      {
+        "frame": "train/0124",
+        "J6_parent": {
+          "PSNR": 31.258670806884766,
+          "SSIM": 0.9793321490287781,
+          "L1": 0.0036999934818595648
+        },
+        "rgb_control": {
+          "PSNR": 31.08614158630371,
+          "SSIM": 0.9791496396064758,
+          "L1": 0.003730667755007744
+        },
+        "surface_graph": {
+          "PSNR": 31.021574020385742,
+          "SSIM": 0.9786810278892517,
+          "L1": 0.003838172648102045
+        }
+      },
+      {
+        "frame": "train/0131",
+        "J6_parent": {
+          "PSNR": 33.06453323364258,
+          "SSIM": 0.9818541407585144,
+          "L1": 0.0032008353155106306
+        },
+        "rgb_control": {
+          "PSNR": 31.787099838256836,
+          "SSIM": 0.9803574085235596,
+          "L1": 0.0035771497059613466
+        },
+        "surface_graph": {
+          "PSNR": 32.056060791015625,
+          "SSIM": 0.9810078740119934,
+          "L1": 0.003477375488728285
+        }
+      },
+      {
+        "frame": "train/0138",
+        "J6_parent": {
+          "PSNR": 32.2402458190918,
+          "SSIM": 0.9799823760986328,
+          "L1": 0.0033944661263376474
+        },
+        "rgb_control": {
+          "PSNR": 32.14048767089844,
+          "SSIM": 0.980008065700531,
+          "L1": 0.0034157801419496536
+        },
+        "surface_graph": {
+          "PSNR": 31.323225021362305,
+          "SSIM": 0.9787945747375488,
+          "L1": 0.0037113598082214594
+        }
+      },
+      {
+        "frame": "train/0144",
+        "J6_parent": {
+          "PSNR": 31.146982192993164,
+          "SSIM": 0.9774355292320251,
+          "L1": 0.0037830809596925974
+        },
+        "rgb_control": {
+          "PSNR": 30.96923065185547,
+          "SSIM": 0.977623701095581,
+          "L1": 0.0038135868962854147
+        },
+        "surface_graph": {
+          "PSNR": 30.7662410736084,
+          "SSIM": 0.9767293930053711,
+          "L1": 0.003966596908867359
+        }
+      },
+      {
+        "frame": "train/0151",
+        "J6_parent": {
+          "PSNR": 30.739871978759766,
+          "SSIM": 0.975875198841095,
+          "L1": 0.003994752652943134
+        },
+        "rgb_control": {
+          "PSNR": 31.63138198852539,
+          "SSIM": 0.9778000116348267,
+          "L1": 0.0036157446447759867
+        },
+        "surface_graph": {
+          "PSNR": 30.77752685546875,
+          "SSIM": 0.9760568141937256,
+          "L1": 0.003994828090071678
+        }
+      },
+      {
+        "frame": "train/0158",
+        "J6_parent": {
+          "PSNR": 31.76905059814453,
+          "SSIM": 0.9774503111839294,
+          "L1": 0.0035532822366803885
+        },
+        "rgb_control": {
+          "PSNR": 31.822593688964844,
+          "SSIM": 0.977786123752594,
+          "L1": 0.0035240361467003822
+        },
+        "surface_graph": {
+          "PSNR": 31.63494110107422,
+          "SSIM": 0.9768495559692383,
+          "L1": 0.0036657119635492563
+        }
+      },
+      {
+        "frame": "train/0164",
+        "J6_parent": {
+          "PSNR": 31.819639205932617,
+          "SSIM": 0.9790430665016174,
+          "L1": 0.0034107177052646875
+        },
+        "rgb_control": {
+          "PSNR": 31.931983947753906,
+          "SSIM": 0.9793912172317505,
+          "L1": 0.0033659155014902353
+        },
+        "surface_graph": {
+          "PSNR": 31.705223083496094,
+          "SSIM": 0.9789319634437561,
+          "L1": 0.0034545434173196554
+        }
+      },
+      {
+        "frame": "train/0171",
+        "J6_parent": {
+          "PSNR": 32.2558479309082,
+          "SSIM": 0.9808104038238525,
+          "L1": 0.0032318951562047005
+        },
+        "rgb_control": {
+          "PSNR": 31.86395263671875,
+          "SSIM": 0.9797573685646057,
+          "L1": 0.0034038343001157045
+        },
+        "surface_graph": {
+          "PSNR": 32.007511138916016,
+          "SSIM": 0.9799913167953491,
+          "L1": 0.0033653038553893566
+        }
+      },
+      {
+        "frame": "train/0178",
+        "J6_parent": {
+          "PSNR": 32.12526321411133,
+          "SSIM": 0.9802050590515137,
+          "L1": 0.003332281019538641
+        },
+        "rgb_control": {
+          "PSNR": 31.466922760009766,
+          "SSIM": 0.9789081811904907,
+          "L1": 0.003567714476957917
+        },
+        "surface_graph": {
+          "PSNR": 31.60100746154785,
+          "SSIM": 0.9792888760566711,
+          "L1": 0.0035378802567720413
+        }
+      },
+      {
+        "frame": "train/0184",
+        "J6_parent": {
+          "PSNR": 32.03255081176758,
+          "SSIM": 0.979469895362854,
+          "L1": 0.003326999954879284
+        },
+        "rgb_control": {
+          "PSNR": 30.48843002319336,
+          "SSIM": 0.9765377044677734,
+          "L1": 0.0038913211319595575
+        },
+        "surface_graph": {
+          "PSNR": 30.462814331054688,
+          "SSIM": 0.976992130279541,
+          "L1": 0.0038862761575728655
+        }
+      },
+      {
+        "frame": "train/0191",
+        "J6_parent": {
+          "PSNR": 31.66411590576172,
+          "SSIM": 0.9787331223487854,
+          "L1": 0.003417533589527011
+        },
+        "rgb_control": {
+          "PSNR": 30.484882354736328,
+          "SSIM": 0.9767721891403198,
+          "L1": 0.003856004448607564
+        },
+        "surface_graph": {
+          "PSNR": 30.468368530273438,
+          "SSIM": 0.9767670035362244,
+          "L1": 0.0038679344579577446
+        }
+      },
+      {
+        "frame": "train/0198",
+        "J6_parent": {
+          "PSNR": 31.41742515563965,
+          "SSIM": 0.9775025248527527,
+          "L1": 0.0036744524259120226
+        },
+        "rgb_control": {
+          "PSNR": 30.335678100585938,
+          "SSIM": 0.9756446480751038,
+          "L1": 0.004106174688786268
+        },
+        "surface_graph": {
+          "PSNR": 30.49612808227539,
+          "SSIM": 0.9759353995323181,
+          "L1": 0.004044037312269211
+        }
+      }
+    ],
+    "means": {
+      "J6_parent": {
+        "PSNR": 31.994673347473146,
+        "SSIM": 0.9804254770278931,
+        "L1": 0.0032966943457722665
+      },
+      "rgb_control": {
+        "PSNR": 31.736790911356607,
+        "SSIM": 0.9799955944220226,
+        "L1": 0.00339967228161792
+      },
+      "surface_graph": {
+        "PSNR": 31.195610109965006,
+        "SSIM": 0.9789791782697042,
+        "L1": 0.003633670376924177
+      }
+    },
+    "all30_native1600": true,
+    "semantic_masks_used": false,
+    "test_not_read": true,
+    "PSNR_nonregression_gate": false,
+    "parent_nonregression_gate": false,
+    "independent_geometry_GT": false
+  },
+  "diagnostics": {
+    "images": {
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t002_J6_parent_staticRGB_native.png": "46e4698dacaf9b2a9d4820f0d4bb111ea5cfa2dff262cd0f6533ff9a1518b4b1",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t002_J6_parent_dynamicRGB_native.png": "c5ebee60d0666a355f9f210b9304ff4c3025bb5320cc7ef4d67a7a61baa42080",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t002_J6_parent_jointRGB_native.png": "a3bdf524d6c7d22bd66cec0c63107455e18e9d67dd10f8136243af6b58a45bd5",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t002_J6_parent_staticAlpha_native.png": "cf534b4b6e2e2a05c0e7f45fa21c7078aa9891511aa49d1be184f61250f52297",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t002_J6_parent_dynamicAlpha_native.png": "8c12b43722caf05dc2be3e9223eaaf2061b1c25b05058c8eb2c66b1263fa66dd",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t002_J6_parent_jointAlpha_native.png": "66aa57691ee7cf2a0641a9975e671112c21d66522a8288d23f40380954f4b28b",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t002_J6_parent_staticD-alpha_native.png": "52b9caf440d288efc3751948356e89ba405f84fcd951ce72c5086db3cee52e3f",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t002_J6_parent_dynamicD-alpha_native.png": "82d6160cc7be27492a50b99df769dc5d3d4455a6fd7444cf809f5407571aa8ef",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t002_J6_parent_jointD-alpha_native.png": "b70e8870274592a9c0476a1f73d3226b98216a6766bff82c0deee4f61187a215",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t002_rgb_control_staticRGB_native.png": "46e4698dacaf9b2a9d4820f0d4bb111ea5cfa2dff262cd0f6533ff9a1518b4b1",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t002_rgb_control_dynamicRGB_native.png": "5f4a80dcda7e335f23807aed706d9a6ab54f2bdf93e1276b58c86ea3c1c93aa8",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t002_rgb_control_jointRGB_native.png": "f919015ed18d539398b45060fb54a41ce5f14a7a3bbb0abcf39dfa34ac33f616",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t002_rgb_control_staticAlpha_native.png": "cf534b4b6e2e2a05c0e7f45fa21c7078aa9891511aa49d1be184f61250f52297",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t002_rgb_control_dynamicAlpha_native.png": "f7ef296107a2692442bec97ba73725aba0102716796965ff87423125f4460ff9",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t002_rgb_control_jointAlpha_native.png": "874612f1a999f8fea951d8c8ef0cc4c2fa67f96125871aa35ff1b3ff2d4d9b24",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t002_rgb_control_staticD-alpha_native.png": "52b9caf440d288efc3751948356e89ba405f84fcd951ce72c5086db3cee52e3f",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t002_rgb_control_dynamicD-alpha_native.png": "9f31a58452c9c797b071e592f9306787aabbe7347a112a2725e36e8e6786ae7e",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t002_rgb_control_jointD-alpha_native.png": "50ffcc9df400673b0b6c3e561014103325788d6478dc892bff842ba38f4f18d6",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t002_surface_graph_staticRGB_native.png": "46e4698dacaf9b2a9d4820f0d4bb111ea5cfa2dff262cd0f6533ff9a1518b4b1",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t002_surface_graph_dynamicRGB_native.png": "234133e9408c92285ea3d86c308c58de96072f0902d3f3ec0f1731c5abdfc2fe",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t002_surface_graph_jointRGB_native.png": "f5b0a3c51a1a723f98175dcbe2670699977632cf172a01c8446854a5581e5438",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t002_surface_graph_staticAlpha_native.png": "cf534b4b6e2e2a05c0e7f45fa21c7078aa9891511aa49d1be184f61250f52297",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t002_surface_graph_dynamicAlpha_native.png": "0ece981eeddcdb0bb8ab47112a3c3dec7901e2c9b7eee339facbba11d88c9c9b",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t002_surface_graph_jointAlpha_native.png": "0a277218ed5e4457f9421d6c358b5a3fc8eb4e40e8cd0a581c213fc20031e468",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t002_surface_graph_staticD-alpha_native.png": "52b9caf440d288efc3751948356e89ba405f84fcd951ce72c5086db3cee52e3f",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t002_surface_graph_dynamicD-alpha_native.png": "9fedfe7e505223981669ca1799724c09705a2cf6df6ca3357e014c0bc15bb617",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t002_surface_graph_jointD-alpha_native.png": "eb591acc32227af24ac2d51b47da19d43601824e0ef0bb5ad0a98e34748c0a5b",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t002_decomposition.png": "f30dc6e3bfffacdc688d5a638f312cdd7ee7488ee6f324ef86e47dbfa12d7db2",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t002_joint_comparison.png": "e7e70bd47ab327651d58905943370f268238900a6e306eb1c5e5aa840cc045a4",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t100_J6_parent_staticRGB_native.png": "46e4698dacaf9b2a9d4820f0d4bb111ea5cfa2dff262cd0f6533ff9a1518b4b1",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t100_J6_parent_dynamicRGB_native.png": "de78b620517d3fd19e8564fb39f08aaf494a2afcbe453845286c61fc294d4f6b",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t100_J6_parent_jointRGB_native.png": "4b25896cefa11edd9bcfde8081b979d89023105da9a49fa3727052b76436cb2f",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t100_J6_parent_staticAlpha_native.png": "cf534b4b6e2e2a05c0e7f45fa21c7078aa9891511aa49d1be184f61250f52297",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t100_J6_parent_dynamicAlpha_native.png": "47e08a1acc63cbd76b30876a7950317e687ca387bc56dcfa46bce437b880b6b5",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t100_J6_parent_jointAlpha_native.png": "8a817d548c2460a1718e4b363855f133cd2fdc4124523b74ce2264f0fcad448e",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t100_J6_parent_staticD-alpha_native.png": "52b9caf440d288efc3751948356e89ba405f84fcd951ce72c5086db3cee52e3f",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t100_J6_parent_dynamicD-alpha_native.png": "12626e0dbb2b1200670a031c364f1c57421460f06b90eb0c1db139540738c1d8",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t100_J6_parent_jointD-alpha_native.png": "2545cbe8c566135078e24f6b69b7e9042e563ef1b87c59b850d66afd904cad17",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t100_rgb_control_staticRGB_native.png": "46e4698dacaf9b2a9d4820f0d4bb111ea5cfa2dff262cd0f6533ff9a1518b4b1",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t100_rgb_control_dynamicRGB_native.png": "52b160dcd3deba9ff669aa6efcbad78423ec14d9734e27fc5bdce5ad49bc2b91",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t100_rgb_control_jointRGB_native.png": "535152b4378138cc691fce669c88a5fa2c74171298418306f24715f2fafc55f6",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t100_rgb_control_staticAlpha_native.png": "cf534b4b6e2e2a05c0e7f45fa21c7078aa9891511aa49d1be184f61250f52297",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t100_rgb_control_dynamicAlpha_native.png": "8045767b2420c8554c65d27e6b676592b9162b53c887d1e1d0921ddc816cd0f9",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t100_rgb_control_jointAlpha_native.png": "259c1d1f586568b740acc8a765c7ea0472f6da2969e145f168e709c901d75b2a",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t100_rgb_control_staticD-alpha_native.png": "52b9caf440d288efc3751948356e89ba405f84fcd951ce72c5086db3cee52e3f",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t100_rgb_control_dynamicD-alpha_native.png": "4c9a875ac94b8e8eeebd40c665a62028b9d8e6b2be8610a76f24935f7cd53e59",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t100_rgb_control_jointD-alpha_native.png": "8038230a10fec49b01ea587c14c29214ccb2195cc6c359ba1a7be69525578082",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t100_surface_graph_staticRGB_native.png": "46e4698dacaf9b2a9d4820f0d4bb111ea5cfa2dff262cd0f6533ff9a1518b4b1",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t100_surface_graph_dynamicRGB_native.png": "80035a65ef4f9b8f1e86532badc015dcadf57e9021663d5430ad48c1c050839a",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t100_surface_graph_jointRGB_native.png": "6b07046df7ec649385f00ada7f5e252f313a75b313a76fce4171ec11a7bb5789",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t100_surface_graph_staticAlpha_native.png": "cf534b4b6e2e2a05c0e7f45fa21c7078aa9891511aa49d1be184f61250f52297",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t100_surface_graph_dynamicAlpha_native.png": "bb020c28522319653ddd9ec0aa93e9e5aacca5d30a0dbf4fcac3ea1389b45e60",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t100_surface_graph_jointAlpha_native.png": "9bf1140dfcd734448f1558fd9bebbd575b0561e1d469291d5578f2824b91c4b2",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t100_surface_graph_staticD-alpha_native.png": "52b9caf440d288efc3751948356e89ba405f84fcd951ce72c5086db3cee52e3f",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t100_surface_graph_dynamicD-alpha_native.png": "90bf083b3f9dd9344de2794dac3d4e54acf8daacaa55bed55b748a75fbf52408",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t100_surface_graph_jointD-alpha_native.png": "f2c38824d2f73c77a6333d50e6d56dd546ae3cc10524d8d753a2ef3a0eaccc55",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t100_decomposition.png": "75397ed8a8ccaaa6cdbf086347f2510f1243e5f6b5d3ae9ae3b6e42b3e7e525c",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t100_joint_comparison.png": "b5230f7b2bd72f4c23d612b4b84400b6b870ffb0d82dac8a00778d0fe051d656",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t200_J6_parent_staticRGB_native.png": "46e4698dacaf9b2a9d4820f0d4bb111ea5cfa2dff262cd0f6533ff9a1518b4b1",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t200_J6_parent_dynamicRGB_native.png": "431c7ef99502964b63a3cae5086d6ae0b778e4dc884b1f716c5e6d65749b5d99",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t200_J6_parent_jointRGB_native.png": "9f679674bfd5d55c45e91e3f4ed29f0c8cfb1ac17fbeb9a147c194db5c14c2e5",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t200_J6_parent_staticAlpha_native.png": "cf534b4b6e2e2a05c0e7f45fa21c7078aa9891511aa49d1be184f61250f52297",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t200_J6_parent_dynamicAlpha_native.png": "83f9383a9befba29e76a6a19225b936a91eb691cde73b9be6b8d6e230f3dfbcf",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t200_J6_parent_jointAlpha_native.png": "6cefe23bd53ed70991e25d03a15e047a30377b40a528306ded5f748a5d5c6603",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t200_J6_parent_staticD-alpha_native.png": "52b9caf440d288efc3751948356e89ba405f84fcd951ce72c5086db3cee52e3f",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t200_J6_parent_dynamicD-alpha_native.png": "1acca1cb065643b4bfe6b82216ed6119e48c727062a82fb3af63df4bfe1a4832",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t200_J6_parent_jointD-alpha_native.png": "57e1005283c3fb71d7b18f60564ee87a42224b7b810a93ea0aff1e12f4d077d0",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t200_rgb_control_staticRGB_native.png": "46e4698dacaf9b2a9d4820f0d4bb111ea5cfa2dff262cd0f6533ff9a1518b4b1",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t200_rgb_control_dynamicRGB_native.png": "01271aac73303cc941beffb7890466e6c4d330226bf61ff1530501b4d0709fb6",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t200_rgb_control_jointRGB_native.png": "56decb5f9feeccbaddbec8ff87c987ab855128970d7c88dc5501569493158f61",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t200_rgb_control_staticAlpha_native.png": "cf534b4b6e2e2a05c0e7f45fa21c7078aa9891511aa49d1be184f61250f52297",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t200_rgb_control_dynamicAlpha_native.png": "01006f7f415668e8aba9e2e813e8e3c4ec7063bce5840f816db6462e972fa3a0",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t200_rgb_control_jointAlpha_native.png": "a74e65d7c9105dea06515f6814bc32bc83cb96a9e063a5f135afc6198f23f4d7",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t200_rgb_control_staticD-alpha_native.png": "52b9caf440d288efc3751948356e89ba405f84fcd951ce72c5086db3cee52e3f",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t200_rgb_control_dynamicD-alpha_native.png": "4e7dc556f7382888d309a9e2203ecd07d76f20517c3e6fad2c250f8deb29e361",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t200_rgb_control_jointD-alpha_native.png": "52c86ea952674a8b3e763016c1107e8b5c4fa9d6d6a08fb16ff133f83b721485",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t200_surface_graph_staticRGB_native.png": "46e4698dacaf9b2a9d4820f0d4bb111ea5cfa2dff262cd0f6533ff9a1518b4b1",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t200_surface_graph_dynamicRGB_native.png": "7df453d1876d4a51152a86024b98eeeca3a2515fc5754e5d0475b20ba65060b6",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t200_surface_graph_jointRGB_native.png": "3b12f90208c8305e49642681dac05ce717cf388e37e1f3ad0f39db0647f5fad4",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t200_surface_graph_staticAlpha_native.png": "cf534b4b6e2e2a05c0e7f45fa21c7078aa9891511aa49d1be184f61250f52297",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t200_surface_graph_dynamicAlpha_native.png": "5405a44bdf2347235983140d7390245ee4beaa3e28a93f51c82aafe7188e298c",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t200_surface_graph_jointAlpha_native.png": "23c79db0abd713cf05f0489f11970d3c1ec66192baa112db22e6bdc05ae8ca68",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t200_surface_graph_staticD-alpha_native.png": "52b9caf440d288efc3751948356e89ba405f84fcd951ce72c5086db3cee52e3f",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t200_surface_graph_dynamicD-alpha_native.png": "c013e61480c76c7491cee6930bc6275a72da774081f841336d31c9c1a8120cf4",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t200_surface_graph_jointD-alpha_native.png": "05f3a5dce03af65067357001a91a3dee6621a0371afa4a75504a7f25dbd32253",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t200_decomposition.png": "176f80527fd7fa73d44f148daa090d1cbe2cb407417030c6b7078aa17528c08a",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c086_t200_joint_comparison.png": "c4229ac5032570fd7c978e4304db07e3a8ea86e9641920a695f9bc6a37c96f4a",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t002_J6_parent_staticRGB_native.png": "3fd5829d1c42d7ff68ae20786768eb39d7c40f6b39a7feb70dd1e8d73f8cf514",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t002_J6_parent_dynamicRGB_native.png": "dad34291506f0362b0699add2a92c4ce50a8cf2182116b76c2525b67e8e2398d",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t002_J6_parent_jointRGB_native.png": "b7d822318ae96e6f70afef44aa45c6629ba7fdae661d079916a32910dd279b1e",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t002_J6_parent_staticAlpha_native.png": "a85f0d95c00c1fd9cb0b2a5aa8b704384aab141d40ac8a57ad3461cfe824f657",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t002_J6_parent_dynamicAlpha_native.png": "1eb995d177af2aaeba205b5d2b04777005e83237b4ee65c21729bb53be5dcdf2",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t002_J6_parent_jointAlpha_native.png": "2238c8c7eacfd9ecb77ffe1c315907465a40e1c219bc8990ab6b248e8d72aca5",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t002_J6_parent_staticD-alpha_native.png": "1ed4a7b5489491c82d5e713fc6866d3acf8bbbdb2877a98711fed555e6e79030",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t002_J6_parent_dynamicD-alpha_native.png": "a3388e57192233ff2ac0eee1eb72cf688e71b08367d686c1d4cdd3b0ca5f78af",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t002_J6_parent_jointD-alpha_native.png": "b59e2764037de097b60fccdbc369ec2a5431296f508a4d7421b296bcfb0afc6a",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t002_rgb_control_staticRGB_native.png": "3fd5829d1c42d7ff68ae20786768eb39d7c40f6b39a7feb70dd1e8d73f8cf514",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t002_rgb_control_dynamicRGB_native.png": "a50dbbcdb7e408e91a5d00765e4ab23c12b463e21aaa47369c686d2945250663",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t002_rgb_control_jointRGB_native.png": "c2e36e64a23337d202682e7e0d45b21b5685e993b858473a01e31759d6b47e0f",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t002_rgb_control_staticAlpha_native.png": "a85f0d95c00c1fd9cb0b2a5aa8b704384aab141d40ac8a57ad3461cfe824f657",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t002_rgb_control_dynamicAlpha_native.png": "f2527101b86a6f7b6ce819798b565ba83dae49f7c31971e6121ad49714b018e3",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t002_rgb_control_jointAlpha_native.png": "608de5435c0fe8a3a81d7e9a96fbd168954356d6e9cbb736d25115d1900a7d70",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t002_rgb_control_staticD-alpha_native.png": "1ed4a7b5489491c82d5e713fc6866d3acf8bbbdb2877a98711fed555e6e79030",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t002_rgb_control_dynamicD-alpha_native.png": "60d9f4581d5604599695cc54c0e296a559edbcbb9d56ce3bf6bf817130e07988",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t002_rgb_control_jointD-alpha_native.png": "f3bc3b675c304eeed8e08d32d11570eb033d5aaf7213f7c25e44ace90c3caf37",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t002_surface_graph_staticRGB_native.png": "3fd5829d1c42d7ff68ae20786768eb39d7c40f6b39a7feb70dd1e8d73f8cf514",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t002_surface_graph_dynamicRGB_native.png": "015862d37f8231c8ac41c656c3c2697ca331e418cd241daad4edd1e6c60c7728",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t002_surface_graph_jointRGB_native.png": "c387075e866771bcbb7ded8c6e83b56413e4092d722e47ffd75e7967cf7b38b4",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t002_surface_graph_staticAlpha_native.png": "a85f0d95c00c1fd9cb0b2a5aa8b704384aab141d40ac8a57ad3461cfe824f657",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t002_surface_graph_dynamicAlpha_native.png": "38c13b045d07dd6242035320b6f1b16bf10357277e9c1ab8b075d7d343947e16",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t002_surface_graph_jointAlpha_native.png": "47412413d4c87cc3b9295727735e6dd588821a65d57e637bd932ac84e006d430",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t002_surface_graph_staticD-alpha_native.png": "1ed4a7b5489491c82d5e713fc6866d3acf8bbbdb2877a98711fed555e6e79030",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t002_surface_graph_dynamicD-alpha_native.png": "6ddb1f00189b1456833cbda83a00564ee59d6c7236cf7a9f254b1f165f9e14ba",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t002_surface_graph_jointD-alpha_native.png": "4773e5b48b8af2674bce7cf1effb277acf8088ff4f768995c163292019bcd5da",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t002_decomposition.png": "806f49797679b2c0095f25b23fb8523ab9e80bc1142ad32bdee6bdc17a9f7879",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t002_joint_comparison.png": "ab40a158da51746bac7059b67b7021227cc092ab3e2f39102fb8be72a8ed4553",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t100_J6_parent_staticRGB_native.png": "3fd5829d1c42d7ff68ae20786768eb39d7c40f6b39a7feb70dd1e8d73f8cf514",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t100_J6_parent_dynamicRGB_native.png": "625b69d8d0ce5a01eae1fd8f6d2549b1229747990c18cfc8fa19495420aaec18",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t100_J6_parent_jointRGB_native.png": "cab4c91857243442d4297e9ebd6a7c0ee98a85ae4edfa9f0837a1609d63365ef",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t100_J6_parent_staticAlpha_native.png": "a85f0d95c00c1fd9cb0b2a5aa8b704384aab141d40ac8a57ad3461cfe824f657",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t100_J6_parent_dynamicAlpha_native.png": "f75b5b0e1af71349883e8d649348e6bfbcaff478bc4f4f5ed71f676eab7ad9e2",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t100_J6_parent_jointAlpha_native.png": "3aa2cc4364ad3b6c1d033783727843a75a01cd33ce8f9ae6f14db44365c88d77",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t100_J6_parent_staticD-alpha_native.png": "1ed4a7b5489491c82d5e713fc6866d3acf8bbbdb2877a98711fed555e6e79030",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t100_J6_parent_dynamicD-alpha_native.png": "bd3d099c51717f012eb31eb58bdc28bcfa1f04295705b1737836d4a416b0cace",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t100_J6_parent_jointD-alpha_native.png": "8e27c68596d4a64acc88bbf71b895b2b6a1dfe4117e42bd41fb3e7c3af0bd873",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t100_rgb_control_staticRGB_native.png": "3fd5829d1c42d7ff68ae20786768eb39d7c40f6b39a7feb70dd1e8d73f8cf514",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t100_rgb_control_dynamicRGB_native.png": "00a796c482d54961433260115945f7467019affebdb2015e2a2fef9d5db8b9d6",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t100_rgb_control_jointRGB_native.png": "1ed34f4d004b17450dbb0665296843ee6355288af8170521a289c030c6ae9fa2",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t100_rgb_control_staticAlpha_native.png": "a85f0d95c00c1fd9cb0b2a5aa8b704384aab141d40ac8a57ad3461cfe824f657",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t100_rgb_control_dynamicAlpha_native.png": "4fd3a2979ea100e37ddc9706f9b760a6867d07c48d27053e7f13749602c8aa15",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t100_rgb_control_jointAlpha_native.png": "2968285ce3c4ed47abdbf46f57eb72799a583aa517e48c46a4dcd9e274d82a00",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t100_rgb_control_staticD-alpha_native.png": "1ed4a7b5489491c82d5e713fc6866d3acf8bbbdb2877a98711fed555e6e79030",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t100_rgb_control_dynamicD-alpha_native.png": "d818fd445ae272b4ec419f69a7f22867e2da346bc9ab234a830b87fb112c0839",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t100_rgb_control_jointD-alpha_native.png": "6d4022cb05c9ebb2ad4721cdc7b0f8991315eda82d08d4dff9aca2d7ae57c237",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t100_surface_graph_staticRGB_native.png": "3fd5829d1c42d7ff68ae20786768eb39d7c40f6b39a7feb70dd1e8d73f8cf514",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t100_surface_graph_dynamicRGB_native.png": "b3001fcb0b875c9a116da6e83cb63c13edc6b349bdbf3853ece62f5e3c694af4",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t100_surface_graph_jointRGB_native.png": "edefd5a7db75bda8fc018d72a003a864a833409f15ca60cfdeeea3c3cbb22c14",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t100_surface_graph_staticAlpha_native.png": "a85f0d95c00c1fd9cb0b2a5aa8b704384aab141d40ac8a57ad3461cfe824f657",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t100_surface_graph_dynamicAlpha_native.png": "5b0b03b2007583aa550654c5d20c89f747ebe84323e278795b7a99fac04f660b",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t100_surface_graph_jointAlpha_native.png": "235dfc6ecd168d18c4c6bc3ca52c3a36cbcf5bbd09c2f463c3b8560bac152628",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t100_surface_graph_staticD-alpha_native.png": "1ed4a7b5489491c82d5e713fc6866d3acf8bbbdb2877a98711fed555e6e79030",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t100_surface_graph_dynamicD-alpha_native.png": "753b3701b241e8d8572d6b59920946b73be4b55421bbe94c4063129437a176ef",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t100_surface_graph_jointD-alpha_native.png": "bc14f19e48e9051bfa210023b54007a3f55d77d95b0a28a00a450740cbd828bf",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t100_decomposition.png": "85b9332e50d9e370e17f1f097ed3438e657211e355e34dc430a788538822b20e",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t100_joint_comparison.png": "6ab7d6986fc00903016302283a90733de3e63da90238b5703b1c8b5047a5a3b3",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t200_J6_parent_staticRGB_native.png": "3fd5829d1c42d7ff68ae20786768eb39d7c40f6b39a7feb70dd1e8d73f8cf514",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t200_J6_parent_dynamicRGB_native.png": "2696dab316b4bfe03ced954a61019afe940dca18287094a090331ca14cae2134",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t200_J6_parent_jointRGB_native.png": "922ff6b9a834aeafd842c49dfa62983f1594d08e9346f0f9d6abb7d9bdd57623",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t200_J6_parent_staticAlpha_native.png": "a85f0d95c00c1fd9cb0b2a5aa8b704384aab141d40ac8a57ad3461cfe824f657",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t200_J6_parent_dynamicAlpha_native.png": "1989feca553aa1fa74a32e3286e75550fba61ffd6cd13ead0ee4ae85316c6cc4",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t200_J6_parent_jointAlpha_native.png": "1fc62132e7c39c1cd4c8aff2ad7e8ecf925c8bfbd2ea77264ba12345e6c8e842",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t200_J6_parent_staticD-alpha_native.png": "1ed4a7b5489491c82d5e713fc6866d3acf8bbbdb2877a98711fed555e6e79030",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t200_J6_parent_dynamicD-alpha_native.png": "b51e8d340dfca5b653b092761e40e09bc652de97b49ce1a586dcf0aaa07bb6ab",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t200_J6_parent_jointD-alpha_native.png": "36a1968d1ff4283653a3ff5973e801b75932d224a849b539bd0f3a47bf3804b8",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t200_rgb_control_staticRGB_native.png": "3fd5829d1c42d7ff68ae20786768eb39d7c40f6b39a7feb70dd1e8d73f8cf514",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t200_rgb_control_dynamicRGB_native.png": "d559974b209dbe3897128d02b2130d7675b93bea9175085beb1c8eef4a13a830",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t200_rgb_control_jointRGB_native.png": "9b2934ddee0e178424e03af6a47560e37355dd0596938d6606c11acb5f3bbc6d",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t200_rgb_control_staticAlpha_native.png": "a85f0d95c00c1fd9cb0b2a5aa8b704384aab141d40ac8a57ad3461cfe824f657",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t200_rgb_control_dynamicAlpha_native.png": "cf0e0cacc160a5ce72753252aa2e12339c5a39264468efe2f18d3ba5ff82b75a",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t200_rgb_control_jointAlpha_native.png": "b3a315552d459673de7a780e1411fd5b97b6ebd61987b09db8554daaa6ec72fd",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t200_rgb_control_staticD-alpha_native.png": "1ed4a7b5489491c82d5e713fc6866d3acf8bbbdb2877a98711fed555e6e79030",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t200_rgb_control_dynamicD-alpha_native.png": "ed46839f96ca65c9eb8b7afee02f4a9e17875ce4e491c5635436042180964231",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t200_rgb_control_jointD-alpha_native.png": "c1e20ed23be0e456863779ac1eb800278fc37dbb968590100fccefccee9b7eb9",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t200_surface_graph_staticRGB_native.png": "3fd5829d1c42d7ff68ae20786768eb39d7c40f6b39a7feb70dd1e8d73f8cf514",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t200_surface_graph_dynamicRGB_native.png": "06fc49b86b987081c951d1cd47c693534d89756e75f5268261d3056e64408e77",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t200_surface_graph_jointRGB_native.png": "397ce6aae045c3e6544ec7cc55aab1cbcf9e8fa30408431ee02d0a977863c736",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t200_surface_graph_staticAlpha_native.png": "a85f0d95c00c1fd9cb0b2a5aa8b704384aab141d40ac8a57ad3461cfe824f657",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t200_surface_graph_dynamicAlpha_native.png": "94847fa3be0c41acdcc24c2b20bf7c633320d8c57c3316b8438c4ddd2fa15040",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t200_surface_graph_jointAlpha_native.png": "9e99f633107fe1863c5579e46c4a865923aca5b038b335c4e53db882a0e83e8b",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t200_surface_graph_staticD-alpha_native.png": "1ed4a7b5489491c82d5e713fc6866d3acf8bbbdb2877a98711fed555e6e79030",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t200_surface_graph_dynamicD-alpha_native.png": "405823bf32af0262b9da3e394a41a6ab883b9f93a377969ffc5a1db7adc9fe03",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t200_surface_graph_jointD-alpha_native.png": "1102be89637f20232095862a18966e3d588fd57af8528e6fa09d18f96d3bc46c",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t200_decomposition.png": "45cd25919898256fd992e59945f4c91152fc022b212a336748c89ba1af808342",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/c188_t200_joint_comparison.png": "b71f2d21bf8cd494bb69effacac26c80ba22d7959acbdc2ff08b5842fe0cf443",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/observed_train_index000.png": "e16c5463454c9bb3ef76a6657879c10294e80edc96f0b2b37904bc42d5c72efa",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/observed_train_index024.png": "844fd9e806304df96e1518bf65800b53b051945ec7acacccfd93222acb984d10",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/observed_train_index048.png": "1b6fbc3cce1a8705d2664e95b8a91fd74befb91848ceb77b5b33616ade13cf15",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/observed_train_index072.png": "ae570dc5860a36919dcef98f8215226d684601a51bb378c9388aaf9a7faaac91",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/observed_train_index096.png": "b11ae39a8d580131e27d7a5bb3f3f15ab545c57aaa22caa990dcca0db2309359",
+      "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/observed_train_index119.png": "532157d59118050f8450d3f668a6068a379e0fbf39796e88e7701f6f2fe23af9"
+    },
+    "fixed_cameras": {
+      "86": {
+        "frame": "train/0086",
+        "transform": [
+          [
+            0.23971359431743622,
+            -0.6610111594200134,
+            0.711056649684906,
+            4.171568393707275
+          ],
+          [
+            0.9708436727523804,
+            0.16321201622486115,
+            -0.17556889355182648,
+            -0.39753779768943787
+          ],
+          [
+            7.450580152834618e-09,
+            0.7324110865592957,
+            0.6808626055717468,
+            4.79702091217041
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "size": [
+          1600,
+          900
+        ]
+      },
+      "188": {
+        "frame": "train/0188",
+        "transform": [
+          [
+            -0.7748000621795654,
+            0.4649222791194916,
+            -0.4284064769744873,
+            -2.3269615173339844
+          ],
+          [
+            -0.6322063207626343,
+            -0.5697851777076721,
+            0.5250332951545715,
+            3.484281539916992
+          ],
+          [
+            1.4901160305669237e-08,
+            0.6776370406150818,
+            0.7353963851928711,
+            4.79702091217041
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "size": [
+          1600,
+          900
+        ]
+      }
+    },
+    "static_RGB_alpha_D_exact": true,
+    "high_alpha_proxies": [
+      {
+        "camera": 86,
+        "time": 2,
+        "model": "J6_parent",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 36399,
+        "dynamic_dark_high_alpha": 941,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 86,
+        "time": 2,
+        "model": "rgb_control",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 36838,
+        "dynamic_dark_high_alpha": 807,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 86,
+        "time": 2,
+        "model": "surface_graph",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 36808,
+        "dynamic_dark_high_alpha": 1004,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 86,
+        "time": 100,
+        "model": "J6_parent",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 49417,
+        "dynamic_dark_high_alpha": 23333,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 86,
+        "time": 100,
+        "model": "rgb_control",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 54462,
+        "dynamic_dark_high_alpha": 28511,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 86,
+        "time": 100,
+        "model": "surface_graph",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 52840,
+        "dynamic_dark_high_alpha": 26804,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 86,
+        "time": 200,
+        "model": "J6_parent",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 66629,
+        "dynamic_dark_high_alpha": 36539,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 86,
+        "time": 200,
+        "model": "rgb_control",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 69599,
+        "dynamic_dark_high_alpha": 36197,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 86,
+        "time": 200,
+        "model": "surface_graph",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 70929,
+        "dynamic_dark_high_alpha": 32838,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 188,
+        "time": 2,
+        "model": "J6_parent",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 43902,
+        "dynamic_dark_high_alpha": 2647,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 188,
+        "time": 2,
+        "model": "rgb_control",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 44684,
+        "dynamic_dark_high_alpha": 2980,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 188,
+        "time": 2,
+        "model": "surface_graph",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 44095,
+        "dynamic_dark_high_alpha": 2948,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 188,
+        "time": 100,
+        "model": "J6_parent",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 44161,
+        "dynamic_dark_high_alpha": 15419,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 188,
+        "time": 100,
+        "model": "rgb_control",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 48509,
+        "dynamic_dark_high_alpha": 20008,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 188,
+        "time": 100,
+        "model": "surface_graph",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 49666,
+        "dynamic_dark_high_alpha": 20691,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 188,
+        "time": 200,
+        "model": "J6_parent",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 46523,
+        "dynamic_dark_high_alpha": 28619,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 188,
+        "time": 200,
+        "model": "rgb_control",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 49096,
+        "dynamic_dark_high_alpha": 31807,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 188,
+        "time": 200,
+        "model": "surface_graph",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 49370,
+        "dynamic_dark_high_alpha": 31577,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      }
+    ],
+    "black_missing_is_not_zero_error": true,
+    "D_div_alpha_is_rendered_proxy": true
+  },
+  "training_track_diagnostic": {
+    "all_original_patches_unfiltered": true,
+    "held_not_auxiliary_trained_but_RGB_trained": true,
+    "independent_3D_GT": false,
+    "models": {
+      "J6_parent": {
+        "total": 1464,
+        "finite_count": 1464,
+        "missing": 0,
+        "mean_px": 0.883836199736357,
+        "P90_px": 1.5778083317966471,
+        "fit_mean_px": 0.8795771801953495,
+        "held_mean_px": 0.8880952192773642
+      },
+      "rgb_control": {
+        "total": 1464,
+        "finite_count": 1464,
+        "missing": 0,
+        "mean_px": 0.9494004981835835,
+        "P90_px": 1.737551950851095,
+        "fit_mean_px": 0.9464433575224875,
+        "held_mean_px": 0.9523576388446798
+      },
+      "surface_graph": {
+        "total": 1464,
+        "finite_count": 1464,
+        "missing": 0,
+        "mean_px": 1.0134371780375633,
+        "P90_px": 2.145188168281984,
+        "fit_mean_px": 0.9924266350415686,
+        "held_mean_px": 1.034447721033558
+      }
+    }
+  },
+  "local_graph_diagnostic": {
+    "parent_reference_is_not_geometry_GT": true,
+    "all_proposed_edges_unfiltered": true,
+    "models": {
+      "J6_parent": {
+        "pairs": 14256,
+        "mean_world": 7.847575349428934e-10,
+        "P90_world": 1.7011777438125097e-09
+      },
+      "rgb_control": {
+        "pairs": 14256,
+        "mean_world": 0.002169872245415765,
+        "P90_world": 0.004681494498392377
+      },
+      "surface_graph": {
+        "pairs": 14256,
+        "mean_world": 0.0049182211643517436,
+        "P90_world": 0.010921200285342058
+      }
+    }
+  },
+  "plys": {
+    "J6_parent/static": {
+      "path": "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/J6_parent_static.ply",
+      "sha256": "143d149aeb4949e607a9741b8a1a4a36d188fc753c6116922a00aafe06ce6ef5",
+      "vertices": 4126,
+      "checkpoint_position_exact": true,
+      "all_fields_finite": true,
+      "coordinates": "world"
+    },
+    "J6_parent/canonical_dynamic_local": {
+      "path": "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/J6_parent_canonical_dynamic_local.ply",
+      "sha256": "6536bcd449b027e3b733351263f89b1ed93a41c0f72557220f28c00255f9e6a8",
+      "vertices": 15507,
+      "checkpoint_position_exact": true,
+      "all_fields_finite": true,
+      "coordinates": "local canonical; add checkpoint centers after deformation"
+    },
+    "J6_parent/dynamic_world/2": {
+      "path": "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/J6_parent_dynamic_world_t002.ply",
+      "sha256": "c1d4fa85914626c92e35a4982afb02f327df6a7f02c817fd2bc9f05ffc662d76",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "J6_parent/dynamic_world/100": {
+      "path": "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/J6_parent_dynamic_world_t100.ply",
+      "sha256": "084f9c5895db8791878eb254aade7a2c6a93c634d4287f6b28c7f61e744c439e",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "J6_parent/dynamic_world/200": {
+      "path": "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/J6_parent_dynamic_world_t200.ply",
+      "sha256": "4cf7d016077124871078c17154d1f1320cfdc28a8d28e9c47ae6845cd6dddf25",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "rgb_control/static": {
+      "path": "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/rgb_control_static.ply",
+      "sha256": "143d149aeb4949e607a9741b8a1a4a36d188fc753c6116922a00aafe06ce6ef5",
+      "vertices": 4126,
+      "checkpoint_position_exact": true,
+      "all_fields_finite": true,
+      "coordinates": "world"
+    },
+    "rgb_control/canonical_dynamic_local": {
+      "path": "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/rgb_control_canonical_dynamic_local.ply",
+      "sha256": "de90a693bb202268939cd77ae0613f09ab79030bc90a059bc49042d19c58aa38",
+      "vertices": 15507,
+      "checkpoint_position_exact": true,
+      "all_fields_finite": true,
+      "coordinates": "local canonical; add checkpoint centers after deformation"
+    },
+    "rgb_control/dynamic_world/2": {
+      "path": "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/rgb_control_dynamic_world_t002.ply",
+      "sha256": "2416c2e0ef1071fefabf3bd8a0af590e263c1a2baff747c5a1970bba8b0908b0",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "rgb_control/dynamic_world/100": {
+      "path": "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/rgb_control_dynamic_world_t100.ply",
+      "sha256": "4668105b5ace7ea87c677cce97f495368b92a175b74f3e1328307184ce8d3cba",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "rgb_control/dynamic_world/200": {
+      "path": "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/rgb_control_dynamic_world_t200.ply",
+      "sha256": "cdd68d075e4ba5e6eddbd351898357a0dc94adf054f152f4611f189b38a66915",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "surface_graph/static": {
+      "path": "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/surface_graph_static.ply",
+      "sha256": "143d149aeb4949e607a9741b8a1a4a36d188fc753c6116922a00aafe06ce6ef5",
+      "vertices": 4126,
+      "checkpoint_position_exact": true,
+      "all_fields_finite": true,
+      "coordinates": "world"
+    },
+    "surface_graph/canonical_dynamic_local": {
+      "path": "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/surface_graph_canonical_dynamic_local.ply",
+      "sha256": "bbe9cc2e0ea5c6f95b1a33b1eeed8f822238018cb0cc4bf6a08b8509d8f61a03",
+      "vertices": 15507,
+      "checkpoint_position_exact": true,
+      "all_fields_finite": true,
+      "coordinates": "local canonical; add checkpoint centers after deformation"
+    },
+    "surface_graph/dynamic_world/2": {
+      "path": "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/surface_graph_dynamic_world_t002.ply",
+      "sha256": "50a420bf089aea29112af92c8cbf1c26211ab3cb91c63519efecf18f05d71ac0",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "surface_graph/dynamic_world/100": {
+      "path": "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/surface_graph_dynamic_world_t100.ply",
+      "sha256": "f10da5e6f982f82a47a895bbe909bc1331e66da12dc1df81901d147835180ac2",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "surface_graph/dynamic_world/200": {
+      "path": "output/staged_reconstruction/RubberDuck_I10_surface_graph/v1/surface_graph_dynamic_world_t200.ply",
+      "sha256": "78bd13ad10b637e8512c0e0db5521b302668c19b642b74bc908f2149822ae6c3",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    }
+  },
+  "source_sha256": "f542ae88bf03029f18afa82f39a67cf5c31b0641df608a8cc61fee7630febe9d"
+}
