@@ -1,0 +1,7 @@
+{
+  "failure_log": "prepare_attempt1.log",
+  "phase": "before source freeze and any optimizer update",
+  "reason": "A locally admitted patch can have individual occluded or outside fit footprints; missing parent support is unknown",
+  "repair": "retain every proposed patch and fit frame; mark missing contribution reference unknown and do not apply coverage loss there",
+  "protocol_or_threshold_changed": false
+}

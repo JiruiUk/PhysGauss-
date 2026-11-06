@@ -1,0 +1,24 @@
+W1106 02:29:33.118000 311960 envs\pidg-cu128\Lib\site-packages\torch\utils\cpp_extension.py:466] Error checking compiler version for cl: 'cp1' codec can't decode bytes in position 0--1: No mapping for the Unicode character exists in the target code page.
+ninja: no work to do.
+F:\A_Edinburgh\PhysGauss\variants\color_repair\code\hashencoder\hashgrid.py:16: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.half)
+F:\A_Edinburgh\PhysGauss\variants\color_repair\code\hashencoder\hashgrid.py:56: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+L4_MEMORY_REFRESH {'completed_updates': 0, 'total_memories': 22, 'active_memories': 22, 'active_rows': 22, 'active_observations': 372, 'active_frame_thirds': [356, 16, 0], 'suspended': 0, 'revoked': 0, 'surface_active_patches': 448}
+Traceback (most recent call last):
+  File "F:\A_Edinburgh\PhysGauss\experiments\staged_reconstruction\RubberDuck_surface_support\launch.py", line 115, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\experiments\staged_reconstruction\RubberDuck_surface_support\launch.py", line 106, in main
+    if args.phase=='prepare':prepare()
+                             ^^^^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\experiments\staged_reconstruction\RubberDuck_surface_support\launch.py", line 32, in prepare
+    bank=build_reference(renderer,scene,a.STATE['surface'],a.CONFIG)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\envs\pidg-cu128\Lib\site-packages\torch\utils\_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\variants\staged_reconstruction\i10_surface_support\structure.py", line 86, in build_reference
+    assert value is not None and value>1e-8
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

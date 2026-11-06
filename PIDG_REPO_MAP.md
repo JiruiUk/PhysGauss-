@@ -1132,3 +1132,17 @@ frozen experiments remain untouched.
   pair, independent memory/native replay and artifact review. Tests:
   `tests/test_i10_temporal_memory.py`. RGB-derived hypotheses are not 3D GT;
   no object count, semantic/static labels, topology growth or physics additions.
+
+### L5 observed local surface support
+
+- `variants/staged_reconstruction/i10_surface_support/core.py`: full Gaussian
+  covariance, rotation-invariant support spectrum/area intervals, ellipsoid gap
+  and noncollapse, actual observed bilinear footprint contribution; default off.
+- `structure.py`: reuse immutable L3 hypotheses/native gates, fit-only J6
+  reference, revocable own-node support, bounded native group contribution.
+- `runtime.py`: common L4 temporal supervision, candidate-only local structure,
+  complete twoAdam/RNG/camera/physics/combined-controller state, baseline intact.
+- `RubberDuck_surface_support/{launch,evaluate,audit,controller_audit,
+  structural_diagnostic}.py`: matched native qualification/training and fixed
+  denominator evaluation; tests `tests/test_i10_surface_support.py`.
+  Local support thickness is not true body thickness or independent geometry GT.
