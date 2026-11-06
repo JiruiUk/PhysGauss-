@@ -1,0 +1,372 @@
+{
+  "passed": true,
+  "all14_native_refreshes": [
+    {
+      "arm": "temporal_control",
+      "completed_updates": 250,
+      "memories_replayed": 22,
+      "surface_nodes_replayed": 0,
+      "model_sha256": "918619d90f83c4f41ec8a82c4e0425902984fad56e97e43a9a404286ba9104f4"
+    },
+    {
+      "arm": "temporal_control",
+      "completed_updates": 500,
+      "memories_replayed": 22,
+      "surface_nodes_replayed": 0,
+      "model_sha256": "2055439904b8ad2eb5c594ae320901dbf6cff2cbd5a369be096920306ea7130f"
+    },
+    {
+      "arm": "temporal_control",
+      "completed_updates": 750,
+      "memories_replayed": 22,
+      "surface_nodes_replayed": 0,
+      "model_sha256": "7ade384536b77d5bce54050a81834a26967913f7c94b67e403adac1c0aabdd5c"
+    },
+    {
+      "arm": "temporal_control",
+      "completed_updates": 1000,
+      "memories_replayed": 22,
+      "surface_nodes_replayed": 0,
+      "model_sha256": "70ac466abe96bfd8c089f21aacd812f601f9ee35fb1b3bdd2f43fe7ee52d34c6"
+    },
+    {
+      "arm": "temporal_control",
+      "completed_updates": 1250,
+      "memories_replayed": 22,
+      "surface_nodes_replayed": 0,
+      "model_sha256": "2a2280998d960ac0575fb3ca0a7e0ff1dc488e3be6d37b992c48519d9860101c"
+    },
+    {
+      "arm": "temporal_control",
+      "completed_updates": 1500,
+      "memories_replayed": 22,
+      "surface_nodes_replayed": 0,
+      "model_sha256": "2f32abfa82185c8ecbb0a37c9fec0bca25c5b51abb22c691f3176856037669e2"
+    },
+    {
+      "arm": "temporal_control",
+      "completed_updates": 1750,
+      "memories_replayed": 22,
+      "surface_nodes_replayed": 0,
+      "model_sha256": "e902f86bf000698907f37b2fdf46d9cecb171f70f07af62d340e5a2b15688d59"
+    },
+    {
+      "arm": "revocable_spring",
+      "completed_updates": 250,
+      "memories_replayed": 22,
+      "surface_nodes_replayed": 789,
+      "model_sha256": "9a89af38aaa895d84c6a727c3c7b54988950895b67d93b8041f8b6ca1f672a11"
+    },
+    {
+      "arm": "revocable_spring",
+      "completed_updates": 500,
+      "memories_replayed": 22,
+      "surface_nodes_replayed": 789,
+      "model_sha256": "69fe7d730b6334abb0672985e449f0d1df9568d6b7fdb729d2cecc0276e7b103"
+    },
+    {
+      "arm": "revocable_spring",
+      "completed_updates": 750,
+      "memories_replayed": 22,
+      "surface_nodes_replayed": 789,
+      "model_sha256": "e222c5267374cc169284ef85b97cd76f4ae69d53799bed65a40abb800aed6eb1"
+    },
+    {
+      "arm": "revocable_spring",
+      "completed_updates": 1000,
+      "memories_replayed": 22,
+      "surface_nodes_replayed": 789,
+      "model_sha256": "4c72cd14d6a09eef27093596b58cdac80db8ca7d2eadefa368dc80ba0817db03"
+    },
+    {
+      "arm": "revocable_spring",
+      "completed_updates": 1250,
+      "memories_replayed": 22,
+      "surface_nodes_replayed": 789,
+      "model_sha256": "4e0033687cdb6075cb9e317d27dcda7e46ae075d0baca91f6dd528439e819780"
+    },
+    {
+      "arm": "revocable_spring",
+      "completed_updates": 1500,
+      "memories_replayed": 22,
+      "surface_nodes_replayed": 789,
+      "model_sha256": "68f73b4623bcf8982adc8b572268778c7c8acb548f834ffddadc23083ebc6815"
+    },
+    {
+      "arm": "revocable_spring",
+      "completed_updates": 1750,
+      "memories_replayed": 22,
+      "surface_nodes_replayed": 789,
+      "model_sha256": "a36cc6e65d9cb145e7c46a4a0b6b622a071fab36e44f50240a258625e2f8038c"
+    }
+  ],
+  "all4000_samples": true,
+  "fit_only_keyframes_and_structure_checked": true,
+  "arms": {
+    "temporal_control": {
+      "steps_with_memory": 215,
+      "endpoint_pair_applications": 4783,
+      "steps_with_structure": 0,
+      "structural_patch_applications": 0,
+      "structural_edge_applications": 0,
+      "native_coverage_group_applications": 0,
+      "mean_weighted_memory_loss": 9.563211435852281e-05,
+      "mean_weighted_structure_loss": 0.0,
+      "final_history": [
+        {
+          "completed_updates": 0,
+          "total_memories": 22,
+          "active_memories": 22,
+          "active_rows": 22,
+          "active_observations": 372,
+          "active_frame_thirds": [
+            356,
+            16,
+            0
+          ],
+          "suspended": 0,
+          "revoked": 0,
+          "surface_active_patches": 448
+        },
+        {
+          "completed_updates": 250,
+          "total_memories": 22,
+          "active_memories": 18,
+          "active_rows": 18,
+          "active_observations": 304,
+          "active_frame_thirds": [
+            304,
+            0,
+            0
+          ],
+          "suspended": 4,
+          "revoked": 0,
+          "surface_active_patches": 448
+        },
+        {
+          "completed_updates": 500,
+          "total_memories": 22,
+          "active_memories": 17,
+          "active_rows": 17,
+          "active_observations": 288,
+          "active_frame_thirds": [
+            288,
+            0,
+            0
+          ],
+          "suspended": 5,
+          "revoked": 0,
+          "surface_active_patches": 448
+        },
+        {
+          "completed_updates": 750,
+          "total_memories": 22,
+          "active_memories": 16,
+          "active_rows": 16,
+          "active_observations": 272,
+          "active_frame_thirds": [
+            272,
+            0,
+            0
+          ],
+          "suspended": 6,
+          "revoked": 0,
+          "surface_active_patches": 448
+        },
+        {
+          "completed_updates": 1000,
+          "total_memories": 22,
+          "active_memories": 16,
+          "active_rows": 16,
+          "active_observations": 272,
+          "active_frame_thirds": [
+            272,
+            0,
+            0
+          ],
+          "suspended": 6,
+          "revoked": 0,
+          "surface_active_patches": 448
+        },
+        {
+          "completed_updates": 1250,
+          "total_memories": 22,
+          "active_memories": 17,
+          "active_rows": 17,
+          "active_observations": 288,
+          "active_frame_thirds": [
+            288,
+            0,
+            0
+          ],
+          "suspended": 5,
+          "revoked": 0,
+          "surface_active_patches": 448
+        },
+        {
+          "completed_updates": 1500,
+          "total_memories": 22,
+          "active_memories": 14,
+          "active_rows": 14,
+          "active_observations": 236,
+          "active_frame_thirds": [
+            236,
+            0,
+            0
+          ],
+          "suspended": 8,
+          "revoked": 0,
+          "surface_active_patches": 448
+        },
+        {
+          "completed_updates": 1750,
+          "total_memories": 22,
+          "active_memories": 14,
+          "active_rows": 14,
+          "active_observations": 236,
+          "active_frame_thirds": [
+            236,
+            0,
+            0
+          ],
+          "suspended": 8,
+          "revoked": 0,
+          "surface_active_patches": 448
+        }
+      ]
+    },
+    "revocable_spring": {
+      "steps_with_memory": 194,
+      "endpoint_pair_applications": 5309,
+      "steps_with_structure": 178,
+      "structural_patch_applications": 1439,
+      "structural_edge_applications": 6608,
+      "native_coverage_group_applications": 0,
+      "mean_weighted_memory_loss": 8.598973709558777e-05,
+      "mean_weighted_structure_loss": 2.327164017234207e-06,
+      "final_history": [
+        {
+          "completed_updates": 0,
+          "total_memories": 22,
+          "active_memories": 22,
+          "active_rows": 22,
+          "active_observations": 372,
+          "active_frame_thirds": [
+            356,
+            16,
+            0
+          ],
+          "suspended": 0,
+          "revoked": 0,
+          "surface_active_patches": 448
+        },
+        {
+          "completed_updates": 250,
+          "total_memories": 22,
+          "active_memories": 17,
+          "active_rows": 17,
+          "active_observations": 288,
+          "active_frame_thirds": [
+            288,
+            0,
+            0
+          ],
+          "suspended": 5,
+          "revoked": 0,
+          "surface_active_patches": 366
+        },
+        {
+          "completed_updates": 500,
+          "total_memories": 22,
+          "active_memories": 17,
+          "active_rows": 17,
+          "active_observations": 288,
+          "active_frame_thirds": [
+            288,
+            0,
+            0
+          ],
+          "suspended": 5,
+          "revoked": 0,
+          "surface_active_patches": 367
+        },
+        {
+          "completed_updates": 750,
+          "total_memories": 22,
+          "active_memories": 18,
+          "active_rows": 18,
+          "active_observations": 304,
+          "active_frame_thirds": [
+            304,
+            0,
+            0
+          ],
+          "suspended": 4,
+          "revoked": 0,
+          "surface_active_patches": 366
+        },
+        {
+          "completed_updates": 1000,
+          "total_memories": 22,
+          "active_memories": 17,
+          "active_rows": 17,
+          "active_observations": 284,
+          "active_frame_thirds": [
+            284,
+            0,
+            0
+          ],
+          "suspended": 5,
+          "revoked": 0,
+          "surface_active_patches": 352
+        },
+        {
+          "completed_updates": 1250,
+          "total_memories": 22,
+          "active_memories": 14,
+          "active_rows": 14,
+          "active_observations": 236,
+          "active_frame_thirds": [
+            236,
+            0,
+            0
+          ],
+          "suspended": 7,
+          "revoked": 1,
+          "surface_active_patches": 341
+        },
+        {
+          "completed_updates": 1500,
+          "total_memories": 22,
+          "active_memories": 12,
+          "active_rows": 12,
+          "active_observations": 204,
+          "active_frame_thirds": [
+            204,
+            0,
+            0
+          ],
+          "suspended": 9,
+          "revoked": 1,
+          "surface_active_patches": 345
+        },
+        {
+          "completed_updates": 1750,
+          "total_memories": 22,
+          "active_memories": 11,
+          "active_rows": 11,
+          "active_observations": 188,
+          "active_frame_thirds": [
+            188,
+            0,
+            0
+          ],
+          "suspended": 9,
+          "revoked": 2,
+          "surface_active_patches": 344
+        }
+      ]
+    }
+  },
+  "source_sha256": "26e30ef71f4c3e87d1da7d72f59e053eaa71e263bc7071aaac93c5f520a14b65"
+}

@@ -13,3 +13,5 @@
   fit J6 lengths, not true material rest; no damping/thickness/area/coverage loss.
   Separate evaluation adapters frozen before formal outputs.
   Formal matched2000+2000 training is next, not yet performed.
+
+- Full4000 updates, native evaluation/controller/spring-reference audit, PLY/videos and32 actual image reviews complete. completed_not_promoted; no automatic extension. See v1/assessment.md.

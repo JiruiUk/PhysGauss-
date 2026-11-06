@@ -1,0 +1,1159 @@
+{
+  "checkpoint_audits": {
+    "temporal_control": {
+      "checkpoint_sha256": "3b40d32f74de865813222556cebe22781d2d85c5342a5cf654de3de76919f32c",
+      "complete_parent_states_exact": true,
+      "static_model_Adam_physics_model_Adam_and_graphs_frozen": true,
+      "all2000_sampler_replay": true
+    },
+    "revocable_spring": {
+      "checkpoint_sha256": "f02af51cb44254aced9f033dc843082ce150cd627fa49065ec8cfb73a2ca1354",
+      "complete_parent_states_exact": true,
+      "static_model_Adam_physics_model_Adam_and_graphs_frozen": true,
+      "all2000_sampler_replay": true
+    }
+  },
+  "validation": {
+    "frames": [
+      {
+        "frame": "train/0004",
+        "J6_parent": {
+          "PSNR": 32.05329895019531,
+          "SSIM": 0.9841787219047546,
+          "L1": 0.00248618028126657
+        },
+        "temporal_control": {
+          "PSNR": 32.044578552246094,
+          "SSIM": 0.9842047095298767,
+          "L1": 0.0024865891318768263
+        },
+        "revocable_spring": {
+          "PSNR": 31.935726165771484,
+          "SSIM": 0.9837300777435303,
+          "L1": 0.002567952498793602
+        }
+      },
+      {
+        "frame": "train/0011",
+        "J6_parent": {
+          "PSNR": 32.035316467285156,
+          "SSIM": 0.9845765233039856,
+          "L1": 0.002444289857521653
+        },
+        "temporal_control": {
+          "PSNR": 31.93680763244629,
+          "SSIM": 0.984130322933197,
+          "L1": 0.0025191428139805794
+        },
+        "revocable_spring": {
+          "PSNR": 31.992664337158203,
+          "SSIM": 0.9843290448188782,
+          "L1": 0.002500313799828291
+        }
+      },
+      {
+        "frame": "train/0018",
+        "J6_parent": {
+          "PSNR": 32.5270881652832,
+          "SSIM": 0.9857029914855957,
+          "L1": 0.002376693533733487
+        },
+        "temporal_control": {
+          "PSNR": 32.47704315185547,
+          "SSIM": 0.9855064749717712,
+          "L1": 0.0024140055757015944
+        },
+        "revocable_spring": {
+          "PSNR": 32.484134674072266,
+          "SSIM": 0.9855353832244873,
+          "L1": 0.0024127450305968523
+        }
+      },
+      {
+        "frame": "train/0024",
+        "J6_parent": {
+          "PSNR": 33.56655502319336,
+          "SSIM": 0.9867320656776428,
+          "L1": 0.0022272432688623667
+        },
+        "temporal_control": {
+          "PSNR": 33.49983215332031,
+          "SSIM": 0.986609935760498,
+          "L1": 0.0022562688682228327
+        },
+        "revocable_spring": {
+          "PSNR": 33.446449279785156,
+          "SSIM": 0.9865270853042603,
+          "L1": 0.0022703958675265312
+        }
+      },
+      {
+        "frame": "train/0031",
+        "J6_parent": {
+          "PSNR": 32.233642578125,
+          "SSIM": 0.9841681718826294,
+          "L1": 0.0029023485258221626
+        },
+        "temporal_control": {
+          "PSNR": 32.75581741333008,
+          "SSIM": 0.9852627515792847,
+          "L1": 0.0027133116964250803
+        },
+        "revocable_spring": {
+          "PSNR": 32.330101013183594,
+          "SSIM": 0.9845115542411804,
+          "L1": 0.0028718258254230022
+        }
+      },
+      {
+        "frame": "train/0038",
+        "J6_parent": {
+          "PSNR": 31.90798568725586,
+          "SSIM": 0.984046995639801,
+          "L1": 0.0030781785026192665
+        },
+        "temporal_control": {
+          "PSNR": 31.87466812133789,
+          "SSIM": 0.9838983416557312,
+          "L1": 0.003103700466454029
+        },
+        "revocable_spring": {
+          "PSNR": 31.02676773071289,
+          "SSIM": 0.9822887778282166,
+          "L1": 0.00346544967032969
+        }
+      },
+      {
+        "frame": "train/0044",
+        "J6_parent": {
+          "PSNR": 32.506370544433594,
+          "SSIM": 0.9840089082717896,
+          "L1": 0.0029427935369312763
+        },
+        "temporal_control": {
+          "PSNR": 32.40657043457031,
+          "SSIM": 0.9837040305137634,
+          "L1": 0.0029976298101246357
+        },
+        "revocable_spring": {
+          "PSNR": 32.02439880371094,
+          "SSIM": 0.9831041693687439,
+          "L1": 0.0031457270961254835
+        }
+      },
+      {
+        "frame": "train/0051",
+        "J6_parent": {
+          "PSNR": 32.93768310546875,
+          "SSIM": 0.9833849668502808,
+          "L1": 0.002897292608395219
+        },
+        "temporal_control": {
+          "PSNR": 32.8435173034668,
+          "SSIM": 0.9831850528717041,
+          "L1": 0.002967284293845296
+        },
+        "revocable_spring": {
+          "PSNR": 33.094032287597656,
+          "SSIM": 0.9834041595458984,
+          "L1": 0.002887760754674673
+        }
+      },
+      {
+        "frame": "train/0058",
+        "J6_parent": {
+          "PSNR": 33.65757369995117,
+          "SSIM": 0.9826890826225281,
+          "L1": 0.0028411350212991238
+        },
+        "temporal_control": {
+          "PSNR": 32.67597579956055,
+          "SSIM": 0.9818201065063477,
+          "L1": 0.003060770919546485
+        },
+        "revocable_spring": {
+          "PSNR": 33.341697692871094,
+          "SSIM": 0.9825147986412048,
+          "L1": 0.002915759803727269
+        }
+      },
+      {
+        "frame": "train/0064",
+        "J6_parent": {
+          "PSNR": 33.437904357910156,
+          "SSIM": 0.9815880656242371,
+          "L1": 0.002943216124549508
+        },
+        "temporal_control": {
+          "PSNR": 32.560726165771484,
+          "SSIM": 0.9806972146034241,
+          "L1": 0.0031772302463650703
+        },
+        "revocable_spring": {
+          "PSNR": 33.23820877075195,
+          "SSIM": 0.9813077449798584,
+          "L1": 0.0030035984236747026
+        }
+      },
+      {
+        "frame": "train/0071",
+        "J6_parent": {
+          "PSNR": 32.99154281616211,
+          "SSIM": 0.9809215068817139,
+          "L1": 0.0031270068138837814
+        },
+        "temporal_control": {
+          "PSNR": 32.515281677246094,
+          "SSIM": 0.980575442314148,
+          "L1": 0.0032211618963629007
+        },
+        "revocable_spring": {
+          "PSNR": 32.99152755737305,
+          "SSIM": 0.9810464978218079,
+          "L1": 0.0031075701117515564
+        }
+      },
+      {
+        "frame": "train/0078",
+        "J6_parent": {
+          "PSNR": 31.855146408081055,
+          "SSIM": 0.9785585403442383,
+          "L1": 0.003488645190373063
+        },
+        "temporal_control": {
+          "PSNR": 31.605697631835938,
+          "SSIM": 0.9779478907585144,
+          "L1": 0.003603540826588869
+        },
+        "revocable_spring": {
+          "PSNR": 31.99071502685547,
+          "SSIM": 0.9785924553871155,
+          "L1": 0.003464656649157405
+        }
+      },
+      {
+        "frame": "train/0084",
+        "J6_parent": {
+          "PSNR": 29.594226837158203,
+          "SSIM": 0.9740798473358154,
+          "L1": 0.004619202576577663
+        },
+        "temporal_control": {
+          "PSNR": 29.60264015197754,
+          "SSIM": 0.9743079543113708,
+          "L1": 0.004618487320840359
+        },
+        "revocable_spring": {
+          "PSNR": 29.621479034423828,
+          "SSIM": 0.9743419885635376,
+          "L1": 0.004580160602927208
+        }
+      },
+      {
+        "frame": "train/0091",
+        "J6_parent": {
+          "PSNR": 30.831214904785156,
+          "SSIM": 0.976618766784668,
+          "L1": 0.003978523891419172
+        },
+        "temporal_control": {
+          "PSNR": 30.850627899169922,
+          "SSIM": 0.9768333435058594,
+          "L1": 0.003992674872279167
+        },
+        "revocable_spring": {
+          "PSNR": 30.516944885253906,
+          "SSIM": 0.9756335616111755,
+          "L1": 0.00418450403958559
+        }
+      },
+      {
+        "frame": "train/0098",
+        "J6_parent": {
+          "PSNR": 31.14932632446289,
+          "SSIM": 0.9765233993530273,
+          "L1": 0.003891902742907405
+        },
+        "temporal_control": {
+          "PSNR": 31.268661499023438,
+          "SSIM": 0.9766861200332642,
+          "L1": 0.0038909034337848425
+        },
+        "revocable_spring": {
+          "PSNR": 30.92656898498535,
+          "SSIM": 0.9758046269416809,
+          "L1": 0.004076302517205477
+        }
+      },
+      {
+        "frame": "train/0104",
+        "J6_parent": {
+          "PSNR": 31.76851463317871,
+          "SSIM": 0.978481113910675,
+          "L1": 0.003604056779295206
+        },
+        "temporal_control": {
+          "PSNR": 32.040809631347656,
+          "SSIM": 0.9785247445106506,
+          "L1": 0.003581627970561385
+        },
+        "revocable_spring": {
+          "PSNR": 31.77481460571289,
+          "SSIM": 0.9784594774246216,
+          "L1": 0.003668461460620165
+        }
+      },
+      {
+        "frame": "train/0111",
+        "J6_parent": {
+          "PSNR": 32.44886779785156,
+          "SSIM": 0.9800988435745239,
+          "L1": 0.003257994307205081
+        },
+        "temporal_control": {
+          "PSNR": 32.589019775390625,
+          "SSIM": 0.9800914525985718,
+          "L1": 0.0032510862220078707
+        },
+        "revocable_spring": {
+          "PSNR": 31.839248657226562,
+          "SSIM": 0.9795659780502319,
+          "L1": 0.003449825569987297
+        }
+      },
+      {
+        "frame": "train/0118",
+        "J6_parent": {
+          "PSNR": 30.80374526977539,
+          "SSIM": 0.9787120223045349,
+          "L1": 0.003773836186155677
+        },
+        "temporal_control": {
+          "PSNR": 31.19204330444336,
+          "SSIM": 0.9791775345802307,
+          "L1": 0.003668847493827343
+        },
+        "revocable_spring": {
+          "PSNR": 30.686622619628906,
+          "SSIM": 0.9785621166229248,
+          "L1": 0.0038553765043616295
+        }
+      },
+      {
+        "frame": "train/0124",
+        "J6_parent": {
+          "PSNR": 31.258670806884766,
+          "SSIM": 0.9793321490287781,
+          "L1": 0.0036999934818595648
+        },
+        "temporal_control": {
+          "PSNR": 31.56124496459961,
+          "SSIM": 0.9798653721809387,
+          "L1": 0.0035587395541369915
+        },
+        "revocable_spring": {
+          "PSNR": 30.793676376342773,
+          "SSIM": 0.9787071943283081,
+          "L1": 0.00388424564152956
+        }
+      },
+      {
+        "frame": "train/0131",
+        "J6_parent": {
+          "PSNR": 33.06453323364258,
+          "SSIM": 0.9818541407585144,
+          "L1": 0.0032008353155106306
+        },
+        "temporal_control": {
+          "PSNR": 32.583683013916016,
+          "SSIM": 0.9811478853225708,
+          "L1": 0.00334758753888309
+        },
+        "revocable_spring": {
+          "PSNR": 31.293312072753906,
+          "SSIM": 0.9797907471656799,
+          "L1": 0.003739881096407771
+        }
+      },
+      {
+        "frame": "train/0138",
+        "J6_parent": {
+          "PSNR": 32.2402458190918,
+          "SSIM": 0.9799823760986328,
+          "L1": 0.0033944661263376474
+        },
+        "temporal_control": {
+          "PSNR": 31.25489044189453,
+          "SSIM": 0.9790149331092834,
+          "L1": 0.0036895680241286755
+        },
+        "revocable_spring": {
+          "PSNR": 31.271499633789062,
+          "SSIM": 0.9789029955863953,
+          "L1": 0.0036818478256464005
+        }
+      },
+      {
+        "frame": "train/0144",
+        "J6_parent": {
+          "PSNR": 31.146982192993164,
+          "SSIM": 0.9774355292320251,
+          "L1": 0.0037830809596925974
+        },
+        "temporal_control": {
+          "PSNR": 30.480642318725586,
+          "SSIM": 0.9763275384902954,
+          "L1": 0.004060334526002407
+        },
+        "revocable_spring": {
+          "PSNR": 30.780744552612305,
+          "SSIM": 0.9767005443572998,
+          "L1": 0.00394271407276392
+        }
+      },
+      {
+        "frame": "train/0151",
+        "J6_parent": {
+          "PSNR": 30.739871978759766,
+          "SSIM": 0.975875198841095,
+          "L1": 0.003994752652943134
+        },
+        "temporal_control": {
+          "PSNR": 31.545249938964844,
+          "SSIM": 0.9774677157402039,
+          "L1": 0.003679649904370308
+        },
+        "revocable_spring": {
+          "PSNR": 31.78818702697754,
+          "SSIM": 0.9779951572418213,
+          "L1": 0.0035877192858606577
+        }
+      },
+      {
+        "frame": "train/0158",
+        "J6_parent": {
+          "PSNR": 31.76905059814453,
+          "SSIM": 0.9774503111839294,
+          "L1": 0.0035532822366803885
+        },
+        "temporal_control": {
+          "PSNR": 32.00548553466797,
+          "SSIM": 0.9778215289115906,
+          "L1": 0.0035038897767663
+        },
+        "revocable_spring": {
+          "PSNR": 31.697784423828125,
+          "SSIM": 0.9772287011146545,
+          "L1": 0.0036075108218938112
+        }
+      },
+      {
+        "frame": "train/0164",
+        "J6_parent": {
+          "PSNR": 31.819639205932617,
+          "SSIM": 0.9790430665016174,
+          "L1": 0.0034107177052646875
+        },
+        "temporal_control": {
+          "PSNR": 32.212772369384766,
+          "SSIM": 0.9799520969390869,
+          "L1": 0.0032651459332555532
+        },
+        "revocable_spring": {
+          "PSNR": 31.532405853271484,
+          "SSIM": 0.9782978892326355,
+          "L1": 0.003585575381293893
+        }
+      },
+      {
+        "frame": "train/0171",
+        "J6_parent": {
+          "PSNR": 32.2558479309082,
+          "SSIM": 0.9808104038238525,
+          "L1": 0.0032318951562047005
+        },
+        "temporal_control": {
+          "PSNR": 32.501991271972656,
+          "SSIM": 0.9811800718307495,
+          "L1": 0.003171139396727085
+        },
+        "revocable_spring": {
+          "PSNR": 31.688758850097656,
+          "SSIM": 0.9793217778205872,
+          "L1": 0.0034917646553367376
+        }
+      },
+      {
+        "frame": "train/0178",
+        "J6_parent": {
+          "PSNR": 32.12526321411133,
+          "SSIM": 0.9802050590515137,
+          "L1": 0.003332281019538641
+        },
+        "temporal_control": {
+          "PSNR": 32.237945556640625,
+          "SSIM": 0.9807834625244141,
+          "L1": 0.0032713236287236214
+        },
+        "revocable_spring": {
+          "PSNR": 31.55712890625,
+          "SSIM": 0.9794034361839294,
+          "L1": 0.0035246803890913725
+        }
+      },
+      {
+        "frame": "train/0184",
+        "J6_parent": {
+          "PSNR": 32.03255081176758,
+          "SSIM": 0.979469895362854,
+          "L1": 0.003326999954879284
+        },
+        "temporal_control": {
+          "PSNR": 32.0999870300293,
+          "SSIM": 0.9801145792007446,
+          "L1": 0.0032696297857910395
+        },
+        "revocable_spring": {
+          "PSNR": 30.743074417114258,
+          "SSIM": 0.9767340421676636,
+          "L1": 0.003843404119834304
+        }
+      },
+      {
+        "frame": "train/0191",
+        "J6_parent": {
+          "PSNR": 31.66411590576172,
+          "SSIM": 0.9787331223487854,
+          "L1": 0.003417533589527011
+        },
+        "temporal_control": {
+          "PSNR": 31.658952713012695,
+          "SSIM": 0.9791976809501648,
+          "L1": 0.0033913457300513983
+        },
+        "revocable_spring": {
+          "PSNR": 29.749496459960938,
+          "SSIM": 0.974506676197052,
+          "L1": 0.004251983016729355
+        }
+      },
+      {
+        "frame": "train/0198",
+        "J6_parent": {
+          "PSNR": 31.41742515563965,
+          "SSIM": 0.9775025248527527,
+          "L1": 0.0036744524259120226
+        },
+        "temporal_control": {
+          "PSNR": 31.274803161621094,
+          "SSIM": 0.9778597354888916,
+          "L1": 0.003694456070661545
+        },
+        "revocable_spring": {
+          "PSNR": 29.51266860961914,
+          "SSIM": 0.9736288189888,
+          "L1": 0.0045163193717598915
+        }
+      }
+    ],
+    "means": {
+      "J6_parent": {
+        "PSNR": 31.994673347473146,
+        "SSIM": 0.9804254770278931,
+        "L1": 0.0032966943457722665
+      },
+      "temporal_control": {
+        "PSNR": 31.93859888712565,
+        "SSIM": 0.9804632008075714,
+        "L1": 0.003314235790943106
+      },
+      "revocable_spring": {
+        "PSNR": 31.589027976989748,
+        "SSIM": 0.9796825826168061,
+        "L1": 0.0034695343968148035
+      }
+    },
+    "all30_native1600": true,
+    "semantic_masks_used": false,
+    "test_not_read": true,
+    "PSNR_nonregression_gate": false,
+    "parent_nonregression_gate": false,
+    "independent_geometry_GT": false
+  },
+  "diagnostics": {
+    "images": {
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t002_J6_parent_staticRGB_native.png": "46e4698dacaf9b2a9d4820f0d4bb111ea5cfa2dff262cd0f6533ff9a1518b4b1",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t002_J6_parent_dynamicRGB_native.png": "c5ebee60d0666a355f9f210b9304ff4c3025bb5320cc7ef4d67a7a61baa42080",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t002_J6_parent_jointRGB_native.png": "a3bdf524d6c7d22bd66cec0c63107455e18e9d67dd10f8136243af6b58a45bd5",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t002_J6_parent_staticAlpha_native.png": "cf534b4b6e2e2a05c0e7f45fa21c7078aa9891511aa49d1be184f61250f52297",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t002_J6_parent_dynamicAlpha_native.png": "8c12b43722caf05dc2be3e9223eaaf2061b1c25b05058c8eb2c66b1263fa66dd",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t002_J6_parent_jointAlpha_native.png": "66aa57691ee7cf2a0641a9975e671112c21d66522a8288d23f40380954f4b28b",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t002_J6_parent_staticD-alpha_native.png": "52b9caf440d288efc3751948356e89ba405f84fcd951ce72c5086db3cee52e3f",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t002_J6_parent_dynamicD-alpha_native.png": "82d6160cc7be27492a50b99df769dc5d3d4455a6fd7444cf809f5407571aa8ef",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t002_J6_parent_jointD-alpha_native.png": "b70e8870274592a9c0476a1f73d3226b98216a6766bff82c0deee4f61187a215",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t002_temporal_control_staticRGB_native.png": "46e4698dacaf9b2a9d4820f0d4bb111ea5cfa2dff262cd0f6533ff9a1518b4b1",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t002_temporal_control_dynamicRGB_native.png": "2d565b3fad0cdd475e7abbd03bb8a8e3fa236fd9843993595be0d3d2b8246062",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t002_temporal_control_jointRGB_native.png": "921748a4b0daf9da5fad06d18a04d7b37e07d665a5e4b7996dc2159078ff9615",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t002_temporal_control_staticAlpha_native.png": "cf534b4b6e2e2a05c0e7f45fa21c7078aa9891511aa49d1be184f61250f52297",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t002_temporal_control_dynamicAlpha_native.png": "cf3e67a9edc50656cef211d7ea0dc64179154c98e2bdb26bbc6048477fa207ee",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t002_temporal_control_jointAlpha_native.png": "369396f30cd1b57ba8cd03eed84c2537b56b6e4393d7f6c8e66a35be0a28d2f4",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t002_temporal_control_staticD-alpha_native.png": "52b9caf440d288efc3751948356e89ba405f84fcd951ce72c5086db3cee52e3f",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t002_temporal_control_dynamicD-alpha_native.png": "a285ed2b6eee5a638d803ab9ac1b77621522b2b3beeb105cddc329d00b5b2407",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t002_temporal_control_jointD-alpha_native.png": "ac38f988549bf58fbc4b98fded1d49e51e88b9c9a6745da8f898d3da0fe5e693",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t002_revocable_spring_staticRGB_native.png": "46e4698dacaf9b2a9d4820f0d4bb111ea5cfa2dff262cd0f6533ff9a1518b4b1",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t002_revocable_spring_dynamicRGB_native.png": "a66f6a2c1e388e21fac0c994f186627eecf055fd05a97def3be8a925c2a1f687",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t002_revocable_spring_jointRGB_native.png": "1fca178462fb1656bbb581eb9d14ebd8edcbf16ac005ee85289e15d460087321",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t002_revocable_spring_staticAlpha_native.png": "cf534b4b6e2e2a05c0e7f45fa21c7078aa9891511aa49d1be184f61250f52297",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t002_revocable_spring_dynamicAlpha_native.png": "2cb74b61df45adcacb2ce5fba09d891e238075937be65cb9ec9cf123f44160f3",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t002_revocable_spring_jointAlpha_native.png": "172e56991e3e0d9060a9d0b164fcc91aa7f35df2983a9851bc05e0dae79de709",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t002_revocable_spring_staticD-alpha_native.png": "52b9caf440d288efc3751948356e89ba405f84fcd951ce72c5086db3cee52e3f",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t002_revocable_spring_dynamicD-alpha_native.png": "f844868f46721de0d961b89b62bdad07b820cd43340fb35f60b4571654ebfc1f",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t002_revocable_spring_jointD-alpha_native.png": "e6054f34a8641fdccc720665326068d707bfa8a8a552695431a3a23ae872fa31",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t002_decomposition.png": "fead4d3ceb3899175dcf0b9d789f6a1b7b3240baf3937b3dd658d8fb9bd70362",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t002_joint_comparison.png": "002241d3e9b62cbb790dcf938e7711bc914a4f24cd614560339deb299d113494",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t100_J6_parent_staticRGB_native.png": "46e4698dacaf9b2a9d4820f0d4bb111ea5cfa2dff262cd0f6533ff9a1518b4b1",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t100_J6_parent_dynamicRGB_native.png": "de78b620517d3fd19e8564fb39f08aaf494a2afcbe453845286c61fc294d4f6b",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t100_J6_parent_jointRGB_native.png": "4b25896cefa11edd9bcfde8081b979d89023105da9a49fa3727052b76436cb2f",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t100_J6_parent_staticAlpha_native.png": "cf534b4b6e2e2a05c0e7f45fa21c7078aa9891511aa49d1be184f61250f52297",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t100_J6_parent_dynamicAlpha_native.png": "47e08a1acc63cbd76b30876a7950317e687ca387bc56dcfa46bce437b880b6b5",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t100_J6_parent_jointAlpha_native.png": "8a817d548c2460a1718e4b363855f133cd2fdc4124523b74ce2264f0fcad448e",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t100_J6_parent_staticD-alpha_native.png": "52b9caf440d288efc3751948356e89ba405f84fcd951ce72c5086db3cee52e3f",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t100_J6_parent_dynamicD-alpha_native.png": "12626e0dbb2b1200670a031c364f1c57421460f06b90eb0c1db139540738c1d8",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t100_J6_parent_jointD-alpha_native.png": "2545cbe8c566135078e24f6b69b7e9042e563ef1b87c59b850d66afd904cad17",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t100_temporal_control_staticRGB_native.png": "46e4698dacaf9b2a9d4820f0d4bb111ea5cfa2dff262cd0f6533ff9a1518b4b1",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t100_temporal_control_dynamicRGB_native.png": "c8ac0759e7d8fdf99124a2ee7e10f293dc99f80a61b07d877b43cbc0d21513de",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t100_temporal_control_jointRGB_native.png": "b8b043d7bf7cac306cffc413447cf4f7fb01cd513c9b5ebf94c879d9e9d542fa",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t100_temporal_control_staticAlpha_native.png": "cf534b4b6e2e2a05c0e7f45fa21c7078aa9891511aa49d1be184f61250f52297",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t100_temporal_control_dynamicAlpha_native.png": "64354feb7c8690ad525fef5cd59167cd6db25cafa704dc7607d8dc3d5d73df34",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t100_temporal_control_jointAlpha_native.png": "0e4a3beb712683c40f2e2a786ba5524ad44206a55d98446a8802b79befb6ef9b",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t100_temporal_control_staticD-alpha_native.png": "52b9caf440d288efc3751948356e89ba405f84fcd951ce72c5086db3cee52e3f",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t100_temporal_control_dynamicD-alpha_native.png": "a8069daf944e5526a29c8c87d527eea500bdcb500573d8fbff3aab552c8dd4cf",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t100_temporal_control_jointD-alpha_native.png": "c38144b5093849d309d717a15fc2b3c1a57fae20c9ee9b51e068d6b4045ad059",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t100_revocable_spring_staticRGB_native.png": "46e4698dacaf9b2a9d4820f0d4bb111ea5cfa2dff262cd0f6533ff9a1518b4b1",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t100_revocable_spring_dynamicRGB_native.png": "267f1c5067eca299a9f8ed09e9d3a6d1c8c1c9d2fc4f6397a5b6b3cf3b96c95b",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t100_revocable_spring_jointRGB_native.png": "33666ab14b8d9aebdf45efb45b2ec8fdd00764212795e1e4eddc9d54204ea1ef",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t100_revocable_spring_staticAlpha_native.png": "cf534b4b6e2e2a05c0e7f45fa21c7078aa9891511aa49d1be184f61250f52297",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t100_revocable_spring_dynamicAlpha_native.png": "fb86a03fb76fcf44aace0f7cb33d1d4e7b8f164a81ac2d63c9fc4121f8bae064",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t100_revocable_spring_jointAlpha_native.png": "5c04bc5eb5040910bf939e170cbc89b96150d0b01166eefad52ca6ea5ae414ba",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t100_revocable_spring_staticD-alpha_native.png": "52b9caf440d288efc3751948356e89ba405f84fcd951ce72c5086db3cee52e3f",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t100_revocable_spring_dynamicD-alpha_native.png": "2e1715ec8baebf7cc4a7f94912f5dbb9f84602b389d43bf53544ec3bffcdea0a",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t100_revocable_spring_jointD-alpha_native.png": "1861fd68efeb136b1d4eec21289ce8368d5a109a8a528b58dc25f107c3f5f5f1",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t100_decomposition.png": "6ab8ed9fb9c188cbb7cac71acc26a16b57886fd6636e5f6bd54780b6a79f60f3",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t100_joint_comparison.png": "12bbdbee70da9876c756603e6abf8f505107f4d750ab3ebf14c49f3933716dbd",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t200_J6_parent_staticRGB_native.png": "46e4698dacaf9b2a9d4820f0d4bb111ea5cfa2dff262cd0f6533ff9a1518b4b1",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t200_J6_parent_dynamicRGB_native.png": "431c7ef99502964b63a3cae5086d6ae0b778e4dc884b1f716c5e6d65749b5d99",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t200_J6_parent_jointRGB_native.png": "9f679674bfd5d55c45e91e3f4ed29f0c8cfb1ac17fbeb9a147c194db5c14c2e5",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t200_J6_parent_staticAlpha_native.png": "cf534b4b6e2e2a05c0e7f45fa21c7078aa9891511aa49d1be184f61250f52297",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t200_J6_parent_dynamicAlpha_native.png": "83f9383a9befba29e76a6a19225b936a91eb691cde73b9be6b8d6e230f3dfbcf",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t200_J6_parent_jointAlpha_native.png": "6cefe23bd53ed70991e25d03a15e047a30377b40a528306ded5f748a5d5c6603",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t200_J6_parent_staticD-alpha_native.png": "52b9caf440d288efc3751948356e89ba405f84fcd951ce72c5086db3cee52e3f",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t200_J6_parent_dynamicD-alpha_native.png": "1acca1cb065643b4bfe6b82216ed6119e48c727062a82fb3af63df4bfe1a4832",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t200_J6_parent_jointD-alpha_native.png": "57e1005283c3fb71d7b18f60564ee87a42224b7b810a93ea0aff1e12f4d077d0",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t200_temporal_control_staticRGB_native.png": "46e4698dacaf9b2a9d4820f0d4bb111ea5cfa2dff262cd0f6533ff9a1518b4b1",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t200_temporal_control_dynamicRGB_native.png": "2c1682f7814e32baa033d79d7f196f2c84fc71e555cecd3065e66cc1955b5a64",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t200_temporal_control_jointRGB_native.png": "fffb88958c69dcc26f5a288a18d3001e355c5d893757e672166c73266a6e4f6a",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t200_temporal_control_staticAlpha_native.png": "cf534b4b6e2e2a05c0e7f45fa21c7078aa9891511aa49d1be184f61250f52297",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t200_temporal_control_dynamicAlpha_native.png": "7840af446703af9fc041b44a9aee007758e54bb9adb1b588eab86bedffb4e1be",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t200_temporal_control_jointAlpha_native.png": "1d6252d4d90c3dcd7e8fa939b5e33539d59a20c7889596ef22c6f85e8b55f07d",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t200_temporal_control_staticD-alpha_native.png": "52b9caf440d288efc3751948356e89ba405f84fcd951ce72c5086db3cee52e3f",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t200_temporal_control_dynamicD-alpha_native.png": "94ebff3ac51e12708fffc943a60338c7142b9dc366ffe5e8bb74ad6342c93dbe",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t200_temporal_control_jointD-alpha_native.png": "ad313d78747a52c88d4c399e4cfd60ee9b8d7a056d08534071879d6fc40e8c37",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t200_revocable_spring_staticRGB_native.png": "46e4698dacaf9b2a9d4820f0d4bb111ea5cfa2dff262cd0f6533ff9a1518b4b1",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t200_revocable_spring_dynamicRGB_native.png": "480bd698113469d026ea55ac6d67abb65ffca574deec87dcc48ac05bc597d4e4",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t200_revocable_spring_jointRGB_native.png": "86ad0e19f15ee96c0d642994fe0f3937d7d9694cf7a713dffe7d4d04c1138a60",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t200_revocable_spring_staticAlpha_native.png": "cf534b4b6e2e2a05c0e7f45fa21c7078aa9891511aa49d1be184f61250f52297",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t200_revocable_spring_dynamicAlpha_native.png": "b359c8b3fadf84a47f63414dcccc8a26eeb2a21e15e505cc0543fe515a77f555",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t200_revocable_spring_jointAlpha_native.png": "8e60ff6ddf5f50a25b3a513788152d257e7f92221b19b931fd0bb6ba858728b3",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t200_revocable_spring_staticD-alpha_native.png": "52b9caf440d288efc3751948356e89ba405f84fcd951ce72c5086db3cee52e3f",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t200_revocable_spring_dynamicD-alpha_native.png": "92fa75ad1cf521f3595c59c29e06b1884d4aab40faefad8030c11c0af1beb515",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t200_revocable_spring_jointD-alpha_native.png": "de4f98e410a92c118b108b84f2f9f3a7f211838d2aa4400bf63865c8e257d9de",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t200_decomposition.png": "1a7f86ec310b6056416127d2680abe4459076afa7bf497b025af9723e9be5fdc",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c086_t200_joint_comparison.png": "ec33138f43af20630f4fec7d6e419f6b94033629ab1f842475b2eb65c61e58ae",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t002_J6_parent_staticRGB_native.png": "3fd5829d1c42d7ff68ae20786768eb39d7c40f6b39a7feb70dd1e8d73f8cf514",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t002_J6_parent_dynamicRGB_native.png": "dad34291506f0362b0699add2a92c4ce50a8cf2182116b76c2525b67e8e2398d",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t002_J6_parent_jointRGB_native.png": "b7d822318ae96e6f70afef44aa45c6629ba7fdae661d079916a32910dd279b1e",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t002_J6_parent_staticAlpha_native.png": "a85f0d95c00c1fd9cb0b2a5aa8b704384aab141d40ac8a57ad3461cfe824f657",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t002_J6_parent_dynamicAlpha_native.png": "1eb995d177af2aaeba205b5d2b04777005e83237b4ee65c21729bb53be5dcdf2",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t002_J6_parent_jointAlpha_native.png": "2238c8c7eacfd9ecb77ffe1c315907465a40e1c219bc8990ab6b248e8d72aca5",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t002_J6_parent_staticD-alpha_native.png": "1ed4a7b5489491c82d5e713fc6866d3acf8bbbdb2877a98711fed555e6e79030",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t002_J6_parent_dynamicD-alpha_native.png": "a3388e57192233ff2ac0eee1eb72cf688e71b08367d686c1d4cdd3b0ca5f78af",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t002_J6_parent_jointD-alpha_native.png": "b59e2764037de097b60fccdbc369ec2a5431296f508a4d7421b296bcfb0afc6a",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t002_temporal_control_staticRGB_native.png": "3fd5829d1c42d7ff68ae20786768eb39d7c40f6b39a7feb70dd1e8d73f8cf514",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t002_temporal_control_dynamicRGB_native.png": "c721272516f66be9d13de738509ff0cb716b44ddc9e4b133318139aebd6a7c8a",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t002_temporal_control_jointRGB_native.png": "7fbf3aa3af3606bffdca6b3b45043887e11203ee3d4175d77addf99cccb17361",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t002_temporal_control_staticAlpha_native.png": "a85f0d95c00c1fd9cb0b2a5aa8b704384aab141d40ac8a57ad3461cfe824f657",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t002_temporal_control_dynamicAlpha_native.png": "4d9fc57981f8ec4ddf3d1cca1f8b223db59cd6285fc9a3f9f8b8e2173222df7a",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t002_temporal_control_jointAlpha_native.png": "a43a3ae32e049c16a9601daa6eefb234693d491a068dab7024a923396bcf5b01",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t002_temporal_control_staticD-alpha_native.png": "1ed4a7b5489491c82d5e713fc6866d3acf8bbbdb2877a98711fed555e6e79030",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t002_temporal_control_dynamicD-alpha_native.png": "8a60c653b5a1de5fecbd36ae3a929d4cef7904c2d5d4e2eb02a60e8f808fc8a6",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t002_temporal_control_jointD-alpha_native.png": "cb7a5316b9c005e8be21b6b969d1b3292e6d9e76bc6abbbd34495fb866e74dc5",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t002_revocable_spring_staticRGB_native.png": "3fd5829d1c42d7ff68ae20786768eb39d7c40f6b39a7feb70dd1e8d73f8cf514",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t002_revocable_spring_dynamicRGB_native.png": "9b793e9a7efe652cbaf1ab0d5bf944824616d4d908a9105e7ee0cfcef39f92a9",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t002_revocable_spring_jointRGB_native.png": "ca964110c8f41f0a2096fbcf65bb2677609ec89d1f42fef1bc1e7a1cca524d58",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t002_revocable_spring_staticAlpha_native.png": "a85f0d95c00c1fd9cb0b2a5aa8b704384aab141d40ac8a57ad3461cfe824f657",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t002_revocable_spring_dynamicAlpha_native.png": "c5ff8aeeee306f66a79e061869d077a494912060cce4e0d65c5947724f72bb76",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t002_revocable_spring_jointAlpha_native.png": "48b92d9ec6cc16374a8267994ecb3af828670bf72d44260cd134506813ad41d5",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t002_revocable_spring_staticD-alpha_native.png": "1ed4a7b5489491c82d5e713fc6866d3acf8bbbdb2877a98711fed555e6e79030",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t002_revocable_spring_dynamicD-alpha_native.png": "8d712f7be9a4c64f24346fb332dc1dcda1ee8ffe597bc719b3f0a03e863aad0f",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t002_revocable_spring_jointD-alpha_native.png": "c5f4c70d609c1ffc6712fbe0e3489c87b5737b616349b817cfb5d7093fa4ec4c",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t002_decomposition.png": "e0f708c30773c52ece43556b03ed8a38d1cd58672fe09665e76b14dd9636d72f",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t002_joint_comparison.png": "1fd9de11f7ddaacadf76e94c53bd2ca2eb1a17014bcc62d27c9b0c32839827f7",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t100_J6_parent_staticRGB_native.png": "3fd5829d1c42d7ff68ae20786768eb39d7c40f6b39a7feb70dd1e8d73f8cf514",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t100_J6_parent_dynamicRGB_native.png": "625b69d8d0ce5a01eae1fd8f6d2549b1229747990c18cfc8fa19495420aaec18",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t100_J6_parent_jointRGB_native.png": "cab4c91857243442d4297e9ebd6a7c0ee98a85ae4edfa9f0837a1609d63365ef",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t100_J6_parent_staticAlpha_native.png": "a85f0d95c00c1fd9cb0b2a5aa8b704384aab141d40ac8a57ad3461cfe824f657",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t100_J6_parent_dynamicAlpha_native.png": "f75b5b0e1af71349883e8d649348e6bfbcaff478bc4f4f5ed71f676eab7ad9e2",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t100_J6_parent_jointAlpha_native.png": "3aa2cc4364ad3b6c1d033783727843a75a01cd33ce8f9ae6f14db44365c88d77",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t100_J6_parent_staticD-alpha_native.png": "1ed4a7b5489491c82d5e713fc6866d3acf8bbbdb2877a98711fed555e6e79030",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t100_J6_parent_dynamicD-alpha_native.png": "bd3d099c51717f012eb31eb58bdc28bcfa1f04295705b1737836d4a416b0cace",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t100_J6_parent_jointD-alpha_native.png": "8e27c68596d4a64acc88bbf71b895b2b6a1dfe4117e42bd41fb3e7c3af0bd873",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t100_temporal_control_staticRGB_native.png": "3fd5829d1c42d7ff68ae20786768eb39d7c40f6b39a7feb70dd1e8d73f8cf514",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t100_temporal_control_dynamicRGB_native.png": "08762c1fd0e44f2344dbf5f5e46fcc02d915d854319ed1e8e4564134f0716335",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t100_temporal_control_jointRGB_native.png": "6c6d3340f434493c61f23b7c52a4767c1f91fc5e8ebe84f6322ab835cdd4186e",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t100_temporal_control_staticAlpha_native.png": "a85f0d95c00c1fd9cb0b2a5aa8b704384aab141d40ac8a57ad3461cfe824f657",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t100_temporal_control_dynamicAlpha_native.png": "ce7eaf8eb18479e9080a302d4f08485343bf36a39e634d757dc2a84d34992a54",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t100_temporal_control_jointAlpha_native.png": "2482b6c7435e17ab9ccd81619a2a5570d06a6250a76b46553501fd11f12402ba",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t100_temporal_control_staticD-alpha_native.png": "1ed4a7b5489491c82d5e713fc6866d3acf8bbbdb2877a98711fed555e6e79030",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t100_temporal_control_dynamicD-alpha_native.png": "867a80c62437d91c02b2710ba5cc9e2cf68d68b2493576d313184f12940d3f1d",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t100_temporal_control_jointD-alpha_native.png": "b98fa7ccc7e3a321af3a7e5d73690eb9e40458b61f69ada46651ca079772f2a7",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t100_revocable_spring_staticRGB_native.png": "3fd5829d1c42d7ff68ae20786768eb39d7c40f6b39a7feb70dd1e8d73f8cf514",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t100_revocable_spring_dynamicRGB_native.png": "460cd8ecd45abbfb91e176dda419dea5190c8b1e2bf1e14dd6cfcc7a538e8bd8",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t100_revocable_spring_jointRGB_native.png": "3f1e5aa5bfcf7168918a91f60ce723867a00f5dcd02bf7ec284aa12e0e060180",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t100_revocable_spring_staticAlpha_native.png": "a85f0d95c00c1fd9cb0b2a5aa8b704384aab141d40ac8a57ad3461cfe824f657",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t100_revocable_spring_dynamicAlpha_native.png": "ebb2c5fef8fbcb920dd5d2bbba762a3bd6dad5d9da8a56346590a6be795bd1ca",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t100_revocable_spring_jointAlpha_native.png": "35f0269f0175688713e2c1e1adbfd29e8662a806af84fb0c550413d483728cbf",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t100_revocable_spring_staticD-alpha_native.png": "1ed4a7b5489491c82d5e713fc6866d3acf8bbbdb2877a98711fed555e6e79030",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t100_revocable_spring_dynamicD-alpha_native.png": "d0ce4cddbd1c255b9a551da6f0e3c480283cb44c7476e2de6a049f81389c099e",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t100_revocable_spring_jointD-alpha_native.png": "5dbbeea63ba304233bed3cd91b4a1ea7233f460f387611ef9e577a530270c0e4",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t100_decomposition.png": "7a9b2e889522246a85698b4d2fdce64070e814c979b5680efb0562065289bbde",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t100_joint_comparison.png": "d5ca2650130395ee757e57341089fae6c9df18c761a175e07110baf05ba1f978",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t200_J6_parent_staticRGB_native.png": "3fd5829d1c42d7ff68ae20786768eb39d7c40f6b39a7feb70dd1e8d73f8cf514",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t200_J6_parent_dynamicRGB_native.png": "2696dab316b4bfe03ced954a61019afe940dca18287094a090331ca14cae2134",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t200_J6_parent_jointRGB_native.png": "922ff6b9a834aeafd842c49dfa62983f1594d08e9346f0f9d6abb7d9bdd57623",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t200_J6_parent_staticAlpha_native.png": "a85f0d95c00c1fd9cb0b2a5aa8b704384aab141d40ac8a57ad3461cfe824f657",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t200_J6_parent_dynamicAlpha_native.png": "1989feca553aa1fa74a32e3286e75550fba61ffd6cd13ead0ee4ae85316c6cc4",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t200_J6_parent_jointAlpha_native.png": "1fc62132e7c39c1cd4c8aff2ad7e8ecf925c8bfbd2ea77264ba12345e6c8e842",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t200_J6_parent_staticD-alpha_native.png": "1ed4a7b5489491c82d5e713fc6866d3acf8bbbdb2877a98711fed555e6e79030",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t200_J6_parent_dynamicD-alpha_native.png": "b51e8d340dfca5b653b092761e40e09bc652de97b49ce1a586dcf0aaa07bb6ab",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t200_J6_parent_jointD-alpha_native.png": "36a1968d1ff4283653a3ff5973e801b75932d224a849b539bd0f3a47bf3804b8",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t200_temporal_control_staticRGB_native.png": "3fd5829d1c42d7ff68ae20786768eb39d7c40f6b39a7feb70dd1e8d73f8cf514",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t200_temporal_control_dynamicRGB_native.png": "a10bbb6604ff840fb9a718d7f461733368ef01051c4cfcf3200bbdd623148bd0",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t200_temporal_control_jointRGB_native.png": "8b9a4f2ee5a68c5720ea19f6e4c85f158cf98fa572861ca1810f48da99cdf8dc",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t200_temporal_control_staticAlpha_native.png": "a85f0d95c00c1fd9cb0b2a5aa8b704384aab141d40ac8a57ad3461cfe824f657",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t200_temporal_control_dynamicAlpha_native.png": "2fdea5f102fd60c8d2366beb76bd2067a044be3bec83b2638859d445b4e44211",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t200_temporal_control_jointAlpha_native.png": "ccf35adaa3b02a43ef0f364577d088ca4cf49ce9121a869b60a51cc9a567f919",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t200_temporal_control_staticD-alpha_native.png": "1ed4a7b5489491c82d5e713fc6866d3acf8bbbdb2877a98711fed555e6e79030",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t200_temporal_control_dynamicD-alpha_native.png": "dc3d355712e948cf4eb000ed176e09455577ecd80eab1cf814466a4d0bc9e947",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t200_temporal_control_jointD-alpha_native.png": "820e5ee48c836ea1758218a30e1a4801f8f816fd4e13b6a9cb5a57d86e291f5e",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t200_revocable_spring_staticRGB_native.png": "3fd5829d1c42d7ff68ae20786768eb39d7c40f6b39a7feb70dd1e8d73f8cf514",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t200_revocable_spring_dynamicRGB_native.png": "4b2ead20294ac7114a1d88c214e177bde7cb8fc6919f31307537ed1aa08d7a2c",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t200_revocable_spring_jointRGB_native.png": "5cbdaf89907d9d6abe48436b254c95c9a209445e4a80b665b9425ebfa28ce2b1",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t200_revocable_spring_staticAlpha_native.png": "a85f0d95c00c1fd9cb0b2a5aa8b704384aab141d40ac8a57ad3461cfe824f657",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t200_revocable_spring_dynamicAlpha_native.png": "24760e341e316f25a62fce58386e71b33ff605bae19f3364c3cb5cdc21f8df14",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t200_revocable_spring_jointAlpha_native.png": "69a08c9887c2d238c154f4f816ab3095a73037b03aa947c65d06e0d1c172841e",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t200_revocable_spring_staticD-alpha_native.png": "1ed4a7b5489491c82d5e713fc6866d3acf8bbbdb2877a98711fed555e6e79030",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t200_revocable_spring_dynamicD-alpha_native.png": "ce7acbd3abcc283a0a33e4b2b20dbed6d15cde367965b6de44f7b0e4d2c99ca9",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t200_revocable_spring_jointD-alpha_native.png": "52d87400a0da7a2876b54fb40e2f3738d3a6e1c01ad8818bf26252564d61fc25",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t200_decomposition.png": "90b8be071710c4752969dd21e93234a5c8aa944a840d999948513fe52e4a53b4",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t200_joint_comparison.png": "b4e444340c2ca52b1668bde4015148fe92c242829a7efb44509646b128c3f972",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/observed_train_index000.png": "52121c7a1c9cfa16f2d8cc934cb3d20b1dac237cfa7304f7fca63181fd747955",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/observed_train_index024.png": "5df7a67a46e85dc1f1c804778d52fe9fa265ad3cb398ec9b4e40755edd388075",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/observed_train_index048.png": "6e350dc61353febb8eb0c414d71a12b5c49e1712fa994a8d294ef37fb6d2d9a4",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/observed_train_index072.png": "e06430e03df7ff520d8ebdad188c03bfb6786609fc08c15b023c0c17696c538d",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/observed_train_index096.png": "33097dfb8ba524fb9db03a21b8fcb65096b3278fb6b98b5623ad4d8e55dd29c8",
+      "output/staged_reconstruction/RubberDuck_revocable_springs/v1/observed_train_index119.png": "9e97a125291da69654f40bbfcb0fe6098a0b144fbffb0a0cbeec4876c15f495e"
+    },
+    "fixed_cameras": {
+      "86": {
+        "frame": "train/0086",
+        "transform": [
+          [
+            0.23971359431743622,
+            -0.6610111594200134,
+            0.711056649684906,
+            4.171568393707275
+          ],
+          [
+            0.9708436727523804,
+            0.16321201622486115,
+            -0.17556889355182648,
+            -0.39753779768943787
+          ],
+          [
+            7.450580152834618e-09,
+            0.7324110865592957,
+            0.6808626055717468,
+            4.79702091217041
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "size": [
+          1600,
+          900
+        ]
+      },
+      "188": {
+        "frame": "train/0188",
+        "transform": [
+          [
+            -0.7748000621795654,
+            0.4649222791194916,
+            -0.4284064769744873,
+            -2.3269615173339844
+          ],
+          [
+            -0.6322063207626343,
+            -0.5697851777076721,
+            0.5250332951545715,
+            3.484281539916992
+          ],
+          [
+            1.4901160305669237e-08,
+            0.6776370406150818,
+            0.7353963851928711,
+            4.79702091217041
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "size": [
+          1600,
+          900
+        ]
+      }
+    },
+    "static_RGB_alpha_D_exact": true,
+    "high_alpha_proxies": [
+      {
+        "camera": 86,
+        "time": 2,
+        "model": "J6_parent",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 36399,
+        "dynamic_dark_high_alpha": 941,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 86,
+        "time": 2,
+        "model": "temporal_control",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 36761,
+        "dynamic_dark_high_alpha": 956,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 86,
+        "time": 2,
+        "model": "revocable_spring",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 36519,
+        "dynamic_dark_high_alpha": 943,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 86,
+        "time": 100,
+        "model": "J6_parent",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 49417,
+        "dynamic_dark_high_alpha": 23333,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 86,
+        "time": 100,
+        "model": "temporal_control",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 53982,
+        "dynamic_dark_high_alpha": 27983,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 86,
+        "time": 100,
+        "model": "revocable_spring",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 51339,
+        "dynamic_dark_high_alpha": 25503,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 86,
+        "time": 200,
+        "model": "J6_parent",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 66629,
+        "dynamic_dark_high_alpha": 36539,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 86,
+        "time": 200,
+        "model": "temporal_control",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 71219,
+        "dynamic_dark_high_alpha": 34649,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 86,
+        "time": 200,
+        "model": "revocable_spring",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 69297,
+        "dynamic_dark_high_alpha": 36420,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 188,
+        "time": 2,
+        "model": "J6_parent",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 43902,
+        "dynamic_dark_high_alpha": 2647,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 188,
+        "time": 2,
+        "model": "temporal_control",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 44819,
+        "dynamic_dark_high_alpha": 3076,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 188,
+        "time": 2,
+        "model": "revocable_spring",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 44602,
+        "dynamic_dark_high_alpha": 2932,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 188,
+        "time": 100,
+        "model": "J6_parent",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 44161,
+        "dynamic_dark_high_alpha": 15419,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 188,
+        "time": 100,
+        "model": "temporal_control",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 49739,
+        "dynamic_dark_high_alpha": 20592,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 188,
+        "time": 100,
+        "model": "revocable_spring",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 46941,
+        "dynamic_dark_high_alpha": 17598,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 188,
+        "time": 200,
+        "model": "J6_parent",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 46523,
+        "dynamic_dark_high_alpha": 28619,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 188,
+        "time": 200,
+        "model": "temporal_control",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 47982,
+        "dynamic_dark_high_alpha": 31057,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 188,
+        "time": 200,
+        "model": "revocable_spring",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 47192,
+        "dynamic_dark_high_alpha": 30254,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      }
+    ],
+    "black_missing_is_not_zero_error": true,
+    "D_div_alpha_is_rendered_proxy": true
+  },
+  "training_track_diagnostic": {
+    "all_original_bound_memories_unfiltered": true,
+    "held_RGB_trained": true,
+    "independent_3D_GT": false,
+    "models": {
+      "J6_parent": {
+        "total": 372,
+        "missing": 0,
+        "fit_mean_px": 0.8348469820682929,
+        "held_mean_px": 0.8605431392491754
+      },
+      "temporal_control": {
+        "total": 372,
+        "missing": 0,
+        "fit_mean_px": 0.3584517333455296,
+        "held_mean_px": 0.37889282856350925
+      },
+      "revocable_spring": {
+        "total": 372,
+        "missing": 0,
+        "fit_mean_px": 0.42345919453648045,
+        "held_mean_px": 0.4597161071449981
+      }
+    }
+  },
+  "plys": {
+    "J6_parent/static": {
+      "path": "output/staged_reconstruction/RubberDuck_revocable_springs/v1/J6_parent_static.ply",
+      "sha256": "143d149aeb4949e607a9741b8a1a4a36d188fc753c6116922a00aafe06ce6ef5",
+      "vertices": 4126,
+      "checkpoint_position_exact": true,
+      "all_fields_finite": true,
+      "coordinates": "world"
+    },
+    "J6_parent/canonical_dynamic_local": {
+      "path": "output/staged_reconstruction/RubberDuck_revocable_springs/v1/J6_parent_canonical_dynamic_local.ply",
+      "sha256": "6536bcd449b027e3b733351263f89b1ed93a41c0f72557220f28c00255f9e6a8",
+      "vertices": 15507,
+      "checkpoint_position_exact": true,
+      "all_fields_finite": true,
+      "coordinates": "local canonical; add checkpoint centers after deformation"
+    },
+    "J6_parent/dynamic_world/2": {
+      "path": "output/staged_reconstruction/RubberDuck_revocable_springs/v1/J6_parent_dynamic_world_t002.ply",
+      "sha256": "c1d4fa85914626c92e35a4982afb02f327df6a7f02c817fd2bc9f05ffc662d76",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "J6_parent/dynamic_world/100": {
+      "path": "output/staged_reconstruction/RubberDuck_revocable_springs/v1/J6_parent_dynamic_world_t100.ply",
+      "sha256": "084f9c5895db8791878eb254aade7a2c6a93c634d4287f6b28c7f61e744c439e",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "J6_parent/dynamic_world/200": {
+      "path": "output/staged_reconstruction/RubberDuck_revocable_springs/v1/J6_parent_dynamic_world_t200.ply",
+      "sha256": "4cf7d016077124871078c17154d1f1320cfdc28a8d28e9c47ae6845cd6dddf25",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "temporal_control/static": {
+      "path": "output/staged_reconstruction/RubberDuck_revocable_springs/v1/temporal_control_static.ply",
+      "sha256": "143d149aeb4949e607a9741b8a1a4a36d188fc753c6116922a00aafe06ce6ef5",
+      "vertices": 4126,
+      "checkpoint_position_exact": true,
+      "all_fields_finite": true,
+      "coordinates": "world"
+    },
+    "temporal_control/canonical_dynamic_local": {
+      "path": "output/staged_reconstruction/RubberDuck_revocable_springs/v1/temporal_control_canonical_dynamic_local.ply",
+      "sha256": "aa95c2140efec264a21a3e129b451e9966211ee1233264a96ad6b8303a34b0c5",
+      "vertices": 15507,
+      "checkpoint_position_exact": true,
+      "all_fields_finite": true,
+      "coordinates": "local canonical; add checkpoint centers after deformation"
+    },
+    "temporal_control/dynamic_world/2": {
+      "path": "output/staged_reconstruction/RubberDuck_revocable_springs/v1/temporal_control_dynamic_world_t002.ply",
+      "sha256": "abdc91d09d0ed19cd0ac1eba5025a65520840e0ddfae7fecf99f117081dd2b71",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "temporal_control/dynamic_world/100": {
+      "path": "output/staged_reconstruction/RubberDuck_revocable_springs/v1/temporal_control_dynamic_world_t100.ply",
+      "sha256": "09c93941e40a502797012cafaade9c7c78a02138b5316f3d4881db1a3bec1187",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "temporal_control/dynamic_world/200": {
+      "path": "output/staged_reconstruction/RubberDuck_revocable_springs/v1/temporal_control_dynamic_world_t200.ply",
+      "sha256": "63f20042b0fb89c62a6f83b1e698b0e7cda6511a85a7b4d95b9db1e23509d8e2",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "revocable_spring/static": {
+      "path": "output/staged_reconstruction/RubberDuck_revocable_springs/v1/revocable_spring_static.ply",
+      "sha256": "143d149aeb4949e607a9741b8a1a4a36d188fc753c6116922a00aafe06ce6ef5",
+      "vertices": 4126,
+      "checkpoint_position_exact": true,
+      "all_fields_finite": true,
+      "coordinates": "world"
+    },
+    "revocable_spring/canonical_dynamic_local": {
+      "path": "output/staged_reconstruction/RubberDuck_revocable_springs/v1/revocable_spring_canonical_dynamic_local.ply",
+      "sha256": "6bdf67648b6e3fd1f605c1e4b404acc5079b7d89c46fa482f04064558b437c86",
+      "vertices": 15507,
+      "checkpoint_position_exact": true,
+      "all_fields_finite": true,
+      "coordinates": "local canonical; add checkpoint centers after deformation"
+    },
+    "revocable_spring/dynamic_world/2": {
+      "path": "output/staged_reconstruction/RubberDuck_revocable_springs/v1/revocable_spring_dynamic_world_t002.ply",
+      "sha256": "f58588da42a34fe0c1c705146feb9b94dcda8794c9824c3d8cf99dd389c3708f",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "revocable_spring/dynamic_world/100": {
+      "path": "output/staged_reconstruction/RubberDuck_revocable_springs/v1/revocable_spring_dynamic_world_t100.ply",
+      "sha256": "b85c74c61b161351501fb75089406fa950220260bafb5add5e0017ee0341eb66",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "revocable_spring/dynamic_world/200": {
+      "path": "output/staged_reconstruction/RubberDuck_revocable_springs/v1/revocable_spring_dynamic_world_t200.ply",
+      "sha256": "21cdaf941bde228dbf51cb74e08968bf7a0e0c3133d1697ece73e4013e0d9fd9",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    }
+  },
+  "source_sha256": "22a30fcf0185b85d1bcabac655fa822fb311cda50951134cfd8bb70119956814"
+}

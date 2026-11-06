@@ -1,0 +1,94 @@
+W1106 03:41:45.658000 289468 envs\pidg-cu128\Lib\site-packages\torch\utils\cpp_extension.py:466] Error checking compiler version for cl: 'cp1' codec can't decode bytes in position 0--1: No mapping for the Unicode character exists in the target code page.
+ninja: no work to do.
+F:\A_Edinburgh\PhysGauss\variants\color_repair\code\hashencoder\hashgrid.py:16: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.half)
+F:\A_Edinburgh\PhysGauss\variants\color_repair\code\hashencoder\hashgrid.py:56: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+L4_STEP temporal_control 1 0.006319449748843908 0.0 0
+L4_STEP temporal_control 25 0.005678568035364151 0.0 0
+L4_STEP temporal_control 50 0.006821922957897186 0.0 0
+L4_STEP temporal_control 75 0.006664403714239597 0.0 0
+L4_STEP temporal_control 100 0.006699754856526852 0.0 0
+L4_STEP temporal_control 125 0.004509842023253441 0.0 0
+L4_STEP temporal_control 150 0.00836243573576212 0.0 0
+L4_STEP temporal_control 175 0.0074418410658836365 0.0 0
+L4_STEP temporal_control 200 0.006746049039065838 0.0 0
+L4_STEP temporal_control 225 0.006880215834826231 0.0 0
+L4_STEP temporal_control 250 0.006169996224343777 0.0 0
+L4_MEMORY_REFRESH {'completed_updates': 250, 'total_memories': 22, 'active_memories': 18, 'active_rows': 18, 'active_observations': 304, 'active_frame_thirds': [304, 0, 0], 'suspended': 4, 'revoked': 0, 'surface_active_patches': 448}
+L4_STEP temporal_control 275 0.006623387336730957 0.0 0
+L4_STEP temporal_control 300 0.006464967969805002 0.0 0
+L4_STEP temporal_control 325 0.0071084401570260525 0.0 0
+L4_STEP temporal_control 350 0.006263944320380688 0.0 0
+L4_STEP temporal_control 375 0.005682751536369324 0.0 0
+L4_STEP temporal_control 400 0.007621447555720806 0.0 0
+L4_STEP temporal_control 425 0.00827090721577406 0.0 0
+L4_STEP temporal_control 450 0.006388799287378788 0.0 0
+L4_STEP temporal_control 475 0.005800036247819662 0.0 0
+L4_STEP temporal_control 500 0.006187545135617256 0.0 0
+L4_MEMORY_REFRESH {'completed_updates': 500, 'total_memories': 22, 'active_memories': 17, 'active_rows': 17, 'active_observations': 288, 'active_frame_thirds': [288, 0, 0], 'suspended': 5, 'revoked': 0, 'surface_active_patches': 448}
+L4_STEP temporal_control 525 0.006868823431432247 0.0 0
+L4_STEP temporal_control 550 0.006949443370103836 0.0 0
+L4_STEP temporal_control 575 0.005740403663367033 0.0 0
+L4_STEP temporal_control 600 0.004492195788770914 0.00041806133231148124 16
+L4_STEP temporal_control 625 0.006319928914308548 0.0 0
+L4_STEP temporal_control 650 0.006081460043787956 0.0 0
+L4_STEP temporal_control 675 0.00458186399191618 0.0 0
+L4_STEP temporal_control 700 0.006510686129331589 0.0 0
+L4_STEP temporal_control 725 0.006066899746656418 0.0 0
+L4_STEP temporal_control 750 0.007098112255334854 0.0 0
+L4_MEMORY_REFRESH {'completed_updates': 750, 'total_memories': 22, 'active_memories': 16, 'active_rows': 16, 'active_observations': 272, 'active_frame_thirds': [272, 0, 0], 'suspended': 6, 'revoked': 0, 'surface_active_patches': 448}
+L4_STEP temporal_control 775 0.007554280571639538 0.0 0
+L4_STEP temporal_control 800 0.006511042360216379 0.0 0
+L4_STEP temporal_control 825 0.005324860569089651 0.0 0
+L4_STEP temporal_control 850 0.005406564101576805 0.00044619920663535595 16
+L4_STEP temporal_control 875 0.007130504585802555 0.0 0
+L4_STEP temporal_control 900 0.00682107824832201 0.0 0
+L4_STEP temporal_control 925 0.007765339687466621 0.0 0
+L4_STEP temporal_control 950 0.007052823435515165 0.0 0
+L4_STEP temporal_control 975 0.005786685273051262 0.0 0
+L4_STEP temporal_control 1000 0.006746161729097366 0.0 0
+L4_MEMORY_REFRESH {'completed_updates': 1000, 'total_memories': 22, 'active_memories': 16, 'active_rows': 16, 'active_observations': 272, 'active_frame_thirds': [272, 0, 0], 'suspended': 6, 'revoked': 0, 'surface_active_patches': 448}
+L4_STEP temporal_control 1025 0.0044553158804774284 6.313553603831679e-05 14
+L4_STEP temporal_control 1050 0.005210153758525848 0.0 0
+L4_STEP temporal_control 1075 0.005446837283670902 0.0 0
+L4_STEP temporal_control 1100 0.004929952789098024 0.0 0
+L4_STEP temporal_control 1125 0.006057169288396835 0.0 0
+L4_STEP temporal_control 1150 0.006291992496699095 0.0 0
+L4_STEP temporal_control 1175 0.008212504908442497 0.0 0
+L4_STEP temporal_control 1200 0.005132503341883421 0.00026215921388939023 24
+L4_STEP temporal_control 1225 0.00721646286547184 0.0 0
+L4_STEP temporal_control 1250 0.005612494423985481 0.0 0
+L4_MEMORY_REFRESH {'completed_updates': 1250, 'total_memories': 22, 'active_memories': 17, 'active_rows': 17, 'active_observations': 288, 'active_frame_thirds': [288, 0, 0], 'suspended': 5, 'revoked': 0, 'surface_active_patches': 448}
+L4_STEP temporal_control 1275 0.004674084950238466 0.0007675343658775091 29
+L4_STEP temporal_control 1300 0.00555275846272707 0.0 0
+L4_STEP temporal_control 1325 0.006054098717868328 0.0 0
+L4_STEP temporal_control 1350 0.007236055098474026 0.0 0
+L4_STEP temporal_control 1375 0.006053881254047155 0.0 0
+L4_STEP temporal_control 1400 0.007278514094650745 0.0 0
+L4_STEP temporal_control 1425 0.006164273712784052 0.0 0
+L4_STEP temporal_control 1450 0.005594777408987284 0.00014141268911771476 4
+L4_STEP temporal_control 1475 0.007933905348181725 0.0 0
+L4_STEP temporal_control 1500 0.009265928529202938 0.0 0
+L4_MEMORY_REFRESH {'completed_updates': 1500, 'total_memories': 22, 'active_memories': 14, 'active_rows': 14, 'active_observations': 236, 'active_frame_thirds': [236, 0, 0], 'suspended': 8, 'revoked': 0, 'surface_active_patches': 448}
+L4_STEP temporal_control 1525 0.007404812145978212 0.0 0
+L4_STEP temporal_control 1550 0.0067537808790802956 0.0 0
+L4_STEP temporal_control 1575 0.009296612814068794 0.0 0
+L4_STEP temporal_control 1600 0.009007876738905907 0.0 0
+L4_STEP temporal_control 1625 0.006282172165811062 0.0 0
+L4_STEP temporal_control 1650 0.005269049666821957 0.0 0
+L4_STEP temporal_control 1675 0.005023460369557142 0.00019421901379246265 25
+L4_STEP temporal_control 1700 0.0072761718183755875 0.0 0
+L4_STEP temporal_control 1725 0.006285412237048149 0.0 0
+L4_STEP temporal_control 1750 0.008046428672969341 0.0 0
+L4_MEMORY_REFRESH {'completed_updates': 1750, 'total_memories': 22, 'active_memories': 14, 'active_rows': 14, 'active_observations': 236, 'active_frame_thirds': [236, 0, 0], 'suspended': 8, 'revoked': 0, 'surface_active_patches': 448}
+L4_STEP temporal_control 1775 0.007012655027210712 0.0 0
+L4_STEP temporal_control 1800 0.005208384711295366 0.0 0
+L4_STEP temporal_control 1825 0.006536203436553478 0.0 0
+L4_STEP temporal_control 1850 0.006836947053670883 0.0 0
+L4_STEP temporal_control 1875 0.008977876976132393 0.0 0
+L4_STEP temporal_control 1900 0.006702954415231943 0.0 0
+L4_STEP temporal_control 1925 0.008166929706931114 0.0 0
+L4_STEP temporal_control 1950 0.006235005334019661 0.0 0
+L4_STEP temporal_control 1975 0.007133453153073788 0.0 0
+L4_STEP temporal_control 2000 0.00630764989182353 0.0 0

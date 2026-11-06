@@ -8,7 +8,7 @@ NAMES=['J6_parent','temporal_control','revocable_spring']
 
 def main():
     required=['unit_tests.json','native_check.json','recovery.json','initial_coverage.json',
-              'independent_audit.json','controller_audit.json','structural_diagnostic.json','spring_reference_audit.json']
+              'independent_audit.json','controller_audit.json','structural_diagnostic.json','spring_reference_audit.json','spring_distribution.json']
     for name in required:assert read(V/name)['passed'],name
     ev=read(V/'evaluation.json');manual=read(V/'manual_review.json');ca=read(V/'controller_audit.json')
     assert manual['actual_visual_review'] and manual['fixed_native_RGB_alpha_D_reviewed']
@@ -36,6 +36,20 @@ def main():
     lines+=['','## 原始绑定记忆重投影（非独立GT）','',
         '| 模型 | fit均值px | held均值px | 缺失/372 |','|---|---:|---:|---:|']
     for n,q in ev['training_track_diagnostic']['models'].items():lines.append(f"| {n} | {q['fit_mean_px']:.6f} | {q['held_mean_px']:.6f} | {q['missing']} |")
+    lines+=['','## 全初始边的伸长/压缩分布','',
+        '每模型360片帧、2022片内边帧应用；同一边跨片/帧可重复，不是2022个物理连接。正负仅相对于父fit中位长度，不代表错误形变。','',
+        '| 模型 | 正应变 | 负应变 | 精确零 | 最小 | 应变P05 | 中位 | P95 | 最大 |','|---|---:|---:|---:|---:|---:|---:|---:|---:|']
+    for n,q in read(V/'spring_distribution.json')['models'].items():
+        quant=q['quantiles']
+        lines.append(f"| {n} | {q['positive_stretch']} | {q['negative_compression']} | {q['exact_zero']} | {quant['0']:.6f} | {quant['0.05']:.6f} | {quant['0.5']:.6f} | {quant['0.95']:.6f} | {quant['1']:.6f} |")
+    control=sd['temporal_control'];candidate=sd['revocable_spring']
+    strain_reduction=100*(1-candidate['mean_abs_strain']/control['mean_abs_strain'])
+    energy_reduction=100*(1-candidate['mean_spring_energy']/control['mean_spring_energy'])
+    lines+=['','## 几何约束的实测解释','',
+        f'相对匹配对照，全部初始360片帧平均绝对应变降低{strain_reduction:.2f}%，弹簧能量降低{energy_reduction:.2f}%；这证明本次局部长度目标受到了约束。面积越界片帧却由{control["area_outside_interval"]}增至{candidate["area_outside_interval"]}，贡献低于0.8由{control["coverage_below_lower"]}增至{candidate["coverage_below_lower"]}，不支持整体表面完整性同步改善。',
+        '最负单边应变由对照-0.4118变为候选-0.6955，正应变P95则由0.3371降至0.2586；均值改善并不保证所有边或压缩尾部改善。正负相对父参考，不是真实错误标签。',
+        '主要可确认的适用范围限制是：仅275/15507个不同动态行（约1.77%，不是表面积），60片起始时段59/1/0，未建立晚期可靠连接。几何loss只在合格且当前可用的观测应用，不能凭这些节点覆盖全物体，也没有机制生长未建表面。',
+        '固定父中位长度是否抑制真实形变、绑定是否仍含错误，是需要独立证据的风险；本试验不能确定唯一失败原因。不能从单对CUDA训练轨迹和自身参照应变，断言提高刚度、继续训练或加入质量/外力就会改善。后续优先验证连接在更长时段及未覆盖表面的可靠性，再另立候选；本轮不自动开启下一轮。']
     lines+=['','## 实际图像复核','',manual['conclusion'],'']+['- '+f for f in manual['findings']]
     lines+=['','## 验证与局限','',
         '28相关测试、默认关闭原生RGB/alpha/D精确及原梯度容差、孤立弹簧canonical/grid/deformation有限非零梯度、冻结分支无梯度、异常RNG/flags恢复通过。两臂20步短训、四独立恢复进程及同份native梯度精确Adam回放通过。原40步CUDA轨迹非确定性失败保留，epsilon仍1e-15。',
@@ -48,10 +62,17 @@ def main():
         manual_completeness_cleanup_passed=manual['dynamic_completeness_and_cleanup_passed'],RGB_nonregression_passed=ev['validation']['PSNR_nonregression_gate'],
         parent_nonregression_passed=ev['validation']['parent_nonregression_gate'],independent_geometry_GT=False,true_physical_thickness_known=False,
         historical_color_parent_disclosed=True,automatic_extension=False)
+    preclosure=V/'preclosure_states.json'
+    assert not preclosure.exists(), 'Keep the original preclosure state once'
+    write(preclosure,dict(postprocess=read(V/'postprocess.json'),
+        run_states={name:read(R/name) for name in ['pipeline.json','active.json'] if (R/name).exists()},
+        training_logs_preserved=True))
     artifacts=['assessment.md','manual_review.json','evaluation.json','videos.json','surface_bank.json','source_freeze.json','evaluation_freeze.json',
         'native_check.json','recovery.json','unit_tests.json','initial_health.json','initial_coverage.json','independent_audit.json','controller_audit.json',
-        'structural_diagnostic.json','spring_reference_audit.json']
+        'structural_diagnostic.json','spring_reference_audit.json','spring_evaluation_freeze.json','spring_distribution.json','spring_distribution_freeze.json','preclosure_states.json']
     write(V/'final_review.json',dict(**result,artifacts_sha256={n:sha(V/n) for n in artifacts}))
+    post=read(V/'postprocess.json');post.update(status='completed_reviewed',pending=False,pending_review=False,
+        final_review_sha256=sha(V/'final_review.json'));write(V/'postprocess.json',post)
     for path in [V/'final_status.json',R/'final_status.json',R/'active.json',R/'pipeline.json']:write(path,result)
     for arm in NAMES[1:]:write(R/'formal'/arm/'final_status.json',dict(status='completed_reviewed',iteration=2000,pending=False,pending_review=False,trial_status=status,checkpoint_sha256=sha(R/'formal'/arm/'checkpoint.pt')))
     with (B/'progress.md').open('a',encoding='utf-8',newline='\n') as f:f.write(f'\n- Full4000 updates, native evaluation/controller/spring-reference audit, PLY/videos and32 actual image reviews complete. {status}; no automatic extension. See v1/assessment.md.\n')

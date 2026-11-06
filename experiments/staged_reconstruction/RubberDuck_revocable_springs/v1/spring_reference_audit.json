@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "all337_patch_edges_fixed_fit_median_exact": 337,
+  "no_GT_material_rest": true,
+  "no_optimizer_updates": true,
+  "all_original_patch_frames": true,
+  "models": {
+    "J6_parent": {
+      "all360_replayed": true,
+      "mean_energy": 0.0012765028260167822,
+      "mean_abs_strain": 0.03851555839858221
+    },
+    "temporal_control": {
+      "all360_replayed": true,
+      "mean_energy": 0.011789456772354552,
+      "mean_abs_strain": 0.10843212692251471
+    },
+    "revocable_spring": {
+      "all360_replayed": true,
+      "mean_energy": 0.008677493340982724,
+      "mean_abs_strain": 0.09203448996867275
+    }
+  },
+  "source_sha256": "6a1a8f887503b505eab0fe118596f55274d92083e177961f9010b265ce8ce888"
+}

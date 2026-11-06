@@ -1,0 +1,55 @@
+{
+  "postprocess": {
+    "status": "completed_pending_manual_review",
+    "completed": [
+      {
+        "stage": "evaluation",
+        "log": "experiments/staged_reconstruction/RubberDuck_revocable_springs/v1/evaluation_attempt1.log",
+        "sha256": "0a0ef1bc8110f8508a31b95d255739a0f9ebf338b21a72c761e47c6df07fc5d4"
+      },
+      {
+        "stage": "controller",
+        "log": "experiments/staged_reconstruction/RubberDuck_revocable_springs/v1/controller_attempt1.log",
+        "sha256": "5dd764d06edc296e6cb26641c88259f33f198e0ca11f517cae325e344e865d07"
+      },
+      {
+        "stage": "structure",
+        "log": "experiments/staged_reconstruction/RubberDuck_revocable_springs/v1/structure_attempt1.log",
+        "sha256": "5ddb874edfe9adc1d528cf66c7b5053c51249243b949554b0b1d1ab9581096be"
+      },
+      {
+        "stage": "video",
+        "log": "experiments/staged_reconstruction/RubberDuck_revocable_springs/v1/video_attempt1.log",
+        "sha256": "d0d1fb791358e9ca6f01ae98a496b666ca10710845bf68fb083cd5f60ef2f624"
+      },
+      {
+        "stage": "artifacts",
+        "log": "experiments/staged_reconstruction/RubberDuck_revocable_springs/v1/artifacts_attempt1.log",
+        "sha256": "13870e527af45d6dd9036b3c6ab78ecf02dbc8a2d6a1ec0844607fa7315d7d17"
+      }
+    ],
+    "source_sha256": "eba76c9c0ef234725c4f15df5f862b031cb6ea36008a07e6b17e8cd5fa4c30d0"
+  },
+  "run_states": {
+    "pipeline.json": {
+      "status": "trained_pending_evaluation",
+      "pid": 316248,
+      "completed": [
+        {
+          "log": "experiments/staged_reconstruction/RubberDuck_revocable_springs/v1/20261106T034138837310Z_train_temporal_control_0.log",
+          "sha256": "f97d17a6386c5722763362b1c7c4b52a2d8fda643db3b99a2c38e1a95356f22f"
+        },
+        {
+          "log": "experiments/staged_reconstruction/RubberDuck_revocable_springs/v1/20261106T034750208997Z_train_revocable_spring_0.log",
+          "sha256": "df05895cdc616cdfe9cf1b1239afc25418772531085973d6be7bf5aac6757407"
+        }
+      ]
+    },
+    "active.json": {
+      "status": "training",
+      "arm": "revocable_spring",
+      "qualification": false
+    }
+  },
+  "training_logs_preserved": true
+}
