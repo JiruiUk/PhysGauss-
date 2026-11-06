@@ -1118,3 +1118,17 @@ frozen experiments remain untouched.
   independent artifact and native replay. Tests: test_i10_surface_graph.py.
 - Satellite targets are parent-transported proxies, not new measured tracks or
   physical identities. No new static labels, count, depth/normal GT or physics.
+
+### L4 RGB temporal surface memory and motion-compensated bundle fusion
+
+- `variants/staged_reconstruction/i10_temporal_memory/core.py`: fit-only reciprocal
+  raw RGB overlap stitching, unknown/conflict preservation, canonical association,
+  actual current/distant-keyframe projection and motion residual; default off.
+- `runtime.py`: explicit persistent observation bank/controller, native visibility
+  and RGB checks, pause/revoke/recover, unchanged PIDG multi-time deformation and
+  renderer, full model/twoAdam/RNG/camera/physics/memory checkpoints.
+- `RubberDuck_temporal_memory/{launch,input_audit,controller_audit,evaluate,audit}.py`:
+  unit/native qualification, exact state/fixed-gradient recovery, one matched
+  pair, independent memory/native replay and artifact review. Tests:
+  `tests/test_i10_temporal_memory.py`. RGB-derived hypotheses are not 3D GT;
+  no object count, semantic/static labels, topology growth or physics additions.
