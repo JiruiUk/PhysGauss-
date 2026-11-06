@@ -1,0 +1,134 @@
+{
+  "status": "trained_pending_evaluation",
+  "updates_per_arm": 2000,
+  "formal_updates": 4000,
+  "pipeline": {
+    "status": "trained_pending_evaluation",
+    "pid": 300588,
+    "completed": [
+      {
+        "log": "experiments/staged_reconstruction/RubberDuck_colorfree_joint/v1/20261106T135050088528Z_train_old_static_control_0.log",
+        "sha256": "3f7b60d1914a54c8d378ef5005ddf1e96bdadc79287f6a58c0218ad6ed2dff3d"
+      },
+      {
+        "log": "experiments/staged_reconstruction/RubberDuck_colorfree_joint/v1/20261106T135442002879Z_train_colorfree_static_0.log",
+        "sha256": "6c35c8ed12b52b7b8597c897f82498a09e421774c90cb8d36621082c0068f9ed"
+      }
+    ]
+  },
+  "arms": {
+    "old_static_control": {
+      "checkpoint_sha256": "4acf65350f1fa3fbca4891134b7691ac65690e9d7baabe777874b9063a2e700c",
+      "updates": 2000,
+      "source_model_two_Adam_exact": true,
+      "sampler_and_all_RNG_replayed": true,
+      "static_geometry_physics_Adam_graphs_frozen": true,
+      "static_points": 4126,
+      "dynamic_points": 15507,
+      "optimizer_steps": {
+        "0/_xyz": [
+          12000
+        ],
+        "0/_features_dc": [
+          18000
+        ],
+        "0/_features_rest": [
+          18000
+        ],
+        "0/_opacity": [
+          18000
+        ],
+        "0/_scaling": [
+          12000
+        ],
+        "0/_rotation": [
+          12000
+        ],
+        "1/dynamic/_xyz": [
+          28000
+        ],
+        "1/dynamic/_features_dc": [
+          28000
+        ],
+        "1/dynamic/_features_rest": [
+          28000
+        ],
+        "1/dynamic/_opacity": [
+          28000
+        ],
+        "1/dynamic/_scaling": [
+          28000
+        ],
+        "1/dynamic/_rotation": [
+          28000
+        ],
+        "1/grids": [
+          28000
+        ],
+        "1/deform_network": [
+          28000
+        ],
+        "1/PIDG_velocity_stress": [
+          800
+        ]
+      }
+    },
+    "colorfree_static": {
+      "checkpoint_sha256": "56496592beb55daf82444e34268b8e7b772a5819fa686cc5b95e3c63d348e4ad",
+      "updates": 2000,
+      "source_model_two_Adam_exact": true,
+      "sampler_and_all_RNG_replayed": true,
+      "static_geometry_physics_Adam_graphs_frozen": true,
+      "static_points": 3273,
+      "dynamic_points": 15507,
+      "optimizer_steps": {
+        "0/_xyz": [
+          18000
+        ],
+        "0/_features_dc": [
+          20000
+        ],
+        "0/_features_rest": [
+          20000
+        ],
+        "0/_opacity": [
+          20000
+        ],
+        "0/_scaling": [
+          18000
+        ],
+        "0/_rotation": [
+          18000
+        ],
+        "1/dynamic/_xyz": [
+          28000
+        ],
+        "1/dynamic/_features_dc": [
+          28000
+        ],
+        "1/dynamic/_features_rest": [
+          28000
+        ],
+        "1/dynamic/_opacity": [
+          28000
+        ],
+        "1/dynamic/_scaling": [
+          28000
+        ],
+        "1/dynamic/_rotation": [
+          28000
+        ],
+        "1/grids": [
+          28000
+        ],
+        "1/deform_network": [
+          28000
+        ],
+        "1/PIDG_velocity_stress": [
+          800
+        ]
+      }
+    }
+  },
+  "native_quality_pending": true
+}

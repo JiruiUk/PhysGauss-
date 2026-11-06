@@ -25,3 +25,15 @@
   an external setup/bootstrap invocation passed without changing frozen code.
 - Qualification receipt: `v1/recovery.json`. Formal2000-step arms are next;
   no reconstruction quality result is claimed from qualification.
+
+## Formal matched training completed
+
+- Both `old_static_control` and `colorfree_static` completed2000 new native1600
+  updates,4000 total. The serial pipeline exited successfully without restart.
+- Independent CPU audit passed: exact respective static/Adam sources, exact J6
+  non-static/dynamic Adam start, all4000 camera samples and RNG replay, frozen
+  static geometry/physics/physics Adam/graph, and full intended Adam counters.
+- Complete initial/final model/two-Adam/RNG/camera checkpoints and hash receipts
+  are in `runs/pidg_staged_reconstruction/RubberDuck_colorfree_joint/v1/formal`.
+- `v1/independent_audit.json` records the full-state checks. Quality evaluation,
+  native PNG/PLY/video export and manual review are pending; no promotion.

@@ -1,0 +1,120 @@
+{
+  "passed": true,
+  "arms": {
+    "old_static_control": {
+      "checkpoint_sha256": "4acf65350f1fa3fbca4891134b7691ac65690e9d7baabe777874b9063a2e700c",
+      "updates": 2000,
+      "source_model_two_Adam_exact": true,
+      "sampler_and_all_RNG_replayed": true,
+      "static_geometry_physics_Adam_graphs_frozen": true,
+      "static_points": 4126,
+      "dynamic_points": 15507,
+      "optimizer_steps": {
+        "0/_xyz": [
+          12000
+        ],
+        "0/_features_dc": [
+          18000
+        ],
+        "0/_features_rest": [
+          18000
+        ],
+        "0/_opacity": [
+          18000
+        ],
+        "0/_scaling": [
+          12000
+        ],
+        "0/_rotation": [
+          12000
+        ],
+        "1/dynamic/_xyz": [
+          28000
+        ],
+        "1/dynamic/_features_dc": [
+          28000
+        ],
+        "1/dynamic/_features_rest": [
+          28000
+        ],
+        "1/dynamic/_opacity": [
+          28000
+        ],
+        "1/dynamic/_scaling": [
+          28000
+        ],
+        "1/dynamic/_rotation": [
+          28000
+        ],
+        "1/grids": [
+          28000
+        ],
+        "1/deform_network": [
+          28000
+        ],
+        "1/PIDG_velocity_stress": [
+          800
+        ]
+      }
+    },
+    "colorfree_static": {
+      "checkpoint_sha256": "56496592beb55daf82444e34268b8e7b772a5819fa686cc5b95e3c63d348e4ad",
+      "updates": 2000,
+      "source_model_two_Adam_exact": true,
+      "sampler_and_all_RNG_replayed": true,
+      "static_geometry_physics_Adam_graphs_frozen": true,
+      "static_points": 3273,
+      "dynamic_points": 15507,
+      "optimizer_steps": {
+        "0/_xyz": [
+          18000
+        ],
+        "0/_features_dc": [
+          20000
+        ],
+        "0/_features_rest": [
+          20000
+        ],
+        "0/_opacity": [
+          20000
+        ],
+        "0/_scaling": [
+          18000
+        ],
+        "0/_rotation": [
+          18000
+        ],
+        "1/dynamic/_xyz": [
+          28000
+        ],
+        "1/dynamic/_features_dc": [
+          28000
+        ],
+        "1/dynamic/_features_rest": [
+          28000
+        ],
+        "1/dynamic/_opacity": [
+          28000
+        ],
+        "1/dynamic/_scaling": [
+          28000
+        ],
+        "1/dynamic/_rotation": [
+          28000
+        ],
+        "1/grids": [
+          28000
+        ],
+        "1/deform_network": [
+          28000
+        ],
+        "1/PIDG_velocity_stress": [
+          800
+        ]
+      }
+    }
+  },
+  "matched_dynamic_start_Adam_RNG_camera_and_budget": true,
+  "static_source_count_and_Adam_history_differ": true,
+  "independent_geometry_GT": false
+}
