@@ -1,0 +1,331 @@
+{
+  "scope": "posthoc report-only arithmetic of saved records; zero training/model inference",
+  "dynamic_rows": 15507,
+  "covered_rows": 275,
+  "covered_row_fraction_not_surface_area": 0.01773392661378732,
+  "patch_start_thirds": [
+    59,
+    1,
+    0
+  ],
+  "reference_patch_frames": 360,
+  "reference_frame_min_max": [
+    0,
+    54
+  ],
+  "reference_distinct_frames": 20,
+  "reference_patch_frame_thirds": [
+    354,
+    6,
+    0
+  ],
+  "active_structure_sampled_frames": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16,
+    18,
+    20,
+    22,
+    44,
+    46,
+    48,
+    50
+  ],
+  "structure_active_steps_thirds": [
+    158,
+    8,
+    0
+  ],
+  "structure_active_steps": 166,
+  "structure_active_step_fraction": 0.083,
+  "candidate_minus_control_PSNR_dB": 0.6363270441691107,
+  "candidate_minus_parent_PSNR_dB": -0.13496685028076172,
+  "connection_penalty_reduction_vs_control_fraction": 0.5892416174156896,
+  "validation_means": {
+    "J6_parent": {
+      "PSNR": 31.994673347473146,
+      "SSIM": 0.9804254770278931,
+      "L1": 0.0032966943457722665
+    },
+    "temporal_control": {
+      "PSNR": 31.223379453023274,
+      "SSIM": 0.9790980855623881,
+      "L1": 0.0036008718501155577
+    },
+    "surface_support": {
+      "PSNR": 31.859706497192384,
+      "SSIM": 0.9801531831423441,
+      "L1": 0.0033679112636794645
+    }
+  },
+  "tracking_diagnostic": {
+    "all_original_bound_memories_unfiltered": true,
+    "held_RGB_trained": true,
+    "independent_3D_GT": false,
+    "models": {
+      "J6_parent": {
+        "total": 372,
+        "missing": 0,
+        "fit_mean_px": 0.8348469820682929,
+        "held_mean_px": 0.8605431392491754
+      },
+      "temporal_control": {
+        "total": 372,
+        "missing": 0,
+        "fit_mean_px": 0.4905099834522302,
+        "held_mean_px": 0.5341857833938932
+      },
+      "surface_support": {
+        "total": 372,
+        "missing": 0,
+        "fit_mean_px": 0.34905259883221956,
+        "held_mean_px": 0.36545249454002365
+      }
+    }
+  },
+  "structural_summary": {
+    "J6_parent": {
+      "all_original_patch_frames": 360,
+      "missing_geometry": 0,
+      "known_parent_coverage": 359,
+      "missing_coverage": 0,
+      "mean_connection_penalty": 0.029367791856906442,
+      "thickness_outside_interval": 0,
+      "area_outside_interval": 0,
+      "coverage_below_lower": 0,
+      "mean_coverage_ratio": 1.0
+    },
+    "temporal_control": {
+      "all_original_patch_frames": 360,
+      "missing_geometry": 0,
+      "known_parent_coverage": 359,
+      "missing_coverage": 0,
+      "mean_connection_penalty": 0.04463774482652904,
+      "thickness_outside_interval": 2,
+      "area_outside_interval": 19,
+      "coverage_below_lower": 96,
+      "mean_coverage_ratio": 0.8912834056801301
+    },
+    "surface_support": {
+      "all_original_patch_frames": 360,
+      "missing_geometry": 0,
+      "known_parent_coverage": 359,
+      "missing_coverage": 0,
+      "mean_connection_penalty": 0.01833532786715624,
+      "thickness_outside_interval": 3,
+      "area_outside_interval": 13,
+      "coverage_below_lower": 67,
+      "mean_coverage_ratio": 0.9525214044793747
+    }
+  },
+  "usage_summary": {
+    "temporal_control": {
+      "steps_with_memory": 217,
+      "endpoint_pair_applications": 4768,
+      "steps_with_structure": 0,
+      "structural_patch_applications": 0,
+      "structural_edge_applications": 0,
+      "native_coverage_group_applications": 0,
+      "mean_weighted_memory_loss": 0.0001254019443508696,
+      "mean_weighted_structure_loss": 0.0
+    },
+    "surface_support": {
+      "steps_with_memory": 211,
+      "endpoint_pair_applications": 4733,
+      "steps_with_structure": 166,
+      "structural_patch_applications": 1174,
+      "structural_edge_applications": 5527,
+      "native_coverage_group_applications": 397,
+      "mean_weighted_memory_loss": 0.00012111304748577823,
+      "mean_weighted_structure_loss": 6.599339362163419e-07
+    }
+  },
+  "high_alpha_proxies": [
+    {
+      "camera": 86,
+      "time": 2,
+      "model": "J6_parent",
+      "pixels": 1440000,
+      "dynamic_alpha_gt05": 36399,
+      "dynamic_dark_high_alpha": 941,
+      "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+      "not_geometry_GT": true
+    },
+    {
+      "camera": 86,
+      "time": 2,
+      "model": "temporal_control",
+      "pixels": 1440000,
+      "dynamic_alpha_gt05": 36305,
+      "dynamic_dark_high_alpha": 875,
+      "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+      "not_geometry_GT": true
+    },
+    {
+      "camera": 86,
+      "time": 2,
+      "model": "surface_support",
+      "pixels": 1440000,
+      "dynamic_alpha_gt05": 36664,
+      "dynamic_dark_high_alpha": 830,
+      "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+      "not_geometry_GT": true
+    },
+    {
+      "camera": 86,
+      "time": 100,
+      "model": "J6_parent",
+      "pixels": 1440000,
+      "dynamic_alpha_gt05": 49417,
+      "dynamic_dark_high_alpha": 23333,
+      "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+      "not_geometry_GT": true
+    },
+    {
+      "camera": 86,
+      "time": 100,
+      "model": "temporal_control",
+      "pixels": 1440000,
+      "dynamic_alpha_gt05": 48453,
+      "dynamic_dark_high_alpha": 22665,
+      "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+      "not_geometry_GT": true
+    },
+    {
+      "camera": 86,
+      "time": 100,
+      "model": "surface_support",
+      "pixels": 1440000,
+      "dynamic_alpha_gt05": 47032,
+      "dynamic_dark_high_alpha": 20876,
+      "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+      "not_geometry_GT": true
+    },
+    {
+      "camera": 86,
+      "time": 200,
+      "model": "J6_parent",
+      "pixels": 1440000,
+      "dynamic_alpha_gt05": 66629,
+      "dynamic_dark_high_alpha": 36539,
+      "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+      "not_geometry_GT": true
+    },
+    {
+      "camera": 86,
+      "time": 200,
+      "model": "temporal_control",
+      "pixels": 1440000,
+      "dynamic_alpha_gt05": 69875,
+      "dynamic_dark_high_alpha": 32488,
+      "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+      "not_geometry_GT": true
+    },
+    {
+      "camera": 86,
+      "time": 200,
+      "model": "surface_support",
+      "pixels": 1440000,
+      "dynamic_alpha_gt05": 85215,
+      "dynamic_dark_high_alpha": 47459,
+      "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+      "not_geometry_GT": true
+    },
+    {
+      "camera": 188,
+      "time": 2,
+      "model": "J6_parent",
+      "pixels": 1440000,
+      "dynamic_alpha_gt05": 43902,
+      "dynamic_dark_high_alpha": 2647,
+      "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+      "not_geometry_GT": true
+    },
+    {
+      "camera": 188,
+      "time": 2,
+      "model": "temporal_control",
+      "pixels": 1440000,
+      "dynamic_alpha_gt05": 44784,
+      "dynamic_dark_high_alpha": 3123,
+      "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+      "not_geometry_GT": true
+    },
+    {
+      "camera": 188,
+      "time": 2,
+      "model": "surface_support",
+      "pixels": 1440000,
+      "dynamic_alpha_gt05": 44860,
+      "dynamic_dark_high_alpha": 3026,
+      "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+      "not_geometry_GT": true
+    },
+    {
+      "camera": 188,
+      "time": 100,
+      "model": "J6_parent",
+      "pixels": 1440000,
+      "dynamic_alpha_gt05": 44161,
+      "dynamic_dark_high_alpha": 15419,
+      "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+      "not_geometry_GT": true
+    },
+    {
+      "camera": 188,
+      "time": 100,
+      "model": "temporal_control",
+      "pixels": 1440000,
+      "dynamic_alpha_gt05": 47341,
+      "dynamic_dark_high_alpha": 18322,
+      "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+      "not_geometry_GT": true
+    },
+    {
+      "camera": 188,
+      "time": 100,
+      "model": "surface_support",
+      "pixels": 1440000,
+      "dynamic_alpha_gt05": 44801,
+      "dynamic_dark_high_alpha": 16181,
+      "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+      "not_geometry_GT": true
+    },
+    {
+      "camera": 188,
+      "time": 200,
+      "model": "J6_parent",
+      "pixels": 1440000,
+      "dynamic_alpha_gt05": 46523,
+      "dynamic_dark_high_alpha": 28619,
+      "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+      "not_geometry_GT": true
+    },
+    {
+      "camera": 188,
+      "time": 200,
+      "model": "temporal_control",
+      "pixels": 1440000,
+      "dynamic_alpha_gt05": 45980,
+      "dynamic_dark_high_alpha": 29369,
+      "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+      "not_geometry_GT": true
+    },
+    {
+      "camera": 188,
+      "time": 200,
+      "model": "surface_support",
+      "pixels": 1440000,
+      "dynamic_alpha_gt05": 51367,
+      "dynamic_dark_high_alpha": 34545,
+      "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+      "not_geometry_GT": true
+    }
+  ]
+}
