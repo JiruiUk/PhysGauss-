@@ -1,124 +1,124 @@
 # PhysGauss
 
-**基于 Physics-Informed Deformable Gaussian Splatting（PIDG）的动态场景重建研究。**
+**Dynamic scene reconstruction research based on Physics-Informed Deformable Gaussian Splatting (PIDG).**
 
-当前重点是 Rubber Duck 场景：在不预设动态物体数量的前提下，研究静态/动态联合重建、可撤销表面追踪、局部结构约束及长期观测记忆，尽可能减少拖影、碎裂和悬浮支撑，同时保留结构完整性。
+The current focus is the Rubber Duck scene: joint static/dynamic reconstruction, revocable surface tracking, local structural constraints, and long-term observation memory, without assuming the number of dynamic objects. The goal is to reduce trailing artifacts, fragmentation, and floating geometry while preserving structural completeness.
 
-本仓库保存源代码、实验协议、正负结果与审计记录。**目前尚未解决稳定的新视角完整重建，也没有验证真实材料参数或接触力恢复。** 实验执行完成与几何成功分别记录。
+This repository contains source code, experimental protocols, positive and negative results, and audit records. **Consistently complete novel-view reconstruction remains unresolved, and recovery of real material parameters or contact forces has not been validated.** Experiment completion and geometric success are recorded separately.
 
-[当前实验总计划](experiments/staged_reconstruction_plan.md) · [重建改进计划](experiments/adaptive_reconstruction_plan.md) · [源码映射](PIDG_REPO_MAP.md) · [PIDG 复现说明](reproduction/README.md)
+[Staged experiment plan](experiments/staged_reconstruction_plan.md) · [Reconstruction improvement plan](experiments/adaptive_reconstruction_plan.md) · [Source code map](PIDG_REPO_MAP.md) · [PIDG reproduction guide](reproduction/README.md)
 
-## 当前模型结构
+## Current model architecture
 
 ```mermaid
 flowchart LR
-    S[静态 Gaussian 库] --> R[原生 PIDG Gaussian 渲染器]
-    X[统一动态 canonical Gaussian 池] --> D[原 PIDG 时空 hash grid 与形变网络]
-    T[时间 t] --> D
-    D --> G[时刻 t 的动态位置 / 尺度 / 旋转]
+    S[Static Gaussian bank] --> R[Native PIDG Gaussian renderer]
+    X[Unified dynamic canonical Gaussian pool] --> D[Original PIDG spatiotemporal hash grid and deformation network]
+    T[Time t] --> D
+    D --> G[Dynamic positions / scales / rotations at time t]
     G --> R
-    C[相机位姿与内参] --> R
-    R --> I[RGB / alpha / 累积深度 D]
-    P[原 PIDG 速度与应力分支] -.保留，按实验协议启用或冻结.-> X
-    M[可撤销观测 / 表面连接 / 长期记忆] -.独立配置开关.-> D
+    C[Camera poses and intrinsics] --> R
+    R --> I[RGB / alpha / accumulated depth D]
+    P[Original PIDG velocity and stress branches] -. Enabled or frozen by protocol .-> X
+    M[Revocable observations / surface connections / long-term memory] -. Independent configuration flags .-> D
 ```
 
-- **静态分支**：独立 Gaussian 库；当前 J7 使用由 RGB/多视角几何发现和训练得到的 3,273 点静态库，未使用蓝色阈值。联合阶段冻结静态位置、尺度与旋转，仅更新 opacity 和球谐外观（SH）。
-- **动态分支**：15,507 点统一 canonical Gaussian 池，加原 PIDG 时空形变场。点数是表示容量，不是鸭子数量；未知身份与遮挡保持不确定。
-- **原生合成**：静态和变形后的动态 Gaussian 在同一渲染器中共同深度排序、alpha 合成。动态单独渲染只用于明确标注的诊断。
-- **物理分支**：保留 PIDG 的速度/应力与相关接口；近期 J6/J7/J8 联合实验冻结物理参数、物理 Adam 和图缓存，属于 RGB 重建续训，不能称为新增物理训练。
-- **来源限制**：当前静态发现已移除蓝色阈值，但动态父模型仍有历史颜色条件掩膜来源。整模型不能称为从零完全无标签重建。
+- **Static branch:** a separate Gaussian bank. J7 uses 3,273 static Gaussians discovered and trained using RGB and multiview geometry, without a blue color threshold. During joint training, static positions, scales, and rotations are frozen; only opacity and spherical harmonic appearance (SH) are updated.
+- **Dynamic branch:** a unified pool of 15,507 canonical Gaussians with the original PIDG spatiotemporal deformation field. The point count is representation capacity, not the number of ducks. Identity and occlusion uncertainty remain unresolved where evidence is insufficient.
+- **Native compositing:** static and deformed dynamic Gaussians share depth sorting and alpha compositing in the same renderer. Dynamic-only renders are explicitly labeled diagnostics.
+- **Physics branches:** PIDG velocity/stress branches and their interfaces are retained. Recent J6/J7/J8 joint experiments freeze physics parameters, the physics Adam optimizer, and graph caches. These are RGB reconstruction continuations, not additional physics training.
+- **Provenance limitation:** current static discovery no longer uses a blue threshold, but the dynamic parent model still inherits historical color-conditioned masks. The full model cannot be described as reconstruction trained from scratch without labels.
 
-新增研究模块默认关闭。`src/physgauss` 是早期独立参考架构；正式 PIDG 原生实验主要位于 `reproduction/`、`variants/` 和 `pidg_ext/`，两者的结果不能混用。
+New research modules are disabled by default. `src/physgauss` is an early standalone reference architecture; native PIDG experiments primarily use `reproduction/`, `variants/`, and `pidg_ext/`. Results from these paths must be kept distinct.
 
-## 最近实验结果
+## Recent experimental results
 
-以下 RGB 指标来自对应协议的 30 张验证图、原生宽度 1600；它们不是独立三维几何指标。
+The RGB metrics below use the 30 validation images specified by each protocol, at native width 1600. They are not independent 3D geometry metrics.
 
-| 实验 | 做了什么 | 实测结果与结论 |
+| Experiment | Change | Measured result and conclusion |
 |---|---|---|
-| [J6：I10 静动态联合](experiments/staged_reconstruction/RubberDuck_I10_joint/v1/assessment.md) | 匹配的静态冻结/静态 opacity 与 SH 联合，两臂各 2,000 步 | 联合 PSNR **31.9947 dB**，较对照 +0.5935 dB；动态碎裂与暗色拖尾仍存在 |
-| [J7：无蓝色阈值静态库融合](experiments/staged_reconstruction/RubberDuck_colorfree_joint/v1/assessment.md) | 用 RGB/几何静态库替换旧库，匹配联合训练各 2,000 步 | 候选 PSNR **34.0451 dB**，对照 32.1062 dB；外观改善，未通过完整几何清理门槛 |
-| [J8：J7＋长期观测记忆](experiments/staged_reconstruction/RubberDuck_J7_long_memory/v1/assessment.md) | 可保存、可暂停/撤销的观测记忆，匹配续训各 2,000 步 | 记忆组 **34.1731 dB**，对照 34.3005 dB；局部追踪改善，未稳定修复完整性，保留 J7 |
-| [V0：相机×时间检查](experiments/staged_reconstruction/RubberDuck_view_time_audit/v1/assessment.md) | J7/J8 三模型、共 **1,446** 组只读交叉渲染；独立进程逐值复算 | 支持训练轨迹附近拟合较好的现象；灰色动态支撑仍有拖尾，不能只归因颜色或静态遮挡 |
+| [J6: I10 static/dynamic joint training](experiments/staged_reconstruction/RubberDuck_I10_joint/v1/assessment.md) | Matched static-frozen and joint static-opacity/SH arms, 2,000 steps each | Joint PSNR **31.9947 dB**, +0.5935 dB over control; dynamic fragmentation and dark trails remain |
+| [J7: static bank without a blue threshold](experiments/staged_reconstruction/RubberDuck_colorfree_joint/v1/assessment.md) | Replace the old bank with an RGB/geometry-derived static bank; matched joint training, 2,000 steps per arm | Candidate PSNR **34.0451 dB**, control 32.1062 dB; appearance improves, but the full geometric cleanup criteria are not met |
+| [J8: J7 with long-term observation memory](experiments/staged_reconstruction/RubberDuck_J7_long_memory/v1/assessment.md) | Persistent observation memory that can be suspended or revoked; matched continuation, 2,000 steps per arm | Memory arm **34.1731 dB**, control 34.3005 dB; some local tracking improves, but completeness is not consistently repaired; retain J7 |
+| [V0: camera-by-time audit](experiments/staged_reconstruction/RubberDuck_view_time_audit/v1/assessment.md) | **1,446** read-only cross-rendering pairs across three J7/J8 models, with exact independent-process replay | Supports better fitting near the training trajectory; gray dynamic geometry still has trails, so color or static occlusion alone cannot explain the artifacts |
 
-### 固定时间、改变相机
+### Fixed time, varying camera
 
-下图来自 J7。所有格子使用同一时间；上排是 RGB，下排移除静态遮挡并把动态 Gaussian 统一渲染为灰色。绿色框是该时间的原训练相机，左右相机视线分别偏离约 42.8°/45.5°。
+The figure below is from J7. Every column uses the same time. The top row shows RGB; the bottom row removes static occlusion and renders all dynamic Gaussians in gray. The green box marks the original training camera for that time. The left and right camera viewing directions differ from it by approximately 42.8° and 45.5°.
 
-![J7 固定时间跨视角 RGB 与灰色动态支撑](docs/assets/J7_camera_time_a60.png)
+![J7 fixed-time cross-view RGB and gray dynamic geometry](docs/assets/J7_camera_time_a60.png)
 
-原相机 RGB 相对完整，但灰色支撑已经有大片拉长区域；换视角后表面明显碎裂。这支持轨迹相关拟合和几何欠约束，**没有同时间的新视角真值，因此不能证明过拟合是唯一原因或给出真实几何误差**。
+RGB looks relatively complete from the original camera, but the gray geometry already contains broad elongated regions. Surfaces fragment visibly from other views. This supports trajectory-dependent fitting and insufficient geometric constraints. **There is no simultaneous novel-view ground truth, so this does not establish overfitting as the sole cause or quantify true geometric error.**
 
-训练派生划分有 120 张训练图、120 个精确时间和 120 个不同相机位姿，同时间多相机观测为 0。该 120/30/50 重建划分与官方基线的 150/50 划分不同，不能直接混合比较。Rubber Duck 是 PIDG 发布的物理基准场景，不应将目录中的 `real` 标签解释为本项目采集的真实相机数据。
+The derived reconstruction split contains 120 training images, 120 exact times, and 120 distinct camera poses, with no simultaneous multicamera observations. This 120/30/50 split differs from the official baseline's 150/50 split; their results must not be compared as if they used the same protocol. Rubber Duck is a physics benchmark scene released with PIDG. A directory labeled `real` does not mean that this project captured it with physical cameras.
 
-更多完整记录：[S1–S6 汇总](experiments/staged_reconstruction/final_summary.md)、[J7/J8/V0 协议与审计](experiments/staged_reconstruction/)。失败候选、CUDA 恢复差异与未晋级结果均保留，没有只展示最优指标。
+Further records: [S1–S6 summary](experiments/staged_reconstruction/final_summary.md) and [J7/J8/V0 protocols and audits](experiments/staged_reconstruction/). Rejected candidates, CUDA recovery discrepancies, and results that were not promoted are retained alongside successful measurements.
 
-## 获取项目
+## Getting the project
 
 ```powershell
 git clone -c core.autocrlf=false https://github.com/JiruiUk/PhysGauss-.git
 Set-Location PhysGauss-
 ```
 
-部分实验使用源码原始字节的 SHA256；避免自动换行转换，并遵循对应实验的 `.gitattributes` 和冻结清单。
+Some experiments verify SHA256 hashes of raw source bytes. Avoid automatic line-ending conversion and follow the relevant `.gitattributes` and frozen file manifests.
 
-仓库包含代码、配置、文本报告及部分小型可视化；以下内容不随 Git 上传：
+The repository includes code, configurations, text reports, and selected small visualizations. The following local assets are excluded from Git:
 
-- `data/` 数据集与派生资产；
-- `runs/` 完整模型、Adam、RNG、相机状态等检查点；
-- `models/` 预训练模型、第三方本地下载与 `third_party/`；
-- `envs/`、缓存、编译产物和临时目录；
-- 未纳入版本控制的批量 `output/` 渲染、视频与点云。
+- Datasets and derived assets in `data/`.
+- Full model, Adam, RNG, and camera-state checkpoints in `runs/`.
+- Pretrained weights in `models/` and local third-party downloads in `third_party/`.
+- Environments in `envs/`, caches, build artifacts, and temporary directories.
+- Untracked bulk renders, videos, and point clouds in `output/`.
 
-已有历史提交中的小型输出保留。实验报告内的本地绝对路径、完整视频/PLY 和检查点哈希是来源记录，不代表克隆后相应资产已存在。**J7/J8 等完整继承链需要取得协议指定且 SHA 匹配的本地资产，不能仅凭克隆直接恢复。**
+Small outputs already tracked in historical commits are retained. Local absolute paths, full video/PLY references, and checkpoint hashes in reports are provenance records; they do not imply that those assets are included in a clone. **Restoring the full J7/J8 inheritance chains requires the local assets specified by their protocols, with matching SHA hashes. Cloning the repository alone is insufficient.**
 
-## 运行与验证
+## Running and validating
 
-### 1. 原生 PIDG 路径
+### 1. Native PIDG path
 
-已使用的环境为 Windows、Python 3.11.14、PyTorch 2.8.0+cu128、CUDA Toolkit 12.8、MSVC 14.44、RTX 5070 Ti。该组合是已验证记录，不是对所有硬件/平台的兼容承诺。
+The recorded environment is Windows, Python 3.11.14, PyTorch 2.8.0+cu128, CUDA Toolkit 12.8, MSVC 14.44, and an RTX 5070 Ti. This is a tested configuration, not a guarantee of compatibility with every platform or GPU.
 
-上游版本：
+Pinned upstream revisions:
 
-| 依赖 | 固定来源 |
+| Dependency | Source and revision |
 |---|---|
-| PIDG | [官方仓库](https://github.com/SCAILab-USTC/Physics-Informed-Deformable-Gaussian-Splatting)，`b77fd2107a50c875d7219bb4f82388d5e5ea1319` |
-| 光流 rasterizer | [上游仓库](https://github.com/HaoqinHong/flow-based-diff-gaussian-rasterization)，`2146a1c0dc3558644af420f20c21a0ad07ffa67a` |
-| PIDG 数据 | [Hugging Face](https://huggingface.co/datasets/HaoqinHong/Physics-Informed-Deformable-Gaussian-Splatting)，`46b23520acaaf5d58938fb19b50a3a62d12c55df` |
+| PIDG | [Official repository](https://github.com/SCAILab-USTC/Physics-Informed-Deformable-Gaussian-Splatting), `b77fd2107a50c875d7219bb4f82388d5e5ea1319` |
+| Flow rasterizer | [Upstream repository](https://github.com/HaoqinHong/flow-based-diff-gaussian-rasterization), `2146a1c0dc3558644af420f20c21a0ad07ffa67a` |
+| PIDG dataset | [Hugging Face](https://huggingface.co/datasets/HaoqinHong/Physics-Informed-Deformable-Gaussian-Splatting), `46b23520acaaf5d58938fb19b50a3a62d12c55df` |
 
-先将对应上游代码及子模块放到 `third_party/PIDG/`，准备 `envs/pidg-cu128/` 环境并安装 [固定依赖](reproduction/requirements-windows.txt)。数据下载/哈希校验入口为 [download_dataset.py](reproduction/scripts/download_dataset.py)，其 `--manifest` 输入需提供对应发布修订的文件清单。详细兼容修复和论文/公开代码差异见 [复现说明](reproduction/README.md)。
+Place the matching upstream code and submodules in `third_party/PIDG/`, prepare the `envs/pidg-cu128/` environment, and install the [pinned dependencies](reproduction/requirements-windows.txt). Use [download_dataset.py](reproduction/scripts/download_dataset.py) for dataset download and hash verification; its `--manifest` argument requires a file manifest for the corresponding dataset revision. See the [reproduction guide](reproduction/README.md) for compatibility patches and differences between the paper and public code.
 
 ```powershell
-# 在准备好上游源码和 Python/CUDA 环境后执行。
+# Run after preparing the upstream source and Python/CUDA environment.
 envs/pidg-cu128/python.exe reproduction/scripts/apply_compatibility.py --repo third_party/PIDG
 ./reproduction/scripts/build_extensions.ps1 -ProjectRoot (Get-Location).Path
 
-# 数据位于 data/PIDG/，CUDA 扩展可用后，先跑独立 smoke。
+# With data in data/PIDG/ and CUDA extensions available, run a separate smoke test first.
 ./reproduction/scripts/run_reproduction.ps1 -Smoke -Tag localcheck
 
-# Rubber Duck 官方公开代码基线；新 Tag 避免覆盖已有结果。
+# Rubber Duck baseline from the official public code; use a new tag to avoid overwriting results.
 ./reproduction/scripts/run_reproduction.ps1 -Scenes rubber_duck -Iterations 50000 -Tag baseline1
 ```
 
-上游配置将 Rubber Duck 拼写为 `rubber_dack`；runner 已显式映射。上述基线使用官方 split，与后续重建派生 split 分开记录。平台脚本包含本机路径/编译器设置，新机器应核对路径；不要修改历史冻结源码后把结果当成原协议重放。
+The upstream configuration spells Rubber Duck as `rubber_dack`; the runner maps this name explicitly. The baseline above uses the official split, recorded separately from later reconstruction splits. Platform scripts contain local paths and compiler settings that must be checked on a new machine. Editing frozen historical source changes the experiment and cannot be treated as replay of its original protocol.
 
-### 2. 默认关闭与只读诊断单测
+### 2. Default-off and read-only diagnostic tests
 
-安装原生研究依赖后，以下测试无需启动训练：
+After installing the native research dependencies, these checks do not start training:
 
 ```powershell
 $env:PYTHONPATH = "$PWD;$PWD/src"
 envs/pidg-cu128/python.exe -m pytest tests/test_view_time_audit.py -q -p no:cacheprovider
 envs/pidg-cu128/python.exe -m variants.staged_reconstruction.view_time_audit.worker
-# 输出 V0_DISABLED，不加载模型或启动渲染。
+# Prints V0_DISABLED without loading a model or starting rendering.
 ```
 
-完整 V0 渲染需要协议中的三个原模型及父链资产。启用前检查 `plan.md`、`protocol.json`、冻结 SHA、停止文件和锁；不要为了运行演示而重启已完成训练。
+Full V0 rendering requires the three original models and parent-chain assets specified in the protocol. Before enabling it, check `plan.md`, `protocol.json`, frozen SHA hashes, stop files, and locks. Do not restart completed training just to run a demonstration.
 
-### 3. 早期 CPU 参考架构（独立工程 smoke）
+### 3. Early CPU reference architecture
 
-这一路径验证 manifest、参考渲染器、训练/恢复与状态导出接口，**不是原生 PIDG 基准，也不生成上表结果**。
+This separate engineering smoke test validates the manifest, reference renderer, training/recovery, and state-export interfaces. **It is not the native PIDG benchmark and does not produce the results in the table above.**
 
 ```powershell
 ./scripts/bootstrap.ps1 -PythonExecutable python -Cpu
@@ -126,35 +126,35 @@ envs/pidg-cu128/python.exe -m variants.staged_reconstruction.view_time_audit.wor
 ./scripts/run_smoke.ps1 -RunName local_reference_smoke
 ```
 
-配置在 `configs/`，数据约定在 [docs/data_contract.md](docs/data_contract.md)。
+Configurations are in `configs/`; data conventions are in [docs/data_contract.md](docs/data_contract.md).
 
-## 目录导航
+## Repository layout
 
 ```text
-reproduction/                    PIDG 来源、环境、兼容修复、基线训练/恢复脚本
-variants/staged_reconstruction/   静态发现、统一动态池、追踪/结构/联合/记忆实验
-variants/                        其他独立历史对照及其原生代码快照
-pidg_ext/                        独立物理扩展算子
-src/physgauss/                   早期 CPU/PyTorch 参考架构
-experiments/                     协议、配置、评估、失败和独立审计记录
-tests/                          算子、默认关闭、状态与原生路径测试
-scripts/                        环境、实验与报告工具
-docs/                           技术说明与 README 示意图
-external/                       少量固定第三方源码/许可记录
+reproduction/                    PIDG provenance, environment, compatibility, baseline and recovery scripts
+variants/staged_reconstruction/   Static discovery, unified dynamic pool, tracking, structure, joint and memory experiments
+variants/                        Other historical controls and native code snapshots
+pidg_ext/                        Independent physics extension operators
+src/physgauss/                   Early CPU/PyTorch reference architecture
+experiments/                     Protocols, configurations, evaluations, failures and independent audits
+tests/                          Operator, default-off, state and native-path tests
+scripts/                        Environment, experiment and report tools
+docs/                           Technical documentation and README figures
+external/                       Selected pinned third-party source and license records
 ```
 
-实际函数映射以 [PIDG_REPO_MAP.md](PIDG_REPO_MAP.md) 为准。实验计划里的“下一步”不是默认自动队列；恢复暂停任务需要用户明确指示。
+See [PIDG_REPO_MAP.md](PIDG_REPO_MAP.md) for the function-level mapping. A plan's "next step" is not an automatic execution queue. Resuming a paused task requires an explicit user instruction.
 
-## 实验约定与当前限制
+## Experimental conventions and limitations
 
-- 保留原 PIDG 路径，新增模块通过独立开关启用，不重写基线。
-- 单候选协议先声明输入、损失和门槛，再测试、训练与评估；每个里程碑独立提交。
-- 完整训练恢复包括模型、两个 Adam、参数绑定、RNG、相机采样及物理图；原生 CUDA 的长轨迹差异和用户接受的精确状态/固定梯度验收分别保留。
-- RGB/PSNR、alpha、D/alpha、训练图像轨迹和合成独立 GT 分开报告。低 alpha 黑色表示缺失，不能当作零几何误差。
-- 几何/身份不确定时保持未知；不根据暗色、RGB 残差或遮挡直接删点或判背景。
-- 当前仍缺少经过独立验证的完整动态表面、跨遮挡持续身份、厚度及接触几何。单次图像指标提升不代表这些问题已解决。
-- 本构、材料参数、多材料、未知力和可辨识性是 [AGENTS.md](AGENTS.md) 中的独立路线；不能把近期 RGB 实验写成已完成物理参数恢复，也不将固体本构用于烟/流体。
+- Preserve the original PIDG path. Enable additions through independent flags rather than rewriting the baseline.
+- Declare each candidate's inputs, losses, and acceptance criteria before testing, training, and evaluation. Commit milestones separately.
+- Full training recovery includes the model, two Adam optimizers, parameter bindings, RNG, camera sampling, and physics graph. Native CUDA trajectory discrepancies and the user-approved exact-state/fixed-gradient acceptance checks are recorded separately.
+- Report RGB/PSNR, alpha, D/alpha, training-image trajectories, and independent synthetic ground truth separately. Black pixels with low alpha represent missing observations, not zero geometric error.
+- Keep uncertain geometry and identity unknown. Dark color, RGB residuals, or occlusion alone do not justify deleting points or classifying them as background.
+- Independently validated complete dynamic surfaces, persistent identity through occlusion, thickness, and contact geometry remain unresolved. An image-metric gain does not establish that these problems are solved.
+- Constitutive consistency, material parameters, multiple materials, unknown forces, and identifiability form a separate roadmap in [AGENTS.md](AGENTS.md). Recent RGB experiments do not demonstrate physical parameter recovery; solid constitutive models are not applied to smoke or fluids.
 
-## 上游与许可
+## Upstream work and licensing
 
-本项目以 [Physics-Informed Deformable Gaussian Splatting](https://github.com/SCAILab-USTC/Physics-Informed-Deformable-Gaussian-Splatting) 为基础；论文见 [AAAI](https://ojs.aaai.org/index.php/AAAI/article/view/42474)。3DGS/rasterizer、hash encoder 和其他第三方源码保留各自来源及许可/文件头；本仓库不改变它们的许可条件。当前未为项目新增统一开源许可证。
+This project builds on [Physics-Informed Deformable Gaussian Splatting](https://github.com/SCAILab-USTC/Physics-Informed-Deformable-Gaussian-Splatting); see the [AAAI paper](https://ojs.aaai.org/index.php/AAAI/article/view/42474). Third-party 3DGS/rasterizer, hash encoder, and other source files retain their own provenance, licenses, and file headers. This repository does not change their license terms. No new project-wide open-source license has been added.
