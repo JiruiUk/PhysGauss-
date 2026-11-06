@@ -1,0 +1,79 @@
+{
+  "motion_reasons": {
+    "insufficient_observations": 122,
+    "original_native_binding_not_admitted": 100
+  },
+  "local_observation_reasons": {
+    "uncalibrated": 1398,
+    "passed_local_interpolation": 45,
+    "outside_fit_hull": 21
+  },
+  "all_native_motion_observations": 1464,
+  "maximum_valid_observations_one_track": 7,
+  "per_track_valid_histogram": {
+    "0": 107,
+    "1": 7,
+    "3": 1,
+    "2": 1,
+    "7": 1,
+    "6": 1,
+    "5": 4
+  },
+  "motion_numeric_check_reached": 0,
+  "boundary_rates": {
+    "boundary_proxy": {
+      "denominator": 712,
+      "learned_visibility_failure": 0.31179775280898875,
+      "bidirectional_disagreement": 0.32303370786516855,
+      "track_rejected": 0.824438202247191
+    },
+    "interior_proxy": {
+      "denominator": 10208,
+      "learned_visibility_failure": 0.3640282131661442,
+      "bidirectional_disagreement": 0.3742163009404389,
+      "track_rejected": 0.8050548589341693
+    },
+    "unknown": {
+      "denominator": 42276,
+      "learned_visibility_failure": 0.4146324155549248,
+      "bidirectional_disagreement": 0.4471567792601003,
+      "track_rejected": 0.8428186204938972
+    }
+  },
+  "all_observations_preserved": true,
+  "optimizer_updates": 0,
+  "affine_slope_quantiles": {
+    "0": 0.0003191111429371049,
+    "0.05": 0.0008312239215834366,
+    "0.5": 0.005028271930385082,
+    "0.95": 0.014009901256711891,
+    "1": 0.016541068988863854
+  },
+  "affine_intercept_quantiles": {
+    "0": 0.126241138168647,
+    "0.05": 0.13392441051307594,
+    "0.5": 0.14991914494883263,
+    "0.95": 0.16927220532821824,
+    "1": 0.17212806908984038
+  },
+  "check_median_relative": {
+    "denominator": 64,
+    "median": 0.02561436557522946,
+    "P90": 0.06371061000086439
+  },
+  "check_P90_relative": {
+    "denominator": 64,
+    "median": 0.08462644947364327,
+    "P90": 0.16602086689757786
+  },
+  "split_median_relative": {
+    "denominator": 54,
+    "median": 0.01773286953961266,
+    "P90": 0.16303455060294503
+  },
+  "split_P90_relative": {
+    "denominator": 54,
+    "median": 0.032257265539964955,
+    "P90": 0.19947937231018345
+  }
+}

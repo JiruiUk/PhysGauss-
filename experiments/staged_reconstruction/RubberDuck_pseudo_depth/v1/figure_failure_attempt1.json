@@ -1,0 +1,7 @@
+{
+  "passed": false,
+  "reason": "Full90000pixel display remap exceeds OpenCV32767 destination limit",
+  "source_sha256": "04d3fd5a17f61b34ff1e1fa57f005d12cae4bd9a396bb752ec323bdc5f3774c2",
+  "training_or_audit_affected": false,
+  "fix": "Separate review_v2 uses algebraic full-array affine inverse at integer pixels"
+}

@@ -1,0 +1,8 @@
+{
+  "passed": false,
+  "reason": "Independent evaluator used rotation transpose as exact inverse; saved camera matrices have finite precision orthogonality error",
+  "maximum_rotation_orthogonality_error": 3.6288295146569283e-07,
+  "old_source_sha256": "b1c629598e1be7eff8dc4b6e093dac762d47027fa52b17763dd6d111695fdb97",
+  "frozen_main_audit_modified": false,
+  "fix": "Separate evaluator v2 uses linear solve, same1e-10 arithmetic tolerance and unchanged evidence gates"
+}

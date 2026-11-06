@@ -886,3 +886,13 @@ dcac0409预声明一个候选。两臂同完整J6及L4时序记忆各2000步原�
 状态completed_not_promoted。没有新增颜色静态参考/语义/物体数量/GT或物理更新；
 历史颜色来源、CUDA轨迹敏感性及旧失败保留。不自动延长/扫参。
 详见RubberDuck_revocable_springs/v1/assessment.md。
+
+### L7-P Rubber Duck伪深度准入审计
+
+固定DA-V2 Small，全部120训练RGB；尺度由RGB静止相容三角化锚点分空间拟合/检查，
+不以J6渲染深度标定，不将其当静态标签或GT。全部4433追踪提议保留。
+标定通过24/120，三时段[7, 7, 10]；
+运动补偿及局部范围/边界检查后0条，三时段[0, 0, 0]，
+0个不同高斯行。局部准入False。
+状态completed_audit_no_admissible_depth；本阶段0次Gaussian更新，保留J6、旧全局覆盖失败和历史颜色来源。
+详见RubberDuck_pseudo_depth/v1/assessment.md。未知不当背景/动态，不放宽门槛。

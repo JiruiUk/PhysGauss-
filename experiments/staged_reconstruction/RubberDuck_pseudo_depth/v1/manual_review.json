@@ -1,0 +1,23 @@
+{
+  "actual_visual_review": true,
+  "actual_reviewed_images": 6,
+  "reviewed_images_sha256": {
+    "output/staged_reconstruction/RubberDuck_pseudo_depth/v1/prior_audit_000.png": "ab5a729b49929e41343af0a901bb5b44b41ab4e555352654f3cbc89049cedffb",
+    "output/staged_reconstruction/RubberDuck_pseudo_depth/v1/prior_audit_024.png": "00d6e44ab51da666a51b81b65119e01e93c0f4bf270cac36e56db6671eb3916c",
+    "output/staged_reconstruction/RubberDuck_pseudo_depth/v1/prior_audit_072.png": "a217b0ae3d8e80ab17f81e23aea21df70c71fcb66700da86c5d0009f7a6758e8",
+    "output/staged_reconstruction/RubberDuck_pseudo_depth/v1/prior_audit_119.png": "8ebce30131b8c1d68df7c222c1095eed01332e9c061dc49aef25b5d4c8df274a",
+    "output/staged_reconstruction/RubberDuck_pseudo_depth/v1/prior_audit_028.png": "20f68e96d4a2f3021a83f6e221555afa206f43457c3fd8e464b02344a300a820",
+    "output/staged_reconstruction/RubberDuck_pseudo_depth/v1/temporal_coverage.png": "0e4c379a4bd18f5c8a1b1427eece08a619dcfbc2379868c1817fb1f9b7d712fe"
+  },
+  "findings": [
+    "\u5b9e\u9645\u67e5\u770b\u56fa\u5b9a\u8bad\u7ec3index0/24/72/119\u7684RGB\u3001\u539f\u59cb\u76f8\u5bf9\u9006\u6df1\u5ea6\u3001\u4eff\u5c04\u6df1\u5ea6\u5c55\u793a\u548c\u7a00\u758f\u76ee\u6807\uff0c\u4ee5\u53ca\u5b8c\u6574\u4e09\u65f6\u6bb5\u8986\u76d6\u56fe\u3002",
+    "\u56fa\u5b9a0/24/72/119\u5747\u672a\u8fc7\u6807\u5b9a\uff1a\u5206\u522b\u5206\u534a\u62df\u5408\u9000\u5316\u3001\u951a\u70b9\u51e0\u4f55\u9000\u5316\u3001\u951a\u70b9\u4e0d\u8db3\u3001\u951a\u70b9\u6216\u5c3a\u5ea6\u4e0d\u4e00\u81f4\uff1b\u4e0d\u662f\u56fa\u5b9a86/188\u65b0\u8bad\u7ec3\u56fe\u3002",
+    "\u9644\u52a0index28\u662f\u9884\u5b9a\u56db\u56fe\u4ee5\u5916\u6309\u6700\u5c0f\u901a\u8fc7\u7d22\u5f15\u786e\u5b9a\u7684\u5c55\u793a\u6837\u672c\uff0c\u4ec5\u4f5c\u4e8b\u540e\u53ef\u89c6\u5316\uff1b\u901a\u8fc7\u5c40\u90e8\u6807\u5b9a\uff0c\u4ecd\u65e0\u53ef\u7528\u8fde\u7eed\u52a8\u6001\u6df1\u5ea6\u76ee\u6807\uff0c\u6ca1\u6709\u7528\u4e8e\u4fee\u6539\u95e8\u69db\u3002",
+    "\u951a\u70b9\u591a\u4f4d\u4e8e\u7acb\u67f1\u548c\u5e95\u5ea7\u8fb9\u7f18\uff0c\u672a\u8986\u76d6\u5168\u90e8\u9e2d\u5b50\u53ef\u89c1\u8868\u9762\uff1b\u8fd9\u91cc\u7531RGB\u4e09\u89d2\u5316\u76f8\u5bb9\u6027\u4ea7\u751f\uff0c\u4e0d\u6309\u84dd\u8272\u9009\u70b9\uff0c\u4e0d\u8d4b\u9759\u6001\u8eab\u4efd\u3002",
+    "Small\u5728\u539f\u9ed1\u80cc\u666f\u4e2d\u4e5f\u7ed9\u51fa\u8fde\u7eed\u6709\u9650\u76f8\u5bf9\u6df1\u5ea6\uff0c\u5f62\u72b6\u6392\u5e8f\u53ef\u8fa8\u4f46\u4e0d\u80fd\u76f4\u63a5\u89e3\u91ca\u4e3a\u53ef\u9760\u8868\u9762\u3002\u672a\u5c06\u80cc\u666f\u989c\u8272\u7528\u4e8e\u7b5b\u9009\uff0c\u672a\u58f0\u79f0\u51e0\u4f55GT\u8bef\u5dee\u3002",
+    "\u6240\u6709\u56fe\u53f3\u4e0b\u5747\u65e0\u7eff\u8272\u8bad\u7ec3\u76ee\u6807\uff1b\u5de6\u4e0b\u9ed1\u8272\u662f\u65e0\u6807\u5b9a/\u65e0\u6709\u6548\u5c55\u793a\u503c\uff0c\u4e0d\u662f\u96f6\u8bef\u5dee\uff1b\u5373\u4f7f\u663e\u793a\u5b8c\u6574\u4eff\u5c04\u6df1\u5ea6\uff0c\u4e5f\u4e0d\u4ee3\u8868\u6574\u56fe\u53ef\u76d1\u7763\u3002"
+  ],
+  "independent_geometry_GT": false,
+  "new_training_results": false,
+  "historical_color_parent_disclosed": true
+}
