@@ -1,0 +1,32 @@
+{
+  "status": "completed_not_promoted",
+  "pending": false,
+  "pending_review": false,
+  "optimizer_updates": 4000,
+  "each_arm_updates": 2000,
+  "current_model_replaced": false,
+  "manual_completeness_cleanup_passed": false,
+  "RGB_nonregression_passed": true,
+  "parent_nonregression_passed": true,
+  "independent_geometry_GT": false,
+  "true_physical_thickness_known": false,
+  "historical_color_parent_disclosed": true,
+  "automatic_extension": false,
+  "artifacts_sha256": {
+    "assessment.md": "5ac5979308bf501493789a3c163eef94c932124d51e60452f839f926ed9c0ec3",
+    "manual_review.json": "028b5ce60bcaf6c2532ae2fce0c90dd6ed20c1b31ec5ee5d43624df9c9aafc15",
+    "evaluation.json": "32020d7b2877ae87340f96e324b244f1380531d27742fab2b70fa8fbdf936542",
+    "videos.json": "f06070b42b7355e2f99b2d61df7bee456269f1b6ecd445d60f5fff7a227f5e2e",
+    "surface_bank.json": "7cc2727cb788c4590ed4c777b5e2f5223a488bc27608615735adaf1242215a4b",
+    "source_freeze.json": "66e35d16c0e71da562ee44749aad0b2951bd64daafe5a5d8073c9ac301742d4d",
+    "evaluation_freeze.json": "ad4567ad48753d822d0dd42e6e871ad68c983cdefb7fecc4ca3e4eae731e54d1",
+    "native_check.json": "190ffef83866c25384603bf1ef718586c2c233d4c4737c339a48230f58fc4791",
+    "recovery.json": "a483ddc1157abb7137fcfbf78b5f3c0a0f6d0a777d870a0970d962b48fac8542",
+    "unit_tests.json": "b2dfdbfd53fc76132f7d397e0bf761bfa0cd6ba396a5e8497e8becfcb1fa57ea",
+    "initial_health.json": "55f8c28a1e661b24ba4e9fc004da7dc1ae70b5e357ad0cc24d6ec62ef0ae5e39",
+    "initial_coverage.json": "fd0a86bb6f5a80e713c6054a815350a146f180ca06b1ada730a149c0e0eeccb3",
+    "independent_audit.json": "4d9de1bf6f472c89ac6e8cf9287617703d9f8433196c84d40efc074fc7866497",
+    "controller_audit.json": "14bcbf00e30a28a9bf448c1f2f4155ae033e96d1c50d5e20c0c188608a985079",
+    "structural_diagnostic.json": "b37709f850fe9b004565b85dc7b15b3e6726c4e1af09c404942233835a77b380"
+  }
+}

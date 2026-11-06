@@ -1,0 +1,6 @@
+Report finalization failed before generating assessment or closing statuses.
+File: experiments/staged_reconstruction/RubberDuck_surface_support/finish.py:24
+SyntaxError: unterminated string literal (f-string opened with double quote and closed with single quote).
+The separate, unfrozen report writer was corrected; no training/evaluation source,
+checkpoint, data, protocol or quality gate was modified. Manual image review was
+already recorded and remains valid. Original frozen native evaluations all passed.

@@ -13,3 +13,5 @@
   footprint. Attempt2 preserves missing footprints as unknown; no gates changed.
   Both attempts and test logs retained. Separate evaluation adapters frozen before
   formal outputs. Formal matched2000+2000 training is next, not yet performed.
+
+- Matched formal4000 updates,14 native controller replays, all30 native1600 validation, fixed86/188 RGB/alpha/D, fixed original-patch structural diagnostics, PLY, two full200-frame H264 decodes and32 actual image reviews completed. PSNR control 31.223379, candidate 31.859706; completed_not_promoted. See v1/assessment.md. No automatic extension.

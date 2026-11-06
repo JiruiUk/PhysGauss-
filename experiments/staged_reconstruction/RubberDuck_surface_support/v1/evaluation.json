@@ -1,0 +1,1159 @@
+{
+  "checkpoint_audits": {
+    "temporal_control": {
+      "checkpoint_sha256": "75e4a06659d21347aa252e914886d1f45c4700c7be6a585b15b3361cf6475968",
+      "complete_parent_states_exact": true,
+      "static_model_Adam_physics_model_Adam_and_graphs_frozen": true,
+      "all2000_sampler_replay": true
+    },
+    "surface_support": {
+      "checkpoint_sha256": "57e07cdac6fbbbb2054c544464e6a7b1bf7dd079743890e20de0653386cd5829",
+      "complete_parent_states_exact": true,
+      "static_model_Adam_physics_model_Adam_and_graphs_frozen": true,
+      "all2000_sampler_replay": true
+    }
+  },
+  "validation": {
+    "frames": [
+      {
+        "frame": "train/0004",
+        "J6_parent": {
+          "PSNR": 32.05329895019531,
+          "SSIM": 0.9841787219047546,
+          "L1": 0.00248618028126657
+        },
+        "temporal_control": {
+          "PSNR": 31.672508239746094,
+          "SSIM": 0.982746422290802,
+          "L1": 0.0027128797955811024
+        },
+        "surface_support": {
+          "PSNR": 32.03034591674805,
+          "SSIM": 0.9840832948684692,
+          "L1": 0.00250169076025486
+        }
+      },
+      {
+        "frame": "train/0011",
+        "J6_parent": {
+          "PSNR": 32.035316467285156,
+          "SSIM": 0.9845765233039856,
+          "L1": 0.002444289857521653
+        },
+        "temporal_control": {
+          "PSNR": 31.633203506469727,
+          "SSIM": 0.9828886389732361,
+          "L1": 0.0027151070535182953
+        },
+        "surface_support": {
+          "PSNR": 32.003929138183594,
+          "SSIM": 0.9843597412109375,
+          "L1": 0.002481749514117837
+        }
+      },
+      {
+        "frame": "train/0018",
+        "J6_parent": {
+          "PSNR": 32.5270881652832,
+          "SSIM": 0.9857029914855957,
+          "L1": 0.002376693533733487
+        },
+        "temporal_control": {
+          "PSNR": 31.990449905395508,
+          "SSIM": 0.9840306639671326,
+          "L1": 0.0026459903456270695
+        },
+        "surface_support": {
+          "PSNR": 32.461124420166016,
+          "SSIM": 0.9854810237884521,
+          "L1": 0.0024307952262461185
+        }
+      },
+      {
+        "frame": "train/0024",
+        "J6_parent": {
+          "PSNR": 33.56655502319336,
+          "SSIM": 0.9867320656776428,
+          "L1": 0.0022272432688623667
+        },
+        "temporal_control": {
+          "PSNR": 33.246036529541016,
+          "SSIM": 0.9860243201255798,
+          "L1": 0.002359363716095686
+        },
+        "surface_support": {
+          "PSNR": 33.395450592041016,
+          "SSIM": 0.9863136410713196,
+          "L1": 0.002306408016011119
+        }
+      },
+      {
+        "frame": "train/0031",
+        "J6_parent": {
+          "PSNR": 32.233642578125,
+          "SSIM": 0.9841681718826294,
+          "L1": 0.0029023485258221626
+        },
+        "temporal_control": {
+          "PSNR": 32.42227554321289,
+          "SSIM": 0.9844730496406555,
+          "L1": 0.0028398102149367332
+        },
+        "surface_support": {
+          "PSNR": 32.70881271362305,
+          "SSIM": 0.9851182699203491,
+          "L1": 0.002746594836935401
+        }
+      },
+      {
+        "frame": "train/0038",
+        "J6_parent": {
+          "PSNR": 31.90798568725586,
+          "SSIM": 0.984046995639801,
+          "L1": 0.0030781785026192665
+        },
+        "temporal_control": {
+          "PSNR": 31.11030387878418,
+          "SSIM": 0.981874406337738,
+          "L1": 0.003475889330729842
+        },
+        "surface_support": {
+          "PSNR": 31.952762603759766,
+          "SSIM": 0.9843617081642151,
+          "L1": 0.0030314067844301462
+        }
+      },
+      {
+        "frame": "train/0044",
+        "J6_parent": {
+          "PSNR": 32.506370544433594,
+          "SSIM": 0.9840089082717896,
+          "L1": 0.0029427935369312763
+        },
+        "temporal_control": {
+          "PSNR": 30.766393661499023,
+          "SSIM": 0.9812638759613037,
+          "L1": 0.0036149779334664345
+        },
+        "surface_support": {
+          "PSNR": 32.634063720703125,
+          "SSIM": 0.9842838048934937,
+          "L1": 0.0029191789217293262
+        }
+      },
+      {
+        "frame": "train/0051",
+        "J6_parent": {
+          "PSNR": 32.93768310546875,
+          "SSIM": 0.9833849668502808,
+          "L1": 0.002897292608395219
+        },
+        "temporal_control": {
+          "PSNR": 32.15495681762695,
+          "SSIM": 0.9821745157241821,
+          "L1": 0.0031900883186608553
+        },
+        "surface_support": {
+          "PSNR": 33.06815719604492,
+          "SSIM": 0.983360767364502,
+          "L1": 0.00290740467607975
+        }
+      },
+      {
+        "frame": "train/0058",
+        "J6_parent": {
+          "PSNR": 33.65757369995117,
+          "SSIM": 0.9826890826225281,
+          "L1": 0.0028411350212991238
+        },
+        "temporal_control": {
+          "PSNR": 31.676815032958984,
+          "SSIM": 0.9808551073074341,
+          "L1": 0.0033585489727556705
+        },
+        "surface_support": {
+          "PSNR": 33.56564712524414,
+          "SSIM": 0.9823645949363708,
+          "L1": 0.002916214056313038
+        }
+      },
+      {
+        "frame": "train/0064",
+        "J6_parent": {
+          "PSNR": 33.437904357910156,
+          "SSIM": 0.9815880656242371,
+          "L1": 0.002943216124549508
+        },
+        "temporal_control": {
+          "PSNR": 31.683528900146484,
+          "SSIM": 0.9801986217498779,
+          "L1": 0.00334311299957335
+        },
+        "surface_support": {
+          "PSNR": 33.69001770019531,
+          "SSIM": 0.9817936420440674,
+          "L1": 0.0029392808210104704
+        }
+      },
+      {
+        "frame": "train/0071",
+        "J6_parent": {
+          "PSNR": 32.99154281616211,
+          "SSIM": 0.9809215068817139,
+          "L1": 0.0031270068138837814
+        },
+        "temporal_control": {
+          "PSNR": 32.1761474609375,
+          "SSIM": 0.9800360798835754,
+          "L1": 0.0033435134682804346
+        },
+        "surface_support": {
+          "PSNR": 32.99372863769531,
+          "SSIM": 0.981021523475647,
+          "L1": 0.0031447093933820724
+        }
+      },
+      {
+        "frame": "train/0078",
+        "J6_parent": {
+          "PSNR": 31.855146408081055,
+          "SSIM": 0.9785585403442383,
+          "L1": 0.003488645190373063
+        },
+        "temporal_control": {
+          "PSNR": 31.624143600463867,
+          "SSIM": 0.9777902960777283,
+          "L1": 0.0036185812205076218
+        },
+        "surface_support": {
+          "PSNR": 31.93260383605957,
+          "SSIM": 0.9784254431724548,
+          "L1": 0.003518881043419242
+        }
+      },
+      {
+        "frame": "train/0084",
+        "J6_parent": {
+          "PSNR": 29.594226837158203,
+          "SSIM": 0.9740798473358154,
+          "L1": 0.004619202576577663
+        },
+        "temporal_control": {
+          "PSNR": 29.463699340820312,
+          "SSIM": 0.9733083248138428,
+          "L1": 0.004745527636259794
+        },
+        "surface_support": {
+          "PSNR": 29.662826538085938,
+          "SSIM": 0.9741710424423218,
+          "L1": 0.0045992908999323845
+        }
+      },
+      {
+        "frame": "train/0091",
+        "J6_parent": {
+          "PSNR": 30.831214904785156,
+          "SSIM": 0.976618766784668,
+          "L1": 0.003978523891419172
+        },
+        "temporal_control": {
+          "PSNR": 30.506080627441406,
+          "SSIM": 0.9751062393188477,
+          "L1": 0.004211492836475372
+        },
+        "surface_support": {
+          "PSNR": 30.462018966674805,
+          "SSIM": 0.9754189848899841,
+          "L1": 0.004234032239764929
+        }
+      },
+      {
+        "frame": "train/0098",
+        "J6_parent": {
+          "PSNR": 31.14932632446289,
+          "SSIM": 0.9765233993530273,
+          "L1": 0.003891902742907405
+        },
+        "temporal_control": {
+          "PSNR": 30.24847412109375,
+          "SSIM": 0.9739994406700134,
+          "L1": 0.004388054367154837
+        },
+        "surface_support": {
+          "PSNR": 30.997310638427734,
+          "SSIM": 0.9763196706771851,
+          "L1": 0.003971337806433439
+        }
+      },
+      {
+        "frame": "train/0104",
+        "J6_parent": {
+          "PSNR": 31.76851463317871,
+          "SSIM": 0.978481113910675,
+          "L1": 0.003604056779295206
+        },
+        "temporal_control": {
+          "PSNR": 30.49506187438965,
+          "SSIM": 0.9758270978927612,
+          "L1": 0.004182195290923119
+        },
+        "surface_support": {
+          "PSNR": 31.564767837524414,
+          "SSIM": 0.9776690006256104,
+          "L1": 0.0037162909284234047
+        }
+      },
+      {
+        "frame": "train/0111",
+        "J6_parent": {
+          "PSNR": 32.44886779785156,
+          "SSIM": 0.9800988435745239,
+          "L1": 0.003257994307205081
+        },
+        "temporal_control": {
+          "PSNR": 31.429473876953125,
+          "SSIM": 0.9785451292991638,
+          "L1": 0.003627725411206484
+        },
+        "surface_support": {
+          "PSNR": 32.13294219970703,
+          "SSIM": 0.9795693159103394,
+          "L1": 0.003380728652700782
+        }
+      },
+      {
+        "frame": "train/0118",
+        "J6_parent": {
+          "PSNR": 30.80374526977539,
+          "SSIM": 0.9787120223045349,
+          "L1": 0.003773836186155677
+        },
+        "temporal_control": {
+          "PSNR": 29.68857765197754,
+          "SSIM": 0.9771748781204224,
+          "L1": 0.004273818340152502
+        },
+        "surface_support": {
+          "PSNR": 30.99159049987793,
+          "SSIM": 0.9788759350776672,
+          "L1": 0.0037267550360411406
+        }
+      },
+      {
+        "frame": "train/0124",
+        "J6_parent": {
+          "PSNR": 31.258670806884766,
+          "SSIM": 0.9793321490287781,
+          "L1": 0.0036999934818595648
+        },
+        "temporal_control": {
+          "PSNR": 31.058212280273438,
+          "SSIM": 0.9790476560592651,
+          "L1": 0.003783734980970621
+        },
+        "surface_support": {
+          "PSNR": 31.186786651611328,
+          "SSIM": 0.9791176915168762,
+          "L1": 0.003737101564183831
+        }
+      },
+      {
+        "frame": "train/0131",
+        "J6_parent": {
+          "PSNR": 33.06453323364258,
+          "SSIM": 0.9818541407585144,
+          "L1": 0.0032008353155106306
+        },
+        "temporal_control": {
+          "PSNR": 32.32000732421875,
+          "SSIM": 0.9811550974845886,
+          "L1": 0.0034030177630484104
+        },
+        "surface_support": {
+          "PSNR": 32.38086700439453,
+          "SSIM": 0.9810380935668945,
+          "L1": 0.0034068594686686993
+        }
+      },
+      {
+        "frame": "train/0138",
+        "J6_parent": {
+          "PSNR": 32.2402458190918,
+          "SSIM": 0.9799823760986328,
+          "L1": 0.0033944661263376474
+        },
+        "temporal_control": {
+          "PSNR": 31.3580322265625,
+          "SSIM": 0.9790576100349426,
+          "L1": 0.0036711222492158413
+        },
+        "surface_support": {
+          "PSNR": 30.708234786987305,
+          "SSIM": 0.9779231548309326,
+          "L1": 0.0039062437135726213
+        }
+      },
+      {
+        "frame": "train/0144",
+        "J6_parent": {
+          "PSNR": 31.146982192993164,
+          "SSIM": 0.9774355292320251,
+          "L1": 0.0037830809596925974
+        },
+        "temporal_control": {
+          "PSNR": 30.756153106689453,
+          "SSIM": 0.9766128659248352,
+          "L1": 0.0039493669755756855
+        },
+        "surface_support": {
+          "PSNR": 30.084579467773438,
+          "SSIM": 0.975944459438324,
+          "L1": 0.0042086816392838955
+        }
+      },
+      {
+        "frame": "train/0151",
+        "J6_parent": {
+          "PSNR": 30.739871978759766,
+          "SSIM": 0.975875198841095,
+          "L1": 0.003994752652943134
+        },
+        "temporal_control": {
+          "PSNR": 31.19765281677246,
+          "SSIM": 0.9771038293838501,
+          "L1": 0.0038179317489266396
+        },
+        "surface_support": {
+          "PSNR": 31.60936164855957,
+          "SSIM": 0.9781673550605774,
+          "L1": 0.0036019424442201853
+        }
+      },
+      {
+        "frame": "train/0158",
+        "J6_parent": {
+          "PSNR": 31.76905059814453,
+          "SSIM": 0.9774503111839294,
+          "L1": 0.0035532822366803885
+        },
+        "temporal_control": {
+          "PSNR": 31.795330047607422,
+          "SSIM": 0.97786945104599,
+          "L1": 0.003521343693137169
+        },
+        "surface_support": {
+          "PSNR": 32.251373291015625,
+          "SSIM": 0.9778560996055603,
+          "L1": 0.003439361462369561
+        }
+      },
+      {
+        "frame": "train/0164",
+        "J6_parent": {
+          "PSNR": 31.819639205932617,
+          "SSIM": 0.9790430665016174,
+          "L1": 0.0034107177052646875
+        },
+        "temporal_control": {
+          "PSNR": 31.56192398071289,
+          "SSIM": 0.9788457155227661,
+          "L1": 0.0035011637955904007
+        },
+        "surface_support": {
+          "PSNR": 32.17942428588867,
+          "SSIM": 0.9795570373535156,
+          "L1": 0.0033462627325206995
+        }
+      },
+      {
+        "frame": "train/0171",
+        "J6_parent": {
+          "PSNR": 32.2558479309082,
+          "SSIM": 0.9808104038238525,
+          "L1": 0.0032318951562047005
+        },
+        "temporal_control": {
+          "PSNR": 31.87540054321289,
+          "SSIM": 0.9799118041992188,
+          "L1": 0.0034068776294589043
+        },
+        "surface_support": {
+          "PSNR": 32.34619903564453,
+          "SSIM": 0.9805416464805603,
+          "L1": 0.003253408009186387
+        }
+      },
+      {
+        "frame": "train/0178",
+        "J6_parent": {
+          "PSNR": 32.12526321411133,
+          "SSIM": 0.9802050590515137,
+          "L1": 0.003332281019538641
+        },
+        "temporal_control": {
+          "PSNR": 31.292823791503906,
+          "SSIM": 0.9788708090782166,
+          "L1": 0.003634614171460271
+        },
+        "surface_support": {
+          "PSNR": 31.8264217376709,
+          "SSIM": 0.9796387553215027,
+          "L1": 0.0034448285587131977
+        }
+      },
+      {
+        "frame": "train/0184",
+        "J6_parent": {
+          "PSNR": 32.03255081176758,
+          "SSIM": 0.979469895362854,
+          "L1": 0.003326999954879284
+        },
+        "temporal_control": {
+          "PSNR": 30.661663055419922,
+          "SSIM": 0.977396547794342,
+          "L1": 0.003808511421084404
+        },
+        "surface_support": {
+          "PSNR": 31.217023849487305,
+          "SSIM": 0.9783124923706055,
+          "L1": 0.0035931970924139023
+        }
+      },
+      {
+        "frame": "train/0191",
+        "J6_parent": {
+          "PSNR": 31.66411590576172,
+          "SSIM": 0.9787331223487854,
+          "L1": 0.003417533589527011
+        },
+        "temporal_control": {
+          "PSNR": 29.745361328125,
+          "SSIM": 0.9751429557800293,
+          "L1": 0.004213545937091112
+        },
+        "surface_support": {
+          "PSNR": 31.037879943847656,
+          "SSIM": 0.9775255918502808,
+          "L1": 0.003649383317679167
+        }
+      },
+      {
+        "frame": "train/0198",
+        "J6_parent": {
+          "PSNR": 31.41742515563965,
+          "SSIM": 0.9775025248527527,
+          "L1": 0.0036744524259120226
+        },
+        "temporal_control": {
+          "PSNR": 29.0906925201416,
+          "SSIM": 0.9736111164093018,
+          "L1": 0.004668247886002064
+        },
+        "surface_support": {
+          "PSNR": 30.714942932128906,
+          "SSIM": 0.9759817123413086,
+          "L1": 0.0039773182943463326
+        }
+      }
+    ],
+    "means": {
+      "J6_parent": {
+        "PSNR": 31.994673347473146,
+        "SSIM": 0.9804254770278931,
+        "L1": 0.0032966943457722665
+      },
+      "temporal_control": {
+        "PSNR": 31.223379453023274,
+        "SSIM": 0.9790980855623881,
+        "L1": 0.0036008718501155577
+      },
+      "surface_support": {
+        "PSNR": 31.859706497192384,
+        "SSIM": 0.9801531831423441,
+        "L1": 0.0033679112636794645
+      }
+    },
+    "all30_native1600": true,
+    "semantic_masks_used": false,
+    "test_not_read": true,
+    "PSNR_nonregression_gate": true,
+    "parent_nonregression_gate": true,
+    "independent_geometry_GT": false
+  },
+  "diagnostics": {
+    "images": {
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t002_J6_parent_staticRGB_native.png": "46e4698dacaf9b2a9d4820f0d4bb111ea5cfa2dff262cd0f6533ff9a1518b4b1",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t002_J6_parent_dynamicRGB_native.png": "c5ebee60d0666a355f9f210b9304ff4c3025bb5320cc7ef4d67a7a61baa42080",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t002_J6_parent_jointRGB_native.png": "a3bdf524d6c7d22bd66cec0c63107455e18e9d67dd10f8136243af6b58a45bd5",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t002_J6_parent_staticAlpha_native.png": "cf534b4b6e2e2a05c0e7f45fa21c7078aa9891511aa49d1be184f61250f52297",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t002_J6_parent_dynamicAlpha_native.png": "8c12b43722caf05dc2be3e9223eaaf2061b1c25b05058c8eb2c66b1263fa66dd",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t002_J6_parent_jointAlpha_native.png": "66aa57691ee7cf2a0641a9975e671112c21d66522a8288d23f40380954f4b28b",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t002_J6_parent_staticD-alpha_native.png": "52b9caf440d288efc3751948356e89ba405f84fcd951ce72c5086db3cee52e3f",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t002_J6_parent_dynamicD-alpha_native.png": "82d6160cc7be27492a50b99df769dc5d3d4455a6fd7444cf809f5407571aa8ef",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t002_J6_parent_jointD-alpha_native.png": "b70e8870274592a9c0476a1f73d3226b98216a6766bff82c0deee4f61187a215",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t002_temporal_control_staticRGB_native.png": "46e4698dacaf9b2a9d4820f0d4bb111ea5cfa2dff262cd0f6533ff9a1518b4b1",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t002_temporal_control_dynamicRGB_native.png": "ad7050d2d5d54825dfdea5108a91361a7a0b5673ee625f8336c12a54e89f7d2c",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t002_temporal_control_jointRGB_native.png": "e738bb7d34864487f74710c1438e8b788c7a6835b79effdef5a226aa81f13c86",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t002_temporal_control_staticAlpha_native.png": "cf534b4b6e2e2a05c0e7f45fa21c7078aa9891511aa49d1be184f61250f52297",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t002_temporal_control_dynamicAlpha_native.png": "c21655e9f56c80f8a275a78462a0df265584e8c4ab10826147211b27c74f9a5f",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t002_temporal_control_jointAlpha_native.png": "d009c4d24df751584431a489e2fce1e1341c2bd96ce8c31f5001a80979b62f21",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t002_temporal_control_staticD-alpha_native.png": "52b9caf440d288efc3751948356e89ba405f84fcd951ce72c5086db3cee52e3f",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t002_temporal_control_dynamicD-alpha_native.png": "c62dddd51a18cca30b8d0db5ead50048a2141a9bb49ecac935befa518d70e86c",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t002_temporal_control_jointD-alpha_native.png": "1b272a7715a95580f097a75d1e97fb709d32b09b5569a8664cb7a52dec9bac0f",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t002_surface_support_staticRGB_native.png": "46e4698dacaf9b2a9d4820f0d4bb111ea5cfa2dff262cd0f6533ff9a1518b4b1",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t002_surface_support_dynamicRGB_native.png": "40e4dc8558efeba55b98708b8d9033957ca4e1385a57c2ff5e8d6bf10a6bbf93",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t002_surface_support_jointRGB_native.png": "9fa93368a5e13625f5702444548e16b6c3191f612c9abec66f8f3462d0134d34",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t002_surface_support_staticAlpha_native.png": "cf534b4b6e2e2a05c0e7f45fa21c7078aa9891511aa49d1be184f61250f52297",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t002_surface_support_dynamicAlpha_native.png": "8701180db0f8d186e3e3520b02b3f7eda401c23d185c655971cd4cc9035f137d",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t002_surface_support_jointAlpha_native.png": "4e146af23d5e018243a0768ff840c9641b8bbdca21d3403440dcd797f68ee55b",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t002_surface_support_staticD-alpha_native.png": "52b9caf440d288efc3751948356e89ba405f84fcd951ce72c5086db3cee52e3f",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t002_surface_support_dynamicD-alpha_native.png": "76486ff45e92c432d10d441e7c59fac2426ae1ffc2f16d16a5c3c9decf8de156",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t002_surface_support_jointD-alpha_native.png": "b82c72db2bf114f197bf48a6901008623a41d071cf12f13e82e65b543385fed8",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t002_decomposition.png": "4be382e46a4806a2e593b1bb1465eb0e59f76bac660c40a9467a8a1853e8981b",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t002_joint_comparison.png": "ac1f11cacd7601e71ff72a24a50f763ef809aad37cd9d293f39fbb63965f967e",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t100_J6_parent_staticRGB_native.png": "46e4698dacaf9b2a9d4820f0d4bb111ea5cfa2dff262cd0f6533ff9a1518b4b1",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t100_J6_parent_dynamicRGB_native.png": "de78b620517d3fd19e8564fb39f08aaf494a2afcbe453845286c61fc294d4f6b",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t100_J6_parent_jointRGB_native.png": "4b25896cefa11edd9bcfde8081b979d89023105da9a49fa3727052b76436cb2f",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t100_J6_parent_staticAlpha_native.png": "cf534b4b6e2e2a05c0e7f45fa21c7078aa9891511aa49d1be184f61250f52297",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t100_J6_parent_dynamicAlpha_native.png": "47e08a1acc63cbd76b30876a7950317e687ca387bc56dcfa46bce437b880b6b5",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t100_J6_parent_jointAlpha_native.png": "8a817d548c2460a1718e4b363855f133cd2fdc4124523b74ce2264f0fcad448e",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t100_J6_parent_staticD-alpha_native.png": "52b9caf440d288efc3751948356e89ba405f84fcd951ce72c5086db3cee52e3f",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t100_J6_parent_dynamicD-alpha_native.png": "12626e0dbb2b1200670a031c364f1c57421460f06b90eb0c1db139540738c1d8",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t100_J6_parent_jointD-alpha_native.png": "2545cbe8c566135078e24f6b69b7e9042e563ef1b87c59b850d66afd904cad17",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t100_temporal_control_staticRGB_native.png": "46e4698dacaf9b2a9d4820f0d4bb111ea5cfa2dff262cd0f6533ff9a1518b4b1",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t100_temporal_control_dynamicRGB_native.png": "b16071eb1bd19c595cc2bcf4ce05d7a7f744c1cd208ab9c1de65f8d9e814290f",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t100_temporal_control_jointRGB_native.png": "5d673497ed7214ac1fb14b7029096f79242272f19f8ccfd6dc59549f037bf73d",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t100_temporal_control_staticAlpha_native.png": "cf534b4b6e2e2a05c0e7f45fa21c7078aa9891511aa49d1be184f61250f52297",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t100_temporal_control_dynamicAlpha_native.png": "9a4d3cbb62ba4559c0216d4ef8c80f1c20443b58a9917811aaf0792821691cd6",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t100_temporal_control_jointAlpha_native.png": "c8f62bdbb726bf4fe44c8ae324c86e05802479e56d3c6b6df7c4515d32b22385",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t100_temporal_control_staticD-alpha_native.png": "52b9caf440d288efc3751948356e89ba405f84fcd951ce72c5086db3cee52e3f",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t100_temporal_control_dynamicD-alpha_native.png": "bc7903208c1eb5f7b27570a9b020626537c3bcb6740b435b6c53345cf0eb1a7a",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t100_temporal_control_jointD-alpha_native.png": "5ff2eb0347ee4764c172c9e7fd81fc9bdf5c25f781824f1a60af847fecdd25d2",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t100_surface_support_staticRGB_native.png": "46e4698dacaf9b2a9d4820f0d4bb111ea5cfa2dff262cd0f6533ff9a1518b4b1",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t100_surface_support_dynamicRGB_native.png": "a17d45b652386c1fe929857cf0be552ce2b197e2bc31f2ce3cf3ada8f205926b",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t100_surface_support_jointRGB_native.png": "bf51a5d4e7ab2c6eb224088962f3c43d4393c8607175f2a2194b5580340cb75f",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t100_surface_support_staticAlpha_native.png": "cf534b4b6e2e2a05c0e7f45fa21c7078aa9891511aa49d1be184f61250f52297",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t100_surface_support_dynamicAlpha_native.png": "1c33bd1ed2ab16ee5fc28b8049d4614407f8c2c01b1868359ad0a331f91ef425",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t100_surface_support_jointAlpha_native.png": "e3765b579e2ca3cdb72084522295b04558c3e0b2a951bbeb4f1b030dcff658a7",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t100_surface_support_staticD-alpha_native.png": "52b9caf440d288efc3751948356e89ba405f84fcd951ce72c5086db3cee52e3f",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t100_surface_support_dynamicD-alpha_native.png": "5a026ad64b42faa6e1710d877b97b007a01ebfca9b8ef7f9d443e5b26f4f91d1",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t100_surface_support_jointD-alpha_native.png": "dd2b7c85dd5db778e1aa85c2cfc7c9bdec13b162a9a0179ec339fc83986a4257",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t100_decomposition.png": "c6ce350dc12064d2bfd81a3a321aae61cca47399dde0ec836dfdb7456326431f",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t100_joint_comparison.png": "1da5c6b347bf52d3ebdd1da76f193dd65b89f98e006ff3917cddb45583d069be",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t200_J6_parent_staticRGB_native.png": "46e4698dacaf9b2a9d4820f0d4bb111ea5cfa2dff262cd0f6533ff9a1518b4b1",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t200_J6_parent_dynamicRGB_native.png": "431c7ef99502964b63a3cae5086d6ae0b778e4dc884b1f716c5e6d65749b5d99",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t200_J6_parent_jointRGB_native.png": "9f679674bfd5d55c45e91e3f4ed29f0c8cfb1ac17fbeb9a147c194db5c14c2e5",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t200_J6_parent_staticAlpha_native.png": "cf534b4b6e2e2a05c0e7f45fa21c7078aa9891511aa49d1be184f61250f52297",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t200_J6_parent_dynamicAlpha_native.png": "83f9383a9befba29e76a6a19225b936a91eb691cde73b9be6b8d6e230f3dfbcf",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t200_J6_parent_jointAlpha_native.png": "6cefe23bd53ed70991e25d03a15e047a30377b40a528306ded5f748a5d5c6603",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t200_J6_parent_staticD-alpha_native.png": "52b9caf440d288efc3751948356e89ba405f84fcd951ce72c5086db3cee52e3f",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t200_J6_parent_dynamicD-alpha_native.png": "1acca1cb065643b4bfe6b82216ed6119e48c727062a82fb3af63df4bfe1a4832",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t200_J6_parent_jointD-alpha_native.png": "57e1005283c3fb71d7b18f60564ee87a42224b7b810a93ea0aff1e12f4d077d0",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t200_temporal_control_staticRGB_native.png": "46e4698dacaf9b2a9d4820f0d4bb111ea5cfa2dff262cd0f6533ff9a1518b4b1",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t200_temporal_control_dynamicRGB_native.png": "e169c0b69f662b246c75276823d0b90fd85e460cab08ce829440af72e57e9dec",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t200_temporal_control_jointRGB_native.png": "5079391d35e51b0f3b68bbd20d8071d9ad1496bbf70f2b93648b2148926aac8e",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t200_temporal_control_staticAlpha_native.png": "cf534b4b6e2e2a05c0e7f45fa21c7078aa9891511aa49d1be184f61250f52297",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t200_temporal_control_dynamicAlpha_native.png": "ae2ccf077b461117ee4b53b2f7e4c77aed1f178e633d093b03083d64ee0235b5",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t200_temporal_control_jointAlpha_native.png": "8d1b13c0c4aaa01ee279e2c5530d34a149067c290448a7954626a04833af731d",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t200_temporal_control_staticD-alpha_native.png": "52b9caf440d288efc3751948356e89ba405f84fcd951ce72c5086db3cee52e3f",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t200_temporal_control_dynamicD-alpha_native.png": "632e680407160b3592cacde6a90a1663755174ba3c54ae197dd58fc14af27e93",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t200_temporal_control_jointD-alpha_native.png": "54dd817a433f1c21b691394dd1b690b52adb791645b2afd010bfe444156d97b3",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t200_surface_support_staticRGB_native.png": "46e4698dacaf9b2a9d4820f0d4bb111ea5cfa2dff262cd0f6533ff9a1518b4b1",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t200_surface_support_dynamicRGB_native.png": "8fbc2bc14dcabe5aa94b6c87e7aceb0ec9f09cf12d6ca0e37e10c171b3d8e41f",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t200_surface_support_jointRGB_native.png": "b81609c7f0d8987ec9427119a7dc06058554c543e1ec17db384b8b1009518ced",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t200_surface_support_staticAlpha_native.png": "cf534b4b6e2e2a05c0e7f45fa21c7078aa9891511aa49d1be184f61250f52297",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t200_surface_support_dynamicAlpha_native.png": "ff3caad984ca3d0b3f73fc43a6e0dbb5f17bf1c501482d2bb02339ac0d2bb1ac",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t200_surface_support_jointAlpha_native.png": "73c64f9286622d87b91f70d9411b747ea65b565cfaff0dc72d79909379066979",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t200_surface_support_staticD-alpha_native.png": "52b9caf440d288efc3751948356e89ba405f84fcd951ce72c5086db3cee52e3f",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t200_surface_support_dynamicD-alpha_native.png": "aeb2e709e4ad96e203c841ac9fdf4c1ff713924bc80da2a441dffeb4ea87ad4c",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t200_surface_support_jointD-alpha_native.png": "dadec88552426337947a32fc9c4340eafd8ac884295dfa97ff7e0426088f810c",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t200_decomposition.png": "f49e3ebe0bc6292c649e6167d43bb203f204a0d9c2eb16e8d0c2a4736705787c",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c086_t200_joint_comparison.png": "b6adfd5e4a7658ec2475a5d6458befaf09922ff48260a2d35de11a36e67ef563",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t002_J6_parent_staticRGB_native.png": "3fd5829d1c42d7ff68ae20786768eb39d7c40f6b39a7feb70dd1e8d73f8cf514",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t002_J6_parent_dynamicRGB_native.png": "dad34291506f0362b0699add2a92c4ce50a8cf2182116b76c2525b67e8e2398d",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t002_J6_parent_jointRGB_native.png": "b7d822318ae96e6f70afef44aa45c6629ba7fdae661d079916a32910dd279b1e",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t002_J6_parent_staticAlpha_native.png": "a85f0d95c00c1fd9cb0b2a5aa8b704384aab141d40ac8a57ad3461cfe824f657",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t002_J6_parent_dynamicAlpha_native.png": "1eb995d177af2aaeba205b5d2b04777005e83237b4ee65c21729bb53be5dcdf2",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t002_J6_parent_jointAlpha_native.png": "2238c8c7eacfd9ecb77ffe1c315907465a40e1c219bc8990ab6b248e8d72aca5",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t002_J6_parent_staticD-alpha_native.png": "1ed4a7b5489491c82d5e713fc6866d3acf8bbbdb2877a98711fed555e6e79030",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t002_J6_parent_dynamicD-alpha_native.png": "a3388e57192233ff2ac0eee1eb72cf688e71b08367d686c1d4cdd3b0ca5f78af",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t002_J6_parent_jointD-alpha_native.png": "b59e2764037de097b60fccdbc369ec2a5431296f508a4d7421b296bcfb0afc6a",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t002_temporal_control_staticRGB_native.png": "3fd5829d1c42d7ff68ae20786768eb39d7c40f6b39a7feb70dd1e8d73f8cf514",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t002_temporal_control_dynamicRGB_native.png": "6ef68402bca9a647f0284d95149dbfba2ea2f7b7ba70b5a138f599a45bc02275",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t002_temporal_control_jointRGB_native.png": "282b2d66d9bc44f71cae34ed50ccee934fe88d212d5665cec453c0f92455c16e",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t002_temporal_control_staticAlpha_native.png": "a85f0d95c00c1fd9cb0b2a5aa8b704384aab141d40ac8a57ad3461cfe824f657",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t002_temporal_control_dynamicAlpha_native.png": "ee40e96989c21ab7c55de4c84055ad452eb83e75793beb32c8250bd49afdbce9",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t002_temporal_control_jointAlpha_native.png": "28ea62b109d8057df8666a3894d2bf119136fa9fb2605b55bd5ec058c57450e0",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t002_temporal_control_staticD-alpha_native.png": "1ed4a7b5489491c82d5e713fc6866d3acf8bbbdb2877a98711fed555e6e79030",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t002_temporal_control_dynamicD-alpha_native.png": "8a025d08b8a1035e0aedb51b2e43e9c0c978bdc9ac87890e874197a419574076",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t002_temporal_control_jointD-alpha_native.png": "f7850d42b0c57c4c1a9fe320ccf3d46ba154e30ae778c981b3658adef030b411",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t002_surface_support_staticRGB_native.png": "3fd5829d1c42d7ff68ae20786768eb39d7c40f6b39a7feb70dd1e8d73f8cf514",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t002_surface_support_dynamicRGB_native.png": "554f1239c885fb747918143a3b03ba72195fad571be053b9ffd0829244fa1089",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t002_surface_support_jointRGB_native.png": "b6adae9738eab0fcef0a045adcc71293cc718a77052202eae6bd26d0a0aec931",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t002_surface_support_staticAlpha_native.png": "a85f0d95c00c1fd9cb0b2a5aa8b704384aab141d40ac8a57ad3461cfe824f657",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t002_surface_support_dynamicAlpha_native.png": "e99f30390f219ae9726ff017c3ac20a2f329710c2c7d6ea7a535f39b2197ac9a",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t002_surface_support_jointAlpha_native.png": "b71cc27ebff7abfb2f0584062f8bd1026153b683becfbb3077eec48cbfe9692f",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t002_surface_support_staticD-alpha_native.png": "1ed4a7b5489491c82d5e713fc6866d3acf8bbbdb2877a98711fed555e6e79030",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t002_surface_support_dynamicD-alpha_native.png": "9a4dfa1ad3866f63d2afbb38b0245f3e56b9d65bc024b54682d3b07b1cef9138",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t002_surface_support_jointD-alpha_native.png": "b9cd95a60a7192f8d86fae0d08f0b799f2c2696a4236e9f7906d6e05cc9c3549",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t002_decomposition.png": "f866167e7b7d227bcc8669336a07f1bc775b6c29818acf2e8863d68e6056967e",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t002_joint_comparison.png": "c6c9bc9c9f17dd2684d6d587fc392586f874a21566493cc132a4014ae09da6dd",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t100_J6_parent_staticRGB_native.png": "3fd5829d1c42d7ff68ae20786768eb39d7c40f6b39a7feb70dd1e8d73f8cf514",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t100_J6_parent_dynamicRGB_native.png": "625b69d8d0ce5a01eae1fd8f6d2549b1229747990c18cfc8fa19495420aaec18",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t100_J6_parent_jointRGB_native.png": "cab4c91857243442d4297e9ebd6a7c0ee98a85ae4edfa9f0837a1609d63365ef",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t100_J6_parent_staticAlpha_native.png": "a85f0d95c00c1fd9cb0b2a5aa8b704384aab141d40ac8a57ad3461cfe824f657",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t100_J6_parent_dynamicAlpha_native.png": "f75b5b0e1af71349883e8d649348e6bfbcaff478bc4f4f5ed71f676eab7ad9e2",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t100_J6_parent_jointAlpha_native.png": "3aa2cc4364ad3b6c1d033783727843a75a01cd33ce8f9ae6f14db44365c88d77",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t100_J6_parent_staticD-alpha_native.png": "1ed4a7b5489491c82d5e713fc6866d3acf8bbbdb2877a98711fed555e6e79030",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t100_J6_parent_dynamicD-alpha_native.png": "bd3d099c51717f012eb31eb58bdc28bcfa1f04295705b1737836d4a416b0cace",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t100_J6_parent_jointD-alpha_native.png": "8e27c68596d4a64acc88bbf71b895b2b6a1dfe4117e42bd41fb3e7c3af0bd873",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t100_temporal_control_staticRGB_native.png": "3fd5829d1c42d7ff68ae20786768eb39d7c40f6b39a7feb70dd1e8d73f8cf514",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t100_temporal_control_dynamicRGB_native.png": "de544fbe11a141cc5a2eee319b1a15b1da7f148e90c56d3c77a3abde80812c00",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t100_temporal_control_jointRGB_native.png": "94718551cbd51a598023f7f04ce6c38670a09b30f8582b431c5dd16e0ceba28a",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t100_temporal_control_staticAlpha_native.png": "a85f0d95c00c1fd9cb0b2a5aa8b704384aab141d40ac8a57ad3461cfe824f657",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t100_temporal_control_dynamicAlpha_native.png": "232f1638fcde4a2a4c720b6887ba5d398eb8482a2f4fa073c624fb4c0cfce53c",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t100_temporal_control_jointAlpha_native.png": "82e4574296cc661f61bfd33ac578f265d7e66e81d567d731a368af928a894181",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t100_temporal_control_staticD-alpha_native.png": "1ed4a7b5489491c82d5e713fc6866d3acf8bbbdb2877a98711fed555e6e79030",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t100_temporal_control_dynamicD-alpha_native.png": "d04e42d366b38c4ce9dca381e74944c3e94cba9880fd1325c4d15f1051988ecf",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t100_temporal_control_jointD-alpha_native.png": "199646767a6114cd80a4c599977c38064afdd2facaf7eac0c787a8a03905ff68",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t100_surface_support_staticRGB_native.png": "3fd5829d1c42d7ff68ae20786768eb39d7c40f6b39a7feb70dd1e8d73f8cf514",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t100_surface_support_dynamicRGB_native.png": "f89cece0c591106a1a4f240e9c2fdb48d1171dede5e3cf56b1763e378d50b632",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t100_surface_support_jointRGB_native.png": "5751074681b08c11f757b21db35d51848cf47e0fa0df5ee7ea28d46e2a5522e5",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t100_surface_support_staticAlpha_native.png": "a85f0d95c00c1fd9cb0b2a5aa8b704384aab141d40ac8a57ad3461cfe824f657",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t100_surface_support_dynamicAlpha_native.png": "ad6c233ba4fc83b46ff216003ad412fab8378f11b55d308fc231e3b18ecc8506",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t100_surface_support_jointAlpha_native.png": "d0be327a25177c2e26d079809c5e8f301ae2486647db74e682f5d3bcc54c55e6",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t100_surface_support_staticD-alpha_native.png": "1ed4a7b5489491c82d5e713fc6866d3acf8bbbdb2877a98711fed555e6e79030",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t100_surface_support_dynamicD-alpha_native.png": "9ed193562163108c60bede16b98118f7be4dec8887f0ad23b6f3c270c6ab9eca",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t100_surface_support_jointD-alpha_native.png": "360b5d2c566964d6318f8f7396e53b305e74883c87d94573e84815a9351a6fb1",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t100_decomposition.png": "c7acb43531a6f4acf6a0a5c577d38a2bcb0ad92b55e47589da15a0f320179ddd",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t100_joint_comparison.png": "bd39b669ee01a4bf05845df0e95dc2435f0c29af8d32100db234d4f50d61253c",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t200_J6_parent_staticRGB_native.png": "3fd5829d1c42d7ff68ae20786768eb39d7c40f6b39a7feb70dd1e8d73f8cf514",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t200_J6_parent_dynamicRGB_native.png": "2696dab316b4bfe03ced954a61019afe940dca18287094a090331ca14cae2134",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t200_J6_parent_jointRGB_native.png": "922ff6b9a834aeafd842c49dfa62983f1594d08e9346f0f9d6abb7d9bdd57623",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t200_J6_parent_staticAlpha_native.png": "a85f0d95c00c1fd9cb0b2a5aa8b704384aab141d40ac8a57ad3461cfe824f657",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t200_J6_parent_dynamicAlpha_native.png": "1989feca553aa1fa74a32e3286e75550fba61ffd6cd13ead0ee4ae85316c6cc4",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t200_J6_parent_jointAlpha_native.png": "1fc62132e7c39c1cd4c8aff2ad7e8ecf925c8bfbd2ea77264ba12345e6c8e842",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t200_J6_parent_staticD-alpha_native.png": "1ed4a7b5489491c82d5e713fc6866d3acf8bbbdb2877a98711fed555e6e79030",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t200_J6_parent_dynamicD-alpha_native.png": "b51e8d340dfca5b653b092761e40e09bc652de97b49ce1a586dcf0aaa07bb6ab",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t200_J6_parent_jointD-alpha_native.png": "36a1968d1ff4283653a3ff5973e801b75932d224a849b539bd0f3a47bf3804b8",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t200_temporal_control_staticRGB_native.png": "3fd5829d1c42d7ff68ae20786768eb39d7c40f6b39a7feb70dd1e8d73f8cf514",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t200_temporal_control_dynamicRGB_native.png": "f58524ccf79bbcdd9901221542e93d2fd673ab07fb0586a0411f3032c75f0601",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t200_temporal_control_jointRGB_native.png": "db728eaee0e14e6f48a115566e5f645eec6b45118031ccb26a03ff9486ec26a1",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t200_temporal_control_staticAlpha_native.png": "a85f0d95c00c1fd9cb0b2a5aa8b704384aab141d40ac8a57ad3461cfe824f657",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t200_temporal_control_dynamicAlpha_native.png": "a452a593626533c32269f95b3684e34ec42b0361de40e6c99176ca76f54edb19",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t200_temporal_control_jointAlpha_native.png": "3bb03591f82f43726500a06e1907f204e1463dd0cacdfdb25f40af38c3c46fe0",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t200_temporal_control_staticD-alpha_native.png": "1ed4a7b5489491c82d5e713fc6866d3acf8bbbdb2877a98711fed555e6e79030",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t200_temporal_control_dynamicD-alpha_native.png": "da2974888855e7ddb18383bebe02adc56a1d00c8bdb25321dbe839a8a3e20a1f",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t200_temporal_control_jointD-alpha_native.png": "328a4d1b0be8a8a6f59b3262d3695671a2a2e707abaa6c0f30f7d6e1a8e30f79",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t200_surface_support_staticRGB_native.png": "3fd5829d1c42d7ff68ae20786768eb39d7c40f6b39a7feb70dd1e8d73f8cf514",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t200_surface_support_dynamicRGB_native.png": "aa371b2d252dd42e38c0c3b93a0f4a9de08b7030fdc64b3e87bfcf046ff074be",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t200_surface_support_jointRGB_native.png": "d77b401656ac26aad1f0eb6479d301392169f85778afc86214f47edadad5a1bc",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t200_surface_support_staticAlpha_native.png": "a85f0d95c00c1fd9cb0b2a5aa8b704384aab141d40ac8a57ad3461cfe824f657",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t200_surface_support_dynamicAlpha_native.png": "3f668aebc48ee7c2e4a8d53e847de87c5da72147d6165474fdf0025d15829a5d",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t200_surface_support_jointAlpha_native.png": "28de42fdbef704259f644c83d6aadabf97062a54d378c773d99af5329608d5e3",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t200_surface_support_staticD-alpha_native.png": "1ed4a7b5489491c82d5e713fc6866d3acf8bbbdb2877a98711fed555e6e79030",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t200_surface_support_dynamicD-alpha_native.png": "b7157cda902a78a295f836fcdc7d53da0265cd7e14c46adc6d98f958cee8026e",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t200_surface_support_jointD-alpha_native.png": "48bf98a920f7649d4edb8cd10b280de68664e179c037ed767cbe45b0942dd8c0",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t200_decomposition.png": "5fad4390d622984ea7292468dbe707b49e2540ec7014dc93a17bb6f24fe83b7e",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t200_joint_comparison.png": "cce118f50cb631094a7ae8d1d8653ee62d6f42f86ba24e4ad5d4274d0f025abe",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/observed_train_index000.png": "c299d7892a7d658bad3a6e1e0dab6b5765618de845265903eab7797c112ae132",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/observed_train_index024.png": "0fe69fc03cc73007da2a51f752eb67f95e4b3beae70ab952bd536edfcce4967b",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/observed_train_index048.png": "98fdc8f901474fb9a102d62776c2c501c8cbc2bdf8b5bbedc4911ea1229364a7",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/observed_train_index072.png": "403c221b03d568ae5d2074dd234a61945675be0f5b26c3ce7d726f5b4fb7eea6",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/observed_train_index096.png": "5744a461e44258c48c51b6aadc1bfbc1be0bc1b2562a29a32d5c5b28ab18f2a8",
+      "output/staged_reconstruction/RubberDuck_surface_support/v1/observed_train_index119.png": "c0002f700d2d203e8c602b4d7c2daf90609620e7786d0e38e4717b74f0a135ae"
+    },
+    "fixed_cameras": {
+      "86": {
+        "frame": "train/0086",
+        "transform": [
+          [
+            0.23971359431743622,
+            -0.6610111594200134,
+            0.711056649684906,
+            4.171568393707275
+          ],
+          [
+            0.9708436727523804,
+            0.16321201622486115,
+            -0.17556889355182648,
+            -0.39753779768943787
+          ],
+          [
+            7.450580152834618e-09,
+            0.7324110865592957,
+            0.6808626055717468,
+            4.79702091217041
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "size": [
+          1600,
+          900
+        ]
+      },
+      "188": {
+        "frame": "train/0188",
+        "transform": [
+          [
+            -0.7748000621795654,
+            0.4649222791194916,
+            -0.4284064769744873,
+            -2.3269615173339844
+          ],
+          [
+            -0.6322063207626343,
+            -0.5697851777076721,
+            0.5250332951545715,
+            3.484281539916992
+          ],
+          [
+            1.4901160305669237e-08,
+            0.6776370406150818,
+            0.7353963851928711,
+            4.79702091217041
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "size": [
+          1600,
+          900
+        ]
+      }
+    },
+    "static_RGB_alpha_D_exact": true,
+    "high_alpha_proxies": [
+      {
+        "camera": 86,
+        "time": 2,
+        "model": "J6_parent",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 36399,
+        "dynamic_dark_high_alpha": 941,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 86,
+        "time": 2,
+        "model": "temporal_control",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 36305,
+        "dynamic_dark_high_alpha": 875,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 86,
+        "time": 2,
+        "model": "surface_support",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 36664,
+        "dynamic_dark_high_alpha": 830,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 86,
+        "time": 100,
+        "model": "J6_parent",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 49417,
+        "dynamic_dark_high_alpha": 23333,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 86,
+        "time": 100,
+        "model": "temporal_control",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 48453,
+        "dynamic_dark_high_alpha": 22665,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 86,
+        "time": 100,
+        "model": "surface_support",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 47032,
+        "dynamic_dark_high_alpha": 20876,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 86,
+        "time": 200,
+        "model": "J6_parent",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 66629,
+        "dynamic_dark_high_alpha": 36539,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 86,
+        "time": 200,
+        "model": "temporal_control",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 69875,
+        "dynamic_dark_high_alpha": 32488,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 86,
+        "time": 200,
+        "model": "surface_support",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 85215,
+        "dynamic_dark_high_alpha": 47459,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 188,
+        "time": 2,
+        "model": "J6_parent",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 43902,
+        "dynamic_dark_high_alpha": 2647,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 188,
+        "time": 2,
+        "model": "temporal_control",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 44784,
+        "dynamic_dark_high_alpha": 3123,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 188,
+        "time": 2,
+        "model": "surface_support",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 44860,
+        "dynamic_dark_high_alpha": 3026,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 188,
+        "time": 100,
+        "model": "J6_parent",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 44161,
+        "dynamic_dark_high_alpha": 15419,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 188,
+        "time": 100,
+        "model": "temporal_control",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 47341,
+        "dynamic_dark_high_alpha": 18322,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 188,
+        "time": 100,
+        "model": "surface_support",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 44801,
+        "dynamic_dark_high_alpha": 16181,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 188,
+        "time": 200,
+        "model": "J6_parent",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 46523,
+        "dynamic_dark_high_alpha": 28619,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 188,
+        "time": 200,
+        "model": "temporal_control",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 45980,
+        "dynamic_dark_high_alpha": 29369,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      },
+      {
+        "camera": 188,
+        "time": 200,
+        "model": "surface_support",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 51367,
+        "dynamic_dark_high_alpha": 34545,
+        "dark_definition": "all rendered dynamic RGB channels <.05 and rendered alpha>.5; evaluation only, not training class",
+        "not_geometry_GT": true
+      }
+    ],
+    "black_missing_is_not_zero_error": true,
+    "D_div_alpha_is_rendered_proxy": true
+  },
+  "training_track_diagnostic": {
+    "all_original_bound_memories_unfiltered": true,
+    "held_RGB_trained": true,
+    "independent_3D_GT": false,
+    "models": {
+      "J6_parent": {
+        "total": 372,
+        "missing": 0,
+        "fit_mean_px": 0.8348469820682929,
+        "held_mean_px": 0.8605431392491754
+      },
+      "temporal_control": {
+        "total": 372,
+        "missing": 0,
+        "fit_mean_px": 0.4905099834522302,
+        "held_mean_px": 0.5341857833938932
+      },
+      "surface_support": {
+        "total": 372,
+        "missing": 0,
+        "fit_mean_px": 0.34905259883221956,
+        "held_mean_px": 0.36545249454002365
+      }
+    }
+  },
+  "plys": {
+    "J6_parent/static": {
+      "path": "output/staged_reconstruction/RubberDuck_surface_support/v1/J6_parent_static.ply",
+      "sha256": "143d149aeb4949e607a9741b8a1a4a36d188fc753c6116922a00aafe06ce6ef5",
+      "vertices": 4126,
+      "checkpoint_position_exact": true,
+      "all_fields_finite": true,
+      "coordinates": "world"
+    },
+    "J6_parent/canonical_dynamic_local": {
+      "path": "output/staged_reconstruction/RubberDuck_surface_support/v1/J6_parent_canonical_dynamic_local.ply",
+      "sha256": "6536bcd449b027e3b733351263f89b1ed93a41c0f72557220f28c00255f9e6a8",
+      "vertices": 15507,
+      "checkpoint_position_exact": true,
+      "all_fields_finite": true,
+      "coordinates": "local canonical; add checkpoint centers after deformation"
+    },
+    "J6_parent/dynamic_world/2": {
+      "path": "output/staged_reconstruction/RubberDuck_surface_support/v1/J6_parent_dynamic_world_t002.ply",
+      "sha256": "c1d4fa85914626c92e35a4982afb02f327df6a7f02c817fd2bc9f05ffc662d76",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "J6_parent/dynamic_world/100": {
+      "path": "output/staged_reconstruction/RubberDuck_surface_support/v1/J6_parent_dynamic_world_t100.ply",
+      "sha256": "084f9c5895db8791878eb254aade7a2c6a93c634d4287f6b28c7f61e744c439e",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "J6_parent/dynamic_world/200": {
+      "path": "output/staged_reconstruction/RubberDuck_surface_support/v1/J6_parent_dynamic_world_t200.ply",
+      "sha256": "4cf7d016077124871078c17154d1f1320cfdc28a8d28e9c47ae6845cd6dddf25",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "temporal_control/static": {
+      "path": "output/staged_reconstruction/RubberDuck_surface_support/v1/temporal_control_static.ply",
+      "sha256": "143d149aeb4949e607a9741b8a1a4a36d188fc753c6116922a00aafe06ce6ef5",
+      "vertices": 4126,
+      "checkpoint_position_exact": true,
+      "all_fields_finite": true,
+      "coordinates": "world"
+    },
+    "temporal_control/canonical_dynamic_local": {
+      "path": "output/staged_reconstruction/RubberDuck_surface_support/v1/temporal_control_canonical_dynamic_local.ply",
+      "sha256": "23229edc4654886744b8bb6223d786ee5ef0f180a8526ed803d98ebc06c15f1d",
+      "vertices": 15507,
+      "checkpoint_position_exact": true,
+      "all_fields_finite": true,
+      "coordinates": "local canonical; add checkpoint centers after deformation"
+    },
+    "temporal_control/dynamic_world/2": {
+      "path": "output/staged_reconstruction/RubberDuck_surface_support/v1/temporal_control_dynamic_world_t002.ply",
+      "sha256": "1b451f549bdb248c1fe9884f585e15b5c964e88933f7a0b59486ebc29238d302",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "temporal_control/dynamic_world/100": {
+      "path": "output/staged_reconstruction/RubberDuck_surface_support/v1/temporal_control_dynamic_world_t100.ply",
+      "sha256": "354eea8f30d0ea5ec582a580eb23bbd9bbc467f769304bf5dee0c72603f6224c",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "temporal_control/dynamic_world/200": {
+      "path": "output/staged_reconstruction/RubberDuck_surface_support/v1/temporal_control_dynamic_world_t200.ply",
+      "sha256": "d262fcde51f0263849fc746a910740b94287517e0b6a3c0bfa9b12d3a63902ba",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "surface_support/static": {
+      "path": "output/staged_reconstruction/RubberDuck_surface_support/v1/surface_support_static.ply",
+      "sha256": "143d149aeb4949e607a9741b8a1a4a36d188fc753c6116922a00aafe06ce6ef5",
+      "vertices": 4126,
+      "checkpoint_position_exact": true,
+      "all_fields_finite": true,
+      "coordinates": "world"
+    },
+    "surface_support/canonical_dynamic_local": {
+      "path": "output/staged_reconstruction/RubberDuck_surface_support/v1/surface_support_canonical_dynamic_local.ply",
+      "sha256": "ab30f16ce3c224984c9e74e9b1b59350211db0bf1ba9f79215cea9a592118358",
+      "vertices": 15507,
+      "checkpoint_position_exact": true,
+      "all_fields_finite": true,
+      "coordinates": "local canonical; add checkpoint centers after deformation"
+    },
+    "surface_support/dynamic_world/2": {
+      "path": "output/staged_reconstruction/RubberDuck_surface_support/v1/surface_support_dynamic_world_t002.ply",
+      "sha256": "0128c543dc5d9f3cc7030b88c2fe7085f4464b115db6871a666582c04e750efb",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "surface_support/dynamic_world/100": {
+      "path": "output/staged_reconstruction/RubberDuck_surface_support/v1/surface_support_dynamic_world_t100.ply",
+      "sha256": "d6af4d832788eb986219488068480158a1297240fbf87cbb182a85bc140b41ec",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "surface_support/dynamic_world/200": {
+      "path": "output/staged_reconstruction/RubberDuck_surface_support/v1/surface_support_dynamic_world_t200.ply",
+      "sha256": "ecb10473efeb79c68724ce632ce791aec75d3568774f266fc8fae637fc267bb9",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    }
+  },
+  "source_sha256": "9cb795ad20456cdbf0a08cccdea6070f3ede8a1f68747fa304112077ddc12aec"
+}
