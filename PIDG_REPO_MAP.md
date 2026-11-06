@@ -1086,3 +1086,20 @@ frozen experiments remain untouched.
   Global T3/T4 coverage rejection remains; this is a separately scoped local trial.
 - `tests/test_i10_local_motion.py`: nine locality/occlusion/shape/gradient tests,
   plus five retained direct-track tests. No constitutive/material/force additions.
+
+### L2 revocable RGB surface-patch bindings and connections
+
+- `variants/staged_reconstruction/i10_revocable_surface/core.py`: fit-only patch
+  memberships/weights, independently bound patch connections, detached evidence,
+  suspend/revoke/recover transitions, rotation-invariant length reference loss.
+- `runtime.py::{measure,refresh,objective,snapshot,restore,train}`: native full-scene
+  patch contributions and raw RGB NCC; scheduled checks; exact controller plus
+  model/twoAdam/RNG/camera/physics state. Static/physics frozen; default off.
+- `RubberDuck_I10_revocable_surface/{launch,launch_trace}.py`: isolated matched
+  qualification/training; separately frozen I/O adapter saves model-only refresh
+  evidence for replay without altering frozen training decisions or losses.
+- `tests/test_i10_revocable_surface.py`: selection, unknown/revocation/recovery,
+  held exclusion, overlap/window checks, rotations, gradients and disabled path.
+- `evaluate.py`, `audit.py`, `controller_audit.py`: independent native RGB/artifact,
+  complete refresh replay and explicit CPU decision accounting. No geometry GT,
+  physical identities, new color static references or new physics are introduced.
