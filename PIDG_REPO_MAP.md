@@ -1146,3 +1146,17 @@ frozen experiments remain untouched.
   structural_diagnostic}.py`: matched native qualification/training and fixed
   denominator evaluation; tests `tests/test_i10_surface_support.py`.
   Local support thickness is not true body thickness or independent geometry GT.
+
+### L6 revocable shared-stiffness spring geometry
+
+- `variants/staged_reconstruction/i10_springs/core.py`: fixed positive shared k,
+  fit-median parent rest references, robust normalized edge strain; default off.
+- `structure.py`: immutable L3/L5 node/edge proposals and native qualification,
+  same initial J6 bank replay, cached per-frame plus current-root guards,
+  unknown pause/two-contradiction revoke/two-pass restore; fixed denominators.
+- `runtime.py`: matched common L4 memory, spring-only candidate; complete state
+  and unchanged frozen PIDG/static/physics. No mass/force/material inference.
+- `RubberDuck_revocable_springs/{launch,evaluate,controller_audit,audit}.py`:
+  native qualification, independent recovery and matched2000-step arms.
+  Tests: `tests/test_i10_springs.py`; historical color lineage and early-biased
+  coverage retained. Parent median rest is not independent material geometry GT.
