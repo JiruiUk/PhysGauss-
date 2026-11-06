@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "F:\A_Edinburgh\PhysGauss\experiments\staged_reconstruction\RubberDuck_relative_order\launch.py", line 129, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\experiments\staged_reconstruction\RubberDuck_relative_order\launch.py", line 126, in main
+    else:pipeline()
+         ^^^^^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\experiments\staged_reconstruction\RubberDuck_relative_order\launch.py", line 107, in pipeline
+    else:state['completed'].append(worker('train',arm))
+                                   ^^^^^^^^^^^^^^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\experiments\staged_reconstruction\RubberDuck_relative_order\launch.py", line 19, in worker
+    assert code==0,f'Preserve failed log: {path}'
+           ^^^^^^^
+AssertionError: Preserve failed log: F:\A_Edinburgh\PhysGauss\experiments\staged_reconstruction\RubberDuck_relative_order\v1\20261106T114421863591Z_train_rgb_control_0.log

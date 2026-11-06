@@ -1,0 +1,60 @@
+{
+  "passed": true,
+  "all120_raw_normalizations": true,
+  "independent_patch_interval_signs": true,
+  "even_fit_selects_odd_only_rejects": true,
+  "whole_anchor_group_split_disjoint": true,
+  "stable_global_cap_exact": true,
+  "splits": {
+    "fit": {
+      "all_hypotheses": 4540,
+      "all_proposals": 193,
+      "pairs": 30,
+      "hypothesis_reasons": {
+        "insufficient_fit_orders": 4496,
+        "passed": 41,
+        "insufficient_check_orders": 3
+      },
+      "selected_per_frame": {
+        "100": 2,
+        "102": 4,
+        "104": 4,
+        "106": 4,
+        "108": 4,
+        "110": 4,
+        "112": 4,
+        "114": 4
+      },
+      "dynamic_rows": [
+        6498,
+        15419
+      ]
+    },
+    "held": {
+      "all_hypotheses": 2953,
+      "all_proposals": 129,
+      "pairs": 32,
+      "hypothesis_reasons": {
+        "insufficient_fit_orders": 2924,
+        "insufficient_check_orders": 2,
+        "passed": 27
+      },
+      "selected_per_frame": {
+        "103": 4,
+        "105": 4,
+        "107": 4,
+        "109": 4,
+        "111": 4,
+        "101": 4,
+        "113": 4,
+        "115": 4
+      },
+      "dynamic_rows": [
+        6498,
+        15419
+      ]
+    }
+  },
+  "independent_geometry_GT": false,
+  "source_sha256": "5a08afdf2ddc577b8a7efcaf00a5116d3d78b55e216ac9e3aa4a25ede4b80b50"
+}

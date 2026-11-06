@@ -1,0 +1,28 @@
+W1106 11:44:27.070000 296936 envs\pidg-cu128\Lib\site-packages\torch\utils\cpp_extension.py:466] Error checking compiler version for cl: 'cp1' codec can't decode bytes in position 0--1: No mapping for the Unicode character exists in the target code page.
+ninja: no work to do.
+F:\A_Edinburgh\PhysGauss\variants\color_repair\code\hashencoder\hashgrid.py:16: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  @custom_fwd(cast_inputs=torch.half)
+F:\A_Edinburgh\PhysGauss\variants\color_repair\code\hashencoder\hashgrid.py:56: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  @custom_bwd
+ORDINAL_STEP rgb_control 1 0.006319449748843908 0.0 0
+ORDINAL_STEP rgb_control 25 0.005540820769965649 0.0 0
+ORDINAL_STEP rgb_control 50 0.006531514227390289 0.0 0
+ORDINAL_STEP rgb_control 75 0.006673638243228197 0.0 0
+ORDINAL_STEP rgb_control 100 0.006561615504324436 0.0 0
+Traceback (most recent call last):
+  File "F:\A_Edinburgh\PhysGauss\experiments\staged_reconstruction\RubberDuck_relative_order\launch.py", line 129, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\experiments\staged_reconstruction\RubberDuck_relative_order\launch.py", line 125, in main
+    elif args.phase=='train':r.train(args.arm)
+                             ^^^^^^^^^^^^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\variants\staged_reconstruction\i10_ordinal_depth\runtime.py", line 173, in train
+    loss,pkg,rgb,aux=objective(renderer,scene,None,cam,frame['time'],target)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\variants\staged_reconstruction\i10_ordinal_depth\runtime.py", line 129, in objective
+    if STATE['calls']>0 and STATE['calls']%CONFIG['refresh_every']==0:refresh(renderer,scene)
+                                                                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\variants\staged_reconstruction\i10_ordinal_depth\runtime.py", line 90, in refresh
+    states[q['id']]=dict(**s,measurement=m)
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: dict() got multiple values for keyword argument 'measurement'
