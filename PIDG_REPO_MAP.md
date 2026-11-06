@@ -1175,3 +1175,17 @@ frozen experiments remain untouched.
 - Training entry/config/render/checkpoint are unchanged PIDG/J6 paths above;
   this stage has zero optimizer updates. Native training requires a new matched
   protocol after its local evidence gate, not promotion from proxy agreement.
+
+### L7-J Rubber Duck cross-frame scale and wider RGB anchors
+
+- `i10_joint_scale/core.py`: full-image tiled Shi-Tomasi/LK bidirectional texture
+  tracks, stationary RGB triangulation hypotheses, persistent duplicate groups,
+  group-held calibration, positive normalized affine temporal fit; default off.
+- `io.py`: own lock/stop, frozen L7-P raw priors/J6/RGB/code; no native mutations.
+- `audit.py`: same-expanded-anchor framewise diagnostic control, fixed local
+  calibration gates, unchanged T4 motion and full4433x12 boundary denominators.
+- `RubberDuck_joint_scale/run.py`: freeze/extract/measure/exact independent replay;
+  tests: `test_i10_joint_scale.py`. No optimizer/renderer/checkpoint code changes.
+  Original PIDG training, Gaussian/deformation/velocity/stress/flow/momentum,
+  loaders, metrics and checkpoint paths remain as mapped above. This audit is
+  not a new physics milestone or Gaussian training qualification.
