@@ -947,3 +947,24 @@ dcac0409预声明一个候选。两臂同完整J6及L4时序记忆各2000步原�
 两H264各200帧独立全解码通过。保留外观收益和原J6，不自动替换/延长/扫参；
 status=completed_rgb_improved_not_geometry_promoted，pending:false，无新增物理更新。
 详见experiments/staged_reconstruction/RubberDuck_colorfree_joint/v1/assessment.md。
+
+
+### J8 J7 observed long-term memory：匹配训练及复核完成
+
+用户要求J7加入长期记忆，已完成同一J7完整模型/双Adam/RNG/相机起点的两臂各2000步。
+保留无蓝色阈值3273静态库、15507统一动态池及历史动态颜色来源；两臂均训练静态opacity/SH
+及动态，冻结静态几何/physics/拓扑，保留自身J7深度教师。候选只加冻结L4观测记忆0.01。
+全部730轨迹/641记忆保留，J7重新计算120时刻全轨迹并复核：21绑定、17初始活跃，
+292观测三段276/16/0；1750步末次复核剩8活跃/140前段观测，12暂停、1撤销。
+203/2000步实际加记忆、3634端点对，未覆盖全时段/全表面，不是Transformer/RNN或新增表面。
+全30val PSNR：J7 34.045075、匹配普通续训34.300525、记忆34.173143dB；
+记忆对照−0.127383、父+0.128067dB，两项0.3dB门槛通过。21原绑定共360观测，
+fit/held重投影对照1.026963/1.026156→0.652001/0.650365px，held仍受普通RGB训练、非GT。
+实际86/188早中晚原图/分解/轨迹/解码图复核：静态RGB主体保持，动态碎裂和暗高alpha团块/尖尾仍在，
+86晚期暗高alpha57522对46159反增24.62%；这是渲染代理，不按暗色删点/判背景。
+18测试、原生flags-off/梯度、各20短训及四进程完整精确双Adam/RNG/相机/控制恢复通过；
+532训练/35评估输入源码冻结、4000采样、七次记忆刷新、180PNG、6完整Gaussian+9XYZ、
+两H264各200帧独立解码审计完成。保留局部时序收益，不升级、不重跑/延长/扫参；
+completed_not_promoted，pending:false。原J7及旧40步/L4失败保留，无新增物理更新。
+下一研究先固定更广可靠表面记忆与重现覆盖验收，不自动放大同一小组轨迹权重或开新候选。
+详见experiments/staged_reconstruction/RubberDuck_J7_long_memory/v1/assessment.md。

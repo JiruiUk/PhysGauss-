@@ -1,0 +1,187 @@
+{
+  "passed": true,
+  "all7_native_refreshes": [
+    {
+      "completed_updates": 250,
+      "memories_replayed": 21,
+      "model_sha256": "b75cc5239515925e4611e748d19b292f408b71276fc8f851d927e610ff6b066d"
+    },
+    {
+      "completed_updates": 500,
+      "memories_replayed": 21,
+      "model_sha256": "41eb357309810f3d9a0471b6c793dd5d7178b3a14f58c90efe6a224da12ecd73"
+    },
+    {
+      "completed_updates": 750,
+      "memories_replayed": 21,
+      "model_sha256": "d1b74ac78a8f154837b3daf70a2e22a33bc9f681bb5b62dbece896bc41e33834"
+    },
+    {
+      "completed_updates": 1000,
+      "memories_replayed": 21,
+      "model_sha256": "65cfe239fcfb16d73d6ce5f9b9ca4afb641506af021494c76acdf7af89678d7f"
+    },
+    {
+      "completed_updates": 1250,
+      "memories_replayed": 21,
+      "model_sha256": "c1beff987960ba9705aa942e1005cf0042f6c610066e261ef64b8f62256905a8"
+    },
+    {
+      "completed_updates": 1500,
+      "memories_replayed": 21,
+      "model_sha256": "b9caa532d604a039d8e49befcaba232490c0145f6a33dd361e3576ae83617b3b"
+    },
+    {
+      "completed_updates": 1750,
+      "memories_replayed": 21,
+      "model_sha256": "dc3157de99dfde8a0ca03b80bf02898cd28d4a0f7c0fc6e797b16d890ff0b3cf"
+    }
+  ],
+  "all4000_samples": true,
+  "fit_only_keyframes_checked": true,
+  "arms": {
+    "rgb_control": {
+      "steps_with_memory": 0,
+      "total_endpoint_pairs": 0,
+      "total_memory_applications": 0,
+      "mean_weighted_memory_loss": 0.0,
+      "final_history": [
+        {
+          "completed_updates": 0,
+          "total_memories": 21,
+          "active_memories": 17,
+          "active_rows": 17,
+          "active_observations": 292,
+          "active_frame_thirds": [
+            276,
+            16,
+            0
+          ],
+          "suspended": 4,
+          "revoked": 0
+        }
+      ]
+    },
+    "temporal_memory": {
+      "steps_with_memory": 203,
+      "total_endpoint_pairs": 3634,
+      "total_memory_applications": 1414,
+      "mean_weighted_memory_loss": 7.453218074078905e-05,
+      "final_history": [
+        {
+          "completed_updates": 0,
+          "total_memories": 21,
+          "active_memories": 17,
+          "active_rows": 17,
+          "active_observations": 292,
+          "active_frame_thirds": [
+            276,
+            16,
+            0
+          ],
+          "suspended": 4,
+          "revoked": 0
+        },
+        {
+          "completed_updates": 250,
+          "total_memories": 21,
+          "active_memories": 13,
+          "active_rows": 13,
+          "active_observations": 224,
+          "active_frame_thirds": [
+            224,
+            0,
+            0
+          ],
+          "suspended": 8,
+          "revoked": 0
+        },
+        {
+          "completed_updates": 500,
+          "total_memories": 21,
+          "active_memories": 13,
+          "active_rows": 13,
+          "active_observations": 224,
+          "active_frame_thirds": [
+            224,
+            0,
+            0
+          ],
+          "suspended": 7,
+          "revoked": 1
+        },
+        {
+          "completed_updates": 750,
+          "total_memories": 21,
+          "active_memories": 13,
+          "active_rows": 13,
+          "active_observations": 228,
+          "active_frame_thirds": [
+            228,
+            0,
+            0
+          ],
+          "suspended": 7,
+          "revoked": 1
+        },
+        {
+          "completed_updates": 1000,
+          "total_memories": 21,
+          "active_memories": 12,
+          "active_rows": 12,
+          "active_observations": 212,
+          "active_frame_thirds": [
+            212,
+            0,
+            0
+          ],
+          "suspended": 8,
+          "revoked": 1
+        },
+        {
+          "completed_updates": 1250,
+          "total_memories": 21,
+          "active_memories": 11,
+          "active_rows": 11,
+          "active_observations": 196,
+          "active_frame_thirds": [
+            196,
+            0,
+            0
+          ],
+          "suspended": 9,
+          "revoked": 1
+        },
+        {
+          "completed_updates": 1500,
+          "total_memories": 21,
+          "active_memories": 8,
+          "active_rows": 8,
+          "active_observations": 140,
+          "active_frame_thirds": [
+            140,
+            0,
+            0
+          ],
+          "suspended": 12,
+          "revoked": 1
+        },
+        {
+          "completed_updates": 1750,
+          "total_memories": 21,
+          "active_memories": 8,
+          "active_rows": 8,
+          "active_observations": 140,
+          "active_frame_thirds": [
+            140,
+            0,
+            0
+          ],
+          "suspended": 12,
+          "revoked": 1
+        }
+      ]
+    }
+  },
+  "source_sha256": "2ccfcd01861f6a97ad29c92ccb7c1b956c1b61171e42c4d6062ca6c978d76ab6"
+}

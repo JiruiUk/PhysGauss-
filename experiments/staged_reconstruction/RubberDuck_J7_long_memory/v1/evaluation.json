@@ -1,0 +1,1326 @@
+{
+  "checkpoint_audits": {
+    "passed": true,
+    "arms": {
+      "rgb_control": {
+        "checkpoint_sha256": "529560c3b1312d2bdd62cdf29daafff2b7011b9aa4a29718adfa8c1a0222923b",
+        "source_model_two_Adam_exact": true,
+        "all2000_samples_and_RNG_replayed": true,
+        "static_geometry_physics_Adam_graphs_frozen": true,
+        "static_points": 3273,
+        "dynamic_points": 15507,
+        "optimizer_steps": {
+          "0/_xyz": [
+            18000
+          ],
+          "0/_features_dc": [
+            22000
+          ],
+          "0/_features_rest": [
+            22000
+          ],
+          "0/_opacity": [
+            22000
+          ],
+          "0/_scaling": [
+            18000
+          ],
+          "0/_rotation": [
+            18000
+          ],
+          "1/dynamic/_xyz": [
+            30000
+          ],
+          "1/dynamic/_features_dc": [
+            30000
+          ],
+          "1/dynamic/_features_rest": [
+            30000
+          ],
+          "1/dynamic/_opacity": [
+            30000
+          ],
+          "1/dynamic/_scaling": [
+            30000
+          ],
+          "1/dynamic/_rotation": [
+            30000
+          ],
+          "1/grids": [
+            30000
+          ],
+          "1/deform_network": [
+            30000
+          ],
+          "1/PIDG_velocity_stress": [
+            800
+          ]
+        }
+      },
+      "temporal_memory": {
+        "checkpoint_sha256": "7158e97eeb74f9361abab1e358ad2b6c3bb8eb3901a69cff3469a9111c9d7ef1",
+        "source_model_two_Adam_exact": true,
+        "all2000_samples_and_RNG_replayed": true,
+        "static_geometry_physics_Adam_graphs_frozen": true,
+        "static_points": 3273,
+        "dynamic_points": 15507,
+        "optimizer_steps": {
+          "0/_xyz": [
+            18000
+          ],
+          "0/_features_dc": [
+            22000
+          ],
+          "0/_features_rest": [
+            22000
+          ],
+          "0/_opacity": [
+            22000
+          ],
+          "0/_scaling": [
+            18000
+          ],
+          "0/_rotation": [
+            18000
+          ],
+          "1/dynamic/_xyz": [
+            30000
+          ],
+          "1/dynamic/_features_dc": [
+            30000
+          ],
+          "1/dynamic/_features_rest": [
+            30000
+          ],
+          "1/dynamic/_opacity": [
+            30000
+          ],
+          "1/dynamic/_scaling": [
+            30000
+          ],
+          "1/dynamic/_rotation": [
+            30000
+          ],
+          "1/grids": [
+            30000
+          ],
+          "1/deform_network": [
+            30000
+          ],
+          "1/PIDG_velocity_stress": [
+            800
+          ]
+        }
+      }
+    },
+    "matched_complete_J7_start": true,
+    "independent_geometry_GT": false
+  },
+  "validation": {
+    "frames": [
+      {
+        "frame": "train/0004",
+        "J7_parent": {
+          "PSNR": 36.7064208984375,
+          "SSIM": 0.9907745122909546,
+          "L1": 0.001885749283246696
+        },
+        "rgb_control": {
+          "PSNR": 35.55229568481445,
+          "SSIM": 0.9899824261665344,
+          "L1": 0.0019603953696787357
+        },
+        "temporal_memory": {
+          "PSNR": 36.068016052246094,
+          "SSIM": 0.990879476070404,
+          "L1": 0.0018396060913801193
+        }
+      },
+      {
+        "frame": "train/0011",
+        "J7_parent": {
+          "PSNR": 37.4736213684082,
+          "SSIM": 0.9914562702178955,
+          "L1": 0.0017293321434408426
+        },
+        "rgb_control": {
+          "PSNR": 35.45485305786133,
+          "SSIM": 0.9899322986602783,
+          "L1": 0.0019493215950205922
+        },
+        "temporal_memory": {
+          "PSNR": 37.270694732666016,
+          "SSIM": 0.9921187162399292,
+          "L1": 0.0016350693767890334
+        }
+      },
+      {
+        "frame": "train/0018",
+        "J7_parent": {
+          "PSNR": 37.53053283691406,
+          "SSIM": 0.991951584815979,
+          "L1": 0.0017451551975682378
+        },
+        "rgb_control": {
+          "PSNR": 37.559913635253906,
+          "SSIM": 0.9926798343658447,
+          "L1": 0.001619037357158959
+        },
+        "temporal_memory": {
+          "PSNR": 37.82509994506836,
+          "SSIM": 0.992836594581604,
+          "L1": 0.001599959097802639
+        }
+      },
+      {
+        "frame": "train/0024",
+        "J7_parent": {
+          "PSNR": 36.553829193115234,
+          "SSIM": 0.9913508892059326,
+          "L1": 0.0018928733188658953
+        },
+        "rgb_control": {
+          "PSNR": 34.585594177246094,
+          "SSIM": 0.989906907081604,
+          "L1": 0.002151189371943474
+        },
+        "temporal_memory": {
+          "PSNR": 36.556541442871094,
+          "SSIM": 0.9922247529029846,
+          "L1": 0.0017856438644230366
+        }
+      },
+      {
+        "frame": "train/0031",
+        "J7_parent": {
+          "PSNR": 32.46508026123047,
+          "SSIM": 0.987754762172699,
+          "L1": 0.0029150154441595078
+        },
+        "rgb_control": {
+          "PSNR": 32.54558181762695,
+          "SSIM": 0.9878990650177002,
+          "L1": 0.0028285630978643894
+        },
+        "temporal_memory": {
+          "PSNR": 33.65913009643555,
+          "SSIM": 0.990374743938446,
+          "L1": 0.002420839387923479
+        }
+      },
+      {
+        "frame": "train/0038",
+        "J7_parent": {
+          "PSNR": 31.7623348236084,
+          "SSIM": 0.9869549870491028,
+          "L1": 0.0031541327480226755
+        },
+        "rgb_control": {
+          "PSNR": 30.72831916809082,
+          "SSIM": 0.9856599569320679,
+          "L1": 0.0034883718471974134
+        },
+        "temporal_memory": {
+          "PSNR": 32.6412239074707,
+          "SSIM": 0.9886474609375,
+          "L1": 0.002801417140290141
+        }
+      },
+      {
+        "frame": "train/0044",
+        "J7_parent": {
+          "PSNR": 32.873573303222656,
+          "SSIM": 0.9874078631401062,
+          "L1": 0.0028527930844575167
+        },
+        "rgb_control": {
+          "PSNR": 31.3262939453125,
+          "SSIM": 0.985968291759491,
+          "L1": 0.0032812210265547037
+        },
+        "temporal_memory": {
+          "PSNR": 31.581157684326172,
+          "SSIM": 0.9865168929100037,
+          "L1": 0.003190308576449752
+        }
+      },
+      {
+        "frame": "train/0051",
+        "J7_parent": {
+          "PSNR": 33.63907241821289,
+          "SSIM": 0.9866834282875061,
+          "L1": 0.0028415706474334
+        },
+        "rgb_control": {
+          "PSNR": 33.58893585205078,
+          "SSIM": 0.9867523312568665,
+          "L1": 0.0028094619046896696
+        },
+        "temporal_memory": {
+          "PSNR": 33.317970275878906,
+          "SSIM": 0.987070620059967,
+          "L1": 0.0028369519859552383
+        }
+      },
+      {
+        "frame": "train/0058",
+        "J7_parent": {
+          "PSNR": 34.26567077636719,
+          "SSIM": 0.9861236214637756,
+          "L1": 0.002854833146557212
+        },
+        "rgb_control": {
+          "PSNR": 34.0148811340332,
+          "SSIM": 0.9862059950828552,
+          "L1": 0.0028296143282204866
+        },
+        "temporal_memory": {
+          "PSNR": 33.610206604003906,
+          "SSIM": 0.9866032600402832,
+          "L1": 0.0028254014905542135
+        }
+      },
+      {
+        "frame": "train/0064",
+        "J7_parent": {
+          "PSNR": 33.87693786621094,
+          "SSIM": 0.985863208770752,
+          "L1": 0.0029783016070723534
+        },
+        "rgb_control": {
+          "PSNR": 34.318538665771484,
+          "SSIM": 0.9874979257583618,
+          "L1": 0.002751351334154606
+        },
+        "temporal_memory": {
+          "PSNR": 33.38404083251953,
+          "SSIM": 0.9869349598884583,
+          "L1": 0.002905392786487937
+        }
+      },
+      {
+        "frame": "train/0071",
+        "J7_parent": {
+          "PSNR": 33.263946533203125,
+          "SSIM": 0.9865495562553406,
+          "L1": 0.003066431498154998
+        },
+        "rgb_control": {
+          "PSNR": 34.515655517578125,
+          "SSIM": 0.9885807633399963,
+          "L1": 0.0027379479724913836
+        },
+        "temporal_memory": {
+          "PSNR": 33.93289566040039,
+          "SSIM": 0.9880800843238831,
+          "L1": 0.002841402543708682
+        }
+      },
+      {
+        "frame": "train/0078",
+        "J7_parent": {
+          "PSNR": 35.06726837158203,
+          "SSIM": 0.9870121479034424,
+          "L1": 0.002673384500667453
+        },
+        "rgb_control": {
+          "PSNR": 36.52309799194336,
+          "SSIM": 0.9889523983001709,
+          "L1": 0.002375444397330284
+        },
+        "temporal_memory": {
+          "PSNR": 36.192039489746094,
+          "SSIM": 0.9888449907302856,
+          "L1": 0.0024020192213356495
+        }
+      },
+      {
+        "frame": "train/0084",
+        "J7_parent": {
+          "PSNR": 34.54995346069336,
+          "SSIM": 0.9859182834625244,
+          "L1": 0.0026608239859342575
+        },
+        "rgb_control": {
+          "PSNR": 35.413394927978516,
+          "SSIM": 0.9871113300323486,
+          "L1": 0.0024589693639427423
+        },
+        "temporal_memory": {
+          "PSNR": 35.09492874145508,
+          "SSIM": 0.9870554208755493,
+          "L1": 0.0025253589265048504
+        }
+      },
+      {
+        "frame": "train/0091",
+        "J7_parent": {
+          "PSNR": 34.739078521728516,
+          "SSIM": 0.9875712990760803,
+          "L1": 0.0025973261799663305
+        },
+        "rgb_control": {
+          "PSNR": 35.89039611816406,
+          "SSIM": 0.9886327385902405,
+          "L1": 0.0023593080695718527
+        },
+        "temporal_memory": {
+          "PSNR": 34.41242980957031,
+          "SSIM": 0.9874592423439026,
+          "L1": 0.0026654801331460476
+        }
+      },
+      {
+        "frame": "train/0098",
+        "J7_parent": {
+          "PSNR": 35.07647705078125,
+          "SSIM": 0.9874883890151978,
+          "L1": 0.002603337401524186
+        },
+        "rgb_control": {
+          "PSNR": 35.3343620300293,
+          "SSIM": 0.9880331158638,
+          "L1": 0.002455849898979068
+        },
+        "temporal_memory": {
+          "PSNR": 33.12994384765625,
+          "SSIM": 0.9854621291160583,
+          "L1": 0.0030242018401622772
+        }
+      },
+      {
+        "frame": "train/0104",
+        "J7_parent": {
+          "PSNR": 35.67629623413086,
+          "SSIM": 0.9875907301902771,
+          "L1": 0.002446261467412114
+        },
+        "rgb_control": {
+          "PSNR": 35.35420608520508,
+          "SSIM": 0.9881593585014343,
+          "L1": 0.002401874400675297
+        },
+        "temporal_memory": {
+          "PSNR": 32.788841247558594,
+          "SSIM": 0.9851837754249573,
+          "L1": 0.0030331569723784924
+        }
+      },
+      {
+        "frame": "train/0111",
+        "J7_parent": {
+          "PSNR": 34.95862579345703,
+          "SSIM": 0.9866030216217041,
+          "L1": 0.0025569158606231213
+        },
+        "rgb_control": {
+          "PSNR": 34.09162902832031,
+          "SSIM": 0.987332284450531,
+          "L1": 0.0025359976571053267
+        },
+        "temporal_memory": {
+          "PSNR": 33.33008575439453,
+          "SSIM": 0.9864515066146851,
+          "L1": 0.002753295935690403
+        }
+      },
+      {
+        "frame": "train/0118",
+        "J7_parent": {
+          "PSNR": 31.883039474487305,
+          "SSIM": 0.9833498597145081,
+          "L1": 0.0034617602359503508
+        },
+        "rgb_control": {
+          "PSNR": 32.71058654785156,
+          "SSIM": 0.9852272868156433,
+          "L1": 0.0030610531102865934
+        },
+        "temporal_memory": {
+          "PSNR": 33.31121826171875,
+          "SSIM": 0.9859728813171387,
+          "L1": 0.0029362780041992664
+        }
+      },
+      {
+        "frame": "train/0124",
+        "J7_parent": {
+          "PSNR": 32.411808013916016,
+          "SSIM": 0.9831703901290894,
+          "L1": 0.003428051248192787
+        },
+        "rgb_control": {
+          "PSNR": 32.78921890258789,
+          "SSIM": 0.9853018522262573,
+          "L1": 0.0031803608871996403
+        },
+        "temporal_memory": {
+          "PSNR": 32.383544921875,
+          "SSIM": 0.985439121723175,
+          "L1": 0.003227203618735075
+        }
+      },
+      {
+        "frame": "train/0131",
+        "J7_parent": {
+          "PSNR": 34.04301452636719,
+          "SSIM": 0.9860131740570068,
+          "L1": 0.0030107791535556316
+        },
+        "rgb_control": {
+          "PSNR": 33.86642837524414,
+          "SSIM": 0.9866703748703003,
+          "L1": 0.0029375297017395496
+        },
+        "temporal_memory": {
+          "PSNR": 32.34044647216797,
+          "SSIM": 0.9853832125663757,
+          "L1": 0.0032752586994320154
+        }
+      },
+      {
+        "frame": "train/0138",
+        "J7_parent": {
+          "PSNR": 32.67325973510742,
+          "SSIM": 0.9840111136436462,
+          "L1": 0.0034990296699106693
+        },
+        "rgb_control": {
+          "PSNR": 32.460662841796875,
+          "SSIM": 0.9856079816818237,
+          "L1": 0.0033978361170738935
+        },
+        "temporal_memory": {
+          "PSNR": 32.04159164428711,
+          "SSIM": 0.9849629402160645,
+          "L1": 0.0035184475127607584
+        }
+      },
+      {
+        "frame": "train/0144",
+        "J7_parent": {
+          "PSNR": 31.42472267150879,
+          "SSIM": 0.981532633304596,
+          "L1": 0.004048987757414579
+        },
+        "rgb_control": {
+          "PSNR": 30.97414779663086,
+          "SSIM": 0.9834468364715576,
+          "L1": 0.003942558541893959
+        },
+        "temporal_memory": {
+          "PSNR": 31.759296417236328,
+          "SSIM": 0.9843302965164185,
+          "L1": 0.003706858493387699
+        }
+      },
+      {
+        "frame": "train/0151",
+        "J7_parent": {
+          "PSNR": 32.41484832763672,
+          "SSIM": 0.9839574098587036,
+          "L1": 0.0035527043510228395
+        },
+        "rgb_control": {
+          "PSNR": 32.991798400878906,
+          "SSIM": 0.9858805537223816,
+          "L1": 0.0032166691962629557
+        },
+        "temporal_memory": {
+          "PSNR": 34.21165466308594,
+          "SSIM": 0.9872435331344604,
+          "L1": 0.0029649590142071247
+        }
+      },
+      {
+        "frame": "train/0158",
+        "J7_parent": {
+          "PSNR": 34.71921920776367,
+          "SSIM": 0.9865976572036743,
+          "L1": 0.0028750104829669
+        },
+        "rgb_control": {
+          "PSNR": 34.82310485839844,
+          "SSIM": 0.987471878528595,
+          "L1": 0.0027673905715346336
+        },
+        "temporal_memory": {
+          "PSNR": 35.32523727416992,
+          "SSIM": 0.9880379438400269,
+          "L1": 0.0026723488699644804
+        }
+      },
+      {
+        "frame": "train/0164",
+        "J7_parent": {
+          "PSNR": 33.816341400146484,
+          "SSIM": 0.9864606261253357,
+          "L1": 0.0028628825675696135
+        },
+        "rgb_control": {
+          "PSNR": 34.2933349609375,
+          "SSIM": 0.9874194264411926,
+          "L1": 0.002719856332987547
+        },
+        "temporal_memory": {
+          "PSNR": 33.50115966796875,
+          "SSIM": 0.9870373606681824,
+          "L1": 0.0028438856825232506
+        }
+      },
+      {
+        "frame": "train/0171",
+        "J7_parent": {
+          "PSNR": 34.09488296508789,
+          "SSIM": 0.9868285655975342,
+          "L1": 0.0027432418428361416
+        },
+        "rgb_control": {
+          "PSNR": 33.95669174194336,
+          "SSIM": 0.9873988628387451,
+          "L1": 0.0026700375601649284
+        },
+        "temporal_memory": {
+          "PSNR": 33.69144821166992,
+          "SSIM": 0.9876844882965088,
+          "L1": 0.0027125217020511627
+        }
+      },
+      {
+        "frame": "train/0178",
+        "J7_parent": {
+          "PSNR": 33.83479690551758,
+          "SSIM": 0.9865707159042358,
+          "L1": 0.0026710403617471457
+        },
+        "rgb_control": {
+          "PSNR": 35.94538497924805,
+          "SSIM": 0.9887381792068481,
+          "L1": 0.0022525761742144823
+        },
+        "temporal_memory": {
+          "PSNR": 35.4210205078125,
+          "SSIM": 0.9887248873710632,
+          "L1": 0.002295526908710599
+        }
+      },
+      {
+        "frame": "train/0184",
+        "J7_parent": {
+          "PSNR": 33.34560775756836,
+          "SSIM": 0.9856105446815491,
+          "L1": 0.002756556961685419
+        },
+        "rgb_control": {
+          "PSNR": 36.668758392333984,
+          "SSIM": 0.9885089993476868,
+          "L1": 0.002159374998882413
+        },
+        "temporal_memory": {
+          "PSNR": 36.322731018066406,
+          "SSIM": 0.9882158637046814,
+          "L1": 0.0022029741667211056
+        }
+      },
+      {
+        "frame": "train/0191",
+        "J7_parent": {
+          "PSNR": 33.45924377441406,
+          "SSIM": 0.9849196672439575,
+          "L1": 0.0028770037461072206
+        },
+        "rgb_control": {
+          "PSNR": 36.04710006713867,
+          "SSIM": 0.9881848096847534,
+          "L1": 0.0022813978139311075
+        },
+        "temporal_memory": {
+          "PSNR": 35.257423400878906,
+          "SSIM": 0.9871296286582947,
+          "L1": 0.0024313386529684067
+        }
+      },
+      {
+        "frame": "train/0198",
+        "J7_parent": {
+          "PSNR": 32.75275802612305,
+          "SSIM": 0.9835677146911621,
+          "L1": 0.0031805578619241714
+        },
+        "rgb_control": {
+          "PSNR": 34.69059753417969,
+          "SSIM": 0.9862741827964783,
+          "L1": 0.002672754228115082
+        },
+        "temporal_memory": {
+          "PSNR": 34.83226013183594,
+          "SSIM": 0.9863483905792236,
+          "L1": 0.0026485309936106205
+        }
+      }
+    ],
+    "means": {
+      "J7_parent": {
+        "PSNR": 34.04507541656494,
+        "SSIM": 0.9865881542364756,
+        "L1": 0.002814061458533009
+      },
+      "rgb_control": {
+        "PSNR": 34.30052547454834,
+        "SSIM": 0.9875139415264129,
+        "L1": 0.002675110474228859
+      },
+      "temporal_memory": {
+        "PSNR": 34.17314262390137,
+        "SSIM": 0.9876418391863505,
+        "L1": 0.0026840545896751186
+      }
+    },
+    "all30_native1600": true,
+    "semantic_masks_used": false,
+    "test_not_read": true,
+    "PSNR_nonregression_gate": true,
+    "parent_nonregression_gate": true,
+    "independent_geometry_GT": false
+  },
+  "diagnostics": {
+    "images": {
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t002_J7_parent_staticRGB_native.png": "c08f8e33a8f5fe7cb68828f98d2463e4e306195d3a773b4b18771df1cd52bf81",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t002_J7_parent_dynamicRGB_native.png": "85546165933be08431f0b669f2110ec99c0f2886b5a0c8e060a3e5d86da5cf1e",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t002_J7_parent_jointRGB_native.png": "45d19aba0201b56cf4a206f7eaafe10ae53b5442c1e12c1e32c0731901a5171c",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t002_J7_parent_staticAlpha_native.png": "a0baaa13b4ba58a62d4fc9332670a4a4b9a5da238c16efc5fd233fa632f51dd2",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t002_J7_parent_dynamicAlpha_native.png": "1e69ca8e62dbe947ad7b2f5532b0f5b9dd7d226fe152ee48b2d23b3711716b4b",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t002_J7_parent_jointAlpha_native.png": "fb320ca4a8353ee6baa6845b9da4e6053b560df5a17b8a9ae624af0747432a46",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t002_J7_parent_staticD-alpha_native.png": "b4c23763a89cb50f125c277e94e1a6f3ad1adc2a893041d7c8e3d13bac9ae87c",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t002_J7_parent_dynamicD-alpha_native.png": "8c97b6f37fc27938c8be633b65662c6ae016754501d0639e386dc9b742605b90",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t002_J7_parent_jointD-alpha_native.png": "94e81495bd01fa98fe48e95d3ac78e4990d5c104adf532fcd9e4809f9ca710e5",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t002_rgb_control_staticRGB_native.png": "76efaaca8fc98a8e41f2d65f87e2d75d7a381eff2ea56b5a1211a78c20656121",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t002_rgb_control_dynamicRGB_native.png": "9cdd6ab7b0f310a71524d6b088e8a872335126fe755e590ed276f9f495c07070",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t002_rgb_control_jointRGB_native.png": "e8db5ab6635c6f647ad36aad800a2b0a7dfe83ad86e4b52597cb0225e77a2690",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t002_rgb_control_staticAlpha_native.png": "c7374e95c87111b5c11c2cbb012d0727e9d4cf32a643b9f030e938027186e937",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t002_rgb_control_dynamicAlpha_native.png": "8576aa97857dfe929f0b9bcbcf40c4dc0060dda855cca189b5814b961a6f895d",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t002_rgb_control_jointAlpha_native.png": "9ef8aea46b9b121620a98fe29659785a472b5c8ad8d2d3ebbc5cbd0cb8194ab1",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t002_rgb_control_staticD-alpha_native.png": "89ee02741dcd34d803bfdd4e8e19b2c71e24b4bd701ed2b77cfbd7214bf5116a",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t002_rgb_control_dynamicD-alpha_native.png": "459464540b14fbcaec85550220dbacd4229fc9fc50cfe65456cde6b23879ffad",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t002_rgb_control_jointD-alpha_native.png": "1211abf1480e1170739edaff074de42f27f2dba206bc0ef6a8f5a618cc75c992",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t002_temporal_memory_staticRGB_native.png": "8cde42aeb8a62a8631b04306d7772a63471111bb93d58619ab2743e082d23dee",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t002_temporal_memory_dynamicRGB_native.png": "4046955439ab7359092bf09d7e23d1f8447dad6659e558f03bae48d953ab01fd",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t002_temporal_memory_jointRGB_native.png": "5c9976f6a27f74f5d5d7f04f7c780c64f02d4c5c4e39a28cdffe6f84eec73fad",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t002_temporal_memory_staticAlpha_native.png": "adb60c271bcbec1366a9c07c2114332eebe73852f1db22f6062014f0c786f813",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t002_temporal_memory_dynamicAlpha_native.png": "d7665b9f548fbdd2a980b27ddda6d40086d611ed334b1c3c419f1135953f88b8",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t002_temporal_memory_jointAlpha_native.png": "d1176f31e0e4c62bad3261ccbbde076f43de97b54b516afe19f4803c1e83aef5",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t002_temporal_memory_staticD-alpha_native.png": "928cbfc2b25d0db65066e7cd96d6430e83367c5054eec81d5d2780350ba48693",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t002_temporal_memory_dynamicD-alpha_native.png": "8d54eb90ac7b50fc8d03ef843f09647afe914d167d4906e07aadec0560234f2d",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t002_temporal_memory_jointD-alpha_native.png": "dda1af64d8af2d67d39539a6773d07f0fc8060a2c0d8e4916f19562f1151bdae",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t002_decomposition.png": "3db9600b4d008e8b32f82b823f1b99e886b3995e97d32545974fd11aece08613",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t002_joint_comparison.png": "8ffcd7716d231ef0818002027be77bd9b907a52d4bf562f10ddc4e20ecdb744e",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t100_J7_parent_staticRGB_native.png": "c08f8e33a8f5fe7cb68828f98d2463e4e306195d3a773b4b18771df1cd52bf81",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t100_J7_parent_dynamicRGB_native.png": "aa6cbcaadce765d9341fa61bd9c25b53bb7ae3e8c3b201cceb44fe9685748f6b",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t100_J7_parent_jointRGB_native.png": "101c6802ca2edb37a72c206ddf2e92a241dab6554153b97e7a375defe5ed1bf6",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t100_J7_parent_staticAlpha_native.png": "a0baaa13b4ba58a62d4fc9332670a4a4b9a5da238c16efc5fd233fa632f51dd2",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t100_J7_parent_dynamicAlpha_native.png": "b79cef755a79b9849015bd0172bc766862b0d2ebbcede5cad5e112a969690656",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t100_J7_parent_jointAlpha_native.png": "ca3380c0ce90db4a1064ea44cebc41485a7e745e2f84de83f0f61aeea51cb919",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t100_J7_parent_staticD-alpha_native.png": "b4c23763a89cb50f125c277e94e1a6f3ad1adc2a893041d7c8e3d13bac9ae87c",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t100_J7_parent_dynamicD-alpha_native.png": "98b49d82e735d6e2d0f1b83110dec047ad1dfd72aff3c7ea258bbd4b8e461e5f",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t100_J7_parent_jointD-alpha_native.png": "8ef0dda10a96c654e88c3f496fb3ae7f632c389582f988f4ad5039e033756ae0",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t100_rgb_control_staticRGB_native.png": "76efaaca8fc98a8e41f2d65f87e2d75d7a381eff2ea56b5a1211a78c20656121",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t100_rgb_control_dynamicRGB_native.png": "f732fa1c62458f491b72fbea513e8b0460e79cf4c1b5adb84459be3bec29a8bb",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t100_rgb_control_jointRGB_native.png": "b8cfd90559d5df788687d71962406ebf3f38ffb72ec574ec1aee10733fef71fb",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t100_rgb_control_staticAlpha_native.png": "c7374e95c87111b5c11c2cbb012d0727e9d4cf32a643b9f030e938027186e937",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t100_rgb_control_dynamicAlpha_native.png": "3a78f9ee2278f109ade7ba5b99eed2e3017c3270f1c93268460d0fffa19db20e",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t100_rgb_control_jointAlpha_native.png": "6768fdb79d80728491a92a3e4f50f871b0dd1ce40fe9829e8c2a7426c291a92c",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t100_rgb_control_staticD-alpha_native.png": "89ee02741dcd34d803bfdd4e8e19b2c71e24b4bd701ed2b77cfbd7214bf5116a",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t100_rgb_control_dynamicD-alpha_native.png": "ec8d602fc3c99ab9ca6a5474d2c4bab7cce722235fbb11e9fa19a23b8b776894",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t100_rgb_control_jointD-alpha_native.png": "4f0f005d9d1b015e4ee4fe36a0b99e02d4c157715c9187e88bc766ea57b9e5c6",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t100_temporal_memory_staticRGB_native.png": "8cde42aeb8a62a8631b04306d7772a63471111bb93d58619ab2743e082d23dee",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t100_temporal_memory_dynamicRGB_native.png": "1a442dfebaf6a7bb5e071cefea838d23b3b832f5dc909dcd7eec6fd8b46a5d80",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t100_temporal_memory_jointRGB_native.png": "d144d1785b1b8af8dd62ef81ad9245c389cc36980fe86d4123a3b414f87ab782",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t100_temporal_memory_staticAlpha_native.png": "adb60c271bcbec1366a9c07c2114332eebe73852f1db22f6062014f0c786f813",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t100_temporal_memory_dynamicAlpha_native.png": "607af5530a5c10bc3a18c758afc8a1dcf8999bdfdc8ae4db5d8635af2b981edf",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t100_temporal_memory_jointAlpha_native.png": "dfdf4ec716edbcc8ae54cead0aaf590281b3f4b433e949c8028f5024b02a26ae",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t100_temporal_memory_staticD-alpha_native.png": "928cbfc2b25d0db65066e7cd96d6430e83367c5054eec81d5d2780350ba48693",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t100_temporal_memory_dynamicD-alpha_native.png": "82b0fa85baddf16322b0f2b283eaefff5021323243781127f798053cc242f377",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t100_temporal_memory_jointD-alpha_native.png": "cfc3b4eb65c5e9dc4004dbae97192aa2d43a603c147329e8aa2dd0121824dbb8",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t100_decomposition.png": "ab39d16511caa881300810ee3ce17b2fde08586f71a732847d5500a12d99ab76",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t100_joint_comparison.png": "3c3a310c192f770cc6feb1dff5fc50d150fb471a60b5f2a75d04ebc830a06e08",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t200_J7_parent_staticRGB_native.png": "c08f8e33a8f5fe7cb68828f98d2463e4e306195d3a773b4b18771df1cd52bf81",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t200_J7_parent_dynamicRGB_native.png": "a39046036687cdc771959c0b879e4caad16371f16ce336def104c4ea02b649f8",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t200_J7_parent_jointRGB_native.png": "cde1fe13ac9f838cbca88e5ecc4e6da9648ae9b05a5d5c972c8802f43fd22874",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t200_J7_parent_staticAlpha_native.png": "a0baaa13b4ba58a62d4fc9332670a4a4b9a5da238c16efc5fd233fa632f51dd2",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t200_J7_parent_dynamicAlpha_native.png": "9d8d57bf80db8b551f5af38b25a2ca6ed69526dd7991d4ea46b5167de5f480bc",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t200_J7_parent_jointAlpha_native.png": "0ee83e7e86c54443b071dbdecb4e15e38638a8e99660e77f980b3b57cc34f92e",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t200_J7_parent_staticD-alpha_native.png": "b4c23763a89cb50f125c277e94e1a6f3ad1adc2a893041d7c8e3d13bac9ae87c",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t200_J7_parent_dynamicD-alpha_native.png": "03184224156d8dbd678ee2770a8b6c812440745e743b025591875f83987c1ae8",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t200_J7_parent_jointD-alpha_native.png": "979d15394faab1fd6591de77265f186bcd9756ca6affeebf5006600cfaec7b71",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t200_rgb_control_staticRGB_native.png": "76efaaca8fc98a8e41f2d65f87e2d75d7a381eff2ea56b5a1211a78c20656121",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t200_rgb_control_dynamicRGB_native.png": "9e463d0704c22fd62e9f594d9781f4e31cb9c2b55a2dc21f16d32575f7ac143a",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t200_rgb_control_jointRGB_native.png": "fb1d5bf56cc382c8ce400faebbecbda8f06db24fe90541e1fd3e4eee616dacde",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t200_rgb_control_staticAlpha_native.png": "c7374e95c87111b5c11c2cbb012d0727e9d4cf32a643b9f030e938027186e937",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t200_rgb_control_dynamicAlpha_native.png": "527ca9f19b87d9a5a71505aa0417f37cac70458ac50ba34e0baefe16e01c5ab1",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t200_rgb_control_jointAlpha_native.png": "e77ca6e8720c9208b8454dc41905a53e0658eef0513158a3ff5ceb666aafd359",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t200_rgb_control_staticD-alpha_native.png": "89ee02741dcd34d803bfdd4e8e19b2c71e24b4bd701ed2b77cfbd7214bf5116a",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t200_rgb_control_dynamicD-alpha_native.png": "b685a1acc6ab563617f766adadd3ce40d2beda9d566afc22180feaa04693f440",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t200_rgb_control_jointD-alpha_native.png": "d90d84632c98883483b6c09eba9324afec342337b8ff673f03cca14ec5b5be2a",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t200_temporal_memory_staticRGB_native.png": "8cde42aeb8a62a8631b04306d7772a63471111bb93d58619ab2743e082d23dee",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t200_temporal_memory_dynamicRGB_native.png": "ef1e381e2fce3eb72f4c9c41ce469c7758f09bb11fe76df08781a728a64c045e",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t200_temporal_memory_jointRGB_native.png": "57ea70645288debd297d97235cc80bdbdac451910691119760458cb1ec5b432a",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t200_temporal_memory_staticAlpha_native.png": "adb60c271bcbec1366a9c07c2114332eebe73852f1db22f6062014f0c786f813",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t200_temporal_memory_dynamicAlpha_native.png": "e37de4545fde0b0dbfca95e339a082c8c167a59b912db14e72116b9acb5c4089",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t200_temporal_memory_jointAlpha_native.png": "15b6b6d879a4ece4008e2a6870f8d7f012ea69c359fd85e71bfcf940808ae834",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t200_temporal_memory_staticD-alpha_native.png": "928cbfc2b25d0db65066e7cd96d6430e83367c5054eec81d5d2780350ba48693",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t200_temporal_memory_dynamicD-alpha_native.png": "f5f69ce2aee02beddb361966b3cdaa8c12baba0ae410ed40b9a33a33d4c8e4cd",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t200_temporal_memory_jointD-alpha_native.png": "6e661ea6abf5ae074cc21540ed582d05e8da083f1c56a6fd6aae4e49f8c487fc",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t200_decomposition.png": "55773812e5350164c25a0ccee8bb361a0ff5a41a96f32621f4e69020111e60f1",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c086_t200_joint_comparison.png": "24e8391ac5ec1cdb259bce5ad49151b077c10da55619501bed88e5c66b426348",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t002_J7_parent_staticRGB_native.png": "5f9bd529166e3253deffbc4fdc94fdc6edc5293619733a3f1f9a180ca325dc6b",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t002_J7_parent_dynamicRGB_native.png": "92fc56dc6cf0a90b78e47fd72a53367a57e0f03f5e1c023e32c9c3565e6ccdb3",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t002_J7_parent_jointRGB_native.png": "2d8becc8f35b0e2ce5d383ec517c036604bfa4261e35e723bc8b3e1e1adeeb1b",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t002_J7_parent_staticAlpha_native.png": "830575f6dcd20fb3800cd946111b745caaad25cb8c12c3f3fa87e535039cd519",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t002_J7_parent_dynamicAlpha_native.png": "d010c5e64d8ec78f23306bbe004dcf16472e3fdd110398070a595cfc0a4c6495",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t002_J7_parent_jointAlpha_native.png": "085cef7869deb5a39183a6a864061103a14e1ed55e3cc8a99531b551b43412bb",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t002_J7_parent_staticD-alpha_native.png": "39be6858e204b98ee3a3d5f5f73efe207c4fc949caba9701d369d30d01f9d1e4",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t002_J7_parent_dynamicD-alpha_native.png": "05c635107674ac606c408e1fd3d32a8f7ecdd4c5725414d415e99b0ecbe7b975",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t002_J7_parent_jointD-alpha_native.png": "1c503765d9db8077648fb39f10ffbf82713bd0a07ea3b889c64a94d74b61b0b6",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t002_rgb_control_staticRGB_native.png": "7bb0cfad0ac30a7e06109c0905d2dbd216b0c705dea6551aa658667d84b79bed",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t002_rgb_control_dynamicRGB_native.png": "555c09f87b1736c8db4265e8cf151aaad1acc57926d8169c90103989b1b85bfb",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t002_rgb_control_jointRGB_native.png": "5dbcce424273bc0c35eb383bd0da6c4f8af8717ba49a2efedbf0453c26f14e24",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t002_rgb_control_staticAlpha_native.png": "29e57cda5df709efd37c0babaa7c26fb322d16bd29dbe0fcbaf1ba64ef3a6b69",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t002_rgb_control_dynamicAlpha_native.png": "a4ff5b882b70f74bf9b0d01e536889fbcb88f3fdb2623cb08039f167f4781ddd",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t002_rgb_control_jointAlpha_native.png": "cc0bd0529948be51d03882bdabdde5119a6040b872e01c87cb8e138449a6c515",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t002_rgb_control_staticD-alpha_native.png": "ccc3ff7367b36b4f45caf52c0e5c4dff5165c993f06cb21d99c3356142483b82",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t002_rgb_control_dynamicD-alpha_native.png": "4e20eee434764e5c1c2f76db56619867b31253691fb39ef177dc2439259ea187",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t002_rgb_control_jointD-alpha_native.png": "f0e5ec1f4117b98430f43c945bbd7348cd3d8f4185730ca3baba4efc9ae518da",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t002_temporal_memory_staticRGB_native.png": "f0fc2d8f65ed37ef83cb1e3d41871eb52246c6d708eac91ed0a8c5da842b8195",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t002_temporal_memory_dynamicRGB_native.png": "6c6c63103051a6ba3a910a608f5252cd2c7eee8cc4f41776711b2cd9bf0fc3ba",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t002_temporal_memory_jointRGB_native.png": "53a14b6bfc4ee9ef30734afa122593962a750c8732bdc2b19d2aadbf50c0f3f5",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t002_temporal_memory_staticAlpha_native.png": "a7d9bd12f00585cdebd1a8cbbfc7bc468a28a0a4beb94ebc94c74547f96cfee7",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t002_temporal_memory_dynamicAlpha_native.png": "ba350bd07d651aa0e25bc756d2570a6672f17268fd43d07819f075c8cb5c10af",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t002_temporal_memory_jointAlpha_native.png": "0bf28a3f0bcfcc04683fc412c418cd0221988c82020c788ed6b598c782ca8364",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t002_temporal_memory_staticD-alpha_native.png": "e5d38d3563079bdd371ee1a072ebc20b63b3c974907f2d0bef8148772455ca59",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t002_temporal_memory_dynamicD-alpha_native.png": "2b2f03d60fed12bdd6b81f66c5ddb61f947d9dbf2a6efe49d8895e90a1b7a1fc",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t002_temporal_memory_jointD-alpha_native.png": "e71e334ad5cc64b4b3bc739252f995082355e7954380a7988aace6bcb9947ee8",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t002_decomposition.png": "e9cd12c41df8dc8bd9a6c16b0176df4dffa37d41558c14c672f285c091758089",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t002_joint_comparison.png": "d992da859c6cf4faf0e5d5d024fa608a017f4491ccdd45334f1883f7133934f8",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t100_J7_parent_staticRGB_native.png": "5f9bd529166e3253deffbc4fdc94fdc6edc5293619733a3f1f9a180ca325dc6b",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t100_J7_parent_dynamicRGB_native.png": "63813664d559439debc3f500627eff836c49e8a1a7665bff8b956fd88dcb1385",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t100_J7_parent_jointRGB_native.png": "7991c78811e85af839b91affaa5f560f1901f04906d9e72375b5f6d3d687e40d",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t100_J7_parent_staticAlpha_native.png": "830575f6dcd20fb3800cd946111b745caaad25cb8c12c3f3fa87e535039cd519",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t100_J7_parent_dynamicAlpha_native.png": "a27f1445a8e16072d0abafa0793b39c3d0bb7a9e1f4c9a23700f73824674068b",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t100_J7_parent_jointAlpha_native.png": "6e53b57be2a0d647b6ee33dcbda5ca3bb4674598eded85034e535fd18c8373e6",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t100_J7_parent_staticD-alpha_native.png": "39be6858e204b98ee3a3d5f5f73efe207c4fc949caba9701d369d30d01f9d1e4",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t100_J7_parent_dynamicD-alpha_native.png": "aee1937216fefd55c0b824284a8dc92e186df79ee82fe791df1f47d4b5cc62a4",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t100_J7_parent_jointD-alpha_native.png": "60d54f1c2821b1d1a69cef534a02edba72cd38e7a8ec741985955e7edb6d9c24",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t100_rgb_control_staticRGB_native.png": "7bb0cfad0ac30a7e06109c0905d2dbd216b0c705dea6551aa658667d84b79bed",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t100_rgb_control_dynamicRGB_native.png": "00c5b667a575585bde7545677fb140a9da70168b8896ebe882dc07742a171f0f",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t100_rgb_control_jointRGB_native.png": "7db995ad3c4b21a82babebae8e2dbcbb44427bd805511f90c315c03748b98aeb",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t100_rgb_control_staticAlpha_native.png": "29e57cda5df709efd37c0babaa7c26fb322d16bd29dbe0fcbaf1ba64ef3a6b69",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t100_rgb_control_dynamicAlpha_native.png": "851ac79fc39a97f3c1968c59fc5d2d1bf6cdd24e1583d7860a44f0d2985327f2",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t100_rgb_control_jointAlpha_native.png": "cc0ee6cb5c8faf576a21ca57ec49aa5fecac1a0f55f8e66b84d3e355faa4a2f6",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t100_rgb_control_staticD-alpha_native.png": "ccc3ff7367b36b4f45caf52c0e5c4dff5165c993f06cb21d99c3356142483b82",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t100_rgb_control_dynamicD-alpha_native.png": "e5d38d3c16d8ddda1a2c0e030d1f94f69237f05f8188022fa242c61d727d5e23",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t100_rgb_control_jointD-alpha_native.png": "ffe12169a6b320392825908378ba84bcf43af9a21d0740fd4002b807665f6d91",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t100_temporal_memory_staticRGB_native.png": "f0fc2d8f65ed37ef83cb1e3d41871eb52246c6d708eac91ed0a8c5da842b8195",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t100_temporal_memory_dynamicRGB_native.png": "7ce81ea762a231ac841c0d69c999c44d7b580deeecda25ef736b5ce248666f46",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t100_temporal_memory_jointRGB_native.png": "a36a54b063f6c437d376e356deff76a18d896d292a014303cfef0b101dea8200",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t100_temporal_memory_staticAlpha_native.png": "a7d9bd12f00585cdebd1a8cbbfc7bc468a28a0a4beb94ebc94c74547f96cfee7",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t100_temporal_memory_dynamicAlpha_native.png": "b1d63c91ff05c06d7169d292c850696e4c4149ad18d2f46494f1b8246d271524",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t100_temporal_memory_jointAlpha_native.png": "b50ca0c92f385ce3a9976edc5c639d1a9caadc6ec0c588008d37baa7b381ce5a",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t100_temporal_memory_staticD-alpha_native.png": "e5d38d3563079bdd371ee1a072ebc20b63b3c974907f2d0bef8148772455ca59",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t100_temporal_memory_dynamicD-alpha_native.png": "77bf309ff71cdc540076604e1e1b443640c32f5ffa0b206b5db04ea96ac93f0b",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t100_temporal_memory_jointD-alpha_native.png": "f8e4e2dd044e4a61bf04964814bb76edbaaee2c11604082d13f9f0f654b4bad0",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t100_decomposition.png": "74c3ac582cd69f188bff4a844bfc146ddc1a4c4f523e083e0bb00b8db6a24ba8",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t100_joint_comparison.png": "47d3474e07957adabda7877e96366506f85fbee2d5ca98a633a75ad1763a53ce",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t200_J7_parent_staticRGB_native.png": "5f9bd529166e3253deffbc4fdc94fdc6edc5293619733a3f1f9a180ca325dc6b",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t200_J7_parent_dynamicRGB_native.png": "ed4023f8d104887cbc2a1baf0ef2ba240dd914998ed3e4c65a3f2f9d29074564",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t200_J7_parent_jointRGB_native.png": "95f58d8ba66a8ebd77f7b0aef505f51a825a2fa144d961f827ea78f934b12c33",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t200_J7_parent_staticAlpha_native.png": "830575f6dcd20fb3800cd946111b745caaad25cb8c12c3f3fa87e535039cd519",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t200_J7_parent_dynamicAlpha_native.png": "349ca43606001c67e07b15dcde790d021927b89b06be0c60f2d75bb6e3d4e84c",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t200_J7_parent_jointAlpha_native.png": "0a89b5b5c94f1d5a414d006c186c3c80ae208d742a368c826eba09f2f308efe7",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t200_J7_parent_staticD-alpha_native.png": "39be6858e204b98ee3a3d5f5f73efe207c4fc949caba9701d369d30d01f9d1e4",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t200_J7_parent_dynamicD-alpha_native.png": "26675092520bbfa916f71dca4c533960a6d48f4d9f199ffebafc36a765260835",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t200_J7_parent_jointD-alpha_native.png": "23a079464d2ec7a80ee4bafcdf9159f5026f9270cd668c8b3ee2249b30ae0448",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t200_rgb_control_staticRGB_native.png": "7bb0cfad0ac30a7e06109c0905d2dbd216b0c705dea6551aa658667d84b79bed",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t200_rgb_control_dynamicRGB_native.png": "12b686cf0cade17aa64bd4403aa0ebd378943d38c827570bbd64f1252df14268",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t200_rgb_control_jointRGB_native.png": "8a67bbcdae28cc32d9381c48b3b1ee28087eb0f5257f9465e23dc862e83720f9",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t200_rgb_control_staticAlpha_native.png": "29e57cda5df709efd37c0babaa7c26fb322d16bd29dbe0fcbaf1ba64ef3a6b69",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t200_rgb_control_dynamicAlpha_native.png": "b0a844dc452d40cd69331f03fcf2499fc45760990f39050349dd323ce230a400",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t200_rgb_control_jointAlpha_native.png": "6da37329cfbed1312ebeb01047bcc7aeadf6d2b0591b326a84e1c935675a414c",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t200_rgb_control_staticD-alpha_native.png": "ccc3ff7367b36b4f45caf52c0e5c4dff5165c993f06cb21d99c3356142483b82",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t200_rgb_control_dynamicD-alpha_native.png": "e96264ee01963ba8d3e1b34812b3d832dd33996d9cfd4b7ac3407b65ebb2bab5",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t200_rgb_control_jointD-alpha_native.png": "dd18fa1d39c4986013350bd0ef99c66aee0362c9dd2593d643636d9a239c7694",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t200_temporal_memory_staticRGB_native.png": "f0fc2d8f65ed37ef83cb1e3d41871eb52246c6d708eac91ed0a8c5da842b8195",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t200_temporal_memory_dynamicRGB_native.png": "640145c2bb394073088f60158aad985fd979f7ff743a3348cda11276b1557bfd",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t200_temporal_memory_jointRGB_native.png": "61ff54b76b80ee2edfcba31c1a3e91f2d08d99ed2ec9f18a93debea464aa8652",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t200_temporal_memory_staticAlpha_native.png": "a7d9bd12f00585cdebd1a8cbbfc7bc468a28a0a4beb94ebc94c74547f96cfee7",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t200_temporal_memory_dynamicAlpha_native.png": "f420b06b243b226bc76c56ab0360fbbf320d89b844466fb9c7f91cf7c6f20516",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t200_temporal_memory_jointAlpha_native.png": "f8358f618eb4385bc8e33fac85aed1a566b8f9596ec30478f1c93d8f8ffdfc57",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t200_temporal_memory_staticD-alpha_native.png": "e5d38d3563079bdd371ee1a072ebc20b63b3c974907f2d0bef8148772455ca59",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t200_temporal_memory_dynamicD-alpha_native.png": "1c54f8bb0d2d6df317e4dd00721438b5122d4a854d49769261a26a6f5b7ca281",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t200_temporal_memory_jointD-alpha_native.png": "a9162bdde1cf62871c56d6230370e0eb4d888ee4a5f136a555bafbe3c8ddf4f8",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t200_decomposition.png": "6744a6a8cc93c54937ee66e05fb00b468e716e27a2ea80559858eec995f135e1",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/c188_t200_joint_comparison.png": "b26185356f9e86f660360a74d325005da62335c3772667fb76d6a962fe946072",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/observed_train_index000.png": "155a9c0bc1963336aa614da9653c6fe9c71730bc74c9740db2f3a0641746feb6",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/observed_train_index024.png": "9046c67ca6a5e4c9f8ce4d25d73ed40a12798a6add16a9c9b8353f1062245d6e",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/observed_train_index048.png": "db4cf19b6d60abfde2c8c0b5d684b2a408bfe4017d69226c087dacc49b354d0d",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/observed_train_index072.png": "9529d969b4398872c573e8bab961d8e9b156f4c4bae58966f29534f3a15fab0f",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/observed_train_index096.png": "6b966976f8b14a50572088274cd783b165800b5d8d337cb825293764a078a00d",
+      "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/observed_train_index119.png": "240b91babb8e13687bd51943e03e95c2b2e24c5dcfaffbeed4ef17f98574adeb"
+    },
+    "fixed_cameras": {
+      "86": {
+        "frame": "train/0086",
+        "camera_transform": [
+          [
+            0.23971359431743622,
+            -0.6610111594200134,
+            0.711056649684906,
+            4.171568393707275
+          ],
+          [
+            0.9708436727523804,
+            0.16321201622486115,
+            -0.17556889355182648,
+            -0.39753779768943787
+          ],
+          [
+            7.450580152834618e-09,
+            0.7324110865592957,
+            0.6808626055717468,
+            4.79702091217041
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "FoVx": 0.8457078337669373,
+        "FoVy": 0.4958353284296838,
+        "size": [
+          1600,
+          900
+        ]
+      },
+      "188": {
+        "frame": "train/0188",
+        "camera_transform": [
+          [
+            -0.7748000621795654,
+            0.4649222791194916,
+            -0.4284064769744873,
+            -2.3269615173339844
+          ],
+          [
+            -0.6322063207626343,
+            -0.5697851777076721,
+            0.5250332951545715,
+            3.484281539916992
+          ],
+          [
+            1.4901160305669237e-08,
+            0.6776370406150818,
+            0.7353963851928711,
+            4.79702091217041
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "FoVx": 0.8457078337669373,
+        "FoVy": 0.4958353284296838,
+        "size": [
+          1600,
+          900
+        ]
+      }
+    },
+    "static_support_proxies": [
+      {
+        "camera": 86,
+        "model": "J7_parent",
+        "pixels": 1440000,
+        "alpha_gt05": 232832,
+        "parent_support": 232832,
+        "parent_support_now_missing": 0,
+        "D_alpha_parent_support_MAE_proxy": 0.0,
+        "not_independent_geometry_accuracy": true
+      },
+      {
+        "camera": 86,
+        "model": "rgb_control",
+        "pixels": 1440000,
+        "alpha_gt05": 232798,
+        "parent_support": 232832,
+        "parent_support_now_missing": 38,
+        "D_alpha_parent_support_MAE_proxy": 0.00030942860757932067,
+        "not_independent_geometry_accuracy": true
+      },
+      {
+        "camera": 86,
+        "model": "temporal_memory",
+        "pixels": 1440000,
+        "alpha_gt05": 232799,
+        "parent_support": 232832,
+        "parent_support_now_missing": 39,
+        "D_alpha_parent_support_MAE_proxy": 0.00031628573196940124,
+        "not_independent_geometry_accuracy": true
+      },
+      {
+        "camera": 188,
+        "model": "J7_parent",
+        "pixels": 1440000,
+        "alpha_gt05": 226412,
+        "parent_support": 226412,
+        "parent_support_now_missing": 0,
+        "D_alpha_parent_support_MAE_proxy": 0.0,
+        "not_independent_geometry_accuracy": true
+      },
+      {
+        "camera": 188,
+        "model": "rgb_control",
+        "pixels": 1440000,
+        "alpha_gt05": 226376,
+        "parent_support": 226412,
+        "parent_support_now_missing": 39,
+        "D_alpha_parent_support_MAE_proxy": 0.0003327032900415361,
+        "not_independent_geometry_accuracy": true
+      },
+      {
+        "camera": 188,
+        "model": "temporal_memory",
+        "pixels": 1440000,
+        "alpha_gt05": 226384,
+        "parent_support": 226412,
+        "parent_support_now_missing": 39,
+        "D_alpha_parent_support_MAE_proxy": 0.00033120583975687623,
+        "not_independent_geometry_accuracy": true
+      }
+    ],
+    "dynamic_dark_support_proxies": [
+      {
+        "camera": 86,
+        "time": 2,
+        "model": "J7_parent",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 37841,
+        "dynamic_dark_high_alpha": 1044,
+        "evaluation_proxy_only": true,
+        "not_used_for_training_or_point_selection": true
+      },
+      {
+        "camera": 86,
+        "time": 2,
+        "model": "rgb_control",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 38154,
+        "dynamic_dark_high_alpha": 1088,
+        "evaluation_proxy_only": true,
+        "not_used_for_training_or_point_selection": true
+      },
+      {
+        "camera": 86,
+        "time": 2,
+        "model": "temporal_memory",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 38298,
+        "dynamic_dark_high_alpha": 1040,
+        "evaluation_proxy_only": true,
+        "not_used_for_training_or_point_selection": true
+      },
+      {
+        "camera": 86,
+        "time": 100,
+        "model": "J7_parent",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 83540,
+        "dynamic_dark_high_alpha": 58039,
+        "evaluation_proxy_only": true,
+        "not_used_for_training_or_point_selection": true
+      },
+      {
+        "camera": 86,
+        "time": 100,
+        "model": "rgb_control",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 77582,
+        "dynamic_dark_high_alpha": 51912,
+        "evaluation_proxy_only": true,
+        "not_used_for_training_or_point_selection": true
+      },
+      {
+        "camera": 86,
+        "time": 100,
+        "model": "temporal_memory",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 76128,
+        "dynamic_dark_high_alpha": 50902,
+        "evaluation_proxy_only": true,
+        "not_used_for_training_or_point_selection": true
+      },
+      {
+        "camera": 86,
+        "time": 200,
+        "model": "J7_parent",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 100960,
+        "dynamic_dark_high_alpha": 76428,
+        "evaluation_proxy_only": true,
+        "not_used_for_training_or_point_selection": true
+      },
+      {
+        "camera": 86,
+        "time": 200,
+        "model": "rgb_control",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 71373,
+        "dynamic_dark_high_alpha": 46159,
+        "evaluation_proxy_only": true,
+        "not_used_for_training_or_point_selection": true
+      },
+      {
+        "camera": 86,
+        "time": 200,
+        "model": "temporal_memory",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 81736,
+        "dynamic_dark_high_alpha": 57522,
+        "evaluation_proxy_only": true,
+        "not_used_for_training_or_point_selection": true
+      },
+      {
+        "camera": 188,
+        "time": 2,
+        "model": "J7_parent",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 46205,
+        "dynamic_dark_high_alpha": 4219,
+        "evaluation_proxy_only": true,
+        "not_used_for_training_or_point_selection": true
+      },
+      {
+        "camera": 188,
+        "time": 2,
+        "model": "rgb_control",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 47060,
+        "dynamic_dark_high_alpha": 4675,
+        "evaluation_proxy_only": true,
+        "not_used_for_training_or_point_selection": true
+      },
+      {
+        "camera": 188,
+        "time": 2,
+        "model": "temporal_memory",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 47248,
+        "dynamic_dark_high_alpha": 4684,
+        "evaluation_proxy_only": true,
+        "not_used_for_training_or_point_selection": true
+      },
+      {
+        "camera": 188,
+        "time": 100,
+        "model": "J7_parent",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 59937,
+        "dynamic_dark_high_alpha": 29086,
+        "evaluation_proxy_only": true,
+        "not_used_for_training_or_point_selection": true
+      },
+      {
+        "camera": 188,
+        "time": 100,
+        "model": "rgb_control",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 59585,
+        "dynamic_dark_high_alpha": 29113,
+        "evaluation_proxy_only": true,
+        "not_used_for_training_or_point_selection": true
+      },
+      {
+        "camera": 188,
+        "time": 100,
+        "model": "temporal_memory",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 58712,
+        "dynamic_dark_high_alpha": 28133,
+        "evaluation_proxy_only": true,
+        "not_used_for_training_or_point_selection": true
+      },
+      {
+        "camera": 188,
+        "time": 200,
+        "model": "J7_parent",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 79132,
+        "dynamic_dark_high_alpha": 61905,
+        "evaluation_proxy_only": true,
+        "not_used_for_training_or_point_selection": true
+      },
+      {
+        "camera": 188,
+        "time": 200,
+        "model": "rgb_control",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 71476,
+        "dynamic_dark_high_alpha": 54056,
+        "evaluation_proxy_only": true,
+        "not_used_for_training_or_point_selection": true
+      },
+      {
+        "camera": 188,
+        "time": 200,
+        "model": "temporal_memory",
+        "pixels": 1440000,
+        "dynamic_alpha_gt05": 71731,
+        "dynamic_dark_high_alpha": 54625,
+        "evaluation_proxy_only": true,
+        "not_used_for_training_or_point_selection": true
+      }
+    ],
+    "missing_black_depth_is_not_zero_error": true
+  },
+  "training_track_diagnostic": {
+    "all_original_bound_memories_unfiltered": true,
+    "held_RGB_trained": true,
+    "independent_3D_GT": false,
+    "models": {
+      "J7_parent": {
+        "total": 360,
+        "missing": 0,
+        "fit_mean_px": 0.8524356282630124,
+        "held_mean_px": 0.8775068324054758
+      },
+      "rgb_control": {
+        "total": 360,
+        "missing": 0,
+        "fit_mean_px": 1.0269627080885757,
+        "held_mean_px": 1.0261557802875492
+      },
+      "temporal_memory": {
+        "total": 360,
+        "missing": 0,
+        "fit_mean_px": 0.652001020835609,
+        "held_mean_px": 0.6503651906459472
+      }
+    }
+  },
+  "plys": {
+    "J7_parent/static": {
+      "path": "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/J7_parent_static.ply",
+      "sha256": "f411ab78035381acefb5db00ec895e5976516facab2dcf9db882a5e7003c874c",
+      "vertices": 3273,
+      "checkpoint_position_exact": true,
+      "all_fields_finite": true,
+      "coordinates": "world"
+    },
+    "J7_parent/canonical_dynamic_local": {
+      "path": "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/J7_parent_canonical_dynamic_local.ply",
+      "sha256": "211197c0e14cb335cd9d402a0a8c9d594930bd301cafbf1f24c859ad32b9fcff",
+      "vertices": 15507,
+      "checkpoint_position_exact": true,
+      "all_fields_finite": true,
+      "coordinates": "local canonical; add checkpoint centers after deformation"
+    },
+    "J7_parent/dynamic_world/2": {
+      "path": "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/J7_parent_dynamic_world_t002.ply",
+      "sha256": "c22435ae64f8f17bedb432f79f7576568695a628eca15cb5690a72b98d488677",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "J7_parent/dynamic_world/100": {
+      "path": "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/J7_parent_dynamic_world_t100.ply",
+      "sha256": "1314cf68153239415024aef8b668b0269a4f99a8270df0c4501b73586229f769",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "J7_parent/dynamic_world/200": {
+      "path": "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/J7_parent_dynamic_world_t200.ply",
+      "sha256": "1619bfcc5571360062d43e4aa87efd9328e2001b26a8eac91c1269b80e638b70",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "rgb_control/static": {
+      "path": "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/rgb_control_static.ply",
+      "sha256": "8176abd9be34d297aa0bbe21a06cbd595114ce63f0aa0d5aac845395c8a6b27e",
+      "vertices": 3273,
+      "checkpoint_position_exact": true,
+      "all_fields_finite": true,
+      "coordinates": "world"
+    },
+    "rgb_control/canonical_dynamic_local": {
+      "path": "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/rgb_control_canonical_dynamic_local.ply",
+      "sha256": "4bb608454cf815edaafa8f441960eb15224f13a02a95c02633bf7b09787f3b14",
+      "vertices": 15507,
+      "checkpoint_position_exact": true,
+      "all_fields_finite": true,
+      "coordinates": "local canonical; add checkpoint centers after deformation"
+    },
+    "rgb_control/dynamic_world/2": {
+      "path": "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/rgb_control_dynamic_world_t002.ply",
+      "sha256": "4cad4427a73f8d451d1eb741c5e09934a3b1f0824d91685b0ddab2e04fafccf4",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "rgb_control/dynamic_world/100": {
+      "path": "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/rgb_control_dynamic_world_t100.ply",
+      "sha256": "e9563baf799c56bc1a51b3b335dae0b0927f327592cbbbf7d5d1e6a3316a928d",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "rgb_control/dynamic_world/200": {
+      "path": "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/rgb_control_dynamic_world_t200.ply",
+      "sha256": "e4083a4820e689558e6b2a29a2c450aa811c616e721e5d6600e4d2527dc6e4f6",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "temporal_memory/static": {
+      "path": "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/temporal_memory_static.ply",
+      "sha256": "d05875cc9238d053fba292e7e5a363e94e9acea0e0f4e0d25929dcf5e9def84d",
+      "vertices": 3273,
+      "checkpoint_position_exact": true,
+      "all_fields_finite": true,
+      "coordinates": "world"
+    },
+    "temporal_memory/canonical_dynamic_local": {
+      "path": "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/temporal_memory_canonical_dynamic_local.ply",
+      "sha256": "8c880a96746a45d827e5ebad5db423314b8b167c275284a1eacfa798d579e306",
+      "vertices": 15507,
+      "checkpoint_position_exact": true,
+      "all_fields_finite": true,
+      "coordinates": "local canonical; add checkpoint centers after deformation"
+    },
+    "temporal_memory/dynamic_world/2": {
+      "path": "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/temporal_memory_dynamic_world_t002.ply",
+      "sha256": "827028ea1ef56aea6a1d69333dbbd6313f1383e0b30e088404b41f0e4f9e2742",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "temporal_memory/dynamic_world/100": {
+      "path": "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/temporal_memory_dynamic_world_t100.ply",
+      "sha256": "c217f6df78deac138a0931b130944d78b657eabd7e2907d207a507f4269225bb",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    },
+    "temporal_memory/dynamic_world/200": {
+      "path": "output/staged_reconstruction/RubberDuck_J7_long_memory/v1/temporal_memory_dynamic_world_t200.ply",
+      "sha256": "4c2c8c75198a770b257cbbc9b610013af72c179bf855a65b3240bd3f035aceaa",
+      "vertices": 15507,
+      "checkpoint_deformed_position_exact": true,
+      "coordinates": "world; XYZ-only diagnostic, not full Gaussian PLY"
+    }
+  },
+  "source_sha256": "0470e108d8f059b70fc17fabd48c60c25e3a0dd58a3c4b2ac06cca8d145827f4"
+}

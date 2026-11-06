@@ -1,0 +1,157 @@
+{
+  "passed": true,
+  "source_receipts": {
+    "preregistration.json": 2,
+    "source_freeze.json": 532,
+    "evaluation_freeze.json": 35
+  },
+  "complete_state": {
+    "passed": true,
+    "arms": {
+      "rgb_control": {
+        "checkpoint_sha256": "529560c3b1312d2bdd62cdf29daafff2b7011b9aa4a29718adfa8c1a0222923b",
+        "source_model_two_Adam_exact": true,
+        "all2000_samples_and_RNG_replayed": true,
+        "static_geometry_physics_Adam_graphs_frozen": true,
+        "static_points": 3273,
+        "dynamic_points": 15507,
+        "optimizer_steps": {
+          "0/_xyz": [
+            18000
+          ],
+          "0/_features_dc": [
+            22000
+          ],
+          "0/_features_rest": [
+            22000
+          ],
+          "0/_opacity": [
+            22000
+          ],
+          "0/_scaling": [
+            18000
+          ],
+          "0/_rotation": [
+            18000
+          ],
+          "1/dynamic/_xyz": [
+            30000
+          ],
+          "1/dynamic/_features_dc": [
+            30000
+          ],
+          "1/dynamic/_features_rest": [
+            30000
+          ],
+          "1/dynamic/_opacity": [
+            30000
+          ],
+          "1/dynamic/_scaling": [
+            30000
+          ],
+          "1/dynamic/_rotation": [
+            30000
+          ],
+          "1/grids": [
+            30000
+          ],
+          "1/deform_network": [
+            30000
+          ],
+          "1/PIDG_velocity_stress": [
+            800
+          ]
+        }
+      },
+      "temporal_memory": {
+        "checkpoint_sha256": "7158e97eeb74f9361abab1e358ad2b6c3bb8eb3901a69cff3469a9111c9d7ef1",
+        "source_model_two_Adam_exact": true,
+        "all2000_samples_and_RNG_replayed": true,
+        "static_geometry_physics_Adam_graphs_frozen": true,
+        "static_points": 3273,
+        "dynamic_points": 15507,
+        "optimizer_steps": {
+          "0/_xyz": [
+            18000
+          ],
+          "0/_features_dc": [
+            22000
+          ],
+          "0/_features_rest": [
+            22000
+          ],
+          "0/_opacity": [
+            22000
+          ],
+          "0/_scaling": [
+            18000
+          ],
+          "0/_rotation": [
+            18000
+          ],
+          "1/dynamic/_xyz": [
+            30000
+          ],
+          "1/dynamic/_features_dc": [
+            30000
+          ],
+          "1/dynamic/_features_rest": [
+            30000
+          ],
+          "1/dynamic/_opacity": [
+            30000
+          ],
+          "1/dynamic/_scaling": [
+            30000
+          ],
+          "1/dynamic/_rotation": [
+            30000
+          ],
+          "1/grids": [
+            30000
+          ],
+          "1/deform_network": [
+            30000
+          ],
+          "1/PIDG_velocity_stress": [
+            800
+          ]
+        }
+      }
+    },
+    "matched_complete_J7_start": true,
+    "independent_geometry_GT": false
+  },
+  "all4000_samples": true,
+  "full_Gaussian_PLY_fields_exact": [
+    "J7_parent/static",
+    "J7_parent/canonical_dynamic_local",
+    "rgb_control/static",
+    "rgb_control/canonical_dynamic_local",
+    "temporal_memory/static",
+    "temporal_memory/canonical_dynamic_local"
+  ],
+  "world_XYZ_evaluator_parity_and_hash_verified": [
+    "J7_parent/dynamic_world/2",
+    "J7_parent/dynamic_world/100",
+    "J7_parent/dynamic_world/200",
+    "rgb_control/dynamic_world/2",
+    "rgb_control/dynamic_world/100",
+    "rgb_control/dynamic_world/200",
+    "temporal_memory/dynamic_world/2",
+    "temporal_memory/dynamic_world/100",
+    "temporal_memory/dynamic_world/200"
+  ],
+  "images_verified": 180,
+  "all_native_1600x900": true,
+  "validation_30_means_and_both_gates_recomputed": true,
+  "video_independent_full_decode": {
+    "86": 200,
+    "188": 200
+  },
+  "faststart_verified": true,
+  "controller_audit_sha256": "04522b8621409bde1fe4caa8ec94d3f1d8a9a4f1d391471db8634fbbd7c58eba",
+  "independent_geometry_GT": false,
+  "browser_playback_not_claimed": true,
+  "source_sha256": "7a2a7ee943f2295c21cb81a913e73369205b972a45ee55bd2e70eb7ced5ceda4"
+}

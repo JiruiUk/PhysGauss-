@@ -1236,3 +1236,24 @@ frozen experiments remain untouched.
   deformation/velocity/stress/flow/momentum/render/data/checkpoint paths above remain
   unchanged. No new physical field, object count or semantic labels. Dynamic historic
   color lineage persists; source replacement is not a from-scratch label-free model.
+
+
+### J8 J7 observed long-term memory
+
+- `variants/staged_reconstruction/j7_long_memory/runtime.py`: opt-in full J7/twoAdam/
+  RNG/camera/physics restoration, own static teacher, static opacity/SH plus dynamic
+  updates, persistent observation-memory controller and exact accepted recovery.
+- Reuses frozen `i10_temporal_memory/core.py` stitching/binding/measurement/loss and
+  its runtime native visibility/refresh without editing them. Old row nominations
+  are rechecked on all120 freshly computed J7 trajectories; old xyz/admissions are not reused.
+- `RubberDuck_J7_long_memory/launch.py`: 18 tests, fresh bank/native admission,
+  flags-off/gradient/exception checks, two20 smokes/four recoveries and serial2000 pairs.
+- `input_audit.py`, `trajectory_audit.py`, `audit.py`, `controller_audit.py`: independent
+  retained-track/held isolation, parent trajectories, all4000 samples/twoAdam/frozen
+  physics, seven native refresh and controller replay. `evaluate.py`/`diagnostics.py`
+  compare J7/control/memory on native RGB/alpha/D, all30val, fixed86/188, PLY and video.
+- `final_verify.py` audits all full-Gaussian fields, means, images/hashes and200-frame
+  decoding; `finalize.py` closes actual review without automatic promotion. Existing
+  PIDG training/render/physics/data/checkpoint sources remain unchanged. Dynamic
+  historical color lineage is disclosed; persistent memory is not object identity,
+  full-sequence coverage, new surface generation or independently measured3D.
