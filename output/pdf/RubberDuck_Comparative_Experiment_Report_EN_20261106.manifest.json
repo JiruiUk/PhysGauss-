@@ -1,0 +1,190 @@
+{
+  "pdf": "output/pdf/RubberDuck_Comparative_Experiment_Report_EN_20261106.pdf",
+  "sha256": "81a3ae0e74810b5584705342c9737912d21fe739497008b5a65760d3d33a3dba",
+  "pages": 20,
+  "authoring_source": "scripts/build_rubber_duck_comparative_report_en_20261106.py",
+  "authoring_source_sha256": "2dc8538c05a4100a05e75ea24984ea69e013f49e04c5391579e25854094282c6",
+  "layout_helper": "scripts/build_rubber_duck_comparative_report_20261106.py",
+  "layout_helper_sha256": "ff3a716ee293bf560851ea7f268af2bccdb4d0fe9f234956d9240a46f1f1c4db",
+  "translated_from": "output/pdf/RubberDuck_实验比较技术报告_20261106.pdf",
+  "original_pdf_sha256": "14a89c5787b4ac2681cb675920d81543b5409e5e52f02d05469c9ce76e497fbf",
+  "experiment_files_and_images": {
+    "experiments/staged_reconstruction/RubberDuck_I10_joint/v1/assessment.md": "1922d655900391cc72cbb1300bb69936cfe33f13a7adbae64a0e56af0ceacc7b",
+    "experiments/staged_reconstruction/RubberDuck_temporal_memory/v1/assessment.md": "195f710318f8cf09cd19cdd1fdf3a157e6993b8b65cff1a5c0a376f164633d7a",
+    "experiments/staged_reconstruction/RubberDuck_surface_support/v1/assessment.md": "5ac5979308bf501493789a3c163eef94c932124d51e60452f839f926ed9c0ec3",
+    "experiments/staged_reconstruction/RubberDuck_revocable_springs/v1/assessment.md": "728e06e4bf44bdbf4e1a922b3ff350e8005549d2fac4ebeee684e66bd2a0cf24",
+    "experiments/staged_reconstruction/RubberDuck_pseudo_depth/v1/assessment.md": "9a260cc32ebbd2b65f353a553322c18081bc752eff5f14958c0978764b61de97",
+    "experiments/staged_reconstruction/RubberDuck_joint_scale/v1/assessment.md": "7fb6f9ed4688dfa2fdbe2ba6dbad5317161a01cf53713f225c4b070dea01703a",
+    "experiments/staged_reconstruction/RubberDuck_ordinal_depth/v1/assessment.md": "ee754109e4ee04c4c849f13bfebc1fab1231e094e9f3b9292330d2d8738324b5",
+    "experiments/staged_reconstruction/RubberDuck_relative_order/v1/assessment.md": "351346df8602a94c3fab2b7de7893742a9311ec6d2c4ea9abf476a45cf5dae0d",
+    "experiments/staged_reconstruction/RubberDuck_relative_order/protocol.json": "d7ca1efaa70c6c701137bd7b715eb33de0835b5ea7359ddf8bce2e60ebab0f41",
+    "experiments/staged_reconstruction/RubberDuck_relative_order/v1/evaluation.json": "29f60d3bc6e67dc073f4f205bc12b54d859131bf45ea383d1144d827ba6b94ef",
+    "experiments/staged_reconstruction/RubberDuck_relative_order/v1/controller_audit.json": "1687aa03a077bd5254093780339f340b7d817daeffb8860fadd585fa3235d37f",
+    "experiments/staged_reconstruction/RubberDuck_relative_order/v1/pairs_audit.json": "d61e3c7262187d97ef7357b97e03b19aeb1a7686e0bdcefdbba5a6a930465d09",
+    "experiments/staged_reconstruction/RubberDuck_relative_order/v1/final_review.json": "215682d4a10b7589545237c200e2d3e777fa5966ac9b8acd23abf6c9bcd536e6",
+    "experiments/staged_reconstruction/RubberDuck_relative_order/v1/independent_audit.json": "4deb8c2ed8282fd1a5838dccebc61f2b0730f2c1aff1cb6907861a1ad2980793",
+    "experiments/staged_reconstruction/RubberDuck_relative_order/v1/final_validation.json": "d9e164e5e51df7698871adb19129be3c103a2ecab14cd192bb0fedcf048e06e6",
+    "experiments/staged_reconstruction/RubberDuck_relative_order/v1/videos.json": "4a9862220d04763455df9c93f8998cd9dd91e63ffc7f5b6a3c099ff549fc88e8",
+    "experiments/staged_reconstruction/RubberDuck_relative_order/v1/native_check.json": "92f2f9b6d79b562664b56ce3aa3b6eb1d52f543c0136d5007cf2d4377dc7ac72",
+    "experiments/staged_reconstruction/RubberDuck_relative_order/v1/recovery.json": "3cc17f6182d4e3eae6b1ef36f7dd2ec01b0ec245f60ca19b04b052c6adc12918",
+    "experiments/staged_reconstruction/RubberDuck_relative_order/v1/training_receipt.json": "e9c68a856eedf3bcd64164c58a3933c839400416340fd95bb2c196176468a917",
+    "data/derived/kinematic_resplit/training/transforms_train.json": "270fa34a29b99a4e6b2621d04e1d83f245f5c54bb4f2632ae06051faa83e4868",
+    "data/derived/kinematic_resplit/transforms_val.json": "278e86251f6f20418388d6ce90771aae5f049abae3bb3c94b968549941150ffd",
+    "variants/staged_reconstruction/i10_relative_order/core.py": "1a92f7064796c65b8c214281345e5afbbb66bd4a6f00af03d3d21fb09aa945cf",
+    "variants/staged_reconstruction/i10_ordinal_depth/core.py": "926f6f49dc317d4dc0f954570887200c0cf1264e7851c145cfa2b818ae45b9e3",
+    "variants/staged_reconstruction/i10_relative_order/runtime.py": "87944a5d4475c66084c4576e4dc08153e4ab2b578d84d3e968688f6620ae758d",
+    "experiments/staged_reconstruction/RubberDuck_relative_order/refresh_repair.md": "9b1248bc82e71322086d709f43886282162c980282c6dc313fbaf46cac1f9fa1",
+    "output/staged_reconstruction/RubberDuck_relative_order/v1/c086_t002_J6_parent_jointRGB_native.png": "a3bdf524d6c7d22bd66cec0c63107455e18e9d67dd10f8136243af6b58a45bd5",
+    "output/staged_reconstruction/RubberDuck_relative_order/v1/c086_t002_rgb_control_jointRGB_native.png": "52d4fe50889d21b0290544484fa804b79d8adc427125391c6cc61ca570bec270",
+    "output/staged_reconstruction/RubberDuck_relative_order/v1/c086_t002_ordinal_depth_jointRGB_native.png": "deb19ab13d4b57aa25c03ed00da52616ba86c7d7335712ad6672a2ce38ba19ca",
+    "output/staged_reconstruction/RubberDuck_relative_order/v1/c086_t100_J6_parent_jointRGB_native.png": "4b25896cefa11edd9bcfde8081b979d89023105da9a49fa3727052b76436cb2f",
+    "output/staged_reconstruction/RubberDuck_relative_order/v1/c086_t100_rgb_control_jointRGB_native.png": "e4094246beca5d644a94d9d4cdffbe22e3c6710fadf3134be4861b12b897e8ea",
+    "output/staged_reconstruction/RubberDuck_relative_order/v1/c086_t100_ordinal_depth_jointRGB_native.png": "abe18b8ca9e9f170a19bd97e59a6d44d44ce3aa5873cbb822990387b8f43f196",
+    "output/staged_reconstruction/RubberDuck_relative_order/v1/c086_t200_J6_parent_jointRGB_native.png": "9f679674bfd5d55c45e91e3f4ed29f0c8cfb1ac17fbeb9a147c194db5c14c2e5",
+    "output/staged_reconstruction/RubberDuck_relative_order/v1/c086_t200_rgb_control_jointRGB_native.png": "df232ac4b73dd365415640f1bf1f78e1dc139e5caa53e64bcc2f5d7e67ce84de",
+    "output/staged_reconstruction/RubberDuck_relative_order/v1/c086_t200_ordinal_depth_jointRGB_native.png": "53692b320e2d25099deb174aebfe620fb6707c5e7db0ce3696870212116b6a4b",
+    "output/staged_reconstruction/RubberDuck_relative_order/v1/c188_t002_J6_parent_jointRGB_native.png": "b7d822318ae96e6f70afef44aa45c6629ba7fdae661d079916a32910dd279b1e",
+    "output/staged_reconstruction/RubberDuck_relative_order/v1/c188_t002_rgb_control_jointRGB_native.png": "65794b317533253fb6dee1c1e9fd259c316d375d7251d4f27830a32bb7ed1dc9",
+    "output/staged_reconstruction/RubberDuck_relative_order/v1/c188_t002_ordinal_depth_jointRGB_native.png": "bf619bad673a9388c6c02df2df76087709c07eb6dc7e8a6da2ea77141590b1e8",
+    "output/staged_reconstruction/RubberDuck_relative_order/v1/c188_t100_J6_parent_jointRGB_native.png": "cab4c91857243442d4297e9ebd6a7c0ee98a85ae4edfa9f0837a1609d63365ef",
+    "output/staged_reconstruction/RubberDuck_relative_order/v1/c188_t100_rgb_control_jointRGB_native.png": "9062bdb759b9d9f0bea825f1b25cfd9d1195cf53ce299878512c3b529ae7fca3",
+    "output/staged_reconstruction/RubberDuck_relative_order/v1/c188_t100_ordinal_depth_jointRGB_native.png": "8b02a815e039481f7749123d2824a13dca423d9b44346a26cb750cbcc0e8799e",
+    "output/staged_reconstruction/RubberDuck_relative_order/v1/c188_t200_J6_parent_jointRGB_native.png": "922ff6b9a834aeafd842c49dfa62983f1594d08e9346f0f9d6abb7d9bdd57623",
+    "output/staged_reconstruction/RubberDuck_relative_order/v1/c188_t200_rgb_control_jointRGB_native.png": "973b724aeab51153955e8bb05a99e43890e1693d9866a1c42244cf1b754cbf65",
+    "output/staged_reconstruction/RubberDuck_relative_order/v1/c188_t200_ordinal_depth_jointRGB_native.png": "86794f238b23eb554428ca85888e2a3aef10f3fefb39d7414681e69ce5287d42",
+    "output/staged_reconstruction/RubberDuck_relative_order/v1/c188_t100_ordinal_depth_dynamicRGB_native.png": "31d6b8c7411fec3aff23b24e4edf957f4dd6c7aeb07059d4a7a69a289d708da6",
+    "output/staged_reconstruction/RubberDuck_relative_order/v1/c188_t100_ordinal_depth_dynamicAlpha_native.png": "2fab0f387fc30cfede5f3d95312873bf6624a29ba955fae9748ac4300bf36c6f",
+    "output/staged_reconstruction/RubberDuck_relative_order/v1/c188_t100_ordinal_depth_dynamicD-alpha_native.png": "522ebd501e314a84a23de5b97052e8e8b9d8df955bb8d3e853d14a5089b08dc0",
+    "output/staged_reconstruction/RubberDuck_relative_order/v1/c086_t200_ordinal_depth_dynamicRGB_native.png": "1dc1b3909417657efa5f423d5998a8f6fb6527e23ba3ab1577b75f4e29bc8cc2",
+    "output/staged_reconstruction/RubberDuck_relative_order/v1/c086_t200_ordinal_depth_dynamicAlpha_native.png": "166239456cc9982ab11a1a51162768b9d8f2a967c673a0d33452cb5150a5d594",
+    "output/staged_reconstruction/RubberDuck_relative_order/v1/c086_t200_ordinal_depth_dynamicD-alpha_native.png": "279238d31a3621d12d27589852c7e4c52f8a6ee48f3f207c51a8300fff3edcad",
+    "output/staged_reconstruction/RubberDuck_temporal_memory/v1/c188_t100_temporal_memory_jointRGB_native.png": "6d709f68e2a7796126832556e272ba81a3fd2f2f4b669591079bada1dad418fc",
+    "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t100_surface_support_jointRGB_native.png": "5751074681b08c11f757b21db35d51848cf47e0fa0df5ee7ea28d46e2a5522e5",
+    "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t100_revocable_spring_jointRGB_native.png": "3f1e5aa5bfcf7168918a91f60ce723867a00f5dcd02bf7ec284aa12e0e060180",
+    "output/staged_reconstruction/RubberDuck_relative_order/v1/c188_t100_J6_parent_dynamicAlpha_native.png": "f75b5b0e1af71349883e8d649348e6bfbcaff478bc4f4f5ed71f676eab7ad9e2",
+    "output/staged_reconstruction/RubberDuck_temporal_memory/v1/c188_t100_temporal_memory_dynamicAlpha_native.png": "dd9b74258f075a0bd7a3666587719f163b4d9072fdad2ffbc656e48804f3e88c",
+    "output/staged_reconstruction/RubberDuck_surface_support/v1/c188_t100_surface_support_dynamicAlpha_native.png": "ad6c233ba4fc83b46ff216003ad412fab8378f11b55d308fc231e3b18ecc8506",
+    "output/staged_reconstruction/RubberDuck_revocable_springs/v1/c188_t100_revocable_spring_dynamicAlpha_native.png": "ebb2c5fef8fbcb920dd5d2bbba762a3bd6dad5d9da8a56346590a6be795bd1ca",
+    "output/staged_reconstruction/RubberDuck_relative_order/v1/observed_train_index119.png": "11c76c12b06863b6cd4e7558f2c6e4c91f10b5b782df188d04f34f9a2434982c"
+  },
+  "figures": {
+    "matched_PSNR_comparison_en": {
+      "embedded_in_pdf": true,
+      "sha256": "76deda6cc622023946bbddc09fb786f6b19a6c0731da0f5a08c78b3c97688537"
+    },
+    "calibration_coverage_en": {
+      "embedded_in_pdf": true,
+      "sha256": "5066702409bb6e29bd9013c852e967d9b196aa9bb5c2fb638342d3a54f42ea0f"
+    },
+    "revocable_controller_en": {
+      "embedded_in_pdf": true,
+      "sha256": "f9f7cbe6f131c481efa431467993e50599b17e1b39902e8d86020f479eec0e3c"
+    },
+    "fixed_86_three_times_en": {
+      "embedded_in_pdf": true,
+      "sha256": "4bb1a0e550936aafb629204dd6bfd1e20aa400964c90c106d822466ffe936eec"
+    },
+    "fixed_188_three_times_en": {
+      "embedded_in_pdf": true,
+      "sha256": "ba2aacb74cc699dd65358f09debc59b1227106a278f6edb7247b077bfa7d86c7"
+    },
+    "dynamic_support_evidence_en": {
+      "embedded_in_pdf": true,
+      "sha256": "be53643e458c4026ba0f4b5ebe724ab9b19668a90b5c34bb04d5540e93706040"
+    },
+    "historical_same_view_en": {
+      "embedded_in_pdf": true,
+      "sha256": "8a8dfd7be2de0c272caa1518fc15d5b82a5ced834c6b5d7552d96c0c641dcde7"
+    },
+    "observed_trajectory_119_en": {
+      "embedded_in_pdf": true,
+      "sha256": "b33802032bc6f475ca7baa14a28e3db17319903fa90f9d3f8866ea7167e9420c"
+    }
+  },
+  "expected_titles": [
+    [
+      1,
+      "Rubber Duck<br/>Reconstruction Experiments"
+    ],
+    [
+      2,
+      "What this report establishes"
+    ],
+    [
+      3,
+      "Data, cameras and evidence"
+    ],
+    [
+      4,
+      "Lineage and fair comparisons"
+    ],
+    [
+      5,
+      "L4: what temporal memory constrained"
+    ],
+    [
+      6,
+      "L5: connectivity and surface support"
+    ],
+    [
+      7,
+      "L6: benefits and costs of springs"
+    ],
+    [
+      8,
+      "L7-P: pseudo-depth qualification"
+    ],
+    [
+      9,
+      "L7-J: joint scale and more anchors"
+    ],
+    [
+      10,
+      "L8 and L8-R test different hypotheses"
+    ],
+    [
+      11,
+      "L8-R: targets and the loss"
+    ],
+    [
+      12,
+      "Revocable eligibility, sparse usage"
+    ],
+    [
+      13,
+      "Results: order counts did not improve"
+    ],
+    [
+      14,
+      "Camera 86: early, middle and late"
+    ],
+    [
+      15,
+      "Camera 188: strands and gaps persist"
+    ],
+    [
+      16,
+      "Darker RGB is not removed geometry"
+    ],
+    [
+      17,
+      "Earlier branches in the same view"
+    ],
+    [
+      18,
+      "What is missing, and what to test next"
+    ],
+    [
+      19,
+      "Engineering checks and retained failures"
+    ],
+    [
+      20,
+      "Sources, weights and review entry points"
+    ]
+  ],
+  "no_training_or_frozen_result_mutation": true,
+  "language": "en",
+  "font_embedded": "Arial TrueType regular/bold",
+  "evidence_scope": "J6, L4, L5, L6, L7-P, L7-J, L8 and L8-R; English translation; no new experiments"
+}
