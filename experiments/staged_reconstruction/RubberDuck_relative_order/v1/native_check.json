@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "width": 1600,
+  "ordinal_width": 400,
+  "flags_off_RGB_alpha_D_exact": true,
+  "flags_off_gradients_original_tolerance": true,
+  "independent_native_measurement_exact": true,
+  "no_mutation_exception_flags_rng": true,
+  "actual_ordinal_loss": 6.879150896565989e-05,
+  "actual_counts": {
+    "total_pairs": 4,
+    "used_pairs": 4,
+    "violating_pairs": 2
+  },
+  "forced_violation_gradient_fixture_only": true,
+  "isolated_native_depth_gradient_norms": {
+    "pools.0._xyz": 0.060918547213077545,
+    "grids.": 0.011828332208096981,
+    "networks.": 0.13395387184573337
+  },
+  "static_physics_frozen": true,
+  "optimizer_updates": 0
+}

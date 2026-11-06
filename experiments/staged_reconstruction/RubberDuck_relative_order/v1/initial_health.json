@@ -1,0 +1,864 @@
+{
+  "controller": {
+    "calls": 0,
+    "pairs": {
+      "100_040:100:lk_096_022": {
+        "status": "suspended",
+        "failures": 0,
+        "passes": 0,
+        "measurement": {
+          "known": false,
+          "passed": false,
+          "projection_error": 2.1648110224357526,
+          "visibility": {
+            "share": 0.0003457130439378713,
+            "known": true,
+            "passed": false,
+            "numerator": 0.00864151773453159,
+            "denominator": 24.99621546268463
+          },
+          "ncc": 0.9541436433792114,
+          "observed_std": 24.28191566467285,
+          "rendered_std": 16.10554313659668,
+          "endpoint_depths": [
+            4.871115684509277,
+            6.624940395355225
+          ],
+          "endpoint_alpha": [
+            0.999857485294342,
+            0.08975151926279068
+          ]
+        }
+      },
+      "100_040:102:lk_096_022": {
+        "status": "suspended",
+        "failures": 0,
+        "passes": 0,
+        "measurement": {
+          "known": false,
+          "passed": false,
+          "projection_error": 0.3647101099515095,
+          "visibility": {
+            "share": 0.023435530574980212,
+            "known": true,
+            "passed": true,
+            "numerator": 0.5857721721986309,
+            "denominator": 24.995046317577362
+          },
+          "ncc": 0.9887962937355042,
+          "observed_std": 22.6479549407959,
+          "rendered_std": 21.283552169799805,
+          "endpoint_depths": [
+            5.496016025543213,
+            5.807319164276123
+          ],
+          "endpoint_alpha": [
+            0.999779224395752,
+            0.1777154505252838
+          ]
+        }
+      },
+      "100_040:104:lk_096_022": {
+        "status": "active",
+        "failures": 0,
+        "passes": 1,
+        "measurement": {
+          "known": true,
+          "passed": true,
+          "projection_error": 1.0305063452960923,
+          "visibility": {
+            "share": 0.02123527542592227,
+            "known": true,
+            "passed": true,
+            "numerator": 0.5307699288241565,
+            "denominator": 24.994727790355682
+          },
+          "ncc": 0.9885092377662659,
+          "observed_std": 16.34956932067871,
+          "rendered_std": 15.447284698486328,
+          "endpoint_depths": [
+            5.417486667633057,
+            5.582335948944092
+          ],
+          "endpoint_alpha": [
+            0.999897837638855,
+            0.745683491230011
+          ]
+        }
+      },
+      "100_040:106:lk_096_022": {
+        "status": "active",
+        "failures": 0,
+        "passes": 1,
+        "measurement": {
+          "known": true,
+          "passed": true,
+          "projection_error": 1.723836286154422,
+          "visibility": {
+            "share": 0.016241687064961725,
+            "known": true,
+            "passed": true,
+            "numerator": 0.4059117443030118,
+            "denominator": 24.991969287395477
+          },
+          "ncc": 0.9339461326599121,
+          "observed_std": 11.585615158081055,
+          "rendered_std": 12.7970552444458,
+          "endpoint_depths": [
+            5.315709114074707,
+            5.539740562438965
+          ],
+          "endpoint_alpha": [
+            0.9998895525932312,
+            0.9779160022735596
+          ]
+        }
+      },
+      "100_040:100:lk_096_047": {
+        "status": "suspended",
+        "failures": 1,
+        "passes": 0,
+        "measurement": {
+          "known": true,
+          "passed": false,
+          "projection_error": 2.1648110224357526,
+          "visibility": {
+            "share": 0.0003457130439378713,
+            "known": true,
+            "passed": false,
+            "numerator": 0.00864151773453159,
+            "denominator": 24.99621546268463
+          },
+          "ncc": 0.9541436433792114,
+          "observed_std": 24.28191566467285,
+          "rendered_std": 16.10554313659668,
+          "endpoint_depths": [
+            4.871115684509277,
+            5.166064739227295
+          ],
+          "endpoint_alpha": [
+            0.999857485294342,
+            0.9998577237129211
+          ]
+        }
+      },
+      "100_040:102:lk_096_047": {
+        "status": "active",
+        "failures": 0,
+        "passes": 1,
+        "measurement": {
+          "known": true,
+          "passed": true,
+          "projection_error": 0.3647101099515095,
+          "visibility": {
+            "share": 0.023435530574980212,
+            "known": true,
+            "passed": true,
+            "numerator": 0.5857721721986309,
+            "denominator": 24.995046317577362
+          },
+          "ncc": 0.9887962937355042,
+          "observed_std": 22.6479549407959,
+          "rendered_std": 21.283552169799805,
+          "endpoint_depths": [
+            5.496016025543213,
+            5.311350345611572
+          ],
+          "endpoint_alpha": [
+            0.999779224395752,
+            0.9998195171356201
+          ]
+        }
+      },
+      "100_040:104:lk_096_047": {
+        "status": "active",
+        "failures": 0,
+        "passes": 1,
+        "measurement": {
+          "known": true,
+          "passed": true,
+          "projection_error": 1.0305063452960923,
+          "visibility": {
+            "share": 0.02123527542592227,
+            "known": true,
+            "passed": true,
+            "numerator": 0.5307699288241565,
+            "denominator": 24.994727790355682
+          },
+          "ncc": 0.9885092377662659,
+          "observed_std": 16.34956932067871,
+          "rendered_std": 15.447284698486328,
+          "endpoint_depths": [
+            5.417486667633057,
+            5.401830673217773
+          ],
+          "endpoint_alpha": [
+            0.999897837638855,
+            0.9998727440834045
+          ]
+        }
+      },
+      "100_040:106:lk_096_047": {
+        "status": "active",
+        "failures": 0,
+        "passes": 1,
+        "measurement": {
+          "known": true,
+          "passed": true,
+          "projection_error": 1.723836286154422,
+          "visibility": {
+            "share": 0.016241687064961725,
+            "known": true,
+            "passed": true,
+            "numerator": 0.4059117443030118,
+            "denominator": 24.991969287395477
+          },
+          "ncc": 0.9339461326599121,
+          "observed_std": 11.585615158081055,
+          "rendered_std": 12.7970552444458,
+          "endpoint_depths": [
+            5.315709114074707,
+            5.500082969665527
+          ],
+          "endpoint_alpha": [
+            0.9998895525932312,
+            0.9998681545257568
+          ]
+        }
+      },
+      "100_040:108:lk_096_047": {
+        "status": "active",
+        "failures": 0,
+        "passes": 1,
+        "measurement": {
+          "known": true,
+          "passed": true,
+          "projection_error": 2.050941591464835,
+          "visibility": {
+            "share": 0.010527155959635638,
+            "known": true,
+            "passed": true,
+            "numerator": 0.2630762534827227,
+            "denominator": 24.990249454975128
+          },
+          "ncc": 0.9473453760147095,
+          "observed_std": 17.370054244995117,
+          "rendered_std": 14.1201810836792,
+          "endpoint_depths": [
+            5.283080577850342,
+            5.475581169128418
+          ],
+          "endpoint_alpha": [
+            0.9998706579208374,
+            0.9998390674591064
+          ]
+        }
+      },
+      "100_040:110:lk_096_047": {
+        "status": "suspended",
+        "failures": 1,
+        "passes": 0,
+        "measurement": {
+          "known": true,
+          "passed": false,
+          "projection_error": 2.574367285357776,
+          "visibility": {
+            "share": 0.0034472380135030637,
+            "known": true,
+            "passed": false,
+            "numerator": 0.0861509543901775,
+            "denominator": 24.99129855632782
+          },
+          "ncc": 0.98701012134552,
+          "observed_std": 17.648019790649414,
+          "rendered_std": 15.306843757629395,
+          "endpoint_depths": [
+            5.28447151184082,
+            5.488714694976807
+          ],
+          "endpoint_alpha": [
+            0.9998725056648254,
+            0.999802827835083
+          ]
+        }
+      },
+      "100_040:102:lk_096_049": {
+        "status": "active",
+        "failures": 0,
+        "passes": 1,
+        "measurement": {
+          "known": true,
+          "passed": true,
+          "projection_error": 0.3647101099515095,
+          "visibility": {
+            "share": 0.023435530574980212,
+            "known": true,
+            "passed": true,
+            "numerator": 0.5857721721986309,
+            "denominator": 24.995046317577362
+          },
+          "ncc": 0.9887962937355042,
+          "observed_std": 22.6479549407959,
+          "rendered_std": 21.283552169799805,
+          "endpoint_depths": [
+            5.496016025543213,
+            4.979665279388428
+          ],
+          "endpoint_alpha": [
+            0.999779224395752,
+            0.9998311996459961
+          ]
+        }
+      },
+      "100_040:104:lk_096_049": {
+        "status": "active",
+        "failures": 0,
+        "passes": 1,
+        "measurement": {
+          "known": true,
+          "passed": true,
+          "projection_error": 1.0305063452960923,
+          "visibility": {
+            "share": 0.02123527542592227,
+            "known": true,
+            "passed": true,
+            "numerator": 0.5307699288241565,
+            "denominator": 24.994727790355682
+          },
+          "ncc": 0.9885092377662659,
+          "observed_std": 16.34956932067871,
+          "rendered_std": 15.447284698486328,
+          "endpoint_depths": [
+            5.417486667633057,
+            4.995603084564209
+          ],
+          "endpoint_alpha": [
+            0.999897837638855,
+            0.9998644590377808
+          ]
+        }
+      },
+      "100_040:106:lk_096_049": {
+        "status": "active",
+        "failures": 0,
+        "passes": 1,
+        "measurement": {
+          "known": true,
+          "passed": true,
+          "projection_error": 1.723836286154422,
+          "visibility": {
+            "share": 0.016241687064961725,
+            "known": true,
+            "passed": true,
+            "numerator": 0.4059117443030118,
+            "denominator": 24.991969287395477
+          },
+          "ncc": 0.9339461326599121,
+          "observed_std": 11.585615158081055,
+          "rendered_std": 12.7970552444458,
+          "endpoint_depths": [
+            5.315709114074707,
+            5.025774002075195
+          ],
+          "endpoint_alpha": [
+            0.9998895525932312,
+            0.9998798966407776
+          ]
+        }
+      },
+      "100_040:108:lk_096_049": {
+        "status": "active",
+        "failures": 0,
+        "passes": 1,
+        "measurement": {
+          "known": true,
+          "passed": true,
+          "projection_error": 2.050941591464835,
+          "visibility": {
+            "share": 0.010527155959635638,
+            "known": true,
+            "passed": true,
+            "numerator": 0.2630762534827227,
+            "denominator": 24.990249454975128
+          },
+          "ncc": 0.9473453760147095,
+          "observed_std": 17.370054244995117,
+          "rendered_std": 14.1201810836792,
+          "endpoint_depths": [
+            5.283080577850342,
+            5.0355987548828125
+          ],
+          "endpoint_alpha": [
+            0.9998706579208374,
+            0.9998868107795715
+          ]
+        }
+      },
+      "100_040:110:lk_096_049": {
+        "status": "suspended",
+        "failures": 1,
+        "passes": 0,
+        "measurement": {
+          "known": true,
+          "passed": false,
+          "projection_error": 2.574367285357776,
+          "visibility": {
+            "share": 0.0034472380135030637,
+            "known": true,
+            "passed": false,
+            "numerator": 0.0861509543901775,
+            "denominator": 24.99129855632782
+          },
+          "ncc": 0.98701012134552,
+          "observed_std": 17.648019790649414,
+          "rendered_std": 15.306843757629395,
+          "endpoint_depths": [
+            5.28447151184082,
+            5.0598039627075195
+          ],
+          "endpoint_alpha": [
+            0.9998725056648254,
+            0.9998254776000977
+          ]
+        }
+      },
+      "100_040:102:lk_100_047": {
+        "status": "active",
+        "failures": 0,
+        "passes": 1,
+        "measurement": {
+          "known": true,
+          "passed": true,
+          "projection_error": 0.3647101099515095,
+          "visibility": {
+            "share": 0.023435530574980212,
+            "known": true,
+            "passed": true,
+            "numerator": 0.5857721721986309,
+            "denominator": 24.995046317577362
+          },
+          "ncc": 0.9887962937355042,
+          "observed_std": 22.6479549407959,
+          "rendered_std": 21.283552169799805,
+          "endpoint_depths": [
+            5.496016025543213,
+            5.624879360198975
+          ],
+          "endpoint_alpha": [
+            0.999779224395752,
+            0.9997280836105347
+          ]
+        }
+      },
+      "100_040:104:lk_100_047": {
+        "status": "active",
+        "failures": 0,
+        "passes": 1,
+        "measurement": {
+          "known": true,
+          "passed": true,
+          "projection_error": 1.0305063452960923,
+          "visibility": {
+            "share": 0.02123527542592227,
+            "known": true,
+            "passed": true,
+            "numerator": 0.5307699288241565,
+            "denominator": 24.994727790355682
+          },
+          "ncc": 0.9885092377662659,
+          "observed_std": 16.34956932067871,
+          "rendered_std": 15.447284698486328,
+          "endpoint_depths": [
+            5.417486667633057,
+            5.614625930786133
+          ],
+          "endpoint_alpha": [
+            0.999897837638855,
+            0.9996313452720642
+          ]
+        }
+      },
+      "100_040:106:lk_100_047": {
+        "status": "active",
+        "failures": 0,
+        "passes": 1,
+        "measurement": {
+          "known": true,
+          "passed": true,
+          "projection_error": 1.723836286154422,
+          "visibility": {
+            "share": 0.016241687064961725,
+            "known": true,
+            "passed": true,
+            "numerator": 0.4059117443030118,
+            "denominator": 24.991969287395477
+          },
+          "ncc": 0.9339461326599121,
+          "observed_std": 11.585615158081055,
+          "rendered_std": 12.7970552444458,
+          "endpoint_depths": [
+            5.315709114074707,
+            5.62566614151001
+          ],
+          "endpoint_alpha": [
+            0.9998895525932312,
+            0.9993205666542053
+          ]
+        }
+      },
+      "100_040:108:lk_100_047": {
+        "status": "active",
+        "failures": 0,
+        "passes": 1,
+        "measurement": {
+          "known": true,
+          "passed": true,
+          "projection_error": 2.050941591464835,
+          "visibility": {
+            "share": 0.010527155959635638,
+            "known": true,
+            "passed": true,
+            "numerator": 0.2630762534827227,
+            "denominator": 24.990249454975128
+          },
+          "ncc": 0.9473453760147095,
+          "observed_std": 17.370054244995117,
+          "rendered_std": 14.1201810836792,
+          "endpoint_depths": [
+            5.283080577850342,
+            5.6370673179626465
+          ],
+          "endpoint_alpha": [
+            0.9998706579208374,
+            0.9996470212936401
+          ]
+        }
+      },
+      "100_040:108:lk_104_003": {
+        "status": "active",
+        "failures": 0,
+        "passes": 1,
+        "measurement": {
+          "known": true,
+          "passed": true,
+          "projection_error": 2.050941591464835,
+          "visibility": {
+            "share": 0.010527155959635638,
+            "known": true,
+            "passed": true,
+            "numerator": 0.2630762534827227,
+            "denominator": 24.990249454975128
+          },
+          "ncc": 0.9473453760147095,
+          "observed_std": 17.370054244995117,
+          "rendered_std": 14.1201810836792,
+          "endpoint_depths": [
+            5.283080577850342,
+            5.8299784660339355
+          ],
+          "endpoint_alpha": [
+            0.9998706579208374,
+            0.9981135725975037
+          ]
+        }
+      },
+      "100_040:110:lk_104_003": {
+        "status": "suspended",
+        "failures": 1,
+        "passes": 0,
+        "measurement": {
+          "known": true,
+          "passed": false,
+          "projection_error": 2.574367285357776,
+          "visibility": {
+            "share": 0.0034472380135030637,
+            "known": true,
+            "passed": false,
+            "numerator": 0.0861509543901775,
+            "denominator": 24.99129855632782
+          },
+          "ncc": 0.98701012134552,
+          "observed_std": 17.648019790649414,
+          "rendered_std": 15.306843757629395,
+          "endpoint_depths": [
+            5.28447151184082,
+            5.816692352294922
+          ],
+          "endpoint_alpha": [
+            0.9998725056648254,
+            0.9982695579528809
+          ]
+        }
+      },
+      "100_040:110:lk_104_008": {
+        "status": "suspended",
+        "failures": 1,
+        "passes": 0,
+        "measurement": {
+          "known": true,
+          "passed": false,
+          "projection_error": 2.574367285357776,
+          "visibility": {
+            "share": 0.0034472380135030637,
+            "known": true,
+            "passed": false,
+            "numerator": 0.0861509543901775,
+            "denominator": 24.99129855632782
+          },
+          "ncc": 0.98701012134552,
+          "observed_std": 17.648019790649414,
+          "rendered_std": 15.306843757629395,
+          "endpoint_depths": [
+            5.28447151184082,
+            5.68318510055542
+          ],
+          "endpoint_alpha": [
+            0.9998725056648254,
+            0.9951837658882141
+          ]
+        }
+      },
+      "104_041:112:lk_096_047": {
+        "status": "active",
+        "failures": 0,
+        "passes": 1,
+        "measurement": {
+          "known": true,
+          "passed": true,
+          "projection_error": 0.9112350581271615,
+          "visibility": {
+            "share": 0.011125836320964023,
+            "known": true,
+            "passed": true,
+            "numerator": 0.27811322592765464,
+            "denominator": 24.997062504291534
+          },
+          "ncc": 0.9774793386459351,
+          "observed_std": 8.194635391235352,
+          "rendered_std": 8.017512321472168,
+          "endpoint_depths": [
+            5.280503273010254,
+            5.495185852050781
+          ],
+          "endpoint_alpha": [
+            0.9998745918273926,
+            0.9998078942298889
+          ]
+        }
+      },
+      "104_041:114:lk_096_047": {
+        "status": "suspended",
+        "failures": 1,
+        "passes": 0,
+        "measurement": {
+          "known": true,
+          "passed": false,
+          "projection_error": 0.7075343786799936,
+          "visibility": {
+            "share": 0.0078060660454314645,
+            "known": true,
+            "passed": false,
+            "numerator": 0.19512964768364327,
+            "denominator": 24.997181236743927
+          },
+          "ncc": 0.9289053678512573,
+          "observed_std": 5.24842643737793,
+          "rendered_std": 6.70967960357666,
+          "endpoint_depths": [
+            5.285192489624023,
+            5.508960247039795
+          ],
+          "endpoint_alpha": [
+            0.9998852014541626,
+            0.9997579455375671
+          ]
+        }
+      },
+      "104_041:112:lk_100_075": {
+        "status": "active",
+        "failures": 0,
+        "passes": 1,
+        "measurement": {
+          "known": true,
+          "passed": true,
+          "projection_error": 0.9112350581271615,
+          "visibility": {
+            "share": 0.011125836320964023,
+            "known": true,
+            "passed": true,
+            "numerator": 0.27811322592765464,
+            "denominator": 24.997062504291534
+          },
+          "ncc": 0.9774793386459351,
+          "observed_std": 8.194635391235352,
+          "rendered_std": 8.017512321472168,
+          "endpoint_depths": [
+            5.280503273010254,
+            5.698019027709961
+          ],
+          "endpoint_alpha": [
+            0.9998745918273926,
+            0.9440057873725891
+          ]
+        }
+      },
+      "104_041:114:lk_100_075": {
+        "status": "suspended",
+        "failures": 1,
+        "passes": 0,
+        "measurement": {
+          "known": true,
+          "passed": false,
+          "projection_error": 0.7075343786799936,
+          "visibility": {
+            "share": 0.0078060660454314645,
+            "known": true,
+            "passed": false,
+            "numerator": 0.19512964768364327,
+            "denominator": 24.997181236743927
+          },
+          "ncc": 0.9289053678512573,
+          "observed_std": 5.24842643737793,
+          "rendered_std": 6.70967960357666,
+          "endpoint_depths": [
+            5.285192489624023,
+            5.704303741455078
+          ],
+          "endpoint_alpha": [
+            0.9998852014541626,
+            0.9199170470237732
+          ]
+        }
+      },
+      "104_041:112:lk_104_003": {
+        "status": "active",
+        "failures": 0,
+        "passes": 1,
+        "measurement": {
+          "known": true,
+          "passed": true,
+          "projection_error": 0.9112350581271615,
+          "visibility": {
+            "share": 0.011125836320964023,
+            "known": true,
+            "passed": true,
+            "numerator": 0.27811322592765464,
+            "denominator": 24.997062504291534
+          },
+          "ncc": 0.9774793386459351,
+          "observed_std": 8.194635391235352,
+          "rendered_std": 8.017512321472168,
+          "endpoint_depths": [
+            5.280503273010254,
+            5.811954021453857
+          ],
+          "endpoint_alpha": [
+            0.9998745918273926,
+            0.9982962608337402
+          ]
+        }
+      },
+      "104_041:114:lk_104_003": {
+        "status": "suspended",
+        "failures": 1,
+        "passes": 0,
+        "measurement": {
+          "known": true,
+          "passed": false,
+          "projection_error": 0.7075343786799936,
+          "visibility": {
+            "share": 0.0078060660454314645,
+            "known": true,
+            "passed": false,
+            "numerator": 0.19512964768364327,
+            "denominator": 24.997181236743927
+          },
+          "ncc": 0.9289053678512573,
+          "observed_std": 5.24842643737793,
+          "rendered_std": 6.70967960357666,
+          "endpoint_depths": [
+            5.285192489624023,
+            5.8070807456970215
+          ],
+          "endpoint_alpha": [
+            0.9998852014541626,
+            0.9983806610107422
+          ]
+        }
+      },
+      "104_041:112:lk_104_008": {
+        "status": "active",
+        "failures": 0,
+        "passes": 1,
+        "measurement": {
+          "known": true,
+          "passed": true,
+          "projection_error": 0.9112350581271615,
+          "visibility": {
+            "share": 0.011125836320964023,
+            "known": true,
+            "passed": true,
+            "numerator": 0.27811322592765464,
+            "denominator": 24.997062504291534
+          },
+          "ncc": 0.9774793386459351,
+          "observed_std": 8.194635391235352,
+          "rendered_std": 8.017512321472168,
+          "endpoint_depths": [
+            5.280503273010254,
+            5.668525695800781
+          ],
+          "endpoint_alpha": [
+            0.9998745918273926,
+            0.9958887696266174
+          ]
+        }
+      },
+      "104_041:114:lk_104_008": {
+        "status": "suspended",
+        "failures": 1,
+        "passes": 0,
+        "measurement": {
+          "known": true,
+          "passed": false,
+          "projection_error": 0.7075343786799936,
+          "visibility": {
+            "share": 0.0078060660454314645,
+            "known": true,
+            "passed": false,
+            "numerator": 0.19512964768364327,
+            "denominator": 24.997181236743927
+          },
+          "ncc": 0.9289053678512573,
+          "observed_std": 5.24842643737793,
+          "rendered_std": 6.70967960357666,
+          "endpoint_depths": [
+            5.285192489624023,
+            5.648386001586914
+          ],
+          "endpoint_alpha": [
+            0.9998852014541626,
+            0.9966882467269897
+          ]
+        }
+      }
+    },
+    "history": [
+      {
+        "completed_updates": 0,
+        "pairs": 30,
+        "active": 19,
+        "suspended": 11,
+        "revoked": 0
+      }
+    ]
+  },
+  "summary": {
+    "completed_updates": 0,
+    "pairs": 30,
+    "active": 19,
+    "suspended": 11,
+    "revoked": 0
+  },
+  "full_state_unchanged": true
+}
