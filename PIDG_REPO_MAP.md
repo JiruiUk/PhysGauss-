@@ -1203,3 +1203,17 @@ frozen experiments remain untouched.
 - Original training/config/Gaussian/deformation/velocity/stress/flow/momentum,
   renderer/loaders/metrics/checkpoints retain previously mapped PIDG paths;
   no physics extension or original PIDG rewrite. Test: test_i10_ordinal_depth.py.
+
+### L8-R scale-free recurring relative-order pilot
+
+- `i10_relative_order/core.py`: frozen Small recurring patch orders checked across even/odd
+  frames, without metric calibration, fit/check separation, default-off one-sided robust log
+  ranking and reversible evidence states; no absolute depth targets or labels.
+- `runtime.py`: complete J6/twoAdam/RNG/sampler/physics restoration, native own-row
+  visibility and RGB eligibility, local400 D/alpha supervision, pureRGB control,
+  static/physics/topology frozen; checkpoints include evidence controller.
+- `RubberDuck_relative_order/launch.py`: native/flags-off/gradient qualification,
+  accepted independent fixed-gradient Adam recovery, one matched600-step pair.
+- Original training/config/Gaussian/deformation/velocity/stress/flow/momentum,
+  renderer/loaders/metrics/checkpoints retain previously mapped PIDG paths;
+  no physics extension or original PIDG rewrite. Test: test_i10_relative_order.py.
