@@ -1,0 +1,144 @@
+{
+  "retained_updates": 1200,
+  "discarded_failed_control_updates": 100,
+  "arms": {
+    "rgb_control": {
+      "initial": {
+        "sha256": "1143a52ddd045c9380c5f9aa4bd16498e27e5de774f1384bd55b86c696d61d84",
+        "iteration": 0,
+        "complete_model_two_Adam_rng_sampler_graphs": true
+      },
+      "final": {
+        "sha256": "271359bc48db1448c03fa80a5f36a71df2379e38461c2bb30fcc8b37ae3c61be",
+        "iteration": 600,
+        "complete_model_two_Adam_rng_sampler_graphs": true
+      },
+      "usage_sha256": "fec5e4e8e802cfdab1f91228d3735dc7159b28be20626b9a1991c58467fd7945",
+      "used_pair_observations": 0,
+      "nonzero_auxiliary_steps": 0,
+      "weighted_auxiliary_loss_sum": 0.0,
+      "controller_final_history": [
+        {
+          "completed_updates": 0,
+          "pairs": 30,
+          "active": 19,
+          "suspended": 11,
+          "revoked": 0
+        },
+        {
+          "completed_updates": 100,
+          "pairs": 30,
+          "active": 19,
+          "suspended": 2,
+          "revoked": 9
+        },
+        {
+          "completed_updates": 200,
+          "pairs": 30,
+          "active": 15,
+          "suspended": 6,
+          "revoked": 9
+        },
+        {
+          "completed_updates": 300,
+          "pairs": 30,
+          "active": 15,
+          "suspended": 2,
+          "revoked": 13
+        },
+        {
+          "completed_updates": 400,
+          "pairs": 30,
+          "active": 15,
+          "suspended": 2,
+          "revoked": 13
+        },
+        {
+          "completed_updates": 500,
+          "pairs": 30,
+          "active": 15,
+          "suspended": 6,
+          "revoked": 9
+        }
+      ]
+    },
+    "ordinal_depth": {
+      "initial": {
+        "sha256": "1143a52ddd045c9380c5f9aa4bd16498e27e5de774f1384bd55b86c696d61d84",
+        "iteration": 0,
+        "complete_model_two_Adam_rng_sampler_graphs": true
+      },
+      "final": {
+        "sha256": "ccf95ce37ebfd4e5e5ffd163f2d6074285a5975a5137adf427d703539a093fc7",
+        "iteration": 600,
+        "complete_model_two_Adam_rng_sampler_graphs": true
+      },
+      "usage_sha256": "efacb3c4cbd36eed1f54197923bbd026211958dfa4e8df2865bdc697ebbacd62",
+      "used_pair_observations": 74,
+      "nonzero_auxiliary_steps": 20,
+      "weighted_auxiliary_loss_sum": 0.004142213771046954,
+      "controller_final_history": [
+        {
+          "completed_updates": 0,
+          "pairs": 30,
+          "active": 19,
+          "suspended": 11,
+          "revoked": 0
+        },
+        {
+          "completed_updates": 100,
+          "pairs": 30,
+          "active": 15,
+          "suspended": 6,
+          "revoked": 9
+        },
+        {
+          "completed_updates": 200,
+          "pairs": 30,
+          "active": 15,
+          "suspended": 2,
+          "revoked": 13
+        },
+        {
+          "completed_updates": 300,
+          "pairs": 30,
+          "active": 15,
+          "suspended": 2,
+          "revoked": 13
+        },
+        {
+          "completed_updates": 400,
+          "pairs": 30,
+          "active": 7,
+          "suspended": 10,
+          "revoked": 13
+        },
+        {
+          "completed_updates": 500,
+          "pairs": 30,
+          "active": 7,
+          "suspended": 2,
+          "revoked": 21
+        }
+      ]
+    }
+  },
+  "failure_preserved": {
+    "runs/pidg_staged_reconstruction/RubberDuck_relative_order/v1/attempt1_failed_refresh/active.json": "b0819d2a8e48502acf97ae306322c72f403295f8ae9abbd8cbc924f1c45bd377",
+    "runs/pidg_staged_reconstruction/RubberDuck_relative_order/v1/attempt1_failed_refresh/pipeline.json": "10d73588e3fc558a4bc48fa63f7111d6acd0a1c4a5bf1e7c82f48a1d75071c14",
+    "runs/pidg_staged_reconstruction/RubberDuck_relative_order/v1/attempt1_failed_refresh/formal/rgb_control/failure.json": "3ece1de36f7221057d8eb40e727bf26c338bcd905a1d234d77f26a43960863f6",
+    "runs/pidg_staged_reconstruction/RubberDuck_relative_order/v1/attempt1_failed_refresh/formal/rgb_control/initial.json": "edc3724e53d713c10568f3270d356bc94cd2bd2cb9406d7e1bf5adf4fe2efad5",
+    "runs/pidg_staged_reconstruction/RubberDuck_relative_order/v1/attempt1_failed_refresh/formal/rgb_control/initial.pt": "1143a52ddd045c9380c5f9aa4bd16498e27e5de774f1384bd55b86c696d61d84",
+    "runs/pidg_staged_reconstruction/RubberDuck_relative_order/v1/attempt1_failed_refresh/formal/rgb_control/progress.json": "66a225daf29adcbf8ebb0b7968c233adfe9c98be7d6e0991fe0e98b92b26e339"
+  },
+  "training_logs": [
+    {
+      "log": "experiments/staged_reconstruction/RubberDuck_relative_order/v1/20261106T114747868149Z_repair_train_rgb_control_0.log",
+      "sha256": "d3f7d7ccad990b36960f79bfcaf035cc44e26eae00e7954958ec4b7989a83026"
+    },
+    {
+      "log": "experiments/staged_reconstruction/RubberDuck_relative_order/v1/20261106T114854305902Z_repair_train_ordinal_depth_0.log",
+      "sha256": "1a9d7aeb0909257d2c79603903a5092cff678c3a1857b52c5b975e519eaaee64"
+    }
+  ]
+}
