@@ -1,0 +1,68 @@
+{
+  "stage": "L7-P Rubber Duck fixed Small pseudo-depth admission",
+  "enabled_by_default": false,
+  "width": 400,
+  "height": 225,
+  "views": 120,
+  "optimizer_updates": 0,
+  "parent": "runs/pidg_staged_reconstruction/RubberDuck_I10_joint/v1/formal/joint_depth_trust/checkpoint.pt",
+  "parent_sha256": "89109bdb3990c95037924fdf0985e07302ed67065d98971d77209780b96e0502",
+  "weights_sha256": "715fade13be8f229f8a70cc02066f656f2423a59effd0579197bbf57860e1378",
+  "model": {
+    "encoder": "vits",
+    "features": 64,
+    "out_channels": [
+      48,
+      96,
+      192,
+      384
+    ]
+  },
+  "official_input_size": 518,
+  "tracks": "experiments/staged_reconstruction/RubberDuck_I10_tracking/dense/v1/bindings.json",
+  "visibility": "experiments/staged_reconstruction/RubberDuck_I10_track_neighborhood/visible/v1/audit.json",
+  "trajectories": "runs/pidg_staged_reconstruction/RubberDuck_I10_tracking/dense/v1/parent_trajectories.npz",
+  "calibration": {
+    "deduplicate_px": 4,
+    "minimum_fit": 6,
+    "minimum_check": 4,
+    "minimum_split_fit": 3,
+    "minimum_extent": 0.1,
+    "minimum_inverse_spread": 0.01,
+    "relative_median_max": 0.05,
+    "relative_P90_max": 0.1
+  },
+  "motion": {
+    "minimum_valid_fit": 4,
+    "minimum_valid_check": 4,
+    "motion_median_max": 0.02,
+    "motion_P90_max": 0.05
+  },
+  "boundary_radius": 2,
+  "boundary_relative_jump": 0.1,
+  "weak_depth_weight": 0.001,
+  "weak_log_depth_scale": 0.05,
+  "local_gate": {
+    "calibrated_views": 30,
+    "calibrated_views_per_third": 8,
+    "motion_tracks": 30,
+    "motion_tracks_per_third": 5,
+    "distinct_rows": 25
+  },
+  "scale_hull": "Only inside convex hull of fit anchors; no dense training extrapolation",
+  "motion_offset": "fit6 even raw RGB track UV and fixed J6 displacement; check6 odd, model conditioned not GT",
+  "boundary_diagnostic": "all4433 proposals x12 frames; learned visibility and bidirectional closure are proxies, no true occlusion GT",
+  "fit_check": "Spatial8px tiles mod3 for per-image scale; per-track even6 fit and odd6 check for motion",
+  "candidate": "No automatic Gaussian training until audit gate passes and separate matched protocol/native recovery is committed",
+  "original_T4_global_failure_preserved": true,
+  "independent_3D_GT": false,
+  "new_color_thresholds_masks_counts": false,
+  "historical_color_parent": true,
+  "fixed_review_frames": [
+    0,
+    24,
+    72,
+    119
+  ],
+  "full_denominators": true
+}

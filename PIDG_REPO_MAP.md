@@ -1160,3 +1160,18 @@ frozen experiments remain untouched.
   native qualification, independent recovery and matched2000-step arms.
   Tests: `tests/test_i10_springs.py`; historical color lineage and early-biased
   coverage retained. Parent median rest is not independent material geometry GT.
+
+### L7-P Rubber Duck pseudo-depth admission
+
+- `i10_pseudo_depth/core.py`: spatially separated RGB triangulation calibration,
+  no-extrapolation hull, camera/world-motion compensation, discontinuity proxies,
+  detached robust weak log-depth loss and revoke/recover state; default off.
+- `io.py`: task-local lock/stop and frozen source/weights/train inputs; unchanged
+  PIDG target compositing without using image alpha as an evidence selector.
+- `audit.py`: all120 calibrations, existing T4 motion binding checks and all4433
+  raw tracker-proposal boundaries; all rejected/missing observations retained.
+- `RubberDuck_pseudo_depth/run.py`: inference, full CPU/fixed prior independent
+  process replay; `review.py` fixed raw RGB panels. Tests: test_i10_pseudo_depth.py.
+- Training entry/config/render/checkpoint are unchanged PIDG/J6 paths above;
+  this stage has zero optimizer updates. Native training requires a new matched
+  protocol after its local evidence gate, not promotion from proxy agreement.
