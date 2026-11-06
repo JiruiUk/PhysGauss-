@@ -1,0 +1,9 @@
+{
+  "reason": "Independent arithmetic passed, but frozen lock exit tried to add duplicate pid from a failed state; preserve exception and remove only redundant pid before retrying independent evaluator.",
+  "before": {
+    "status": "failed",
+    "optimizer_updates": 0,
+    "pid": null
+  },
+  "metrics_and_frozen_sources_unchanged": true
+}

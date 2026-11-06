@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "F:\A_Edinburgh\PhysGauss\experiments\staged_reconstruction\RubberDuck_joint_scale\independent_audit.py", line 185, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\experiments\staged_reconstruction\RubberDuck_joint_scale\independent_audit.py", line 182, in main
+    with io.lock():run()
+                   ^^^^^
+  File "F:\A_Edinburgh\PhysGauss\experiments\staged_reconstruction\RubberDuck_joint_scale\independent_audit.py", line 112, in run
+    assert np.max(np.abs(projected))<1e-7
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

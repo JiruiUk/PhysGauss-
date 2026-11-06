@@ -1,0 +1,4 @@
+{
+  "traceback": "Traceback (most recent call last):\n  File \"F:\\A_Edinburgh\\PhysGauss\\variants\\staged_reconstruction\\i10_joint_scale\\io.py\", line 31, in lock\n    yield\n  File \"F:\\A_Edinburgh\\PhysGauss\\experiments\\staged_reconstruction\\RubberDuck_joint_scale\\independent_audit.py\", line 182, in main\n    with io.lock():run()\n                   ^^^^^\n  File \"F:\\A_Edinburgh\\PhysGauss\\experiments\\staged_reconstruction\\RubberDuck_joint_scale\\independent_audit.py\", line 112, in run\n    assert np.max(np.abs(projected))<1e-7\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+  "optimizer_updates": 0
+}

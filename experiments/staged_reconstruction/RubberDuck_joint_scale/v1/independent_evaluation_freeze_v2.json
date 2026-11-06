@@ -1,0 +1,8 @@
+{
+  "source_sha256": "8ab397e113defed3cce85c1822cb373ba11f4648fac6faad86977dbe9749f741",
+  "original_source_sha256": "07153d625073080e77df40de4ba542f84128be51e82f05f40792abf44d2bffd6",
+  "reason": "Correct independent bounded KKT check: raw gradient is nonzero near an active positive lower bound. Compare feasibility, bound-scaled complementarity and saved solver optimality. Same 1e-7 numerical tolerance; geometry/admission unchanged.",
+  "old_check_raw_gradient": 1.5385983545002642e-07,
+  "old_failure_preserved": true,
+  "created_before_independent_output": true
+}

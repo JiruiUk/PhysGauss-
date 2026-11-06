@@ -1,0 +1,53 @@
+{
+  "status": "completed_audit_not_admitted",
+  "pending": false,
+  "pending_review": false,
+  "optimizer_updates": 0,
+  "current_model_replaced": false,
+  "native_training_integration_qualified": false,
+  "weak_depth_enabled": false,
+  "calibrated_views": 39,
+  "calibrated_views_by_third": [
+    17,
+    19,
+    3
+  ],
+  "reliable_motion_tracks": 1,
+  "distinct_rows": 1,
+  "diagnostic_fit_observations": 5,
+  "parent_preserved": true,
+  "original_T4_global_failure_preserved": true,
+  "independent_geometry_GT": false,
+  "historical_color_lineage_disclosed": true,
+  "independent_audit_passed": true,
+  "actual_visual_review": true,
+  "source_sha256": "d4ea25eee709d2a0bc369b0fd3db5f65653455f45b7dff2431a3e2576e6223db",
+  "artifacts_sha256": {
+    "assessment.md": "7fb6f9ed4688dfa2fdbe2ba6dbad5317161a01cf53713f225c4b070dea01703a",
+    "audit_v2.json": "da8e22e0fc7c85029dc225903d3890c3eacdf8d25aafbcfbded92655dc86b529",
+    "independent_audit.json": "d8d9c1604637d496ded1530009f432a5e61cccb701d066272c38e7fa64f424b1",
+    "independent_replay.json": "2f7be581860269e6d50957f56e1d7624d72f25b85817b2606b313c43b843dca6",
+    "independent_joint_replay.json": "d8a6be76c95d3908e4e048ebf5f13ef4f3ca4fee4791e1b90ab1f4f62dad5615",
+    "manual_review.json": "154689c69149ed396dda21782981bf2f069e152d6c80026aa87df646b8c913da",
+    "figures.json": "5cc6cf65754126d881c7820a8c9ce26f067ac49512ed7f9792250f4cdfb8fca1",
+    "track_figure.json": "a8f4d95e39d082f184be228d301489d632397c60af47e89030f815a3d9f3fb2f",
+    "final_status.json": "374c3e58d8ce3aba9a5d63b4570dfe9b91d2db8b94702cecc4674c4e92518308",
+    "source_freeze.json": "40529ec69206794c45b06b21103ac15a48ddddb69fa37a749cae0074648736e9",
+    "extraction_freeze.json": "6c4c7fd448bc5381161d71d8148c1d40bf48900a08a35d77cb78ca16c2d9f35a",
+    "numerical_repair_freeze.json": "287faac412e69b7188d875ca255040bd7ec3b220cdc440f2d43c3362130899b9",
+    "independent_evaluation_freeze.json": "4e313528f4c241649b0079e2b14490248f48dddf6f92320487ac6721b241f578",
+    "independent_evaluation_freeze_v2.json": "d5dc1df33228553d6579f6d046bcc59983ea39fb69c7ddc23175c19a90b57084",
+    "figure_evaluation_freeze.json": "23d9a454d9a042e9ef3f2a4867442e8c1749fa6aa488dbf49862d474b8a4fbbe",
+    "track_figure_freeze.json": "9f41d201f853524872fe855c8bb4924c13e6cbabf4e1e2099cf90bf239361521",
+    "state_repair.json": "768d37c064fec54cf1eefa8e721e2192b54671eecd938599f7fc0ad03ae8f263"
+  },
+  "numerical_failures_preserved": [
+    "audit.json",
+    "measure_attempt1.log",
+    "independent_attempt1.log",
+    "failure_attempt1.json",
+    "failure_attempt2.json",
+    "independent_attempt2.log"
+  ],
+  "audit_result_not_geometry_training_improvement": true
+}

@@ -1,0 +1,13 @@
+JOINT_SCALE_INDEPENDENT_ARITHMETIC_PASS 627 189 [{'projected_raw': 1.5385983545002642e-07, 'bound_scaled': 3.8102892963614565e-10}, {'projected_raw': 1.113731562292026e-09, 'bound_scaled': 4.5574620934649917e-10}, {'projected_raw': 0.0003747972951623047, 'bound_scaled': 5.931166829476364e-10}]
+Traceback (most recent call last):
+  File "F:\A_Edinburgh\PhysGauss\experiments\staged_reconstruction\RubberDuck_joint_scale\independent_audit_v2.py", line 188, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "F:\A_Edinburgh\PhysGauss\experiments\staged_reconstruction\RubberDuck_joint_scale\independent_audit_v2.py", line 185, in main
+    with io.lock():run()
+  File "F:\A_Edinburgh\PhysGauss\envs\pidg-cu128\Lib\contextlib.py", line 144, in __exit__
+    next(self.gen)
+  File "F:\A_Edinburgh\PhysGauss\variants\staged_reconstruction\i10_joint_scale\io.py", line 33, in lock
+    write(RUNS/'active.json',dict(**state,pid=None))
+                             ^^^^^^^^^^^^^^^^^^^^^^
+TypeError: dict() got multiple values for keyword argument 'pid'
