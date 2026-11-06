@@ -20,3 +20,8 @@ tests/test_rubber_visibility_repair.py -text
 variants/staged_reconstruction/j7_long_memory/** -text
 experiments/staged_reconstruction/RubberDuck_J7_long_memory/** -text
 tests/test_j7_long_memory.py -text
+
+# Preserve exact read-only V0 camera/time diagnostic sources and receipts.
+variants/staged_reconstruction/view_time_audit/** -text
+experiments/staged_reconstruction/RubberDuck_view_time_audit/** -text
+tests/test_view_time_audit.py -text

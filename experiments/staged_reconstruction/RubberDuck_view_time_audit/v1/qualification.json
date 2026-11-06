@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "models": {
+    "J7": {
+      "native_parity": true,
+      "gray_alpha_depth_exact": true,
+      "exception_restoration": true,
+      "full_state_unchanged": true,
+      "state_sha256": "43b3e9d4b5f6198409574c522dc13cec559441190b8032c5afa610e2d3bb30a8",
+      "render_hashes": {
+        "render": "d9b6da64230987931dede86fb1f63c063e17c33f55fec2d29bf10262cc042248",
+        "alpha": "17ec02be24f53876e127c8fce004c0065df690332b9c2d96f87cc3d00289a143",
+        "depth": "63d59372a7f2bc83c689ab96c24ac2120c14f438fa764da7d084082d8d34cbba"
+      }
+    },
+    "rgb_control": {
+      "native_parity": true,
+      "gray_alpha_depth_exact": true,
+      "exception_restoration": true,
+      "full_state_unchanged": true,
+      "state_sha256": "446790abebad4c6587a4b85ce9cbb3bc58d2e77998a178372e1b690d89d4f65a",
+      "render_hashes": {
+        "render": "18e073117d01a4ba993e409c0f5aa3c2bd84818d34a330831285b8fd07a1b372",
+        "alpha": "a76cdaf9b32489f87adf2d93b52e25b68dc5a4d8c47b0383a617291d7bda7283",
+        "depth": "439a7d3f4fab043cf2773af386e0c0d93ef34fdc398326fec64f6d88e07abd9f"
+      }
+    },
+    "temporal_memory": {
+      "native_parity": true,
+      "gray_alpha_depth_exact": true,
+      "exception_restoration": true,
+      "full_state_unchanged": true,
+      "state_sha256": "fe028e097e883837fc908091ebf099dbe61e54a5c8825d767cfe7a894d6992ec",
+      "render_hashes": {
+        "render": "55c940a0fa7ad1095a0150e57acdfe0bb60e28006d680632883159df1481d3b4",
+        "alpha": "a453bb4f60817e07272a19a85404fbe939ce302c5fa8b0269091c91a55b2a96b",
+        "depth": "18be3da4edcd3f1b54d9049344f35c377bbf1c4311ef9be2065b14659a9002fe"
+      }
+    }
+  }
+}
