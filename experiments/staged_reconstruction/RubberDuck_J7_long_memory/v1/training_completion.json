@@ -1,0 +1,61 @@
+{
+  "status": "trained_pending_evaluation",
+  "formal_updates": 4000,
+  "arms": {
+    "rgb_control": {
+      "checkpoint": {
+        "sha256": "529560c3b1312d2bdd62cdf29daafff2b7011b9aa4a29718adfa8c1a0222923b",
+        "iteration": 2000,
+        "complete_model_two_Adam_rng_sampler_graphs": true
+      },
+      "progress": {
+        "iteration": 2000,
+        "total": 2000,
+        "rgb_loss": 0.0045743766240775585,
+        "index": 95,
+        "self_depth_loss": 0.0003088133817072958,
+        "weighted_memory_loss": 0.0,
+        "memories": 0,
+        "endpoint_pairs": 0,
+        "keyframes": [],
+        "denominator": 0
+      },
+      "usage_sha256": "17dc832aa92c8186d1e9d15b5548ac403dcfeede0db4a15292cf224e41dafcfe"
+    },
+    "temporal_memory": {
+      "checkpoint": {
+        "sha256": "7158e97eeb74f9361abab1e358ad2b6c3bb8eb3901a69cff3469a9111c9d7ef1",
+        "iteration": 2000,
+        "complete_model_two_Adam_rng_sampler_graphs": true
+      },
+      "progress": {
+        "iteration": 2000,
+        "total": 2000,
+        "rgb_loss": 0.004241532180458307,
+        "index": 95,
+        "self_depth_loss": 0.00031143988599069417,
+        "weighted_memory_loss": 0.0,
+        "memories": 0,
+        "endpoint_pairs": 0,
+        "keyframes": [],
+        "denominator": 0
+      },
+      "usage_sha256": "9b5fe3b5620942d6d5e770cef1ac49cedcbeba47273865ac875a3cc070b7945c"
+    }
+  },
+  "pipeline": {
+    "status": "trained_pending_evaluation",
+    "pid": 310164,
+    "completed": [
+      {
+        "log": "experiments/staged_reconstruction/RubberDuck_J7_long_memory/v1/20261106T142412357098Z_train_rgb_control_0.log",
+        "sha256": "e0f61fbf9ccbf4fd9f32096f58af3d1b3a396cebe587fe0d1882a9e745a21d29"
+      },
+      {
+        "log": "experiments/staged_reconstruction/RubberDuck_J7_long_memory/v1/20261106T142747540845Z_train_temporal_memory_0.log",
+        "sha256": "dcac9a6b5b72ffdefbbca2f467d1456c4b2f85b9260a891e2653a0617ca9bc2d"
+      }
+    ]
+  },
+  "independent_audit_sha256": "6461d1915c8f7262dcafe386ddb35e6d20380d05b6068c94a5e95edb21834d65"
+}

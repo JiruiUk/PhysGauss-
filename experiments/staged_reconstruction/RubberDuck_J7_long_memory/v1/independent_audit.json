@@ -1,0 +1,117 @@
+{
+  "passed": true,
+  "arms": {
+    "rgb_control": {
+      "checkpoint_sha256": "529560c3b1312d2bdd62cdf29daafff2b7011b9aa4a29718adfa8c1a0222923b",
+      "source_model_two_Adam_exact": true,
+      "all2000_samples_and_RNG_replayed": true,
+      "static_geometry_physics_Adam_graphs_frozen": true,
+      "static_points": 3273,
+      "dynamic_points": 15507,
+      "optimizer_steps": {
+        "0/_xyz": [
+          18000
+        ],
+        "0/_features_dc": [
+          22000
+        ],
+        "0/_features_rest": [
+          22000
+        ],
+        "0/_opacity": [
+          22000
+        ],
+        "0/_scaling": [
+          18000
+        ],
+        "0/_rotation": [
+          18000
+        ],
+        "1/dynamic/_xyz": [
+          30000
+        ],
+        "1/dynamic/_features_dc": [
+          30000
+        ],
+        "1/dynamic/_features_rest": [
+          30000
+        ],
+        "1/dynamic/_opacity": [
+          30000
+        ],
+        "1/dynamic/_scaling": [
+          30000
+        ],
+        "1/dynamic/_rotation": [
+          30000
+        ],
+        "1/grids": [
+          30000
+        ],
+        "1/deform_network": [
+          30000
+        ],
+        "1/PIDG_velocity_stress": [
+          800
+        ]
+      }
+    },
+    "temporal_memory": {
+      "checkpoint_sha256": "7158e97eeb74f9361abab1e358ad2b6c3bb8eb3901a69cff3469a9111c9d7ef1",
+      "source_model_two_Adam_exact": true,
+      "all2000_samples_and_RNG_replayed": true,
+      "static_geometry_physics_Adam_graphs_frozen": true,
+      "static_points": 3273,
+      "dynamic_points": 15507,
+      "optimizer_steps": {
+        "0/_xyz": [
+          18000
+        ],
+        "0/_features_dc": [
+          22000
+        ],
+        "0/_features_rest": [
+          22000
+        ],
+        "0/_opacity": [
+          22000
+        ],
+        "0/_scaling": [
+          18000
+        ],
+        "0/_rotation": [
+          18000
+        ],
+        "1/dynamic/_xyz": [
+          30000
+        ],
+        "1/dynamic/_features_dc": [
+          30000
+        ],
+        "1/dynamic/_features_rest": [
+          30000
+        ],
+        "1/dynamic/_opacity": [
+          30000
+        ],
+        "1/dynamic/_scaling": [
+          30000
+        ],
+        "1/dynamic/_rotation": [
+          30000
+        ],
+        "1/grids": [
+          30000
+        ],
+        "1/deform_network": [
+          30000
+        ],
+        "1/PIDG_velocity_stress": [
+          800
+        ]
+      }
+    }
+  },
+  "matched_complete_J7_start": true,
+  "independent_geometry_GT": false
+}
