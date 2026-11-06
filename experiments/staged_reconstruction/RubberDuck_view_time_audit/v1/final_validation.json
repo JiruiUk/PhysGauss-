@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "models": {
+    "J7": {
+      "pairs": 482,
+      "observed_diagonal_pairs": 19,
+      "undefined_ratios": 0,
+      "clipped_pairs": 0,
+      "output_PNGs": 1570,
+      "native1600_combinations": 21,
+      "source_checkpoint_unchanged": true,
+      "full_state_unchanged": true,
+      "full_second_process_native_replay": true
+    },
+    "rgb_control": {
+      "pairs": 482,
+      "observed_diagonal_pairs": 19,
+      "undefined_ratios": 0,
+      "clipped_pairs": 0,
+      "output_PNGs": 1570,
+      "native1600_combinations": 21,
+      "source_checkpoint_unchanged": true,
+      "full_state_unchanged": true,
+      "full_second_process_native_replay": true
+    },
+    "temporal_memory": {
+      "pairs": 482,
+      "observed_diagonal_pairs": 19,
+      "undefined_ratios": 0,
+      "clipped_pairs": 0,
+      "output_PNGs": 1570,
+      "native1600_combinations": 21,
+      "source_checkpoint_unchanged": true,
+      "full_state_unchanged": true,
+      "full_second_process_native_replay": true
+    }
+  },
+  "training_images": 120,
+  "unique_times": 120,
+  "unique_poses": 120,
+  "same_time_multicamera_observations": 0,
+  "training_updates": 0,
+  "independent_novel_view_GT": false,
+  "independent_validator_sha256": "ee77b1e3d273939a5c0d8092419d6d9ccf8ace3ca46a9a83ad9f7270e99fe029"
+}
