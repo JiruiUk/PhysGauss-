@@ -1,0 +1,1648 @@
+{
+  "updated_utc": "2026-10-31T22:38:26.852223+00:00",
+  "controller": {
+    "pid": 151792,
+    "status": "completed",
+    "started_utc": "2026-10-31T19:40:26.365156+00:00",
+    "deadline_utc": "2026-11-01T19:20:38.941156+00:00",
+    "completed": [
+      "O0_C1_control",
+      "O1_frozen_ID",
+      "O2_selfsup_ID"
+    ],
+    "finished_utc": "2026-10-31T22:38:26.831650+00:00"
+  },
+  "active": {
+    "id": "O2_selfsup_ID",
+    "phase": "metrics_test",
+    "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_object_id\\O2_selfsup_ID\\rubber_duck",
+    "pid": 162784,
+    "controller_pid": 151792,
+    "started_utc": "2026-10-31T22:33:26.966982+00:00"
+  },
+  "rows": [
+    {
+      "id": "O0_C1_control",
+      "iteration": 50000,
+      "history": [
+        {
+          "iteration": 0,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 9.383214664459228,
+            "SSIM": 0.45851053794225055,
+            "LPIPS": 0.17824563682079314,
+            "MS-SSIM": 0.701677284638087
+          }
+        },
+        {
+          "iteration": 1000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 17.47551883061727,
+            "SSIM": 0.8774186929066976,
+            "LPIPS": 0.12144297808408737,
+            "MS-SSIM": 0.8544019103050232
+          }
+        },
+        {
+          "iteration": 2000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 17.429393132527668,
+            "SSIM": 0.8688936312993367,
+            "LPIPS": 0.13161084229747455,
+            "MS-SSIM": 0.8441940466562907
+          }
+        },
+        {
+          "iteration": 3000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 17.570457712809244,
+            "SSIM": 0.879145763317744,
+            "LPIPS": 0.12028692911068599,
+            "MS-SSIM": 0.8563002943992615
+          }
+        },
+        {
+          "iteration": 4000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 24.843518257141113,
+            "SSIM": 0.9667694469292959,
+            "LPIPS": 0.05993363844851653,
+            "MS-SSIM": 0.9553283671538035
+          }
+        },
+        {
+          "iteration": 5000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 25.624995549519856,
+            "SSIM": 0.970047656695048,
+            "LPIPS": 0.054169787714878716,
+            "MS-SSIM": 0.9630691945552826
+          }
+        },
+        {
+          "iteration": 6000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 28.256354777018228,
+            "SSIM": 0.9759745260079702,
+            "LPIPS": 0.04480591764052709,
+            "MS-SSIM": 0.9745297233263651
+          }
+        },
+        {
+          "iteration": 7000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 29.269218317667644,
+            "SSIM": 0.9777134855588278,
+            "LPIPS": 0.04158189725130797,
+            "MS-SSIM": 0.9770664056142171
+          }
+        },
+        {
+          "iteration": 8000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 28.60285930633545,
+            "SSIM": 0.9766760508219401,
+            "LPIPS": 0.04043638861427704,
+            "MS-SSIM": 0.975138521194458
+          }
+        },
+        {
+          "iteration": 9000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 30.225035858154296,
+            "SSIM": 0.9802049398422241,
+            "LPIPS": 0.03598863116155068,
+            "MS-SSIM": 0.9808160424232483
+          }
+        },
+        {
+          "iteration": 10000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 30.283017730712892,
+            "SSIM": 0.9805462698141734,
+            "LPIPS": 0.03422829676419496,
+            "MS-SSIM": 0.9813090523084005
+          }
+        },
+        {
+          "iteration": 11000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 31.514355405171713,
+            "SSIM": 0.983169420560201,
+            "LPIPS": 0.030296286133428416,
+            "MS-SSIM": 0.9855232914288838
+          }
+        },
+        {
+          "iteration": 12000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 32.89715086619059,
+            "SSIM": 0.9853902498881022,
+            "LPIPS": 0.02696438953280449,
+            "MS-SSIM": 0.9886385758717855
+          }
+        },
+        {
+          "iteration": 13000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 32.50706202189128,
+            "SSIM": 0.9847631573677063,
+            "LPIPS": 0.026421353283027808,
+            "MS-SSIM": 0.9877944548924764
+          }
+        },
+        {
+          "iteration": 14000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 32.9133207321167,
+            "SSIM": 0.9859177450339,
+            "LPIPS": 0.024423210384945073,
+            "MS-SSIM": 0.9889900743961334
+          }
+        },
+        {
+          "iteration": 15000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 33.67064011891683,
+            "SSIM": 0.9871483067671458,
+            "LPIPS": 0.022585660436501107,
+            "MS-SSIM": 0.9905654629071553
+          }
+        },
+        {
+          "iteration": 16000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 34.58404598236084,
+            "SSIM": 0.9886182487010956,
+            "LPIPS": 0.020466153354694445,
+            "MS-SSIM": 0.9917268037796021
+          }
+        },
+        {
+          "iteration": 17000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 34.56822497049968,
+            "SSIM": 0.9884502947330475,
+            "LPIPS": 0.01961279318978389,
+            "MS-SSIM": 0.9917229115962982
+          }
+        },
+        {
+          "iteration": 18000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 35.34791609446208,
+            "SSIM": 0.9896861414114634,
+            "LPIPS": 0.018311311832318704,
+            "MS-SSIM": 0.9927462935447693
+          }
+        },
+        {
+          "iteration": 19000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 35.90053787231445,
+            "SSIM": 0.9907799045244853,
+            "LPIPS": 0.016822339221835136,
+            "MS-SSIM": 0.9935337940851847
+          }
+        },
+        {
+          "iteration": 20000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 35.518076006571455,
+            "SSIM": 0.9901687800884247,
+            "LPIPS": 0.016970706141243377,
+            "MS-SSIM": 0.993170416355133
+          }
+        },
+        {
+          "iteration": 21000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 35.89414730072021,
+            "SSIM": 0.9902839461962382,
+            "LPIPS": 0.01624523944531878,
+            "MS-SSIM": 0.9932958801587423
+          }
+        },
+        {
+          "iteration": 22000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 36.25593948364258,
+            "SSIM": 0.9908095935980479,
+            "LPIPS": 0.015915164661904176,
+            "MS-SSIM": 0.9936721165974934
+          }
+        },
+        {
+          "iteration": 23000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 36.778811645507815,
+            "SSIM": 0.9916980723539989,
+            "LPIPS": 0.014858696516603232,
+            "MS-SSIM": 0.994274773200353
+          }
+        },
+        {
+          "iteration": 24000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 36.87898591359456,
+            "SSIM": 0.9917287468910218,
+            "LPIPS": 0.014671774689729015,
+            "MS-SSIM": 0.9943864425023397
+          }
+        },
+        {
+          "iteration": 25000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 37.41136016845703,
+            "SSIM": 0.9923413157463074,
+            "LPIPS": 0.013985780579969288,
+            "MS-SSIM": 0.9947929402192434
+          }
+        },
+        {
+          "iteration": 26000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 37.13385060628255,
+            "SSIM": 0.9922929445902506,
+            "LPIPS": 0.013685942813754081,
+            "MS-SSIM": 0.9947906573613484
+          }
+        },
+        {
+          "iteration": 27000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 37.891659228007,
+            "SSIM": 0.992744380235672,
+            "LPIPS": 0.013284786177488664,
+            "MS-SSIM": 0.9951232175032297
+          }
+        },
+        {
+          "iteration": 28000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 37.56693534851074,
+            "SSIM": 0.9927501440048218,
+            "LPIPS": 0.013052239750201504,
+            "MS-SSIM": 0.9951509217421214
+          }
+        },
+        {
+          "iteration": 29000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 38.27747885386149,
+            "SSIM": 0.9932843983173371,
+            "LPIPS": 0.012630436041702827,
+            "MS-SSIM": 0.9954579452673594
+          }
+        },
+        {
+          "iteration": 30000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 37.52855765024821,
+            "SSIM": 0.9928443928559622,
+            "LPIPS": 0.012868151317040126,
+            "MS-SSIM": 0.9951962411403656
+          }
+        },
+        {
+          "iteration": 31000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 38.052610333760576,
+            "SSIM": 0.993237974246343,
+            "LPIPS": 0.012505414445574086,
+            "MS-SSIM": 0.9954379936059315
+          }
+        },
+        {
+          "iteration": 32000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 38.70562502543132,
+            "SSIM": 0.9935273845990499,
+            "LPIPS": 0.012268146243877709,
+            "MS-SSIM": 0.9956045707066854
+          }
+        },
+        {
+          "iteration": 33000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 38.89782148996989,
+            "SSIM": 0.9937262932459513,
+            "LPIPS": 0.012006680791576704,
+            "MS-SSIM": 0.9957331597805024
+          }
+        },
+        {
+          "iteration": 34000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 38.89683882395426,
+            "SSIM": 0.9937344451745351,
+            "LPIPS": 0.012010411825031042,
+            "MS-SSIM": 0.9957648694515229
+          }
+        },
+        {
+          "iteration": 35000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 38.79549331665039,
+            "SSIM": 0.9936835527420044,
+            "LPIPS": 0.012036734609864652,
+            "MS-SSIM": 0.9957328538099924
+          }
+        },
+        {
+          "iteration": 36000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 39.16820163726807,
+            "SSIM": 0.993909607330958,
+            "LPIPS": 0.0116522009523275,
+            "MS-SSIM": 0.9958617508411407
+          }
+        },
+        {
+          "iteration": 37000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 39.0778481165568,
+            "SSIM": 0.9938343544801076,
+            "LPIPS": 0.0116647556812192,
+            "MS-SSIM": 0.9958409051100413
+          }
+        },
+        {
+          "iteration": 38000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 39.040903345743814,
+            "SSIM": 0.9938736160596212,
+            "LPIPS": 0.011662956862710416,
+            "MS-SSIM": 0.9958519160747528
+          }
+        },
+        {
+          "iteration": 39000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 39.252288055419925,
+            "SSIM": 0.9939606825510661,
+            "LPIPS": 0.011486261306951443,
+            "MS-SSIM": 0.9958954870700836
+          }
+        },
+        {
+          "iteration": 40000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 39.4784330368042,
+            "SSIM": 0.9940985381603241,
+            "LPIPS": 0.011495080372939507,
+            "MS-SSIM": 0.9960078597068787
+          }
+        },
+        {
+          "iteration": 41000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 39.4676752726237,
+            "SSIM": 0.9941297670205435,
+            "LPIPS": 0.011349304237713416,
+            "MS-SSIM": 0.9960180600484212
+          }
+        },
+        {
+          "iteration": 42000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 39.372397867838544,
+            "SSIM": 0.9941303074359894,
+            "LPIPS": 0.011311787615219752,
+            "MS-SSIM": 0.996026466290156
+          }
+        },
+        {
+          "iteration": 43000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 39.440828514099124,
+            "SSIM": 0.9941528638203939,
+            "LPIPS": 0.011306140090649326,
+            "MS-SSIM": 0.9960342983404795
+          }
+        },
+        {
+          "iteration": 44000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 39.56592191060384,
+            "SSIM": 0.9941549479961396,
+            "LPIPS": 0.011234607563043635,
+            "MS-SSIM": 0.9960397740205129
+          }
+        },
+        {
+          "iteration": 45000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 39.49002628326416,
+            "SSIM": 0.9941953380902608,
+            "LPIPS": 0.011183957084237287,
+            "MS-SSIM": 0.9960794727007548
+          }
+        },
+        {
+          "iteration": 46000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 39.47983900705973,
+            "SSIM": 0.994173510869344,
+            "LPIPS": 0.011184677147927384,
+            "MS-SSIM": 0.9960533261299134
+          }
+        },
+        {
+          "iteration": 47000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 39.68339277903239,
+            "SSIM": 0.9942728737990062,
+            "LPIPS": 0.011020102305337787,
+            "MS-SSIM": 0.9961262146631876
+          }
+        },
+        {
+          "iteration": 48000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 39.57353693644206,
+            "SSIM": 0.9942094167073567,
+            "LPIPS": 0.011119450357121726,
+            "MS-SSIM": 0.9960826575756073
+          }
+        },
+        {
+          "iteration": 49000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 39.66882514953613,
+            "SSIM": 0.9942200978597006,
+            "LPIPS": 0.011101278887751202,
+            "MS-SSIM": 0.9960847099622091
+          }
+        },
+        {
+          "iteration": 50000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 39.664894612630206,
+            "SSIM": 0.9942710717519124,
+            "LPIPS": 0.011083854424456755,
+            "MS-SSIM": 0.9961092332998912
+          }
+        }
+      ],
+      "object": null,
+      "reused": true,
+      "source": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_color_repair\\C1_repaired\\rubber_duck",
+      "test": {
+        "SSIM": 0.9946761131286621,
+        "PSNR": 40.372127532958984,
+        "LPIPS": 0.010437515564262867,
+        "MS-SSIM": 0.9965463280677795
+      }
+    },
+    {
+      "id": "O1_frozen_ID",
+      "iteration": 50000,
+      "history": [
+        {
+          "iteration": 0,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 9.383214664459228,
+            "SSIM": 0.45851053794225055,
+            "LPIPS": 0.17824563682079314,
+            "MS-SSIM": 0.701677284638087
+          }
+        },
+        {
+          "iteration": 1000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 17.47551883061727,
+            "SSIM": 0.8774186929066976,
+            "LPIPS": 0.12144297808408737,
+            "MS-SSIM": 0.8544019103050232
+          }
+        },
+        {
+          "iteration": 2000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 17.429393132527668,
+            "SSIM": 0.8688936312993367,
+            "LPIPS": 0.13161084229747455,
+            "MS-SSIM": 0.8441940466562907
+          }
+        },
+        {
+          "iteration": 3000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 17.570457712809244,
+            "SSIM": 0.879145763317744,
+            "LPIPS": 0.12028692911068599,
+            "MS-SSIM": 0.8563002943992615
+          }
+        },
+        {
+          "iteration": 4000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 24.92656071980794,
+            "SSIM": 0.9667585412661235,
+            "LPIPS": 0.05954775462547938,
+            "MS-SSIM": 0.9564469436804454
+          }
+        },
+        {
+          "iteration": 5000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 25.70663331349691,
+            "SSIM": 0.9698109904925029,
+            "LPIPS": 0.05427186687787374,
+            "MS-SSIM": 0.9618206103642781
+          }
+        },
+        {
+          "iteration": 6000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 27.950896898905437,
+            "SSIM": 0.9748111387093862,
+            "LPIPS": 0.046402075017491974,
+            "MS-SSIM": 0.9724056263764699
+          }
+        },
+        {
+          "iteration": 7000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 28.762359364827475,
+            "SSIM": 0.9760262171427408,
+            "LPIPS": 0.043712861463427545,
+            "MS-SSIM": 0.975213634967804
+          }
+        },
+        {
+          "iteration": 8000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 28.566824913024902,
+            "SSIM": 0.9756506204605102,
+            "LPIPS": 0.041158080597718555,
+            "MS-SSIM": 0.9745019773642222
+          }
+        },
+        {
+          "iteration": 9000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 30.033045705159505,
+            "SSIM": 0.9789127945899964,
+            "LPIPS": 0.03640726823359728,
+            "MS-SSIM": 0.9798177818457285
+          }
+        },
+        {
+          "iteration": 10000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 29.781170972188313,
+            "SSIM": 0.979005096356074,
+            "LPIPS": 0.035837590632339315,
+            "MS-SSIM": 0.9791354477405548
+          }
+        },
+        {
+          "iteration": 11000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 31.33110345204671,
+            "SSIM": 0.9828290462493896,
+            "LPIPS": 0.03149969410151243,
+            "MS-SSIM": 0.9850487450758616
+          }
+        },
+        {
+          "iteration": 12000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 32.17687409718831,
+            "SSIM": 0.9845462898413341,
+            "LPIPS": 0.028438651748001576,
+            "MS-SSIM": 0.9872496406237284
+          }
+        },
+        {
+          "iteration": 13000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 31.388606389363606,
+            "SSIM": 0.9822793265183767,
+            "LPIPS": 0.028932667647798855,
+            "MS-SSIM": 0.9847429831822713
+          }
+        },
+        {
+          "iteration": 14000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 32.046250851949054,
+            "SSIM": 0.9837832351525625,
+            "LPIPS": 0.027092343382537364,
+            "MS-SSIM": 0.9865211486816406
+          }
+        },
+        {
+          "iteration": 15000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 32.588809458414715,
+            "SSIM": 0.9847971479098002,
+            "LPIPS": 0.025103291062017283,
+            "MS-SSIM": 0.9880967954794566
+          }
+        },
+        {
+          "iteration": 16000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 33.17077039082845,
+            "SSIM": 0.9857537806034088,
+            "LPIPS": 0.023556838432947796,
+            "MS-SSIM": 0.9892988661924998
+          }
+        },
+        {
+          "iteration": 17000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 33.805311902364096,
+            "SSIM": 0.9860468904177347,
+            "LPIPS": 0.022383675910532475,
+            "MS-SSIM": 0.9895740826924642
+          }
+        },
+        {
+          "iteration": 18000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 34.93777567545573,
+            "SSIM": 0.9888136009375255,
+            "LPIPS": 0.02022713910167416,
+            "MS-SSIM": 0.9921664138634999
+          }
+        },
+        {
+          "iteration": 19000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 33.51448713938395,
+            "SSIM": 0.9859605054060618,
+            "LPIPS": 0.02059495576346914,
+            "MS-SSIM": 0.9901273131370545
+          }
+        },
+        {
+          "iteration": 20000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 34.64997647603353,
+            "SSIM": 0.9878426253795624,
+            "LPIPS": 0.019417186391850312,
+            "MS-SSIM": 0.9914264778296152
+          }
+        },
+        {
+          "iteration": 21000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 34.29804484049479,
+            "SSIM": 0.9875269452730815,
+            "LPIPS": 0.019249593435476223,
+            "MS-SSIM": 0.9905746539433797
+          }
+        },
+        {
+          "iteration": 22000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 34.78569323221843,
+            "SSIM": 0.9880949815114339,
+            "LPIPS": 0.018301272485405206,
+            "MS-SSIM": 0.9918771783510844
+          }
+        },
+        {
+          "iteration": 23000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 35.51676158905029,
+            "SSIM": 0.989607177178065,
+            "LPIPS": 0.017026671798278888,
+            "MS-SSIM": 0.9931444684664409
+          }
+        },
+        {
+          "iteration": 24000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 33.728269259134926,
+            "SSIM": 0.9865745425224304,
+            "LPIPS": 0.01851702630519867,
+            "MS-SSIM": 0.9905629277229309
+          }
+        },
+        {
+          "iteration": 25000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 36.169531631469724,
+            "SSIM": 0.990412563085556,
+            "LPIPS": 0.016019141642997663,
+            "MS-SSIM": 0.9937010725339254
+          }
+        },
+        {
+          "iteration": 26000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 35.57421989440918,
+            "SSIM": 0.9894323786099751,
+            "LPIPS": 0.016507592424750327,
+            "MS-SSIM": 0.9927872478961944
+          }
+        },
+        {
+          "iteration": 27000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 36.15270201365153,
+            "SSIM": 0.9900596638520559,
+            "LPIPS": 0.015736711459855238,
+            "MS-SSIM": 0.9934766968091329
+          }
+        },
+        {
+          "iteration": 28000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 36.89253584543864,
+            "SSIM": 0.9916330933570862,
+            "LPIPS": 0.014662195881828665,
+            "MS-SSIM": 0.994504455725352
+          }
+        },
+        {
+          "iteration": 29000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 36.19993317921956,
+            "SSIM": 0.9902176698048909,
+            "LPIPS": 0.0150537114435186,
+            "MS-SSIM": 0.993662667274475
+          }
+        },
+        {
+          "iteration": 30000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 36.28610871632894,
+            "SSIM": 0.9908365448315938,
+            "LPIPS": 0.014552971146379908,
+            "MS-SSIM": 0.9941434144973755
+          }
+        },
+        {
+          "iteration": 31000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 36.62079302469889,
+            "SSIM": 0.9914259453614552,
+            "LPIPS": 0.014364774261290828,
+            "MS-SSIM": 0.9945075829823812
+          }
+        },
+        {
+          "iteration": 32000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 36.26030400594075,
+            "SSIM": 0.9899696926275889,
+            "LPIPS": 0.014887883560732007,
+            "MS-SSIM": 0.9933263003826142
+          }
+        },
+        {
+          "iteration": 33000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 37.588944562276204,
+            "SSIM": 0.9924066185951232,
+            "LPIPS": 0.01361220305164655,
+            "MS-SSIM": 0.9950491388638815
+          }
+        },
+        {
+          "iteration": 34000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 37.47708670298258,
+            "SSIM": 0.9920919378598531,
+            "LPIPS": 0.013663218030706048,
+            "MS-SSIM": 0.9948653598626455
+          }
+        },
+        {
+          "iteration": 35000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 37.673170534769696,
+            "SSIM": 0.9923842986424763,
+            "LPIPS": 0.013519612870489557,
+            "MS-SSIM": 0.9950322429339091
+          }
+        },
+        {
+          "iteration": 36000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 37.403550148010254,
+            "SSIM": 0.9918483515580495,
+            "LPIPS": 0.0134859265293926,
+            "MS-SSIM": 0.9948134700457255
+          }
+        },
+        {
+          "iteration": 37000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 37.880992380778,
+            "SSIM": 0.9928513745466868,
+            "LPIPS": 0.013027567913134893,
+            "MS-SSIM": 0.9952923854192098
+          }
+        },
+        {
+          "iteration": 38000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 37.66963952382405,
+            "SSIM": 0.9925259331862132,
+            "LPIPS": 0.013094373854498069,
+            "MS-SSIM": 0.9951597690582276
+          }
+        },
+        {
+          "iteration": 39000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 37.661209170023604,
+            "SSIM": 0.9924214482307434,
+            "LPIPS": 0.01306850677356124,
+            "MS-SSIM": 0.9951440652211507
+          }
+        },
+        {
+          "iteration": 40000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 36.99745222727458,
+            "SSIM": 0.9912402987480163,
+            "LPIPS": 0.013510454508165518,
+            "MS-SSIM": 0.9945027728875478
+          }
+        },
+        {
+          "iteration": 41000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 37.24101517995199,
+            "SSIM": 0.9919741769631704,
+            "LPIPS": 0.013218572968617082,
+            "MS-SSIM": 0.9949150721232096
+          }
+        },
+        {
+          "iteration": 42000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 38.02418594360351,
+            "SSIM": 0.9924931764602661,
+            "LPIPS": 0.01289408242640396,
+            "MS-SSIM": 0.9951888779799144
+          }
+        },
+        {
+          "iteration": 43000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 38.05273672739665,
+            "SSIM": 0.9926913181940714,
+            "LPIPS": 0.012834430625662207,
+            "MS-SSIM": 0.9953056414922078
+          }
+        },
+        {
+          "iteration": 44000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 37.551276715596515,
+            "SSIM": 0.9925328771273295,
+            "LPIPS": 0.012840372743085027,
+            "MS-SSIM": 0.9952254056930542
+          }
+        },
+        {
+          "iteration": 45000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 38.406504503885905,
+            "SSIM": 0.9931296944618225,
+            "LPIPS": 0.012586193780104319,
+            "MS-SSIM": 0.9955476423104604
+          }
+        },
+        {
+          "iteration": 46000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 37.838850847880046,
+            "SSIM": 0.9927965144316355,
+            "LPIPS": 0.012683153230076035,
+            "MS-SSIM": 0.995403911670049
+          }
+        },
+        {
+          "iteration": 47000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 38.452124404907224,
+            "SSIM": 0.9932967245578765,
+            "LPIPS": 0.01230609779401372,
+            "MS-SSIM": 0.9956325809160869
+          }
+        },
+        {
+          "iteration": 48000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 37.490996805826825,
+            "SSIM": 0.9920605758825938,
+            "LPIPS": 0.01285198675468564,
+            "MS-SSIM": 0.9950726310412089
+          }
+        },
+        {
+          "iteration": 49000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 38.197102546691895,
+            "SSIM": 0.993074357509613,
+            "LPIPS": 0.012483862849573294,
+            "MS-SSIM": 0.9955234408378602
+          }
+        },
+        {
+          "iteration": 50000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 38.27950229644775,
+            "SSIM": 0.9931763728459676,
+            "LPIPS": 0.012442178822432955,
+            "MS-SSIM": 0.9955768048763275
+          }
+        }
+      ],
+      "object": {
+        "iteration": 50000,
+        "frame": "0180",
+        "blend": 0.25,
+        "learn_identity": false,
+        "capacity": 16,
+        "weighted_loss": 0.0001657351094763726,
+        "instance_labels_used": false,
+        "ID_accuracy_available": false,
+        "trajectory_residual_huber": 0.03752589225769043,
+        "assignment_entropy": 2.4863121509552,
+        "occupancy_sqrt_cost": 3.893605947494507,
+        "max_assignment_mean": 0.17154580354690552,
+        "effective_slots_1pct": 16.0,
+        "active_candidates": 16.0
+      },
+      "reused": false,
+      "source": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_object_id\\O1_frozen_ID\\rubber_duck",
+      "test": {
+        "SSIM": 0.9936741590499878,
+        "PSNR": 38.81082534790039,
+        "LPIPS": 0.011689982376992702,
+        "MS-SSIM": 0.9961096048355103
+      }
+    },
+    {
+      "id": "O2_selfsup_ID",
+      "iteration": 50000,
+      "history": [
+        {
+          "iteration": 0,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 9.383214664459228,
+            "SSIM": 0.45851053794225055,
+            "LPIPS": 0.17824563682079314,
+            "MS-SSIM": 0.701677284638087
+          }
+        },
+        {
+          "iteration": 1000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 17.47551883061727,
+            "SSIM": 0.8774186929066976,
+            "LPIPS": 0.12144297808408737,
+            "MS-SSIM": 0.8544019103050232
+          }
+        },
+        {
+          "iteration": 2000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 17.429393132527668,
+            "SSIM": 0.8688936312993367,
+            "LPIPS": 0.13161084229747455,
+            "MS-SSIM": 0.8441940466562907
+          }
+        },
+        {
+          "iteration": 3000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 17.570457712809244,
+            "SSIM": 0.879145763317744,
+            "LPIPS": 0.12028692911068599,
+            "MS-SSIM": 0.8563002943992615
+          }
+        },
+        {
+          "iteration": 4000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 24.721872075398764,
+            "SSIM": 0.9662938336531322,
+            "LPIPS": 0.06053516902029514,
+            "MS-SSIM": 0.9539925456047058
+          }
+        },
+        {
+          "iteration": 5000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 25.41779416402181,
+            "SSIM": 0.9684960305690765,
+            "LPIPS": 0.056120726342002554,
+            "MS-SSIM": 0.9597135007381439
+          }
+        },
+        {
+          "iteration": 6000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 27.725806427001952,
+            "SSIM": 0.9729653875033061,
+            "LPIPS": 0.047853802392880125,
+            "MS-SSIM": 0.9699869275093078
+          }
+        },
+        {
+          "iteration": 7000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 28.65072053273519,
+            "SSIM": 0.9759467601776123,
+            "LPIPS": 0.042430678258339564,
+            "MS-SSIM": 0.9747794012228648
+          }
+        },
+        {
+          "iteration": 8000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 28.29152660369873,
+            "SSIM": 0.9757092416286468,
+            "LPIPS": 0.04139697806288799,
+            "MS-SSIM": 0.9734528561433157
+          }
+        },
+        {
+          "iteration": 9000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 29.305850219726562,
+            "SSIM": 0.9776226679484049,
+            "LPIPS": 0.03785766965399186,
+            "MS-SSIM": 0.9764885187149048
+          }
+        },
+        {
+          "iteration": 10000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 30.27328255971273,
+            "SSIM": 0.9794098019599915,
+            "LPIPS": 0.03527425608287255,
+            "MS-SSIM": 0.9800223410129547
+          }
+        },
+        {
+          "iteration": 11000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 30.746838569641113,
+            "SSIM": 0.9819973627726237,
+            "LPIPS": 0.03181087784469128,
+            "MS-SSIM": 0.983678009112676
+          }
+        },
+        {
+          "iteration": 12000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 32.08366031646729,
+            "SSIM": 0.9841712156931559,
+            "LPIPS": 0.028834730945527555,
+            "MS-SSIM": 0.9862449169158936
+          }
+        },
+        {
+          "iteration": 13000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 31.95206610361735,
+            "SSIM": 0.9839081505934397,
+            "LPIPS": 0.02741054743528366,
+            "MS-SSIM": 0.9868863781293233
+          }
+        },
+        {
+          "iteration": 14000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 31.281925201416016,
+            "SSIM": 0.9821795443693797,
+            "LPIPS": 0.027992264926433565,
+            "MS-SSIM": 0.9846579551696777
+          }
+        },
+        {
+          "iteration": 15000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 32.034457524617515,
+            "SSIM": 0.9831017752488455,
+            "LPIPS": 0.025740530093510947,
+            "MS-SSIM": 0.9864800433317821
+          }
+        },
+        {
+          "iteration": 16000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 32.465362230936684,
+            "SSIM": 0.9848966976006825,
+            "LPIPS": 0.02389697857821981,
+            "MS-SSIM": 0.9876362562179566
+          }
+        },
+        {
+          "iteration": 17000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 33.61741174062093,
+            "SSIM": 0.9861578106880188,
+            "LPIPS": 0.021999484052260716,
+            "MS-SSIM": 0.9894809722900391
+          }
+        },
+        {
+          "iteration": 18000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 34.30537872314453,
+            "SSIM": 0.9879409511884053,
+            "LPIPS": 0.020590790081769228,
+            "MS-SSIM": 0.9910627424716949
+          }
+        },
+        {
+          "iteration": 19000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 32.70131702423096,
+            "SSIM": 0.9851629396279653,
+            "LPIPS": 0.02100292096535365,
+            "MS-SSIM": 0.9887847940127055
+          }
+        },
+        {
+          "iteration": 20000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 34.025274912516274,
+            "SSIM": 0.9877585073312124,
+            "LPIPS": 0.019238344114273786,
+            "MS-SSIM": 0.9909310360749563
+          }
+        },
+        {
+          "iteration": 21000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 33.93902219136556,
+            "SSIM": 0.9875397702058156,
+            "LPIPS": 0.019050708195815485,
+            "MS-SSIM": 0.9903569400310517
+          }
+        },
+        {
+          "iteration": 22000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 34.45139357248942,
+            "SSIM": 0.9878732164700826,
+            "LPIPS": 0.01857208733757337,
+            "MS-SSIM": 0.9912445982297261
+          }
+        },
+        {
+          "iteration": 23000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 35.44339243570963,
+            "SSIM": 0.989042995373408,
+            "LPIPS": 0.017456466145813466,
+            "MS-SSIM": 0.9920866747697195
+          }
+        },
+        {
+          "iteration": 24000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 34.18763262430827,
+            "SSIM": 0.9875746826330821,
+            "LPIPS": 0.01797520850474636,
+            "MS-SSIM": 0.9907230357329051
+          }
+        },
+        {
+          "iteration": 25000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 35.34521567026774,
+            "SSIM": 0.9890786747137705,
+            "LPIPS": 0.016482960929473243,
+            "MS-SSIM": 0.992150588830312
+          }
+        },
+        {
+          "iteration": 26000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 35.652167383829756,
+            "SSIM": 0.9898507873217265,
+            "LPIPS": 0.016231514451404413,
+            "MS-SSIM": 0.9927579224109649
+          }
+        },
+        {
+          "iteration": 27000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 34.96125475565592,
+            "SSIM": 0.9885816911856333,
+            "LPIPS": 0.016623327198127907,
+            "MS-SSIM": 0.9918754577636719
+          }
+        },
+        {
+          "iteration": 28000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 35.76006933848063,
+            "SSIM": 0.9899380425612132,
+            "LPIPS": 0.015474582929164172,
+            "MS-SSIM": 0.9929607093334198
+          }
+        },
+        {
+          "iteration": 29000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 35.83068141937256,
+            "SSIM": 0.9909222463766734,
+            "LPIPS": 0.014919329201802611,
+            "MS-SSIM": 0.9934919734795888
+          }
+        },
+        {
+          "iteration": 30000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 34.07012793223063,
+            "SSIM": 0.9876182039578756,
+            "LPIPS": 0.0169473046126465,
+            "MS-SSIM": 0.9906485259532929
+          }
+        },
+        {
+          "iteration": 31000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 36.13646068572998,
+            "SSIM": 0.9905714611212413,
+            "LPIPS": 0.015183985450615485,
+            "MS-SSIM": 0.9934367895126343
+          }
+        },
+        {
+          "iteration": 32000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 36.50615692138672,
+            "SSIM": 0.9907675882180532,
+            "LPIPS": 0.014613525678093235,
+            "MS-SSIM": 0.9934639592965444
+          }
+        },
+        {
+          "iteration": 33000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 36.136182912190755,
+            "SSIM": 0.990551886955897,
+            "LPIPS": 0.014382428458581368,
+            "MS-SSIM": 0.9935175100962321
+          }
+        },
+        {
+          "iteration": 34000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 37.06088085174561,
+            "SSIM": 0.9917523483435313,
+            "LPIPS": 0.014032650102550785,
+            "MS-SSIM": 0.9942256808280945
+          }
+        },
+        {
+          "iteration": 35000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 36.623981666564944,
+            "SSIM": 0.9914372801780701,
+            "LPIPS": 0.01408698180069526,
+            "MS-SSIM": 0.9940528293450673
+          }
+        },
+        {
+          "iteration": 36000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 37.3838612874349,
+            "SSIM": 0.9920448700586955,
+            "LPIPS": 0.013652392709627748,
+            "MS-SSIM": 0.9943778932094574
+          }
+        },
+        {
+          "iteration": 37000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 36.40443414052327,
+            "SSIM": 0.9910591085751851,
+            "LPIPS": 0.013771033318092426,
+            "MS-SSIM": 0.9938084363937378
+          }
+        },
+        {
+          "iteration": 38000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 37.430541292826334,
+            "SSIM": 0.9920897821585337,
+            "LPIPS": 0.013411958857129017,
+            "MS-SSIM": 0.9944066107273102
+          }
+        },
+        {
+          "iteration": 39000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 37.20969403584798,
+            "SSIM": 0.9918205857276916,
+            "LPIPS": 0.013406891810397307,
+            "MS-SSIM": 0.9942337294419606
+          }
+        },
+        {
+          "iteration": 40000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 37.86459948221842,
+            "SSIM": 0.9924094756444295,
+            "LPIPS": 0.013145627686753869,
+            "MS-SSIM": 0.9946235477924347
+          }
+        },
+        {
+          "iteration": 41000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 35.89076798756917,
+            "SSIM": 0.9902369260787964,
+            "LPIPS": 0.01408651047386229,
+            "MS-SSIM": 0.9929290036360423
+          }
+        },
+        {
+          "iteration": 42000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 37.80786711374919,
+            "SSIM": 0.9922913253307343,
+            "LPIPS": 0.012978499149903655,
+            "MS-SSIM": 0.9946042040983836
+          }
+        },
+        {
+          "iteration": 43000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 37.50640137990316,
+            "SSIM": 0.9915244380633036,
+            "LPIPS": 0.013357147869343559,
+            "MS-SSIM": 0.9939837872982025
+          }
+        },
+        {
+          "iteration": 44000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 37.440467325846356,
+            "SSIM": 0.9921128471692403,
+            "LPIPS": 0.01307511852743725,
+            "MS-SSIM": 0.9945912857850393
+          }
+        },
+        {
+          "iteration": 45000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 38.09709218343099,
+            "SSIM": 0.9927340149879456,
+            "LPIPS": 0.012684784876182676,
+            "MS-SSIM": 0.9948717991511027
+          }
+        },
+        {
+          "iteration": 46000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 37.658949851989746,
+            "SSIM": 0.9925933082898458,
+            "LPIPS": 0.012821666725600759,
+            "MS-SSIM": 0.9947871665159861
+          }
+        },
+        {
+          "iteration": 47000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 37.53421154022217,
+            "SSIM": 0.9925532758235931,
+            "LPIPS": 0.012721013789996505,
+            "MS-SSIM": 0.9947894652684529
+          }
+        },
+        {
+          "iteration": 48000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 36.99110743204753,
+            "SSIM": 0.9917431116104126,
+            "LPIPS": 0.013016550693040092,
+            "MS-SSIM": 0.9943546891212464
+          }
+        },
+        {
+          "iteration": 49000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 37.40665976206461,
+            "SSIM": 0.992153924703598,
+            "LPIPS": 0.012969880752886334,
+            "MS-SSIM": 0.9946606695652008
+          }
+        },
+        {
+          "iteration": 50000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 38.0785613377889,
+            "SSIM": 0.992799186706543,
+            "LPIPS": 0.012547227103884022,
+            "MS-SSIM": 0.9949341694513957
+          }
+        }
+      ],
+      "object": {
+        "iteration": 50000,
+        "frame": "0180",
+        "blend": 0.25,
+        "learn_identity": true,
+        "capacity": 16,
+        "weighted_loss": 0.00013626435247715563,
+        "instance_labels_used": false,
+        "ID_accuracy_available": false,
+        "trajectory_residual_huber": 0.03392251580953598,
+        "assignment_entropy": 1.973332405090332,
+        "occupancy_sqrt_cost": 3.675217628479004,
+        "max_assignment_mean": 0.35753071308135986,
+        "effective_slots_1pct": 16.0,
+        "active_candidates": 16.0,
+        "RGB_to_identity_gradient_norm": 0.0002638394362293184
+      },
+      "reused": false,
+      "source": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_object_id\\O2_selfsup_ID\\rubber_duck",
+      "test": {
+        "SSIM": 0.9932882189750671,
+        "PSNR": 38.480873107910156,
+        "LPIPS": 0.011966951191425323,
+        "MS-SSIM": 0.9955379962921143
+      }
+    }
+  ],
+  "split": [
+    120,
+    30,
+    50
+  ],
+  "total_iterations_each": 50000,
+  "source_prefix_iteration": 3000,
+  "object_supervision": "none: no instance masks/IDs, no clustering pseudo-targets",
+  "C1_foreground_alpha_supervision_retained": true,
+  "candidate_capacity_not_object_count": 16,
+  "selection": "new arms validation-only; reused baseline already locked/evaluated; new final test after selection lock",
+  "limitations": [
+    "single scene/seed",
+    "not exact MovingParts/DynaVol reproduction",
+    "no ground-truth instance accuracy",
+    "historical test exposure"
+  ]
+}

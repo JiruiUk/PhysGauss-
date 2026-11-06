@@ -1,0 +1,38 @@
+{
+  "split": "test",
+  "trained_steps": 30,
+  "protocol": "image_only",
+  "dataset_kind": "synthetic",
+  "renderer": "torch_reference",
+  "benchmark_compatible": false,
+  "lpips": null,
+  "limitations": "Toy/reference validation. SSIM uses a local 3x3 box; LPIPS not implemented. No physical-parameter ground truth evaluation.",
+  "summary": {
+    "flow_epe": 0.24242281168699265,
+    "depth_mae": 0.021514888231952984,
+    "psnr": 27.853125035150452,
+    "ssim_reference": 0.87034010887146
+  },
+  "frames": [
+    {
+      "frame": 2,
+      "psnr": 26.71105400949134,
+      "ssim_reference": 0.8435638546943665,
+      "depth_mae": 0.02190965600311756,
+      "flow_epe": 0.3623490631580353
+    },
+    {
+      "frame": 5,
+      "psnr": 30.07001646029029,
+      "ssim_reference": 0.9223042726516724,
+      "depth_mae": 0.015961119905114174,
+      "flow_epe": 0.12249656021595001
+    },
+    {
+      "frame": 8,
+      "psnr": 26.778304635669716,
+      "ssim_reference": 0.8451521992683411,
+      "depth_mae": 0.02667388878762722
+    }
+  ]
+}

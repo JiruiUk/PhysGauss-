@@ -1,0 +1,58 @@
+{
+  "checkpoint_sha256": "8aeabb644f4a49f3b043d2715a1e90709825c675e0efc96627c1bd3ba1bdb6e7",
+  "iteration": 40,
+  "config": {
+    "enabled": true,
+    "parent_run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_mlp_capacity\\long_W512_D0\\rubber_duck",
+    "pixel_loss": "charbonnier",
+    "structure": "ssim",
+    "perceptual_weight": 0.02,
+    "perceptual_interval": 4
+  },
+  "best": {
+    "PSNR": {
+      "value": 28.5765291595459,
+      "iteration": 0,
+      "snapshot": "best",
+      "metrics": {
+        "PSNR": 28.5765291595459,
+        "SSIM": 0.9770486044883728,
+        "LPIPS": 0.034613219015300276,
+        "MS-SSIM": 0.9704661095142364
+      }
+    },
+    "SSIM": {
+      "value": 0.9770486044883728,
+      "iteration": 0,
+      "snapshot": "metric_ssim",
+      "metrics": {
+        "PSNR": 28.5765291595459,
+        "SSIM": 0.9770486044883728,
+        "LPIPS": 0.034613219015300276,
+        "MS-SSIM": 0.9704661095142364
+      }
+    },
+    "LPIPS": {
+      "value": 0.034613219015300276,
+      "iteration": 0,
+      "snapshot": "metric_lpips",
+      "metrics": {
+        "PSNR": 28.5765291595459,
+        "SSIM": 0.9770486044883728,
+        "LPIPS": 0.034613219015300276,
+        "MS-SSIM": 0.9704661095142364
+      }
+    },
+    "MS-SSIM": {
+      "value": 0.9704661095142364,
+      "iteration": 0,
+      "snapshot": "metric_ms_ssim",
+      "metrics": {
+        "PSNR": 28.5765291595459,
+        "SSIM": 0.9770486044883728,
+        "LPIPS": 0.034613219015300276,
+        "MS-SSIM": 0.9704661095142364
+      }
+    }
+  }
+}

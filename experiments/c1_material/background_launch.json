@@ -1,0 +1,24 @@
+{
+    "command":  [
+                    "powershell.exe",
+                    "-NoProfile",
+                    "-ExecutionPolicy",
+                    "Bypass",
+                    "-File",
+                    "F:\\A_Edinburgh\\PhysGauss\\variants\\c1_material\\launch.ps1",
+                    "-Hours",
+                    "24"
+                ],
+    "stdout":  "F:\\A_Edinburgh\\PhysGauss\\experiments\\c1_material\\queue_20261029_155621.stdout.log",
+    "shared_prefix_iteration":  3000,
+    "started_utc":  "2026-10-29T15:56:22.2407021Z",
+    "stderr":  "F:\\A_Edinburgh\\PhysGauss\\experiments\\c1_material\\queue_20261029_155621.stderr.log",
+    "commit":  "3221d3a",
+    "target_total_iterations_each":  50000,
+    "pid":  75480,
+    "arms":  [
+                 "P0_C1_control",
+                 "P1_fixed_E",
+                 "P2_learn_E"
+             ]
+}

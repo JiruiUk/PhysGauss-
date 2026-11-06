@@ -1,0 +1,41 @@
+{
+  "model": "H1_balanced_coverage",
+  "iteration": 20000,
+  "split": "validation",
+  "image_metrics": {
+    "PSNR": 35.4663028717041,
+    "SSIM": 0.9899004618326823,
+    "LPIPS": 0.01746739142884811,
+    "MS-SSIM": 0.9930943230787913
+  },
+  "matched_C1_image_metrics": {
+    "PSNR": 35.518076006571455,
+    "SSIM": 0.9901687800884247,
+    "LPIPS": 0.016970706141243377,
+    "MS-SSIM": 0.993170416355133
+  },
+  "image_metric_delta": {
+    "PSNR": -0.051773134867353576,
+    "SSIM": -0.00026831825574236134,
+    "LPIPS": 0.0004966852876047319,
+    "MS-SSIM": -7.609327634172658e-05
+  },
+  "image_quality_guard": true,
+  "integrity": {
+    "core_low_50": 0.0002557279075220427,
+    "core_low_90": 0.0014234624323888126,
+    "foreground_missing_50": 0.005637494069606668,
+    "background_false_coverage": 0.015053751150940892,
+    "fragment_loss": 0.013907695086367128,
+    "extra_fragments": 0.0,
+    "opaque_appearance_error": 0.010947976525288765,
+    "foreground_RGB_L1": 0.015004025089244049,
+    "mask_iou": 0.8773710991303755,
+    "integrity_score": 0.007431643396873023,
+    "worst_score": 0.030435757109525334,
+    "p95_score": 0.012136407815514259
+  },
+  "screen_spill_guard": false,
+  "decision": "Preserve this checkpoint; compare all matched20k screens before generating the feedback recipe.",
+  "limitation": "C1 completeness reference is from50k, so no matched20k completeness improvement claim is made."
+}

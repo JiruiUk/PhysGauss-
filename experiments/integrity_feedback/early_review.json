@@ -1,0 +1,77 @@
+{
+  "scope": "provisional live validation review, not approved for training until matched20k screens",
+  "measurement": {
+    "model": "H1_balanced_coverage",
+    "iteration": 13000,
+    "metrics": {
+      "PSNR": 32.84925130208333,
+      "SSIM": 0.9858335753281912,
+      "LPIPS": 0.025478151999413966,
+      "MS-SSIM": 0.9888304630915324
+    },
+    "integrity": {
+      "core_low_50": 0.002651395373561691,
+      "core_low_90": 0.00493365981529944,
+      "foreground_missing_50": 0.010078617857600084,
+      "background_false_coverage": 0.018225538093718314,
+      "fragment_loss": 0.03867799297898191,
+      "extra_fragments": 0.0,
+      "opaque_appearance_error": 0.01759497854145878,
+      "foreground_RGB_L1": 0.02128168006117145,
+      "mask_iou": 0.8527708574552838,
+      "integrity_score": 0.01605745164059886,
+      "worst_score": 0.1058409243184654,
+      "p95_score": 0.06492567849280663
+    }
+  },
+  "C1_same_iteration": {
+    "PSNR": 32.50706202189128,
+    "SSIM": 0.9847631573677063,
+    "LPIPS": 0.026421353283027808,
+    "MS-SSIM": 0.9877944548924764
+  },
+  "tentative_adjustment": {
+    "action": "train",
+    "source_model": "H1_balanced_coverage",
+    "knobs": {
+      "integrity_coverage_weight": 0.00025,
+      "integrity_strain_weight": 0.0,
+      "coverage_density": false,
+      "coverage_add_limit": 128,
+      "integrity_tail_weight": 0.01,
+      "integrity_tail_start": 8000,
+      "integrity_tail_interval": 4,
+      "integrity_tail_fraction": 0.2
+    },
+    "reasons": [
+      "Start from the best eligible20k validation configuration: H1_balanced_coverage.",
+      "All screens failed image/spill safeguards: quarter the new regularizers and disable cloning.",
+      "Opaque appearance errors dominate alpha holes: add0.01 worst20%-foreground RGB emphasis.",
+      "Validation spill is elevated: halve interior-coverage pressure."
+    ],
+    "evidence_split": "validation",
+    "source_metrics": {
+      "PSNR": 32.84925130208333,
+      "SSIM": 0.9858335753281912,
+      "LPIPS": 0.025478151999413966,
+      "MS-SSIM": 0.9888304630915324
+    },
+    "source_geometry": {
+      "core_low_50": 0.002651395373561691,
+      "core_low_90": 0.00493365981529944,
+      "foreground_missing_50": 0.010078617857600084,
+      "background_false_coverage": 0.018225538093718314,
+      "fragment_loss": 0.03867799297898191,
+      "extra_fragments": 0.0,
+      "opaque_appearance_error": 0.01759497854145878,
+      "foreground_RGB_L1": 0.02128168006117145,
+      "mask_iou": 0.8527708574552838,
+      "integrity_score": 0.01605745164059886,
+      "worst_score": 0.1058409243184654,
+      "p95_score": 0.06492567849280663
+    },
+    "safe_screens": [],
+    "maximum_new_long_runs": 1
+  },
+  "test_data_used": false
+}

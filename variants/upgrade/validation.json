@@ -1,0 +1,160 @@
+{
+  "unit_tests_passed": 69,
+  "gpu_stage_smoke_receipt": "validation_before_time_cleanup.json",
+  "all_algorithm_stages_gpu_validated": true,
+  "final_common_source_revalidation": "automatic before each phase long training",
+  "gpu_preflight": {
+    "cuda_torch_forward_max_error": 1.4551915228366852e-11,
+    "cuda_torch_first_derivative_max_error": 5.820766091346741e-11,
+    "full_hash_second_coordinate_and_parameter_derivatives": true,
+    "full_quaternion_trajectory_acceleration_backward": true,
+    "arbitrary_time": 0.2357
+  },
+  "restart_test": {
+    "passed": true,
+    "reference_loss": 7.081441435730085e-05,
+    "resumed_loss": 7.081441435730085e-05,
+    "largest_state_difference": 0.0,
+    "checked": [
+      "Gaussians",
+      "velocity",
+      "material/MoE/residual/uncertainty",
+      "spline",
+      "hash embeddings",
+      "both Adam optimizers",
+      "RNG sampling",
+      "camera stack"
+    ]
+  },
+  "phases": [
+    {
+      "phase": 1,
+      "directory": "F:\\A_Edinburgh\\PhysGauss\\variants\\phase01_continuous_time",
+      "code_dir": "code_r1",
+      "revision": 1,
+      "config_sha256": "6f9197016d346214eac36d535f1e5d6166a35cb0d57b9ea5b38e9176c7051dbf",
+      "manifest_sha256": "6b9cbe0ece00a187e7f0f912a6f193f7ea10ea63b6bd109c53aa2f14e30141bb"
+    },
+    {
+      "phase": 2,
+      "directory": "F:\\A_Edinburgh\\PhysGauss\\variants\\phase02_kinematic_closure",
+      "code_dir": "code_r1",
+      "revision": 1,
+      "config_sha256": "58e719fede5d4d34392c72c4ce718d41ad6069e7dc80c5060890db97e933685f",
+      "manifest_sha256": "a53c296ea670773a5801c5b4d1a1d8426869c96cd3f88f459c5684ba6bcae5ae"
+    },
+    {
+      "phase": 3,
+      "directory": "F:\\A_Edinburgh\\PhysGauss\\variants\\phase03_acceleration",
+      "code_dir": "code_r1",
+      "revision": 1,
+      "config_sha256": "ff43d8d1a183f3cc1a2e7835cba4cc923ecc0f7f98c420259e235dff407d37c7",
+      "manifest_sha256": "ebcae4d27a45fde0cf31b6d3236948edfac7aa6ca98fa88badf7b8197edc52d6"
+    },
+    {
+      "phase": 4,
+      "directory": "F:\\A_Edinburgh\\PhysGauss\\variants\\phase04_deformation_gradient",
+      "code_dir": "code_r2",
+      "revision": 2,
+      "config_sha256": "e2e2ff10b0a4893094ede1472d7602633239e1b5bed30f5e1c36721708edd0a8",
+      "manifest_sha256": "f60b656c2ee0501f89574431bf2002a5aba7888cb66d3768411827a551694328"
+    },
+    {
+      "phase": 5,
+      "directory": "F:\\A_Edinburgh\\PhysGauss\\variants\\phase05_conservation",
+      "code_dir": "code_r2",
+      "revision": 2,
+      "config_sha256": "e312227ff70d1a897970789f8ff83728438db22c51eff6106f77b20a3da4ca44",
+      "manifest_sha256": "9832420c5718beb74ebcc315b79af2595c4bdf4307f85b80b5ef3fb3667652d5"
+    },
+    {
+      "phase": 6,
+      "directory": "F:\\A_Edinburgh\\PhysGauss\\variants\\phase06_constitutive",
+      "code_dir": "code_r2",
+      "revision": 2,
+      "config_sha256": "da5d361f99ca19a3ed7d58ec794362984aeafc5a3385cc1b6c6ab9b5e04fd560",
+      "manifest_sha256": "cdfaa53d54bc253ea38fc5beeaed40dce433cb8336a6eca717faff48790e76b1"
+    },
+    {
+      "phase": 7,
+      "directory": "F:\\A_Edinburgh\\PhysGauss\\variants\\phase07_material_field",
+      "code_dir": "code_r2",
+      "revision": 2,
+      "config_sha256": "f4dbd18b5d42359d88ddc501e923b346ae2416d3769e19c33ed3c3abb95a6e99",
+      "manifest_sha256": "60962f953a84ab6a79fa94b73b64a88b43d64cce02e27df5fd7dca6e705c9131"
+    },
+    {
+      "phase": 8,
+      "directory": "F:\\A_Edinburgh\\PhysGauss\\variants\\phase08_closed_momentum",
+      "code_dir": "code_r2",
+      "revision": 2,
+      "config_sha256": "8ad8ea65d7504d5d85d13f7e04e38bb885b17b8f4f8bdbb6d785f9c2ca274688",
+      "manifest_sha256": "2d5b316f7f40cf464089293f1f110658f1076c70d39ce59d967ffbfaafdb4746"
+    },
+    {
+      "phase": 9,
+      "directory": "F:\\A_Edinburgh\\PhysGauss\\variants\\phase09_weak_form",
+      "code_dir": "code_r2",
+      "revision": 2,
+      "config_sha256": "38c32594e584b7f4f7a4f6b72c5064caf08b46c324b8180a15b03cf38d4a7787",
+      "manifest_sha256": "ba7558a6538988fc275dab8156131ba6b83b4518c959d9074a90fb289870aa1c"
+    },
+    {
+      "phase": 10,
+      "directory": "F:\\A_Edinburgh\\PhysGauss\\variants\\phase10_material_moe",
+      "code_dir": "code_r3",
+      "revision": 3,
+      "config_sha256": "f0bca25ea4f68e32d0763b5d55970e3c28e1e656e2e476a199371f66b5ffd9d8",
+      "manifest_sha256": "db3581aa11e6404f51016886bc2532f457ef9a13cc2e84b7ac2b2162f9c3c2fb"
+    },
+    {
+      "phase": 11,
+      "directory": "F:\\A_Edinburgh\\PhysGauss\\variants\\phase11_neural_residual",
+      "code_dir": "code_r3",
+      "revision": 3,
+      "config_sha256": "a420cab9914c48f4024711e405f7b20e8c8269e887e4cc526e8611f4c9ff8813",
+      "manifest_sha256": "950324f25943e9c79bbc98b0e0ae4278e7ea0f61870b3dded62af2cee9054abc"
+    },
+    {
+      "phase": 12,
+      "directory": "F:\\A_Edinburgh\\PhysGauss\\variants\\phase12_contact",
+      "code_dir": "code_r3",
+      "revision": 3,
+      "config_sha256": "cc1b07c7c17bc8cc3c44e12bff630fb5fdf69715a3ca7886379547ef4ff4fa51",
+      "manifest_sha256": "3d78f90726f4a3f99d1933b9e15aec752bb77fb551661c163074c0291c33d4d7"
+    },
+    {
+      "phase": 13,
+      "directory": "F:\\A_Edinburgh\\PhysGauss\\variants\\phase13_uncertainty_flow",
+      "code_dir": "code_r3",
+      "revision": 3,
+      "config_sha256": "3f273a870ab46845242a2d2628a2b2787978cb4112e4a4175be7a2b24a57c5f7",
+      "manifest_sha256": "71aa3c8b1d5b8259dc064e4d1359a0cae0826c618ce475132c6a0295068d0f3e"
+    },
+    {
+      "phase": 14,
+      "directory": "F:\\A_Edinburgh\\PhysGauss\\variants\\phase14_continuous_se3",
+      "code_dir": "code_r4",
+      "revision": 4,
+      "config_sha256": "83ce5843f0c413a70f6a453a52a5d67c026da39b9521dc588205e20d980c0c40",
+      "manifest_sha256": "2fa0f23c46f76edc008cd898218e7472a348ee505de60f8fe526d4c426802a7d"
+    },
+    {
+      "phase": 15,
+      "directory": "F:\\A_Edinburgh\\PhysGauss\\variants\\phase15_symplectic_rollout",
+      "code_dir": "code_r4",
+      "revision": 4,
+      "config_sha256": "864dccd3a1a594b70f9258d841ca94d30e65373fabfa6daf2cb0d434cf574994",
+      "manifest_sha256": "32290951cfd1a68c119e026938a4ee184c24f4e33af61b5ab487afd763837167"
+    }
+  ],
+  "all_long_runs_completed": false,
+  "flow_velocity_gradient_preflight": {
+    "cuda_torch_forward_max_error": 1.4551915228366852e-11,
+    "cuda_torch_first_derivative_max_error": 5.820766091346741e-11,
+    "full_hash_second_coordinate_and_parameter_derivatives": true,
+    "full_quaternion_trajectory_acceleration_backward": true,
+    "cuda_flow_velocity_parameter_gradient_max_error": 7.450580596923828e-09,
+    "arbitrary_time": 0.2357
+  }
+}

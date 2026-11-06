@@ -1,0 +1,179 @@
+{
+  "updated_utc": "2026-10-26T14:25:31.322270+00:00",
+  "controller": {
+    "pid": 110620,
+    "status": "saved_stopped",
+    "started_utc": "2026-10-26T14:11:13.766176+00:00",
+    "deadline_utc": "2026-10-27T14:11:13.766176+00:00",
+    "completed": [],
+    "finished_utc": "2026-10-26T14:25:31.306850+00:00"
+  },
+  "active": {
+    "id": "V3_continue_control",
+    "phase": "long",
+    "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_v3_isotropic\\V3_continue_control\\rubber_duck",
+    "pid": 64944,
+    "controller_pid": 110620,
+    "started_utc": "2026-10-26T14:13:17.993968+00:00"
+  },
+  "protocol": "V3 parent; additional50k; 120 train/30 validation/50 test; shared frame clock; iso=0 vs .001",
+  "parent_test_reference": {
+    "SSIM": 0.9946093559265137,
+    "PSNR": 40.09170913696289,
+    "LPIPS": 0.01039230078458786,
+    "MS-SSIM": 0.9962949156761169
+  },
+  "rows": [
+    {
+      "id": "V3_continue_control",
+      "iteration": 10489,
+      "history": [
+        {
+          "iteration": 0,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 39.65109151204427,
+            "SSIM": 0.9942408879597981,
+            "LPIPS": 0.0110100609366782,
+            "MS-SSIM": 0.9958980778853098
+          }
+        },
+        {
+          "iteration": 1000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 37.564193662007646,
+            "SSIM": 0.9925495425860087,
+            "LPIPS": 0.013018387043848634,
+            "MS-SSIM": 0.994975996017456
+          }
+        },
+        {
+          "iteration": 2000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 38.000335756937666,
+            "SSIM": 0.9926699042320252,
+            "LPIPS": 0.012695895981354018,
+            "MS-SSIM": 0.9950691759586334
+          }
+        },
+        {
+          "iteration": 3000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 38.46834939320882,
+            "SSIM": 0.9933200240135193,
+            "LPIPS": 0.012335701597233613,
+            "MS-SSIM": 0.9954249203205109
+          }
+        },
+        {
+          "iteration": 4000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 38.360342725118,
+            "SSIM": 0.9931746741135915,
+            "LPIPS": 0.01228112899698317,
+            "MS-SSIM": 0.995270949602127
+          }
+        },
+        {
+          "iteration": 5000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 38.58703931172689,
+            "SSIM": 0.9932709534962972,
+            "LPIPS": 0.012036201753653586,
+            "MS-SSIM": 0.9954358259836833
+          }
+        },
+        {
+          "iteration": 6000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 38.81721280415853,
+            "SSIM": 0.9936674296855926,
+            "LPIPS": 0.011798755483080943,
+            "MS-SSIM": 0.9956159174442292
+          }
+        },
+        {
+          "iteration": 7000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 38.843330510457356,
+            "SSIM": 0.9937035540739695,
+            "LPIPS": 0.011661467452843985,
+            "MS-SSIM": 0.9956762234369914
+          }
+        },
+        {
+          "iteration": 8000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 39.14538040161133,
+            "SSIM": 0.9938094397385915,
+            "LPIPS": 0.011594499399264654,
+            "MS-SSIM": 0.9956819554169972
+          }
+        },
+        {
+          "iteration": 9000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 39.36683692932129,
+            "SSIM": 0.9938880582650502,
+            "LPIPS": 0.011453039455227553,
+            "MS-SSIM": 0.9957997421423594
+          }
+        },
+        {
+          "iteration": 10000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 39.12321294148763,
+            "SSIM": 0.9937773366769155,
+            "LPIPS": 0.011459097762902578,
+            "MS-SSIM": 0.9957286953926087
+          }
+        }
+      ],
+      "test": null
+    },
+    {
+      "id": "V3_iso_1e3",
+      "iteration": 1000,
+      "history": [
+        {
+          "iteration": 0,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 39.65109151204427,
+            "SSIM": 0.9942408879597981,
+            "LPIPS": 0.0110100609366782,
+            "MS-SSIM": 0.9958980778853098
+          }
+        },
+        {
+          "iteration": 1000,
+          "split": "validation",
+          "metrics": {
+            "PSNR": 37.564193662007646,
+            "SSIM": 0.9925495425860087,
+            "LPIPS": 0.013018387043848634,
+            "MS-SSIM": 0.994975996017456
+          }
+        }
+      ],
+      "test": null
+    }
+  ],
+  "paired_final50k": null,
+  "limitations": [
+    "historical official-test exposure",
+    "single scene and seed",
+    "50k extra training for both arms; compare iso versus continued control to isolate regularizer",
+    "uniform frame cadence assumed; no ground-truth physical validation"
+  ]
+}

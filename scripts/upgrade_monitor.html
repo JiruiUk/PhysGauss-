@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PIDG · Training Monitor</title>
+<style>
+:root{color-scheme:dark;font-family:Inter,"Segoe UI","Microsoft YaHei",sans-serif;background:#0b111b;color:#e2eaf5}*{box-sizing:border-box}body{max-width:1440px;margin:auto;padding:32px}header{display:flex;justify-content:space-between;align-items:center;gap:16px}h1{font-size:25px;margin:8px 0}h2{font-size:16px;margin:0 0 18px}p,.muted{color:#8ea1b9;font-size:13px;line-height:1.7}.badge{padding:7px 12px;background:#15372f;color:#78e4ba;border-radius:20px;font-size:13px}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:24px 0}.card,.panel{border:1px solid #243044;background:#111c2b;border-radius:12px;padding:20px}.value{font-size:29px;font-variant-numeric:tabular-nums;margin:9px 0}.label{color:#8ea1b9;font-size:12px}.grid{display:grid;grid-template-columns:1.3fr 1fr;gap:16px;margin:16px 0}.bar{height:8px;background:#263449;border-radius:8px;margin:17px 0;overflow:hidden}.bar div{height:100%;background:#57d9b1;transition:width .6s}.stats{display:flex;gap:32px;flex-wrap:wrap}.stats strong{display:block;margin:7px 0;font-size:19px}.warn{background:#4a321a;color:#f5c680;border-radius:8px;padding:12px;margin:12px 0;white-space:pre-line}.hidden{display:none}svg{width:100%;height:155px;overflow:visible}.chartnote{font-size:12px;color:#8ea1b9;margin-bottom:10px}.tablewrap{overflow:auto}table{width:100%;border-collapse:collapse;font-size:12px;white-space:nowrap}th{text-align:left;color:#8ea1b9;font-weight:500;padding:12px 10px;border-bottom:1px solid #324159}td{padding:11px 10px;border-bottom:1px solid #223044}td small{display:block;color:#8ea1b9;margin-top:4px}.training,.rendering,.evaluating{color:#6de1bc}.completed{color:#80baff}.failed,.invalid_results,.unreadable{color:#ff9898}.queued{color:#687d98}pre{font:12px/1.65 Consolas,monospace;color:#a4b8cf;white-space:pre-wrap;word-break:break-word;max-height:260px;overflow:auto;margin:0}footer{margin:22px 0;color:#70859f;font-size:12px}button{background:#22364f;color:#d8e8fb;border:1px solid #3b536e;border-radius:7px;padding:7px 12px;cursor:pointer}@media(max-width:850px){body{padding:18px}.cards{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:1fr}header{align-items:flex-start}}
+</style>
+<header><div><div class="label">PHYSGAUSS / LIVE EXPERIMENTS</div><h1>PIDG 训练监控</h1><p id="scopeSubtitle">正在读取训练范围</p></div><div><span id="connection" class="badge">正在连接</span> <button id="refresh">刷新</button><p id="updated">每 5 秒自动刷新</p></div></header>
+<div id="warnings" class="warn hidden"></div>
+<div class="cards"><div class="card"><div class="label">长训练已完成</div><div id="completed" class="value">—</div><div id="counts" class="muted">等待数据</div></div><div class="card"><div class="label">当前步数</div><div id="iteration" class="value">—</div><div id="percent" class="muted">—</div></div><div class="card"><div class="label">GPU 利用率 / 显存</div><div id="gpu" class="value">—</div><div id="memory" class="muted">—</div></div><div class="card"><div class="label">最近保存的完整断点</div><div id="checkpoint" class="value">—</div><div id="checkpointNote" class="muted">—</div></div></div>
+<div class="panel"><h2 id="current">等待当前任务</h2><div class="bar"><div id="progress" style="width:0%"></div></div><div class="stats"><div><span class="label">阶段 / 进程</span><strong id="step">—</strong></div><div><span class="label">最新训练 Loss</span><strong id="loss">—</strong></div><div><span class="label">中途测试 PSNR</span><strong id="psnr">—</strong></div><div><span class="label">日志更新时间</span><strong id="logAge">—</strong></div><div><span class="label">磁盘剩余</span><strong id="disk">—</strong></div></div><p id="runpath"></p></div>
+<div class="grid"><div class="panel"><h2>Loss · 最近监测记录</h2><div id="lossnote" class="chartnote"></div><svg id="losschart" viewBox="0 0 600 155" aria-label="训练损失曲线"></svg></div><div class="panel"><h2>测试 PSNR · 当前日志窗口</h2><div id="psnrnote" class="chartnote"></div><svg id="psnrchart" viewBox="0 0 600 155" aria-label="中途测试 PSNR 曲线"></svg></div></div>
+<div class="panel"><h2 id="queueTitle">长训练队列</h2><div class="tablewrap"><table><thead><tr id="sceneHeaders"><th>Phase</th></tr></thead><tbody id="queue"></tbody></table></div><p>仅选定场景完成训练 → 渲染 → 官方评估且指标校验通过的运行计入完成。中途 PSNR 不代表最终 50k benchmark。</p></div>
+<div class="panel" style="margin-top:16px"><h2>当前步骤日志</h2><pre id="log">等待日志</pre></div>
+<footer>监控只读取现有训练输出；后台每 5 秒采样。快照：variants/upgrade/monitor/status.json。断点显示保存记录与完整性标志，未在每次刷新时重新计算 SHA256。</footer>
+<script>
+const $=id=>document.getElementById(id), fmt=(n,d=0)=>Number.isFinite(n)?n.toLocaleString('en-GB',{maximumFractionDigits:d}):'—';
+const names={queued:'排队',training:'训练中',rendering:'渲染中',evaluating:'评估中',completed:'已完成',failed:'失败',saved_stopped:'已保存停止',unreadable:'记录读取失败',invalid_results:'指标校验失败'};
+let busy=false,last=null;
+function chart(id,note,points,color){
+ const svg=$(id);svg.replaceChildren();const ps=points.filter(p=>Number.isFinite(p.x)&&Number.isFinite(p.y));
+ if(!ps.length){$(note).textContent='等待数据';return}
+ const xs=ps.map(p=>p.x),ys=ps.map(p=>p.y),xmin=Math.min(...xs),xmax=Math.max(...xs),ymin=Math.min(...ys),ymax=Math.max(...ys),span=ymax-ymin||Math.max(Math.abs(ymax)*.05,.001);
+ $(note).textContent=`steps ${fmt(xmin)} → ${fmt(xmax)} · 范围 ${fmt(ymin,5)} – ${fmt(ymax,5)}`;
+ const coords=ps.map(p=>`${10+580*(p.x-xmin)/(xmax-xmin||1)},${140-125*(p.y-ymin)/span}`).join(' ');
+ const line=document.createElementNS('http://www.w3.org/2000/svg','polyline');line.setAttribute('points',coords);line.setAttribute('fill','none');line.setAttribute('stroke',color);line.setAttribute('stroke-width','2');svg.append(line);
+ if(ps.length===1){const dot=document.createElementNS('http://www.w3.org/2000/svg','circle');dot.setAttribute('cx','10');dot.setAttribute('cy','140');dot.setAttribute('r','4');dot.setAttribute('fill',color);svg.append(dot)}
+}
+function render(d){
+ last=d;const a=d.active,c=d.counts||{},running=(c.training||0)+(c.rendering||0)+(c.evaluating||0),gpu=(d.gpu||[])[0];
+ const scenes=d.scenes||[...new Set(d.rows.map(r=>r.scene))];
+ $('scopeSubtitle').textContent=`15 phases · ${scenes.length} scene(s) · 50,000 steps · width 1600 · seed 0`;
+ $('queueTitle').textContent=`长训练队列 · ${d.rows.length} runs`;
+ $('sceneHeaders').replaceChildren();for(const text of ['Phase',...scenes.map(s=>s.replaceAll('_',' '))]){const th=document.createElement('th');th.textContent=text;$('sceneHeaders').append(th)}
+ $('completed').textContent=`${c.completed||0} / ${d.rows.length}`;$('counts').textContent=`运行 ${running} · 排队 ${c.queued||0} · 异常 ${(c.failed||0)+(c.invalid_results||0)+(c.unreadable||0)}`;
+ $('updated').textContent=`${new Date(d.updated_at).toLocaleString('zh-CN',{timeZone:'Europe/London',hour12:false})} 英国时间 · 每 ${d.refresh_seconds} 秒`;
+ $('gpu').textContent=gpu?`${gpu.utilization}%`:'不可用';$('memory').textContent=gpu?`${gpu.memory_used} / ${gpu.memory_total} MiB · ${gpu.temperature}°C`:'未获取 GPU 数据';$('disk').textContent=`${d.free_disk_gib} GiB`;
+ $('connection').textContent=d.controller_alive?'队列进程在线':'队列进程离线';
+ const warnings=[...(d.warnings||[])];if(!d.controller_alive)warnings.push(`队列状态：${d.controller.status||'未知'}`);
+ $('warnings').textContent=warnings.join('\n');$('warnings').classList.toggle('hidden',!warnings.length);
+ $('current').textContent=a?`${a.phase} / ${a.scene}`:'当前无任务';$('iteration').textContent=a?fmt(a.iteration):'—';
+ const pc=a&&a.total?Math.min(100,a.iteration/a.total*100):0;$('percent').textContent=a?`/ ${fmt(a.total)} · ${pc.toFixed(2)}%`:'—';$('progress').style.width=`${pc}%`;
+ $('step').textContent=a?`${a.step} · ${a.child_alive?'进程在线':'进程离线'}`:'—';$('loss').textContent=a?fmt(a.loss,7):'—';
+ const tests=a?.test_psnr||[],t=tests.at(-1);$('psnr').textContent=t?`${fmt(t.value,3)} dB @ ${fmt(t.iteration)}`:'—';
+ $('logAge').textContent=a&&a.log_age_seconds!==null?`${fmt(a.log_age_seconds)} 秒前`:'—';$('runpath').textContent=a?.run||'';
+ $('checkpoint').textContent=fmt(a?.checkpoint?.iteration);$('checkpointNote').textContent=a?.checkpoint?.iteration?`优化器 ${a.checkpoint.optimizer_saved?'已保存':'未知'} · RNG ${a.checkpoint.rng_saved?'已保存':'未知'}`:'尚无断点记录';
+ $('log').textContent=a?.log_tail||'无日志';
+ chart('losschart','lossnote',(a?.history||[]).filter(p=>p.loss!==null).map(p=>({x:p.iteration,y:p.loss})),'#57d9b1');chart('psnrchart','psnrnote',tests.map(p=>({x:p.iteration,y:p.value})),'#80baff');
+ const tbody=$('queue');tbody.replaceChildren();for(let phase=1;phase<=15;phase++){
+  const rows=d.rows.filter(r=>r.phase===phase),tr=document.createElement('tr'),label=document.createElement('td');label.textContent=`${String(phase).padStart(2,'0')} · ${rows[0]?.name||''}`;tr.append(label);
+  for(const row of rows){const cell=document.createElement('td');cell.className=row.status;cell.textContent=names[row.status]||row.status;const small=document.createElement('small');small.textContent=row.metrics?`PSNR ${fmt(row.metrics.PSNR,3)} · LPIPS ${fmt(row.metrics.LPIPS,4)}`:row.checkpoint?`保存至 ${fmt(row.checkpoint)} 步`:'';cell.append(small);tr.append(cell)}tbody.append(tr);
+ }
+}
+async function refresh(){if(busy)return;busy=true;try{const r=await fetch('/api/status',{cache:'no-store',signal:AbortSignal.timeout(4500)});if(!r.ok)throw Error(r.status);const d=await r.json();if(!d.updated_at)throw Error('等待首次采样');render(d)}catch(e){$('connection').textContent='监控连接中断';$('warnings').textContent=`无法获取最新状态：${e.message}`;$('warnings').classList.remove('hidden')}finally{busy=false}}
+$('refresh').onclick=refresh;refresh();setInterval(refresh,5000);setInterval(()=>{if(last&&Date.now()/1000-last.unix>15){$('connection').textContent='监控数据已过期';$('warnings').textContent='超过 15 秒未收到新采样，请检查监控服务。';$('warnings').classList.remove('hidden')}},1000);
+</script>
+</html>

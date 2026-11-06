@@ -1,0 +1,27 @@
+Process 279476: F:\A_Edinburgh\PhysGauss\envs\pidg-cu128\python.exe -u F:\A_Edinburgh\PhysGauss\reproduction\scripts\entrypoint.py train_pidg.py -s F:\A_Edinburgh\PhysGauss\data\PIDG\motion_kuro -m F:\A_Edinburgh\PhysGauss\runs\pidg_official\motion_kuro --conf F:\A_Edinburgh\PhysGauss\third_party\PIDG\arguments\pidg\motion_kuro.py --load2gpu_on_the_fly --resolution 1600 --iterations 50000 --save_image_dir F:\A_Edinburgh\PhysGauss\runs\pidg_official\motion_kuro\diagnostics --resume_checkpoint F:\A_Edinburgh\PhysGauss\runs\pidg_official\motion_kuro\checkpoints\resume.pt
+Python v3.11.14 (F:\A_Edinburgh\PhysGauss\envs\pidg-cu128\python.exe)
+
+Thread 276284 (idle): "MainThread"
+    _engine_run_backward (torch\autograd\graph.py:829)
+    backward (torch\autograd\__init__.py:354)
+    backward (torch\_tensor.py:647)
+    training (train_pidg.py:204)
+    <module> (train_pidg.py:398)
+    _run_code (<frozen runpy>:88)
+    _run_module_code (<frozen runpy>:98)
+    run_path (<frozen runpy>:291)
+    <module> (entrypoint.py:31)
+Thread 264540 (idle): "Thread-1"
+    wait (threading.py:331)
+    get (queue.py:180)
+    _run (tensorboard\summary\writer\event_file_writer.py:269)
+    run (tensorboard\summary\writer\event_file_writer.py:244)
+    _bootstrap_inner (threading.py:1045)
+    _bootstrap (threading.py:1002)
+Thread 279256 (idle): "Thread-2"
+    wait (threading.py:331)
+    wait (threading.py:629)
+    run (tqdm\_monitor.py:60)
+    _bootstrap_inner (threading.py:1045)
+    _bootstrap (threading.py:1002)
+Thread 285028 (idle)

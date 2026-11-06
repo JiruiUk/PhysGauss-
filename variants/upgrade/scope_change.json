@@ -1,0 +1,24 @@
+{
+  "scenes": [
+    "mechanics_cloth"
+  ],
+  "previous_scene_count": 5,
+  "total_runs": 15,
+  "reason": "User requested one benchmark; retain Phase 1-15 and 50k protocol",
+  "verified_resume_checkpoint": {
+    "path": "F:\\A_Edinburgh\\PhysGauss\\variants\\phase01_continuous_time\\runs\\long\\mechanics_cloth\\checkpoints\\resume.pt",
+    "iteration": 12500,
+    "sha256": "80d5056c4554f4072a744e49b36c3d292c1347b8986d3bdacd2db9d6d185039f",
+    "size_bytes": 211360905,
+    "format_version": 2,
+    "optimizer_saved": true,
+    "rng_saved": true,
+    "created_unix": 1792076686.4904108
+  },
+  "previous_controller_pid": 280104,
+  "resume_confirmation": "FULL_CHECKPOINT_RESTORED completed=12500 next=12501 [15/10 16:07:23]",
+  "observed_iteration": 12790,
+  "unit_tests_passed": 75,
+  "monitor_total_runs": 15,
+  "status": "resumed_and_advancing"
+}

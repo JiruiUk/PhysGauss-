@@ -1,0 +1,577 @@
+0	01 / Overview
+1	PIDG: Two Weeks of Experiments
+2	From image fitting toward persistent object representations\nLast week: 2026.10.26 - 11.01 | This week: 2026.11.02 - 11.03\nHistorical snapshot: 2026-11-03 11:07 UTC; formal S6 supplement: 2026-11-03 11:38 UTC.
+3	Main finding: observed images can fit well while fixed-camera views still fragment. Better local flow or geometry losses have not established identity recovery across occlusion.
+4	Last week: stronger image candidates, physics issues exposed
+5	Color-repaired C1 became a common control. H3 combined coverage and local strain, raising historical-protocol test PSNR from 40.3721 to 40.8782 dB. Shared stiffness, soft object groups and later regularizers brought no consistent overall gain. Frozen-trajectory velocity fitting exposed possible internal-clock aliasing. [02-11]
+6	This week: turn visual impressions into checkable evidence
+7	Flow, velocity, shared-stress and momentum comparisons were completed, alongside local image-object / surface-bank / Gaussian-row associations. Fixed-camera scans showed that original-trajectory RGB scores do not establish novel-view completeness. Conditional S1-S6 training and evaluation are complete: S6 improves observed images and trajectory fits, but fixed novel views still fragment. [12-38]
+8	Representative result
+9	Measured change
+10	Assessment
+11	PSNR +0.5061 dB\nLegacy LPIPS down 9.55%
+12	Retain as last week's image candidate
+13	Scratch geometry constraints / matched control
+14	Short-track EPE down 84.5%\nTest PSNR -0.0271 dB
+15	Constraints act; fixed views remain broken
+16	Hard static pool / matched control
+17	Static blue contribution: 51.60% to 12.12%
+18	Static subset becomes transparent; rejected
+19	Reconstruction Stages S1-S6
+20	S6 dynamic validation: 28.327 dB\nTrack error down 20.44% vs S3
+21	Formal 4k evaluated; geometry / identity unresolved
+22	S6 / historical H3, common test evaluation
+23	Full-frame PSNR -10.501 dB\nDynamic PSNR +0.268 dB
+24	Wins: full frame 0/50; dynamic 27/50
+25	Reading guide: protocol p2; last week p3-5; motion and association p6-8; fixed views and two training versions p9-12; static and staged models p13-14; conclusions p15; historical images p16-30; formal S6 results p31-34; common-test per-frame comparison p35-47; sources p48-49.
+26	Per-frame update: historical and S6 images are retained. H3 and S0-Stage S6 are compared on 50 test images using PSNR, SSIM, standard LPIPS and common dynamic / static regions. S1 is static-only. Full-precision values are supplied in the companion CSV.
+27	02 / Protocol and timeline
+28	Which Results Can Be Compared?
+29	Based on repository records. Weeks follow completion or acceptance dates; experiments spanning both weeks are identified.
+30	Item
+31	Protocol used in this report
+32	Main scene
+33	Rubber Duck. Other local scenes lack equally complete results in this period; findings are not extended to smoke, cloth or the full benchmarks.
+34	Main split
+35	200 times: 120 train / 30 validation / 50 historical test. t=(original frame ID-1)/199. Only one actual camera observation exists at each time.
+36	Image resolution
+37	Formal renders are mainly 1600x900. Motion EPE is usually measured in 400x225 coordinates; these values are not native-pixel errors.
+38	Models / budgets
+39	C1 means repaired C1, not original PIDG. Final50k, validation-selected best, continuation from 50k to 52k, and branching at 15k are distinct settings.
+40	Early logs and reports used a legacy input range. This week's common PNG evaluation uses VGG and [-1,1]. Compare within a table; do not rank across protocols.
+41	Completeness / physics
+42	2D alpha coverage, thin support, local tracks and internal residuals are separate evidence. No independent GT exists for fixed novel views, or for true 3D velocity, stress or material IDs.
+43	Work across the two weeks
+44	Date
+45	Experiment family and progress
+46	Time-split retraining; scratch isotropy controls; coverage / neighborhoods / densification; color repair; centroid; fixed / learnable shared stiffness.
+47	Object grouping; H/F completeness and feedback; D/R deformation repair; frozen-trajectory velocity fitting.
+48	Started 11/01; completed 11/02
+49	J1 joint training with a monotonic clock and kinematic consistency.
+50	K/L/M/N motion and momentum comparisons; C1 flow ablation; P1 admission review; surface, short-clip and association diagnostics / continuation.
+51	11/03, including S6 supplement
+52	Fixed-view audit and metrics; two geometry-training versions; static-pool failure and audit; conditional Stage S1-S6 training and native evaluation completed. Original geometry, identity and contact goals remain open.
+53	Conclusions remain limited by one scene, usually one seed, CUDA nondeterminism and prior test exposure. A shared initial state does not ensure bitwise GPU agreement; some curves diverged before activation. Reconstruction Stages S1-S6 are distinct from AGENTS.md physics milestones M0-M10 and do not establish reproduction of all official benchmarks. [01,08,36]
+54	03 / Last week: reconstruction
+55	Coverage and Color Repair
+56	Completed: C0-C5, repaired C1-C3 and G0/G1. Values are final50k test results under each experiment's matched protocol.
+57	Coverage arm
+58	Main result
+59	High RGB score; background alpha spill 45.60%
+60	Better silhouette; color / foreground quality degrades
+61	C2: mask + affine
+62	Recovers some RGB loss; below C0
+63	C3: add densification
+64	No reliable cumulative gain
+65	C4: affine only
+66	Local neighbors do not establish object topology
+67	C5: densification only
+68	Some perceptual gains; overall tradeoffs
+69	Dark patches at high alpha can reflect color or occlusion errors and are excluded from transparent-hole rates. Old C1 clamped the red channel to zero in a difficult yellow ROI, motivating color-gradient repair before further point insertion. [02,03]
+70	After repair: retain new C1 as the image baseline
+71	Repaired model
+72	Legacy LPIPS
+73	Relative to repaired C1
+74	Softplus color + weaker mask + foreground RGB
+75	Adds weak affine term; coverage improves, RGB declines
+76	Adds 298 points; no stable overall gain over C2
+77	Color repair is a package of changes; its full gain cannot be attributed to Softplus alone. New vs old C1 gains 4.6262 dB PSNR, but mask IoU drops from 0.9764 to 0.9161 and background spill rises to 1.004%. [03]
+78	Centroid: a higher mean does not mean every frame improves
+79	G0 to G1: PSNR 37.1394 to 37.5279 dB; centroid distance 121.52 to 0.56 px. SSIM and LPIPS worsen; only 23/50 frames gain PSNR, with median delta -0.1319 dB. The earliest three frames drive most of the gain. A global alpha centroid does not constrain local shape, depth or identity. [04]
+80	Date supplement: the 10/26 time-split V3/V4 retrainings reached final PSNR 40.0917/40.1055 dB. The kinematic term added only 0.0138 dB with mixed perceptual results. These runs differ from C0 on this page; values are not interchangeable. [01]
+81	Isotropy: scratch controls show no overall improvement
+82	On 10/26, both arms started at the same random step0 and ran 50k. iso=0 to 0.001 changed PSNR 39.7240 to 39.5581 dB and legacy LPIPS 0.0106815 to 0.0111843; SSIM and MS-SSIM rose slightly. An earlier continuation was saved and stopped after 10,489 extra control steps and 1000 isotropy steps. It has no final comparison and is not counted as a negative result. [01]
+83	04 / Last week: completeness
+84	H3 Leads the Accepted Candidates
+85	Same 50 historical test images, final50k, legacy LPIPS. Low coverage is the percentage of the GT core with alpha<0.9.
+86	Configuration
+87	Legacy LPIPS
+88	Low cover %
+89	Assessment
+90	C1 control
+91	Reference
+92	H1 coverage
+93	Coverage partly improves; image quality declines
+94	H2 temporal strain
+95	No overall improvement
+96	Accepted candidate; PSNR improves on 33/50 frames
+97	H4 color densification
+98	Adds 363 points; no overall gain
+99	F1 difficult pixels
+100	1.0966 dB below H3
+101	F2 half weights
+102	Validation gains do not transfer
+103	D1 motion affine
+104	Slightly higher mean; tail / validation guard fails
+105	D2 covariance curvature
+106	May penalize valid rigid rotation
+107	Tradeoffs; does not replace H3
+108	H3 vs C1: PSNR +0.5061 dB; low coverage down 33.24%; background spill 1.0041% to 0.8036%. Observed-image proxies improve; complete 3D geometry is not established.
+109	H3 still has severe failures: original frame85 is 6.2382 dB below C1. D1 partly repairs it, but the worst-five-frame mean drops from H3's 34.1705 to 33.8594 dB. A +0.0376 dB test mean cannot override the predefined validation selection. [05-08]
+110	Keep unfinished experiments explicitly unfinished
+111	R1 quaternion normalization reached 50k with validation PSNR 40.1520 dB; test scores are unavailable. R2 difficult-frame sampling was saved and stopped at 31,900 steps. R3 and H5 did not run. Some runs diverged before new modules activated, so final deltas cannot all be read as single-component causal effects. [08]
+112	05 / Last week: physics and identity
+113	Stiffness, Groups and Velocity
+114	Three questions: do material constraints help, do soft groups represent objects, and can an independent velocity field fit rendered motion?
+115	Shared stiffness
+116	Test PSNR
+117	Assessment
+118	P0 matched C1
+119	This experiment's control; not the 40.3721 C1 run
+120	P1 fixed E
+121	Worse PSNR on 48/50 frames
+122	P2 learnable E
+123	Worse on 49/50 frames; E only 1 to 0.99348
+124	Local dL/dF has a heavy tail: P2 peaks near 187,195. This is a local F derivative, not a model-weight gradient. The global effective-material prior is not a default improvement; the small E change does not establish material identification. [09]
+125	Object grouping: frozen geometry groups O1 and learnable O2 achieve test PSNR 38.8108/38.4809 dB, both below reused C1. Learnable assignments remain diffuse across 16 occupied slots. RGB gradients and slot use do not prove true object IDs. This diagnostic grouping is distinct from known material regions. [10]
+126	Fit velocity to frozen H3 trajectories: completed 11/1
+127	Velocity fitting
+128	Fit error %
+129	Time holdout %
+130	ID + time holdout %
+131	Original H3
+132	A small sample
+133	B1 original clock
+134	B2 lower learning rate
+135	C fixed monotonic clock
+136	Relative RMSE uses frozen trajectory derivatives as the teacher; zero velocity is 100%. A small sample can be fitted, ruling out a completely broken gradient. A monotonic clock greatly improves time holdout, but transfer across IDs remains poor. [11]
+137	Two distant times map to nearly the same internal scalar time despite different target velocities. A monotonic-clock control supports aliasing / conditioning as one bottleneck. It uses no true velocity GT and yields no new image-quality gain. B3 random initialization gives 68.84%/91.73% training / time-holdout error, leaving this interpretation unchanged. [11]
+138	06 / This week: motion and momentum
+139	A Shared Trajectory Is Not Enough
+140	J1 spans the weeks; K/L/M/N completed on 11/2. The table reports test results at each run's best checkpoint selected by validation PSNR.
+141	Method
+142	Test PSNR / dB
+143	Motion / key result
+144	J1 monotonic + consistency
+145	Final internal velocity mismatch still 99.73%; images below H3
+146	K1 independent v + flow
+147	Validation velocity-step EPE 1.1932 px
+148	K2 trajectory-difference v + flow
+149	EPE 0.8468; trajectory EPE worsens
+150	L0 corrected flow + separate stress
+151	Velocity-step EPE 0.8373 px
+152	L1 shared deformation-latent stress
+153	Velocity-step EPE 0.8363; no overall gain
+154	M1 shared momentum-gradient guard
+155	Images recover vs L1; momentum residual unresolved
+156	N1 consistent intervals + WLS
+157	Motion slightly better; cross-time momentum gate fails
+158	K motivated corrections to the auxiliary flow pipeline
+159	The PIDG loader's FoV ordering differs from the standard metadata convention. CUDA mean-pixel offset signs and transmittance T before / after alpha compositing also affect flow. V2 diagnostic corrections raise coverage from about 48%-50% to above 99%. K training used V1, so its degradation alone cannot reject trajectory-derived velocity or flow direction. [13]
+160	L isolates the effect of shared stress
+161	L0/L1 both correct the flow / camera helpers and derive velocity from the full center R(q)X+b; only the stress source changes. L1 adds just 0.0198 dB validation PSNR and reduces velocity-step EPE by 0.12%, below the predefined 10% motion gate. The new shared head updates; legacy physics networks are frozen by protocol, not omitted accidentally from the optimizer. [14]
+162	When v is defined from the same trajectory, zero internal v=dx/dt error follows by construction. Correct velocity, stress divergence and image fitting still require independent observations and stable numerics.
+163	Rows are not a common-architecture ranking: K to L also fixes helpers; L to M changes backward gradients; M to N changes time discretization and spatial derivatives. M/N details follow. [12-16]
+164	07 / This week: physics optimization
+165	Images Recover; Physics Remains Open
+166	Momentum experiments retain the actual forward residual. Smaller backward gradients are not reported as smaller physical errors.
+167	M1: protect shared parameters from momentum gradients
+168	The weighted momentum gradient on shared deformation parameters is capped at 10% of the same-batch RGB gradient. Private stress-head and original strain-rate coefficient gradients remain. Vs L1, best test PSNR rises 33.9658 to 39.7018 dB and velocity-step EPE falls 0.8363 to 0.7611 px (8.99%), short of the predefined 10% gate. [15]
+169	On a common 64-point probe at frame83, momentum RMS is about 4711.6, original strain-rate correction divergence about 4734.3, and direct stress divergence only 0.075. This points to rate correction / spatial derivatives and gradient competition, not proof that missing external force is the cause. Curves differ before the first momentum event, preventing strict single-factor attribution of all image recovery. [15]
+170	N1: consistent intervals and local quadratic derivatives
+171	Change
+172	Best test PSNR / dB
+173	Validation track EPE / px
+174	Down 5.11%
+175	Validation velocity-step EPE / px
+176	Down 3.85%
+177	Median momentum Huber, original operator
+178	Down 2.76%
+179	Median momentum Huber, new operator
+180	Down 7.21%
+181	The frame83 anomaly eases, but both operators worsen at frame2; the 25% cross-time momentum gate fails. Results remain sensitive to time-difference step and neighborhood. Retain as a numerical-compatibility candidate, not a physics success. [16]
+182	Direct flow ablation with the original C1 structure
+183	Old C1 best / flow O1
+184	Off
+185	On
+186	Velocity stepping improves 16.43%, but the 0.3705 dB validation PSNR loss exceeds the 0.2 dB guard; overall benefit is false. Gains mainly affect the separate velocity branch, not deformation trajectories. This flow O1 differs from last week's object-group O1. [17]
+187	08 / This week: points and objects
+188	Local Associations, Identity Still Open
+189	Suggested record: checkpoint SHA > local identity domain > image object > multiple point banks > fixed rows > support at each time.
+190	First validate continuous image-object correspondence; then bind Gaussians using complete visible footprints and center motion. Store historical membership separately from current visible support.
+191	Work / status
+192	New evidence
+193	Limit
+194	P1 shape candidate\nStopped at 16k
+195	991 labeled points; early support vanishes at middle / late times
+196	Shape loss inactive; not evidence of failure after training that loss
+197	Full-time support audit\nRead-only, complete
+198	Early C1 bank: 69.96%@2, 12.95%@74, 0%@86/200
+199	An early local patch is not a whole object; zero support does not prove incorrect identity
+200	Motion-history prototype\nNo neural training
+201	Artificial hiding: prediction 9.5898 to 2.4890 px, down 74.05%
+202	Hidden pass-through / bounce can produce identical visible observations; ambiguity retained
+203	Local surface correspondence\nFrozen C1, complete
+204	16 banks, 3232 distinct rows; partial acceptance on 71/120 frames; mean contribution coverage 17.76%
+205	Coverage accepted under strict gates; not identity or model accuracy
+206	Clear clips / scale review\nRead-only, complete
+207	Native support: 66.85% on frames2-14; 37.43% on 188-200
+208	Direct 400 rendering differs from resized 1600 rendering; footprints / gates change
+209	Object / multi-bank registry\nRead-only, complete
+210	2065 historical membership rows on frames2-27; later union contribution 62.84% to 65.23%
+211	Local membership can accumulate; true IDs are not filled across natural occlusion
+212	Association checks source / target centers, complete alpha x T footprints, segment purity and original bidirectional flow. Old rasterizer metadata stores only the first 20 contributors per pixel. Full group-compositing audits avoid treating truncated normalized shares as total contributions. [18-23]
+213	Apart from P1's first 13k additional training steps, this page mainly covers data, inference and correspondence diagnostics without Gaussian optimization. Implementing and verifying local correspondence does not establish a new PSNR gain. Separate silhouettes, stable group numbers and overlapping Gaussian row IDs do not prove true material-point identity. [18-23]
+214	09 / This week: association training
+215	Cleaner Local Links, No Lasting Support
+216	Completed 11/2: T0/T1 each add 2000 updates to the same full C1 50k state, reaching 52k; 86,143 points and 2065 anchors.
+217	Final validation / 30 images
+218	T0 ordinary continuation
+219	T1 association continuation
+220	Standard VGG LPIPS
+221	Early-bank share of duck alpha / 2-27
+222	Bank contribution outside duck / 2-27
+223	Mean points supported by center and footprint
+224	Late bank contribution / 146-200
+225	Local purity improves while total contribution shrinks. At every evaluated training time from original frame82 onward, the early bank loses support for visible ducks. The temporal association term is zero on all 29 late training-frame pairs. Visible flow supplies no independent identity bridge across complete occlusion. [24]
+226	11/3: fixed-view completeness metrics, read-only
+227	Thin-support P95 / %
+228	Original path
+229	Fixed 2
+230	Fixed 86
+231	Fixed 188
+232	T1 association
+233	O1 flow
+234	Thin area is measured by a radius-2-pixel morphological opening of alpha>0.5 support at 400x225. Small islands, enclosed holes and boundary complexity are also recorded. Missing coverage, low core alpha, background spill and IoU are computed only where real observations exist. [26]
+235	Metrics track behavior; losses affect training. Novel-view proxies without GT cannot directly define correct shape. Minimizing holes / connected components can fill valid gaps and join distinct objects.
+236	All 2400 existing alpha images were evaluated; 12 new semantic tests and 10 existing tests passed. No trainer changes or new optimization occurred. P95 here describes full-scene alpha, not an object completeness rate. [26]
+237	10 / This week: key image
+238	Fixed Cameras Reveal Time-View Coupling
+239	Fixed cameras2/86/188 each scan 200 times; the original path is retained. C1/T1/O1 total 2400 native renders. [25]
+240	Figure1. Existing comparison with English annotation strips. Rows: original-path GT; original-path C1; C1 at fixed camera86; fixed-camera alpha. Columns share times. The top row is not fixed-camera GT. Rendered image pixels are unchanged.
+241	Camera / time pairs matching observations are more complete. Away from them, RGB and alpha show streaks, fragments and gaps. Association and flow training do not remove this pattern.
+242	There is one camera per time, not synchronized multiview imagery at each time. Training constrains Render(G(t_k), c_k); the fixed-view audit tests Render(G(t_k), c_fixed). More model-generated views add consistency checks but no independent true-motion evidence. [25]
+243	Major artifacts also occur in native 1600x900 images, not just resized images or compressed video. All three fixed-camera matrix fingerprints stay unchanged; all 16 videos decode for 200 frames each. Manual review covers predefined key frames and contact sheets, not every pixel of all 2400 images. No independent fixed novel-view GT exists, so no surrogate PSNR or true 3D surface error is reported. [25]
+244	11 / This week: version1
+245	Turn Observations into Geometry Constraints
+246	11/3: observed alpha coverage + partial static position / covariance + triangulated anchors + short-track projection + within-component local shape.
+247	Version1: matched continuation from C1 50k
+248	Same 50k start to 52k
+249	U0 off
+250	U1 on
+251	Additional updates
+252	Short-track EPE / px@400
+253	16,092 conditional static rows, 42 anchors and 33,348 local projection observations; all 2000 camera samples match, with no learning-rate reset. EPE falls about 33.9%, but test PSNR gains only 0.0057 dB and both arms remain below original C1. Fixed views fragment; late support from the early bank stays zero. [27]
+254	Version2: test the old-parameters / late-training explanation
+255	A fresh seed20261103 starts from a saved step-zero state with an empty optimizer and no historical learned tensors. Both arms warm up for 15k and pass training-data binding gates before branching: S0 off / S1 on, each to total50k. The remaining 35k camera samples match exactly, retaining the full learning-rate schedule. [28]
+256	Version2 native PNG evaluation
+257	S0 scratch control
+258	S1 scratch constraints
+259	Validation PSNR / dB
+260	Test SSIM
+261	Yellow-appearance region PSNR / dB
+262	Scratch training better tests early constraint activation, but yields no image gain here. Both arms exceeding historical C1 also reflects a new seed and run differences; the added constraints cannot claim that gain.
+263	Naming: scratch S1 on this page is a historical experiment arm. Stage S1 below is independent static reconstruction. They are different models. [27,28,36]
+264	12 / This week: version2
+265	Local Losses Fall; Images Still Fragment
+266	Both arms have 88,916 points: 14624 static rows, 37 anchors and 31897 short-track observations. [28]
+267	Matched final-sample diagnostics
+268	Down 84.5%
+269	Local shape violation
+270	Down 99.0%
+271	Static-anchor distance / scene units
+272	Down 66.0%
+273	Static displacement-component RMS
+274	Down 11.1%
+275	Static covariance loss
+276	Still above 0.09749 at 15k
+277	Figure2. Fixed camera86: S0 left, S1 right, at predefined early / middle / late times. The middle time coinciding with observation is more complete; early / late images retain streaks, layers and fragments. Proportional resizing only; no hole filling.
+278	Early-bank contribution rises 55.80% to 58.31% early and 14.29% to 14.89% mid-sequence. Late contribution is negligible: about 1.94e-7 (raw fraction) for S0 and 0 for S1. Local constraints act, but early surfaces do not regain sustained support for late visible ducks. [28]
+279	Completed: 35 unit tests, real GPU / Adam and resume checks, 2400 native renders, and all 200 frames of 16 videos. This weakens the old-parameters or late low-learning-rate explanation, without rejecting all scratch or alternative supervision designs. No identity recovery across occlusion is established. [28]
+280	13 / This week: static representation
+281	Optimization Bypasses a Frozen Subset
+282	R0 completed and was rejected; R0a found an initial-reference issue. The next approach independently reconstructs static geometry in Stage S1. [29-31]
+283	R0: same 15k start to 50k
+284	H0 dynamic control
+285	H1 hard static pool
+286	Validation static blue visible share
+287	Median selected-row opacity
+288	Static-track reprojection / px@400
+289	Hard static rows have zero time-varying center / covariance error by construction, yet 68.18% have opacity<0.01. Dynamic / unknown rows fit the images instead; fixed views still fragment. Image guards pass, geometry goals fail, and H1 is not promoted. [29]
+290	R0a: final drift is not the whole problem
+291	The same fixed mapping already has 7.7975 px reprojection error at the shared 15k start, versus 7.5642 px finally. The 14,624 rows come from 120 reference frames; freezing each old warp does not ensure one consistent surface. The 37 conditional tracks do not cover all static geometry. [30]
+292	Stage S1: conditional progress in static reconstruction
+293	S1 independent 12k
+294	Validation / 30
+295	Test / 50
+296	Candidate static-region PSNR / dB
+297	Mean regional alpha
+298	Mean known-background alpha
+299	4126 points are initialized from multitime training-silhouette support, with no dynamic parameters. Median opacity is 0.6584; only 0.291% are below 0.01. R0's mass transparency is not repeated, allowing conditional static initialization for S2. [31]
+300	This is local progress. The new branch uses metadata CV cameras; historical PIDG cameras are unchanged. S1 and R0 differ in architecture, camera convention and objectives, so they are not a one-change matched ablation and do not establish accurate contact surfaces.
+301	14 / This week: staged reconstruction
+302	Stages S2-S6: Final States Reviewed
+303	These are reconstruction-stage numbers. Dynamic PSNR below is each stage's native 1600x900 conditional dynamic-region validation score. [32-38]
+304	Stage / updates
+305	Dynamic PSNR
+306	Dynamic alpha
+307	Static PSNR
+308	Acceptance status
+309	S2 first RGB / 16k
+310	Fails dynamic and static-retention gates
+311	S2 first repair / 16k
+312	Static regression; group-scale collapse
+313	S2 second repair / 16k
+314	Numeric gates pass; geometry unresolved
+315	S3 physics fields / +6k
+316	Conditional continuation; fragments / group leakage
+317	S4 sparse tracks / +4k
+318	Track error worsens
+319	S5 conditional interior prior / +4k
+320	Prior inactive; no collision-repair evidence
+321	S6 joint fine-tuning / +4k
+322	Images / tracks improve; novel views fragment
+323	S2 uses four fixed canonical banks and four original PIDG deformation networks, totaling 15,507 dynamic points; S1 static geometry remains frozen. Positive bounded scales and static RGB normalization repair some degeneration. Fixed86/188 still show flat sheets and streaks, frame42 mixes groups, and late physical identity remains unknown. [32]
+324	S3's first resumed short run failed because canonical neighborhoods degenerated; this failure remains recorded. A separate fix uses current-world within-group neighborhoods and explicitly restores graph caches. The full 6k run and restoration of 136 Adam states / sampling then pass; this does not establish true stress or successful geometry. [33]
+325	S4/S5: report failures and whether objectives activate
+326	S4 binds 91 segments, 455 observations and 79 fixed rows. Reprojection over all observations rises 0.53684 to 0.78502 px@400, worsening 46.2%. S5 lowers it to 0.66467 px, still above S3. These are training-image correspondences, not independent geometry GT. [34,35]
+327	Across 800 S5 conditional-interior-prior calls, active violations and nonzero losses are both 0. Synthetic sphere / plane fixtures pass a 300-step operator test, but no actual scene collision is corrected. Inter-object nonpenetration, contact forces, friction and restitution remain unverified / disabled. [35]
+328	Formal S6 4000-step training and native evaluation are complete: track error 0.42711 px@400, 20.44% below S3; static geometry remains S1. Observed images improve, novel views fragment, and all 800 conditional-volume-prior calls remain inactive. See p31-34. [37,38]
+329	15 / Conclusions and next steps
+330	What the Evidence Supports
+331	Separate engineering completion, objective optimization, independent observational improvement and physical validity.
+332	Question
+333	Current answer
+334	Evidence
+335	Are original-path images good?
+336	Yes. C1/H3 and scratch controls have high RGB scores, with important failing frames.
+337	Does S6 beat historical H3?
+338	Common test: full-frame PSNR / SSIM / LPIPS are worse on all 50 frames. Mean dynamic PSNR rises slightly; 27/50 frames improve.
+339	Do separate velocity and deformation agree?
+340	The original separate head disagrees strongly. Trajectory-derived velocity unifies readout by construction, without automatically improving momentum residuals.
+341	Can points be assigned to objects?
+342	Within clear continuous segments, some points gain local object membership through image tracks and multiple banks.
+343	Is identity recovered after occlusion?
+344	Unverified. Fully hidden interactions lack independent identity cues; late support from early banks remains near zero.
+345	Are fixed views complete?
+346	Checked novel combinations still fragment. S6 improves observations, but fixed86/188 retain holes and streaks at other times.
+347	Are physics / materials identified?
+348	No. Shared E, internal stress / residuals or zero priors do not supply material or contact ground truth.
+349	Priority: verifiable geometry and identity evidence
+350	1. S6 is complete: observed images and errors on 455 existing track observations improve, but fixed novel views still fragment. Accept as a conditional reconstruction final state, not complete geometry or physics success. No extra training is launched for this report. [37,38]
+351	2. Prioritize checkable object correspondences across gaps and full-time surface support. Validate against simulator object / mesh IDs, persistent vertices or synchronized multiview data when available. Keep unsupported identity unknown; do not force nearest-point matches.
+352	3. Use separate short controls for static references, dynamic canonical / actual footprints and camera conventions. Fixed-view proxies can screen failures, not serve as the sole correct-geometry target.
+353	4. Once reconstruction and identity evidence stabilize, follow M0-M10 for F, constitutive consistency, shared material parameters and identifiability. Retain flags-off checks, unit tests, short training and resume evidence.
+354	Earlier sections retain historical protocols. Pages35-47 add common-test per-frame evaluation of frozen models using read-only inference, without training or PIDG changes. Original budgets and selection rules remain; small single-run mean deltas are not treated as statistically significant.
+355	Image results 01 / 15
+356	Coverage: RGB and Alpha
+357	Related text p3; C0-C5 final50k, test original frame153. Shared GT crop from the earlier report. [02]
+358	Figure3. GT and C0-C5 RGB. Top: GT/C0/C1/C2; bottom: C3/C4/C5/C1 error, scale [0,0.25]. Old C1's green cast shows that high silhouette IoU can coexist with color degradation.
+359	Figure4. Full alpha for the same frame, with original model labels and common [0,1] range. Black background RGB does not imply zero alpha. High-alpha dark patches are not transparent holes.
+360	These images show the old coverage ablation. The next page shows color-gradient-repaired C1-C3; model names and stages must remain distinct.
+361	Image results 02 / 15
+362	Color Repair: Global and Local Detail
+363	Related text p3; test original frame153, final50k. [03]
+364	Figure5. Left to right: GT / repaired C1 / C2 / C3. All share the GT-defined subject crop. Yellow is largely restored, with residual contact-region and obstacle defects.
+365	Figure6. Same ROI: GT / old C1 / new C1 / new C2 / new C3. The old red-channel failure and green cast are reduced. This is local evidence for the combined repair package.
+366	Figure7. Same blue-region crop: GT / new C1 / new C2 / new C3. Residual high-alpha dark patches show that color repair does not ensure correct shape or occlusion. This is a historical post-hoc diagnostic ROI, not a random sample.
+367	Image results 03 / 15
+368	Isotropy and Centroid: Uneven Gains
+369	Related text p3. Isotropy arms share step0 and run 50k; centroid uses its own G0/G1 control. [01,04]
+370	Figure8. Original frame1: GT / no iso / iso=0.001, final50k. The black background is cropped using GT only; model display extents are not adjusted separately.
+371	Figure9. Original frame85, same columns. Similar global layouts still require assessment of local silhouettes and mean metrics; selected images do not establish overall improvement.
+372	Figure10. Original frame49, preserving GT/G0/G1 labels and common crop. G1 clearly regresses here: global centroid alignment does not ensure correct local duck shape.
+373	Image results 04 / 15
+374	H/F Completeness: Two Difficult Frames
+375	Related text p4; final50k. GT and seven models have the same order in both figures. [05,06]
+376	Figure11. Original frame85. Top: GT / C1 / H1 / H2; bottom: H3 / H4 / F1 / F2. H3 visibly regresses against C1 here, illustrating the limits of its mean gain.
+377	Figure12. Original frame153, same order. Each frame uses its own GT-defined common crop, identical across models. Crop scales across different frames must not be used to compare size or motion magnitude.
+378	H3's mean gain coexists with severe failing frames. These known-problem examples explain failures; they do not replace all-50-frame statistics.
+379	Image results 05 / 15
+380	Deformation, Material and Group Ablations
+381	Related text p4-5. Each family has its own matched control; rows are not a single-factor comparison. [07,09,10]
+382	Figure13. Original frame85: GT / H3 / D1 / D2 / D3, final50k. D1's local recovery does not establish overall improvement in tail or global metrics.
+383	Figure14. Original frame153: GT / matched P0 / fixed-E P1 / learnable-E P2. Neither material arm beats its control; visible shape / color changes are not true stiffness estimates.
+384	Figure15. Original frame85: GT / C1 control / frozen ID / learned ID, final50k. Learned grouping does not consistently remove silhouette / contact artifacts. Slot numbers are not true object or material identities.
+385	Image results 06 / 15
+386	Velocity Diagnostics and J/K/L Images
+387	Related text p5-6. Frozen-trajectory velocity diagnostics are separate from new reconstruction training. [11-14]
+388	Figure16. Frozen-H3 velocity diagnostic, replotted from saved histories and cached clock arrays with English labels; no new inference. Targets are model trajectory derivatives, not physical velocity GT. A monotonic clock improves time fitting; cross-ID generalization remains poor. Arm / coordinate definitions are unchanged.
+389	Figure17. Test original frame85, each run's validation-selected best. Top: GT / J1 / K1; bottom: K2 / L0 / L1. Common GT crop reveals missing ducks and streaks. K to L also fixes helpers, so differences cannot all be attributed to shared stress.
+390	Image results 07 / 15
+391	Momentum Repair and C1 Flow Ablation
+392	Related text p7. Original frame85, common GT crop, each model's validation-selected best. [15-17]
+393	Figure18. Top: GT / C1 / C1 + flow; bottom: M1 / N1. Blank space is layout only. Matched controls are defined in the text; this is not a common-architecture ranking.
+394	Figure19. Original M1/N1 comparison of physical-step and rendered displacement on common points, preserving frames, coordinates and legends. Related quantities from the same internal residual are compared; this is not independent true 3D motion validation.
+395	Image recovery, observed-motion improvement and lower physical residuals are distinct evidence. N1 still fails the 25% cross-time momentum gate.
+396	Image results 08 / 15
+397	Shape Admission and Local Support
+398	Related text p8. P1 trains only to 16k; the shape loss is not yet active. [18,19,22]
+399	Figure20. P1 16k admission panel. Rows: training frames2/74/86/108. Columns: GT / 16k candidate / fixed reference bank, unknown points darkened. Unknown points supply middle / late RGB while early labels lose contribution. Shape loss is inactive; this is not an ablation after training with that loss.
+400	Figure21. Frozen C1/P1 center-support diagnostic: projected centers versus actual visible footprints. Remaining inside the image does not mean a point still supports the visible duck surface. Original model / time labels are preserved.
+401	Image results 09 / 15
+402	Short Clips and Motion History
+403	Related text p8. Training-image diagnostics and prediction with artificially hidden observations; no Gaussian retraining. [20,22]
+404	Figure22. Native short-clip review. The same C1 reconstructs clear segments well at training resolution. Direct low-resolution rendering differences are not new model degradation. These are original training observations, not new tests.
+405	Figure23. Motion-history predictions at original return frames14/83/154, retaining original legends. Crosses are pre-return predictions; circles are pseudo-references. Colors identify local seeds within each row's window only. Close position predictions do not confirm identity after natural complete occlusion.
+406	These selected windows have correlated observations and selection bias. They diagnose short-term 2D prediction, not true 3D material-point motion.
+407	Image results 10 / 15
+408	Surface Banks and Local Object Membership
+409	Related text p8. Frozen-model diagnostics only; 0 additional Gaussian optimization steps. [21,23]
+410	Figure24. Support timeline and accepted contribution coverage for 16 fixed banks. Selected, accepted, visible-but-failed and identity-unknown states are recorded separately. Mean 17.76% is coverage accepted under strict gates, not model accuracy.
+411	Figure25. Local objects and projected point centers, with original frame / identity-domain labels. Segments define local identities; the same color across domains does not automatically mean the same identity. Historical membership and current visible support remain separate.
+412	Uncovered regions remain unknown. True identities are not inferred from the nearest duck, spatial distance or overlapping row IDs.
+413	Image results 11 / 15
+414	Association Training: RGB and Bank Support
+415	Related text p9. Original C1 / ordinary T0 / association T1 continuation; original panel order and frame labels retained. [24]
+416	Figure26. RGB at four selected early / middle / late training times. Similar training images do not establish identity recovery after occlusion.
+417	Figure27. Fixed early-bank contributions at the same times. Colors encode registered banks only. Old banks do not regain late duck-region support; local purity improves while overall support shrinks.
+418	Image results 12 / 15
+419	Two Geometry Versions: Native Crops
+420	Related text p11-12. Version1 continues U0/U1; version2 trains S0/S1 from scratch. Novel fixed-camera86 combinations have no GT. [27,28]
+421	Figure28. Version1, camera86 at time2. Left: historical C1; middle: U0; right: U1. Top RGB, bottom alpha. All are novel camera / time pairs without independent GT; pronounced streaks and fragments remain.
+422	Figure29. Version1, fixed86 at time2, identical native crop coordinates; U0 left, U1 right. Streaks and layers remain. Original rendered pixels; no hole filling.
+423	Figure30. Version2, same fixed86 / time2; S0 left, S1 right. Crops match within each version. Seeds / bindings differ across versions, so pixel differences are not causal comparisons. Earlier local constraints still do not resolve the artifact.
+424	Image results 13 / 15
+425	Static-Pool Failure and Static Reconstruction
+426	Related text p13. R0 and Stage S1 differ in architecture and cameras; this is not a matched ablation. [29-31]
+427	Figure31. R0 fixed86 native crops with identical coordinates; original labels identify H0/H1 and times. Both arms fragment early / late. The numeric audit also shows static rows becoming transparent; zero time-varying error is not successful geometry.
+428	Figure32. Independent Stage S1 RGB / static / alpha review at t2/86/188: 4126 points, 12k updates. It reconstructs only static content; unrendered ducks are not counted as missing. Edges and geometry remain uncertain.
+429	Image results 14 / 15
+430	Stage S2: Evidence from Two Repairs
+431	Related text p14. Each run is 16k, preserving point / network budgets. Static S1 geometry is fixed. [32]
+432	Figure33. Actual camera, training original frame86: GT / first S2 / repair1 / repair2. Common GT-defined crop. Repairs improve observed dynamic coverage, not complete novel-view reconstruction.
+433	Figure34. Fixed camera86 at time2: first S2 / repair1 / repair2. Full 1600x900 field of view, proportionally resized; abnormal support is not cropped away using GT. This combination has no independent GT.
+434	Figure35. Fixed camera86 at time188, same model order and full view. Flat sheets, streaks and fragments remain despite passing numeric gates; continuation is conditional.
+435	Image results 15 / 15
+436	Stages S3-S5: Observed vs Novel Views
+437	Related text p14. S3 +6k, S4 +4k, S5 +4k; historical snapshot remains 11/3 11:07. [33-36]
+438	Figure36. Actual camera, original frame86: GT / S3 / S4 / S5, common GT-defined crop. Observed silhouettes are recognizable, with local blur.
+439	Figure37. Fixed camera86 at time2: S3 / S4 / S5, full view. Granular support, stripes and distorted duck edges persist; static structures are more stable. No independent GT exists for this pair; no PSNR is computed.
+440	Figure38. Fixed camera86 at time188, same order and full view. S5's conditional prior never activates; image changes are not evidence of collision repair. Formal S6 and matched images follow.
+441	S6 supplement 01 / 04
+442	S6: Formal Metrics and Training Setup
+443	Formal joint fine-tuning: 4000 steps, a predefined final state rather than post-hoc best selection. Native 1600x900; 30 validation / 50 test. [37,38]
+444	Metric / protocol
+445	Validation
+446	Test
+447	Conditional dynamic-region PSNR / dB
+448	Dynamic-branch regional alpha
+449	Conditional static-region PSNR / dB
+450	Full-frame PSNR / dB (float)
+451	Full-frame PSNR / dB (8bit)
+452	Full-frame SSIM (8bit)
+453	Standard VGG LPIPS (8bit)
+454	Float evaluation and clipped / rounded 8bit PNG evaluation are separate. Region masks represent conditional image support, not independent geometry GT. Black background dilutes full-frame error.
+455	Stage comparisons and correspondence error
+456	Validation dynamic PSNR: S5 25.6037 to S6 28.3270 dB (+2.7233), +4.0736 dB vs S2. Track error on the same 455 qualifying training observations: S3 0.53684, S4 0.78502, S5 0.66467, S6 0.42711 px@400; down 20.44% vs S3.
+457	Protocol and acceptance
+458	S6 inherits S5 and jointly optimizes existing RGB / kinematic / CMR / track objectives at 0.25x learning rate. Static appearance is unfrozen; geometry remains exactly S1. All 138 Adam-state groups, full sampling replay and numeric gates pass; three videos decode for 200 frames each. The successful conditional chain totals 46k updates; two failed S2 attempts add a separately retained 32k.
+459	S6 improves observed reconstruction and existing-track fitting through sequential inherited training. Gains cannot be independently attributed to physics, tracks or static appearance.
+460	S6 supplement 02 / 04
+461	S6 Images: Better Observed Views
+462	Existing formal final-state exports only. Training observations explain local behavior; they do not replace validation / test statistics. [37,38]
+463	Figure39. Actual camera, original frame86: GT / S3 / S4 / S5 / S6. Common GT-defined crop; S6 has a clearer duck silhouette. Sequential final-state comparison, not an equal-budget single-factor ablation.
+464	Figure40. Training frames2/42/188, top to bottom. Columns: actual GT / S6 render / model-group contribution. Existing rows are reordered only; group colors are not physical identities. Cross-group support persists at frame42; late green streak leakage is visible.
+465	The original review also covers frames27/43/52/86/166/200. These explanatory selections come from a previously reviewed panel, not a claim about all times. Object / group colors do not supply true identities after occlusion.
+466	S6 supplement 03 / 04
+467	S5 vs S6: Novel Views Remain Incomplete
+468	Columns: S5 camera86 / S6 camera86 / S5 camera188 / S6 camera188. Full field of view retained; abnormal support is not cropped away. [37]
+469	Figure41. Time2: both fixed cameras form novel combinations without independent GT. S6 retains granules, stretching and fragments; observed-view gains do not automatically yield complete 3D shape.
+470	Figure42. Time86: camera86 matches the actual observation; camera188 is novel. The first two columns are more complete, the last two degrade. The novel pair is not same-frame GT reconstruction.
+471	Figure43. Time188: camera188 matches observation; camera86 is novel. The first two columns retain scattered support and streaks. No novel-pair GT exists, so no PSNR is computed for it.
+472	Camera86/188 coincide with observations only at their corresponding times. Other times lack synchronized GT. Full 1600x900 views are proportionally resized without hole filling or altered model output.
+473	S6 supplement 04 / 04
+474	S6 Native Detail: Geometry and Identity
+475	Existing native-pixel crops, proportionally resized for display; no new rendering or image enhancement. [37]
+476	Figure44. Rows: times2/86/188. Columns: fixed86 / fixed188 / original observed path. Original crops: x=450:1200, y=160:650; labels retained. The observed path is more complete; novel pairs retain holes, stripes and streaks.
+477	Goals still open
+478	Complete fixed novel-view geometry is not recovered; late physical IDs remain unknown. Model-group leakage shows that contribution groups are not persistent material-point identities. Improved sparse training tracks do not prove re-identification across occlusion.
+479	S6 calls the conditional static-volume prior 800 times over 16000 qualifying observation instances; active violations and nonzero priors are both 0. S5 is also inactive. No actual collision repair is established. Inter-object nonpenetration, contact forces, friction, restitution, constitutive behavior and unknown force remain unverified / disabled.
+480	Training and evaluation of all six conditional reconstruction stages are complete. Complete geometry, physical identity and the original contact goals remain open. Next establish calibrated RGB geometry / identity validation.
+481	Per-frame test 01 / 13
+482	Historical H3: A Common Test Protocol
+483	50 test images at the same camera / time pairs: original frames1,5,...,197. Common evaluation snapshot: 2026-11-03 11:54 UTC.
+484	Model
+485	Full dB
+486	Dynamic dB
+487	Full wins vs H3
+488	Dynamic wins vs H3
+489	S1 static
+490	Models and limits of comparison
+491	The fixed reference is historical validation-promoted H3_combined final50k, not a per-frame oracle. S0 is historical S0_scratch_control 50k. S1 is independent static-only12k; S2 is the third 16k version; S3-S6 inherit +6k/+4k/+4k/+4k. Architecture, capacity, camera convention and budget differ: this is not a single-factor ablation.
+492	Original RGBA is bilinearly resized to 1600x900 before black-background compositing. Predictions are clipped and rounded to 8bit. Standard VGG LPIPS uses [-1,1] and identical local weights. Historical models composited before resizing and used a different LPIPS convention. H3/S0 are recomputed here; do not mix these scores with earlier tables.
+493	S1 has no duck model: full-scene / dynamic metrics are marked '-'; per-frame static PSNR is reported separately. Common GT-appearance rules define identical dynamic / static masks across models, not independent material IDs or 3D geometry GT. Large black backgrounds make regional scores essential alongside full-frame scores.
+494	S6 vs H3: mean full-frame PSNR delta -10.501 dB; dynamic delta +0.268 dB; dynamic wins on 27/50 frames. Separate local per-frame gains from full-frame mean ranking.
+495	Per-frame test 02 / 13
+496	All 50 Frames: Full and Dynamic Regions
+497	H3 is fixed. Static-only S1 is excluded from full / dynamic curves. Every curve covers all 50 frames.
+498	Figure45. Top to bottom: full-frame PSNR, dynamic-region PSNR, SSIM delta, standard LPIPS delta. Deltas are model minus H3. Positive PSNR / SSIM and negative LPIPS are better. The x-axis is original frame ID, not seconds.
+499	Per-frame test 03 / 13
+500	Full-Frame PSNR / dB: 1-25
+501	Each cell: measured value above, (model-H3) below. Positive deltas are better. S1 '-' means static-only training.
+502	Frame
+503	H3 ref.
+504	S1 static
+505	-\nStatic only
+506	Per-frame test 04 / 13
+507	Full-Frame PSNR / dB: 26-50
+508	Per-frame test 05 / 13
+509	Full-Frame SSIM: 1-25
+510	Per-frame test 06 / 13
+511	Full-Frame SSIM: 26-50
+512	Per-frame test 07 / 13
+513	Standard VGG LPIPS: 1-25
+514	Each cell: measured value above, (model-H3) below. Negative deltas are better. S1 '-' means static-only training.
+515	Per-frame test 08 / 13
+516	Standard VGG LPIPS: 26-50
+517	Per-frame test 09 / 13
+518	Common Dynamic PSNR / dB: 1-25
+519	Per-frame test 10 / 13
+520	Common Dynamic PSNR / dB: 26-50
+521	Per-frame test 11 / 13
+522	Common Static PSNR / dB: 1-25
+523	Per-frame test 12 / 13
+524	Common Static PSNR / dB: 26-50
+525	Per-frame test 13 / 13
+526	Test Images: Extreme and Typical Deltas
+527	Columns: GT / H3 / S0 / S6. Each row uses a common GT-defined crop. Model output is not repaired.
+528	Figure46. Original frame9: largest S6 full-frame PSNR regression vs H3, S6-H3=-18.938 dB. Selection is explicit, not representative of mean performance. All 50 frames are tabulated above.
+529	Figure47. Original frame85: largest S6-H3 full-frame PSNR delta, still -2.509 dB. Selection is explicit, not representative of mean performance. All 50 frames are tabulated above.
+530	Figure48. Original frame89: S6-H3 full-frame delta near the median, -10.138 dB. Selection is explicit, not representative of mean performance. All 50 frames are tabulated above.
+531	The companion .test_comparison.csv contains all 50 frames, 8 models, 5 metrics and per-frame H3 deltas (400 rows, full precision). Common evaluation reads frozen checkpoints only: no training, new test-based model selection or image repair.
+532	48 / Source index
+533	Sources and Review Entry Points
+534	Numbers match bracketed references in the text. Paths are relative to F:/A_Edinburgh/PhysGauss. This report uses independent frozen snapshots.
+535	[01] Time split, shared frame clock and isotropy controls\nexperiments/kinematic_resplit/results.md\nexperiments/v3_iso_scratch/results.md\nexperiments/v3_isotropic/results.md
+536	[02] Coverage, neighborhoods and densification C0-C5\noutput/pdf/PIDG_Coverage_Ablation_Report_CN.md
+537	[03] Color-gradient repair C1-C3\noutput/pdf/PIDG_Color_Repair_Ablation_Report_CN.md
+538	[04] Global centroid G0/G1\nexperiments/centroid_tuning/assessment.md
+539	[05] Joint completeness ablation H1-H4\nexperiments/integrity_tuning/assessment.md
+540	[06] Full training and feedback F1/F2\nexperiments/integrity_continuation/assessment.md
+541	[07] Deformation repair D1-D3\nexperiments/deformation_repair/assessment.md
+542	[08] 1 November module audit, including R1/R2 status\noutput/research_audit_20261101/RESEARCH_AUDIT_CN.md
+543	[09] Fixed / learnable shared stiffness\nexperiments/c1_material/assessment.md
+544	[10] Frozen / learnable object groups\nexperiments/object_id/assessment.md
+545	[11] Frozen-trajectory velocity fitting and clock collisions\nexperiments/frozen_velocity_probe/assessment.md
+546	[12] Monotonic-clock joint training J1\nexperiments/monotonic_training/assessment.md
+547	[13] Velocity sources K1/K2 and flow-pipeline audit\nexperiments/flow_comparison/assessment.md
+548	[14] Corrected flow and shared stress L0/L1\nexperiments/unified_flow/assessment.md
+549	[15] Momentum-gradient protection M1\nexperiments/momentum_repair/assessment.md
+550	[16] Consistent discrete-trajectory momentum N1\nexperiments/coherent_momentum/assessment.md
+551	[17] C1 flow on / off ablation\nexperiments/c1_flow_ablation/assessment.md
+552	[18] Failed admission of local-shape candidate P1\nexperiments/shape_coherence/assessment.md
+553	Earlier reports summarize last week's experiments; key negative results are checked against corresponding assessments and the 11/1 audit. Read-only diagnostics are not described as full training; unrun experiments are excluded from success / failure counts.
+554	49 / Source index
+555	Sources and Snapshot Details
+556	[19] Full-time early-bank support audit\nexperiments/surface_support/assessment.md
+557	[20] Motion history and occlusion ambiguity\nexperiments/motion_correspondence/assessment.md
+558	[21] 16 local visible-surface point banks\nexperiments/surface_correspondence/assessment.md
+559	[22] Clear short-clip screening and scale review\nexperiments/short_clip_diagnostic/assessment.md
+560	[23] Object / point-bank association chain\nexperiments/object_membership/assessment.md
+561	[24] Association continuation T0/T1\nexperiments/association_training/assessment.md
+562	[25] Fixed-camera full-time audit\nexperiments/fixed_camera_temporal/assessment.md
+563	[26] Completeness proxies without GT\nexperiments/view_completeness/assessment.md
+564	[27] Geometry-transfer continuation U0/U1\nexperiments/transfer_integrity/assessment.md
+565	[28] Scratch controls with shared warm-up\nexperiments/scratch_integrity/assessment.md
+566	[29] Hard static point pool R0\nexperiments/static_pool/assessment.md
+567	[30] Static-reference preparation audit R0a\nexperiments/static_reference_audit/assessment.md
+568	[31] Independent static reconstruction, Stage S1\nexperiments/staged_reconstruction/S1_assessment.md
+569	[32] Stage S2 first version and two repairs\nexperiments/staged_reconstruction/S2_geometry_recovery/assessment.md
+570	[33] Stage S3 physics-field integration\nexperiments/staged_reconstruction/S3/assessment.md
+571	[34] Stage S4 sparse-track integration\nexperiments/staged_reconstruction/S4/assessment.md
+572	[35] Stage S5 conditional interior prior\nexperiments/staged_reconstruction/S5/assessment.md
+573	[36] Stage S1-S6 execution plan, historical 11:07 snapshot\nexperiments/staged_reconstruction_plan.md
+574	[37] Formal S6 evaluation and image review\nexperiments/staged_reconstruction/S6/assessment.md\n(S6 supplemental snapshot)
+575	[38] Measured S1-S6 chain and final status\nexperiments/staged_reconstruction/final_summary.md\n(S6 supplemental snapshot)
+576	Historical snapshot: 2026-11-03 11:07 UTC; Git HEAD: 53ac0a4a6c93\nS6 supplement: 2026-11-03 11:38 UTC; final-state SHA: e302ad64ef08b4e5\nHistorical sources: companion .sources.json / .sources.images.json; S6: .sources.s6.json. Reference [36] remains historical. Common-test sources, PNG / weight / checkpoint SHA values and frame data: .test_comparison.json / .csv. That evaluation adds read-only inference and no training updates.

@@ -1,0 +1,25 @@
+﻿{
+    "command":  [
+                    "powershell.exe",
+                    "-NoProfile",
+                    "-ExecutionPolicy",
+                    "Bypass",
+                    "-File",
+                    "F:\\A_Edinburgh\\PhysGauss\\variants\\object_id\\launch.ps1",
+                    "-Hours",
+                    "24"
+                ],
+    "stdout":  "F:\\A_Edinburgh\\PhysGauss\\experiments\\object_id\\queue_20261031_192019.stdout.log",
+    "target_total_iterations_each":  50000,
+    "shared_prefix_iteration":  3000,
+    "started_utc":  "2026-10-31T19:20:20.7055593Z",
+    "stderr":  "F:\\A_Edinburgh\\PhysGauss\\experiments\\object_id\\queue_20261031_192019.stderr.log",
+    "commit":  "336c767",
+    "arms":  [
+                 "O0_C1_control",
+                 "O1_frozen_ID",
+                 "O2_selfsup_ID"
+             ],
+    "pid":  133920,
+    "preflight":  "passed"
+}

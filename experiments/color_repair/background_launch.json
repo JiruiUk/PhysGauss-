@@ -1,0 +1,24 @@
+{
+    "command":  [
+                    "powershell.exe",
+                    "-NoProfile",
+                    "-ExecutionPolicy",
+                    "Bypass",
+                    "-File",
+                    "F:\\A_Edinburgh\\PhysGauss\\variants\\color_repair\\launch.ps1",
+                    "-Hours",
+                    "24"
+                ],
+    "stdout":  "F:\\A_Edinburgh\\PhysGauss\\experiments\\color_repair\\queue_20261027_153545.stdout.log",
+    "target_iterations_each":  50000,
+    "started_utc":  "2026-10-27T15:35:47.0247226Z",
+    "stderr":  "F:\\A_Edinburgh\\PhysGauss\\experiments\\color_repair\\queue_20261027_153545.stderr.log",
+    "commit":  "53e4fc9",
+    "arms":  [
+                 "C1_repaired",
+                 "C2_repaired",
+                 "C3_repaired"
+             ],
+    "pid":  118576,
+    "preflight":  "passed"
+}

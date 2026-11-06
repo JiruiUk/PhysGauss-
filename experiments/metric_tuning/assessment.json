@@ -1,0 +1,282 @@
+{
+  "created_utc": "2026-10-23T13:27:31.850186+00:00",
+  "completed_long_runs": {
+    "T0_continue": {
+      "iteration": 50000,
+      "full_checkpoint_sha256_verified": true
+    },
+    "T3_baseline_perceptual": {
+      "iteration": 50000,
+      "full_checkpoint_sha256_verified": true
+    },
+    "T2_residual_mse": {
+      "iteration": 50000,
+      "full_checkpoint_sha256_verified": true
+    },
+    "T4_residual_perceptual": {
+      "iteration": 50000,
+      "full_checkpoint_sha256_verified": true
+    }
+  },
+  "evaluation": "Fixed 50 official test images; original PNG metrics; paired by filename",
+  "t3_parent_gt_pixel_identity_verified": true,
+  "comparisons": [
+    {
+      "candidate_snapshot": "ours_metric_lpips",
+      "reference": "W256_D0",
+      "metrics": {
+        "PSNR": {
+          "reference": 27.25678062438965,
+          "candidate": 28.264768600463867,
+          "delta": 1.0079879760742188,
+          "relative_percent": 3.698118240612258,
+          "improved_views": 27,
+          "worse_views": 23,
+          "tied_views": 0
+        },
+        "SSIM": {
+          "reference": 0.9765514135360718,
+          "candidate": 0.9765661358833313,
+          "delta": 1.4722347259521484e-05,
+          "relative_percent": 0.0015075854743029637,
+          "improved_views": 19,
+          "worse_views": 31,
+          "tied_views": 0
+        },
+        "LPIPS": {
+          "reference": 0.029623517766594887,
+          "candidate": 0.02788456901907921,
+          "delta": -0.0017389487475156784,
+          "relative_percent": -5.870162892931685,
+          "improved_views": 50,
+          "worse_views": 0,
+          "tied_views": 0
+        },
+        "MS-SSIM": {
+          "reference": 0.9704826474189758,
+          "candidate": 0.9711971879005432,
+          "delta": 0.0007145404815673828,
+          "relative_percent": 0.07362733207725292,
+          "improved_views": 27,
+          "worse_views": 23,
+          "tied_views": 0
+        }
+      }
+    },
+    {
+      "candidate_snapshot": "ours_metric_lpips",
+      "reference": "W512_D0",
+      "metrics": {
+        "PSNR": {
+          "reference": 28.576528549194336,
+          "candidate": 28.264768600463867,
+          "delta": -0.31175994873046875,
+          "relative_percent": -1.0909650841381069,
+          "improved_views": 25,
+          "worse_views": 25,
+          "tied_views": 0
+        },
+        "SSIM": {
+          "reference": 0.9770491719245911,
+          "candidate": 0.9765661358833313,
+          "delta": -0.0004830360412597656,
+          "relative_percent": -0.0494382529702464,
+          "improved_views": 20,
+          "worse_views": 30,
+          "tied_views": 0
+        },
+        "LPIPS": {
+          "reference": 0.034613195806741714,
+          "candidate": 0.02788456901907921,
+          "delta": -0.006728626787662506,
+          "relative_percent": -19.439484366687555,
+          "improved_views": 50,
+          "worse_views": 0,
+          "tied_views": 0
+        },
+        "MS-SSIM": {
+          "reference": 0.9704660177230835,
+          "candidate": 0.9711971879005432,
+          "delta": 0.0007311701774597168,
+          "relative_percent": 0.07534217212212813,
+          "improved_views": 28,
+          "worse_views": 22,
+          "tied_views": 0
+        }
+      }
+    },
+    {
+      "candidate_snapshot": "ours_metric_lpips",
+      "reference": "W512_D2",
+      "metrics": {
+        "PSNR": {
+          "reference": 27.615419387817383,
+          "candidate": 28.264768600463867,
+          "delta": 0.6493492126464844,
+          "relative_percent": 2.3514008732851144,
+          "improved_views": 21,
+          "worse_views": 29,
+          "tied_views": 0
+        },
+        "SSIM": {
+          "reference": 0.9767839312553406,
+          "candidate": 0.9765661358833313,
+          "delta": -0.00021779537200927734,
+          "relative_percent": -0.022297190303832704,
+          "improved_views": 19,
+          "worse_views": 31,
+          "tied_views": 0
+        },
+        "LPIPS": {
+          "reference": 0.03329552710056305,
+          "candidate": 0.02788456901907921,
+          "delta": -0.005410958081483841,
+          "relative_percent": -16.251306264475197,
+          "improved_views": 48,
+          "worse_views": 2,
+          "tied_views": 0
+        },
+        "MS-SSIM": {
+          "reference": 0.9710715413093567,
+          "candidate": 0.9711971879005432,
+          "delta": 0.00012564659118652344,
+          "relative_percent": 0.012938963386477376,
+          "improved_views": 24,
+          "worse_views": 26,
+          "tied_views": 0
+        }
+      }
+    },
+    {
+      "candidate_snapshot": "ours_metric_ms_ssim",
+      "reference": "W256_D0",
+      "metrics": {
+        "PSNR": {
+          "reference": 27.25678062438965,
+          "candidate": 28.172523498535156,
+          "delta": 0.9157428741455078,
+          "relative_percent": 3.3596883166975733,
+          "improved_views": 34,
+          "worse_views": 16,
+          "tied_views": 0
+        },
+        "SSIM": {
+          "reference": 0.9765514135360718,
+          "candidate": 0.9767153859138489,
+          "delta": 0.0001639723777770996,
+          "relative_percent": 0.01679096210442932,
+          "improved_views": 30,
+          "worse_views": 20,
+          "tied_views": 0
+        },
+        "LPIPS": {
+          "reference": 0.029623517766594887,
+          "candidate": 0.028559105470776558,
+          "delta": -0.0010644122958183289,
+          "relative_percent": -3.593132673185151,
+          "improved_views": 44,
+          "worse_views": 6,
+          "tied_views": 0
+        },
+        "MS-SSIM": {
+          "reference": 0.9704826474189758,
+          "candidate": 0.9715861678123474,
+          "delta": 0.001103520393371582,
+          "relative_percent": 0.11370841058377934,
+          "improved_views": 33,
+          "worse_views": 17,
+          "tied_views": 0
+        }
+      }
+    },
+    {
+      "candidate_snapshot": "ours_metric_ms_ssim",
+      "reference": "W512_D0",
+      "metrics": {
+        "PSNR": {
+          "reference": 28.576528549194336,
+          "candidate": 28.172523498535156,
+          "delta": -0.4040050506591797,
+          "relative_percent": -1.4137653212974666,
+          "improved_views": 26,
+          "worse_views": 24,
+          "tied_views": 0
+        },
+        "SSIM": {
+          "reference": 0.9770491719245911,
+          "candidate": 0.9767153859138489,
+          "delta": -0.0003337860107421875,
+          "relative_percent": -0.03416266246709654,
+          "improved_views": 20,
+          "worse_views": 30,
+          "tied_views": 0
+        },
+        "LPIPS": {
+          "reference": 0.034613195806741714,
+          "candidate": 0.028559105470776558,
+          "delta": -0.0060540903359651566,
+          "relative_percent": -17.4907002802266,
+          "improved_views": 48,
+          "worse_views": 2,
+          "tied_views": 0
+        },
+        "MS-SSIM": {
+          "reference": 0.9704660177230835,
+          "candidate": 0.9715861678123474,
+          "delta": 0.001120150089263916,
+          "relative_percent": 0.11542393744934376,
+          "improved_views": 28,
+          "worse_views": 22,
+          "tied_views": 0
+        }
+      }
+    },
+    {
+      "candidate_snapshot": "ours_metric_ms_ssim",
+      "reference": "W512_D2",
+      "metrics": {
+        "PSNR": {
+          "reference": 27.615419387817383,
+          "candidate": 28.172523498535156,
+          "delta": 0.5571041107177734,
+          "relative_percent": 2.017366105848617,
+          "improved_views": 21,
+          "worse_views": 29,
+          "tied_views": 0
+        },
+        "SSIM": {
+          "reference": 0.9767839312553406,
+          "candidate": 0.9767153859138489,
+          "delta": -6.854534149169922e-05,
+          "relative_percent": -0.007017451792390439,
+          "improved_views": 22,
+          "worse_views": 28,
+          "tied_views": 0
+        },
+        "LPIPS": {
+          "reference": 0.03329552710056305,
+          "candidate": 0.028559105470776558,
+          "delta": -0.004736421629786491,
+          "relative_percent": -14.225399151907093,
+          "improved_views": 47,
+          "worse_views": 3,
+          "tied_views": 0
+        },
+        "MS-SSIM": {
+          "reference": 0.9710715413093567,
+          "candidate": 0.9715861678123474,
+          "delta": 0.0005146265029907227,
+          "relative_percent": 0.052995735236649466,
+          "improved_views": 24,
+          "worse_views": 26,
+          "tied_views": 0
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "One scene, one seed, test-selected snapshots.",
+    "T3 changes both refinement schedule and LPIPS loss; no same-parent no-LPIPS refinement control.",
+    "Per-view win counts are descriptive; correlated frames are not independent repeat experiments."
+  ]
+}

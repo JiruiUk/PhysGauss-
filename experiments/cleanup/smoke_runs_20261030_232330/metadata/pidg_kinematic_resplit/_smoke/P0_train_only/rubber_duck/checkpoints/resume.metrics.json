@@ -1,0 +1,73 @@
+{
+  "checkpoint_sha256": "bd2f49594ac16aa534235feae5abf9bc25ab2aea9b693535b15f2e1b2123a88e",
+  "iteration": 100,
+  "config": {
+    "enabled": true,
+    "parent_run": "",
+    "pixel_loss": "l1",
+    "structure": "ssim",
+    "perceptual_weight": 0.0,
+    "perceptual_interval": 4,
+    "timeline": "official_metadata",
+    "shared_physics_time": false,
+    "kinematic_weight": 0.0,
+    "kinematic_dt": 0.001,
+    "kinematic_samples": 256,
+    "kinematic_interval": 10,
+    "kinematic_start": 20,
+    "kinematic_ramp": 1,
+    "kinematic_huber_delta": 0.1,
+    "audit_gradients": true,
+    "audit_parameters": true
+  },
+  "best": {
+    "PSNR": {
+      "value": 18.597300910949706,
+      "iteration": 100,
+      "snapshot": "best",
+      "metrics": {
+        "PSNR": 18.597300910949706,
+        "SSIM": 0.8132639408111573,
+        "LPIPS": 0.23795020679632822,
+        "MS-SSIM": 0.74450856645902
+      },
+      "selection_split": "validation"
+    },
+    "SSIM": {
+      "value": 0.8132639408111573,
+      "iteration": 100,
+      "snapshot": "metric_ssim",
+      "metrics": {
+        "PSNR": 18.597300910949706,
+        "SSIM": 0.8132639408111573,
+        "LPIPS": 0.23795020679632822,
+        "MS-SSIM": 0.74450856645902
+      },
+      "selection_split": "validation"
+    },
+    "LPIPS": {
+      "value": 0.23795020679632822,
+      "iteration": 100,
+      "snapshot": "metric_lpips",
+      "metrics": {
+        "PSNR": 18.597300910949706,
+        "SSIM": 0.8132639408111573,
+        "LPIPS": 0.23795020679632822,
+        "MS-SSIM": 0.74450856645902
+      },
+      "selection_split": "validation"
+    },
+    "MS-SSIM": {
+      "value": 0.74450856645902,
+      "iteration": 100,
+      "snapshot": "metric_ms_ssim",
+      "metrics": {
+        "PSNR": 18.597300910949706,
+        "SSIM": 0.8132639408111573,
+        "LPIPS": 0.23795020679632822,
+        "MS-SSIM": 0.74450856645902
+      },
+      "selection_split": "validation"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "PSNR": {
+    "value": 9.358613141377766,
+    "iteration": 0,
+    "snapshot": "best",
+    "metrics": {
+      "PSNR": 9.358613141377766,
+      "SSIM": 0.4244937707980474,
+      "LPIPS": 0.32740894456704456,
+      "MS-SSIM": 0.366995108127594
+    },
+    "selection_split": "validation"
+  },
+  "SSIM": {
+    "value": 0.4244937707980474,
+    "iteration": 0,
+    "snapshot": "metric_ssim",
+    "metrics": {
+      "PSNR": 9.358613141377766,
+      "SSIM": 0.4244937707980474,
+      "LPIPS": 0.32740894456704456,
+      "MS-SSIM": 0.366995108127594
+    },
+    "selection_split": "validation"
+  },
+  "LPIPS": {
+    "value": 0.32740894456704456,
+    "iteration": 0,
+    "snapshot": "metric_lpips",
+    "metrics": {
+      "PSNR": 9.358613141377766,
+      "SSIM": 0.4244937707980474,
+      "LPIPS": 0.32740894456704456,
+      "MS-SSIM": 0.366995108127594
+    },
+    "selection_split": "validation"
+  },
+  "MS-SSIM": {
+    "value": 0.366995108127594,
+    "iteration": 0,
+    "snapshot": "metric_ms_ssim",
+    "metrics": {
+      "PSNR": 9.358613141377766,
+      "SSIM": 0.4244937707980474,
+      "LPIPS": 0.32740894456704456,
+      "MS-SSIM": 0.366995108127594
+    },
+    "selection_split": "validation"
+  }
+}

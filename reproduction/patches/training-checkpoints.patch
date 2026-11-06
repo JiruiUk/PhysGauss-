@@ -1,0 +1,78 @@
+diff --git a/train_pidg.py b/train_pidg.py
+index d623db2..b61cc8f 100644
+--- a/train_pidg.py
++++ b/train_pidg.py
+@@ -66,7 +66,8 @@ def cauchy_momentum_loss_sampled(
+     # This scales it back to the full-particle average
+     return total_loss * (M / N)
+ 
+-def training(dataset, opt, pipe, testing_iterations, saving_iterations):
++def training(dataset, opt, pipe, testing_iterations, saving_iterations, resume_checkpoint=None, checkpoint_interval=1000):
++    from training_checkpoint import restore_training_state, save_training_state
+     tb_writer, args = prepare_output_and_logger(dataset)
+     gaussians = GaussianModel(dataset.sh_degree)
+     deform = DeformModel(
+@@ -92,8 +93,17 @@ def training(dataset, opt, pipe, testing_iterations, saving_iterations):
+     ema_loss_for_log = 0.0
+     best_psnr = 0.0
+     best_iteration = 0
+-    progress_bar = tqdm(range(opt.iterations), desc="Training progress")
+-    for iteration in range(1, opt.iterations + 1):
++    first_iteration = 1
++    if resume_checkpoint:
++        restored = restore_training_state(resume_checkpoint, gaussians, deform, opt, scene)
++        first_iteration = restored['iteration'] + 1
++        viewpoint_stack = restored['viewpoint_stack']
++        ema_loss_for_log = restored['ema_loss_for_log']
++        best_psnr, best_iteration = restored['best_psnr'], restored['best_iteration']
++        testing_iterations, saving_iterations = restored['testing_iterations'], restored['saving_iterations']
++        print(f"FULL_CHECKPOINT_RESTORED completed={first_iteration-1} next={first_iteration}", flush=True)
++    progress_bar = tqdm(total=opt.iterations, initial=first_iteration-1, desc="Training progress")
++    for iteration in range(first_iteration, opt.iterations + 1):
+ 
+         # Every 1000 its we increase the levels of SH up to a maximum degree
+         if iteration % 1000 == 0:
+@@ -205,7 +215,7 @@ def training(dataset, opt, pipe, testing_iterations, saving_iterations):
+                     "pts": len(gaussians.get_xyz),
+                     "reg": f"{reg:.{5}f}",
+                 })
+-                progress_bar.update(10)
++                progress_bar.update(iteration - progress_bar.n)
+             if iteration == opt.iterations:
+                 progress_bar.close()
+ 
+@@ -252,6 +262,16 @@ def training(dataset, opt, pipe, testing_iterations, saving_iterations):
+                 deform.optimizer.zero_grad()
+                 deform.update_learning_rate(iteration)
+ 
++            checkpoint_path = os.path.join(args.model_path, "checkpoints", "resume.pt")
++            stop_request = os.path.join(args.model_path, "checkpoints", "save_and_stop.request")
++            stop_requested = os.path.isfile(stop_request)
++            if stop_requested or (checkpoint_interval > 0 and iteration % checkpoint_interval == 0):
++                save_training_state(locals(), checkpoint_path)
++            if stop_requested:
++                os.remove(stop_request)
++                print("Training saved and stopped by request", flush=True)
++                raise SystemExit(75)
++
+     print("Best PSNR = {} in Iteration {}".format(best_psnr, best_iteration))
+ 
+ 
+@@ -352,6 +372,8 @@ if __name__ == "__main__":
+                        default=[5000, 6000, 7_000] + list(range(10000, 50001, 1000)))
+     parser.add_argument("--save_iterations", nargs="+", type=int, default=[5000, 10000, 20000, 30000, 40000])
+     parser.add_argument("--quiet", action="store_true")
++    parser.add_argument("--resume_checkpoint", default=None)
++    parser.add_argument("--checkpoint_interval", type=int, default=1000)
+     args = parser.parse_args(sys.argv[1:])
+     args.save_iterations.append(args.iterations)
+ 
+@@ -373,7 +395,7 @@ if __name__ == "__main__":
+ 
+     # Configure and run training
+     torch.autograd.set_detect_anomaly(args.detect_anomaly)
+-    training(lp.extract(args), op.extract(args), pp.extract(args), args.test_iterations, args.save_iterations)
++    training(lp.extract(args), op.extract(args), pp.extract(args), args.test_iterations, args.save_iterations, args.resume_checkpoint, args.checkpoint_interval)
+ 
+     # All done
+     print("\nTraining complete.")

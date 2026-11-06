@@ -1,0 +1,65 @@
+{
+  "status": "completed",
+  "summaries": [
+    {
+      "model": "O1_frozen_ID",
+      "snapshot": "100",
+      "source_iteration": 100,
+      "images": 30,
+      "split": "validation",
+      "capacity": 16,
+      "active_candidates": 16,
+      "mean_max_assignment": 0.14705584943294525,
+      "confident_kernel_fraction": 0.0,
+      "shuffled_identity_diagnostics": [
+        {
+          "frame": "0004",
+          "RGB_L1_change_after_identity_shuffle": 0.00241757370531559,
+          "meaning": "branch-use diagnostic, not semantic ID accuracy"
+        },
+        {
+          "frame": "0084",
+          "RGB_L1_change_after_identity_shuffle": 0.0027486488688737154,
+          "meaning": "branch-use diagnostic, not semantic ID accuracy"
+        },
+        {
+          "frame": "0171",
+          "RGB_L1_change_after_identity_shuffle": 0.00473083695396781,
+          "meaning": "branch-use diagnostic, not semantic ID accuracy"
+        }
+      ],
+      "ground_truth_instance_accuracy_available": false,
+      "gallery": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_object_id\\_smoke\\identity_exports\\O1_frozen_ID\\100\\index.html"
+    },
+    {
+      "model": "O2_selfsup_ID",
+      "snapshot": "100",
+      "source_iteration": 100,
+      "images": 30,
+      "split": "validation",
+      "capacity": 16,
+      "active_candidates": 16,
+      "mean_max_assignment": 0.14923901855945587,
+      "confident_kernel_fraction": 0.0,
+      "shuffled_identity_diagnostics": [
+        {
+          "frame": "0004",
+          "RGB_L1_change_after_identity_shuffle": 0.0024700567591935396,
+          "meaning": "branch-use diagnostic, not semantic ID accuracy"
+        },
+        {
+          "frame": "0084",
+          "RGB_L1_change_after_identity_shuffle": 0.0028611444868147373,
+          "meaning": "branch-use diagnostic, not semantic ID accuracy"
+        },
+        {
+          "frame": "0171",
+          "RGB_L1_change_after_identity_shuffle": 0.004849252291023731,
+          "meaning": "branch-use diagnostic, not semantic ID accuracy"
+        }
+      ],
+      "ground_truth_instance_accuracy_available": false,
+      "gallery": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_object_id\\_smoke\\identity_exports\\O2_selfsup_ID\\100\\index.html"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "enabled": false,
+  "parent_run": "",
+  "pixel_loss": "l1",
+  "structure": "ssim",
+  "perceptual_weight": 0.0,
+  "perceptual_interval": 4,
+  "timeline": "official_metadata",
+  "shared_physics_time": false,
+  "kinematic_weight": 0.0,
+  "kinematic_dt": 0.001,
+  "kinematic_samples": 256,
+  "kinematic_interval": 10,
+  "kinematic_start": 20,
+  "kinematic_ramp": 1,
+  "kinematic_huber_delta": 0.1,
+  "audit_gradients": true,
+  "audit_parameters": true
+}

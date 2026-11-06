@@ -1,0 +1,113 @@
+{
+  "checkpoint_sha256": "6a29cbe824a7d14db4513351335a4fc22bf9fd86c15a42cdd6c17b8dbae230e0",
+  "iteration": 100,
+  "config": {
+    "enabled": true,
+    "parent_run": "",
+    "pixel_loss": "l1",
+    "structure": "ssim",
+    "perceptual_weight": 0.02,
+    "perceptual_interval": 4,
+    "timeline": "frame_index",
+    "shared_physics_time": true,
+    "kinematic_weight": 0.0,
+    "isotropic_weight": 0.0,
+    "isotropic_scope": "rendered",
+    "isotropic_eps": 1e-08,
+    "isotropic_start": 0,
+    "engineering_smoke": true,
+    "allow_initial_capture": true,
+    "mask_weight": 0.03,
+    "affine_weight": 0.0,
+    "coverage_density": false,
+    "affine_start": 20,
+    "affine_ramp": 10,
+    "affine_interval": 10,
+    "affine_samples": 32,
+    "affine_radius": 0.1,
+    "coverage_start": 40,
+    "coverage_until": 100,
+    "coverage_sample_interval": 1,
+    "coverage_window": 20,
+    "coverage_min_views": 1,
+    "coverage_add_limit": 8,
+    "coverage_max_points": 200000,
+    "positive_color": true,
+    "color_beta": 5.0,
+    "mask_start": 20,
+    "mask_ramp": 10,
+    "foreground_rgb_weight": 0.1,
+    "ack_unsegmented_affine": false,
+    "clone_color_std_max": 1.0,
+    "centroid_weight": 0.0,
+    "material_enabled": true,
+    "learn_young": true,
+    "ack_global_effective_material": true,
+    "young_init": 1.0,
+    "young_lower": 0.05,
+    "young_upper": 20.0,
+    "poisson_fixed": 0.3,
+    "material_weight": 0.0001,
+    "material_prior_weight": 0.001,
+    "material_lr": 0.0001,
+    "material_start": 20,
+    "material_ramp": 10,
+    "material_interval": 10,
+    "material_neighbors": 16,
+    "material_samples": 32,
+    "material_graph_refresh": 20,
+    "material_profile_interval": 20,
+    "material_min_J": 1e-06
+  },
+  "best": {
+    "PSNR": {
+      "value": 17.899396959940592,
+      "iteration": 100,
+      "snapshot": "best",
+      "metrics": {
+        "PSNR": 17.899396959940592,
+        "SSIM": 0.6537298142910004,
+        "LPIPS": 0.2979761977990468,
+        "MS-SSIM": 0.6522716124852498
+      },
+      "selection_split": "validation"
+    },
+    "SSIM": {
+      "value": 0.6537298142910004,
+      "iteration": 100,
+      "snapshot": "metric_ssim",
+      "metrics": {
+        "PSNR": 17.899396959940592,
+        "SSIM": 0.6537298142910004,
+        "LPIPS": 0.2979761977990468,
+        "MS-SSIM": 0.6522716124852498
+      },
+      "selection_split": "validation"
+    },
+    "LPIPS": {
+      "value": 0.2979761977990468,
+      "iteration": 100,
+      "snapshot": "metric_lpips",
+      "metrics": {
+        "PSNR": 17.899396959940592,
+        "SSIM": 0.6537298142910004,
+        "LPIPS": 0.2979761977990468,
+        "MS-SSIM": 0.6522716124852498
+      },
+      "selection_split": "validation"
+    },
+    "MS-SSIM": {
+      "value": 0.6522716124852498,
+      "iteration": 100,
+      "snapshot": "metric_ms_ssim",
+      "metrics": {
+        "PSNR": 17.899396959940592,
+        "SSIM": 0.6537298142910004,
+        "LPIPS": 0.2979761977990468,
+        "MS-SSIM": 0.6522716124852498
+      },
+      "selection_split": "validation"
+    }
+  },
+  "material_sha256": "fb0fec6c0cb7db967fd21d4b6fc41cdd26e6c19e9380112d05cf56356b323c84"
+}

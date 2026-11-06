@@ -1,0 +1,273 @@
+{
+  "checked_at": "2026-10-15T15:53:18.832086+01:00",
+  "controller": {
+    "pid": 280104,
+    "stages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "mode": "all",
+    "status": "running"
+  },
+  "active": {
+    "controller_pid": 280104,
+    "child_pid": 277920,
+    "step": "train",
+    "run": "F:\\A_Edinburgh\\PhysGauss\\variants\\phase01_continuous_time\\runs\\long\\mechanics_cloth",
+    "started_utc": "2026-10-15T14:43:29.889162+00:00"
+  },
+  "processes": [
+    {
+      "ProcessId": 280104,
+      "ParentProcessId": 267912,
+      "CommandLine": "\"F:\\A_Edinburgh\\PhysGauss\\envs\\pidg-cu128\\python.exe\" -u \"F:\\A_Edinburgh\\PhysGauss\\scripts\\run_upgrade.py\" --mode all --stages 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 "
+    },
+    {
+      "ProcessId": 277920,
+      "ParentProcessId": 280104,
+      "CommandLine": "F:\\A_Edinburgh\\PhysGauss\\envs\\pidg-cu128\\python.exe -u F:\\A_Edinburgh\\PhysGauss\\scripts\\pidg_variant_entrypoint.py --repo F:\\A_Edinburgh\\PhysGauss\\variants\\phase01_continuous_time\\code_r1 --seed 0 train_pidg.py -s F:\\A_Edinburgh\\PhysGauss\\data\\PIDG\\mechanics_cloth -m F:\\A_Edinburgh\\PhysGauss\\variants\\phase01_continuous_time\\runs\\long\\mechanics_cloth --conf F:\\A_Edinburgh\\PhysGauss\\variants\\phase01_continuous_time\\code_r1\\arguments\\pidg\\mechanics_cloth.py --load2gpu_on_the_fly --resolution 1600 --iterations 50000 --save_image_dir F:\\A_Edinburgh\\PhysGauss\\variants\\phase01_continuous_time\\runs\\long\\mechanics_cloth\\diagnostics --checkpoint_interval 1000 --resume_checkpoint F:\\A_Edinburgh\\PhysGauss\\variants\\phase01_continuous_time\\runs\\long\\mechanics_cloth\\checkpoints\\resume.pt"
+    }
+  ],
+  "controller_alive": true,
+  "trainer_alive": true,
+  "run_counts": {
+    "training": 1,
+    "queued": 74
+  },
+  "total_long_runs": 75,
+  "first_sample": {
+    "time": "2026-10-15T15:53:08.822124+01:00",
+    "unix": 1792075988.8221242,
+    "iteration": 7590,
+    "log_bytes": 201699,
+    "log_age_seconds": 3.19,
+    "latest_interim_test": {
+      "iteration": 7000,
+      "L1": 0.006653932575749135,
+      "PSNR": 34.04640077289782
+    }
+  },
+  "second_sample": {
+    "time": "2026-10-15T15:53:18.832086+01:00",
+    "unix": 1792075998.8320866,
+    "iteration": 7690,
+    "log_bytes": 204005,
+    "log_age_seconds": 2.03,
+    "latest_interim_test": {
+      "iteration": 7000,
+      "L1": 0.006653932575749135,
+      "PSNR": 34.04640077289782
+    }
+  },
+  "observed_step_delta": 100,
+  "sample_seconds": 10.01,
+  "training_advancing": true,
+  "current_run_percent": 15.38,
+  "checkpoint": {
+    "path": "F:\\A_Edinburgh\\PhysGauss\\variants\\phase01_continuous_time\\runs\\long\\mechanics_cloth\\checkpoints\\resume.pt",
+    "iteration": 7000,
+    "sha256": "7f0bbfb998c4ce452ae559be7b8314b37a21ce3eea12105e75866f2cd4a75318",
+    "size_bytes": 206432713,
+    "format_version": 2,
+    "optimizer_saved": true,
+    "rng_saved": true,
+    "created_unix": 1792075909.463763,
+    "checksum_verified": true,
+    "completeness_verified": true
+  },
+  "pending_stop_requests": [],
+  "gpu": "NVIDIA GeForce RTX 5070 Ti, 100 %, 10718 MiB, 16303 MiB",
+  "free_disk_GiB": 405.47,
+  "phases": [
+    {
+      "phase": 1,
+      "directory": "F:\\A_Edinburgh\\PhysGauss\\variants\\phase01_continuous_time",
+      "status": "implemented",
+      "long_training": "running",
+      "smoke": "completed",
+      "source_manifest_matches": true
+    },
+    {
+      "phase": 2,
+      "directory": "F:\\A_Edinburgh\\PhysGauss\\variants\\phase02_kinematic_closure",
+      "status": "implemented",
+      "long_training": "pending",
+      "smoke": "pending",
+      "source_manifest_matches": true
+    },
+    {
+      "phase": 3,
+      "directory": "F:\\A_Edinburgh\\PhysGauss\\variants\\phase03_acceleration",
+      "status": "implemented",
+      "long_training": "pending",
+      "smoke": "pending",
+      "source_manifest_matches": true
+    },
+    {
+      "phase": 4,
+      "directory": "F:\\A_Edinburgh\\PhysGauss\\variants\\phase04_deformation_gradient",
+      "status": "implemented",
+      "long_training": "pending",
+      "smoke": "pending",
+      "source_manifest_matches": true
+    },
+    {
+      "phase": 5,
+      "directory": "F:\\A_Edinburgh\\PhysGauss\\variants\\phase05_conservation",
+      "status": "implemented",
+      "long_training": "pending",
+      "smoke": "pending",
+      "source_manifest_matches": true
+    },
+    {
+      "phase": 6,
+      "directory": "F:\\A_Edinburgh\\PhysGauss\\variants\\phase06_constitutive",
+      "status": "implemented",
+      "long_training": "pending",
+      "smoke": "pending",
+      "source_manifest_matches": true
+    },
+    {
+      "phase": 7,
+      "directory": "F:\\A_Edinburgh\\PhysGauss\\variants\\phase07_material_field",
+      "status": "implemented",
+      "long_training": "pending",
+      "smoke": "pending",
+      "source_manifest_matches": true
+    },
+    {
+      "phase": 8,
+      "directory": "F:\\A_Edinburgh\\PhysGauss\\variants\\phase08_closed_momentum",
+      "status": "implemented",
+      "long_training": "pending",
+      "smoke": "pending",
+      "source_manifest_matches": true
+    },
+    {
+      "phase": 9,
+      "directory": "F:\\A_Edinburgh\\PhysGauss\\variants\\phase09_weak_form",
+      "status": "implemented",
+      "long_training": "pending",
+      "smoke": "pending",
+      "source_manifest_matches": true
+    },
+    {
+      "phase": 10,
+      "directory": "F:\\A_Edinburgh\\PhysGauss\\variants\\phase10_material_moe",
+      "status": "implemented",
+      "long_training": "pending",
+      "smoke": "pending",
+      "source_manifest_matches": true
+    },
+    {
+      "phase": 11,
+      "directory": "F:\\A_Edinburgh\\PhysGauss\\variants\\phase11_neural_residual",
+      "status": "implemented",
+      "long_training": "pending",
+      "smoke": "pending",
+      "source_manifest_matches": true
+    },
+    {
+      "phase": 12,
+      "directory": "F:\\A_Edinburgh\\PhysGauss\\variants\\phase12_contact",
+      "status": "implemented",
+      "long_training": "pending",
+      "smoke": "pending",
+      "source_manifest_matches": true
+    },
+    {
+      "phase": 13,
+      "directory": "F:\\A_Edinburgh\\PhysGauss\\variants\\phase13_uncertainty_flow",
+      "status": "implemented",
+      "long_training": "pending",
+      "smoke": "pending",
+      "source_manifest_matches": true
+    },
+    {
+      "phase": 14,
+      "directory": "F:\\A_Edinburgh\\PhysGauss\\variants\\phase14_continuous_se3",
+      "status": "implemented",
+      "long_training": "pending",
+      "smoke": "pending",
+      "source_manifest_matches": true
+    },
+    {
+      "phase": 15,
+      "directory": "F:\\A_Edinburgh\\PhysGauss\\variants\\phase15_symplectic_rollout",
+      "status": "implemented",
+      "long_training": "pending",
+      "smoke": "pending",
+      "source_manifest_matches": true
+    }
+  ],
+  "original_baselines": [
+    {
+      "scene": "mechanics_cloth",
+      "status": "completed",
+      "metrics": {
+        "SSIM": 0.9853435158729553,
+        "PSNR": 39.478763580322266,
+        "LPIPS": 0.037297070026397705,
+        "MS-SSIM": 0.9902835488319397
+      }
+    },
+    {
+      "scene": "balls_reaction",
+      "status": "completed",
+      "metrics": {
+        "SSIM": 0.9799396395683289,
+        "PSNR": 32.91008377075195,
+        "LPIPS": 0.029670367017388344,
+        "MS-SSIM": 0.9869198799133301
+      }
+    },
+    {
+      "scene": "dry_ice",
+      "status": "completed",
+      "metrics": {
+        "SSIM": 0.903798520565033,
+        "PSNR": 26.160621643066406,
+        "LPIPS": 0.1374073177576065,
+        "MS-SSIM": 0.9270604252815247
+      }
+    },
+    {
+      "scene": "motion_kuro",
+      "status": "completed",
+      "metrics": {
+        "SSIM": 0.9517683386802673,
+        "PSNR": 26.912134170532227,
+        "LPIPS": 0.05740659311413765,
+        "MS-SSIM": 0.9447800517082214
+      }
+    },
+    {
+      "scene": "rubber_duck",
+      "status": "completed",
+      "metrics": {
+        "SSIM": 0.9765514135360718,
+        "PSNR": 27.25678062438965,
+        "LPIPS": 0.029623517766594887,
+        "MS-SSIM": 0.9704826474189758
+      }
+    }
+  ],
+  "notes": [
+    "Interim PSNR is not a completed 50k benchmark.",
+    "Algorithm smoke validation receipts predate the final common source freeze; the queue revalidates each final revision before its long training.",
+    "No training was stopped or restarted during this audit."
+  ]
+}

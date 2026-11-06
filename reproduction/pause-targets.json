@@ -1,0 +1,28 @@
+{
+  "processes": [
+    {
+      "pid": 271832,
+      "created": "2026-10-14T21:57:48.9924680+01:00",
+      "parent_pid": 262960,
+      "command": "\"F:\\A_Edinburgh\\PhysGauss\\envs\\pidg-cu128\\python.exe\" -u F:\\A_Edinburgh\\PhysGauss\\reproduction\\scripts\\run_baseline.py --scenes motion_kuro rubber_duck --iterations 50000 --profile official --seed 0"
+    },
+    {
+      "pid": 286676,
+      "created": "2026-10-14T21:58:15.5379130+01:00",
+      "parent_pid": 271832,
+      "command": "F:\\A_Edinburgh\\PhysGauss\\envs\\pidg-cu128\\python.exe -u F:\\A_Edinburgh\\PhysGauss\\reproduction\\scripts\\entrypoint.py train_pidg.py -s F:\\A_Edinburgh\\PhysGauss\\data\\PIDG\\motion_kuro -m F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_official\\motion_kuro --conf F:\\A_Edinburgh\\PhysGauss\\third_party\\PIDG\\arguments\\pidg\\motion_kuro.py --load2gpu_on_the_fly --resolution 1600 --iterations 50000 --save_image_dir F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_official\\motion_kuro\\diagnostics"
+    },
+    {
+      "pid": 286700,
+      "created": "2026-10-14T21:58:15.5399170+01:00",
+      "parent_pid": 262960,
+      "command": "\"F:\\A_Edinburgh\\PhysGauss\\.venv\\Scripts\\python.exe\" -u F:\\A_Edinburgh\\PhysGauss\\reproduction\\scripts\\report_results.py --follow --mirror C:\\Users\\admin\\Documents\\Codex\\2026-10-13\\chatgpt-conversation-6acdffb0-de6c-83eb-b0dd\\outputs\\PIDG-复现进度.md"
+    },
+    {
+      "pid": 263720,
+      "created": "2026-10-14T21:58:15.6120100+01:00",
+      "parent_pid": 286700,
+      "command": "\"C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe\" -u F:\\A_Edinburgh\\PhysGauss\\reproduction\\scripts\\report_results.py --follow --mirror C:\\Users\\admin\\Documents\\Codex\\2026-10-13\\chatgpt-conversation-6acdffb0-de6c-83eb-b0dd\\outputs\\PIDG-复现进度.md"
+    }
+  ]
+}

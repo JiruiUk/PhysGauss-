@@ -1,0 +1,43 @@
+{
+  "id": "flags_off",
+  "warm_start": false,
+  "parent": null,
+  "target_iterations": 100,
+  "resolution_width": 400,
+  "train": 120,
+  "validation": 30,
+  "test": 50,
+  "commands": [
+    [
+      "F:\\A_Edinburgh\\PhysGauss\\envs\\pidg-cu128\\python.exe",
+      "-u",
+      "F:\\A_Edinburgh\\PhysGauss\\scripts\\pidg_variant_entrypoint.py",
+      "--repo",
+      "F:\\A_Edinburgh\\PhysGauss\\variants\\coverage_tuning\\code",
+      "--seed",
+      "0",
+      "train_pidg.py",
+      "-s",
+      "F:\\A_Edinburgh\\PhysGauss\\data\\derived\\kinematic_resplit\\training",
+      "-m",
+      "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_coverage_tuning\\_smoke\\flags_off\\rubber_duck",
+      "--conf",
+      "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_coverage_tuning\\_smoke\\flags_off\\rubber_duck\\model_config.py",
+      "--load2gpu_on_the_fly",
+      "--resolution",
+      "400",
+      "--iterations",
+      "20",
+      "--checkpoint_interval",
+      "20",
+      "--save_image_dir",
+      "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_coverage_tuning\\_smoke\\flags_off\\rubber_duck\\diagnostics",
+      "--save_iterations",
+      "20",
+      "--test_iterations",
+      "100"
+    ]
+  ],
+  "status": "completed",
+  "completed_additional_iterations": 20
+}

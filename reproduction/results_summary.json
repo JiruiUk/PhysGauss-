@@ -1,0 +1,68 @@
+{
+  "run_root": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_official",
+  "profile": "patched_official_release",
+  "rows": [
+    {
+      "scene": "mechanics_cloth",
+      "status": "completed",
+      "step": 50000,
+      "PSNR": 39.478763580322266,
+      "SSIM": 0.9853435158729553,
+      "LPIPS": 0.037297070026397705,
+      "paper_PSNR": 39.96,
+      "paper_SSIM": 0.991,
+      "paper_LPIPS": 0.034,
+      "log_age_seconds": 156288
+    },
+    {
+      "scene": "balls_reaction",
+      "status": "completed",
+      "step": 50000,
+      "PSNR": 32.91008377075195,
+      "SSIM": 0.9799396395683289,
+      "LPIPS": 0.029670367017388344,
+      "paper_PSNR": 33.31,
+      "paper_SSIM": 0.988,
+      "paper_LPIPS": 0.031,
+      "log_age_seconds": 137499
+    },
+    {
+      "scene": "dry_ice",
+      "status": "completed",
+      "step": 50000,
+      "PSNR": 26.160621643066406,
+      "SSIM": 0.903798520565033,
+      "LPIPS": 0.1374073177576065,
+      "paper_PSNR": 26.12,
+      "paper_SSIM": 0.926,
+      "paper_LPIPS": 0.138,
+      "log_age_seconds": 77914
+    },
+    {
+      "scene": "motion_kuro",
+      "status": "completed",
+      "step": 50000,
+      "PSNR": 26.912134170532227,
+      "SSIM": 0.9517683386802673,
+      "LPIPS": 0.05740659311413765,
+      "paper_PSNR": 26.97,
+      "paper_SSIM": 0.953,
+      "paper_LPIPS": 0.051,
+      "log_age_seconds": 3539
+    },
+    {
+      "scene": "rubber_duck",
+      "status": "completed",
+      "step": 50000,
+      "PSNR": 27.25678062438965,
+      "SSIM": 0.9765514135360718,
+      "LPIPS": 0.029623517766594887,
+      "paper_PSNR": 28.43,
+      "paper_SSIM": 0.976,
+      "paper_LPIPS": 0.037,
+      "log_age_seconds": 229
+    }
+  ],
+  "all_completed": true,
+  "updated_unix": 1792062864.8703682
+}

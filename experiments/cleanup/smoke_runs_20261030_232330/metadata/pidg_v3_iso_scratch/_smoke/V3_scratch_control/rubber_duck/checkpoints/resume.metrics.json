@@ -1,0 +1,71 @@
+{
+  "checkpoint_sha256": "25a79e044397af447e7b944ad7a87dcd276626e08cbebcd522fcf76d9adf9399",
+  "iteration": 100,
+  "config": {
+    "enabled": true,
+    "parent_run": "",
+    "pixel_loss": "l1",
+    "structure": "ssim",
+    "perceptual_weight": 0.02,
+    "perceptual_interval": 4,
+    "timeline": "frame_index",
+    "shared_physics_time": true,
+    "kinematic_weight": 0.0,
+    "isotropic_weight": 0.0,
+    "isotropic_scope": "rendered",
+    "isotropic_eps": 1e-08,
+    "isotropic_start": 0,
+    "engineering_smoke": true,
+    "allow_initial_capture": true
+  },
+  "best": {
+    "PSNR": {
+      "value": 17.7584436416626,
+      "iteration": 100,
+      "snapshot": "best",
+      "metrics": {
+        "PSNR": 17.7584436416626,
+        "SSIM": 0.6683587471644084,
+        "LPIPS": 0.29049502313137054,
+        "MS-SSIM": 0.6552053034305573
+      },
+      "selection_split": "validation"
+    },
+    "SSIM": {
+      "value": 0.6683587471644084,
+      "iteration": 100,
+      "snapshot": "metric_ssim",
+      "metrics": {
+        "PSNR": 17.7584436416626,
+        "SSIM": 0.6683587471644084,
+        "LPIPS": 0.29049502313137054,
+        "MS-SSIM": 0.6552053034305573
+      },
+      "selection_split": "validation"
+    },
+    "LPIPS": {
+      "value": 0.29049502313137054,
+      "iteration": 100,
+      "snapshot": "metric_lpips",
+      "metrics": {
+        "PSNR": 17.7584436416626,
+        "SSIM": 0.6683587471644084,
+        "LPIPS": 0.29049502313137054,
+        "MS-SSIM": 0.6552053034305573
+      },
+      "selection_split": "validation"
+    },
+    "MS-SSIM": {
+      "value": 0.6552053034305573,
+      "iteration": 100,
+      "snapshot": "metric_ms_ssim",
+      "metrics": {
+        "PSNR": 17.7584436416626,
+        "SSIM": 0.6683587471644084,
+        "LPIPS": 0.29049502313137054,
+        "MS-SSIM": 0.6552053034305573
+      },
+      "selection_split": "validation"
+    }
+  }
+}

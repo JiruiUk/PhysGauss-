@@ -1,0 +1,83 @@
+{
+  "status": "completed",
+  "created_utc": "2026-10-21T20:43:23.090503+00:00",
+  "index_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\render_comparisons\\index.html",
+  "preview_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\render_comparisons\\gt_and_metric_winners.png",
+  "test_frame_count": 50,
+  "preview_test_index": 25,
+  "winners": {
+    "PSNR": {
+      "id": "W512_D0",
+      "kind": "reference",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_mlp_capacity\\long_W512_D0\\rubber_duck",
+      "snapshot": "best",
+      "additional_iteration": 0,
+      "metrics": {
+        "SSIM": 0.9770491719245911,
+        "PSNR": 28.576528549194336,
+        "LPIPS": 0.034613195806741714,
+        "MS-SSIM": 0.9704660177230835
+      }
+    },
+    "SSIM": {
+      "id": "W512_D0",
+      "kind": "reference",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_mlp_capacity\\long_W512_D0\\rubber_duck",
+      "snapshot": "best",
+      "additional_iteration": 0,
+      "metrics": {
+        "SSIM": 0.9770491719245911,
+        "PSNR": 28.576528549194336,
+        "LPIPS": 0.034613195806741714,
+        "MS-SSIM": 0.9704660177230835
+      }
+    },
+    "LPIPS": {
+      "id": "T3_baseline_perceptual",
+      "kind": "candidate",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T3_baseline_perceptual\\rubber_duck",
+      "objective": "LPIPS",
+      "snapshot": "metric_lpips",
+      "additional_iteration": 50000,
+      "metrics": {
+        "PSNR": 28.264767456054688,
+        "SSIM": 0.9765656626224518,
+        "LPIPS": 0.02788458631373942,
+        "MS-SSIM": 0.9711973428726196
+      }
+    },
+    "MS-SSIM": {
+      "id": "T3_baseline_perceptual",
+      "kind": "candidate",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T3_baseline_perceptual\\rubber_duck",
+      "objective": "MS-SSIM",
+      "snapshot": "metric_ms_ssim",
+      "additional_iteration": 10000,
+      "metrics": {
+        "PSNR": 28.172524833679198,
+        "SSIM": 0.9767149007320404,
+        "LPIPS": 0.028559130802750587,
+        "MS-SSIM": 0.9715862941741943
+      }
+    }
+  },
+  "raw_paths": {
+    "PSNR": {
+      "renders_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_mlp_capacity\\long_W512_D0\\rubber_duck\\test\\ours_best\\renders",
+      "gt_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_mlp_capacity\\long_W512_D0\\rubber_duck\\test\\ours_best\\gt"
+    },
+    "SSIM": {
+      "renders_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_mlp_capacity\\long_W512_D0\\rubber_duck\\test\\ours_best\\renders",
+      "gt_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_mlp_capacity\\long_W512_D0\\rubber_duck\\test\\ours_best\\gt"
+    },
+    "LPIPS": {
+      "renders_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T3_baseline_perceptual\\rubber_duck\\test\\ours_metric_lpips\\renders",
+      "gt_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T3_baseline_perceptual\\rubber_duck\\test\\ours_metric_lpips\\gt"
+    },
+    "MS-SSIM": {
+      "renders_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T3_baseline_perceptual\\rubber_duck\\test\\ours_metric_ms_ssim\\renders",
+      "gt_absolute": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T3_baseline_perceptual\\rubber_duck\\test\\ours_metric_ms_ssim\\gt"
+    }
+  },
+  "matched_gt_verified": true
+}

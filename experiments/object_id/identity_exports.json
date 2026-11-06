@@ -1,0 +1,165 @@
+{
+  "status": "completed",
+  "summaries": [
+    {
+      "model": "O1_frozen_ID",
+      "snapshot": "best",
+      "source_iteration": 47000,
+      "images": 50,
+      "split": "test",
+      "capacity": 16,
+      "active_candidates": 16,
+      "mean_max_assignment": 0.17222023010253906,
+      "confident_kernel_fraction": 0.0,
+      "shuffled_identity_diagnostics": [
+        {
+          "frame": "0001",
+          "RGB_L1_change_after_identity_shuffle": 0.011743650771677494,
+          "meaning": "branch-use diagnostic, not semantic ID accuracy"
+        },
+        {
+          "frame": "0049",
+          "RGB_L1_change_after_identity_shuffle": 0.003831028938293457,
+          "meaning": "branch-use diagnostic, not semantic ID accuracy"
+        },
+        {
+          "frame": "0101",
+          "RGB_L1_change_after_identity_shuffle": 0.008005494251847267,
+          "meaning": "branch-use diagnostic, not semantic ID accuracy"
+        },
+        {
+          "frame": "0149",
+          "RGB_L1_change_after_identity_shuffle": 0.011617726646363735,
+          "meaning": "branch-use diagnostic, not semantic ID accuracy"
+        },
+        {
+          "frame": "0197",
+          "RGB_L1_change_after_identity_shuffle": 0.004484714940190315,
+          "meaning": "branch-use diagnostic, not semantic ID accuracy"
+        }
+      ],
+      "ground_truth_instance_accuracy_available": false,
+      "gallery": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_object_id\\identity_exports\\O1_frozen_ID\\best\\index.html"
+    },
+    {
+      "model": "O1_frozen_ID",
+      "snapshot": "50000",
+      "source_iteration": 50000,
+      "images": 50,
+      "split": "test",
+      "capacity": 16,
+      "active_candidates": 16,
+      "mean_max_assignment": 0.17221860587596893,
+      "confident_kernel_fraction": 0.0,
+      "shuffled_identity_diagnostics": [
+        {
+          "frame": "0001",
+          "RGB_L1_change_after_identity_shuffle": 0.011759608052670956,
+          "meaning": "branch-use diagnostic, not semantic ID accuracy"
+        },
+        {
+          "frame": "0049",
+          "RGB_L1_change_after_identity_shuffle": 0.003788603935390711,
+          "meaning": "branch-use diagnostic, not semantic ID accuracy"
+        },
+        {
+          "frame": "0101",
+          "RGB_L1_change_after_identity_shuffle": 0.007972590625286102,
+          "meaning": "branch-use diagnostic, not semantic ID accuracy"
+        },
+        {
+          "frame": "0149",
+          "RGB_L1_change_after_identity_shuffle": 0.011546486057341099,
+          "meaning": "branch-use diagnostic, not semantic ID accuracy"
+        },
+        {
+          "frame": "0197",
+          "RGB_L1_change_after_identity_shuffle": 0.004419530276209116,
+          "meaning": "branch-use diagnostic, not semantic ID accuracy"
+        }
+      ],
+      "ground_truth_instance_accuracy_available": false,
+      "gallery": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_object_id\\identity_exports\\O1_frozen_ID\\50000\\index.html"
+    },
+    {
+      "model": "O2_selfsup_ID",
+      "snapshot": "best",
+      "source_iteration": 45000,
+      "images": 50,
+      "split": "test",
+      "capacity": 16,
+      "active_candidates": 16,
+      "mean_max_assignment": 0.33799028396606445,
+      "confident_kernel_fraction": 0.12685003876686096,
+      "shuffled_identity_diagnostics": [
+        {
+          "frame": "0001",
+          "RGB_L1_change_after_identity_shuffle": 0.019274486228823662,
+          "meaning": "branch-use diagnostic, not semantic ID accuracy"
+        },
+        {
+          "frame": "0049",
+          "RGB_L1_change_after_identity_shuffle": 0.013182642869651318,
+          "meaning": "branch-use diagnostic, not semantic ID accuracy"
+        },
+        {
+          "frame": "0101",
+          "RGB_L1_change_after_identity_shuffle": 0.011872103437781334,
+          "meaning": "branch-use diagnostic, not semantic ID accuracy"
+        },
+        {
+          "frame": "0149",
+          "RGB_L1_change_after_identity_shuffle": 0.010835671797394753,
+          "meaning": "branch-use diagnostic, not semantic ID accuracy"
+        },
+        {
+          "frame": "0197",
+          "RGB_L1_change_after_identity_shuffle": 0.004938604310154915,
+          "meaning": "branch-use diagnostic, not semantic ID accuracy"
+        }
+      ],
+      "ground_truth_instance_accuracy_available": false,
+      "gallery": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_object_id\\identity_exports\\O2_selfsup_ID\\best\\index.html"
+    },
+    {
+      "model": "O2_selfsup_ID",
+      "snapshot": "50000",
+      "source_iteration": 50000,
+      "images": 50,
+      "split": "test",
+      "capacity": 16,
+      "active_candidates": 16,
+      "mean_max_assignment": 0.34953710436820984,
+      "confident_kernel_fraction": 0.14113464951515198,
+      "shuffled_identity_diagnostics": [
+        {
+          "frame": "0001",
+          "RGB_L1_change_after_identity_shuffle": 0.019303729757666588,
+          "meaning": "branch-use diagnostic, not semantic ID accuracy"
+        },
+        {
+          "frame": "0049",
+          "RGB_L1_change_after_identity_shuffle": 0.012989675626158714,
+          "meaning": "branch-use diagnostic, not semantic ID accuracy"
+        },
+        {
+          "frame": "0101",
+          "RGB_L1_change_after_identity_shuffle": 0.012061191722750664,
+          "meaning": "branch-use diagnostic, not semantic ID accuracy"
+        },
+        {
+          "frame": "0149",
+          "RGB_L1_change_after_identity_shuffle": 0.010777609422802925,
+          "meaning": "branch-use diagnostic, not semantic ID accuracy"
+        },
+        {
+          "frame": "0197",
+          "RGB_L1_change_after_identity_shuffle": 0.005011188797652721,
+          "meaning": "branch-use diagnostic, not semantic ID accuracy"
+        }
+      ],
+      "ground_truth_instance_accuracy_available": false,
+      "gallery": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_object_id\\identity_exports\\O2_selfsup_ID\\50000\\index.html"
+    }
+  ]
+}

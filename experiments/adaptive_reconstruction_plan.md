@@ -262,6 +262,14 @@ identities. It must not reintroduce physical-body-count estimation into this
 unified-pool branch. Original incomplete contact goals stay recorded; no weight
 sweep or paused historical trainer/automation is resumed.
 
+### Current improvement baseline: S3-U (user decision, 2026-11-03)
+
+Future improvements use the predeclared S3-U final6k state, keeping one unified
+dynamic pool without estimating body number. Original S4/S5 do not establish
+successful track or collision correction on this representation; their group
+and row bindings cannot be transplanted. No new training follows this selection.
+See [the baseline decision and S4/S5 assessment](staged_reconstruction/BASELINE_DECISION_20261103.md).
+
 ### Unknown static support requirement: S1-A (2026-11-03)
 
 The user requires static discovery without preassigned blue/static labels.

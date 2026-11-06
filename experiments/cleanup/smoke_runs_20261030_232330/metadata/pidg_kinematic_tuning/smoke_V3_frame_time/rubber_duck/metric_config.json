@@ -1,0 +1,19 @@
+{
+  "enabled": true,
+  "parent_run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_official\\rubber_duck",
+  "pixel_loss": "l1",
+  "structure": "ssim",
+  "perceptual_weight": 0.02,
+  "perceptual_interval": 4,
+  "timeline": "frame_index",
+  "shared_physics_time": true,
+  "kinematic_weight": 0.0,
+  "kinematic_dt": 0.001,
+  "kinematic_samples": 256,
+  "kinematic_interval": 10,
+  "kinematic_start": 0,
+  "kinematic_ramp": 1,
+  "kinematic_huber_delta": 0.1,
+  "audit_gradients": true,
+  "audit_parameters": true
+}

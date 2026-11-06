@@ -1,0 +1,69 @@
+{
+  "checkpoint_sha256": "66e9fe7db2f5f455b92c19865e14b14363dbc1f82bfd3ec37576ad199b162b50",
+  "iteration": 100,
+  "config": {
+    "enabled": true,
+    "parent_run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_official\\rubber_duck",
+    "pixel_loss": "l1",
+    "structure": "ssim",
+    "perceptual_weight": 0.02,
+    "perceptual_interval": 4,
+    "timeline": "frame_index",
+    "shared_physics_time": true,
+    "kinematic_weight": 0.001,
+    "kinematic_dt": 0.001,
+    "kinematic_samples": 256,
+    "kinematic_interval": 10,
+    "kinematic_start": 0,
+    "kinematic_ramp": 1,
+    "kinematic_huber_delta": 0.1,
+    "audit_gradients": true,
+    "audit_parameters": true
+  },
+  "best": {
+    "PSNR": {
+      "value": 34.72958278656006,
+      "iteration": 100,
+      "snapshot": "best",
+      "metrics": {
+        "PSNR": 34.72958278656006,
+        "SSIM": 0.9908730733394623,
+        "LPIPS": 0.016930745597928763,
+        "MS-SSIM": 0.9927215707302094
+      }
+    },
+    "SSIM": {
+      "value": 0.9908730733394623,
+      "iteration": 100,
+      "snapshot": "metric_ssim",
+      "metrics": {
+        "PSNR": 34.72958278656006,
+        "SSIM": 0.9908730733394623,
+        "LPIPS": 0.016930745597928763,
+        "MS-SSIM": 0.9927215707302094
+      }
+    },
+    "LPIPS": {
+      "value": 0.016930745597928763,
+      "iteration": 100,
+      "snapshot": "metric_lpips",
+      "metrics": {
+        "PSNR": 34.72958278656006,
+        "SSIM": 0.9908730733394623,
+        "LPIPS": 0.016930745597928763,
+        "MS-SSIM": 0.9927215707302094
+      }
+    },
+    "MS-SSIM": {
+      "value": 0.9927215707302094,
+      "iteration": 100,
+      "snapshot": "metric_ms_ssim",
+      "metrics": {
+        "PSNR": 34.72958278656006,
+        "SSIM": 0.9908730733394623,
+        "LPIPS": 0.016930745597928763,
+        "MS-SSIM": 0.9927215707302094
+      }
+    }
+  }
+}

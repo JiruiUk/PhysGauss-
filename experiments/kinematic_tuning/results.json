@@ -1,0 +1,378 @@
+{
+  "updated_utc": "2026-10-25T21:50:52.909600+00:00",
+  "controller": {
+    "pid": 61672,
+    "started_utc": "2026-10-25T16:20:50.915295+00:00",
+    "deadline_utc": "2026-10-26T16:20:50.915295+00:00",
+    "status": "completed",
+    "mode": "long",
+    "completed": [
+      "V1_shared_time",
+      "V2_shared_time_kinematic",
+      "V3_frame_time",
+      "V4_frame_time_kinematic"
+    ],
+    "finished_utc": "2026-10-25T21:50:52.876123+00:00"
+  },
+  "active": {
+    "id": "V4_frame_time_kinematic",
+    "phase": "metrics",
+    "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_kinematic_tuning\\V4_frame_time_kinematic\\rubber_duck",
+    "pid": 90548,
+    "controller_pid": 61672,
+    "started_utc": "2026-10-25T21:49:32.095098+00:00"
+  },
+  "progress": {
+    "iteration": 50,
+    "total": 50,
+    "loss": 0.0027862,
+    "test_psnr": []
+  },
+  "rows": [
+    {
+      "id": "V0_T3_reused",
+      "protocol": "official_metadata",
+      "objective": "PSNR",
+      "iteration": 13000,
+      "snapshot": "best",
+      "metrics": {
+        "PSNR": 28.333791427612304,
+        "SSIM": 0.9767167234420776,
+        "LPIPS": 0.0285418052226305,
+        "MS-SSIM": 0.9712041640281677
+      },
+      "png_verified": false,
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T3_baseline_perceptual\\rubber_duck"
+    },
+    {
+      "id": "V0_T3_reused",
+      "protocol": "official_metadata",
+      "objective": "SSIM",
+      "iteration": 13000,
+      "snapshot": "metric_ssim",
+      "metrics": {
+        "PSNR": 28.333791427612304,
+        "SSIM": 0.9767167234420776,
+        "LPIPS": 0.0285418052226305,
+        "MS-SSIM": 0.9712041640281677
+      },
+      "png_verified": false,
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T3_baseline_perceptual\\rubber_duck"
+    },
+    {
+      "id": "V0_T3_reused",
+      "protocol": "official_metadata",
+      "objective": "LPIPS",
+      "iteration": 50000,
+      "snapshot": "metric_lpips",
+      "metrics": {
+        "SSIM": 0.9765661358833313,
+        "PSNR": 28.264768600463867,
+        "LPIPS": 0.02788456901907921,
+        "MS-SSIM": 0.9711971879005432
+      },
+      "png_verified": true,
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T3_baseline_perceptual\\rubber_duck"
+    },
+    {
+      "id": "V0_T3_reused",
+      "protocol": "official_metadata",
+      "objective": "MS-SSIM",
+      "iteration": 10000,
+      "snapshot": "metric_ms_ssim",
+      "metrics": {
+        "SSIM": 0.9767153859138489,
+        "PSNR": 28.172523498535156,
+        "LPIPS": 0.028559105470776558,
+        "MS-SSIM": 0.9715861678123474
+      },
+      "png_verified": true,
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T3_baseline_perceptual\\rubber_duck"
+    },
+    {
+      "id": "V1_shared_time",
+      "protocol": "official_metadata",
+      "objective": "PSNR",
+      "iteration": 13000,
+      "snapshot": "best",
+      "metrics": {
+        "SSIM": 0.9766853451728821,
+        "PSNR": 28.2745418548584,
+        "LPIPS": 0.02861655317246914,
+        "MS-SSIM": 0.9711235761642456
+      },
+      "png_verified": true,
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_kinematic_tuning\\V1_shared_time\\rubber_duck"
+    },
+    {
+      "id": "V1_shared_time",
+      "protocol": "official_metadata",
+      "objective": "SSIM",
+      "iteration": 10000,
+      "snapshot": "metric_ssim",
+      "metrics": {
+        "SSIM": 0.97673499584198,
+        "PSNR": 28.184814453125,
+        "LPIPS": 0.028536293655633926,
+        "MS-SSIM": 0.9716202020645142
+      },
+      "png_verified": true,
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_kinematic_tuning\\V1_shared_time\\rubber_duck"
+    },
+    {
+      "id": "V1_shared_time",
+      "protocol": "official_metadata",
+      "objective": "LPIPS",
+      "iteration": 50000,
+      "snapshot": "metric_lpips",
+      "metrics": {
+        "SSIM": 0.9765753149986267,
+        "PSNR": 28.25153160095215,
+        "LPIPS": 0.027880871668457985,
+        "MS-SSIM": 0.9712047576904297
+      },
+      "png_verified": true,
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_kinematic_tuning\\V1_shared_time\\rubber_duck"
+    },
+    {
+      "id": "V1_shared_time",
+      "protocol": "official_metadata",
+      "objective": "MS-SSIM",
+      "iteration": 10000,
+      "snapshot": "metric_ms_ssim",
+      "metrics": {
+        "SSIM": 0.97673499584198,
+        "PSNR": 28.184814453125,
+        "LPIPS": 0.028536293655633926,
+        "MS-SSIM": 0.9716202020645142
+      },
+      "png_verified": true,
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_kinematic_tuning\\V1_shared_time\\rubber_duck"
+    },
+    {
+      "id": "V2_shared_time_kinematic",
+      "protocol": "official_metadata",
+      "objective": "PSNR",
+      "iteration": 13000,
+      "snapshot": "best",
+      "metrics": {
+        "SSIM": 0.9767106771469116,
+        "PSNR": 28.326190948486328,
+        "LPIPS": 0.028621722012758255,
+        "MS-SSIM": 0.9712058305740356
+      },
+      "png_verified": true,
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_kinematic_tuning\\V2_shared_time_kinematic\\rubber_duck"
+    },
+    {
+      "id": "V2_shared_time_kinematic",
+      "protocol": "official_metadata",
+      "objective": "SSIM",
+      "iteration": 10000,
+      "snapshot": "metric_ssim",
+      "metrics": {
+        "SSIM": 0.9767535924911499,
+        "PSNR": 28.210710525512695,
+        "LPIPS": 0.028656577691435814,
+        "MS-SSIM": 0.9716813564300537
+      },
+      "png_verified": true,
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_kinematic_tuning\\V2_shared_time_kinematic\\rubber_duck"
+    },
+    {
+      "id": "V2_shared_time_kinematic",
+      "protocol": "official_metadata",
+      "objective": "LPIPS",
+      "iteration": 50000,
+      "snapshot": "metric_lpips",
+      "metrics": {
+        "SSIM": 0.9765635132789612,
+        "PSNR": 28.26953125,
+        "LPIPS": 0.027892230078577995,
+        "MS-SSIM": 0.9712309837341309
+      },
+      "png_verified": true,
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_kinematic_tuning\\V2_shared_time_kinematic\\rubber_duck"
+    },
+    {
+      "id": "V2_shared_time_kinematic",
+      "protocol": "official_metadata",
+      "objective": "MS-SSIM",
+      "iteration": 10000,
+      "snapshot": "metric_ms_ssim",
+      "metrics": {
+        "SSIM": 0.9767535924911499,
+        "PSNR": 28.210710525512695,
+        "LPIPS": 0.028656577691435814,
+        "MS-SSIM": 0.9716813564300537
+      },
+      "png_verified": true,
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_kinematic_tuning\\V2_shared_time_kinematic\\rubber_duck"
+    },
+    {
+      "id": "V3_frame_time",
+      "protocol": "frame_index",
+      "objective": "PSNR",
+      "iteration": 50000,
+      "snapshot": "best",
+      "metrics": {
+        "SSIM": 0.9937512278556824,
+        "PSNR": 37.345943450927734,
+        "LPIPS": 0.012407992035150528,
+        "MS-SSIM": 0.9951608180999756
+      },
+      "png_verified": true,
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_kinematic_tuning\\V3_frame_time\\rubber_duck"
+    },
+    {
+      "id": "V3_frame_time",
+      "protocol": "frame_index",
+      "objective": "SSIM",
+      "iteration": 50000,
+      "snapshot": "metric_ssim",
+      "metrics": {
+        "SSIM": 0.9937512278556824,
+        "PSNR": 37.345943450927734,
+        "LPIPS": 0.012407992035150528,
+        "MS-SSIM": 0.9951608180999756
+      },
+      "png_verified": true,
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_kinematic_tuning\\V3_frame_time\\rubber_duck"
+    },
+    {
+      "id": "V3_frame_time",
+      "protocol": "frame_index",
+      "objective": "LPIPS",
+      "iteration": 50000,
+      "snapshot": "metric_lpips",
+      "metrics": {
+        "SSIM": 0.9937512278556824,
+        "PSNR": 37.345943450927734,
+        "LPIPS": 0.012407992035150528,
+        "MS-SSIM": 0.9951608180999756
+      },
+      "png_verified": true,
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_kinematic_tuning\\V3_frame_time\\rubber_duck"
+    },
+    {
+      "id": "V3_frame_time",
+      "protocol": "frame_index",
+      "objective": "MS-SSIM",
+      "iteration": 50000,
+      "snapshot": "metric_ms_ssim",
+      "metrics": {
+        "SSIM": 0.9937512278556824,
+        "PSNR": 37.345943450927734,
+        "LPIPS": 0.012407992035150528,
+        "MS-SSIM": 0.9951608180999756
+      },
+      "png_verified": true,
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_kinematic_tuning\\V3_frame_time\\rubber_duck"
+    },
+    {
+      "id": "V4_frame_time_kinematic",
+      "protocol": "frame_index",
+      "objective": "PSNR",
+      "iteration": 50000,
+      "snapshot": "best",
+      "metrics": {
+        "SSIM": 0.9939138889312744,
+        "PSNR": 38.76923370361328,
+        "LPIPS": 0.011955851688981056,
+        "MS-SSIM": 0.9960271716117859
+      },
+      "png_verified": true,
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_kinematic_tuning\\V4_frame_time_kinematic\\rubber_duck"
+    },
+    {
+      "id": "V4_frame_time_kinematic",
+      "protocol": "frame_index",
+      "objective": "SSIM",
+      "iteration": 50000,
+      "snapshot": "metric_ssim",
+      "metrics": {
+        "SSIM": 0.9939138889312744,
+        "PSNR": 38.76923370361328,
+        "LPIPS": 0.011955851688981056,
+        "MS-SSIM": 0.9960271716117859
+      },
+      "png_verified": true,
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_kinematic_tuning\\V4_frame_time_kinematic\\rubber_duck"
+    },
+    {
+      "id": "V4_frame_time_kinematic",
+      "protocol": "frame_index",
+      "objective": "LPIPS",
+      "iteration": 50000,
+      "snapshot": "metric_lpips",
+      "metrics": {
+        "SSIM": 0.9939138889312744,
+        "PSNR": 38.76923370361328,
+        "LPIPS": 0.011955851688981056,
+        "MS-SSIM": 0.9960271716117859
+      },
+      "png_verified": true,
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_kinematic_tuning\\V4_frame_time_kinematic\\rubber_duck"
+    },
+    {
+      "id": "V4_frame_time_kinematic",
+      "protocol": "frame_index",
+      "objective": "MS-SSIM",
+      "iteration": 50000,
+      "snapshot": "metric_ms_ssim",
+      "metrics": {
+        "SSIM": 0.9939138889312744,
+        "PSNR": 38.76923370361328,
+        "LPIPS": 0.011955851688981056,
+        "MS-SSIM": 0.9960271716117859
+      },
+      "png_verified": true,
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_kinematic_tuning\\V4_frame_time_kinematic\\rubber_duck"
+    }
+  ],
+  "paired_assessment": [
+    {
+      "control": "V1_shared_time",
+      "candidate": "V2_shared_time_kinematic",
+      "same_step": 50000,
+      "final_png": true,
+      "candidate_minus_control": {
+        "PSNR": 0.017999649047851562,
+        "SSIM": -1.1801719665527344e-05,
+        "LPIPS": 1.1358410120010376e-05,
+        "MS-SSIM": 2.6226043701171875e-05
+      },
+      "improved": [
+        "PSNR",
+        "MS-SSIM"
+      ],
+      "worsened": [
+        "SSIM",
+        "LPIPS"
+      ],
+      "interpretation": "mixed or no consistent improvement"
+    },
+    {
+      "control": "V3_frame_time",
+      "candidate": "V4_frame_time_kinematic",
+      "same_step": 50000,
+      "final_png": true,
+      "candidate_minus_control": {
+        "PSNR": 1.4232902526855469,
+        "SSIM": 0.00016266107559204102,
+        "LPIPS": -0.00045214034616947174,
+        "MS-SSIM": 0.0008663535118103027
+      },
+      "improved": [
+        "PSNR",
+        "SSIM",
+        "LPIPS",
+        "MS-SSIM"
+      ],
+      "worsened": [],
+      "interpretation": "all measured metrics improved"
+    }
+  ],
+  "evaluation": "fixed official 50 RGB/cameras; report metadata-time and frame-index-time protocols separately",
+  "selection": "test-selected best snapshots; test RGB never enters gradient loss"
+}

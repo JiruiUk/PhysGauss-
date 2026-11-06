@@ -1,0 +1,26 @@
+{
+  "scene": "mechanics_cloth",
+  "repo_commit": "b77fd2107a50c875d7219bb4f82388d5e5ea1319",
+  "dataset_revision": "46b23520acaaf5d58938fb19b50a3a62d12c55df",
+  "profile": "official",
+  "smoke_only": true,
+  "seed": 0,
+  "iterations": 120,
+  "resolution_width": 400,
+  "python": "3.11.14 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 18:30:03) [MSC v.1929 64 bit (AMD64)]",
+  "torch": "2.8.0+cu128",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5070 Ti",
+  "status": "completed",
+  "started_at": 1791898518.1090443,
+  "note": "Patched official release on Windows. Paper/code discrepancies are documented; numeric agreement is not assumed.",
+  "metrics": {
+    "ours_best": {
+      "SSIM": 0.7930673360824585,
+      "PSNR": 18.588573455810547,
+      "LPIPS": 0.2657640874385834,
+      "MS-SSIM": 0.7072157859802246
+    }
+  },
+  "finished_at": 1791898656.0332232
+}

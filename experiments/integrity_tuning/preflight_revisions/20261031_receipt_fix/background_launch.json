@@ -1,0 +1,23 @@
+﻿{
+    "maximum_promotions":  2,
+    "pid":  159116,
+    "deadline_utc":  "2026-11-01T05:17:35+00:00",
+    "cpu_tests_passed":  24,
+    "baseline_training_skipped":  true,
+    "promote_total":  50000,
+    "screen_total":  20000,
+    "wait_for":  "runs/pidg_object_id/controller.json completed",
+    "stdout":  "F:\\A_Edinburgh\\PhysGauss\\experiments\\integrity_tuning\\queue_20261031_213516.stdout.log",
+    "command":  [
+                    "powershell.exe",
+                    "-NoProfile",
+                    "-ExecutionPolicy",
+                    "Bypass",
+                    "-File",
+                    "F:\\A_Edinburgh\\PhysGauss\\variants\\integrity_tuning\\launch.ps1"
+                ],
+    "gpu_preflight":  "queued before screens",
+    "stderr":  "F:\\A_Edinburgh\\PhysGauss\\experiments\\integrity_tuning\\queue_20261031_213516.stderr.log",
+    "started_utc":  "2026-10-31T21:35:17.6382448Z",
+    "budget_hours":  8
+}

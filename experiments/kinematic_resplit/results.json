@@ -1,0 +1,202 @@
+{
+  "updated_utc": "2026-10-26T03:24:10.097850+00:00",
+  "controller": {
+    "pid": 98828,
+    "status": "completed",
+    "started_utc": "2026-10-26T00:13:49.401482+00:00",
+    "deadline_utc": "2026-10-27T00:13:49.401482+00:00",
+    "completed": [
+      "P0_train_only",
+      "V3_frame_time",
+      "V4_frame_time_kinematic"
+    ],
+    "finished_utc": "2026-10-26T03:24:10.084287+00:00"
+  },
+  "active": {
+    "id": "V4_frame_time_kinematic",
+    "phase": "metrics_test",
+    "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_kinematic_resplit\\V4_frame_time_kinematic\\rubber_duck",
+    "pid": 107448,
+    "controller_pid": 98828,
+    "started_utc": "2026-10-26T03:23:24.331950+00:00"
+  },
+  "rows": [
+    {
+      "id": "P0_train_only",
+      "iteration": 50000,
+      "target": 50000,
+      "validation": {
+        "iteration": 50000,
+        "split": "validation",
+        "metrics": {
+          "PSNR": 39.09530824025472,
+          "SSIM": 0.9938015758991241,
+          "LPIPS": 0.012858640565536917,
+          "MS-SSIM": 0.9954717973868052
+        }
+      },
+      "test": null
+    },
+    {
+      "id": "V3_frame_time",
+      "iteration": 50000,
+      "target": 50000,
+      "validation": {
+        "iteration": 50000,
+        "split": "validation",
+        "metrics": {
+          "PSNR": 39.65109151204427,
+          "SSIM": 0.9942408879597981,
+          "LPIPS": 0.0110100609366782,
+          "MS-SSIM": 0.9958980778853098
+        }
+      },
+      "test": {
+        "ours_50000": {
+          "SSIM": 0.9946093559265137,
+          "PSNR": 40.09170913696289,
+          "LPIPS": 0.01039230078458786,
+          "MS-SSIM": 0.9962949156761169
+        },
+        "ours_best": {
+          "SSIM": 0.9946093559265137,
+          "PSNR": 40.09170913696289,
+          "LPIPS": 0.01039230078458786,
+          "MS-SSIM": 0.9962949156761169
+        },
+        "ours_metric_lpips": {
+          "SSIM": 0.9946093559265137,
+          "PSNR": 40.09170913696289,
+          "LPIPS": 0.01039230078458786,
+          "MS-SSIM": 0.9962949156761169
+        },
+        "ours_metric_ms_ssim": {
+          "SSIM": 0.9946093559265137,
+          "PSNR": 40.09170913696289,
+          "LPIPS": 0.01039230078458786,
+          "MS-SSIM": 0.9962949156761169
+        },
+        "ours_metric_ssim": {
+          "SSIM": 0.9946093559265137,
+          "PSNR": 40.09170913696289,
+          "LPIPS": 0.01039230078458786,
+          "MS-SSIM": 0.9962949156761169
+        }
+      }
+    },
+    {
+      "id": "V4_frame_time_kinematic",
+      "iteration": 50000,
+      "target": 50000,
+      "validation": {
+        "iteration": 50000,
+        "split": "validation",
+        "metrics": {
+          "PSNR": 39.69553311665853,
+          "SSIM": 0.9942349473635356,
+          "LPIPS": 0.011087496171239764,
+          "MS-SSIM": 0.9958884139855703
+        }
+      },
+      "test": {
+        "ours_50000": {
+          "SSIM": 0.9946030378341675,
+          "PSNR": 40.10551834106445,
+          "LPIPS": 0.010460314340889454,
+          "MS-SSIM": 0.9962841272354126
+        },
+        "ours_best": {
+          "SSIM": 0.9946030378341675,
+          "PSNR": 40.10551834106445,
+          "LPIPS": 0.010460314340889454,
+          "MS-SSIM": 0.9962841272354126
+        },
+        "ours_metric_lpips": {
+          "SSIM": 0.9946030378341675,
+          "PSNR": 40.10551834106445,
+          "LPIPS": 0.010460314340889454,
+          "MS-SSIM": 0.9962841272354126
+        },
+        "ours_metric_ms_ssim": {
+          "SSIM": 0.9946030378341675,
+          "PSNR": 40.10551834106445,
+          "LPIPS": 0.010460314340889454,
+          "MS-SSIM": 0.9962841272354126
+        },
+        "ours_metric_ssim": {
+          "SSIM": 0.9946030378341675,
+          "PSNR": 40.10551834106445,
+          "LPIPS": 0.010460314340889454,
+          "MS-SSIM": 0.9962841272354126
+        }
+      }
+    }
+  ],
+  "comparison": [
+    {
+      "model": "V3_frame_time",
+      "previous_final50k": {
+        "SSIM": 0.9937512278556824,
+        "PSNR": 37.345943450927734,
+        "LPIPS": 0.012407992035150528,
+        "MS-SSIM": 0.9951608180999756
+      },
+      "resplit_final50k": {
+        "SSIM": 0.9946093559265137,
+        "PSNR": 40.09170913696289,
+        "LPIPS": 0.01039230078458786,
+        "MS-SSIM": 0.9962949156761169
+      },
+      "delta": {
+        "PSNR": 2.7457656860351562,
+        "SSIM": 0.0008581280708312988,
+        "LPIPS": -0.002015691250562668,
+        "MS-SSIM": 0.0011340975761413574
+      }
+    },
+    {
+      "model": "V4_frame_time_kinematic",
+      "previous_final50k": {
+        "SSIM": 0.9939138889312744,
+        "PSNR": 38.76923370361328,
+        "LPIPS": 0.011955851688981056,
+        "MS-SSIM": 0.9960271716117859
+      },
+      "resplit_final50k": {
+        "SSIM": 0.9946030378341675,
+        "PSNR": 40.10551834106445,
+        "LPIPS": 0.010460314340889454,
+        "MS-SSIM": 0.9962841272354126
+      },
+      "delta": {
+        "PSNR": 1.3362846374511719,
+        "SSIM": 0.0006891489028930664,
+        "LPIPS": -0.0014955373480916023,
+        "MS-SSIM": 0.000256955623626709
+      }
+    }
+  ],
+  "paired_final50k": {
+    "V4_minus_V3": {
+      "PSNR": 0.0138092041015625,
+      "SSIM": -6.318092346191406e-06,
+      "LPIPS": 6.801355630159378e-05,
+      "MS-SSIM": -1.0788440704345703e-05
+    },
+    "improved_frame_count": {
+      "PSNR": 30,
+      "SSIM": 29,
+      "LPIPS": 26,
+      "MS-SSIM": 28
+    },
+    "test_frames": 50
+  },
+  "protocol": "120 train / 30 validation / unchanged 50 test; global frame clock",
+  "limitations": [
+    "previous test exposure persists",
+    "single scene/seed",
+    "train count and clean initialization differ from previous runs",
+    "uniform frame cadence assumed",
+    "CUDA training may diverge after identical full-state branching"
+  ]
+}

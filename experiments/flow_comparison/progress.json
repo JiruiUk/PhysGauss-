@@ -1,0 +1,36 @@
+{
+  "status": "completed",
+  "active": null,
+  "models": [
+    {
+      "id": "K1_flow_independent",
+      "iteration": 50000,
+      "latest_validation": {
+        "iteration": 50000,
+        "split": "validation",
+        "metrics": {
+          "PSNR": 38.02612717946371,
+          "SSIM": 0.9927280147870382,
+          "LPIPS": 0.013716591258222858,
+          "MS-SSIM": 0.994804859161377
+        }
+      }
+    },
+    {
+      "id": "K2_flow_trajectory",
+      "iteration": 50000,
+      "latest_validation": {
+        "iteration": 50000,
+        "split": "validation",
+        "metrics": {
+          "PSNR": 33.84882113138835,
+          "SSIM": 0.9876289188861846,
+          "LPIPS": 0.02274649093548457,
+          "MS-SSIM": 0.9897195716698964
+        }
+      }
+    }
+  ],
+  "error": null,
+  "updated_utc": "2026-11-02T04:10:34.517734+00:00"
+}

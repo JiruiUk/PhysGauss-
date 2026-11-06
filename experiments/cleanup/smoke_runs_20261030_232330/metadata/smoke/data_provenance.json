@@ -1,0 +1,31 @@
+{
+  "manifest": "F:\\A_Edinburgh\\PhysGauss\\data\\synthetic\\manifest.json",
+  "sha256": "f463816548c2ef7aab6927d90ff4b213d386f8e3d2ce4aadfc8c96f2c96d3f8f",
+  "metadata": {
+    "schema_version": 1,
+    "name": "synthetic-moving-gaussians",
+    "dataset_kind": "synthetic",
+    "protocol": "image_only",
+    "geometry_source": "synthetic",
+    "time_unit": "seconds",
+    "length_unit": "normalized",
+    "frames_file": "frames.npz",
+    "canonical_file": "canonical.npz",
+    "note": "Analytic toy sequence; reference-renderer self-consistency only, not benchmark evidence."
+  },
+  "train_frames": [
+    0,
+    1,
+    3,
+    4,
+    6,
+    7
+  ],
+  "test_frames": [
+    2,
+    5,
+    8
+  ],
+  "renderer": "torch_reference",
+  "benchmark_compatible": false
+}

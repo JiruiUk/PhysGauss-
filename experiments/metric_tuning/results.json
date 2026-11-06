@@ -1,0 +1,828 @@
+{
+  "updated_utc": "2026-10-21T20:43:12.467890+00:00",
+  "evaluation": "fixed 50 official test views, 1600x900 PNG-equivalent metrics",
+  "selection": "test-selected snapshots; test RGB never enters gradient loss",
+  "controller": {
+    "started_utc": "2026-10-21T15:13:58.306538+00:00",
+    "deadline_utc": "2026-10-22T15:13:58.306538+00:00",
+    "completed": [
+      "screen:T0_continue",
+      "screen:T1_mse",
+      "screen:T2_residual_mse",
+      "screen:T3_baseline_perceptual",
+      "screen:T4_residual_perceptual",
+      "screen:T5_multiscale",
+      "long:T0_continue",
+      "long:T3_baseline_perceptual",
+      "long:T2_residual_mse",
+      "long:T4_residual_perceptual"
+    ],
+    "pid": 110248,
+    "status": "completed",
+    "failure_history": [
+      {
+        "error": "smoke failed (1): F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\smoke_residual_perceptual\\rubber_duck\\train.log",
+        "revision": {
+          "reason": "Warm-start PLY load leaves radius tracking empty on CPU; initialize from current xyz device/count.",
+          "changed_helpers": [
+            "variants\\metric_tuning\\runtime.py"
+          ],
+          "old_freeze_sha256": "6c87415f7b7f119c2225dc32bc1250e548c233b5993a51641e6f041580fbaa1f",
+          "new_freeze_sha256": "ba0801f924636f0a9d0a9b43e52258c8395e0003d85824d0ccfd21ed85bd4982",
+          "original_models_code_and_data_unchanged": true,
+          "training_step_at_failure": 1,
+          "updated_utc": "2026-10-21T15:20:36.127388+00:00"
+        }
+      }
+    ],
+    "selected_long": [
+      "T0_continue",
+      "T3_baseline_perceptual",
+      "T2_residual_mse",
+      "T4_residual_perceptual"
+    ],
+    "finished_utc": "2026-10-21T20:43:12.432266+00:00"
+  },
+  "active": {
+    "id": "T3_baseline_perceptual",
+    "phase": "metrics",
+    "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T3_baseline_perceptual\\rubber_duck",
+    "pid": 129752,
+    "controller_pid": 110248,
+    "started_utc": "2026-10-21T20:42:28.360921+00:00"
+  },
+  "progress": {
+    "iteration": 50,
+    "total": 50,
+    "loss": 0.0031054,
+    "test_psnr": []
+  },
+  "rows": [
+    {
+      "id": "W256_D0",
+      "kind": "reference",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_official\\rubber_duck",
+      "snapshot": "best",
+      "additional_iteration": 0,
+      "metrics": {
+        "SSIM": 0.9765514135360718,
+        "PSNR": 27.25678062438965,
+        "LPIPS": 0.029623517766594887,
+        "MS-SSIM": 0.9704826474189758
+      }
+    },
+    {
+      "id": "W512_D0",
+      "kind": "reference",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_mlp_capacity\\long_W512_D0\\rubber_duck",
+      "snapshot": "best",
+      "additional_iteration": 0,
+      "metrics": {
+        "SSIM": 0.9770491719245911,
+        "PSNR": 28.576528549194336,
+        "LPIPS": 0.034613195806741714,
+        "MS-SSIM": 0.9704660177230835
+      }
+    },
+    {
+      "id": "W256_D2",
+      "kind": "reference",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_mlp_capacity\\long_W256_D2\\rubber_duck",
+      "snapshot": "best",
+      "additional_iteration": 0,
+      "metrics": {
+        "SSIM": 0.9765058755874634,
+        "PSNR": 28.109819412231445,
+        "LPIPS": 0.03123750165104866,
+        "MS-SSIM": 0.9703497886657715
+      }
+    },
+    {
+      "id": "W512_D2",
+      "kind": "reference",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_mlp_capacity\\long_W512_D2\\rubber_duck",
+      "snapshot": "best",
+      "additional_iteration": 0,
+      "metrics": {
+        "SSIM": 0.9767839312553406,
+        "PSNR": 27.615419387817383,
+        "LPIPS": 0.03329552710056305,
+        "MS-SSIM": 0.9710715413093567
+      }
+    },
+    {
+      "id": "T0_continue",
+      "kind": "candidate",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T0_continue\\rubber_duck",
+      "objective": "PSNR",
+      "snapshot": "best",
+      "additional_iteration": 0,
+      "metrics": {
+        "PSNR": 28.5765291595459,
+        "SSIM": 0.9770486044883728,
+        "LPIPS": 0.034613219015300276,
+        "MS-SSIM": 0.9704661095142364
+      }
+    },
+    {
+      "id": "T0_continue",
+      "kind": "candidate",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T0_continue\\rubber_duck",
+      "objective": "SSIM",
+      "snapshot": "metric_ssim",
+      "additional_iteration": 0,
+      "metrics": {
+        "PSNR": 28.5765291595459,
+        "SSIM": 0.9770486044883728,
+        "LPIPS": 0.034613219015300276,
+        "MS-SSIM": 0.9704661095142364
+      }
+    },
+    {
+      "id": "T0_continue",
+      "kind": "candidate",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T0_continue\\rubber_duck",
+      "objective": "LPIPS",
+      "snapshot": "metric_lpips",
+      "additional_iteration": 50000,
+      "metrics": {
+        "PSNR": 28.190596046447755,
+        "SSIM": 0.9767175245285035,
+        "LPIPS": 0.0297328032925725,
+        "MS-SSIM": 0.9700835025310517
+      }
+    },
+    {
+      "id": "T0_continue",
+      "kind": "candidate",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T0_continue\\rubber_duck",
+      "objective": "MS-SSIM",
+      "snapshot": "metric_ms_ssim",
+      "additional_iteration": 10000,
+      "metrics": {
+        "PSNR": 28.29497413635254,
+        "SSIM": 0.9770032250881195,
+        "LPIPS": 0.03137634226121008,
+        "MS-SSIM": 0.9705932331085205
+      }
+    },
+    {
+      "id": "T1_mse",
+      "kind": "candidate",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T1_mse\\rubber_duck",
+      "objective": "PSNR",
+      "snapshot": "best",
+      "additional_iteration": 0,
+      "metrics": {
+        "PSNR": 28.5765291595459,
+        "SSIM": 0.9770486044883728,
+        "LPIPS": 0.034613219015300276,
+        "MS-SSIM": 0.9704661095142364
+      }
+    },
+    {
+      "id": "T1_mse",
+      "kind": "candidate",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T1_mse\\rubber_duck",
+      "objective": "SSIM",
+      "snapshot": "metric_ssim",
+      "additional_iteration": 0,
+      "metrics": {
+        "PSNR": 28.5765291595459,
+        "SSIM": 0.9770486044883728,
+        "LPIPS": 0.034613219015300276,
+        "MS-SSIM": 0.9704661095142364
+      }
+    },
+    {
+      "id": "T1_mse",
+      "kind": "candidate",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T1_mse\\rubber_duck",
+      "objective": "LPIPS",
+      "snapshot": "metric_lpips",
+      "additional_iteration": 1000,
+      "metrics": {
+        "PSNR": 27.67223491668701,
+        "SSIM": 0.975373136997223,
+        "LPIPS": 0.034198810905218126,
+        "MS-SSIM": 0.9683252573013306
+      }
+    },
+    {
+      "id": "T1_mse",
+      "kind": "candidate",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T1_mse\\rubber_duck",
+      "objective": "MS-SSIM",
+      "snapshot": "metric_ms_ssim",
+      "additional_iteration": 0,
+      "metrics": {
+        "PSNR": 28.5765291595459,
+        "SSIM": 0.9770486044883728,
+        "LPIPS": 0.034613219015300276,
+        "MS-SSIM": 0.9704661095142364
+      }
+    },
+    {
+      "id": "T2_residual_mse",
+      "kind": "candidate",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T2_residual_mse\\rubber_duck",
+      "objective": "PSNR",
+      "snapshot": "best",
+      "additional_iteration": 0,
+      "metrics": {
+        "PSNR": 28.5765291595459,
+        "SSIM": 0.9770486044883728,
+        "LPIPS": 0.034613219015300276,
+        "MS-SSIM": 0.9704661095142364
+      }
+    },
+    {
+      "id": "T2_residual_mse",
+      "kind": "candidate",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T2_residual_mse\\rubber_duck",
+      "objective": "SSIM",
+      "snapshot": "metric_ssim",
+      "additional_iteration": 0,
+      "metrics": {
+        "PSNR": 28.5765291595459,
+        "SSIM": 0.9770486044883728,
+        "LPIPS": 0.034613219015300276,
+        "MS-SSIM": 0.9704661095142364
+      }
+    },
+    {
+      "id": "T2_residual_mse",
+      "kind": "candidate",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T2_residual_mse\\rubber_duck",
+      "objective": "LPIPS",
+      "snapshot": "metric_lpips",
+      "additional_iteration": 50000,
+      "metrics": {
+        "PSNR": 28.27667121887207,
+        "SSIM": 0.9767097401618957,
+        "LPIPS": 0.02948457945138216,
+        "MS-SSIM": 0.9700881838798523
+      }
+    },
+    {
+      "id": "T2_residual_mse",
+      "kind": "candidate",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T2_residual_mse\\rubber_duck",
+      "objective": "MS-SSIM",
+      "snapshot": "metric_ms_ssim",
+      "additional_iteration": 10000,
+      "metrics": {
+        "PSNR": 28.273847541809083,
+        "SSIM": 0.9768038725852967,
+        "LPIPS": 0.03146415300667286,
+        "MS-SSIM": 0.9704933655261994
+      }
+    },
+    {
+      "id": "T3_baseline_perceptual",
+      "kind": "candidate",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T3_baseline_perceptual\\rubber_duck",
+      "objective": "PSNR",
+      "snapshot": "best",
+      "additional_iteration": 13000,
+      "metrics": {
+        "PSNR": 28.333791427612304,
+        "SSIM": 0.9767167234420776,
+        "LPIPS": 0.0285418052226305,
+        "MS-SSIM": 0.9712041640281677
+      }
+    },
+    {
+      "id": "T3_baseline_perceptual",
+      "kind": "candidate",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T3_baseline_perceptual\\rubber_duck",
+      "objective": "SSIM",
+      "snapshot": "metric_ssim",
+      "additional_iteration": 13000,
+      "metrics": {
+        "PSNR": 28.333791427612304,
+        "SSIM": 0.9767167234420776,
+        "LPIPS": 0.0285418052226305,
+        "MS-SSIM": 0.9712041640281677
+      }
+    },
+    {
+      "id": "T3_baseline_perceptual",
+      "kind": "candidate",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T3_baseline_perceptual\\rubber_duck",
+      "objective": "LPIPS",
+      "snapshot": "metric_lpips",
+      "additional_iteration": 50000,
+      "metrics": {
+        "PSNR": 28.264767456054688,
+        "SSIM": 0.9765656626224518,
+        "LPIPS": 0.02788458631373942,
+        "MS-SSIM": 0.9711973428726196
+      }
+    },
+    {
+      "id": "T3_baseline_perceptual",
+      "kind": "candidate",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T3_baseline_perceptual\\rubber_duck",
+      "objective": "MS-SSIM",
+      "snapshot": "metric_ms_ssim",
+      "additional_iteration": 10000,
+      "metrics": {
+        "PSNR": 28.172524833679198,
+        "SSIM": 0.9767149007320404,
+        "LPIPS": 0.028559130802750587,
+        "MS-SSIM": 0.9715862941741943
+      }
+    },
+    {
+      "id": "T4_residual_perceptual",
+      "kind": "candidate",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T4_residual_perceptual\\rubber_duck",
+      "objective": "PSNR",
+      "snapshot": "best",
+      "additional_iteration": 0,
+      "metrics": {
+        "PSNR": 28.5765291595459,
+        "SSIM": 0.9770486044883728,
+        "LPIPS": 0.034613219015300276,
+        "MS-SSIM": 0.9704661095142364
+      }
+    },
+    {
+      "id": "T4_residual_perceptual",
+      "kind": "candidate",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T4_residual_perceptual\\rubber_duck",
+      "objective": "SSIM",
+      "snapshot": "metric_ssim",
+      "additional_iteration": 0,
+      "metrics": {
+        "PSNR": 28.5765291595459,
+        "SSIM": 0.9770486044883728,
+        "LPIPS": 0.034613219015300276,
+        "MS-SSIM": 0.9704661095142364
+      }
+    },
+    {
+      "id": "T4_residual_perceptual",
+      "kind": "candidate",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T4_residual_perceptual\\rubber_duck",
+      "objective": "LPIPS",
+      "snapshot": "metric_lpips",
+      "additional_iteration": 50000,
+      "metrics": {
+        "PSNR": 28.20276512145996,
+        "SSIM": 0.9766479587554932,
+        "LPIPS": 0.028223918806761502,
+        "MS-SSIM": 0.9700491404533387
+      }
+    },
+    {
+      "id": "T4_residual_perceptual",
+      "kind": "candidate",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T4_residual_perceptual\\rubber_duck",
+      "objective": "MS-SSIM",
+      "snapshot": "metric_ms_ssim",
+      "additional_iteration": 0,
+      "metrics": {
+        "PSNR": 28.5765291595459,
+        "SSIM": 0.9770486044883728,
+        "LPIPS": 0.034613219015300276,
+        "MS-SSIM": 0.9704661095142364
+      }
+    },
+    {
+      "id": "T5_multiscale",
+      "kind": "candidate",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T5_multiscale\\rubber_duck",
+      "objective": "PSNR",
+      "snapshot": "best",
+      "additional_iteration": 0,
+      "metrics": {
+        "PSNR": 27.615420875549315,
+        "SSIM": 0.9767833375930786,
+        "LPIPS": 0.03329556494951248,
+        "MS-SSIM": 0.9710716807842255
+      }
+    },
+    {
+      "id": "T5_multiscale",
+      "kind": "candidate",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T5_multiscale\\rubber_duck",
+      "objective": "SSIM",
+      "snapshot": "metric_ssim",
+      "additional_iteration": 0,
+      "metrics": {
+        "PSNR": 27.615420875549315,
+        "SSIM": 0.9767833375930786,
+        "LPIPS": 0.03329556494951248,
+        "MS-SSIM": 0.9710716807842255
+      }
+    },
+    {
+      "id": "T5_multiscale",
+      "kind": "candidate",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T5_multiscale\\rubber_duck",
+      "objective": "LPIPS",
+      "snapshot": "metric_lpips",
+      "additional_iteration": 0,
+      "metrics": {
+        "PSNR": 27.615420875549315,
+        "SSIM": 0.9767833375930786,
+        "LPIPS": 0.03329556494951248,
+        "MS-SSIM": 0.9710716807842255
+      }
+    },
+    {
+      "id": "T5_multiscale",
+      "kind": "candidate",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T5_multiscale\\rubber_duck",
+      "objective": "MS-SSIM",
+      "snapshot": "metric_ms_ssim",
+      "additional_iteration": 0,
+      "metrics": {
+        "PSNR": 27.615420875549315,
+        "SSIM": 0.9767833375930786,
+        "LPIPS": 0.03329556494951248,
+        "MS-SSIM": 0.9710716807842255
+      }
+    }
+  ],
+  "best_by_metric": {
+    "PSNR": {
+      "id": "W512_D0",
+      "kind": "reference",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_mlp_capacity\\long_W512_D0\\rubber_duck",
+      "snapshot": "best",
+      "additional_iteration": 0,
+      "metrics": {
+        "SSIM": 0.9770491719245911,
+        "PSNR": 28.576528549194336,
+        "LPIPS": 0.034613195806741714,
+        "MS-SSIM": 0.9704660177230835
+      }
+    },
+    "SSIM": {
+      "id": "W512_D0",
+      "kind": "reference",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_mlp_capacity\\long_W512_D0\\rubber_duck",
+      "snapshot": "best",
+      "additional_iteration": 0,
+      "metrics": {
+        "SSIM": 0.9770491719245911,
+        "PSNR": 28.576528549194336,
+        "LPIPS": 0.034613195806741714,
+        "MS-SSIM": 0.9704660177230835
+      }
+    },
+    "LPIPS": {
+      "id": "T3_baseline_perceptual",
+      "kind": "candidate",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T3_baseline_perceptual\\rubber_duck",
+      "objective": "LPIPS",
+      "snapshot": "metric_lpips",
+      "additional_iteration": 50000,
+      "metrics": {
+        "PSNR": 28.264767456054688,
+        "SSIM": 0.9765656626224518,
+        "LPIPS": 0.02788458631373942,
+        "MS-SSIM": 0.9711973428726196
+      }
+    },
+    "MS-SSIM": {
+      "id": "T3_baseline_perceptual",
+      "kind": "candidate",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T3_baseline_perceptual\\rubber_duck",
+      "objective": "MS-SSIM",
+      "snapshot": "metric_ms_ssim",
+      "additional_iteration": 10000,
+      "metrics": {
+        "PSNR": 28.172524833679198,
+        "SSIM": 0.9767149007320404,
+        "LPIPS": 0.028559130802750587,
+        "MS-SSIM": 0.9715862941741943
+      }
+    }
+  },
+  "pareto": [
+    {
+      "id": "W512_D0",
+      "kind": "reference",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_mlp_capacity\\long_W512_D0\\rubber_duck",
+      "snapshot": "best",
+      "additional_iteration": 0,
+      "metrics": {
+        "SSIM": 0.9770491719245911,
+        "PSNR": 28.576528549194336,
+        "LPIPS": 0.034613195806741714,
+        "MS-SSIM": 0.9704660177230835
+      }
+    },
+    {
+      "id": "W512_D2",
+      "kind": "reference",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_mlp_capacity\\long_W512_D2\\rubber_duck",
+      "snapshot": "best",
+      "additional_iteration": 0,
+      "metrics": {
+        "SSIM": 0.9767839312553406,
+        "PSNR": 27.615419387817383,
+        "LPIPS": 0.03329552710056305,
+        "MS-SSIM": 0.9710715413093567
+      }
+    },
+    {
+      "id": "T0_continue",
+      "kind": "candidate",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T0_continue\\rubber_duck",
+      "objective": "PSNR",
+      "snapshot": "best",
+      "additional_iteration": 0,
+      "metrics": {
+        "PSNR": 28.5765291595459,
+        "SSIM": 0.9770486044883728,
+        "LPIPS": 0.034613219015300276,
+        "MS-SSIM": 0.9704661095142364
+      }
+    },
+    {
+      "id": "T0_continue",
+      "kind": "candidate",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T0_continue\\rubber_duck",
+      "objective": "SSIM",
+      "snapshot": "metric_ssim",
+      "additional_iteration": 0,
+      "metrics": {
+        "PSNR": 28.5765291595459,
+        "SSIM": 0.9770486044883728,
+        "LPIPS": 0.034613219015300276,
+        "MS-SSIM": 0.9704661095142364
+      }
+    },
+    {
+      "id": "T0_continue",
+      "kind": "candidate",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T0_continue\\rubber_duck",
+      "objective": "LPIPS",
+      "snapshot": "metric_lpips",
+      "additional_iteration": 50000,
+      "metrics": {
+        "PSNR": 28.190596046447755,
+        "SSIM": 0.9767175245285035,
+        "LPIPS": 0.0297328032925725,
+        "MS-SSIM": 0.9700835025310517
+      }
+    },
+    {
+      "id": "T0_continue",
+      "kind": "candidate",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T0_continue\\rubber_duck",
+      "objective": "MS-SSIM",
+      "snapshot": "metric_ms_ssim",
+      "additional_iteration": 10000,
+      "metrics": {
+        "PSNR": 28.29497413635254,
+        "SSIM": 0.9770032250881195,
+        "LPIPS": 0.03137634226121008,
+        "MS-SSIM": 0.9705932331085205
+      }
+    },
+    {
+      "id": "T1_mse",
+      "kind": "candidate",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T1_mse\\rubber_duck",
+      "objective": "PSNR",
+      "snapshot": "best",
+      "additional_iteration": 0,
+      "metrics": {
+        "PSNR": 28.5765291595459,
+        "SSIM": 0.9770486044883728,
+        "LPIPS": 0.034613219015300276,
+        "MS-SSIM": 0.9704661095142364
+      }
+    },
+    {
+      "id": "T1_mse",
+      "kind": "candidate",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T1_mse\\rubber_duck",
+      "objective": "SSIM",
+      "snapshot": "metric_ssim",
+      "additional_iteration": 0,
+      "metrics": {
+        "PSNR": 28.5765291595459,
+        "SSIM": 0.9770486044883728,
+        "LPIPS": 0.034613219015300276,
+        "MS-SSIM": 0.9704661095142364
+      }
+    },
+    {
+      "id": "T1_mse",
+      "kind": "candidate",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T1_mse\\rubber_duck",
+      "objective": "MS-SSIM",
+      "snapshot": "metric_ms_ssim",
+      "additional_iteration": 0,
+      "metrics": {
+        "PSNR": 28.5765291595459,
+        "SSIM": 0.9770486044883728,
+        "LPIPS": 0.034613219015300276,
+        "MS-SSIM": 0.9704661095142364
+      }
+    },
+    {
+      "id": "T2_residual_mse",
+      "kind": "candidate",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T2_residual_mse\\rubber_duck",
+      "objective": "PSNR",
+      "snapshot": "best",
+      "additional_iteration": 0,
+      "metrics": {
+        "PSNR": 28.5765291595459,
+        "SSIM": 0.9770486044883728,
+        "LPIPS": 0.034613219015300276,
+        "MS-SSIM": 0.9704661095142364
+      }
+    },
+    {
+      "id": "T2_residual_mse",
+      "kind": "candidate",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T2_residual_mse\\rubber_duck",
+      "objective": "SSIM",
+      "snapshot": "metric_ssim",
+      "additional_iteration": 0,
+      "metrics": {
+        "PSNR": 28.5765291595459,
+        "SSIM": 0.9770486044883728,
+        "LPIPS": 0.034613219015300276,
+        "MS-SSIM": 0.9704661095142364
+      }
+    },
+    {
+      "id": "T3_baseline_perceptual",
+      "kind": "candidate",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T3_baseline_perceptual\\rubber_duck",
+      "objective": "PSNR",
+      "snapshot": "best",
+      "additional_iteration": 13000,
+      "metrics": {
+        "PSNR": 28.333791427612304,
+        "SSIM": 0.9767167234420776,
+        "LPIPS": 0.0285418052226305,
+        "MS-SSIM": 0.9712041640281677
+      }
+    },
+    {
+      "id": "T3_baseline_perceptual",
+      "kind": "candidate",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T3_baseline_perceptual\\rubber_duck",
+      "objective": "SSIM",
+      "snapshot": "metric_ssim",
+      "additional_iteration": 13000,
+      "metrics": {
+        "PSNR": 28.333791427612304,
+        "SSIM": 0.9767167234420776,
+        "LPIPS": 0.0285418052226305,
+        "MS-SSIM": 0.9712041640281677
+      }
+    },
+    {
+      "id": "T3_baseline_perceptual",
+      "kind": "candidate",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T3_baseline_perceptual\\rubber_duck",
+      "objective": "LPIPS",
+      "snapshot": "metric_lpips",
+      "additional_iteration": 50000,
+      "metrics": {
+        "PSNR": 28.264767456054688,
+        "SSIM": 0.9765656626224518,
+        "LPIPS": 0.02788458631373942,
+        "MS-SSIM": 0.9711973428726196
+      }
+    },
+    {
+      "id": "T3_baseline_perceptual",
+      "kind": "candidate",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T3_baseline_perceptual\\rubber_duck",
+      "objective": "MS-SSIM",
+      "snapshot": "metric_ms_ssim",
+      "additional_iteration": 10000,
+      "metrics": {
+        "PSNR": 28.172524833679198,
+        "SSIM": 0.9767149007320404,
+        "LPIPS": 0.028559130802750587,
+        "MS-SSIM": 0.9715862941741943
+      }
+    },
+    {
+      "id": "T4_residual_perceptual",
+      "kind": "candidate",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T4_residual_perceptual\\rubber_duck",
+      "objective": "PSNR",
+      "snapshot": "best",
+      "additional_iteration": 0,
+      "metrics": {
+        "PSNR": 28.5765291595459,
+        "SSIM": 0.9770486044883728,
+        "LPIPS": 0.034613219015300276,
+        "MS-SSIM": 0.9704661095142364
+      }
+    },
+    {
+      "id": "T4_residual_perceptual",
+      "kind": "candidate",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T4_residual_perceptual\\rubber_duck",
+      "objective": "SSIM",
+      "snapshot": "metric_ssim",
+      "additional_iteration": 0,
+      "metrics": {
+        "PSNR": 28.5765291595459,
+        "SSIM": 0.9770486044883728,
+        "LPIPS": 0.034613219015300276,
+        "MS-SSIM": 0.9704661095142364
+      }
+    },
+    {
+      "id": "T4_residual_perceptual",
+      "kind": "candidate",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T4_residual_perceptual\\rubber_duck",
+      "objective": "LPIPS",
+      "snapshot": "metric_lpips",
+      "additional_iteration": 50000,
+      "metrics": {
+        "PSNR": 28.20276512145996,
+        "SSIM": 0.9766479587554932,
+        "LPIPS": 0.028223918806761502,
+        "MS-SSIM": 0.9700491404533387
+      }
+    },
+    {
+      "id": "T4_residual_perceptual",
+      "kind": "candidate",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T4_residual_perceptual\\rubber_duck",
+      "objective": "MS-SSIM",
+      "snapshot": "metric_ms_ssim",
+      "additional_iteration": 0,
+      "metrics": {
+        "PSNR": 28.5765291595459,
+        "SSIM": 0.9770486044883728,
+        "LPIPS": 0.034613219015300276,
+        "MS-SSIM": 0.9704661095142364
+      }
+    },
+    {
+      "id": "T5_multiscale",
+      "kind": "candidate",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T5_multiscale\\rubber_duck",
+      "objective": "PSNR",
+      "snapshot": "best",
+      "additional_iteration": 0,
+      "metrics": {
+        "PSNR": 27.615420875549315,
+        "SSIM": 0.9767833375930786,
+        "LPIPS": 0.03329556494951248,
+        "MS-SSIM": 0.9710716807842255
+      }
+    },
+    {
+      "id": "T5_multiscale",
+      "kind": "candidate",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T5_multiscale\\rubber_duck",
+      "objective": "SSIM",
+      "snapshot": "metric_ssim",
+      "additional_iteration": 0,
+      "metrics": {
+        "PSNR": 27.615420875549315,
+        "SSIM": 0.9767833375930786,
+        "LPIPS": 0.03329556494951248,
+        "MS-SSIM": 0.9710716807842255
+      }
+    },
+    {
+      "id": "T5_multiscale",
+      "kind": "candidate",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T5_multiscale\\rubber_duck",
+      "objective": "LPIPS",
+      "snapshot": "metric_lpips",
+      "additional_iteration": 0,
+      "metrics": {
+        "PSNR": 27.615420875549315,
+        "SSIM": 0.9767833375930786,
+        "LPIPS": 0.03329556494951248,
+        "MS-SSIM": 0.9710716807842255
+      }
+    },
+    {
+      "id": "T5_multiscale",
+      "kind": "candidate",
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_metric_tuning\\T5_multiscale\\rubber_duck",
+      "objective": "MS-SSIM",
+      "snapshot": "metric_ms_ssim",
+      "additional_iteration": 0,
+      "metrics": {
+        "PSNR": 27.615420875549315,
+        "SSIM": 0.9767833375930786,
+        "LPIPS": 0.03329556494951248,
+        "MS-SSIM": 0.9710716807842255
+      }
+    }
+  ]
+}

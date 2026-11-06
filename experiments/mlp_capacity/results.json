@@ -1,0 +1,99 @@
+{
+  "updated_utc": "2026-10-20T17:14:38.560826+00:00",
+  "refresh_seconds": 5,
+  "rows": [
+    {
+      "id": "W256_D0",
+      "width": 256,
+      "depth": 0,
+      "mlp_parameters": 61454,
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_official\\rubber_duck",
+      "status": "completed (reused)",
+      "iteration": 50000,
+      "metrics": {
+        "SSIM": 0.9765514135360718,
+        "PSNR": 27.25678062438965,
+        "LPIPS": 0.029623517766594887,
+        "MS-SSIM": 0.9704826474189758
+      },
+      "final_50k_logged_psnr": 27.456247367858886
+    },
+    {
+      "id": "W512_D0",
+      "width": 512,
+      "depth": 0,
+      "mlp_parameters": 122894,
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_mlp_capacity\\long_W512_D0\\rubber_duck",
+      "status": "completed",
+      "iteration": 50000,
+      "metrics": {
+        "SSIM": 0.9770491719245911,
+        "PSNR": 28.576528549194336,
+        "LPIPS": 0.034613195806741714,
+        "MS-SSIM": 0.9704660177230835
+      },
+      "final_50k_logged_psnr": 28.416312294006346
+    },
+    {
+      "id": "W256_D2",
+      "width": 256,
+      "depth": 2,
+      "mlp_parameters": 193038,
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_mlp_capacity\\long_W256_D2\\rubber_duck",
+      "status": "completed",
+      "iteration": 50000,
+      "metrics": {
+        "SSIM": 0.9765058755874634,
+        "PSNR": 28.109819412231445,
+        "LPIPS": 0.03123750165104866,
+        "MS-SSIM": 0.9703497886657715
+      },
+      "final_50k_logged_psnr": 28.1577197265625
+    },
+    {
+      "id": "W512_D2",
+      "width": 512,
+      "depth": 2,
+      "mlp_parameters": 648206,
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_mlp_capacity\\long_W512_D2\\rubber_duck",
+      "status": "completed",
+      "iteration": 50000,
+      "metrics": {
+        "SSIM": 0.9767839312553406,
+        "PSNR": 27.615419387817383,
+        "LPIPS": 0.03329552710056305,
+        "MS-SSIM": 0.9710715413093567
+      },
+      "final_50k_logged_psnr": 27.59180404663086
+    }
+  ],
+  "controller": {
+    "pid": 108620,
+    "status": "completed",
+    "mode": "all",
+    "started_utc": "2026-10-20T14:01:53.469256+00:00",
+    "completed_jobs": [
+      "smoke_W256_D0",
+      "smoke_W512_D0",
+      "smoke_W256_D2",
+      "smoke_W512_D2",
+      "long_W512_D0",
+      "long_W256_D2",
+      "long_W512_D2"
+    ],
+    "runner_sha256": "b9c798d2e0c83647363a88d762325fc4fd40c6d3f3a0df799d82964add595e34",
+    "current_job": "long_W512_D2",
+    "updated_utc": "2026-10-20T17:14:38.466044+00:00"
+  },
+  "controller_alive": true,
+  "active": {
+    "controller_pid": 108620,
+    "child_pid": 88932,
+    "step": "metrics",
+    "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_mlp_capacity\\long_W512_D2\\rubber_duck",
+    "experiment": "PIDG_MLP_CAPACITY",
+    "configuration_id": "W512_D2",
+    "started_utc": "2026-10-20T17:14:01.844881+00:00"
+  },
+  "child_alive": false
+}

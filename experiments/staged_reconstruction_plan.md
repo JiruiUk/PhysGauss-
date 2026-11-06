@@ -157,6 +157,15 @@ must preserve this user's choice of a unified pool without estimating count;
 any independent truth remains evaluation-only. Original contact/constitutive/
 force goals remain unresolved and disabled; no historical paused work resumes.
 
+### Current improvement baseline: S3-U (user decision, 2026-11-03)
+
+The user selected the predeclared S3-U final6k checkpoint as the baseline for
+future improvements. Preserve the unified pool without body-count estimation.
+Original S4/S5 remain historical four-bank experiments, with worsened track
+error and an inactive conditional-interior prior respectively. This decision
+does not start new training. Checkpoint identity, evidence and design implications:
+[BASELINE_DECISION_20261103.md](staged_reconstruction/BASELINE_DECISION_20261103.md).
+
 ### Unknown static regions: S1-A (user requirement, 2026-11-03)
 
 The user requires discovering static support from different times/cameras,

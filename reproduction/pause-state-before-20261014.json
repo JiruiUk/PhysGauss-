@@ -1,0 +1,31 @@
+{
+  "processes": [
+    {
+      "pid": 262460,
+      "command": "\"F:\\A_Edinburgh\\PhysGauss\\envs\\pidg-cu128\\python.exe\" -u F:\\A_Edinburgh\\PhysGauss\\reproduction\\scripts\\run_baseline.py --scenes mechanics_cloth balls_reaction dry_ice motion_kuro rubber_duck --iterations 50000 --profile official --seed 0",
+      "parent_pid": 273576,
+      "created": "2026-10-13T14:39:17.7880920+01:00"
+    },
+    {
+      "pid": 271212,
+      "command": "F:\\A_Edinburgh\\PhysGauss\\envs\\pidg-cu128\\python.exe -u F:\\A_Edinburgh\\PhysGauss\\reproduction\\scripts\\entrypoint.py train_pidg.py -s F:\\A_Edinburgh\\PhysGauss\\data\\PIDG\\balls_reaction -m F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_official\\balls_reaction --conf F:\\A_Edinburgh\\PhysGauss\\third_party\\PIDG\\arguments\\pidg\\balls_reaction.py --load2gpu_on_the_fly --resolution 1600 --iterations 50000 --save_image_dir F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_official\\balls_reaction\\diagnostics",
+      "parent_pid": 262460,
+      "created": "2026-10-13T16:52:07.7387990+01:00"
+    },
+    {
+      "pid": 275040,
+      "command": "\"F:\\A_Edinburgh\\PhysGauss\\.venv\\Scripts\\python.exe\" -u F:\\A_Edinburgh\\PhysGauss\\reproduction\\scripts\\report_results.py --follow --mirror C:\\Users\\admin\\Documents\\Codex\\2026-10-13\\chatgpt-conversation-6acdffb0-de6c-83eb-b0dd\\outputs\\PIDG-\u590d\u73b0\u8fdb\u5ea6.md",
+      "parent_pid": 269584,
+      "created": "2026-10-13T14:55:07.1723850+01:00"
+    },
+    {
+      "pid": 260416,
+      "command": "\"C:\\Users\\admin\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe\" -u F:\\A_Edinburgh\\PhysGauss\\reproduction\\scripts\\report_results.py --follow --mirror C:\\Users\\admin\\Documents\\Codex\\2026-10-13\\chatgpt-conversation-6acdffb0-de6c-83eb-b0dd\\outputs\\PIDG-\u590d\u73b0\u8fdb\u5ea6.md",
+      "parent_pid": 275040,
+      "created": "2026-10-13T14:55:07.2051660+01:00"
+    }
+  ],
+  "state": "running",
+  "suspended_at_utc": "2026-10-13T18:03:03.489779+00:00",
+  "resumed_at_utc": "2026-10-13T19:32:23.633443+00:00"
+}

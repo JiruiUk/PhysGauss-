@@ -1,0 +1,109 @@
+{
+  "status": "completed",
+  "completed": 30,
+  "total": 30,
+  "split": "validation",
+  "methods": [
+    "native",
+    "center_half",
+    "center_full",
+    "state_lerp_raw"
+  ],
+  "started_utc": "2026-11-01T12:19:56.167537+00:00",
+  "elapsed_seconds": 51.4,
+  "last_frame": "0198",
+  "summary": {
+    "native": {
+      "metrics": {
+        "PSNR": 40.37668075561523,
+        "SSIM": 0.9946554660797119,
+        "LPIPS": 0.01009880902711302,
+        "MS-SSIM": 0.9964431603749593
+      },
+      "integrity": {
+        "core_low_50": 0.0001793060151612781,
+        "core_low_90": 0.0008101252275341624,
+        "foreground_missing_50": 0.0026763028391354527,
+        "background_false_coverage": 0.008109228660232061,
+        "fragment_loss": 0.006118484071727709,
+        "extra_fragments": 0.0,
+        "opaque_appearance_error": 0.004929671735518317,
+        "foreground_RGB_L1": 0.009824887942522764,
+        "mask_iou": 0.9307479428035488,
+        "integrity_score": 0.0035612189160948156,
+        "worst_score": 0.013867327289124412,
+        "p95_score": 0.007596663824806107
+      },
+      "worst5_PSNR": 34.49996109008789
+    },
+    "center_half": {
+      "metrics": {
+        "PSNR": 40.27468369801839,
+        "SSIM": 0.9945776442686717,
+        "LPIPS": 0.01010654722340405,
+        "MS-SSIM": 0.9963359673817952
+      },
+      "integrity": {
+        "core_low_50": 0.00021349557794442565,
+        "core_low_90": 0.000855447798805626,
+        "foreground_missing_50": 0.0028277760143585588,
+        "background_false_coverage": 0.008122936617344945,
+        "fragment_loss": 0.006399388298227193,
+        "extra_fragments": 0.0,
+        "opaque_appearance_error": 0.00509480494970216,
+        "foreground_RGB_L1": 0.009944510863473017,
+        "mask_iou": 0.930505566281744,
+        "integrity_score": 0.0036935473294023202,
+        "worst_score": 0.014745040322088104,
+        "p95_score": 0.008583639759202672
+      },
+      "worst5_PSNR": 34.107413864135744
+    },
+    "center_full": {
+      "metrics": {
+        "PSNR": 39.94327735900879,
+        "SSIM": 0.9943221429983775,
+        "LPIPS": 0.01020938587995867,
+        "MS-SSIM": 0.9961302975813547
+      },
+      "integrity": {
+        "core_low_50": 0.0002475636981234683,
+        "core_low_90": 0.0009184486747848678,
+        "foreground_missing_50": 0.0031822761852200875,
+        "background_false_coverage": 0.008158977797555967,
+        "fragment_loss": 0.007001407324789646,
+        "extra_fragments": 0.0,
+        "opaque_appearance_error": 0.005463890376916287,
+        "foreground_RGB_L1": 0.010273940783614913,
+        "mask_iou": 0.9299051177146401,
+        "integrity_score": 0.0039714392323633675,
+        "worst_score": 0.016277099166283927,
+        "p95_score": 0.010017339915218741
+      },
+      "worst5_PSNR": 33.545475769042966
+    },
+    "state_lerp_raw": {
+      "metrics": {
+        "PSNR": 39.88538277943929,
+        "SSIM": 0.9943161606788635,
+        "LPIPS": 0.010172195654983321,
+        "MS-SSIM": 0.9960849940776825
+      },
+      "integrity": {
+        "core_low_50": 0.0002787230605703909,
+        "core_low_90": 0.0009858486900844175,
+        "foreground_missing_50": 0.0032985778157101865,
+        "background_false_coverage": 0.008128119351591273,
+        "fragment_loss": 0.007310137733862092,
+        "extra_fragments": 0.0,
+        "opaque_appearance_error": 0.005666957042743005,
+        "foreground_RGB_L1": 0.010377595744406184,
+        "mask_iou": 0.9300302436928927,
+        "integrity_score": 0.004109811550671382,
+        "worst_score": 0.01704329673000667,
+        "p95_score": 0.01074751549523837
+      },
+      "worst5_PSNR": 33.399832534790036
+    }
+  }
+}

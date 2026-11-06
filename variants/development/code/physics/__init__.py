@@ -1,0 +1,1 @@
+"""Switchable closed Gaussian mechanics."""

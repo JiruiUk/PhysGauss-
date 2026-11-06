@@ -1,0 +1,55 @@
+{
+  "status": "completed",
+  "snapshot": "final50000",
+  "test_frames": 50,
+  "comparisons": [
+    {
+      "model": "O1_frozen_ID",
+      "reference": "O0_C1_control",
+      "delta": {
+        "PSNR": -1.5613021850585938,
+        "SSIM": -0.0010019540786743164,
+        "LPIPS": 0.0012524668127298355,
+        "MS-SSIM": -0.0004367232322692871
+      },
+      "PSNR_improved_frames": 12,
+      "PSNR_worse_frames": 38,
+      "PSNR_median_delta": -1.1015033721923828,
+      "all4_image_metrics_better": false
+    },
+    {
+      "model": "O2_selfsup_ID",
+      "reference": "O0_C1_control",
+      "delta": {
+        "PSNR": -1.8912544250488281,
+        "SSIM": -0.0013878941535949707,
+        "LPIPS": 0.0015294356271624565,
+        "MS-SSIM": -0.0010083317756652832
+      },
+      "PSNR_improved_frames": 6,
+      "PSNR_worse_frames": 44,
+      "PSNR_median_delta": -1.0611801147460938,
+      "all4_image_metrics_better": false
+    },
+    {
+      "model": "O2_selfsup_ID",
+      "reference": "O1_frozen_ID",
+      "delta": {
+        "PSNR": -0.3299522399902344,
+        "SSIM": -0.0003859400749206543,
+        "LPIPS": 0.000276968814432621,
+        "MS-SSIM": -0.0005716085433959961
+      },
+      "PSNR_improved_frames": 23,
+      "PSNR_worse_frames": 27,
+      "PSNR_median_delta": -0.27452659606933594,
+      "all4_image_metrics_better": false
+    }
+  ],
+  "ground_truth_object_ID_accuracy": "unavailable",
+  "semantic_identity_improvement": "not_established_without_instance_evaluation",
+  "historical_test_exposure": true,
+  "single_scene_seed": true,
+  "identity_training_uses_instance_labels": false,
+  "baseline_reused_from": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_color_repair\\C1_repaired\\rubber_duck"
+}

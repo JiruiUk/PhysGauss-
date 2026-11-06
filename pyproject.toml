@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "physgauss"
+version = "0.1.0"
+description = "Uncertainty-aware dynamic Gaussian reconstruction and physics estimation research scaffold"
+requires-python = ">=3.10"
+dependencies = ["torch>=2.2", "numpy>=1.26", "Pillow>=10"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+physgauss = "physgauss.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "--basetemp=.pytest-tmp"

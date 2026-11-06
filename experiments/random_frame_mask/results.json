@@ -1,0 +1,141 @@
+{
+  "updated_utc": "2026-10-20T21:49:28.296096+00:00",
+  "refresh_seconds": 5,
+  "controller": {
+    "pid": 114676,
+    "status": "completed",
+    "started_utc": "2026-10-20T14:46:18.282690+00:00",
+    "current_job": "long_drop90_seed0",
+    "completed_jobs": [
+      "smoke_drop90_seed0",
+      "long_drop10_seed0",
+      "long_drop30_seed0",
+      "long_drop50_seed0",
+      "long_drop70_seed0",
+      "long_drop90_seed0"
+    ],
+    "runner_sha256": "1db311d24e8ae235a5b466fc7a1356234713270a53bfeeaae879cefb494b581f",
+    "dependency_reason": "All original MLP training, rendering and metrics are complete",
+    "dependency_last_checked_utc": "2026-10-20T17:14:39.764735+00:00",
+    "dependency_satisfied_utc": "2026-10-20T17:14:39.764735+00:00",
+    "updated_utc": "2026-10-20T21:49:28.180212+00:00"
+  },
+  "controller_alive": true,
+  "rows": [
+    {
+      "drop_percent": 0,
+      "retained": 150,
+      "removed": 0,
+      "status": "completed (reused)",
+      "iteration": 50000,
+      "official_metrics": {
+        "SSIM": 0.9765514135360718,
+        "PSNR": 27.25678062438965,
+        "LPIPS": 0.029623517766594887,
+        "MS-SSIM": 0.9704826474189758
+      },
+      "masked_holdout_metrics": null,
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_official\\rubber_duck"
+    },
+    {
+      "drop_percent": 10,
+      "retained": 135,
+      "removed": 15,
+      "status": "completed",
+      "iteration": 50000,
+      "official_metrics": {
+        "SSIM": 0.9765687584877014,
+        "PSNR": 28.252595901489258,
+        "LPIPS": 0.029416197910904884,
+        "MS-SSIM": 0.9706241488456726
+      },
+      "masked_holdout_metrics": {
+        "SSIM": 0.9877421259880066,
+        "PSNR": 32.99431228637695,
+        "LPIPS": 0.018971340730786324,
+        "MS-SSIM": 0.990182101726532
+      },
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop10_seed0\\rubber_duck"
+    },
+    {
+      "drop_percent": 30,
+      "retained": 105,
+      "removed": 45,
+      "status": "completed",
+      "iteration": 50000,
+      "official_metrics": {
+        "SSIM": 0.9751401543617249,
+        "PSNR": 26.686220169067383,
+        "LPIPS": 0.03159859776496887,
+        "MS-SSIM": 0.9682517051696777
+      },
+      "masked_holdout_metrics": {
+        "SSIM": 0.9843005537986755,
+        "PSNR": 30.89689064025879,
+        "LPIPS": 0.022918788716197014,
+        "MS-SSIM": 0.9852175116539001
+      },
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop30_seed0\\rubber_duck"
+    },
+    {
+      "drop_percent": 50,
+      "retained": 75,
+      "removed": 75,
+      "status": "completed",
+      "iteration": 50000,
+      "official_metrics": {
+        "SSIM": 0.9735063910484314,
+        "PSNR": 27.0432186126709,
+        "LPIPS": 0.03420376405119896,
+        "MS-SSIM": 0.9647737145423889
+      },
+      "masked_holdout_metrics": {
+        "SSIM": 0.9823509454727173,
+        "PSNR": 30.97854232788086,
+        "LPIPS": 0.02695629745721817,
+        "MS-SSIM": 0.9808483123779297
+      },
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop50_seed0\\rubber_duck"
+    },
+    {
+      "drop_percent": 70,
+      "retained": 45,
+      "removed": 105,
+      "status": "completed",
+      "iteration": 50000,
+      "official_metrics": {
+        "SSIM": 0.9731071591377258,
+        "PSNR": 26.930286407470703,
+        "LPIPS": 0.035994548350572586,
+        "MS-SSIM": 0.9649965167045593
+      },
+      "masked_holdout_metrics": {
+        "SSIM": 0.9819012880325317,
+        "PSNR": 30.141738891601562,
+        "LPIPS": 0.02838761731982231,
+        "MS-SSIM": 0.9806727170944214
+      },
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop70_seed0\\rubber_duck"
+    },
+    {
+      "drop_percent": 90,
+      "retained": 15,
+      "removed": 135,
+      "status": "completed",
+      "iteration": 50000,
+      "official_metrics": {
+        "SSIM": 0.9538078308105469,
+        "PSNR": 23.062978744506836,
+        "LPIPS": 0.06042700633406639,
+        "MS-SSIM": 0.9360793232917786
+      },
+      "masked_holdout_metrics": {
+        "SSIM": 0.9555256962776184,
+        "PSNR": 23.520790100097656,
+        "LPIPS": 0.058941684663295746,
+        "MS-SSIM": 0.9389342665672302
+      },
+      "run": "F:\\A_Edinburgh\\PhysGauss\\runs\\pidg_random_frame_mask\\long_drop90_seed0\\rubber_duck"
+    }
+  ]
+}

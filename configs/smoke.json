@@ -1,0 +1,14 @@
+{
+  "seed": 7,
+  "device": "cpu",
+  "steps": 30,
+  "lr": 0.003,
+  "hidden_dim": 32,
+  "frequencies": 2,
+  "physics_warmup": 5,
+  "physics_ramp": 10,
+  "collocation_count": 8,
+  "adaptive_sampling": true,
+  "loss": {"rgb": 1.0, "ssim": 0.1, "uncertainty": 0.01, "depth": 0.1, "flow": 0.02,
+           "trajectory": 0.1, "momentum": 0.01, "uncertainty_prior": 0.001}
+}

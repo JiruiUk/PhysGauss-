@@ -1,0 +1,14 @@
+{
+  "device": "cuda",
+  "steps": 3000,
+  "lr": 0.001,
+  "hidden_dim": 64,
+  "frequencies": 4,
+  "physics_warmup": 300,
+  "physics_ramp": 500,
+  "collocation_count": 64,
+  "checkpoint_every": 250,
+  "log_every": 50,
+  "loss": {"rgb": 1.0, "ssim": 0.1, "uncertainty": 0.01, "depth": 0.0, "flow": 0.02,
+           "trajectory": 0.1, "momentum": 0.01, "uncertainty_prior": 0.001}
+}
